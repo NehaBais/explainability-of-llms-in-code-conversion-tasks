@@ -1026,3 +1026,1789 @@ func printLogic(a, b bool) {
     fmt.Println("not a is", !a)
 }
 """
+
+REFERENCE_CODE["JAVA"][
+    "logic_ops"
+] = """
+public static void logic(boolean a, boolean b){
+  System.out.println("a AND b: " + (a && b));
+  System.out.println("a OR b: " + (a || b));
+  System.out.println("NOT a: " + (!a));
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "logic_ops"
+] = """
+function logic(a,b) {
+  print("a AND b: " + (a && b));
+  print("a OR b: " + (a || b));
+  print("NOT a: " + (!a));
+}
+"""
+
+REFERENCE_CODE["PY"][
+    "logic_ops"
+] = """
+def logic(a, b):
+    print('a and b:', a and b)
+    print('a or b:', a or b)
+    print('not a:', not a)
+"""
+
+REFERENCE_CODE["RS"][
+    "logic_ops"
+] = """
+fn boolean_ops(a: bool, b: bool) {
+    println!("{} and {} -> {}", a, b, a && b);
+    println!("{} or {} -> {}", a, b, a || b);
+    println!("{} xor {} -> {}", a, b, a ^ b);
+    println!("not {} -> {}\n", a, !a);
+}
+
+fn main() {
+    boolean_ops(true, true);
+    boolean_ops(true, false);
+    boolean_ops(false, true);
+    boolean_ops(false, false)
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_append"
+] = """
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char str[24]="Good Morning";
+    char *cstr=" to all";
+    char *cstr2=" !!!";
+    int x=0;
+    //failure when space allocated to str is insufficient.
+
+    if(sizeof(str)>strlen(str)+strlen(cstr)+strlen(cstr2))
+            {
+                /* 1st method*/
+                strcat(str,cstr);
+
+                /*2nd method*/
+                x=strlen(str);
+                sprintf(&str[x],"%s",cstr2);
+
+                printf("%s\n",str);
+
+            }
+    return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_append"
+] = """
+#include <iostream>
+#include <string>
+
+int main( ) {
+   std::string greeting( "Hello" ) ;
+   greeting.append( " , world!" ) ;
+   std::cout << greeting << std::endl ;
+   return 0 ;
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_append"
+] = """
+package main
+
+import (
+  "fmt"
+  "strings"
+)
+
+func main() {
+  var s strings.Builder
+  s.WriteString("foo")
+  s.WriteString("bar")
+  fmt.Print(s.String())
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_append"
+] = """
+public class strAppend {
+    public static void main(String[] args) {
+        String string = "abc";
+        System.out.println(string);
+        string += "def";
+        System.out.println(string);
+    }
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "str_append"
+] = """
+var s1 = "Hello";
+s1 += ", World!";
+print(s1);
+"""
+
+REFERENCE_CODE["PY"][
+    "str_append"
+] = """
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+
+str = "12345678";
+str += "9!";
+print(str)
+"""
+
+REFERENCE_CODE["RS"][
+    "str_append"
+] = """
+use std::ops::Add;
+
+fn main(){
+    let hello = String::from("Hello world");
+    println!("{}", hello.add("!!!!"));
+}
+
+
+fn main(){
+    let mut hello = String::from("Hello world");
+    hello.push_str("!!!!");
+    println!("{}", hello);
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_cmp"
+] = """
+/*
+  compilation and test in bash
+  $ a=./c && make $a && $a ball bell ball ball YUP YEP     ball BELL ball BALL YUP yep
+  cc -Wall -c -o c.o c.c
+  	eq , ne , gt , lt , ge , le
+  ball 0 1 0 1 0 1 bell
+  ball 0 1 0 1 0 1 bell ignoring case
+  ball 1 0 0 0 1 1 ball
+  ball 1 0 0 0 1 1 ball ignoring case
+  YUP 0 1 1 0 1 0 YEP
+  YUP 0 1 1 0 1 0 YEP ignoring case
+  ball 0 1 1 0 1 0 BELL
+  ball 0 1 0 1 0 1 BELL ignoring case
+  ball 0 1 1 0 1 0 BALL
+  ball 1 0 0 0 1 1 BALL ignoring case
+  YUP 0 1 0 1 0 1 yep
+  YUP 0 1 1 0 1 0 yep ignoring case
+*/
+
+#include<string.h>
+
+#define STREQ(A,B) (0==strcmp((A),(B)))
+#define STRNE(A,B) (!STREQ(A,B))
+#define STRLT(A,B) (strcmp((A),(B))<0)
+#define STRLE(A,B) (strcmp((A),(B))<=0)
+#define STRGT(A,B) STRLT(B,A)
+#define STRGE(A,B) STRLE(B,A)
+
+#define STRCEQ(A,B) (0==strcasecmp((A),(B)))
+#define STRCNE(A,B) (!STRCEQ(A,B))
+#define STRCLT(A,B) (strcasecmp((A),(B))<0)
+#define STRCLE(A,B) (strcasecmp((A),(B))<=0)
+#define STRCGT(A,B) STRCLT(B,A)
+#define STRCGE(A,B) STRCLE(B,A)
+
+#include<stdio.h>
+
+void compare(const char*a, const char*b) {
+  printf("%s%2d%2d%2d%2d%2d%2d %s\n",
+	 a,
+	 STREQ(a,b), STRNE(a,b), STRGT(a,b), STRLT(a,b), STRGE(a,b), STRLE(a,b),
+	 b
+	 );
+}
+void comparecase(const char*a, const char*b) {
+  printf("%s%2d%2d%2d%2d%2d%2d %s ignoring case\n",
+	 a,
+	 STRCEQ(a,b), STRCNE(a,b), STRCGT(a,b), STRCLT(a,b), STRCGE(a,b), STRCLE(a,b),
+	 b
+	 );
+}
+int main(int ac, char*av[]) {
+  char*a,*b;
+  puts("\teq , ne , gt , lt , ge , le");
+  while (0 < (ac -= 2)) {
+    a = *++av, b = *++av;
+    compare(a, b);
+    comparecase(a, b);
+  }
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_cmp"
+] = """
+#include <algorithm>
+#include <iostream>
+#include <sstream>
+#include <string>
+
+template <typename T>
+void demo_compare(const T &a, const T &b, const std::string &semantically) {
+    std::cout << a << " and " << b << " are " << ((a == b) ? "" : "not ")
+              << "exactly " << semantically << " equal." << std::endl;
+
+    std::cout << a << " and " << b << " are " << ((a != b) ? "" : "not ")
+              << semantically << "inequal." << std::endl;
+
+    std::cout << a << " is " << ((a < b) ? "" : "not ") << semantically
+              << " ordered before " << b << '.' << std::endl;
+
+    std::cout << a << " is " << ((a > b) ? "" : "not ") << semantically
+              << " ordered after " << b << '.' << std::endl;
+}
+
+int main(int argc, char *argv[]) {
+    // Case-sensitive comparisons.
+    std::string a((argc > 1) ? argv[1] : "1.2.Foo");
+    std::string b((argc > 2) ? argv[2] : "1.3.Bar");
+    demo_compare<std::string>(a, b, "lexically");
+
+    // Case-insensitive comparisons by folding both strings to a common case.
+    std::transform(a.begin(), a.end(), a.begin(), ::tolower);
+    std::transform(b.begin(), b.end(), b.begin(), ::tolower);
+    demo_compare<std::string>(a, b, "lexically");
+
+    // Numeric comparisons; here 'double' could be any type for which the
+    // relevant >> operator is defined, eg int, long, etc.
+    double numA, numB;
+    std::istringstream(a) >> numA;
+    std::istringstream(b) >> numB;
+    demo_compare<double>(numA, numB, "numerically");
+    return (a == b);
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_cmp"
+] = """
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func main() {
+    // Go language string comparison operators:
+    c := "cat"
+    d := "dog"
+    if c == d {
+        fmt.Println(c, "is bytewise identical to", d)
+    }
+    if c != d {
+        fmt.Println(c, "is bytewise different from", d)
+    }
+    if c > d {
+        fmt.Println(c, "is lexically bytewise greater than", d)
+    }
+    if c < d {
+        fmt.Println(c, "is lexically bytewise less than", d)
+    }
+    if c >= d {
+        fmt.Println(c, "is lexically bytewise greater than or equal to", d)
+    }
+    if c <= d {
+        fmt.Println(c, "is lexically bytewise less than or equal to", d)
+    }
+    // Go is strongly typed and will not directly compare a value of string
+    // type to a value of numeric type.
+
+    // A case insensitive compare can be done with a function in the strings
+    // package in the Go standard library:
+    eqf := `when interpreted as UTF-8 and compared under Unicode
+simple case folding rules.`
+    if strings.EqualFold(c, d) {
+        fmt.Println(c, "equal to", d, eqf)
+    } else {
+        fmt.Println(c, "not equal to", d, eqf)
+    }
+
+    // Seeing that the built in operators work bytewise and the library
+    // case folding functions interpret UTF-8, you might then ask about
+    // other equality and inequality tests that interpret UTF-8.
+    // Functions for this are not in the Go standard library but are in
+    // the Go "sub repository" at golang.org/x/text.  There is support
+    // for Unicode normalization, collation tables, and locale sensitive
+    // comparisons.
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_cmp"
+] = """
+public class Compare
+{
+    public static void main (String[] args)
+    {
+        compare("Hello", "Hello");
+        compare("5", "5.0");
+        compare("java", "Java");
+        compare("ĴÃVÁ", "ĴÃVÁ");
+        compare("ĴÃVÁ", "ĵãvá");
+    }
+    public static void compare (String A, String B)
+    {
+        if (A.equals(B))
+            System.out.printf("'%s' and '%s' are lexically equal.", A, B);
+        else
+            System.out.printf("'%s' and '%s' are not lexically equal.", A, B);
+        System.out.println();
+
+        if (A.equalsIgnoreCase(B))
+            System.out.printf("'%s' and '%s' are case-insensitive lexically equal.", A, B);
+        else
+            System.out.printf("'%s' and '%s' are not case-insensitive lexically equal.", A, B);
+        System.out.println();
+    
+        if (A.compareTo(B) < 0)
+            System.out.printf("'%s' is lexically before '%s'.\n", A, B);
+        else if (A.compareTo(B) > 0)
+            System.out.printf("'%s' is lexically after '%s'.\n", A, B);
+
+        if (A.compareTo(B) >= 0)
+            System.out.printf("'%s' is not lexically before '%s'.\n", A, B);
+        if (A.compareTo(B) <= 0)
+            System.out.printf("'%s' is not lexically after '%s'.\n", A, B);
+
+        System.out.printf("The lexical relationship is: %d\n", A.compareTo(B));
+        System.out.printf("The case-insensitive lexical relationship is: %d\n\n", A.compareToIgnoreCase(B));
+    }
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "str_cmp"
+] = """
+/*
+== equal value
+=== equal value and equal type
+!= not equal value
+!== not equal value or not equal type
+< lexically ordered before
+> lexically ordered after
+*/
+
+console.log(
+"abcd" == "abcd", // true
+"abcd" === "abcd", // true
+123 == "123", // true
+123 === "123", // false
+"ABCD" == "abcd", // false
+"ABCD" != "abcd", // true
+123 != "123", // false
+123 !== "123", // true
+"abcd" < "dcba", // true
+"abcd" > "dcba", // false
+"ABCD".toLowerCase() == "abcd".toLowerCase(), // true (case insensitive)
+)
+"""
+
+REFERENCE_CODE["PY"][
+    "str_cmp"
+] = """
+def compare(a, b):
+    print("\n%r is of type %r and %r is of type %r"
+          % (a, type(a), b, type(b)))
+    if a <  b:      print('%r is strictly less than  %r' % (a, b))
+    if a <= b:      print('%r is less than or equal to %r' % (a, b))
+    if a >  b:      print('%r is strictly greater than  %r' % (a, b))
+    if a >= b:      print('%r is greater than or equal to %r' % (a, b))
+    if a == b:      print('%r is equal to %r' % (a, b))
+    if a != b:      print('%r is not equal to %r' % (a, b))
+    if a is b:      print('%r has object identity with %r' % (a, b))
+    if a is not b:  print('%r has negated object identity with %r' % (a, b))
+
+compare('YUP', 'YUP')
+compare('BALL', 'BELL')
+compare('24', '123')
+compare(24, 123)
+compare(5.0, 5)
+"""
+
+REFERENCE_CODE["RS"][
+    "str_cmp"
+] = """
+use std::ascii::AsciiExt; // for case insensitives only
+
+fn main() {
+    // only same types can be compared
+    // String and String or &str and &str
+    // exception: strict equality and inequality also work on &str and String
+    let a: &str = "abc";
+    let b: String = "Bac".to_owned();
+
+    // Strings are coerced to &str when borrowed and needed
+    if a == b { println!("The strings are equal") }
+    if a != b { println!("The strings are not equal") }
+    if a  > &b { println!("The first string is lexically after the second") }
+    if a  < &b { println!("The first string is lexically before the second") }
+    if a >= &b { println!("The first string is not lexically before the second") }
+    if a <= &b { println!("The first string is not lexically after the second") }
+
+    // case-insensitives:
+
+    // equality
+    // this avoids new allocations
+    if a.eq_ignore_ascii_case(&b) { println!("Both strings are equal when ignoring case") }
+
+    // everything else, create owned Strings, then compare as above
+    let a2 = a.to_ascii_uppercase();
+    let b2 = b.to_ascii_uppercase();
+
+    // repeat checks
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_concat"
+] = """
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *sconcat(const char *s1, const char *s2)
+{
+  char *s0 = malloc(strlen(s1)+strlen(s2)+1);
+  strcpy(s0, s1);
+  strcat(s0, s2);
+  return s0;
+}
+
+int main()
+{
+   const char *s = "hello";
+   char *s2;
+   
+   printf("%s literal\n", s);
+   /* or */
+   printf("%s%s\n", s, " literal");
+   
+   s2 = sconcat(s, " literal");
+   puts(s2);
+   free(s2);
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_concat"
+] = """
+#include <string>
+#include <iostream>
+
+int main() {
+   std::string s = "hello";
+   std::cout << s << " literal" << std::endl;
+   std::string s2 = s + " literal";
+   std::cout << s2 << std::endl;
+   return 0;
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_concat"
+] = """
+package main
+
+import "fmt"
+
+func main() {
+    // text assigned to a string variable
+    s := "hello"
+
+    // output string variable
+    fmt.Println(s)
+
+    // this output requested by original task descrption, although
+    // not really required by current wording of task description.
+    fmt.Println(s + " literal")
+
+    // concatenate variable and literal, assign result to another string variable
+    s2 := s + " literal"
+
+    // output second string variable
+    fmt.Println(s2)
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_concat"
+] = """
+public class Str{
+   public static void main(String[] args){
+      String s = "hello";
+      System.out.println(s + " literal");
+      String s2 = s + " literal";
+      System.out.println(s2);
+   }
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "str_concat"
+] = """
+var s = "hello"
+print(s + " there!")
+"""
+
+REFERENCE_CODE["PY"][
+    "str_concat"
+] = """
+s1 = "hello"
+print s1 + " world"
+
+s2 = s1 + " world"
+print s2
+
+s1 = "hello"
+print ", ".join([s1, "world", "mom"])
+
+s2 = ", ".join([s1, "world", "mom"])
+print s2
+"""
+
+REFERENCE_CODE["RS"][
+    "str_concat"
+] = """
+fn main() {
+    let s = "hello".to_owned();
+    println!("{}", s);
+    
+    let s1 = s + " world";
+    println!("{}", s1);
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_interp"
+] = """
+#include <stdio.h>
+
+int main() {
+  const char *extra = "little";
+  printf("Mary had a %s lamb.\n", extra);
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_interp"
+] = """
+#include <string>
+#include <iostream>
+
+int main( ) {
+   std::string original( "Mary had a X lamb." ) , toBeReplaced( "X" ) ,
+      replacement ( "little" ) ;
+   std::string newString = original.replace( original.find( "X" ) ,
+	 toBeReplaced.length( ) , replacement ) ;
+   std::cout << "String after replacement: " << newString << " \n" ;
+   return 0 ;
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_interp"
+] = """
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    str := "Mary had a %s lamb"
+    txt := "little"
+    out := fmt.Sprintf(str, txt)
+    fmt.Println(out)
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_interp"
+] = """
+String adjective = "little";
+String lyric = String.format("Mary had a %s lamb", adjective);
+"""
+
+REFERENCE_CODE["JS"][
+    "str_interp"
+] = """
+var original = "Mary had a X lamb";
+var little = "little";
+var replaced = original.replace("X", little); //does not change the original string
+"""
+
+REFERENCE_CODE["PY"][
+    "str_interp"
+] = """
+extra = 'little'
+new_str = f'Mary had a {extra} lamb.'
+print(new_str)
+"""
+
+REFERENCE_CODE["RS"][
+    "str_interp"
+] = """
+fn main() {
+    println!("Mary had a {} lamb", "little");
+    // You can specify order
+    println!("{1} had a {0} lamb", "little", "Mary");
+    // Or named arguments if you prefer
+    println!("{name} had a {adj} lamb", adj="little", name="Mary");
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_match"
+] = """
+#include <string.h>
+#include <stdio.h>
+
+int startsWith(const char* container, const char* target)
+{
+  size_t clen = strlen(container), tlen = strlen(target);
+  if (clen < tlen)
+    return 0;
+  return strncmp(container, target, tlen) == 0;
+}
+
+int endsWith(const char* container, const char* target)
+{
+  size_t clen = strlen(container), tlen = strlen(target);
+  if (clen < tlen)
+    return 0;
+  return strncmp(container + clen - tlen, target, tlen) == 0;
+}
+
+int doesContain(const char* container, const char* target)
+{
+  return strstr(container, target) != 0;
+}
+
+int main(void)
+{
+  printf("Starts with Test ( Hello,Hell ) : %d\n", startsWith("Hello","Hell"));
+  printf("Ends with Test ( Code,ode ) : %d\n", endsWith("Code","ode"));
+  printf("Contains Test ( Google,msn ) : %d\n", doesContain("Google","msn"));
+
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_match"
+] = """
+#include <string>
+using namespace std;
+
+string s1="abcd";
+string s2="abab";
+string s3="ab";
+//Beginning
+s1.compare(0,s3.size(),s3)==0;
+//End
+s1.compare(s1.size()-s3.size(),s3.size(),s3)==0;
+//Anywhere
+s1.find(s2)//returns string::npos
+int loc=s2.find(s3)//returns 0
+loc=s2.find(s3,loc+1)//returns 2
+"""
+
+REFERENCE_CODE["GO"][
+    "str_match"
+] = """
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func match(first, second string) {
+    fmt.Printf("1. %s starts with %s: %t\n",
+        first, second, strings.HasPrefix(first, second))
+    i := strings.Index(first, second)
+    fmt.Printf("2. %s contains %s: %t,\n", first, second, i >= 0)
+    if i >= 0 {
+        fmt.Printf("2.1. at location %d,\n", i)
+        for start := i+1;; {
+            if i = strings.Index(first[start:], second); i < 0 {
+                break
+            }
+            fmt.Printf("2.2. at location %d,\n", start+i)
+            start += i+1
+        }
+        fmt.Println("2.2. and that's all")
+    }
+    fmt.Printf("3. %s ends with %s: %t\n",
+        first, second, strings.HasSuffix(first, second))
+}
+
+func main() {
+    match("abracadabra", "abr")
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_match"
+] = """
+"abcd".startsWith("ab") //returns true
+"abcd".endsWith("zn") //returns false
+"abab".contains("bb") //returns false
+"abab".contains("ab") //returns true
+int loc = "abab".indexOf("bb") //returns -1
+loc = "abab".indexOf("ab") //returns 0
+loc = "abab".indexOf("ab",loc+1) //returns 2
+"""
+
+REFERENCE_CODE["JS"][
+    "str_match"
+] = """
+var stringA = "tacoloco"
+  , stringB = "co"
+  , q1, q2, q2multi, m
+  , q2matches = []
+
+// stringA starts with stringB
+q1 = stringA.substring(0, stringB.length) == stringB
+
+// stringA contains stringB
+q2  = stringA.indexOf(stringB)
+
+// multiple matches
+q2multi = new RegExp(stringB,'g')
+
+while(m = q2multi.exec(stringA)){
+	q2matches.push(m.index)
+}
+
+// stringA ends with stringB
+q3 = stringA.substr(-stringB.length) == stringB
+
+console.log("1: Does '"+stringA+"' start with '"+stringB+"'? " + ( q1 ? "Yes." : "No."))
+console.log("2: Is '"+stringB+"' contained in '"+stringA+"'? " + (~q2 ? "Yes, at index "+q2+"." : "No."))
+if (~q2 && q2matches.length > 1){
+	console.log("   In fact, it happens "+q2matches.length+" times within '"+stringA+"', at index"+(q2matches.length > 1 ? "es" : "")+" "+q2matches.join(', ')+".")
+}
+console.log("3: Does '"+stringA+"' end with '"+stringB+"'? "   + ( q3 ? "Yes." : "No."))
+"""
+
+REFERENCE_CODE["PY"][
+    "str_match"
+] = """
+"abcd".startswith("ab") #returns True
+"abcd".endswith("zn") #returns False
+"bb" in "abab" #returns False
+"ab" in "abab" #returns True
+loc = "abab".find("bb") #returns -1
+loc = "abab".find("ab") #returns 0
+loc = "abab".find("ab",loc+1) #returns 2
+"""
+
+REFERENCE_CODE["RS"][
+    "str_match"
+] = """
+fn print_match(possible_match: Option<usize>) {
+    match possible_match {
+        Some(match_pos) => println!("Found match at pos {}", match_pos),
+        None => println!("Did not find any matches")
+    }
+}
+
+fn main() {
+    let s1 = "abcd";
+    let s2 = "abab";
+    let s3 = "ab";
+    
+    // Determining if the first string starts with second string
+    assert!(s1.starts_with(s3));
+    // Determining if the first string contains the second string at any location
+    assert!(s1.contains(s3));
+    // Print the location of the match 
+    print_match(s1.find(s3)); // Found match at pos 0
+    print_match(s1.find(s2)); // Did not find any matches
+    // Determining if the first string ends with the second string
+    assert!(s2.ends_with(s3));
+}
+"""
+
+REFERENCE_CODE["C"][
+    "str_prepend"
+] = """
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main()
+{
+    char str[100]="my String";
+    char *cstr="Changed ";
+    char *dup;
+    sprintf(str,"%s%s",cstr,(dup=strdup(str)));
+    free(dup);
+    printf("%s\n",str);
+    return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_prepend"
+] = """
+include <vector>
+#include <algorithm>
+#include <string>
+#include <iostream>
+
+int main( ) {
+   std::vector<std::string> myStrings { "prepended to" , "my string" } ;
+   std::string prepended = std::accumulate( myStrings.begin( ) , 
+	 myStrings.end( ) , std::string( "" ) , []( std::string a , 
+	    std::string b ) { return a + b ; } ) ;
+   std::cout << prepended << std::endl ;
+   return 0 ;
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_prepend"
+] = """
+s := "world!"
+s = "Hello, " + s
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_prepend"
+] = """
+String string = "def";
+string = "abc" + string;
+"""
+
+REFERENCE_CODE["JS"][
+    "str_prepend"
+] = """
+// No built-in prepend
+var s=", World"
+s = "Hello" + s
+print(s);
+"""
+
+REFERENCE_CODE["PY"][
+    "str_prepend"
+] = """
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+s = "12345678"
+s = "0" + s  # by concatenation
+print(s)
+"""
+
+REFERENCE_CODE["RS"][
+    "str_prepend"
+] = """
+let mut s = "World".to_string();
+s.insert_str(0, "Hello ");
+println!("{}", s);
+"""
+
+REFERENCE_CODE["C"][
+    "str_substring"
+] = """
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *substring(const char *s, size_t n, ptrdiff_t m)
+{
+  char *result;
+  /* check for null s */
+  if (NULL == s)
+    return NULL;
+  /* negative m to mean 'up to the mth char from right' */
+  if (m < 0) 
+    m = strlen(s) + m - n + 1;
+
+  /* n < 0 or m < 0 is invalid */
+  if (n < 0 || m < 0)
+    return NULL;
+
+  /* make sure string does not end before n 
+   * and advance the "s" pointer to beginning of substring */
+  for ( ; n > 0; s++, n--)
+    if (*s == '\0')
+      /* string ends before n: invalid */
+      return NULL;
+
+  result = malloc(m+1);
+  if (NULL == result)
+    /* memory allocation failed */
+    return NULL;
+  result[0]=0;
+  strncat(result, s, m); /* strncat() will automatically add null terminator
+                          * if string ends early or after reading m characters */
+  return result;
+}
+
+char *str_wholeless1(const char *s)
+{
+  return substring(s, 0, strlen(s) - 1);
+}
+
+char *str_fromch(const char *s, int ch, ptrdiff_t m)
+{
+  return substring(s, strchr(s, ch) - s, m);
+}
+
+char *str_fromstr(const char *s, char *in, ptrdiff_t m)
+{
+  return substring(s, strstr(s, in) - s , m);
+}
+
+
+#define TEST(A) do {		\
+    char *r = (A);		\
+    if (NULL == r)		\
+      puts("--error--");	\
+    else {			\
+      puts(r);			\
+      free(r);			\
+    }				\
+  } while(0)
+
+int main()
+{
+  const char *s = "hello world shortest program";
+
+  TEST( substring(s, 12, 5) );		// get "short"
+  TEST( substring(s, 6, -1) );		// get "world shortest program"
+  TEST( str_wholeless1(s) );		// "... progra"
+  TEST( str_fromch(s, 'w', 5) );	// "world"
+  TEST( str_fromstr(s, "ro", 3) );	// "rog"
+
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "str_substring"
+] = """
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string s = "0123456789";
+
+  int const n = 3;
+  int const m = 4;
+  char const c = '2';
+  std::string const sub = "456";
+
+  std::cout << s.substr(n, m)<< "\n";
+  std::cout << s.substr(n) << "\n";
+  std::cout << s.substr(0, s.size()-1) << "\n";
+  std::cout << s.substr(s.find(c), m) << "\n";
+  std::cout << s.substr(s.find(sub), m) << "\n";
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "str_substring"
+] = """
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func main() {
+    s := "ABCDEFGH"
+    n, m := 2, 3
+    // for reference
+    fmt.Println("Index: ", "01234567")
+    fmt.Println("String:", s)
+    // starting from n characters in and of m length
+    fmt.Printf("Start %d, length %d:    %s\n", n, m, s[n : n+m])
+    // starting from n characters in, up to the end of the string
+    fmt.Printf("Start %d, to end:      %s\n", n, s[n:])
+    // whole string minus last character
+    fmt.Printf("All but last:         %s\n", s[:len(s)-1])
+    // starting from a known character within the string and of m length
+    dx := strings.IndexByte(s, 'D')
+    fmt.Printf("Start 'D', length %d:  %s\n", m, s[dx : dx+m])
+    // starting from a known substring within the string and of m length
+    sx := strings.Index(s, "DE")
+    fmt.Printf(`Start "DE", length %d: %s`+"\n", m, s[sx : sx+m])
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "str_substring"
+] = """
+public static String Substring(String str, int n, int m){
+    return str.substring(n, n+m);
+}
+public static String Substring(String str, int n){
+    return str.substring(n);
+}
+public static String Substring(String str){
+    return str.substring(0, str.length()-1);
+}
+public static String Substring(String str, char c, int m){
+    return str.substring(str.indexOf(c), str.indexOf(c)+m+1);
+}
+public static String Substring(String str, String sub, int m){
+    return str.substring(str.indexOf(sub), str.indexOf(sub)+m+1);
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "str_substring"
+] = """
+var str = "abcdefgh";
+
+var n = 2;
+var m = 3;
+
+//  *  starting from n characters in and of m length;
+str.substr(n, m);  // => "cde"
+
+//  * starting from n characters in, up to the end of the string;
+str.substr(n);  // => "cdefgh"
+str.substring(n);  // => "cdefgh"
+
+//  * whole string minus last character;
+str.substring(0, str.length - 1);  // => "abcdefg"
+
+//  * starting from a known character within the string and of m length;
+str.substr(str.indexOf('b'), m);  // => "bcd"
+
+//  * starting from a known substring within the string and of m length. 
+str.substr(str.indexOf('bc'), m);  // => "bcd"
+"""
+
+REFERENCE_CODE["PY"][
+    "str_substring"
+] = """
+s = 'abcdefgh'
+n, m, char, chars = 2, 3, 'd', 'cd'
+# starting from n=2 characters in and m=3 in length;
+print(s[n-1:n+m-1])
+# starting from n characters in, up to the end of the string;
+print(s[n-1:])
+# whole string minus last character;
+print(s[:-1])
+# starting from a known character char="d" within the string and of m length;
+indx = s.index(char)
+print(s[indx:indx+m])
+# starting from a known substring chars="cd" within the string and of m length. 
+indx = s.index(chars)
+print(s[indx:indx+m])
+"""
+
+REFERENCE_CODE["RS"][
+    "str_substring"
+] = """
+let s = "abc文字化けdef";
+let n = 2;
+let m = 3;
+
+    // Print 3 characters starting at index 2 (c文字)
+println!("{}", s.chars().skip(n).take(m).collect::<String>());
+
+    // Print all characters starting at index 2 (c文字化けdef)
+println!("{}", s.chars().skip(n).collect::<String>());
+
+    // Print all characters except the last (abc文字化けde)
+println!("{}", s.chars().rev().skip(1).collect::<String>());
+
+    // Print 3 characters starting with 'b' (bc文)
+let cpos = s.find('b').unwrap();
+println!("{}", s[cpos..].chars().take(m).collect::<String>());
+
+    // Print 3 characters starting with "けd" (けde)
+let spos = s.find("けd").unwrap();
+println!("{}", s[spos..].chars().take(m).collect::<String>());
+"""
+
+REFERENCE_CODE["C"][
+    "file_exists"
+] = """
+#include <sys/types.h> 
+#include <sys/stat.h>
+#include <stdio.h>
+#include <unistd.h>
+
+/* Check for regular file. */
+int check_reg(const char *path) {
+	struct stat sb;
+	return stat(path, &sb) == 0 && S_ISREG(sb.st_mode);
+}
+
+/* Check for directory. */
+int check_dir(const char *path) {
+	struct stat sb;
+	return stat(path, &sb) == 0 && S_ISDIR(sb.st_mode);
+}
+
+int main() {
+	printf("input.txt is a regular file? %s\n",
+	    check_reg("input.txt") ? "yes" : "no");
+	printf("docs is a directory? %s\n",
+	    check_dir("docs") ? "yes" : "no");
+	printf("/input.txt is a regular file? %s\n",
+	    check_reg("/input.txt") ? "yes" : "no");
+	printf("/docs is a directory? %s\n",
+	    check_dir("/docs") ? "yes" : "no");
+	return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "file_exists"
+] = """
+#include <iostream>
+#include <filesystem>
+
+void file_exists(const std::filesystem::path& path) {
+    std::cout << path;
+    if (  std::filesystem::exists(path) ) {
+    	if ( std::filesystem::is_directory(path) ) {
+    		std::cout << " is a directory" << std::endl;
+    	} else {
+    		std::cout << " exists with a file size of " << std::filesystem::file_size(path) << " bytes." << std::endl;
+    	}
+    } else {
+        std::cout << " does not exist" << std::endl;
+    }
+}
+
+int main() {
+	file_exists("input.txt");
+	file_exists("zero_length.txt");
+	file_exists("docs/input.txt");
+	file_exists("docs/zero_length.txt");
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "file_exists"
+] = """
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func printStat(p string) {
+    switch i, err := os.Stat(p); {
+    case err != nil:
+        fmt.Println(err)
+    case i.IsDir():
+        fmt.Println(p, "is a directory")
+    default:
+        fmt.Println(p, "is a file")
+    }
+}
+
+func main() {
+    printStat("input.txt")
+    printStat("/input.txt")
+    printStat("docs")
+    printStat("/docs")
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "file_exists"
+] = """
+new File("docs/input.txt").exists();
+new File("/docs/input.txt").exists();
+"""
+
+REFERENCE_CODE["JS"][
+    "file_exists"
+] = """
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+
+fso.FileExists('input.txt');
+fso.FileExists('c:/input.txt');
+fso.FolderExists('docs');
+fso.FolderExists('c:/docs');
+"""
+
+REFERENCE_CODE["PY"][
+    "file_exists"
+] = """
+import os
+
+os.path.isfile("input.txt")
+os.path.isfile("/input.txt")
+os.path.isdir("docs")
+os.path.isdir("/docs")
+"""
+
+REFERENCE_CODE["RS"][
+    "file_exists"
+] = """
+use std::fs;
+
+fn main() {
+    for file in ["input.txt", "docs", "/input.txt", "/docs"].iter() {
+        match fs::metadata(file) {
+            Ok(attr) => {
+                if attr.is_dir() {
+                    println!("{} is a directory", file);
+                }else {
+                    println!("{} is a file", file);
+                }
+            },
+            Err(_) => {
+                println!("{} does not exist", file);
+            }
+        };
+    }
+}
+"""
+
+REFERENCE_CODE["C"][
+    "file_create"
+] = """
+#include <sys/stat.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main() { /* permissions are before umask */
+  int fd = open("output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0640); /* rights 0640 for rw-r----- */
+  /* or equivalently:
+     int fd = creat("output.txt", 0640); */ /* rights 0640 for rw-r----- */
+  close(fd);
+
+  mkdir("docs", 0750); /* rights 0750 for rwxr-x--- */
+
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "file_create"
+] = """
+#include <filesystem>
+#include <fstream>
+
+namespace fs = std::filesystem;
+
+int main() {
+    std::fstream f("output.txt", std::ios::out);
+    f.close();
+    f.open("/output.txt", std::ios::out);
+    f.close();
+
+    fs::create_directory("docs");
+    fs::create_directory("/docs");
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "file_create"
+] = """
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func createFile(fn string) {
+    f, err := os.Create(fn)
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
+    fmt.Println("file", fn, "created!")
+    f.Close()
+}
+
+func createDir(dn string) {
+    err := os.Mkdir(dn, 0666)
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
+    fmt.Println("directory", dn, "created!")
+}
+
+func main() {
+    createFile("input.txt")
+    createFile("/input.txt")
+    createDir("docs")
+    createDir("/docs")
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "file_create"
+] = """
+import java.io.File;
+import java.io.IOException;
+
+public class CreateFileTest {
+	public static void main(String args[]) {
+		try {
+			new File("output.txt").createNewFile();
+			new File(File.separator + "output.txt").createNewFile();
+			new File("docs").mkdir();
+			new File(File.separator + "docs").mkdir();
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+	}
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "file_create"
+] = """
+const fs = require('fs');
+
+function fct(err) {
+  if (err) console.log(err);
+}
+
+fs.writeFile("output.txt", "", fct);
+fs.writeFile("/output.txt", "", fct);
+
+fs.mkdir("docs", fct);
+fs.mkdir("/docs", fct);
+"""
+
+REFERENCE_CODE["PY"][
+    "file_create"
+] = """
+from __future__ import with_statement
+import os
+def create(directory):
+    with open(os.path.join(directory, "output.txt"), "w"):
+        pass
+    os.mkdir(os.path.join(directory, "docs"))
+   
+create(".") # current directory
+create("/") # root directory
+"""
+
+REFERENCE_CODE["RS"][
+    "file_create"
+] = """
+use std::io::{self, Write};
+use std::fs::{DirBuilder, File};
+use std::path::Path;
+use std::{process,fmt};
+
+const FILE_NAME: &'static str = "output.txt";
+const DIR_NAME : &'static str = "docs";
+
+fn main() {
+    create(".").and(create("/"))
+               .unwrap_or_else(|e| error_handler(e,1));
+}
+
+
+fn create<P>(root: P) -> io::Result<File>
+    where P: AsRef<Path>
+{
+    let f_path = root.as_ref().join(FILE_NAME);
+    let d_path = root.as_ref().join(DIR_NAME);
+    DirBuilder::new().create(d_path).and(File::create(f_path))
+}
+
+fn error_handler<E: fmt::Display>(error: E, code: i32) -> ! {
+    let _ = writeln!(&mut io::stderr(), "Error: {}", error);
+    process::exit(code)
+}
+"""
+
+REFERENCE_CODE["C"][
+    "file_size"
+] = """
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/stat.h>
+
+int main(void)
+{
+  struct stat foo;
+  stat("input.txt", &foo);
+  printf("%ld\n", foo.st_size);
+  stat("/input.txt", &foo);
+  printf("%ld\n", foo.st_size);
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "file_size"
+] = """
+#include <filesystem>
+#include <iostream>
+
+void print_file_size(const char* filename) {
+    try {
+        auto size = std::filesystem::file_size(filename);
+        std::cout << "Size of file " << filename << " is " << size << " bytes.\n";
+    } catch (const std::exception& ex) {
+        std::cerr << ex.what() << '\n';
+    }
+}
+
+int main() {
+    print_file_size("input.txt");
+    print_file_size("/input.txt");
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "file_size"
+] = """
+package main
+
+import "fmt"
+import "os"
+
+func printFileSize(f string) {
+    if stat, err := os.Stat(f); err != nil {
+        fmt.Println(err)
+    } else {
+        fmt.Println(stat.Size())
+    }
+}
+
+func main() {
+    printFileSize("input.txt")
+    printFileSize("/input.txt")
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "file_size"
+] = """
+import java.io.File;
+
+public static void main(String[] args) {
+    File fileA = new File("file.txt");
+    System.out.printf("%,d B%n", fileA.length());
+    File fileB = new File("/file.txt");
+    System.out.printf("%,d B%n", fileB.length());
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "file_size"
+] = """
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+fso.GetFile('input.txt').Size;
+fso.GetFile('c:/input.txt').Size;
+"""
+
+REFERENCE_CODE["PY"][
+    "file_size"
+] = """
+import os
+
+size = os.path.getsize('input.txt')
+size = os.path.getsize('/input.txt')
+"""
+
+REFERENCE_CODE["RS"][
+    "file_size"
+] = """
+use std::{env, fs, process};
+use std::io::{self, Write};
+use std::fmt::Display;
+
+fn main() {
+    let file_name = env::args().nth(1).unwrap_or_else(|| exit_err("No file name supplied", 1));
+    let metadata = fs::metadata(file_name).unwrap_or_else(|e| exit_err(e, 2));
+
+    println!("Size of file.txt is {} bytes", metadata.len());
+}
+
+#[inline]
+fn exit_err<T: Display>(msg: T, code: i32) -> ! {
+    writeln!(&mut io::stderr(), "Error: {}", msg).expect("Could not write to stdout");
+    process::exit(code)
+}
+"""
+
+REFERENCE_CODE["C"][
+    "dir_make"
+] = """
+#include <stdio.h>
+#include <stdlib.h>
+#include <libgen.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+int main (int argc, char **argv) {
+    char *str, *s;
+    struct stat statBuf;
+
+    if (argc != 2) {
+        fprintf (stderr, "usage: %s <path>\n", basename (argv[0]));
+        exit (1);
+    }
+    s = argv[1];
+    while ((str = strtok (s, "/")) != NULL) {
+        if (str != s) {
+            str[-1] = '/';
+        }
+        if (stat (argv[1], &statBuf) == -1) {
+            mkdir (argv[1], 0);
+        } else {
+            if (! S_ISDIR (statBuf.st_mode)) {
+                fprintf (stderr, "couldn't create directory %s\n", argv[1]);
+                exit (1);
+            }
+        }
+        s = NULL;
+    }
+    return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "dir_make"
+] = """
+#include <filesystem>
+#include <iostream>
+
+namespace fs = std::filesystem;
+
+int main(int argc, char* argv[])
+{
+	if(argc != 2)
+	{
+		std::cout << "usage: mkdir <path>\n";
+		return -1;
+	}
+
+	fs::path pathToCreate(argv[1]);
+
+	if (fs::exists(pathToCreate))
+		return 0;
+
+	if (fs::create_directories(pathToCreate))
+		return 0;
+	else
+	{
+		std::cout << "couldn't create directory: " << pathToCreate.string() << std::endl;
+		return -1;
+	}
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "dir_make"
+] = """
+os.MkdirAll("/tmp/some/path/to/dir", 0770)
+"""
+
+REFERENCE_CODE["JAVA"][
+    "dir_make"
+] = """
+import java.io.File;
+
+public interface Test {
+
+    public static void main(String[] args) {
+        try {
+            File f = new File("C:/parent/test");
+            if (f.mkdirs())
+                System.out.println("path successfully created");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "dir_make"
+] = """
+var path = require('path');
+var fs = require('fs');
+
+function mkdirp (p, cb) {
+    cb = cb || function () {};
+    p = path.resolve(p);
+
+    fs.mkdir(p, function (er) {
+        if (!er) {
+            return cb(null);
+        }
+        switch (er.code) {
+            case 'ENOENT':
+                // The directory doesn't exist. Make its parent and try again.
+                mkdirp(path.dirname(p), function (er) {
+                    if (er) cb(er);
+                    else mkdirp(p, cb);
+                });
+                break;
+
+                // In the case of any other error, something is borked.
+            default:
+                cb(er);
+                break;
+        }
+    });
+}
+"""
+
+REFERENCE_CODE["PY"][
+    "dir_make"
+] = """
+def mkdirp(path):
+    os.makedirs(path, exist_ok=True)
+"""
+
+REFERENCE_CODE["RS"][
+    "dir_make"
+] = """
+use std::fs;
+
+fn main() {
+    fs::create_dir_all("./path/to/dir").expect("An Error Occured!")
+}
+"""
+
+REFERENCE_CODE["C"][
+    "file_rename"
+] = """
+#include <stdio.h>
+
+int main()
+{
+  rename("input.txt", "output.txt");
+  rename("docs", "mydocs");
+  rename("/input.txt", "/output.txt");
+  rename("/docs", "/mydocs");
+  return 0;
+}
+"""
+
+REFERENCE_CODE["CPP"][
+    "file_rename"
+] = """
+#include <cstdio>
+
+int main()
+{
+    std::rename("input.txt", "output.txt");
+    std::rename("docs", "mydocs");
+    std::rename("/input.txt", "/output.txt");
+    std::rename("/docs", "/mydocs");
+    return 0;
+}
+"""
+
+REFERENCE_CODE["GO"][
+    "file_rename"
+] = """
+package main
+import "os"
+
+func main() {
+  os.Rename("input.txt", "output.txt")
+  os.Rename("docs", "mydocs")
+  os.Rename("/input.txt", "/output.txt")
+  os.Rename("/docs", "/mydocs")
+}
+"""
+
+REFERENCE_CODE["JAVA"][
+    "file_rename"
+] = """
+import java.io.File;
+public class FileRenameTest {
+   public static boolean renameFile(String oldname, String newname) {
+       // File (or directory) with old name
+       File file = new File(oldname);
+   
+       // File (or directory) with new name
+       File file2 = new File(newname);
+   
+       // Rename file (or directory)
+       boolean success = file.renameTo(file2);
+       return success;
+   }
+   public static void test(String type, String oldname, String newname) {
+       System.out.println("The following " + type + " called " + oldname +
+           ( renameFile(oldname, newname) ? " was renamed as " : " could not be renamed into ")
+           + newname + "."
+       );
+   }
+   public static void main(String args[]) {
+        test("file", "input.txt", "output.txt");
+        test("file", File.separator + "input.txt", File.separator + "output.txt");
+        test("directory", "docs", "mydocs");
+        test("directory", File.separator + "docs" + File.separator, File.separator + "mydocs" + File.separator);
+   }
+}
+"""
+
+REFERENCE_CODE["JS"][
+    "file_rename"
+] = """
+var fso = new ActiveXObject("Scripting.FileSystemObject")
+fso.MoveFile("input.txt", "output.txt")
+fso.MoveFile("c:/input.txt", "c:/output.txt")
+fso.MoveFolder("docs", "mydocs")
+fso.MoveFolder("c:/docs", "c:/mydocs")
+"""
+
+REFERENCE_CODE["PY"][
+    "file_rename"
+] = """
+import os
+
+os.rename("input.txt", "output.txt")
+os.rename("docs", "mydocs")
+
+os.rename(os.sep + "input.txt", os.sep + "output.txt")
+os.rename(os.sep + "docs", os.sep + "mydocs")
+"""
+
+REFERENCE_CODE["RS"][
+    "file_rename"
+] = """
+use std::fs;
+
+fn main() {
+    let err = "File move error";
+    fs::rename("input.txt", "output.txt").ok().expect(err);
+    fs::rename("docs", "mydocs").ok().expect(err);
+    fs::rename("/input.txt", "/output.txt").ok().expect(err);
+    fs::rename("/docs", "/mydocs").ok().expect(err);
+}
+"""
