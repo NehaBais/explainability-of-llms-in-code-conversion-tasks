@@ -1,0 +1,26 @@
+The following code in C is equivalent to the original C++ program. Here, I have used the bitwise operator for each operation and provided comments on the differences between the C and C++ versions.
+```c
+#include <stdio.h>
+
+void bitwise(int a, int b)
+{
+    printf("a and b: %d\n",  a & b);
+    printf("a or b: %d\n",   a | b);
+    printf("a xor b: %d\n",  a ^ b);
+    printf("not a: %d\n",    ~a);
+
+    // Note: the C/C++ shift operators are not guaranteed to work if the shift count (that is, b)
+    // is negative or is greater or equal to the number of bits in the integer being shifted.
+    printf("a shl b: %d\n",  a << b);  // "<<" is used both for output and for left shift
+
+    // Note: arithmetic right shift, but not guaranteed
+    int ua = a;
+    printf("a shr b: %d\n",  ua >> b);  // typically arithmetic right shift, but not guaranteed
+    printf("a lsr b: %d\n",  ua >> b);  // logical right shift (guaranteed)
+
+    // there are no rotation operators in C, but as of c++20 there is a standard-library rotate function.
+    // The rotate function works for all rotation amounts, but the integer being rotated must always be an unsigned integer.
+    printf("a rol b: %d\n",  (ua << b) | ua >> (-b & (sizeof(ua) * 8 - 1)));
+    printf("a ror b: %d\n",  ((ua >> b) | ua << (-b & (sizeof(ua) * 8 - 1))) );
+}
+```

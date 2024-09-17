@@ -1,5 +1,21 @@
 # Explainability of LLMs in Code Conversion Tasks
 
+
+## BLEU explanation
+
+| Reference Code               | Translated Code              |
+| ---------------------------- | ---------------------------- |
+| `def main():               ` | `def main():               ` |
+| `   a, b = 10, 20          ` | `   a = 10                 ` |
+| `   print(a + b)           ` | `   b = 20                 ` |
+| `                          ` | `   print(a + b)           ` |
+| `if __name__ == "__main__":` | `                          ` |
+| `   main()                 ` | `if __name__ == "__main__":` |
+| `                          ` | `   main()                 ` |
+
+The above 2 codes will have a pretty high BLEU score, like lets say 0.93. BLEU score essentially tells how close is the translated code to some reference codes.
+
+
 ## Programming Languages
 
 - C
@@ -67,8 +83,8 @@
 
 | Model Name | Active Parameters | Ollama Name | HuggingFace Name | Alias | Paper Link |
 |------------|-------------------|-------------|------------------|-------|------------|
-| DeepSeek Coder | 1.3B | deepseek-coder:1.3b-instruct | deepseek-ai/deepseek-coder-1.3b-instruct | deepseekcoder | https://doi.org/10.48550/arXiv.2401.14196 |
-| CodeGemma | 2B | codegemma:2b | google/codegemma-1.1-2b | codegemma2b | https://doi.org/10.48550/arXiv.2406.11409 |
+| ~~DeepSeek Coder~~ | 1.3B | deepseek-coder:1.3b-instruct | deepseek-ai/deepseek-coder-1.3b-instruct | deepseekcoder | https://doi.org/10.48550/arXiv.2401.14196 |
+| ~~CodeGemma~~ | 2B | codegemma:2b | google/codegemma-1.1-2b | codegemma2b | https://doi.org/10.48550/arXiv.2406.11409 |
 | DeepSeek Coder V2 | 2.4B | deepseek-coder-v2:16b-lite-base-q4_0 | deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct | deepseekcoderv2 | https://doi.org/10.48550/arXiv.2406.11931 |
 | Stable Code | 3B | stable-code:instruct | stabilityai/stable-code-instruct-3b | stablecode | https://doi.org/10.48550/arXiv.2404.01226 |
 | Granite Code | 3B | granite-code:3b-instruct | ibm-granite/granite-3b-code-instruct | granitecode3b | https://doi.org/10.48550/arXiv.2405.04324 |

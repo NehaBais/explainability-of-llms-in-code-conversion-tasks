@@ -1,0 +1,20 @@
+let input1 = 18;
+// input1 = prompt();
+let input2 = 7;
+// input2 = prompt();
+
+let qq = input1 + input2;
+console.log("Sum: " + qq);
+let ww = input1 - input2;
+console.log("Difference: " + ww);
+let ee = input1 * input2;
+console.log("Product: " + ee);
+let rr = Math.floor(input1 / input2);
+console.log("Integer quotient: " + rr);
+console.log("Float quotient: " + input1 / input2);
+let tt = (input1 / input2).toFixed(10);
+let uu = Math.abs((parseInt(tt) - parseFloat(tt)) * -10).toFixed(10);
+console.log("Whole Remainder: " + uu);
+console.log("Actual Remainder: " + tt.substring(tt.length - 1, tt.length));
+let yy = Math.pow(input1, input2);
+console.log("Exponentiation: " + yy);

@@ -1,0 +1,16 @@
+Sure! Here's the equivalent JavaScript code:
+```
+function bitwise(a, b) {
+ console.log("a AND b: " + (a & b));
+ console.log("a OR b: "+ (a | b));
+ console.log("a XOR b: "+ (a ^ b));
+ console.log("NOT a: " + ~a);
+ console.log("a << b: " + (a << b)); // left shift
+ console.log("a >> b: " + (a >> b)); // arithmetic right shift
+ console.log("a >>> b: " + (a >>> b)); // logical right shift
+ console.log("a rol b: " + (a << b)); //rotate left, Java 1.5+
+ console.log("a ror b: " + (a >> b)); //rotate right, Java 1.5+
+}
+```
+Note that JavaScript uses the `<<` and `>>>` operators for arithmetic and logical shifts, respectively. Also, the `Integer.rotateLeft()` and `Integer.rotateRight()` methods are not supported in JavaScript. Instead, you can use bitwise operations to achieve similar functionality.
+

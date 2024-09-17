@@ -1,0 +1,2487 @@
+Starting code formatting
+Formatting C files ...
+Formatting [1/257] results/accepted_code/codegeex4-bit_ops-cpp-c.c
+Formatting [2/257] results/accepted_code/codegeex4-bit_ops-go-c.c
+Formatting [3/257] results/accepted_code/codegeex4-bit_ops-java-c.c
+Formatting [4/257] results/accepted_code/codegeex4-bit_ops-js-c.c
+Formatting [5/257] results/accepted_code/codegeex4-bit_ops-py-c.c
+Formatting [6/257] results/accepted_code/codegeex4-bit_ops-rs-c.c
+Formatting [7/257] results/accepted_code/codegeex4-int_arith-cpp-c.c
+Formatting [8/257] results/accepted_code/codegeex4-int_arith-go-c.c
+Formatting [9/257] results/accepted_code/codegeex4-int_arith-java-c.c
+Formatting [10/257] results/accepted_code/codegeex4-int_arith-js-c.c
+Formatting [11/257] results/accepted_code/codegeex4-int_arith-py-c.c
+Formatting [12/257] results/accepted_code/codegeex4-int_arith-rs-c.c
+Formatting [13/257] results/accepted_code/codegeex4-int_cmp-cpp-c.c
+Formatting [14/257] results/accepted_code/codegeex4-int_cmp-go-c.c
+Formatting [15/257] results/accepted_code/codegeex4-int_cmp-java-c.c
+Formatting [16/257] results/accepted_code/codegeex4-int_cmp-js-c.c
+Formatting [17/257] results/accepted_code/codegeex4-int_cmp-py-c.c
+Formatting [18/257] results/accepted_code/codegeex4-int_cmp-rs-c.c
+Formatting [19/257] results/accepted_code/codegeex4-int_factors-cpp-c.c
+Formatting [20/257] results/accepted_code/codegeex4-int_factors-go-c.c
+Formatting [21/257] results/accepted_code/codegeex4-int_factors-java-c.c
+Formatting [22/257] results/accepted_code/codegeex4-int_factors-js-c.c
+Formatting [23/257] results/accepted_code/codegeex4-int_factors-py-c.c
+Formatting [24/257] results/accepted_code/codegeex4-int_factors-rs-c.c
+Formatting [25/257] results/accepted_code/codegemma7b-bit_ops-cpp-c.c
+Formatting [26/257] results/accepted_code/codegemma7b-bit_ops-go-c.c
+Formatting [27/257] results/accepted_code/codegemma7b-bit_ops-java-c.c
+Formatting [28/257] results/accepted_code/codegemma7b-bit_ops-js-c.c
+Formatting [29/257] results/accepted_code/codegemma7b-bit_ops-py-c.c
+Formatting [30/257] results/accepted_code/codegemma7b-bit_ops-rs-c.c
+Formatting [31/257] results/accepted_code/codegemma7b-int_arith-cpp-c.c
+Formatting [32/257] results/accepted_code/codegemma7b-int_arith-go-c.c
+Formatting [33/257] results/accepted_code/codegemma7b-int_arith-java-c.c
+Formatting [34/257] results/accepted_code/codegemma7b-int_arith-js-c.c
+Formatting [35/257] results/accepted_code/codegemma7b-int_arith-py-c.c
+Formatting [36/257] results/accepted_code/codegemma7b-int_arith-rs-c.c
+Formatting [37/257] results/accepted_code/codegemma7b-int_cmp-cpp-c.c
+Formatting [38/257] results/accepted_code/codegemma7b-int_cmp-go-c.c
+Formatting [39/257] results/accepted_code/codegemma7b-int_cmp-java-c.c
+Formatting [40/257] results/accepted_code/codegemma7b-int_cmp-js-c.c
+Formatting [41/257] results/accepted_code/codegemma7b-int_cmp-py-c.c
+Formatting [42/257] results/accepted_code/codegemma7b-int_cmp-rs-c.c
+Formatting [43/257] results/accepted_code/codegemma7b-int_factors-cpp-c.c
+Formatting [44/257] results/accepted_code/codegemma7b-int_factors-go-c.c
+Formatting [45/257] results/accepted_code/codegemma7b-int_factors-java-c.c
+Formatting [46/257] results/accepted_code/codegemma7b-int_factors-js-c.c
+Formatting [47/257] results/accepted_code/codegemma7b-int_factors-py-c.c
+Formatting [48/257] results/accepted_code/codegemma7b-int_factors-rs-c.c
+Formatting [49/257] results/accepted_code/codellama7b-bit_ops-cpp-c.c
+Formatting [50/257] results/accepted_code/codellama7b-bit_ops-go-c.c
+Formatting [51/257] results/accepted_code/codellama7b-bit_ops-java-c.c
+Formatting [52/257] results/accepted_code/codellama7b-bit_ops-js-c.c
+Formatting [53/257] results/accepted_code/codellama7b-bit_ops-py-c.c
+Formatting [54/257] results/accepted_code/codellama7b-bit_ops-rs-c.c
+Formatting [55/257] results/accepted_code/codellama7b-int_arith-cpp-c.c
+Formatting [56/257] results/accepted_code/codellama7b-int_arith-go-c.c
+Formatting [57/257] results/accepted_code/codellama7b-int_arith-java-c.c
+Formatting [58/257] results/accepted_code/codellama7b-int_arith-js-c.c
+Formatting [59/257] results/accepted_code/codellama7b-int_arith-py-c.c
+Formatting [60/257] results/accepted_code/codellama7b-int_arith-rs-c.c
+Formatting [61/257] results/accepted_code/codellama7b-int_cmp-cpp-c.c
+Formatting [62/257] results/accepted_code/codellama7b-int_cmp-go-c.c
+Formatting [63/257] results/accepted_code/codellama7b-int_cmp-java-c.c
+Formatting [64/257] results/accepted_code/codellama7b-int_cmp-js-c.c
+Formatting [65/257] results/accepted_code/codellama7b-int_cmp-py-c.c
+Formatting [66/257] results/accepted_code/codellama7b-int_cmp-rs-c.c
+Formatting [67/257] results/accepted_code/codellama7b-int_factors-cpp-c.c
+Formatting [68/257] results/accepted_code/codellama7b-int_factors-go-c.c
+Formatting [69/257] results/accepted_code/codellama7b-int_factors-java-c.c
+Formatting [70/257] results/accepted_code/codellama7b-int_factors-py-c.c
+Formatting [71/257] results/accepted_code/codellama7b-int_factors-rs-c.c
+Formatting [72/257] results/accepted_code/codeqwen-bit_ops-cpp-c.c
+Formatting [73/257] results/accepted_code/codeqwen-bit_ops-go-c.c
+Formatting [74/257] results/accepted_code/codeqwen-bit_ops-java-c.c
+Formatting [75/257] results/accepted_code/codeqwen-bit_ops-js-c.c
+Formatting [76/257] results/accepted_code/codeqwen-bit_ops-py-c.c
+Formatting [77/257] results/accepted_code/codeqwen-bit_ops-rs-c.c
+Formatting [78/257] results/accepted_code/codeqwen-int_arith-cpp-c.c
+Formatting [79/257] results/accepted_code/codeqwen-int_arith-go-c.c
+Formatting [80/257] results/accepted_code/codeqwen-int_arith-java-c.c
+Formatting [81/257] results/accepted_code/codeqwen-int_arith-js-c.c
+Formatting [82/257] results/accepted_code/codeqwen-int_arith-py-c.c
+Formatting [83/257] results/accepted_code/codeqwen-int_arith-rs-c.c
+Formatting [84/257] results/accepted_code/codeqwen-int_cmp-cpp-c.c
+Formatting [85/257] results/accepted_code/codeqwen-int_cmp-go-c.c
+Formatting [86/257] results/accepted_code/codeqwen-int_cmp-java-c.c
+Formatting [87/257] results/accepted_code/codeqwen-int_cmp-js-c.c
+Formatting [88/257] results/accepted_code/codeqwen-int_cmp-py-c.c
+Formatting [89/257] results/accepted_code/codeqwen-int_cmp-rs-c.c
+Formatting [90/257] results/accepted_code/codeqwen-int_factors-cpp-c.c
+Formatting [91/257] results/accepted_code/codeqwen-int_factors-go-c.c
+Formatting [92/257] results/accepted_code/codeqwen-int_factors-java-c.c
+Formatting [93/257] results/accepted_code/codeqwen-int_factors-js-c.c
+Formatting [94/257] results/accepted_code/codeqwen-int_factors-py-c.c
+Formatting [95/257] results/accepted_code/codeqwen-int_factors-rs-c.c
+Formatting [96/257] results/accepted_code/deepseekcoder7b-bit_ops-cpp-c.c
+Formatting [97/257] results/accepted_code/deepseekcoder7b-bit_ops-go-c.c
+Formatting [98/257] results/accepted_code/deepseekcoder7b-bit_ops-java-c.c
+Formatting [99/257] results/accepted_code/deepseekcoder7b-bit_ops-js-c.c
+Formatting [100/257] results/accepted_code/deepseekcoder7b-bit_ops-py-c.c
+Formatting [101/257] results/accepted_code/deepseekcoder7b-bit_ops-rs-c.c
+Formatting [102/257] results/accepted_code/deepseekcoder7b-int_arith-cpp-c.c
+Formatting [103/257] results/accepted_code/deepseekcoder7b-int_arith-go-c.c
+Formatting [104/257] results/accepted_code/deepseekcoder7b-int_arith-java-c.c
+Formatting [105/257] results/accepted_code/deepseekcoder7b-int_arith-js-c.c
+Formatting [106/257] results/accepted_code/deepseekcoder7b-int_arith-py-c.c
+Formatting [107/257] results/accepted_code/deepseekcoder7b-int_arith-rs-c.c
+Formatting [108/257] results/accepted_code/deepseekcoder7b-int_cmp-cpp-c.c
+Formatting [109/257] results/accepted_code/deepseekcoder7b-int_cmp-go-c.c
+Formatting [110/257] results/accepted_code/deepseekcoder7b-int_cmp-java-c.c
+Formatting [111/257] results/accepted_code/deepseekcoder7b-int_cmp-js-c.c
+Formatting [112/257] results/accepted_code/deepseekcoder7b-int_cmp-py-c.c
+Formatting [113/257] results/accepted_code/deepseekcoder7b-int_cmp-rs-c.c
+Formatting [114/257] results/accepted_code/deepseekcoder7b-int_factors-cpp-c.c
+Formatting [115/257] results/accepted_code/deepseekcoder7b-int_factors-go-c.c
+Formatting [116/257] results/accepted_code/deepseekcoder7b-int_factors-java-c.c
+Formatting [117/257] results/accepted_code/deepseekcoder7b-int_factors-js-c.c
+Formatting [118/257] results/accepted_code/deepseekcoder7b-int_factors-py-c.c
+Formatting [119/257] results/accepted_code/deepseekcoder7b-int_factors-rs-c.c
+Formatting [120/257] results/accepted_code/deepseekcoderv2-bit_ops-cpp-c.c
+Formatting [121/257] results/accepted_code/deepseekcoderv2-bit_ops-java-c.c
+Formatting [122/257] results/accepted_code/deepseekcoderv2-bit_ops-js-c.c
+Formatting [123/257] results/accepted_code/deepseekcoderv2-bit_ops-rs-c.c
+Formatting [124/257] results/accepted_code/deepseekcoderv2-int_arith-cpp-c.c
+Formatting [125/257] results/accepted_code/deepseekcoderv2-int_arith-java-c.c
+Formatting [126/257] results/accepted_code/deepseekcoderv2-int_arith-py-c.c
+Formatting [127/257] results/accepted_code/deepseekcoderv2-int_arith-rs-c.c
+Formatting [128/257] results/accepted_code/deepseekcoderv2-int_cmp-cpp-c.c
+Formatting [129/257] results/accepted_code/deepseekcoderv2-int_cmp-go-c.c
+Formatting [130/257] results/accepted_code/deepseekcoderv2-int_cmp-java-c.c
+Formatting [131/257] results/accepted_code/deepseekcoderv2-int_cmp-js-c.c
+Formatting [132/257] results/accepted_code/deepseekcoderv2-int_cmp-py-c.c
+Formatting [133/257] results/accepted_code/deepseekcoderv2-int_cmp-rs-c.c
+Formatting [134/257] results/accepted_code/deepseekcoderv2-int_factors-cpp-c.c
+Formatting [135/257] results/accepted_code/deepseekcoderv2-int_factors-go-c.c
+Formatting [136/257] results/accepted_code/deepseekcoderv2-int_factors-java-c.c
+Formatting [137/257] results/accepted_code/deepseekcoderv2-int_factors-js-c.c
+Formatting [138/257] results/accepted_code/deepseekcoderv2-int_factors-py-c.c
+Formatting [139/257] results/accepted_code/deepseekcoderv2-int_factors-rs-c.c
+Formatting [140/257] results/accepted_code/dolphincoder7b-bit_ops-cpp-c.c
+Formatting [141/257] results/accepted_code/dolphincoder7b-bit_ops-go-c.c
+Formatting [142/257] results/accepted_code/dolphincoder7b-bit_ops-java-c.c
+Formatting [143/257] results/accepted_code/dolphincoder7b-bit_ops-js-c.c
+Formatting [144/257] results/accepted_code/dolphincoder7b-bit_ops-py-c.c
+Formatting [145/257] results/accepted_code/dolphincoder7b-bit_ops-rs-c.c
+Formatting [146/257] results/accepted_code/dolphincoder7b-int_arith-cpp-c.c
+Formatting [147/257] results/accepted_code/dolphincoder7b-int_arith-go-c.c
+Formatting [148/257] results/accepted_code/dolphincoder7b-int_arith-java-c.c
+Formatting [149/257] results/accepted_code/dolphincoder7b-int_arith-js-c.c
+Formatting [150/257] results/accepted_code/dolphincoder7b-int_arith-py-c.c
+Formatting [151/257] results/accepted_code/dolphincoder7b-int_arith-rs-c.c
+Formatting [152/257] results/accepted_code/dolphincoder7b-int_cmp-cpp-c.c
+Formatting [153/257] results/accepted_code/dolphincoder7b-int_cmp-go-c.c
+Formatting [154/257] results/accepted_code/dolphincoder7b-int_cmp-java-c.c
+Formatting [155/257] results/accepted_code/dolphincoder7b-int_cmp-js-c.c
+Formatting [156/257] results/accepted_code/dolphincoder7b-int_cmp-rs-c.c
+Formatting [157/257] results/accepted_code/dolphincoder7b-int_factors-cpp-c.c
+Formatting [158/257] results/accepted_code/dolphincoder7b-int_factors-go-c.c
+Formatting [159/257] results/accepted_code/dolphincoder7b-int_factors-java-c.c
+Formatting [160/257] results/accepted_code/dolphincoder7b-int_factors-js-c.c
+Formatting [161/257] results/accepted_code/dolphincoder7b-int_factors-py-c.c
+Formatting [162/257] results/accepted_code/dolphincoder7b-int_factors-rs-c.c
+Formatting [163/257] results/accepted_code/granitecode3b-bit_ops-cpp-c.c
+Formatting [164/257] results/accepted_code/granitecode3b-bit_ops-go-c.c
+Formatting [165/257] results/accepted_code/granitecode3b-bit_ops-java-c.c
+Formatting [166/257] results/accepted_code/granitecode3b-bit_ops-js-c.c
+Formatting [167/257] results/accepted_code/granitecode3b-bit_ops-py-c.c
+Formatting [168/257] results/accepted_code/granitecode3b-bit_ops-rs-c.c
+Formatting [169/257] results/accepted_code/granitecode3b-int_arith-cpp-c.c
+Formatting [170/257] results/accepted_code/granitecode3b-int_arith-go-c.c
+Formatting [171/257] results/accepted_code/granitecode3b-int_arith-java-c.c
+Formatting [172/257] results/accepted_code/granitecode3b-int_arith-js-c.c
+Formatting [173/257] results/accepted_code/granitecode3b-int_arith-py-c.c
+Formatting [174/257] results/accepted_code/granitecode3b-int_arith-rs-c.c
+Formatting [175/257] results/accepted_code/granitecode3b-int_cmp-cpp-c.c
+Formatting [176/257] results/accepted_code/granitecode3b-int_cmp-go-c.c
+Formatting [177/257] results/accepted_code/granitecode3b-int_cmp-java-c.c
+Formatting [178/257] results/accepted_code/granitecode3b-int_cmp-js-c.c
+Formatting [179/257] results/accepted_code/granitecode3b-int_cmp-py-c.c
+Formatting [180/257] results/accepted_code/granitecode3b-int_cmp-rs-c.c
+Formatting [181/257] results/accepted_code/granitecode3b-int_factors-cpp-c.c
+Formatting [182/257] results/accepted_code/granitecode3b-int_factors-go-c.c
+Formatting [183/257] results/accepted_code/granitecode3b-int_factors-java-c.c
+Formatting [184/257] results/accepted_code/granitecode3b-int_factors-js-c.c
+Formatting [185/257] results/accepted_code/granitecode3b-int_factors-py-c.c
+Formatting [186/257] results/accepted_code/granitecode3b-int_factors-rs-c.c
+Formatting [187/257] results/accepted_code/granitecode8b-bit_ops-cpp-c.c
+Formatting [188/257] results/accepted_code/granitecode8b-bit_ops-go-c.c
+Formatting [189/257] results/accepted_code/granitecode8b-bit_ops-java-c.c
+Formatting [190/257] results/accepted_code/granitecode8b-bit_ops-js-c.c
+Formatting [191/257] results/accepted_code/granitecode8b-bit_ops-py-c.c
+Formatting [192/257] results/accepted_code/granitecode8b-bit_ops-rs-c.c
+Formatting [193/257] results/accepted_code/granitecode8b-int_arith-cpp-c.c
+Formatting [194/257] results/accepted_code/granitecode8b-int_arith-go-c.c
+Formatting [195/257] results/accepted_code/granitecode8b-int_arith-java-c.c
+Formatting [196/257] results/accepted_code/granitecode8b-int_arith-js-c.c
+Formatting [197/257] results/accepted_code/granitecode8b-int_arith-py-c.c
+Formatting [198/257] results/accepted_code/granitecode8b-int_arith-rs-c.c
+Formatting [199/257] results/accepted_code/granitecode8b-int_cmp-cpp-c.c
+Formatting [200/257] results/accepted_code/granitecode8b-int_cmp-go-c.c
+Formatting [201/257] results/accepted_code/granitecode8b-int_cmp-java-c.c
+Formatting [202/257] results/accepted_code/granitecode8b-int_cmp-js-c.c
+Formatting [203/257] results/accepted_code/granitecode8b-int_cmp-py-c.c
+Formatting [204/257] results/accepted_code/granitecode8b-int_cmp-rs-c.c
+Formatting [205/257] results/accepted_code/granitecode8b-int_factors-cpp-c.c
+Formatting [206/257] results/accepted_code/granitecode8b-int_factors-go-c.c
+Formatting [207/257] results/accepted_code/granitecode8b-int_factors-java-c.c
+Formatting [208/257] results/accepted_code/granitecode8b-int_factors-js-c.c
+Formatting [209/257] results/accepted_code/granitecode8b-int_factors-py-c.c
+Formatting [210/257] results/accepted_code/granitecode8b-int_factors-rs-c.c
+Formatting [211/257] results/accepted_code/magicoder7b-bit_ops-cpp-c.c
+Formatting [212/257] results/accepted_code/magicoder7b-bit_ops-go-c.c
+Formatting [213/257] results/accepted_code/magicoder7b-bit_ops-java-c.c
+Formatting [214/257] results/accepted_code/magicoder7b-bit_ops-js-c.c
+Formatting [215/257] results/accepted_code/magicoder7b-bit_ops-py-c.c
+Formatting [216/257] results/accepted_code/magicoder7b-bit_ops-rs-c.c
+Formatting [217/257] results/accepted_code/magicoder7b-int_arith-cpp-c.c
+Formatting [218/257] results/accepted_code/magicoder7b-int_arith-go-c.c
+Formatting [219/257] results/accepted_code/magicoder7b-int_arith-java-c.c
+Formatting [220/257] results/accepted_code/magicoder7b-int_arith-js-c.c
+Formatting [221/257] results/accepted_code/magicoder7b-int_arith-py-c.c
+Formatting [222/257] results/accepted_code/magicoder7b-int_arith-rs-c.c
+Formatting [223/257] results/accepted_code/magicoder7b-int_cmp-cpp-c.c
+Formatting [224/257] results/accepted_code/magicoder7b-int_cmp-go-c.c
+Formatting [225/257] results/accepted_code/magicoder7b-int_cmp-java-c.c
+Formatting [226/257] results/accepted_code/magicoder7b-int_cmp-js-c.c
+Formatting [227/257] results/accepted_code/magicoder7b-int_cmp-py-c.c
+Formatting [228/257] results/accepted_code/magicoder7b-int_cmp-rs-c.c
+Formatting [229/257] results/accepted_code/magicoder7b-int_factors-cpp-c.c
+Formatting [230/257] results/accepted_code/magicoder7b-int_factors-go-c.c
+Formatting [231/257] results/accepted_code/magicoder7b-int_factors-java-c.c
+Formatting [232/257] results/accepted_code/magicoder7b-int_factors-js-c.c
+Formatting [233/257] results/accepted_code/magicoder7b-int_factors-py-c.c
+Formatting [234/257] results/accepted_code/magicoder7b-int_factors-rs-c.c
+Formatting [235/257] results/accepted_code/stablecode-bit_ops-cpp-c.c
+Formatting [236/257] results/accepted_code/stablecode-bit_ops-go-c.c
+Formatting [237/257] results/accepted_code/stablecode-bit_ops-java-c.c
+Formatting [238/257] results/accepted_code/stablecode-bit_ops-js-c.c
+Formatting [239/257] results/accepted_code/stablecode-bit_ops-rs-c.c
+Formatting [240/257] results/accepted_code/stablecode-int_arith-cpp-c.c
+Formatting [241/257] results/accepted_code/stablecode-int_arith-go-c.c
+Formatting [242/257] results/accepted_code/stablecode-int_arith-java-c.c
+Formatting [243/257] results/accepted_code/stablecode-int_arith-js-c.c
+Formatting [244/257] results/accepted_code/stablecode-int_arith-py-c.c
+Formatting [245/257] results/accepted_code/stablecode-int_arith-rs-c.c
+Formatting [246/257] results/accepted_code/stablecode-int_cmp-cpp-c.c
+Formatting [247/257] results/accepted_code/stablecode-int_cmp-go-c.c
+Formatting [248/257] results/accepted_code/stablecode-int_cmp-java-c.c
+Formatting [249/257] results/accepted_code/stablecode-int_cmp-js-c.c
+Formatting [250/257] results/accepted_code/stablecode-int_cmp-py-c.c
+Formatting [251/257] results/accepted_code/stablecode-int_cmp-rs-c.c
+Formatting [252/257] results/accepted_code/stablecode-int_factors-cpp-c.c
+Formatting [253/257] results/accepted_code/stablecode-int_factors-go-c.c
+Formatting [254/257] results/accepted_code/stablecode-int_factors-java-c.c
+Formatting [255/257] results/accepted_code/stablecode-int_factors-js-c.c
+Formatting [256/257] results/accepted_code/stablecode-int_factors-py-c.c
+Formatting [257/257] results/accepted_code/stablecode-int_factors-rs-c.c
+Formatting C++ files ...
+Formatting [1/251] results/accepted_code/codegeex4-bit_ops-c-cpp.cpp
+Formatting [2/251] results/accepted_code/codegeex4-bit_ops-go-cpp.cpp
+Formatting [3/251] results/accepted_code/codegeex4-bit_ops-java-cpp.cpp
+Formatting [4/251] results/accepted_code/codegeex4-bit_ops-js-cpp.cpp
+Formatting [5/251] results/accepted_code/codegeex4-bit_ops-py-cpp.cpp
+Formatting [6/251] results/accepted_code/codegeex4-bit_ops-rs-cpp.cpp
+Formatting [7/251] results/accepted_code/codegeex4-int_arith-c-cpp.cpp
+Formatting [8/251] results/accepted_code/codegeex4-int_arith-go-cpp.cpp
+Formatting [9/251] results/accepted_code/codegeex4-int_arith-java-cpp.cpp
+Formatting [10/251] results/accepted_code/codegeex4-int_arith-js-cpp.cpp
+Formatting [11/251] results/accepted_code/codegeex4-int_arith-py-cpp.cpp
+Formatting [12/251] results/accepted_code/codegeex4-int_arith-rs-cpp.cpp
+Formatting [13/251] results/accepted_code/codegeex4-int_cmp-c-cpp.cpp
+Formatting [14/251] results/accepted_code/codegeex4-int_cmp-go-cpp.cpp
+Formatting [15/251] results/accepted_code/codegeex4-int_cmp-java-cpp.cpp
+Formatting [16/251] results/accepted_code/codegeex4-int_cmp-js-cpp.cpp
+Formatting [17/251] results/accepted_code/codegeex4-int_cmp-py-cpp.cpp
+Formatting [18/251] results/accepted_code/codegeex4-int_cmp-rs-cpp.cpp
+Formatting [19/251] results/accepted_code/codegeex4-int_factors-c-cpp.cpp
+Formatting [20/251] results/accepted_code/codegeex4-int_factors-go-cpp.cpp
+Formatting [21/251] results/accepted_code/codegeex4-int_factors-java-cpp.cpp
+Formatting [22/251] results/accepted_code/codegeex4-int_factors-js-cpp.cpp
+Formatting [23/251] results/accepted_code/codegeex4-int_factors-py-cpp.cpp
+Formatting [24/251] results/accepted_code/codegeex4-int_factors-rs-cpp.cpp
+Formatting [25/251] results/accepted_code/codegemma7b-bit_ops-c-cpp.cpp
+Formatting [26/251] results/accepted_code/codegemma7b-bit_ops-go-cpp.cpp
+Formatting [27/251] results/accepted_code/codegemma7b-bit_ops-java-cpp.cpp
+Formatting [28/251] results/accepted_code/codegemma7b-bit_ops-js-cpp.cpp
+Formatting [29/251] results/accepted_code/codegemma7b-bit_ops-py-cpp.cpp
+Formatting [30/251] results/accepted_code/codegemma7b-bit_ops-rs-cpp.cpp
+Formatting [31/251] results/accepted_code/codegemma7b-int_arith-c-cpp.cpp
+Formatting [32/251] results/accepted_code/codegemma7b-int_arith-go-cpp.cpp
+Formatting [33/251] results/accepted_code/codegemma7b-int_arith-java-cpp.cpp
+Formatting [34/251] results/accepted_code/codegemma7b-int_arith-js-cpp.cpp
+Formatting [35/251] results/accepted_code/codegemma7b-int_arith-py-cpp.cpp
+Formatting [36/251] results/accepted_code/codegemma7b-int_arith-rs-cpp.cpp
+Formatting [37/251] results/accepted_code/codegemma7b-int_cmp-c-cpp.cpp
+Formatting [38/251] results/accepted_code/codegemma7b-int_cmp-go-cpp.cpp
+Formatting [39/251] results/accepted_code/codegemma7b-int_cmp-java-cpp.cpp
+Formatting [40/251] results/accepted_code/codegemma7b-int_cmp-js-cpp.cpp
+Formatting [41/251] results/accepted_code/codegemma7b-int_cmp-py-cpp.cpp
+Formatting [42/251] results/accepted_code/codegemma7b-int_cmp-rs-cpp.cpp
+Formatting [43/251] results/accepted_code/codegemma7b-int_factors-c-cpp.cpp
+Formatting [44/251] results/accepted_code/codegemma7b-int_factors-go-cpp.cpp
+Formatting [45/251] results/accepted_code/codegemma7b-int_factors-java-cpp.cpp
+Formatting [46/251] results/accepted_code/codegemma7b-int_factors-js-cpp.cpp
+Formatting [47/251] results/accepted_code/codegemma7b-int_factors-py-cpp.cpp
+Formatting [48/251] results/accepted_code/codegemma7b-int_factors-rs-cpp.cpp
+Formatting [49/251] results/accepted_code/codellama7b-bit_ops-c-cpp.cpp
+Formatting [50/251] results/accepted_code/codellama7b-bit_ops-go-cpp.cpp
+Formatting [51/251] results/accepted_code/codellama7b-bit_ops-java-cpp.cpp
+Formatting [52/251] results/accepted_code/codellama7b-bit_ops-js-cpp.cpp
+Formatting [53/251] results/accepted_code/codellama7b-bit_ops-py-cpp.cpp
+Formatting [54/251] results/accepted_code/codellama7b-bit_ops-rs-cpp.cpp
+Formatting [55/251] results/accepted_code/codellama7b-int_arith-c-cpp.cpp
+Formatting [56/251] results/accepted_code/codellama7b-int_arith-go-cpp.cpp
+Formatting [57/251] results/accepted_code/codellama7b-int_arith-java-cpp.cpp
+Formatting [58/251] results/accepted_code/codellama7b-int_arith-js-cpp.cpp
+Formatting [59/251] results/accepted_code/codellama7b-int_arith-py-cpp.cpp
+Formatting [60/251] results/accepted_code/codellama7b-int_arith-rs-cpp.cpp
+Formatting [61/251] results/accepted_code/codellama7b-int_cmp-c-cpp.cpp
+Formatting [62/251] results/accepted_code/codellama7b-int_cmp-go-cpp.cpp
+Formatting [63/251] results/accepted_code/codellama7b-int_cmp-java-cpp.cpp
+Formatting [64/251] results/accepted_code/codellama7b-int_cmp-js-cpp.cpp
+Formatting [65/251] results/accepted_code/codellama7b-int_cmp-py-cpp.cpp
+Formatting [66/251] results/accepted_code/codellama7b-int_cmp-rs-cpp.cpp
+Formatting [67/251] results/accepted_code/codellama7b-int_factors-c-cpp.cpp
+Formatting [68/251] results/accepted_code/codellama7b-int_factors-go-cpp.cpp
+Formatting [69/251] results/accepted_code/codellama7b-int_factors-java-cpp.cpp
+Formatting [70/251] results/accepted_code/codellama7b-int_factors-js-cpp.cpp
+Formatting [71/251] results/accepted_code/codellama7b-int_factors-py-cpp.cpp
+Formatting [72/251] results/accepted_code/codellama7b-int_factors-rs-cpp.cpp
+Formatting [73/251] results/accepted_code/codeqwen-bit_ops-c-cpp.cpp
+Formatting [74/251] results/accepted_code/codeqwen-bit_ops-go-cpp.cpp
+Formatting [75/251] results/accepted_code/codeqwen-bit_ops-java-cpp.cpp
+Formatting [76/251] results/accepted_code/codeqwen-bit_ops-js-cpp.cpp
+Formatting [77/251] results/accepted_code/codeqwen-bit_ops-py-cpp.cpp
+Formatting [78/251] results/accepted_code/codeqwen-bit_ops-rs-cpp.cpp
+Formatting [79/251] results/accepted_code/codeqwen-int_arith-c-cpp.cpp
+Formatting [80/251] results/accepted_code/codeqwen-int_arith-go-cpp.cpp
+Formatting [81/251] results/accepted_code/codeqwen-int_arith-java-cpp.cpp
+Formatting [82/251] results/accepted_code/codeqwen-int_arith-js-cpp.cpp
+Formatting [83/251] results/accepted_code/codeqwen-int_arith-py-cpp.cpp
+Formatting [84/251] results/accepted_code/codeqwen-int_arith-rs-cpp.cpp
+Formatting [85/251] results/accepted_code/codeqwen-int_cmp-c-cpp.cpp
+Formatting [86/251] results/accepted_code/codeqwen-int_cmp-go-cpp.cpp
+Formatting [87/251] results/accepted_code/codeqwen-int_cmp-java-cpp.cpp
+Formatting [88/251] results/accepted_code/codeqwen-int_cmp-js-cpp.cpp
+Formatting [89/251] results/accepted_code/codeqwen-int_cmp-py-cpp.cpp
+Formatting [90/251] results/accepted_code/codeqwen-int_cmp-rs-cpp.cpp
+Formatting [91/251] results/accepted_code/codeqwen-int_factors-c-cpp.cpp
+Formatting [92/251] results/accepted_code/codeqwen-int_factors-go-cpp.cpp
+Formatting [93/251] results/accepted_code/codeqwen-int_factors-java-cpp.cpp
+Formatting [94/251] results/accepted_code/codeqwen-int_factors-js-cpp.cpp
+Formatting [95/251] results/accepted_code/codeqwen-int_factors-py-cpp.cpp
+Formatting [96/251] results/accepted_code/codeqwen-int_factors-rs-cpp.cpp
+Formatting [97/251] results/accepted_code/deepseekcoder7b-bit_ops-c-cpp.cpp
+Formatting [98/251] results/accepted_code/deepseekcoder7b-bit_ops-go-cpp.cpp
+Formatting [99/251] results/accepted_code/deepseekcoder7b-bit_ops-java-cpp.cpp
+Formatting [100/251] results/accepted_code/deepseekcoder7b-bit_ops-js-cpp.cpp
+Formatting [101/251] results/accepted_code/deepseekcoder7b-bit_ops-rs-cpp.cpp
+Formatting [102/251] results/accepted_code/deepseekcoder7b-int_arith-c-cpp.cpp
+Formatting [103/251] results/accepted_code/deepseekcoder7b-int_arith-go-cpp.cpp
+Formatting [104/251] results/accepted_code/deepseekcoder7b-int_arith-java-cpp.cpp
+Formatting [105/251] results/accepted_code/deepseekcoder7b-int_arith-js-cpp.cpp
+Formatting [106/251] results/accepted_code/deepseekcoder7b-int_arith-py-cpp.cpp
+Formatting [107/251] results/accepted_code/deepseekcoder7b-int_arith-rs-cpp.cpp
+Formatting [108/251] results/accepted_code/deepseekcoder7b-int_cmp-c-cpp.cpp
+Formatting [109/251] results/accepted_code/deepseekcoder7b-int_cmp-go-cpp.cpp
+Formatting [110/251] results/accepted_code/deepseekcoder7b-int_cmp-java-cpp.cpp
+Formatting [111/251] results/accepted_code/deepseekcoder7b-int_cmp-js-cpp.cpp
+Formatting [112/251] results/accepted_code/deepseekcoder7b-int_cmp-py-cpp.cpp
+Formatting [113/251] results/accepted_code/deepseekcoder7b-int_cmp-rs-cpp.cpp
+Formatting [114/251] results/accepted_code/deepseekcoder7b-int_factors-go-cpp.cpp
+Formatting [115/251] results/accepted_code/deepseekcoder7b-int_factors-java-cpp.cpp
+Formatting [116/251] results/accepted_code/deepseekcoder7b-int_factors-js-cpp.cpp
+Formatting [117/251] results/accepted_code/deepseekcoder7b-int_factors-py-cpp.cpp
+Formatting [118/251] results/accepted_code/deepseekcoder7b-int_factors-rs-cpp.cpp
+Formatting [119/251] results/accepted_code/deepseekcoderv2-bit_ops-go-cpp.cpp
+Formatting [120/251] results/accepted_code/deepseekcoderv2-bit_ops-java-cpp.cpp
+Formatting [121/251] results/accepted_code/deepseekcoderv2-bit_ops-js-cpp.cpp
+Formatting [122/251] results/accepted_code/deepseekcoderv2-bit_ops-rs-cpp.cpp
+Formatting [123/251] results/accepted_code/deepseekcoderv2-int_arith-js-cpp.cpp
+Formatting [124/251] results/accepted_code/deepseekcoderv2-int_arith-py-cpp.cpp
+Formatting [125/251] results/accepted_code/deepseekcoderv2-int_cmp-c-cpp.cpp
+Formatting [126/251] results/accepted_code/deepseekcoderv2-int_cmp-go-cpp.cpp
+Formatting [127/251] results/accepted_code/deepseekcoderv2-int_cmp-java-cpp.cpp
+Formatting [128/251] results/accepted_code/deepseekcoderv2-int_cmp-js-cpp.cpp
+Formatting [129/251] results/accepted_code/deepseekcoderv2-int_cmp-rs-cpp.cpp
+Formatting [130/251] results/accepted_code/deepseekcoderv2-int_factors-go-cpp.cpp
+Formatting [131/251] results/accepted_code/deepseekcoderv2-int_factors-java-cpp.cpp
+Formatting [132/251] results/accepted_code/deepseekcoderv2-int_factors-rs-cpp.cpp
+Formatting [133/251] results/accepted_code/dolphincoder7b-bit_ops-c-cpp.cpp
+Formatting [134/251] results/accepted_code/dolphincoder7b-bit_ops-go-cpp.cpp
+Formatting [135/251] results/accepted_code/dolphincoder7b-bit_ops-java-cpp.cpp
+Formatting [136/251] results/accepted_code/dolphincoder7b-bit_ops-js-cpp.cpp
+Formatting [137/251] results/accepted_code/dolphincoder7b-bit_ops-py-cpp.cpp
+Formatting [138/251] results/accepted_code/dolphincoder7b-bit_ops-rs-cpp.cpp
+Formatting [139/251] results/accepted_code/dolphincoder7b-int_arith-c-cpp.cpp
+Formatting [140/251] results/accepted_code/dolphincoder7b-int_arith-go-cpp.cpp
+Formatting [141/251] results/accepted_code/dolphincoder7b-int_arith-java-cpp.cpp
+Formatting [142/251] results/accepted_code/dolphincoder7b-int_arith-js-cpp.cpp
+Formatting [143/251] results/accepted_code/dolphincoder7b-int_arith-py-cpp.cpp
+Formatting [144/251] results/accepted_code/dolphincoder7b-int_arith-rs-cpp.cpp
+Formatting [145/251] results/accepted_code/dolphincoder7b-int_cmp-c-cpp.cpp
+Formatting [146/251] results/accepted_code/dolphincoder7b-int_cmp-go-cpp.cpp
+Formatting [147/251] results/accepted_code/dolphincoder7b-int_cmp-java-cpp.cpp
+Formatting [148/251] results/accepted_code/dolphincoder7b-int_cmp-js-cpp.cpp
+Formatting [149/251] results/accepted_code/dolphincoder7b-int_cmp-py-cpp.cpp
+Formatting [150/251] results/accepted_code/dolphincoder7b-int_cmp-rs-cpp.cpp
+Formatting [151/251] results/accepted_code/dolphincoder7b-int_factors-c-cpp.cpp
+Formatting [152/251] results/accepted_code/dolphincoder7b-int_factors-go-cpp.cpp
+Formatting [153/251] results/accepted_code/dolphincoder7b-int_factors-java-cpp.cpp
+Formatting [154/251] results/accepted_code/dolphincoder7b-int_factors-js-cpp.cpp
+Formatting [155/251] results/accepted_code/dolphincoder7b-int_factors-py-cpp.cpp
+Formatting [156/251] results/accepted_code/dolphincoder7b-int_factors-rs-cpp.cpp
+Formatting [157/251] results/accepted_code/granitecode3b-bit_ops-c-cpp.cpp
+Formatting [158/251] results/accepted_code/granitecode3b-bit_ops-go-cpp.cpp
+Formatting [159/251] results/accepted_code/granitecode3b-bit_ops-java-cpp.cpp
+Formatting [160/251] results/accepted_code/granitecode3b-bit_ops-js-cpp.cpp
+Formatting [161/251] results/accepted_code/granitecode3b-bit_ops-py-cpp.cpp
+Formatting [162/251] results/accepted_code/granitecode3b-bit_ops-rs-cpp.cpp
+Formatting [163/251] results/accepted_code/granitecode3b-int_arith-c-cpp.cpp
+Formatting [164/251] results/accepted_code/granitecode3b-int_arith-go-cpp.cpp
+Formatting [165/251] results/accepted_code/granitecode3b-int_arith-java-cpp.cpp
+Formatting [166/251] results/accepted_code/granitecode3b-int_arith-js-cpp.cpp
+Formatting [167/251] results/accepted_code/granitecode3b-int_arith-py-cpp.cpp
+Formatting [168/251] results/accepted_code/granitecode3b-int_arith-rs-cpp.cpp
+Formatting [169/251] results/accepted_code/granitecode3b-int_cmp-c-cpp.cpp
+Formatting [170/251] results/accepted_code/granitecode3b-int_cmp-go-cpp.cpp
+Formatting [171/251] results/accepted_code/granitecode3b-int_cmp-java-cpp.cpp
+Formatting [172/251] results/accepted_code/granitecode3b-int_cmp-js-cpp.cpp
+Formatting [173/251] results/accepted_code/granitecode3b-int_cmp-py-cpp.cpp
+Formatting [174/251] results/accepted_code/granitecode3b-int_cmp-rs-cpp.cpp
+Formatting [175/251] results/accepted_code/granitecode3b-int_factors-c-cpp.cpp
+Formatting [176/251] results/accepted_code/granitecode3b-int_factors-go-cpp.cpp
+Formatting [177/251] results/accepted_code/granitecode3b-int_factors-java-cpp.cpp
+Formatting [178/251] results/accepted_code/granitecode3b-int_factors-js-cpp.cpp
+Formatting [179/251] results/accepted_code/granitecode3b-int_factors-py-cpp.cpp
+Formatting [180/251] results/accepted_code/granitecode3b-int_factors-rs-cpp.cpp
+Formatting [181/251] results/accepted_code/granitecode8b-bit_ops-c-cpp.cpp
+Formatting [182/251] results/accepted_code/granitecode8b-bit_ops-go-cpp.cpp
+Formatting [183/251] results/accepted_code/granitecode8b-bit_ops-java-cpp.cpp
+Formatting [184/251] results/accepted_code/granitecode8b-bit_ops-js-cpp.cpp
+Formatting [185/251] results/accepted_code/granitecode8b-bit_ops-py-cpp.cpp
+Formatting [186/251] results/accepted_code/granitecode8b-bit_ops-rs-cpp.cpp
+Formatting [187/251] results/accepted_code/granitecode8b-int_arith-c-cpp.cpp
+Formatting [188/251] results/accepted_code/granitecode8b-int_arith-go-cpp.cpp
+Formatting [189/251] results/accepted_code/granitecode8b-int_arith-java-cpp.cpp
+Formatting [190/251] results/accepted_code/granitecode8b-int_arith-js-cpp.cpp
+Formatting [191/251] results/accepted_code/granitecode8b-int_arith-py-cpp.cpp
+Formatting [192/251] results/accepted_code/granitecode8b-int_arith-rs-cpp.cpp
+Formatting [193/251] results/accepted_code/granitecode8b-int_cmp-c-cpp.cpp
+Formatting [194/251] results/accepted_code/granitecode8b-int_cmp-go-cpp.cpp
+Formatting [195/251] results/accepted_code/granitecode8b-int_cmp-java-cpp.cpp
+Formatting [196/251] results/accepted_code/granitecode8b-int_cmp-js-cpp.cpp
+Formatting [197/251] results/accepted_code/granitecode8b-int_cmp-py-cpp.cpp
+Formatting [198/251] results/accepted_code/granitecode8b-int_cmp-rs-cpp.cpp
+Formatting [199/251] results/accepted_code/granitecode8b-int_factors-c-cpp.cpp
+Formatting [200/251] results/accepted_code/granitecode8b-int_factors-go-cpp.cpp
+Formatting [201/251] results/accepted_code/granitecode8b-int_factors-java-cpp.cpp
+Formatting [202/251] results/accepted_code/granitecode8b-int_factors-js-cpp.cpp
+Formatting [203/251] results/accepted_code/granitecode8b-int_factors-py-cpp.cpp
+Formatting [204/251] results/accepted_code/granitecode8b-int_factors-rs-cpp.cpp
+Formatting [205/251] results/accepted_code/magicoder7b-bit_ops-go-cpp.cpp
+Formatting [206/251] results/accepted_code/magicoder7b-bit_ops-java-cpp.cpp
+Formatting [207/251] results/accepted_code/magicoder7b-bit_ops-js-cpp.cpp
+Formatting [208/251] results/accepted_code/magicoder7b-bit_ops-py-cpp.cpp
+Formatting [209/251] results/accepted_code/magicoder7b-bit_ops-rs-cpp.cpp
+Formatting [210/251] results/accepted_code/magicoder7b-int_arith-c-cpp.cpp
+Formatting [211/251] results/accepted_code/magicoder7b-int_arith-go-cpp.cpp
+Formatting [212/251] results/accepted_code/magicoder7b-int_arith-java-cpp.cpp
+Formatting [213/251] results/accepted_code/magicoder7b-int_arith-js-cpp.cpp
+Formatting [214/251] results/accepted_code/magicoder7b-int_arith-py-cpp.cpp
+Formatting [215/251] results/accepted_code/magicoder7b-int_arith-rs-cpp.cpp
+Formatting [216/251] results/accepted_code/magicoder7b-int_cmp-c-cpp.cpp
+Formatting [217/251] results/accepted_code/magicoder7b-int_cmp-go-cpp.cpp
+Formatting [218/251] results/accepted_code/magicoder7b-int_cmp-java-cpp.cpp
+Formatting [219/251] results/accepted_code/magicoder7b-int_cmp-js-cpp.cpp
+Formatting [220/251] results/accepted_code/magicoder7b-int_cmp-py-cpp.cpp
+Formatting [221/251] results/accepted_code/magicoder7b-int_cmp-rs-cpp.cpp
+Formatting [222/251] results/accepted_code/magicoder7b-int_factors-c-cpp.cpp
+Formatting [223/251] results/accepted_code/magicoder7b-int_factors-go-cpp.cpp
+Formatting [224/251] results/accepted_code/magicoder7b-int_factors-java-cpp.cpp
+Formatting [225/251] results/accepted_code/magicoder7b-int_factors-js-cpp.cpp
+Formatting [226/251] results/accepted_code/magicoder7b-int_factors-py-cpp.cpp
+Formatting [227/251] results/accepted_code/magicoder7b-int_factors-rs-cpp.cpp
+Formatting [228/251] results/accepted_code/stablecode-bit_ops-c-cpp.cpp
+Formatting [229/251] results/accepted_code/stablecode-bit_ops-go-cpp.cpp
+Formatting [230/251] results/accepted_code/stablecode-bit_ops-java-cpp.cpp
+Formatting [231/251] results/accepted_code/stablecode-bit_ops-js-cpp.cpp
+Formatting [232/251] results/accepted_code/stablecode-bit_ops-py-cpp.cpp
+Formatting [233/251] results/accepted_code/stablecode-bit_ops-rs-cpp.cpp
+Formatting [234/251] results/accepted_code/stablecode-int_arith-c-cpp.cpp
+Formatting [235/251] results/accepted_code/stablecode-int_arith-go-cpp.cpp
+Formatting [236/251] results/accepted_code/stablecode-int_arith-java-cpp.cpp
+Formatting [237/251] results/accepted_code/stablecode-int_arith-js-cpp.cpp
+Formatting [238/251] results/accepted_code/stablecode-int_arith-py-cpp.cpp
+Formatting [239/251] results/accepted_code/stablecode-int_arith-rs-cpp.cpp
+Formatting [240/251] results/accepted_code/stablecode-int_cmp-c-cpp.cpp
+Formatting [241/251] results/accepted_code/stablecode-int_cmp-go-cpp.cpp
+Formatting [242/251] results/accepted_code/stablecode-int_cmp-java-cpp.cpp
+Formatting [243/251] results/accepted_code/stablecode-int_cmp-js-cpp.cpp
+Formatting [244/251] results/accepted_code/stablecode-int_cmp-py-cpp.cpp
+Formatting [245/251] results/accepted_code/stablecode-int_cmp-rs-cpp.cpp
+Formatting [246/251] results/accepted_code/stablecode-int_factors-c-cpp.cpp
+Formatting [247/251] results/accepted_code/stablecode-int_factors-go-cpp.cpp
+Formatting [248/251] results/accepted_code/stablecode-int_factors-java-cpp.cpp
+Formatting [249/251] results/accepted_code/stablecode-int_factors-js-cpp.cpp
+Formatting [250/251] results/accepted_code/stablecode-int_factors-py-cpp.cpp
+Formatting [251/251] results/accepted_code/stablecode-int_factors-rs-cpp.cpp
+Formatting Go files ...
+results/accepted_code/codegeex4-bit_ops-py-go.go:45:71: expected ')', found newline
+results/accepted_code/codegemma7b-bit_ops-c-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/codegemma7b-bit_ops-cpp-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/codegemma7b-bit_ops-java-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/codegemma7b-bit_ops-js-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/codegemma7b-bit_ops-py-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/codegemma7b-int_arith-py-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/codegemma7b-int_factors-java-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/codegemma7b-int_factors-js-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/codegemma7b-int_factors-py-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/codegemma7b-int_factors-rs-go.go:20:22: expected type, found 2
+results/accepted_code/codegemma7b-int_factors-rs-go.go:21:22: expected type, found 101
+results/accepted_code/codeqwen-int_arith-js-go.go:39:7: expected '(', found abs
+results/accepted_code/deepseekcoder7b-bit_ops-js-go.go:10:8: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-bit_ops-js-go.go:10:16: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-bit_ops-js-go.go:10:21: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-bit_ops-js-go.go:10:32: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-bit_ops-js-go.go:14:2: expected ';', found 'EOF'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-go.go:19:9: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-go.go:19:17: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-go.go:19:22: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-go.go:19:33: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-go.go:30:2: expected ';', found 'EOF'
+results/accepted_code/deepseekcoder7b-int_arith-java-go.go:24:13: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_arith-java-go.go:24:21: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_arith-java-go.go:24:26: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_arith-java-go.go:24:37: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_arith-java-go.go:28:2: expected ';', found 'EOF'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:22:7: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:22:15: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:22:20: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:22:31: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:26:2: expected ';', found 'if'
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-go.go:29:2: expected '}', found 'EOF'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:17:2: expected statement, found '<'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:17:3: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:17:11: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:17:16: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:17:27: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:21:6: expected '(', found main
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:22:16: missing ',' in parameter list
+results/accepted_code/deepseekcoder7b-int_factors-cpp-go.go:23:2: expected ')', found 'for'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:13:25: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:13:33: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:13:38: illegal character U+2581 '▁'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:13:49: illegal character U+FF5C '｜'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:14:4: missing ',' in argument list
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:15:15: expected '==', found '='
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:16:5: missing ',' before newline in argument list
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:17:3: expected operand, found '}'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:20:2: missing ',' in argument list
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:21:1: expected operand, found '}'
+results/accepted_code/deepseekcoder7b-int_factors-js-go.go:27:2: missing ',' in argument list
+results/accepted_code/deepseekcoderv2-bit_ops-java-go.go:12:39: expected operand, found '>'
+results/accepted_code/deepseekcoderv2-bit_ops-java-go.go:18:2: missing ',' in argument list
+results/accepted_code/deepseekcoderv2-bit_ops-js-go.go:13:31: expected operand, found '>'
+results/accepted_code/deepseekcoderv2-bit_ops-js-go.go:20:2: missing ',' in argument list
+results/accepted_code/deepseekcoderv2-int_arith-java-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/deepseekcoderv2-int_arith-js-go.go:22:21: expected ';', found 'for'
+results/accepted_code/deepseekcoderv2-int_arith-js-go.go:23:20: expected ';', found fmt
+results/accepted_code/deepseekcoderv2-int_factors-c-go.go:17:46: expected 1 expression
+results/accepted_code/deepseekcoderv2-int_factors-rs-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/dolphincoder7b-bit_ops-c-go.go
+results/accepted_code/dolphincoder7b-bit_ops-cpp-go.go
+results/accepted_code/dolphincoder7b-bit_ops-java-go.go
+results/accepted_code/dolphincoder7b-bit_ops-js-go.go
+results/accepted_code/dolphincoder7b-bit_ops-py-go.go
+results/accepted_code/dolphincoder7b-bit_ops-rs-go.go:1:1: expected 'package', found BITWISE_AND
+results/accepted_code/dolphincoder7b-int_arith-c-go.go
+results/accepted_code/dolphincoder7b-int_arith-cpp-go.go
+results/accepted_code/dolphincoder7b-int_arith-java-go.go
+results/accepted_code/dolphincoder7b-int_arith-js-go.go
+results/accepted_code/dolphincoder7b-int_arith-py-go.go
+results/accepted_code/dolphincoder7b-int_arith-rs-go.go:1:1: expected 'package', found GET_INTEGERS
+results/accepted_code/dolphincoder7b-int_cmp-c-go.go
+results/accepted_code/dolphincoder7b-int_cmp-cpp-go.go
+results/accepted_code/dolphincoder7b-int_cmp-java-go.go
+results/accepted_code/dolphincoder7b-int_cmp-js-go.go
+results/accepted_code/dolphincoder7b-int_cmp-py-go.go:1:1: expected 'package', found GET
+results/accepted_code/dolphincoder7b-int_factors-c-go.go:1:1: expected 'package', found factors
+results/accepted_code/dolphincoder7b-int_factors-cpp-go.go
+results/accepted_code/dolphincoder7b-int_factors-java-go.go
+results/accepted_code/dolphincoder7b-int_factors-js-go.go
+results/accepted_code/dolphincoder7b-int_factors-py-go.go
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:7:17: missing ',' in argument list
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:11:4: missing ',' in argument list
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:12:4: missing ',' in argument list
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:13:7: missing ',' in argument list
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:14:18: expected '==', found '='
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:15:18: expected '==', found '='
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:16:7: expected operand, found '}'
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:19:4: missing ',' in argument list
+results/accepted_code/dolphincoder7b-int_factors-rs-go.go:20:1: expected operand, found '}'
+results/accepted_code/granitecode3b-bit_ops-c-go.go:6:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:7:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:8:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:9:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:10:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:11:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:12:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:13:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:14:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:15:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:16:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-c-go.go:17:1: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-cpp-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/granitecode3b-bit_ops-js-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/granitecode3b-bit_ops-py-go.go:8:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:9:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:10:12: expected operand, found '='
+results/accepted_code/granitecode3b-bit_ops-py-go.go:10:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:11:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:13:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:14:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:15:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:16:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:18:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:19:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:20:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:21:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:23:13: string literal not terminated
+results/accepted_code/granitecode3b-bit_ops-py-go.go:24:16: binary literal has no digits
+results/accepted_code/granitecode3b-bit_ops-py-go.go:25:13: string literal not terminated
+results/accepted_code/granitecode3b-int_arith-c-go.go:17:13: string literal not terminated
+results/accepted_code/granitecode3b-int_arith-c-go.go:18:1: string literal not terminated
+results/accepted_code/granitecode3b-int_arith-c-go.go:19:1: expected operand, found '}'
+results/accepted_code/granitecode3b-int_factors-c-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/granitecode3b-int_factors-rs-go.go:10:45: missing ',' in argument list
+results/accepted_code/granitecode3b-int_factors-rs-go.go:11:2: expected operand, found 'if'
+results/accepted_code/granitecode3b-int_factors-rs-go.go:32:2: expected '}', found 'EOF'
+results/accepted_code/granitecode8b-bit_ops-java-go.go:14:33: expected operand, found '>'
+results/accepted_code/granitecode8b-bit_ops-java-go.go:17:2: missing ',' in argument list
+results/accepted_code/granitecode8b-bit_ops-js-go.go:12:33: expected operand, found '>'
+results/accepted_code/granitecode8b-bit_ops-js-go.go:13:2: missing ',' in argument list
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:15:13: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:16:1: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:17:2: expected operand, found '}'
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:19:2: missing ',' in argument list
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:20:13: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:21:1: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:22:2: expected operand, found '}'
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:24:2: missing ',' in argument list
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:25:13: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:26:1: string literal not terminated
+results/accepted_code/granitecode8b-int_cmp-cpp-go.go:27:2: expected operand, found '}'
+results/accepted_code/granitecode8b-int_factors-c-go.go:28:8: illegal rune literal
+results/accepted_code/granitecode8b-int_factors-js-go.go:1:1: expected 'package', found 'func'
+results/accepted_code/granitecode8b-int_factors-py-go.go:1:1: expected 'package', found 'import'
+results/accepted_code/magicoder7b-bit_ops-java-go.go:12:33: expected operand, found '>'
+results/accepted_code/magicoder7b-bit_ops-java-go.go:17:2: missing ',' in argument list
+results/accepted_code/magicoder7b-bit_ops-java-go.go:18:1: expected operand, found '}'
+results/accepted_code/magicoder7b-bit_ops-java-go.go:20:2: missing ',' in argument list
+results/accepted_code/magicoder7b-bit_ops-java-go.go:21:1: expected operand, found '}'
+results/accepted_code/stablecode-bit_ops-c-go.go:7:37: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-cpp-go.go:9:34: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-java-go.go:11:33: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-java-go.go:19:38: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-java-go.go:23:38: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-java-go.go:24:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-bit_ops-js-go.go:7:42: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-js-go.go:29:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-bit_ops-py-go.go:17:109: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-py-go.go:24:28: expected ';', found ')'
+results/accepted_code/stablecode-bit_ops-py-go.go:26:53: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-py-go.go:28:28: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-py-go.go:50:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-bit_ops-rs-go.go:9:37: expected statement, found ')'
+results/accepted_code/stablecode-bit_ops-rs-go.go:16:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_arith-c-go.go:19:38: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-c-go.go:29:28: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-cpp-go.go:12:38: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-cpp-go.go:19:48: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-cpp-go.go:31:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_arith-js-go.go:26:40: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-js-go.go:30:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_arith-py-go.go:20:50: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-py-go.go:29:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_arith-rs-go.go:15:36: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-rs-go.go:17:64: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-rs-go.go:23:64: expected statement, found ')'
+results/accepted_code/stablecode-int_arith-rs-go.go:32:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_cmp-c-go.go:12:38: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-c-go.go:20:43: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-c-go.go:26:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_cmp-cpp-go.go:29:42: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-cpp-go.go:34:46: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-cpp-go.go:36:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_cmp-java-go.go:11:37: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-js-go.go:8:36: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-js-go.go:10:42: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-js-go.go:12:45: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-js-go.go:30:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_cmp-rs-go.go:14:31: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-rs-go.go:19:30: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-rs-go.go:28:37: expected statement, found ')'
+results/accepted_code/stablecode-int_cmp-rs-go.go:32:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_factors-c-go.go:17:37: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-c-go.go:25:40: expected ';', found ']'
+results/accepted_code/stablecode-int_factors-c-go.go:37:27: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-c-go.go:46:35: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-c-go.go:61:34: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-c-go.go:67:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-c-go.go:67:10: mixed named and unnamed parameters
+results/accepted_code/stablecode-int_factors-c-go.go:68:14: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-c-go.go:70:8: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-c-go.go:71:7: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-c-go.go:71:25: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-cpp-go.go:15:35: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-cpp-go.go:24:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-cpp-go.go:25:16: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-cpp-go.go:27:2: expected ')', found 'for'
+results/accepted_code/stablecode-int_factors-cpp-go.go:28:45: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-cpp-go.go:32:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_factors-java-go.go:9:35: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-java-go.go:13:59: expected operand, found ')'
+results/accepted_code/stablecode-int_factors-java-go.go:14:3: expected '{', found 'if'
+results/accepted_code/stablecode-int_factors-java-go.go:24:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-java-go.go:24:10: mixed named and unnamed parameters
+results/accepted_code/stablecode-int_factors-java-go.go:25:4: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-java-go.go:26:10: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-java-go.go:28:12: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-js-go.go:11:41: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-js-go.go:17:41: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-js-go.go:27:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-js-go.go:27:10: mixed named and unnamed parameters
+results/accepted_code/stablecode-int_factors-js-go.go:28:13: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-js-go.go:28:26: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-js-go.go:31:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_factors-py-go.go:11:37: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-py-go.go:16:36: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-py-go.go:23:33: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-py-go.go:27:55: expected ']', found ')'
+results/accepted_code/stablecode-int_factors-py-go.go:33:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-py-go.go:33:10: mixed named and unnamed parameters
+results/accepted_code/stablecode-int_factors-py-go.go:34:10: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-py-go.go:36:2: expected ')', found 'for'
+results/accepted_code/stablecode-int_factors-py-go.go:37:58: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-py-go.go:39:2: expected '}', found 'EOF'
+results/accepted_code/stablecode-int_factors-rs-go.go:11:47: expected operand, found ')'
+results/accepted_code/stablecode-int_factors-rs-go.go:12:3: expected '{', found 'if'
+results/accepted_code/stablecode-int_factors-rs-go.go:23:6: expected '(', found main
+results/accepted_code/stablecode-int_factors-rs-go.go:23:10: mixed named and unnamed parameters
+results/accepted_code/stablecode-int_factors-rs-go.go:24:13: missing ',' in parameter list
+results/accepted_code/stablecode-int_factors-rs-go.go:24:26: expected statement, found ')'
+results/accepted_code/stablecode-int_factors-rs-go.go:26:2: expected '}', found 'EOF'
+Formatting Java files ...
+results/accepted_code/codellama7b-bit_ops-c-java.java:1:2: error: java.lang.IllegalStateException: Expected the current token to be at position -1, found: Token{tok=Tok{index=0, text=public, position=0, columnI=0, isToken=true}, toksBefore=[], toksAfter=[Tok{index=-1, text= , position=6, columnI=6, isToken=false}]}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:715)
+	at com.google.googlejavaformat.OpsBuilder.peekTokens(OpsBuilder.java:292)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.splitModifiers(JavaInputAstVisitor.java:2439)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2289)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2275)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.typeDeclarationModifiers(JavaInputAstVisitor.java:2249)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitClassDeclaration(JavaInputAstVisitor.java:2024)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:126)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:51)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:402)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:167)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:623)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.Formatter.format(Formatter.java:165)
+	at com.google.googlejavaformat.java.Formatter.getFormatReplacements(Formatter.java:283)
+	at com.google.googlejavaformat.java.Formatter.formatSource(Formatter.java:257)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:75)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:20:51: error: ')' or ',' expected
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:20:52: error: not a statement
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:20:54: error: ';' expected
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:20:55: error: not a statement
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:20:56: error: ';' expected
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:21:50: error: ')' or ',' expected
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:21:51: error: not a statement
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:21:53: error: ';' expected
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:21:54: error: not a statement
+results/accepted_code/codellama7b-bit_ops-cpp-java.java:21:55: error: ';' expected
+results/accepted_code/codellama7b-bit_ops-go-java.java:29:69: error: ')' expected
+results/accepted_code/codellama7b-bit_ops-go-java.java:29:73: error: '.class' expected
+results/accepted_code/codellama7b-bit_ops-go-java.java:29:74: error: ')' expected
+results/accepted_code/codellama7b-bit_ops-go-java.java:29:76: error: not a statement
+results/accepted_code/codellama7b-bit_ops-go-java.java:29:88: error: ';' expected
+results/accepted_code/codeqwen-bit_ops-py-java.java:28:96: error: ')' or ',' expected
+results/accepted_code/codeqwen-bit_ops-rs-java.java:14:54: error: illegal start of type
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:17: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:16: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:23: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:18: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:26: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:24: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:35: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:18:27: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:47: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:53: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:48: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:56: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:54: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:65: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:57: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-go-java.java:21:116: error: ';' expected
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:21: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:20: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:27: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:22: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:30: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:28: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:39: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-js-java.java:7:31: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:83: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:89: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:84: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:92: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:90: error: not a statement
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:101: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-bit_ops-rs-java.java:15:93: error: not a statement
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:10: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:16: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:11: error: not a statement
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:19: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:17: error: not a statement
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:28: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:20: error: not a statement
+results/accepted_code/deepseekcoder7b-int_arith-rs-java.java:28:31: error: reached end of file while parsing
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:25: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:24: error: not a statement
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:31: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:26: error: not a statement
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:34: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:32: error: not a statement
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:43: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_cmp-c-java.java:16:35: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:25: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:24: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:31: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:26: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:34: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:32: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:43: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_factors-c-java.java:26:35: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:25: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:24: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:31: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:26: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:34: error: illegal character: '\u2581'
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:32: error: not a statement
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:43: error: illegal character: '\uff5c'
+results/accepted_code/deepseekcoder7b-int_factors-py-java.java:6:35: error: not a statement
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:27:60: error: ')' or ',' expected
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:27:61: error: not a statement
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:27:62: error: ';' expected
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:27:64: error: not a statement
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:27:65: error: ';' expected
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:31:60: error: ')' or ',' expected
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:31:61: error: not a statement
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:31:62: error: ';' expected
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:31:64: error: not a statement
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-java.java:31:65: error: ';' expected
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:3:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:4:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:5:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:6:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:9:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:10:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:11:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:12:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:13:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:14:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:15:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:16:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:24:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:25:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:26:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:27:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:30:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:31:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:32:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:33:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:36:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:37:2: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:38:28: error: unclosed string literal
+results/accepted_code/deepseekcoderv2-bit_ops-go-java.java:39:2: error: unclosed string literal
+results/accepted_code/dolphincoder7b-bit_ops-c-java.java:1:2: error: java.lang.IllegalStateException: Expected the current token to be at position -1, found: Token{tok=Tok{index=0, text=public, position=0, columnI=0, isToken=true}, toksBefore=[], toksAfter=[Tok{index=-1, text= , position=6, columnI=6, isToken=false}]}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:715)
+	at com.google.googlejavaformat.OpsBuilder.peekTokens(OpsBuilder.java:292)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.splitModifiers(JavaInputAstVisitor.java:2439)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2289)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2275)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.typeDeclarationModifiers(JavaInputAstVisitor.java:2249)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitClassDeclaration(JavaInputAstVisitor.java:2024)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:126)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:51)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:402)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:167)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:623)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.Formatter.format(Formatter.java:165)
+	at com.google.googlejavaformat.java.Formatter.getFormatReplacements(Formatter.java:283)
+	at com.google.googlejavaformat.java.Formatter.formatSource(Formatter.java:257)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:75)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+results/accepted_code/dolphincoder7b-int_arith-go-java.java:1:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_arith-rs-java.java:1:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-js-java.java:2:2: error: java.lang.IllegalStateException: Expected the current token to be at position -1, found: Token{tok=Tok{index=1, text=public, position=23, columnI=0, isToken=true}, toksBefore=[Tok{index=0, text=// Using type coercion, position=0, columnI=0, isToken=false}, Tok{index=-1, text=
+, position=22, columnI=22, isToken=false}], toksAfter=[Tok{index=-1, text= , position=29, columnI=6, isToken=false}]}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:715)
+	at com.google.googlejavaformat.OpsBuilder.peekTokens(OpsBuilder.java:292)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.splitModifiers(JavaInputAstVisitor.java:2439)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2289)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2275)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.typeDeclarationModifiers(JavaInputAstVisitor.java:2249)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitClassDeclaration(JavaInputAstVisitor.java:2024)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:126)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:51)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:402)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:167)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:623)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.Formatter.format(Formatter.java:165)
+	at com.google.googlejavaformat.java.Formatter.getFormatReplacements(Formatter.java:283)
+	at com.google.googlejavaformat.java.Formatter.formatSource(Formatter.java:257)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:75)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:1:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:2:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:4:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:6:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:8:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_cmp-py-java.java:10:2: error: class, interface, enum, or record expected
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:18:32: error: unclosed string literal
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:12: error: ';' expected
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:19: error: ';' expected
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:28: error: illegal character: '\'
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:20: error: not a statement
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:30: error: unclosed string literal
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:19:29: error: not a statement
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:22:28: error: unclosed string literal
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:23:12: error: ';' expected
+results/accepted_code/dolphincoder7b-int_factors-go-java.java:23:17: error: unclosed string literal
+results/accepted_code/granitecode3b-int_arith-py-java.java:27:47: error: '.class' expected
+results/accepted_code/granitecode3b-int_arith-py-java.java:27:48: error: not a statement
+results/accepted_code/granitecode3b-int_arith-py-java.java:27:50: error: ';' expected
+results/accepted_code/granitecode3b-int_factors-js-java.java:1:2: error: java.lang.IllegalStateException: Expected the current token to be at position -1, found: Token{tok=Tok{index=0, text=public, position=0, columnI=0, isToken=true}, toksBefore=[], toksAfter=[Tok{index=-1, text= , position=6, columnI=6, isToken=false}]}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:715)
+	at com.google.googlejavaformat.OpsBuilder.peekTokens(OpsBuilder.java:292)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.splitModifiers(JavaInputAstVisitor.java:2439)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2289)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitModifiers(JavaInputAstVisitor.java:2275)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.typeDeclarationModifiers(JavaInputAstVisitor.java:2249)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitClassDeclaration(JavaInputAstVisitor.java:2024)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:126)
+	at com.google.googlejavaformat.java.java17.Java17InputAstVisitor.visitClass(Java17InputAstVisitor.java:51)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:402)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.visitCompilationUnit(JavaInputAstVisitor.java:167)
+	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:623)
+	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:92)
+	at com.google.googlejavaformat.java.JavaInputAstVisitor.scan(JavaInputAstVisitor.java:357)
+	at com.google.googlejavaformat.java.java21.Java21InputAstVisitor.scan(Java21InputAstVisitor.java:100)
+	at com.google.googlejavaformat.java.Formatter.format(Formatter.java:165)
+	at com.google.googlejavaformat.java.Formatter.getFormatReplacements(Formatter.java:283)
+	at com.google.googlejavaformat.java.Formatter.formatSource(Formatter.java:257)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:75)
+	at com.google.googlejavaformat.java.FormatFileCallable.call(FormatFileCallable.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+results/accepted_code/granitecode8b-int_arith-py-java.java:21:48: error: -> expected
+results/accepted_code/stablecode-bit_ops-c-java.java:12:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:13:50: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:14:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:15:44: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:16:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:17:57: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:19:10: error: not a statement
+results/accepted_code/stablecode-bit_ops-c-java.java:19:18: error: ';' expected
+results/accepted_code/stablecode-bit_ops-c-java.java:20:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:11:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:12:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:13:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:17:48: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:21:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:25:52: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:28:74: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:29:66: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:32:68: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:32:131: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:32:155: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:33:53: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:36:72: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:36:148: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:36:172: error: ';' expected
+results/accepted_code/stablecode-bit_ops-cpp-java.java:37:57: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:8:72: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:9:75: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:12:76: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:13:76: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:14:76: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:20:107: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:22:84: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:25:79: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:26:79: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:29:78: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:30:78: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:33:110: error: ';' expected
+results/accepted_code/stablecode-bit_ops-go-java.java:34:110: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:6:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:7:50: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:8:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:9:44: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:10:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:11:51: error: ';' expected
+results/accepted_code/stablecode-bit_ops-js-java.java:12:64: error: ';' expected
+results/accepted_code/stablecode-bit_ops-py-java.java:10:84: error: ';' expected
+results/accepted_code/stablecode-bit_ops-py-java.java:11:83: error: ';' expected
+results/accepted_code/stablecode-bit_ops-py-java.java:12:84: error: ';' expected
+results/accepted_code/stablecode-bit_ops-py-java.java:18:104: error: ';' expected
+results/accepted_code/stablecode-bit_ops-py-java.java:19:103: error: ';' expected
+results/accepted_code/stablecode-int_arith-c-java.java:13:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-c-java.java:14:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-c-java.java:15:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-c-java.java:18:57: error: ';' expected
+results/accepted_code/stablecode-int_arith-c-java.java:19:49: error: ';' expected
+results/accepted_code/stablecode-int_arith-cpp-java.java:6:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-cpp-java.java:7:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-cpp-java.java:8:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-cpp-java.java:16:57: error: ';' expected
+results/accepted_code/stablecode-int_arith-cpp-java.java:17:48: error: ';' expected
+results/accepted_code/stablecode-int_arith-go-java.java:21:24: error: '.class' expected
+results/accepted_code/stablecode-int_arith-go-java.java:30:32: error: illegal start of expression
+results/accepted_code/stablecode-int_arith-go-java.java:34:53: error: ';' expected
+results/accepted_code/stablecode-int_arith-go-java.java:36:44: error: ';' expected
+results/accepted_code/stablecode-int_arith-js-java.java:22:118: error: ';' expected
+results/accepted_code/stablecode-int_arith-js-java.java:27:114: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:8:50: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:25:43: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:26:57: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:27:51: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:28:83: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:29:64: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:30:66: error: ';' expected
+results/accepted_code/stablecode-int_arith-py-java.java:31:89: error: ';' expected
+results/accepted_code/stablecode-int_arith-rs-java.java:19:60: error: ';' expected
+results/accepted_code/stablecode-int_arith-rs-java.java:22:60: error: ';' expected
+results/accepted_code/stablecode-int_arith-rs-java.java:25:60: error: ';' expected
+results/accepted_code/stablecode-int_arith-rs-java.java:28:68: error: ';' expected
+results/accepted_code/stablecode-int_cmp-c-java.java:11:58: error: ';' expected
+results/accepted_code/stablecode-int_cmp-c-java.java:13:57: error: ';' expected
+results/accepted_code/stablecode-int_cmp-c-java.java:15:61: error: ';' expected
+results/accepted_code/stablecode-int_cmp-cpp-java.java:19:58: error: ';' expected
+results/accepted_code/stablecode-int_cmp-cpp-java.java:23:57: error: ';' expected
+results/accepted_code/stablecode-int_cmp-cpp-java.java:27:61: error: ';' expected
+results/accepted_code/stablecode-int_cmp-go-java.java:5:50: error: ';' expected
+results/accepted_code/stablecode-int_cmp-go-java.java:16:57: error: ';' expected
+results/accepted_code/stablecode-int_cmp-go-java.java:17:30: error: illegal start of expression
+results/accepted_code/stablecode-int_cmp-go-java.java:18:56: error: ';' expected
+results/accepted_code/stablecode-int_cmp-go-java.java:19:29: error: illegal start of expression
+results/accepted_code/stablecode-int_cmp-go-java.java:19:12: error: 'else' without 'if'
+results/accepted_code/stablecode-int_cmp-go-java.java:20:60: error: ';' expected
+results/accepted_code/stablecode-int_cmp-js-java.java:6:50: error: ';' expected
+results/accepted_code/stablecode-int_cmp-js-java.java:17:52: error: ';' expected
+results/accepted_code/stablecode-int_cmp-js-java.java:19:58: error: ';' expected
+results/accepted_code/stablecode-int_cmp-js-java.java:21:61: error: ';' expected
+results/accepted_code/stablecode-int_cmp-py-java.java:5:46: error: ';' expected
+results/accepted_code/stablecode-int_cmp-py-java.java:12:27: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-py-java.java:12:37: error: ';' expected
+results/accepted_code/stablecode-int_cmp-py-java.java:12:44: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-py-java.java:14:27: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-py-java.java:14:40: error: ';' expected
+results/accepted_code/stablecode-int_cmp-py-java.java:14:47: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-py-java.java:15:24: error: illegal start of expression
+results/accepted_code/stablecode-int_cmp-py-java.java:16:27: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-py-java.java:16:38: error: ';' expected
+results/accepted_code/stablecode-int_cmp-py-java.java:16:43: error: unclosed character literal
+results/accepted_code/stablecode-int_cmp-rs-java.java:13:114: error: ';' expected
+results/accepted_code/stablecode-int_cmp-rs-java.java:14:34: error: illegal start of expression
+results/accepted_code/stablecode-int_cmp-rs-java.java:15:109: error: ';' expected
+results/accepted_code/stablecode-int_cmp-rs-java.java:16:33: error: illegal start of expression
+results/accepted_code/stablecode-int_cmp-rs-java.java:16:8: error: 'else' without 'if'
+results/accepted_code/stablecode-int_cmp-rs-java.java:17:117: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:11:79: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:15:81: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:16:73: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:18:67: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:22:43: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:31:48: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:38:54: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:39:64: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:45:43: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:53:70: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:57:10: error: illegal start of type
+results/accepted_code/stablecode-int_factors-c-java.java:57:25: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:57:43: error: <identifier> expected
+results/accepted_code/stablecode-int_factors-c-java.java:59:32: error: unclosed string literal
+results/accepted_code/stablecode-int_factors-c-java.java:60:12: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:60:19: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:61:4: error: unclosed string literal
+results/accepted_code/stablecode-int_factors-c-java.java:64:64: error: ';' expected
+results/accepted_code/stablecode-int_factors-c-java.java:69:2: error: class, interface, enum, or record expected
+results/accepted_code/stablecode-int_factors-cpp-java.java:14:40: error: ';' expected
+results/accepted_code/stablecode-int_factors-cpp-java.java:25:73: error: ';' expected
+results/accepted_code/stablecode-int_factors-go-java.java:11:16: error: ';' expected
+results/accepted_code/stablecode-int_factors-go-java.java:19:24: error: ';' expected
+results/accepted_code/stablecode-int_factors-go-java.java:24:53: error: ';' expected
+results/accepted_code/stablecode-int_factors-go-java.java:27:79: error: ';' expected
+results/accepted_code/stablecode-int_factors-go-java.java:39:19: error: integer number too large
+results/accepted_code/stablecode-int_factors-go-java.java:40:19: error: integer number too large
+results/accepted_code/stablecode-int_factors-js-java.java:4:41: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:5:41: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:6:41: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:11:57: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:11:63: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:15:44: error: ';' expected
+results/accepted_code/stablecode-int_factors-js-java.java:24:12: error: ';' expected
+results/accepted_code/stablecode-int_factors-py-java.java:19:12: error: ';' expected
+results/accepted_code/stablecode-int_factors-py-java.java:21:40: error: ';' expected
+results/accepted_code/stablecode-int_factors-py-java.java:33:61: error: ';' expected
+results/accepted_code/stablecode-int_factors-py-java.java:34:61: error: ';' expected
+results/accepted_code/stablecode-int_factors-py-java.java:35:61: error: ';' expected
+results/accepted_code/stablecode-int_factors-rs-java.java:11:36: error: ';' expected
+results/accepted_code/stablecode-int_factors-rs-java.java:23:41: error: ';' expected
+results/accepted_code/stablecode-int_factors-rs-java.java:25:41: error: ';' expected
+Formatting Javascript files ...
+results/accepted_code/codegeex4-bit_ops-c-js.js 32ms (unchanged)
+results/accepted_code/codegeex4-bit_ops-cpp-js.js 5ms (unchanged)
+results/accepted_code/codegeex4-bit_ops-go-js.js 6ms (unchanged)
+results/accepted_code/codegeex4-bit_ops-java-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-bit_ops-py-js.js 8ms (unchanged)
+results/accepted_code/codegeex4-bit_ops-rs-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_arith-go-js.js 3ms (unchanged)
+results/accepted_code/codegeex4-int_arith-java-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_arith-rs-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-cpp-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-go-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-java-js.js 0ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_cmp-rs-js.js 3ms (unchanged)
+results/accepted_code/codegeex4-int_factors-c-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-int_factors-cpp-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-int_factors-go-js.js 2ms (unchanged)
+results/accepted_code/codegeex4-int_factors-java-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/codegeex4-int_factors-rs-js.js 2ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-cpp-js.js 2ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-go-js.js 3ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-java-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-py-js.js 4ms (unchanged)
+results/accepted_code/codegemma7b-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-go-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-java-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-py-js.js 2ms (unchanged)
+results/accepted_code/codegemma7b-int_arith-rs-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-c-js.js 0ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-cpp-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-go-js.js 0ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-java-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_cmp-rs-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-c-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-go-js.js 2ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-java-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/codegemma7b-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-bit_ops-cpp-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-bit_ops-go-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-bit_ops-java-js.js 0ms (unchanged)
+results/accepted_code/codellama7b-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-go-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-java-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_arith-rs-js.js 0ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-cpp-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-go-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-java-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_cmp-rs-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_factors-c-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_factors-go-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_factors-java-js.js 0ms (unchanged)
+results/accepted_code/codellama7b-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/codellama7b-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-c-js.js 2ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-cpp-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-go-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-java-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-py-js.js 3ms (unchanged)
+results/accepted_code/codeqwen-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_arith-c-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_arith-go-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_arith-java-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_arith-rs-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_cmp-cpp-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-int_cmp-go-js.js 0ms (unchanged)
+[error] results/accepted_code/codeqwen-int_cmp-java-js.js: SyntaxError: Unexpected token (1:1)
+[error] > 1 | <!DOCTYPE html>
+[error]     | ^
+[error]   2 | <html>
+[error]   3 | <body>
+[error]   4 |
+results/accepted_code/codeqwen-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_cmp-rs-js.js 2ms (unchanged)
+results/accepted_code/codeqwen-int_factors-c-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_factors-cpp-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-int_factors-go-js.js 2ms (unchanged)
+results/accepted_code/codeqwen-int_factors-java-js.js 0ms (unchanged)
+results/accepted_code/codeqwen-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/codeqwen-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-bit_ops-cpp-js.js 0ms (unchanged)
+[error] results/accepted_code/deepseekcoder7b-bit_ops-go-js.js: SyntaxError: Unexpected character '｜'. (20:59)
+[error]   18 |     // Logical shifts 
+[error]   19 |     console.log("shl: " + ((a << b)).toString(2).padStart(16, '0'));
+[error] > 20 |     console.log("shr: " + ((a >> b)).toString(2).padStart<｜begin▁of▁sentence｜>(16, '0'));
+[error]      |                                                           ^
+[error]   21 |     
+[error]   22 |     // Arithmetic shifts in JS done slightly differently than in Golang
+[error]   23 |     let ua = a >>> 0;   // convert to unsigned integer
+results/accepted_code/deepseekcoder7b-bit_ops-java-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-bit_ops-py-js.js 3ms (unchanged)
+[error] results/accepted_code/deepseekcoder7b-bit_ops-rs-js.js: SyntaxError: Unexpected character '｜'. (10:59)
+[error]    8 | console.log("~a     = " + (~a).toString(2).padStart(8, '0'));
+[error]    9 | console.log("a << 3 = " + ((a << 3)).toString(2).padStart(8, '0'));
+[error] > 10 | console.log("a >> 3 = " + ((a >> 3)).toString(2).padStart<｜begin▁of▁sentence｜>8, '0');
+[error]      |                                                           ^
+results/accepted_code/deepseekcoder7b-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_arith-go-js.js 2ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_arith-java-js.js 2ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_arith-rs-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-cpp-js.js 0ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-go-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-java-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_cmp-rs-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-c-js.js 2ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-go-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-java-js.js 0ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoder7b-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-cpp-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-go-js.js 2ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-java-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-py-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_arith-java-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_cmp-c-js.js 0ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_cmp-cpp-js.js 0ms (unchanged)
+[error] results/accepted_code/deepseekcoderv2-int_cmp-java-js.js: SyntaxError: Unexpected token, expected "from" (1:12)
+[error] > 1 | import java.io.*;
+[error]     |            ^
+[error]   2 |
+[error]   3 | public class compInt {
+[error]   4 |     public static void main(String[] args) {
+results/accepted_code/deepseekcoderv2-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_cmp-rs-js.js 2ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_factors-c-js.js 1ms (unchanged)
+results/accepted_code/deepseekcoderv2-int_factors-go-js.js 1ms (unchanged)
+[error] results/accepted_code/deepseekcoderv2-int_factors-java-js.js: SyntaxError: Identifier directly after number. (4:15)
+[error]   2 |  const factors = new Set();
+[error]   3 |  factors.add(n);
+[error] > 4 |  factors.add(1L);
+[error]     |               ^
+[error]   5 |  for (let test = n - 1; test >= Math.sqrt(n); test--){
+[error]   6 |    if(n % test == 0) {
+[error]   7 |      factors.add(test);
+[error] results/accepted_code/deepseekcoderv2-int_factors-py-js.js: SyntaxError: Unexpected token, expected "from" (2:1)
+[error]   1 | from math import isqrt
+[error] > 2 | def factor(n):
+[error]     | ^
+[error]   3 |     factors1, factors2 = [], []
+[error]   4 |     for x in range(1, isqrt(n)):
+[error]   5 |         if n % x == 0:
+results/accepted_code/deepseekcoderv2-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/dolphincoder7b-bit_ops-c-js.js 0ms
+results/accepted_code/dolphincoder7b-bit_ops-cpp-js.js 1ms
+results/accepted_code/dolphincoder7b-bit_ops-go-js.js 1ms
+results/accepted_code/dolphincoder7b-bit_ops-java-js.js 1ms
+results/accepted_code/dolphincoder7b-bit_ops-py-js.js 3ms
+results/accepted_code/dolphincoder7b-bit_ops-rs-js.js 0ms
+results/accepted_code/dolphincoder7b-int_arith-c-js.js 1ms
+results/accepted_code/dolphincoder7b-int_arith-cpp-js.js 1ms
+results/accepted_code/dolphincoder7b-int_arith-go-js.js 1ms
+results/accepted_code/dolphincoder7b-int_arith-java-js.js 1ms
+results/accepted_code/dolphincoder7b-int_arith-py-js.js 0ms
+results/accepted_code/dolphincoder7b-int_arith-rs-js.js 1ms
+results/accepted_code/dolphincoder7b-int_cmp-c-js.js 1ms
+results/accepted_code/dolphincoder7b-int_cmp-cpp-js.js 1ms
+results/accepted_code/dolphincoder7b-int_cmp-go-js.js 1ms
+results/accepted_code/dolphincoder7b-int_cmp-java-js.js 1ms
+results/accepted_code/dolphincoder7b-int_cmp-rs-js.js 1ms
+results/accepted_code/dolphincoder7b-int_factors-c-js.js 2ms
+results/accepted_code/dolphincoder7b-int_factors-cpp-js.js 1ms
+results/accepted_code/dolphincoder7b-int_factors-go-js.js 1ms
+results/accepted_code/dolphincoder7b-int_factors-java-js.js 0ms
+[error] results/accepted_code/dolphincoder7b-int_factors-py-js.js: SyntaxError: Unexpected token, expected "(" (4:9)
+[error]   2 |     initialize empty array factors1 and factors2
+[error]   3 |
+[error] > 4 |     for x from 1 to square root of n {
+[error]     |         ^
+[error]   5 |         if n is divisible by x {
+[error]   6 |             add x to the end of factors1
+[error]   7 |             append (n divided by x) to the end of factors2
+results/accepted_code/dolphincoder7b-int_factors-rs-js.js 1ms
+results/accepted_code/granitecode3b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-bit_ops-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-bit_ops-go-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-bit_ops-java-js.js 1ms (unchanged)
+[error] results/accepted_code/granitecode3b-bit_ops-py-js.js: SyntaxError: Identifier directly after number. (20:17)
+[error]   18 |              = 0b{(a >> 1) & mask.toString(2).padStart(width, '0')}`);
+[error]   19 |      
+[error] > 20 |      LEFT:    0b${a.toString(2).padStart(width, '0')} << 1
+[error]      |                 ^
+[error]   21 |              = 0b{(a << 1) & mask.toString(2).padStart(width, '0')}`);   
+[error]   22 | }
+[error]   23 |
+results/accepted_code/granitecode3b-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-c-js.js 2ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-go-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-java-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_arith-rs-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_cmp-cpp-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_cmp-go-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_cmp-java-js.js 1ms (unchanged)
+[error] results/accepted_code/granitecode3b-int_cmp-py-js.js: SyntaxError: Unexpected token (1:1)
+[error] > 1 | <!DOCTYPE html>
+[error]     | ^
+[error]   2 | <html>
+[error]   3 | <body>
+[error]   4 |   <script>
+results/accepted_code/granitecode3b-int_cmp-rs-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-c-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-go-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-java-js.js 0ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/granitecode3b-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-bit_ops-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-bit_ops-go-js.js 2ms (unchanged)
+results/accepted_code/granitecode8b-bit_ops-java-js.js 1ms (unchanged)
+[error] results/accepted_code/granitecode8b-bit_ops-py-js.js: SyntaxError: Unexpected token, expected "," (38:3)
+[error]   36 |             | ((a & ((1 << n) - 1))   // bottom masked...
+[error]   37 |                << (width - n)))  // ... then moved up    
+[error] > 38 |   }
+[error]      |   ^
+[error]   39 | }
+[error]   40 | function rotl(width, a, n) {
+[error]   41 |   if (n < 0) {
+[error] results/accepted_code/granitecode8b-bit_ops-rs-js.js: SyntaxError: Unterminated regular expression. (8:26)
+[error]    6 | console.log(`a & b  = ${(a & b).toString(2).padStart(8, '0')}`);
+[error]    7 | console.log(`a ^ b  = ${(a ^ b).toString(2).padStart(8, '0')}`);
+[error] >  8 | console.log(`!a     = ${/~a}.toString(2).padStart(8, '0')}`);
+[error]      |                          ^
+[error]    9 | console.log(`a << 3 = ${(a << 3).toString(2).padStart(8, '0')}`);
+[error]   10 | console.log(`a >> 3 = ${(a >> 3).toString(2).padStart(8, '0')}`);
+results/accepted_code/granitecode8b-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_arith-cpp-js.js 0ms (unchanged)
+results/accepted_code/granitecode8b-int_arith-go-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_arith-java-js.js 0ms (unchanged)
+results/accepted_code/granitecode8b-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_arith-rs-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-c-js.js 0ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-go-js.js 2ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-java-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_cmp-rs-js.js 1ms (unchanged)
+[error] results/accepted_code/granitecode8b-int_factors-c-js.js: SyntaxError: Missing semicolon. (1:21)
+[error] > 1 | functionFactors(num) {
+[error]     |                     ^
+[error]   2 |   let factors = [];
+[error]   3 |   for (let i = 1; i <= Math.sqrt(num); i++) {
+[error]   4 |     if (num % i === 0) {
+results/accepted_code/granitecode8b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_factors-go-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_factors-java-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_factors-py-js.js 1ms (unchanged)
+results/accepted_code/granitecode8b-int_factors-rs-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-bit_ops-c-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-bit_ops-cpp-js.js 1ms (unchanged)
+[error] results/accepted_code/magicoder7b-bit_ops-go-js.js: SyntaxError: Unexpected token (34:18)
+[error]   32 | }
+[error]   33 |
+[error] > 34 | let a, b = -460, 6;
+[error]      |                  ^
+[error]   35 | bitwise(a, b);
+results/accepted_code/magicoder7b-bit_ops-java-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-bit_ops-py-js.js 3ms (unchanged)
+results/accepted_code/magicoder7b-bit_ops-rs-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-c-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-cpp-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-go-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-java-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-py-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_arith-rs-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-c-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-cpp-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-go-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-java-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-py-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_cmp-rs-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-c-js.js 2ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-cpp-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-go-js.js 1ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-java-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-py-js.js 0ms (unchanged)
+results/accepted_code/magicoder7b-int_factors-rs-js.js 1ms (unchanged)
+[error] results/accepted_code/stablecode-bit_ops-c-js.js: SyntaxError: Unexpected token (2:39)
+[error]   1 | function bitwise(a, b) {
+[error] > 2 |     console.log("a and b: " + (a & b)));
+[error]     |                                       ^
+[error]   3 |     console.log("a or b: " + (a | b)));
+[error]   4 |     console.log("a xor b: " + (a ^ b)));
+[error]   5 |     console.log("not a: " + (~a))));
+[error] results/accepted_code/stablecode-bit_ops-cpp-js.js: SyntaxError: Unexpected token, expected "," (13:27)
+[error]   11 |
+[error]   12 |     // Perform a bitwise NOT on the first integer, a.
+[error] > 13 |     console.log(`not ${a}`: ~a}); 
+[error]      |                           ^
+[error]   14 |
+[error]   15 |     let ua = a; // Convert a to unsigned int 
+[error]   16 |     // Note: JavaScript does not support rotation operators or variable shift/rotate amounts, like C++
+[error] results/accepted_code/stablecode-bit_ops-go-js.js: SyntaxError: Unexpected token, expected "}" (6:35)
+[error]   4 |
+[error]   5 |   // Bitwise logical operations
+[error] > 6 |   console.log(`and: ${bitAnd(a, b))}`);
+[error]     |                                   ^
+[error]   7 |   console.log(`or:  ${bitOr(a, b))}`);
+[error]   8 |   console.log(`xor: ${bitXor(a, b)))}`);
+[error]   9 |   console.log(`not:  ${~a}}`);
+[error] results/accepted_code/stablecode-bit_ops-java-js.js: SyntaxError: Unexpected token (2:39)
+[error]   1 | function bitwise(a, b) {
+[error] > 2 |     console.log("a AND b: " + (a & b)));
+[error]     |                                       ^
+[error]   3 |     console.log("a OR b: " + ((a | b))));
+[error]   4 |     console.log("a XOR b: " + ((a ^ b))));
+[error]   5 |     console.log("NOT a: " + (~a))));
+[error] results/accepted_code/stablecode-bit_ops-py-js.js: SyntaxError: Unexpected token, expected "}" (4:37)
+[error]   2 |     const mask = ((1 << width) - 1);
+[error]   3 |
+[error] > 4 |     console.log(`\n  AND:     0b${a :0{width}b}} 
+[error]     |                                     ^
+[error]   5 |           & 0b${b :0{width}b}} 
+[error]   6 |           = 0b${(a & b) & mask :0{width}b}}`
+[error]   7 |     );
+[error] results/accepted_code/stablecode-bit_ops-rs-js.js: SyntaxError: Unexpected token (4:58)
+[error]   2 | let b = 91;  // decimal 91
+[error]   3 |
+[error] > 4 | console.log("a      = " + a.toString(2).padStart(8, "0"))); // binary representation of 105 in 8-bit padded format
+[error]     |                                                          ^
+[error]   5 |
+[error]   6 | console.log("b      = " + b.toString(2).padStart(8, "0"))); // binary representation of 91 in 8-bit padded format
+[error]   7 |
+[error] results/accepted_code/stablecode-int_arith-c-js.js: SyntaxError: Unexpected token (5:3)
+[error]   3 |   input: process.stdin,
+[error]   4 |   output: process.stdout
+[error] > 5 | }));
+[error]     |   ^
+[error]   6 |
+[error]   7 | let a;
+[error]   8 | let b;
+[error] results/accepted_code/stablecode-int_arith-cpp-js.js: SyntaxError: Unexpected token (5:3)
+[error]   3 |     input: process.stdin,
+[error]   4 |     output: process.stdout
+[error] > 5 | }));
+[error]     |   ^
+[error]   6 |
+[error]   7 | readline.question("Enter two integers separated by space: ", (answer) => {
+[error]   8 |
+[error] results/accepted_code/stablecode-int_arith-go-js.js: SyntaxError: Unexpected token (6:3)
+[error]   4 |   input: process.stdin,
+[error]   5 |   output: process.stdout
+[error] > 6 | }));
+[error]     |   ^
+[error]   7 |
+[error]   8 |
+[error]   9 | rl.question('enter two integers: ', (a) => {
+[error] results/accepted_code/stablecode-int_arith-java-js.js: SyntaxError: Unexpected token (6:3)
+[error]   4 |   input: process.stdin,
+[error]   5 |   output: process.stdout
+[error] > 6 | }));
+[error]     |   ^
+[error]   7 |
+[error]   8 | rl.question("Enter first number: ", (a) => {
+[error]   9 |     rl.question("Enter second number: ", (b) => {
+[error] results/accepted_code/stablecode-int_arith-py-js.js: SyntaxError: Unexpected token (14:43)
+[error]   12 |
+[error]   13 | // For quotient, JavaScript rounds towards zero by default.
+[error] > 14 | let quotient = Math.floor(input1 / input2));
+[error]      |                                           ^
+[error]   15 | console.log("Integer quotient: " + quotient);
+[error]   16 |
+[error]   17 | let remainder = ((input1 % input2) * -1);
+[error] results/accepted_code/stablecode-int_arith-rs-js.js: SyntaxError: Unexpected token (1:34)
+[error] > 1 | let a = parseInt(process.argv[2]));
+[error]     |                                  ^
+[error]   2 | let b = parseInt(process.argv[3]));
+[error]   3 |
+[error]   4 | console.log("sum: " + (a + b)));
+[error] results/accepted_code/stablecode-int_cmp-c-js.js: SyntaxError: Unexpected token (2:50)
+[error]   1 | let a = parseInt(prompt("Enter first integer:")),
+[error] > 2 |     b = parseInt(prompt("Enter second integer:")));
+[error]     |                                                  ^
+[error]   3 |
+[error]   4 | if (a < b) {
+[error]   5 |   console.log(`${a} is less than ${b}.`);
+[error] results/accepted_code/stablecode-int_cmp-cpp-js.js: SyntaxError: Unexpected token (5:49)
+[error]   3 | // Prompting for input and parsing integer values
+[error]   4 | if (prompt("Enter first integer:") && prompt("Enter second integer:")) {
+[error] > 5 |     a = parseInt(prompt("Enter first integer:")));
+[error]     |                                                 ^
+[error]   6 |     b = parseInt(prompt("Enter second integer:")));
+[error]   7 |
+[error]   8 |     // Test condition for each case separately
+[error] results/accepted_code/stablecode-int_cmp-go-js.js: SyntaxError: Unexpected token, expected "(" (4:8)
+[error]   2 | let n2 = prompt("Enter number 2:") | 0;
+[error]   3 |
+[error] > 4 | switch true {
+[error]     |        ^
+[error]   5 | case n1 < n2:
+[error]   6 |   console.log(n1, "less than", n2);
+[error]   7 | case n1 === n2:
+[error] results/accepted_code/stablecode-int_cmp-java-js.js: SyntaxError: Unexpected token (13:28)
+[error]   11 |         const intNbr2 = parseInt(nbr2);
+[error]   12 |   
+[error] > 13 |         if(intNbr1<intNbr2))
+[error]      |                            ^
+[error]   14 |             console.log(`${intNbr1} is less than ${intNbr2}`));
+[error]   15 |
+[error]   16 |         if(intNbr1>intNbr2)
+[error] results/accepted_code/stablecode-int_cmp-py-js.js: SyntaxError: Unexpected token (4:3)
+[error]   2 |   input: process.stdin,
+[error]   3 |   output: process.stdout
+[error] > 4 | }));
+[error]     |   ^
+[error]   5 |
+[error]   6 | readline.question('Enter value of a: ', a => {
+[error]   7 |   readline.question('Enter value of b: ', b => {
+[error] results/accepted_code/stablecode-int_cmp-rs-js.js: SyntaxError: Unexpected token (5:3)
+[error]   3 |   input: process.stdin,
+[error]   4 |   output: process.stdout
+[error] > 5 | }));
+[error]     |   ^
+[error]   6 |
+[error]   7 | rl.question("Enter two integers separated by a space: ", (answer) => {
+[error]   8 |     let nums = answer.split(" ").map(Number);
+[error] results/accepted_code/stablecode-int_factors-c-js.js: SyntaxError: Unexpected token (8:60)
+[error]    6 |   if (newSize > flix) {
+[error]    7 |
+[error] >  8 |     fctrs.list = realloc(fctrs.list, newSize * sizeof(int)));
+[error]      |                                                            ^
+[error]    9 |
+[error]   10 |   } else {
+[error]   11 |
+[error] results/accepted_code/stablecode-int_factors-cpp-js.js: SyntaxError: Unexpected token (18:52)
+[error]   16 |
+[error]   17 | for (let i = 0; i < SampleNumbers.length; ++i) {
+[error] > 18 |     let factors = generateFactors(SampleNumbers[i]));
+[error]      |                                                    ^
+[error]   19 |     console.log(`Factors of ${SampleNumbers[i]}} are: ` + factors.join(', ')));
+[error]   20 | }
+[error] results/accepted_code/stablecode-int_factors-go-js.js: SyntaxError: Unexpected token (6:57)
+[error]   4 |     return;
+[error]   5 |   }
+[error] > 6 |   console.log('Factors of ' + nr + ': ', getFactors(nr)));
+[error]     |                                                         ^
+[error]   7 |   console.log('Number of factors =', getFactors(nr).length);
+[error]   8 | }
+[error]   9 |
+[error] results/accepted_code/stablecode-int_factors-java-js.js: SyntaxError: Unexpected token (9:46)
+[error]    7 |         if (n % test === 0) {
+[error]    8 |             factors.add(test);
+[error] >  9 |             factors.add(Math.floor(n / test)));
+[error]      |                                              ^
+[error]   10 |         }
+[error]   11 |     }
+[error]   12 |     return factors;
+[error] results/accepted_code/stablecode-int_factors-py-js.js: SyntaxError: Unexpected token (7:46)
+[error]    5 |         if (n % x == 0) {
+[error]    6 |             factors1.push(x);
+[error] >  7 |             factors2.push(Math.floor(n / x)) );
+[error]      |                                              ^
+[error]    8 |         }
+[error]    9 |     }
+[error]   10 |     let x = factors1[factors1.length - 1] + 1;
+[error] results/accepted_code/stablecode-int_factors-rs-js.js: SyntaxError: Unexpected token (3:27)
+[error]   1 | function main() {
+[error]   2 |   const nums = [1, 2, 4, 5, 10, 10, 20, 25, 50, 100];
+[error] > 3 |   console.log(factor(100))); // asserts that two expressions are equal to each other
+[error]     |                           ^
+[error]   4 |   const nums2 = [1, 101];
+[error]   5 |   console.log(factor(101))));
+[error]   6 | }
+Formatting Python files ...
+error: cannot format results/accepted_code/codellama7b-bit_ops-cpp-py.py: Cannot parse: 3:5: void bitwise(int a, int b) {
+error: cannot format results/accepted_code/codeqwen-int_factors-rs-py.py: Cannot parse: 9:6: print(assert(factor(100) == [1, 2, 4, 5, 10, 20, 25, 50, 100]))
+error: cannot format results/accepted_code/codellama7b-bit_ops-js-py.py: Cannot parse: 27:32:     a_logicalrightshift_b = a >>> b
+error: cannot format results/accepted_code/deepseekcoder7b-bit_ops-go-py.py: Cannot parse: 19:44:     print('shr: {0:016b}'.format((a >> b) & <｜begin▁of▁sentence｜>0xffff))
+error: cannot format results/accepted_code/deepseekcoder7b-bit_ops-rs-py.py: '｜begin▁of▁sentence｜'
+error: cannot format results/accepted_code/deepseekcoderv2-int_cmp-rs-py.py: Cannot parse: 2:141: print(f'The first number ({a}) {"is less than" if int(a)<int(b) else "equals" if int(a)==int(b) else "is greater than"} the second number ({b)}') # Compare them and print the result.
+error: cannot format results/accepted_code/deepseekcoderv2-bit_ops-rs-py.py: Cannot parse: 10:22:     print(f'!a     = {!a:>8b}')
+error: cannot format results/accepted_code/deepseekcoderv2-bit_ops-java-py.py: Cannot parse: 8:26:     print("a >>> b:", a >>> b) # logical right shift
+error: cannot format results/accepted_code/deepseekcoderv2-bit_ops-js-py.py: Cannot parse: 8:26:     print("a >>> b:", a >>> b)  # logical right shift
+error: cannot format results/accepted_code/dolphincoder7b-bit_ops-js-py.py: Cannot parse: 27:30:     right_logical_shift = a >>> b
+reformatted results/accepted_code/dolphincoder7b-bit_ops-c-py.py
+reformatted results/accepted_code/dolphincoder7b-bit_ops-cpp-py.py
+error: cannot format results/accepted_code/dolphincoder7b-int_arith-go-py.py: Cannot parse: 1:4: GET A AND B
+reformatted results/accepted_code/dolphincoder7b-bit_ops-rs-py.py
+reformatted results/accepted_code/dolphincoder7b-bit_ops-java-py.py
+reformatted results/accepted_code/dolphincoder7b-bit_ops-go-py.py
+reformatted results/accepted_code/dolphincoder7b-int_arith-c-py.py
+reformatted results/accepted_code/dolphincoder7b-int_arith-rs-py.py
+reformatted results/accepted_code/dolphincoder7b-int_arith-cpp-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-c-py.py
+reformatted results/accepted_code/dolphincoder7b-int_arith-java-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-go-py.py
+reformatted results/accepted_code/dolphincoder7b-int_arith-js-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-cpp-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-java-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-js-py.py
+error: cannot format results/accepted_code/granitecode3b-bit_ops-go-py.py: Cannot parse: 1:8: package main
+reformatted results/accepted_code/dolphincoder7b-int_factors-java-py.py
+reformatted results/accepted_code/dolphincoder7b-int_cmp-rs-py.py
+error: cannot format results/accepted_code/granitecode3b-int_cmp-go-py.py: Cannot parse: 1:8: package main
+error: cannot format results/accepted_code/granitecode3b-int_factors-c-py.py: Cannot parse: 5:1:  if num % divisor == 0:
+error: cannot format results/accepted_code/granitecode3b-int_factors-cpp-py.py: Cannot parse: 4:1:  if n % i == 0:
+error: cannot format results/accepted_code/granitecode3b-int_factors-go-py.py: Cannot parse: 4:1:  print(f"Factors of {n} not computed")
+error: cannot format results/accepted_code/granitecode3b-int_factors-java-py.py: Cannot parse: 5:1:  if n % i == 0:
+error: cannot format results/accepted_code/granitecode3b-int_factors-rs-py.py: Cannot parse: 4:1:  if num % i == 0:
+error: cannot format results/accepted_code/granitecode3b-bit_ops-js-py.py: Cannot parse: 8:25:    print("a >>> b:", a >>> b) # logical right shift
+error: cannot format results/accepted_code/granitecode8b-int_factors-c-py.py: Cannot parse: 4:1:  if num % i == 0:
+reformatted results/accepted_code/dolphincoder7b-int_factors-js-py.py
+error: cannot format results/accepted_code/granitecode8b-bit_ops-js-py.py: Cannot parse: 8:24:  print("a >>> b: ", a >>> b) # logical right shift
+error: cannot format results/accepted_code/granitecode8b-int_factors-go-py.py: Cannot parse: 3:1:  print("Factors of", nr, "not computed")
+reformatted results/accepted_code/dolphincoder7b-int_factors-rs-py.py
+error: cannot format results/accepted_code/granitecode8b-int_factors-cpp-py.py: Cannot parse: 4:1:  if n % i == 0:
+error: cannot format results/accepted_code/granitecode8b-int_factors-js-py.py: Cannot parse: 4:1:  if num % i == 0:
+reformatted results/accepted_code/dolphincoder7b-int_factors-c-py.py
+reformatted results/accepted_code/dolphincoder7b-int_factors-cpp-py.py
+error: cannot format results/accepted_code/granitecode8b-int_factors-java-py.py: Cannot parse: 7:1:  if n % test == 0:
+error: cannot format results/accepted_code/granitecode8b-int_factors-rs-py.py: Cannot parse: 4:1:  if num % i == 0:
+error: cannot format results/accepted_code/stablecode-bit_ops-go-py.py: Cannot parse: 3:27:     print("b:", bin(a | b)))
+error: cannot format results/accepted_code/stablecode-bit_ops-java-py.py: Cannot parse: 5:23:     print("NOT a:", ~a))
+error: cannot format results/accepted_code/stablecode-bit_ops-cpp-py.py: Cannot parse: 6:23:     print("not a:", ~a))  # Bitwise NOT
+error: cannot format results/accepted_code/stablecode-int_arith-c-py.py: Cannot parse: 7:26:     b = int(sys.argv[-2] ))
+error: cannot format results/accepted_code/stablecode-bit_ops-js-py.py: Cannot parse: 5:24:     print("NOT a: ", ~a))
+error: cannot format results/accepted_code/stablecode-int_cmp-c-py.py: Cannot parse: 2:43: a = int(input("Enter the first integer: ")))
+error: cannot format results/accepted_code/stablecode-int_cmp-cpp-py.py: Cannot parse: 2:39: a = int(input("Enter first integer: ")))
+error: cannot format results/accepted_code/stablecode-int_arith-go-py.py: Cannot parse: 2:43: a = int(input("Enter the first integer: ")))
+error: cannot format results/accepted_code/stablecode-int_arith-rs-py.py: Cannot parse: 6:24:     a = int(sys.argv[1]))
+error: cannot format results/accepted_code/stablecode-int_cmp-rs-py.py: Cannot parse: 5:47:         a = int(input("Enter first integer: ")))
+reformatted results/accepted_code/dolphincoder7b-int_factors-go-py.py
+error: cannot format results/accepted_code/stablecode-int_factors-cpp-py.py: Cannot parse: 7:42:                 factors.append(int(n / i)))
+error: cannot format results/accepted_code/stablecode-int_cmp-go-py.py: Cannot parse: 3:41:         n1 = int(input('Enter number: ')))
+error: cannot format results/accepted_code/stablecode-int_factors-java-py.py: Cannot parse: 9:55:     for test in range(n - 1, int(math.sqrt(n))), -1, -1):
+error: cannot format results/accepted_code/stablecode-int_factors-js-py.py: Cannot parse: 13:44:     n_factors = sorted(list(set(n_factors))))
+error: cannot format results/accepted_code/stablecode-int_factors-go-py.py: Cannot parse: 13:43:                 fs.append(fs[-1]*int(nr/d)))
+error: cannot format results/accepted_code/stablecode-bit_ops-c-py.py: cannot use --safe with this file; failed to parse source file AST: f-string: single '}' is not allowed (<unknown>, line 6)
+This could be caused by running Black with an older Python version that does not support new syntax used in your source file.
+error: cannot format results/accepted_code/stablecode-int_factors-rs-py.py: Cannot parse: 12:18: print(factor(100)))  # prints factors of 100
+error: cannot format results/accepted_code/stablecode-bit_ops-rs-py.py: cannot use --safe with this file; failed to parse source file AST: f-string: single '}' is not allowed (<unknown>, line 7)
+This could be caused by running Black with an older Python version that does not support new syntax used in your source file.
+
+Oh no! 💥 💔 💥
+22 files reformatted, 192 files left unchanged, 44 files failed to reformat.
+Formatting Rust files ...
+error: unexpected closing delimiter: `}`
+   --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-bit_ops-py-rs.rs:106:1
+    |
+88  | fn helper_funcs(width: usize, a: i32) {
+    |                                       - this delimiter might not be properly closed...
+...
+105 |     }
+    |     - ...as it matches this but it has different indentation
+106 | }
+    | ^ unexpected closing delimiter
+
+error: expected `{`, found `,`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-int_factors-py-rs.rs:24:16
+   |
+24 |     for i in 45, 53, 64 {
+   |                ^ expected `{`
+
+error: this file contains an unclosed delimiter
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-int_cmp-py-rs.rs:15:2
+   |
+1  | fn main() {
+   |           - unclosed delimiter
+...
+15 | }
+   |  ^
+
+error: expected item, found keyword `for`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-int_factors-py-rs.rs:25:1
+   |
+25 | for i in vec![45, 53, 64] {
+   | ^^^ expected item
+   |
+   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: `~` cannot be used as a unary operator
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-js-rs.rs:6:21
+  |
+6 |    let not_result = ~a;
+  |                     ^ help: use `!` to perform bitwise not
+
+error[E0768]: no valid digits found for number
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:15
+   |
+14 |              "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
+   |               ^^
+
+error[E0765]: unterminated double quote string
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:28
+   |
+14 |                "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
+   |  ____________________________^
+15 | |     
+16 | |     println!-- NEGATIVE
+17 | |     println!-- ZERO
+...  |
+32 | |     }
+33 | | }
+   | |_^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_arith-py-rs.rs:34:5
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_arith-py-rs.rs:34:11
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_arith-py-rs.rs:34:14
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_arith-py-rs.rs:34:23
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: this file contains an unclosed delimiter
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_arith-py-rs.rs:34:26
+   |
+3  | fn main() {
+   |           - unclosed delimiter
+...
+32 |     } else {
+   |            - this delimiter might not be properly closed...
+33 |         println!("Can't perform operation because of dividing by zero.");    
+34 |    <｜begin▁of▁sentence｜>}
+   |                           -^
+   |                           |
+   |                           ...as it matches this but it has different indentation
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-go-rs.rs:18:13
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |             ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-go-rs.rs:18:19
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                    ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-go-rs.rs:18:22
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                       ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-go-rs.rs:18:31
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                                ^^
+
+error: generic args in patterns require the turbofish syntax
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-go-rs.rs:18:12
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |            ^
+   |
+help: use `::<...>` instead of `<...>` to specify lifetime, type, or const arguments
+   |
+18 |         std::<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |            ++
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:16:25
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                         ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:16:31
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:16:34
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                   ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:16:43
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                            ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:16:32
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                 ^^ expected one of 7 possible tokens
+
+error: expected `;`, found keyword `if`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-java-rs.rs:17:6
+   |
+17 |     }
+   |      ^ help: add `;` here
+18 |
+19 |     if nbr1 < nbr2 {
+   |     -- unexpected token
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-py-rs.rs:17:5
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-py-rs.rs:17:11
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-py-rs.rs:17:14
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-py-rs.rs:17:23
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: this file contains an unclosed delimiter
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_cmp-py-rs.rs:21:36
+   |
+15 |     if a < b {
+   |              - this delimiter might not be properly closed...
+16 |         println!("a is less than b");
+17 |    <｜begin▁of▁sentence｜>}
+   |                           - ...as it matches this but it has different indentation
+...
+20 |     } else if a == b {
+   |                      - unclosed delimiter
+21 |        println!("a is equal to b");
+   |                                    ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:32:13
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |             ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:32:19
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                    ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:32:22
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                       ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:32:31
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                                ^^
+
+error: expected one of `:`, `@`, or `|`, found `,`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:26:18
+   |
+26 |        fn apf(&nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |                  ^ expected one of `:`, `@`, or `|`
+   |
+   = note: anonymous parameters are removed in the 2018 edition (see RFC 1685)
+help: if this is a `self` type, give it a parameter name
+   |
+26 |        fn apf(self: &nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               +++++
+help: if this is a parameter name, give it a type
+   |
+26 |        fn apf(nr: &TypeName, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               ~~~~~~~~~~~~~
+help: if this is a type, explicitly ignore the parameter name
+   |
+26 |        fn apf(_: &nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               ++
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:32:20
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                     ^^ expected one of 7 possible tokens
+
+error: expected type, found `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:52:14
+   |
+52 |             <}
+   |              ^ expected type
+
+error: expected type, found `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-go-rs.rs:56:9
+   |
+56 |        <} 
+   |         ^ expected type
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-js-rs.rs:12:5
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-js-rs.rs:12:11
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-js-rs.rs:12:14
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-js-rs.rs:12:23
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-int_factors-js-rs.rs:12:12
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |             ^^ expected one of 7 possible tokens
+
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-c-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-cpp-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-go-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-java-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-js-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-bit_ops-py-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-c-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-cpp-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-go-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-java-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-js-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_arith-py-rs.rs
+error: expected one of `!` or `::`, found `A`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-c-rs.rs:1:5
+  |
+1 | GET A FROM USER
+  |     ^ expected one of `!` or `::`
+
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-cpp-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-go-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-java-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-js-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_cmp-py-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-c-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-cpp-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-go-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-java-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-js-rs.rs
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/dolphincoder7b-int_factors-py-rs.rs
+error: expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `>`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/granitecode8b-int_factors-js-rs.rs:1:28
+  |
+1 | fn factors(num: i32) -> Vec> {
+  |                            ^ expected one of 7 possible tokens
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-cpp-rs.rs:1:36
+  |
+1 | fn bitwise(mut a: u32, mut b: i32) {
+  |                                    ^ unclosed delimiter
+...
+4 |     println!("a or b:  {}", a | u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-cpp-rs.rs:6:93
+  |
+4 |     println!("a or b:  {}", a | u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             - missing open `(` for this delimiter
+5 |
+6 |     println!("a xor b: {}", a ^ u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             ^ unexpected closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-go-rs.rs:4:16
+  |
+4 | struct U16(u16));
+  |                ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-java-rs.rs:1:28
+  |
+1 | fn bitwise(a: i32, b: i32) {
+  |                            ^ unclosed delimiter
+...
+8 |     println!("a >>> b: {}", a as u32 >> b as u32)); // logical right shift
+  |                                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-java-rs.rs:9:46
+  |
+8 |     println!("a >>> b: {}", a as u32 >> b as u32)); // logical right shift
+  |                                                  - missing open `(` for this delimiter
+9 |     println!("a rol b: {}", a.rotate_left(b))); // rotate left, Rust 1.26+
+  |                                              ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-js-rs.rs:1:27
+  |
+1 | fn bitwise(a: i32, b: i32){
+  |                           ^ unclosed delimiter
+...
+8 |    println!("a >>> b: {}", a as usize >> b as usize)); // logical right shift
+  |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-js-rs.rs:9:1
+  |
+8 |    println!("a >>> b: {}", a as usize >> b as usize)); // logical right shift
+  |                                                     - missing open `(` for this delimiter
+9 | }
+  | ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-py-rs.rs:41:19
+   |
+41 |     for _ in 0..n {
+   |                   ^ unclosed delimiter
+42 |         result = (result << 1) | (result & 0x555555555555555) | (result & 0x33333333333333));
+   |                                                                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-bit_ops-py-rs.rs:46:1
+   |
+42 |         result = (result << 1) | (result & 0x555555555555555) | (result & 0x33333333333333));
+   |                                                                                            - missing open `(` for this delimiter
+...
+46 | }
+   | ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-c-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-c-rs.rs:10:34
+   |
+6  |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+   |                                  - missing open `(` for this delimiter
+...
+10 |     io::stdin().read_line(&mut b)).expect("Failed to read line");
+   |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-cpp-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-cpp-rs.rs:10:34
+   |
+6  |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+   |                                  - missing open `(` for this delimiter
+...
+10 |     io::stdin().read_line(&mut b)).expect("Failed to read line");
+   |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-go-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut input)).expect("Error reading line");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-go-rs.rs:8:81
+  |
+6 |     io::stdin().read_line(&mut input)).expect("Error reading line");
+  |                                      - missing open `(` for this delimiter
+7 |
+8 |     let numbers: Vec<i32> = input.split_whitespace().map(|s| s.parse().unwrap())).collect();
+  |                                                                                 ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-java-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut a))
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-java-rs.rs:16:34
+   |
+6  |     io::stdin().read_line(&mut a))
+   |                                  - missing open `(` for this delimiter
+...
+16 |     io::stdin().read_line(&mut b))
+   |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-js-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+8 |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-js-rs.rs:20:31
+   |
+8  |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+   |                                      - missing open `(` for this delimiter
+...
+20 |         .read_line(&mut input))
+   |                               ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-py-rs.rs:1:11
+   |
+1  | fn main() {
+   |           ^ unclosed delimiter
+...
+25 |     let result_expo = (input1 as f64) .pow(input2 as i32));
+   |                                                          ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_arith-py-rs.rs:27:48
+   |
+25 |     let result_expo = (input1 as f64) .pow(input2 as i32));
+   |                                                          - missing open `(` for this delimiter
+26 |
+27 |     println!("Exponentiation: {}", result_expo));
+   |                                                ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-c-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+7 |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-c-rs.rs:8:34
+  |
+7 |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+  |                                  - missing open `(` for this delimiter
+8 |     io::stdin().read_line(&mut b))).expect("Failed to read line");
+  |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-cpp-rs.rs:3:29
+  |
+3 | fn main() -> io::Result<()> {
+  |                             ^ unclosed delimiter
+...
+8 |     io::stdin().read_line(&mut a)).expect("Failed to read input.");
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-cpp-rs.rs:11:34
+   |
+8  |     io::stdin().read_line(&mut a)).expect("Failed to read input.");
+   |                                  - missing open `(` for this delimiter
+...
+11 |     io::stdin().read_line(&mut b))).expect("Failed to read input.");
+   |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-go-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut n1)).expect("Failed to read line");
+  |                                   ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-go-rs.rs:15:35
+   |
+6  |     io::stdin().read_line(&mut n1)).expect("Failed to read line");
+   |                                   - missing open `(` for this delimiter
+...
+15 |     io::stdin().read_line(&mut n2)).expect("Failed to read line");
+   |                                   ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-java-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut input)).expect("Failed to read from input");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-java-rs.rs:15:38
+   |
+6  |     io::stdin().read_line(&mut input)).expect("Failed to read from input");
+   |                                      - missing open `(` for this delimiter
+...
+15 |     io::stdin().read_line(&mut input)).expect("Failed to read from input");
+   |                                      ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-js-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+8 |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-js-rs.rs:17:38
+   |
+8  |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+   |                                      - missing open `(` for this delimiter
+...
+17 |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+   |                                      ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-py-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_cmp-py-rs.rs:10:34
+   |
+6  |     io::stdin().read_line(&mut a)).expect("Failed to read line");
+   |                                  - missing open `(` for this delimiter
+...
+10 |     io::stdin().read_line(&mut b))).expect("Failed to read line");
+   |                                  ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-c-rs.rs:16:28
+   |
+16 |         if new_size > flix {
+   |                            ^ unclosed delimiter
+17 |             self.list = Vec::with_capacity(new_size));
+   |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-c-rs.rs:33:1
+   |
+17 |             self.list = Vec::with_capacity(new_size));
+   |                                                     - missing open `(` for this delimiter
+...
+33 | }
+   | ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-cpp-rs.rs:1:41
+  |
+1 | fn generate_factors(n: i32) -> Vec<i32> {
+  |                                         ^ unclosed delimiter
+2 |     let mut factors = vec![1, n];
+3 |     for i in 2..((n as f64).sqrt() as i32 + 1)) {
+  |                                               ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-cpp-rs.rs:14:1
+   |
+3  |     for i in 2..((n as f64).sqrt() as i32 + 1)) {
+   |                                               - missing open `(` for this delimiter
+...
+14 | }
+   | ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-go-rs.rs:14:27
+   |
+14 | fn print_factors(nr: i64) {
+   |                           ^ unclosed delimiter
+...
+26 |     ));
+   |      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-go-rs.rs:27:1
+   |
+26 |     ));
+   |      - missing open `(` for this delimiter
+27 | }
+   | ^ unexpected closing delimiter
+
+error: unmatched angle bracket
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-java-rs.rs:4:98
+  |
+4 |     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+  |                                                                                                  ^ help: remove extra angle bracket
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-js-rs.rs:1:38
+  |
+1 | pub fn factors(num: u64) -> Vec<u64> {
+  |                                      ^ unclosed delimiter
+...
+4 |     for i in 1..=((num as f64).sqrt() as u64)) {
+  |                                              ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-js-rs.rs:7:29
+  |
+7 |             if num / i != i {
+  |                             ^ unclosed delimiter
+8 |                 n_factors.push(num / i));
+  |                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-js-rs.rs:11:5
+   |
+4  |     for i in 1..=((num as f64).sqrt() as u64)) {
+   |                                              - missing open `(` for this delimiter
+...
+8  |                 n_factors.push(num / i));
+   |                                        - missing open `(` for this delimiter
+...
+11 |     }
+   |     ^ unexpected closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-py-rs.rs:3:31
+  |
+3 | fn factor(n: u64) -> Vec<u64> {
+  |                               ^ unclosed delimiter
+...
+6 |     for x in 1..=cmp::min(n, u64::MAX as u64)) {
+  |                                              ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-py-rs.rs:7:23
+  |
+7 |         if n % x == 0 {
+  |                       ^ unclosed delimiter
+8 |             factors.push(x);
+9 |             factors.push(n / x));
+  |                                ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-int_factors-py-rs.rs:11:5
+   |
+6  |     for x in 1..=cmp::min(n, u64::MAX as u64)) {
+   |                                              - missing open `(` for this delimiter
+...
+9  |             factors.push(n / x));
+   |                                - missing open `(` for this delimiter
+10 |         }
+11 |     }
+   |     ^ unexpected closing delimiter
+

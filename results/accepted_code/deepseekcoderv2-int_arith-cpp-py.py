@@ -1,0 +1,6 @@
+a = int(input("Enter first integer: "))
+b = int(input("Enter second integer: "))
+print("a+b =", a + b)
+print("a-b =", a - b)
+print("a*b =", a * b)
+print("a/b =", a // b, ", remainder", a % b)

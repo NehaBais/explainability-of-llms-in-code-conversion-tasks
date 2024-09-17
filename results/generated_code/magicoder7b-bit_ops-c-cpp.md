@@ -1,0 +1,1 @@
+ The code is already written in C++. There's only one function, bitwise(), which takes two parameters (a and b), performs all the required operations using the bitwise operators &, |, ^, ~, <<, >>, and no rotation operators are available. Therefore there isn't any C to C++ conversion needed for this code.

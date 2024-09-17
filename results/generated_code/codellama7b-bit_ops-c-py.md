@@ -1,0 +1,35 @@
+```
+def bitwise(a, b):
+    # Perform the bitwise AND operation on a and b
+    result_and = a & b
+
+    # Perform the bitwise OR operation on a and b
+    result_or = a | b
+
+    # Perform the bitwise XOR operation on a and b
+    result_xor = a ^ b
+
+    # Perform the bitwise NOT operation on a
+    result_not = ~a
+
+    # Perform a left shift of a by n bits, where n is the value of b
+    result_left_shift = a << b
+
+    # Perform an arithmetic right shift of a by n bits, where n is the value of b
+    result_right_shift = a >> b
+
+    # Perform a logical right shift of c (which is the same as a) by n bits, where n is the value of b
+    result_logical_right_shift = c >> b
+
+    # Print the results
+    print(f"a and b: {result_and}")
+    print(f"a or b: {result_or}")
+    print(f"a xor b: {result_xor}")
+    print(f"not a: {result_not}")
+    print(f"a << n: {result_left_shift}")
+    print(f"a >> n: {result_right_shift}")
+    print(f"c >> b: {result_logical_right_shift}")
+
+    return 0
+```
+This code defines a function called `bitwise` that takes two integer parameters `a` and `b`. It performs the bitwise AND, OR, XOR, NOT, left shift, right shift, and logical right shift operations on these integers, and prints the results. The code uses Python's built-in bitwise operators `&`, `|`, `^`, `~`, `<<`, and `>>` to perform these operations, as well as the `print()` function to print the results.

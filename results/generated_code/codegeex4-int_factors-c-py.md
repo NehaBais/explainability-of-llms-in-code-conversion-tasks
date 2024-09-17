@@ -1,0 +1,49 @@
+Here is the equivalent Python code:
+
+```python
+class Factors:
+    def __init__(self):
+        self.list = []
+        self.count = 0
+
+def xferFactors(fctrs, flist):
+    fctrs.list.extend(flist)
+    fctrs.count += len(flist)
+
+def factor(num, fctrs):
+    flist = []
+    dvsr = 1
+    while dvsr*dvsr <= num:
+        if num % dvsr != 0:
+            dvsr += 1
+            continue
+        flist.append(dvsr)
+        if dvsr != num//dvsr:
+            flist.append(num//dvsr)
+        dvsr += 1
+    if dvsr*dvsr == num: 
+        flist.append(dvsr)
+    xferFactors(fctrs, flist)
+
+def main():
+    nums2factor = [2059, 223092870, 3135, 45]
+    ftors = Factors()
+
+    for num in nums2factor:
+        factor(num, ftors)
+        print("factors of", num, "are:")
+        sep = ' '
+        for fctr in ftors.list:
+            print(sep, fctr, end='')
+            sep = ','
+        print("\n")
+
+main()
+```
+
+In this Python version:
+
+1. The `Factors` class is equivalent to the struct in C.
+2. In the `factor()` function, we create a list for each number's factors. After calculating all factors of a number, we pass this list to `xferFactors()`.
+3. In `xferFactors()`, we use extend to concatenate the new list with the existing one, and then update the count.
+4. In the main function, we iterate over each number to factorize and print the result. We use end='' in the print statement for factors to avoid newline after each factor.

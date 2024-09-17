@@ -1,0 +1,18 @@
+#include <iostream>
+
+void compare(int A, int B) {
+  if (A == B)
+    std::cout << A << " equals " << B << std::endl;
+  if (A < B)
+    std::cout << A << " is less than " << B << std::endl;
+  if (A > B)
+    std::cout << A << " Is greater than " << B << std::endl;
+}
+
+int main() {
+  int A, B;
+  std::cout << "Enter two integers: ";
+  std::cin >> A >> B;
+  compare(A, B);
+  return 0;
+}

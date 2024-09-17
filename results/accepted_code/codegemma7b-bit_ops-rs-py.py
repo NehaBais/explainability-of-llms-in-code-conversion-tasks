@@ -1,0 +1,10 @@
+a = 105
+b = 91
+print(f"a      = {a:0>8b}")
+print(f"b      = {b:0>8b}")
+print(f"a | b  = {a | b:0>8b}")
+print(f"a & b  = {a & b:0>8b}")
+print(f"a ^ b  = {a ^ b:0>8b}")
+print(f"!a     = {~a:0>8b}")
+print(f"a << 3 = {a << 3:0>8b}")
+print(f"a >> 3 = {a >> 3:0>8b}")

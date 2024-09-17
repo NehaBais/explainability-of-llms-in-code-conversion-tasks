@@ -1,0 +1,24 @@
+ Here is the equivalent Java code for your Python script. The input method will be replaced by `Scanner` object in Java.
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Enter value of a: ");
+    int a = Integer.parseInt(scanner.nextLine());
+
+    System.out.print("Enter value of b: ");
+    int b = Integer.parseInt(scanner.nextLine());
+
+    if (a < b) {
+      System.out.println("a is less than b");
+    } else if (a > b) {
+      System.out.println("a is greater than b");
+    } else if (a == b) {
+      System.out.println("a is equal to b");
+    } 
+  }
+}
+```

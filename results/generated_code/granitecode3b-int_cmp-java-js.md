@@ -1,0 +1,17 @@
+Sure, here's the equivalent JavaScript code:
+```javascript
+// Get two integers from the user
+let nbr1 = parseInt(prompt("Enter the first integer"));
+let nbr2 = parseInt(prompt("Enter the second integer"));
+
+// Display a message based on the comparison of the integers
+if (nbr1 < nbr2) {
+ console.log(`${nbr1} is less than ${nbr2}`);
+} else if (nbr1 > nbr2) {
+ console.log(`${nbr1} is greater than ${nbr2}`);
+} else {
+ console.log(`${nbr1} is equal to ${nbr2}`);
+}
+```
+This code does the same thing as the Java code, but in JavaScript it uses a combination of conditional statements and comparison operators (`<`, `>`, and `==`) to determine which case applies. The output will be the same for any two integers, since the comparison operators handle all three cases automatically.
+

@@ -1,0 +1,8 @@
+a = int(input("Enter an integer: "))
+b = int(input("Enter another integer: "))
+print("The sum is:", a + b)
+print("The difference is:", a - b)
+print("The product is:", a * b)
+print("The integer quotient is:", a // b)
+print("The remainder is:", a % b)
+print("The exponentiation is:", a**b)

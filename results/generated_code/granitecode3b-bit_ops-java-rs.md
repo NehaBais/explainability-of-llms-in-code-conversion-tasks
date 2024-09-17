@@ -1,0 +1,16 @@
+Sure! Here's the equivalent Rust code for the given code snippet:
+```
+fn bitwise(a: i32, b: i32) {
+ println!("a AND b: {}", a & b);
+ println!("a OR b: {}", a | b);
+ println!("a XOR b: {}", a ^ b);
+ println!("NOT a: {}", !a);
+ println!("a << b: {}", a << b); // left shift
+ println!("a >> b: {}", a >> b); // arithmetic right shift
+ println!("a >>> b: {}", a >> b); // logical right shift
+ println!("a rol b: {}", a.rotate_left(b)); //rotate left, Java 1.5+
+ println!("a ror b: {}", a.rotate_right(b)); //rotate right, Java 1.5+
+}
+```
+I hope this helps! Let me know if you have any further questions.
+

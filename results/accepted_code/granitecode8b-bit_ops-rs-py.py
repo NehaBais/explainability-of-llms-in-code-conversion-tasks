@@ -1,0 +1,10 @@
+a = 105
+b = 91
+print("a      =", bin(a)[2:].zfill(8))
+print("b      =", bin(b)[2:].zfill(8))
+print("a | b  =", bin(a | b)[2:].zfill(8))
+print("a & b  =", bin(a & b)[2:].zfill(8))
+print("a ^ b  =", bin(a ^ b)[2:].zfill(8))
+print("~a     =", bin(~a)[2:].zfill(8))
+print("a << 3 =", bin(a << 3)[2:].zfill(8))
+print("a >> 3 =", bin(a >> 3)[2:].zfill(8))

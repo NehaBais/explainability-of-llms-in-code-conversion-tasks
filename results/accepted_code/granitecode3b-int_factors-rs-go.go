@@ -1,0 +1,32 @@
+package main
+import "fmt"
+func main() {
+ fmt.Println(factor(100)) // prints [1 2 4 5 10 10 20 25 50 100]
+ fmt.Println(factor(101)) // prints [1 101]
+}
+func factor(num int) []int {
+ factors := make([]int, 0) // creates an empty slice for the factors of the number
+
+ for i := 1; i <= int((float64(num)/2 + 0.5); i++ ) { 
+ if num%i == 0 {
+ factors = append(factors, i) // appends smallest factor to factors
+ factors = append(factors, num/i) // appends largest factor to factors
+ }
+ }
+
+ for _, v := range factors { // iterates through slice and removes duplicates
+ f := 0
+ for i := 0; i < len(factors); i++ { 
+ if factors[i] == v {
+ f = i
+ break
+ }
+ }
+ if f != 0 && f != len(factors)-1 {
+ factors = append(factors[:f], factors[f+1:]...) // removes duplicate factor
+ i--
+ }
+ }
+
+ return factors // returns the factors
+}
