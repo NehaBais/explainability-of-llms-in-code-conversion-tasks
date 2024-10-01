@@ -1,0 +1,13 @@
+import os
+
+
+def print_file_size(filename):
+    try:
+        size = os.path.getsize(filename)
+        print(f"Size of file {filename} Is {size} bytes.")
+    except OSError as ex:
+        print(ex)
+
+
+print_file_size("input.txt")
+print_file_size("/input.txt")

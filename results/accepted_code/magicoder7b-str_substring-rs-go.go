@@ -1,0 +1,50 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	s := "abc文字化けdef"
+	n := 2
+	m := 3
+
+	// Print 3 characters starting at index 2 (c文字)
+	for i, runeValue := range s[n:] {
+		if i == m-1 {
+			break
+		}
+		fmt.Print(string(runeValue))
+	}
+	fmt.Println()
+
+	// Print all characters starting at index 2 (c文字化けdef)
+	for i, runeValue := range s[n:] {
+		fmt.Print(string(runeValue))
+	}
+	fmt.Println()
+
+	// Print all characters except the last (abc文字化けde)
+	for i := len(s) - 1; i > n; i-- {
+		fmt.Print(string(s[i]))
+	}
+	fmt.Println()
+
+	// Print 3 characters starting with 'b' (bc文)
+	cpos := strings.IndexRune(s, 'b')
+	for i := cpos; i < cpos+m && i < len(s); i++ {
+		fmt.Print(string(s[i]))
+	}
+	fmt.Println()
+
+	// Print 3 characters starting with "けd" (けde)
+	spos := strings.IndexRune(s, '文') - strings.IndexRune(s, 'a')
+	for i, runeValue := range s[spos : spos+m] {
+		if i == m-1 {
+			break
+		}
+		fmt.Print(string(runeValue))
+	}
+	fmt.Println()
+}

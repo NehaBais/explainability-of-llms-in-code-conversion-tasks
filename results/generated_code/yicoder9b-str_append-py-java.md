@@ -1,0 +1,11 @@
+Here is the Java equivalent of your Python code.
+
+```java
+public class Main {
+    public static void main(String[] args){
+        String str = new String("12345678");
+        str += "9!"; 
+        System.out.println(str);
+    }
+}
+```

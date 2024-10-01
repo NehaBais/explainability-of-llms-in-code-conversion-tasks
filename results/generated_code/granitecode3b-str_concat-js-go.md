@@ -1,0 +1,17 @@
+Here's the equivalent Golang code:
+```
+package main
+import "fmt"
+func main() {
+ s := "hello"
+ t := s + " there!"
+ fmt.Println(s)
+ fmt.Println(t)
+}
+```
+This code will output:
+
+hello
+hello there!
+
+

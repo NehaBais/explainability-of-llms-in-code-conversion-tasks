@@ -1,0 +1,35 @@
+The provided Golang code can be converted to Java as follows:
+
+```java
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in));
+        
+        // Enter the string
+        System.out.println("Enter a string:");
+        String s = scanner.nextLine();
+        
+        // Enter n and m
+        System.out.println("Enter starting index (n) and length of substring (m):");
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        
+        // Display the required substrings
+        System.out.printf("Substring from %d to %d: %s%n", n, n+m-1, s.substring(n - 1, n + m - 2)));
+        System.out.printf("Substring up to the end of the string: %s%n", s.substring(n - 1))));
+        System.out.printf("Substring excluding the last character: %s%n", s.substring(0, n-1))));
+        System.out.printf("Substring from a known character within the string and of length m: %s%n", s.substring((int) dx - 1, (int) dx + m - 2))));
+        System.out.printf("Substring from a known substring within the string and of length m: %s%n", s.substring(sx - 1, sx + m - 2)))));
+
+    }
+
+}
+```
+
+This Java code performs the same operations as the provided Golang code. It takes the input string and two integers (n and m) from the user. Then, it displays the required substrings based on different start positions and lengths specified by the user.

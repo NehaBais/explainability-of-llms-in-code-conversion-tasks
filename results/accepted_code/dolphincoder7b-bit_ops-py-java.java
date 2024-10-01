@@ -1,4 +1,3 @@
-
 public class BitwiseOperations {
 
   public static void main(String[] args) {

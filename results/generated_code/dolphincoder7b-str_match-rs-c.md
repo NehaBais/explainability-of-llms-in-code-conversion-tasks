@@ -1,0 +1,67 @@
+### Pseudocode:
+
+FIND-MATCH(first, second):
+    for i = 0 to length[first] do
+        found = true
+        k = 0
+        while k < length[second] and first[i+k] == second[k] do
+            k++
+        if k == length[second] then
+            return i
+        else
+            found = false
+        end if
+    end for
+    return -1
+END FIND-MATCH
+
+
+### Code:
+```c
+#include <stdio.h>
+#include <string.h>
+#define MAX_LENGTH 256
+
+int find_match(char* first, char* second) {
+    int i = 0;
+    int k = 0;
+    
+    for (i = 0; i <= strlen(first); ++i) {
+        while (k < strlen(second)) && *(first + i + k) == *(second + k) {
+            k++;
+        }
+        
+        if (k >= strlen(second)) {
+            return i;
+        } else {
+            k = 0;
+        }
+    }
+    
+    return -1;
+}
+
+int main() {
+    char s1[MAX_LENGTH];
+    char s2[MAX_LENGTH];
+    int match_pos;
+
+    strcpy(s1, "abcd");
+    strcpy(s2, "abab");
+    strcpy(s3, "ab");
+
+    // Determining if the first string starts with second string
+    printf("%s\n", (strcmp(strstr(s1, s3), s1) == 0 ? "Starts with" : "Does not start with"));
+    
+    // Determining if the first string contains the second string at any location
+    printf("%s\n", (strstr(s1, s2) != NULL ? "Contains" : "Does not contain"));
+
+    // Print the location of the match 
+    match_pos = find_match(s1, s3);
+    printf("Match found at pos: %d\n", match_pos);  // Found match at pos: 0
+
+    return 0;
+}
+```
+
+Note: The `strstr()` function is used to check if the first string contains a substring equal to the second string. If it does, this function returns a pointer to the beginning of that substring in the first string. Otherwise, it returns NULL.

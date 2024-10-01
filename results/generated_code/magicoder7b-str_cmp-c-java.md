@@ -1,0 +1,48 @@
+ Below is the equivalent Java code for the given C program. I have renamed some macros to better suit their use in Java. Also note that `equalsIgnoreCase()` method can be used to achieve case-insensitive comparison, and `compareTo()` method to perform lexical comparisons of strings:
+```java
+public class Main {
+    public static void main(String[] args) {
+        compareStrings("ball", "bell");
+        compareStrings("BALL", "BELL", true);
+        compareStrings("YUP", "yep");
+        compareStrings("YUP", "yep", true);
+    }
+    
+    public static void compareStrings(String a, String b) {
+        System.out.printf("%s %2d %2d %2d %2d %2d %2d %s%n", 
+                         a,
+                         equals(a,b), notEquals(a,b), greaterThan(a,b), lessThan(a,b), greaterOrEqual(a,b), lessOrEqual(a,b),
+                         b);
+    }
+    
+    public static void compareStrings(String a, String b, boolean caseSensitive) {
+        System.out.printf("%s %2d %2d %2d %2d %2d %2d %s%n", 
+                         (caseSensitive ? "STREQ" : "STRCEQ") + "(a,b), notEquals(a,b), greaterThan(a,b), lessThan(a,b), greaterOrEqual(a,b), lessOrEqual(a,b),
+                         b);
+    }
+    
+    public static boolean equals(String a, String b) {
+        return Objects.equals(a, b);
+    }
+
+    public static boolean notEquals(String a, String b) {
+        return !equals(a, b);
+    }
+
+    public static boolean greaterThan(String a, String b) {
+        return a.compareTo(b) > 0;
+    }
+    
+    public static boolean lessThan(String a, String b) {
+        return a.compareTo(b) < 0;
+    }
+    
+    public static boolean greaterOrEqual(String a, String b) {
+        return !lessThan(a, b);
+    }
+    
+    public static boolean lessOrEqual(String a, String b) {
+        return !greaterThan(a, b);
+    }
+}
+```

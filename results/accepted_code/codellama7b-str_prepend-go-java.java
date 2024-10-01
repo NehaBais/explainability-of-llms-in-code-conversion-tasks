@@ -1,0 +1,1 @@
+In Java, we can use a `String` object to store a string value, and then use the `+` operator to concatenate it with another string literal. Here's an example of how to do this:

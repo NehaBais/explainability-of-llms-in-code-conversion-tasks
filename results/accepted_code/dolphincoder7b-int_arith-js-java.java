@@ -10,14 +10,13 @@ public class Main {
         (double) a
             / (double)
                 b; // Casting is required because the division result in Java can be a floating
-                   // point number
+    // point number
     int quotient =
         Math.floorDiv(
             a, b); // This function returns the quotient of 'a' divided by 'b', rounded towards zero
     int remainder =
-        a
-            % b; // This produces the remainder after dividing 'b' into 'a'. The '%' operator is
-                 // called the 'modulo' operator
+        a % b; // This produces the remainder after dividing 'b' into 'a'. The '%' operator is
+    // called the 'modulo' operator
 
     System.out.printf(
         "a + b = %d%n", sum); // \n is added for newline, %d is used to print integer values

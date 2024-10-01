@@ -1,4 +1,3 @@
-
 public class Main {
   public static void bitwise(short a, short b) {
     System.out.println("a:   " + Integer.toBinaryString(a));

@@ -1,0 +1,27 @@
+def main():
+    # Python string comparison operators:
+    c = "cat"
+    d = "dog"
+    if c == d:
+        print(f"{c} is bytewise identical to {d}")
+    else:
+        print(f"{c} is bytewise different from {d}")
+
+    if c > d:
+        print(f"{c} is lexically bytewise greater than {d}")
+    elif c < d:
+        print(f"{c} is lexically bytewise less than {d}")
+    else:
+        print(f"{c} is lexically bytewise equal to {d}")
+
+    # Case insensitive comparison can be done using the lower() method:
+    if c.lower() == d.lower():
+        print(f"{c} and {d} are case-insensitively identical")
+    else:
+        print(f"{c} and {d} are not case-insensitively identical")
+
+    # The built-in sorted function can be used for lexical sorting of strings:
+    print(sorted([c, d]))
+
+
+main()

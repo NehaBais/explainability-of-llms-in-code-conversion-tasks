@@ -1,0 +1,27 @@
+The equivalent Python code is:
+
+```python
+import os
+import errno
+
+def rename_file_and_directory():
+    try:
+        os.rename('input.txt', 'output.txt')
+        os.rename('docs', 'mydocs')
+        print("File and directory renamed successfully in the current working directory!")
+    except OSError as e: 
+         if e.errno != errno.ENOENT: # If error was caused because source wasn't found
+             raise 
+
+    try:
+        os.rename('/input.txt', '/output.txt')
+        os.rename('/docs', '/mydocs')
+        print("File and directory renamed successfully in the root directory!")
+    except OSError as e:  
+         if e.errno != errno.ENOENT: # If error was caused because source wasn't found
+             raise 
+
+# Call the function
+rename_file_and_directory()
+```
+Please note that you should replace '/input.txt', '/output.txt', 'docs' and 'mydocs' with your actual file paths if they are not in the root directory or current working directory. Also, be aware that Python may require elevated permissions to manipulate system files and directories.

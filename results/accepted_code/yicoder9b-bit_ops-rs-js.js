@@ -1,0 +1,11 @@
+let a = 105;
+let b = 91;
+console.log("a      = " + a.toString(2).padStart(8, "0"));
+console.log("b      = " + b.toString(2).padStart(8, "0"));
+console.log("a | b  = " + (a | b).toString(2).padStart(8, "0"));
+console.log("a & b  = " + (a & b).toString(2).padStart(8, "0"));
+console.log("a ^ b  = " + (a ^ b).toString(2).padStart(8, "0"));
+let notA = (~a << 24) >>> 24; // Convert negative value to positive in JavaScript, because there is no unsigned type like Rust
+console.log("!a     = " + notA.toString(2).padStart(8, "0"));
+console.log("a << 3 = " + (a << 3).toString(2).padStart(8, "0"));
+console.log("a >> 3 = " + ((a | 0xffffff00) >> 3).toString(2).padStart(8, "0")); // Convert negative value to positive in JavaScript, because there is no unsigned type like Rust

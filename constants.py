@@ -29,6 +29,115 @@ TASKS = {
     "file_rename": "Rename a file",
 }
 
+MODELS = {
+    "deepseekcoder": "DeepSeek Coder [1.3B]",
+    "codegemma2b": "CodeGemma [2B]",
+    "yicoder2b": "Yi-Coder [1.5B]",
+    "deepseekcoderv2": "DeepSeek Coder V2 [2.4B]",
+    "stablecode": "Stable Code [3B]",
+    "granitecode3b": "Granite Code [3B]",
+    "deepseekcoder7b": "DeepSeek Coder [6.7B]",
+    "magicoder7b": "Magicoder [6.7B]",
+    "codellama7b": "Code Llama [7B]",
+    "codegemma7b": "CodeGemma [7B]",
+    "codeqwen": "CodeQwen1.5 [7B]",
+    "dolphincoder7b": "DolphinCoder [7B]",
+    "granitecode8b": "Granite Code [8B]",
+    "codegeex4": "CodeGeeX4 [9B]",
+    "yicoder9b": "Yi-Coder [9B]",
+    "codellama13b": "Code Llama [13B]",
+    "codeup": "CodeUp [13B]",
+    "dolphincoder15b": "DolphinCoder [15B]",
+    "granitecode20b": "Granite Code [20B]",
+    "codestral": "Codestral [22B]",
+    "deepseekcoder33b": "DeepSeek Coder [33B]",
+    "codellama34b": "Code Llama [34B]",
+    "codebooga": "CodeBooga [34B]",
+    "granitecode34b": "Granite Code [34B]",
+    "phindcodellama": "Phind CodeLlama [34B]",
+}
+
+OLLAMA_TAGS = {
+    "deepseekcoder": "deepseek-coder:1.3b-instruct",
+    "codegemma2b": "codegemma:2b",
+    "yicoder2b": "yi-coder:1.5b-chat",
+    "deepseekcoderv2": "deepseek-coder-v2:16b-lite-base-q4_0",
+    "stablecode": "stable-code:instruct",
+    "granitecode3b": "granite-code:3b-instruct",
+    "deepseekcoder7b": "deepseek-coder:6.7b-instruct",
+    "magicoder7b": "magicoder:7b",
+    "codellama7b": "codellama:7b-instruct",
+    "codegemma7b": "codegemma:7b-instruct",
+    "codeqwen": "codeqwen:chat",
+    "dolphincoder7b": "dolphincoder:7b",
+    "granitecode8b": "granite-code:8b-instruct",
+    "codegeex4": "codegeex4:9b",
+    "yicoder9b": "yi-coder:9b-chat",
+    "codellama13b": "codellama:13b-instruct",
+    "codeup": "codeup:13b",
+    "dolphincoder15b": "dolphincoder:15b",
+    "granitecode20b": "granite-code:20b-instruct",
+    "codestral": "codestral:22b",
+    "deepseekcoder33b": "deepseek-coder:33b-instruct",
+    "codellama34b": "codellama:34b-instruct",
+    "codebooga": "codebooga:34b",
+    "granitecode34b": "granite-code:34b-instruct",
+    "phindcodellama": "phind-codellama:34b-v2",
+}
+
+HUGGINGFACE_TAGS = {
+    "deepseekcoder": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "codegemma2b": "google/codegemma-1.1-2b",
+    "yicoder2b": "01-ai/Yi-Coder-1.5B-Chat",
+    "deepseekcoderv2": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "stablecode": "stabilityai/stable-code-instruct-3b",
+    "granitecode3b": "ibm-granite/granite-3b-code-instruct-2k",
+    "deepseekcoder7b": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "magicoder7b": "ise-uiuc/Magicoder-S-CL-7B",
+    "codellama7b": "meta-llama/CodeLlama-7b-Instruct-hf",
+    "codegemma7b": "google/codegemma-1.1-7b-it",
+    "codeqwen": "Qwen/CodeQwen1.5-7B-Chat",
+    "dolphincoder7b": "cognitivecomputations/dolphincoder-starcoder2-7b",
+    "granitecode8b": "ibm-granite/granite-8b-code-instruct-4k",
+    "codegeex4": "THUDM/codegeex4-all-9b",
+    "yicoder9b": "01-ai/Yi-Coder-9B-Chat",
+    "codellama13b": "meta-llama/CodeLlama-13b-Instruct-hf",
+    "codeup": "deepse/CodeUp-Llama-2-13b-chat-hf",
+    "dolphincoder15b": "cognitivecomputations/dolphincoder-starcoder2-15b",
+    "granitecode20b": "ibm-granite/granite-20b-code-instruct",
+    "codestral": "mistralai/Codestral-22B-v0.1",
+    "deepseekcoder33b": "deepseek-ai/deepseek-coder-33b-instruct",
+    "codellama34b": "meta-llama/CodeLlama-34b-Instruct-hf",
+    "codebooga": "oobabooga/CodeBooga-34B-v0.1",
+    "granitecode34b": "ibm-granite/granite-34b-code-instruct",
+    "phindcodellama": "Phind/Phind-CodeLlama-34B-v2",
+}
+
+OLLAMA_SYSTEM_PROMPT_SUPPORT = {
+    "granitecode3b": True,
+    "stablecode": True,
+    "deepseekcoderv2": True,
+    "yicoder2b": True,
+    "granitecode8b": True,
+    "codellama7b": True,
+    "codegemma7b": True,
+    "deepseekcoder7b": False,
+    "codegeex4": True,
+    "magicoder7b": False,
+    "codeqwen": True,
+    "dolphincoder7b": True,
+    "yicoder9b": True,
+}
+
+HUGGINGFACE_SYSTEM_PROMPT_SUPPORT = {
+    "granitecode3b": True,
+    "stablecode": True,
+    "deepseekcoderv2": True,
+    "granitecode8b": True,
+    "codellama7b": True,
+    "yicoder9b": True,
+}
+
 TASK_DESCRIPTION = {x: "" for x in TASKS.keys()}
 
 TASK_DESCRIPTION[
@@ -73,10 +182,6 @@ TASK_DESCRIPTION[
 ] = """Create a string variable equal to any text value.
 Append the string variable with another string literal in the most idiomatic way.
 Show the contents of the variable after the append operation."""
-
-TASK_DESCRIPTION["str_len_cmp"] = (
-    """Given two strings of different length, determine which string is longer or shorter. Print both strings and their length, one on each line. Print the longer one first."""
-)
 
 TASK_DESCRIPTION[
     "str_cmp"

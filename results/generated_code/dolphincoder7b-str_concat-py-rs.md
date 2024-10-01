@@ -1,0 +1,35 @@
+### Pseudocode:
+s1 = "hello"
+s2 = s1 + " world"
+print(s2)
+
+s1 = "hello"
+s2 = s1 + " world"
+print(s2)
+
+s1 = "hello"
+print(", ".join([s1, "world", "mom"]))
+
+s2 = ", ".join([s1, "world", "mom"])
+print(s2)
+
+### Code:
+```rust
+fn main() {
+    let s1: String = "hello".to_string();
+    let s2: String = format!("{} world", s1);
+    println!("{}", s2);
+
+    let s1: String = "hello".to_string();
+    let s2: String = format!("{} world", s1);
+    println!("{}", s2);
+
+    let s1: String = "hello".to_string();
+    let s2: String = format!("{}, {} and {}", s1, "world", "mom");
+    println!("{}", s2);
+
+    let s1: String = "hello".to_string();
+    let s2: String = format!("{}, {} and {}", s1, "world", "mom");
+    println!("{}", s2);
+}
+```

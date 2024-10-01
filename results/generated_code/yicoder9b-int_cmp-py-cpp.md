@@ -1,0 +1,25 @@
+Here is the C++ version of your Python code. This will take in two integers from the user and print a message based on their relation to each other.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Enter value of a: ";
+    cin >> a;
+    cout << "Enter value of b: ";
+    cin >> b;
+
+    if (a < b) {
+        cout << "a is less than b" << endl;
+    } else if (a > b) {
+        cout << "a is greater than b" << endl;
+    } else {
+        cout << "a is equal to b" << endl;
+    }
+
+    return 0;
+}
+```

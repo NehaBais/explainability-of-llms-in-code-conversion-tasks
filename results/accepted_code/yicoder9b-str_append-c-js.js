@@ -1,0 +1,5 @@
+let str = "Good Morning";
+const cStr1 = " to all";
+const cStr2 = " !!!";
+str += cStr1 + cStr2; // most idiomatic way in JS to append strings.
+console.log(str); // Display contents of the variable after append operation.

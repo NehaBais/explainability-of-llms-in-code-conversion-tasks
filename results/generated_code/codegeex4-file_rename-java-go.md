@@ -1,0 +1,32 @@
+Below is the Go version of your Java code. It uses Go's standard library to rename files and directories.
+
+Please note that Go does not have an equivalent method for changing directory like in Java. The Go filesystem operations are always relative to the current working directory.
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func renameFile(oldname string, newname string) bool {
+	err := os.Rename(oldname, newname)
+	return err == nil
+}
+
+func test(typeStr string, oldname string, newname string) {
+	fmt.Printf("The following %s called %s " + 
+		(renameFile(oldname, newname) ? "was renamed as" : "could not be renamed into") + 
+		"%s.\n", typeStr, oldname, newname)
+}
+
+func main() {
+	test("file", "input.txt", "output.txt")
+	test("file", "/input.txt", "/output.txt")
+	test("directory", "docs", "mydocs")
+	test("directory", "/docs/", "/mydocs/")
+}
+```
+
+Please replace `/` with a directory separator for your system. On Windows, it is `\` and on Unix-like systems (Linux, macOS), it is `/`.

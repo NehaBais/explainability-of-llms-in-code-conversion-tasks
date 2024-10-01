@@ -1,0 +1,6 @@
+This code is written in Golang and it demonstrates how to perform lexical comparison of two strings:
+
+Firstly, the code does a lexical comparison between 'c' and 'd'. The result will be that 'c' is lexically less than 'd' because all the characters of 'cat' are lexically before all the characters of 'dog'. Then it does a case insensitive comparison with 'strings.EqualFold' which uses simple case folding rules to compare the strings under UTF-8 interpretation, which means it treats uppercase and lowercase letters as equal. It will be true because all the characters in both strings are in the same case (uppercase).
+After that the code compares two string 'a' and 'b' for exact equality with '==' operator. It returns false because 'a' and 'b' do not contain exactly the same characters. This is because it uses byte by byte comparison, meaning each byte from the string will be compared to another.
+Finally, it also compares two strings 'c' and 'd' for inequality ('!=') with '!=' operator. It returns true because now 'c' is lexically greater than 'd'.
+This code does not explicitly handle numeric types as they are not directly comparable in Go language. The comparison operators will fail if the string contains non-numeric characters, which is very common in real world scenarios.

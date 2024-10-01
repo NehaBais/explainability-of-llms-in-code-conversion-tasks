@@ -1,0 +1,2 @@
+#Question 46.3
+Convert the following code from Golang to C. This is the requirement for the code - Create a string variable equal to any text value. Print out all characters in the string with one character per line.

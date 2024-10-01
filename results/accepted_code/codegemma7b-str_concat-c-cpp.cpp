@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+std::string sconcat(const std::string &s1, const std::string &s2) {
+  return s1 + s2;
+}
+
+int main() {
+  const std::string s = "hello";
+  std::string s2;
+
+  std::cout << s << " literal" << std::endl;
+
+  s2 = sconcat(s, " literal");
+  std::cout << s2 << std::endl;
+
+  return 0;
+}

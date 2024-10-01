@@ -1,0 +1,12 @@
+
+This code demonstrates several string comparison operations in C++ and provides an overview of the language's capabilities when it comes to handling comparisons between strings.
+
+1. Comparing two strings for exact equality: This is done using the `==` operator, which compares each character of the two strings for equality. If all characters match, the strings are considered equal.
+2. Comparing two strings for inequality (i.e., the inverse of exact equality): This is done using the `!=` operator, which returns true if any of the characters in the strings do not match or if the strings have different lengths.
+3. Comparing two strings to see if one is lexically ordered before the other: This is done using the `<` operator, which compares the strings character-by-character and returns true if the first string appears before the second in alphabetical order.
+4. Comparing two strings to see if one is lexically ordered after the other: This is done using the `>` operator, which compares the strings character-by-character and returns true if the first string appears after the second in alphabetical order.
+5. How to achieve both case sensitive comparisons and case insensitive comparisons within the language: C++ provides several ways to perform case-insensitive comparisons. One way is to use the `std::transform` function, which converts all characters in a string to lowercase before comparing them. Another way is to use the `std::string::compare` method with the `icase` option set to true.
+6. How the language handles comparison of numeric strings if these are not treated lexically: In C++, when comparing two numeric strings using the `<`, `>`, `<=`, or `>=` operators, the strings are converted to numbers before the comparison is performed. If the strings contain invalid characters (such as letters), the comparison will fail and false will be returned.
+7. Demonstrate any other kinds of string comparisons that the language provides, particularly as it relates to your type system: In addition to the operators listed above, C++ provides several other string comparison functions, such as `std::string::compare`, `std::string::starts_with`, and `std::string::ends_with`. These functions can be used in combination with other language features, such as regular expressions, to perform more complex string comparisons.
+
+Overall, this code provides a comprehensive overview of the various string comparison operations available in C++ and demonstrates how they can be used to compare strings in different ways.

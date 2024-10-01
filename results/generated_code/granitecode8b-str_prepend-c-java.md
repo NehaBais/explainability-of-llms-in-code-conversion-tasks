@@ -1,0 +1,12 @@
+Here is the converted Java code that meets your requirements:
+```
+public class Main {
+ public static void main(String[] args) {
+ String str = "my String";
+ String cstr = "Changed ";
+ str = cstr + str;
+ System.out.println(str);
+ }
+}
+```
+

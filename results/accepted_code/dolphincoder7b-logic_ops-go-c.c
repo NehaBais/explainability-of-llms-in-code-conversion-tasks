@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void print_logic(int a, int b);
+
+int main() {
+  int a = 1;
+  int b = 0;
+
+  print_logic(a, b);
+
+  return 0;
+}
+
+void print_logic(int a, int b) {
+  printf("a and b is %d\n", a && b);
+  printf("a or b is %d\n", a || b);
+  printf("not a is %d\n", !a);
+}

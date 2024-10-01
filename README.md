@@ -88,6 +88,8 @@ The above 2 codes will have a pretty high BLEU score, like lets say 0.93. BLEU s
 | DeepSeek Coder V2 | 2.4B | deepseek-coder-v2:16b-lite-base-q4_0 | deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct | deepseekcoderv2 | https://doi.org/10.48550/arXiv.2406.11931 |
 | Stable Code | 3B | stable-code:instruct | stabilityai/stable-code-instruct-3b | stablecode | https://doi.org/10.48550/arXiv.2404.01226 |
 | Granite Code | 3B | granite-code:3b-instruct | ibm-granite/granite-3b-code-instruct | granitecode3b | https://doi.org/10.48550/arXiv.2405.04324 |
+| YiCoder | 2B |  |  |  |  |
+
 
 ### 6-9 B Active Parameters
 
@@ -101,6 +103,7 @@ The above 2 codes will have a pretty high BLEU score, like lets say 0.93. BLEU s
 | DolphinCoder | 7B | dolphincoder:7b | cognitivecomputations/dolphincoder-starcoder2-7b | dolphincoder7b | https://huggingface.co/cognitivecomputations/dolphincoder-starcoder2-7b |
 | Granite Code | 8B | granite-code:8b-instruct | ibm-granite/granite-8b-code-instruct | granitecode8b | https://doi.org/10.48550/arXiv.2405.04324 |
 | CodeGeeX4 | 9B | codegeex4:9b | THUDM/codegeex4-all-9b | codegeex4 | https://doi.org/10.48550/arXiv.2303.17568 |
+| YiCoder | 9B |  |  |  |  |
 
 ### 13-22 B Active Parameters
 

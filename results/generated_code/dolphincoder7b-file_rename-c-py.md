@@ -1,0 +1,20 @@
+In Python, the `os` module provides a way to rename files or directories. Here's how you can modify your code to achieve your requirement:
+
+```python
+import os
+
+# Rename the file "input.txt" into "output.txt".
+os.rename('input.txt', 'output.txt')
+
+# Rename the directory "docs" into "mydocs".
+os.rename('docs', 'mydocs')
+
+# This will work only on Unix-like systems.
+# However, if you are using Windows, you can do this:
+import shutil
+shutil.move('input.txt', 'output.txt')
+```
+
+Note that the Python `os` module and its `rename()` function have different syntax compared to C's `rename()`. The arguments for `os.rename()` in Python are filenames as strings, while the arguments for rename() in C are string pointers.
+
+You may need administrative permissions or a sudo password in your environment to perform these tasks.

@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func printFileSize(filename string) {
+	info, err := os.Stat(filename)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	size := info.Size()
+	fmt.Printf("Size of file %s is %d bytes.\n", filename, size)
+}
+
+func main() {
+	printFileSize("input.txt")
+	printFileSize("/input.txt")
+}
