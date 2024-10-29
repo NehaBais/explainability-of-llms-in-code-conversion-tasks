@@ -16,8 +16,8 @@ int main() {
   bitwise_built_ins(8, 27, 125); // Example usage.
   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
              3 but
-                 it's not really a code;<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>/* This program is just an example on how to use the above functions in C programming
-                     language.You should adapt this to your needs and
+                 it's not really a code;<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>/* This program is just an example on how to use the above functions in C programming language
+                     .You should adapt this to your needs and
          context.Note that you cannot call helper_funcs from main function in c
              as these are separate functions which don't know anything about each other. So, if you need them both you would have to include their definition within main or call them separately. * /
 

@@ -39,9 +39,8 @@ public class Main {
             n,
             Math.min(
                 m + n,
-                s
-                    .length())); // substring() automatically adds null terminator if string ends
-                                 // early or after reading m characters
+                s.length())); // substring() automatically adds null terminator if string ends
+    // early or after reading m characters
     return result;
   }
 

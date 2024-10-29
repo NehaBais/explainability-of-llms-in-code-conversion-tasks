@@ -1,0 +1,60 @@
+Below is your requested C code which does string comparison in a lexically manner as well as case-sensitively and case-insensitively. 
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char *c = "cat";
+    char *d = "dog";
+    
+    // Comparing two strings for exact equality.
+    if (strcmp(c, d) == 0) {
+        printf("%s is bytewise identical to %s\n", c, d);
+    } else {
+        printf("%s is not bytewise identical to %s\n", c, d);
+    }
+    
+    // Comparing two strings for inequality.
+    if (strcmp(c, d) != 0) {
+        printf("%s is bytewise different from %s\n", c, d);
+    } else {
+        printf("%s is not bytewise different from %s\n", c, d);
+    }
+    
+    // Comparing two strings to see if one is lexically ordered before than the other.
+    if (strcmp(c, d) < 0) {
+        printf("%s is lexically bytewise less than %s\n", c, d);
+    } else {
+        printf("%s is not lexically bytewise less than %s\n", c, d);
+    }
+    
+    // Comparing two strings to see if one is lexically ordered after than the other.
+    if (strcmp(c, d) > 0) {
+        printf("%s is lexically bytewise greater than %s\n", c, d);
+    } else {
+        printf("%s is not lexically bytewise greater than %s\n", c, d);
+    }
+    
+    // Comparing two strings for case sensitive equality.
+    if (strcmp(c, d) == 0) {
+        printf("Case-sensitively: %s is equal to %s\n", c, d);
+    } else {
+        printf("Case-sensitively: %s is not equal to %s\n", c, d);
+    }
+    
+    // Comparing two strings for case insensitive equality.
+    if (strcasecmp(c, d) == 0) {
+        printf("Case-insensitively: %s is equal to %s\n", c, d);
+    } else {
+        printf("Case-insensitively: %s is not equal to %s\n", c, d);
+    }
+    
+    return 0;
+}
+```
+
+The C language does not have a built-in string comparison function that compares the strings under Unicode simple case folding rules like Go. However, you can use `strcasecmp()` for case insensitive comparison and `strcmp()` for case sensitive one. 
+
+Note: For lexical comparisons using UTF-8 rules, libraries like ICU (International Components for Unicode) would be needed as C language does not support these directly.
+

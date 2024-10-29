@@ -34,7 +34,7 @@ int main() {
   if (strcmp(c, d) <= 0)
     printf("%s Is lexically bytewise less than or equal to %s\n", c, d);
 
-// Case insensitive comparison
+  // Case insensitive comparison
     char eqf[] = `when interpreted as UTF-8 and compared under Unicode simple case folding rules.`;
     int isEqual = 1;
     for (int i = 0; c[i] != '\0' && d[i] != '\0'; ++i) {

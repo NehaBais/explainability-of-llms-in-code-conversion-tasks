@@ -15,7 +15,6 @@ TASKS = {
     "int_cmp": "Integer Comparison",
     "logic_ops": "Logical Operations",
     "str_append": "String Append",
-    "str_len_cmp": "Compare length of 2 Strings",
     "str_cmp": "Compare 2 Strings lexicographically",
     "str_concat": "Concatenate 2 Strings",
     "str_interp": "String Interpolation",
@@ -127,6 +126,7 @@ OLLAMA_SYSTEM_PROMPT_SUPPORT = {
     "codeqwen": True,
     "dolphincoder7b": True,
     "yicoder9b": True,
+    "codestral": True,
 }
 
 HUGGINGFACE_SYSTEM_PROMPT_SUPPORT = {

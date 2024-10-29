@@ -28,9 +28,9 @@ fn main() {
 Note that exponentiation is not supported in Rust. If the operation was valid and implemented, you would need to include the math library and define your own function or use the standard operator `**`. This isn't provided in this example. 
 
 If the division operation were defined as truncating towards zero, it could be accomplished with:
-```rust
+
 pub fn integer_division(a: i32, b: i32) -> i32 {
     ((a / b) as f64).abs() as i32
 }
-```
+
 This function returns the floor of the absolute value of `(a / b)`. It truncates towards zero for the integer quotient.

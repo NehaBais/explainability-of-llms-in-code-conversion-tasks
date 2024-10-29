@@ -14,7 +14,7 @@ public class Main {
     System.out.println("Found match at pos " + s1.indexOf(s3)); // Found match at pos 0
     System.out.println(
         "Did not find any matches"); // Will not be printed if there is a match, otherwise it will
-                                     // print this statement
+    // print this statement
 
     // Determining if the first string ends with the second string
     assert s2.endsWith(s3);
