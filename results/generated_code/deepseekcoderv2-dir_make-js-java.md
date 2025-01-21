@@ -1,24 +1,42 @@
+ Here's the equivalent Java code for creating a directory and any missing parent directories using the `java.nio` package:
 
-### Solution 20: 
-Here's my attempt at converting this to Java from JavaScript using Google's TypeScript compiler, and the following dependencies (see package.json for details) -
-* https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/node/index.d.ts#L154-L179
-* @types/node/fs.d.ts
-* @types/node/path.d.ts
-```
-import * as path from "path";
-import * as fs from 'fs';
+```java
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-export function mkdirp(input: string, cb: (err?: Error) => any): void {
-    let resolved = path.resolve(input);
-    fs.mkdir(resolved, (er) => {
-        if (!er) { return cb(); }
-        switch (er.code) {
-            case 'ENOENT': // The directory doesn't exist. Make its parent and try again.
-                mkdirp(path.dirname(resolved), er => er ? cb(er) : mkdirp(input, cb));
-                break;
-            default:
-                cb(er);
+public class Mkdirp {
+    public static void mkdirp(String pathStr, Runnable onSuccess, Runnable onFailure) {
+        Path path = Paths.get(pathStr);
+        try {
+            if (!Files.exists(path)) {
+                // Create the parent directory recursively
+                Files.createDirectories(path);
+            }
+            if (onSuccess != null) {
+                onSuccess.run();
+            }
+        } catch (Exception e) {
+            if (onFailure != null) {
+                onFailure.run();
+            }
         }
-    });
+    }
+
+    public static void main(String[] args) {
+        String dirPath = "./path/to/dir";
+        mkdirp(dirPath, 
+                () -> System.out.println("Directory created successfully."), 
+                () -> System.err.println("Failed to create directory."));
+    }
 }
 ```
+
+### Explanation:
+1. **Imports**: The code imports `java.nio.file.Files` and `java.nio.file.Paths` for file system operations.
+2. **mkdirp Method**: This method takes a string path, a `Runnable` for success, and a `Runnable` for failure. It converts the string to a `Path` object using `Paths.get(pathStr)`.
+3. **Directory Creation**: If the directory does not exist (`Files.exists(path)` returns false), it creates all missing parent directories using `Files.createDirectories(path)`.
+4. **Callbacks**: The method accepts `Runnable` callbacks for success and failure, allowing you to handle these events appropriately.
+5. **Main Method**: Demonstrates the usage of the `mkdirp` method with a sample directory path.
+
+This Java code should behave similarly to the provided JavaScript function, creating directories and their parents if they do not already exist.

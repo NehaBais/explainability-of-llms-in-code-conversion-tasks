@@ -1,0 +1,7 @@
+/tmp/codegeex4-file_rename-py-c.c:22:7: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |   if (getcwd(rootPath, sizeof(rootPath)) != NULL) {
+      |       ^
+/tmp/codegeex4-file_rename-py-c.c:22:42: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   22 |   if (getcwd(rootPath, sizeof(rootPath)) != NULL) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+1 warning and 1 error generated.

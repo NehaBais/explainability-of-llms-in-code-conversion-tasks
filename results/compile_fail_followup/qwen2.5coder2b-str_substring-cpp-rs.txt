@@ -1,0 +1,51 @@
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/qwen2.5coder2b-str_substring-cpp-rs.rs:13:9
+   |
+10 |         "Substring from {} characters in and of {} length: {}",
+   |                                                            -- required by a bound introduced by this call
+...
+13 |         s[n..n + m]
+   |         ^^^^^^^^^^^ doesn't have a size known at compile-time
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/qwen2.5coder2b-str_substring-cpp-rs.rs:18:9
+   |
+16 |         "Substring from {} characters in to the end of the string: {}",
+   |                                                                    -- required by a bound introduced by this call
+17 |         n,
+18 |         s[n..]
+   |         ^^^^^^ doesn't have a size known at compile-time
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::iter::Take<Skip<Chars<'_>>>` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_substring-cpp-rs.rs:27:9
+   |
+27 |         s.chars().skip(s.find(c).unwrap()).take(m)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `std::iter::Take<Skip<Chars<'_>>>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::iter::Take<Skip<Chars<'_>>>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::iter::Take<Skip<Chars<'_>>>` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_substring-cpp-rs.rs:32:9
+   |
+32 |         s.chars().skip(s.find(sub).unwrap()).take(m)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `std::iter::Take<Skip<Chars<'_>>>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::iter::Take<Skip<Chars<'_>>>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_create-go-cpp.cpp:17:16: error: use of undeclared identifier 'mkdir'
+   17 |   int result = mkdir(dn.c_str(), 0666);
+      |                ^
+1 error generated.

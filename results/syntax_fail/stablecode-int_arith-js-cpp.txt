@@ -1,0 +1,27 @@
+/tmp/stablecode-int_arith-js-cpp.cpp:8:18: error: use of undeclared identifier 'argv'; did you mean 'prev'?
+    8 |     int a = stoi(argv[2]));
+      |                  ^~~~
+      |                  prev
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: 'prev' declared here
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+/tmp/stablecode-int_arith-js-cpp.cpp:8:18: error: reference to overloaded function could not be resolved; did you mean to call it?
+    8 |     int a = stoi(argv[2]));
+      |                  ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: possible target for call
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+/tmp/stablecode-int_arith-js-cpp.cpp:9:18: error: use of undeclared identifier 'argv'; did you mean 'prev'?
+    9 |     int b = stoi(argv[3]));
+      |                  ^~~~
+      |                  prev
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: 'prev' declared here
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+/tmp/stablecode-int_arith-js-cpp.cpp:9:18: error: reference to overloaded function could not be resolved; did you mean to call it?
+    9 |     int b = stoi(argv[3]));
+      |                  ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: possible target for call
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+4 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-file_size-rs-go.go:27:2: syntax error: non-declaration statement outside function body

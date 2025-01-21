@@ -1,0 +1,37 @@
+/tmp/granitecode8b-int_factors-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:12:19: error: use of undeclared identifier 'realloc'
+   12 |     fctrs->list = realloc(fctrs->list, newSize * sizeof(int));
+      |                   ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:14:19: error: use of undeclared identifier 'malloc'
+   14 |     fctrs->list = malloc(newSize * sizeof(int));
+      |                   ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:26:3: error: use of undeclared identifier 'free'
+   26 |   free(fctrs->list);
+      |   ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:27:17: error: use of undeclared identifier 'NULL'
+   27 |   fctrs->list = NULL;
+      |                 ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:46:20: error: use of undeclared identifier 'NULL'
+   46 |   Factors ftors = {NULL, 0};
+      |                    ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:51:5: error: use of undeclared identifier 'cout'
+   51 |     cout << "Factors of " << nums2factor[i] << " are: ";
+      |     ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:54:7: error: use of undeclared identifier 'cout'
+   54 |       cout << sep << ftors.list[j];
+      |       ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:57:5: error: use of undeclared identifier 'cout'
+   57 |     cout << endl;
+      |     ^
+/tmp/granitecode8b-int_factors-c-cpp.cpp:57:13: error: use of undeclared identifier 'endl'
+   57 |     cout << endl;
+      |             ^
+1 warning and 11 errors generated.

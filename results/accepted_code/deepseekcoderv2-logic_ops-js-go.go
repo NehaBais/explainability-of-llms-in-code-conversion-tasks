@@ -2,15 +2,16 @@ package main
 
 import "fmt"
 
-func logic(a bool, b bool) {
+// logic takes two boolean arguments and performs logical operations.
+func logic(a, b bool) {
 	fmt.Println("a AND b:", a && b)
 	fmt.Println("a OR b:", a || b)
 	fmt.Println("NOT a:", !a)
 }
 
 func main() {
-	logic(true, true)
-	logic(true, false)
-	logic(false, true)
-	logic(false, false)
+	logic(true, true)   // Example usage
+	logic(true, false)  // Example usage
+	logic(false, true)  // Example usage
+	logic(false, false) // Example usage
 }

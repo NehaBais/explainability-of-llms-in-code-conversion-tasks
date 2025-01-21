@@ -1,0 +1,44 @@
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:9:29: error: non-type template argument of type 'int' is not an integral constant expression
+    9 |   cout << "AND: " << bitset<width>(a & b & mask) << endl;
+      |                             ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:10:28: error: non-type template argument of type 'int' is not an integral constant expression
+   10 |   cout << "OR: " << bitset<width>(a | b & mask) << endl;
+      |                            ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:11:29: error: non-type template argument of type 'int' is not an integral constant expression
+   11 |   cout << "XOR: " << bitset<width>(a ^ b & mask) << endl;
+      |                             ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:12:29: error: non-type template argument of type 'int' is not an integral constant expression
+   12 |   cout << "NOT: " << bitset<width>(~a & mask) << endl;
+      |                             ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:15:31: error: non-type template argument of type 'int' is not an integral constant expression
+   15 |   cout << "RIGHT: " << bitset<width>(a >> 1 & mask) << endl;
+      |                               ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:16:30: error: non-type template argument of type 'int' is not an integral constant expression
+   16 |   cout << "LEFT: " << bitset<width>(a << 1 & mask) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:21:12: error: use of undeclared identifier 'rotl'; did you mean 'rotr'?
+   21 |     return rotl(width, a, -n);
+      |            ^~~~
+      |            rotr
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:19:5: note: 'rotr' declared here
+   19 | int rotr(int width, int a, int n) {
+      |     ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:66:30: error: non-type template argument of type 'int' is not an integral constant expression
+   66 |        << ", 1): " << bitset<width>(asr(width, a, 1)) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:68:30: error: non-type template argument of type 'int' is not an integral constant expression
+   68 |        << ", 1): " << bitset<width>(asr(width, aa, 1)) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:70:30: error: non-type template argument of type 'int' is not an integral constant expression
+   70 |        << ", 2): " << bitset<width>(asr(width, a, 2)) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:72:30: error: non-type template argument of type 'int' is not an integral constant expression
+   72 |        << ", 2): " << bitset<width>(asr(width, aa, 2)) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:74:30: error: non-type template argument of type 'int' is not an integral constant expression
+   74 |        << ", 4): " << bitset<width>(asr(width, a, 4)) << endl;
+      |                              ^~~~~
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:76:30: error: non-type template argument of type 'int' is not an integral constant expression
+   76 |        << ", 4): " << bitset<width>(asr(width, aa, 4)) << endl;
+      |                              ^~~~~
+13 errors generated.

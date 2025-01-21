@@ -1,0 +1,47 @@
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/codellama7b-file_create-js-rs.rs:4:16
+  |
+4 |     let path = PathBuf::from("./output.txt");
+  |                ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/codellama7b-file_create-js-rs.rs:7:16
+  |
+7 |     let path = PathBuf::from("/output.txt");
+  |                ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+  --> /tmp/codellama7b-file_create-js-rs.rs:10:16
+   |
+10 |     let path = PathBuf::from("./docs");
+   |                ^^^^^^^ use of undeclared type `PathBuf`
+   |
+help: consider importing this struct
+   |
+1  + use std::path::PathBuf;
+   |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+  --> /tmp/codellama7b-file_create-js-rs.rs:13:16
+   |
+13 |     let path = PathBuf::from("/docs");
+   |                ^^^^^^^ use of undeclared type `PathBuf`
+   |
+help: consider importing this struct
+   |
+1  + use std::path::PathBuf;
+   |
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

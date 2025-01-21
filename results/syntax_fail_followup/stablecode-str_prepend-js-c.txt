@@ -1,0 +1,10 @@
+/tmp/stablecode-str_prepend-js-c.c:9:17: error: extraneous ')' before ';'
+    9 |   strcat(s, " ")); // Append a space character
+      |                 ^
+/tmp/stablecode-str_prepend-js-c.c:10:17: error: extraneous ')' before ';'
+   10 |   strcat(s, "!")); // Append an exclamation mark
+      |                 ^
+/tmp/stablecode-str_prepend-js-c.c:11:18: error: extraneous ')' before ';'
+   11 |   strcat(s, "\n")); // Append a newline character
+      |                  ^
+3 errors generated.

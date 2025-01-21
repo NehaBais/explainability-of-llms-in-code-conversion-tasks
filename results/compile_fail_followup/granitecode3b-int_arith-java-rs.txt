@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/granitecode3b-int_arith-java-rs.rs:1:1
+  |
+1 | let nums = String::new().split(" ").collect();
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

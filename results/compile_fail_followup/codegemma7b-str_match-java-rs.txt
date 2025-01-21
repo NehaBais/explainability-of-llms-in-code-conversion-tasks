@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-str_match-java-rs.rs:1:27
+  |
+1 | const str1: &str = "abcd";
+  |                           ^ consider adding a `main` function to `/tmp/codegemma7b-str_match-java-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

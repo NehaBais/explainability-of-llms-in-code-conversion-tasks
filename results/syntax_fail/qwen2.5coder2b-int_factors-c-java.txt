@@ -1,0 +1,31 @@
+/tmp/Main.java:10: error: cannot find symbol
+      for (int j = 0; j < ftors.list.size(); j++) {
+                                    ^
+  symbol:   method size()
+  location: variable list of type int[]
+/tmp/Main.java:11: error: cannot find symbol
+        System.out.print(ftors.list.get(j) + (j == ftors.list.size() - 1 ? "" : ", "));
+                                   ^
+  symbol:   method get(int)
+  location: variable list of type int[]
+/tmp/Main.java:11: error: cannot find symbol
+        System.out.print(ftors.list.get(j) + (j == ftors.list.size() - 1 ? "" : ", "));
+                                                             ^
+  symbol:   method size()
+  location: variable list of type int[]
+/tmp/Main.java:48: error: cannot find symbol
+    if (dvsr * dvsr == num) ftors.add(dvsr);
+        ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:48: error: cannot find symbol
+    if (dvsr * dvsr == num) ftors.add(dvsr);
+               ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:48: error: cannot find symbol
+    if (dvsr * dvsr == num) ftors.add(dvsr);
+                                      ^
+  symbol:   variable dvsr
+  location: class Main
+6 errors

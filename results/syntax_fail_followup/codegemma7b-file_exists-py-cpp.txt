@@ -1,0 +1,19 @@
+/tmp/codegemma7b-file_exists-py-cpp.cpp:4:15: error: no member named 'filesystem' in namespace 'std'
+    4 |   return std::filesystem::exists(filename);
+      |          ~~~~~^
+/tmp/codegemma7b-file_exists-py-cpp.cpp:8:15: error: no member named 'filesystem' in namespace 'std'
+    8 |   return std::filesystem::is_directory(directory);
+      |          ~~~~~^
+/tmp/codegemma7b-file_exists-py-cpp.cpp:14:10: error: no member named 'cout' in namespace 'std'
+   14 |     std::cout << "Files and directories found in current working directory."
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-py-cpp.cpp:17:10: error: no member named 'cout' in namespace 'std'
+   17 |     std::cout << "Files and directories not found in current working directory."
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-py-cpp.cpp:23:10: error: no member named 'cout' in namespace 'std'
+   23 |     std::cout << "Files and directories found in filesystem root." << std::endl;
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-py-cpp.cpp:25:10: error: no member named 'cout' in namespace 'std'
+   25 |     std::cout << "Files and directories not found in filesystem root."
+      |     ~~~~~^
+6 errors generated.

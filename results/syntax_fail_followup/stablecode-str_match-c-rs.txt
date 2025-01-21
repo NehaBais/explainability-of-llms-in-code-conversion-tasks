@@ -1,0 +1,31 @@
+error: mismatched closing delimiter: `]`
+  --> /tmp/stablecode-str_match-c-rs.rs:13:11
+   |
+13 | fn main() {
+   |           ^ unclosed delimiter
+...
+19 |     println!("Ends with Test ( Code,ode ))] {
+   |                                           ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-c-rs.rs:19:45
+   |
+19 |     println!("Ends with Test ( Code,ode ))] {
+   |                                             ^ unclosed delimiter
+20 |         let result = ends_with("Code","ode");
+21 |         println!("Result of Ends With: {}", result));
+   |                                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-str_match-c-rs.rs:22:5
+   |
+19 |     println!("Ends with Test ( Code,ode ))] {
+   |                                           - missing open `[` for this delimiter
+20 |         let result = ends_with("Code","ode");
+21 |         println!("Result of Ends With: {}", result));
+   |                                                    - missing open `(` for this delimiter
+22 |     }
+   |     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

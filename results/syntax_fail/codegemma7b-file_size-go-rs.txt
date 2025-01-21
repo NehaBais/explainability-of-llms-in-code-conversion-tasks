@@ -1,0 +1,58 @@
+error[E0425]: cannot find function `metadata` in module `os`
+ --> /tmp/codegemma7b-file_size-go-rs.rs:5:27
+  |
+5 |     if let Ok(stat) = os::metadata(f) {
+  |                           ^^^^^^^^ not found in `os`
+  |
+help: consider importing one of these functions
+  |
+1 + use std::fs::metadata;
+  |
+1 + use std::ptr::metadata;
+  |
+help: if you import `metadata`, refer to it directly
+  |
+5 -     if let Ok(stat) = os::metadata(f) {
+5 +     if let Ok(stat) = metadata(f) {
+  |
+
+error[E0433]: failed to resolve: could not find `error` in `fmt`
+ --> /tmp/codegemma7b-file_size-go-rs.rs:8:29
+  |
+8 |         println!("{}", fmt::error::Error::new(os::ErrorKind::NotFound));
+  |                             ^^^^^ could not find `error` in `fmt`
+  |
+help: consider importing one of these items
+  |
+1 + use std::error::Error;
+  |
+1 + use std::io::Error;
+  |
+1 + use fmt::Error;
+  |
+help: if you import `Error`, refer to it directly
+  |
+8 -         println!("{}", fmt::error::Error::new(os::ErrorKind::NotFound));
+8 +         println!("{}", Error::new(os::ErrorKind::NotFound));
+  |
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `os`
+ --> /tmp/codegemma7b-file_size-go-rs.rs:8:51
+  |
+8 |         println!("{}", fmt::error::Error::new(os::ErrorKind::NotFound));
+  |                                                   ^^^^^^^^^ could not find `ErrorKind` in `os`
+  |
+help: consider importing this enum
+  |
+1 + use std::io::ErrorKind;
+  |
+help: if you import `ErrorKind`, refer to it directly
+  |
+8 -         println!("{}", fmt::error::Error::new(os::ErrorKind::NotFound));
+8 +         println!("{}", fmt::error::Error::new(ErrorKind::NotFound));
+  |
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0425, E0433.
+For more information about an error, try `rustc --explain E0425`.

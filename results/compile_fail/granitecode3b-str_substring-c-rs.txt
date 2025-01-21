@@ -1,0 +1,52 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:23:25
+   |
+23 | fn str_fromstr(s: &str, in: &str, m: isize) -> String {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:24:19
+   |
+24 |  let idx = s.find(in).ok_or("--error--")?;
+   |                   ^^ expected expression
+
+warning: unused imports: `CStr` and `CString`
+ --> /tmp/granitecode3b-str_substring-c-rs.rs:1:16
+  |
+1 | use std::ffi::{CStr, CString};
+  |                ^^^^  ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:15:18
+   |
+15 |  substring(s, 0, s.len() - 1).unwrap()
+   |  ---------       ^^^^^^^^^^^ expected `isize`, found `usize`
+   |  |
+   |  arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:3:4
+   |
+3  | fn substring(s: &str, n: usize, m: isize) -> Option<String> {
+   |    ^^^^^^^^^                    --------
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+15 |  substring(s, 0, (s.len() - 1).try_into().unwrap()).unwrap()
+   |                  +           +++++++++++++++++++++
+
+error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or another type that implements `FromResidual`)
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:19:44
+   |
+18 | fn str_fromch(s: &str, ch: char, m: isize) -> String {
+   | ---------------------------------------------------- this function should return `Result` or `Option` to accept `?`
+19 |  let ch_idx = s.find(ch).ok_or("--error--")?;
+   |                                            ^ cannot use the `?` operator in a function that returns `String`
+   |
+   = help: the trait `FromResidual<Result<Infallible, &str>>` is not implemented for `String`
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

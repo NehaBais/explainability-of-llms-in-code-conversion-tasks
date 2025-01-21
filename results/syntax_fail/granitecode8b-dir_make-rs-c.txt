@@ -1,0 +1,80 @@
+/tmp/granitecode8b-dir_make-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-rs-c.c:5:9: error: use of undeclared identifier 'PATH_MAX'
+    5 |   int p[PATH_MAX];
+      |         ^
+/tmp/granitecode8b-dir_make-rs-c.c:6:17: error: use of undeclared identifier 'NULL'
+    6 |   char *q, *r = NULL;
+      |                 ^
+/tmp/granitecode8b-dir_make-rs-c.c:9:7: error: call to undeclared function 'realpath'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (realpath(path, p) == NULL) {
+      |       ^
+/tmp/granitecode8b-dir_make-rs-c.c:9:28: error: use of undeclared identifier 'NULL'
+    9 |   if (realpath(path, p) == NULL) {
+      |                            ^
+/tmp/granitecode8b-dir_make-rs-c.c:14:28: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   for (q = (char *)p; (r = strchr(q, '/')) != NULL; q = r + 1) {
+      |                            ^
+/tmp/granitecode8b-dir_make-rs-c.c:14:28: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/granitecode8b-dir_make-rs-c.c:14:47: error: use of undeclared identifier 'NULL'
+   14 |   for (q = (char *)p; (r = strchr(q, '/')) != NULL; q = r + 1) {
+      |                                               ^
+/tmp/granitecode8b-dir_make-rs-c.c:18:9: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |         ^
+/tmp/granitecode8b-dir_make-rs-c.c:18:9: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-rs-c.c:4:5: note: 'mkdirp' declared here
+    4 | int mkdirp(const char *path) {
+      |     ^
+    5 |   int p[PATH_MAX];
+    6 |   char *q, *r = NULL;
+    7 |   int c, i = 0;
+    8 | 
+    9 |   if (realpath(path, p) == NULL) {
+   10 |     p[i++] = '.';
+   11 |     p[i] = '/';
+   12 |   }
+   13 | 
+   14 |   for (q = (char *)p; (r = strchr(q, '/')) != NULL; q = r + 1) {
+   15 |     c = *r;
+   16 |     *r = 0;
+   17 | 
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |         ~~~~~
+      |         mkdirp
+/tmp/granitecode8b-dir_make-rs-c.c:18:18: error: use of undeclared identifier 'S_IRWXU'
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                  ^
+/tmp/granitecode8b-dir_make-rs-c.c:18:28: error: use of undeclared identifier 'S_IRWXG'
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                            ^
+/tmp/granitecode8b-dir_make-rs-c.c:18:38: error: use of undeclared identifier 'S_IROTH'
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                                      ^
+/tmp/granitecode8b-dir_make-rs-c.c:18:48: error: use of undeclared identifier 'S_IXOTH'
+   18 |     if (mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                                                ^
+/tmp/granitecode8b-dir_make-rs-c.c:19:11: error: use of undeclared identifier 'errno'
+   19 |       if (errno == EEXIST && i > 1)
+      |           ^
+/tmp/granitecode8b-dir_make-rs-c.c:19:20: error: use of undeclared identifier 'EEXIST'
+   19 |       if (errno == EEXIST && i > 1)
+      |                    ^
+/tmp/granitecode8b-dir_make-rs-c.c:21:16: error: use of undeclared identifier 'errno'
+   21 |       else if (errno != EEXIST)
+      |                ^
+/tmp/granitecode8b-dir_make-rs-c.c:21:25: error: use of undeclared identifier 'EEXIST'
+   21 |       else if (errno != EEXIST)
+      |                         ^
+/tmp/granitecode8b-dir_make-rs-c.c:30:12: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |     return mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |            ^
+/tmp/granitecode8b-dir_make-rs-c.c:30:21: error: use of undeclared identifier 'S_IRWXU'
+   30 |     return mkdir(p, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

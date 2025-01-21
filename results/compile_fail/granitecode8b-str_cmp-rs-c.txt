@@ -1,0 +1,79 @@
+/tmp/granitecode8b-str_cmp-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-c.c:8:6: error: expected ';' after expression
+    8 |   std::string b("Bac");
+      |      ^
+      |      ;
+/tmp/granitecode8b-str_cmp-rs-c.c:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string b("Bac");
+      |   ^
+/tmp/granitecode8b-str_cmp-rs-c.c:8:6: error: expected expression
+    8 |   std::string b("Bac");
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:11:7: error: use of undeclared identifier 'std'
+   11 |   if (std::strcmp(a, b.c_str()) == 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:11:10: error: expected ')'
+   11 |   if (std::strcmp(a, b.c_str()) == 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:11:6: note: to match this '('
+   11 |   if (std::strcmp(a, b.c_str()) == 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:12:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("The strings are equaln");
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-c.c:12:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_cmp-rs-c.c:14:7: error: use of undeclared identifier 'std'
+   14 |   if (std::strcmp(a, b.c_str()) != 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:14:10: error: expected ')'
+   14 |   if (std::strcmp(a, b.c_str()) != 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:14:6: note: to match this '('
+   14 |   if (std::strcmp(a, b.c_str()) != 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:17:7: error: use of undeclared identifier 'std'
+   17 |   if (std::strcmp(a, b.c_str()) > 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:17:10: error: expected ')'
+   17 |   if (std::strcmp(a, b.c_str()) > 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:17:6: note: to match this '('
+   17 |   if (std::strcmp(a, b.c_str()) > 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:20:7: error: use of undeclared identifier 'std'
+   20 |   if (std::strcmp(a, b.c_str()) < 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:20:10: error: expected ')'
+   20 |   if (std::strcmp(a, b.c_str()) < 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:20:6: note: to match this '('
+   20 |   if (std::strcmp(a, b.c_str()) < 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:23:7: error: use of undeclared identifier 'std'
+   23 |   if (std::strcmp(a, b.c_str()) >= 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:23:10: error: expected ')'
+   23 |   if (std::strcmp(a, b.c_str()) >= 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:23:6: note: to match this '('
+   23 |   if (std::strcmp(a, b.c_str()) >= 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:26:7: error: use of undeclared identifier 'std'
+   26 |   if (std::strcmp(a, b.c_str()) <= 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:26:10: error: expected ')'
+   26 |   if (std::strcmp(a, b.c_str()) <= 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:26:6: note: to match this '('
+   26 |   if (std::strcmp(a, b.c_str()) <= 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:34:7: error: use of undeclared identifier 'std'
+   34 |   if (std::equalsIgnoreCase(a, b.c_str())) {
+      |       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

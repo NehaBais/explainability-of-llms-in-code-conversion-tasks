@@ -1,0 +1,29 @@
+/tmp/codeqwen-str_substring-c-cpp.cpp:52:26: error: expected parameter declarator
+   52 |   static std::locale loc(""); // Create a locale for UTF-16 conversion
+      |                          ^
+/tmp/codeqwen-str_substring-c-cpp.cpp:52:26: error: expected ')'
+/tmp/codeqwen-str_substring-c-cpp.cpp:52:25: note: to match this '('
+   52 |   static std::locale loc(""); // Create a locale for UTF-16 conversion
+      |                         ^
+/tmp/codeqwen-str_substring-c-cpp.cpp:15:24: error: cannot increment value of type 'const std::wstring' (aka 'const basic_string<wchar_t>')
+   15 |     for (; n > 0; ++n, ++s)
+      |                        ^ ~
+/tmp/codeqwen-str_substring-c-cpp.cpp:16:11: error: indirection requires pointer operand ('const std::wstring' (aka 'const basic_string<wchar_t>') invalid)
+   16 |       if (*s ==
+      |           ^~
+/tmp/codeqwen-str_substring-c-cpp.cpp:30:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   30 |     auto it = std::find(s.begin(), s.end(), static_cast<wchar_t>(ch));
+      |     ^
+/tmp/codeqwen-str_substring-c-cpp.cpp:31:50: error: use of undeclared identifier 'It'
+   31 |     return substring(s, std::distance(s.begin(), It), m);
+      |                                                  ^
+/tmp/codeqwen-str_substring-c-cpp.cpp:36:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   36 |     auto It = s.find(in);
+      |     ^
+/tmp/codeqwen-str_substring-c-cpp.cpp:37:25: error: no matching function for call to 'distance'
+   37 |     return substring(s, std::distance(s.begin(), It), m);
+      |                         ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/distance.h:46:1: note: candidate template ignored: deduced conflicting types for parameter '_InputIter' ('const_iterator' (aka '__wrap_iter<const wchar_t *>') vs. 'size_type' (aka 'unsigned long'))
+   46 | distance(_InputIter __first, _InputIter __last) {
+      | ^
+2 warnings and 6 errors generated.

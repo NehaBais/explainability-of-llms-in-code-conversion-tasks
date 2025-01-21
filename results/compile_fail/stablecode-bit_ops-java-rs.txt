@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-java-rs.rs:1:28
+  |
+1 | fn bitwise(a: i32, b: i32) {
+  |                            ^ unclosed delimiter
+...
+8 |     println!("a >>> b: {}", a as u32 >> b as u32)); // logical right shift
+  |                                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-java-rs.rs:9:46
+  |
+8 |     println!("a >>> b: {}", a as u32 >> b as u32)); // logical right shift
+  |                                                  - missing open `(` for this delimiter
+9 |     println!("a rol b: {}", a.rotate_left(b))); // rotate left, Rust 1.26+
+  |                                              ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

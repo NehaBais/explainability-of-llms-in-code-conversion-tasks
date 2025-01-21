@@ -1,0 +1,86 @@
+error[E0061]: this method takes 0 arguments but 1 argument was supplied
+ --> /tmp/granitecode3b-str_substring-cpp-rs.rs:9:37
+  |
+9 |     println!("{}", s.chars().nth(n).take(m)); // Output: 2345
+  |                                     ^^^^ - unexpected argument of type `{integer}`
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:1727:18
+help: remove the extra argument
+  |
+9 -     println!("{}", s.chars().nth(n).take(m)); // Output: 2345
+9 +     println!("{}", s.chars().nth(n).take()); // Output: 2345
+  |
+
+error[E0277]: `Option<char>` doesn't implement `std::fmt::Display`
+ --> /tmp/granitecode3b-str_substring-cpp-rs.rs:9:20
+  |
+9 |     println!("{}", s.chars().nth(n).take(m)); // Output: 2345
+  |                    ^^^^^^^^^^^^^^^^^^^^^^^^ `Option<char>` cannot be formatted with the default formatter
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `Option<char>`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::iter::Take<Chars<'_>>` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_substring-cpp-rs.rs:17:20
+   |
+17 |     println!("{}", s.chars().take(s.len() - 1)); // Output: 012345678
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `std::iter::Take<Chars<'_>>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::iter::Take<Chars<'_>>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0061]: this method takes 0 arguments but 1 argument was supplied
+  --> /tmp/granitecode3b-str_substring-cpp-rs.rs:18:54
+   |
+18 |     println!("{}", s.chars().nth(s.find(c).unwrap()).take(m)); // Output: 2345
+   |                                                      ^^^^ - unexpected argument of type `{integer}`
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:1727:18
+help: remove the extra argument
+   |
+18 -     println!("{}", s.chars().nth(s.find(c).unwrap()).take(m)); // Output: 2345
+18 +     println!("{}", s.chars().nth(s.find(c).unwrap()).take()); // Output: 2345
+   |
+
+error[E0277]: `Option<char>` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_substring-cpp-rs.rs:18:20
+   |
+18 |     println!("{}", s.chars().nth(s.find(c).unwrap()).take(m)); // Output: 2345
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Option<char>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<char>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0061]: this method takes 0 arguments but 1 argument was supplied
+  --> /tmp/granitecode3b-str_substring-cpp-rs.rs:19:56
+   |
+19 |     println!("{}", s.chars().nth(s.find(sub).unwrap()).take(m)); // Output: 2345
+   |                                                        ^^^^ - unexpected argument of type `{integer}`
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:1727:18
+help: remove the extra argument
+   |
+19 -     println!("{}", s.chars().nth(s.find(sub).unwrap()).take(m)); // Output: 2345
+19 +     println!("{}", s.chars().nth(s.find(sub).unwrap()).take()); // Output: 2345
+   |
+
+error[E0277]: `Option<char>` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_substring-cpp-rs.rs:19:20
+   |
+19 |     println!("{}", s.chars().nth(s.find(sub).unwrap()).take(m)); // Output: 2345
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Option<char>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<char>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0061, E0277.
+For more information about an error, try `rustc --explain E0061`.

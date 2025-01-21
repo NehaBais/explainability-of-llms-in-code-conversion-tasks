@@ -1,0 +1,16 @@
+/tmp/codeqwen-dir_make-rs-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path dir_to_create("./path/to/dir");
+      |   ~~~~~^
+/tmp/codeqwen-dir_make-rs-cpp.cpp:6:13: error: no member named 'filesystem' in namespace 'std'
+    6 |   if (!std::filesystem::exists(dir_to_create)) {
+      |        ~~~~~^
+/tmp/codeqwen-dir_make-rs-cpp.cpp:6:32: error: use of undeclared identifier 'dir_to_create'
+    6 |   if (!std::filesystem::exists(dir_to_create)) {
+      |                                ^
+/tmp/codeqwen-dir_make-rs-cpp.cpp:7:15: error: no member named 'filesystem' in namespace 'std'
+    7 |     if (!std::filesystem::create_directories(dir_to_create)) {
+      |          ~~~~~^
+/tmp/codeqwen-dir_make-rs-cpp.cpp:7:46: error: use of undeclared identifier 'dir_to_create'
+    7 |     if (!std::filesystem::create_directories(dir_to_create)) {
+      |                                              ^
+5 errors generated.

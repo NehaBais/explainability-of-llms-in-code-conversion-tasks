@@ -1,0 +1,39 @@
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder7b-str_cmp-java-rs.rs:33:56
+   |
+33 |     let case_insensitive_result = a.to_lowercase().cmp(b.to_lowercase());
+   |                                                    --- ^^^^^^^^^^^^^^^^ expected `&String`, found `String`
+   |                                                    |
+   |                                                    arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:838:8
+help: consider borrowing here
+   |
+33 |     let case_insensitive_result = a.to_lowercase().cmp(&b.to_lowercase());
+   |                                                        +
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder7b-str_cmp-java-rs.rs:40:42
+   |
+40 |     let lex_relationship = format!("{}", result);
+   |                                          ^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder7b-str_cmp-java-rs.rs:43:45
+   |
+43 |     let ci_lex_relationship = format!("{}", case_insensitive_result);
+   |                                             ^^^^^^^^^^^^^^^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

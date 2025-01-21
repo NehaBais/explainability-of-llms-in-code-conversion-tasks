@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-java-go.go:32:13: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-java-go.go:41:137: syntax error: unexpected ) at end of statement

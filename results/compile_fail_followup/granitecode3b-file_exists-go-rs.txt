@@ -1,0 +1,40 @@
+error[E0282]: type annotations needed
+  --> /tmp/granitecode3b-file_exists-go-rs.rs:10:9
+   |
+10 |     let docs_dir = env::var("HOME").unwrap().into();
+   |         ^^^^^^^^
+11 |     docs_dir.push("docs");
+   |     -------- type must be known at this point
+   |
+help: consider giving `docs_dir` an explicit type
+   |
+10 |     let docs_dir: /* Type */ = env::var("HOME").unwrap().into();
+   |                 ++++++++++++
+
+error[E0382]: borrow of moved value: `path`
+  --> /tmp/granitecode3b-file_exists-go-rs.rs:21:46
+   |
+15 |     fn print_stat<P: AsRef<Path>>(path: P) {
+   |                                   ---- move occurs because `path` has type `P`, which does not implement the `Copy` trait
+16 |         match fs::metadata(path) {
+   |                            ---- value moved here
+...
+21 |                     println!("{} is a file", path.as_ref().display());
+   |                                              ^^^^ value borrowed here after move
+   |
+help: if `P` implemented `Clone`, you could clone the value
+  --> /tmp/granitecode3b-file_exists-go-rs.rs:15:19
+   |
+15 |     fn print_stat<P: AsRef<Path>>(path: P) {
+   |                   ^ consider constraining this type parameter with `Clone`
+16 |         match fs::metadata(path) {
+   |                            ---- you could clone this value
+help: consider further restricting this bound
+   |
+15 |     fn print_stat<P: AsRef<Path> + Copy>(path: P) {
+   |                                  ++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0282, E0382.
+For more information about an error, try `rustc --explain E0282`.

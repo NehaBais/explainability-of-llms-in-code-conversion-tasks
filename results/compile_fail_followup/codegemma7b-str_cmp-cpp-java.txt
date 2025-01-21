@@ -1,0 +1,7 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+System.out.println(
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+System.out.println(
+^
+2 errors

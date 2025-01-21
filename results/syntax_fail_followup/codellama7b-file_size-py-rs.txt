@@ -1,0 +1,19 @@
+error: expected item, found keyword `let`
+ --> /tmp/codellama7b-file_size-py-rs.rs:4:1
+  |
+4 | let size = fs::File::open("/input.txt")?.metadata()?.len();
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: missing type for `const` item
+ --> /tmp/codellama7b-file_size-py-rs.rs:3:11
+  |
+3 | const size = fs::File::open("input.txt")?.metadata()?.len();
+  |           ^
+  |
+help: provide a type for the item
+  |
+3 | const size: <type> = fs::File::open("input.txt")?.metadata()?.len();
+  |           ++++++++
+
+error: aborting due to 2 previous errors
+

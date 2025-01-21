@@ -1,0 +1,4 @@
+/tmp/magicoder7b-file_exists-go-c.c:12:36: error: use of undeclared identifier 'errno'
+   12 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+1 error generated.

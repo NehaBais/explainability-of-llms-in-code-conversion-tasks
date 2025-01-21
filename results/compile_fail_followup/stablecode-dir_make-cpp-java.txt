@@ -1,0 +1,28 @@
+/tmp/Main.java:12: error: illegal start of expression
+        if (args.length != 1)) {
+                             ^
+/tmp/Main.java:17: error: ';' expected
+        Path path = new File("./path/to/dir")).toPath();
+                                             ^
+/tmp/Main.java:21: error: illegal start of expression
+        for (Path dir : Files.listTree(path))) {
+                                             ^
+/tmp/Main.java:22: error: ';' expected
+            parents.add(dir));
+                            ^
+/tmp/Main.java:26: error: ';' expected
+        Collections.reverse(parents)); // Reverse the list to ensure that we're creating the parent directories from most specific to most general
+                                    ^
+/tmp/Main.java:28: error: illegal start of expression
+            if (!Files.exists(dir))) {
+                                   ^
+/tmp/Main.java:30: error: ';' expected
+                    Files.createDirectories(dir));
+                                                ^
+/tmp/Main.java:31: error: ';' expected
+                    System.out.println("Successfully created directory: " + dir.toString()));
+                                                                                           ^
+/tmp/Main.java:33: error: ';' expected
+                    System.out.println("Couldn't create directory: " + dir.toString()));
+                                                                                      ^
+9 errors

@@ -1,0 +1,11 @@
+/tmp/Main.java:9: error: cannot find symbol
+      try (FileOutputStream fos = new FileOutputStream(f, false)) {
+           ^
+  symbol:   class FileOutputStream
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+      try (FileOutputStream fos = new FileOutputStream(f, false)) {
+                                      ^
+  symbol:   class FileOutputStream
+  location: class Main
+2 errors

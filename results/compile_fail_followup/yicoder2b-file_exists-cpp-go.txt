@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-cpp-go.go:9:12: undefined: os.IsDir

@@ -1,0 +1,16 @@
+/tmp/stablecode-str_cmp-go-cpp.cpp:41:28: error: extraneous ')' after condition, expected a statement
+   41 |   if (compareStrings(c, d))) {
+      |                            ^
+/tmp/stablecode-str_cmp-go-cpp.cpp:49:32: error: extraneous ')' after condition, expected a statement
+   49 |   if (compareStringsFold(c, d)))) {
+      |                                ^
+/tmp/stablecode-str_cmp-go-cpp.cpp:49:33: error: extraneous ')' after condition, expected a statement
+   49 |   if (compareStringsFold(c, d)))) {
+      |                                 ^
+/tmp/stablecode-str_cmp-go-cpp.cpp:53:37: error: extraneous ')' after condition, expected a statement
+   53 |   else if (compareStringsFold(d, c)))) {
+      |                                     ^
+/tmp/stablecode-str_cmp-go-cpp.cpp:53:38: error: extraneous ')' after condition, expected a statement
+   53 |   else if (compareStringsFold(d, c)))) {
+      |                                      ^
+5 errors generated.

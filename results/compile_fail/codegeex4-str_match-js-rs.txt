@@ -1,0 +1,31 @@
+error[E0599]: the method `join` exists for struct `Vec<usize>`, but its trait bounds were not satisfied
+  --> /tmp/codegeex4-str_match-js-rs.rs:34:27
+   |
+34 |                 q2matches.join(", ")
+   |                           ^^^^ method cannot be called on `Vec<usize>` due to unsatisfied trait bounds
+   |
+   = note: the following trait bounds were not satisfied:
+           `[usize]: Join<_>`
+
+error[E0308]: `match` arms have incompatible types
+  --> /tmp/codegeex4-str_match-js-rs.rs:30:18
+   |
+28 |           match (q2, q2matches.len()) {
+   |           --------------------------- `match` arms have incompatible types
+29 |               (_, 0) => ". No.",
+   |                         ------- this is found to be of type `&str`
+30 |               _ => format!(
+   |  __________________^
+31 | |                 ", Yes. It happens {} times within '{}' at index{}",
+32 | |                 q2matches.len(),
+33 | |                 string_a,
+34 | |                 q2matches.join(", ")
+35 | |             ),
+   | |_____________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

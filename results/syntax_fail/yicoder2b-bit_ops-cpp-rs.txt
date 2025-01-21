@@ -1,0 +1,26 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:15:29
+   |
+15 |     println!("not a:   {}", ~a);
+   |                             ^
+   |
+help: use `!` to perform bitwise not
+   |
+15 |     println!("not a:   {}", !a);
+   |                             ~
+
+error[E0425]: cannot find function `rotl` in crate `std`
+  --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:30:28
+   |
+30 |     let mut new_val = std::rotl(ua, b) as i32;
+   |                            ^^^^ not found in `std`
+
+error[E0425]: cannot find function `rotr` in crate `std`
+  --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:33:28
+   |
+33 |     let mut new_val = std::rotr(ua, b) as i32;
+   |                            ^^^^ not found in `std`
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

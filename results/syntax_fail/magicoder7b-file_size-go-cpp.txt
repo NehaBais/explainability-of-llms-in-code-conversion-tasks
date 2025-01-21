@@ -1,0 +1,7 @@
+/tmp/magicoder7b-file_size-go-cpp.cpp:6:21: error: no member named 'filesystem' in namespace 'std'
+    6 |             << std::filesystem::file_size("input.txt") << '\n';
+      |                ~~~~~^
+/tmp/magicoder7b-file_size-go-cpp.cpp:9:21: error: no member named 'filesystem' in namespace 'std'
+    9 |             << std::filesystem::file_size("/input.txt") << '\n';
+      |                ~~~~~^
+2 errors generated.

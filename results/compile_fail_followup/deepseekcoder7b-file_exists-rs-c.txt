@@ -1,0 +1,25 @@
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:30: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                              ^~
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:38: error: character <U+2581> not allowed in an identifier
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                     ^
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:43: error: character <U+2581> not allowed in an identifier
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                        ^
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:54: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                                 ^~
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:27: error: no member named 'st' in 'struct stat'
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                 ~~~~~~~~~ ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:251:28: note: expanded from macro 'S_ISDIR'
+  251 | #define S_ISDIR(m)      (((m) & S_IFMT) == S_IFDIR)     /* directory */
+      |                            ^
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:30: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                              ^
+/tmp/deepseekcoder7b-file_exists-rs-c.c:9:59: error: use of undeclared identifier '_mode'
+    9 |     if (S_ISDIR(path_stat.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                                     ^
+2 warnings and 5 errors generated.

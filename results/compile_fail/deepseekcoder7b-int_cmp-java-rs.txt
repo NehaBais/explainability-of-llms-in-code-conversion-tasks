@@ -1,0 +1,41 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:16:25
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                         ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:16:31
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:16:34
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                   ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:16:43
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                            ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:16:32
+   |
+16 |         Ok(num) => num,<｜begin▁of▁sentence｜>
+   |                                 ^^ expected one of 7 possible tokens
+
+error: expected `;`, found keyword `if`
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:17:6
+   |
+17 |     }
+   |      ^ help: add `;` here
+18 |
+19 |     if nbr1 < nbr2 {
+   |     -- unexpected token
+
+error: aborting due to 6 previous errors
+

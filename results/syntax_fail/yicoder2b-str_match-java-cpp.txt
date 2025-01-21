@@ -1,0 +1,40 @@
+/tmp/yicoder2b-str_match-java-cpp.cpp:18:30: error: member reference base type 'char[5]' is not a structure or union
+   18 |   contains_str = (strchr(str3.c_str(), *str4) !=
+      |                          ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:27:21: error: member reference base type 'char[5]' is not a structure or union
+   27 |   loc1 = strchr(str3.c_str(), *str5) -
+      |                 ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:28:14: error: member reference base type 'char[5]' is not a structure or union
+   28 |          str3.c_str(); // Get the location of 'bb' in the first string
+      |          ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:29:21: error: member reference base type 'char[5]' is not a structure or union
+   29 |   loc2 = strchr(str3.c_str(), *str4) -
+      |                 ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:30:14: error: member reference base type 'char[5]' is not a structure or union
+   30 |          str3.c_str(); // Get the location of 'ab' in the first string
+      |          ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:31:21: error: member reference base type 'char[5]' is not a structure or union
+   31 |   loc3 = strstr(str3.c_str() + loc1 + 1, str5.c_str()) -
+      |                 ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:31:46: error: member reference base type 'char[3]' is not a structure or union
+   31 |   loc3 = strstr(str3.c_str() + loc1 + 1, str5.c_str()) -
+      |                                          ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:32:15: error: member reference base type 'char[5]' is not a structure or union
+   32 |          (str3.c_str() + loc1 + 1); // Get the next occurrence of 'bb' from
+      |           ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:34:21: error: member reference base type 'char[5]' is not a structure or union
+   34 |   loc4 = strchr(str3.c_str(), *str2) -
+      |                 ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:35:14: error: member reference base type 'char[5]' is not a structure or union
+   35 |          str3.c_str(); // Get the location of 'ab' in first string
+      |          ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:36:22: error: member reference base type 'char[5]' is not a structure or union
+   36 |   loc5 = strpbrk(str3.c_str() + loc2, str5.c_str()) -
+      |                  ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:36:43: error: member reference base type 'char[3]' is not a structure or union
+   36 |   loc5 = strpbrk(str3.c_str() + loc2, str5.c_str()) -
+      |                                       ~~~~^~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:37:15: error: member reference base type 'char[5]' is not a structure or union
+   37 |          (str3.c_str() + loc2); // Get the next occurrence of any character from
+      |           ~~~~^~~~~~
+13 errors generated.

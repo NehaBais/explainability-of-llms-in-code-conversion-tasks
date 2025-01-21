@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_exists-java-cpp.cpp:4:13: error: no member named 'filesystem' in namespace 'std'
+    4 |   if (!std::filesystem::exists(workingDir + "/docs/input.txt")) {
+      |        ~~~~~^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:8:13: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (!std::filesystem::exists("/docs/input.txt")) {
+      |        ~~~~~^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:16:33: error: no member named 'filesystem' in namespace 'std'
+   16 |   std::string workingDir = std::filesystem::current_path().string();
+      |                            ~~~~~^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:18:8: error: no member named 'cout' in namespace 'std'
+   18 |   std::cout << "Files and directory exist: " << filesExist << std::endl;
+      |   ~~~~~^
+4 errors generated.

@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-bit_ops-java-c.c:4:3: error: call to undeclared function 'bitwise'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   bitwise(5, 2);
+      |   ^
+/tmp/qwen2.5coder2b-bit_ops-java-c.c:8:6: error: conflicting types for 'bitwise'
+    8 | void bitwise(int a, int b) {
+      |      ^
+/tmp/qwen2.5coder2b-bit_ops-java-c.c:4:3: note: previous implicit declaration is here
+    4 |   bitwise(5, 2);
+      |   ^
+2 errors generated.

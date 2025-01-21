@@ -1,0 +1,8 @@
+Error:
+- The `#include` directive is used to include header files that provide definitions for functions or data types used in the program, but it does not specify which header file to include. To fix this error, you can add a filename after the `#include` directive, like this: ````c #include "stdio.h" ```
+- The `char char = 'd';` line declares a new variable called `char` of type `char`, but it does not assign a value to it. To fix this error, you can add an equal sign and a value after the variable declaration, like this: ````c char char = 'd'; ```
+- The `printf` function is not declared in the standard C library, so you need to include the header file `<stdio.h>` to use it. To fix this error, you can add a line at the top of your program that includes the necessary header file: ````c #include <stdio.h> ```
+- The `strchr` and `strstr` functions are not declared in the standard C library either, so you need to include the header file `<string.h>` to use them. To fix this error, you can add a line at the top of your program that includes the necessary header file: ````c #include <string.h> ```
+- The `printf` function is called with too many arguments, so it cannot be used to print the substring. To fix this error, you need to modify the call to `printf` to only pass one argument, which is a format string that specifies how the output should be formatted. For example: ````c printf("%s\n", &s[n - 1] + (m - 1)); ```
+- The `strchr` and `strstr` functions are called with the wrong arguments. To fix this error, you need to pass the string to be searched as the first argument and the character or substring to be searched for as the second argument. For example: ````c int indx = strchr(s, char) - s; ```
+

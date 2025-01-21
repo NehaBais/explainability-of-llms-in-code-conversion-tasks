@@ -1,0 +1,115 @@
+error[E0425]: cannot find function `metadata` in this scope
+ --> /tmp/codellama7b-file_exists-c-rs.rs:7:8
+  |
+7 |     if metadata(input_txt).is_ok() && metadata(input_txt).file_type().is_file() {
+  |        ^^^^^^^^ not found in this scope
+  |
+help: consider importing one of these functions
+  |
+1 + use std::fs::metadata;
+  |
+1 + use std::ptr::metadata;
+  |
+
+error[E0425]: cannot find function `metadata` in this scope
+ --> /tmp/codellama7b-file_exists-c-rs.rs:7:39
+  |
+7 |     if metadata(input_txt).is_ok() && metadata(input_txt).file_type().is_file() {
+  |                                       ^^^^^^^^ not found in this scope
+  |
+help: consider importing one of these functions
+  |
+1 + use std::fs::metadata;
+  |
+1 + use std::ptr::metadata;
+  |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:15:8
+   |
+15 |     if metadata(docs).is_ok() && metadata(docs).file_type().is_dir() {
+   |        ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:15:34
+   |
+15 |     if metadata(docs).is_ok() && metadata(docs).file_type().is_dir() {
+   |                                  ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:23:8
+   |
+23 |     if metadata(input_txt_root).is_ok() && metadata(input_txt_root).file_type().is_file() {
+   |        ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:23:44
+   |
+23 |     if metadata(input_txt_root).is_ok() && metadata(input_txt_root).file_type().is_file() {
+   |                                            ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:31:8
+   |
+31 |     if metadata(docs_root).is_ok() && metadata(docs_root).file_type().is_dir() {
+   |        ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+error[E0425]: cannot find function `metadata` in this scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:31:39
+   |
+31 |     if metadata(docs_root).is_ok() && metadata(docs_root).file_type().is_dir() {
+   |                                       ^^^^^^^^ not found in this scope
+   |
+help: consider importing one of these functions
+   |
+1  + use std::fs::metadata;
+   |
+1  + use std::ptr::metadata;
+   |
+
+warning: unused import: `std::fs::Metadata`
+ --> /tmp/codellama7b-file_exists-c-rs.rs:1:5
+  |
+1 | use std::fs::Metadata;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 8 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0425`.

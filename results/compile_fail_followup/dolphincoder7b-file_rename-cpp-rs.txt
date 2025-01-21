@@ -1,0 +1,25 @@
+error[E0282]: type annotations needed
+ --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:6:42
+  |
+6 |         match entry.unwrap().file_name().as_ref().map(|s| s.as_ref()) {
+  |                                          ^^^^^^   --- type must be known at this point
+  |
+help: try using a fully qualified path to specify the expected types
+  |
+6 |         match <OsString as AsRef<T>>::as_ref(&entry.unwrap().file_name()).map(|s| s.as_ref()) {
+  |               ++++++++++++++++++++++++++++++++                          ~
+
+error[E0282]: type annotations needed
+  --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:18:42
+   |
+18 |         match entry.unwrap().file_name().as_ref().map(|s| s.as_ref()) {
+   |                                          ^^^^^^   --- type must be known at this point
+   |
+help: try using a fully qualified path to specify the expected types
+   |
+18 |         match <OsString as AsRef<T>>::as_ref(&entry.unwrap().file_name()).map(|s| s.as_ref()) {
+   |               ++++++++++++++++++++++++++++++++                          ~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0282`.

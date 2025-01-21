@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_concat-rs-go.go:12:6: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_concat-rs-go.go:12:14: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-str_concat-rs-go.go:12:30: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_concat-rs-go.go:12:34: syntax error: unexpected ., expected expression

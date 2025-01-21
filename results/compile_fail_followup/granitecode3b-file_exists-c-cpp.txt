@@ -1,0 +1,52 @@
+/tmp/granitecode3b-file_exists-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::path cwd = ".";
+      |   ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:6:7: error: use of undeclared identifier 'std'
+    6 |   if (std::filesystem::exists(cwd / "input.txt") &&
+      |       ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:7:7: error: use of undeclared identifier 'std'
+    7 |       std::filesystem::is_regular_file(cwd / "input.txt")) {
+      |       ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:8:5: error: use of undeclared identifier 'std'
+    8 |     std::cout << "Input file exists and is a regular file." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:8:64: error: use of undeclared identifier 'std'
+    8 |     std::cout << "Input file exists and is a regular file." << std::endl;
+      |                                                                ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << "Input file does not exist or is not a regular file."
+      |     ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:11:18: error: use of undeclared identifier 'std'
+   11 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::filesystem::path root = "/";
+      |   ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:14:7: error: use of undeclared identifier 'std'
+   14 |   if (std::filesystem::exists(root / "input.txt") &&
+      |       ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:15:7: error: use of undeclared identifier 'std'
+   15 |       std::filesystem::is_regular_file(root / "input.txt")) {
+      |       ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::cout << "Input file does not exist or is not a regular file in the "
+      |     ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:17:39: error: use of undeclared identifier 'std'
+   17 |               << "root directory." << std::endl;
+      |                                       ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:19:5: error: use of undeclared identifier 'std'
+   19 |     std::cout << "Input file exists and is a regular file in the root "
+      |     ^
+/tmp/granitecode3b-file_exists-c-cpp.cpp:20:34: error: use of undeclared identifier 'std'
+   20 |               << "directory." << std::endl;
+      |                                  ^
+17 errors generated.

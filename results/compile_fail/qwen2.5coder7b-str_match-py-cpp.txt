@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-str_match-py-cpp.cpp:58:17: error: no matching function for call to 'find'
+   58 |   while ((loc = find(str, "ab", loc + 1)) != -1) {
+      |                 ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find.h:177:1: note: candidate template ignored: deduced conflicting types for parameter '_InputIterator' ('std::string' (aka 'basic_string<char>') vs. 'const char *')
+  177 | find(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/qwen2.5coder7b-str_match-py-cpp.cpp:34:5: note: candidate function not viable: requires 2 arguments, but 3 were provided
+   34 | int find(const std::string &str, const std::string &substr) {
+      |     ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

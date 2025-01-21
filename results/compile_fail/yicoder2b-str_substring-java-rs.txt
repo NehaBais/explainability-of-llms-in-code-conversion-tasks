@@ -1,0 +1,214 @@
+error[E0428]: the name `Substring` is defined multiple times
+ --> /tmp/yicoder2b-str_substring-java-rs.rs:8:1
+  |
+1 | fn Substring(s: &str, n: usize, m: usize) -> &str {
+  | ------------------------------------------------- previous definition of the value `Substring` here
+...
+8 | fn Substring(s: &str, n: char) -> &str {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Substring` redefined here
+  |
+  = note: `Substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `Substring` is defined multiple times
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:15:1
+   |
+1  | fn Substring(s: &str, n: usize, m: usize) -> &str {
+   | ------------------------------------------------- previous definition of the value `Substring` here
+...
+15 | fn Substring(s: &str) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Substring` redefined here
+   |
+   = note: `Substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `Substring` is defined multiple times
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:22:1
+   |
+1  | fn Substring(s: &str, n: usize, m: usize) -> &str {
+   | ------------------------------------------------- previous definition of the value `Substring` here
+...
+22 | fn Substring(s: &str, c: char, m: usize) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Substring` redefined here
+   |
+   = note: `Substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `Substring` is defined multiple times
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:29:1
+   |
+1  | fn Substring(s: &str, n: usize, m: usize) -> &str {
+   | ------------------------------------------------- previous definition of the value `Substring` here
+...
+29 | fn Substring(s: &str, sub: &str, m: usize) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Substring` redefined here
+   |
+   = note: `Substring` must be defined only once in the value namespace of this module
+
+error[E0106]: missing lifetime specifier
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:29:47
+   |
+29 | fn Substring(s: &str, sub: &str, m: usize) -> &str {
+   |                 ----       ----               ^ expected named lifetime parameter
+   |
+   = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `s` or `sub`
+help: consider introducing a named lifetime parameter
+   |
+29 | fn Substring<'a>(s: &'a str, sub: &'a str, m: usize) -> &'a str {
+   |             ++++     ++            ++                    ++
+
+error[E0601]: `main` function not found in crate `yicoder2b_str_substring_java_rs`
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:34:2
+   |
+34 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-str_substring-java-rs.rs`
+
+error[E0277]: the trait bound `&char: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:12:15
+   |
+12 |     &s[s.find(&n).unwrap()..]
+   |          ---- ^^ the trait `Fn(char)` is not implemented for `char`, which is required by `&char: Pattern`
+   |          |
+   |          required by a bound introduced by this call
+   |
+   = help: the trait `Pattern` is implemented for `char`
+   = note: required for `&char` to implement `FnOnce(char)`
+   = note: required for `&char` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+
+error[E0277]: the trait bound `&char: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:23:31
+   |
+23 |     if s.is_empty() || s.find(&c) == None {
+   |                          ---- ^^ the trait `Fn(char)` is not implemented for `char`, which is required by `&char: Pattern`
+   |                          |
+   |                          required by a bound introduced by this call
+   |
+   = help: the trait `Pattern` is implemented for `char`
+   = note: required for `&char` to implement `FnOnce(char)`
+   = note: required for `&char` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+
+error[E0277]: the trait bound `&char: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:26:15
+   |
+26 |     &s[s.find(&c).unwrap()..s.find(&c) + m + 1]
+   |          ---- ^^ the trait `Fn(char)` is not implemented for `char`, which is required by `&char: Pattern`
+   |          |
+   |          required by a bound introduced by this call
+   |
+   = help: the trait `Pattern` is implemented for `char`
+   = note: required for `&char` to implement `FnOnce(char)`
+   = note: required for `&char` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+
+error[E0277]: the trait bound `&char: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:26:36
+   |
+26 |     &s[s.find(&c).unwrap()..s.find(&c) + m + 1]
+   |                               ---- ^^ the trait `Fn(char)` is not implemented for `char`, which is required by `&char: Pattern`
+   |                               |
+   |                               required by a bound introduced by this call
+   |
+   = help: the trait `Pattern` is implemented for `char`
+   = note: required for `&char` to implement `FnOnce(char)`
+   = note: required for `&char` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+
+error[E0369]: cannot add `usize` to `Option<usize>`
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:26:40
+   |
+26 |     &s[s.find(&c).unwrap()..s.find(&c) + m + 1]
+   |                             ---------- ^ - usize
+   |                             |
+   |                             Option<usize>
+   |
+note: the foreign item type `Option<usize>` doesn't implement `Add<usize>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:571:1
+   |
+   = note: not implement `Add<usize>`
+
+error[E0277]: the trait bound `str: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:33:15
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |          ---- ^^^^ the trait `Pattern` is not implemented for `str`
+   |          |
+   |          required by a bound introduced by this call
+   |
+   = note: required for `str` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+help: consider borrowing here
+   |
+33 |     &s[s.find(&*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |               +
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:33:15
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |          ---- ^^^^ doesn't have a size known at compile-time
+   |          |
+   |          required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+help: references are always `Sized`, even if they point to unsized data; consider not dereferencing the expression
+   |
+33 -     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+33 +     &s[s.find(sub).unwrap()..s.rfind(*sub) + m + 1]
+   |
+
+error[E0277]: the trait bound `str: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:33:39
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |                                 ----- ^^^^ the trait `Pattern` is not implemented for `str`
+   |                                 |
+   |                                 required by a bound introduced by this call
+   |
+   = note: required for `str` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::rfind`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1278:5
+help: consider borrowing here
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(&*sub) + m + 1]
+   |                                       +
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:33:39
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |                                 ----- ^^^^ doesn't have a size known at compile-time
+   |                                 |
+   |                                 required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::str::<impl str>::rfind`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1278:5
+help: references are always `Sized`, even if they point to unsized data; consider not dereferencing the expression
+   |
+33 -     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+33 +     &s[s.find(*sub).unwrap()..s.rfind(sub) + m + 1]
+   |
+
+error[E0369]: cannot add `usize` to `Option<usize>`
+  --> /tmp/yicoder2b-str_substring-java-rs.rs:33:45
+   |
+33 |     &s[s.find(*sub).unwrap()..s.rfind(*sub) + m + 1]
+   |                               ------------- ^ - usize
+   |                               |
+   |                               Option<usize>
+   |
+note: the foreign item type `Option<usize>` doesn't implement `Add<usize>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:571:1
+   |
+   = note: not implement `Add<usize>`
+
+error: aborting due to 16 previous errors
+
+Some errors have detailed explanations: E0106, E0277, E0369, E0428, E0601.
+For more information about an error, try `rustc --explain E0106`.

@@ -1,0 +1,39 @@
+error[E0425]: cannot find function, tuple struct or tuple variant `STREQ` in this scope
+ --> /tmp/yicoder2b-str_cmp-c-rs.rs:8:9
+  |
+8 |         STREQ(a, b),
+  |         ^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `STRNE` in this scope
+ --> /tmp/yicoder2b-str_cmp-c-rs.rs:9:9
+  |
+9 |         STRNE(a, b),
+  |         ^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `STRGT` in this scope
+  --> /tmp/yicoder2b-str_cmp-c-rs.rs:10:9
+   |
+10 |         STRGT(a, b),
+   |         ^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `STRLT` in this scope
+  --> /tmp/yicoder2b-str_cmp-c-rs.rs:11:9
+   |
+11 |         STRLT(a, b),
+   |         ^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `STRGE` in this scope
+  --> /tmp/yicoder2b-str_cmp-c-rs.rs:12:9
+   |
+12 |         STRGE(a, b),
+   |         ^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `STRLE` in this scope
+  --> /tmp/yicoder2b-str_cmp-c-rs.rs:13:9
+   |
+13 |         STRLE(a, b),
+   |         ^^^^^ not found in this scope
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

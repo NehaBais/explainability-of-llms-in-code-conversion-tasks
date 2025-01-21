@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_cmp-js-go.go:12:73: syntax error: unexpected newline in argument list; possibly missing comma or )

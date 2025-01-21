@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegemma7b-str_cmp-java-go.go:20:5: undefined: strings
+/tmp/codegemma7b-str_cmp-java-go.go:39:50: undefined: strings
+/tmp/codegemma7b-str_cmp-java-go.go:40:69: undefined: strings

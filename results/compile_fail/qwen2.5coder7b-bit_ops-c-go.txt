@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-bit_ops-c-go.go:20:56: cannot use a (variable of type int) as uint value in argument to rotateLeft
+/tmp/qwen2.5coder7b-bit_ops-c-go.go:20:59: cannot use b (variable of type int) as uint value in argument to rotateLeft
+/tmp/qwen2.5coder7b-bit_ops-c-go.go:21:58: cannot use a (variable of type int) as uint value in argument to rotateRight
+/tmp/qwen2.5coder7b-bit_ops-c-go.go:21:61: cannot use b (variable of type int) as uint value in argument to rotateRight

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/granitecode8b-str_cmp-java-go.go:15:5: undefined: strings
+/tmp/granitecode8b-str_cmp-java-go.go:35:48: undefined: strings
+/tmp/granitecode8b-str_cmp-java-go.go:36:65: undefined: strings

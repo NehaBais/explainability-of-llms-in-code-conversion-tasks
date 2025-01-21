@@ -1,0 +1,43 @@
+/tmp/granitecode3b-str_concat-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s1 = "hello";
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << s1 + " world" << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:6:28: error: use of undeclared identifier 'endl'
+    6 |   cout << s1 + " world" << endl;
+      |                            ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string s2 = s1 + " world";
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << s2 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:8:17: error: use of undeclared identifier 'endl'
+    8 |   cout << s2 << endl;
+      |                 ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:9:3: error: unknown type name 'vector'
+    9 |   vector words = {"hello", "world", "mom"};
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:10:3: error: unknown type name 'string'
+   10 |   string s3 = ", ".join(words);
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:10:19: error: member reference base type 'const char[3]' is not a structure or union
+   10 |   string s3 = ", ".join(words);
+      |               ~~~~^~~~~
+/tmp/granitecode3b-str_concat-py-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << s3 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:11:17: error: use of undeclared identifier 'endl'
+   11 |   cout << s3 << endl;
+      |                 ^
+1 warning and 13 errors generated.

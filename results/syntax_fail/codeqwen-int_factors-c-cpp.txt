@@ -1,0 +1,26 @@
+/tmp/codeqwen-int_factors-c-cpp.cpp:3:3: error: unknown type name 'Factors'
+    3 |   Factors fctrs;
+      |   ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:4:16: error: use of undeclared identifier 'NULL'
+    4 |   fctrs.list = NULL;
+      |                ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:12:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 |         printf("
+      |                ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:12:16: error: expected expression
+/tmp/codeqwen-int_factors-c-cpp.cpp:14:3: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |   ", nums2factor[i]);
+      |   ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:20:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   20 |         printf("
+      |                ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:21:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   21 | ");
+      | ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:24:2: error: expected '}'
+   24 | }
+      |  ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:1:34: note: to match this '{'
+    1 | int main(int argc, char *argv[]) {
+      |                                  ^
+4 warnings and 4 errors generated.

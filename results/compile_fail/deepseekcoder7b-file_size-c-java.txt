@@ -1,0 +1,4 @@
+/tmp/Main.java:9: error: illegal start of expression
+        String absolutePathToRoot =  /* specify the path to your root directory here */;
+                                                                                       ^
+1 error

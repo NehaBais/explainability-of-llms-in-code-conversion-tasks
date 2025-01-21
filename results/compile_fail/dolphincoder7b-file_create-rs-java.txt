@@ -1,0 +1,11 @@
+/tmp/Main.java:10: error: cannot find symbol
+    create("here").and(create("/"));
+                  ^
+  symbol:   method and(File)
+  location: class File
+/tmp/Main.java:28: error: cannot find symbol
+    return Files.createDirectories(dPath).thenCompose(path -> Files.createFile(fPath)).toFile();
+                                         ^
+  symbol:   method thenCompose((path)->Fi[...]Path))
+  location: interface Path
+2 errors

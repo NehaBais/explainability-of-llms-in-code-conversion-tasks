@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_match-java-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     println!("{} ends with \"zn\": {}", str1, str1.ends_with("zn")));
+  |                                                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_match-java-rs.rs:8:66
+  |
+6 |     println!("{} ends with \"zn\": {}", str1, str1.ends_with("zn")));
+  |                                                                    - missing open `(` for this delimiter
+7 |
+8 |     println!("{} contains \"bb\": {}", str1, str1.contains("bb")));
+  |                                                                  ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

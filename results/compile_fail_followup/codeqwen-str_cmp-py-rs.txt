@@ -1,0 +1,57 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:15:2
+   |
+15 | }
+   |  ^ consider adding a `main` function to `/tmp/codeqwen-str_cmp-py-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:1:74
+  |
+1 | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: char>(A: T, b: T) {
+  |            -                                              -------------  ^  - expected due to this
+  |            |                                              |              |
+  |            |                                              |              expected type parameter `T`, found `char`
+  |            |                                              |              `A` is interpreted as a const parameter, not a new binding
+  |            |                                              |              help: introduce a new binding instead: `other_a`
+  |            expected this type parameter                   const parameter defined here
+  |
+  = note: expected type parameter `T`
+                       found type `char`
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:2:12
+  |
+1 | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: char>(A: T, b: T) {
+  |            - found this type parameter
+2 |     if A < b {
+  |        -   ^ expected `char`, found type parameter `T`
+  |        |
+  |        expected because this is `char`
+  |
+  = note:        expected type `char`
+          found type parameter `T`
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:4:19
+  |
+1 | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: char>(A: T, b: T) {
+  |            - found this type parameter
+...
+4 |     } else if A > b {
+  |               -   ^ expected `char`, found type parameter `T`
+  |               |
+  |               expected because this is `char`
+  |
+  = note:        expected type `char`
+          found type parameter `T`
+
+error[E0599]: no method named `chars` found for type `char` in the current scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:10:59
+   |
+10 |     let a_lower = if let Some(c) = A.to_ascii_lowercase().chars().next() {
+   |                                                           ^^^^^ method not found in `char`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0308, E0599, E0601.
+For more information about an error, try `rustc --explain E0308`.

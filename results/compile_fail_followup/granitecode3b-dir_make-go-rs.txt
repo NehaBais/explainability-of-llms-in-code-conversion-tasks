@@ -1,0 +1,43 @@
+error[E0252]: the name `Error` is defined multiple times
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:1:25
+  |
+1 | use std::{error::Error, fmt::Error};
+  |           ------------  ^^^^^^^^^^ `Error` reimported here
+  |           |
+  |           previous import of the trait `Error` here
+  |
+  = note: `Error` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+  |
+1 | use std::{error::Error, fmt::Error as OtherError};
+  |                                    +++++++++++++
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:3:5
+  |
+3 |     fs::create_dir_all(path)?;
+  |     ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this module
+  |
+1 + use std::fs;
+  |
+
+warning: unused import: `fmt::Error`
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:1:25
+  |
+1 | use std::{error::Error, fmt::Error};
+  |                         ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode3b-dir_make-go-rs.rs`
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0252, E0433, E0601.
+For more information about an error, try `rustc --explain E0252`.

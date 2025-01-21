@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `FILE_SEPARATOR` in module `std::env::consts`
+  --> /tmp/codegeex4-file_create-py-rs.rs:20:30
+   |
+20 |         if std::env::consts::FILE_SEPARATOR == '\\' {
+   |                              ^^^^^^^^^^^^^^ not found in `std::env::consts`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

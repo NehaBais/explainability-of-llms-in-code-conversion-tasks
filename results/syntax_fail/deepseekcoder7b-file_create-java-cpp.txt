@@ -1,0 +1,37 @@
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:5:10: error: no member named 'filesystem' in namespace 'std'
+    5 |     std::filesystem::path current_dir = std::filesystem::current_path();
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:5:46: error: no member named 'filesystem' in namespace 'std'
+    5 |     std::filesystem::path current_dir = std::filesystem::current_path();
+      |                                         ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::create_directory(current_dir / "docs");
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:7:19: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    7 |     std::ofstream outFile1((current_dir / "output.txt").string());
+      |                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:10:10: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::path root_dir = std::filesystem::v1::root_name();
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:10:43: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::path root_dir = std::filesystem::v1::root_name();
+      |                                      ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:11:10: error: no member named 'filesystem' in namespace 'std'
+   11 |     std::filesystem::create_directory(root_dir / "docs");
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:12:19: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+   12 |     std::ofstream outFile2((root_dir / "output.txt").string());
+      |                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:14:17: error: no member named 'filesystem' in namespace 'std'
+   14 |   } catch (std::filesystem::filesystem_error &e) {
+      |            ~~~~~^
+/tmp/deepseekcoder7b-file_create-java-cpp.cpp:15:10: error: no member named 'cerr' in namespace 'std'
+   15 |     std::cerr << e.what() << '\n';
+      |     ~~~~~^
+10 errors generated.

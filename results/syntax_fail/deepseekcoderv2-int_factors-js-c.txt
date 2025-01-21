@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-int_factors-js-c.c:21:46: error: use of undeclared identifier 'compare'
+   21 |         (int (*)(const void *, const void *))compare);
+      |                                              ^
+1 error generated.

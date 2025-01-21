@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_exists-java-go.go:7:28: file1.IsDir undefined (type *os.File has no field or method IsDir)
+/tmp/dolphincoder7b-file_exists-java-go.go:14:28: file2.IsDir undefined (type *os.File has no field or method IsDir)

@@ -1,0 +1,47 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:7:1
+  |
+1 | fn substring(s: &str, n: usize, m: Option) -> String {
+  | ---------------------------------------------------- previous definition of the value `substring` here
+...
+7 | fn substring(s: &str, n: usize) -> String {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:10:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+10 | fn substring(s: &str) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:13:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+13 | fn substring(s: &str, c: char, m: usize) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:17:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+17 | fn substring(s: &str, sub: &str, m: usize) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0428`.

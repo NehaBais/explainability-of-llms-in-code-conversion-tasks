@@ -1,0 +1,48 @@
+/tmp/granitecode8b-dir_make-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-py-c.c:5:13: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |             ^
+/tmp/granitecode8b-dir_make-py-c.c:5:13: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-py-c.c:4:6: note: 'mkdirp' declared here
+    4 | void mkdirp(const char *path) {
+      |      ^
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |             ~~~~~
+      |             mkdirp
+/tmp/granitecode8b-dir_make-py-c.c:5:25: error: use of undeclared identifier 'S_IRWXU'
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                         ^
+/tmp/granitecode8b-dir_make-py-c.c:5:35: error: use of undeclared identifier 'S_IRWXG'
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                   ^
+/tmp/granitecode8b-dir_make-py-c.c:5:45: error: use of undeclared identifier 'S_IROTH'
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                             ^
+/tmp/granitecode8b-dir_make-py-c.c:5:55: error: use of undeclared identifier 'S_IXOTH'
+    5 |   int err = mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                       ^
+/tmp/granitecode8b-dir_make-py-c.c:6:20: error: use of undeclared identifier 'errno'
+    6 |   if (err == -1 && errno != EEXIST) {
+      |                    ^
+/tmp/granitecode8b-dir_make-py-c.c:6:29: error: use of undeclared identifier 'EEXIST'
+    6 |   if (err == -1 && errno != EEXIST) {
+      |                             ^
+/tmp/granitecode8b-dir_make-py-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("mkdir");
+      |     ^
+/tmp/granitecode8b-dir_make-py-c.c:8:5: error: call to undeclared library function 'exit' with type 'void (int) __attribute__((noreturn))'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     exit(EXIT_FAILURE);
+      |     ^
+/tmp/granitecode8b-dir_make-py-c.c:8:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/tmp/granitecode8b-dir_make-py-c.c:8:10: error: use of undeclared identifier 'EXIT_FAILURE'
+    8 |     exit(EXIT_FAILURE);
+      |          ^
+13 errors generated.

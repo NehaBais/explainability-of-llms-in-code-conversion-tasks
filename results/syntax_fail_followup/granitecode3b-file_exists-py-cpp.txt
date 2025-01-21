@@ -1,0 +1,62 @@
+/tmp/granitecode3b-file_exists-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:10:3: error: use of undeclared identifier 'std'
+   10 |   std::ifstream file("/input.txt");
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:11:7: error: use of undeclared identifier 'file'
+   11 |   if (file) {
+      |       ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:16:15: error: variable has incomplete type 'struct stat'
+   16 |   struct stat info;
+      |               ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:16:10: note: forward declaration of 'stat'
+   16 |   struct stat info;
+      |          ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:17:7: error: no viable conversion from 'stat' to 'int'
+   17 |   int result = stat("docs", &info);
+      |       ^        ~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode3b-file_exists-py-cpp.cpp:23:3: error: use of undeclared identifier 'file'
+   23 |   file.open("/input.txt");
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:24:7: error: use of undeclared identifier 'file'
+   24 |   if (file) {
+      |       ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:29:12: error: assigning to 'int' from incompatible type 'stat'
+   29 |   result = stat("/docs", &info);
+      |            ^~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode3b-file_exists-py-cpp.cpp:34:3: error: use of undeclared identifier 'std'
+   34 |   std::cout << "Current working directory:" << std::endl;
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:34:48: error: use of undeclared identifier 'std'
+   34 |   std::cout << "Current working directory:" << std::endl;
+      |                                                ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:35:3: error: use of undeclared identifier 'std'
+   35 |   std::cout << " input.txt: " << cwdFileExists << std::endl;
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:35:51: error: use of undeclared identifier 'std'
+   35 |   std::cout << " input.txt: " << cwdFileExists << std::endl;
+      |                                                   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:36:3: error: use of undeclared identifier 'std'
+   36 |   std::cout << " docs: " << cwdDirExists << std::endl;
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:36:45: error: use of undeclared identifier 'std'
+   36 |   std::cout << " docs: " << cwdDirExists << std::endl;
+      |                                             ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:37:3: error: use of undeclared identifier 'std'
+   37 |   std::cout << "Root filesystem directory:" << std::endl;
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:37:48: error: use of undeclared identifier 'std'
+   37 |   std::cout << "Root filesystem directory:" << std::endl;
+      |                                                ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:38:3: error: use of undeclared identifier 'std'
+   38 |   std::cout << " input.txt: " << fsFileExists << std::endl;
+      |   ^
+/tmp/granitecode3b-file_exists-py-cpp.cpp:38:50: error: use of undeclared identifier 'std'
+   38 |   std::cout << " input.txt: " << fsFileExists << std::endl;
+      |                                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

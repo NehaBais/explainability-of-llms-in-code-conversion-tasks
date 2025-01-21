@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-c-rs.rs:1:34
+  |
+1 | fn print_logic(a: bool, b: bool) {
+  |                                  ^ unclosed delimiter
+2 |     println!("a and b is {}", a && b);
+3 |     println!("a or b is {}", a || b));
+  |                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-c-rs.rs:4:32
+  |
+3 |     println!("a or b is {}", a || b));
+  |                                     - missing open `(` for this delimiter
+4 |     println!("not a is {}", !a));
+  |                                ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

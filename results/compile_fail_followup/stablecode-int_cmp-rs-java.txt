@@ -1,0 +1,19 @@
+/tmp/Main.java:13: error: ';' expected
+      System.out.println("The first integer (" + input1 + ") is less than the second integer (" + input2 + "))."));
+                                                                                                                 ^
+/tmp/Main.java:14: error: illegal start of expression
+    } else if (input1 == input2)) {
+                                ^
+/tmp/Main.java:15: error: ';' expected
+      System.out.println("The first integer (" + input1 + ") equals the second integer (" + input2 + "))."));
+                                                                                                           ^
+/tmp/Main.java:16: error: illegal start of expression
+    } else if (input1 > input2)) {
+                               ^
+/tmp/Main.java:16: error: 'else' without 'if'
+    } else if (input1 > input2)) {
+      ^
+/tmp/Main.java:17: error: ';' expected
+      System.out.println("The first integer (" + input1 + ") is greater than the second integer (" + input2 + "))."));
+                                                                                                                    ^
+6 errors

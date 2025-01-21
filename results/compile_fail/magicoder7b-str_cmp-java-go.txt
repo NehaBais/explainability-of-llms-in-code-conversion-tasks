@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-str_cmp-java-go.go:6:2: "unicode" imported and not used

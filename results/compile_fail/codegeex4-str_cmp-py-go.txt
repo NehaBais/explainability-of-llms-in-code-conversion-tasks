@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codegeex4-str_cmp-py-go.go:38:10: cannot use 24 (untyped int constant) as string value in argument to compare
+/tmp/codegeex4-str_cmp-py-go.go:38:14: cannot use 123 (untyped int constant) as string value in argument to compare
+/tmp/codegeex4-str_cmp-py-go.go:50:6: main redeclared in this block
+	/tmp/codegeex4-str_cmp-py-go.go:31:6: other declaration of main

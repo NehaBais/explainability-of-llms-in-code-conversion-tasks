@@ -1,37 +1,40 @@
-Answer:
+ Sure, here is the equivalent code in C:
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main() {
-    FILE *file;
-    
-    // Create file in current working directory
-    if ((file = fopen("output.txt", "w")) == NULL) {
-        perror("Failed to create output.txt");
-        exit(1);
-    } else {
-        fclose(file);
+    // Create file "output.txt" in the current working directory
+    FILE *file = fopen("output.txt", "w");
+    if (file == NULL) {
+        perror("Error creating output.txt");
+        return EXIT_FAILURE;
     }
-    
-    // Create file in filesystem root
-    char *root = getenv("PWD");
-    if (strcat(root, "/output.txt") == NULL) {
-        perror("Failed to create output.txt in root directory");
-        exit(1);
-    } else {
-        fclose(file);
+    fclose(file);
+
+    // Create file "output.txt" in the filesystem root
+    file = fopen("/output.txt", "w");
+    if (file == NULL) {
+        perror("Error creating /output.txt");
+        return EXIT_FAILURE;
     }
-    
-    // Create empty dir "docs" and its parent directories if they don't exist yet.
-    char *docsDir = strcat(getenv("PWD"), "/docs");
-    mkdir(docsDir, S_IRWXU | S_IRWXG | S_IRWXO);
-    
-    // Create empty dir "docs" and its parent directories if they don't exist yet.
-    char *rootDocs = strcat(getenv("PWD"), "/docs");
-    mkdir(rootDocs, S_IRWXU | S_IRWXG | S_IRWXO);
-    
-    return 0;
+    fclose(file);
+
+    // Create directory "docs" in the current working directory
+    if (mkdir("docs", 0777) != 0) {
+        perror("Error creating docs directory");
+        return EXIT_FAILURE;
+    }
+
+    // Create directory "docs" in the filesystem root
+    if (mkdir("/docs", 0777) != 0) {
+        perror("Error creating /docs directory");
+        return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
 }
 ```
+
+This C code creates an empty file called "output.txt" in both the current working directory and the filesystem root, as well as creating an empty directory called "docs" in both locations. The `fopen` function is used to create files, and the `mkdir` function is used to create directories. If either operation fails, the program will print an error message using `perror`.

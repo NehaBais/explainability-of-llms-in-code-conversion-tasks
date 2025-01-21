@@ -1,0 +1,13 @@
+/tmp/yicoder2b-str_concat-py-cpp.cpp:13:24: error: member reference base type 'const char[3]' is not a structure or union
+   13 |   std::string s3 = ", ".join({s1, "world", "mom"});
+      |                    ~~~~^~~~~
+/tmp/yicoder2b-str_concat-py-cpp.cpp:13:30: error: expected expression
+   13 |   std::string s3 = ", ".join({s1, "world", "mom"});
+      |                              ^
+/tmp/yicoder2b-str_concat-py-cpp.cpp:16:24: error: member reference base type 'const char[3]' is not a structure or union
+   16 |   std::string s4 = ", ".join({s1, "world", "mom"});
+      |                    ~~~~^~~~~
+/tmp/yicoder2b-str_concat-py-cpp.cpp:16:30: error: expected expression
+   16 |   std::string s4 = ", ".join({s1, "world", "mom"});
+      |                              ^
+4 errors generated.

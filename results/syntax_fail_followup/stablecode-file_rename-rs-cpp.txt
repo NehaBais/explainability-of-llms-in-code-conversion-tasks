@@ -1,0 +1,31 @@
+/tmp/stablecode-file_rename-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string err = "File move error";
+      |   ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:9:9: error: use of undeclared identifier 'std'
+    9 |         std::filesystem::rename("input.txt", "output.txt"));
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:10:9: error: use of undeclared identifier 'std'
+   10 |         std::filesystem::rename("docs", "mydocs");
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:11:9: error: use of undeclared identifier 'std'
+   11 |         std::filesystem::rename("/input.txt", "/output.txt"));
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:12:9: error: use of undeclared identifier 'std'
+   12 |         std::filesystem::rename("/docs", "/mydocs");
+      |         ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:13:12: error: use of undeclared identifier 'std'
+   13 |   } catch (std::exception &e) {
+      |            ^
+/tmp/stablecode-file_rename-rs-cpp.cpp:14:5: error: use of undeclared identifier 'std'
+   14 |     std::cerr << "Exception: " << e.what() << '\n';
+      |     ^
+10 errors generated.

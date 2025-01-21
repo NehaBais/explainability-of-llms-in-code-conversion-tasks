@@ -1,0 +1,10 @@
+error: argument never used
+ --> /tmp/codeqwen-str_interp-go-rs.rs:4:34
+  |
+4 |     let out = format!("{}", str, txt);
+  |                       ----       ^^^ argument never used
+  |                       |
+  |                       formatting specifier missing
+
+error: aborting due to 1 previous error
+

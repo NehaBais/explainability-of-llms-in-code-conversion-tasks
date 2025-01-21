@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_factors-py-go.go:21:19: syntax error: unexpected {, expected expression
+/tmp/qwen2.5coder2b-int_factors-py-go.go:22:2: syntax error: non-declaration statement outside function body

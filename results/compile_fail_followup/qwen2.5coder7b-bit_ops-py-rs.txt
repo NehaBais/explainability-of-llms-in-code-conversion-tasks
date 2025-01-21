@@ -1,0 +1,52 @@
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder7b-bit_ops-py-rs.rs:78:13
+   |
+78 |     if n >= width {
+   |        -    ^^^^^ expected `isize`, found `usize`
+   |        |
+   |        expected because this is `isize`
+   |
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+78 |     if n >= width.try_into().unwrap() {
+   |                  ++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> /tmp/qwen2.5coder7b-bit_ops-py-rs.rs:125:46
+    |
+125 |         print!("   {:0width$b} ", asr(width, a, *n), width = width)
+    |                                   ---        ^ expected `i32`, found `u32`
+    |                                   |
+    |                                   arguments to this function are incorrect
+    |
+note: function defined here
+   --> /tmp/qwen2.5coder7b-bit_ops-py-rs.rs:68:4
+    |
+68  | fn asr(width: usize, mut a: i32, n: isize) -> i32 {
+    |    ^^^               ----------
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+    |
+125 |         print!("   {:0width$b} ", asr(width, a.try_into().unwrap(), *n), width = width)
+    |                                               ++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> /tmp/qwen2.5coder7b-bit_ops-py-rs.rs:131:46
+    |
+131 |         print!("   {:0width$b} ", asr(width, aa as u32, *n), width = width)
+    |                                   ---        ^^^^^^^^^ expected `i32`, found `u32`
+    |                                   |
+    |                                   arguments to this function are incorrect
+    |
+note: function defined here
+   --> /tmp/qwen2.5coder7b-bit_ops-py-rs.rs:68:4
+    |
+68  | fn asr(width: usize, mut a: i32, n: isize) -> i32 {
+    |    ^^^               ----------
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+    |
+131 |         print!("   {:0width$b} ", asr(width, (aa as u32).try_into().unwrap(), *n), width = width)
+    |                                              +         +++++++++++++++++++++
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

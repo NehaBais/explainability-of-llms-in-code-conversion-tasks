@@ -1,0 +1,10 @@
+/tmp/deepseekcoderv2-dir_make-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-dir_make-go-cpp.cpp:8:9: error: use of undeclared identifier 'fs'
+    8 |     if (fs::create_directories(path)) {
+      |         ^
+/tmp/deepseekcoderv2-dir_make-go-cpp.cpp:13:18: error: use of undeclared identifier 'fs'
+   13 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+3 errors generated.

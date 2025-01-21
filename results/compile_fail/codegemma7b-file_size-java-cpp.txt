@@ -1,0 +1,19 @@
+/tmp/codegemma7b-file_size-java-cpp.cpp:7:3: error: use of undeclared identifier 'filesystem'
+    7 |   filesystem::path pathA("file.txt");
+      |   ^
+/tmp/codegemma7b-file_size-java-cpp.cpp:9:11: error: use of undeclared identifier 'filesystem'
+    9 |        << filesystem::file_size(pathA) << " B" << endl;
+      |           ^
+/tmp/codegemma7b-file_size-java-cpp.cpp:9:33: error: use of undeclared identifier 'pathA'
+    9 |        << filesystem::file_size(pathA) << " B" << endl;
+      |                                 ^
+/tmp/codegemma7b-file_size-java-cpp.cpp:11:3: error: use of undeclared identifier 'filesystem'
+   11 |   filesystem::path pathB("/file.txt");
+      |   ^
+/tmp/codegemma7b-file_size-java-cpp.cpp:12:53: error: use of undeclared identifier 'filesystem'
+   12 |   cout << "Size of file.txt in root directory: " << filesystem::file_size(pathB)
+      |                                                     ^
+/tmp/codegemma7b-file_size-java-cpp.cpp:12:75: error: use of undeclared identifier 'pathB'
+   12 |   cout << "Size of file.txt in root directory: " << filesystem::file_size(pathB)
+      |                                                                           ^
+6 errors generated.

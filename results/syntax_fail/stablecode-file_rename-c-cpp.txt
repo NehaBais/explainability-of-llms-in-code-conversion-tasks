@@ -1,0 +1,19 @@
+/tmp/stablecode-file_rename-c-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_rename-c-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::rename("input.txt", "output.txt");
+      |   ^
+/tmp/stablecode-file_rename-c-cpp.cpp:10:3: error: use of undeclared identifier 'fs'
+   10 |   fs::path root("/");
+      |   ^
+/tmp/stablecode-file_rename-c-cpp.cpp:11:3: error: use of undeclared identifier 'fs'
+   11 |   fs::rename(root / "docs", root / "mydocs");
+      |   ^
+/tmp/stablecode-file_rename-c-cpp.cpp:11:14: error: use of undeclared identifier 'root'
+   11 |   fs::rename(root / "docs", root / "mydocs");
+      |              ^
+/tmp/stablecode-file_rename-c-cpp.cpp:11:29: error: use of undeclared identifier 'root'
+   11 |   fs::rename(root / "docs", root / "mydocs");
+      |                             ^
+6 errors generated.

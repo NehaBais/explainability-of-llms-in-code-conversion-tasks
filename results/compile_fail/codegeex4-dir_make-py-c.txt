@@ -1,0 +1,27 @@
+/tmp/codegeex4-dir_make-py-c.c:13:11: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     ptr = malloc(len + 1); // Allocate memory for dynamic storage
+      |           ^
+/tmp/codegeex4-dir_make-py-c.c:13:11: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegeex4-dir_make-py-c.c:26:12: error: read-only variable is not assignable
+   26 |     *slash = '\0'; // Null-terminate after the slash to get a directory name
+      |     ~~~~~~ ^
+/tmp/codegeex4-dir_make-py-c.c:28:9: error: use of undeclared identifier 'errno'
+   28 |         errno !=
+      |         ^
+/tmp/codegeex4-dir_make-py-c.c:29:13: error: use of undeclared identifier 'EEXIST'
+   29 |             EEXIST) { // If it fails and it's not because of an existing dir
+      |             ^
+/tmp/codegeex4-dir_make-py-c.c:33:12: error: read-only variable is not assignable
+   33 |     *slash = '/'; // Restore slash before next iteration
+      |     ~~~~~~ ^
+/tmp/codegeex4-dir_make-py-c.c:38:28: error: use of undeclared identifier 'errno'
+   38 |   if (mkdir(path, 0755) && errno != EEXIST) {
+      |                            ^
+/tmp/codegeex4-dir_make-py-c.c:38:37: error: use of undeclared identifier 'EEXIST'
+   38 |   if (mkdir(path, 0755) && errno != EEXIST) {
+      |                                     ^
+/tmp/codegeex4-dir_make-py-c.c:46:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   46 |     free(ptr);
+      |     ^
+/tmp/codegeex4-dir_make-py-c.c:46:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+8 errors generated.

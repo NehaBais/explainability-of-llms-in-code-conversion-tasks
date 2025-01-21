@@ -1,0 +1,70 @@
+/tmp/granitecode3b-int_factors-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-go-c.c:3:3: error: use of undeclared identifier 'int64_t'
+    3 |   int64_t nr;
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter a positive integer: ");
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_factors-go-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%" SCNd64, &nr);
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_factors-go-c.c:5:13: error: expected ')'
+    5 |   scanf("%" SCNd64, &nr);
+      |             ^
+/tmp/granitecode3b-int_factors-go-c.c:5:8: note: to match this '('
+    5 |   scanf("%" SCNd64, &nr);
+      |        ^
+/tmp/granitecode3b-int_factors-go-c.c:7:7: error: use of undeclared identifier 'nr'
+    7 |   if (nr < 1) {
+      |       ^
+/tmp/granitecode3b-int_factors-go-c.c:8:27: error: expected ')'
+    8 |     printf("Factors of %" PRId64 " not computedn", nr);
+      |                           ^
+/tmp/granitecode3b-int_factors-go-c.c:8:11: note: to match this '('
+    8 |     printf("Factors of %" PRId64 " not computedn", nr);
+      |           ^
+/tmp/granitecode3b-int_factors-go-c.c:12:25: error: expected ')'
+   12 |   printf("Factors of %" PRId64 ": ", nr);
+      |                         ^
+/tmp/granitecode3b-int_factors-go-c.c:12:9: note: to match this '('
+   12 |   printf("Factors of %" PRId64 ": ", nr);
+      |         ^
+/tmp/granitecode3b-int_factors-go-c.c:13:3: error: use of undeclared identifier 'int64_t'
+   13 |   int64_t fs[1];
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:14:3: error: use of undeclared identifier 'fs'
+   14 |   fs[0] = 1;
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:16:26: error: use of undeclared identifier 'nr'
+   16 |   for (int i = 2, e = 0; nr % 2 == 0; i *= 2, e++)
+      |                          ^
+/tmp/granitecode3b-int_factors-go-c.c:18:24: error: expected identifier
+   18 |   void (*apf)(int64_t, int) = NULL;
+      |                        ^
+/tmp/granitecode3b-int_factors-go-c.c:18:31: error: use of undeclared identifier 'NULL'
+   18 |   void (*apf)(int64_t, int) = NULL;
+      |                               ^
+/tmp/granitecode3b-int_factors-go-c.c:19:7: error: use of undeclared identifier 'e'
+   19 |   if (e > 0) {
+      |       ^
+/tmp/granitecode3b-int_factors-go-c.c:20:12: error: use of undeclared identifier 'printFactor'
+   20 |     apf = &printFactor;
+      |            ^
+/tmp/granitecode3b-int_factors-go-c.c:22:5: error: call to undeclared function 'printFactor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     printFactor(2, e);
+      |     ^
+/tmp/granitecode3b-int_factors-go-c.c:22:20: error: use of undeclared identifier 'e'
+   22 |     printFactor(2, e);
+      |                    ^
+/tmp/granitecode3b-int_factors-go-c.c:25:35: error: use of undeclared identifier 'nr'
+   25 |   for (int d = 3, e = 0; d * d <= nr; d += 2) {
+      |                                   ^
+/tmp/granitecode3b-int_factors-go-c.c:26:12: error: use of undeclared identifier 'nr'
+   26 |     while (nr % d == 0) {
+      |            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

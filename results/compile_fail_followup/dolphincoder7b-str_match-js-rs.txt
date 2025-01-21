@@ -1,0 +1,81 @@
+error[E0432]: unresolved import `regex`
+ --> /tmp/dolphincoder7b-str_match-js-rs.rs:1:5
+  |
+1 | use regex::Regex;
+  |     ^^^^^ you might be missing crate `regex`
+  |
+help: consider importing the `regex` crate
+  |
+1 + extern crate regex;
+  |
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:19:9
+   |
+19 |     if !q2 && !q2matches.is_empty() {
+   |         ^^ not found in this scope
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:24:17
+   |
+24 |             if !q2 {
+   |                 ^^ not found in this scope
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:25:46
+   |
+25 |                 format!("Yes, at index {}.", q2)
+   |                                              ^^ not found in this scope
+
+error[E0425]: cannot find value `q3` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:37:9
+   |
+37 |     if !q3 && !q3matches.is_empty() {
+   |         ^^ not found in this scope
+
+error[E0425]: cannot find value `q3` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:42:17
+   |
+42 |             if !q3 {
+   |                 ^^ not found in this scope
+
+error[E0425]: cannot find value `q3` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:43:46
+   |
+43 |                 format!("Yes, at index {}.", q3)
+   |                                              ^^ not found in this scope
+
+error[E0425]: cannot find value `q4` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:55:9
+   |
+55 |     if !q4 && !q4matches.is_empty() {
+   |         ^^ not found in this scope
+
+error[E0425]: cannot find value `q4` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:60:17
+   |
+60 |             if !q4 {
+   |                 ^^ not found in this scope
+
+error[E0425]: cannot find value `q4` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:61:46
+   |
+61 |                 format!("Yes, at index {}.", q4)
+   |                                              ^^ not found in this scope
+
+error[E0425]: cannot find value `q5` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:73:9
+   |
+73 |     if !q5 && !q5matches.is_empty() {
+   |         ^^ not found in this scope
+
+error[E0425]: cannot find value `q5` in this scope
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:76:31
+   |
+76 |             stringA, stringB, q5
+   |                               ^^ not found in this scope
+
+error: aborting due to 12 previous errors
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.

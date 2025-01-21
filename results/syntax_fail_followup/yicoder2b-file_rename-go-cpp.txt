@@ -1,0 +1,10 @@
+/tmp/yicoder2b-file_rename-go-cpp.cpp:3:17: error: expected namespace name
+    3 | using namespace filesystem;
+      |                 ^
+/tmp/yicoder2b-file_rename-go-cpp.cpp:6:3: error: unknown type name 'path'
+    6 |   path input_file("input.txt");
+      |   ^
+/tmp/yicoder2b-file_rename-go-cpp.cpp:10:3: error: unknown type name 'path'
+   10 |   path docs_dir("docs");
+      |   ^
+3 errors generated.

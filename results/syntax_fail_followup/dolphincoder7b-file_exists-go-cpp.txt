@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-file_exists-go-cpp.cpp:6:3: error: use of undeclared identifier 'printStat'
+    6 |   printStat("input.txt");
+      |   ^
+/tmp/dolphincoder7b-file_exists-go-cpp.cpp:7:3: error: use of undeclared identifier 'printStat'
+    7 |   printStat("/input.txt");
+      |   ^
+/tmp/dolphincoder7b-file_exists-go-cpp.cpp:8:3: error: use of undeclared identifier 'printStat'
+    8 |   printStat("docs");
+      |   ^
+/tmp/dolphincoder7b-file_exists-go-cpp.cpp:9:3: error: use of undeclared identifier 'printStat'
+    9 |   printStat("/docs");
+      |   ^
+4 errors generated.

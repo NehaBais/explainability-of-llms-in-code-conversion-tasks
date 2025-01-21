@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoderv2-str_match-js-go.go:53:73: cannot use q3 (variable of type bool) as int value in argument to yesNo

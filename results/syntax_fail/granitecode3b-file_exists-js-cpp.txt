@@ -1,0 +1,46 @@
+/tmp/granitecode3b-file_exists-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:4:17: error: use of undeclared identifier 'NULL'
+    4 |   void *hFind = NULL;
+      |                 ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:5:14: error: use of undeclared identifier 'MAX_PATH'
+    5 |   char cPath[MAX_PATH];
+      |              ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:10:5: error: use of undeclared identifier '_findclose'
+   10 |     _findclose(hFind);
+      |     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:11:5: error: use of undeclared identifier 'std'
+   11 |     std::cout << "File exists in the current working directory." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:11:69: error: use of undeclared identifier 'std'
+   11 |     std::cout << "File exists in the current working directory." << std::endl;
+      |                                                                     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << "File does not exist in the current working directory."
+      |     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:14:18: error: use of undeclared identifier 'std'
+   14 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:19:5: error: use of undeclared identifier '_findclose'
+   19 |     _findclose(hFind);
+      |     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:22:7: error: use of undeclared identifier 'std'
+   22 |       std::cout << "File exists in the root directory." << std::endl;
+      |       ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:22:60: error: use of undeclared identifier 'std'
+   22 |       std::cout << "File exists in the root directory." << std::endl;
+      |                                                            ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:24:7: error: use of undeclared identifier 'std'
+   24 |       std::cout << "File does not exist in the root directory." << std::endl;
+      |       ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:24:68: error: use of undeclared identifier 'std'
+   24 |       std::cout << "File does not exist in the root directory." << std::endl;
+      |                                                                    ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:27:5: error: use of undeclared identifier 'std'
+   27 |     std::cout << "Directory does not exist in the root directory." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-js-cpp.cpp:27:71: error: use of undeclared identifier 'std'
+   27 |     std::cout << "Directory does not exist in the root directory." << std::endl;
+      |                                                                       ^
+15 errors generated.

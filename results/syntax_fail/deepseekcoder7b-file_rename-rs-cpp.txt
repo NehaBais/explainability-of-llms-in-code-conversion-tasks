@@ -1,0 +1,13 @@
+/tmp/deepseekcoder7b-file_rename-rs-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::rename("input.txt", "output.txt");
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_rename-rs-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::rename("docs", "mydocs");
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_rename-rs-cpp.cpp:12:10: error: no member named 'filesystem' in namespace 'std'
+   12 |     std::filesystem::rename("/home/user/project/input.txt",
+      |     ~~~~~^
+/tmp/deepseekcoder7b-file_rename-rs-cpp.cpp:14:10: error: no member named 'filesystem' in namespace 'std'
+   14 |     std::filesystem::rename("/home/user/project/docs",
+      |     ~~~~~^
+4 errors generated.

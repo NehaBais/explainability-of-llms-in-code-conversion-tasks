@@ -1,0 +1,8 @@
+/tmp/deepseekcoder7b-logic_ops-go-c.c:1:46: warning: extra tokens at end of #include directive [-Wextra-tokens]
+    1 | #include <stdio.<｜begin▁of▁sentence｜>h
+      |                                        ^
+      |                                        //
+/tmp/deepseekcoder7b-logic_ops-go-c.c:1:10: fatal error: 'stdio.<｜begin▁of▁sentence｜' file not found
+    1 | #include <stdio.<｜begin▁of▁sentence｜>h
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.

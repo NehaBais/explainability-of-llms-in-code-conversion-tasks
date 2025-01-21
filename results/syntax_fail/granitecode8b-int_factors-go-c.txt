@@ -1,0 +1,62 @@
+/tmp/granitecode8b-int_factors-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-c.c:3:19: error: unknown type name 'int64_t'
+    3 | void printFactors(int64_t nr);
+      |                   ^
+/tmp/granitecode8b-int_factors-go-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("Factors of -1:n");
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_factors-go-c.c:27:19: error: unknown type name 'int64_t'
+   27 | void printFactors(int64_t nr) {
+      |                   ^
+/tmp/granitecode8b-int_factors-go-c.c:33:3: error: use of undeclared identifier 'int64_t'
+   33 |   int64_t *fs = malloc(sizeof(int64_t));
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:33:12: error: use of undeclared identifier 'fs'
+   33 |   int64_t *fs = malloc(sizeof(int64_t));
+      |            ^
+/tmp/granitecode8b-int_factors-go-c.c:33:17: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |   int64_t *fs = malloc(sizeof(int64_t));
+      |                 ^
+/tmp/granitecode8b-int_factors-go-c.c:33:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-int_factors-go-c.c:33:31: error: use of undeclared identifier 'int64_t'
+   33 |   int64_t *fs = malloc(sizeof(int64_t));
+      |                               ^
+/tmp/granitecode8b-int_factors-go-c.c:34:3: error: use of undeclared identifier 'fs'
+   34 |   fs[0] = 1;
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:35:3: error: use of undeclared identifier 'int64_t'
+   35 |   int64_t i, pp;
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:36:8: error: use of undeclared identifier 'i'
+   36 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |        ^
+/tmp/granitecode8b-int_factors-go-c.c:36:15: error: use of undeclared identifier 'pp'
+   36 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |               ^
+/tmp/granitecode8b-int_factors-go-c.c:36:28: error: use of undeclared identifier 'i'
+   36 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |                            ^
+/tmp/granitecode8b-int_factors-go-c.c:36:36: error: use of undeclared identifier 'i'
+   36 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |                                    ^
+/tmp/granitecode8b-int_factors-go-c.c:37:32: error: use of undeclared identifier 'fs'
+   37 |     for (int j = 0; j < sizeof(fs) / sizeof(fs[0]); j++) {
+      |                                ^
+/tmp/granitecode8b-int_factors-go-c.c:37:45: error: use of undeclared identifier 'fs'
+   37 |     for (int j = 0; j < sizeof(fs) / sizeof(fs[0]); j++) {
+      |                                             ^
+/tmp/granitecode8b-int_factors-go-c.c:38:7: error: use of undeclared identifier 'fs'
+   38 |       fs = realloc(fs, sizeof(fs) * 2);
+      |       ^
+/tmp/granitecode8b-int_factors-go-c.c:38:12: error: call to undeclared library function 'realloc' with type 'void *(void *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   38 |       fs = realloc(fs, sizeof(fs) * 2);
+      |            ^
+/tmp/granitecode8b-int_factors-go-c.c:38:12: note: include the header <stdlib.h> or explicitly provide a declaration for 'realloc'
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

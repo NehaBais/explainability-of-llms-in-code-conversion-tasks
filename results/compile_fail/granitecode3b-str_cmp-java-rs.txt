@@ -1,0 +1,23 @@
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-java-rs.rs:34:49
+   |
+34 |     println!("The lexical relationship is: {}", A.cmp(B));
+   |                                                 ^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-java-rs.rs:37:9
+   |
+37 |         A.to_lowercase().cmp(&B.to_lowercase())
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

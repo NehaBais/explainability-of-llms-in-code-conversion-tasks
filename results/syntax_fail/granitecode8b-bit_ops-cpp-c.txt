@@ -1,0 +1,69 @@
+/tmp/granitecode8b-bit_ops-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:3:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |  printf("a and b: %d
+      |  ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:3:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-bit_ops-cpp-c.c:3:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    3 |  printf("a and b: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:3:9: error: expected expression
+/tmp/granitecode8b-bit_ops-cpp-c.c:4:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    4 | ", a & b); // Note: parentheses are needed because & has lower precedence than <<
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:5:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 |  printf("a or b: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:6:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 | ", a | b);
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:7:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 |  printf("a xor b: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:8:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 | ", a ^ b);
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:9:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |  printf("not a: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:10:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 | ", ~a);
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:14:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |  printf("a shl b: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:15:25: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ", a << b); // Note: "<<" is used both for output and for left shift
+      |                         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:16:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 |  printf("a shr b: %d
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:17:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 | ", a >> b); // typically arithmetic right shift, but not guaranteed
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:19:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 |  printf("a lsr b: %u
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:20:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   20 | ", ua >> b); // logical right shift (guaranteed)
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:25:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   25 |  printf("a rol b: %u
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:26:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   26 | ", (ua << b) | (ua >> (sizeof(int)*8 - b)));
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:27:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   27 |  printf("a ror b: %u
+      |         ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:28:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   28 | ", (ua >> b) | (ua << (sizeof(int)*8 - b)));
+      | ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:29:2: error: expected '}'
+   29 | }
+      |  ^
+/tmp/granitecode8b-bit_ops-cpp-c.c:2:28: note: to match this '{'
+    2 | void bitwise(int a, int b) {
+      |                            ^
+18 warnings and 4 errors generated.

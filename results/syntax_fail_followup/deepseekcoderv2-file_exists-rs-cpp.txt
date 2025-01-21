@@ -1,0 +1,19 @@
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:9:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |   for (const auto &file : files) {
+      |              ^
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:9:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    9 |   for (const auto &file : files) {
+      |                         ^
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:11:11: error: use of undeclared identifier 'fs'
+   11 |       if (fs::exists(file)) {
+      |           ^
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:12:13: error: use of undeclared identifier 'fs'
+   12 |         if (fs::is_directory(file)) {
+      |             ^
+/tmp/deepseekcoderv2-file_exists-rs-cpp.cpp:20:20: error: use of undeclared identifier 'fs'
+   20 |     } catch (const fs::filesystem_error &e) {
+      |                    ^
+2 warnings and 4 errors generated.

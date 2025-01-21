@@ -1,0 +1,44 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String str1 = "abcd";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:5: error: class, interface, enum, or record expected
+System.out.println("Does the first string start with the second string? " + startsWith);
+^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+System.out.println("Does the first string contain the second string at any location? " + contains);
+^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+System.out.println("Does the first string end with the second string? " + endsWith);
+^
+/tmp/None.java:14: error: class, interface, enum, or record expected
+if (loc != -1) {
+^
+/tmp/None.java:16: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+for (int i = 0; i < strs.length; i++) {
+^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+for (int i = 0; i < strs.length; i++) {
+                ^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+for (int i = 0; i < strs.length; i++) {
+                                 ^
+/tmp/None.java:23: error: class, interface, enum, or record expected
+ if (loc != -1) {
+ ^
+/tmp/None.java:25: error: class, interface, enum, or record expected
+ } else {
+ ^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+ break;
+ ^
+/tmp/None.java:28: error: class, interface, enum, or record expected
+ }
+ ^
+14 errors

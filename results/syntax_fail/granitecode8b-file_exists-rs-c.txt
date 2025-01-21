@@ -1,0 +1,27 @@
+/tmp/granitecode8b-file_exists-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat attr;
+      |               ^
+/tmp/granitecode8b-file_exists-rs-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat attr;
+      |          ^
+/tmp/granitecode8b-file_exists-rs-c.c:5:19: error: expected ';' in 'for' statement specifier
+    5 |   for (char *file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                   ^
+/tmp/granitecode8b-file_exists-rs-c.c:5:19: error: expected expression
+/tmp/granitecode8b-file_exists-rs-c.c:6:9: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     if (stat(file, &attr) == 0) {
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:7:11: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |       if (S_ISDIR(attr.st_mode)) {
+      |           ^
+/tmp/granitecode8b-file_exists-rs-c.c:8:9: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |         printf("%s is a directoryn", file);
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:8:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+8 errors generated.

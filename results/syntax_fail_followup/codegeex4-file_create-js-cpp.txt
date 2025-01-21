@@ -1,0 +1,7 @@
+/tmp/codegeex4-file_create-js-cpp.cpp:16:13: error: no member named 'filesystem' in namespace 'std'
+   16 |   if (!std::filesystem::create_directory(path + "/docs", ec)) {
+      |        ~~~~~^
+/tmp/codegeex4-file_create-js-cpp.cpp:27:12: error: no member named 'filesystem' in namespace 'std'
+   27 |   if (std::filesystem::path("/").exists()) {
+      |       ~~~~~^
+2 errors generated.

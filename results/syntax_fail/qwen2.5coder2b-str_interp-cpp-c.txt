@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-str_interp-cpp-c.c:15:5: error: call to undeclared function 'str_replace'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     str_replace(pos, length, replacement);
+      |     ^
+/tmp/qwen2.5coder2b-str_interp-cpp-c.c:27:6: error: conflicting types for 'str_replace'
+   27 | void str_replace(char *str, size_t pos, const char *replacement) {
+      |      ^
+/tmp/qwen2.5coder2b-str_interp-cpp-c.c:15:5: note: previous implicit declaration is here
+   15 |     str_replace(pos, length, replacement);
+      |     ^
+2 errors generated.

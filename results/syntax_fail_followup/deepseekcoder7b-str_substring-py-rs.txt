@@ -1,0 +1,25 @@
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_substring-py-rs.rs:23:32
+   |
+23 |         Some(index) => println!-- "{}", &s[index..],
+   |                     --         ^ expected one of `(`, `[`, or `{`
+   |                     |
+   |                     while parsing the `match` arm starting here
+
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_substring-py-rs.rs:29:32
+   |
+29 |         Some(index) => println!-- "{}", &s[index..],
+   |                     --         ^ expected one of `(`, `[`, or `{`
+   |                     |
+   |                     while parsing the `match` arm starting here
+
+error[E0463]: can't find crate for `unicode_segmentation`
+ --> /tmp/deepseekcoder7b-str_substring-py-rs.rs:1:1
+  |
+1 | extern crate unicode_segmentation;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0463`.

@@ -2,20 +2,25 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 func main() {
-	size, err := ioutil.ReadFile("input.txt")
-	if err == nil {
-		fmt.Println(len(size))
-	} else {
-		fmt.Println("The file does not exist.")
+	// Check the size of input.txt in the current working directory
+	fileInfo, err := os.Stat("input.txt")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
 	}
-	size2, err := ioutil.ReadFile("/input.txt")
-	if err == nil {
-		fmt.Println(len(size2))
-	} else {
-		fmt.Println("The file does not exist.")
+	sizeCurrentDir := fileInfo.Size()
+	fmt.Printf("Size of input.txt in current directory: %d bytes\n", sizeCurrentDir)
+
+	// Check the size of input.txt in the root of the file system
+	fileInfoRoot, err := os.Stat("/input.txt")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
 	}
+	sizeRoot := fileInfoRoot.Size()
+	fmt.Printf("Size of /input.txt: %d bytes\n", sizeRoot)
 }

@@ -1,0 +1,7 @@
+/tmp/codegeex4-str_interp-cpp-c.c:22:26: error: invalid operands to binary expression ('int' and 'char *')
+   22 |             len_original - pos - len_toBeReplaced);
+      |             ~~~~~~~~~~~~ ^ ~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:70:34: note: expanded from macro 'memmove'
+   70 |                 __builtin___memmove_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+      |                                                ^~~~~~~~~~~
+1 error generated.

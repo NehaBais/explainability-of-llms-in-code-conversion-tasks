@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-dir_make-rs-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::create_directories("./path/to/dir");
+      |     ~~~~~^
+1 error generated.

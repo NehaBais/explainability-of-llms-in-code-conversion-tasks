@@ -1,0 +1,7 @@
+/tmp/codegeex4-str_concat-py-c.c:24:5: error: redefinition of 'main'
+   24 | int main() {
+      |     ^
+/tmp/codegeex4-str_concat-py-c.c:5:5: note: previous definition is here
+    5 | int main() {
+      |     ^
+1 error generated.

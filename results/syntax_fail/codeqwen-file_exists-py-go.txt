@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-file_exists-py-go.go:30:12: undefined: filepath

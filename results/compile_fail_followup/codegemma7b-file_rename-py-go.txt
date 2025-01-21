@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegemma7b-file_rename-py-go.go:6:1: syntax error: non-declaration statement outside function body

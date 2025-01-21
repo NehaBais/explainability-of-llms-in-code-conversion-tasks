@@ -1,0 +1,10 @@
+/tmp/granitecode8b-str_prepend-go-c.c:2:12: error: expected identifier
+    2 | sprintf(s, "Hello, %s", s);
+      |            ^
+/tmp/granitecode8b-str_prepend-go-c.c:2:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    2 | sprintf(s, "Hello, %s", s);
+      | ^
+      | int
+/tmp/granitecode8b-str_prepend-go-c.c:2:1: warning: incompatible redeclaration of library function 'sprintf' [-Wincompatible-library-redeclaration]
+/tmp/granitecode8b-str_prepend-go-c.c:2:1: note: 'sprintf' is a builtin with type 'int (char *, const char *, ...)'
+1 warning and 2 errors generated.

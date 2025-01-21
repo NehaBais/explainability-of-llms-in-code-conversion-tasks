@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-bit_ops-go-c.c:76:81: error: expected ')'
+   76 |     printf("rol:  %016b\n", (int32_t)((ua << ub) | ((int32_t)(ua >> (32 - ub))));
+      |                                                                                 ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:76:11: note: to match this '('
+   76 |     printf("rol:  %016b\n", (int32_t)((ua << ub) | ((int32_t)(ua >> (32 - ub))));
+      |           ^
+1 error generated.

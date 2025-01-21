@@ -1,9 +1,17 @@
 function bitwise(a, b) {
+  console.log("a:   " + a.toString(2).padStart(16, "0"));
+  console.log("b:   " + b.toString(2).padStart(16, "0"));
+
   // Bitwise logical operations
-  console.log("AND:", (a & b).toString(2));
-  console.log("OR: ", (a | b).toString(2));
-  console.log("XOR:", (a ^ b).toString(2));
-  console.log("NOT:", (~a).toString(2));
+  const and = a & b;
+  const or = a | b;
+  const xor = a ^ b;
+  const not = ~a;
+
+  console.log("and: " + and.toString(2).padStart(16, "0"));
+  console.log("or:  " + or.toString(2).padStart(16, "0"));
+  console.log("xor: " + xor.toString(2).padStart(16, "0"));
+  console.log("not: " + not.toString(2).padStart(16, "0"));
 
   if (b < 0) {
     console.log(
@@ -11,27 +19,31 @@ function bitwise(a, b) {
     );
     return;
   }
-  var ua = a & 0xffff; // Convert to unsigned int16
-  var ub = b & 0xffff; // Convert to unsigned int32
 
   // Logical shifts (unsigned left operand)
-  console.log("SHL:", (ua << ub).toString(2));
-  console.log("SHR:", (ua >> ub).toString(2));
+  const shl = a << b;
+  const shr = a >> b;
 
   // Arithmetic shifts (signed left operand)
-  console.log("LAS:", (a << ub).toString(2));
-  console.log("RAS:", (a >> ub).toString(2));
+  const las = a << b;
+  const ras = a >> b;
 
   // Rotations
-  console.log(
-    "ROL:",
-    ((ua << ub) | (int16(uint16(a)) >> (16 - ub))).toString(2),
-  );
-  console.log("ROR:", (int16(uint16(a) >> ub) | (a << (16 - ub))).toString(2));
+  const rol = ((a << b) | (a >>> (16 - b))) & 0xffff;
+  const ror = ((a >>> b) | (a << (16 - b))) & 0xffff;
+
+  console.log("shl: " + shl.toString(2).padStart(16, "0"));
+  console.log("shr: " + shr.toString(2).padStart(16, "0"));
+  console.log("las: " + las.toString(2).padStart(16, "0"));
+  console.log("ras: " + ras.toString(2).padStart(16, "0"));
+  console.log("rol: " + rol.toString(2).padStart(16, "0"));
+  console.log("ror: " + ror.toString(2).padStart(16, "0"));
 }
 
 function main() {
-  var a = -460;
-  var b = 6;
+  const a = -460;
+  const b = 6;
   bitwise(a, b);
 }
+
+main();

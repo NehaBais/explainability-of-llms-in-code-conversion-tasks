@@ -1,0 +1,7 @@
+/tmp/yicoder2b-file_create-c-cpp.cpp:13:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   13 |     return EXIT_FAILURE;
+      |            ^
+/tmp/yicoder2b-file_create-c-cpp.cpp:22:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   22 |     return EXIT_FAILURE;
+      |            ^
+2 errors generated.

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-int_cmp-js-go.go:8:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_cmp-js-go.go:10:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_cmp-js-go.go:12:45: syntax error: unexpected ) at end of statement

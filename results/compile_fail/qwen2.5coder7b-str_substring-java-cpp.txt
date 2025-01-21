@@ -1,0 +1,33 @@
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:57:12: error: expected ';' after expression
+   57 |   -starting from n characters in and of m length std::cout
+      |            ^
+      |            ;
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:57:4: error: use of undeclared identifier 'starting'
+   57 |   -starting from n characters in and of m length std::cout
+      |    ^
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:57:13: error: unknown type name 'from'
+   57 |   -starting from n characters in and of m length std::cout
+      |             ^
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:57:19: error: expected ';' at end of declaration
+   57 |   -starting from n characters in and of m length std::cout
+      |                   ^
+      |                   ;
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:67:17: error: character too large for enclosing character literal type
+   67 |   char32_t ch = '世';
+      |                 ^
+/tmp/qwen2.5coder7b-str_substring-java-cpp.cpp:73:18: error: no viable conversion from 'const char[7]' to 'std::u32string' (aka 'basic_string<char32_t>')
+   73 |   std::u32string sub = "世界";
+      |                  ^     ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'const char[7]' to 'const u32string &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'const char[7]' to 'const char32_t *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+6 errors generated.

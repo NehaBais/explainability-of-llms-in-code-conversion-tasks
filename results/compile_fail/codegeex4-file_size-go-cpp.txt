@@ -1,0 +1,28 @@
+/tmp/codegeex4-file_size-go-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::path filePath(f);
+      |     ~~~~~^
+/tmp/codegeex4-file_size-go-cpp.cpp:8:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |     auto fileStat = std::filesystem::file_status(filePath);
+      |     ^
+/tmp/codegeex4-file_size-go-cpp.cpp:8:26: error: no member named 'filesystem' in namespace 'std'
+    8 |     auto fileStat = std::filesystem::file_status(filePath);
+      |                     ~~~~~^
+/tmp/codegeex4-file_size-go-cpp.cpp:8:50: error: use of undeclared identifier 'filePath'
+    8 |     auto fileStat = std::filesystem::file_status(filePath);
+      |                                                  ^
+/tmp/codegeex4-file_size-go-cpp.cpp:10:14: error: no member named 'filesystem' in namespace 'std'
+   10 |     if (std::filesystem::exists(fileStat)) {
+      |         ~~~~~^
+/tmp/codegeex4-file_size-go-cpp.cpp:12:25: error: no member named 'filesystem' in namespace 'std'
+   12 |                 << std::filesystem::file_size(filePath) << " bytes\n";
+      |                    ~~~~~^
+/tmp/codegeex4-file_size-go-cpp.cpp:12:47: error: use of undeclared identifier 'filePath'
+   12 |                 << std::filesystem::file_size(filePath) << " bytes\n";
+      |                                               ^
+/tmp/codegeex4-file_size-go-cpp.cpp:11:44: error: use of undeclared identifier 'filePath'
+   11 |       std::cout << "Size of the file: " << filePath << ": "
+      |                                            ^
+/tmp/codegeex4-file_size-go-cpp.cpp:14:47: error: use of undeclared identifier 'filePath'
+   14 |       std::cerr << "File does not exist: " << filePath << "\n";
+      |                                               ^
+1 warning and 8 errors generated.

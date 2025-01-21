@@ -1,0 +1,4 @@
+/tmp/Main.java:28: error: variable ua is already defined in method bitwiseOperation(int,int)
+    int ua = a;
+        ^
+1 error

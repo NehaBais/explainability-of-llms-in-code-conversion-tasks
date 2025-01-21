@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codellama7b-str_substring-c-go.go:26:15: empty rune literal or unescaped '
+/tmp/codellama7b-str_substring-c-go.go:43:36: undefined: str_wholeless1
+/tmp/codellama7b-str_substring-c-go.go:44:40: undefined: str_fromch
+/tmp/codellama7b-str_substring-c-go.go:45:44: undefined: str_fromstr

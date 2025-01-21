@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_exists-java-go.go:13:1: unexpected semicolon or newline before { (and 5 more errors)

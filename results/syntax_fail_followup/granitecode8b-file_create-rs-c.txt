@@ -1,0 +1,59 @@
+/tmp/granitecode8b-file_create-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_create-rs-c.c:7:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   if (access(dir_name, F_OK) != -1) {
+      |       ^
+/tmp/granitecode8b-file_create-rs-c.c:7:24: error: use of undeclared identifier 'F_OK'
+    7 |   if (access(dir_name, F_OK) != -1) {
+      |                        ^
+/tmp/granitecode8b-file_create-rs-c.c:8:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     fprintf(stderr, "Directory already existsn");
+      |     ^
+/tmp/granitecode8b-file_create-rs-c.c:8:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-file_create-rs-c.c:8:13: error: use of undeclared identifier 'stderr'
+    8 |     fprintf(stderr, "Directory already existsn");
+      |             ^
+/tmp/granitecode8b-file_create-rs-c.c:9:5: error: call to undeclared library function 'exit' with type 'void (int) __attribute__((noreturn))'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     exit(1);
+      |     ^
+/tmp/granitecode8b-file_create-rs-c.c:9:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/tmp/granitecode8b-file_create-rs-c.c:11:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   mkdir(dir_name, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |   ^
+/tmp/granitecode8b-file_create-rs-c.c:11:19: error: use of undeclared identifier 'S_IRWXU'
+   11 |   mkdir(dir_name, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                   ^
+/tmp/granitecode8b-file_create-rs-c.c:11:29: error: use of undeclared identifier 'S_IRWXG'
+   11 |   mkdir(dir_name, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                             ^
+/tmp/granitecode8b-file_create-rs-c.c:11:39: error: use of undeclared identifier 'S_IROTH'
+   11 |   mkdir(dir_name, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                       ^
+/tmp/granitecode8b-file_create-rs-c.c:11:49: error: use of undeclared identifier 'S_IXOTH'
+   11 |   mkdir(dir_name, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                 ^
+/tmp/granitecode8b-file_create-rs-c.c:12:3: error: use of undeclared identifier 'FILE'
+   12 |   FILE *file = fopen(file_name, "w");
+      |   ^
+/tmp/granitecode8b-file_create-rs-c.c:12:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+   12 |   FILE *file = fopen(file_name, "w");
+      |         ^~~~
+      |         while
+/tmp/granitecode8b-file_create-rs-c.c:12:9: error: expected expression
+/tmp/granitecode8b-file_create-rs-c.c:13:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+   13 |   if (file == NULL) {
+      |       ^~~~
+      |       while
+/tmp/granitecode8b-file_create-rs-c.c:13:7: error: expected expression
+/tmp/granitecode8b-file_create-rs-c.c:14:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     fprintf(stderr, "Error creating filen");
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

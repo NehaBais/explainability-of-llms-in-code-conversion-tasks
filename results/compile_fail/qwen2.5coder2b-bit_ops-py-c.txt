@@ -1,0 +1,23 @@
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:16:40: error: call to undeclared function 'asr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   unsigned int arithetic_right_shift = asr(width, a, 1);
+      |                                        ^
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:47:14: error: conflicting types for 'asr'
+   47 | unsigned int asr(unsigned int width, unsigned int a, unsigned int n) {
+      |              ^
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:16:40: note: previous implicit declaration is here
+   16 |   unsigned int arithetic_right_shift = asr(width, a, 1);
+      |                                        ^
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:49:24: error: use of undeclared identifier 'mask'
+   49 |     return (a << -n) & mask;
+      |                        ^
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:53:12: error: use of undeclared identifier 'mask'
+   53 |     return mask if a & top_bit_mask else 0;
+      |            ^
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:53:16: error: expected ';' after return statement
+   53 |     return mask if a & top_bit_mask else 0;
+      |                ^
+      |                ;
+/tmp/qwen2.5coder2b-bit_ops-py-c.c:69:3: error: call to undeclared function 'helper_funcs'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   69 |   helper_funcs(8, 27);
+      |   ^
+6 errors generated.

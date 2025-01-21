@@ -1,0 +1,7 @@
+/tmp/stablecode-int_arith-rs-c.c:18:26: error: extraneous ')' before ';'
+   18 |     int a = atoi(argv[1]));
+      |                          ^
+/tmp/stablecode-int_arith-rs-c.c:19:26: error: extraneous ')' before ';'
+   19 |     int b = atoi(argv[2]));
+      |                          ^
+2 errors generated.

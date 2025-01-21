@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `A`
+ --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:1:5
+  |
+1 | GET A FROM USER
+  |     ^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

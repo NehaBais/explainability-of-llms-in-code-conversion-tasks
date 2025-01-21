@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-file_size-js-c.c:1:10: fatal error: 'windows.h' file not found
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+1 error generated.

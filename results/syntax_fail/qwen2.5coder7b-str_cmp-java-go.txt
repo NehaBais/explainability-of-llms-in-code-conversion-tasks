@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-str_cmp-java-go.go:39:52: A.CompareTo undefined (type string has no field or method CompareTo)

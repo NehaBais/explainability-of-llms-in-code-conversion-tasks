@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/granitecode3b-int_arith-js-go.go:9:24: undefined: os
+/tmp/granitecode3b-int_arith-js-go.go:10:10: undefined: strconv
+/tmp/granitecode3b-int_arith-js-go.go:11:10: undefined: strconv

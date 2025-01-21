@@ -1,0 +1,32 @@
+error: expected item, found keyword `if`
+ --> /tmp/codellama7b-str_match-py-rs.rs:3:1
+  |
+3 | if s1.starts_with(s2) {
+  | ^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: missing type for `const` item
+ --> /tmp/codellama7b-str_match-py-rs.rs:1:9
+  |
+1 | const s1 = "abcd";
+  |         ^
+  |
+help: provide a type for the item
+  |
+1 | const s1: <type> = "abcd";
+  |         ++++++++
+
+error: missing type for `const` item
+ --> /tmp/codellama7b-str_match-py-rs.rs:2:9
+  |
+2 | const s2 = "ab";
+  |         ^
+  |
+help: provide a type for the item
+  |
+2 | const s2: <type> = "ab";
+  |         ++++++++
+
+error: aborting due to 3 previous errors
+

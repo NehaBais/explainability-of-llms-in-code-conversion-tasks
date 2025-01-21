@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode3b-file_size-c-go.go:6:2: "syscall" imported and not used

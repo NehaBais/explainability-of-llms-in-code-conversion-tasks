@@ -1,0 +1,4 @@
+/tmp/Main.java:24: error: exception IOException is never thrown in body of corresponding try statement
+    } catch (IOException ex) {
+      ^
+1 error

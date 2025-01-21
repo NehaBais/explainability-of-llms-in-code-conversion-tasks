@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-int_arith-rs-go.go:10:10: undefined: strconv
+/tmp/codellama7b-int_arith-rs-go.go:11:10: undefined: strconv

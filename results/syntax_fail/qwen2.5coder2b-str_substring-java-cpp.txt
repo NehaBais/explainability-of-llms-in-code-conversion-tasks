@@ -1,0 +1,28 @@
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:48:18: error: no matching function for call to 'substr'
+   48 |     std::cout << substr(str1, "lo") << std::endl; // Output: "llo, Wo"
+      |                  ^~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:11:13: note: candidate function not viable: no known conversion from 'const char[3]' to 'size_t' (aka 'unsigned long') for 2nd argument
+   11 | std::string substr(const std::string &str, size_t n) {
+      |             ^                              ~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:18:13: note: candidate function not viable: requires single argument 'str', but 2 arguments were provided
+   18 | std::string substr(const std::string &str) {
+      |             ^      ~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:33:13: note: candidate function not viable: requires 3 arguments, but 2 were provided
+   33 | std::string substr(const std::string &str, const std::string &sub, size_t m) {
+      |             ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:25:13: note: candidate function not viable: requires 3 arguments, but 2 were provided
+   25 | std::string substr(const std::string &str, char c, size_t m) {
+      |             ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:4:13: note: candidate function not viable: requires 3 arguments, but 2 were provided
+    4 | std::string substr(const std::string &str, size_t n, size_t m) {
+      |             ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:54:18: error: call to 'substr' is ambiguous
+   54 |     std::cout << substr(str3, 1, 2) << std::endl; // Output: "B"
+      |                  ^~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:4:13: note: candidate function
+    4 | std::string substr(const std::string &str, size_t n, size_t m) {
+      |             ^
+/tmp/qwen2.5coder2b-str_substring-java-cpp.cpp:25:13: note: candidate function
+   25 | std::string substr(const std::string &str, char c, size_t m) {
+      |             ^
+2 errors generated.

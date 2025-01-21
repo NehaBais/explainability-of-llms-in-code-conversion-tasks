@@ -1,0 +1,13 @@
+/tmp/magicoder7b-bit_ops-java-c.c:8:3: error: call to undeclared function 'bitwise'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   bitwise(a, b);
+      |   ^
+/tmp/magicoder7b-bit_ops-java-c.c:13:6: error: conflicting types for 'bitwise'
+   13 | void bitwise(int a, int b) { ...(same as the provided code) }
+      |      ^
+/tmp/magicoder7b-bit_ops-java-c.c:8:3: note: previous implicit declaration is here
+    8 |   bitwise(a, b);
+      |   ^
+/tmp/magicoder7b-bit_ops-java-c.c:13:30: error: expected expression
+   13 | void bitwise(int a, int b) { ...(same as the provided code) }
+      |                              ^
+3 errors generated.

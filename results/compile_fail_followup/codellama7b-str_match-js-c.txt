@@ -1,0 +1,10 @@
+/tmp/codellama7b-str_match-js-c.c:13:8: warning: cast to smaller integer type 'int' from 'char *' [-Wpointer-to-int-cast]
+   13 |   q2 = (int)strstr(stringA, stringB);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_match-js-c.c:21:14: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   21 |          (q2 != NULL ? "Yes, at index " + q2.toString() : "No"));
+      |           ~~ ^  ~~~~
+/tmp/codellama7b-str_match-js-c.c:21:45: error: member reference base type 'int' is not a structure or union
+   21 |          (q2 != NULL ? "Yes, at index " + q2.toString() : "No"));
+      |                                           ~~^~~~~~~~~
+2 warnings and 1 error generated.

@@ -1,0 +1,152 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+use std::fs;
+^
+/tmp/None.java:6: error: not a statement
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("input.txt"), fs::PathBuf::new("output.txt")) {
+                                                            ^
+/tmp/None.java:6: error: not a statement
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("input.txt"), fs::PathBuf::new("output.txt")) {
+                                                                           ^
+/tmp/None.java:7: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+        ^
+/tmp/None.java:7: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                    ^
+/tmp/None.java:7: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                               ^
+/tmp/None.java:8: error: not a statement
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+                                                                   ^
+/tmp/None.java:8: error: not a statement
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+                                                                                   ^
+/tmp/None.java:9: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+        ^
+/tmp/None.java:9: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                    ^
+/tmp/None.java:9: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                               ^
+/tmp/None.java:13: error: not a statement
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("docs"), fs::PathBuf::new("mydocs.txt")) {
+                                                            ^
+/tmp/None.java:13: error: not a statement
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("docs"), fs::PathBuf::new("mydocs.txt")) {
+                                                                      ^
+/tmp/None.java:14: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+        ^
+/tmp/None.java:14: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                    ^
+/tmp/None.java:14: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                               ^
+/tmp/None.java:15: error: not a statement
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+                                                                   ^
+/tmp/None.java:15: error: not a statement
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+                                                                              ^
+/tmp/None.java:16: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+        ^
+/tmp/None.java:16: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                    ^
+/tmp/None.java:16: error: not a statement
+        fs::rename(&src_path, &dest_path).expect(err);
+                               ^
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+fn main() {
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: '(' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("input.txt"), fs::PathBuf::new("output.txt")) {
+      ^
+/tmp/None.java:6: error: ';' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("input.txt"), fs::PathBuf::new("output.txt")) {
+                                                                         ^
+/tmp/None.java:6: error: ';' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("input.txt"), fs::PathBuf::new("output.txt")) {
+                                                                                           ^
+/tmp/None.java:7: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                  ^
+/tmp/None.java:7: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                            ^
+/tmp/None.java:7: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                                        ^
+/tmp/None.java:8: error: '(' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+             ^
+/tmp/None.java:8: error: ';' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+                                                                                 ^
+/tmp/None.java:8: error: 'else' without 'if'
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+      ^
+/tmp/None.java:8: error: ';' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/input.txt"), fs::PathBuf::new("/output.txt")) {
+                                                                                                   ^
+/tmp/None.java:9: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                  ^
+/tmp/None.java:9: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                            ^
+/tmp/None.java:9: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                                        ^
+/tmp/None.java:10: error: 'else' without 'if'
+    } else {}  // Handle error if the paths do not exist
+      ^
+/tmp/None.java:13: error: '(' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("docs"), fs::PathBuf::new("mydocs.txt")) {
+      ^
+/tmp/None.java:13: error: ';' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("docs"), fs::PathBuf::new("mydocs.txt")) {
+                                                                    ^
+/tmp/None.java:13: error: ';' expected
+    if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("docs"), fs::PathBuf::new("mydocs.txt")) {
+                                                                                      ^
+/tmp/None.java:14: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                  ^
+/tmp/None.java:14: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                            ^
+/tmp/None.java:14: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                                        ^
+/tmp/None.java:15: error: '(' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+             ^
+/tmp/None.java:15: error: ';' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+                                                                            ^
+/tmp/None.java:15: error: 'else' without 'if'
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+      ^
+/tmp/None.java:15: error: ';' expected
+    } else if let (Ok(src_path), Ok(dest_path)) = (fs::PathBuf::new("/docs"), fs::PathBuf::new("/mydocs/")) {
+                                                                                              ^
+/tmp/None.java:16: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                  ^
+/tmp/None.java:16: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                            ^
+/tmp/None.java:16: error: ';' expected
+        fs::rename(&src_path, &dest_path).expect(err);
+                                        ^
+/tmp/None.java:17: error: 'else' without 'if'
+    } else {}  // Handle error if the paths do not exist
+      ^
+50 errors

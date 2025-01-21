@@ -1,0 +1,4 @@
+/tmp/stablecode-str_interp-java-c.c:6:45: error: extraneous ')' before ';'
+    6 |     char* lyric = malloc(100 * sizeof(char)));
+      |                                             ^
+1 error generated.

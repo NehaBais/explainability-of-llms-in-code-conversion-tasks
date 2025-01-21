@@ -1,0 +1,9 @@
+/tmp/qwen2.5coder7b-int_factors-py-c.c:6:19: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   int *factors1 = malloc(n * sizeof(int));
+      |                   ^
+/tmp/qwen2.5coder7b-int_factors-py-c.c:6:19: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/qwen2.5coder7b-int_factors-py-c.c:23:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   free(factors1);
+      |   ^
+/tmp/qwen2.5coder7b-int_factors-py-c.c:23:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

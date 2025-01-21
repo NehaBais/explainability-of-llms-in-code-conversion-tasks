@@ -1,0 +1,11 @@
+/tmp/Factor.java:5: error: cannot find symbol
+    assert_eq(
+    ^
+  symbol:   method assert_eq(List<Integer>,List<Integer>)
+  location: class Factor
+/tmp/Factor.java:8: error: cannot find symbol
+    assert_eq(Arrays.asList(1, 101), factor(101));
+    ^
+  symbol:   method assert_eq(List<Integer>,List<Integer>)
+  location: class Factor
+2 errors

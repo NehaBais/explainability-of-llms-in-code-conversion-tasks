@@ -1,0 +1,13 @@
+/tmp/stablecode-str_substring-cpp-c.c:12:37: error: subscripted value is not an array, pointer, or vector
+   12 |     printf("%.*s\n", m, strstr(s, &c[0]) + n));
+      |                                    ~^~
+/tmp/stablecode-str_substring-cpp-c.c:14:45: error: extraneous ')' before ';'
+   14 |     printf("%.*s\n", m, s + (strlen(s) - 1)));
+      |                                             ^
+/tmp/stablecode-str_substring-cpp-c.c:15:37: error: subscripted value is not an array, pointer, or vector
+   15 |     printf("%.*s\n", m, strstr(s, &c[0])) + n);
+      |                                    ~^~
+/tmp/stablecode-str_substring-cpp-c.c:16:41: warning: expression result unused [-Wunused-value]
+   16 |     printf("%.*s\n", m, strstr(s, sub)) + n;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+1 warning and 3 errors generated.

@@ -1,0 +1,16 @@
+error[E0277]: cannot divide `f64` by `{integer}`
+  --> /tmp/yicoder2b-int_factors-java-rs.rs:10:38
+   |
+10 |             factors.insert((n as f64 / test) as u64); // this is necessary because we are working with unsigned integers
+   |                                      ^ no implementation for `f64 / {integer}`
+   |
+   = help: the trait `Div<{integer}>` is not implemented for `f64`
+   = help: the following other types implement trait `Div<Rhs>`:
+             `&'a f64` implements `Div<f64>`
+             `&f64` implements `Div<&f64>`
+             `f64` implements `Div<&f64>`
+             `f64` implements `Div`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0277`.

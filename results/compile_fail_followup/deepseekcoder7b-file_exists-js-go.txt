@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_exists-js-go.go:38:17: syntax error: unexpected <, expected }
+/tmp/deepseekcoder7b-file_exists-js-go.go:38:18: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_exists-js-go.go:38:26: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-file_exists-js-go.go:38:42: invalid character U+FF5C '｜' in identifier

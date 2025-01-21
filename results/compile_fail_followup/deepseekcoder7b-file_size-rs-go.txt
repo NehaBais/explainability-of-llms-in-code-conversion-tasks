@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_size-rs-go.go:14:7: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_size-rs-go.go:14:15: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-file_size-rs-go.go:14:31: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_size-rs-go.go:14:39: syntax error: unexpected name of at end of statement
+/tmp/deepseekcoder7b-file_size-rs-go.go:14:55: invalid character U+0002

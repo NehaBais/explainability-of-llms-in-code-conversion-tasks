@@ -1,0 +1,10 @@
+/tmp/yicoder2b-file_create-cpp-c.c:31:5: error: use of undeclared identifier 'fd'
+   31 |     fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |     ^
+/tmp/yicoder2b-file_create-cpp-c.c:32:9: error: use of undeclared identifier 'fd'
+   32 |     if (fd >= 0) {
+      |         ^
+/tmp/yicoder2b-file_create-cpp-c.c:33:13: error: use of undeclared identifier 'fd'
+   33 |       close(fd);
+      |             ^
+3 errors generated.

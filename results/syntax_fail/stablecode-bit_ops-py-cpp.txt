@@ -1,0 +1,51 @@
+/tmp/stablecode-bit_ops-py-cpp.cpp:7:34: error: expected ';' after expression
+    7 |     cout << "0b" << bitset<32>(a)).to_string() << " & 0b" << bitset<32>(b)).to_string() << " = 0b" << bitset<32>((a & b) & mask)).to_string() << endl;
+      |                                  ^
+      |                                  ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:7:34: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:9:34: error: expected ';' after expression
+    9 |     cout << "0b" << bitset<32>(a)).to_string() << " | 0b" << bitset<32>(b)).to_string() << " = 0b" << bitset<32>((a | b) & mask)).to_string() << endl;
+      |                                  ^
+      |                                  ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:9:34: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:11:34: error: expected ';' after expression
+   11 |     cout << "0b" << bitset<32>(a)).to_string() << " ^ 0b" << bitset<32>(b)).to_string() << " = 0b" << bitset<32>((a ^ b) & mask)).to_string() << endl;
+      |                                  ^
+      |                                  ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:11:34: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:13:35: error: expected ';' after expression
+   13 |     cout << "~0b" << bitset<32>(a)).to_string() << " = 0b" << bitset<32>((~a) & mask))).to_string() << endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:13:35: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:18:55: error: expected ';' after expression
+   18 |     cout << "asr(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 1)" << endl;
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:18:55: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:19:56: error: expected ';' after expression
+   19 |     cout << "rotl(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 1)" << endl;
+      |                                                        ^
+      |                                                        ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:19:56: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:20:55: error: expected ';' after expression
+   20 |     cout << "asr(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 2)" << endl;
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:20:55: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:21:56: error: expected ';' after expression
+   21 |     cout << "rotl(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 2)" << endl;
+      |                                                        ^
+      |                                                        ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:21:56: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:22:55: error: expected ';' after expression
+   22 |     cout << "asr(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 4)" << endl;
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:22:55: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:23:56: error: expected ';' after expression
+   23 |     cout << "rotl(" << width << ", 0b" << bitset<32>(a)).to_string() << ", 4)" << endl;
+      |                                                        ^
+      |                                                        ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

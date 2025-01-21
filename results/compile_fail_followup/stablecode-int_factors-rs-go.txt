@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-int_factors-rs-go.go:12:47: syntax error: unexpected ), expected semicolon or newline
+/tmp/stablecode-int_factors-rs-go.go:14:32: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-rs-go.go:15:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-rs-go.go:25:26: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-rs-go.go:26:26: syntax error: unexpected ) at end of statement

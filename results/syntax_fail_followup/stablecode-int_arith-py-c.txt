@@ -1,0 +1,4 @@
+/tmp/stablecode-int_arith-py-c.c:24:47: error: extraneous ')' before ';'
+   24 |     float exponentiation = pow(input1, input2));
+      |                                               ^
+1 error generated.

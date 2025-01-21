@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-str_interp-cpp-c.c:16:8: error: use of undeclared identifier 'pos'
+   16 |   if ((pos = strstr(original, toBeReplaced)) != NULL) {
+      |        ^
+/tmp/dolphincoder7b-str_interp-cpp-c.c:17:34: error: use of undeclared identifier 'pos'
+   17 |     strncpy(newString, original, pos - original);
+      |                                  ^
+/tmp/dolphincoder7b-str_interp-cpp-c.c:18:15: error: use of undeclared identifier 'pos'
+   18 |     newString[pos - original] = '\0';
+      |               ^
+/tmp/dolphincoder7b-str_interp-cpp-c.c:20:33: error: use of undeclared identifier 'pos'
+   20 |     strcat(newString, &original[pos + strlen(toBeReplaced)]);
+      |                                 ^
+4 errors generated.

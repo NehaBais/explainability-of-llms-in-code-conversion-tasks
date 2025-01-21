@@ -1,0 +1,16 @@
+/tmp/codeqwen-file_exists-js-cpp.cpp:5:40: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::string current_directory = std::filesystem::current_path().string();
+      |                                   ~~~~~^
+/tmp/codeqwen-file_exists-js-cpp.cpp:7:12: error: no member named 'filesystem' in namespace 'std'
+    7 |   if (std::filesystem::exists("input.txt")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-js-cpp.cpp:13:12: error: no member named 'filesystem' in namespace 'std'
+   13 |   if (std::filesystem::exists("c:/input.txt")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-js-cpp.cpp:19:12: error: no member named 'filesystem' in namespace 'std'
+   19 |   if (std::filesystem::exists("docs")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-js-cpp.cpp:25:12: error: no member named 'filesystem' in namespace 'std'
+   25 |   if (std::filesystem::exists("c:/docs")) {
+      |       ~~~~~^
+5 errors generated.

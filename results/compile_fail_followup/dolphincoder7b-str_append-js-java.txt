@@ -1,0 +1,11 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String s1  = "Hello";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+s1 += ", World!";
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+System.out.println(s1);
+^
+3 errors

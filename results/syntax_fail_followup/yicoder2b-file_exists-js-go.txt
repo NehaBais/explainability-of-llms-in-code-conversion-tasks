@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_exists-js-go.go:8:11: undefined: os.FileSystem

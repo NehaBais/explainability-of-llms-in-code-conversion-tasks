@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-dir_make-c-go.go:22:17: undefined: os.IsDir

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-file_exists-java-go.go:9:1: syntax error: non-declaration statement outside function body

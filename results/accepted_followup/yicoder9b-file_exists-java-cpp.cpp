@@ -1,0 +1,23 @@
+#include <boost/filesystem.hpp>
+#include <iostream>
+
+int main() {
+  namespace fs = boost::filesystem;
+
+  // Path for current working directory and a file in 'docs' directory
+  fs::path p("docs/input.txt");
+  if (fs::exists(p)) {
+    std::cout << "File exists in the current directory\n";
+  } else {
+    std::cout << "File does not exist in the current directory\n";
+  }
+
+  // Path for root directory and a file 'input.txt' in 'docs' sub-directory
+  fs::path p_root("/docs/input.txt");
+  if (fs::exists(p_root)) {
+    std::cout << "File exists at the root directory\n";
+  } else {
+    std::cout << "File does not exist in the root directory\n";
+  }
+  return 0;
+}

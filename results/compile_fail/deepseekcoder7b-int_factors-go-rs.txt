@@ -1,0 +1,228 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:32:13
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |             ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:32:19
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                    ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:32:22
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                       ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:32:31
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                                ^^
+
+error: expected one of `:`, `@`, or `|`, found `,`
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:26:18
+   |
+26 |        fn apf(&nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |                  ^ expected one of `:`, `@`, or `|`
+   |
+   = note: anonymous parameters are removed in the 2018 edition (see RFC 1685)
+help: if this is a `self` type, give it a parameter name
+   |
+26 |        fn apf(self: &nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               +++++
+help: if this is a parameter name, give it a type
+   |
+26 |        fn apf(nr: &TypeName, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               ~~~~~~~~~~~~~
+help: if this is a type, explicitly ignore the parameter name
+   |
+26 |        fn apf(_: &nr, p: num_bigint::BigUint, e: u32) -> Vec<num_bigint::BigUint> {
+   |               ++
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:32:20
+   |
+32 |            <｜begin▁of▁sentence｜>}
+   |                     ^^ expected one of 7 possible tokens
+
+error: expected type, found `}`
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:52:14
+   |
+52 |             <}
+   |              ^ expected type
+
+error: expected type, found `}`
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:56:9
+   |
+56 |        <} 
+   |         ^ expected type
+
+error[E0463]: can't find crate for `num_bigint`
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:1:1
+  |
+1 | extern crate num_bigint; // You need this library for big integer support
+  | ^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:29:26
+   |
+29 |                 for f in fs.iter() {
+   |                          ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error: invalid suffix `u` for number literal
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:38:21
+   |
+38 |               nr /= 2u.into();
+   |                     ^^ invalid suffix `u`
+   |
+   = help: the suffix must be one of the numeric types (`u32`, `isize`, `f32`, etc.)
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:5:5
+   |
+5  |     printFactors(-1);
+   |     ^^^^^^^^^^^^---- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+5  |     printFactors(-1, /* fmt */);
+   |                 ~~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:6:5
+   |
+6  |     printFactors(0);
+   |     ^^^^^^^^^^^^--- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+6  |     printFactors(0, /* fmt */);
+   |                 ~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:5
+   |
+7  |     printFactors(1);
+   |     ^^^^^^^^^^^^--- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+7  |     printFactors(1, /* fmt */);
+   |                 ~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:8:5
+   |
+8  |     printFactors(2);
+   |     ^^^^^^^^^^^^--- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+8  |     printFactors(2, /* fmt */);
+   |                 ~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:9:5
+   |
+9  |     printFactors(3);
+   |     ^^^^^^^^^^^^--- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+9  |     printFactors(3, /* fmt */);
+   |                 ~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:10:5
+   |
+10 |     printFactors(53);
+   |     ^^^^^^^^^^^^---- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+10 |     printFactors(53, /* fmt */);
+   |                 ~~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:11:5
+   |
+11 |     printFactors(45);
+   |     ^^^^^^^^^^^^---- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+11 |     printFactors(45, /* fmt */);
+   |                 ~~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 2 arguments but 1 argument was supplied
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:12:5
+   |
+12 |     printFactors(64);
+   |     ^^^^^^^^^^^^---- argument #2 is missing
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:17:4
+   |
+17 | fn printFactors<F>(nr: num_bigint::BigUint, fmt: F) -> fmt::Result
+   |    ^^^^^^^^^^^^    -----------------------  ------
+help: provide the argument
+   |
+12 |     printFactors(64, /* fmt */);
+   |                 ~~~~~~~~~~~~~~~
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:21:73
+   |
+21 |        if nr.cmp(&num_bigint::BigUint::one()) == std::cmp::Ordering::Less {
+   |  _________________________________________________________________________^
+22 | |         write!(fmt, "Factors of {} not computed", nr)?;
+23 | |     } else {
+   | |_____^ expected `Result<(), Error>`, found `()`
+   |
+   = note:   expected enum `Result<(), std::fmt::Error>`
+           found unit type `()`
+
+error: aborting due to 20 previous errors
+
+Some errors have detailed explanations: E0061, E0308, E0434, E0463.
+For more information about an error, try `rustc --explain E0061`.

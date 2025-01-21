@@ -1,0 +1,7 @@
+/tmp/codellama7b-int_factors-c-cpp.cpp:13:26: error: use of undeclared identifier 'fctors'
+   13 |     fctrs.list = realloc(fctors.list, newSize * sizeof(int));
+      |                          ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:15:18: error: assigning to 'int *' from incompatible type 'void *'
+   15 |     fctrs.list = malloc(newSize * sizeof(int));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

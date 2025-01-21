@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_cmp-rs-go.go:18:2: declared and not used: a2
+/tmp/qwen2.5coder2b-str_cmp-rs-go.go:19:2: declared and not used: b2

@@ -1,0 +1,5 @@
+/tmp/deepseekcoderv2-int_factors-rs-c.c:8:24: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   for (int i = 1; i <= sqrt(num); i++) {
+      |                        ^
+/tmp/deepseekcoderv2-int_factors-rs-c.c:8:24: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 error generated.

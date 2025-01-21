@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-int_arith-py-go.go:21:2: undefined: input2

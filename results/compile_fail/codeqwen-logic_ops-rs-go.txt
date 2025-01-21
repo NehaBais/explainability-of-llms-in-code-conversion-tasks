@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codeqwen-logic_ops-rs-go.go:6:34: undefined: A
+/tmp/codeqwen-logic_ops-rs-go.go:6:37: undefined: B
+/tmp/codeqwen-logic_ops-rs-go.go:6:40: undefined: A
+/tmp/codeqwen-logic_ops-rs-go.go:6:45: undefined: B
+/tmp/codeqwen-logic_ops-rs-go.go:7:33: undefined: A
+/tmp/codeqwen-logic_ops-rs-go.go:7:36: undefined: B
+/tmp/codeqwen-logic_ops-rs-go.go:7:39: undefined: A
+/tmp/codeqwen-logic_ops-rs-go.go:7:44: undefined: B
+/tmp/codeqwen-logic_ops-rs-go.go:8:34: undefined: A
+/tmp/codeqwen-logic_ops-rs-go.go:8:37: undefined: B
+/tmp/codeqwen-logic_ops-rs-go.go:8:37: too many errors

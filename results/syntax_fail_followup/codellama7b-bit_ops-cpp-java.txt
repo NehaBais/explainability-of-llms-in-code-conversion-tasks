@@ -1,0 +1,11 @@
+/tmp/bitwise.java:22: error: bad operand types for binary operator '<<'
+    System.out.println("a rol b: " + a << b);
+                                       ^
+  first type:  String
+  second type: int
+/tmp/bitwise.java:23: error: bad operand types for binary operator '>>'
+    System.out.println("a ror b: " + a >> b);
+                                       ^
+  first type:  String
+  second type: int
+2 errors

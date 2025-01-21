@@ -1,23 +1,25 @@
-#include <iostream>
-#include <string>
+def display_substring():
+    s = "0123456789"
 
-int main()
-{
-  std::string s = "0123456789";
+    n = 3
+    m = 4
+    c = "2"
+    sub = "456"
 
-  int const n = 3;
-  int const m = 4;
-  char const c = '2';
-  std::string const sub = "456";
+    print(s[n : n + m])
+    print(s[n:])
+    print(s[:-1])
+    start_index = s.find(c)
+    if start_index != -1:
+        print(s[start_index : start_index + m])
+    else:
+        print("Character not found")
 
-  std::cout << s.substr(n, m)<< "
-";
-  std::cout << s.substr(n) << "
-";
-  std::cout << s.substr(0, s.size()-1) << "
-";
-  std::cout << s.substr(s.find(c), m) << "
-";
-  std::cout << s.substr(s.find(sub), m) << "
-";
-}
+    sub_index = s.find(sub)
+    if sub_index != -1:
+        print(s[sub_index : sub_index + m])
+    else:
+        print("Substring not found")
+
+
+display_substring()

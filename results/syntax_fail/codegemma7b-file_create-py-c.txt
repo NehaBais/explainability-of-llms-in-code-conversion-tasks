@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_create-py-c.c:7:32: error: expected ')'
+    7 |   FILE *file = fopen(directory "/output.txt", "w");
+      |                                ^
+/tmp/codegemma7b-file_create-py-c.c:7:21: note: to match this '('
+    7 |   FILE *file = fopen(directory "/output.txt", "w");
+      |                     ^
+/tmp/codegemma7b-file_create-py-c.c:13:19: error: expected ')'
+   13 |   mkdir(directory "/docs", 0777);
+      |                   ^
+/tmp/codegemma7b-file_create-py-c.c:13:8: note: to match this '('
+   13 |   mkdir(directory "/docs", 0777);
+      |        ^
+2 errors generated.

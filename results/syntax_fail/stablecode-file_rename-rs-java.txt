@@ -1,0 +1,25 @@
+/tmp/FileRenamer.java:22: error: ';' expected
+            throw new Exception("Unable to rename files in the current directory."));
+                                                                                   ^
+/tmp/FileRenamer.java:28: error: ';' expected
+        File outputFile = new File("/output.txt"));
+                                                 ^
+/tmp/FileRenamer.java:30: error: illegal start of expression
+        if (inputFile.exists() && !outputFile.exists())) {
+                                                       ^
+/tmp/FileRenamer.java:31: error: ';' expected
+            Files.move(Paths.get(inputFile.getAbsolutePath())), Paths.get(outputFile.getAbsolutePath()))));
+                                                              ^
+/tmp/FileRenamer.java:31: error: ';' expected
+            Files.move(Paths.get(inputFile.getAbsolutePath())), Paths.get(outputFile.getAbsolutePath()))));
+                                                                                                       ^
+/tmp/FileRenamer.java:32: error: ';' expected
+            System.out.println("Renamed '/input.txt' to '/output.txt' in the filesystem root."));
+                                                                                               ^
+/tmp/FileRenamer.java:34: error: ';' expected
+            throw new Exception("Unable to rename files in the filesystem root."));
+                                                                                 ^
+/tmp/FileRenamer.java:33: error: 'else' without 'if'
+        } else {
+          ^
+8 errors

@@ -1,0 +1,75 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/granitecode3b-str_match-cpp-rs.rs:5:1
+  |
+5 | println!("{}", s1.starts_with(s3));
+  | ---------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/granitecode3b-str_match-cpp-rs.rs:7:1
+  |
+7 | println!("{}", s1.ends_with(s3));
+  | -------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/granitecode3b-str_match-cpp-rs.rs:9:1
+  |
+9 | println!("{}", s1.contains(s2));
+  | ------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+   |
+  ::: /tmp/granitecode3b-str_match-cpp-rs.rs:10:1
+   |
+10 | println!("{}", s1.find(s2).unwrap());
+   | ------------------------------------ caused by the macro expansion here
+   |
+   = note: the usage of `println!` is likely invalid in item context
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_match-cpp-rs.rs:1:9
+  |
+1 | const s1 = "abcd";
+  |         ^
+  |
+help: provide a type for the item
+  |
+1 | const s1: <type> = "abcd";
+  |         ++++++++
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_match-cpp-rs.rs:2:9
+  |
+2 | const s2 = "abab";
+  |         ^
+  |
+help: provide a type for the item
+  |
+2 | const s2: <type> = "abab";
+  |         ++++++++
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_match-cpp-rs.rs:3:9
+  |
+3 | const s3 = "ab";
+  |         ^
+  |
+help: provide a type for the item
+  |
+3 | const s3: <type> = "ab";
+  |         ++++++++
+
+error: aborting due to 7 previous errors
+

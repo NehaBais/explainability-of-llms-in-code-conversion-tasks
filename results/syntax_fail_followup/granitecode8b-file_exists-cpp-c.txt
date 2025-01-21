@@ -1,0 +1,35 @@
+/tmp/granitecode8b-file_exists-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-cpp-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("%s", path);
+      |   ^
+/tmp/granitecode8b-file_exists-cpp-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_exists-cpp-c.c:6:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (access(path, F_OK) != -1) {
+      |       ^
+/tmp/granitecode8b-file_exists-cpp-c.c:6:20: error: use of undeclared identifier 'F_OK'
+    6 |   if (access(path, F_OK) != -1) {
+      |                    ^
+/tmp/granitecode8b-file_exists-cpp-c.c:7:17: error: variable has incomplete type 'struct stat'
+    7 |     struct stat sb;
+      |                 ^
+/tmp/granitecode8b-file_exists-cpp-c.c:7:12: note: forward declaration of 'struct stat'
+    7 |     struct stat sb;
+      |            ^
+/tmp/granitecode8b-file_exists-cpp-c.c:8:5: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     stat(path, &sb);
+      |     ^
+/tmp/granitecode8b-file_exists-cpp-c.c:9:9: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     if (S_ISDIR(sb.st_mode)) {
+      |         ^
+/tmp/granitecode8b-file_exists-cpp-c.c:11:16: error: call to undeclared function 'S_ISREG'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     } else if (S_ISREG(sb.st_mode)) {
+      |                ^
+10 errors generated.

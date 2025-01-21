@@ -1,0 +1,16 @@
+error[E0463]: can't find crate for `unicode_segmentation`
+ --> /tmp/codegeex4-str_substring-java-rs.rs:1:1
+  |
+1 | extern crate unicode_segmentation;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codegeex4-str_substring-java-rs.rs:51:2
+   |
+51 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-str_substring-java-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0463, E0601.
+For more information about an error, try `rustc --explain E0463`.

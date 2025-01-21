@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_exists-js-cpp.cpp:10:3: error: unknown type name 'IFileSystemObject'
+   10 |   IFileSystemObject *fso = CreateObject(fileSystemName);
+      |   ^
+/tmp/qwen2.5coder2b-file_exists-js-cpp.cpp:10:28: error: use of undeclared identifier 'CreateObject'
+   10 |   IFileSystemObject *fso = CreateObject(fileSystemName);
+      |                            ^
+2 errors generated.

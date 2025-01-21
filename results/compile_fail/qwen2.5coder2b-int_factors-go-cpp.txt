@@ -1,0 +1,12 @@
+/tmp/qwen2.5coder2b-int_factors-go-cpp.cpp:28:26: error: non-aggregate type 'std::vector<long long>' cannot be initialized with an initializer list
+   28 |   std::vector<long long> test_numbers = {
+      |                          ^              ~
+   29 |       -1, 0, 1, 2, 3, 53, 45, 64, 600851475143, 999999999999999989};
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-int_factors-go-cpp.cpp:31:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   31 |   for (long long num : test_numbers) {
+      |                      ^
+/tmp/qwen2.5coder2b-int_factors-go-cpp.cpp:34:21: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   34 |     for (int factor : factors)
+      |                     ^
+2 warnings and 1 error generated.

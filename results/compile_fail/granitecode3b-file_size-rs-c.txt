@@ -1,0 +1,33 @@
+/tmp/granitecode3b-file_size-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-rs-c.c:4:21: error: use of undeclared identifier 'argv'
+    4 |   char *file_name = argv[1];
+      |                     ^
+/tmp/granitecode3b-file_size-rs-c.c:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-file_size-rs-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-file_size-rs-c.c:6:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (stat(file_name, &st) == -1) {
+      |       ^
+/tmp/granitecode3b-file_size-rs-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("stat");
+      |     ^
+/tmp/granitecode3b-file_size-rs-c.c:8:5: error: call to undeclared library function 'exit' with type 'void (int) __attribute__((noreturn))'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     exit(EXIT_FAILURE);
+      |     ^
+/tmp/granitecode3b-file_size-rs-c.c:8:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/tmp/granitecode3b-file_size-rs-c.c:8:10: error: use of undeclared identifier 'EXIT_FAILURE'
+    8 |     exit(EXIT_FAILURE);
+      |          ^
+/tmp/granitecode3b-file_size-rs-c.c:10:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   printf("Size of file.txt is %ld bytes", (long)st.st_size);
+      |   ^
+/tmp/granitecode3b-file_size-rs-c.c:10:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+9 errors generated.

@@ -1,0 +1,12 @@
+/tmp/yicoder9b-dir_make-go-c.c:26:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   26 |     perror("Failed to create directories.");
+      |     ^
+/tmp/yicoder9b-dir_make-go-c.c:26:5: note: did you mean '__error'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h:80:14: note: '__error' declared here
+   80 | extern int * __error(void);
+      |              ^
+/tmp/yicoder9b-dir_make-go-c.c:29:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |     printf("Directories created successfully\n");
+      |     ^
+/tmp/yicoder9b-dir_make-go-c.c:29:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 errors generated.

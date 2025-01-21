@@ -1,0 +1,27 @@
+/tmp/granitecode8b-int_arith-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-rs-c.c:5:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |     fprintf(stderr, "Usage: %s num1 num2n", argv[0]);
+      |     ^
+/tmp/granitecode8b-int_arith-rs-c.c:5:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-int_arith-rs-c.c:5:13: error: use of undeclared identifier 'stderr'
+    5 |     fprintf(stderr, "Usage: %s num1 num2n", argv[0]);
+      |             ^
+/tmp/granitecode8b-int_arith-rs-c.c:6:12: error: use of undeclared identifier 'EXIT_FAILURE'
+    6 |     return EXIT_FAILURE;
+      |            ^
+/tmp/granitecode8b-int_arith-rs-c.c:9:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   int a = atoi(argv[1]);
+      |           ^
+/tmp/granitecode8b-int_arith-rs-c.c:12:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("sum:              %dn", a + b);
+      |   ^
+/tmp/granitecode8b-int_arith-rs-c.c:12:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_arith-rs-c.c:18:10: error: use of undeclared identifier 'EXIT_SUCCESS'
+   18 |   return EXIT_SUCCESS;
+      |          ^
+1 warning and 8 errors generated.

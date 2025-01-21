@@ -1,0 +1,6 @@
+/tmp/Main.java:11: error: cannot find symbol
+    printLogic(A, B);
+               ^
+  symbol:   variable A
+  location: class Main
+1 error

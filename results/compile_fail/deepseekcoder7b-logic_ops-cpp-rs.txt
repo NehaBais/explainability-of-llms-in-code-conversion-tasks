@@ -1,0 +1,27 @@
+error: 2 positional arguments in format string, but there is 1 argument
+ --> /tmp/deepseekcoder7b-logic_ops-cpp-rs.rs:4:15
+  |
+4 |     println!("{}{}", a && b);
+  |               ^^^^   ------
+
+error: 2 positional arguments in format string, but there is 1 argument
+ --> /tmp/deepseekcoder7b-logic_ops-cpp-rs.rs:8:15
+  |
+8 |     println!("{}{}", a || b);
+  |               ^^^^   ------
+
+error: 2 positional arguments in format string, but there is 1 argument
+  --> /tmp/deepseekcoder7b-logic_ops-cpp-rs.rs:12:15
+   |
+12 |     println!("{}{}", !a);
+   |               ^^^^   --
+
+error[E0601]: `main` function not found in crate `deepseekcoder7b_logic_ops_cpp_rs`
+  --> /tmp/deepseekcoder7b-logic_ops-cpp-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/deepseekcoder7b-logic_ops-cpp-rs.rs`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

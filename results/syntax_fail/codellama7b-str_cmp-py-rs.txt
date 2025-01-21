@@ -1,0 +1,24 @@
+error: expected identifier, found keyword `type`
+ --> /tmp/codellama7b-str_cmp-py-rs.rs:4:60
+  |
+4 |     println!("{} is of type {} and {} is of type {}", a, a.type(), b, b.type());
+  |                                                            ^^^^ expected identifier, found keyword
+  |
+help: escape `type` to use it as an identifier
+  |
+4 |     println!("{} is of type {} and {} is of type {}", a, a.r#type(), b, b.type());
+  |                                                            ++
+
+error: expected identifier, found keyword `type`
+ --> /tmp/codellama7b-str_cmp-py-rs.rs:4:73
+  |
+4 |     println!("{} is of type {} and {} is of type {}", a, a.type(), b, b.type());
+  |                                                                         ^^^^ expected identifier, found keyword
+  |
+help: escape `type` to use it as an identifier
+  |
+4 |     println!("{} is of type {} and {} is of type {}", a, a.type(), b, b.r#type());
+  |                                                                         ++
+
+error: aborting due to 2 previous errors
+

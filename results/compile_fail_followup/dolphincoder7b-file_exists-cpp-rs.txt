@@ -1,0 +1,24 @@
+error[E0423]: expected value, found struct `Error`
+  --> /tmp/dolphincoder7b-file_exists-cpp-rs.rs:17:72
+   |
+17 |                 Err(_) => eprintln!("Failed to get file metadata: {}", Error),
+   |                                                                        ^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/error.rs:64:1
+   |
+   = note: `Error` defined here
+   |
+help: consider importing this unit struct instead
+   |
+1  + use std::fmt::Error;
+   |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/dolphincoder7b-file_exists-cpp-rs.rs:23:2
+   |
+23 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-file_exists-cpp-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0423, E0601.
+For more information about an error, try `rustc --explain E0423`.

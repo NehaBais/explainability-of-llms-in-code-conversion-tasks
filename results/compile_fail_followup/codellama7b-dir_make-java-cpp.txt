@@ -1,0 +1,4 @@
+/tmp/codellama7b-dir_make-java-cpp.cpp:8:14: error: no member named 'filesystem' in namespace 'std'
+    8 |     if (std::filesystem::create_directory(path)) {
+      |         ~~~~~^
+1 error generated.

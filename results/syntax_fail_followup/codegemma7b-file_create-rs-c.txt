@@ -1,0 +1,4 @@
+/tmp/codegemma7b-file_create-rs-c.c:12:3: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   create(".");
+      |   ^
+1 error generated.

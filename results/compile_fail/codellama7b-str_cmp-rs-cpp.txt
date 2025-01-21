@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_cmp-rs-cpp.cpp:68:17: error: no member named 'to_upper' in 'std::string'
+   68 |   string a2 = a.to_upper();
+      |               ~ ^
+/tmp/codellama7b-str_cmp-rs-cpp.cpp:69:17: error: no member named 'to_upper' in 'std::string'
+   69 |   string b2 = b.to_upper();
+      |               ~ ^
+2 errors generated.

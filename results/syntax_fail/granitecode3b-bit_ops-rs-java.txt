@@ -1,0 +1,4 @@
+/tmp/BitwiseOperations.java:11: error: bad operand type int for unary operator '!'
+    System.out.println("!a     = " + Integer.toBinaryString(!a));
+                                                            ^
+1 error

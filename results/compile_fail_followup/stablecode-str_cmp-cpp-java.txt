@@ -1,0 +1,10 @@
+/tmp/Main.java:12: error: not a statement
++ '.');
+^
+/tmp/Main.java:12: error: ';' expected
++ '.');
+     ^
+/tmp/Main.java:25: error: ';' expected
+    demoCompare(a, b, "lexically"));
+                                  ^
+3 errors

@@ -1,0 +1,6 @@
+#if defined(__i386__) || defined(_M_IX86) || defined(__amd64__) ||             \
+    defined(_M_X64)
+// use __m64 here...
+#else
+// fallback for non-x86 platforms...
+#endif

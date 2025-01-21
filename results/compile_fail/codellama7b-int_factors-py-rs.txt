@@ -1,0 +1,10 @@
+error: expected item, found keyword `for`
+  --> /tmp/codellama7b-int_factors-py-rs.rs:25:1
+   |
+25 | for i in vec![45, 53, 64] {
+   | ^^^ expected item
+   |
+   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

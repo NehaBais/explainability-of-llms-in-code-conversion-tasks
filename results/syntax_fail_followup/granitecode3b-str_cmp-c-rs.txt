@@ -1,0 +1,29 @@
+error[E0412]: cannot find type `Ordering` in this scope
+ --> /tmp/granitecode3b-str_cmp-c-rs.rs:2:36
+  |
+2 |     fn cmp(&self, other: &Self) -> Ordering;
+  |                                    ^^^^^^^^ not found in this scope
+  |
+help: consider importing one of these enums
+  |
+1 + use std::cmp::Ordering;
+  |
+1 + use std::sync::atomic::Ordering;
+  |
+
+error[E0412]: cannot find type `Ordering` in this scope
+ --> /tmp/granitecode3b-str_cmp-c-rs.rs:7:41
+  |
+7 |     fn cmp(&self, _other: &MyStruct) -> Ordering {
+  |                                         ^^^^^^^^ not found in this scope
+  |
+help: consider importing one of these enums
+  |
+1 + use std::cmp::Ordering;
+  |
+1 + use std::sync::atomic::Ordering;
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0412`.

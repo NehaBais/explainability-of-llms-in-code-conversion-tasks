@@ -1,0 +1,15 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> /tmp/granitecode8b-str_prepend-c-rs.rs:12:9
+   |
+12 |         libc::free(c_string_mut as *mut libc::c_void);
+   |         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> /tmp/granitecode8b-str_prepend-c-rs.rs:12:41
+   |
+12 |         libc::free(c_string_mut as *mut libc::c_void);
+   |                                         ^^^^ use of undeclared crate or module `libc`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

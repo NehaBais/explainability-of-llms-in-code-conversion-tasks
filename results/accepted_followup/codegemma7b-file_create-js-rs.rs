@@ -1,0 +1,1 @@
+fs::File::create("/output.txt").unwrap();

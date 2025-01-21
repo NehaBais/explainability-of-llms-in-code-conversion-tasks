@@ -1,0 +1,28 @@
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:9:3: error: use of undeclared identifier 'checkFile'
+    9 |   checkFile("input.txt");
+      |   ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:12:3: error: use of undeclared identifier 'checkFile'
+   12 |   checkFile("/input.txt");
+      |   ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:16:3: error: use of undeclared identifier 'checkDirectory'
+   16 |   checkDirectory("docs");
+      |   ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:19:3: error: use of undeclared identifier 'checkDirectory'
+   19 |   checkDirectory("/docs");
+      |   ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:25:7: error: use of undeclared identifier 'fs'
+   25 |   if (fs::exists(path)) {
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:26:9: error: use of undeclared identifier 'fs'
+   26 |     if (fs::is_regular_file(path)) {
+      |         ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:37:7: error: use of undeclared identifier 'fs'
+   37 |   if (fs::exists(path)) {
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-py-cpp.cpp:38:9: error: use of undeclared identifier 'fs'
+   38 |     if (fs::is_directory(path)) {
+      |         ^
+9 errors generated.

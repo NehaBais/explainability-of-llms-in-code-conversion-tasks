@@ -1,0 +1,12 @@
+/tmp/granitecode8b-int_arith-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-cpp-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter two integers: ");
+      |   ^
+/tmp/granitecode8b-int_arith-cpp-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_arith-cpp-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%d %d", &a, &b);
+      |   ^
+/tmp/granitecode8b-int_arith-cpp-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+3 errors generated.

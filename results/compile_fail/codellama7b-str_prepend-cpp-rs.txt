@@ -1,0 +1,44 @@
+error: expected identifier, found `"prepended to"`
+ --> /tmp/codellama7b-str_prepend-cpp-rs.rs:5:43
+  |
+5 |     let mut my_strings = vector::<string>{"prepended to", "my string"};
+  |                          ---------------- ^^^^^^^^^^^^^^ expected identifier
+  |                          |
+  |                          while parsing this struct
+
+error: expected identifier, found `"my string"`
+ --> /tmp/codellama7b-str_prepend-cpp-rs.rs:5:59
+  |
+5 |     let mut my_strings = vector::<string>{"prepended to", "my string"};
+  |                          ----------------                 ^^^^^^^^^^^ expected identifier
+  |                          |
+  |                          while parsing this struct
+
+error[E0432]: unresolved import `std::vector`
+ --> /tmp/codellama7b-str_prepend-cpp-rs.rs:1:5
+  |
+1 | use std::vector;
+  |     ^^^^^^^^^^^ no `vector` in the root
+
+error[E0573]: expected type, found module `string`
+ --> /tmp/codellama7b-str_prepend-cpp-rs.rs:5:35
+  |
+5 |     let mut my_strings = vector::<string>{"prepended to", "my string"};
+  |                                   ^^^^^^ help: a struct with a similar name exists (notice the capitalization): `String`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:362:1
+  |
+  = note: similarly named struct `String` defined here
+
+error[E0308]: mismatched types
+ --> /tmp/codellama7b-str_prepend-cpp-rs.rs:8:12
+  |
+4 | fn main() {
+  |          - expected `()` because of default return type
+...
+8 |     return 0;
+  |            ^ expected `()`, found integer
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0308, E0432, E0573.
+For more information about an error, try `rustc --explain E0308`.

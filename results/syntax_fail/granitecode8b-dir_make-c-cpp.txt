@@ -1,0 +1,65 @@
+/tmp/granitecode8b-dir_make-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:6:17: warning: using directive refers to implicitly-defined namespace 'std'
+    6 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:7:18: error: unknown type name 'string'
+    7 | int mkdirp(const string &path) {
+      |                  ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:8:23: error: expected '<' after 'const_cast'
+    8 |   char *p = const_cast(path.c_str());
+      |                       ^
+      |                       <
+/tmp/granitecode8b-dir_make-c-cpp.cpp:9:15: error: use of undeclared identifier 'dirname'
+    9 |   char *dir = dirname(p);
+      |               ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:11:18: error: use of undeclared identifier 'S_IRWXU'
+   11 |   if (mkdir(dir, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                  ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:11:28: error: use of undeclared identifier 'S_IRWXG'
+   11 |   if (mkdir(dir, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                            ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:11:38: error: use of undeclared identifier 'S_IROTH'
+   11 |   if (mkdir(dir, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                                      ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:11:48: error: use of undeclared identifier 'S_IXOTH'
+   11 |   if (mkdir(dir, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                                                ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:12:7: error: use of undeclared identifier 'errno'
+   12 |       errno != EEXIST) {
+      |       ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:12:16: error: use of undeclared identifier 'EEXIST'
+   12 |       errno != EEXIST) {
+      |                ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:19:7: error: no matching function for call to 'mkdirp'
+   19 |   if (mkdirp("./path/to/dir") != 0) {
+      |       ^~~~~~
+/tmp/granitecode8b-dir_make-c-cpp.cpp:7:5: note: candidate function not viable: no known conversion from 'const char[14]' to 'const int' for 1st argument
+    7 | int mkdirp(const string &path) {
+      |     ^      ~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-dir_make-c-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << "Failed to create directory" << endl;
+      |     ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:20:45: error: use of undeclared identifier 'endl'
+   20 |     cout << "Failed to create directory" << endl;
+      |                                             ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:22:5: error: use of undeclared identifier 'cout'
+   22 |     cout << "Directory created successfully" << endl;
+      |     ^
+/tmp/granitecode8b-dir_make-c-cpp.cpp:22:49: error: use of undeclared identifier 'endl'
+   22 |     cout << "Directory created successfully" << endl;
+      |                                                 ^
+1 warning and 19 errors generated.

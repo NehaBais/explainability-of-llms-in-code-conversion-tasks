@@ -1,0 +1,4 @@
+/tmp/codellama7b-str_prepend-py-c.c:6:19: error: invalid operands to binary expression ('char[2]' and 'char[9]')
+    6 |   char *str = "0" + s; // by concatenation
+      |               ~~~ ^ ~
+1 error generated.

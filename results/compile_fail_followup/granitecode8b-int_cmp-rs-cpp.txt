@@ -1,0 +1,43 @@
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string buffer;
+      |   ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::getline(std::cin, buffer);
+      |   ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:4:16: error: use of undeclared identifier 'std'
+    4 |   std::getline(std::cin, buffer);
+      |                ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:4:24: error: expected ')'
+    4 |   std::getline(std::cin, buffer);
+      |                        ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:4:15: note: to match this '('
+    4 |   std::getline(std::cin, buffer);
+      |               ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::istringstream stream(buffer);
+      |   ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:7:3: error: use of undeclared identifier 'stream'
+    7 |   stream >> a >> b;
+      |   ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cout << a << " is less than " << b << std::endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:9:48: error: use of undeclared identifier 'std'
+    9 |     std::cout << a << " is less than " << b << std::endl;
+      |                                                ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:11:5: error: use of undeclared identifier 'std'
+   11 |     std::cout << a << " equals " << b << std::endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:11:42: error: use of undeclared identifier 'std'
+   11 |     std::cout << a << " equals " << b << std::endl;
+      |                                          ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << a << " is greater than " << b << std::endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-rs-cpp.cpp:13:51: error: use of undeclared identifier 'std'
+   13 |     std::cout << a << " is greater than " << b << std::endl;
+      |                                                   ^
+13 errors generated.

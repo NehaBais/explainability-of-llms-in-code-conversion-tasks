@@ -1,0 +1,121 @@
+/tmp/stablecode-int_factors-go-cpp.cpp:12:19: error: non-aggregate type 'vector<int64_t>' (aka 'vector<long long>') cannot be initialized with an initializer list
+   12 |   vector<int64_t> fs = {1};
+      |                   ^    ~~~
+/tmp/stablecode-int_factors-go-cpp.cpp:14:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   14 |   auto apf = [&](int64_t p, int e) {
+      |   ^
+/tmp/stablecode-int_factors-go-cpp.cpp:14:14: error: expected expression
+   14 |   auto apf = [&](int64_t p, int e) {
+      |              ^
+/tmp/stablecode-int_factors-go-cpp.cpp:37:49: error: extraneous ')' before ';'
+   37 |             fs.push_back(fs.back() * int64_t(d)));
+      |                                                 ^
+/tmp/stablecode-int_factors-go-cpp.cpp:45:8: error: invalid operands to binary expression ('ostream' (aka 'basic_ostream<char>') and 'vector<int64_t>' (aka 'vector<long long>'))
+   45 |   cout << fs << endl;
+      |   ~~~~ ^  ~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:698:55: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'char' for 2nd argument
+  698 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn) {
+      |                                                       ^                                                ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:725:53: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'char' for 2nd argument
+  725 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, char __c) {
+      |                                                     ^                                              ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:730:53: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'signed char' for 2nd argument
+  730 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, signed char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:735:53: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'unsigned char' for 2nd argument
+  735 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:747:1: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const char *' for 2nd argument
+  747 | operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:786:53: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const char *' for 2nd argument
+  786 | _LIBCPP_HIDE_FROM_ABI basic_ostream<char, _Traits>& operator<<(basic_ostream<char, _Traits>& __os, const char* __str) {
+      |                                                     ^                                              ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:792:1: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const signed char *' for 2nd argument
+  792 | operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:799:1: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const unsigned char *' for 2nd argument
+  799 | operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str) {
+      | ^                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:937:1: note: candidate function template not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const error_code' for 2nd argument
+  937 | operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec) {
+      | ^                                                ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:693:55: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'vector<int64_t>' (aka 'vector<long long>'))
+  693 | _LIBCPP_HIDE_FROM_ABI basic_ostream<_CharT, _Traits>& operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c) {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution' against 'vector'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:741:1: note: candidate template ignored: could not match 'const _CharT *' against 'vector<int64_t>' (aka 'vector<long long>')
+  741 | operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:925:1: note: candidate template ignored: could not match 'basic_string' against 'vector'
+  925 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:931:1: note: candidate template ignored: could not match 'basic_string_view' against 'vector'
+  931 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __sv) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:943:1: note: candidate template ignored: could not match 'shared_ptr' against 'vector'
+  943 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:963:1: note: candidate template ignored: could not match 'bitset' against 'vector'
+  963 | operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:918:33: note: candidate template ignored: requirement 'integral_constant<bool, false>::value' was not satisfied [with _Stream = ostream &, _Tp = vector<int64_t>]
+  918 | _LIBCPP_HIDE_FROM_ABI _Stream&& operator<<(_Stream&& __os, const _Tp& __x) {
+      |                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:957:1: note: candidate template ignored: could not match 'unique_ptr' against 'vector'
+  957 | operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:241:56: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'ostream &(*)(ostream &)' for 1st argument
+  241 |   inline _LIBCPP_HIDE_FROM_ABI_AFTER_V1 basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&)) {
+      |                                                        ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:246:3: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+  246 |   operator<<(basic_ios<char_type, traits_type>& (*__pf)(basic_ios<char_type, traits_type>&)) {
+      |   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:251:56: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'ios_base &(*)(ios_base &)' for 1st argument
+  251 |   inline _LIBCPP_HIDE_FROM_ABI_AFTER_V1 basic_ostream& operator<<(ios_base& (*__pf)(ios_base&)) {
+      |                                                        ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:256:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'bool' for 1st argument
+  256 |   basic_ostream& operator<<(bool __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:257:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'short' for 1st argument
+  257 |   basic_ostream& operator<<(short __n);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:258:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'unsigned short' for 1st argument
+  258 |   basic_ostream& operator<<(unsigned short __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:259:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'int' for 1st argument
+  259 |   basic_ostream& operator<<(int __n);
+      |                  ^          ~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:260:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'unsigned int' for 1st argument
+  260 |   basic_ostream& operator<<(unsigned int __n);
+      |                  ^          ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:261:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'long' for 1st argument
+  261 |   basic_ostream& operator<<(long __n);
+      |                  ^          ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:262:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'unsigned long' for 1st argument
+  262 |   basic_ostream& operator<<(unsigned long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:263:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'long long' for 1st argument
+  263 |   basic_ostream& operator<<(long long __n);
+      |                  ^          ~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:264:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'unsigned long long' for 1st argument
+  264 |   basic_ostream& operator<<(unsigned long long __n);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:265:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'float' for 1st argument
+  265 |   basic_ostream& operator<<(float __f);
+      |                  ^          ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:266:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'double' for 1st argument
+  266 |   basic_ostream& operator<<(double __f);
+      |                  ^          ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:267:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'long double' for 1st argument
+  267 |   basic_ostream& operator<<(long double __f);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:268:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'const void *' for 1st argument; take the address of the argument with &
+  268 |   basic_ostream& operator<<(const void* __p);
+      |                  ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:276:18: note: candidate function not viable: no known conversion from 'vector<int64_t>' (aka 'vector<long long>') to 'basic_streambuf<char_type, traits_type> *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+  276 |   basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+      |                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 4 errors generated.

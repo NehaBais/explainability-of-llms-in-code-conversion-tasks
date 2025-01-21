@@ -1,0 +1,29 @@
+error[E0425]: cannot find function `create_dir_all_with_error` in module `fs`
+ --> /tmp/qwen2.5coder2b-dir_make-cpp-rs.rs:7:19
+  |
+7 |         match fs::create_dir_all_with_error(path_to_create) {
+  |                   ^^^^^^^^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+warning: unused import: `io`
+ --> /tmp/qwen2.5coder2b-dir_make-cpp-rs.rs:1:15
+  |
+1 | use std::{fs, io};
+  |               ^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-dir_make-cpp-rs.rs:4:12
+  |
+4 |     if let Some(args) = std::env::args().skip(1).collect::<Vec<String>>() {
+  |            ^^^^^^^^^^   ------------------------------------------------- this expression has type `Vec<String>`
+  |            |
+  |            expected `Vec<String>`, found `Option<_>`
+  |
+  = note: expected struct `Vec<String>`
+               found enum `Option<_>`
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.

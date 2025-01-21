@@ -1,0 +1,13 @@
+/tmp/codegeex4-file_create-java-c.c:15:27: error: use of undeclared identifier 'errno'
+   15 |   if (dir_created != 0 && errno != EEXIST) {
+      |                           ^
+/tmp/codegeex4-file_create-java-c.c:15:36: error: use of undeclared identifier 'EEXIST'
+   15 |   if (dir_created != 0 && errno != EEXIST) {
+      |                                    ^
+/tmp/codegeex4-file_create-java-c.c:30:27: error: use of undeclared identifier 'errno'
+   30 |   if (dir_created != 0 && errno != EEXIST) {
+      |                           ^
+/tmp/codegeex4-file_create-java-c.c:30:36: error: use of undeclared identifier 'EEXIST'
+   30 |   if (dir_created != 0 && errno != EEXIST) {
+      |                                    ^
+4 errors generated.

@@ -1,0 +1,4 @@
+/tmp/stablecode-str_prepend-java-c.c:8:26: error: extraneous ')' before ';'
+    8 |     strcat(string, "abc"));
+      |                          ^
+1 error generated.

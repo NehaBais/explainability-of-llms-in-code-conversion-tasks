@@ -1,0 +1,34 @@
+/tmp/Main.java:5: error: ';' expected
+    Scanner scanner = new Scanner(System.in));
+                                            ^
+/tmp/Main.java:12: error: unclosed character literal
+      System.out.println('a is less than b');
+                         ^
+/tmp/Main.java:12: error: ';' expected
+      System.out.println('a is less than b');
+                                   ^
+/tmp/Main.java:12: error: unclosed character literal
+      System.out.println('a is less than b');
+                                          ^
+/tmp/Main.java:14: error: unclosed character literal
+      System.out.println('a is greater than b');
+                         ^
+/tmp/Main.java:14: error: ';' expected
+      System.out.println('a is greater than b');
+                                      ^
+/tmp/Main.java:14: error: unclosed character literal
+      System.out.println('a is greater than b');
+                                             ^
+/tmp/Main.java:15: error: illegal start of expression
+    } else if (a == b)) {
+                      ^
+/tmp/Main.java:16: error: unclosed character literal
+      System.out.println('a is equal to b');
+                         ^
+/tmp/Main.java:16: error: ';' expected
+      System.out.println('a is equal to b');
+                                    ^
+/tmp/Main.java:16: error: unclosed character literal
+      System.out.println('a is equal to b');
+                                         ^
+11 errors

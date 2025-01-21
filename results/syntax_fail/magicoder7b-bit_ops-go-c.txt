@@ -1,0 +1,116 @@
+/tmp/magicoder7b-bit_ops-go-c.c:5:20: error: expected ')'
+    5 |   printf("a:   %0" FMT_SIZE "X\n", (unsigned int)a);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:5:9: note: to match this '('
+    5 |   printf("a:   %0" FMT_SIZE "X\n", (unsigned int)a);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:6:20: error: expected ')'
+    6 |   printf("b:   %0" FMT_SIZE "X\n", (unsigned int)b);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:6:9: note: to match this '('
+    6 |   printf("b:   %0" FMT_SIZE "X\n", (unsigned int)b);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:9:20: error: expected ')'
+    9 |   printf("and: %0" FMT_SIZE "X\n", a & b);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:9:9: note: to match this '('
+    9 |   printf("and: %0" FMT_SIZE "X\n", a & b);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:10:20: error: expected ')'
+   10 |   printf("or:  %0" FMT_SIZE "X\n", a | b);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:10:9: note: to match this '('
+   10 |   printf("or:  %0" FMT_SIZE "X\n", a | b);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:11:20: error: expected ')'
+   11 |   printf("xor: %0" FMT_SIZE "X\n", a ^ b);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:11:9: note: to match this '('
+   11 |   printf("xor: %0" FMT_SIZE "X\n", a ^ b);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:12:20: error: expected ')'
+   12 |   printf("not: %0" FMT_SIZE "X\n", ~a & 0xFFFF);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:12:9: note: to match this '('
+   12 |   printf("not: %0" FMT_SIZE "X\n", ~a & 0xFFFF);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:23:20: error: expected ')'
+   23 |   printf("shl: %0" FMT_SIZE "X\n", ua << ub);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:23:9: note: to match this '('
+   23 |   printf("shl: %0" FMT_SIZE "X\n", ua << ub);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:24:20: error: expected ')'
+   24 |   printf("shr: %0" FMT_SIZE "X\n", ua >> ub);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:24:9: note: to match this '('
+   24 |   printf("shr: %0" FMT_SIZE "X\n", ua >> ub);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:27:20: error: expected ')'
+   27 |   printf("las: %0" FMT_SIZE "X\n", a << ub);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:27:9: note: to match this '('
+   27 |   printf("las: %0" FMT_SIZE "X\n", a << ub);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:28:20: error: expected ')'
+   28 |   printf("ras: %0" FMT_SIZE "X\n", a >> ub);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:28:9: note: to match this '('
+   28 |   printf("ras: %0" FMT_SIZE "X\n", a >> ub);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:32:23: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   32 |   int ror = ((a << 32 - ub) | (a >> (ub + 16)));
+      |                 ~~ ~~~^~~~
+/tmp/magicoder7b-bit_ops-go-c.c:32:23: note: place parentheses around the '-' expression to silence this warning
+   32 |   int ror = ((a << 32 - ub) | (a >> (ub + 16)));
+      |                       ^   
+      |                    (      )
+/tmp/magicoder7b-bit_ops-go-c.c:33:20: error: expected ')'
+   33 |   printf("rol: %0" FMT_SIZE "X\n", rol);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:33:9: note: to match this '('
+   33 |   printf("rol: %0" FMT_SIZE "X\n", rol);
+      |         ^
+/tmp/magicoder7b-bit_ops-go-c.c:34:20: error: expected ')'
+   34 |   printf("ror: %0" FMT_SIZE "X\n", ror);
+      |                    ^
+/tmp/magicoder7b-bit_ops-go-c.c:2:18: note: expanded from macro 'FMT_SIZE'
+    2 | #define FMT_SIZE 32
+      |                  ^
+/tmp/magicoder7b-bit_ops-go-c.c:34:9: note: to match this '('
+   34 |   printf("ror: %0" FMT_SIZE "X\n", ror);
+      |         ^
+1 warning and 12 errors generated.

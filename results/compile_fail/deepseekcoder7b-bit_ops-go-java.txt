@@ -1,0 +1,49 @@
+/tmp/Main.java:18: error: illegal character: '\uff5c'
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+               ^
+/tmp/Main.java:18: error: not a statement
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+              ^
+/tmp/Main.java:18: error: illegal character: '\u2581'
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                     ^
+/tmp/Main.java:18: error: not a statement
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                ^
+/tmp/Main.java:18: error: illegal character: '\u2581'
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                        ^
+/tmp/Main.java:18: error: not a statement
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                      ^
+/tmp/Main.java:18: error: illegal character: '\uff5c'
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                                 ^
+/tmp/Main.java:18: error: not a statement
+    System.out<｜begin▁of▁sentence｜>printf("shr: %16s\n", Integer.toBinaryString(ua >> ub).replace(' ', '0'));
+                         ^
+/tmp/Main.java:21: error: illegal character: '\uff5c'
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                             ^
+/tmp/Main.java:21: error: illegal character: '\u2581'
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                   ^
+/tmp/Main.java:21: error: not a statement
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                              ^
+/tmp/Main.java:21: error: illegal character: '\u2581'
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                      ^
+/tmp/Main.java:21: error: not a statement
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                    ^
+/tmp/Main.java:21: error: illegal character: '\uff5c'
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                               ^
+/tmp/Main.java:21: error: not a statement
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                       ^
+/tmp/Main.java:21: error: ';' expected
+    System.out.printf("las: %16s\n", Integer<｜begin▁of▁sentence｜>Integer.toBinaryString(a << ub).replace(' ', '0'));
+                                                                                                                  ^
+16 errors

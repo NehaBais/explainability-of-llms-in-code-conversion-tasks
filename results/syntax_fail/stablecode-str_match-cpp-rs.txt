@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_match-cpp-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+8 |     println!("{}", s1.starts_with(&s2)));
+  |                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_match-cpp-rs.rs:12:36
+   |
+8  |     println!("{}", s1.starts_with(&s2)));
+   |                                        - missing open `(` for this delimiter
+...
+12 |     if let Some(loc) = s1.find(&s2)) {
+   |                                    ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

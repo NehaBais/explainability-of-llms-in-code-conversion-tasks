@@ -1,0 +1,41 @@
+/tmp/stablecode-dir_make-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-dir_make-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-dir_make-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-dir_make-py-c.c:8:18: error: use of undeclared identifier 'errno'
+    8 |   if (rc == 0 || errno != EEXIST)) {
+      |                  ^
+/tmp/stablecode-dir_make-py-c.c:8:27: error: use of undeclared identifier 'EEXIST'
+    8 |   if (rc == 0 || errno != EEXIST)) {
+      |                           ^
+/tmp/stablecode-dir_make-py-c.c:8:34: error: extraneous ')' after condition, expected a statement
+    8 |   if (rc == 0 || errno != EEXIST)) {
+      |                                  ^
+/tmp/stablecode-dir_make-py-c.c:9:14: error: call to undeclared function 'mkdirs'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |         rc = mkdirs(path, 0777));
+      |              ^
+/tmp/stablecode-dir_make-py-c.c:9:14: note: did you mean 'mkdirp'?
+/tmp/stablecode-dir_make-py-c.c:5:5: note: 'mkdirp' declared here
+    5 | int mkdirp(const char *path) {
+      |     ^
+    6 |   int rc = 0;
+    7 | 
+    8 |   if (rc == 0 || errno != EEXIST)) {
+    9 |         rc = mkdirs(path, 0777));
+      |              ~~~~~~
+      |              mkdirp
+/tmp/stablecode-dir_make-py-c.c:9:32: error: extraneous ')' before ';'
+    9 |         rc = mkdirs(path, 0777));
+      |                                ^
+/tmp/stablecode-dir_make-py-c.c:12:14: error: call to undeclared function 'mkdirs'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |         rc = mkdirs(path, 0777));
+      |              ^
+/tmp/stablecode-dir_make-py-c.c:12:32: error: extraneous ')' before ';'
+   12 |         rc = mkdirs(path, 0777));
+      |                                ^
+10 errors generated.

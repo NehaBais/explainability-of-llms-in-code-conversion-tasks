@@ -1,0 +1,76 @@
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:2:29
+  |
+2 |     if (a == b) console.log(`${a} equals ${b}`);
+  |                             ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+2 |     if (a == b) console.log('${a} equals ${b}`);
+  |                             ~
+
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:2:46
+  |
+2 |     if (a == b) console.log(`${a} equals ${b}`);
+  |                                              ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+2 |     if (a == b) console.log(`${a} equals ${b}');
+  |                                              ~
+
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:3:28
+  |
+3 |     if (a < b) console.log(`${a} is less than ${b}`);
+  |                            ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+3 |     if (a < b) console.log('${a} is less than ${b}`);
+  |                            ~
+
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:3:51
+  |
+3 |     if (a < b) console.log(`${a} is less than ${b}`);
+  |                                                   ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+3 |     if (a < b) console.log(`${a} is less than ${b}');
+  |                                                   ~
+
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:4:28
+  |
+4 |     if (a > b) console.log(`${a} is greater than ${b}`);
+  |                            ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+4 |     if (a > b) console.log('${a} is greater than ${b}`);
+  |                            ~
+
+error: unknown start of token: `
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:4:54
+  |
+4 |     if (a > b) console.log(`${a} is greater than ${b}`);
+  |                                                      ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+4 |     if (a > b) console.log(`${a} is greater than ${b}');
+  |                                                      ~
+
+error: expected one of `!` or `::`, found `compare`
+ --> /tmp/yicoder2b-int_cmp-js-rs.rs:1:10
+  |
+1 | function compare(a, b) {
+  | -------- ^^^^^^^ expected one of `!` or `::`
+  | |
+  | help: write `fn` instead of `function` to declare a function
+
+error: aborting due to 7 previous errors
+

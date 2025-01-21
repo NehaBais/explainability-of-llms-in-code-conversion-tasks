@@ -1,0 +1,42 @@
+error[E0601]: `main` function not found in crate `codegeex4_bit_ops_cpp_rs`
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:19:2
+   |
+19 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-bit_ops-cpp-rs.rs`
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:17:44
+   |
+17 |     println!("a rol b: {}", ua.rotate_left(b));
+   |                                ----------- ^ expected `u32`, found `i32`
+   |                                |
+   |                                arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:1136:5
+   = note: this error originates in the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+17 |     println!("a rol b: {}", ua.rotate_left(b.try_into().unwrap()));
+   |                                             ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:18:45
+   |
+18 |     println!("a ror b: {}", ua.rotate_right(b));
+   |                                ------------ ^ expected `u32`, found `i32`
+   |                                |
+   |                                arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:1136:5
+   = note: this error originates in the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+18 |     println!("a ror b: {}", ua.rotate_right(b.try_into().unwrap()));
+   |                                              ++++++++++++++++++++
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

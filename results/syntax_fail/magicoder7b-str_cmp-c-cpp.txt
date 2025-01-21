@@ -1,0 +1,7 @@
+/tmp/magicoder7b-str_cmp-c-cpp.cpp:50:29: error: use of undeclared identifier 'STRCLT'
+   50 |                 << " , " << STRCLT(a, b) << " , " << STRCGE(a, b) << " , "
+      |                             ^
+/tmp/magicoder7b-str_cmp-c-cpp.cpp:51:20: error: use of undeclared identifier 'STRCLE'
+   51 |                 << STRCLE(a, b) << std::endl;
+      |                    ^
+2 errors generated.

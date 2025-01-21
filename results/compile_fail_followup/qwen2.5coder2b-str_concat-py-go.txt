@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_concat-py-go.go:16:2: declared and not used: s2
+/tmp/qwen2.5coder2b-str_concat-py-go.go:22:15: invalid operation: value != sb.String()[len(sb.String()) - 1] (mismatched types string and byte)

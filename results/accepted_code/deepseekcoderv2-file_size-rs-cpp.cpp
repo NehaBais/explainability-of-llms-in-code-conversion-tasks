@@ -1,36 +1,36 @@
-#include <cstdlib> // for the exit function
-#include <errno.h> // errno
-#include <fcntl.h> // O_* defines (O_RDONLY, etc.)
+#include <cstdlib> // for exit()
+#include <filesystem>
+#include <fstream>
 #include <iostream>
-#include <string.h>   // strerror()
-#include <sys/stat.h> // stat struct and constants for mode_t (octal 0777)
-#include <unistd.h>   // getcwd, chdir
-using namespace std;
 
-void usage(const char *progname);
-int main(int argc, const char **argv) {
-  if (argc > 1) {
-    int err = 0;
-    auto getpath = [&](char *buf, size_t buflen, bool dir) {
-      return chdir(argv[1]) == 0 ? ::getcwd(buf, buflen)
-                                 : err = errno; // the & is not necessary if you
-                                                // use a lambda with C++20
-    };
+namespace fs = std::filesystem;
 
-    char path[PATH_MAX];
-    if (!getpath(path, sizeof(path), true)) {
-      struct stat sb = {};
-      int fd = open(argv[1], O_RDONLY);
-      err = fstat(fd, &sb) != 0 ? errno : 0; // need to call fstat because the
-                                             // file has already been opened
-      if (err == 0 && S_ISREG(sb.st_mode)) {
-        cout << "Size of " << argv[1] << " is: " << sb.st_size << "\n";
-      } else
-        err = -2; // invalid file type or stat failed
-    }
+void exit_err(const std::string &msg, int code) {
+  std::cerr << "Error: " << msg << std::endl;
+  std::exit(code);
+}
 
-    if (err)
-      cerr << "Error opening '" << argv[1] << "'"
-           << (err == -2 ? " (Invalid File Type)" : "") << endl;
+int main(int argc, char *argv[]) {
+  if (argc < 2) {
+    exit_err("No file name supplied", 1);
   }
+
+  std::string file_name = argv[1];
+  fs::path path(file_name);
+
+  // Check in the current working directory first
+  if (!fs::exists(path)) {
+    path = fs::absolute(path); // Convert relative to absolute path
+  }
+
+  if (fs::exists(path) && fs::is_regular_file(path)) {
+    std::ifstream file(path, std::ios::binary | std::ios::in);
+    file.seekg(0, std::ios::end);
+    std::cout << "Size of " << file_name << " is " << file.tellg() << " bytes"
+              << std::endl;
+  } else {
+    exit_err("File does not exist", 2);
+  }
+
+  return 0;
 }

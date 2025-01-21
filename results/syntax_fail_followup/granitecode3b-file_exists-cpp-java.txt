@@ -1,0 +1,21 @@
+/tmp/FileExists.java:16: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class FileExists
+/tmp/FileExists.java:34: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class FileExists
+/tmp/FileExists.java:49: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class FileExists
+/tmp/FileExists.java:64: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class FileExists
+4 errors

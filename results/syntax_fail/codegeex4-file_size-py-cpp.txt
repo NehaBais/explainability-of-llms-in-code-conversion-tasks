@@ -1,0 +1,37 @@
+/tmp/codegeex4-file_size-py-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path filePath1("input.txt");
+      |   ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path filePath2("/input.txt");
+      |   ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (std::filesystem::exists(filePath1)) {
+      |       ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:8:31: error: use of undeclared identifier 'filePath1'
+    8 |   if (std::filesystem::exists(filePath1)) {
+      |                               ^
+/tmp/codegeex4-file_size-py-cpp.cpp:9:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |     auto size = std::filesystem::file_size(filePath1);
+      |     ^
+/tmp/codegeex4-file_size-py-cpp.cpp:9:22: error: no member named 'filesystem' in namespace 'std'
+    9 |     auto size = std::filesystem::file_size(filePath1);
+      |                 ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:9:44: error: use of undeclared identifier 'filePath1'
+    9 |     auto size = std::filesystem::file_size(filePath1);
+      |                                            ^
+/tmp/codegeex4-file_size-py-cpp.cpp:16:12: error: no member named 'filesystem' in namespace 'std'
+   16 |   if (std::filesystem::exists(filePath2)) {
+      |       ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:16:31: error: use of undeclared identifier 'filePath2'
+   16 |   if (std::filesystem::exists(filePath2)) {
+      |                               ^
+/tmp/codegeex4-file_size-py-cpp.cpp:17:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |     auto size = std::filesystem::file_size(filePath2);
+      |     ^
+/tmp/codegeex4-file_size-py-cpp.cpp:17:22: error: no member named 'filesystem' in namespace 'std'
+   17 |     auto size = std::filesystem::file_size(filePath2);
+      |                 ~~~~~^
+/tmp/codegeex4-file_size-py-cpp.cpp:17:44: error: use of undeclared identifier 'filePath2'
+   17 |     auto size = std::filesystem::file_size(filePath2);
+      |                                            ^
+2 warnings and 10 errors generated.

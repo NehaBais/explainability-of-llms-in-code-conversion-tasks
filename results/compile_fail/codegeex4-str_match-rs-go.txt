@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-str_match-rs-go.go:37:13: cannot use &pos (value of type *int) as *string value in argument to printMatch

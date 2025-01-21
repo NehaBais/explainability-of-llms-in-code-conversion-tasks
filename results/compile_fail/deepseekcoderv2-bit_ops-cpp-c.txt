@@ -1,0 +1,13 @@
+/tmp/deepseekcoderv2-bit_ops-cpp-c.c:24:51: error: function definition is not allowed here
+   24 |   unsigned int rol(unsigned int value, int shift) {
+      |                                                   ^
+/tmp/deepseekcoderv2-bit_ops-cpp-c.c:27:51: error: function definition is not allowed here
+   27 |   unsigned int ror(unsigned int value, int shift) {
+      |                                                   ^
+/tmp/deepseekcoderv2-bit_ops-cpp-c.c:30:27: error: call to undeclared function 'rol'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   printf("a rol b: %u\n", rol(ua, b));
+      |                           ^
+/tmp/deepseekcoderv2-bit_ops-cpp-c.c:31:27: error: call to undeclared function 'ror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |   printf("a ror b: %u\n", ror(ua, b));
+      |                           ^
+4 errors generated.

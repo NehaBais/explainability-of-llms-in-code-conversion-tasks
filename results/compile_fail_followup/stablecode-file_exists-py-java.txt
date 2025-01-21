@@ -1,0 +1,16 @@
+/tmp/Main.java:6: error: ';' expected
+        System.out.println(fileInDir.exists() ? "Exists" : "Does not exist"));
+                                                                            ^
+/tmp/Main.java:9: error: ';' expected
+        System.out.println(dirInDir.exists() ? "Exists" : "Does not exist"));
+                                                                           ^
+/tmp/Main.java:12: error: ';' expected
+        File fileInRoot = new File("/input.txt"));
+                                                ^
+/tmp/Main.java:13: error: ';' expected
+        System.out.println(fileInRoot.exists() ? "Exists" : "Does not exist"));
+                                                                             ^
+/tmp/Main.java:16: error: ';' expected
+        System.out.println(dirInRoot.exists() ? "Exists" : "Does not exist"));
+                                                                            ^
+5 errors

@@ -1,0 +1,21 @@
+error[E0428]: the name `compare_numbers` is defined multiple times
+  --> /tmp/dolphincoder7b-int_cmp-js-rs.rs:17:1
+   |
+2  | fn compare_numbers(a: i32, b: i32) {
+   | ---------------------------------- previous definition of the value `compare_numbers` here
+...
+17 | fn compare_numbers(a: i32, b: i32) {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `compare_numbers` redefined here
+   |
+   = note: `compare_numbers` must be defined only once in the value namespace of this module
+
+error[E0601]: `main` function not found in crate `dolphincoder7b_int_cmp_js_rs`
+  --> /tmp/dolphincoder7b-int_cmp-js-rs.rs:27:2
+   |
+27 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-int_cmp-js-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0428, E0601.
+For more information about an error, try `rustc --explain E0428`.

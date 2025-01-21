@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-int_arith-py-go.go:29:9: invalid operation: int(tt) - tt (mismatched types int and float64)

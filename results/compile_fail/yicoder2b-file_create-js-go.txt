@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_create-js-go.go:27:20: undefined: os.GetFile
+/tmp/yicoder2b-file_create-js-go.go:41:20: undefined: os.GetFile
+/tmp/yicoder2b-file_create-js-go.go:55:3: undefined: printErrln

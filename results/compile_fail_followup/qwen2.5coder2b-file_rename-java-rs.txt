@@ -1,0 +1,40 @@
+error: argument never used
+  --> /tmp/qwen2.5coder2b-file_rename-java-rs.rs:12:9
+   |
+9  |           "The following {} called {}",
+   |           ---------------------------- formatting specifier missing
+...
+12 | /         if rename_file(old_name, new_name) {
+13 | |             format!("was renamed as {}", new_name)
+14 | |         } else {
+15 | |             String::from("could not be renamed into ")
+16 | |         }
+   | |_________^ argument never used
+
+error[E0433]: failed to resolve: could not find `Separator` in `path`
+  --> /tmp/qwen2.5coder2b-file_rename-java-rs.rs:24:20
+   |
+24 |         std::path::Separator::new().to_string().concat(&"input.txt"),
+   |                    ^^^^^^^^^ could not find `Separator` in `path`
+
+error[E0433]: failed to resolve: could not find `Separator` in `path`
+  --> /tmp/qwen2.5coder2b-file_rename-java-rs.rs:25:20
+   |
+25 |         std::path::Separator::new()
+   |                    ^^^^^^^^^ could not find `Separator` in `path`
+
+error[E0433]: failed to resolve: could not find `Separator` in `path`
+  --> /tmp/qwen2.5coder2b-file_rename-java-rs.rs:32:20
+   |
+32 |         std::path::Separator::new().to_string().concat("docs"),
+   |                    ^^^^^^^^^ could not find `Separator` in `path`
+
+error[E0433]: failed to resolve: could not find `Separator` in `path`
+  --> /tmp/qwen2.5coder2b-file_rename-java-rs.rs:33:20
+   |
+33 |         std::path::Separator::new().to_string().concat("mydocs"),
+   |                    ^^^^^^^^^ could not find `Separator` in `path`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

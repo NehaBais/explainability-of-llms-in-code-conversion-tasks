@@ -1,13 +1,26 @@
+#include <filesystem>
 #include <iostream>
-#include <string>
+
+namespace fs = std::filesystem;
+
+bool checkFile(const std::string &path) { return fs::exists(path); }
+
+bool checkDirectory(const std::string &path) { return fs::is_directory(path); }
 
 int main() {
-  std::cout << "File exists in current directory? "
-            << (os.path.isfile("input.txt") ? "Yes" : "No") << '\n';
-  std::cout << "File exists in root folder? "
-            << (os.path.isfile("/input.txt") ? "Yes" : "No") << '\n';
-  std::cout << "Directory exists in current directory? "
-            << (os.path.isdir("docs") ? "Yes" : "No") << '\n';
-  std::cout << "Directory exists in root folder? "
-            << (os.path.isdir("/docs") ? "Yes" : "No") << '\n';
+  // Check in the current working directory
+  std::cout << "Checking in the current working directory:" << std::endl;
+  std::cout << "input.txt exists: " << (checkFile("input.txt") ? "Yes" : "No")
+            << std::endl;
+  std::cout << "docs is a directory: "
+            << (checkDirectory("docs") ? "Yes" : "No") << std::endl;
+
+  // Check in the filesystem root
+  std::cout << "\nChecking in the filesystem root:" << std::endl;
+  std::cout << "/input.txt exists: " << (checkFile("/input.txt") ? "Yes" : "No")
+            << std::endl;
+  std::cout << "/docs is a directory: "
+            << (checkDirectory("/docs") ? "Yes" : "No") << std::endl;
+
+  return 0;
 }

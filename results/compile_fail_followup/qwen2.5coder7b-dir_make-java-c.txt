@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-dir_make-java-c.c:15:37: error: use of undeclared identifier 'errno'
+   15 |       if (mkdir(dir, 0755) == -1 && errno != EEXIST) {
+      |                                     ^
+/tmp/qwen2.5coder7b-dir_make-java-c.c:15:46: error: use of undeclared identifier 'EEXIST'
+   15 |       if (mkdir(dir, 0755) == -1 && errno != EEXIST) {
+      |                                              ^
+/tmp/qwen2.5coder7b-dir_make-java-c.c:24:34: error: use of undeclared identifier 'errno'
+   24 |   if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+      |                                  ^
+/tmp/qwen2.5coder7b-dir_make-java-c.c:24:43: error: use of undeclared identifier 'EEXIST'
+   24 |   if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+      |                                           ^
+4 errors generated.

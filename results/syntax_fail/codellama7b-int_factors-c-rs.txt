@@ -1,0 +1,39 @@
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:25:15
+   |
+25 |     if num == dvsr * dvsr {
+   |               ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:25:22
+   |
+25 |     if num == dvsr * dvsr {
+   |                      ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:26:20
+   |
+26 |         flist.push(dvsr);
+   |                    ^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:38:21
+   |
+38 |         for j in 0..fctrs.count {
+   |                     ^^^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+38 -         for j in 0..fctrs.count {
+38 +         for j in 0.fctrs.count {
+   |
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:39:26
+   |
+39 |             print!("{}", fctrs[j]);
+   |                          ^^^^^ not found in this scope
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

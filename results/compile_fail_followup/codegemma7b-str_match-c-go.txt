@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegemma7b-str_match-c-go.go:4:2: "strings" imported and not used

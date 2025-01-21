@@ -1,0 +1,45 @@
+error[E0463]: can't find crate for `regex`
+ --> /tmp/magicoder7b-str_match-js-rs.rs:1:1
+  |
+1 | extern crate regex;
+  | ^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:27:33
+   |
+27 |             string_b, string_a, q2, q2multi.len(), string_a, (if q2multi.len() > 1 {"es"} else {""}), q2multi.join(", "), (if q2multi.len() > 1 {"es"} else {""}))
+   |                                 ^^ help: a local variable with a similar name exists: `q1`
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:33:18
+   |
+33 |             (if !q2 {
+   |                  ^^ help: a local variable with a similar name exists: `q1`
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:36:37
+   |
+36 |                 "Yes, at index " + &q2.to_string() + "."
+   |                                     ^^ help: a local variable with a similar name exists: `q1`
+
+error[E0599]: the method `join` exists for struct `Vec<usize>`, but its trait bounds were not satisfied
+  --> /tmp/magicoder7b-str_match-js-rs.rs:27:111
+   |
+27 |             string_b, string_a, q2, q2multi.len(), string_a, (if q2multi.len() > 1 {"es"} else {""}), q2multi.join(", "), (if q2multi.len() > 1 {"es"} else {""}))
+   |                                                                                                               ^^^^ method cannot be called on `Vec<usize>` due to unsatisfied trait bounds
+   |
+   = note: the following trait bounds were not satisfied:
+           `[usize]: Join<_>`
+
+error[E0369]: cannot add `&str` to `str`
+  --> /tmp/magicoder7b-str_match-js-rs.rs:36:52
+   |
+36 |                 "Yes, at index " + &q2.to_string() + "."
+   |                 ---------------------------------- ^ --- &str
+   |                 |
+   |                 str
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0369, E0425, E0463, E0599.
+For more information about an error, try `rustc --explain E0369`.

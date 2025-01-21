@@ -1,0 +1,13 @@
+/tmp/codegemma7b-str_match-cpp-c.c:8:1: error: expected identifier or '('
+    8 | if (strncmp(s1, s3, strlen(s3)) == 0) {
+      | ^
+/tmp/codegemma7b-str_match-cpp-c.c:13:1: error: expected identifier or '('
+   13 | if (strncmp(s1 + strlen(s1) - strlen(s3), s3, strlen(s3)) == 0) {
+      | ^
+/tmp/codegemma7b-str_match-cpp-c.c:18:11: error: initializer element is not a compile-time constant
+   18 | int loc = strstr(s2, s3) - s2;
+      |           ^~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_match-cpp-c.c:19:1: error: expected identifier or '('
+   19 | if (loc != -1) {
+      | ^
+4 errors generated.

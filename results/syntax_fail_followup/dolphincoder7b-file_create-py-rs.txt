@@ -1,0 +1,19 @@
+error: expected `;`, found `create`
+  --> /tmp/dolphincoder7b-file_create-py-rs.rs:14:50
+   |
+14 |     create(&current_directory.to_string_lossy())?   // current directory
+   |                                                  ^ help: add `;` here
+15 |     create("/")?   // root directory
+   |     ------ unexpected token
+
+error: expected `;`, found `Ok`
+  --> /tmp/dolphincoder7b-file_create-py-rs.rs:15:17
+   |
+15 |     create("/")?   // root directory
+   |                 ^ help: add `;` here
+16 |
+17 |     Ok(())
+   |     -- unexpected token
+
+error: aborting due to 2 previous errors
+

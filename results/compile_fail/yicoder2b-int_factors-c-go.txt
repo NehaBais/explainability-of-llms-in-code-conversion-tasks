@@ -1,0 +1,1 @@
+/tmp/yicoder2b-int_factors-c-go.go:1:1: illegal character U+0023 '#'

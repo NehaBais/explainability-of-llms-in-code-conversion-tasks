@@ -1,0 +1,41 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_match-go-rs.rs:1:45
+  |
+1 | fn match_strings(first: &str, second: &str) {
+  |                                             ^ unclosed delimiter
+2 |     println!("1. {} starts with {}: {}", first, second, first.starts_with(second)));
+  |                                                                                   ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_match-go-rs.rs:6:22
+  |
+6 |         if index > 0 {
+  |                      ^ unclosed delimiter
+7 |             println!("2.1. at location {}", index + 1));
+  |                                                       ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-go-rs.rs:9:61
+   |
+9  |             while let Some(i) = first[start..].find(second) {
+   |                                                             ^ unclosed delimiter
+10 |                 println!("2.2. at location {}", start + i + 1));
+   |                                                               ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_match-go-rs.rs:13:44
+   |
+2  |     println!("1. {} starts with {}: {}", first, second, first.starts_with(second)));
+   |                                                                                   - missing open `(` for this delimiter
+...
+7  |             println!("2.1. at location {}", index + 1));
+   |                                                       - missing open `(` for this delimiter
+...
+10 |                 println!("2.2. at location {}", start + i + 1));
+   |                                                               - missing open `(` for this delimiter
+...
+13 |             println!("2.2. and that's all"));
+   |                                            ^ unexpected closing delimiter
+
+error: aborting due to 4 previous errors
+

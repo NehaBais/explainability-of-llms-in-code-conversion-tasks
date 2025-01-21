@@ -1,0 +1,25 @@
+error[E0599]: no method named `sign` found for type `i32` in the current scope
+  --> /tmp/qwen2.5coder2b-int_arith-go-rs.rs:31:14
+   |
+31 |         if a.sign() == b.sign() {
+   |              ^^^^
+   |
+help: there is a method `signum` with a similar name
+   |
+31 |         if a.signum() == b.sign() {
+   |              ~~~~~~
+
+error[E0599]: no method named `sign` found for type `i32` in the current scope
+  --> /tmp/qwen2.5coder2b-int_arith-go-rs.rs:31:26
+   |
+31 |         if a.sign() == b.sign() {
+   |                          ^^^^
+   |
+help: there is a method `signum` with a similar name
+   |
+31 |         if a.sign() == b.signum() {
+   |                          ~~~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

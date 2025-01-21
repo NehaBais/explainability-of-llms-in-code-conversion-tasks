@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codellama7b-bit_ops-java-go.go:11:32: undefined: bits.And
+/tmp/codellama7b-bit_ops-java-go.go:12:30: undefined: bits.Or
+/tmp/codellama7b-bit_ops-java-go.go:13:31: undefined: bits.Xor
+/tmp/codellama7b-bit_ops-java-go.go:15:31: undefined: bits.Lshift
+/tmp/codellama7b-bit_ops-java-go.go:16:31: undefined: bits.Rshift
+/tmp/codellama7b-bit_ops-java-go.go:17:31: undefined: bits.Lshift
+/tmp/codellama7b-bit_ops-java-go.go:18:42: cannot use a (variable of type int) as uint value in argument to bits.RotateLeft
+/tmp/codellama7b-bit_ops-java-go.go:18:45: cannot use uint(b) (value of type uint) as int value in argument to bits.RotateLeft
+/tmp/codellama7b-bit_ops-java-go.go:19:31: undefined: bits.RotateRight

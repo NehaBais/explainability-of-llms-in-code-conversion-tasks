@@ -1,0 +1,4 @@
+/tmp/magicoder7b-str_cmp-go-c.c:25:10: error: call to undeclared function '_stricmp'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   return _stricmp(str1, str2) == 0;
+      |          ^
+1 error generated.

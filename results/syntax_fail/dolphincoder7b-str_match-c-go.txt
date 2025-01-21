@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-str_match-c-go.go:6:2: "unicode/utf8" imported and not used

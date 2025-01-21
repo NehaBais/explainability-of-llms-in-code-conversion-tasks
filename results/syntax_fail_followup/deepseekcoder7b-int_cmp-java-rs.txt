@@ -1,0 +1,32 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:14:22
+   |
+14 |     io::stdin().read<｜begin▁of▁sentence｜>_line(&mut input).expect("Read line failed!");
+   |                      ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:14:28
+   |
+14 |     io::stdin().read<｜begin▁of▁sentence｜>_line(&mut input).expect("Read line failed!");
+   |                             ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:14:31
+   |
+14 |     io::stdin().read<｜begin▁of▁sentence｜>_line(&mut input).expect("Read line failed!");
+   |                                ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:14:40
+   |
+14 |     io::stdin().read<｜begin▁of▁sentence｜>_line(&mut input).expect("Read line failed!");
+   |                                         ^^
+
+error: expected one of `!`, `.`, `::`, `;`, `?`, `{`, `}`, or an operator, found `of`
+  --> /tmp/deepseekcoder7b-int_cmp-java-rs.rs:14:29
+   |
+14 |     io::stdin().read<｜begin▁of▁sentence｜>_line(&mut input).expect("Read line failed!");
+   |                              ^^ expected one of 8 possible tokens
+
+error: aborting due to 5 previous errors
+

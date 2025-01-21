@@ -1,25 +1,28 @@
-import java.io.File;
-import java.nio.file.Files;
+import java.nio.file.*;
 
 public class FileExists {
-  public static void main(String[] args) throws Exception {
-    file_exists("input.txt");
-    file_exists("zero_length.txt");
-    file_exists("docs/input.txt");
-    file_exists("docs/zero_length.txt");
+  public static void main(String[] args) {
+    fileExists("input.txt");
+    fileExists("zero_length.txt");
+    fileExists("docs/input.txt");
+    fileExists("docs/zero_length.txt");
   }
 
-  public static void file_exists(String path) {
-    File f = new File(path);
-    System.out.print(f.getAbsolutePath());
-    if (f.exists()) {
-      if (f.isDirectory()) {
-        System.out.println(" is a directory");
+  public static void fileExists(String pathStr) {
+    Path path = Paths.get(pathStr);
+    System.out.print(pathStr + " ");
+    if (Files.exists(path)) {
+      if (Files.isDirectory(path)) {
+        System.out.println("is a directory");
       } else {
-        System.out.println(" exists with a file size of " + Files.size(f.toPath()));
+        try {
+          System.out.println("exists with a file size of " + Files.size(path) + " bytes.");
+        } catch (Exception e) {
+          System.out.println("exists but has no readable content.");
+        }
       }
     } else {
-      System.out.println(" does not exist");
+      System.out.println("does not exist");
     }
   }
 }

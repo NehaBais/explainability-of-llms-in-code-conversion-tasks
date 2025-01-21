@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-py-go.go:11:16: undefined: n
+/tmp/qwen2.5coder2b-str_substring-py-go.go:11:24: undefined: m
+/tmp/qwen2.5coder2b-str_substring-py-go.go:14:16: undefined: n
+/tmp/qwen2.5coder2b-str_substring-py-go.go:21:11: undefined: strings
+/tmp/qwen2.5coder2b-str_substring-py-go.go:23:38: undefined: m
+/tmp/qwen2.5coder2b-str_substring-py-go.go:28:10: undefined: strings
+/tmp/qwen2.5coder2b-str_substring-py-go.go:30:38: undefined: m

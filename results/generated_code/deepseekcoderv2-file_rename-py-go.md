@@ -1,43 +1,34 @@
-## Golang
+ Sure, here is the equivalent code in Golang:
 
 ```go
 package main
 
 import (
 	"fmt"
-	"io/fs"
-	"log"
 	"os"
-	"path/filepath"
 )
 
-func renameFileAndDir(dir string, file string) error {
-	err := os.Rename(filepath.Join(dir, file), filepath.Join(dir, fmt.Sprintf("my%s", file)))
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func renameFileAndDirRoot(file string) error {
-	err := os.Rename(filepath.Join(os.Getenv("HOME"), file), filepath.Join(os.Getenv("HOME"), fmt.Sprintf("my%s", file)))
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func main() {
-	err := renameFileAndDir("./docs", "input.txt")
+	// Rename in current working directory
+	err := os.Rename("input.txt", "output.txt")
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Error renaming file:", err)
+	}
+	err = os.Rename("docs", "mydocs")
+	if err != nil {
+		fmt.Println("Error renaming directory:", err)
 	}
 
-	err = renameFileAndDirRoot("output.txt")
+	// Rename in filesystem root
+	err = os.Rename(string(os.PathSeparator)+"input.txt", string(os.PathSeparator)+"output.txt")
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Error renaming file in root:", err)
+	}
+	err = os.Rename(string(os.PathSeparator)+"docs", string(os.PathSeparator)+"mydocs")
+	if err != nil {
+		fmt.Println("Error renaming directory in root:", err)
 	}
 }
 ```
+
+This Golang code performs the same operations as your Python code, renaming `input.txt` to `output.txt` and `docs` to `mydocs`, both within the current working directory and at the filesystem root.

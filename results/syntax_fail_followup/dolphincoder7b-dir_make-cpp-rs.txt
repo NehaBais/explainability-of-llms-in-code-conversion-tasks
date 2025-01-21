@@ -1,0 +1,25 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/dolphincoder7b-dir_make-cpp-rs.rs:8:8
+  |
+8 |     if fs::metadata(path).is_ok() {
+  |        ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this module
+  |
+1 + use std::fs;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+  --> /tmp/dolphincoder7b-dir_make-cpp-rs.rs:11:9
+   |
+11 |         fs::create_dir_all(path)?;
+   |         ^^ use of undeclared crate or module `fs`
+   |
+help: consider importing this module
+   |
+1  + use std::fs;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

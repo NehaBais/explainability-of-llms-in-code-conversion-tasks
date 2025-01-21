@@ -1,0 +1,26 @@
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_match-java-rs.rs:13:9
+   |
+12 |     match loc2 {
+   |           ---- this expression has type `usize`
+13 |         Some(index) => println!("{}", index),
+   |         ^^^^^^^^^^^ expected `usize`, found `Option<_>`
+   |
+   = note: expected type `usize`
+              found enum `Option<_>`
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_match-java-rs.rs:14:9
+   |
+12 |     match loc2 {
+   |           ---- this expression has type `usize`
+13 |         Some(index) => println!("{}", index),
+14 |         None => println!("No Match"),
+   |         ^^^^ expected `usize`, found `Option<_>`
+   |
+   = note: expected type `usize`
+              found enum `Option<_>`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

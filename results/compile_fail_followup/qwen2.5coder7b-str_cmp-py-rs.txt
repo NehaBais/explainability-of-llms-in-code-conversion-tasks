@@ -1,0 +1,27 @@
+error[E0599]: no method named `type_id` found for reference `&str` in the current scope
+ --> /tmp/qwen2.5coder7b-str_cmp-py-rs.rs:5:11
+  |
+5 |         a.type_id(),
+  |           ^^^^^^^ method not found in `&str`
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Any` which provides `type_id` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::any::Any;
+  |
+
+error[E0599]: no method named `type_id` found for reference `&str` in the current scope
+ --> /tmp/qwen2.5coder7b-str_cmp-py-rs.rs:7:11
+  |
+7 |         b.type_id()
+  |           ^^^^^^^ method not found in `&str`
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Any` which provides `type_id` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::any::Any;
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

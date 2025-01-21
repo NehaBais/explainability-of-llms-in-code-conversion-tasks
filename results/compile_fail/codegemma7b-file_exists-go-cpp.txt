@@ -1,0 +1,7 @@
+/tmp/codegemma7b-file_exists-go-cpp.cpp:8:9: error: use of undeclared identifier 'filesystem'
+    8 |     if (filesystem::is_directory(p)) {
+      |         ^
+/tmp/codegemma7b-file_exists-go-cpp.cpp:13:18: error: use of undeclared identifier 'filesystem'
+   13 |   } catch (const filesystem::filesystem_error &e) {
+      |                  ^
+2 errors generated.

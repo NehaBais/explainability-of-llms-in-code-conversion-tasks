@@ -1,0 +1,18 @@
+/tmp/stablecode-int_cmp-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_cmp-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-int_cmp-java-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("Enter first integer:\n");
+      |   ^
+/tmp/stablecode-int_cmp-java-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-int_cmp-java-c.c:7:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   scanf("%d", &nbr1);
+      |   ^
+/tmp/stablecode-int_cmp-java-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/stablecode-int_cmp-java-c.c:21:50: error: extraneous ')' before ';'
+   21 |         printf("%d is equal to %d\n", nbr1, nbr2));
+      |                                                  ^
+5 errors generated.

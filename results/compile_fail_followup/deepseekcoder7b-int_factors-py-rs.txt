@@ -1,0 +1,24 @@
+error[E0463]: can't find crate for `itertools`
+ --> /tmp/deepseekcoder7b-int_factors-py-rs.rs:1:1
+  |
+1 | extern crate itertools;
+  | ^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0599]: no method named `collect_vec` found for struct `Filter` in the current scope
+ --> /tmp/deepseekcoder7b-int_factors-py-rs.rs:7:10
+  |
+5 |       let mut factors1 = (1..((n as f64).sqrt() as u32 + 1))
+  |  ________________________-
+6 | |         .filter(|x| n % x == 0)
+7 | |         .collect_vec();
+  | |_________-^^^^^^^^^^^
+  |
+help: there is a method `collect` with a similar name
+  |
+7 |         .collect();
+  |          ~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0463, E0599.
+For more information about an error, try `rustc --explain E0463`.

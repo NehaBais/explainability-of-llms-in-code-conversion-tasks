@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-int_arith-js-c.c:9:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   int a = atoi(argv[1]);
+      |           ^
+1 error generated.

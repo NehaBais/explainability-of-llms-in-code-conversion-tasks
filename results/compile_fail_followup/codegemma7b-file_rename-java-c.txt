@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_rename-java-c.c:20:20: error: invalid operands to binary expression ('char[2]' and 'char *')
+   20 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                ~~~ ^ ~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:20:47: error: invalid operands to binary expression ('char[2]' and 'char *')
+   20 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                                           ~~~ ^ ~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:22:25: error: invalid operands to binary expression ('char[2]' and 'char *')
+   22 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                     ~~~ ^ ~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:22:54: error: invalid operands to binary expression ('char[2]' and 'char *')
+   22 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                                                  ~~~ ^ ~~~~~~~~~~~~~~~~~
+4 errors generated.

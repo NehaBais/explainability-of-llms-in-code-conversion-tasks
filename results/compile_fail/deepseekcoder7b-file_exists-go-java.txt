@@ -1,0 +1,25 @@
+/tmp/Main.java:13: error: illegal character: '\uff5c'
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                           ^
+/tmp/Main.java:13: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                          ^
+/tmp/Main.java:13: error: illegal character: '\u2581'
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                                 ^
+/tmp/Main.java:13: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                            ^
+/tmp/Main.java:13: error: illegal character: '\u2581'
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                                    ^
+/tmp/Main.java:13: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                                  ^
+/tmp/Main.java:13: error: illegal character: '\uff5c'
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                                             ^
+/tmp/Main.java:13: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.prinln(path + " is a file");
+                                     ^
+8 errors

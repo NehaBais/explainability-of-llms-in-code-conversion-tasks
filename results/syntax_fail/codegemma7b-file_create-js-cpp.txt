@@ -1,0 +1,19 @@
+/tmp/codegemma7b-file_create-js-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::create_directory("docs");
+      |     ~~~~~^
+/tmp/codegemma7b-file_create-js-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directory("/docs");
+      |     ~~~~~^
+/tmp/codegemma7b-file_create-js-cpp.cpp:9:19: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    9 |     std::ofstream output("output.txt");
+      |                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/codegemma7b-file_create-js-cpp.cpp:10:19: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+   10 |     std::ofstream output_root("/output.txt");
+      |                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+4 errors generated.

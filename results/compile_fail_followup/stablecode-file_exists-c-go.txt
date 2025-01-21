@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-file_exists-c-go.go:35:155: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_exists-c-go.go:38:104: syntax error: unexpected ) at end of statement

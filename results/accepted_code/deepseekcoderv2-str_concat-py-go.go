@@ -1,16 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Create a string variable equal to any text value.
 	s1 := "hello"
-	fmt.Println(s1)
+	fmt.Println(s1 + " world")
 
-	// Create another string variable whose value is the original variable concatenated with another string literal.
 	s2 := s1 + " world"
 	fmt.Println(s2)
 
-	// To illustrate the operation, show the content of the variables.
-	fmt.Println(", ".join([s1, "world", "mom"]))
+	// For the third part, we need to use a slice of strings and join them with ", ".
+	parts := []string{s1, "world", "mom"}
+	result := fmt.Sprint(parts...)
+	fmt.Println(result)
+
+	s2 = s1 + ", " + "world" + ", " + "mom"
+	fmt.Println(s2)
 }

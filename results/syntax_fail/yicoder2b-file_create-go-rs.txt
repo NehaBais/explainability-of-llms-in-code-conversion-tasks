@@ -1,0 +1,55 @@
+error[E0432]: unresolved import `std::os::Write`
+ --> /tmp/yicoder2b-file_create-go-rs.rs:2:5
+  |
+2 | use std::os::Write;
+  |     ^^^^^^^^^^^^^^ no `Write` in `os`
+  |
+help: consider importing one of these items instead
+  |
+2 | use std::fmt::Write;
+  |     ~~~~~~~~~~~~~~~
+2 | use std::io::Write;
+  |     ~~~~~~~~~~~~~~
+2 | use std::net::Shutdown::Write;
+  |     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error[E0433]: failed to resolve: could not find `Dir` in `fs`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:30:19
+   |
+30 |         match fs::Dir::new(docs) {
+   |                   ^^^ could not find `Dir` in `fs`
+
+error[E0433]: failed to resolve: could not find `Dir` in `fs`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:41:19
+   |
+41 |         match fs::Dir::new(docs) {
+   |                   ^^^ could not find `Dir` in `fs`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `HOME` in module `std::env`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:29:49
+   |
+29 |     if !fs::exists(&format!("{}/{}", &std::env::HOME(), docs)) {
+   |                                                 ^^^^ not found in `std::env`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `HOME` in module `std::env`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:31:74
+   |
+31 |             Ok(_) => println!("{} created!", format!("{}/{}", &std::env::HOME(), docs)),
+   |                                                                          ^^^^ not found in `std::env`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `HOME` in module `std::env`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:40:49
+   |
+40 |     if !fs::exists(&format!("{}/{}", &std::env::HOME(), docs)) {
+   |                                                 ^^^^ not found in `std::env`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `HOME` in module `std::env`
+  --> /tmp/yicoder2b-file_create-go-rs.rs:42:74
+   |
+42 |             Ok(_) => println!("{} created!", format!("{}/{}", &std::env::HOME(), docs)),
+   |                                                                          ^^^^ not found in `std::env`
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0425, E0432, E0433.
+For more information about an error, try `rustc --explain E0425`.

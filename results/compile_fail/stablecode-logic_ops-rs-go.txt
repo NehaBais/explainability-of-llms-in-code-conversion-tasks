@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-logic_ops-rs-go.go:6:77: syntax error: unexpected ) at end of statement
+/tmp/stablecode-logic_ops-rs-go.go:7:76: syntax error: unexpected ) at end of statement
+/tmp/stablecode-logic_ops-rs-go.go:8:78: syntax error: unexpected ) at end of statement
+/tmp/stablecode-logic_ops-rs-go.go:9:68: syntax error: unexpected ) at end of statement

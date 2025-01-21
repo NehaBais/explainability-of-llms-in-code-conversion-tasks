@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_substring-c-go.go:36:16: undefined: utf8.IndexRune
+/tmp/qwen2.5coder7b-str_substring-c-go.go:44:16: undefined: utf8.Index
+/tmp/qwen2.5coder7b-str_substring-c-go.go:65:7: cannot use strWholeLess1 (value of type func(s string) (string, error)) as func() (string, error) value in argument to test

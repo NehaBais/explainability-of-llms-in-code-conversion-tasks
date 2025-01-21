@@ -1,0 +1,1 @@
+/tmp/codellama7b-str_append-rs-go.go:1:1: expected 'package', found 'func'

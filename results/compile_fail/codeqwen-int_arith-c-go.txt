@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/codeqwen-int_arith-c-go.go:13:2: declared and not used: a
+/tmp/codeqwen-int_arith-c-go.go:21:9: undefined: A
+/tmp/codeqwen-int_arith-c-go.go:22:16: undefined: A
+/tmp/codeqwen-int_arith-c-go.go:23:13: undefined: A
+/tmp/codeqwen-int_arith-c-go.go:24:14: undefined: A
+/tmp/codeqwen-int_arith-c-go.go:25:15: undefined: A

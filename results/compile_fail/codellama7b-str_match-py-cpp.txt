@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_match-py-cpp.cpp:11:19: error: no member named 'starts_with' in 'std::string'
+   11 |   if (firstString.starts_with(secondString)) {
+      |       ~~~~~~~~~~~ ^
+/tmp/codellama7b-str_match-py-cpp.cpp:26:19: error: no member named 'ends_with' in 'std::string'
+   26 |   if (firstString.ends_with(secondString)) {
+      |       ~~~~~~~~~~~ ^
+2 errors generated.

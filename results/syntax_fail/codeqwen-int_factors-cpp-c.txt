@@ -1,0 +1,7 @@
+/tmp/codeqwen-int_factors-cpp-c.c:16:39: error: use of undeclared identifier 'cmpfunc'
+   16 |   qsort(factors, *count, sizeof(int), cmpfunc);
+      |                                       ^
+/tmp/codeqwen-int_factors-cpp-c.c:20:21: error: use of undeclared identifier 'A'
+   20 |    return ( (*(int*)A - *(int*)B );
+      |                     ^
+2 errors generated.

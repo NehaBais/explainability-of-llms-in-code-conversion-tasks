@@ -1,0 +1,31 @@
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+ --> /tmp/codegemma7b-file_size-go-rs.rs:8:44
+  |
+8 |         println!("{}", fmt::Error::new(fs::ErrorKind::NotFound));
+  |                                            ^^^^^^^^^ could not find `ErrorKind` in `fs`
+  |
+help: consider importing this enum
+  |
+1 + use std::io::ErrorKind;
+  |
+help: if you import `ErrorKind`, refer to it directly
+  |
+8 -         println!("{}", fmt::Error::new(fs::ErrorKind::NotFound));
+8 +         println!("{}", fmt::Error::new(ErrorKind::NotFound));
+  |
+
+error[E0599]: no function or associated item named `new` found for struct `std::fmt::Error` in the current scope
+ --> /tmp/codegemma7b-file_size-go-rs.rs:8:36
+  |
+8 |         println!("{}", fmt::Error::new(fs::ErrorKind::NotFound));
+  |                                    ^^^ function or associated item not found in `Error`
+  |
+help: there is a method `ne` with a similar name
+  |
+8 |         println!("{}", fmt::Error::ne(fs::ErrorKind::NotFound));
+  |                                    ~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.

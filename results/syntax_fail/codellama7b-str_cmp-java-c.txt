@@ -1,0 +1,10 @@
+/tmp/codellama7b-str_cmp-java-c.c:7:3: error: call to undeclared function 'compare'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   compare(A, B);
+      |   ^
+/tmp/codellama7b-str_cmp-java-c.c:28:6: error: conflicting types for 'compare'
+   28 | void compare(char *A, char *B) {
+      |      ^
+/tmp/codellama7b-str_cmp-java-c.c:7:3: note: previous implicit declaration is here
+    7 |   compare(A, B);
+      |   ^
+2 errors generated.

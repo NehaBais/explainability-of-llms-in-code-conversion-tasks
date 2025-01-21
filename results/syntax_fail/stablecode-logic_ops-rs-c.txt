@@ -1,0 +1,10 @@
+/tmp/stablecode-logic_ops-rs-c.c:4:60: error: extraneous ')' before ';'
+    4 |     printf("%d and %d -> %d\n", a, b, (a != 0) && (b != 0)));
+      |                                                            ^
+/tmp/stablecode-logic_ops-rs-c.c:5:59: error: extraneous ')' before ';'
+    5 |     printf("%d or %d -> %d\n", a, b, (a != 0) || (b != 0)));
+      |                                                           ^
+/tmp/stablecode-logic_ops-rs-c.c:6:59: error: extraneous ')' before ';'
+    6 |     printf("%d xor %d -> %d\n", a, b, (a != 0) ^ (b != 0)));
+      |                                                           ^
+3 errors generated.

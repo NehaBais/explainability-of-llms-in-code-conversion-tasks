@@ -1,0 +1,22 @@
+/tmp/Main.java:10: error: cannot find symbol
+      create(".").and(create("/")).get();
+                 ^
+  symbol:   method and(CompletionStage<Void>)
+  location: interface CompletionStage<Void>
+/tmp/Main.java:21: error: method newDirectoryStream in class FileSystemProvider cannot be applied to given types;
+    return FileSystems.getDefault().provider().newDirectoryStream(f_path).findAny().isPresent()
+                                              ^
+  required: Path,Filter<? super Path>
+  found:    Path
+  reason: actual and formal argument lists differ in length
+/tmp/Main.java:24: error: cannot find symbol
+            .thenCombine(DirBuilder.create(d_path).toCompletableFuture(), (__, path) -> null);
+                         ^
+  symbol:   variable DirBuilder
+  location: class Main
+/tmp/Main.java:28: error: cannot find symbol
+    return Files.createFile(file).thenApply((Path p) -> null);
+                                 ^
+  symbol:   method thenApply((Path p)->null)
+  location: interface Path
+4 errors

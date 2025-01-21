@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-bit_ops-py-go.go:31:99: cannot use width (variable of type uint) as uint8 value in argument to asr

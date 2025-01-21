@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-str_cmp-java-go.go:43:77: undefined: strings.CompareFold

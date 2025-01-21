@@ -1,0 +1,48 @@
+**Error:** The code declares the `compare()` function with a `const char *` argument type, but uses `compare("Hello", "Hello");` without including the function declaration.
+
+**Fix:** Add the function declaration before the function call.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+void compare(const char *A, const char *B) {
+  if (strcmp(A, B) == 0) {
+    printf("'%s' and '%s' are lexically equal.\n", A, B);
+  } else {
+    printf("'%s' and '%s' are not lexically equal.\n", A, B);
+  }
+
+  if (strcmpi(A, B) == 0) {
+    printf("'%s' and '%s' are case-insensitive lexically equal.\n", A, B);
+  } else {
+    printf("'%s' and '%s' are not case-insensitive lexically equal.\n", A, B);
+  }
+
+  if (strcmp(A, B) < 0) {
+    printf("'%s' is lexically before '%s'.\n", A, B);
+  } else if (strcmp(A, B) > 0) {
+    printf("'%s' is lexically after '%s'.\n", A, B);
+  }
+
+  if (strcmp(A, B) >= 0) {
+    printf("'%s' is not lexically before '%s'.\n", A, B);
+  }
+  if (strcmp(A, B) <= 0) {
+    printf("'%s' is not lexically after '%s'.\n", A, B);
+  }
+
+  printf("The lexical relationship is: %d\n", strcmp(A, B));
+  printf("The case-insensitive lexical relationship is: %d\n\n", strcmpi(A, B));
+}
+
+int main() {
+  compare("Hello", "Hello");
+  compare("5", "5.0");
+  compare("java", "Java");
+  compare("ĴÃVÁ", "ĴÃVÁ");
+  compare("ĴÃVÁ", "ĵãvá");
+
+  return 0;
+}
+```

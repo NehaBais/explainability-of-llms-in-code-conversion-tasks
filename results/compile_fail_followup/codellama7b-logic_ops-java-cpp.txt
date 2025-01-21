@@ -1,0 +1,4 @@
+/tmp/codellama7b-logic_ops-java-cpp.cpp:7:3: error: use of undeclared identifier 'logic'
+    7 |   logic(a, b);
+      |   ^
+1 error generated.

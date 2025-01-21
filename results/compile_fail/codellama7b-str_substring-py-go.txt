@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codellama7b-str_substring-py-go.go:10:34: more than one character in rune literal
+/tmp/codellama7b-str_substring-py-go.go:16:17: invalid argument: index -1 (constant of type int) must not be negative
+/tmp/codellama7b-str_substring-py-go.go:18:15: undefined: utf8.IndexRune
+/tmp/codellama7b-str_substring-py-go.go:25:14: undefined: utf8.IndexRune

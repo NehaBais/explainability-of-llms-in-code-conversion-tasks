@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-int_factors-cpp-c.c:30:10: error: use of undeclared identifier 'EXIT_SUCCESS'
+   30 |   return EXIT_SUCCESS;
+      |          ^
+1 error generated.

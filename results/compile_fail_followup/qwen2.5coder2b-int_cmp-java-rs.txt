@@ -1,0 +1,33 @@
+error[E0599]: no method named `flush` found for struct `Stdout` in the current scope
+ --> /tmp/qwen2.5coder2b-int_cmp-java-rs.rs:7:18
+  |
+7 |     io::stdout().flush().expect("Failed to flush stdout");
+  |                  ^^^^^ method not found in `Stdout`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/mod.rs:1653:8
+  |
+  = note: the method is available for `Stdout` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Write` which provides `flush` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::io::Write;
+  |
+
+error[E0599]: no method named `flush` found for struct `Stdout` in the current scope
+  --> /tmp/qwen2.5coder2b-int_cmp-java-rs.rs:13:18
+   |
+13 |     io::stdout().flush().expect("Failed to flush stdout");
+   |                  ^^^^^ method not found in `Stdout`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/mod.rs:1653:8
+   |
+   = note: the method is available for `Stdout` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+help: trait `Write` which provides `flush` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::io::Write;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

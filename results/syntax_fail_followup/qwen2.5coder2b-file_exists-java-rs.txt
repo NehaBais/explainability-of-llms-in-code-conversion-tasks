@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `path_exists` in module `fs`
+  --> /tmp/qwen2.5coder2b-file_exists-java-rs.rs:10:12
+   |
+10 |     if fs::path_exists(&docs_directory_path).unwrap_or(false)
+   |            ^^^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `path_exists` in module `fs`
+  --> /tmp/qwen2.5coder2b-file_exists-java-rs.rs:22:12
+   |
+22 |     if fs::path_exists(&docs_root_path).unwrap_or(false)
+   |            ^^^^^^^^^^^ not found in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,0 +1,138 @@
+error[E0425]: cannot find function `create_dir_recursive` in module `fs`
+ --> /tmp/yicoder2b-dir_make-py-rs.rs:7:26
+  |
+7 |     if let Err(_e) = fs::create_dir_recursive(path) {
+  |                          ^^^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `read_dir_meta` in module `fs`
+ --> /tmp/yicoder2b-dir_make-py-rs.rs:8:19
+  |
+8 |         match fs::read_dir_meta(path) {
+  |                   ^^^^^^^^^^^^^ not found in `fs`
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:11:21
+   |
+11 |                 fs::ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+11 -                 fs::ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+11 +                 ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+   |
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:12:21
+   |
+12 |                 fs::ErrorKind::NoPermissions => {
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+12 -                 fs::ErrorKind::NoPermissions => {
+12 +                 ErrorKind::NoPermissions => {
+   |
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:15:21
+   |
+15 |                 fs::ErrorKind::NotFound => (),
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+15 -                 fs::ErrorKind::NotFound => (),
+15 +                 ErrorKind::NotFound => (),
+   |
+
+error[E0425]: cannot find function `read_dir_meta` in module `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:20:19
+   |
+20 |         match fs::read_dir_meta(path) {
+   |                   ^^^^^^^^^^^^^ not found in `fs`
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:23:21
+   |
+23 |                 fs::ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+23 -                 fs::ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+23 +                 ErrorKind::Access => println!("Failed to access path: {}", &ioerr),
+   |
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:24:21
+   |
+24 |                 fs::ErrorKind::NoPermissions => {
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+24 -                 fs::ErrorKind::NoPermissions => {
+24 +                 ErrorKind::NoPermissions => {
+   |
+
+error[E0433]: failed to resolve: could not find `ErrorKind` in `fs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:27:21
+   |
+27 |                 fs::ErrorKind::NotFound => (),
+   |                     ^^^^^^^^^ could not find `ErrorKind` in `fs`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+27 -                 fs::ErrorKind::NotFound => (),
+27 +                 ErrorKind::NotFound => (),
+   |
+
+warning: unused import: `std::io::Write`
+ --> /tmp/yicoder2b-dir_make-py-rs.rs:2:5
+  |
+2 | use std::io::Write;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::process`
+ --> /tmp/yicoder2b-dir_make-py-rs.rs:3:5
+  |
+3 | use std::process;
+  |     ^^^^^^^^^^^^
+
+error[E0601]: `main` function not found in crate `yicoder2b_dir_make_py_rs`
+  --> /tmp/yicoder2b-dir_make-py-rs.rs:32:2
+   |
+32 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-dir_make-py-rs.rs`
+
+error: aborting due to 10 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0425, E0433, E0601.
+For more information about an error, try `rustc --explain E0425`.

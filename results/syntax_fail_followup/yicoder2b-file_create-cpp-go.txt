@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_create-cpp-go.go:11:19: undefined: ioutil.Touch

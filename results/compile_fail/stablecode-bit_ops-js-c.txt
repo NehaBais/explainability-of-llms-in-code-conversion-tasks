@@ -1,0 +1,19 @@
+/tmp/stablecode-bit_ops-js-c.c:5:36: error: extraneous ')' before ';'
+    5 |     printf("a OR b: %d\n", (a | b)));
+      |                                    ^
+/tmp/stablecode-bit_ops-js-c.c:6:37: error: extraneous ')' before ';'
+    6 |     printf("a XOR b: %d\n", (a ^ b)));
+      |                                     ^
+/tmp/stablecode-bit_ops-js-c.c:13:30: error: extraneous ')' before ';'
+   13 |     printf("a << b: %d\n", c));
+      |                              ^
+/tmp/stablecode-bit_ops-js-c.c:17:30: error: extraneous ')' before ';'
+   17 |     printf("a >> b: %d\n", c));
+      |                              ^
+/tmp/stablecode-bit_ops-js-c.c:21:39: error: expected expression
+   21 |     c = (b >= sizeof(int)) ? 0 : (a >>> b));
+      |                                       ^
+/tmp/stablecode-bit_ops-js-c.c:22:31: error: extraneous ')' before ';'
+   22 |     printf("a >>> b: %d\n", c));
+      |                               ^
+6 errors generated.

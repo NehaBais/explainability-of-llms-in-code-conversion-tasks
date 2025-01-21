@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:17:49: error: expected expression
+   17 |   if (std::equal(c.begin(), c.end(), d.begin(), [](char a, char b) {
+      |                                                 ^
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:10: error: expected expression
+   26 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:11: error: unexpected character <U+FF5C>
+   26 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:19: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:24: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:35: error: character <U+FF5C> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:26:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   26 |   return <｜begin▁of▁sentence｜ >
+      |             ^
+7 errors generated.

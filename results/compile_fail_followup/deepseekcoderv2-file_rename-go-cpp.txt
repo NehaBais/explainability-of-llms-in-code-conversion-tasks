@@ -1,0 +1,16 @@
+/tmp/deepseekcoderv2-file_rename-go-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::rename("input.txt", "output.txt");
+      |     ~~~~~^
+/tmp/deepseekcoderv2-file_rename-go-cpp.cpp:10:10: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::rename("docs", "mydocs");
+      |     ~~~~~^
+/tmp/deepseekcoderv2-file_rename-go-cpp.cpp:13:10: error: no member named 'filesystem' in namespace 'std'
+   13 |     std::filesystem::rename("/input.txt", "/output.txt");
+      |     ~~~~~^
+/tmp/deepseekcoderv2-file_rename-go-cpp.cpp:16:10: error: no member named 'filesystem' in namespace 'std'
+   16 |     std::filesystem::rename("/docs", "/mydocs");
+      |     ~~~~~^
+/tmp/deepseekcoderv2-file_rename-go-cpp.cpp:17:23: error: no member named 'filesystem' in namespace 'std'
+   17 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+5 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-int_cmp-java-go.go:44:15: undefined: strings

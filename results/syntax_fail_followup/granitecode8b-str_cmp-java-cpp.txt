@@ -1,0 +1,49 @@
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string A = "Hello";
+      |   ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string B = "Hello";
+      |   ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:7:5: error: use of undeclared identifier 'std'
+    7 |     std::cout << "'" << A << "' and '" << B << "' are lexically equal."
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:8:18: error: use of undeclared identifier 'std'
+    8 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << "'" << A << "' and '" << B << "' are not lexically equal."
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:11:18: error: use of undeclared identifier 'std'
+   11 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:14:5: error: use of undeclared identifier 'std'
+   14 |     std::cout << "'" << A << "' is lexically before '" << B << "'."
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:15:18: error: use of undeclared identifier 'std'
+   15 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:17:5: error: use of undeclared identifier 'std'
+   17 |     std::cout << "'" << A << "' is not lexically before '" << B << "'."
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:18:18: error: use of undeclared identifier 'std'
+   18 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:21:5: error: use of undeclared identifier 'std'
+   21 |     std::cout << "'" << A << "' is lexically after '" << B << "'." << std::endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:21:71: error: use of undeclared identifier 'std'
+   21 |     std::cout << "'" << A << "' is lexically after '" << B << "'." << std::endl;
+      |                                                                       ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:23:5: error: use of undeclared identifier 'std'
+   23 |     std::cout << "'" << A << "' is not lexically after '" << B << "'."
+      |     ^
+/tmp/granitecode8b-str_cmp-java-cpp.cpp:24:18: error: use of undeclared identifier 'std'
+   24 |               << std::endl;
+      |                  ^
+16 errors generated.

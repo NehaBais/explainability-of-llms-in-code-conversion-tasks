@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-dir_make-c-go.go:10:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-c-go.go:22:38: syntax error: unexpected ), expected {
+/tmp/stablecode-dir_make-c-go.go:25:30: syntax error: unexpected ), expected {

@@ -1,0 +1,1 @@
+Your request appears to be incomplete or contains errors, so it is impossible for me to provide an accurate conversion of that specific JavaScript code into C++. I can help if you provide a detailed description of the requested functionality and the specific syntax errors found in the provided code.

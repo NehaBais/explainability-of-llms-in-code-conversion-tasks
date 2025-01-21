@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-file_create-java-cpp.cpp:15:8: error: no member named 'filesystem' in namespace 'std'
+   15 |   std::filesystem::create_directory("docs");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_create-java-cpp.cpp:18:13: error: no member named 'filesystem' in namespace 'std'
+   18 |   if (!std::filesystem::create_directory("/output.txt")) {
+      |        ~~~~~^
+/tmp/qwen2.5coder2b-file_create-java-cpp.cpp:22:13: error: no member named 'filesystem' in namespace 'std'
+   22 |   if (!std::filesystem::create_directory("/docs")) {
+      |        ~~~~~^
+3 errors generated.

@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_interp-go-cpp.cpp:7:16: error: no matching function for call to 'sprintf'
+    7 |   std::cout << sprintf(str, txt) << std::endl;
+      |                ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:276:6: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'char *' for 1st argument
+  276 | int      sprintf(char * __restrict, const char * __restrict, ...) __printflike(2, 3);
+      |          ^       ~~~~~~
+1 error generated.

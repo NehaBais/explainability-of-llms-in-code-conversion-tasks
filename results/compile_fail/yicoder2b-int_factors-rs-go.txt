@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-int_factors-rs-go.go:10:23: undefined: math

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-logic_ops-c-go.go:6:42: expected statement, found ')' (and 1 more errors)

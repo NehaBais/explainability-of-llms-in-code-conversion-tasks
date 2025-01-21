@@ -1,0 +1,4 @@
+/tmp/codeqwen-file_size-rs-c.c:18:24: error: use of undeclared identifier 'PATH_MAX'
+   18 |     char absolute_path[PATH_MAX];
+      |                        ^
+1 error generated.

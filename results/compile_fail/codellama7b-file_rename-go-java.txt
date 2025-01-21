@@ -1,0 +1,61 @@
+/tmp/Main.java:6: error: cannot find symbol
+    Files.move(Paths.get("input.txt"), Paths.get("output.txt"));
+    ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    Files.move(Paths.get("input.txt"), Paths.get("output.txt"));
+               ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    Files.move(Paths.get("input.txt"), Paths.get("output.txt"));
+                                       ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    Files.move(Paths.get("docs"), Paths.get("mydocs"));
+    ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    Files.move(Paths.get("docs"), Paths.get("mydocs"));
+               ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    Files.move(Paths.get("docs"), Paths.get("mydocs"));
+                                  ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    Files.move(Paths.get("/input.txt"), Paths.get("/output.txt"));
+    ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    Files.move(Paths.get("/input.txt"), Paths.get("/output.txt"));
+               ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    Files.move(Paths.get("/input.txt"), Paths.get("/output.txt"));
+                                        ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+    Files.move(Paths.get("/docs"), Paths.get("/mydocs"));
+    ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+    Files.move(Paths.get("/docs"), Paths.get("/mydocs"));
+               ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+    Files.move(Paths.get("/docs"), Paths.get("/mydocs"));
+                                   ^
+  symbol:   variable Paths
+  location: class Main
+12 errors

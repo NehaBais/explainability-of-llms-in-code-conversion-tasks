@@ -1,0 +1,7 @@
+/tmp/BitwiseOperations.java:28: error: long cannot be dereferenced
+    System.out.println("a rol b: " + (ua.rotateLeft(b)));
+                                        ^
+/tmp/BitwiseOperations.java:29: error: long cannot be dereferenced
+    System.out.println("a ror b: " + (ua.rotateRight(b)));
+                                        ^
+2 errors

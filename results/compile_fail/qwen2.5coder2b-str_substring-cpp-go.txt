@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-cpp-go.go:18:17: middle index required in 3-index slice
+/tmp/qwen2.5coder2b-str_substring-cpp-go.go:18:30: syntax error: unexpected :, expected ]
+/tmp/qwen2.5coder2b-str_substring-cpp-go.go:19:17: middle index required in 3-index slice
+/tmp/qwen2.5coder2b-str_substring-cpp-go.go:19:32: syntax error: unexpected :, expected ]

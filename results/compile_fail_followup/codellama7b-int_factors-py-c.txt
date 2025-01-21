@@ -1,0 +1,32 @@
+/tmp/codellama7b-int_factors-py-c.c:4:10: error: definition of variable with array type needs an explicit size or an initializer
+    4 |   double factors1[], factors2[];
+      |          ^
+/tmp/codellama7b-int_factors-py-c.c:4:22: error: definition of variable with array type needs an explicit size or an initializer
+    4 |   double factors1[], factors2[];
+      |                      ^
+/tmp/codellama7b-int_factors-py-c.c:7:21: error: use of undeclared identifier 'x'
+    7 |       factors1[i] = x;
+      |                     ^
+/tmp/codellama7b-int_factors-py-c.c:8:25: error: use of undeclared identifier 'x'
+    8 |       factors2[i] = n / x;
+      |                         ^
+/tmp/codellama7b-int_factors-py-c.c:14:10: error: definition of variable with array type needs an explicit size or an initializer
+   14 |   int i, factors1[], factors2[];
+      |          ^
+/tmp/codellama7b-int_factors-py-c.c:14:22: error: definition of variable with array type needs an explicit size or an initializer
+   14 |   int i, factors1[], factors2[];
+      |                      ^
+/tmp/codellama7b-int_factors-py-c.c:17:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     printf("%d: factors: %s\n", i, factor(i));
+      |     ^
+/tmp/codellama7b-int_factors-py-c.c:17:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codellama7b-int_factors-py-c.c:17:36: error: argument type 'void' is incomplete
+   17 |     printf("%d: factors: %s\n", i, factor(i));
+      |                                    ^
+/tmp/codellama7b-int_factors-py-c.c:15:16: warning: left operand of comma operator has no effect [-Wunused-value]
+   15 |   for (i = 45, 53, 64; i < 0; i++) {
+      |                ^~
+/tmp/codellama7b-int_factors-py-c.c:15:20: warning: expression result unused [-Wunused-value]
+   15 |   for (i = 45, 53, 64; i < 0; i++) {
+      |                    ^~
+2 warnings and 8 errors generated.

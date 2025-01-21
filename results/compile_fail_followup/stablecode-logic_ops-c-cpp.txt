@@ -1,0 +1,7 @@
+/tmp/stablecode-logic_ops-c-cpp.cpp:1:1: error: unknown type name 'Fix'
+    1 | Fix : Replace `&&` with `and`, `||` with `or`,
+      | ^
+/tmp/stablecode-logic_ops-c-cpp.cpp:1:5: error: expected unqualified-id
+    1 | Fix : Replace `&&` with `and`, `||` with `or`,
+      |     ^
+2 errors generated.

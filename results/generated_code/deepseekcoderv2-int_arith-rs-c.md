@@ -1,14 +1,13 @@
-Answer: Here is the C code that performs the same operations:
+ Sure, here is the equivalent code in C without error handling. Note that Rust's `env::args` and parsing are replaced with standard input in C, and we handle integer division differently since C does not have an automatic way to handle rounding for division like Rust does.
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        printf("Usage: ./a.out a b\n");
-        return -1;
+        printf("Usage: %s <integer1> <integer2>\n", argv[0]);
+        return 1;
     }
 
     int a = atoi(argv[1]);
@@ -17,7 +16,20 @@ int main(int argc, char *argv[]) {
     printf("sum:              %d\n", a + b);
     printf("difference:       %d\n", a - b);
     printf("product:          %d\n", a * b);
-    printf("integer quotient: %d (truncates towards zero)\n", a / b); // truncates towards zero
-    printf("remainder:        %d (same sign as first operand)\n", a % b); // same sign as first operand
+    
+    // For integer quotient in C, we use the / operator which truncates towards zero.
+    int quotient = a / b;
+    printf("integer quotient: %d\n", quotient);
+
+    // For remainder, the sign is determined by the first operand if they are different.
+    int remainder = a % b;
+    printf("remainder:        %d\n", remainder);
+
+    return 0;
 }
 ```
+
+In this C code:
+- `atoi` is used to convert command line arguments from strings to integers.
+- The integer division `/` operator in C truncates towards zero, which matches how Rust handles integer division for the quotient.
+- The remainder operation `%` follows the rule that its sign matches the sign of the first operand if the signs of the operands are different.

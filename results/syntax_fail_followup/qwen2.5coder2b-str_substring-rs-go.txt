@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-str_substring-rs-go.go:18:45: missing ',' before newline in argument list (and 6 more errors)

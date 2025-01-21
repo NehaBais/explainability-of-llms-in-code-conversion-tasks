@@ -1,0 +1,15 @@
+/tmp/stablecode-file_exists-rs-c.c:1:1: error: unknown type name 'Fix'
+    1 | Fix explanation:
+      | ^
+/tmp/stablecode-file_exists-rs-c.c:1:16: error: expected ';' after top level declarator
+    1 | Fix explanation:
+      |                ^
+      |                ;
+/tmp/stablecode-file_exists-rs-c.c:2:1: error: unknown type name 'The'
+    2 | The error occurred because of an extra closing parenthesis `)` at the end of a line. To fix this, I removed the extra closing parenthesis from that line.
+      | ^
+/tmp/stablecode-file_exists-rs-c.c:2:10: error: expected ';' after top level declarator
+    2 | The error occurred because of an extra closing parenthesis `)` at the end of a line. To fix this, I removed the extra closing parenthesis from that line.
+      |          ^
+      |          ;
+4 errors generated.

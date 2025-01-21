@@ -1,0 +1,12 @@
+/tmp/Main.java:8: error: cannot find symbol
+    create(".").thenAccept(Main::createRoot);
+    ^
+  symbol:   method create(String)
+  location: class Main
+/tmp/Main.java:8: error: invalid method reference
+    create(".").thenAccept(Main::createRoot);
+                           ^
+  cannot find symbol
+    symbol:   method createRoot()
+    location: class Main
+2 errors

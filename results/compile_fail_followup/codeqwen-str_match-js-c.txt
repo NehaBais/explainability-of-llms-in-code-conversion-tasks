@@ -1,0 +1,12 @@
+/tmp/codeqwen-str_match-js-c.c:10:3: error: use of undeclared identifier 'bool'
+   10 |   bool q3 = (strncmp(stringA, stringB, strlen(stringB)) == 0);
+      |   ^
+/tmp/codeqwen-str_match-js-c.c:29:51: warning: data argument not used by format string [-Wformat-extra-args]
+   28 |     printf("In fact, it happens %d times within '%s', At index%s ", numMatches,
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   29 |            stringA, (numMatches > 1 ? "es" : ""), q2matches[0]);
+      |                                                   ^
+/tmp/codeqwen-str_match-js-c.c:33:10: error: use of undeclared identifier 'q3'
+   33 |          q3 ? "Yes" : "No");
+      |          ^
+1 warning and 2 errors generated.

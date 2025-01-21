@@ -1,0 +1,87 @@
+error: redundant arguments
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:4:27
+  |
+4 |     println!("{s1} {s2}", s1, s2);
+  |                           ^^  ^^
+  |
+note: the formatting specifiers are referencing the bindings already
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:4:16
+  |
+4 |     println!("{s1} {s2}", s1, s2);
+  |                ^^   ^^
+help: this can be removed
+  |
+4 -     println!("{s1} {s2}", s1, s2);
+4 +     println!("{s1} {s2}", );
+  |
+
+error: redundant arguments
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:8:27
+  |
+8 |     println!("{s3} {s4}", s3, s4);
+  |                           ^^  ^^
+  |
+note: the formatting specifiers are referencing the bindings already
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:8:16
+  |
+8 |     println!("{s3} {s4}", s3, s4);
+  |                ^^   ^^
+help: this can be removed
+  |
+8 -     println!("{s3} {s4}", s3, s4);
+8 +     println!("{s3} {s4}", );
+  |
+
+error: redundant arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:12:27
+   |
+12 |     println!("{s5} {s6}", s5, s6);
+   |                           ^^  ^^
+   |
+note: the formatting specifiers are referencing the bindings already
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:12:16
+   |
+12 |     println!("{s5} {s6}", s5, s6);
+   |                ^^   ^^
+help: this can be removed
+   |
+12 -     println!("{s5} {s6}", s5, s6);
+12 +     println!("{s5} {s6}", );
+   |
+
+error: redundant arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:16:27
+   |
+16 |     println!("{s7} {s8}", s7, s8);
+   |                           ^^  ^^
+   |
+note: the formatting specifiers are referencing the bindings already
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:16:16
+   |
+16 |     println!("{s7} {s8}", s7, s8);
+   |                ^^   ^^
+help: this can be removed
+   |
+16 -     println!("{s7} {s8}", s7, s8);
+16 +     println!("{s7} {s8}", );
+   |
+
+error: redundant arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:20:28
+   |
+20 |     println!("{s9} {s10}", s9, s10);
+   |                            ^^  ^^^
+   |
+note: the formatting specifiers are referencing the bindings already
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:20:16
+   |
+20 |     println!("{s9} {s10}", s9, s10);
+   |                ^^   ^^^
+help: this can be removed
+   |
+20 -     println!("{s9} {s10}", s9, s10);
+20 +     println!("{s9} {s10}", );
+   |
+
+error: aborting due to 5 previous errors
+

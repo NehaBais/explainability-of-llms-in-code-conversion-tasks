@@ -1,0 +1,9 @@
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/granitecode3b-bit_ops-py-js.js:20
+     LEFT:    0b${a.toString(2).padStart(width, '0')} << 1
+              ^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v23.1.0

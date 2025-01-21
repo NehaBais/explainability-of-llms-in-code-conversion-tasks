@@ -1,0 +1,76 @@
+error[E0425]: cannot find function `current_dir` in module `process`
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:19:29
+   |
+19 |     let curr_dir = process::current_dir().expect("Failed to get current directory");
+   |                             ^^^^^^^^^^^ not found in `process`
+   |
+help: consider importing this function
+   |
+1  + use std::env::current_dir;
+   |
+help: if you import `current_dir`, refer to it directly
+   |
+19 -     let curr_dir = process::current_dir().expect("Failed to get current directory");
+19 +     let curr_dir = current_dir().expect("Failed to get current directory");
+   |
+
+error[E0425]: cannot find function `current_dir` in module `process`
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:25:29
+   |
+25 |     let curr_dir = process::current_dir().expect("Failed to get current directory");
+   |                             ^^^^^^^^^^^ not found in `process`
+   |
+help: consider importing this function
+   |
+1  + use std::env::current_dir;
+   |
+help: if you import `current_dir`, refer to it directly
+   |
+25 -     let curr_dir = process::current_dir().expect("Failed to get current directory");
+25 +     let curr_dir = current_dir().expect("Failed to get current directory");
+   |
+
+error[E0061]: this function takes 3 arguments but 2 arguments were supplied
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:20:5
+   |
+20 |       test(
+   |  _____^^^^-
+21 | |         &format!("{}{}", curr_dir.to_str().unwrap(), "\\input.txt"),
+22 | |         &format!("{}{}", curr_dir.to_str().unwrap(), "\\output.txt"),
+23 | |     );
+   | |_____- argument #3 of type `&str` is missing
+   |
+note: function defined here
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:7:4
+   |
+7  | fn test(type_str: &str, oldname: &str, newname: &str) {
+   |    ^^^^ --------------  -------------  -------------
+help: provide the argument
+   |
+20 |     test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\input.txt"), &format!("{}{}", curr_dir.to_str().unwrap(), "\\output.txt"), /* &str */);
+   |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 3 arguments but 2 arguments were supplied
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:26:5
+   |
+26 |       test(
+   |  _____^^^^-
+27 | |         &format!("{}{}", curr_dir.to_str().unwrap(), "\\docs"),
+28 | |         &format!("{}{}", curr_dir.to_str().unwrap(), "\\mydocs"),
+29 | |     );
+   | |_____- argument #3 of type `&str` is missing
+   |
+note: function defined here
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:7:4
+   |
+7  | fn test(type_str: &str, oldname: &str, newname: &str) {
+   |    ^^^^ --------------  -------------  -------------
+help: provide the argument
+   |
+26 |     test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\docs"), &format!("{}{}", curr_dir.to_str().unwrap(), "\\mydocs"), /* &str */);
+   |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0061, E0425.
+For more information about an error, try `rustc --explain E0061`.

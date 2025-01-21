@@ -1,0 +1,20 @@
+/tmp/codellama7b-str_substring-py-c.c:6:8: error: cannot combine with previous 'char' declaration specifier
+    6 |   char char;
+      |        ^
+/tmp/codellama7b-str_substring-py-c.c:6:3: warning: declaration does not declare anything [-Wmissing-declarations]
+    6 |   char char;
+      |   ^~~~~~~~~
+/tmp/codellama7b-str_substring-py-c.c:19:14: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   int indx = strstr(s, "d");
+      |              ^
+/tmp/codellama7b-str_substring-py-c.c:19:14: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/codellama7b-str_substring-py-c.c:19:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   19 |   int indx = strstr(s, "d");
+      |       ^      ~~~~~~~~~~~~~~
+/tmp/codellama7b-str_substring-py-c.c:28:7: error: redefinition of 'indx'
+   28 |   int indx = strstr(s, "cd");
+      |       ^
+/tmp/codellama7b-str_substring-py-c.c:19:7: note: previous definition is here
+   19 |   int indx = strstr(s, "d");
+      |       ^
+1 warning and 4 errors generated.

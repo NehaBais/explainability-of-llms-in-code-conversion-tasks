@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-str_match-java-go.go:17:45: syntax error: unexpected ) at end of statement

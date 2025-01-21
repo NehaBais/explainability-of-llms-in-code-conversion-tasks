@@ -1,0 +1,35 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/qwen2.5coder7b-str_substring-c-rs.rs:2:5
+  |
+2 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+warning: unused import: `std::ptr`
+ --> /tmp/qwen2.5coder7b-str_substring-c-rs.rs:1:5
+  |
+1 | use std::ptr;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+ --> /tmp/qwen2.5coder7b-str_substring-c-rs.rs:5:30
+  |
+5 |     let chars: Vec<&str> = s.graphemes(true).collect();
+  |                              ^^^^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder7b-str_substring-c-rs.rs:28:23
+   |
+28 |     substring(s, 0, s.graphemes(true).count() as isize - 1)
+   |                       ^^^^^^^^^ method not found in `&str`
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

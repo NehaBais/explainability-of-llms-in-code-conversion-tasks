@@ -1,0 +1,19 @@
+/tmp/codellama7b-str_concat-rs-cpp.cpp:2:3: error: unknown type name 'string'
+    2 |   string s = "hello";
+      |   ^
+/tmp/codellama7b-str_concat-rs-cpp.cpp:3:3: error: use of undeclared identifier 'cout'
+    3 |   cout << s << endl;
+      |   ^
+/tmp/codellama7b-str_concat-rs-cpp.cpp:3:16: error: use of undeclared identifier 'endl'
+    3 |   cout << s << endl;
+      |                ^
+/tmp/codellama7b-str_concat-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s1 = s + " world";
+      |   ^
+/tmp/codellama7b-str_concat-rs-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << s1 << endl;
+      |   ^
+/tmp/codellama7b-str_concat-rs-cpp.cpp:6:17: error: use of undeclared identifier 'endl'
+    6 |   cout << s1 << endl;
+      |                 ^
+6 errors generated.

@@ -1,14 +1,14 @@
-Answer: To convert the given C code to C++, we need to perform string interpolation using the std::string type and the << operator from the ostream class. We also need to use the const keyword for variables that are not supposed to be modified in the program, which is a feature introduced with the introduction of classes in C++.
+ Sure, here is the equivalent code in C++ with string interpolation using C++11 and later features:
 
-Here's the converted code:
-
-```
+```cpp
 #include <iostream>
 #include <string>
-using namespace std;
+
 int main() {
-  string extra = "little";
-  cout << "Mary had a " + extra + " lamb." << endl;
-  return 0;
+    std::string extra = "little";
+    std::cout << "Mary had a " << extra << " lamb." << std::endl;
+    return 0;
 }
 ```
+
+In this C++ code, we use the `std::string` class to handle string interpolation. The value of `extra` is inserted into the output stream using the `<<` operator.

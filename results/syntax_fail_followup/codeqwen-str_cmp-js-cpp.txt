@@ -1,0 +1,13 @@
+/tmp/codeqwen-str_cmp-js-cpp.cpp:8:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    8 |   for (char c : s) {
+      |               ^
+/tmp/codeqwen-str_cmp-js-cpp.cpp:36:21: error: no member named 'toLowerCase' in 'std::string'
+   36 |   cout << (s1 == s2.toLowerCase()) << endl; // false
+      |                  ~~ ^
+/tmp/codeqwen-str_cmp-js-cpp.cpp:39:15: error: no member named 'toLowerCase' in 'std::string'
+   39 |   cout << (s1.toLowerCase() == s2.toLowerCase()) << endl; // true
+      |            ~~ ^
+/tmp/codeqwen-str_cmp-js-cpp.cpp:39:35: error: no member named 'toLowerCase' in 'std::string'
+   39 |   cout << (s1.toLowerCase() == s2.toLowerCase()) << endl; // true
+      |                                ~~ ^
+1 warning and 3 errors generated.

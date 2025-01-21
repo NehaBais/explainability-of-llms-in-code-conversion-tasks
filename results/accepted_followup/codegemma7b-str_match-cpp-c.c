@@ -1,0 +1,1 @@
+const char *loc = strstr(s2, s3);

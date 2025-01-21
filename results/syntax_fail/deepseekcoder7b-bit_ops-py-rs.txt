@@ -1,0 +1,23 @@
+error[E0768]: no valid digits found for number
+  --> /tmp/deepseekcoder7b-bit_ops-py-rs.rs:14:15
+   |
+14 |              "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
+   |               ^^
+
+error[E0765]: unterminated double quote string
+  --> /tmp/deepseekcoder7b-bit_ops-py-rs.rs:14:28
+   |
+14 |                "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
+   |  ____________________________^
+15 | |     
+16 | |     println!-- NEGATIVE
+17 | |     println!-- ZERO
+...  |
+32 | |     }
+33 | | }
+   | |_^
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0765, E0768.
+For more information about an error, try `rustc --explain E0765`.

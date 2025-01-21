@@ -1,0 +1,102 @@
+/tmp/granitecode8b-bit_ops-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:3:14: error: unknown type name 'int16_t'
+    3 | void bitwise(int16_t a, int16_t b) {
+      |              ^
+/tmp/granitecode8b-bit_ops-go-c.c:3:25: error: unknown type name 'int16_t'
+    3 | void bitwise(int16_t a, int16_t b) {
+      |                         ^
+/tmp/granitecode8b-bit_ops-go-c.c:4:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |  printf("a:   %016b
+      |  ^
+/tmp/granitecode8b-bit_ops-go-c.c:4:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-bit_ops-go-c.c:4:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    4 |  printf("a:   %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:4:9: error: expected expression
+/tmp/granitecode8b-bit_ops-go-c.c:5:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 | ", (uint16_t)a);
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:6:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 |  printf("b:   %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:7:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 | ", (uint16_t)b);
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:9:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |  printf("and: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:10:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 | ", (uint16_t)(a & b));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:11:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 |  printf("or:  %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:12:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 | ", (uint16_t)(a | b));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:13:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 |  printf("xor: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:14:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 | ", (uint16_t)(a ^ b));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:15:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |  printf("not: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:16:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 | ", (uint16_t)(~a));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:18:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 |  printf("Right operand is negative, but all shifts require an unsigned right operand (shift distance).
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:19:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 | ");
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:25:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   25 |  printf("shl: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:26:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   26 | ", (uint16_t)(ua << ub));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:27:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   27 |  printf("shr: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:28:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   28 | ", (uint16_t)(ua >> ub));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:30:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   30 |  printf("las: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:31:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   31 | ", (uint16_t)(a << ub));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:32:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   32 |  printf("ras: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:33:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   33 | ", (uint16_t)(a >> ub));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:36:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   36 |  printf("rol: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:37:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   37 | ", (uint16_t)((ua << ub) & ~mask) | (uint16_t)(a >> (16 - ub)));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:38:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   38 |  printf("ror: %016b
+      |         ^
+/tmp/granitecode8b-bit_ops-go-c.c:39:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   39 | ", (uint16_t)((a >> ub) & ~mask) | (uint16_t)(ua << (16 - ub)));
+      | ^
+/tmp/granitecode8b-bit_ops-go-c.c:45:2: error: expected '}'
+   45 | }
+      |  ^
+/tmp/granitecode8b-bit_ops-go-c.c:3:36: note: to match this '{'
+    3 | void bitwise(int16_t a, int16_t b) {
+      |                                    ^
+26 warnings and 7 errors generated.

@@ -1,0 +1,17 @@
+/tmp/yicoder9b-int_factors-go-cpp.cpp:11:17: error: expected ';' at end of declaration
+   11 |   vector<int> fs{1};
+      |                 ^
+      |                 ;
+/tmp/yicoder9b-int_factors-go-cpp.cpp:12:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   auto apf = [&](long long int p, int e) {
+      |   ^
+/tmp/yicoder9b-int_factors-go-cpp.cpp:12:14: error: expected expression
+   12 |   auto apf = [&](long long int p, int e) {
+      |              ^
+/tmp/yicoder9b-int_factors-go-cpp.cpp:40:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   40 |   for (auto i : fs)
+      |        ^
+/tmp/yicoder9b-int_factors-go-cpp.cpp:40:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   40 |   for (auto i : fs)
+      |               ^
+3 warnings and 2 errors generated.

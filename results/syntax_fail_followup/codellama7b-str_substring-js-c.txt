@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_substring-js-c.c:7:16: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    7 |   strncpy(str, n, m);
+      |                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:128:34: note: expanded from macro 'strncpy'
+  128 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                                ^~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,88 @@
+error: expected one of `=>`, `if`, or `|`, found `{`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:14:22
+   |
+14 |         Ok(mut dirs) {
+   |                      ^ expected one of `=>`, `if`, or `|`
+
+error: expected one of `=>`, `if`, or `|`, found `{`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:32:22
+   |
+32 |         Ok(mut dirs) {
+   |                      ^ expected one of `=>`, `if`, or `|`
+
+error[E0433]: failed to resolve: could not find `Error` in `fs`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:11:17
+   |
+11 |             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |                 ^^^^^ could not find `Error` in `fs`
+   |
+help: consider importing one of these items
+   |
+1  + use std::error::Error;
+   |
+1  + use std::fmt::Error;
+   |
+1  + use std::io::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+11 -             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+11 +             Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |
+
+error[E0433]: failed to resolve: could not find `Error` in `fs`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:29:17
+   |
+29 |             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |                 ^^^^^ could not find `Error` in `fs`
+   |
+help: consider importing one of these items
+   |
+1  + use std::error::Error;
+   |
+1  + use std::fmt::Error;
+   |
+1  + use std::io::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+29 -             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+29 +             Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |
+
+warning: unused import: `File`
+ --> /tmp/yicoder2b-file_size-js-rs.rs:1:21
+  |
+1 | use std::fs::{self, File};
+  |                     ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: `match` arms have incompatible types
+ --> /tmp/yicoder2b-file_size-js-rs.rs:6:22
+  |
+4 |       let file1 = match fs::File::open("input.txt") {
+  |  _________________-
+5 | |         Err(_) => println!("Failed to open input.txt"),
+  | |                   ------------------------------------ this is found to be of type `()`
+6 | |         Ok(mut f) => f,
+  | |                      ^ expected `()`, found `File`
+7 | |     };
+  | |_____- `match` arms have incompatible types
+
+error[E0308]: `match` arms have incompatible types
+  --> /tmp/yicoder2b-file_size-js-rs.rs:24:22
+   |
+22 |       let file2 = match fs::File::open("C:/input.txt") {
+   |  _________________-
+23 | |         Err(_) => println!("Failed to open C:/input.txt"),
+   | |                   --------------------------------------- this is found to be of type `()`
+24 | |         Ok(mut f) => f,
+   | |                      ^ expected `()`, found `File`
+25 | |     };
+   | |_____- `match` arms have incompatible types
+
+error: aborting due to 6 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0308, E0433.
+For more information about an error, try `rustc --explain E0308`.

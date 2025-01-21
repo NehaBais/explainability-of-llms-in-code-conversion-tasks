@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-bit_ops-cpp-go.go:18:31: undefined: bits.RotL32

@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-int_factors-js-c.c:28:46: error: use of undeclared identifier 'compare'
+   28 |   qsort(factorArr, *returnSize, sizeof(int), compare);
+      |                                              ^
+1 error generated.

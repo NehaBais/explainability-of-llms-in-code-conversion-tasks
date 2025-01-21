@@ -1,0 +1,30 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:11:53
+   |
+11 |     println!("NOT a: {:08b} (~{}) => {:08b}", 3, a, ~a);
+   |                                                     ^
+   |
+help: use `!` to perform bitwise not
+   |
+11 |     println!("NOT a: {:08b} (~{}) => {:08b}", 3, a, !a);
+   |                                                     ~
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:27:2
+   |
+27 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-bit_ops-cpp-rs.rs`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-bit_ops-cpp-rs.rs:2:9
+  |
+2 |     let mut ua = a as u32; // Convert it to an unsigned integer for the rotation functions.
+  |         ----^^
+  |         |
+  |         help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

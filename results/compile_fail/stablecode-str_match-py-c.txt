@@ -1,0 +1,7 @@
+/tmp/stablecode-str_match-py-c.c:15:34: error: extraneous ')' after condition, expected a statement
+   15 |   if (strstr(str1, str2) != NULL)) {
+      |                                  ^
+/tmp/stablecode-str_match-py-c.c:20:72: error: expected expression
+   20 |   if (strncmp(str1 + strlen(str1) - strlen(str2), str2, strlen(str2))) == 0) {
+      |                                                                        ^
+2 errors generated.

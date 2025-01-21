@@ -1,0 +1,44 @@
+/tmp/stablecode-file_create-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_create-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_create-py-cpp.cpp:3:16: error: use of undeclared identifier 'std'
+    3 | namespace fs = std::filesystem;
+      |                ^
+/tmp/stablecode-file_create-py-cpp.cpp:4:19: error: use of undeclared identifier 'std'
+    4 | void create(const std::string &directory) {
+      |                   ^
+/tmp/stablecode-file_create-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::ofstream output_file{fs::path{directory} / "output.txt"};
+      |   ^
+/tmp/stablecode-file_create-py-cpp.cpp:5:28: error: expected ';' at end of declaration
+    5 |   std::ofstream output_file{fs::path{directory} / "output.txt"};
+      |                            ^
+      |                            ;
+/tmp/stablecode-file_create-py-cpp.cpp:6:5: error: use of undeclared identifier 'fs'
+    6 |     fs::create_directories(fs::path{directory}/"docs"));
+      |     ^
+/tmp/stablecode-file_create-py-cpp.cpp:6:28: error: use of undeclared identifier 'fs'
+    6 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                            ^
+/tmp/stablecode-file_create-py-cpp.cpp:6:36: error: expected ')'
+    6 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                                    ^
+/tmp/stablecode-file_create-py-cpp.cpp:6:27: note: to match this '('
+    6 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                           ^
+/tmp/stablecode-file_create-py-cpp.cpp:9:3: error: no matching function for call to 'create'
+    9 |   create(".");
+      |   ^~~~~~
+/tmp/stablecode-file_create-py-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'const int' for 1st argument
+    4 | void create(const std::string &directory) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-file_create-py-cpp.cpp:10:3: error: no matching function for call to 'create'
+   10 |   create("/");
+      |   ^~~~~~
+/tmp/stablecode-file_create-py-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'const int' for 1st argument
+    4 | void create(const std::string &directory) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11 errors generated.

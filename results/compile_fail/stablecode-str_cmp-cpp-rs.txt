@@ -1,0 +1,27 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-cpp-rs.rs:4:70
+  |
+4 | fn demo_compare<T: PartialEq + ToString>(a: T, b: T, semantic: &str) {
+  |                                                                      ^ unclosed delimiter
+5 |     println!("{} and {} are {} equal.", a, b, if a == b {"exactly"} else {"not"}));
+  |                                                                                  ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `}`
+ --> /tmp/stablecode-str_cmp-cpp-rs.rs:6:13
+  |
+6 |     println!("{} and {} are {} ordered before {}.", 
+  |             ^ unclosed delimiter
+7 |                    a, b, if a < b {""} else {"not"}}), 
+  |                                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-cpp-rs.rs:7:53
+  |
+5 |     println!("{} and {} are {} equal.", a, b, if a == b {"exactly"} else {"not"}));
+  |                                                                                  - missing open `(` for this delimiter
+6 |     println!("{} and {} are {} ordered before {}.", 
+7 |                    a, b, if a < b {""} else {"not"}}), 
+  |                                                     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

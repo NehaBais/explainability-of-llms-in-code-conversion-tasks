@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-bit_ops-py-go.go:16:48: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/granitecode3b-bit_ops-py-go.go:34:14: undefined: bits.RotateRight64

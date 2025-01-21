@@ -1,0 +1,29 @@
+/tmp/stablecode-str_match-go-c.c:6:68: error: extraneous ')' before ';'
+    6 |         first, second, strncmp(first, second, strlen(second))) == 0);
+      |                                                                    ^
+/tmp/stablecode-str_match-go-c.c:6:64: warning: equality comparison result unused [-Wunused-comparison]
+    5 |     printf("1. \"%s\" starts with \"%s\": %d\n", 
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    6 |         first, second, strncmp(first, second, strlen(second))) == 0);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/tmp/stablecode-str_match-go-c.c:10:55: error: expected expression
+   10 |       if (strncmp(&first[i], second, strlen(second))) == 0) {
+      |                                                       ^
+/tmp/stablecode-str_match-go-c.c:16:30: error: extraneous ')' before ';'
+   16 |         first, second, found));
+      |                              ^
+/tmp/stablecode-str_match-go-c.c:19:89: error: extraneous ')' before ';'
+   19 |         first, second, strncmp(&first[strlen(second) - 1], second, strlen(second))) == 0);
+      |                                                                                         ^
+/tmp/stablecode-str_match-go-c.c:19:85: warning: equality comparison result unused [-Wunused-comparison]
+   18 |     printf("3. \"%s\" ends with \"%s\": %d\n", 
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   19 |         first, second, strncmp(&first[strlen(second) - 1], second, strlen(second))) == 0);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/tmp/stablecode-str_match-go-c.c:27:23: error: extraneous ')' before ';'
+   27 |     scanf("%s", first));
+      |                       ^
+/tmp/stablecode-str_match-go-c.c:30:24: error: extraneous ')' before ';'
+   30 |     scanf("%s", second));
+      |                        ^
+2 warnings and 6 errors generated.

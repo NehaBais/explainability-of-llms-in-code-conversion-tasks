@@ -1,0 +1,40 @@
+/tmp/Main.java:8: error: ';' expected
+        System.out.format("a:   %016b" + "\n", Short.toUnsignedInt(a)));
+                                                                      ^
+/tmp/Main.java:9: error: ';' expected
+        System.out.format("b:   %016b" + "\n", Integer.toUnsignedLong(b))));
+                                                                         ^
+/tmp/Main.java:12: error: ';' expected
+        System.out.format("and: %016b" + "\n", Short.toUnsignedInt(a & b)));
+                                                                          ^
+/tmp/Main.java:13: error: ';' expected
+        System.out.format("or:  %016b" + "\n", Short.toUnsignedInt(a | b)));
+                                                                          ^
+/tmp/Main.java:14: error: ';' expected
+        System.out.format("xor: %016b" + "\n", Short.toUnsignedInt(a ^ b))));
+                                                                          ^
+/tmp/Main.java:20: error: ';' expected
+        short ua = Short.parseShort(String.format("%8s", Integer.toBinaryString(Short.toUnsignedInt(a))))));
+                                                                                                         ^
+/tmp/Main.java:22: error: ';' expected
+        int ub = Integer.parseInt(String.format("%8s", Integer.toBinaryString(b))))));
+                                                                                  ^
+/tmp/Main.java:25: error: ';' expected
+        System.out.format("shl: %016b" + "\n", Short.toUnsignedInt(ua << ub))));
+                                                                             ^
+/tmp/Main.java:26: error: ';' expected
+        System.out.format("shr: %016b" + "\n", Short.toUnsignedInt(ua >> ub))));
+                                                                             ^
+/tmp/Main.java:29: error: ';' expected
+        System.out.format("las: %016b" + "\n", Short.toUnsignedInt(a << ub))));
+                                                                            ^
+/tmp/Main.java:30: error: ';' expected
+        System.out.format("ras: %016b" + "\n", Short.toUnsignedInt(a >> ub))));
+                                                                            ^
+/tmp/Main.java:33: error: ';' expected
+        System.out.format("rol: %016b" + "\n", Short.toUnsignedInt(a << ub | int16(uint16(a) >> (16 - ub)))))));
+                                                                                                            ^
+/tmp/Main.java:34: error: ';' expected
+        System.out.format("ror: %016b" + "\n", Short.toUnsignedInt(int16(uint16(a) >> ub)) | a << (16 - ub)))));
+                                                                                                            ^
+13 errors

@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-file_size-go-c.c:13:1: error: expected expression
+   13 | <｜begin▁of▁sentence｜>
+      | ^
+/tmp/deepseekcoder7b-file_size-go-c.c:13:2: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   13 | <｜begin▁of▁sentence｜>
+      |  ^~
+/tmp/deepseekcoder7b-file_size-go-c.c:13:10: error: character <U+2581> not allowed in an identifier
+   13 | <｜begin▁of▁sentence｜>
+      |         ^
+/tmp/deepseekcoder7b-file_size-go-c.c:13:15: error: character <U+2581> not allowed in an identifier
+   13 | <｜begin▁of▁sentence｜>
+      |            ^
+/tmp/deepseekcoder7b-file_size-go-c.c:13:26: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   13 | <｜begin▁of▁sentence｜>
+      |                     ^~
+/tmp/deepseekcoder7b-file_size-go-c.c:13:2: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   13 | <｜begin▁of▁sentence｜>
+      |  ^
+/tmp/deepseekcoder7b-file_size-go-c.c:14:3: error: expected expression
+   14 |   }
+      |   ^
+2 warnings and 5 errors generated.

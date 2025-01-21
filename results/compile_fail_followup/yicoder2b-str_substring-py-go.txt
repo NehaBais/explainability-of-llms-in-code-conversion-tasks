@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-str_substring-py-go.go:4:1: syntax error: non-declaration statement outside function body
+/tmp/yicoder2b-str_substring-py-go.go:8:61: syntax error: unexpected {, expected (
+/tmp/yicoder2b-str_substring-py-go.go:9:61: syntax error: unexpected {, expected (

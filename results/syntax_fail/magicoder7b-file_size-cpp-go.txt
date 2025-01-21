@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/magicoder7b-file_size-cpp-go.go:5:2: "io/ioutil" imported and not used

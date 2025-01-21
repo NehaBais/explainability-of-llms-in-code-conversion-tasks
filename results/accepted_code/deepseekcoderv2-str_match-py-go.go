@@ -1,17 +1,32 @@
-# First string contains the second string at any location
-if 'abcd'.startswith('ab'):
-    print ('True')
-else:
-    print ('False')
-    
-# First string ends with the second string
-if "bb".endswith("ab"):
-    print ("True")
-else:
-    print ("False")
-    
-# Determine if first string contains 2nd string at any location
-print('"ab" in "abab": ',"ab" in "abab")
-loc = "abab".find("bb") #returns -1
-loc = "abab".find("ab") #returns 0
-loc = "abab".find("ab",loc+1) #returns 2
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	// Test cases for startsWith
+	fmt.Println(strings.HasPrefix("abcd", "ab")) // returns True
+
+	// Test cases for endsWith
+	fmt.Println(strings.HasSuffix("abcd", "zn")) // returns False
+
+	// Test cases for contains (at any location)
+	fmt.Println(strings.Contains("abab", "bb")) // returns False
+	fmt.Println(strings.Contains("abab", "ab")) // returns True
+
+	// Find the first occurrence of a substring
+	loc := strings.Index("abab", "bb") // returns -1
+	fmt.Println(loc)
+
+	loc = strings.Index("abab", "ab") // returns 0
+	fmt.Println(loc)
+
+	// Find subsequent occurrences of a substring
+	loc = strings.Index("abab", "ab") // returns 0
+	if loc != -1 {
+		nextLoc := strings.Index("abab", "ab", loc+len("ab")) // returns 2
+		fmt.Println(nextLoc)
+	}
+}

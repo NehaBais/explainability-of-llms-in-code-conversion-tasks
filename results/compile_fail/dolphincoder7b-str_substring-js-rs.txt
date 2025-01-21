@@ -1,0 +1,12 @@
+error[E0599]: no method named `substring` found for reference `&str` in the current scope
+ --> /tmp/dolphincoder7b-str_substring-js-rs.rs:9:24
+  |
+9 |     println!("{}", str.substring(2)); // =>  cdefgh
+  |                        ^^^^^^^^^
+  |
+help: there is a method `to_string` with a similar name, but with different arguments
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

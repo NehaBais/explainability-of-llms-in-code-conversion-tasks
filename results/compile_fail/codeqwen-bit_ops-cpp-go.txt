@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codeqwen-bit_ops-cpp-go.go:19:59: cannot use int32(b) (value of type int32) as int value in argument to bits.RotateLeft32
+/tmp/codeqwen-bit_ops-cpp-go.go:20:35: undefined: bits.RotateRight32

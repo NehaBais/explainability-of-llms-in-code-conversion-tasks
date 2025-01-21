@@ -1,0 +1,63 @@
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:1:10: error: empty filename
+    1 | #include ""
+      |          ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:4:3: error: unknown type name 'string'
+    4 |   string a = "ball", b = "bell";
+      |   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:4:23: error: expected ';' at end of declaration
+    4 |   string a = "ball", b = "bell";
+      |                       ^
+      |                       ;
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << left << setw(20) << "a" << setw(10) << "STREQ(a,b)" << setw(10)
+      |   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:5:11: error: use of undeclared identifier 'left'
+    5 |   cout << left << setw(20) << "a" << setw(10) << "STREQ(a,b)" << setw(10)
+      |           ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:5:19: error: use of undeclared identifier 'setw'
+    5 |   cout << left << setw(20) << "a" << setw(10) << "STREQ(a,b)" << setw(10)
+      |                   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:5:38: error: use of undeclared identifier 'setw'
+    5 |   cout << left << setw(20) << "a" << setw(10) << "STREQ(a,b)" << setw(10)
+      |                                      ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:5:66: error: use of undeclared identifier 'setw'
+    5 |   cout << left << setw(20) << "a" << setw(10) << "STREQ(a,b)" << setw(10)
+      |                                                                  ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:6:20: error: use of undeclared identifier 'b'
+    6 |        << STREQ(a, b);
+      |                    ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:11: error: use of undeclared identifier 'left'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |           ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:19: error: use of undeclared identifier 'setw'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |                   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:36: error: use of undeclared identifier 'setw'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |                                    ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:57: error: use of undeclared identifier 'b'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |                                                         ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:7:63: error: use of undeclared identifier 'setw'
+    7 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |                                                               ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:8:20: error: use of undeclared identifier 'b'
+    8 |        << STRLT(a, b);
+      |                    ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |   ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:9:11: error: use of undeclared identifier 'left'
+    9 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |           ^
+/tmp/granitecode3b-str_cmp-c-cpp.cpp:9:19: error: use of undeclared identifier 'setw'
+    9 |   cout << left << setw(20) << a << setw(10) << STREQ(a, b) << setw(10)
+      |                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

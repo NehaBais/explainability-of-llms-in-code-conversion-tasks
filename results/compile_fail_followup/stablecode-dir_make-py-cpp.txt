@@ -1,0 +1,13 @@
+/tmp/stablecode-dir_make-py-cpp.cpp:5:5: error: use of undeclared identifier 'boost'
+    5 |     boost::filesystem::create_directories(boost::filesystem::path(path))));
+      |     ^
+/tmp/stablecode-dir_make-py-cpp.cpp:5:43: error: use of undeclared identifier 'boost'
+    5 |     boost::filesystem::create_directories(boost::filesystem::path(path))));
+      |                                           ^
+/tmp/stablecode-dir_make-py-cpp.cpp:5:67: error: unknown type name 'path'
+    5 |     boost::filesystem::create_directories(boost::filesystem::path(path))));
+      |                                                                   ^
+/tmp/stablecode-dir_make-py-cpp.cpp:8:18: error: use of undeclared identifier 'boost'
+    8 |   } catch (const boost::filesystem::filesystem_error &e) {
+      |                  ^
+4 errors generated.

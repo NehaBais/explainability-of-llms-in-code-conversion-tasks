@@ -1,0 +1,22 @@
+/tmp/codegemma7b-str_substring-cpp-c.c:13:13: warning: field precision should have type 'int', but argument has type 'unsigned long' [-Wformat]
+   13 |   printf("%.*s\n", strlen(s) - n, s + n);
+      |           ~~^~     ~~~~~~~~~~~~~
+/tmp/codegemma7b-str_substring-cpp-c.c:14:13: warning: field precision should have type 'int', but argument has type 'unsigned long' [-Wformat]
+   14 |   printf("%.*s\n", strlen(s) - 1, s);
+      |           ~~^~     ~~~~~~~~~~~~~
+/tmp/codegemma7b-str_substring-cpp-c.c:15:50: warning: format specifies type 'char *' but the argument has type 'void *' [-Wformat]
+   15 |   printf("%.*s\n", m, s + sscanf(s, "%*[^%c]%c", NULL, c));
+      |                                             ~~   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h:49:15: note: expanded from macro 'NULL'
+   49 | #define NULL  __DARWIN_NULL
+      |               ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:64:23: note: expanded from macro '__DARWIN_NULL'
+   64 | #define __DARWIN_NULL ((void *)0)
+      |                       ^~~~~~~~~~~
+/tmp/codegemma7b-str_substring-cpp-c.c:15:56: warning: data argument not used by format string [-Wformat-extra-args]
+   15 |   printf("%.*s\n", m, s + sscanf(s, "%*[^%c]%c", NULL, c));
+      |                                     ~~~~~~~~~~~        ^
+/tmp/codegemma7b-str_substring-cpp-c.c:16:25: error: invalid operands to binary expression ('char[11]' and 'char *')
+   16 |   printf("%.*s\n", m, s + strstr(s, sub) - s);
+      |                       ~ ^ ~~~~~~~~~~~~~~
+4 warnings and 1 error generated.

@@ -1,0 +1,13 @@
+/tmp/stablecode-str_interp-go-cpp.cpp:7:82: error: extraneous ')' before ';'
+    7 |     str = std::regex_replace(str, std::regex("%s"), txt), std::regex("\\%s"), txt);
+      |                                                                                  ^
+/tmp/stablecode-str_interp-go-cpp.cpp:7:16: error: no member named 'regex_replace' in namespace 'std'
+    7 |     str = std::regex_replace(str, std::regex("%s"), txt), std::regex("\\%s"), txt);
+      |           ~~~~~^
+/tmp/stablecode-str_interp-go-cpp.cpp:7:40: error: no member named 'regex' in namespace 'std'
+    7 |     str = std::regex_replace(str, std::regex("%s"), txt), std::regex("\\%s"), txt);
+      |                                   ~~~~~^
+/tmp/stablecode-str_interp-go-cpp.cpp:7:64: error: no member named 'regex' in namespace 'std'
+    7 |     str = std::regex_replace(str, std::regex("%s"), txt), std::regex("\\%s"), txt);
+      |                                                           ~~~~~^
+4 errors generated.

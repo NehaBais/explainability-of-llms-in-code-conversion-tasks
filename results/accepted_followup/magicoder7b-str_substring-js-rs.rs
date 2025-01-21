@@ -1,0 +1,3 @@
+const str = "abcdefgh";
+
+// ... rest of your code goes here ...

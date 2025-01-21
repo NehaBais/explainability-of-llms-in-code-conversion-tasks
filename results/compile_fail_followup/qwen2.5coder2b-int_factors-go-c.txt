@@ -1,0 +1,8 @@
+/tmp/qwen2.5coder2b-int_factors-go-c.c:41:25: error: use of undeclared identifier 'p'
+   41 |     new_fs[*size + j] = p;
+      |                         ^
+/tmp/qwen2.5coder2b-int_factors-go-c.c:44:7: error: incompatible pointer to integer conversion assigning to 'int64_t' (aka 'long long') from 'int64_t *' (aka 'long long *'); dereference with * [-Wint-conversion]
+   44 |   *fs = new_fs;
+      |       ^ ~~~~~~
+      |         *
+2 errors generated.

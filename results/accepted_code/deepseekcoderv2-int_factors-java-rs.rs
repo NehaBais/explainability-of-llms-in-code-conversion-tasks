@@ -1,16 +1,25 @@
-fn main() {
-    let mut input = String::new();
-    println!("Enter a number:");
-    std::io::stdin().read_line(&mut input).unwrap();
-    let n: i32 = input.trim().parse().expect("Invalid input");
-    if n < 0 {
-        println!("Number must be positive!");
-        return;
-    }
-    println!("Factors of {} are:", n);
-    for i in (1..=n).rev() {
-        if n % i == 0 {
-            println!("{}", i);
+use std::collections::HashSet;
+
+fn factors(n: u64) -> HashSet<u64> {
+    let mut factors = HashSet::new();
+    factors.insert(n);
+    factors.insert(1);
+    
+    for test in (1..).take_while(|&x| x * x <= n) {
+        if n % test == 0 {
+            factors.insert(test);
+            let other_factor = n / test;
+            if other_factor != test {
+                factors.insert(other_factor);
+            }
         }
     }
+    
+    factors
+}
+
+fn main() {
+    let number = 28;
+    let factor_set = factors(number);
+    println!("Factors of {} are: {:?}", number, factor_set);
 }

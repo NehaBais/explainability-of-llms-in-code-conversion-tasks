@@ -1,9 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+#include <string.h> // For strcat
 
 int main() {
-  string txt = "Hello"; // Define a string variable
-  txt += ", World!";    // Append the text to the variable
-
-  cout << txt << endl; // Display the concatenated value of the string
+  char s1[20] = "Hello";  // Create a character array (string) with initial size
+  strcat(s1, ", World!"); // Append the string literal to the existing string
+  printf("%s\n", s1);     // Show the contents of the variable after appending
+  return 0;
 }

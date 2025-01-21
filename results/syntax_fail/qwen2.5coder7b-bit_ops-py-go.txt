@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-bit_ops-py-go.go:38:9: cannot use (a & b) (value of type uint8) as uint value in return statement

@@ -1,0 +1,13 @@
+/tmp/yicoder2b-file_size-js-cpp.cpp:5:17: error: implicit instantiation of undefined template 'std::basic_ifstream<char>'
+    5 |   std::ifstream file;
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:24:28: note: template is declared here
+   24 | class _LIBCPP_TEMPLATE_VIS basic_ifstream;
+      |                            ^
+/tmp/yicoder2b-file_size-js-cpp.cpp:29:5: error: use of undeclared identifier 'length'
+   29 |     length = file.rdbuf()->in_avail();
+      |     ^
+/tmp/yicoder2b-file_size-js-cpp.cpp:31:13: error: use of undeclared identifier 'length'
+   31 |     cout << length << endl;
+      |             ^
+3 errors generated.

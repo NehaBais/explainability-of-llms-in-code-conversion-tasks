@@ -1,0 +1,28 @@
+/tmp/yicoder2b-file_create-js-c.c:14:3: error: use of undeclared identifier 'DIR'
+   14 |   DIR *d = opendir(directory);
+      |   ^
+/tmp/yicoder2b-file_create-js-c.c:14:8: error: use of undeclared identifier 'd'
+   14 |   DIR *d = opendir(directory);
+      |        ^
+/tmp/yicoder2b-file_create-js-c.c:14:12: error: call to undeclared function 'opendir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   DIR *d = opendir(directory);
+      |            ^
+/tmp/yicoder2b-file_create-js-c.c:15:7: error: use of undeclared identifier 'd'
+   15 |   if (d == NULL) {
+      |       ^
+/tmp/yicoder2b-file_create-js-c.c:19:3: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   closedir(d);
+      |   ^
+/tmp/yicoder2b-file_create-js-c.c:19:12: error: use of undeclared identifier 'd'
+   19 |   closedir(d);
+      |            ^
+/tmp/yicoder2b-file_create-js-c.c:30:3: error: use of undeclared identifier 'd'
+   30 |   d = opendir(directory);
+      |   ^
+/tmp/yicoder2b-file_create-js-c.c:31:7: error: use of undeclared identifier 'd'
+   31 |   if (d == NULL) {
+      |       ^
+/tmp/yicoder2b-file_create-js-c.c:35:12: error: use of undeclared identifier 'd'
+   35 |   closedir(d);
+      |            ^
+9 errors generated.

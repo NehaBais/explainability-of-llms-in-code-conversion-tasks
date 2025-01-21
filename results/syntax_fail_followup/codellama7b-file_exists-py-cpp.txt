@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_exists-py-cpp.cpp:14:12: error: no member named 'filesystem' in namespace 'std'
+   14 |   if (std::filesystem::is_regular_file(current_working_directory +
+      |       ~~~~~^
+/tmp/codellama7b-file_exists-py-cpp.cpp:24:12: error: no member named 'filesystem' in namespace 'std'
+   24 |   if (std::filesystem::is_regular_file(output_file)) {
+      |       ~~~~~^
+/tmp/codellama7b-file_exists-py-cpp.cpp:33:12: error: no member named 'filesystem' in namespace 'std'
+   33 |   if (std::filesystem::is_directory(current_working_directory + docs_folder)) {
+      |       ~~~~~^
+/tmp/codellama7b-file_exists-py-cpp.cpp:42:12: error: no member named 'filesystem' in namespace 'std'
+   42 |   if (std::filesystem::is_directory(root_folder)) {
+      |       ~~~~~^
+4 errors generated.

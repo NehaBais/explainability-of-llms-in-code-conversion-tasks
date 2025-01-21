@@ -1,0 +1,16 @@
+/tmp/Main.java:27: error: local variables referenced from a lambda expression must be final or effectively final
+          for (int i = 0, pp = 2; i < fs.length; i++, pp *= 2) {
+                                      ^
+/tmp/Main.java:28: error: local variables referenced from a lambda expression must be final or effectively final
+            for (int j = 0; j < fs.length; j++) {
+                                ^
+/tmp/Main.java:29: error: local variables referenced from a lambda expression must be final or effectively final
+              fs = addToArray(fs, fs[j] * pp);
+                              ^
+/tmp/Main.java:29: error: local variables referenced from a lambda expression must be final or effectively final
+              fs = addToArray(fs, fs[j] * pp);
+                                  ^
+/tmp/Main.java:29: error: local variables referenced from a lambda expression must be final or effectively final
+              fs = addToArray(fs, fs[j] * pp);
+              ^
+5 errors

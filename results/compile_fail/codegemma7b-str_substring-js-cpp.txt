@@ -1,0 +1,15 @@
+/tmp/codegemma7b-str_substring-js-cpp.cpp:16:15: error: no member named 'substring' in 'std::string'; did you mean 'substr'?
+   16 |   cout << str.substring(n) << endl; // => "cdefgh"
+      |               ^~~~~~~~~
+      |               substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:3: note: 'substr' declared here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |   ^
+/tmp/codegemma7b-str_substring-js-cpp.cpp:19:15: error: no member named 'substring' in 'std::string'; did you mean 'substr'?
+   19 |   cout << str.substring(0, str.length() - 1) << endl; // => "abcdefg"
+      |               ^~~~~~~~~
+      |               substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:3: note: 'substr' declared here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |   ^
+2 errors generated.

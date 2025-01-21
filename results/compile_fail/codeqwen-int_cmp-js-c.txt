@@ -1,0 +1,7 @@
+/tmp/codeqwen-int_cmp-js-c.c:16:19: error: use of undeclared identifier 'A'
+   16 |   scanf("%d %d", &A, &B);
+      |                   ^
+/tmp/codeqwen-int_cmp-js-c.c:17:11: error: use of undeclared identifier 'A'
+   17 |   compare(A, B);
+      |           ^
+2 errors generated.

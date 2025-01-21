@@ -1,0 +1,43 @@
+/tmp/codegeex4-bit_ops-js-cpp.cpp:2:3: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a AND b: " << (a & b) << std::endl;
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:2:42: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a AND b: " << (a & b) << std::endl;
+      |                                          ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a OR b: " << (a | b) << std::endl;
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:3:41: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a OR b: " << (a | b) << std::endl;
+      |                                         ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::cout << "a XOR b: " << (a ^ b) << std::endl;
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:4:42: error: use of undeclared identifier 'std'
+    4 |   std::cout << "a XOR b: " << (a ^ b) << std::endl;
+      |                                          ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << "NOT a: " << ~a << std::endl;
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:5:35: error: use of undeclared identifier 'std'
+    5 |   std::cout << "NOT a: " << ~a << std::endl;
+      |                                   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << "a << b: " << (a << b) << std::endl; // left shift
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:6:42: error: use of undeclared identifier 'std'
+    6 |   std::cout << "a << b: " << (a << b) << std::endl; // left shift
+      |                                          ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::cout << "a >> b: " << (a >> b) << std::endl; // arithmetic right shift
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:7:42: error: use of undeclared identifier 'std'
+    7 |   std::cout << "a >> b: " << (a >> b) << std::endl; // arithmetic right shift
+      |                                          ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::cout << "unsigned a >>> b: "
+      |   ^
+/tmp/codegeex4-bit_ops-js-cpp.cpp:9:67: error: use of undeclared identifier 'std'
+    9 |             << static_cast<int>(static_cast<unsigned>(a) >> b) << std::endl;
+      |                                                                   ^
+14 errors generated.

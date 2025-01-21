@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-py-go.go:12:49: undefined: os.IsNotFound
+/tmp/yicoder2b-dir_make-py-go.go:15:6: undefined: err
+/tmp/yicoder2b-dir_make-py-go.go:15:12: assignment mismatch: 2 variables but os.Mkdir returns 1 value
+/tmp/yicoder2b-dir_make-py-go.go:16:6: undefined: err
+/tmp/yicoder2b-dir_make-py-go.go:17:11: undefined: err

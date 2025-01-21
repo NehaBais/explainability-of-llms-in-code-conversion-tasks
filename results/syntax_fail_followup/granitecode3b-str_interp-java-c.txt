@@ -1,0 +1,11 @@
+/tmp/granitecode3b-str_interp-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-java-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf(lyric, adjective);
+      |   ^
+/tmp/granitecode3b-str_interp-java-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_interp-java-c.c:8:3: error: call to undeclared function 'puts'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   puts(interpolated);
+      |   ^
+3 errors generated.

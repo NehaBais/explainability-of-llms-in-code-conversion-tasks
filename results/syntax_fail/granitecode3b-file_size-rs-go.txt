@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-file_size-rs-go.go:11:36: not enough arguments in call to fs.Stat
+	have (string)
+	want (fs.FS, string)

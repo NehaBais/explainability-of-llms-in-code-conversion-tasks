@@ -1,0 +1,11 @@
+/tmp/None.java:2: error: implicitly declared classes are a preview feature and are disabled by default.
+Scanner scanner = new Scanner(System.in);
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: <identifier> expected
+function compare(a, b) {
+                  ^
+/tmp/None.java:6: error: <identifier> expected
+function compare(a, b) {
+                     ^
+3 errors

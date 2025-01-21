@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoder7b-str_interp-py-go.go:7:19: illegal character U+FF5C '｜' (and 5 more errors)

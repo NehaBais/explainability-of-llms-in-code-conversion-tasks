@@ -1,0 +1,22 @@
+/tmp/stablecode-str_cmp-go-c.c:10:27: error: extraneous ')' after condition, expected a statement
+   10 |   if ((strcmp(c, d) == 0))) 
+      |                           ^
+/tmp/stablecode-str_cmp-go-c.c:16:27: error: extraneous ')' after condition, expected a statement
+   16 |   if ((strcmp(c, d) != 0))) 
+      |                           ^
+/tmp/stablecode-str_cmp-go-c.c:18:55: error: extraneous ')' before ';'
+   18 |     printf("%s is bytewise different from %s\n", c, d));
+      |                                                       ^
+/tmp/stablecode-str_cmp-go-c.c:22:26: error: extraneous ')' after condition, expected a statement
+   22 |   if ((strcmp(c, d) < 0))) 
+      |                          ^
+/tmp/stablecode-str_cmp-go-c.c:28:26: error: extraneous ')' after condition, expected a statement
+   28 |   if ((strcmp(c, d) > 0))) 
+      |                          ^
+/tmp/stablecode-str_cmp-go-c.c:30:60: error: extraneous ')' before ';'
+   30 |     printf("%s is lexically ordered after than %s\n", c, d));
+      |                                                            ^
+/tmp/stablecode-str_cmp-go-c.c:34:27: error: extraneous ')' after condition, expected a statement
+   34 |   if ((strcmp(c, d) == 0))) 
+      |                           ^
+7 errors generated.

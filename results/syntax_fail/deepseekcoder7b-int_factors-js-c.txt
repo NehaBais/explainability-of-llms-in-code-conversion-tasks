@@ -1,0 +1,5 @@
+/tmp/deepseekcoder7b-int_factors-js-c.c:9:20: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   for (i = 1; i <= sqrt(num); i++) {
+      |                    ^
+/tmp/deepseekcoder7b-int_factors-js-c.c:9:20: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 error generated.

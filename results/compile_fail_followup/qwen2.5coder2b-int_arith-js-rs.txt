@@ -1,0 +1,54 @@
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+ --> /tmp/qwen2.5coder2b-int_arith-js-rs.rs:5:10
+  |
+5 |         .read_line()
+  |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+  |
+5 |         .read_line(/* &mut String */)
+  |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim_end` found for type `usize` in the current scope
+ --> /tmp/qwen2.5coder2b-int_arith-js-rs.rs:7:10
+  |
+4 |       let a: i32 = io::stdin()
+  |  __________________-
+5 | |         .read_line()
+6 | |         .expect("Failed to read line")
+7 | |         .trim_end()
+  | |         -^^^^^^^^ method not found in `usize`
+  | |_________|
+  |
+
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+  --> /tmp/qwen2.5coder2b-int_arith-js-rs.rs:12:10
+   |
+12 |         .read_line()
+   |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+   |
+12 |         .read_line(/* &mut String */)
+   |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim_end` found for type `usize` in the current scope
+  --> /tmp/qwen2.5coder2b-int_arith-js-rs.rs:14:10
+   |
+11 |       let b: i32 = io::stdin()
+   |  __________________-
+12 | |         .read_line()
+13 | |         .expect("Failed to read line")
+14 | |         .trim_end()
+   | |         -^^^^^^^^ method not found in `usize`
+   | |_________|
+   |
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0061, E0599.
+For more information about an error, try `rustc --explain E0061`.

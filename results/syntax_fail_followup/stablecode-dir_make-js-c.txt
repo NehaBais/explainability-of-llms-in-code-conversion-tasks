@@ -1,0 +1,64 @@
+/tmp/stablecode-dir_make-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-dir_make-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-dir_make-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-dir_make-js-c.c:6:3: error: use of undeclared identifier 'DIR'
+    6 |   DIR *dir;
+      |   ^
+/tmp/stablecode-dir_make-js-c.c:6:8: error: use of undeclared identifier 'dir'
+    6 |   DIR *dir;
+      |        ^
+/tmp/stablecode-dir_make-js-c.c:8:5: error: use of undeclared identifier 'dir'
+    8 |     dir = opendir(path));
+      |     ^
+/tmp/stablecode-dir_make-js-c.c:8:11: error: call to undeclared function 'opendir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     dir = opendir(path));
+      |           ^
+/tmp/stablecode-dir_make-js-c.c:9:9: error: use of undeclared identifier 'dir'
+    9 |     if (dir != NULL) {
+      |         ^
+/tmp/stablecode-dir_make-js-c.c:9:16: error: use of undeclared identifier 'NULL'
+    9 |     if (dir != NULL) {
+      |                ^
+/tmp/stablecode-dir_make-js-c.c:10:7: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |       closedir(dir);
+      |       ^
+/tmp/stablecode-dir_make-js-c.c:10:16: error: use of undeclared identifier 'dir'
+   10 |       closedir(dir);
+      |                ^
+/tmp/stablecode-dir_make-js-c.c:15:15: error: use of undeclared identifier 'errno'
+   15 |       switch (errno) {
+      |               ^
+/tmp/stablecode-dir_make-js-c.c:16:12: error: use of undeclared identifier 'ENOENT'
+   16 |       case ENOENT:
+      |            ^
+/tmp/stablecode-dir_make-js-c.c:17:26: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |                 result = mkdir(path, 0777));
+      |                          ^
+/tmp/stablecode-dir_make-js-c.c:17:26: note: did you mean 'mkdirp'?
+/tmp/stablecode-dir_make-js-c.c:5:5: note: 'mkdirp' declared here
+    5 | int mkdirp(const char *path) {
+      |     ^
+    6 |   DIR *dir;
+    7 | 
+    8 |     dir = opendir(path));
+    9 |     if (dir != NULL) {
+   10 |       closedir(dir);
+   11 |       return 0; // success
+   12 |     } else {
+   13 |       int result = -1;
+   14 | 
+   15 |       switch (errno) {
+   16 |       case ENOENT:
+   17 |                 result = mkdir(path, 0777));
+      |                          ~~~~~
+      |                          mkdirp
+/tmp/stablecode-dir_make-js-c.c:17:43: error: extraneous ')' before ';'
+   17 |                 result = mkdir(path, 0777));
+      |                                           ^
+15 errors generated.

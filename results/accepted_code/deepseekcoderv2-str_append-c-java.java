@@ -1,19 +1,13 @@
-#include<stdio.h>
-#include<string.h>
-int main() {
-	char str[100] = "Good Morning";
-	char *cstr = " to all";
-	char *cstr2 = " !!!";
-	int x = 0;
-	//failure when space allocated to str is insufficient.
-	if (sizeof(str) > strlen(str) + strlen(cstr) + strlen(cstr2)) {
-		/*1st method*/
-		strcat(str, cstr);
-		/*2nd method*/
-		x = strlen(str);
-		sprintf(&str[x], "%s", cstr2);
-		printf("%s
-", str);
-	}
-	return 0;
+public class Main {
+  public static void main(String[] args) {
+    StringBuilder str = new StringBuilder("Good Morning");
+    String cstr = " to all";
+    String cstr2 = " !!!";
+
+    // Append the string literals to the StringBuilder
+    str.append(cstr).append(cstr2);
+
+    // Print the contents of the StringBuilder after appending
+    System.out.println(str.toString());
+  }
 }

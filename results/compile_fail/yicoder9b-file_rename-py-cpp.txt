@@ -1,0 +1,77 @@
+/tmp/yicoder9b-file_rename-py-cpp.cpp:5:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+    5 |   if (rename("input.txt", "output.txt") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:5:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[10]'
+    5 |   if (rename("input.txt", "output.txt") == 0) {
+      |              ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:6:5: error: use of undeclared identifier 'printf'
+    6 |     printf("File renamed successfully!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:8:5: error: use of undeclared identifier 'printf'
+    8 |     printf("Unable to rename the file!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:12:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   12 |   if (rename("docs", "mydocs") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:12:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[5]'
+   12 |   if (rename("docs", "mydocs") == 0) {
+      |              ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:13:5: error: use of undeclared identifier 'printf'
+   13 |     printf("Directory renamed successfully!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:15:5: error: use of undeclared identifier 'printf'
+   15 |     printf("Unable to rename the directory!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:19:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   19 |   if (rename("/input.txt", "/output.txt") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:19:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[11]'
+   19 |   if (rename("/input.txt", "/output.txt") == 0) {
+      |              ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:20:5: error: use of undeclared identifier 'printf'
+   20 |     printf("File renamed successfully in filesystem root!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:22:5: error: use of undeclared identifier 'printf'
+   22 |     printf("Unable to rename the file in filesystem root!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:26:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   26 |   if (rename("/docs", "/mydocs") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:26:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[6]'
+   26 |   if (rename("/docs", "/mydocs") == 0) {
+      |              ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:27:5: error: use of undeclared identifier 'printf'
+   27 |     printf("Directory renamed successfully in filesystem root!\n");
+      |     ^
+/tmp/yicoder9b-file_rename-py-cpp.cpp:29:5: error: use of undeclared identifier 'printf'
+   29 |     printf("Unable to rename the directory in filesystem root!\n");
+      |     ^
+16 errors generated.

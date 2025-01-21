@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-bit_ops-cpp-rs.rs:2:1
+   |
+2  | {
+   | ^ unclosed delimiter
+...
+13 | 0xFFFF]) as u32)) 
+   |                 ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-bit_ops-cpp-rs.rs:20:17
+   |
+13 | 0xFFFF]) as u32)) 
+   |                 - missing open `(` for this delimiter
+...
+20 | 0xFFFF]) as u32)) 
+   |                 ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

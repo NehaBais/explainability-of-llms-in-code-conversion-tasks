@@ -1,0 +1,37 @@
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:4:19: error: expected '(' for function-style cast or type construction
+    4 |   std::cin >> int a;
+      |               ~~~ ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:5:19: error: expected '(' for function-style cast or type construction
+    5 |   std::cin >> int b;
+      |               ~~~ ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:7:13: error: use of undeclared identifier 'a'
+    7 |   int sum = a + b;        // The result of adding 'a' and 'b'
+      |             ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:7:17: error: use of undeclared identifier 'b'
+    7 |   int sum = a + b;        // The result of adding 'a' and 'b'
+      |                 ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:8:20: error: use of undeclared identifier 'a'
+    8 |   int difference = a - b; // The result of subtracting 'b' from 'a'
+      |                    ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:8:24: error: use of undeclared identifier 'b'
+    8 |   int difference = a - b; // The result of subtracting 'b' from 'a'
+      |                        ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:9:17: error: use of undeclared identifier 'a'
+    9 |   int product = a * b;    // The result of multiplying 'a' and 'b'
+      |                 ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:9:21: error: use of undeclared identifier 'b'
+    9 |   int product = a * b;    // The result of multiplying 'a' and 'b'
+      |                     ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:12:41: error: use of undeclared identifier 'a'
+   12 |   double division = static_cast<double>(a) / b;
+      |                                         ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:12:46: error: use of undeclared identifier 'b'
+   12 |   double division = static_cast<double>(a) / b;
+      |                                              ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:15:19: error: use of undeclared identifier 'a'
+   15 |   int remainder = a % b;
+      |                   ^
+/tmp/qwen2.5coder2b-int_arith-java-cpp.cpp:15:23: error: use of undeclared identifier 'b'
+   15 |   int remainder = a % b;
+      |                       ^
+12 errors generated.

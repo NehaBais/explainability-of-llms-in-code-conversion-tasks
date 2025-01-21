@@ -1,0 +1,43 @@
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:2:3: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a & b: " << (a & b) << std::endl;
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:2:40: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a & b: " << (a & b) << std::endl;
+      |                                        ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a | b: " << (a | b) << std::endl;
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:3:40: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a | b: " << (a | b) << std::endl;
+      |                                        ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::cout << "a ^ b: " << (a ^ b) << std::endl;
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:4:40: error: use of undeclared identifier 'std'
+    4 |   std::cout << "a ^ b: " << (a ^ b) << std::endl;
+      |                                        ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << "~a: " << (~a) << std::endl;
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:5:34: error: use of undeclared identifier 'std'
+    5 |   std::cout << "~a: " << (~a) << std::endl;
+      |                                  ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << "a << b: " << (a << b) << std::endl;  // left shift
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:6:42: error: use of undeclared identifier 'std'
+    6 |   std::cout << "a << b: " << (a << b) << std::endl;  // left shift
+      |                                          ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::cout << "a >> b: " << (a >> b) << std::endl;  // arithmetic right shift
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:7:42: error: use of undeclared identifier 'std'
+    7 |   std::cout << "a >> b: " << (a >> b) << std::endl;  // arithmetic right shift
+      |                                          ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::cout << "a >>> b: " << (a >> b) << std::endl; // logical right shift
+      |   ^
+/tmp/codegemma7b-bit_ops-js-cpp.cpp:8:43: error: use of undeclared identifier 'std'
+    8 |   std::cout << "a >>> b: " << (a >> b) << std::endl; // logical right shift
+      |                                           ^
+14 errors generated.

@@ -1,0 +1,22 @@
+/tmp/stablecode-file_size-py-c.c:19:66: error: extraneous ')' before ';'
+   19 |     fprintf(stderr, "Failed to get current working directory.\n"));
+      |                                                                  ^
+/tmp/stablecode-file_size-py-c.c:24:13: error: incompatible pointer to integer conversion assigning to 'size_t' (aka 'unsigned long') from 'char *' [-Wint-conversion]
+   24 |   if ((size = (getcwd(cPath, sizeof(cPath)))) != NULL) &&
+      |             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-file_size-py-c.c:24:47: warning: comparison between pointer and integer ('size_t' (aka 'unsigned long') and 'void *') [-Wpointer-integer-compare]
+   24 |   if ((size = (getcwd(cPath, sizeof(cPath)))) != NULL) &&
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/stablecode-file_size-py-c.c:25:7: error: expected identifier
+   25 |       ((strcat(cPath, PATH_SEPARATOR)))), fopen(cPath, "rb")))) != NULL) {
+      |       ^
+/tmp/stablecode-file_size-py-c.c:39:2: error: unterminated conditional directive
+   39 | #ifdef _WIN32
+      |  ^
+/tmp/stablecode-file_size-py-c.c:56:2: error: expected '}'
+   56 | }
+      |  ^
+/tmp/stablecode-file_size-py-c.c:11:16: note: to match this '{'
+   11 | int main(void) {
+      |                ^
+1 warning and 5 errors generated.

@@ -1,0 +1,139 @@
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:1: error: unknown type name 'vector'; did you mean 'hecto'?
+    5 | vector factor(int num) {
+      | ^~~~~~
+      | hecto
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:278:28: note: 'hecto' declared here
+  278 | typedef ratio< 100LL, 1LL> hecto;
+      |                            ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:6:3: error: unknown type name 'vector'; did you mean 'hecto'?
+    6 |   vector factors; // creates a new vector for the factors of the number
+      |   ^~~~~~
+      |   hecto
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:278:28: note: 'hecto' declared here
+  278 | typedef ratio< 100LL, 1LL> hecto;
+      |                            ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:10:15: error: no member named 'push_back' in 'std::ratio<100>'
+   10 |       factors.push_back(i);       // pushes smallest factor to vector
+      |       ~~~~~~~ ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:11:15: error: no member named 'push_back' in 'std::ratio<100>'
+   11 |       factors.push_back(num / i); // pushes largest factor to vector
+      |       ~~~~~~~ ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:14:16: error: no member named 'begin' in 'std::ratio<100>'
+   14 |   sort(factors.begin(),
+      |        ~~~~~~~ ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:15:16: error: no member named 'end' in 'std::ratio<100>'
+   15 |        factors.end()); // sorts the factors into numerical order
+      |        ~~~~~~~ ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:3: error: unknown type name 'vector'; did you mean 'hecto'?
+   19 |   vector expected = {1, 2,  4,
+      |   ^~~~~~
+      |   hecto
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:278:28: note: 'hecto' declared here
+  278 | typedef ratio< 100LL, 1LL> hecto;
+      |                            ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:22: error: excess elements in struct initializer
+   19 |   vector expected = {1, 2,  4,
+      |                      ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:21:3: error: unknown type name 'vector'; did you mean 'hecto'?
+   21 |   vector actual =
+      |   ^~~~~~
+      |   hecto
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio:278:28: note: 'hecto' declared here
+  278 | typedef ratio< 100LL, 1LL> hecto;
+      |                            ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:24:14: error: invalid operands to binary expression ('hecto' (aka 'ratio<100LL, 1LL>') and 'hecto')
+   24 |       actual ==
+      |       ~~~~~~ ^
+   25 |       expected); // checks if the calculated factors match the expected values
+      |       ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:75:25: note: expanded from macro 'assert'
+   75 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h:96:35: note: candidate function not viable: no known conversion from 'hecto' (aka 'ratio<100LL, 1LL>') to 'const error_condition' for 1st argument
+   96 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_condition& __x, const error_condition& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:92:35: note: candidate function not viable: no known conversion from 'hecto' (aka 'ratio<100LL, 1LL>') to 'const error_code' for 1st argument
+   92 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_code& __x, const error_code& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:96:35: note: candidate function not viable: no known conversion from 'hecto' (aka 'ratio<100LL, 1LL>') to 'const error_code' for 1st argument
+   96 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_code& __x, const error_condition& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h:101:35: note: candidate function not viable: no known conversion from 'hecto' (aka 'ratio<100LL, 1LL>') to 'const error_condition' for 1st argument
+  101 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const error_condition& __x, const error_code& __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h:78:35: note: candidate function not viable: no known conversion from 'hecto' (aka 'ratio<100LL, 1LL>') to '__thread_id' for 1st argument
+   78 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(__thread_id __x, __thread_id __y) _NOEXCEPT {
+      |                                   ^          ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:515:1: note: candidate template ignored: could not match 'pair' against 'ratio'
+  515 | operator==(const pair<_T1, _T2>& __x, const pair<_U1, _U2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:207:1: note: candidate template ignored: could not match 'reverse_iterator' against 'ratio'
+  207 | operator==(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:86:35: note: candidate template ignored: could not match 'istream_iterator' against 'ratio'
+   86 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __x,
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:95:1: note: candidate template ignored: could not match 'istreambuf_iterator' against 'ratio'
+   95 | operator==(const istreambuf_iterator<_CharT, _Traits>& __a, const istreambuf_iterator<_CharT, _Traits>& __b) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:256:1: note: candidate template ignored: could not match 'move_iterator' against 'ratio'
+  256 | operator==(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:108:1: note: candidate template ignored: could not match '__wrap_iter' against 'ratio'
+  108 | operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:114:1: note: candidate template ignored: could not match '__wrap_iter' against 'ratio'
+  114 | operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator.h:259:1: note: candidate template ignored: could not match 'allocator' against 'ratio'
+  259 | operator==(const allocator<_Tp>&, const allocator<_Up>&) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:459:1: note: candidate template ignored: could not match 'unique_ptr' against 'ratio'
+  459 | operator==(const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:505:1: note: candidate template ignored: could not match 'unique_ptr' against 'ratio'
+  505 | operator==(const unique_ptr<_T1, _D1>& __x, nullptr_t) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/unique_ptr.h:511:35: note: candidate template ignored: could not match 'unique_ptr' against 'ratio'
+  511 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(nullptr_t, const unique_ptr<_T1, _D1>& __x) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1103:35: note: candidate template ignored: could not match 'shared_ptr' against 'ratio'
+ 1103 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1149:35: note: candidate template ignored: could not match 'shared_ptr' against 'ratio'
+ 1149 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1156:35: note: candidate template ignored: could not match 'shared_ptr' against 'ratio'
+ 1156 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:730:1: note: candidate template ignored: could not match 'basic_string_view' against 'ratio'
+  730 | operator==(basic_string_view<_CharT, _Traits> __lhs, basic_string_view<_CharT, _Traits> __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:740:1: note: candidate template ignored: could not match 'basic_string_view' against 'ratio'
+  740 | operator==(basic_string_view<_CharT, _Traits> __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:749:1: note: candidate template ignored: could not match 'basic_string_view' against 'ratio'
+  749 | operator==(__type_identity_t<basic_string_view<_CharT, _Traits> > __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h:65:35: note: candidate template ignored: could not match 'fpos' against 'ratio'
+   65 | inline _LIBCPP_HIDE_FROM_ABI bool operator==(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+      |                                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3691:1: note: candidate template ignored: could not match 'basic_string' against 'ratio'
+ 3691 | operator==(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3703:1: note: candidate template ignored: could not match 'basic_string' against 'ratio'
+ 3703 | operator==(const basic_string<char, char_traits<char>, _Allocator>& __lhs,
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3721:1: note: candidate template ignored: could not match 'const _CharT *' against 'hecto' (aka 'ratio<100LL, 1LL>')
+ 3721 | operator==(const _CharT* __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3733:1: note: candidate template ignored: could not match 'basic_string' against 'ratio'
+ 3733 | operator==(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:384:1: note: candidate template ignored: could not match 'array' against 'ratio'
+  384 | operator==(const array<_Tp, _Size>& __x, const array<_Tp, _Size>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector:2861:1: note: candidate template ignored: could not match 'vector' against 'ratio'
+ 2861 | operator==(const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y) {
+      | ^
+10 errors generated.

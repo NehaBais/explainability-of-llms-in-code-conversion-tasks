@@ -1,0 +1,54 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:3:43
+  |
+3 | const docs_dir = current_dir.join("docs");
+  |                                           ^ consider adding a `main` function to `/tmp/codegemma7b-file_exists-js-rs.rs`
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:1:18
+  |
+1 | const current_dir = std::env::current_dir().unwrap();
+  |                  ^ help: provide a type for the constant: `: PathBuf`
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:2:17
+  |
+2 | const input_file = current_dir.join("input.txt");
+  |                 ^
+  |
+help: provide a type for the item
+  |
+2 | const input_file: <type> = current_dir.join("input.txt");
+  |                 ++++++++
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:3:15
+  |
+3 | const docs_dir = current_dir.join("docs");
+  |               ^
+  |
+help: provide a type for the item
+  |
+3 | const docs_dir: <type> = current_dir.join("docs");
+  |               ++++++++
+
+error[E0015]: cannot call non-const fn `std::env::current_dir` in constants
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:1:21
+  |
+1 | const current_dir = std::env::current_dir().unwrap();
+  |                     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `Result::<PathBuf, std::io::Error>::unwrap` in constants
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:1:45
+  |
+1 | const current_dir = std::env::current_dir().unwrap();
+  |                                             ^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0015, E0601.
+For more information about an error, try `rustc --explain E0015`.

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-int_factors-rs-go.go:26:9: undefined: A
+/tmp/codeqwen-int_factors-rs-go.go:31:17: undefined: A
+/tmp/codeqwen-int_factors-rs-go.go:32:6: undefined: A

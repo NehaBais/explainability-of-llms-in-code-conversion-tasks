@@ -1,0 +1,36 @@
+error[E0599]: no method named `gt_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder7b-str_cmp-c-rs.rs:61:8
+   |
+61 |     s1.gt_ignore_ascii_case(s2)
+   |        ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+61 |     s1.eq_ignore_ascii_case(s2)
+   |        ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `lt_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder7b-str_cmp-c-rs.rs:65:8
+   |
+65 |     s1.lt_ignore_ascii_case(s2)
+   |        ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+65 |     s1.eq_ignore_ascii_case(s2)
+   |        ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `ge_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder7b-str_cmp-c-rs.rs:69:8
+   |
+69 |     s1.ge_ignore_ascii_case(s2)
+   |        ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+69 |     s1.eq_ignore_ascii_case(s2)
+   |        ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

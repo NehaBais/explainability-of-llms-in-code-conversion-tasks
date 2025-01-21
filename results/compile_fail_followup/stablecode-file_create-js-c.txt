@@ -1,0 +1,36 @@
+/tmp/stablecode-file_create-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_create-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_create-js-c.c:6:3: error: use of undeclared identifier 'FILE'
+    6 |   FILE *file = fopen(filePath, "w"));
+      |   ^
+/tmp/stablecode-file_create-js-c.c:6:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+    6 |   FILE *file = fopen(filePath, "w"));
+      |         ^~~~
+      |         while
+/tmp/stablecode-file_create-js-c.c:6:9: error: expected expression
+/tmp/stablecode-file_create-js-c.c:8:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+    8 |   if (file == NULL) {
+      |       ^~~~
+      |       while
+/tmp/stablecode-file_create-js-c.c:8:7: error: expected expression
+/tmp/stablecode-file_create-js-c.c:9:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     printf("Error: Could not create file at path %s\n", filePath);
+      |     ^
+/tmp/stablecode-file_create-js-c.c:9:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_create-js-c.c:13:3: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   fclose(file);
+      |   ^
+/tmp/stablecode-file_create-js-c.c:13:10: error: use of undeclared identifier 'file'
+   13 |   fclose(file);
+      |          ^
+/tmp/stablecode-file_create-js-c.c:17:36: error: extraneous ')' before ';'
+   17 |   int result = mkdir(dirPath, 0700));
+      |                                    ^
+/tmp/stablecode-file_create-js-c.c:20:70: error: extraneous ')' before ';'
+   20 |     printf("Error: Could not create directory at path %s\n", dirPath));
+      |                                                                      ^
+12 errors generated.

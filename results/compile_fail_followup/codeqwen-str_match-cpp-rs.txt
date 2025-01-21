@@ -1,0 +1,17 @@
+error[E0061]: this method takes 1 argument but 2 arguments were supplied
+  --> /tmp/codeqwen-str_match-cpp-rs.rs:23:39
+   |
+23 |         while let Some(found_at) = s2.find(&s3, next_loc) {
+   |                                       ^^^^      -------- unexpected argument #2 of type `usize`
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:12
+help: remove the extra argument
+   |
+23 -         while let Some(found_at) = s2.find(&s3, next_loc) {
+23 +         while let Some(found_at) = s2.find(&s3) {
+   |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0061`.

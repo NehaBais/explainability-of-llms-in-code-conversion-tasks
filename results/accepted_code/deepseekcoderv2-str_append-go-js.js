@@ -1,3 +1,3 @@
-let myString = "foo";
-myString += "bar";
-console.log(myString);
+let s = "foo";
+s += "bar";
+console.log(s);

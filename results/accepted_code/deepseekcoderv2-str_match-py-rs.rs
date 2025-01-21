@@ -1,29 +1,45 @@
 fn main() {
-    let str1 = "abab";
-    let str2 = "ab";
+    // Determining if the first string starts with the second string
+    let s1 = "abcd";
+    let s2 = "ab";
+    println!("{}", s1.starts_with(s2)); // returns true
 
-    // Starts with method for string matching
-    if str1.starts_with(str2) {
-        println!("{} starts with {}.", str1, str2);
-    } else {
-        println!("{} does not start with {}.", str1, str2);
-    }
+    // Determining if the first string ends with the second string
+    let s1 = "abcd";
+    let s2 = "zn";
+    println!("{}", s1.ends_with(s2)); // returns false
 
-    // Ends with method for string matching
-    if str1.ends_with(str2) {
-        println!("{} ends with {}.", str1, str2);
-    } else {
-        println!("{} does not end with {}.", str1, str2);
-    }
+    // Determining if the first string contains the second string at any location
+    let s1 = "abab";
+    let s2 = "bb";
+    println!("{}", s1.contains(s2)); // returns false
 
-    // Find method for string matching
-    let loc = find_substring(str1, str2);
-    if loc == -1 {
-        println!("Substring '{}' was not found in '{}'.", str2, str1);
-    } else {
-        println!(
-            "Location of first occurrence of '{}' in '{}': {}",
-            str2, str1, loc
-        );
+    let s1 = "abab";
+    let s2 = "ab";
+    println!("{}", s1.contains(s2)); // returns true
+
+    // Handling multiple occurrences of a string for part 2
+    let s1 = "abab";
+    let s2 = "ab";
+    let mut loc: isize = -1;
+    if let Some(index) = s1.find(&s2) {
+        loc = index as isize;
     }
+    println!("{}", loc); // returns 0
+
+    let s1 = "abab";
+    let s2 = "ab";
+    let mut loc: isize = -1;
+    if let Some(index) = s1.find(&s2) {
+        loc = index as isize;
+    }
+    println!("{}", loc); // returns 0
+
+    let s1 = "abab";
+    let s2 = "ab";
+    let mut loc: isize = -1;
+    if let Some(index) = s1.find(&s2) {
+        loc = index as isize;
+    }
+    println!("{}", loc); // returns 2
 }

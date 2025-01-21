@@ -1,0 +1,4 @@
+/tmp/yicoder2b-dir_make-c-cpp.cpp:29:33: error: use of undeclared identifier 'F_OK'
+   29 |     if (access(dirPath.c_str(), F_OK) == -1) {
+      |                                 ^
+1 error generated.

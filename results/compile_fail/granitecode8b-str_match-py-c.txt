@@ -1,0 +1,21 @@
+/tmp/granitecode8b-str_match-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-py-c.c:7:18: error: call to undeclared function 'strstartswith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   int result1 = (strstartswith(str1, str2) == 0);
+      |                  ^
+/tmp/granitecode8b-str_match-py-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("Determining if the first string starts with second string: %d",
+      |   ^
+/tmp/granitecode8b-str_match-py-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_match-py-c.c:13:18: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   int result2 = (strstr(str1, str2) != NULL);
+      |                  ^
+/tmp/granitecode8b-str_match-py-c.c:13:18: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode8b-str_match-py-c.c:13:40: error: use of undeclared identifier 'NULL'
+   13 |   int result2 = (strstr(str1, str2) != NULL);
+      |                                        ^
+/tmp/granitecode8b-str_match-py-c.c:20:18: error: call to undeclared function 'strendswith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |   int result3 = (strendswith(str1, str2) == 0);
+      |                  ^
+6 errors generated.

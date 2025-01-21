@@ -1,0 +1,21 @@
+error: mismatched closing delimiter: `}`
+  --> /tmp/stablecode-file_create-cpp-rs.rs:10:86
+   |
+10 |     let mut root_file = fs::OpenOptions::new().write(true).create(true).open(&format!(@root}{"output.txt"})).unwrap();
+   |                                                                                      ^     ^ mismatched closing delimiter
+   |                                                                                      |
+   |                                                                                      unclosed delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-file_create-cpp-rs.rs:10:107
+   |
+4  | fn main() {
+   |           - this delimiter might not be properly closed...
+...
+10 |     let mut root_file = fs::OpenOptions::new().write(true).create(true).open(&format!(@root}{"output.txt"})).unwrap();
+   |                                                                                            -              ^ unexpected closing delimiter
+   |                                                                                            |
+   |                                                                                            ...as it matches this but it has different indentation
+
+error: aborting due to 2 previous errors
+

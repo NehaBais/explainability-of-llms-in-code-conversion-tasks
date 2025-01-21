@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codeqwen-str_substring-java-go.go:5:2: "fmt" imported and not used
+/tmp/codeqwen-str_substring-java-go.go:6:2: "strings" imported and not used

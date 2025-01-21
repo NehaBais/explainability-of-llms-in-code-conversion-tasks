@@ -1,0 +1,13 @@
+/tmp/BooleanOps.java:4: error: ';' expected
+        System.out.println("{} and {} -> {}", a, b, (a && b)));
+                                                             ^
+/tmp/BooleanOps.java:5: error: ';' expected
+        System.out.println("{} or {} -> {}", a, b, (a || b)));
+                                                            ^
+/tmp/BooleanOps.java:6: error: ';' expected
+        System.out.println("{} xor {} -> {}", a, b, (a ^ b)));
+                                                            ^
+/tmp/BooleanOps.java:8: error: ';' expected
+                , a, !a));
+                        ^
+4 errors

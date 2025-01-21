@@ -1,0 +1,15 @@
+error[E0599]: no method named `parse` found for type `i32` in the current scope
+ --> /tmp/codegemma7b-int_arith-cpp-rs.rs:8:11
+  |
+8 |     a = a.parse::<i32>().unwrap();
+  |           ^^^^^ method not found in `i32`
+
+error[E0599]: no method named `parse` found for type `i32` in the current scope
+ --> /tmp/codegemma7b-int_arith-cpp-rs.rs:9:11
+  |
+9 |     b = b.parse::<i32>().unwrap();
+  |           ^^^^^ method not found in `i32`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

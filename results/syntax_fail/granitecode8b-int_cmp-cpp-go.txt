@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-int_cmp-cpp-go.go:15:13: string literal not terminated (and 10 more errors)

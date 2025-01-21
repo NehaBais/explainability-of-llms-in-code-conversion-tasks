@@ -1,14 +1,15 @@
 package main
 
-import "os"
+import (
+	"fmt"
+	"os"
+)
 
-func mkdir(p string) (err error) {
-	//check if path exists, or create it.
-	if _, err = os.Stat(p); os.IsNotExist(err) {
-		err = os.MkdirAll(p, 0755)
-	}
-	return err
-}
 func main() {
-	mkdir("./path/to/dir")
+	err := os.MkdirAll("./path/to/dir", 0777) // 0777 is used to specify the file mode, but it's ignored on some platforms
+	if err != nil {
+		fmt.Println("An Error Occurred:", err)
+		return
+	}
+	fmt.Println("Directory created successfully.")
 }

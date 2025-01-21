@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-bit_ops-java-go.go:11:33: expected statement, found ')' (and 3 more errors)

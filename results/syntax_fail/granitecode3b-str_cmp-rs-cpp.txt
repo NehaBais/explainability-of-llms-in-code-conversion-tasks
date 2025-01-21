@@ -1,0 +1,59 @@
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string a("abc");
+      |   ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string b("Bac");
+      |   ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:9:7: error: use of undeclared identifier 'a'
+    9 |   if (a == b) {
+      |       ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:9:12: error: use of undeclared identifier 'b'
+    9 |   if (a == b) {
+      |            ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << "The strings are equal" << std::endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:10:45: error: use of undeclared identifier 'std'
+   10 |     std::cout << "The strings are equal" << std::endl;
+      |                                             ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:12:7: error: use of undeclared identifier 'a'
+   12 |   if (a != b) {
+      |       ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:12:12: error: use of undeclared identifier 'b'
+   12 |   if (a != b) {
+      |            ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << "The strings are not equal" << std::endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:13:49: error: use of undeclared identifier 'std'
+   13 |     std::cout << "The strings are not equal" << std::endl;
+      |                                                 ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:15:7: error: use of undeclared identifier 'a'
+   15 |   if (a > b) {
+      |       ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:15:11: error: use of undeclared identifier 'b'
+   15 |   if (a > b) {
+      |           ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::cout << "The first string is lexically after the second" << std::endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:16:70: error: use of undeclared identifier 'std'
+   16 |     std::cout << "The first string is lexically after the second" << std::endl;
+      |                                                                      ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:18:11: error: use of undeclared identifier 'b'
+   18 |   if (a < b) {
+      |           ^
+/tmp/granitecode3b-str_cmp-rs-cpp.cpp:18:7: error: use of undeclared identifier 'a'
+   18 |   if (a < b) {
+      |       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

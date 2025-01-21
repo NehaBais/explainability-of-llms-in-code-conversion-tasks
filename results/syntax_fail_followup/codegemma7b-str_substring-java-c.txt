@@ -1,0 +1,50 @@
+/tmp/codegemma7b-str_substring-java-c.c:1:40: error: unknown type name 'size_t'
+    1 | const char *substring(const char *str, size_t n, size_t m) { return str + n; }
+      |                                        ^
+/tmp/codegemma7b-str_substring-java-c.c:1:50: error: unknown type name 'size_t'
+    1 | const char *substring(const char *str, size_t n, size_t m) { return str + n; }
+      |                                                  ^
+/tmp/codegemma7b-str_substring-java-c.c:3:47: error: unknown type name 'size_t'
+    3 | const char *substring_from_n(const char *str, size_t n) { return str + n; }
+      |                                               ^
+/tmp/codegemma7b-str_substring-java-c.c:7:58: error: unknown type name 'size_t'
+    7 | const char *substring_from_char(const char *str, char c, size_t m) {
+      |                                                          ^
+/tmp/codegemma7b-str_substring-java-c.c:8:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    8 |   size_t pos = strchr(str, c) - str;
+      |   ^~~~~~
+      |   sizeof
+/tmp/codegemma7b-str_substring-java-c.c:8:16: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   size_t pos = strchr(str, c) - str;
+      |                ^
+/tmp/codegemma7b-str_substring-java-c.c:8:16: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/codegemma7b-str_substring-java-c.c:8:14: error: expression is not assignable
+    8 |   size_t pos = strchr(str, c) - str;
+      |   ~~~~~~~~~~ ^
+/tmp/codegemma7b-str_substring-java-c.c:8:10: error: use of undeclared identifier 'pos'
+    8 |   size_t pos = strchr(str, c) - str;
+      |          ^
+/tmp/codegemma7b-str_substring-java-c.c:9:16: error: use of undeclared identifier 'pos'
+    9 |   return str + pos;
+      |                ^
+/tmp/codegemma7b-str_substring-java-c.c:13:38: error: unknown type name 'size_t'
+   13 |                                      size_t m) {
+      |                                      ^
+/tmp/codegemma7b-str_substring-java-c.c:14:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   14 |   size_t pos = strstr(str, sub) - str;
+      |   ^~~~~~
+      |   sizeof
+/tmp/codegemma7b-str_substring-java-c.c:14:16: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   size_t pos = strstr(str, sub) - str;
+      |                ^
+/tmp/codegemma7b-str_substring-java-c.c:14:16: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/codegemma7b-str_substring-java-c.c:14:14: error: expression is not assignable
+   14 |   size_t pos = strstr(str, sub) - str;
+      |   ~~~~~~~~~~ ^
+/tmp/codegemma7b-str_substring-java-c.c:14:10: error: use of undeclared identifier 'pos'
+   14 |   size_t pos = strstr(str, sub) - str;
+      |          ^
+/tmp/codegemma7b-str_substring-java-c.c:15:16: error: use of undeclared identifier 'pos'
+   15 |   return str + pos;
+      |                ^
+15 errors generated.

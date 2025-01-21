@@ -1,14 +1,18 @@
-Answer:
-In Rust, we can use format! macro for string interpolation. The syntax is similar to JavaScript but with different syntax. Let's see how it goes in Rust.
+ Certainly! Below is the equivalent code in Rust that performs string interpolation similar to the JavaScript example you provided:
 
-Here's a sample code which uses `format!` macro to perform string interpolation and prints its output to the console (terminal).
 ```rust
 fn main() {
-    let original = "Mary had a X lamb";
-    let little = "little";
-    let replaced = format!("{}", original.replace("X", little)); //does not change the original string
-    println!("{}", replaced);
+    let original = String::from("Mary had a X lamb");
+    let little = String::from("little");
+    
+    // Perform replacement
+    let replaced = original.replace("X", &little);
+    
+    println!("{}", replaced); // Output: Mary had a little lamb
 }
 ```
-Output:
-Mary had a little lamb
+
+In this Rust code:
+- `String::from` is used to create string literals.
+- The `replace` method is called on the original string, with the substring "X" being replaced by the content of `little`.
+- The result is stored in the variable `replaced`, which then prints out the interpolated string.

@@ -1,0 +1,63 @@
+error[E0463]: can't find crate for `bit`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:1:1
+  |
+1 | extern crate bit;
+  | ^^^^^^^^^^^^^^^^^ can't find crate
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:10:23
+   |
+10 |         "AND:\n\t0b{:0{}b}\n\t& 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:20:22
+   |
+20 |         "OR:\n\t0b{:0{}b}\n\t| 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                   -  ^ expected `'}'` in format string
+   |                   |
+   |                   because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:30:23
+   |
+30 |         "XOR:\n\t0b{:0{}b}\n\t^ 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:88:28
+   |
+88 |         "ROTATIONS\n\t0b{:0{}b}\n\trotr({}, 0b{:0{}b}, 1)\n=       0b{:0{}b}",
+   |                         -  ^ expected `'}'` in format string
+   |                         |
+   |                         because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+warning: unused import: `std::fmt`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:3:5
+  |
+3 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::iter::FromIterator`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:4:5
+  |
+4 | use std::iter::FromIterator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 5 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0463`.

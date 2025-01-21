@@ -1,0 +1,8 @@
+/tmp/yicoder2b-str_match-java-cpp.cpp:5:10: error: cannot initialize return object of type 'char *' with an rvalue of type 'const char *'
+    5 |   return strchr(s, c);
+      |          ^~~~~~~~~~~~
+/tmp/yicoder2b-str_match-java-cpp.cpp:7:1: error: 'main' must return 'int'
+    7 | void main() {
+      | ^~~~
+      | int
+2 errors generated.

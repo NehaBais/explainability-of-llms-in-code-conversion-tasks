@@ -1,0 +1,23 @@
+error[E0432]: unresolved import `std::str::compare`
+ --> /tmp/codellama7b-str_cmp-java-rs.rs:1:16
+  |
+1 | use std::str::{compare, String};
+  |                ^^^^^^^ no `compare` in `str`
+
+error[E0603]: struct `String` is private
+ --> /tmp/codellama7b-str_cmp-java-rs.rs:1:25
+  |
+1 | use std::str::{compare, String};
+  |                         ^^^^^^ private struct
+  |
+note: the struct `String` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/str.rs:54:5
+help: import `String` directly
+  |
+1 | use std::str::{compare, alloc::string::String};
+  |                         ~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0432, E0603.
+For more information about an error, try `rustc --explain E0432`.

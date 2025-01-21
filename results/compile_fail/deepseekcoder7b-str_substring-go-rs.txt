@@ -1,0 +1,27 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/deepseekcoder7b-str_substring-go-rs.rs:1:5
+  |
+1 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+  --> /tmp/deepseekcoder7b-str_substring-go-rs.rs:12:22
+   |
+12 |     let segments = s.graphemes(true);
+   |                      ^^^^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+  --> /tmp/deepseekcoder7b-str_substring-go-rs.rs:29:52
+   |
+29 |     if let Some((_, &end)) = segments.next().zip(s.graphemes(false).last()) {
+   |                                                    ^^^^^^^^^ method not found in `&str`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

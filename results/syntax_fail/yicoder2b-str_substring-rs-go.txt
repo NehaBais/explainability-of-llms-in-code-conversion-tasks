@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_substring-rs-go.go:37:40: expected type argument list

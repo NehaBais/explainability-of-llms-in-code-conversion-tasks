@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+  if (argc != 3) {
+    printf("Error: Two arguments required.\n");
+    return 1;
+  }
+
+  // Invoked as ./script_name <a> <b>. Positions 0 and 1 in the argv array
+  // contain 'node' and 'script_name.js' respectively
+    int a = atoi(argv[1]));
+    int b = atoi(argv[2]));
+
+    int sum = a + b;
+    int difference = a - b;
+    int product = a * b;
+    double division = (double)a / b;
+    int remainder =
+        a % b; // This produces the remainder after dividing 'b' into 'a'. The
+               // '%' operator is called the 'modulo' operator
+
+    printf("a + b = %d\n", sum);
+    printf("a - b = %d\n", difference);
+    printf("a * b = %d\n", product);
+    printf("a / b = %.2f\n", division);
+    printf("a %% b = %d\n", remainder);
+
+    return 0;
+}

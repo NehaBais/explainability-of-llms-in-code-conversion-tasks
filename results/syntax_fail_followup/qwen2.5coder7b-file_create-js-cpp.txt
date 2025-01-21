@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:21:3: error: use of undeclared identifier 'getcwd'
+   21 |   getcwd(cwd, sizeof(cwd));
+      |   ^
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:25:3: error: use of undeclared identifier 'mkdir'
+   25 |   mkdir("docs", 0755);
+      |   ^
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:26:3: error: use of undeclared identifier 'mkdir'
+   26 |   mkdir("/docs", 0755);
+      |   ^
+3 errors generated.

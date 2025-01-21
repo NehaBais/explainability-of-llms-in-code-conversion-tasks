@@ -1,0 +1,21 @@
+error: expected item, found keyword `let`
+ --> /tmp/codegemma7b-str_prepend-js-rs.rs:2:1
+  |
+2 | let mut greeting = "Hello".to_string();
+  | ^^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_prepend-js-rs.rs:1:8
+  |
+1 | const s = ", World";
+  |        ^
+  |
+help: provide a type for the item
+  |
+1 | const s: <type> = ", World";
+  |        ++++++++
+
+error: aborting due to 2 previous errors
+

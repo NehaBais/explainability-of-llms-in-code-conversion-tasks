@@ -1,0 +1,12 @@
+/tmp/stablecode-int_arith-py-cpp.cpp:21:44: error: expected ';' at end of declaration
+   21 |     double rr = static_cast<double>(input1)) / input2;
+      |                                            ^
+      |                                            ;
+/tmp/stablecode-int_arith-py-cpp.cpp:27:44: error: expected ';' at end of declaration
+   27 |     double tt = static_cast<double>(input1)) / input2;
+      |                                            ^
+      |                                            ;
+/tmp/stablecode-int_arith-py-cpp.cpp:34:36: error: extraneous ')' before ';'
+   34 |     double yy = pow(input1, input2));
+      |                                    ^
+3 errors generated.

@@ -1,0 +1,41 @@
+warning: unused import: `std::iter::FromIterator`
+ --> /tmp/magicoder7b-int_factors-cpp-rs.rs:1:5
+  |
+1 | use std::iter::FromIterator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: a value of type `String` cannot be built from an iterator over elements of type `i32`
+  --> /tmp/magicoder7b-int_factors-cpp-rs.rs:27:58
+   |
+27 |         let factors_string: String = factors.into_iter().collect();
+   |                                                          ^^^^^^^ value of type `String` cannot be built from `std::iter::Iterator<Item=i32>`
+   |
+   = help: the trait `FromIterator<i32>` is not implemented for `String`
+   = help: the following other types implement trait `FromIterator<A>`:
+             `String` implements `FromIterator<&'a char>`
+             `String` implements `FromIterator<&'a str>`
+             `String` implements `FromIterator<Box<str, A>>`
+             `String` implements `FromIterator<Cow<'a, str>>`
+             `String` implements `FromIterator<String>`
+             `String` implements `FromIterator<char>`
+note: the method call chain might not have had the expected associated types
+  --> /tmp/magicoder7b-int_factors-cpp-rs.rs:27:46
+   |
+24 |         let factors: Vec<i32> = generate_factors(*number);
+   |                                 ------------------------- this expression has type `Vec<i32>`
+...
+27 |         let factors_string: String = factors.into_iter().collect();
+   |                                              ^^^^^^^^^^^ `Iterator::Item` is `i32` here
+note: required by a bound in `collect`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/iter/traits/iterator.rs:1996:5
+help: consider removing this method call, as the receiver has type `Vec<i32>` and `Vec<i32>: FromIterator<i32>` trivially holds
+   |
+27 -         let factors_string: String = factors.into_iter().collect();
+27 +         let factors_string: String = factors.collect();
+   |
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0277`.

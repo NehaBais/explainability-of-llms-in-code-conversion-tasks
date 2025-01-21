@@ -1,0 +1,52 @@
+/tmp/granitecode3b-str_concat-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:6:17: warning: using directive refers to implicitly-defined namespace 'std'
+    6 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:9:3: error: unknown type name 'string'
+    9 |   string s1 = "hello";
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << s1 + " world" << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:10:28: error: use of undeclared identifier 'endl'
+   10 |   cout << s1 + " world" << endl;
+      |                            ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:11:3: error: unknown type name 'string'
+   11 |   string s2 = s1 + " world";
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << s2 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:12:17: error: use of undeclared identifier 'endl'
+   12 |   cout << s2 << endl;
+      |                 ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:13:3: error: unknown type name 'vector'
+   13 |   vector words = {"hello", "world", "mom"};
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:14:3: error: unknown type name 'string'
+   14 |   string s3 = ", ".join(words);
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:14:19: error: member reference base type 'const char[3]' is not a structure or union
+   14 |   string s3 = ", ".join(words);
+      |               ~~~~^~~~~
+/tmp/granitecode3b-str_concat-py-cpp.cpp:15:3: error: use of undeclared identifier 'cout'
+   15 |   cout << s3 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-py-cpp.cpp:15:17: error: use of undeclared identifier 'endl'
+   15 |   cout << s3 << endl;
+      |                 ^
+1 warning and 16 errors generated.

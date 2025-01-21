@@ -1,0 +1,11 @@
+/tmp/None.java:4: error: implicitly declared classes are a preview feature and are disabled by default.
+File inputFile = new File("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:7: error: class, interface, enum, or record expected
+if (inputFile.isFile() && docsDirectory.isDirectory()) {
+^
+/tmp/None.java:17: error: class, interface, enum, or record expected
+if (rootInputFile.isFile() && rootDocsDirectory.isDirectory()) {
+^
+3 errors

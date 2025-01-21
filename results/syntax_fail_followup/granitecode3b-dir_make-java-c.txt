@@ -1,0 +1,19 @@
+/tmp/granitecode3b-dir_make-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-java-c.c:3:16: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   int result = mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                ^
+/tmp/granitecode3b-dir_make-java-c.c:3:37: error: use of undeclared identifier 'S_IRWXU'
+    3 |   int result = mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                     ^
+/tmp/granitecode3b-dir_make-java-c.c:3:47: error: use of undeclared identifier 'S_IRWXG'
+    3 |   int result = mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                               ^
+/tmp/granitecode3b-dir_make-java-c.c:3:57: error: use of undeclared identifier 'S_IROTH'
+    3 |   int result = mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                         ^
+/tmp/granitecode3b-dir_make-java-c.c:3:67: error: use of undeclared identifier 'S_IXOTH'
+    3 |   int result = mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                                   ^
+6 errors generated.

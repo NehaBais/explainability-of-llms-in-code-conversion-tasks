@@ -1,0 +1,56 @@
+/tmp/codegemma7b-str_substring-js-c.c:1:23: error: use of undeclared identifier 'str'
+    1 | const char *substr1 = str + n;
+      |                       ^
+/tmp/codegemma7b-str_substring-js-c.c:1:29: error: use of undeclared identifier 'n'
+    1 | const char *substr1 = str + n;
+      |                             ^
+/tmp/codegemma7b-str_substring-js-c.c:2:23: error: use of undeclared identifier 'str'
+    2 | const char *substr2 = str + n;
+      |                       ^
+/tmp/codegemma7b-str_substring-js-c.c:2:29: error: use of undeclared identifier 'n'
+    2 | const char *substr2 = str + n;
+      |                             ^
+/tmp/codegemma7b-str_substring-js-c.c:3:9: error: use of undeclared identifier 'm'
+    3 | substr2[m] = '\0';
+      |         ^
+/tmp/codegemma7b-str_substring-js-c.c:3:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    3 | substr2[m] = '\0';
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:5:23: error: use of undeclared identifier 'str'
+    5 | const char *substr3 = str + n;
+      |                       ^
+/tmp/codegemma7b-str_substring-js-c.c:5:29: error: use of undeclared identifier 'n'
+    5 | const char *substr3 = str + n;
+      |                             ^
+/tmp/codegemma7b-str_substring-js-c.c:7:23: error: use of undeclared identifier 'str'
+    7 | const char *substr4 = str;
+      |                       ^
+/tmp/codegemma7b-str_substring-js-c.c:8:9: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 | substr4[strlen(str) - 1] = '\0';
+      |         ^
+/tmp/codegemma7b-str_substring-js-c.c:8:9: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codegemma7b-str_substring-js-c.c:8:16: error: use of undeclared identifier 'str'
+    8 | substr4[strlen(str) - 1] = '\0';
+      |                ^
+/tmp/codegemma7b-str_substring-js-c.c:8:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    8 | substr4[strlen(str) - 1] = '\0';
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:10:11: error: call to undeclared library function 'strcspn' with type 'unsigned long (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 | int idx = strcspn(str, "b");
+      |           ^
+/tmp/codegemma7b-str_substring-js-c.c:10:11: note: include the header <string.h> or explicitly provide a declaration for 'strcspn'
+/tmp/codegemma7b-str_substring-js-c.c:10:19: error: use of undeclared identifier 'str'
+   10 | int idx = strcspn(str, "b");
+      |                   ^
+/tmp/codegemma7b-str_substring-js-c.c:11:23: error: use of undeclared identifier 'str'
+   11 | const char *substr5 = str + idx;
+      |                       ^
+/tmp/codegemma7b-str_substring-js-c.c:13:20: error: use of undeclared identifier 'str'
+   13 | int idx2 = strcspn(str, "bc");
+      |                    ^
+/tmp/codegemma7b-str_substring-js-c.c:14:23: error: use of undeclared identifier 'str'
+   14 | const char *substr6 = str + idx2;
+      |                       ^
+17 errors generated.

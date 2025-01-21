@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegemma7b-file_size-c-go.go:5:2: "os" imported and not used
+/tmp/codegemma7b-file_size-c-go.go:16:14: invalid operation: cannot call non-function foo.Size (variable of type int64)
+/tmp/codegemma7b-file_size-c-go.go:23:14: invalid operation: cannot call non-function foo.Size (variable of type int64)

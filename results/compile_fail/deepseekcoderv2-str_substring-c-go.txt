@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_substring-c-go.go:30:3: declared and not used: r

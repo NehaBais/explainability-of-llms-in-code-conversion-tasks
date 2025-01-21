@@ -1,0 +1,7 @@
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:13:12: error: expected '}'
+   13 |   return 0;
+      |            ^
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:4:12: note: to match this '{'
+    4 | int main() {
+      |            ^
+1 error generated.

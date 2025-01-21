@@ -1,0 +1,31 @@
+/tmp/yicoder2b-file_create-js-cpp.cpp:22:17: error: use of undeclared identifier 'S_IRWXU'
+   22 |   mkdir("docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                 ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:22:27: error: use of undeclared identifier 'S_IRGRP'
+   22 |   mkdir("docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                           ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:22:37: error: use of undeclared identifier 'S_IXGRP'
+   22 |   mkdir("docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                     ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:22:47: error: use of undeclared identifier 'S_IROTH'
+   22 |   mkdir("docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                               ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:22:57: error: use of undeclared identifier 'S_IXOTH'
+   22 |   mkdir("docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                                         ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:30:18: error: use of undeclared identifier 'S_IRWXU'
+   30 |   mkdir("/docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                  ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:30:28: error: use of undeclared identifier 'S_IRGRP'
+   30 |   mkdir("/docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                            ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:30:38: error: use of undeclared identifier 'S_IXGRP'
+   30 |   mkdir("/docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                      ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:30:48: error: use of undeclared identifier 'S_IROTH'
+   30 |   mkdir("/docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                                ^
+/tmp/yicoder2b-file_create-js-cpp.cpp:30:58: error: use of undeclared identifier 'S_IXOTH'
+   30 |   mkdir("/docs", S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
+      |                                                          ^
+10 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-str_cmp-rs-go.go:41:2: declared and not used: a2

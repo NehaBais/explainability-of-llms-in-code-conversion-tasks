@@ -1,0 +1,28 @@
+/tmp/stablecode-file_size-js-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_size-js-cpp.cpp:8:3: error: use of undeclared identifier 'fs'
+    8 |   fs::path currentFilePath("input.txt");
+      |   ^
+/tmp/stablecode-file_size-js-cpp.cpp:10:16: error: use of undeclared identifier 'fs'
+   10 |             << fs::file_size(currentFilePath) << "\n";
+      |                ^
+/tmp/stablecode-file_size-js-cpp.cpp:10:30: error: use of undeclared identifier 'currentFilePath'
+   10 |             << fs::file_size(currentFilePath) << "\n";
+      |                              ^
+/tmp/stablecode-file_size-js-cpp.cpp:13:5: error: use of undeclared identifier 'fs'
+   13 |     fs::path rootFilePath("/input.txt"));
+      |     ^
+/tmp/stablecode-file_size-js-cpp.cpp:14:9: error: use of undeclared identifier 'fs'
+   14 |     if (fs::exists(rootFilePath)) {
+      |         ^
+/tmp/stablecode-file_size-js-cpp.cpp:14:20: error: use of undeclared identifier 'rootFilePath'
+   14 |     if (fs::exists(rootFilePath)) {
+      |                    ^
+/tmp/stablecode-file_size-js-cpp.cpp:16:20: error: use of undeclared identifier 'fs'
+   16 |                 << fs::file_size(rootFilePath) << "\n";
+      |                    ^
+/tmp/stablecode-file_size-js-cpp.cpp:16:34: error: use of undeclared identifier 'rootFilePath'
+   16 |                 << fs::file_size(rootFilePath) << "\n";
+      |                                  ^
+9 errors generated.

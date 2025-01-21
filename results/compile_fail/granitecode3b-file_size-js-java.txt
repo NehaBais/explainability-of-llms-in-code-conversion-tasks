@@ -1,0 +1,7 @@
+/tmp/Main.java:6: error: unreported exception IOException; must be caught or declared to be thrown
+    long size1 = Files.size(Paths.get("input.txt"));
+                           ^
+/tmp/Main.java:7: error: unreported exception IOException; must be caught or declared to be thrown
+    long size2 = Files.size(Paths.get("/input.txt"));
+                           ^
+2 errors

@@ -1,0 +1,10 @@
+/tmp/None.java:2: error: class, interface, enum, or record expected
+--enable-preview
+^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+s += "Hello";  // This will concatenate Hello to the end of s
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+System.out.println(s);
+^
+3 errors

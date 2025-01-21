@@ -1,0 +1,10 @@
+error: expected item, found `[`
+ --> /tmp/qwen2.5coder2b-str_match-c-rs.rs:1:1
+  |
+1 | [package]
+  | ^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,104 @@
+/tmp/codellama7b-bit_ops-py-cpp.cpp:6:28: error: use of undeclared identifier 'setfill'
+    6 |   cout << "AND:     0b" << setfill('0') << setw(width) << a << endl;
+      |                            ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:6:44: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+    6 |   cout << "AND:     0b" << setfill('0') << setw(width) << a << endl;
+      |                                            ^~~~
+      |                                            getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:6:49: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+    6 |   cout << "AND:     0b" << setfill('0') << setw(width) << a << endl;
+      |                                                 ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:7:21: error: use of undeclared identifier 'setfill'
+    7 |   cout << "& 0b" << setfill('0') << setw(width) << b << endl;
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:7:37: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+    7 |   cout << "& 0b" << setfill('0') << setw(width) << b << endl;
+      |                                     ^~~~
+      |                                     getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:7:42: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+    7 |   cout << "& 0b" << setfill('0') << setw(width) << b << endl;
+      |                                          ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:8:21: error: use of undeclared identifier 'setfill'
+    8 |   cout << "= 0b" << setfill('0') << setw(width) << (a & b) & mask << endl;
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:8:37: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+    8 |   cout << "= 0b" << setfill('0') << setw(width) << (a & b) & mask << endl;
+      |                                     ^~~~
+      |                                     getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:8:42: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+    8 |   cout << "= 0b" << setfill('0') << setw(width) << (a & b) & mask << endl;
+      |                                          ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:8:70: error: reference to overloaded function could not be resolved; did you mean to call it?
+    8 |   cout << "= 0b" << setfill('0') << setw(width) << (a & b) & mask << endl;
+      |                                                                      ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:10:28: error: use of undeclared identifier 'setfill'
+   10 |   cout << "OR:      0b" << setfill('0') << setw(width) << a << endl;
+      |                            ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:10:44: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+   10 |   cout << "OR:      0b" << setfill('0') << setw(width) << a << endl;
+      |                                            ^~~~
+      |                                            getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:10:49: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+   10 |   cout << "OR:      0b" << setfill('0') << setw(width) << a << endl;
+      |                                                 ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:11:21: error: use of undeclared identifier 'setfill'
+   11 |   cout << "| 0b" << setfill('0') << setw(width) << b << endl;
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:11:37: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+   11 |   cout << "| 0b" << setfill('0') << setw(width) << b << endl;
+      |                                     ^~~~
+      |                                     getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:11:42: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+   11 |   cout << "| 0b" << setfill('0') << setw(width) << b << endl;
+      |                                          ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:12:21: error: use of undeclared identifier 'setfill'
+   12 |   cout << "= 0b" << setfill('0') << setw(width) << (a | b) & mask << endl;
+      |                     ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:12:37: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+   12 |   cout << "= 0b" << setfill('0') << setw(width) << (a | b) & mask << endl;
+      |                                     ^~~~
+      |                                     getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/codellama7b-bit_ops-py-cpp.cpp:12:42: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an lvalue of type 'int'
+   12 |   cout << "= 0b" << setfill('0') << setw(width) << (a | b) & mask << endl;
+      |                                          ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

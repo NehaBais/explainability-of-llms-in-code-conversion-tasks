@@ -1,22 +1,16 @@
-fn main() {
-    let path = "./temp/hello";
-    create_directory(path).unwrap();
+use std::fs;
+use std::io;
+use std::path::Path;
+
+fn mkdir_all(path: &str) -> io::Result<()> {
+    fs::create_dir_all(path)
 }
 
-fn create_directory(dir_name: &str) -> Result<(), Box<dyn Error>> {
-    if Path::new(&dir_name).exists() {
-        println!("Directory {} already exists", dir_name);
-        return Ok(());
-    }
-    let mut path = PathBuf::from(dir_name);
-    for component in path.components().skip(1) {
-        // Skip the first element which is empty string ""
-        path = path.join(component);
-        if !path.exists() {
-            fs::create_dir(&path)?;
-        } else if !fs::metadata(&path).unwrap().is_dir() {
-            panic!("{} exists and is not a directory", path.display());
-        }
+fn main() -> io::Result<()> {
+    let path = "./tmp/some/path/to/dir";
+    match mkdir_all(path) {
+        Ok(_) => println!("Directory created successfully."),
+        Err(e) => eprintln!("Failed to create directory: {}", e),
     }
     Ok(())
 }

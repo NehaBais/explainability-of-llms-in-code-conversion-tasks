@@ -1,0 +1,21 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/codegeex4-str_substring-js-rs.rs:1:5
+  |
+1 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+ --> /tmp/codegeex4-str_substring-js-rs.rs:4:24
+  |
+4 |     let mut iter = str.graphemes(true).skip(n);
+  |                        ^^^^^^^^^ method not found in `&str`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

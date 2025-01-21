@@ -1,0 +1,4 @@
+/tmp/codellama7b-int_factors-java-cpp.cpp:7:13: error: non-aggregate type 'set<long>' cannot be initialized with an initializer list
+    7 |   set<long> factors = {n, 1};
+      |             ^         ~~~~~~
+1 error generated.

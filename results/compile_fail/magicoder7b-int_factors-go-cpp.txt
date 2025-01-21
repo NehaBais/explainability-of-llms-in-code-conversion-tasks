@@ -1,0 +1,16 @@
+/tmp/magicoder7b-int_factors-go-cpp.cpp:11:21: error: non-aggregate type 'vector<long long>' cannot be initialized with an initializer list
+   11 |   vector<long long> fs = {1};
+      |                     ^    ~~~
+/tmp/magicoder7b-int_factors-go-cpp.cpp:12:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   auto apf = [&fs](long long p, int e) mutable {
+      |   ^
+/tmp/magicoder7b-int_factors-go-cpp.cpp:12:14: error: expected expression
+   12 |   auto apf = [&fs](long long p, int e) mutable {
+      |              ^
+/tmp/magicoder7b-int_factors-go-cpp.cpp:31:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   31 |   for (auto f : fs)
+      |        ^
+/tmp/magicoder7b-int_factors-go-cpp.cpp:31:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   31 |   for (auto f : fs)
+      |               ^
+3 warnings and 2 errors generated.

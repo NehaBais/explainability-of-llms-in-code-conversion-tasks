@@ -1,0 +1,6 @@
+/tmp/BitwiseOperations.java:27: error: cannot find symbol
+    System.out.println("ror: " + (((int) (uint) a >> ub) | ((ua << (16 - ub)) & 0xffff)));
+                                          ^
+  symbol:   class uint
+  location: class BitwiseOperations
+1 error

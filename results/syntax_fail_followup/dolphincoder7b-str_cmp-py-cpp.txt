@@ -1,0 +1,19 @@
+/tmp/dolphincoder7b-str_cmp-py-cpp.cpp:14:7: error: no matching function for call to 'tolower'
+   14 |   if (std::tolower(a) == std::tolower(b)) {
+      |       ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'const std::string' (aka 'const basic_string<char>') to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-py-cpp.cpp:14:26: error: no matching function for call to 'tolower'
+   14 |   if (std::tolower(a) == std::tolower(b)) {
+      |                          ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'const std::string' (aka 'const basic_string<char>') to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

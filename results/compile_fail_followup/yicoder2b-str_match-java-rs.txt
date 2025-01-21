@@ -1,0 +1,29 @@
+error[E0600]: cannot apply unary operator `-` to type `usize`
+  --> /tmp/yicoder2b-str_match-java-rs.rs:14:46
+   |
+14 |     let loc: i32 = "abab".find(s7).unwrap_or(-1); // 2
+   |                                              ^^ cannot apply unary operator `-`
+   |
+   = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `usize`
+   |
+14 |     let loc: i32 = "abab".find(s7).unwrap_or(usize::MAX); // 2
+   |                                              ~~~~~~~~~~
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-java-rs.rs:14:20
+   |
+14 |     let loc: i32 = "abab".find(s7).unwrap_or(-1); // 2
+   |              ---   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `usize`
+   |              |
+   |              expected due to this
+   |
+help: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit
+   |
+14 |     let loc: i32 = "abab".find(s7).unwrap_or(-1).try_into().unwrap(); // 2
+   |                                                 ++++++++++++++++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0600.
+For more information about an error, try `rustc --explain E0308`.

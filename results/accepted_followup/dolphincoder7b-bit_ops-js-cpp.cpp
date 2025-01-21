@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int a, b;
+
+  cout << "Enter two integers: ";
+  cin >> a >> b;
+
+  cout << endl << "a AND b:   " << (a & b) << endl;
+  cout << "a OR b:    " << (a | b) << endl;
+  cout << "a XOR b:   " << (a ^ b) << endl;
+  cout << "NOT a:     " << ~a << endl;
+  // The following lines were incorrect because of missing '<<' operators.
+  cout << "a   << b:   " << (a << b) << endl;  // left shift
+  cout << "a   >> b:   " << (a >> b) << endl;  // arithmetic right shift
+  cout << "a   >>> b:  " << (a >>> b) << endl; // logical right shift
+}

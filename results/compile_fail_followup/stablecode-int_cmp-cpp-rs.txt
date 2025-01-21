@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_cmp-cpp-rs.rs:3:29
+  |
+3 | fn main() -> io::Result<()> {
+  |                             ^ unclosed delimiter
+...
+8 |     io::stdin().read_line(&mut a))
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-int_cmp-cpp-rs.rs:13:27
+   |
+8  |     io::stdin().read_line(&mut a))
+   |                                  - missing open `(` for this delimiter
+...
+13 |         .read_line(&mut b))
+   |                           ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

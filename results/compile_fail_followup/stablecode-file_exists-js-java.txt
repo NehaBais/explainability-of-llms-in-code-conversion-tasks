@@ -1,0 +1,4 @@
+/tmp/Main.java:21: error: ';' expected
+        System.out.println("Is 'docs' a directory at the specified location? " + exists3));
+                                                                                         ^
+1 error

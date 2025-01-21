@@ -1,0 +1,13 @@
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:41:3: error: no matching function for call to 'compare'
+   41 |   compare(24, 123);
+      |   ^~~~~~~
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:7:6: note: candidate function not viable: no known conversion from 'int' to 'string' (aka 'basic_string<char>') for 1st argument
+    7 | void compare(string a, string b) {
+      |      ^       ~~~~~~~~
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:42:3: error: no matching function for call to 'compare'
+   42 |   compare(5.0, 5);
+      |   ^~~~~~~
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:7:6: note: candidate function not viable: no known conversion from 'double' to 'string' (aka 'basic_string<char>') for 1st argument
+    7 | void compare(string a, string b) {
+      |      ^       ~~~~~~~~
+2 errors generated.

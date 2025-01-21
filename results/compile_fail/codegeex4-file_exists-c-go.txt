@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codegeex4-file_exists-c-go.go:26:71: undefined: strconv
+/tmp/codegeex4-file_exists-c-go.go:27:63: undefined: strconv
+/tmp/codegeex4-file_exists-c-go.go:33:68: undefined: strconv
+/tmp/codegeex4-file_exists-c-go.go:34:60: undefined: strconv

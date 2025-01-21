@@ -1,0 +1,60 @@
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:29:13
+   |
+29 |             fs.push(p * fs.last().unwrap());
+   |             ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:29:25
+   |
+29 |             fs.push(p * fs.last().unwrap());
+   |                         ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:36:9
+   |
+36 |         nr /= 2;
+   |         ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+14 | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign twice to immutable variable `d`
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:42:13
+   |
+40 |     for d in (3..).step_by(2) {
+   |         - first assignment to `d`
+41 |         if d * d > nr {
+42 |             d = nr;
+   |             ^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+40 |     for mut d in (3..).step_by(2) {
+   |         +++
+help: to modify the original value, take a borrow instead
+   |
+40 |     for ref mut d in (3..).step_by(2) {
+   |         +++++++
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:47:13
+   |
+47 |             nr /= d;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+14 | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0384, E0434.
+For more information about an error, try `rustc --explain E0384`.

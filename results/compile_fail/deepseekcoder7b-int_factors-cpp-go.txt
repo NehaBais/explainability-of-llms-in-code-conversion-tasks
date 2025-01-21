@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-int_factors-cpp-go.go:17:2: syntax error: unexpected <, expected }
+/tmp/deepseekcoder7b-int_factors-cpp-go.go:17:3: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_factors-cpp-go.go:17:11: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-int_factors-cpp-go.go:17:27: invalid character U+FF5C '｜' in identifier

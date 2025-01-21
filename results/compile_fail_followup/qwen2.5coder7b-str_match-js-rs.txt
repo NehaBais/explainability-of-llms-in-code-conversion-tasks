@@ -1,0 +1,20 @@
+error: 5 positional arguments in format string, but there are 4 arguments
+  --> /tmp/qwen2.5coder7b-str_match-js-rs.rs:37:42
+   |
+37 |                       "In fact, it happens {} times within '{}', at index{} {} {}.",
+   |                                            ^^               ^^           ^^ ^^ ^^
+38 |                       q2matches.len(),
+   |                       ---------------
+39 |                       &string_a,
+   |                       ---------
+40 |                       if q2matches.len() > 1 { "es" } else { "" },
+   |                       -------------------------------------------
+41 | /                     q2matches
+42 | |                         .iter()
+43 | |                         .map(|x| x.to_string())
+44 | |                         .collect::<Vec<String>>()
+45 | |                         .join(", "),
+   | |___________________________________-
+
+error: aborting due to 1 previous error
+

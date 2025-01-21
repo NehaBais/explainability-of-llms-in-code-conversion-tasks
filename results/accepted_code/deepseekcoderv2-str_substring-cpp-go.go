@@ -1,20 +1,38 @@
 package main
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 )
 
 func main() {
-    const n = 3
-    const m = 4
-    c := '2'
-    sub := "456"
+	s := "0123456789"
 
-    s := "0123456789"
-    fmt.Println(s[n : n+m])
-    fmt.Println(s[n:])
-    fmt.Println(strings.TrimRight(s, string(rune(s[len(s)-1])))
-    fmt.Println(s[strings.IndexRune(s, rune(c)) : strings.IndexRune(s, rune(c))+m])
-    fmt.Println(s[strings.IndexRune(s, rune(sub[0])) : strings.IndexRune(s, rune(sub[0]))+m])
+	n, m := 3, 4
+	c := '2'
+	sub := "456"
+
+	fmt.Println(s[n : n+m])
+	fmt.Println(s[n:])
+	fmt.Println(s[:len(s)-1])
+	fmt.Println(findIndexAndSubstr(s, c), m)
+	fmt.Println(findIndexAndSubstr(s, sub), m)
+}
+
+func findIndexAndSubstr(s string, substr interface{}) (int, string) {
+	switch v := substr.(type) {
+	case rune:
+		index := strings.IndexRune(s, v)
+		if index != -1 {
+			return index, s[index : index+m]
+		}
+	case string:
+		index := strings.Index(s, v)
+		if index != -1 {
+			return index, s[index : index+len(v)]
+		}
+	default:
+		fmt.Println("Unsupported type")
+	}
+	return -1, ""
 }

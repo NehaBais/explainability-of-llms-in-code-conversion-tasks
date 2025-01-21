@@ -1,0 +1,29 @@
+/tmp/codeqwen-str_match-go-c.c:6:35: error: use of undeclared identifier 'First'; did you mean 'first'?
+    6 |          strstr(first, second) == First ? "true" : "false");
+      |                                   ^~~~~
+      |                                   first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+/tmp/codeqwen-str_match-go-c.c:12:48: error: use of undeclared identifier 'First'; did you mean 'first'?
+   12 |       printf("2.1. At location %d\n", result - First);
+      |                                                ^~~~~
+      |                                                first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+/tmp/codeqwen-str_match-go-c.c:13:21: error: use of undeclared identifier 'First'; did you mean 'first'?
+   13 |       i += result - First + 1;
+      |                     ^~~~~
+      |                     first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+/tmp/codeqwen-str_match-go-c.c:17:42: error: use of undeclared identifier 'First'; did you mean 'first'?
+   17 |     printf("2. %s contains %s: false\n", First, second);
+      |                                          ^~~~~
+      |                                          first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+4 errors generated.

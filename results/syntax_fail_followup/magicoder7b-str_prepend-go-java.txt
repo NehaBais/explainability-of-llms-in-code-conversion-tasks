@@ -1,0 +1,8 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+var s = "world!";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+s = "Hello, " + s;
+^
+2 errors

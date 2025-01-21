@@ -1,0 +1,13 @@
+/tmp/codeqwen-file_size-java-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path fileA("file.txt");
+      |   ~~~~~^
+/tmp/codeqwen-file_size-java-cpp.cpp:7:16: error: use of undeclared identifier 'fileA'
+    7 |             << fileA.file_size() << " B\n";
+      |                ^
+/tmp/codeqwen-file_size-java-cpp.cpp:9:8: error: no member named 'filesystem' in namespace 'std'
+    9 |   std::filesystem::path fileB("/file.txt");
+      |   ~~~~~^
+/tmp/codeqwen-file_size-java-cpp.cpp:11:16: error: use of undeclared identifier 'fileB'
+   11 |             << fileB.file_size() << " B\n";
+      |                ^
+4 errors generated.

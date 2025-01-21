@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codellama7b-file_rename-cpp-go.go:31:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:32:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:41:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:42:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context

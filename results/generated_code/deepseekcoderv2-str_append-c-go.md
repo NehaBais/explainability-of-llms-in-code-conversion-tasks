@@ -1,20 +1,22 @@
-Answer: In Golang, you can use the `append()` function to append a string literal to another string variable. Here's the idiomatic way to do it:
+ Here's the equivalent Go code for the given C code:
 
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Create a string variable equal to any text value
 	str := "Good Morning"
+	cstr := " to all"
+	cstr2 := " !!!"
 
-	// Append the string with another string literal in the most idiomatic way
-	cstr := append(str, " to all")
+	// Append the strings together in a idiomatic way
+	str += cstr + cstr2
 
-	// Show the contents of the variable after the append operation
-	fmt.Println(cstr)
+	fmt.Println(str)
 }
 ```
-This code will output:
-Good Morning to all
+
+In Go, string concatenation is done using the `+` operator, which works seamlessly with strings and other string literals. This makes the code more readable and idiomatic compared to C's `strcat` or manual indexing manipulation like in the second method of your original code.

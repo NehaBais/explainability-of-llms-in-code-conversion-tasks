@@ -1,0 +1,8 @@
+error: expected one of `!`, `.`, `::`, `;`, `?`, `{`, `}`, or an operator, found `riu`
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:5:13
+  |
+5 |     println riu("a and b: {}", a & b as i32);
+  |             ^^^ expected one of 8 possible tokens
+
+error: aborting due to 1 previous error
+

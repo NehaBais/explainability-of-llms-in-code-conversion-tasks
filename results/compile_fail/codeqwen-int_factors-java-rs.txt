@@ -1,0 +1,22 @@
+warning: unnecessary parentheses around `for` iterator expression
+ --> /tmp/codeqwen-int_factors-java-rs.rs:8:17
+  |
+8 |     for test in (2..=((n as f64).sqrt() as u64)) {
+  |                 ^                              ^
+  |
+  = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+  |
+8 -     for test in (2..=((n as f64).sqrt() as u64)) {
+8 +     for test in 2..=((n as f64).sqrt() as u64) {
+  |
+
+error[E0601]: `main` function not found in crate `codeqwen_int_factors_java_rs`
+  --> /tmp/codeqwen-int_factors-java-rs.rs:16:2
+   |
+16 | }
+   |  ^ consider adding a `main` function to `/tmp/codeqwen-int_factors-java-rs.rs`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

@@ -1,0 +1,34 @@
+/tmp/codellama7b-int_factors-cpp-c.c:8:21: warning: sizeof on array function parameter will return size of 'int *' instead of 'int[]' [-Wsizeof-array-argument]
+    8 |       factors[sizeof(factors) / sizeof(*factors)] = i;
+      |                     ^
+/tmp/codellama7b-int_factors-cpp-c.c:5:33: note: declared here
+    5 | void GenerateFactors(int n, int factors[]) {
+      |                                 ^
+/tmp/codellama7b-int_factors-cpp-c.c:8:31: warning: 'sizeof (factors)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+    8 |       factors[sizeof(factors) / sizeof(*factors)] = i;
+      |               ~~~~~~~~~~~~~~~ ^
+/tmp/codellama7b-int_factors-cpp-c.c:5:33: note: pointer 'factors' declared here
+    5 | void GenerateFactors(int n, int factors[]) {
+      |                                 ^
+/tmp/codellama7b-int_factors-cpp-c.c:10:23: warning: sizeof on array function parameter will return size of 'int *' instead of 'int[]' [-Wsizeof-array-argument]
+   10 |         factors[sizeof(factors) / sizeof(*factors) + 1] = n / i;
+      |                       ^
+/tmp/codellama7b-int_factors-cpp-c.c:5:33: note: declared here
+    5 | void GenerateFactors(int n, int factors[]) {
+      |                                 ^
+/tmp/codellama7b-int_factors-cpp-c.c:10:33: warning: 'sizeof (factors)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+   10 |         factors[sizeof(factors) / sizeof(*factors) + 1] = n / i;
+      |                 ~~~~~~~~~~~~~~~ ^
+/tmp/codellama7b-int_factors-cpp-c.c:5:33: note: pointer 'factors' declared here
+    5 | void GenerateFactors(int n, int factors[]) {
+      |                                 ^
+/tmp/codellama7b-int_factors-cpp-c.c:12:15: warning: sizeof on array function parameter will return size of 'int *' instead of 'int[]' [-Wsizeof-array-argument]
+   12 |       ++sizeof(factors) / sizeof(*factors);
+      |               ^
+/tmp/codellama7b-int_factors-cpp-c.c:5:33: note: declared here
+    5 | void GenerateFactors(int n, int factors[]) {
+      |                                 ^
+/tmp/codellama7b-int_factors-cpp-c.c:12:7: error: expression is not assignable
+   12 |       ++sizeof(factors) / sizeof(*factors);
+      |       ^ ~~~~~~~~~~~~~~~
+5 warnings and 1 error generated.

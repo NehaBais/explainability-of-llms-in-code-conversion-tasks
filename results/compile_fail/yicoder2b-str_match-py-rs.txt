@@ -1,0 +1,57 @@
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:17:21
+   |
+17 |     let loc1: i32 = "abab".find("bb").unwrap(); // returns -1
+   |               ---   ^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `usize`
+   |               |
+   |               expected due to this
+   |
+help: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit
+   |
+17 |     let loc1: i32 = "abab".find("bb").unwrap().try_into().unwrap(); // returns -1
+   |                                               ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:20:21
+   |
+20 |     let loc2: i32 = "abab".find("ab").unwrap(); // returns 0
+   |               ---   ^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `usize`
+   |               |
+   |               expected due to this
+   |
+help: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit
+   |
+20 |     let loc2: i32 = "abab".find("ab").unwrap().try_into().unwrap(); // returns 0
+   |                                               ++++++++++++++++++++
+
+error[E0061]: this method takes 1 argument but 2 arguments were supplied
+  --> /tmp/yicoder2b-str_match-py-rs.rs:23:28
+   |
+23 |     let loc3: i32 = "abab".find("ab", loc2 + 1).unwrap(); // returns 2
+   |                            ^^^^       -------- unexpected argument #2 of type `i32`
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:12
+help: remove the extra argument
+   |
+23 -     let loc3: i32 = "abab".find("ab", loc2 + 1).unwrap(); // returns 2
+23 +     let loc3: i32 = "abab".find("ab").unwrap(); // returns 2
+   |
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:23:21
+   |
+23 |     let loc3: i32 = "abab".find("ab", loc2 + 1).unwrap(); // returns 2
+   |               ---   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `usize`
+   |               |
+   |               expected due to this
+   |
+help: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit
+   |
+23 |     let loc3: i32 = "abab".find("ab", loc2 + 1).unwrap().try_into().unwrap(); // returns 2
+   |                                                         ++++++++++++++++++++
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0061, E0308.
+For more information about an error, try `rustc --explain E0061`.

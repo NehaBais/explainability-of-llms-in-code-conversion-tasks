@@ -1,0 +1,78 @@
+/tmp/yicoder2b-file_exists-js-c.c:7:3: error: expected expression
+    7 |   \Windows\SysWOW64\CommonFiles\Microsoft.NET\Framework\v2 .0.50727\Clr.dll CLR
+      |   ^
+/tmp/yicoder2b-file_exists-js-c.c:11:7: error: use of undeclared identifier 'file'; did you mean 'free'?
+   11 |   if (file) {
+      |       ^~~~
+      |       free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:12:12: error: use of undeclared identifier 'file'; did you mean 'free'?
+   12 |     fclose(file);
+      |            ^~~~
+      |            free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:19:3: error: use of undeclared identifier 'file'
+   19 |   file = fopen("c:\\input.txt", "r");
+      |   ^
+/tmp/yicoder2b-file_exists-js-c.c:20:7: error: use of undeclared identifier 'file'; did you mean 'free'?
+   20 |   if (file) {
+      |       ^~~~
+      |       free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:21:12: error: use of undeclared identifier 'file'; did you mean 'free'?
+   21 |     fclose(file);
+      |            ^~~~
+      |            free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:28:3: error: use of undeclared identifier 'file'
+   28 |   file = opendir("docs");
+      |   ^
+/tmp/yicoder2b-file_exists-js-c.c:28:10: error: call to undeclared function 'opendir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   file = opendir("docs");
+      |          ^
+/tmp/yicoder2b-file_exists-js-c.c:29:7: error: use of undeclared identifier 'file'; did you mean 'free'?
+   29 |   if (file) {
+      |       ^~~~
+      |       free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:30:5: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |     closedir(file);
+      |     ^
+/tmp/yicoder2b-file_exists-js-c.c:30:14: error: use of undeclared identifier 'file'; did you mean 'free'?
+   30 |     closedir(file);
+      |              ^~~~
+      |              free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:37:3: error: use of undeclared identifier 'file'
+   37 |   file = opendir("c:\\docs");
+      |   ^
+/tmp/yicoder2b-file_exists-js-c.c:38:7: error: use of undeclared identifier 'file'; did you mean 'free'?
+   38 |   if (file) {
+      |       ^~~~
+      |       free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/yicoder2b-file_exists-js-c.c:39:5: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |     closedir(file);
+      |     ^
+/tmp/yicoder2b-file_exists-js-c.c:39:14: error: use of undeclared identifier 'file'; did you mean 'free'?
+   39 |     closedir(file);
+      |              ^~~~
+      |              free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+15 errors generated.

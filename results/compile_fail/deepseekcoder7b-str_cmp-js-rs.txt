@@ -1,0 +1,40 @@
+error[E0277]: can't compare `{integer}` with `&str`
+ --> /tmp/deepseekcoder7b-str_cmp-js-rs.rs:6:5
+  |
+6 |     assert_ne!(123, "123"); // true
+  |     ^^^^^^^^^^^^^^^^^^^^^^ no implementation for `{integer} == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `{integer}`
+  = help: the following other types implement trait `PartialEq<Rhs>`:
+            f128
+            f16
+            f32
+            f64
+            i128
+            i16
+            i32
+            i64
+          and 8 others
+  = note: this error originates in the macro `assert_ne` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: can't compare `{integer}` with `&str`
+  --> /tmp/deepseekcoder7b-str_cmp-js-rs.rs:20:9
+   |
+20 |     123 != "456"; // false
+   |         ^^ no implementation for `{integer} == &str`
+   |
+   = help: the trait `PartialEq<&str>` is not implemented for `{integer}`
+   = help: the following other types implement trait `PartialEq<Rhs>`:
+             f128
+             f16
+             f32
+             f64
+             i128
+             i16
+             i32
+             i64
+           and 8 others
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

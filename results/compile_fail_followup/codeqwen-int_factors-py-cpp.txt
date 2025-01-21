@@ -1,0 +1,13 @@
+/tmp/codeqwen-int_factors-py-cpp.cpp:6:15: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+    6 |   vector<int> i = {45, 53, 64};
+      |               ^   ~~~~~~~~~~~~
+/tmp/codeqwen-int_factors-py-cpp.cpp:7:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    7 |   for (auto n : i) {
+      |        ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:7:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    7 |   for (auto n : i) {
+      |               ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:10:31: error: expected '(' for function-style cast or type construction
+   10 |     For(vector<int>::iterator It = factors.begin(); It != factors.end(); ++It) {
+      |         ~~~~~~~~~~~~~~~~~~~~~ ^
+2 warnings and 2 errors generated.

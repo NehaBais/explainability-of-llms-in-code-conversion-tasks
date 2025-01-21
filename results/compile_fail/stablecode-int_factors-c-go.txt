@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/stablecode-int_factors-c-go.go:17:37: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-c-go.go:21:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-c-go.go:25:40: syntax error: unexpected ] at end of statement
+/tmp/stablecode-int_factors-c-go.go:37:27: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-c-go.go:46:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-c-go.go:61:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-c-go.go:71:25: syntax error: unexpected ) in composite literal; possibly missing comma or }
+/tmp/stablecode-int_factors-c-go.go:75:2: syntax error: non-declaration statement outside function body

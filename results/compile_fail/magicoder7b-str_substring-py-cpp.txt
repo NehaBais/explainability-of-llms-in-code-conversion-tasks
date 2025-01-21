@@ -1,0 +1,7 @@
+/tmp/magicoder7b-str_substring-py-cpp.cpp:34:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   34 |   auto pos = s.find(c);
+      |   ^
+/tmp/magicoder7b-str_substring-py-cpp.cpp:43:16: error: use of undeclared identifier 'chars'
+   43 |   pos = s.find(chars);
+      |                ^
+1 warning and 1 error generated.

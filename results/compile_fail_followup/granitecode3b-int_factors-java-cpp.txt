@@ -1,0 +1,25 @@
+/tmp/granitecode3b-int_factors-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "Factors of " << n << ":" << endl;
+      |   ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:7:40: error: use of undeclared identifier 'endl'
+    7 |   cout << "Factors of " << n << ":" << endl;
+      |                                        ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:10:7: error: use of undeclared identifier 'cout'
+   10 |       cout << i << " and " << n / i << endl;
+      |       ^
+/tmp/granitecode3b-int_factors-java-cpp.cpp:10:40: error: use of undeclared identifier 'endl'
+   10 |       cout << i << " and " << n / i << endl;
+      |                                        ^
+1 warning and 7 errors generated.

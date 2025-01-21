@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-file_size-java-go.go:24:20: multiple-value fileA.Stat() (value of type (os.FileInfo, error)) in single-value context

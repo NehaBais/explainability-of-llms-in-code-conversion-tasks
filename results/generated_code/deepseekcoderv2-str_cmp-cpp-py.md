@@ -1,55 +1,40 @@
-Answer: The code below is a Python implementation of the given C++ program. It demonstrates how to compare strings lexically and numerically in different cases, as well as perform case-insensitive comparisons. Additionally, it showcases other string comparison operations supported by the language.
+ Here's the equivalent Python code for the provided C++ code. This Python script demonstrates various string comparisons including case-sensitive and case-insensitive comparison, as well as numeric comparisons:
 
 ```python
-def compare_strings(a, b):
-    print("Comparing:", a, "and", b)
-    if a == b:
-        print(a, "is exactly equal to", b)
-    else:
-        print(a, "is not exactly equal to", b)
-    
-    if a != b:
-        print(a, "is not equal to", b)
-    else:
-        print(a, "is equal to", b)
-    
-    if a < b:
-        print(a, "comes before", b, "lexically")
-    else:
-        print(a, "does not come before", b, "lexically")
-        
-    if a > b:
-        print(a, "comes after", b, "lexically")
-    else:
-        print(a, "does not come after", b, "lexically")
-    
-def main():
-    # Case-sensitive comparisons.
-    a = input("Enter the first string (default is 1.2.Foo): ") or "1.2.Foo"
-    b = input("Enter the second string (default is 1.3.Bar): ") or "1.3.Bar"
-    
-    compare_strings(a, b)
-    
-    # Case-insensitive comparisons by folding both strings to a common case.
-    print("\nCase-insensitive comparison:")
-    a = a.lower()
-    b = b.lower()
-    compare_strings(a, b)
-    
-    # Numeric comparisons; here 'double' could be any type for which the relevant >> operator is defined, eg int, long, etc.
-    numA, numB = float(a), float(b)
-    if numA == numB:
-        print("Both strings are equal to", a, "and", b)
-    else:
-        print("Neither string is exactly equal to the other.")
-    
-    # Other kinds of string comparisons that the language provides.
-    print("\nOther string comparison operations:")
-    if a < b:
-        print(a, "comes before", b, "lexically.")
-    elif a > b:
-        print(a, "comes after", b, "lexically.")
-    
-if __name__ == "__main__":
-    main()
+import sys
+from string import ascii_lowercase
+
+def demo_compare(a, b, semantically):
+    print(f"{a} and {b} are {'exactly ' if a == b else 'not exactly '}{semantically} equal.")
+    print(f"{a} and {b} are {'not ' if a != b else ''}{semantically} unequal.")
+    print(f"{a} is {'not ' if not (a < b) else ''}{semantically} ordered before {b}.")
+    print(f"{a} is {'not ' if not (a > b) else ''}{semantically} ordered after {b}.")
+
+# Default values for the strings to be compared.
+default_a = "1.2.Foo"
+default_b = "1.3.Bar"
+a = sys.argv[1] if len(sys.argv) > 1 else default_a
+b = sys.argv[2] if len(sys.argv) > 2 else default_b
+
+# Case-sensitive comparisons.
+demo_compare(a, b, "lexically")
+
+# Case-insensitive comparisons by folding both strings to a common case.
+a_lower = a.lower()
+b_lower = b.lower()
+demo_compare(a_lower, b_lower, "lexically")
+
+# Numeric comparisons; here 'float' could be any type for which the relevant conversion is defined.
+numA = float(a)
+numB = float(b)
+demo_compare(numA, numB, "numerically")
 ```
+
+### Explanation:
+1. **Function `demo_compare`**: This function takes two arguments and a string indicating how the comparison is being made (lexically or numerically), then prints statements about equality, inequality, and order comparisons based on the provided strings.
+2. **Default Values**: The script uses default values for `a` and `b` if command-line arguments are not provided.
+3. **Case-Sensitive Comparison**: Direct string comparison is used to compare `a` and `b`.
+4. **Case-Insensitive Comparison**: Both strings are converted to lowercase using the `.lower()` method before being compared.
+5. **Numeric Comparison**: The script converts both strings to floats for numeric comparison.
+
+This Python script provides similar functionality to the provided C++ code, demonstrating various string and numeric comparisons in a case-sensitive and case-insensitive manner.

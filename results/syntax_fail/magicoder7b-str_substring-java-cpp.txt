@@ -1,0 +1,4 @@
+/tmp/magicoder7b-str_substring-java-cpp.cpp:1:10: fatal error: 'boost/utility/string_view.hpp' file not found
+    1 | #include <boost/utility/string_view.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

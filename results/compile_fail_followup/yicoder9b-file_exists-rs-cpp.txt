@@ -1,0 +1,7 @@
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:6:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    6 |   for (const char *file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                         ^
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:6:27: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    6 |   for (const char *file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                           ^
+1 warning and 1 error generated.

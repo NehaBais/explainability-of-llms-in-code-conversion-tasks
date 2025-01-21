@@ -1,0 +1,1 @@
+/tmp/dolphincoder7b-int_arith-rs-go.go:1:1: expected 'package', found GET_INTEGERS

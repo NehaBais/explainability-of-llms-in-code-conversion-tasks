@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_create-c-go.go:8:12: undefined: os.ChDir

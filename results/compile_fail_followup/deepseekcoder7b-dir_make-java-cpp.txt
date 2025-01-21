@@ -1,0 +1,27 @@
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:6:3: error: use of undeclared identifier 'fs'
+    6 |   fs::path dir(path);
+      |   ^
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:8:8: error: use of undeclared identifier 'fs'
+    8 |   if (!fs::exists(dir)) {
+      |        ^
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:8:19: error: use of undeclared identifier 'dir'; did you mean 'div'?
+    8 |   if (!fs::exists(dir)) {
+      |                   ^~~
+      |                   div
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:147:38: note: 'div' declared here
+  147 | inline _LIBCPP_HIDE_FROM_ABI lldiv_t div(long long __x, long long __y) _NOEXCEPT { return ::lldiv(__x, __y); }
+      |                                      ^
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:9:9: error: use of undeclared identifier 'fs'
+    9 |     if (fs::create_directories(dir))
+      |         ^
+/tmp/deepseekcoder7b-dir_make-java-cpp.cpp:9:32: error: use of undeclared identifier 'dir'; did you mean 'div'?
+    9 |     if (fs::create_directories(dir))
+      |                                ^~~
+      |                                div
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:147:38: note: 'div' declared here
+  147 | inline _LIBCPP_HIDE_FROM_ABI lldiv_t div(long long __x, long long __y) _NOEXCEPT { return ::lldiv(__x, __y); }
+      |                                      ^
+6 errors generated.

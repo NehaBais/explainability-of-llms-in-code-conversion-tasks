@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-int_cmp-go-c.c:1:1: error: unknown type name 'GET'
+    1 | GET two integers from user If the first integer is less than the second
+      | ^
+/tmp/dolphincoder7b-int_cmp-go-c.c:1:8: error: expected ';' after top level declarator
+    1 | GET two integers from user If the first integer is less than the second
+      |        ^
+      |        ;
+2 errors generated.

@@ -1,0 +1,94 @@
+warning: unused import: `std::cmp::PartialOrd`
+ --> /tmp/yicoder9b-int_factors-py-rs.rs:1:5
+  |
+1 | use std::cmp::PartialOrd;
+  |     ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-int_factors-py-rs.rs:7:16
+  |
+7 |         if n % x == 0 {
+  |                ^ expected `u32`, found `usize`
+
+error[E0277]: cannot calculate the remainder of `u32` divided by `usize`
+ --> /tmp/yicoder9b-int_factors-py-rs.rs:7:14
+  |
+7 |         if n % x == 0 {
+  |              ^ no implementation for `u32 % usize`
+  |
+  = help: the trait `Rem<usize>` is not implemented for `u32`
+  = help: the following other types implement trait `Rem<Rhs>`:
+            `&'a u32` implements `Rem<u32>`
+            `&u32` implements `Rem<&u32>`
+            `u32` implements `Rem<&u32>`
+            `u32` implements `Rem<NonZero<u32>>`
+            `u32` implements `Rem`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-int_factors-py-rs.rs:9:31
+  |
+9 |             factors2.push(n / x);
+  |                               ^ expected `u32`, found `usize`
+
+error[E0277]: cannot divide `u32` by `usize`
+ --> /tmp/yicoder9b-int_factors-py-rs.rs:9:29
+  |
+9 |             factors2.push(n / x);
+  |                             ^ no implementation for `u32 / usize`
+  |
+  = help: the trait `Div<usize>` is not implemented for `u32`
+  = help: the following other types implement trait `Div<Rhs>`:
+            `&'a u32` implements `Div<u32>`
+            `&u32` implements `Div<&u32>`
+            `u32` implements `Div<&u32>`
+            `u32` implements `Div<NonZero<u32>>`
+            `u32` implements `Div`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-int_factors-py-rs.rs:14:17
+   |
+14 |     if let Some((last, _)) = rev.iter().last() {
+   |                 ^^^^^^^^^    ----------------- this expression has type `Option<&u32>`
+   |                 |
+   |                 expected `u32`, found `(_, _)`
+   |
+   = note: expected type `u32`
+             found tuple `(_, _)`
+
+error[E0277]: the trait bound `Vec<usize>: Extend<u32>` is not satisfied
+  --> /tmp/yicoder9b-int_factors-py-rs.rs:19:14
+   |
+19 |     factors1.extend(rev);
+   |              ^^^^^^ the trait `Extend<u32>` is not implemented for `Vec<usize>`
+   |
+   = help: the following other types implement trait `Extend<A>`:
+             `Vec<T, A>` implements `Extend<&'a T>`
+             `Vec<T, A>` implements `Extend<T>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-int_factors-py-rs.rs:20:5
+   |
+3  | fn factor(n: u32) -> Vec<u32> {
+   |                      -------- expected `Vec<u32>` because of return type
+...
+8  |             factors1.push(x);
+   |             --------      - this argument has type `usize`...
+   |             |
+   |             ... which causes `factors1` to have type `Vec<usize>`
+...
+20 |     factors1
+   |     ^^^^^^^^ expected `Vec<u32>`, found `Vec<usize>`
+   |
+   = note: expected struct `Vec<u32>`
+              found struct `Vec<usize>`
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+8  |             factors1.push(x.try_into().unwrap());
+   |                            ++++++++++++++++++++
+
+error: aborting due to 7 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

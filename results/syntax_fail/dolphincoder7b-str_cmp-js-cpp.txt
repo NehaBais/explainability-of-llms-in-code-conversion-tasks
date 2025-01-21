@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-str_cmp-js-cpp.cpp:10:46: error: member reference base type 'const char[5]' is not a structure or union
+   10 |   std::cout << (std::string("ABCD") == "abcd".tolower()) << '\n'; // 1
+      |                                        ~~~~~~^~~~~~~~
+1 error generated.

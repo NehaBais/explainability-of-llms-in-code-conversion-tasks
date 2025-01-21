@@ -1,0 +1,32 @@
+error: expected one of `!`, `)`, `,`, `.`, `::`, `?`, `{`, or an operator, found `As`
+  --> /tmp/codeqwen-int_arith-go-rs.rs:17:55
+   |
+17 |     println!("{} / {} = {:.0}", A, b, (A as f64) / (b As f64)); // truncates towards 0
+   |                                                      -^^ expected one of 8 possible tokens
+   |                                                      |
+   |                                                      help: missing `,`
+
+error: expected one of `!`, `)`, `,`, `.`, `::`, `?`, `{`, or an operator, found `f64`
+  --> /tmp/codeqwen-int_arith-go-rs.rs:17:58
+   |
+17 |     println!("{} / {} = {:.0}", A, b, (A as f64) / (b As f64)); // truncates towards 0
+   |                                                         -^^^ expected one of 8 possible tokens
+   |                                                         |
+   |                                                         help: missing `,`
+
+error[E0425]: cannot find value `As` in this scope
+  --> /tmp/codeqwen-int_arith-go-rs.rs:17:55
+   |
+17 |     println!("{} / {} = {:.0}", A, b, (A as f64) / (b As f64)); // truncates towards 0
+   |                                                       ^^ help: a local variable with a similar name exists: `A`
+
+error[E0423]: expected value, found builtin type `f64`
+  --> /tmp/codeqwen-int_arith-go-rs.rs:17:58
+   |
+17 |     println!("{} / {} = {:.0}", A, b, (A as f64) / (b As f64)); // truncates towards 0
+   |                                                          ^^^ not a value
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0423, E0425.
+For more information about an error, try `rustc --explain E0423`.

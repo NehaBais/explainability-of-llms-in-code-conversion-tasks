@@ -1,0 +1,25 @@
+/tmp/stablecode-str_substring-java-cpp.cpp:10:41: error: expected ';' after return statement
+   10 |     return str.substr(0, str.length()-1));
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-str_substring-java-cpp.cpp:14:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   14 |   auto pos = str.find(c);
+      |   ^
+/tmp/stablecode-str_substring-java-cpp.cpp:16:69: error: extraneous ')' before ';'
+   16 |         throw std::invalid_argument("Character not found in string"));
+      |                                                                     ^
+/tmp/stablecode-str_substring-java-cpp.cpp:18:30: error: expected ';' after return statement
+   18 |     return str.substr(pos, m));
+      |                              ^
+      |                              ;
+/tmp/stablecode-str_substring-java-cpp.cpp:22:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |   auto pos = str.find(sub);
+      |   ^
+/tmp/stablecode-str_substring-java-cpp.cpp:24:69: error: extraneous ')' before ';'
+   24 |         throw std::invalid_argument("Substring not found in string"));
+      |                                                                     ^
+/tmp/stablecode-str_substring-java-cpp.cpp:26:30: error: expected ';' after return statement
+   26 |     return str.substr(pos, m));
+      |                              ^
+      |                              ;
+2 warnings and 5 errors generated.

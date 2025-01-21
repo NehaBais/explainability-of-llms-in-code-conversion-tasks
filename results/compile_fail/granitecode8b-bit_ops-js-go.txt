@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-bit_ops-js-go.go:12:33: syntax error: unexpected >, expected expression

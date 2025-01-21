@@ -1,0 +1,14 @@
+/tmp/dolphincoder7b-str_match-rs-c.c:2:11: error: use of undeclared identifier 'MAX_LENGTH'
+    2 |   char s1[MAX_LENGTH];
+      |           ^
+/tmp/dolphincoder7b-str_match-rs-c.c:3:11: error: use of undeclared identifier 'MAX_LENGTH'
+    3 |   char s2[MAX_LENGTH];
+      |           ^
+/tmp/dolphincoder7b-str_match-rs-c.c:6:11: error: use of undeclared identifier 'MAX_LENGTH'
+    6 |   char s3[MAX_LENGTH] = "ab";
+      |           ^
+/tmp/dolphincoder7b-str_match-rs-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(s1, "abcd");
+      |   ^
+/tmp/dolphincoder7b-str_match-rs-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+4 errors generated.

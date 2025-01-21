@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegeex4-file_exists-c-go.go:26:71: undefined: strconv

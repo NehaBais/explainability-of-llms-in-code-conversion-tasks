@@ -1,0 +1,22 @@
+/tmp/codegemma7b-dir_make-rs-c.c:13:15: error: call to undeclared library function 'strdup' with type 'char *(const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   char *dir = strdup(path);
+      |               ^
+/tmp/codegemma7b-dir_make-rs-c.c:13:15: note: include the header <string.h> or explicitly provide a declaration for 'strdup'
+/tmp/codegemma7b-dir_make-rs-c.c:15:17: error: call to undeclared function 'strtok_r'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   char *token = strtok_r(dir, "/", &saveptr);
+      |                 ^
+/tmp/codegemma7b-dir_make-rs-c.c:15:9: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   15 |   char *token = strtok_r(dir, "/", &saveptr);
+      |         ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-dir_make-rs-c.c:22:11: error: incompatible integer to pointer conversion assigning to 'char *' from 'int' [-Wint-conversion]
+   22 |     token = strtok_r(NULL, "/", &saveptr);
+      |           ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-dir_make-rs-c.c:25:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   free(dir);
+      |   ^
+/tmp/codegemma7b-dir_make-rs-c.c:25:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/codegemma7b-dir_make-rs-c.c:34:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |     printf("Directory created successfully.\n");
+      |     ^
+/tmp/codegemma7b-dir_make-rs-c.c:34:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+6 errors generated.

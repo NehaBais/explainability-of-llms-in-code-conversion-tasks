@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_cmp-cpp-go.go:28:7: expected statement, found ':' (and 2 more errors)

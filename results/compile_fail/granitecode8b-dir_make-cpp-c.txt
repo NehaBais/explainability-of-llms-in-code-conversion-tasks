@@ -1,0 +1,22 @@
+/tmp/granitecode8b-dir_make-cpp-c.c:6:17: error: use of undeclared identifier 'S_IRWXU'
+    6 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                 ^
+/tmp/granitecode8b-dir_make-cpp-c.c:6:27: error: use of undeclared identifier 'S_IRWXG'
+    6 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                           ^
+/tmp/granitecode8b-dir_make-cpp-c.c:6:37: error: use of undeclared identifier 'S_IROTH'
+    6 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                     ^
+/tmp/granitecode8b-dir_make-cpp-c.c:6:47: error: use of undeclared identifier 'S_IXOTH'
+    6 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                               ^
+/tmp/granitecode8b-dir_make-cpp-c.c:8:17: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if ((status = mkdir(path, mode)) == 0) {
+      |                 ^
+/tmp/granitecode8b-dir_make-cpp-c.c:10:14: error: use of undeclared identifier 'errno'
+   10 |   } else if (errno == EEXIST) {
+      |              ^
+/tmp/granitecode8b-dir_make-cpp-c.c:10:23: error: use of undeclared identifier 'EEXIST'
+   10 |   } else if (errno == EEXIST) {
+      |                       ^
+7 errors generated.

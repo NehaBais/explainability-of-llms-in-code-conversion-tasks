@@ -1,0 +1,7 @@
+/tmp/codegemma7b-file_size-go-cpp.cpp:6:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    6 |     auto stat = std::filesystem::status(f);
+      |     ^
+/tmp/codegemma7b-file_size-go-cpp.cpp:6:22: error: no member named 'filesystem' in namespace 'std'
+    6 |     auto stat = std::filesystem::status(f);
+      |                 ~~~~~^
+1 warning and 1 error generated.

@@ -1,0 +1,13 @@
+/tmp/Main.java:20: error: int cannot be dereferenced
+            + num1.getClass().getName()
+                  ^
+/tmp/Main.java:22: error: int cannot be dereferenced
+            + num2.getClass().getName());
+                  ^
+/tmp/Main.java:35: error: double cannot be dereferenced
+            + d1.getClass().getName()
+                ^
+/tmp/Main.java:37: error: double cannot be dereferenced
+            + d2.getClass().getName());
+                ^
+4 errors

@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-str_concat-py-c.c:11:19: error: member reference base type 'char[4]' is not a structure or union
+   11 |   char *s3 = ",  ".join([ s1, "world", "mom" ]);
+      |              ~~~~~^~~~~
+/tmp/dolphincoder7b-str_concat-py-c.c:11:25: error: expected expression
+   11 |   char *s3 = ",  ".join([ s1, "world", "mom" ]);
+      |                         ^
+/tmp/dolphincoder7b-str_concat-py-c.c:14:19: error: member reference base type 'char[4]' is not a structure or union
+   14 |   char *s4 = ",  ".join([ s1, "world", "mom" ]);
+      |              ~~~~~^~~~~
+/tmp/dolphincoder7b-str_concat-py-c.c:14:25: error: expected expression
+   14 |   char *s4 = ",  ".join([ s1, "world", "mom" ]);
+      |                         ^
+4 errors generated.

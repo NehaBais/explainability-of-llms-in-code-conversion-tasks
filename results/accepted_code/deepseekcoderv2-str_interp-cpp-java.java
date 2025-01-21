@@ -1,20 +1,21 @@
-import java.util.Scanner;
-
 public class StringInterpolation {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    String original = "Mary had a X lamb.";
+    String toBeReplaced = "X";
+    String replacement = "little";
 
-    System.out.print("Enter the original string: ");
-    String original = scanner.nextLine();
+    // Find the index of "X" in the original string
+    int startIndex = original.indexOf("X");
 
-    System.out.print("Enter the value to be replaced (e.g., 'X'): ");
-    String toBeReplaced = scanner.next();
-
-    System.out.print("Enter the replacement value (e.g., 'little'): ");
-    String replacement = scanner.next();
-
-    String newString = original.replace(toBeReplaced, replacement);
-
-    System.out.println("New string after interpolation: " + newString);
+    if (startIndex != -1) {
+      // Replace "X" with the replacement string
+      String newString =
+          original.substring(0, startIndex)
+              + replacement
+              + original.substring(startIndex + toBeReplaced.length());
+      System.out.println("String after replacement: " + newString);
+    } else {
+      System.out.println("The substring was not found.");
+    }
   }
 }

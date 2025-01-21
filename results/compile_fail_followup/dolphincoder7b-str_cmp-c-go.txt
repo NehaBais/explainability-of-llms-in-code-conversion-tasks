@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_cmp-c-go.go:73:13: undefined: strings.CompareFold
+/tmp/dolphincoder7b-str_cmp-c-go.go:81:13: undefined: strings.CompareFold
+/tmp/dolphincoder7b-str_cmp-c-go.go:98:125: undefined: StrCaseLt
+/tmp/dolphincoder7b-str_cmp-c-go.go:98:159: undefined: StrCaseLe

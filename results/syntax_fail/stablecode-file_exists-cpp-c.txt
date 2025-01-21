@@ -1,0 +1,11 @@
+/tmp/stablecode-file_exists-cpp-c.c:11:12: error: no member named 'mode' in 'struct stat'
+   11 |     if (st.mode & S_IFDIR)) {
+      |         ~~ ^
+/tmp/stablecode-file_exists-cpp-c.c:11:27: error: extraneous ')' after condition, expected a statement
+   11 |     if (st.mode & S_IFDIR)) {
+      |                           ^
+/tmp/stablecode-file_exists-cpp-c.c:15:66: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   15 |       printf("%s exists with a file size of %ld bytes.\n", path, st.st_size);
+      |                                             ~~~                  ^~~~~~~~~~
+      |                                             %lld
+1 warning and 2 errors generated.

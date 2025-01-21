@@ -1,0 +1,19 @@
+/tmp/codegemma7b-str_match-go-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::cout << "1. " << first << " starts with " << second << ": "
+      | ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:1:11: error: expected unqualified-id
+    1 | std::cout << "1. " << first << " starts with " << second << ": "
+      |           ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:4:1: error: use of undeclared identifier 'std'
+    4 | std::cout << "2. " << first << " contains " << second << ": " << (i >= 0)
+      | ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:4:11: error: expected unqualified-id
+    4 | std::cout << "2. " << first << " contains " << second << ": " << (i >= 0)
+      |           ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:7:1: error: use of undeclared identifier 'std'
+    7 | std::cout << "3. " << first << " ends with " << second << ": "
+      | ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:7:11: error: expected unqualified-id
+    7 | std::cout << "3. " << first << " ends with " << second << ": "
+      |           ^
+6 errors generated.

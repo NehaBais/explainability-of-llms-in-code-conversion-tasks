@@ -1,0 +1,42 @@
+The error occurs because the `main` function is not declared as part of the main package in Go. To solve this issue, we can declare the `main` function outside of any other functions or packages by adding a `func main() { }` declaration at the top of the file. Additionally, the code needs to be wrapped inside a `package main` block to indicate that it belongs to the main package.
+
+Here is the corrected code with explanations:
+```go
+package main
+
+import  "fmt"
+
+func bitwise(a int, b int) {
+    fmt.Printf("a and b: %d\n", a&b)
+    fmt.Printf("a or b:  %d\n", a|b)
+    fmt.Printf("a xor b:  %d\n", a^b)
+    fmt.Printf("not a:    %d\n", ^a)
+
+    // Note: The C/C++ shift operators are not guaranteed to work if the shift count (that is, b)
+    // is negative, or is greater or equal to the number of bits in the integer being shifted.
+    fmt.Printf("a shl b:  %d\n", a<<uint(b))
+    fmt.Printf("a shr b:  %d\n", a>>uint(b))
+
+    // Typically arithmetic right shift, but not guaranteed.
+    ua := uint32(a)
+    fmt.Printf("a lsr b:  %d\n", (ua>>uint(b))&0xffffffff)
+    // logical right shift is the same as arithmetic right shift in Go.
+
+     // There are no rotation operators in Go, but as of c++20 there is a standard-library rotate function.
+     // The rotate function works for all rotation amounts, but the integer being rotated must always be an unsigned integer.
+    fmt.Printf("a rol b:  %d\n", (a<<uint(b))|(a>>(32-uint(b))))
+    fmt.Printf("a ror b:  %d\n", ((a&0x1f)<<(32-uint(b)))|(a>>uint(b)))
+}
+
+func main() {
+    // Testing the bitwise function with some specific inputs
+    a, b := 5, 7
+    fmt.Printf("Testing with a = %d and b = %d:\n", a, b)
+    bitwise(a, b)
+
+    // Testing with a negative integer as input for "not" operation
+    a = -5
+    fmt.Printf("\nTesting with a = %d (negative):\n", a)
+    bitwise(a, 0)
+}
+```

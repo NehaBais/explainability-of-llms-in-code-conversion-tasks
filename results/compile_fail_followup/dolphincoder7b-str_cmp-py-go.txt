@@ -1,0 +1,1 @@
+/tmp/dolphincoder7b-str_cmp-py-go.go:1:1: expected 'package', found fmt

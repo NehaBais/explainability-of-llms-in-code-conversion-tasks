@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-file_create-cpp-go.go:10:12: assignment mismatch: 2 variables but ioutil.WriteFile returns 1 value

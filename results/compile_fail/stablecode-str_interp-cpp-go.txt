@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-str_interp-cpp-go.go:15:57: syntax error: unexpected ) at end of statement

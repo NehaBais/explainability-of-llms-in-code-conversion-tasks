@@ -1,0 +1,85 @@
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:7:24: error: no template named 'map' in namespace 'std'; did you mean 'max'?
+    7 |             const std::map<std::string, std::string> &replacements) {
+      |                   ~~~~~^~~
+      |                        max
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:29:1: note: 'max' declared here
+   29 | max(_LIBCPP_LIFETIMEBOUND const _Tp& __a, _LIBCPP_LIFETIMEBOUND const _Tp& __b, _Compare __comp) {
+      | ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:7:24: error: parameter declarator cannot be qualified
+    7 |             const std::map<std::string, std::string> &replacements) {
+      |                   ~~~~~^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:7:24: error: parameter name cannot have template arguments
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:7:24: error: a type specifier is required for all declarations
+    7 |             const std::map<std::string, std::string> &replacements) {
+      |             ~~~~~      ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:7:54: error: expected ')'
+    7 |             const std::map<std::string, std::string> &replacements) {
+      |                                                      ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:6:12: note: to match this '('
+    6 | interpolate(std::string str,
+      |            ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:8:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &[key, value] : replacements) {
+      |              ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:8:20: warning: decomposition declarations are a C++17 extension [-Wc++17-extensions]
+    8 |   for (const auto &[key, value] : replacements) {
+      |                    ^~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:8:33: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &[key, value] : replacements) {
+      |                                 ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:8:35: error: use of undeclared identifier 'replacements'
+    8 |   for (const auto &[key, value] : replacements) {
+      |                                   ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:19:8: error: no template named 'map' in namespace 'std'; did you mean 'max'?
+   19 |   std::map<std::string, std::string> replacements;
+      |   ~~~~~^~~
+      |        max
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:29:1: note: 'max' declared here
+   29 | max(_LIBCPP_LIFETIMEBOUND const _Tp& __a, _LIBCPP_LIFETIMEBOUND const _Tp& __b, _Compare __comp) {
+      | ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:19:37: error: expected ';' after expression
+   19 |   std::map<std::string, std::string> replacements;
+      |                                     ^
+      |                                     ;
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:19:38: error: use of undeclared identifier 'replacements'
+   19 |   std::map<std::string, std::string> replacements;
+      |                                      ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:22:3: error: use of undeclared identifier 'replacements'
+   22 |   replacements["little"] = "big";
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:23:44: error: use of undeclared identifier 'replacements'
+   23 |   std::cout << interpolate(originalString, replacements) << std::endl;
+      |                                            ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:26:3: error: use of undeclared identifier 'replacements'
+   26 |   replacements.clear();
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:27:3: error: use of undeclared identifier 'replacements'
+   27 |   replacements.insert({"name", "Mary"});
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:27:23: error: expected expression
+   27 |   replacements.insert({"name", "Mary"});
+      |                       ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:28:3: error: use of undeclared identifier 'replacements'
+   28 |   replacements.insert({"adj", "little"});
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:28:23: error: expected expression
+   28 |   replacements.insert({"adj", "little"});
+      |                       ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:29:44: error: use of undeclared identifier 'replacements'
+   29 |   std::cout << interpolate(originalString, replacements) << std::endl;
+      |                                            ^
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:19:3: warning: expression result unused [-Wunused-value]
+   19 |   std::map<std::string, std::string> replacements;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:43:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:223:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:571:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:30:10: error: type 'std::string' does not provide a call operator
+   30 |   return __comp(__a, __b) ? __b : __a;
+      |          ^~~~~~
+/tmp/qwen2.5coder2b-str_interp-rs-cpp.cpp:19:8: note: in instantiation of function template specialization 'std::max<std::string, std::string>' requested here
+   19 |   std::map<std::string, std::string> replacements;
+      |        ^
+4 warnings and 18 errors generated.

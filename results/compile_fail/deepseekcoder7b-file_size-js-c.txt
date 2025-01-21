@@ -1,0 +1,28 @@
+/tmp/deepseekcoder7b-file_size-js-c.c:12:12: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   11 |     printf("Size of 'input.txt' in current working directory: %ld\n",
+      |                                                               ~~~
+      |                                                               %lld
+   12 |            st.st_size);
+      |            ^~~~~~~~~~
+/tmp/deepseekcoder7b-file_size-js-c.c:22:15: error: no member named 'st' in 'struct stat'
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |            ~~ ^
+/tmp/deepseekcoder7b-file_size-js-c.c:22:18: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                  ^~
+/tmp/deepseekcoder7b-file_size-js-c.c:22:26: error: character <U+2581> not allowed in an identifier
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                         ^
+/tmp/deepseekcoder7b-file_size-js-c.c:22:31: error: character <U+2581> not allowed in an identifier
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                            ^
+/tmp/deepseekcoder7b-file_size-js-c.c:22:42: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                                     ^~
+/tmp/deepseekcoder7b-file_size-js-c.c:22:18: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                  ^
+/tmp/deepseekcoder7b-file_size-js-c.c:22:47: error: use of undeclared identifier 't_size'
+   22 |            st.st<｜begin▁of▁sentence｜> t_size);
+      |                                         ^
+3 warnings and 5 errors generated.

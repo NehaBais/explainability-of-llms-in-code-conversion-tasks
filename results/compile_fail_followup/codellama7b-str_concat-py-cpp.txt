@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_concat-py-cpp.cpp:12:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   12 |   for (std::string str : {s1, "world", "mom"}) {
+      |                        ^
+/tmp/codellama7b-str_concat-py-cpp.cpp:12:26: error: deduced conflicting types ('std::string' (aka 'basic_string<char>') vs 'const char *') for initializer list element type
+   12 |   for (std::string str : {s1, "world", "mom"}) {
+      |                          ^~~  ~~~~~~~
+1 warning and 1 error generated.

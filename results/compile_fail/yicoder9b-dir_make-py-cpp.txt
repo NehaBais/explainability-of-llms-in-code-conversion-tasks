@@ -1,0 +1,7 @@
+/tmp/yicoder9b-dir_make-py-cpp.cpp:4:13: error: no member named 'filesystem' in namespace 'std'
+    4 |   if (!std::filesystem::exists(path)) {
+      |        ~~~~~^
+/tmp/yicoder9b-dir_make-py-cpp.cpp:5:10: error: no member named 'filesystem' in namespace 'std'
+    5 |     std::filesystem::create_directories(path);
+      |     ~~~~~^
+2 errors generated.

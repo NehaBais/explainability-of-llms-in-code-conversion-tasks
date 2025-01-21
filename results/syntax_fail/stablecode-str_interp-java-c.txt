@@ -1,0 +1,12 @@
+/tmp/stablecode-str_interp-java-c.c:5:19: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |     char* lyric = malloc(100 * sizeof(char)));
+      |                   ^
+/tmp/stablecode-str_interp-java-c.c:5:19: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/stablecode-str_interp-java-c.c:5:45: error: extraneous ')' before ';'
+    5 |     char* lyric = malloc(100 * sizeof(char)));
+      |                                             ^
+/tmp/stablecode-str_interp-java-c.c:10:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     free(lyric);
+      |     ^
+/tmp/stablecode-str_interp-java-c.c:10:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+3 errors generated.

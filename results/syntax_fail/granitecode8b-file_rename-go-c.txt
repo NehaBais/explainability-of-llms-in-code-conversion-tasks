@@ -1,0 +1,22 @@
+/tmp/granitecode8b-file_rename-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-go-c.c:4:7: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   if (rename("input.txt", "output.txt") != 0) {
+      |       ^
+/tmp/granitecode8b-file_rename-go-c.c:5:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |     perror("Rename error");
+      |     ^
+/tmp/granitecode8b-file_rename-go-c.c:9:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     perror("Rename error");
+      |     ^
+/tmp/granitecode8b-file_rename-go-c.c:13:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     perror("Rename error");
+      |     ^
+/tmp/granitecode8b-file_rename-go-c.c:17:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     perror("Rename error");
+      |     ^
+7 errors generated.

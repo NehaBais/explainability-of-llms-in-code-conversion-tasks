@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_arith-java-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut a))
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-int_arith-java-rs.rs:16:34
+   |
+6  |     io::stdin().read_line(&mut a))
+   |                                  - missing open `(` for this delimiter
+...
+16 |     io::stdin().read_line(&mut b))
+   |                                  ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

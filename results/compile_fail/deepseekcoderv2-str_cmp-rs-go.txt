@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_cmp-rs-go.go:43:2: declared and not used: a2
+/tmp/deepseekcoderv2-str_cmp-rs-go.go:44:2: declared and not used: b2

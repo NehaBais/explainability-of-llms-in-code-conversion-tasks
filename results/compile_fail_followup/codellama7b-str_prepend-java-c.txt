@@ -1,0 +1,5 @@
+/tmp/codellama7b-str_prepend-java-c.c:6:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strcat(new_string, "abc");
+      |   ^
+/tmp/codellama7b-str_prepend-java-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+1 error generated.

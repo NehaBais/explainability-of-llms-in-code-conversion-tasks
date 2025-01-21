@@ -1,0 +1,4 @@
+/tmp/magicoder7b-int_arith-py-cpp.cpp:21:39: error: invalid operands to binary expression ('float' and 'float')
+   21 |        << (static_cast<float>(input1) % static_cast<float>(input2)) << endl;
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

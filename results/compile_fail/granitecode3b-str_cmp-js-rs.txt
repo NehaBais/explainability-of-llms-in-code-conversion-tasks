@@ -1,0 +1,35 @@
+error: invalid comparison operator `===`
+  --> /tmp/granitecode3b-str_cmp-js-rs.rs:12:12
+   |
+12 |  if "abcd" === "abcd" { "true" } else { "false" });
+   |            ^^^
+   |
+help: `===` is not a valid comparison operator, use `==`
+   |
+12 |  if "abcd" == "abcd" { "true" } else { "false" });
+   |            ~~
+
+error: invalid comparison operator `===`
+  --> /tmp/granitecode3b-str_cmp-js-rs.rs:24:11
+   |
+24 |  if "123" === "123" { "true" } else { "false" });
+   |           ^^^
+   |
+help: `===` is not a valid comparison operator, use `==`
+   |
+24 |  if "123" == "123" { "true" } else { "false" });
+   |           ~~
+
+error: invalid comparison operator `!==`
+  --> /tmp/granitecode3b-str_cmp-js-rs.rs:43:11
+   |
+43 |  if "123" !== "123" { "true" } else { "false" });
+   |           ^^^
+   |
+help: `!==` is not a valid comparison operator, use `!=`
+   |
+43 |  if "123" != "123" { "true" } else { "false" });
+   |           ~~
+
+error: aborting due to 3 previous errors
+

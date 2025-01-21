@@ -1,0 +1,15 @@
+error[E0425]: cannot find value `EXE_DIR` in module `std::env::consts`
+ --> /tmp/qwen2.5coder7b-file_create-java-rs.rs:7:55
+  |
+7 |         Path::new(&format!("{}/{}", std::env::consts::EXE_DIR, "output.txt")),
+  |                                                       ^^^^^^^ not found in `std::env::consts`
+
+error[E0425]: cannot find value `EXE_DIR` in module `std::env::consts`
+ --> /tmp/qwen2.5coder7b-file_create-java-rs.rs:9:55
+  |
+9 |         Path::new(&format!("{}/{}", std::env::consts::EXE_DIR, "docs")),
+  |                                                       ^^^^^^^ not found in `std::env::consts`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

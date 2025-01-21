@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_rename-c-cpp.cpp:14:17: error: use of undeclared identifier 'get_current_dir_name'
+   14 |     char *pwd = get_current_dir_name();
+      |                 ^
+1 error generated.

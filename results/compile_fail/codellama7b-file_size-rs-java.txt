@@ -1,0 +1,16 @@
+/tmp/Main.java:22: error: cannot find symbol
+    Path path = file.toPath();
+    ^
+  symbol:   class Path
+  location: class Main
+/tmp/Main.java:23: error: cannot find symbol
+    BasicFileAttributes attrs = Files.readAttributes(path, BasicFileAttributes.class);
+    ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+/tmp/Main.java:23: error: cannot find symbol
+    BasicFileAttributes attrs = Files.readAttributes(path, BasicFileAttributes.class);
+                                                           ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+3 errors

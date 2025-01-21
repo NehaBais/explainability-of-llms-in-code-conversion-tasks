@@ -1,0 +1,13 @@
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:5:14: error: use of undeclared identifier 'cout'
+    5 | void foo() { cout << "bar"; }
+      |              ^
+1 warning and 3 errors generated.

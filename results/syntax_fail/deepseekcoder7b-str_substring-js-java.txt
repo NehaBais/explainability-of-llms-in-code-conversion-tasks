@@ -1,0 +1,65 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String str = "abcdefgh";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: class, interface, enum, or record expected
+System.out.println(str.substring(n, n+m)); // => "cde"
+^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+System.out.println(str.substring(n));  // => "cdefgh"
+^
+/tmp/None.java:12: error: class, interface, enum, or record expected
+if (str.length() > 0) {
+^
+/tmp/None.java:14: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:16: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:23: error: class, interface, enum, or record expected
+if (idx != -1 && idx + m <= str.length()) {
+^
+/tmp/None.java:25: error: class, interface, enum, or record expected
+} else if (idx == -1) {
+^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+           ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                 ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                    ^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                             ^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                      ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                          ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                             ^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                                      ^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                                         ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                                               ^
+/tmp/None.java:28: error: illegal character: '\u2581'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                                                  ^
+/tmp/None.java:28: error: illegal character: '\uff5c'
+    System<｜begin▁of▁sentence｜>.out.println("End of string reached");<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>    
+                                                                                                           ^
+21 errors

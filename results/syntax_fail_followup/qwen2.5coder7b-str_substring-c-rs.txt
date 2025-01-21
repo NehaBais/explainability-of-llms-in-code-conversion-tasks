@@ -1,0 +1,14 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/qwen2.5coder7b-str_substring-c-rs.rs:2:5
+  |
+2 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

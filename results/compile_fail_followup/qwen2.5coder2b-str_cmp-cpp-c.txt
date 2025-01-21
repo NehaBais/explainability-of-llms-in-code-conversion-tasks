@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-str_cmp-cpp-c.c:14:16: error: passing 'double' to parameter of incompatible type 'const char *'
+   14 |   demo_compare(numA, numB, "numerically");
+      |                ^~~~
+/tmp/qwen2.5coder2b-str_cmp-cpp-c.c:5:31: note: passing argument to parameter 'a' here
+    5 | void demo_compare(const char *a, const char *b, const char *semantically) {
+      |                               ^
+1 error generated.

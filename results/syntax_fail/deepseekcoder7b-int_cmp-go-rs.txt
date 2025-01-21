@@ -1,0 +1,37 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-go-rs.rs:18:13
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |             ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-go-rs.rs:18:19
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                    ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-go-rs.rs:18:22
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                       ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-go-rs.rs:18:31
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |                                ^^
+
+error: generic args in patterns require the turbofish syntax
+  --> /tmp/deepseekcoder7b-int_cmp-go-rs.rs:18:12
+   |
+18 |         std<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |            ^
+   |
+help: use `::<...>` instead of `<...>` to specify lifetime, type, or const arguments
+   |
+18 |         std::<｜begin▁of▁sentence｜>@std::cmp::Ordering::Greater => println!("{} greater than {}", n1, n2),
+   |            ++
+
+error: aborting due to 5 previous errors
+

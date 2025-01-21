@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/yicoder9b-int_arith-py-go.go:19:2: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:22:17: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:25:17: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:28:17: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:31:17: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:34:24: undefined: input2
+/tmp/yicoder9b-int_arith-py-go.go:38:12: undefined: math
+/tmp/yicoder9b-int_arith-py-go.go:38:46: undefined: input2

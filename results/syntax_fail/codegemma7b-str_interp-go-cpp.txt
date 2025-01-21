@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_interp-go-cpp.cpp:8:26: error: no member named 'format' in namespace 'std'
+    8 |   std::string out = std::format(str, txt);
+      |                     ~~~~~^
+1 error generated.

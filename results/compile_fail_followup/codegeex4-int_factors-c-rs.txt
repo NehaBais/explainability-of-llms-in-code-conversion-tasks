@@ -1,0 +1,43 @@
+error[E0382]: borrow of moved value: `self.list`
+  --> /tmp/codegeex4-int_factors-c-rs.rs:27:13
+   |
+11 |     fn factor(mut self, num: i32) -> Vec<i32> {
+   |               -------- move occurs because `self` has type `Factors`, which does not implement the `Copy` trait
+...
+19 |                 self.xfer_factors(&self.list);
+   |                      ------------------------ `self` moved due to this method call, in previous iteration of loop
+...
+27 |             self.list.push((num as f64).sqrt() as i32);
+   |             ^^^^^^^^^ value borrowed here after move
+   |
+note: `Factors::xfer_factors` takes ownership of the receiver `self`, which moves `self`
+  --> /tmp/codegeex4-int_factors-c-rs.rs:36:21
+   |
+36 |     fn xfer_factors(self, flist: &Vec<i32>) -> Self {
+   |                     ^^^^
+
+error[E0382]: borrow of moved value: `self.list`
+  --> /tmp/codegeex4-int_factors-c-rs.rs:30:31
+   |
+11 |     fn factor(mut self, num: i32) -> Vec<i32> {
+   |               -------- move occurs because `self` has type `Factors`, which does not implement the `Copy` trait
+...
+30 |             self.xfer_factors(&self.list);
+   |                  -------------^^^^^^^^^^-
+   |                  |            |
+   |                  |            value borrowed here after move
+   |                  `self` moved due to this method call
+
+warning: variable does not need to be mutable
+  --> /tmp/codegeex4-int_factors-c-rs.rs:48:13
+   |
+48 |         let mut ftors = Factors::new();
+   |             ----^^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0382`.

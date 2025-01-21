@@ -1,0 +1,10 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+if (a as i32).abs() > remainder.abs() {
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+}
+^
+3 errors

@@ -1,0 +1,10 @@
+/tmp/codegeex4-file_exists-rs-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegeex4-file_exists-rs-cpp.cpp:8:7: error: use of undeclared identifier 'fs'
+    8 |   if (fs::exists(path)) {
+      |       ^
+/tmp/codegeex4-file_exists-rs-cpp.cpp:9:9: error: use of undeclared identifier 'fs'
+    9 |     if (fs::is_directory(path))
+      |         ^
+3 errors generated.

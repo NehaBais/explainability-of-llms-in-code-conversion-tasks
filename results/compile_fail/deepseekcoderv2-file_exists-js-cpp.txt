@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_exists-js-cpp.cpp:2:10: fatal error: 'windows.h' file not found
+    2 | #include <windows.h>
+      |          ^~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,7 @@
+/tmp/stablecode-int_factors-java-c.c:7:10: error: member reference base type 'void (long)' is not a structure or union
+    7 |   factors.add(1L); // Add 1 as a factor
+      |   ~~~~~~~^~~~
+/tmp/stablecode-int_factors-java-c.c:11:32: error: extraneous ')' before ';'
+   11 |       printf("%ld\n", n / test));
+      |                                ^
+2 errors generated.

@@ -1,0 +1,15 @@
+error[E0432]: unresolved import `std::ptr::gt`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:2:5
+  |
+2 | use std::ptr::gt;
+  |     ^^^^^^^^^^^^ no `gt` in `ptr`
+
+error[E0432]: unresolved import `std::ptr::lt`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:3:5
+  |
+3 | use std::ptr::lt;
+  |     ^^^^^^^^^^^^ no `lt` in `ptr`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

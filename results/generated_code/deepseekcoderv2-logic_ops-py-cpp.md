@@ -1,21 +1,23 @@
-**Solution:**
+ Here's how you can convert the given Python function to C++:
+
 ```cpp
 #include <iostream>
-#include<bits/stdc++.h>
-using namespace std;
- 
+#include <cstdbool> // For bool type and std::boolalpha
+
+void logic(bool a, bool b) {
+    std::cout << "a and b: " << (a && b) << std::endl;
+    std::cout << "a or b: " << (a || b) << std::endl;
+    std::cout << "not a: " << (!a) << std::endl;
+}
+
 int main() {
-     bool a,b;
-   cin>>a>>b;
-   cout<<"a and b:"<<(a && b)<<endl;
-   cout<<"a or b:"<<(a || b)<<endl;
-   cout<<"not a:"<<!a<<endl;
+    bool a = true; // Example values, you can change these as needed
+    bool b = false;
+
+    logic(a, b);
+
+    return 0;
 }
 ```
-Output:
 
-Enter two boolean values 0,1
-a and b:0
-a or b:1
-not a:1
-
+This C++ code defines a function `logic` that takes two boolean arguments. It then outputs the result of "and" (`&&`), "or" (`||`), and "not" (`!`) operations on these arguments. The `main` function demonstrates how to call this `logic` function with example boolean values.

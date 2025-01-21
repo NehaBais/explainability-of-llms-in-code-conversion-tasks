@@ -1,0 +1,10 @@
+/tmp/magicoder7b-int_factors-rs-c.c:24:30: error: use of undeclared identifier 'factors'
+   24 |     find_factors(numbers[i], factors); // Assume 'factors' is defined as int
+      |                              ^
+/tmp/magicoder7b-int_factors-rs-c.c:27:17: error: use of undeclared identifier 'factors'
+   27 |     print_array(factors, count);
+      |                 ^
+/tmp/magicoder7b-int_factors-rs-c.c:27:26: error: use of undeclared identifier 'count'
+   27 |     print_array(factors, count);
+      |                          ^
+3 errors generated.

@@ -1,0 +1,20 @@
+error[E0432]: unresolved imports `std::fs::move_file`, `std::fs::rename_file`
+ --> /tmp/dolphincoder7b-file_rename-js-rs.rs:2:15
+  |
+2 | use std::fs::{move_file, rename, rename_file};
+  |               ^^^^^^^^^          ^^^^^^^^^^^ no `rename_file` in `fs`
+  |               |
+  |               no `move_file` in `fs`
+  |
+help: a similar name exists in the module
+  |
+2 | use std::fs::{remove_file, rename, rename_file};
+  |               ~~~~~~~~~~~
+help: a similar name exists in the module
+  |
+2 | use std::fs::{move_file, rename, remove_file};
+  |                                  ~~~~~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

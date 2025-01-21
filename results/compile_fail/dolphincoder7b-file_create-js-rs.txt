@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `write_all` in module `fs`
+ --> /tmp/dolphincoder7b-file_create-js-rs.rs:3:27
+  |
+3 |     if let Err(err) = fs::write_all("./output.txt".as_bytes(), &[]) {
+  |                           ^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `write_all` in module `fs`
+ --> /tmp/dolphincoder7b-file_create-js-rs.rs:7:27
+  |
+7 |     if let Err(err) = fs::write_all("/output.txt".as_bytes(), &[]) {
+  |                           ^^^^^^^^^ not found in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

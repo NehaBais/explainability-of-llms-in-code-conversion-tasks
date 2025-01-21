@@ -1,0 +1,10 @@
+error: expected item, found keyword `if`
+ --> /tmp/yicoder2b-dir_make-java-rs.rs:1:1
+  |
+1 | if let error = PathBuf::read_dir(&path) { return println!("Error reading directory '{}'", path.as_str()); }
+  | ^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

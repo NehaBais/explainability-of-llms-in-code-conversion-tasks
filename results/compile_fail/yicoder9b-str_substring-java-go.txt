@@ -1,0 +1,11 @@
+# command-line-arguments
+/tmp/yicoder9b-str_substring-java-go.go:4:2: "fmt" imported and not used
+/tmp/yicoder9b-str_substring-java-go.go:20:6: Substring redeclared in this block
+	/tmp/yicoder9b-str_substring-java-go.go:8:6: other declaration of Substring
+/tmp/yicoder9b-str_substring-java-go.go:23:6: Substring redeclared in this block
+	/tmp/yicoder9b-str_substring-java-go.go:8:6: other declaration of Substring
+/tmp/yicoder9b-str_substring-java-go.go:26:6: Substring redeclared in this block
+	/tmp/yicoder9b-str_substring-java-go.go:8:6: other declaration of Substring
+/tmp/yicoder9b-str_substring-java-go.go:34:6: Substring redeclared in this block
+	/tmp/yicoder9b-str_substring-java-go.go:8:6: other declaration of Substring
+/tmp/yicoder9b-str_substring-java-go.go:35:11: undefined: strings

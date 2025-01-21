@@ -1,0 +1,43 @@
+/tmp/stablecode-file_rename-go-c.c:16:33: warning: more '%' conversions than data arguments [-Wformat-insufficient-args]
+   16 |     sprintf(command, "mv %s/%s %s/output.txt", full_current_path_here, file_name));
+      |                                ~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+   47 |   __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+      |                                                        ^~~~~~~~~~~
+/tmp/stablecode-file_rename-go-c.c:16:82: error: extraneous ')' before ';'
+   16 |     sprintf(command, "mv %s/%s %s/output.txt", full_current_path_here, file_name));
+      |                                                                                  ^
+/tmp/stablecode-file_rename-go-c.c:19:11: error: call to undeclared function 'strpos'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |     pos = strpos(full_current_path_here, '/'));
+      |           ^
+/tmp/stablecode-file_rename-go-c.c:19:46: error: extraneous ')' before ';'
+   19 |     pos = strpos(full_current_path_here, '/'));
+      |                                              ^
+/tmp/stablecode-file_rename-go-c.c:20:16: error: use of undeclared identifier 'string'
+   20 |     if (pos != string::npos) {
+      |                ^
+/tmp/stablecode-file_rename-go-c.c:20:22: error: expected ')'
+   20 |     if (pos != string::npos) {
+      |                      ^
+/tmp/stablecode-file_rename-go-c.c:20:8: note: to match this '('
+   20 |     if (pos != string::npos) {
+      |        ^
+/tmp/stablecode-file_rename-go-c.c:21:43: error: extraneous ')' before ';'
+   21 |         sprintf(command, "mv docs mydocs"));
+      |                                           ^
+/tmp/stablecode-file_rename-go-c.c:25:5: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |     getcwd(current_working_directory, sizeof(current_working_directory)));
+      |     ^
+/tmp/stablecode-file_rename-go-c.c:25:46: error: use of undeclared identifier 'current_working_directory'
+   25 |     getcwd(current_working_directory, sizeof(current_working_directory)));
+      |                                              ^
+/tmp/stablecode-file_rename-go-c.c:25:12: error: use of undeclared identifier 'current_working_directory'
+   25 |     getcwd(current_working_directory, sizeof(current_working_directory)));
+      |            ^
+/tmp/stablecode-file_rename-go-c.c:26:73: error: extraneous ')' before ';'
+   26 |     printf("Current working directory: %s\n", current_working_directory));
+      |                                                                         ^
+/tmp/stablecode-file_rename-go-c.c:26:47: error: use of undeclared identifier 'current_working_directory'
+   26 |     printf("Current working directory: %s\n", current_working_directory));
+      |                                               ^
+1 warning and 11 errors generated.

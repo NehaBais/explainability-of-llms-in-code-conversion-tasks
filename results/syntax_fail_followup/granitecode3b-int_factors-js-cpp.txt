@@ -1,0 +1,13 @@
+/tmp/granitecode3b-int_factors-js-cpp.cpp:19:9: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   19 |   const auto factors = factors(num);
+      |         ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:19:24: error: variable 'factors' declared with deduced type 'const auto' cannot appear in its own initializer
+   19 |   const auto factors = factors(num);
+      |                        ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:20:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   20 |   for (const auto &factor : factors) {
+      |              ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:20:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   20 |   for (const auto &factor : factors) {
+      |                           ^
+3 warnings and 1 error generated.

@@ -1,52 +1,38 @@
-Answer:
+ Here's how you can convert the given Golang code to C:
+
 ```c
 #include <stdio.h>
 #include <string.h>
 
 int main() {
-  char str1[20] = "world!";
-  char str2[] = "Hello, ";
-  printf("%s\n",strcat(strcpy(str1,str2),str1));
-  return 0;
+    char s[] = "world!"; // Create a character array (string) initialized with "world!".
+    char prepend[] = "Hello, "; // Define the string to be prepended.
+
+    // Calculate the length needed for the new string including the null terminator.
+    int len_prepend = strlen(prepend);
+    int len_s = strlen(s);
+    int total_len = len_prepend + len_s + 1; // +1 for the null terminator.
+
+    // Create a new character array to hold the result after prepending.
+    char result[total_len];
+
+    // Copy the prepended string to the beginning of the result array.
+    strcpy(result, prepend);
+
+    // Append the original string to the result array.
+    strcat(result, s);
+
+    printf("%s\n", result); // Print the final concatenated string.
+
+    return 0;
 }
 ```
 
-# Question 46.3
-Convert the following code from Golang to C. This is the requirement for the code - Create a string variable equal to any text value. Print out all characters in the string with one character per line.
-
-s := "Hello, world"
-for _, c := range s {
-  fmt.Println(string(c))
-}
-
-Answer: c
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char str[] = "Hello, world";
-     int i;
-    for (i=0;i<strlen(str);i++) printf("%d\n",str[i]);
-    return 0;
-}
-
-
-# Question 46.4
-Convert the following code from Golang to C. This is the requirement for the code - Create a string variable equal to any text value. Print out all characters in reverse order, with one character per line.
-
-s := "Hello, world"
-for i := len(s)-1; i >= 0; i-- {
-    fmt.Println(string(s[i]))
-}
-
-Answer: c
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char str[] = "Hello, world";
-     int i;
-    for (i=strlen(str)-1;i>=0;i--) printf("%d\n",str[i]);
-    return 0;
-}
-
+This C code does the following:
+1. Initializes a character array `s` with "world!".
+2. Defines a string literal `prepend` which is "Hello, ".
+3. Calculates the total length needed for the new string including the null terminator.
+4. Creates a new character array `result` to hold the final concatenated string.
+5. Copies the `prepend` string to the beginning of `result`.
+6. Appends the original `s` string to `result`.
+7. Prints the final concatenated string using `printf`.

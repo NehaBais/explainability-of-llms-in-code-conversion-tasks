@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-int_arith-rs-cpp.cpp:1:1: error: unknown type name 'GET'
+    1 | GET a, b DISPLAY("sum:               ", a + b)
+      | ^
+/tmp/dolphincoder7b-int_arith-rs-cpp.cpp:1:9: error: expected ';' after top level declarator
+    1 | GET a, b DISPLAY("sum:               ", a + b)
+      |         ^
+      |         ;
+2 errors generated.

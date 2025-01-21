@@ -1,45 +1,30 @@
-### Answer
+ Here's the equivalent C++ code for your requirements:
 
-The following code converts the C program to C++ and includes an additional function to print the name of the file or directory. It also checks if both input.txt and docs exist in the current working directory, as well as /input.txt and /docs in the root filesystem.
-
-```c++
+```cpp
 #include <iostream>
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
 
-// Check for regular file.
-int check_reg(const char *path) {
-	struct stat sb;
-	return stat(path, &sb) == 0 && S_ISREG(sb.st_mode);
+// Function to check if a file exists and is regular
+bool check_reg(const std::string& path) {
+    struct stat sb;
+    return stat(path.c_str(), &sb) == 0 && S_ISREG(sb.st_mode);
 }
 
-// Check for directory.
-int check_dir(const char *path) {
-	struct stat sb;
-	return stat(path, &sb) == 0 && S_ISDIR(sb.st_mode);
-}
-
-void printFileOrDirectory(const std::string& path, int (*check)(const char*)) {
-	if (check(path.c_str())) {
-		std::cout << path << " is a ";
-	} else {
-		std::cout << path << " is not a ";
-	}
+// Function to check if a directory exists
+bool check_dir(const std::string& path) {
+    struct stat sb;
+    return stat(path.c_str(), &sb) == 0 && S_ISDIR(sb.st_mode);
 }
 
 int main() {
-	// Check for regular file and directory in the current working directory.
-	printFileOrDirectory("input.txt", check_reg);
-	std::cout << std::endl;
-	printFileOrDirectory("docs", check_dir);
-	std::cout << std::endl;
-
-	// Check for regular file and directory in the root filesystem.
-	printFileOrDirectory("/input.txt", check_reg);
-	std::cout << std::endl;
-	printFileOrDirectory("/docs", check_dir);
-	std::cout << std::endl;
-
-	return 0;
+    std::cout << "input.txt is a regular file? " << (check_reg("input.txt") ? "yes" : "no") << std::endl;
+    std::cout << "docs is a directory? " << (check_dir("docs") ? "yes" : "no") << std::endl;
+    std::cout << "/input.txt is a regular file? " << (check_reg("/input.txt") ? "yes" : "no") << std::endl;
+    std::cout << "/docs is a directory? " << (check_dir("/docs") ? "yes" : "no") << std::endl;
+    return 0;
 }
 ```
+
+This C++ code performs the same checks as your original C code, but in a more modern and readable format. It uses the `<iostream>` library for input/output operations instead of `stdio.h`, and it uses `std::string` for string handling.

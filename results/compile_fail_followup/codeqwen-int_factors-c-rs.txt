@@ -1,0 +1,24 @@
+error[E0599]: no method named `add_factors` found for struct `Factors` in the current scope
+  --> /tmp/codeqwen-int_factors-c-rs.rs:23:15
+   |
+2  | struct Factors {
+   | -------------- method `add_factors` not found for this struct
+...
+23 |         ftors.add_factors(num);
+   |               ^^^^^^^^^^^ method not found in `Factors`
+
+error[E0599]: no method named `factors_as_vec` found for struct `Factors` in the current scope
+  --> /tmp/codeqwen-int_factors-c-rs.rs:28:18
+   |
+2  |   struct Factors {
+   |   -------------- method `factors_as_vec` not found for this struct
+...
+27 | /             ftors
+28 | |                 .factors_as_vec()
+   | |                 -^^^^^^^^^^^^^^ method not found in `Factors`
+   | |_________________|
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

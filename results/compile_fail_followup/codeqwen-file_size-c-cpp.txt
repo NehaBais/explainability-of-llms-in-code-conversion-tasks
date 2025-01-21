@@ -1,0 +1,53 @@
+/tmp/codeqwen-file_size-c-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path file1("input.txt");
+      |   ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path file2("/input.txt");
+      |   ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (std::filesystem::exists(file1)) {
+      |       ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:8:31: error: use of undeclared identifier 'file1'; did you mean 'fileno'?
+    8 |   if (std::filesystem::exists(file1)) {
+      |                               ^~~~~
+      |                               fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/codeqwen-file_size-c-cpp.cpp:9:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |     auto size = std::filesystem::file_size(file1);
+      |     ^
+/tmp/codeqwen-file_size-c-cpp.cpp:9:22: error: no member named 'filesystem' in namespace 'std'
+    9 |     auto size = std::filesystem::file_size(file1);
+      |                 ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:9:44: error: use of undeclared identifier 'file1'; did you mean 'fileno'?
+    9 |     auto size = std::filesystem::file_size(file1);
+      |                                            ^~~~~
+      |                                            fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/codeqwen-file_size-c-cpp.cpp:15:12: error: no member named 'filesystem' in namespace 'std'
+   15 |   if (std::filesystem::exists(file2)) {
+      |       ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:15:31: error: use of undeclared identifier 'file2'; did you mean 'fileno'?
+   15 |   if (std::filesystem::exists(file2)) {
+      |                               ^~~~~
+      |                               fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/codeqwen-file_size-c-cpp.cpp:16:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   16 |     auto size = std::filesystem::file_size(file2);
+      |     ^
+/tmp/codeqwen-file_size-c-cpp.cpp:16:22: error: no member named 'filesystem' in namespace 'std'
+   16 |     auto size = std::filesystem::file_size(file2);
+      |                 ~~~~~^
+/tmp/codeqwen-file_size-c-cpp.cpp:16:44: error: use of undeclared identifier 'file2'; did you mean 'fileno'?
+   16 |     auto size = std::filesystem::file_size(file2);
+      |                                            ^~~~~
+      |                                            fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+2 warnings and 10 errors generated.

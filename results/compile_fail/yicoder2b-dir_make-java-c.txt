@@ -1,0 +1,16 @@
+/tmp/yicoder2b-dir_make-java-c.c:11:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IXGRP | S_IXOTH)) {
+      |       ^
+/tmp/yicoder2b-dir_make-java-c.c:11:21: error: use of undeclared identifier 'S_IRWXU'
+   11 |   if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IXGRP | S_IXOTH)) {
+      |                     ^
+/tmp/yicoder2b-dir_make-java-c.c:11:31: error: use of undeclared identifier 'S_IRWXG'
+   11 |   if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IXGRP | S_IXOTH)) {
+      |                               ^
+/tmp/yicoder2b-dir_make-java-c.c:11:41: error: use of undeclared identifier 'S_IXGRP'
+   11 |   if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IXGRP | S_IXOTH)) {
+      |                                         ^
+/tmp/yicoder2b-dir_make-java-c.c:11:51: error: use of undeclared identifier 'S_IXOTH'
+   11 |   if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IXGRP | S_IXOTH)) {
+      |                                                   ^
+5 errors generated.

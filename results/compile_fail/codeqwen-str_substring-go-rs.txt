@@ -1,0 +1,38 @@
+error: unknown start of token: `
+  --> /tmp/codeqwen-str_substring-go-rs.rs:31:18
+   |
+31 |         println!(`Start "DE", length {}: {}`, m, &s[sx..sx+m]);
+   |                  ^
+   |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+   |
+31 |         println!('Start "DE", length {}: {}`, m, &s[sx..sx+m]);
+   |                  ~
+
+error: unknown start of token: `
+  --> /tmp/codeqwen-str_substring-go-rs.rs:31:44
+   |
+31 |         println!(`Start "DE", length {}: {}`, m, &s[sx..sx+m]);
+   |                                            ^
+   |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+   |
+31 |         println!(`Start "DE", length {}: {}', m, &s[sx..sx+m]);
+   |                                            ~
+
+error: expected `,`, found `"DE"`
+  --> /tmp/codeqwen-str_substring-go-rs.rs:31:25
+   |
+31 |         println!(`Start "DE", length {}: {}`, m, &s[sx..sx+m]);
+   |                         ^^^^ expected `,`
+
+warning: unused import: `std::str`
+ --> /tmp/codeqwen-str_substring-go-rs.rs:1:5
+  |
+1 | use std::str;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 3 previous errors; 1 warning emitted
+

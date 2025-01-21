@@ -1,0 +1,88 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `process`
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:21:9
+   |
+21 |         process::exit(1);
+   |         ^^^^^^^ use of undeclared crate or module `process`
+   |
+help: consider importing this module
+   |
+1  + use std::process;
+   |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `process`
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:26:9
+   |
+26 |         process::exit(1);
+   |         ^^^^^^^ use of undeclared crate or module `process`
+   |
+help: consider importing this module
+   |
+1  + use std::process;
+   |
+
+error[E0277]: the trait bound `(): FromStr` is not satisfied
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:19:27
+   |
+19 |     let a: i32 = words[0].parse().unwrap_or_else(|_| {
+   |                           ^^^^^ the trait `FromStr` is not implemented for `()`
+   |
+   = help: the following other types implement trait `FromStr`:
+             IpAddr
+             Ipv4Addr
+             Ipv6Addr
+             NonZero<i128>
+             NonZero<i16>
+             NonZero<i32>
+             NonZero<i64>
+             NonZero<i8>
+           and 29 others
+note: required by a bound in `core::str::<impl str>::parse`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:2395:5
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:19:18
+   |
+19 |       let a: i32 = words[0].parse().unwrap_or_else(|_| {
+   |  ____________---___^
+   | |            |
+   | |            expected due to this
+20 | |         eprintln!("Invalid integer format");
+21 | |         process::exit(1);
+22 | |     });
+   | |______^ expected `i32`, found `()`
+
+error[E0277]: the trait bound `(): FromStr` is not satisfied
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:24:27
+   |
+24 |     let b: i32 = words[1].parse().unwrap_or_else(|_| {
+   |                           ^^^^^ the trait `FromStr` is not implemented for `()`
+   |
+   = help: the following other types implement trait `FromStr`:
+             IpAddr
+             Ipv4Addr
+             Ipv6Addr
+             NonZero<i128>
+             NonZero<i16>
+             NonZero<i32>
+             NonZero<i64>
+             NonZero<i8>
+           and 29 others
+note: required by a bound in `core::str::<impl str>::parse`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:2395:5
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-int_cmp-c-rs.rs:24:18
+   |
+24 |       let b: i32 = words[1].parse().unwrap_or_else(|_| {
+   |  ____________---___^
+   | |            |
+   | |            expected due to this
+25 | |         eprintln!("Invalid integer format");
+26 | |         process::exit(1);
+27 | |     });
+   | |______^ expected `i32`, found `()`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0433.
+For more information about an error, try `rustc --explain E0277`.

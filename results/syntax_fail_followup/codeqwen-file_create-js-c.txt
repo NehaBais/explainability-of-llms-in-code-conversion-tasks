@@ -1,0 +1,16 @@
+/tmp/codeqwen-file_create-js-c.c:13:7: error: call to undeclared function 'open'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   if (open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR) < 0) {
+      |       ^
+/tmp/codeqwen-file_create-js-c.c:13:26: error: use of undeclared identifier 'O_CREAT'
+   13 |   if (open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR) < 0) {
+      |                          ^
+/tmp/codeqwen-file_create-js-c.c:13:36: error: use of undeclared identifier 'O_EXCL'
+   13 |   if (open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR) < 0) {
+      |                                    ^
+/tmp/codeqwen-file_create-js-c.c:17:27: error: use of undeclared identifier 'O_CREAT'
+   17 |   if (open("/output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR) < 0) {
+      |                           ^
+/tmp/codeqwen-file_create-js-c.c:17:37: error: use of undeclared identifier 'O_EXCL'
+   17 |   if (open("/output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR) < 0) {
+      |                                     ^
+5 errors generated.

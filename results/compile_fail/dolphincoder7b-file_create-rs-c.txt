@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-file_create-rs-c.c:23:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   if (mkdir(full_dir_path, 0755) != 0) {
+      |       ^
+1 error generated.

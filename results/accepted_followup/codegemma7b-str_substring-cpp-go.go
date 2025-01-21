@@ -1,0 +1,1 @@
+fmt.Println(s[strings.IndexByte(s, byte(c)) : n+m])

@@ -1,0 +1,10 @@
+/tmp/codegemma7b-str_cmp-java-cpp.cpp:1:1: error: unknown type name 'string'
+    1 | string A = "hello";
+      | ^
+/tmp/codegemma7b-str_cmp-java-cpp.cpp:2:1: error: unknown type name 'string'
+    2 | string B = "world";
+      | ^
+/tmp/codegemma7b-str_cmp-java-cpp.cpp:4:31: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    4 | int compareResult = A.compare(size_t(0), A.size(), B);
+      |                               ^
+3 errors generated.

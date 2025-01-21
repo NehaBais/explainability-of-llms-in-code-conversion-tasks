@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-dir_make-py-go.go:15:28: expected type, found 1

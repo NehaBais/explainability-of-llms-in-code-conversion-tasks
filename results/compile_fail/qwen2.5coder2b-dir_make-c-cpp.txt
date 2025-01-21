@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-dir_make-c-cpp.cpp:1:10: fatal error: 'cerr' file not found
+    1 | #include <cerr>
+      |          ^~~~~~
+1 error generated.

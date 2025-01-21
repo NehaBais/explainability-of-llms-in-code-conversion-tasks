@@ -1,0 +1,4 @@
+/tmp/magicoder7b-bit_ops-go-cpp.cpp:12:3: error: expected expression
+   12 |   ...
+      |   ^
+1 error generated.

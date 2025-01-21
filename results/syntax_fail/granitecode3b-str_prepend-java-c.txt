@@ -1,0 +1,25 @@
+/tmp/granitecode3b-str_prepend-java-c.c:2:1: error: unknown type name 'size_t'
+    2 | size_t len = strlen(string);
+      | ^
+/tmp/granitecode3b-str_prepend-java-c.c:2:14: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | size_t len = strlen(string);
+      |              ^
+/tmp/granitecode3b-str_prepend-java-c.c:2:14: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_prepend-java-c.c:4:21: error: expected identifier
+    4 | sprintf(new_string, "abc%s", string);
+      |                     ^
+/tmp/granitecode3b-str_prepend-java-c.c:4:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    4 | sprintf(new_string, "abc%s", string);
+      | ^
+      | int
+/tmp/granitecode3b-str_prepend-java-c.c:4:1: warning: incompatible redeclaration of library function 'sprintf' [-Wincompatible-library-redeclaration]
+/tmp/granitecode3b-str_prepend-java-c.c:4:1: note: 'sprintf' is a builtin with type 'int (char *, const char *, ...)'
+/tmp/granitecode3b-str_prepend-java-c.c:5:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    5 | string = new_string;
+      | ^
+      | int
+/tmp/granitecode3b-str_prepend-java-c.c:5:1: error: redefinition of 'string' with a different type: 'int' vs 'char *'
+/tmp/granitecode3b-str_prepend-java-c.c:1:7: note: previous definition is here
+    1 | char *string = "def";
+      |       ^
+1 warning and 6 errors generated.

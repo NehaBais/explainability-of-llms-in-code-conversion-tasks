@@ -1,48 +1,46 @@
-Answer: The equivalent code in Golang is as follows:
-
-The package os provides functions for interacting with the file system, including creating and reading files, directories etc. 
-
-The `os.Stat` function takes a path to a file or directory as an argument and returns a value of type `syscall.Stat_t`. This structure contains information about the file, such as its size, permissions, creation time, modification time etc. 
-
-In this case we are only interested in whether the file or directory exists so we use the `os.IsNotExist` function to check if the file or directory does not exist. If it doesn't exist then an error is returned. Otherwise `nil` is returned and we know that the file or directory exists.
-
+ Sure, here is the equivalent code in Go to verify that a file called `input.txt` and a directory called `docs` exist, twice - once for the current working directory and once for the filesystem root:
 
 ```go
 package main
 
 import (
-    "fmt"
-    "log"
-    "os"
+	"fmt"
+	"os"
 )
 
-func FileExists(path string) bool {
-    info, err := os.Stat(path)
-    if os.IsNotExist(err) {
-        return false
-    } else if err != nil {
-        log.Fatal("Error checking for file: ", err)
-    }
-    return !info.Mode().IsDir()
-}
-
-func DirExists(path string) bool {
-    info, err := os.Stat(path)
-    if os.IsNotExist(err) {
-        return false
-    } else if err != nil {
-        log.Fatal("Error checking for directory: ", err)
-    }
-    return info.Mode().IsDir()
-}
-
 func main() {
-    fmt.Println("Checking current working dir:")
-    FileExists("./input.txt")
-    DirExists("./docs")
+	// Check for input.txt in the current working directory
+	_, err := os.Stat("input.txt")
+	if os.IsNotExist(err) {
+		fmt.Println("input.txt does not exist in the current working directory")
+	} else {
+		fmt.Println("input.txt exists in the current working directory")
+	}
 
-    fmt.Println("\nChecking root of the filesystem:")
-    FileExists("/input.txt")
-    DirExists("/docs")
+	// Check for input.txt in the filesystem root (assuming Windows path syntax)
+	_, err = os.Stat("C:/input.txt")
+	if os.IsNotExist(err) {
+		fmt.Println("input.txt does not exist in the filesystem root")
+	} else {
+		fmt.Println("input.txt exists in the filesystem root")
+	}
+
+	// Check for docs in the current working directory
+	_, err = os.Stat("docs")
+	if os.IsNotExist(err) {
+		fmt.Println("docs does not exist in the current working directory")
+	} else {
+		fmt.Println("docs exists in the current working directory")
+	}
+
+	// Check for docs in the filesystem root (assuming Windows path syntax)
+	_, err = os.Stat("C:/docs")
+	if os.IsNotExist(err) {
+		fmt.Println("docs does not exist in the filesystem root")
+	} else {
+		fmt.Println("docs exists in the filesystem root")
+	}
 }
 ```
+
+This Go code uses the `os` package to check if the files and directories exist. The `os.Stat` function returns a file info structure, and `os.IsNotExist` checks if the error indicates that the file or directory does not exist.

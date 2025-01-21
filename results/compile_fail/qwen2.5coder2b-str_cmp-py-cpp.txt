@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder2b-str_cmp-py-cpp.cpp:12:1: warning: non-void function does not return a value [-Wreturn-type]
+   12 | }
+      | ^
+/tmp/qwen2.5coder2b-str_cmp-py-cpp.cpp:18:3: error: no matching function for call to 'compare'
+   18 |   compare(24, 123);
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-py-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'int' to 'const std::string' (aka 'const basic_string<char>') for 1st argument
+    4 | bool compare(const std::string &a, const std::string &b) {
+      |      ^       ~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-py-cpp.cpp:19:3: error: no matching function for call to 'compare'
+   19 |   compare(5.0, 5);
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-py-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'double' to 'const std::string' (aka 'const basic_string<char>') for 1st argument
+    4 | bool compare(const std::string &a, const std::string &b) {
+      |      ^       ~~~~~~~~~~~~~~~~~~~~
+1 warning and 2 errors generated.

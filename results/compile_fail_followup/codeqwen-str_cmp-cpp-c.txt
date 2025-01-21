@@ -1,0 +1,5 @@
+/tmp/codeqwen-str_cmp-cpp-c.c:33:17: error: call to undeclared library function 'strtod' with type 'double (const char *, char **)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |   double numA = strtod(A, &endptr1);
+      |                 ^
+/tmp/codeqwen-str_cmp-cpp-c.c:33:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'strtod'
+1 error generated.

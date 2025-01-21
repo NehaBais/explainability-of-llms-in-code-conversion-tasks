@@ -1,0 +1,87 @@
+error: expected identifier, found `""`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:37:61
+   |
+37 |     println!("{} and {} are {}inequal.", A, b, If *A != *b {""} else {"not "});
+   |                                                          -  ^^ expected identifier
+   |                                                          |
+   |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:37:65
+   |
+37 |     println!("{} and {} are {}inequal.", A, b, If *A != *b {""} else {"not "});
+   |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:39:61
+   |
+39 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                          -  ^^ expected identifier
+   |                                                          |
+   |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:39:65
+   |
+39 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:41:60
+   |
+41 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+   |                                                         -  ^^ expected identifier
+   |                                                         |
+   |                                                         while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:41:64
+   |
+41 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+   |                                                                ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:15:19
+   |
+15 |     demo_compare(&A, &b, "lexically");
+   |                   ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:18:17
+   |
+18 |     let mut A = A.to_lowercase();
+   |                 ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:32:9
+   |
+32 |         A,
+   |         ^
+   |
+help: a local variable with a similar name exists
+   |
+32 |         a,
+   |         ~
+help: you might be missing a const parameter
+   |
+29 | fn demo_compare<T: std::cmp::Ord + std::fmt::Display, const A: /* Type */>(a: &T, b: &T, semantically: &'static str) {
+   |                                                     +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:34:13
+   |
+34 |         if *A == *b { "" } else { "not " }
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+34 |         if *a == *b { "" } else { "not " }
+   |             ~
+help: you might be missing a const parameter
+   |
+29 | fn demo_compare<T: std::cmp::Ord + std::fmt::Display, const A: /* Type */>(a: &T, b: &T, semantically: &'static str) {
+   |                                                     +++++++++++++++++++++
+
+error: aborting due to 10 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

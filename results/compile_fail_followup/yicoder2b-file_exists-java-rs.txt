@@ -1,0 +1,25 @@
+error: expected item, found `import`
+ --> /tmp/yicoder2b-file_exists-java-rs.rs:1:1
+  |
+1 | import std::io::File;
+  | ^^^^^^
+  |
+help: items are imported using the `use` keyword
+  |
+1 | use std::io::File;
+  | ~~~
+
+error[E0432]: unresolved import `std::io::File`
+ --> /tmp/yicoder2b-file_exists-java-rs.rs:1:8
+  |
+1 | import std::io::File;
+  |        ^^^^^^^^^^^^^ no `File` in `io`
+  |
+help: consider importing this struct instead
+  |
+1 | import std::fs::File;
+  |        ~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

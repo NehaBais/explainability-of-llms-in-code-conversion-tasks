@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `yicoder9b_logic_ops_cpp_rs`
+ --> /tmp/yicoder9b-logic_ops-cpp-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/yicoder9b-logic_ops-cpp-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

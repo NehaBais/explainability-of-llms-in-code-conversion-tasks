@@ -1,0 +1,45 @@
+error: expected one of `,`, `.`, `?`, or an operator, found `"was renamed as"`
+  --> /tmp/codellama7b-file_rename-java-rs.rs:12:41
+   |
+12 |         rename_file(oldname, newname) ? "was renamed as" : "could not be renamed into", newname);
+   |                                         ^^^^^^^^^^^^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/codellama7b-file_rename-java-rs.rs:18:5
+   |
+18 |     test("file", &input, &output);
+   |     ^^^^         ------  ------- expected `&str`, found `&PathBuf`
+   |                  |
+   |                  expected `&str`, found `&PathBuf`
+   |
+   = note: expected reference `&str`
+              found reference `&PathBuf`
+   = note: expected reference `&str`
+              found reference `&PathBuf`
+note: function defined here
+  --> /tmp/codellama7b-file_rename-java-rs.rs:10:4
+   |
+10 | fn test(file_type: &str, oldname: &str, newname: &str) {
+   |    ^^^^ ---------------  -------------  -------------
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/codellama7b-file_rename-java-rs.rs:21:5
+   |
+21 |     test("directory", &docs, &mydocs);
+   |     ^^^^              -----  ------- expected `&str`, found `&PathBuf`
+   |                       |
+   |                       expected `&str`, found `&PathBuf`
+   |
+   = note: expected reference `&str`
+              found reference `&PathBuf`
+   = note: expected reference `&str`
+              found reference `&PathBuf`
+note: function defined here
+  --> /tmp/codellama7b-file_rename-java-rs.rs:10:4
+   |
+10 | fn test(file_type: &str, oldname: &str, newname: &str) {
+   |    ^^^^ ---------------  -------------  -------------
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

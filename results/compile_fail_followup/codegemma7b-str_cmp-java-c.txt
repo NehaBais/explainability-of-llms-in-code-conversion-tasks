@@ -1,0 +1,8 @@
+/tmp/codegemma7b-str_cmp-java-c.c:11:7: error: call to undeclared function 'strcmpi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (strcmpi(A, B) == 0) {
+      |       ^
+/tmp/codegemma7b-str_cmp-java-c.c:11:7: note: did you mean 'strcmp'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:6: note: 'strcmp' declared here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |          ^
+1 error generated.

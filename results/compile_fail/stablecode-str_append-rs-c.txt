@@ -1,0 +1,13 @@
+/tmp/stablecode-str_append-rs-c.c:1:1: error: unknown type name 'fn'
+    1 | fn main() {
+      | ^
+/tmp/stablecode-str_append-rs-c.c:2:3: error: use of undeclared identifier 'let'
+    2 |   let mut hello = String::from("Hello world");
+      |   ^
+/tmp/stablecode-str_append-rs-c.c:3:3: error: use of undeclared identifier 'hello'
+    3 |   hello.push_str("!!!!");
+      |   ^
+/tmp/stablecode-str_append-rs-c.c:4:5: error: use of undeclared identifier 'println'
+    4 |     println!("{}", hello));
+      |     ^
+4 errors generated.

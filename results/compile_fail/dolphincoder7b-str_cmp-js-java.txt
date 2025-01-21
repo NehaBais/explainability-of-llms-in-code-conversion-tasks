@@ -1,0 +1,4 @@
+/tmp/StringComparisonDemo.java:14: error: illegal start of expression
+        );
+        ^
+1 error

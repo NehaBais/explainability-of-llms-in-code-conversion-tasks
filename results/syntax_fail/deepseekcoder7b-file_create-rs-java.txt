@@ -1,0 +1,22 @@
+/tmp/Main.java:24: error: illegal character: '\uff5c'
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                            ^
+/tmp/Main.java:24: error: illegal character: '\u2581'
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                                  ^
+/tmp/Main.java:24: error: not a statement
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                             ^
+/tmp/Main.java:24: error: illegal character: '\u2581'
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                                     ^
+/tmp/Main.java:24: error: not a statement
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                                   ^
+/tmp/Main.java:24: error: illegal character: '\uff5c'
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                                              ^
+/tmp/Main.java:24: error: not a statement
+        Path d_path = Paths<｜begin▁of▁sentence｜>.get(root, DIR_NAME);
+                                      ^
+7 errors

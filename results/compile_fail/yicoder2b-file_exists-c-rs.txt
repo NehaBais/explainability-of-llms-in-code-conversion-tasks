@@ -1,0 +1,35 @@
+warning: unused imports: `File`, `exists`, and `read_dir`
+ --> /tmp/yicoder2b-file_exists-c-rs.rs:1:15
+  |
+1 | use std::fs::{exists, read_dir, File};
+  |               ^^^^^^  ^^^^^^^^  ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0425]: cannot find function `stat` in this scope
+ --> /tmp/yicoder2b-file_exists-c-rs.rs:8:47
+  |
+8 |     let check_reg_current = if let Ok(stat) = stat(&input_txt) {
+  |                                               ^^^^ not found in this scope
+
+error[E0425]: cannot find function `stat` in this scope
+  --> /tmp/yicoder2b-file_exists-c-rs.rs:18:47
+   |
+18 |     let check_dir_current = if let Ok(stat) = stat(&docs) {
+   |                                               ^^^^ not found in this scope
+
+error[E0425]: cannot find function `stat` in this scope
+  --> /tmp/yicoder2b-file_exists-c-rs.rs:28:44
+   |
+28 |     let check_reg_root = if let Ok(stat) = stat(&input_txt) {
+   |                                            ^^^^ not found in this scope
+
+error[E0425]: cannot find function `stat` in this scope
+  --> /tmp/yicoder2b-file_exists-c-rs.rs:38:44
+   |
+38 |     let check_dir_root = if let Ok(stat) = stat(&docs) {
+   |                                            ^^^^ not found in this scope
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,0 +1,60 @@
+error[E0425]: cannot find function `resolve` in module `path`
+ --> /tmp/codellama7b-dir_make-js-rs.rs:6:31
+  |
+6 |     let resolved_path = path::resolve(path);
+  |                               ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `mkdir` in module `fs`
+ --> /tmp/codellama7b-dir_make-js-rs.rs:8:9
+  |
+8 |     fs::mkdir(resolved_path, |er| {
+  |         ^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `dirname` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:15:44
+   |
+15 |                     let parent_dir = path::dirname(resolved_path);
+   |                                            ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `resolve` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:34:31
+   |
+34 |     let resolved_path = path::resolve(path);
+   |                               ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `mkdir` in module `fs`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:36:9
+   |
+36 |     fs::mkdir(resolved_path, |er| {
+   |         ^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `dirname` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:43:44
+   |
+43 |                     let parent_dir = path::dirname(resolved_path);
+   |                                            ^^^^^^^ not found in `path`
+
+error[E0277]: `Option<String>` doesn't implement `std::fmt::Display`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:20:77
+   |
+20 | ...                   println!("Error creating parent directory: {}", er);
+   |                                                                       ^^ `Option<String>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<String>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Option<String>` doesn't implement `std::fmt::Display`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:48:77
+   |
+48 | ...                   println!("Error creating parent directory: {}", er);
+   |                                                                       ^^ `Option<String>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<String>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0277, E0425.
+For more information about an error, try `rustc --explain E0277`.

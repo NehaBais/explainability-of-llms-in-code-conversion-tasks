@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-cpp-go.go:9:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:10:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:11:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:12:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:17:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:18:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:21:68: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-cpp-go.go:22:69: syntax error: unexpected ) at end of statement

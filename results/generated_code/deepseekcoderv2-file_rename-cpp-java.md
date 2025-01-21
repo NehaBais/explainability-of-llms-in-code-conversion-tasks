@@ -1,11 +1,37 @@
-*/
+ Sure, here is the equivalent Java code for your C++ program:
 
-#include <cstdio>
-int main() {
-	std::rename("input.txt","output.txt"); //here in current working directory (CWD)
-	std::rename("/input.txt","/output.txt"); //in root folder
-	
-    std::rename("docs", "mydocs");  //here in CWD
-    std::rename("/docs", "/mydocs"); //in root
-    return 0;
+```java
+import java.io.File;
+
+public class RenameFiles {
+    public static void main(String[] args) {
+        // In current working directory
+        File file1 = new File("input.txt");
+        File file2 = new File("output.txt");
+        if (file1.exists() && !file2.exists()) {
+            file1.renameTo(file2);
+        }
+
+        File dir1 = new File("docs");
+        File dir2 = new File("mydocs");
+        if (dir1.exists() && !dir2.exists()) {
+            dir1.renameTo(dir2);
+        }
+
+        // In filesystem root
+        File file3 = new File("/input.txt");
+        File file4 = new File("/output.txt");
+        if (file3.exists() && !file4.exists()) {
+            file3.renameTo(file4);
+        }
+
+        File dir3 = new File("/docs");
+        File dir4 = new File("/mydocs");
+        if (dir3.exists() && !dir4.exists()) {
+            dir3.renameTo(dir4);
+        }
+    }
 }
+```
+
+This Java code performs the same operations as your original C++ code: it renames `input.txt` to `output.txt` and `docs` to `mydocs`, both in the current working directory and in the filesystem root.

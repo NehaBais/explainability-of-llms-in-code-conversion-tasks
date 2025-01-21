@@ -1,32 +1,29 @@
-### Answer 1
-The following code is the conversion of the given C++ program to Java:
-```
+ Sure, here is the equivalent Java code for the provided C++ code:
+
+```java
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        File file = new File("input.txt");
-        if (file.exists()) {
-            System.out.println("Size of input.txt is " + Files.size(file.toPath()));
-        } else {
-            System.err.println("File not found: input.txt");
+public class FileSize {
+    public static void printFileSize(String filename) {
+        try {
+            File file = new File(filename);
+            long size = file.length();
+            System.out.println("Size of file " + filename + " is " + size + " bytes.");
+        } catch (Exception ex) {
+            System.err.println(ex.getMessage());
         }
+    }
 
-        File root = new File("/");
-        if (root.exists()) {
-            System.out.println("Size of / is " + Files.size(root.toPath()));
-        } else {
-            System.err.println("Directory not found: /");
-        }
+    public static void main(String[] args) {
+        printFileSize("input.txt");
+        printFileSize("/input.txt");
     }
 }
 ```
-### Answer 2
-The program uses the `File` and `Files` classes from Java's standard library to perform file operations, ensuring that the code is compatible with Java syntax. The main function first checks if a local file named "input.txt" exists in the current directory using the `exists()` method of the `File` class. If it does exist, it then prints its size by converting the path from the File object to a Path object and passing it to the `size()` method of the Files class.
 
-If the file doesn't exist locally, an error message is printed to standard error stream (System.err).
-
-Similarly, the program checks if the root directory "/" exists in the file system using the same process as before. If it does exist, its size is printed in a similar way. Otherwise, an error message is printed for this case too.
+This Java code does the following:
+1. Defines a method `printFileSize` that takes a filename as an argument and prints the size of the file.
+2. Uses a `File` object to represent the file, either by its relative path (`input.txt`) or absolute path (`/input.txt`).
+3. Tries to get the length of the file using the `length()` method, which returns the number of bytes in the file.
+4. Catches any exceptions and prints the error message if an exception occurs.

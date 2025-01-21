@@ -1,0 +1,5 @@
+/tmp/deepseekcoder7b-int_factors-java-c.c:10:25: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   for (long i = 1; i <= sqrt(n); i++) {
+      |                         ^
+/tmp/deepseekcoder7b-int_factors-java-c.c:10:25: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+1 error generated.

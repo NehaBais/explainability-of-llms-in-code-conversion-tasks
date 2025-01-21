@@ -1,0 +1,11 @@
+/tmp/FileAndDirectoryCheck.java:22: error: bad operand types for binary operator '&&'
+            && Files.isDirectory(docsDirPath));
+            ^
+  first type:  String
+  second type: boolean
+/tmp/FileAndDirectoryCheck.java:34: error: bad operand types for binary operator '&&'
+            && Files.isDirectory(docsDirPath));
+            ^
+  first type:  String
+  second type: boolean
+2 errors

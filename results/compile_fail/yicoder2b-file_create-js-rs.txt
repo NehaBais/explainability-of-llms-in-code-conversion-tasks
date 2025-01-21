@@ -1,0 +1,48 @@
+error[E0599]: no method named `writeable` found for mutable reference `&mut OpenOptions` in the current scope
+ --> /tmp/yicoder2b-file_create-js-rs.rs:6:10
+  |
+4 |       let mut file = match fs::OpenOptions::new()
+  |  __________________________-
+5 | |         .create(true)
+6 | |         .writeable()
+  | |_________-^^^^^^^^^
+  |
+help: there is a method `write` with a similar name, but with different arguments
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1052:5
+
+error[E0599]: no method named `writeable` found for mutable reference `&mut OpenOptions` in the current scope
+  --> /tmp/yicoder2b-file_create-js-rs.rs:14:10
+   |
+12 |       match fs::OpenOptions::new()
+   |  ___________-
+13 | |         .create(true)
+14 | |         .writeable()
+   | |_________-^^^^^^^^^
+   |
+help: there is a method `write` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1052:5
+
+error[E0599]: no method named `writeable` found for mutable reference `&mut OpenOptions` in the current scope
+  --> /tmp/yicoder2b-file_create-js-rs.rs:20:57
+   |
+20 |     let dir = match fs::OpenOptions::new().create(true).writeable().open("docs") {
+   |                                                         ^^^^^^^^^
+   |
+help: there is a method `write` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1052:5
+
+error[E0599]: no method named `writeable` found for mutable reference `&mut OpenOptions` in the current scope
+  --> /tmp/yicoder2b-file_create-js-rs.rs:26:10
+   |
+24 |       match fs::OpenOptions::new()
+   |  ___________-
+25 | |         .create(true)
+26 | |         .writeable()
+   | |_________-^^^^^^^^^
+   |
+help: there is a method `write` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1052:5
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

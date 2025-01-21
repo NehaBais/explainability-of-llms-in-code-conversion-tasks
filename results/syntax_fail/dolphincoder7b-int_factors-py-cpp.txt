@@ -1,0 +1,18 @@
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:15:11: error: use of undeclared identifier 'isqrt'; did you mean 'sqrt'?
+   15 |   int x = isqrt(n) + 1;
+      |           ^~~~~
+      |           sqrt
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:434:15: note: 'sqrt' declared here
+  434 | extern double sqrt(double);
+      |               ^
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:23:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (int i : factors1) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:31:22: error: expected ';' at end of declaration
+   31 |   vector<int> numbers{45, 53, 64};
+      |                      ^
+      |                      ;
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:34:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   34 |   for (const int &num : numbers) {
+      |                       ^
+2 warnings and 2 errors generated.

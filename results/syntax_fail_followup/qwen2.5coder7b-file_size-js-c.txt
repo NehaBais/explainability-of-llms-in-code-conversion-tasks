@@ -1,0 +1,45 @@
+/tmp/qwen2.5coder7b-file_size-js-c.c:7:3: error: use of undeclared identifier 'HANDLE'
+    7 |   HANDLE hFile = CreateFile(filePath, GENERIC_READ, FILE_SHARE_READ, NULL,
+      |   ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:9:7: error: use of undeclared identifier 'hFile'; did you mean 'while'?
+    9 |   if (hFile == INVALID_HANDLE_VALUE) {
+      |       ^~~~~
+      |       while
+/tmp/qwen2.5coder7b-file_size-js-c.c:9:7: error: expected expression
+/tmp/qwen2.5coder7b-file_size-js-c.c:14:3: error: use of undeclared identifier 'DWORD'
+   14 |   DWORD fileSizeHigh = 0;
+      |   ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:15:3: error: use of undeclared identifier 'DWORD'
+   15 |   DWORD fileSizeLow = GetFileSize(hFile, &fileSizeHigh);
+      |   ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:16:43: error: call to undeclared function 'GetLastError'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   if (fileSizeLow == INVALID_FILE_SIZE && GetLastError() != NO_ERROR) {
+      |                                           ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:16:7: error: use of undeclared identifier 'fileSizeLow'
+   16 |   if (fileSizeLow == INVALID_FILE_SIZE && GetLastError() != NO_ERROR) {
+      |       ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:16:22: error: use of undeclared identifier 'INVALID_FILE_SIZE'
+   16 |   if (fileSizeLow == INVALID_FILE_SIZE && GetLastError() != NO_ERROR) {
+      |                      ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:16:61: error: use of undeclared identifier 'NO_ERROR'
+   16 |   if (fileSizeLow == INVALID_FILE_SIZE && GetLastError() != NO_ERROR) {
+      |                                                             ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:18:5: error: call to undeclared function 'CloseHandle'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     CloseHandle(hFile);
+      |     ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:18:17: error: use of undeclared identifier 'hFile'
+   18 |     CloseHandle(hFile);
+      |                 ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:22:3: error: call to undeclared function 'CloseHandle'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |   CloseHandle(hFile);
+      |   ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:22:15: error: use of undeclared identifier 'hFile'
+   22 |   CloseHandle(hFile);
+      |               ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:23:16: error: use of undeclared identifier 'fileSizeHigh'
+   23 |   return (int)(fileSizeHigh * 0x100000000 + fileSizeLow);
+      |                ^
+/tmp/qwen2.5coder7b-file_size-js-c.c:23:45: error: use of undeclared identifier 'fileSizeLow'
+   23 |   return (int)(fileSizeHigh * 0x100000000 + fileSizeLow);
+      |                                             ^
+15 errors generated.

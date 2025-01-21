@@ -1,0 +1,61 @@
+/tmp/deepseekcoder7b-bit_ops-go-c.c:3:16: error: unknown type name 'uint16_t'
+    3 | void print_bin(uint16_t n) {
+      |                ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:12:14: error: unknown type name 'uint16_t'
+   12 | void bitwise(uint16_t a, uint8_t b) {
+      |              ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:12:26: error: unknown type name 'uint8_t'
+   12 | void bitwise(uint16_t a, uint8_t b) {
+      |                          ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:22: error: use of undeclared identifier 'print'; did you mean 'printf'?
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                      ^~~~~
+      |                      printf
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:6: note: 'printf' declared here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |          ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:28: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                            ^~
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:36: error: character <U+2581> not allowed in an identifier
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                                   ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:41: error: character <U+2581> not allowed in an identifier
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                                      ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:52: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                                               ^~
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:58: error: invalid digit 'b' in decimal constant
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                                                    ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:43:28: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   43 |     printf("shr: "); print<｜begin▁of▁sentence｜>16b
+      |                            ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:58:11: error: expected ';' after expression
+   58 |   uint16_t a = 460; // Change these values as per your requirement.
+      |           ^
+      |           ;
+/tmp/deepseekcoder7b-bit_ops-go-c.c:58:3: error: use of undeclared identifier 'uint16_t'
+   58 |   uint16_t a = 460; // Change these values as per your requirement.
+      |   ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:58:12: error: use of undeclared identifier 'a'
+   58 |   uint16_t a = 460; // Change these values as per your requirement.
+      |            ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:59:10: error: expected ';' after expression
+   59 |   uint8_t b = 2;
+      |          ^
+      |          ;
+/tmp/deepseekcoder7b-bit_ops-go-c.c:59:3: error: use of undeclared identifier 'uint8_t'
+   59 |   uint8_t b = 2;
+      |   ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:59:11: error: use of undeclared identifier 'b'
+   59 |   uint8_t b = 2;
+      |           ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:60:11: error: use of undeclared identifier 'a'
+   60 |   bitwise(a, b);
+      |           ^
+/tmp/deepseekcoder7b-bit_ops-go-c.c:60:14: error: use of undeclared identifier 'b'
+   60 |   bitwise(a, b);
+      |              ^
+2 warnings and 16 errors generated.

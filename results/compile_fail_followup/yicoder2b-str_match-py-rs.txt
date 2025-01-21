@@ -1,0 +1,49 @@
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:18:9
+   |
+17 |     match "abab".find("bb") {
+   |           ----------------- this expression has type `Option<usize>`
+18 |         Ok(loc) => println!("{}", loc),
+   |         ^^^^^^^ expected `Option<usize>`, found `Result<_, _>`
+   |
+   = note: expected enum `Option<usize>`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:19:9
+   |
+17 |     match "abab".find("bb") {
+   |           ----------------- this expression has type `Option<usize>`
+18 |         Ok(loc) => println!("{}", loc),
+19 |         Err(_) => println!("Not found"),
+   |         ^^^^^^ expected `Option<usize>`, found `Result<_, _>`
+   |
+   = note: expected enum `Option<usize>`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:22:9
+   |
+21 |     match "abab".find("ab") {
+   |           ----------------- this expression has type `Option<usize>`
+22 |         Ok(loc) => println!("{}", loc),
+   |         ^^^^^^^ expected `Option<usize>`, found `Result<_, _>`
+   |
+   = note: expected enum `Option<usize>`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-py-rs.rs:23:9
+   |
+21 |     match "abab".find("ab") {
+   |           ----------------- this expression has type `Option<usize>`
+22 |         Ok(loc) => println!("{}", loc),
+23 |         Err(_) => println!("Not found"),
+   |         ^^^^^^ expected `Option<usize>`, found `Result<_, _>`
+   |
+   = note: expected enum `Option<usize>`
+              found enum `Result<_, _>`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

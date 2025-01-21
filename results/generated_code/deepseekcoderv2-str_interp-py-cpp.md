@@ -1,9 +1,18 @@
-# Answer: 
-## In C++, this code can be translated as follows:
-```
-string extra = "little";
-string new_str = "Mary had a " + extra + " lamb.";
-cout << new_str << endl;
-```
-This code defines two variables, `extra` and `new_str`. The variable `extra` is initialized with the string value "little". The variable `new_str` is then assigned the result of concatenating three strings: "Mary had a ", the value stored in the variable `extra`, and the substring " lamb.". Finally, the concatenated string is printed to standard output.
+ Sure! Here is the equivalent code in C++:
 
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string extra = "little";
+    std::string new_str = "Mary had a " + extra + " lamb.";
+    std::cout << new_str << std::endl;
+    return 0;
+}
+```
+
+In this C++ code:
+- We define the string `extra` with the value "little".
+- We use the `+` operator to concatenate the strings and insert the value of `extra` into the interpolated string.
+- Finally, we print the resulting string using `std::cout`.

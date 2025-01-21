@@ -1,0 +1,4 @@
+/tmp/yicoder9b-str_substring-go-cpp.cpp:44:13: error: expected expression
+   44 |     cout << `Start "DE", length ${m} :`<< substr << endl;
+      |             ^
+1 error generated.

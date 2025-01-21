@@ -1,0 +1,28 @@
+/tmp/stablecode-str_cmp-js-c.c:8:28: error: extraneous ')' after condition, expected a statement
+    8 |   if (areEqual(str1, str2))) 
+      |                            ^
+/tmp/stablecode-str_cmp-js-c.c:18:30: error: extraneous ')' after condition, expected a statement
+   18 |   if (strcmp(str1, str2) < 0)) 
+      |                              ^
+/tmp/stablecode-str_cmp-js-c.c:28:30: error: extraneous ')' after condition, expected a statement
+   28 |   if (strcmp(str1, str2) > 0)) 
+      |                              ^
+/tmp/stablecode-str_cmp-js-c.c:41:62: error: extraneous ')' before ';'
+   41 |   printf("Are the strings equal? %d\n", areEqual(str1, str2)));
+      |                                                              ^
+/tmp/stablecode-str_cmp-js-c.c:42:69: error: expected ';' after expression
+   42 |   printf("Are the strings not equal? %d\n", areNotEqual(str1, str2))));
+      |                                                                     ^
+      |                                                                     ;
+/tmp/stablecode-str_cmp-js-c.c:42:69: error: expected expression
+/tmp/stablecode-str_cmp-js-c.c:43:129: error: expected ';' after expression
+   43 |   printf("Is string '%s' lexicographically ordered before string '%s'? %d\n", str1, str2, isLexicographicallyBefore(str1, str2)))));
+      |                                                                                                                                 ^
+      |                                                                                                                                 ;
+/tmp/stablecode-str_cmp-js-c.c:43:129: error: expected expression
+/tmp/stablecode-str_cmp-js-c.c:44:127: error: expected ';' after expression
+   44 |   printf("Is string '%s' lexicographically ordered after string '%s'? %d\n", str1, str2, isLexicographicallyAfter(str1, str2)))));
+      |                                                                                                                               ^
+      |                                                                                                                               ;
+/tmp/stablecode-str_cmp-js-c.c:44:127: error: expected expression
+10 errors generated.

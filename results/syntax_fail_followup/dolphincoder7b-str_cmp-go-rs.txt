@@ -1,0 +1,9 @@
+error[E0463]: can't find crate for `unicode_segmentation`
+ --> /tmp/dolphincoder7b-str_cmp-go-rs.rs:1:1
+  |
+1 | extern crate unicode_segmentation;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0463`.

@@ -1,0 +1,25 @@
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::filesystem::path path = "./path/to/dir";
+      |   ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:5:8: error: use of undeclared identifier 'std'
+    5 |   if (!std::filesystem::exists(path)) {
+      |        ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:7:7: error: use of undeclared identifier 'std'
+    7 |       std::filesystem::create_directories(path);
+      |       ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:8:20: error: use of undeclared identifier 'std'
+    8 |     } catch (const std::exception &e) {
+      |                    ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:9:7: error: use of undeclared identifier 'std'
+    9 |       std::cerr << "Error creating directory: " << e.what() << std::endl;
+      |       ^
+/tmp/granitecode8b-dir_make-rs-cpp.cpp:9:64: error: use of undeclared identifier 'std'
+    9 |       std::cerr << "Error creating directory: " << e.what() << std::endl;
+      |                                                                ^
+8 errors generated.

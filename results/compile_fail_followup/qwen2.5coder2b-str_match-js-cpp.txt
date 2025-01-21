@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-str_match-js-cpp.cpp:21:71: error: no member named 'join' in 'std::vector<unsigned long>'
+   21 |     ss << "{" << ((matches.size() > 1) ? "es" : "") << " " << matches.join(", ")
+      |                                                               ~~~~~~~ ^
+1 error generated.

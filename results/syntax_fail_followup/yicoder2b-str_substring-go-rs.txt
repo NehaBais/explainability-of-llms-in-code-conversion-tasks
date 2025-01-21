@@ -1,0 +1,16 @@
+error: 3 positional arguments in format string, but there are 2 arguments
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:11:22
+   |
+11 |     println!("Start '{}', length {}: {}", m, &str::from_utf8_lossy(&s)[dx as usize..dx + m]); // prints "Start D, length 3: DEF"
+   |                      ^^          ^^  ^^   -  ----------------------------------------------
+
+error: 3 positional arguments in format string, but there is 1 argument
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:14:17
+   |
+14 |         "Start '{}', length {}: {}",
+   |                 ^^          ^^  ^^
+15 |         &str::from_utf8_lossy(&s)[sx as usize..sx + m]
+   |         ----------------------------------------------
+
+error: aborting due to 2 previous errors
+

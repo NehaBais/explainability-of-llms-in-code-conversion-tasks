@@ -1,25 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h> // for chdir()
+
+void rename_file(const char *oldname, const char *newname) {
+  if (rename(oldname, newname) != 0) {
+    perror("Error renaming file");
+    exit(EXIT_FAILURE);
+  }
+}
 
 int main() {
-  // Rename files and directories in current working directory (cwd)
-  system("mv input.txt output.txt");
-  system("mv docs mydocs");
+  // Rename in the current working directory
+  rename_file("input.txt", "output.txt");
+  rename_file("docs", "mydocs");
 
-  // Add the separator character to specify the full path of files/directories
-  // to be renamed in root
-  char cwd[FILENAME_MAX];   // Buffer for storing current working directory path
-  getcwd(cwd, sizeof(cwd)); // Get the current working directory path and store
-                            // it in 'cwd' buffer
-
-  strcat(cwd, "/input.txt"); // Append "input.txt" to the end of the cwd string
-  system("mv input.txt output.txt"); // Rename file "input.txt" as "output.txt"
-                                     // within current working directory (cwd)
-
-  strcat(cwd, "/docs");     // Append "docs" to the end of the cwd string
-  system("mv docs mydocs"); // Rename directory "docs" as "mydocs" within
-                            // current working directory (cwd)
+  // Change to the filesystem root and perform the same renames
+  if (chdir("/") == 0) { // chdir to root successfully
+    rename_file("input.txt", "output.txt");
+    rename_file("docs", "mydocs");
+  } else {
+    perror("Error changing directory to root");
+    exit(EXIT_FAILURE);
+  }
 
   return 0;
 }

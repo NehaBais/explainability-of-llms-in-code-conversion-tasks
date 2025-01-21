@@ -1,0 +1,8 @@
+/tmp/codegemma7b-dir_make-java-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("Directory successfully created\n");
+      |     ^
+/tmp/codegemma7b-dir_make-java-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-dir_make-java-c.c:12:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     perror("mkdir");
+      |     ^
+2 errors generated.

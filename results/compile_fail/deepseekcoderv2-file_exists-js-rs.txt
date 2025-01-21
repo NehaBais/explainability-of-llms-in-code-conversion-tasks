@@ -1,0 +1,53 @@
+error[E0382]: borrow of moved value: `file_path`
+  --> /tmp/deepseekcoderv2-file_exists-js-rs.rs:19:36
+   |
+12 | fn check_file_and_directory<P: AsRef<Path>>(file_path: P, dir_path: P) {
+   |                                             --------- move occurs because `file_path` has type `P`, which does not implement the `Copy` trait
+13 |     // Check if the file exists
+14 |     let file_exists = fs::metadata(file_path).is_ok();
+   |                                    --------- value moved here
+...
+19 |     println!("File {} exists: {}", file_path.as_ref().display(), file_exists);
+   |                                    ^^^^^^^^^ value borrowed here after move
+   |
+help: if `P` implemented `Clone`, you could clone the value
+  --> /tmp/deepseekcoderv2-file_exists-js-rs.rs:12:29
+   |
+12 | fn check_file_and_directory<P: AsRef<Path>>(file_path: P, dir_path: P) {
+   |                             ^ consider constraining this type parameter with `Clone`
+13 |     // Check if the file exists
+14 |     let file_exists = fs::metadata(file_path).is_ok();
+   |                                    --------- you could clone this value
+help: consider further restricting this bound
+   |
+12 | fn check_file_and_directory<P: AsRef<Path> + Copy>(file_path: P, dir_path: P) {
+   |                                            ++++++
+
+error[E0382]: borrow of moved value: `dir_path`
+  --> /tmp/deepseekcoderv2-file_exists-js-rs.rs:20:41
+   |
+12 | fn check_file_and_directory<P: AsRef<Path>>(file_path: P, dir_path: P) {
+   |                                                           -------- move occurs because `dir_path` has type `P`, which does not implement the `Copy` trait
+...
+17 |     let dir_exists = fs::metadata(dir_path).map(|meta| meta.is_dir()).unwrap_or(false);
+   |                                   -------- value moved here
+...
+20 |     println!("Directory {} exists: {}", dir_path.as_ref().display(), dir_exists);
+   |                                         ^^^^^^^^ value borrowed here after move
+   |
+help: if `P` implemented `Clone`, you could clone the value
+  --> /tmp/deepseekcoderv2-file_exists-js-rs.rs:12:29
+   |
+12 | fn check_file_and_directory<P: AsRef<Path>>(file_path: P, dir_path: P) {
+   |                             ^ consider constraining this type parameter with `Clone`
+...
+17 |     let dir_exists = fs::metadata(dir_path).map(|meta| meta.is_dir()).unwrap_or(false);
+   |                                   -------- you could clone this value
+help: consider further restricting this bound
+   |
+12 | fn check_file_and_directory<P: AsRef<Path> + Copy>(file_path: P, dir_path: P) {
+   |                                            ++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

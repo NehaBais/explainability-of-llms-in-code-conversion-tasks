@@ -1,0 +1,40 @@
+/tmp/granitecode3b-dir_make-go-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-dir_make-go-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-dir_make-go-c.c:11:9: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   len = strlen(path);
+      |         ^
+/tmp/granitecode3b-dir_make-go-c.c:11:9: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-dir_make-go-c.c:12:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   mkdir(path, 0770);
+      |   ^
+/tmp/granitecode3b-dir_make-go-c.c:12:3: note: did you mean 'mkdirp'?
+/tmp/granitecode3b-dir_make-go-c.c:1:6: note: 'mkdirp' declared here
+    1 | void mkdirp(const char *path) {
+      |      ^
+    2 |   char *dir;
+    3 |   int i, len;
+    4 |   struct stat st;
+    5 |   for (dir = (char *)path; *dir != '\0'; dir++) {
+    6 |     if (*dir == '/') {
+    7 |       *dir++ = '\0';
+    8 |       break;
+    9 |     }
+   10 |   }
+   11 |   len = strlen(path);
+   12 |   mkdir(path, 0770);
+      |   ~~~~~
+      |   mkdirp
+/tmp/granitecode3b-dir_make-go-c.c:13:32: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   for (i = len - 1; i >= 0 && !stat(path, &st); i--) {
+      |                                ^
+/tmp/granitecode3b-dir_make-go-c.c:14:13: error: read-only variable is not assignable
+   14 |     path[i] = '/';
+      |     ~~~~~~~ ^
+/tmp/granitecode3b-dir_make-go-c.c:18:13: error: read-only variable is not assignable
+   18 |     path[i] = '\0';
+      |     ~~~~~~~ ^
+6 errors generated.

@@ -1,0 +1,332 @@
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-py-rs.rs:6:9
+  |
+6 |         a,
+  |         ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+3 | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+  |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-py-rs.rs:8:9
+  |
+8 |         b,
+  |         ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+3 | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+  |                                      +++++++++++++++++++
+
+error[E0369]: binary operation `<` cannot be applied to type `T`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:12:10
+   |
+12 |     if a < b {
+   |        - ^ - T
+   |        |
+   |        T
+   |
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::cmp::PartialOrd>(a: T, b: T) {
+   |                                      ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:13:50
+   |
+13 |         println!("{} is strictly less than  {}", a, b)
+   |                                                  ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:13:53
+   |
+13 |         println!("{} is strictly less than  {}", a, b)
+   |                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0369]: binary operation `<=` cannot be applied to type `T`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:15:10
+   |
+15 |     if a <= b {
+   |        - ^^ - T
+   |        |
+   |        T
+   |
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::cmp::PartialOrd>(a: T, b: T) {
+   |                                      ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:16:52
+   |
+16 |         println!("{} is less than or equal to {}", a, b)
+   |                                                    ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:16:55
+   |
+16 |         println!("{} is less than or equal to {}", a, b)
+   |                                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0369]: binary operation `>` cannot be applied to type `T`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:18:10
+   |
+18 |     if a > b {
+   |        - ^ - T
+   |        |
+   |        T
+   |
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::cmp::PartialOrd>(a: T, b: T) {
+   |                                      ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:19:53
+   |
+19 |         println!("{} is strictly greater than  {}", a, b)
+   |                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:19:56
+   |
+19 |         println!("{} is strictly greater than  {}", a, b)
+   |                                                        ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0369]: binary operation `>=` cannot be applied to type `T`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:21:10
+   |
+21 |     if a >= b {
+   |        - ^^ - T
+   |        |
+   |        T
+   |
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::cmp::PartialOrd>(a: T, b: T) {
+   |                                      ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:22:55
+   |
+22 |         println!("{} is greater than or equal to {}", a, b)
+   |                                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:22:58
+   |
+22 |         println!("{} is greater than or equal to {}", a, b)
+   |                                                          ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:25:39
+   |
+25 |         println!("{} is equal to {}", a, b)
+   |                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:25:42
+   |
+25 |         println!("{} is equal to {}", a, b)
+   |                                          ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:28:43
+   |
+28 |         println!("{} is not equal to {}", a, b)
+   |                                           ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:28:46
+   |
+28 |         println!("{} is not equal to {}", a, b)
+   |                                              ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:31:52
+   |
+31 |         println!("{} has object identity with {}", a, b)
+   |                                                    ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:31:55
+   |
+31 |         println!("{} has object identity with {}", a, b)
+   |                                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:34:60
+   |
+34 |         println!("{} has negated object identity with {}", a, b)
+   |                                                            ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:34:63
+   |
+34 |         println!("{} has negated object identity with {}", a, b)
+   |                                                               ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + fmt::Debug + std::fmt::Display>(a: T, b: T) {
+   |                                      +++++++++++++++++++
+
+error[E0605]: non-primitive cast: `T` as `i32`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:30:8
+   |
+30 |     if a as i32 == b as i32 {
+   |        ^^^^^^^^ an `as` expression can only be used to convert between primitive types or to coerce to a specific trait object
+
+error[E0605]: non-primitive cast: `T` as `i32`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:30:20
+   |
+30 |     if a as i32 == b as i32 {
+   |                    ^^^^^^^^ an `as` expression can only be used to convert between primitive types or to coerce to a specific trait object
+
+error[E0605]: non-primitive cast: `T` as `i32`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:33:8
+   |
+33 |     if a as i32 != b as i32 {
+   |        ^^^^^^^^ an `as` expression can only be used to convert between primitive types or to coerce to a specific trait object
+
+error[E0605]: non-primitive cast: `T` as `i32`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:33:20
+   |
+33 |     if a as i32 != b as i32 {
+   |                    ^^^^^^^^ an `as` expression can only be used to convert between primitive types or to coerce to a specific trait object
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:43:18
+   |
+43 |     compare(5.0, 5);
+   |     ------- ---  ^ expected floating-point number, found integer
+   |     |       |
+   |     |       expected all arguments to be this floating-point number type because they need to match the type of this parameter
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:3:4
+   |
+3  | fn compare<T: PartialEq + fmt::Debug>(a: T, b: T) {
+   |    ^^^^^^^ -                          ----  ---- this parameter needs to match the floating-point number type of `a`
+   |            |                          |
+   |            |                          `b` needs to match the floating-point number type of this parameter
+   |            `a` and `b` all reference this parameter T
+
+error: aborting due to 27 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0369, E0605.
+For more information about an error, try `rustc --explain E0277`.

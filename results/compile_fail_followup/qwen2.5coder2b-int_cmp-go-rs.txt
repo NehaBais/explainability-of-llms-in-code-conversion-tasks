@@ -1,0 +1,26 @@
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-int_cmp-go-rs.rs:17:9
+   |
+16 |     match (n1.parse::<i32>(), n2.parse::<i32>()) {
+   |           -------------------------------------- this expression has type `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`
+17 |         Ok((n1, n2)) => {
+   |         ^^^^^^^^^^^^ expected `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`, found `Result<_, _>`
+   |
+   = note: expected tuple `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`
+               found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-int_cmp-go-rs.rs:26:9
+   |
+16 |     match (n1.parse::<i32>(), n2.parse::<i32>()) {
+   |           -------------------------------------- this expression has type `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`
+...
+26 |         Err(e) => eprintln!("Error parsing input: {}", e),
+   |         ^^^^^^ expected `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`, found `Result<_, _>`
+   |
+   = note: expected tuple `(Result<i32, ParseIntError>, Result<i32, ParseIntError>)`
+               found enum `Result<_, _>`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

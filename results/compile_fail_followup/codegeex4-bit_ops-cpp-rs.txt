@@ -1,0 +1,50 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:14:2
+   |
+14 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-bit_ops-cpp-rs.rs`
+
+error[E0599]: no method named `try_into` found for type `i32` in the current scope
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:12:46
+   |
+12 |     println!("a rol b: {}", ua.rotate_left(b.try_into().unwrap()));
+   |                                              ^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+   |
+   = note: the method is available for `i32` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+   = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::convert::TryInto;
+   |
+help: there is a method `into` with a similar name
+   |
+12 |     println!("a rol b: {}", ua.rotate_left(b.into().unwrap()));
+   |                                              ~~~~
+
+error[E0599]: no method named `try_into` found for type `i32` in the current scope
+  --> /tmp/codegeex4-bit_ops-cpp-rs.rs:13:47
+   |
+13 |     println!("a ror b: {}", ua.rotate_right(b.try_into().unwrap()));
+   |                                               ^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+   |
+   = note: the method is available for `i32` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+   = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::convert::TryInto;
+   |
+help: there is a method `into` with a similar name
+   |
+13 |     println!("a ror b: {}", ua.rotate_right(b.into().unwrap()));
+   |                                               ~~~~
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

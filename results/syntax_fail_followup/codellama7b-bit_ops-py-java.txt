@@ -1,0 +1,6 @@
+/tmp/BitwiseOperations.java:43: error: cannot find symbol
+    int topBit = (a & topBitMask) >> (width - 1);
+                      ^
+  symbol:   variable topBitMask
+  location: class BitwiseOperations
+1 error

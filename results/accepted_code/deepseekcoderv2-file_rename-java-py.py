@@ -1,27 +1,26 @@
 import os
-import sys
 
 
-def renameFile(oldname, newname):
-    # Rename file (or directory)
-    return os.rename(oldname, newname)
+def rename_file(oldname, newname):
+    try:
+        os.rename(oldname, newname)
+        return True
+    except FileNotFoundError:
+        return False
 
 
-def test(type, oldname, newname):
+def test(type_, oldname, newname):
     print(
-        "The following {} called {} was renamed as {} if successful or could not be renamed into {}.".format(
-            type, oldname, newname, newname
+        "The following {} called {} was renamed as {}.".format(
+            type_,
+            oldname,
+            newname if rename_file(oldname, newname) else "could not be renamed into",
         )
     )
 
 
-if __name__ == "__main__":
-    # Test for file rename
-    test("file", "input.txt", "output.txt")
-
-    # Test for directory rename
-    test(
-        "directory",
-        os.path.join(os.getcwd(), "docs"),
-        os.path.join(os.getcwd(), "mydocs"),
-    )
+# Test in the current working directory
+test("file", "input.txt", "output.txt")
+test("file", os.path.join("/", "input.txt"), os.path.join("/", "output.txt"))
+test("directory", "docs", "mydocs")
+test("directory", os.path.join("/", "docs"), os.path.join("/", "mydocs"))

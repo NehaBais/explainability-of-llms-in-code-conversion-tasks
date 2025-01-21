@@ -1,0 +1,36 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:17:8
+   |
+17 |     if ~q2 && !q2matches.is_empty() {
+   |        ^
+   |
+help: use `!` to perform bitwise not
+   |
+17 |     if !q2 && !q2matches.is_empty() {
+   |        ~
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/dolphincoder7b-str_match-js-rs.rs:16:69
+   |
+16 |     println!("2: Is '{}' contained in {}? {}", stringB, stringA, if ~q2 { format!("Yes, at index {}.", q2) } else { "No.".to_string() });
+   |                                                                     ^
+   |
+help: use `!` to perform bitwise not
+   |
+16 |     println!("2: Is '{}' contained in {}? {}", stringB, stringA, if !q2 { format!("Yes, at index {}.", q2) } else { "No.".to_string() });
+   |                                                                     ~
+
+error[E0432]: unresolved import `regex`
+ --> /tmp/dolphincoder7b-str_match-js-rs.rs:1:5
+  |
+1 | use regex::Regex;
+  |     ^^^^^ you might be missing crate `regex`
+  |
+help: consider importing the `regex` crate
+  |
+1 + extern crate regex;
+  |
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

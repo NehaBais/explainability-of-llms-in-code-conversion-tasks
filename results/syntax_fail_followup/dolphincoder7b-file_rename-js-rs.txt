@@ -1,0 +1,48 @@
+error[E0432]: unresolved import `walkdir`
+ --> /tmp/dolphincoder7b-file_rename-js-rs.rs:2:5
+  |
+2 | use walkdir::{DirEntry, WalkDir};
+  |     ^^^^^^^ you might be missing crate `walkdir`
+  |
+help: consider importing the `walkdir` crate
+  |
+1 + extern crate walkdir;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/dolphincoder7b-file_rename-js-rs.rs:5:15
+  |
+5 |     let src = PathBuf::from("input.txt");
+  |               ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/dolphincoder7b-file_rename-js-rs.rs:6:17
+  |
+6 |     let dest1 = PathBuf::from("output.txt");
+  |                 ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/dolphincoder7b-file_rename-js-rs.rs:7:17
+  |
+7 |     let dest2 = PathBuf::from("/c/output.txt");
+  |                 ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0432, E0433.
+For more information about an error, try `rustc --explain E0432`.

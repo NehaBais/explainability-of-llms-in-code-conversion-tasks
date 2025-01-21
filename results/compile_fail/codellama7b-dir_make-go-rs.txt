@@ -1,0 +1,36 @@
+error[E0412]: cannot find type `Error` in this scope
+ --> /tmp/codellama7b-dir_make-go-rs.rs:3:51
+  |
+3 | fn mkdir_all(path: &str, mode: u32) -> Result<(), Error> {
+  |                                                   ^^^^^ not found in this scope
+  |
+help: consider importing one of these items
+  |
+1 + use std::error::Error;
+  |
+1 + use std::fmt::Error;
+  |
+1 + use std::io::Error;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:5:31
+  |
+5 |     fs::set_permissions(path, Permissions::from_mode(mode))?;
+  |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+  |
+help: consider importing this struct
+  |
+1 + use fs::Permissions;
+  |
+
+error[E0601]: `main` function not found in crate `codellama7b_dir_make_go_rs`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `/tmp/codellama7b-dir_make-go-rs.rs`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0412, E0433, E0601.
+For more information about an error, try `rustc --explain E0412`.

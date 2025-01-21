@@ -1,0 +1,21 @@
+error[E0384]: cannot assign twice to immutable variable `i`
+  --> /tmp/yicoder9b-str_match-go-rs.rs:19:17
+   |
+8  |     if let Some(i) = first.find(second) {
+   |                 - first assignment to `i`
+...
+19 |                 i += *j as usize + 1;  // and here
+   |                 ^^^^^^^^^^^^^^^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+8  |     if let Some(mut i) = first.find(second) {
+   |                 +++
+help: to modify the original value, take a borrow instead
+   |
+8  |     if let Some(ref mut i) = first.find(second) {
+   |                 +++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0384`.

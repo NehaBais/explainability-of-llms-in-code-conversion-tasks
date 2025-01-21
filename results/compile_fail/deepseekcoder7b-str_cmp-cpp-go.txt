@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_cmp-cpp-go.go:43:9: syntax error: unexpected <, expected }
+/tmp/deepseekcoder7b-str_cmp-cpp-go.go:43:10: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_cmp-cpp-go.go:43:18: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-str_cmp-cpp-go.go:43:34: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_cmp-cpp-go.go:46:1: syntax error: non-declaration statement outside function body

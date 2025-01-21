@@ -1,0 +1,32 @@
+/tmp/granitecode8b-file_size-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-java-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat st;
+      |               ^
+/tmp/granitecode8b-file_size-java-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat st;
+      |          ^
+/tmp/granitecode8b-file_size-java-c.c:5:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (stat("input.txt", &st) == 0) {
+      |       ^
+/tmp/granitecode8b-file_size-java-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("%ju Bn", (uintmax_t)st.st_size);
+      |     ^
+/tmp/granitecode8b-file_size-java-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-java-c.c:6:23: error: use of undeclared identifier 'uintmax_t'
+    6 |     printf("%ju Bn", (uintmax_t)st.st_size);
+      |                       ^
+/tmp/granitecode8b-file_size-java-c.c:8:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     perror("stat");
+      |     ^
+/tmp/granitecode8b-file_size-java-c.c:13:23: error: use of undeclared identifier 'uintmax_t'
+   13 |     printf("%ju Bn", (uintmax_t)st.st_size);
+      |                       ^
+/tmp/granitecode8b-file_size-java-c.c:15:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     perror("stat");
+      |     ^
+9 errors generated.

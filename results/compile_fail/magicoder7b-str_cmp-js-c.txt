@@ -1,0 +1,8 @@
+/tmp/magicoder7b-str_cmp-js-c.c:10:18: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   printf("%d\n", atoi("123") == atoi(str2));                // true
+      |                  ^
+/tmp/magicoder7b-str_cmp-js-c.c:15:18: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   printf("%d\n", strtol("123", NULL, 10) == atoi(str2)); // false
+      |                  ^
+/tmp/magicoder7b-str_cmp-js-c.c:15:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'strtol'
+2 errors generated.

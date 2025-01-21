@@ -1,0 +1,31 @@
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:6:22: error: use of undeclared identifier 'fs'
+    6 | void printStat(const fs::path &p) {
+      |                      ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:8:9: error: use of undeclared identifier 'fs'
+    8 |     if (fs::exists(p)) {
+      |         ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:9:11: error: use of undeclared identifier 'fs'
+    9 |       if (fs::is_regular_file(p)) {
+      |           ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:11:18: error: use of undeclared identifier 'fs'
+   11 |       } else if (fs::is_directory(p)) {
+      |                  ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:17:18: error: use of undeclared identifier 'fs'
+   17 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:23:13: error: use of undeclared identifier 'fs'
+   23 |   printStat(fs::path("input.txt"));
+      |             ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:24:13: error: use of undeclared identifier 'fs'
+   24 |   printStat(fs::path("/input.txt"));
+      |             ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:25:13: error: use of undeclared identifier 'fs'
+   25 |   printStat(fs::path("docs"));
+      |             ^
+/tmp/qwen2.5coder7b-file_exists-go-cpp.cpp:26:13: error: use of undeclared identifier 'fs'
+   26 |   printStat(fs::path("/docs"));
+      |             ^
+10 errors generated.

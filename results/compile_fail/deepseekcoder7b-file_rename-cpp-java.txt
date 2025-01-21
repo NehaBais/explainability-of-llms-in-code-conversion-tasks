@@ -1,0 +1,25 @@
+/tmp/Main.java:11: error: illegal character: '\uff5c'
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                         ^
+/tmp/Main.java:11: error: illegal character: '\u2581'
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                               ^
+/tmp/Main.java:11: error: not a statement
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                          ^
+/tmp/Main.java:11: error: illegal character: '\u2581'
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                                  ^
+/tmp/Main.java:11: error: not a statement
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                                ^
+/tmp/Main.java:11: error: illegal character: '\uff5c'
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                                           ^
+/tmp/Main.java:11: error: not a statement
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                                   ^
+/tmp/Main.java:11: error: ';' expected
+        Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"));
+                                                                          ^
+8 errors

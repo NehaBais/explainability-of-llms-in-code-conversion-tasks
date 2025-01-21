@@ -1,0 +1,34 @@
+/tmp/StringMatching.java:16: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB, Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
+    ^
+  symbol:   class Pattern
+  location: class StringMatching
+/tmp/StringMatching.java:16: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB, Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
+                                               ^
+  symbol:   variable Pattern
+  location: class StringMatching
+/tmp/StringMatching.java:16: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB, Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
+                                                                   ^
+  symbol:   variable Pattern
+  location: class StringMatching
+/tmp/StringMatching.java:16: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB, Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
+                      ^
+  symbol:   variable Pattern
+  location: class StringMatching
+/tmp/StringMatching.java:17: error: cannot find symbol
+    Matcher matcher = pattern.matcher(stringA);
+    ^
+  symbol:   class Matcher
+  location: class StringMatching
+/tmp/StringMatching.java:44: error: no suitable method found for join(String,List<Integer>)
+              + String.join(", ", q2matches)
+                      ^
+    method String.join(CharSequence,CharSequence...) is not applicable
+      (varargs mismatch; List<Integer> cannot be converted to CharSequence)
+    method String.join(CharSequence,Iterable<? extends CharSequence>) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to Iterable<? extends CharSequence>)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+6 errors

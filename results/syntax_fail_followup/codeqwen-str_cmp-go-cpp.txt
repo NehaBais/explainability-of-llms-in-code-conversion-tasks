@@ -1,0 +1,16 @@
+/tmp/codeqwen-str_cmp-go-cpp.cpp:1:14: error: use of undeclared identifier 'std'
+    1 | int result = std::string(str1).compare(
+      |              ^
+/tmp/codeqwen-str_cmp-go-cpp.cpp:1:26: error: use of undeclared identifier 'str1'
+    1 | int result = std::string(str1).compare(
+      |                          ^
+/tmp/codeqwen-str_cmp-go-cpp.cpp:2:5: error: use of undeclared identifier 'std'
+    2 |     std::string(str2), [](unsigned char c1, unsigned char c2) {
+      |     ^
+/tmp/codeqwen-str_cmp-go-cpp.cpp:2:17: error: use of undeclared identifier 'str2'
+    2 |     std::string(str2), [](unsigned char c1, unsigned char c2) {
+      |                 ^
+/tmp/codeqwen-str_cmp-go-cpp.cpp:2:24: error: expected expression
+    2 |     std::string(str2), [](unsigned char c1, unsigned char c2) {
+      |                        ^
+5 errors generated.

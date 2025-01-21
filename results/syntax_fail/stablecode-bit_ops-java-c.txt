@@ -1,0 +1,37 @@
+/tmp/stablecode-bit_ops-java-c.c:4:37: error: extraneous ')' before ';'
+    4 |     printf("a AND b: %d\n", (a & b)));
+      |                                     ^
+/tmp/stablecode-bit_ops-java-c.c:5:36: error: extraneous ')' before ';'
+    5 |     printf("a OR b: %d\n", (a | b)));
+      |                                    ^
+/tmp/stablecode-bit_ops-java-c.c:6:37: error: extraneous ')' before ';'
+    6 |     printf("a XOR b: %d\n", (a ^ b)));
+      |                                     ^
+/tmp/stablecode-bit_ops-java-c.c:8:37: error: extraneous ')' before ';'
+    8 |     printf("a << b: %d\n", (a << b)));  // left shift
+      |                                     ^
+/tmp/stablecode-bit_ops-java-c.c:9:37: error: extraneous ')' before ';'
+    9 |     printf("a >> b: %d\n", (a >> b)));  // arithmetic right shift
+      |                                     ^
+/tmp/stablecode-bit_ops-java-c.c:10:34: error: expected expression
+   10 |     printf("a >>> b: %d\n", (a >>> b))); // logical right shift
+      |                                  ^
+/tmp/stablecode-bit_ops-java-c.c:11:29: warning: format specifies type 'int' but the argument has type 'unsigned long long' [-Wformat]
+   11 |     printf("a rol b: %d\n", ((unsigned long long int) a << b)))); // rotate left, C99+
+      |                      ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                      %llu
+/tmp/stablecode-bit_ops-java-c.c:11:63: error: expected ';' after expression
+   11 |     printf("a rol b: %d\n", ((unsigned long long int) a << b)))); // rotate left, C99+
+      |                                                               ^
+      |                                                               ;
+/tmp/stablecode-bit_ops-java-c.c:11:63: error: expected expression
+/tmp/stablecode-bit_ops-java-c.c:12:29: warning: format specifies type 'int' but the argument has type 'unsigned long long' [-Wformat]
+   12 |     printf("a ror b: %d\n", ((unsigned long long int) a >> b)))); // rotate right, C99+
+      |                      ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                      %llu
+/tmp/stablecode-bit_ops-java-c.c:12:63: error: expected ';' after expression
+   12 |     printf("a ror b: %d\n", ((unsigned long long int) a >> b)))); // rotate right, C99+
+      |                                                               ^
+      |                                                               ;
+/tmp/stablecode-bit_ops-java-c.c:12:63: error: expected expression
+2 warnings and 10 errors generated.

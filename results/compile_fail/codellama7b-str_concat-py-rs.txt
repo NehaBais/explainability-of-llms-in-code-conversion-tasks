@@ -1,0 +1,32 @@
+error: expected `,`, found `.`
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:16
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |                ^ expected `,`
+
+error: argument never used
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:17
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |            ---- ^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+  |            |
+  |            formatting specifier missing
+
+error[E0308]: mismatched types
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:27
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |                           ^^^^^^^- help: try using a conversion method: `.to_string()`
+  |                           |
+  |                           expected `String`, found `&str`
+
+error[E0425]: cannot find function `join` in this scope
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:17
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |                 ^^^^ not found in this scope
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.

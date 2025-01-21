@@ -1,0 +1,19 @@
+/tmp/Main.java:13: error: variable B is already defined in method compare(Object,Object)
+      String B = (String) B;
+             ^
+/tmp/Main.java:15: error: cannot find symbol
+          "Case Sensitive: " + A + " is less than " + B + " : " + A.compareTo(B) < 0);
+                                                                   ^
+  symbol:   method compareTo(String)
+  location: variable A of type Object
+/tmp/Main.java:22: error: cannot find symbol
+                  + A.toLowerCase().compareTo(B.toLowerCase())
+                     ^
+  symbol:   method toLowerCase()
+  location: variable A of type Object
+/tmp/Main.java:28: error: bad operand types for binary operator '<'
+          "Numeric: " + A + " is less than " + B + " : " + a.doubleValue() < b.doubleValue());
+                                                                           ^
+  first type:  String
+  second type: double
+4 errors

@@ -1,0 +1,32 @@
+/tmp/granitecode3b-file_size-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::ifstream file("input.txt");
+      |   ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:5:7: error: use of undeclared identifier 'file'
+    5 |   if (file) {
+      |       ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cout << file.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |     ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:6:18: error: use of undeclared identifier 'file'; did you mean 'false'?
+    6 |     std::cout << file.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                  ^~~~
+      |                  false
+/tmp/granitecode3b-file_size-java-cpp.cpp:6:22: error: member reference base type 'bool' is not a structure or union
+    6 |     std::cout << file.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                  ~~~~^~~~~~
+/tmp/granitecode3b-file_size-java-cpp.cpp:6:40: error: use of undeclared identifier 'std'
+    6 |     std::cout << file.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                                        ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:7:18: error: use of undeclared identifier 'std'
+    7 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:8:5: error: use of undeclared identifier 'file'
+    8 |     file.close();
+      |     ^
+10 errors generated.

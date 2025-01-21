@@ -1,28 +1,47 @@
-```
+ Sure, here is the equivalent Go code for the provided Python script:
+
+```go
 package main
 
 import (
 	"fmt"
-	"math"
 )
 
-func convertPythonToGolangCode() {
+func main() {
 	var input1, input2 int
-	fmt.Println("Enter two integers:")
-	fmt.Scan(&input1, &input2)
+	fmt.Print("Enter first integer: ")
+	fmt.Scan(&input1)
+	fmt.Print("Enter second integer: ")
+	fmt.Scan(&input2)
 
-	qq := input1 + input2
-	fmt.Printf("Sum: 			%d\n", qq)
-	ww := input1 - input2
-	fmt.Printf("Difference: 		%d\n", ww)
-	ee := input1 * input2
-	fmt.Printf("Product: 		%d\n", ee)
-	rr := float64(input1 / input2)
-	fmt.Printf("Integer quotient: 	%d\nFloat quotient:  		%f\n", int(rr), rr)
-	var uu float64 = math.Mod(float64(input1/input2), float64(input1))
-	uu *= -10
-	fmt.Printf("Whole Remainder: 	%d\nActual Remainder: %f\n", int(math.Floor(math.Abs(float64(rr)))), uu)
-	yy := math.Pow(float64(input1), float64(input2))
-	fmt.Printf("Exponentiation: 	%f\n", yy)
+	sum := input1 + input2
+	fmt.Println("Sum: ", sum)
+
+	difference := input1 - input2
+	fmt.Println("Difference: ", difference)
+
+	product := input1 * input2
+	fmt.Println("Product: ", product)
+
+	// Go does not have a built-in function to get the integer quotient directly, so we use division and type casting.
+	floatQuotient := float64(input1) / float64(input2)
+	intQuotient := int(floatQuotient) // This will round towards zero for positive numbers.
+	fmt.Println("Integer quotient: ", intQuotient)
+	fmt.Println("Float quotient: ", floatQuotient)
+
+	// For remainder, Go's % operator follows the sign of the first operand if they are different.
+	wholeRemainder := input1 / input2
+	actualRemainder := input1 % input2
+	fmt.Println("Whole Remainder: ", wholeRemainder)
+	fmt.Println("Actual Remainder: ", actualRemainder)
+
+	// Exponentiation is not directly supported in Go, but you can use math.Pow if needed.
+	exponentiation := 1.0
+	for i := 0; i < input2; i++ {
+		exponentiation *= float64(input1)
+	}
+	fmt.Println("Exponentiation: ", exponentiation)
 }
 ```
+
+This Go code performs the same operations as the provided Python script, including calculating the sum, difference, product, integer quotient, remainder, and exponentiation for the two integers entered by the user.

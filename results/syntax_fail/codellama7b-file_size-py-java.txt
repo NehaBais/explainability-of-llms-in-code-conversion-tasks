@@ -1,0 +1,5 @@
+/tmp/None.java:4: error: implicitly declared classes are a preview feature and are disabled by default.
+long size = Files.size(Paths.get("input.txt"));
+^
+  (use --enable-preview to enable implicitly declared classes)
+1 error

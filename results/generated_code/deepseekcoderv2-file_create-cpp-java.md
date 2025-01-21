@@ -1,49 +1,48 @@
+ Here's the equivalent Java code to achieve the same functionality as the provided C++ code:
 
-## Code in C++:
-
-#include <iostream>
-#include <fstream>
-#include <string>
-using namespace std;
-int main() {
-    // Create a file named "output.txt" and write "Hello, World!" to it
-    ofstream outputFile("output.txt");
-    if (outputFile) {
-        outputFile << "Hello, World!";
-        outputFile.close();
-    } else {
-        cerr << "Failed to create or open the file." << endl;
-    }
-    
-    // Create a directory named "docs" in the current working directory
-    if (mkdir("docs", S_IRWXU | S_IRGRP | S_IROTH) == 0) {
-        cout << "Directory created successfully." << endl;
-    } else {
-        cerr << "Failed to create the directory." << endl;
-    }
-    
-    return 0;
-}
-
-## Code in Java:
 ```java
-import java.io.*;
-import java.nio.file.*;
-public class CreateFileDirectory {
-    public static void main(String[] args) throws IOException {
-        // Create a file named "output.txt" and write "Hello, World!" to it
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
-            writer.write("Hello, World!");
+import java.io.File;
+import java.io.IOException;
+
+public class FileCreator {
+    public static void main(String[] args) {
+        try {
+            // Create file in current working directory
+            File file1 = new File("output.txt");
+            if (file1.createNewFile()) {
+                System.out.println("File 'output.txt' created in the current working directory.");
+            } else {
+                System.out.println("File 'output.txt' already exists in the current working directory.");
+            }
+
+            // Create file in filesystem root (not recommended, use with caution)
+            File file2 = new File("/output.txt");
+            if (file2.createNewFile()) {
+                System.out.println("File '/output.txt' created in the root directory.");
+            } else {
+                System.out.println("File '/output.txt' already exists in the root directory.");
+            }
+
+            // Create empty directory in current working directory
+            File dir1 = new File("docs");
+            if (dir1.mkdir()) {
+                System.out.println("Directory 'docs' created in the current working directory.");
+            } else {
+                System.out.println("Directory 'docs' already exists in the current working directory.");
+            }
+
+            // Create empty directory in filesystem root (not recommended, use with caution)
+            File dir2 = new File("/docs");
+            if (dir2.mkdir()) {
+                System.out.println("Directory '/docs' created in the root directory.");
+            } else {
+                System.out.println("Directory '/docs' already exists in the root directory.");
+            }
         } catch (IOException e) {
-            System.err.println("Failed to create or open the file: " + e.getMessage());
-        }
-        
-        // Create a directory named "docs" in the current working directory
-        if (Files.createDirectory(Paths.get("docs")).toFile().exists()) {
-            System.out.println("Directory created successfully.");
-        } else {
-            System.err.println("Failed to create the directory.");
+            System.err.println("An error occurred while creating files or directories: " + e.getMessage());
         }
     }
 }
 ```
+
+Please note that attempting to create a file at the root level (`/output.txt` and `/docs`) may not be possible depending on your operating system's permissions and restrictions, especially for non-administrative users.

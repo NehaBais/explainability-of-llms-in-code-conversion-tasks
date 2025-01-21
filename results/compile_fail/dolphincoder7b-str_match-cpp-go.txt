@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_match-cpp-go.go:35:3: undefined: loc
+/tmp/dolphincoder7b-str_match-cpp-go.go:36:6: undefined: loc
+/tmp/dolphincoder7b-str_match-cpp-go.go:40:60: undefined: loc
+/tmp/dolphincoder7b-str_match-cpp-go.go:41:11: undefined: loc

@@ -1,46 +1,90 @@
-### Solution in Golang
+ Sure! Below is the equivalent Go code for the provided C code. This Go code demonstrates various string comparisons including exact equality, inequality, lexical order comparison, and case sensitivity.
 
 ```go
 package main
 
 import (
 	"fmt"
-	"strconv"
+	"strings"
 )
 
-func strcmp(a, b string) int {
-	return len(a) - len(b)
-}
-
-func streq(a, b string) bool {
+// Define functions to compare strings
+func STREQ(a, b string) bool {
 	return a == b
 }
 
-func streqCaseInsensitive(a, b string) bool {
-	// TODO: Implement case-insensitive comparison of strings
-	return false
+func STRNE(a, b string) bool {
+	return !STREQ(a, b)
+}
+
+func STRLT(a, b string) bool {
+	return a < b
+}
+
+func STRLE(a, b string) bool {
+	return a <= b
+}
+
+func STRGT(a, b string) bool {
+	return !STRLE(a, b)
+}
+
+func STRGE(a, b string) bool {
+	return !STRLT(a, b)
+}
+
+func STRCEQ(a, b string) bool {
+	return strings.EqualFold(a, b)
+}
+
+func STRCNE(a, b string) bool {
+	return !STRCEQ(a, b)
+}
+
+func STRCLT(a, b string) bool {
+	return strings.ToLower(a) < strings.ToLower(b)
+}
+
+func STRCLE(a, b string) bool {
+	return strings.ToLower(a) <= strings.ToLower(b)
+}
+
+func STRCGT(a, b string) bool {
+	return !STRCLE(a, b)
+}
+
+func STRCGE(a, b string) bool {
+	return !STRCLT(a, b)
+}
+
+// Function to print the comparison results
+func compare(a, b string) {
+	fmt.Printf("%s %2d%2d%2d%2d%2d%2d %s
+", a, STREQ(a, b), STRNE(a, b), STRGT(a, b), STRLT(a, b), STRGE(a, b), STRLE(a, b), b)
+}
+
+// Function to print the case-insensitive comparison results
+func compareCase(a, b string) {
+	fmt.Printf("%s %2d%2d%2d%2d%2d%2d %s ignoring case
+", a, STRCEQ(a, b), STRCNE(a, b), STRCGT(a, b), STRCLT(a, b), STRCGE(a, b), STRCLE(a, b), b)
 }
 
 func main() {
-	fmt.Println("Comparison results for different cases:")
-	cases := []struct {
-		a        string
-		b        string
-		expected int // Expected value based on the expected outcome
-	}{
-		{"ball", "bell", 1},    // Ball is greater than bell (lexical order)
-		{"YUP", "yep", -3},     // YUP is greater than yep (lexical order, case insensitive)
-		{"ball", "BELL", 2},    // Ball is greater than BELL (lexical order, ignoring case)
-		{"YUP", "YEPI", -4},    // YUP is greater than YEPI (lexical order, case-insensitive comparison)
-		{"ball", "BALL", 1},    // Ball is equal to BALL (lexical order)
-		{"bell", "BELL", 0},    // Bell is equal to BELL (lexical order, ignoring case)
-		{"YUP", "yepi", -3},     // YUP is greater than yepi (lexical order, case-insensitive comparison)
-	}
-
-	for _, c := range cases {
-		result := strcmp(c.a, c.b)
-		fmt.Printf("%s %d\n", strconv.Itoa(result), result)
+	arguments := []string{"ball", "bell", "ball", "ball", "YUP", "YEP"}
+	fmt.Println("	eq , ne , gt , lt , ge , le")
+	for i := 0; i < len(arguments); i += 2 {
+		a := arguments[i]
+		b := arguments[i+1]
+		compare(a, b)
+		compareCase(a, b)
 	}
 }
 ```
 
+This Go code performs the following:
+1. Compares two strings for exact equality and inequality.
+2. Compares two strings to see if one is lexically ordered before or after the other.
+3. Performs case-sensitive and case-insensitive comparisons.
+4. Handles numeric string comparisons by treating them lexically, as Go does not inherently distinguish between numeric and alphanumeric strings for comparison purposes.
+
+You can run this Go code in a similar manner to the provided Bash script to test the comparisons.

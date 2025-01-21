@@ -1,0 +1,22 @@
+error: expected identifier, found keyword `match`
+ --> /tmp/codegeex4-str_match-go-rs.rs:1:4
+  |
+1 | fn match(first: &str, second: &str) {
+  |    ^^^^^ expected identifier, found keyword
+  |
+help: escape `match` to use it as an identifier
+  |
+1 | fn r#match(first: &str, second: &str) {
+  |    ++
+
+error: expected one of `.`, `?`, `{`, or an operator, found `;`
+  --> /tmp/codegeex4-str_match-go-rs.rs:16:32
+   |
+16 |     match("abracadabra", "abr");
+   |     -----                      ^ expected one of `.`, `?`, `{`, or an operator
+   |     |
+   |     while parsing this `match` expression
+   |     help: try removing this `match`
+
+error: aborting due to 2 previous errors
+

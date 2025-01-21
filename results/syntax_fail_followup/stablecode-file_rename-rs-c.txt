@@ -1,0 +1,16 @@
+/tmp/stablecode-file_rename-rs-c.c:32:47: error: extraneous ')' before ';'
+   32 |   snprintf(err, sizeof err, "File move error"));
+      |                                               ^
+/tmp/stablecode-file_rename-rs-c.c:35:72: error: extraneous ')' before ';'
+   35 |   snprintf(input_file, sizeof input_file, "%s%s", root_dir, input_file));
+      |                                                                        ^
+/tmp/stablecode-file_rename-rs-c.c:36:75: error: extraneous ')' before ';'
+   36 |   snprintf(output_file, sizeof output_file, "%s%s", root_dir, output_file));
+      |                                                                           ^
+/tmp/stablecode-file_rename-rs-c.c:37:66: error: extraneous ')' before ';'
+   37 |   snprintf(docs_dir, sizeof docs_dir, "%s%s", root_dir, docs_dir));
+      |                                                                  ^
+/tmp/stablecode-file_rename-rs-c.c:38:72: error: extraneous ')' before ';'
+   38 |   snprintf(mydocs_dir, sizeof mydocs_dir, "%s%s", root_dir, mydocs_dir));
+      |                                                                        ^
+5 errors generated.

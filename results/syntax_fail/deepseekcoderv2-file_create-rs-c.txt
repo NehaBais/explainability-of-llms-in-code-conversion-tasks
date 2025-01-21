@@ -1,0 +1,10 @@
+/tmp/deepseekcoderv2-file_create-rs-c.c:16:16: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   int status = mkdir(path, 0755);
+      |                ^
+/tmp/deepseekcoderv2-file_create-rs-c.c:30:7: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   if (getcwd(root_path, sizeof(root_path)) == NULL) {
+      |       ^
+/tmp/deepseekcoderv2-file_create-rs-c.c:30:44: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   30 |   if (getcwd(root_path, sizeof(root_path)) == NULL) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+1 warning and 2 errors generated.

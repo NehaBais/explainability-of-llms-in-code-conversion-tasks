@@ -1,6 +1,3 @@
 let myStrings = ["prepended to", "my string"];
-let s = "";
-for (const el of myStrings) {
-  s += el;
-}
-console.log(s);
+let prepended = myStrings.reduce((acc, str) => acc + str, "");
+console.log(prepended);

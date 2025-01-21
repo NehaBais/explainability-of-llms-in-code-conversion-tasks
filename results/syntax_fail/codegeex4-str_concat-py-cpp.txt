@@ -1,0 +1,13 @@
+/tmp/codegeex4-str_concat-py-cpp.cpp:13:14: error: member reference base type 'const char[3]' is not a structure or union
+   13 |       << ", ".join({s1, "world", "mom"})
+      |          ~~~~^~~~~
+/tmp/codegeex4-str_concat-py-cpp.cpp:13:20: error: expected expression
+   13 |       << ", ".join({s1, "world", "mom"})
+      |                    ^
+/tmp/codegeex4-str_concat-py-cpp.cpp:16:12: error: member reference base type 'const char[3]' is not a structure or union
+   16 |   s2 = ", ".join({s1, "world", "mom"});
+      |        ~~~~^~~~~
+/tmp/codegeex4-str_concat-py-cpp.cpp:16:18: error: expected expression
+   16 |   s2 = ", ".join({s1, "world", "mom"});
+      |                  ^
+4 errors generated.

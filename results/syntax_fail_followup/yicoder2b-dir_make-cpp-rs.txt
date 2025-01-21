@@ -1,0 +1,8 @@
+error: expected one of `!` or `[`, found `include`
+ --> /tmp/yicoder2b-dir_make-cpp-rs.rs:1:2
+  |
+1 | #include <filesystem>
+  |  ^^^^^^^ expected one of `!` or `[`
+
+error: aborting due to 1 previous error
+

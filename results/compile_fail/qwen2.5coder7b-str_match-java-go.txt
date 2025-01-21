@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_match-java-go.go:11:14: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:13:11: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:15:43: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:21:14: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:25:10: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:27:43: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:33:10: undefined: strings
+/tmp/qwen2.5coder7b-str_match-java-go.go:37:12: undefined: strings

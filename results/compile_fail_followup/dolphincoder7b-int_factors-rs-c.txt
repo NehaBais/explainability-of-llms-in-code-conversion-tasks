@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-int_factors-rs-c.c:9:42: error: incompatible pointer to integer conversion passing 'int *(int)' to parameter of type 'int' [-Wint-conversion]
+    9 |   int *computedFactors = (*testFunction)(*testedFunction);
+      |                                          ^~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-int_factors-rs-c.c:12:46: warning: 'sizeof (expectedOutput)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+   12 |   for (int i = 0; i < sizeof(expectedOutput) / sizeof(expectedOutput[0]); ++i) {
+      |                       ~~~~~~~~~~~~~~~~~~~~~~ ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:7:23: note: pointer 'expectedOutput' declared here
+    7 |                  int *expectedOutput) {
+      |                       ^
+1 warning and 1 error generated.

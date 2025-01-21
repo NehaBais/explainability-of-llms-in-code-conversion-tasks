@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_rename-js-c.c:1:10: fatal error: 'windows.h' file not found
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+1 error generated.

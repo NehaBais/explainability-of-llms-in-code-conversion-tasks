@@ -1,0 +1,6 @@
+/tmp/Main.java:3: error: cannot find symbol
+    String s = "hello".to_owned();
+                      ^
+  symbol:   method to_owned()
+  location: class String
+1 error

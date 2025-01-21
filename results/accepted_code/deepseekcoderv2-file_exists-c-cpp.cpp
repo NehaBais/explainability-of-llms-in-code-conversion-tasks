@@ -1,39 +1,28 @@
 #include <iostream>
 #include <sys/stat.h>
+#include <sys/types.h>
 #include <unistd.h>
 
-// Check for regular file.
-int check_reg(const char *path) {
+// Function to check if a file exists and is regular
+bool check_reg(const std::string &path) {
   struct stat sb;
-  return stat(path, &sb) == 0 && S_ISREG(sb.st_mode);
+  return stat(path.c_str(), &sb) == 0 && S_ISREG(sb.st_mode);
 }
 
-// Check for directory.
-int check_dir(const char *path) {
+// Function to check if a directory exists
+bool check_dir(const std::string &path) {
   struct stat sb;
-  return stat(path, &sb) == 0 && S_ISDIR(sb.st_mode);
-}
-
-void printFileOrDirectory(const std::string &path, int (*check)(const char *)) {
-  if (check(path.c_str())) {
-    std::cout << path << " is a ";
-  } else {
-    std::cout << path << " is not a ";
-  }
+  return stat(path.c_str(), &sb) == 0 && S_ISDIR(sb.st_mode);
 }
 
 int main() {
-  // Check for regular file and directory in the current working directory.
-  printFileOrDirectory("input.txt", check_reg);
-  std::cout << std::endl;
-  printFileOrDirectory("docs", check_dir);
-  std::cout << std::endl;
-
-  // Check for regular file and directory in the root filesystem.
-  printFileOrDirectory("/input.txt", check_reg);
-  std::cout << std::endl;
-  printFileOrDirectory("/docs", check_dir);
-  std::cout << std::endl;
-
+  std::cout << "input.txt is a regular file? "
+            << (check_reg("input.txt") ? "yes" : "no") << std::endl;
+  std::cout << "docs is a directory? " << (check_dir("docs") ? "yes" : "no")
+            << std::endl;
+  std::cout << "/input.txt is a regular file? "
+            << (check_reg("/input.txt") ? "yes" : "no") << std::endl;
+  std::cout << "/docs is a directory? " << (check_dir("/docs") ? "yes" : "no")
+            << std::endl;
   return 0;
 }

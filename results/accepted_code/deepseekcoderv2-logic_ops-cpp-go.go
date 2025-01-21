@@ -1,9 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func printLogic(a, b bool) {
-	fmt.Println("a and b is", a && b)
-	fmt.Println("a or b is", a || b)
-	fmt.Println("not a is", !a)
+	fmt.Printf("a and b is %t\n", a && b)
+	fmt.Printf("a or b is %t\n", a || b)
+	fmt.Printf("not a is %t\n", !a)
+}
+
+func main() {
+	printLogic(true, true)
+	printLogic(true, false)
+	printLogic(false, true)
+	printLogic(false, false)
 }

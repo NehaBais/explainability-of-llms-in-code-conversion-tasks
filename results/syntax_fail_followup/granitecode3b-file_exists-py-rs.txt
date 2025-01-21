@@ -1,0 +1,20 @@
+error: argument never used
+  --> /tmp/granitecode3b-file_exists-py-rs.rs:14:9
+   |
+12 |         "Is input.txt in /?: {}",
+   |         ------------------------ formatting specifier missing
+13 |         root_dir.display(),
+14 |         Path::new("/input.txt").is_file()
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode3b-file_exists-py-rs.rs:24:9
+   |
+22 |         "Is docs in /?: {}",
+   |         ------------------- formatting specifier missing
+23 |         root_dir.display(),
+24 |         Path::new("/docs").is_dir()
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,31 @@
+/tmp/granitecode3b-int_arith-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-py-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("Enter first integer: ");
+      |   ^
+/tmp/granitecode3b-int_arith-py-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_arith-py-c.c:7:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   scanf("%d", &input1);
+      |   ^
+/tmp/granitecode3b-int_arith-py-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_arith-py-c.c:22:36: error: expected expression
+   22 |   printf("Integer quotient: %f\n", int(rr));
+      |                                    ^
+/tmp/granitecode3b-int_arith-py-c.c:25:40: error: type-id cannot have a name
+   25 |   printf("Whole Remainder: %d\n", (int(tt) - tt) * -10);
+      |                                        ^~
+/tmp/granitecode3b-int_arith-py-c.c:25:44: error: expected ')'
+   25 |   printf("Whole Remainder: %d\n", (int(tt) - tt) * -10);
+      |                                            ^
+/tmp/granitecode3b-int_arith-py-c.c:25:35: note: to match this '('
+   25 |   printf("Whole Remainder: %d\n", (int(tt) - tt) * -10);
+      |                                   ^
+/tmp/granitecode3b-int_arith-py-c.c:25:50: error: indirection requires pointer operand ('int' invalid)
+   25 |   printf("Whole Remainder: %d\n", (int(tt) - tt) * -10);
+      |                                                  ^ ~~~
+/tmp/granitecode3b-int_arith-py-c.c:28:12: error: call to undeclared library function 'pow' with type 'double (double, double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   int yy = pow(input1, input2);
+      |            ^
+/tmp/granitecode3b-int_arith-py-c.c:28:12: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+8 errors generated.

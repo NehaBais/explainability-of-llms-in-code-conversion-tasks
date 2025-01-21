@@ -1,0 +1,15 @@
+/tmp/Main.java:36: error: bad operand types for binary operator '<'
+        a + " is " + ((a < b) ? "" : "not ") + semantically + " ordered before " + b + '.');
+                         ^
+  first type:  T
+  second type: T
+  where T is a type-variable:
+    T extends Object declared in method <T>demo_compare(T,T,String)
+/tmp/Main.java:39: error: bad operand types for binary operator '>'
+        a + " is " + ((a > b) ? "" : "not ") + semantically + " ordered after " + b + '.' + "\n");
+                         ^
+  first type:  T
+  second type: T
+  where T is a type-variable:
+    T extends Object declared in method <T>demo_compare(T,T,String)
+2 errors

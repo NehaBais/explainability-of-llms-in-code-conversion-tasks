@@ -1,0 +1,16 @@
+/tmp/deepseekcoder7b-file_exists-java-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoder7b-file_exists-java-cpp.cpp:6:7: error: use of undeclared identifier 'fs'
+    6 |   if (fs::exists("docs/input.txt") && fs::is_regular_file("docs/input.txt")) {
+      |       ^
+/tmp/deepseekcoder7b-file_exists-java-cpp.cpp:6:39: error: use of undeclared identifier 'fs'
+    6 |   if (fs::exists("docs/input.txt") && fs::is_regular_file("docs/input.txt")) {
+      |                                       ^
+/tmp/deepseekcoder7b-file_exists-java-cpp.cpp:12:7: error: use of undeclared identifier 'fs'
+   12 |   if (fs::exists("/docs") && fs::is_directory("/docs")) {
+      |       ^
+/tmp/deepseekcoder7b-file_exists-java-cpp.cpp:12:30: error: use of undeclared identifier 'fs'
+   12 |   if (fs::exists("/docs") && fs::is_directory("/docs")) {
+      |                              ^
+5 errors generated.

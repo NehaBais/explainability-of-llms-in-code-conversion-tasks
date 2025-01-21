@@ -1,0 +1,13 @@
+/tmp/FileMove.java:9: error: incompatible types: File cannot be converted to Path
+    Files.move(file, new File("output.txt"));
+               ^
+/tmp/FileMove.java:12: error: cannot find symbol
+    Path path = Paths.get("c:/input.txt");
+    ^
+  symbol:   class Path
+  location: class FileMove
+/tmp/FileMove.java:18: error: incompatible types: File cannot be converted to Path
+    Files.move(docsDir, myDocsDir);
+               ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors

@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_create-go-c.c:16:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   if (mkdir(dirname, 0755) == -1) {
+      |       ^
+1 error generated.

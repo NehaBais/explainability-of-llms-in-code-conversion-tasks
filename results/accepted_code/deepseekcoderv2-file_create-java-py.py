@@ -1,13 +1,28 @@
 import os
 
-try:
-    # Create a new empty file named "output.txt" in the current working directory
+
+def create_file_and_directory():
+    # Create an empty file called "output.txt" in the current working directory
     with open("output.txt", "w") as f:
         pass
 
-    # Create an empty directory called "docs" both locally and on the root of the filesystem
-    os.makedirs(os.path.join(os.getcwd(), "docs"))
-    if not os.path.exists("/docs"):
-        os.mkdir("/docs")
-except IOError as e:
-    print("An error occurred:", str(e))
+    # Create an empty file called "output.txt" in the filesystem root (if supported by the OS)
+    if os.name == "nt":  # Windows
+        with open(r"C:\output.txt", "w") as f:
+            pass
+    else:  # Unix-like systems
+        with open("/output.txt", "w") as f:
+            pass
+
+    # Create an empty directory called "docs" in the current working directory
+    os.makedirs("docs", exist_ok=True)
+
+    # Create an empty directory called "docs" in the filesystem root (if supported by the OS)
+    if os.name == "nt":  # Windows
+        os.makedirs(r"C:\docs", exist_ok=True)
+    else:  # Unix-like systems
+        os.makedirs("/docs", exist_ok=True)
+
+
+# Call the function to create files and directories
+create_file_and_directory()

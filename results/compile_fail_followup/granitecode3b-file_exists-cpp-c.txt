@@ -1,0 +1,68 @@
+/tmp/granitecode3b-file_exists-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-cpp-c.c:4:15: error: no member named 'filesystem' in the global scope
+    4 |   struct std::filesystem::path path1 = "input.txt";
+      |             ~~^
+/tmp/granitecode3b-file_exists-cpp-c.c:4:13: error: expected identifier or '('
+    4 |   struct std::filesystem::path path1 = "input.txt";
+      |             ^
+/tmp/granitecode3b-file_exists-cpp-c.c:5:7: error: use of undeclared identifier 'std'
+    5 |   if (std::filesystem::exists(path1)) {
+      |       ^
+/tmp/granitecode3b-file_exists-cpp-c.c:5:10: error: expected ')'
+    5 |   if (std::filesystem::exists(path1)) {
+      |          ^
+/tmp/granitecode3b-file_exists-cpp-c.c:5:6: note: to match this '('
+    5 |   if (std::filesystem::exists(path1)) {
+      |      ^
+/tmp/granitecode3b-file_exists-cpp-c.c:6:9: error: use of undeclared identifier 'std'
+    6 |     if (std::filesystem::is_directory(path1)) {
+      |         ^
+/tmp/granitecode3b-file_exists-cpp-c.c:6:12: error: expected ')'
+    6 |     if (std::filesystem::is_directory(path1)) {
+      |            ^
+/tmp/granitecode3b-file_exists-cpp-c.c:6:8: note: to match this '('
+    6 |     if (std::filesystem::is_directory(path1)) {
+      |        ^
+/tmp/granitecode3b-file_exists-cpp-c.c:7:10: error: expected ';' after expression
+    7 |       std::cout << "The current working directory exists as a directory."
+      |          ^
+      |          ;
+/tmp/granitecode3b-file_exists-cpp-c.c:7:7: error: use of undeclared identifier 'std'
+    7 |       std::cout << "The current working directory exists as a directory."
+      |       ^
+/tmp/granitecode3b-file_exists-cpp-c.c:7:10: error: expected expression
+    7 |       std::cout << "The current working directory exists as a directory."
+      |          ^
+/tmp/granitecode3b-file_exists-cpp-c.c:10:10: error: expected ';' after expression
+   10 |       std::cout << "The current working directory exists with a file size of "
+      |          ^
+      |          ;
+/tmp/granitecode3b-file_exists-cpp-c.c:10:7: error: use of undeclared identifier 'std'
+   10 |       std::cout << "The current working directory exists with a file size of "
+      |       ^
+/tmp/granitecode3b-file_exists-cpp-c.c:10:10: error: expected expression
+   10 |       std::cout << "The current working directory exists with a file size of "
+      |          ^
+/tmp/granitecode3b-file_exists-cpp-c.c:14:8: error: expected ';' after expression
+   14 |     std::cout << "The current working directory does not exist." << std::endl;
+      |        ^
+      |        ;
+/tmp/granitecode3b-file_exists-cpp-c.c:14:5: error: use of undeclared identifier 'std'
+   14 |     std::cout << "The current working directory does not exist." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-cpp-c.c:14:8: error: expected expression
+   14 |     std::cout << "The current working directory does not exist." << std::endl;
+      |        ^
+/tmp/granitecode3b-file_exists-cpp-c.c:16:15: error: no member named 'filesystem' in the global scope
+   16 |   struct std::filesystem::path path2 = "/input.txt";
+      |             ~~^
+/tmp/granitecode3b-file_exists-cpp-c.c:16:13: error: expected identifier or '('
+   16 |   struct std::filesystem::path path2 = "/input.txt";
+      |             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

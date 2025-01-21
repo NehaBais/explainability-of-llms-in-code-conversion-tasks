@@ -1,20 +1,52 @@
-### 13. Write a function that converts the input value to bytes (if it is not already one) and returns its string representation in hex.
-```python
-def convert_to_bytes(value):
-    if isinstance(value, str):
-        return value.encode('utf-8').hex()
-    elif isinstance(value, int):
-        return hex(value)[2:]
-    else:
-        raise TypeError("Unsupported type")
+ Here's the equivalent Rust code for the provided Java methods:
+
+```rust
+fn substring_n_m(s: &str, n: usize, m: usize) -> &str {
+    let start = if n < s.len() { n } else { s.len() };
+    let end = std::cmp::min(start + m, s.len());
+    &s[start..end]
+}
+
+fn substring_n(s: &str, n: usize) -> &str {
+    if n >= s.len() {
+        return "";
+    }
+    &s[n..]
+}
+
+fn substring_without_last(s: &str) -> &str {
+    if s.is_empty() {
+        return "";
+    }
+    &s[..s.len()-1]
+}
+
+fn substring_char(s: &str, c: char, m: usize) -> &str {
+    let start = match s.find(c) {
+        Some(index) => index,
+        None => return "",
+    };
+    let end = std::cmp::min(start + m, s.len());
+    &s[start..end]
+}
+
+fn substring_sub(s: &str, sub: &str, m: usize) -> &str {
+    let start = match s.find(sub) {
+        Some(index) => index,
+        None => return "",
+    };
+    let end = std::cmp::min(start + m, s.len());
+    &s[start..end]
+}
+
+fn main() {
+    let str = "Hello, 世界!";
+    println!("{}", substring_n_m(str, 7, 5)); // Output: "世界"
+    println!("{}", substring_n(str, 7));      // Output: "世界!"
+    println!("{}", substring_without_last(str)); // Output: "Hello, 世界"
+    println!("{}", substring_char(str, '世', 3)); // Output: "世界!"
+    println!("{}", substring_sub(str, "Hell", 5)); // Output: "Hello,"
+}
 ```
-### 14. Write a function that finds the largest gap in an array of integers and returns its size. A gap is defined as two consecutive numbers with different signs (one positive and one negative). If there are no pairs, the result should be zero.
-```python
-def find_largest_gap(arr):
-    gaps = []
-    for i in range(len(arr)-1):
-        if arr[i]*arr[i+1] < 0:
-            gap = abs(abs(arr[i])-abs(arr[i+1]))
-            gaps.append(gap)
-    return max(gaps)
-```
+
+This Rust code defines five functions to handle the different cases of substring operations as described. Each function takes a string slice (`&str`) and additional parameters specific to each operation. The `substring_n_m` and `substring_char` functions also check for valid indices and lengths, ensuring they do not exceed the bounds of the input string.

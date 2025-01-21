@@ -1,0 +1,29 @@
+/tmp/codellama7b-int_factors-go-c.c:17:26: error: function definition is not allowed here
+   17 |   void apf(int p, int e) {
+      |                          ^
+/tmp/codellama7b-int_factors-go-c.c:24:23: warning: & has lower precedence than ==; == will be evaluated first [-Wparentheses]
+   24 |   while (nr > 1 && nr & 1 == 0) {
+      |                       ^~~~~~~~
+/tmp/codellama7b-int_factors-go-c.c:24:23: note: place parentheses around the '==' expression to silence this warning
+   24 |   while (nr > 1 && nr & 1 == 0) {
+      |                       ^       
+      |                         (     )
+/tmp/codellama7b-int_factors-go-c.c:24:23: note: place parentheses around the & expression to evaluate it first
+   24 |   while (nr > 1 && nr & 1 == 0) {
+      |                       ^
+      |                    (     )
+/tmp/codellama7b-int_factors-go-c.c:28:3: error: call to undeclared function 'apf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   apf(2, e);
+      |   ^
+/tmp/codellama7b-int_factors-go-c.c:47:19: error: call to undeclared function 'len'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   47 |   for (i = 1; i < len(fs); i++) {
+      |                   ^
+/tmp/codellama7b-int_factors-go-c.c:67:16: warning: implicit conversion from 'long' to 'int' changes value from 600851475143 to -443946297 [-Wconstant-conversion]
+   67 |   printFactors(600851475143); // Large number has a large number of factors
+      |   ~~~~~~~~~~~~ ^~~~~~~~~~~~
+/tmp/codellama7b-int_factors-go-c.c:69:7: warning: implicit conversion from 'long' to 'int' changes value from 999999999999999989 to -1486618635 [-Wconstant-conversion]
+   68 |   printFactors(
+      |   ~~~~~~~~~~~~
+   69 |       999999999999999989); // Large number has a large number of factors
+      |       ^~~~~~~~~~~~~~~~~~
+3 warnings and 3 errors generated.

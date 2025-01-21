@@ -1,0 +1,14 @@
+error[E0433]: failed to resolve: you might be missing crate `nix`
+ --> /tmp/codegeex4-file_rename-cpp-rs.rs:1:5
+  |
+1 | use nix::unistd::rename;
+  |     ^^^ you might be missing crate `nix`
+  |
+help: consider importing the `nix` crate
+  |
+1 + extern crate nix;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.

@@ -1,0 +1,56 @@
+/tmp/granitecode8b-file_create-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_create-py-c.c:6:3: error: use of undeclared identifier 'FILE'
+    6 |   FILE *file;
+      |   ^
+/tmp/granitecode8b-file_create-py-c.c:6:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+    6 |   FILE *file;
+      |         ^~~~
+      |         while
+/tmp/granitecode8b-file_create-py-c.c:6:9: error: expected expression
+/tmp/granitecode8b-file_create-py-c.c:7:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   mkdir(directory, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH); // create directory
+      |   ^
+/tmp/granitecode8b-file_create-py-c.c:7:20: error: use of undeclared identifier 'S_IRWXU'
+    7 |   mkdir(directory, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH); // create directory
+      |                    ^
+/tmp/granitecode8b-file_create-py-c.c:7:30: error: use of undeclared identifier 'S_IRWXG'
+    7 |   mkdir(directory, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH); // create directory
+      |                              ^
+/tmp/granitecode8b-file_create-py-c.c:7:40: error: use of undeclared identifier 'S_IROTH'
+    7 |   mkdir(directory, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH); // create directory
+      |                                        ^
+/tmp/granitecode8b-file_create-py-c.c:7:50: error: use of undeclared identifier 'S_IXOTH'
+    7 |   mkdir(directory, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH); // create directory
+      |                                                  ^
+/tmp/granitecode8b-file_create-py-c.c:8:3: error: use of undeclared identifier 'file'
+    8 |   file = fopen(strcat(directory, "/output.txt"), "w");
+      |   ^
+/tmp/granitecode8b-file_create-py-c.c:8:10: error: call to undeclared function 'fopen'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   file = fopen(strcat(directory, "/output.txt"), "w");
+      |          ^
+/tmp/granitecode8b-file_create-py-c.c:8:10: warning: declaration of built-in function 'fopen' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-file_create-py-c.c:8:16: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   file = fopen(strcat(directory, "/output.txt"), "w");
+      |                ^
+/tmp/granitecode8b-file_create-py-c.c:8:16: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode8b-file_create-py-c.c:9:3: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   fclose(file);                      // create file
+      |   ^
+/tmp/granitecode8b-file_create-py-c.c:9:10: error: use of undeclared identifier 'file'
+    9 |   fclose(file);                      // create file
+      |          ^
+/tmp/granitecode8b-file_create-py-c.c:14:3: error: use of undeclared identifier 'file'
+   14 |   file = fopen(strcat(directory, "/output.txt"), "w");
+      |   ^
+/tmp/granitecode8b-file_create-py-c.c:15:10: error: use of undeclared identifier 'file'
+   15 |   fclose(file);
+      |          ^
+1 warning and 18 errors generated.

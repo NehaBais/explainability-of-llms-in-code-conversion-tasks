@@ -1,0 +1,7 @@
+/tmp/codegeex4-file_size-rs-cpp.cpp:17:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   auto metadata = std::filesystem::metadata(file_name, ec);
+      |   ^
+/tmp/codegeex4-file_size-rs-cpp.cpp:17:24: error: no member named 'filesystem' in namespace 'std'
+   17 |   auto metadata = std::filesystem::metadata(file_name, ec);
+      |                   ~~~~~^
+1 warning and 1 error generated.

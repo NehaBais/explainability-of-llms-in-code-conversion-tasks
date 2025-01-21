@@ -1,0 +1,19 @@
+/tmp/codellama7b-str_match-rs-cpp.cpp:9:57: error: use of undeclared identifier 's3'
+    9 |     cout << "Found match at pos " << possibleMatch.find(s3) << endl;
+      |                                                         ^
+/tmp/codellama7b-str_match-rs-cpp.cpp:21:14: error: no member named 'starts_with' in 'std::string'
+   21 |   cout << s1.starts_with(s3) << endl;
+      |           ~~ ^
+/tmp/codellama7b-str_match-rs-cpp.cpp:24:14: error: no member named 'contains' in 'std::string'
+   24 |   cout << s1.contains(s3) << endl;
+      |           ~~ ^
+/tmp/codellama7b-str_match-rs-cpp.cpp:27:3: error: no matching function for call to 'printMatch'
+   27 |   printMatch(s1.find(s3));
+      |   ^~~~~~~~~~
+/tmp/codellama7b-str_match-rs-cpp.cpp:7:6: note: candidate function not viable: no known conversion from 'size_type' (aka 'unsigned long') to 'const string' (aka 'const basic_string<char>') for 1st argument
+    7 | void printMatch(const string &possibleMatch) {
+      |      ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_match-rs-cpp.cpp:30:14: error: no member named 'ends_with' in 'std::string'
+   30 |   cout << s2.ends_with(s3) << endl;
+      |           ~~ ^
+5 errors generated.

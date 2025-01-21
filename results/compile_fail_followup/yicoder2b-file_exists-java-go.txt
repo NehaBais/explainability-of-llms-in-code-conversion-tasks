@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-java-go.go:6:5: declared and not used: file
+/tmp/yicoder2b-file_exists-java-go.go:13:5: declared and not used: file

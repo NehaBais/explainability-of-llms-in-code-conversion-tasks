@@ -1,0 +1,49 @@
+/tmp/Main.java:3: error: unclosed string literal
+        System.out.printf("
+                          ^
+/tmp/Main.java:4: error: ';' expected
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+       ^
+/tmp/Main.java:4: error: ';' expected
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+               ^
+/tmp/Main.java:4: error: ';' expected
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                        ^
+/tmp/Main.java:4: error: ';' expected
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                ^
+/tmp/Main.java:4: error: ';' expected
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                        ^
+/tmp/Main.java:4: error: illegal character: '\'
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                             ^
+/tmp/Main.java:4: error: not a statement
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                           ^
+/tmp/Main.java:4: error: unclosed string literal
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                               ^
+/tmp/Main.java:4: error: not a statement
+%1$s is of type %2$s and %3$s is of type %4$s\n", 
+                                              ^
+/tmp/Main.java:5: error: not a statement
+            a, a.getClass().getName(), b, b.getClass().getName());
+            ^
+/tmp/Main.java:5: error: ';' expected
+            a, a.getClass().getName(), b, b.getClass().getName());
+             ^
+/tmp/Main.java:5: error: ';' expected
+            a, a.getClass().getName(), b, b.getClass().getName());
+                                     ^
+/tmp/Main.java:5: error: not a statement
+            a, a.getClass().getName(), b, b.getClass().getName());
+                                       ^
+/tmp/Main.java:5: error: ';' expected
+            a, a.getClass().getName(), b, b.getClass().getName());
+                                        ^
+/tmp/Main.java:5: error: ';' expected
+            a, a.getClass().getName(), b, b.getClass().getName());
+                                                                ^
+16 errors

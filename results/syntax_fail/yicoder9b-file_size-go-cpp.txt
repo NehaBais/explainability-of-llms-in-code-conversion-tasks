@@ -1,0 +1,4 @@
+/tmp/yicoder9b-file_size-go-cpp.cpp:13:31: error: expected '(' for function-style cast or type construction
+   13 |       throw std::runtime_error{"Unable to open " + f};
+      |             ~~~~~~~~~~~~~~~~~~^
+1 error generated.

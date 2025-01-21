@@ -1,0 +1,19 @@
+/tmp/stablecode-file_size-py-c.c:27:17: error: called object type 'FILE *' (aka 'struct __sFILE *') is not a function or function pointer
+   27 |     fseek(stdout(), 0, SEEK_END);
+      |           ~~~~~~^
+/tmp/stablecode-file_size-py-c.c:29:44: error: called object type 'FILE *' (aka 'struct __sFILE *') is not a function or function pointer
+   29 |            (unsigned long long)ftell(stdout()));
+      |                                      ~~~~~~^
+/tmp/stablecode-file_size-py-c.c:31:18: error: called object type 'FILE *' (aka 'struct __sFILE *') is not a function or function pointer
+   31 |     fclose(stdout());
+      |            ~~~~~~^
+/tmp/stablecode-file_size-py-c.c:39:2: error: unterminated conditional directive
+   39 | #ifdef _WIN32
+      |  ^
+/tmp/stablecode-file_size-py-c.c:59:2: error: expected '}'
+   59 | }
+      |  ^
+/tmp/stablecode-file_size-py-c.c:12:16: note: to match this '{'
+   12 | int main(void) {
+      |                ^
+5 errors generated.

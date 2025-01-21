@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegeex4-bit_ops-c-go.go:8:30: invalid operation: a & b (mismatched types int and uint)
+/tmp/codegeex4-bit_ops-c-go.go:9:29: invalid operation: a | b (mismatched types int and uint)
+/tmp/codegeex4-bit_ops-c-go.go:10:30: invalid operation: a ^ b (mismatched types int and uint)

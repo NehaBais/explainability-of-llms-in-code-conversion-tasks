@@ -1,0 +1,1 @@
+The error occurs because implicitly declared classes are disabled by default in Java. The fix is to enable the preview feature by adding the `--enable-preview` flag to the compiler command.

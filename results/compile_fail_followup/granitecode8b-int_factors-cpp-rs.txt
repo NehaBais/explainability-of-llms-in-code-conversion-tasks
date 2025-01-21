@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/granitecode8b-int_factors-cpp-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode8b-int_factors-cpp-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

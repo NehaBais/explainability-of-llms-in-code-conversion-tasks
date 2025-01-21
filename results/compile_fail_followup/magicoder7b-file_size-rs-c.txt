@@ -1,0 +1,4 @@
+/tmp/magicoder7b-file_size-rs-c.c:1:10: fatal error: 'glib.h' file not found
+    1 | #include <glib.h> // You may need to replace with full path, eg /usr/include/glib-2.0/glib.h
+      |          ^~~~~~~~
+1 error generated.

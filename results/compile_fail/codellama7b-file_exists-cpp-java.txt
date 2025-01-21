@@ -1,0 +1,7 @@
+/tmp/FileExists.java:10: error: unreported exception IOException; must be caught or declared to be thrown
+      System.out.println(path1 + " exists with a file size of " + Files.size(path1) + " bytes.");
+                                                                            ^
+/tmp/FileExists.java:24: error: unreported exception IOException; must be caught or declared to be thrown
+      System.out.println(path3 + " exists with a file size of " + Files.size(path3) + " bytes.");
+                                                                            ^
+2 errors

@@ -1,0 +1,5 @@
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+File inputFile1 = new File("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+1 error

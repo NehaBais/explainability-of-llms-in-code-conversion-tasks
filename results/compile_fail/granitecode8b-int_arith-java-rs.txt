@@ -1,0 +1,54 @@
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+ --> /tmp/granitecode8b-int_arith-java-rs.rs:7:10
+  |
+7 |         .read_line()
+  |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+  |
+7 |         .read_line(/* &mut String */)
+  |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+ --> /tmp/granitecode8b-int_arith-java-rs.rs:9:10
+  |
+6 |       let a: i32 = stdin
+  |  __________________-
+7 | |         .read_line()
+8 | |         .expect("Failed to read line")
+9 | |         .trim()
+  | |         -^^^^ method not found in `usize`
+  | |_________|
+  |
+
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+  --> /tmp/granitecode8b-int_arith-java-rs.rs:13:10
+   |
+13 |         .read_line()
+   |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+   |
+13 |         .read_line(/* &mut String */)
+   |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+  --> /tmp/granitecode8b-int_arith-java-rs.rs:15:10
+   |
+12 |       let b: i32 = stdin
+   |  __________________-
+13 | |         .read_line()
+14 | |         .expect("Failed to read line")
+15 | |         .trim()
+   | |         -^^^^ method not found in `usize`
+   | |_________|
+   |
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0061, E0599.
+For more information about an error, try `rustc --explain E0061`.

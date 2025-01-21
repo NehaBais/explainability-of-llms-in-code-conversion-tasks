@@ -1,33 +1,19 @@
 const fs = require("fs");
+const path = require("path");
 
-function renameFileInCurrentDir() {
+function renameFileOrDirectory(source, target) {
   try {
-    fs.renameSync("input.txt", "output.txt");
-  } catch (error) {
-    console.log(error);
+    fs.renameSync(source, target);
+    console.log(`Renamed ${source} to ${target}`);
+  } catch (err) {
+    console.error(`Error renaming ${source} to ${target}:`, err);
   }
 }
 
-function renameDirInCurrentDir() {
-  try {
-    fs.renameSync("docs", "mydocs");
-  } catch (error) {
-    console.log(error);
-  }
-}
+// In the current working directory
+renameFileOrDirectory("input.txt", "output.txt");
+renameFileOrDirectory("docs", "mydocs");
 
-function renameFileInRootDir() {
-  try {
-    fs.renameSync("/input.txt", "/output.txt");
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-function renameDirInRootDir() {
-  try {
-    fs.renameSync("/docs", "/mydocs");
-  } catch (error) {
-    console.log(error);
-  }
-}
+// In the filesystem root
+renameFileOrDirectory("/input.txt", "/output.txt");
+renameFileOrDirectory("/docs", "/mydocs");

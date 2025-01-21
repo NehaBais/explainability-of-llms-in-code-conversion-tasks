@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_create-js-cpp.cpp:21:8: error: no member named 'filesystem' in namespace 'std'
+   21 |   std::filesystem::create_directory("docs");
+      |   ~~~~~^
+/tmp/codellama7b-file_create-js-cpp.cpp:22:13: error: no member named 'filesystem' in namespace 'std'
+   22 |   if (!std::filesystem::exists("docs")) {
+      |        ~~~~~^
+/tmp/codellama7b-file_create-js-cpp.cpp:28:8: error: no member named 'filesystem' in namespace 'std'
+   28 |   std::filesystem::create_directory("/docs");
+      |   ~~~~~^
+/tmp/codellama7b-file_create-js-cpp.cpp:29:13: error: no member named 'filesystem' in namespace 'std'
+   29 |   if (!std::filesystem::exists("/docs")) {
+      |        ~~~~~^
+4 errors generated.

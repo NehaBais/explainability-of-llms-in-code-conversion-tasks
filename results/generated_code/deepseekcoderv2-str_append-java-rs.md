@@ -1,10 +1,16 @@
-Answer: In Rust, you can use the `+` operator to append strings together. Here's how it would look in Rust code:
+ Sure, here is the equivalent code in Rust:
+
 ```rust
 fn main() {
-    let mut s = String::from("abc");
-    println!("{}", s); // Print initial string "abc"
-    s += "def"; // Append "def" to the end of the string
-    println!("{}", s); // Print updated string with appended characters
+    let mut string = String::from("abc");
+    println!("{}", string);
+    string.push_str("def");
+    println!("{}", string);
 }
 ```
-In this example, `String::from` is used to create a new String instance from an existing string literal. The `+=` operator is then used to append another string to the end of the variable `s`. Finally, the updated string value is printed using the `println!` macro.
+
+In this Rust code:
+- We create a mutable `String` variable called `string` and initialize it with the value "abc".
+- We print the contents of the variable.
+- We use the `push_str` method to append the string literal "def" to the existing string.
+- We print the updated contents of the variable after the append operation.

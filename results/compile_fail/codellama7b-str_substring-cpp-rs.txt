@@ -1,0 +1,33 @@
+error[E0599]: no method named `substr` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:11:22
+   |
+11 |     println!("{}", s.substr(n, m)); // starting from n characters in and of m length
+   |                      ^^^^^^ method not found in `String`
+
+error[E0599]: no method named `substr` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:12:22
+   |
+12 |     println!("{}", s.substr(n)); // starting from n characters in, up to the end of the string
+   |                      ^^^^^^ method not found in `String`
+
+error[E0599]: no method named `substr` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:13:22
+   |
+13 |     println!("{}", s.substr(0, s.len() - 1)); // whole string minus the last character
+   |                      ^^^^^^ method not found in `String`
+
+error[E0599]: no method named `substr` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:14:22
+   |
+14 |     println!("{}", s.substr(s.find(c), m)); // starting from a known character within the string and of m length
+   |                      ^^^^^^ method not found in `String`
+
+error[E0599]: no method named `substr` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:15:22
+   |
+15 |     println!("{}", s.substr(s.find(sub), m)); // starting from a known substring within the string and of m length
+   |                      ^^^^^^ method not found in `String`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

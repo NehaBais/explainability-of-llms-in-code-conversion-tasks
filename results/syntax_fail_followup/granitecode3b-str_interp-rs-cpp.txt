@@ -1,0 +1,6 @@
+/tmp/granitecode3b-str_interp-rs-cpp.cpp:8:38: error: non-aggregate type 'std::map<std::string, std::string>' (aka 'map<basic_string<char>, basic_string<char> >') cannot be initialized with an initializer list
+    8 |   std::map<std::string, std::string> replacements = {{"adj", "little"},
+      |                                      ^              ~~~~~~~~~~~~~~~~~~~
+    9 |                                                      {"name", "Mary"}};
+      |                                                      ~~~~~~~~~~~~~~~~~
+1 error generated.

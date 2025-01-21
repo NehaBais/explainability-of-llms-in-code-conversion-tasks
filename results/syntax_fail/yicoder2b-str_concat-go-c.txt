@@ -1,0 +1,13 @@
+/tmp/yicoder2b-str_concat-go-c.c:12:22: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   char *s2 = (char *)malloc(strlen(s) + strlen(" literal") + 1);
+      |                      ^
+/tmp/yicoder2b-str_concat-go-c.c:12:22: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/yicoder2b-str_concat-go-c.c:12:29: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   char *s2 = (char *)malloc(strlen(s) + strlen(" literal") + 1);
+      |                             ^
+/tmp/yicoder2b-str_concat-go-c.c:12:29: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/yicoder2b-str_concat-go-c.c:18:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   free(s2);
+      |   ^
+/tmp/yicoder2b-str_concat-go-c.c:18:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+3 errors generated.

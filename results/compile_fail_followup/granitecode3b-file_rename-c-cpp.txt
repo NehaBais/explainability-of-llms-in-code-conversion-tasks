@@ -1,0 +1,10 @@
+/tmp/granitecode3b-file_rename-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-c-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::rename(L"input.txt", L"output.txt");
+      |   ^
+/tmp/granitecode3b-file_rename-c-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::rename(L"docs", L"mydocs");
+      |   ^
+3 errors generated.

@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `(`
+ --> /tmp/codegemma7b-file_create-js-rs.rs:1:17
+  |
+1 | fs::File::create("/output.txt").unwrap();
+  |                 ^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

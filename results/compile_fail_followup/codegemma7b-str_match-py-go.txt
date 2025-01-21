@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codegemma7b-str_match-py-go.go:4:9: undefined: strings
+/tmp/codegemma7b-str_match-py-go.go:8:9: undefined: strings
+/tmp/codegemma7b-str_match-py-go.go:12:9: undefined: strings
+/tmp/codegemma7b-str_match-py-go.go:16:9: undefined: strings
+/tmp/codegemma7b-str_match-py-go.go:20:9: undefined: strings

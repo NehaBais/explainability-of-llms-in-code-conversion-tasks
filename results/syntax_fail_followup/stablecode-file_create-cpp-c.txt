@@ -1,0 +1,27 @@
+/tmp/stablecode-file_create-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_create-cpp-c.c:10:15: error: expected ';' after expression
+   10 |   "output.txt" of size 0 bytes int outputFile =
+      |               ^
+      |               ;
+/tmp/stablecode-file_create-cpp-c.c:10:16: error: use of undeclared identifier 'of'
+   10 |   "output.txt" of size 0 bytes int outputFile =
+      |                ^
+/tmp/stablecode-file_create-cpp-c.c:12:7: error: use of undeclared identifier 'outputFile'
+   12 |   if (outputFile == -1) {
+      |       ^
+/tmp/stablecode-file_create-cpp-c.c:17:9: error: use of undeclared identifier 'outputFile'
+   17 |   close(outputFile);
+      |         ^
+/tmp/stablecode-file_create-cpp-c.c:20:9: error: expected ';' after expression
+   20 |   "docs" int mkdirResult = mkdir("docs", 0755);
+      |         ^
+      |         ;
+/tmp/stablecode-file_create-cpp-c.c:10:3: warning: expression result unused [-Wunused-value]
+   10 |   "output.txt" of size 0 bytes int outputFile =
+      |   ^~~~~~~~~~~~
+/tmp/stablecode-file_create-cpp-c.c:20:3: warning: expression result unused [-Wunused-value]
+   20 |   "docs" int mkdirResult = mkdir("docs", 0755);
+      |   ^~~~~~
+2 warnings and 6 errors generated.

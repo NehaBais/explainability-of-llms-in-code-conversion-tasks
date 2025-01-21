@@ -1,0 +1,4 @@
+/tmp/yicoder9b-dir_make-js-c.c:4:7: error: call to undeclared function 'mkdirp'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   if (mkdirp("/path/to/directory")) { // replace "/path/to/directory" with the
+      |       ^
+1 error generated.

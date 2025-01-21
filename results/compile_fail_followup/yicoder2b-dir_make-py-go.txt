@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-py-go.go:17:17: assignment mismatch: 2 variables but os.Mkdir returns 1 value

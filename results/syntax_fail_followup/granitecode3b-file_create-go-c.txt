@@ -1,0 +1,19 @@
+/tmp/granitecode3b-file_create-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-go-c.c:13:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   mkdir(dirname, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |   ^
+/tmp/granitecode3b-file_create-go-c.c:13:18: error: use of undeclared identifier 'S_IRWXU'
+   13 |   mkdir(dirname, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                  ^
+/tmp/granitecode3b-file_create-go-c.c:13:28: error: use of undeclared identifier 'S_IRWXG'
+   13 |   mkdir(dirname, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                            ^
+/tmp/granitecode3b-file_create-go-c.c:13:38: error: use of undeclared identifier 'S_IROTH'
+   13 |   mkdir(dirname, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                      ^
+/tmp/granitecode3b-file_create-go-c.c:13:48: error: use of undeclared identifier 'S_IXOTH'
+   13 |   mkdir(dirname, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                ^
+6 errors generated.

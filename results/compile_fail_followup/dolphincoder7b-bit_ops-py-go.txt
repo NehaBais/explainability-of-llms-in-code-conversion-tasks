@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/dolphincoder7b-bit_ops-py-go.go:5:2: "strings" imported and not used
+/tmp/dolphincoder7b-bit_ops-py-go.go:12:15: invalid operation: a & b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:13:18: invalid operation: b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:14:19: invalid operation: b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:15:15: invalid operation: (^a) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:17:16: invalid operation: (a >> 1) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:18:15: invalid operation: (a << 1) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:36:28: constant -2 overflows uint64

@@ -1,0 +1,11 @@
+/tmp/Main.java:10: error: cannot find symbol
+            + String.format("%0" + width + "d", (((A << 1) & mask)))
+                                                             ^
+  symbol:   variable mask
+  location: class Main
+/tmp/Main.java:12: error: cannot find symbol
+            + String.format("%0" + width + "d", (((A >> 2) & mask)))); // add closing parenthesis
+                                                             ^
+  symbol:   variable mask
+  location: class Main
+2 errors

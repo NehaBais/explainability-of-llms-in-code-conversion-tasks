@@ -1,0 +1,60 @@
+error[E0425]: cannot find value `s` in this scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:4:45
+  |
+4 |     let mut s1 = io::stdin().read_line(&mut s).unwrap();
+  |                                             ^ not found in this scope
+
+error[E0425]: cannot find value `s` in this scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:7:45
+  |
+7 |     let mut s2 = io::stdin().read_line(&mut s).unwrap();
+  |                                             ^ help: a local variable with a similar name exists: `a`
+
+error[E0599]: no function or associated item named `from_str` found for type `i32` in the current scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:5:18
+  |
+5 |     let a = i32::from_str(s1.trim()).unwrap();
+  |                  ^^^^^^^^ function or associated item not found in `i32`
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::str::FromStr;
+  |
+help: there is an associated function `from` with a similar name
+  |
+5 |     let a = i32::from(s1.trim()).unwrap();
+  |                  ~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:5:30
+  |
+5 |     let a = i32::from_str(s1.trim()).unwrap();
+  |                              ^^^^ method not found in `usize`
+
+error[E0599]: no function or associated item named `from_str` found for type `i32` in the current scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:8:18
+  |
+8 |     let b = i32::from_str(s2.trim()).unwrap();
+  |                  ^^^^^^^^ function or associated item not found in `i32`
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::str::FromStr;
+  |
+help: there is an associated function `from` with a similar name
+  |
+8 |     let b = i32::from(s2.trim()).unwrap();
+  |                  ~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:8:30
+  |
+8 |     let b = i32::from_str(s2.trim()).unwrap();
+  |                              ^^^^ method not found in `usize`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0425, E0599.
+For more information about an error, try `rustc --explain E0425`.

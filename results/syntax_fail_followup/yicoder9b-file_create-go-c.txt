@@ -1,0 +1,16 @@
+/tmp/yicoder9b-file_create-go-c.c:19:17: error: use of undeclared identifier 'S_IRWXU'
+   19 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                 ^
+/tmp/yicoder9b-file_create-go-c.c:19:27: error: use of undeclared identifier 'S_IRWXG'
+   19 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                           ^
+/tmp/yicoder9b-file_create-go-c.c:19:37: error: use of undeclared identifier 'S_IROTH'
+   19 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                     ^
+/tmp/yicoder9b-file_create-go-c.c:19:47: error: use of undeclared identifier 'S_IXOTH'
+   19 |   mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                               ^
+/tmp/yicoder9b-file_create-go-c.c:20:13: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |   int res = mkdir(dn, mode);
+      |             ^
+5 errors generated.

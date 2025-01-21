@@ -1,0 +1,40 @@
+/tmp/stablecode-int_arith-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_arith-go-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/stablecode-int_arith-go-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:7:3: error: use of undeclared identifier 'cin'
+    7 |   cin >> a >> b;
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << a << " + " << b << " = " << (a + b) << endl;
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:10:50: error: use of undeclared identifier 'endl'
+   10 |   cout << a << " + " << b << " = " << (a + b) << endl;
+      |                                                  ^
+/tmp/stablecode-int_arith-go-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << a << " - " << b << " = " << (a - b) << endl;
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:11:50: error: use of undeclared identifier 'endl'
+   11 |   cout << a << " - " << b << " = " << (a - b) << endl;
+      |                                                  ^
+/tmp/stablecode-int_arith-go-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << a << " * " << b << " = " << (a * b) << endl;
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:12:50: error: use of undeclared identifier 'endl'
+   12 |   cout << a << " * " << b << " = " << (a * b) << endl;
+      |                                                  ^
+/tmp/stablecode-int_arith-go-cpp.cpp:16:47: error: extraneous ')' before ';'
+   16 |   int truncated_quotient = int(quotient + 0.5));
+      |                                               ^
+/tmp/stablecode-int_arith-go-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << a << " / " << b << " = approximately " << truncated_quotient
+      |   ^
+/tmp/stablecode-int_arith-go-cpp.cpp:18:11: error: use of undeclared identifier 'endl'
+   18 |        << endl; // truncates towards zero
+      |           ^
+1 warning and 12 errors generated.

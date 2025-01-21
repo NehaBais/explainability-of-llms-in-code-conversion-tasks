@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-int_cmp-py-cpp.cpp:5:11: error: no matching function for call to 'stoi'
+    5 |   int a = std::stoi(std::cin);
+      |           ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3999:31: note: candidate function not viable: no known conversion from 'istream' (aka 'basic_istream<char>') to 'const string' (aka 'const basic_string<char>') for 1st argument
+ 3999 | _LIBCPP_EXPORTED_FROM_ABI int stoi(const string& __str, size_t* __idx = nullptr, int __base = 10);
+      |                               ^    ~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4020:31: note: candidate function not viable: no known conversion from 'istream' (aka 'basic_istream<char>') to 'const wstring' (aka 'const basic_string<wchar_t>') for 1st argument
+ 4020 | _LIBCPP_EXPORTED_FROM_ABI int stoi(const wstring& __str, size_t* __idx = nullptr, int __base = 10);
+      |                               ^    ~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-int_cmp-py-cpp.cpp:8:11: error: no matching function for call to 'stoi'
+    8 |   int b = std::stoi(std::cin);
+      |           ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:3999:31: note: candidate function not viable: no known conversion from 'istream' (aka 'basic_istream<char>') to 'const string' (aka 'const basic_string<char>') for 1st argument
+ 3999 | _LIBCPP_EXPORTED_FROM_ABI int stoi(const string& __str, size_t* __idx = nullptr, int __base = 10);
+      |                               ^    ~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4020:31: note: candidate function not viable: no known conversion from 'istream' (aka 'basic_istream<char>') to 'const wstring' (aka 'const basic_string<wchar_t>') for 1st argument
+ 4020 | _LIBCPP_EXPORTED_FROM_ABI int stoi(const wstring& __str, size_t* __idx = nullptr, int __base = 10);
+      |                               ^    ~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

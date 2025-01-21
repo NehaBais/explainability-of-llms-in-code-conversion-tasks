@@ -1,0 +1,6 @@
+/tmp/FileMove.java:14: error: cannot find symbol
+    Path path = Paths.get("c:/input.txt");
+    ^
+  symbol:   class Path
+  location: class FileMove
+1 error

@@ -1,0 +1,8 @@
+error: 2 positional arguments in format string, but there is 1 argument
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:16:19
+   |
+16 |         println!("{}{}", &s[start_index..start_index + m as usize]);
+   |                   ^^^^   -----------------------------------------
+
+error: aborting due to 1 previous error
+

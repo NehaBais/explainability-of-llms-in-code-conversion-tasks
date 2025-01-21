@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-cpp-go.go:11:2: declared and not used: NOT_A
+/tmp/yicoder2b-bit_ops-cpp-go.go:11:11: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/yicoder2b-bit_ops-cpp-go.go:17:34: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)

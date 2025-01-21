@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codeqwen-int_cmp-js-go.go:6:2: "os/exec" imported and not used
+/tmp/codeqwen-int_cmp-js-go.go:12:5: undefined: A
+/tmp/codeqwen-int_cmp-js-go.go:13:15: undefined: A
+/tmp/codeqwen-int_cmp-js-go.go:14:12: undefined: A
+/tmp/codeqwen-int_cmp-js-go.go:15:15: undefined: A
+/tmp/codeqwen-int_cmp-js-go.go:17:15: undefined: A
+/tmp/codeqwen-int_cmp-js-go.go:22:28: undefined: os
+/tmp/codeqwen-int_cmp-js-go.go:24:2: declared and not used: aStr
+/tmp/codeqwen-int_cmp-js-go.go:25:44: undefined: AStr

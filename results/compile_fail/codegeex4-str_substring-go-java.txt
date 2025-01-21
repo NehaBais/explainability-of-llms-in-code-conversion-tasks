@@ -1,0 +1,31 @@
+/tmp/Main.java:26: error: illegal character: '`'
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                              ^
+/tmp/Main.java:26: error: not a statement
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                               ^
+/tmp/Main.java:26: error: ';' expected
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                    ^
+/tmp/Main.java:26: error: not a statement
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                  ^
+/tmp/Main.java:26: error: ';' expected
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                    ^
+/tmp/Main.java:26: error: illegal character: '`'
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                        ^
+/tmp/Main.java:26: error: not a statement
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                       ^
+/tmp/Main.java:26: error: not a statement
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                                  ^
+/tmp/Main.java:26: error: ';' expected
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                                   ^
+/tmp/Main.java:26: error: ';' expected
+            System.out.printf(`Start "DE", length %d: %s` + "\n", m, s.substring(sx, Math.min(sx + m, s.length())));
+                                                                                                                  ^
+10 errors

@@ -1,0 +1,4 @@
+/tmp/yicoder2b-str_match-js-c.c:19:23: error: indirection requires pointer operand ('int' invalid)
+   19 |     if (stringA[i] == *stringB[0]) {
+      |                       ^~~~~~~~~~~
+1 error generated.

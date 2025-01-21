@@ -1,0 +1,16 @@
+/tmp/yicoder2b-file_size-py-c.c:8:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (stat("input.txt", &st) == 0) { // `struct stat st` must be defined here
+      |       ^
+/tmp/yicoder2b-file_size-py-c.c:8:26: error: use of undeclared identifier 'st'
+    8 |   if (stat("input.txt", &st) == 0) { // `struct stat st` must be defined here
+      |                          ^
+/tmp/yicoder2b-file_size-py-c.c:9:13: error: use of undeclared identifier 'st'
+    9 |     size1 = st.st_size;
+      |             ^
+/tmp/yicoder2b-file_size-py-c.c:16:27: error: use of undeclared identifier 'st'
+   16 |   if (stat("/input.txt", &st) == 0) { // `struct stat st` must be defined here
+      |                           ^
+/tmp/yicoder2b-file_size-py-c.c:17:13: error: use of undeclared identifier 'st'
+   17 |     size2 = st.st_size;
+      |             ^
+5 errors generated.

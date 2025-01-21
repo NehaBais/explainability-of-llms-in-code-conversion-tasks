@@ -1,0 +1,4 @@
+/tmp/codeqwen-dir_make-js-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::create_directories(p);
+      |     ~~~~~^
+1 error generated.

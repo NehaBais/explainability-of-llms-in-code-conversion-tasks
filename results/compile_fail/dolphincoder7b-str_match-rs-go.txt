@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_match-rs-go.go:22:6: undefined: strings
+/tmp/dolphincoder7b-str_match-rs-go.go:26:6: undefined: strings
+/tmp/dolphincoder7b-str_match-rs-go.go:30:19: undefined: strings
+/tmp/dolphincoder7b-str_match-rs-go.go:34:6: undefined: strings

@@ -1,29 +1,36 @@
+use std::io;
+
 fn main() {
-    use std::io; // for stdin and stdout
+    let mut input1 = String::new();
+    let mut input2 = String::new();
 
-    let mut a = String::new();
-    println!("Please enter an integer value:");
-    io::stdin().read_line(&mut a).expect("Failed to read line");
-
-    let mut b = String::new();
-    println!("Please enter another integer value:");
-    io::stdin().read_line(&mut b).expect("Failed to read line");
-
-    // convert strings to integers and handle possible errors
-    let a: i32 = match a.trim().parse() {
+    println!("Enter the first integer:");
+    io::stdin().read_line(&mut input1).expect("Failed to read line");
+    let a: i32 = match input1.trim().parse() {
         Ok(num) => num,
-        Err(_) => panic!("Failed to parse integer from string"),
+        Err(_) => {
+            println!("Please enter a valid integer.");
+            return;
+        }
     };
-    let b: i32 = match b.trim().parse() {
+
+    println!("Enter the second integer:");
+    io::stdin().read_line(&mut input2).expect("Failed to read line");
+    let b: i32 = match input2.trim().parse() {
         Ok(num) => num,
-        Err(_) => panic!("Failed to parse integer from string"),
+        Err(_) => {
+            println!("Please enter a valid integer.");
+            return;
+        }
     };
 
     if a == b {
-        println!("{a} equals {b}");
-    } else if a < b {
-        println!("{a} is less than {b}");
-    } else if a > b {
-        println!("{a} is greater than {b}");
+        println!("{} equals {}", a, b);
+    }
+    if a < b {
+        println!("{} is less than {}", a, b);
+    }
+    if a > b {
+        println!("{} is greater than {}", a, b);
     }
 }

@@ -1,0 +1,14 @@
+error[E0384]: cannot assign to immutable argument `num`
+  --> /tmp/codegemma7b-int_factors-c-rs.rs:10:13
+   |
+10 |             num /= divisor;
+   |             ^^^^^^^^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+3  | fn factor(mut num: i32) -> HashSet<i32> {
+   |           +++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0384`.

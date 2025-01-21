@@ -1,0 +1,14 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:23:25
+   |
+23 | fn str_fromstr(s: &str, in: &str, m: isize) -> String {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:24:19
+   |
+24 |  let idx = s.find(in).ok_or("--error--")?;
+   |                   ^^ expected expression
+
+error: aborting due to 2 previous errors
+

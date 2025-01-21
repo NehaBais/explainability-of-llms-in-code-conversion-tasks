@@ -12,7 +12,7 @@ func main() {
 	fmt.Printf("a | b  = %08b\n", a|b)
 	fmt.Printf("a & b  = %08b\n", a&b)
 	fmt.Printf("a ^ b  = %08b\n", a^b)
-	fmt.Printf("!a     = %08b\n", ^uint8(a))
+	fmt.Printf("!a     = %08b\n", ^a)
 	fmt.Printf("a << 3 = %08b\n", a<<3)
-	fmt.Printf("a >> 3 = %08b\n", uint8(int(a)>>3)) // right arithmetic shift
+	fmt.Printf("a >> 3 = %08b\n", uint8(int8(a)>>3))
 }

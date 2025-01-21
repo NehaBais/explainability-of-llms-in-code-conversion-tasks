@@ -1,0 +1,15 @@
+/tmp/codeqwen-str_cmp-go-c.c:38:7: error: use of undeclared identifier 'IsEqual'; did you mean 'isEqual'?
+   38 |       IsEqual = 0;
+      |       ^~~~~~~
+      |       isEqual
+/tmp/codeqwen-str_cmp-go-c.c:35:7: note: 'isEqual' declared here
+   35 |   int isEqual = 1;
+      |       ^
+/tmp/codeqwen-str_cmp-go-c.c:44:7: error: use of undeclared identifier 'IsEqual'; did you mean 'isEqual'?
+   44 |   if (IsEqual)
+      |       ^~~~~~~
+      |       isEqual
+/tmp/codeqwen-str_cmp-go-c.c:35:7: note: 'isEqual' declared here
+   35 |   int isEqual = 1;
+      |       ^
+2 errors generated.

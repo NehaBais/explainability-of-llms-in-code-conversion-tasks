@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	var greeting = "Hello"
-	fmt.Println(greeting, ", world!")
+	greeting := "Hello"
+	greeting += " , world!"
+	fmt.Println(greeting)
 }

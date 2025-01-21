@@ -1,0 +1,64 @@
+error: expected one of `!`, `,`, `.`, `::`, `?`, `{`, or an operator, found `q2`
+  --> /tmp/codeqwen-str_match-js-rs.rs:33:73
+   |
+33 |     println!("2: Is '{}' contained in '{}'? {}", string_b, string_a, If q2 != -1 { format!("Yes, at index {}.", q2) } else { "No." });
+   |                                                                         ^^ expected one of 7 possible tokens
+
+error: 5 positional arguments in format string, but there are 4 arguments
+  --> /tmp/codeqwen-str_match-js-rs.rs:36:37
+   |
+36 |             "3: In fact, it happens {} times within '{}', At index{} {}: {:?}",
+   |                                     ^^               ^^           ^^ ^^  ^^^^
+37 |             matches.len(),
+   |             -------------
+38 |             string_a,
+   |             --------
+39 |             if matches.len() > 1 { "es" } else { "" },
+   |             -----------------------------------------
+40 |             matches
+   |             -------
+
+error: expected one of `!`, `,`, `.`, `::`, `?`, `{`, or an operator, found `q3`
+  --> /tmp/codeqwen-str_match-js-rs.rs:43:71
+   |
+43 |     println!("4: Does '{}' end with '{}'? {}", string_A, string_b, If q3 { "Yes." } else { "No." });
+   |                                                                       ^^ expected one of 7 possible tokens
+
+warning: unused macro definition: `If`
+  --> /tmp/codeqwen-str_match-js-rs.rs:46:14
+   |
+46 | macro_rules! If {
+   |              ^^
+   |
+   = note: `#[warn(unused_macros)]` on by default
+
+error[E0277]: the trait bound `usize: Neg` is not satisfied
+ --> /tmp/codeqwen-str_match-js-rs.rs:5:18
+  |
+5 |     let mut q2 = -1;
+  |                  ^^ the trait `Neg` is not implemented for `usize`
+  |
+  = help: the following other types implement trait `Neg`:
+            &f128
+            &f16
+            &f32
+            &f64
+            &i128
+            &i16
+            &i32
+            &i64
+          and 12 others
+
+error[E0277]: `Vec<usize>` doesn't implement `std::fmt::Display`
+  --> /tmp/codeqwen-str_match-js-rs.rs:40:13
+   |
+40 |             matches
+   |             ^^^^^^^ `Vec<usize>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Vec<usize>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 5 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0277`.

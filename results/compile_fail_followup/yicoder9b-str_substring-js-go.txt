@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_substring-js-go.go:4:2: "fmt" imported and not used

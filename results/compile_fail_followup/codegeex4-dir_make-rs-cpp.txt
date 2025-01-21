@@ -1,0 +1,7 @@
+/tmp/codegeex4-dir_make-rs-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegeex4-dir_make-rs-cpp.cpp:8:5: error: use of undeclared identifier 'fs'
+    8 |     fs::create_directories("./path/to/dir");
+      |     ^
+2 errors generated.

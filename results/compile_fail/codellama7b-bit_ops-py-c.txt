@@ -1,0 +1,48 @@
+/tmp/codellama7b-bit_ops-py-c.c:13:12: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     return rotl(width, a, -n);
+      |            ^
+/tmp/codellama7b-bit_ops-py-c.c:13:12: note: did you mean 'rotr'?
+/tmp/codellama7b-bit_ops-py-c.c:11:6: note: 'rotr' declared here
+   11 | void rotr(int width, int a, int n) {
+      |      ^
+   12 |   if (n < 0) {
+   13 |     return rotl(width, a, -n);
+      |            ~~~~
+      |            rotr
+/tmp/codellama7b-bit_ops-py-c.c:13:5: error: void function 'rotr' should not return a value [-Wreturn-type]
+   13 |     return rotl(width, a, -n);
+      |     ^      ~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-bit_ops-py-c.c:15:5: error: void function 'rotr' should not return a value [-Wreturn-type]
+   15 |     return a;
+      |     ^      ~
+/tmp/codellama7b-bit_ops-py-c.c:19:5: error: void function 'rotr' should not return a value [-Wreturn-type]
+   19 |     return ((a >> n) | ((a & ((1 << n) - 1)) << (width - n)));
+      |     ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-bit_ops-py-c.c:23:6: error: conflicting types for 'rotl'
+   23 | void rotl(int width, int a, int n) {
+      |      ^
+/tmp/codellama7b-bit_ops-py-c.c:13:12: note: previous implicit declaration is here
+   13 |     return rotl(width, a, -n);
+      |            ^
+/tmp/codellama7b-bit_ops-py-c.c:27:5: error: void function 'rotl' should not return a value [-Wreturn-type]
+   27 |     return a;
+      |     ^      ~
+/tmp/codellama7b-bit_ops-py-c.c:31:5: error: void function 'rotl' should not return a value [-Wreturn-type]
+   31 |     return ((a << n) | (a >> (width - n)));
+      |     ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-bit_ops-py-c.c:39:5: error: void function 'asr' should not return a value [-Wreturn-type]
+   39 |     return a;
+      |     ^      ~
+/tmp/codellama7b-bit_ops-py-c.c:43:5: error: void function 'asr' should not return a value [-Wreturn-type]
+   43 |     return ((a >> n) | (((int64_t)a) << (width - n)));
+      |     ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-bit_ops-py-c.c:50:10: error: argument type 'void' is incomplete
+   50 |          asr(width, a, 1));
+      |          ^
+/tmp/codellama7b-bit_ops-py-c.c:52:10: error: argument type 'void' is incomplete
+   52 |          asr(width, a, 2));
+      |          ^
+/tmp/codellama7b-bit_ops-py-c.c:54:10: error: argument type 'void' is incomplete
+   54 |          asr(width, a, 4));
+      |          ^
+12 errors generated.

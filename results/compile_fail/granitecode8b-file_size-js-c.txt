@@ -1,0 +1,60 @@
+/tmp/granitecode8b-file_size-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-c.c:3:3: error: use of undeclared identifier 'IDispatch'
+    3 |   IDispatch *punk = NULL;
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:3:14: error: use of undeclared identifier 'punk'
+    3 |   IDispatch *punk = NULL;
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:3:21: error: use of undeclared identifier 'NULL'
+    3 |   IDispatch *punk = NULL;
+      |                     ^
+/tmp/granitecode8b-file_size-js-c.c:4:3: error: use of undeclared identifier 'HRESULT'
+    4 |   HRESULT hr = CoCreateInstance(CLSID_ScriptingFileSystemObject, NULL,
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:6:7: error: call to undeclared function 'FAILED'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (FAILED(hr)) {
+      |       ^
+/tmp/granitecode8b-file_size-js-c.c:6:14: error: use of undeclared identifier 'hr'
+    6 |   if (FAILED(hr)) {
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:7:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     printf("Failed to create Scripting.FileSystemObject instance: 0x%08X", hr);
+      |     ^
+/tmp/granitecode8b-file_size-js-c.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-js-c.c:7:76: error: use of undeclared identifier 'hr'
+    7 |     printf("Failed to create Scripting.FileSystemObject instance: 0x%08X", hr);
+      |                                                                            ^
+/tmp/granitecode8b-file_size-js-c.c:11:3: error: use of undeclared identifier 'IDispatch'
+   11 |   IDispatch *punkFile = NULL;
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:11:14: error: use of undeclared identifier 'punkFile'
+   11 |   IDispatch *punkFile = NULL;
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:11:25: error: use of undeclared identifier 'NULL'
+   11 |   IDispatch *punkFile = NULL;
+      |                         ^
+/tmp/granitecode8b-file_size-js-c.c:12:3: error: use of undeclared identifier 'hr'
+   12 |   hr = IDispPatch_Invoke(punk, DISPID_VALUE, 0, LOCALE_SYSTEM_DEFAULT,
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:12:8: error: call to undeclared function 'IDispPatch_Invoke'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   hr = IDispPatch_Invoke(punk, DISPID_VALUE, 0, LOCALE_SYSTEM_DEFAULT,
+      |        ^
+/tmp/granitecode8b-file_size-js-c.c:13:49: error: call to undeclared function 'CVar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |                          DISPATCH_PROPERTYGET, &CVar(L"GetFile"),
+      |                                                 ^
+/tmp/granitecode8b-file_size-js-c.c:13:48: error: cannot take the address of an rvalue of type 'int'
+   13 |                          DISPATCH_PROPERTYGET, &CVar(L"GetFile"),
+      |                                                ^~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_size-js-c.c:14:26: error: cannot take the address of an rvalue of type 'int'
+   14 |                          &CVar(L"input.txt"), NULL, &punkFile);
+      |                          ^~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_size-js-c.c:12:26: error: use of undeclared identifier 'punk'
+   12 |   hr = IDispPatch_Invoke(punk, DISPID_VALUE, 0, LOCALE_SYSTEM_DEFAULT,
+      |                          ^
+/tmp/granitecode8b-file_size-js-c.c:12:32: error: use of undeclared identifier 'DISPID_VALUE'
+   12 |   hr = IDispPatch_Invoke(punk, DISPID_VALUE, 0, LOCALE_SYSTEM_DEFAULT,
+      |                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

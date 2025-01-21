@@ -1,17 +1,32 @@
 package main
 
 import (
+	"fmt"
 	"os"
 )
 
-func main() {
-	// Create an empty file called "output.txt" in the current working directory
-	if err := os.WriteFile("output.txt", []byte{}, 0644); err != nil {
-		panic(err)
+func handleError(err error) {
+	if err != nil {
+		fmt.Println("Error:", err)
 	}
+}
 
-	// Create an empty directory called "docs" in the filesystem root
-	if err := os.Mkdir("/docs", 0755); err != nil {
-		panic(err)
-	}
+func main() {
+	// Create file in current working directory
+	file, err := os.Create("output.txt")
+	handleError(err)
+	file.Close()
+
+	// Create file in root directory
+	file, err = os.Create("/output.txt")
+	handleError(err)
+	file.Close()
+
+	// Create directory in current working directory
+	err = os.Mkdir("docs", 0755)
+	handleError(err)
+
+	// Create directory in root directory
+	err = os.Mkdir("/docs", 0755)
+	handleError(err)
 }

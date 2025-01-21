@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-str_cmp-java-go.go:11:64: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-java-go.go:13:92: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-java-go.go:15:91: syntax error: unexpected ) at end of statement

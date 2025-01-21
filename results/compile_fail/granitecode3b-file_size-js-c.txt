@@ -1,0 +1,60 @@
+/tmp/granitecode3b-file_size-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-js-c.c:3:3: error: use of undeclared identifier 'SHELLEXECUTEINFO'
+    3 |   SHELLEXECUTEINFO shExecInfo = {0};
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:4:3: error: use of undeclared identifier 'shExecInfo'
+    4 |   shExecInfo.cbSize = sizeof(shExecInfo);
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:4:30: error: use of undeclared identifier 'shExecInfo'
+    4 |   shExecInfo.cbSize = sizeof(shExecInfo);
+      |                              ^
+/tmp/granitecode3b-file_size-js-c.c:5:3: error: use of undeclared identifier 'shExecInfo'
+    5 |   shExecInfo.lpVerb = "open";
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:6:3: error: use of undeclared identifier 'shExecInfo'
+    6 |   shExecInfo.lpFile = "input.txt";
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:7:3: error: use of undeclared identifier 'shExecInfo'
+    7 |   shExecInfo.nShow = SW_NORMAL;
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:7:22: error: use of undeclared identifier 'SW_NORMAL'
+    7 |   shExecInfo.nShow = SW_NORMAL;
+      |                      ^
+/tmp/granitecode3b-file_size-js-c.c:8:7: error: call to undeclared function 'ShellExecuteEx'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (ShellExecuteEx(&shExecInfo) <= 32) {
+      |       ^
+/tmp/granitecode3b-file_size-js-c.c:8:23: error: use of undeclared identifier 'shExecInfo'
+    8 |   if (ShellExecuteEx(&shExecInfo) <= 32) {
+      |                       ^
+/tmp/granitecode3b-file_size-js-c.c:9:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     printf("Error: unable to open file.");
+      |     ^
+/tmp/granitecode3b-file_size-js-c.c:9:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_size-js-c.c:12:3: error: use of undeclared identifier 'HANDLE'
+   12 |   HANDLE hFile = INVALID_HANDLE_VALUE;
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:13:3: error: use of undeclared identifier 'LPTSTR'
+   13 |   LPTSTR filePath = TEXT("input.txt");
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:14:3: error: use of undeclared identifier 'DWORD'
+   14 |   DWORD size = GetFileSize(filePath, &hFile);
+      |   ^
+/tmp/granitecode3b-file_size-js-c.c:15:7: error: use of undeclared identifier 'size'
+   15 |   if (size == INVALID_FILE_SIZE) {
+      |       ^
+/tmp/granitecode3b-file_size-js-c.c:15:15: error: use of undeclared identifier 'INVALID_FILE_SIZE'
+   15 |   if (size == INVALID_FILE_SIZE) {
+      |               ^
+/tmp/granitecode3b-file_size-js-c.c:17:5: error: call to undeclared function 'CloseHandle'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     CloseHandle(hFile);
+      |     ^
+/tmp/granitecode3b-file_size-js-c.c:17:17: error: use of undeclared identifier 'hFile'
+   17 |     CloseHandle(hFile);
+      |                 ^
+/tmp/granitecode3b-file_size-js-c.c:20:3: error: call to undeclared function '_tprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |   _tprintf(TEXT("%I64u"), size);
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

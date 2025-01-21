@@ -1,11 +1,15 @@
 import os
 
-for file in ["input.txt", "docs", "/input.txt", "/docs"]:
-    try:
-        attr = os.stat(file)
-        if stat.S_ISDIR(attr.st_mode):
-            print(f"{file} is a directory")
+
+def check_file_or_directory(path):
+    if os.path.exists(path):
+        if os.path.isdir(path):
+            print(f"{path} is a directory")
         else:
-            print(f"{file} is a file")
-    except OSError as e:
-        print(f"{file} does not exist")
+            print(f"{path} is a file")
+    else:
+        print(f"{path} does not exist")
+
+
+for path in ["input.txt", "docs", "/input.txt", "/docs"]:
+    check_file_or_directory(path)

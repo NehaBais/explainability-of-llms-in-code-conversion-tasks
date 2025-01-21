@@ -1,0 +1,26 @@
+/tmp/codegeex4-str_match-js-cpp.cpp:17:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   auto words_begin = sregex_iterator(stringA.begin(), stringA.end(), reg);
+      |   ^
+/tmp/codegeex4-str_match-js-cpp.cpp:17:22: error: use of undeclared identifier 'sregex_iterator'
+   17 |   auto words_begin = sregex_iterator(stringA.begin(), stringA.end(), reg);
+      |                      ^
+/tmp/codegeex4-str_match-js-cpp.cpp:18:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |   auto words_end = sregex_iterator();
+      |   ^
+/tmp/codegeex4-str_match-js-cpp.cpp:18:20: error: use of undeclared identifier 'sregex_iterator'; did you mean 'std::sregex_iterator'?
+   18 |   auto words_end = sregex_iterator();
+      |                    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/regex:5326:48: note: 'std::sregex_iterator' declared here
+ 5326 | typedef regex_iterator<string::const_iterator> sregex_iterator;
+      |                                                ^
+/tmp/codegeex4-str_match-js-cpp.cpp:23:10: error: unknown type name 'sregex_iterator'; did you mean 'std::sregex_iterator'?
+   23 |     for (sregex_iterator i = words_begin; i != words_end; ++i) {
+      |          ^~~~~~~~~~~~~~~
+      |          std::sregex_iterator
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/regex:5326:48: note: 'std::sregex_iterator' declared here
+ 5326 | typedef regex_iterator<string::const_iterator> sregex_iterator;
+      |                                                ^
+/tmp/codegeex4-str_match-js-cpp.cpp:40:21: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   40 |       for (size_t i : q2matches) {
+      |                     ^
+3 warnings and 3 errors generated.

@@ -1,0 +1,79 @@
+/tmp/granitecode8b-str_substring-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-js-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%s", substr(str, n, m)); // => "cde"
+      |   ^
+/tmp/granitecode8b-str_substring-js-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_substring-js-c.c:9:16: error: call to undeclared function 'substr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%s", substr(str, n, m)); // => "cde"
+      |                ^
+/tmp/granitecode8b-str_substring-js-c.c:9:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    9 |   printf("%s", substr(str, n, m)); // => "cde"
+      |           ~~   ^~~~~~~~~~~~~~~~~
+      |           %d
+/tmp/granitecode8b-str_substring-js-c.c:12:31: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("%s", substr(str, n, strlen(str) - n + 1)); // => "cdefgh"
+      |                               ^
+/tmp/granitecode8b-str_substring-js-c.c:12:31: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_substring-js-c.c:12:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+   12 |   printf("%s", substr(str, n, strlen(str) - n + 1)); // => "cdefgh"
+      |           ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           %d
+/tmp/granitecode8b-str_substring-js-c.c:13:16: error: call to undeclared function 'substring'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   printf("%s", substring(str, n));                   // => "cdefgh"
+      |                ^
+/tmp/granitecode8b-str_substring-js-c.c:13:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+   13 |   printf("%s", substring(str, n));                   // => "cdefgh"
+      |           ~~   ^~~~~~~~~~~~~~~~~
+      |           %d
+/tmp/granitecode8b-str_substring-js-c.c:16:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+   16 |   printf("%s", substring(str, 0, strlen(str) - 1)); // => "abcdefg"
+      |           ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           %d
+/tmp/granitecode8b-str_substring-js-c.c:19:17: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   char *b_ptr = strchr(str, 'b');
+      |                 ^
+/tmp/granitecode8b-str_substring-js-c.c:19:17: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/granitecode8b-str_substring-js-c.c:20:16: error: use of undeclared identifier 'NULL'
+   20 |   if (b_ptr != NULL) {
+      |                ^
+/tmp/granitecode8b-str_substring-js-c.c:21:18: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+   21 |     printf("%s", substr(b_ptr, 0, m)); // => "bcd"
+      |             ~~   ^~~~~~~~~~~~~~~~~~~
+      |             %d
+/tmp/granitecode8b-str_substring-js-c.c:25:18: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   char *bc_ptr = strstr(str, "bc");
+      |                  ^
+/tmp/granitecode8b-str_substring-js-c.c:25:18: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode8b-str_substring-js-c.c:26:17: error: use of undeclared identifier 'NULL'
+   26 |   if (bc_ptr != NULL) {
+      |                 ^
+/tmp/granitecode8b-str_substring-js-c.c:27:18: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+   27 |     printf("%s", substr(bc_ptr, 0, m)); // => "bcd"
+      |             ~~   ^~~~~~~~~~~~~~~~~~~~
+      |             %d
+/tmp/granitecode8b-str_substring-js-c.c:32:7: error: conflicting types for 'substr'
+   32 | char *substr(char *s, int pos, int len) {
+      |       ^
+/tmp/granitecode8b-str_substring-js-c.c:9:16: note: previous implicit declaration is here
+    9 |   printf("%s", substr(str, n, m)); // => "cde"
+      |                ^
+/tmp/granitecode8b-str_substring-js-c.c:33:26: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |   char *result = (char *)malloc((len + 1) * sizeof(char));
+      |                          ^
+/tmp/granitecode8b-str_substring-js-c.c:33:26: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-str_substring-js-c.c:34:3: error: call to undeclared library function 'strncpy' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |   strncpy(result, s + pos, len);
+      |   ^
+/tmp/granitecode8b-str_substring-js-c.c:34:3: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/tmp/granitecode8b-str_substring-js-c.c:38:7: error: conflicting types for 'substring'
+   38 | char *substring(char *s, int start, int end) {
+      |       ^
+/tmp/granitecode8b-str_substring-js-c.c:13:16: note: previous implicit declaration is here
+   13 |   printf("%s", substring(str, n));                   // => "cdefgh"
+      |                ^
+6 warnings and 14 errors generated.

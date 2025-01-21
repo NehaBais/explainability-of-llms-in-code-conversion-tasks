@@ -1,0 +1,64 @@
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "Enter number: ";
+      |   ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:7:3: error: use of undeclared identifier 'cin'
+    7 |   cin >> n1;
+      |   ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "Enter number: ";
+      |   ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:9:3: error: use of undeclared identifier 'cin'
+    9 |   cin >> n2;
+      |   ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:10:3: warning: switch condition has boolean value [-Wswitch-bool]
+   10 |   switch (true) {
+      |   ^       ~~~~
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:11:8: error: expression is not an integral constant expression
+   11 |   case n1 < n2:
+      |        ^~~~~~~
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:11:8: note: read of non-const variable 'n1' is not allowed in a constant expression
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:5:7: note: declared here
+    5 |   int n1, n2;
+      |       ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:12:5: error: use of undeclared identifier 'cout'
+   12 |     cout << n1 << " is less than " << n2 << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:12:45: error: use of undeclared identifier 'endl'
+   12 |     cout << n1 << " is less than " << n2 << endl;
+      |                                             ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:14:8: error: expression is not an integral constant expression
+   14 |   case n1 == n2:
+      |        ^~~~~~~~
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:14:8: note: read of non-const variable 'n1' is not allowed in a constant expression
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:5:7: note: declared here
+    5 |   int n1, n2;
+      |       ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:15:5: error: use of undeclared identifier 'cout'
+   15 |     cout << n1 << " is equal to " << n2 << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:15:44: error: use of undeclared identifier 'endl'
+   15 |     cout << n1 << " is equal to " << n2 << endl;
+      |                                            ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:17:8: error: expression is not an integral constant expression
+   17 |   case n1 > n2:
+      |        ^~~~~~~
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:17:8: note: read of non-const variable 'n1' is not allowed in a constant expression
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:5:7: note: declared here
+    5 |   int n1, n2;
+      |       ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:18:5: error: use of undeclared identifier 'cout'
+   18 |     cout << n1 << " is greater than " << n2 << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-go-cpp.cpp:18:48: error: use of undeclared identifier 'endl'
+   18 |     cout << n1 << " is greater than " << n2 << endl;
+      |                                                ^
+2 warnings and 15 errors generated.

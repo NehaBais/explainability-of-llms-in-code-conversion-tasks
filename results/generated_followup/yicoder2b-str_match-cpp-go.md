@@ -1,0 +1,44 @@
+The error occurs because `strings.Index` function requires two string arguments which means it expects two strings to be provided as input but we're passing three arguments in this case.
+
+Here is your corrected code:
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	s1 := "abcd"
+	s2 := "abab"
+	s3 := "ab"
+	//Beginning
+	if strings.HasPrefix(s1, s3) {
+		fmt.Println("The string starts with the second string")
+	} else {
+		fmt.Println("The string does not start with the second string")
+	}
+	//End
+	if strings.HasSuffix(s1, s3) {
+		fmt.Println("The string ends with the second string")
+	} else {
+		fmt.Println("The string does not end with the second string")
+	}
+	//Anywhere
+	index := strings.Index(s2, s3)
+	if index != -1 {
+		fmt.Printf("The string %q is found at location %d\n", s3, index+len(s2))
+	} else {
+		fmt.Println("The string is not found anywhere in the second string")
+	}
+	//Multiple occurrences
+	index = strings.Index(s2, s3, index+len(s3))
+	if index != -1 {
+		fmt.Printf("The string %q is found at location %d\n", s3, index+len(s2))
+	} else {
+		fmt.Println("The string is not found anywhere in the second string after first occurrence")
+	}
+}
+```

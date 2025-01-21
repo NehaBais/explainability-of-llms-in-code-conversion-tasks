@@ -1,0 +1,10 @@
+/tmp/yicoder2b-str_match-js-cpp.cpp:23:29: error: member reference base type 'bool' is not a structure or union
+   23 |   while ((m = sscanf(q2multi.data(), "%*s%*[^0-9]%*[^\n]", &index)) != EOF) {
+      |                      ~~~~~~~^~~~~
+/tmp/yicoder2b-str_match-js-cpp.cpp:24:15: error: comparison between pointer and integer ('char *(*)(const char *, int)' and 'size_type' (aka 'unsigned long'))
+   24 |     if (index >= stringA.length())
+      |         ~~~~~ ^  ~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-str_match-js-cpp.cpp:26:31: error: assigning to 'int' from incompatible type 'char *(const char *, int)'
+   26 |     q2matches[indexCount++] = index;
+      |                               ^~~~~
+3 errors generated.

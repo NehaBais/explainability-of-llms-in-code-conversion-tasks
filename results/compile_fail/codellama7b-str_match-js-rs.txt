@@ -1,0 +1,78 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/codellama7b-str_match-js-rs.rs:40:8
+   |
+40 |     if ~q2 && q2multi.len() > 1 {
+   |        ^
+   |
+help: use `!` to perform bitwise not
+   |
+40 |     if !q2 && q2multi.len() > 1 {
+   |        ~
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/codellama7b-str_match-js-rs.rs:39:68
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, ~q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                    ^
+   |
+help: use `!` to perform bitwise not
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, !q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                    ~
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"Yes, at index {}."`
+  --> /tmp/codellama7b-str_match-js-rs.rs:39:74
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, ~q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                          ^^^^^^^^^^^^^^^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error[E0425]: cannot find value `q2matches` in this scope
+  --> /tmp/codellama7b-str_match-js-rs.rs:41:102
+   |
+41 |         println!("   In fact, it happens {} times within '{}', at index{}.", q2multi.len(), stringA, q2matches.join(','));
+   |                                                                                                      ^^^^^^^^^ not found in this scope
+
+warning: unused import: `std::io`
+ --> /tmp/codellama7b-str_match-js-rs.rs:1:5
+  |
+1 | use std::io;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: the type `str` cannot be indexed by `{integer}`
+  --> /tmp/codellama7b-str_match-js-rs.rs:16:25
+   |
+16 |         if c == stringB[0] && stringB.len() <= stringA.len() - i {
+   |                         ^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `{integer}`, which is required by `str: Index<_>`
+   = note: you can use `.chars().nth()` or `.bytes().nth()`
+           for more information, see chapter 8 in The Book: <https://doc.rust-lang.org/book/ch08-02-strings.html#indexing-into-strings>
+   = help: the trait `SliceIndex<[_]>` is implemented for `usize`
+   = help: for that trait implementation, expected `[_]`, found `str`
+   = note: required for `str` to implement `Index<{integer}>`
+
+error[E0277]: the type `str` cannot be indexed by `{integer}`
+  --> /tmp/codellama7b-str_match-js-rs.rs:26:25
+   |
+26 |         if c == stringB[0] && stringB.len() <= stringA.len() - i {
+   |                         ^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `{integer}`, which is required by `str: Index<_>`
+   = note: you can use `.chars().nth()` or `.bytes().nth()`
+           for more information, see chapter 8 in The Book: <https://doc.rust-lang.org/book/ch08-02-strings.html#indexing-into-strings>
+   = help: the trait `SliceIndex<[_]>` is implemented for `usize`
+   = help: for that trait implementation, expected `[_]`, found `str`
+   = note: required for `str` to implement `Index<{integer}>`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_match-js-rs.rs:40:8
+   |
+40 |     if ~q2 && q2multi.len() > 1 {
+   |        ^^^ expected `bool`, found `i32`
+
+error: aborting due to 7 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308, E0425.
+For more information about an error, try `rustc --explain E0277`.

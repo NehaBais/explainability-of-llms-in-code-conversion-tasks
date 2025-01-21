@@ -1,0 +1,35 @@
+error[E0382]: borrow of moved value: `path`
+  --> /tmp/codeqwen-file_create-java-rs.rs:15:60
+   |
+11 | fn create_file<P: AsRef<std::path::Path>>(path: P) {
+   |                                           ---- move occurs because `path` has type `P`, which does not implement the `Copy` trait
+12 |     if let Err(e) = fs::File::create(path) {
+   |                                      ---- value moved here
+...
+15 |         println!("Successfully created file at path {:?}", path.as_ref());
+   |                                                            ^^^^ value borrowed here after move
+   |
+help: consider further restricting this bound
+   |
+11 | fn create_file<P: AsRef<std::path::Path> + Copy>(path: P) {
+   |                                          ++++++
+
+error[E0382]: borrow of moved value: `path`
+  --> /tmp/codeqwen-file_create-java-rs.rs:23:65
+   |
+19 | fn create_dir<P: AsRef<std::path::Path>>(path: P) {
+   |                                          ---- move occurs because `path` has type `P`, which does not implement the `Copy` trait
+20 |     if let Err(e) = fs::create_dir(path) {
+   |                                    ---- value moved here
+...
+23 |         println!("Successfully created directory at path {:?}", path.as_ref());
+   |                                                                 ^^^^ value borrowed here after move
+   |
+help: consider further restricting this bound
+   |
+19 | fn create_dir<P: AsRef<std::path::Path> + Copy>(path: P) {
+   |                                         ++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

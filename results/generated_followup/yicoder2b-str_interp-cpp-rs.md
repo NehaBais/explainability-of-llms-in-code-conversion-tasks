@@ -1,0 +1,1 @@
+Your request appears to be incomplete or contains errors, so it is impossible for me to provide an accurate conversion of your C++ code into Rust. You would need to clarify which specific parts of your original code are being converted and what the desired output should be.

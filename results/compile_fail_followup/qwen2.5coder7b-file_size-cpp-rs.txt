@@ -1,0 +1,19 @@
+error[E0277]: the `?` operator can only be applied to values that implement `Try`
+  --> /tmp/qwen2.5coder7b-file_size-cpp-rs.rs:15:5
+   |
+15 |     print_file_size("input.txt")?;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the `?` operator cannot be applied to type `()`
+   |
+   = help: the trait `Try` is not implemented for `()`
+
+error[E0277]: the `?` operator can only be applied to values that implement `Try`
+  --> /tmp/qwen2.5coder7b-file_size-cpp-rs.rs:16:5
+   |
+16 |     print_file_size("/input.txt")?;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the `?` operator cannot be applied to type `()`
+   |
+   = help: the trait `Try` is not implemented for `()`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

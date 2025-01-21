@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_size-rs-go.go:27:2: expected declaration, found _

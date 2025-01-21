@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoder7b-file_rename-js-go.go:15:12: illegal character U+FF5C '｜' (and 4 more errors)

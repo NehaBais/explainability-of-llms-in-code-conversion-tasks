@@ -1,0 +1,71 @@
+/tmp/Main.java:12: error: no suitable method found for collect(Collector<CharSequence,CAP#1,String>)
+        s.chars().skip(n).limit(m).mapToObj(c -> (char) c).collect(Collectors.joining()));
+                                                          ^
+    method Stream.<R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super Character>,BiConsumer<R#1,R#1>) is not applicable
+      (cannot infer type-variable(s) R#1
+        (actual and formal argument lists differ in length))
+    method Stream.<R#2,A>collect(Collector<? super Character,A,R#2>) is not applicable
+      (cannot infer type-variable(s) R#2,A
+        (argument mismatch; Collector<CharSequence,CAP#2,String> cannot be converted to Collector<? super Character,A,R#2>))
+  where R#1,T,R#2,A are type-variables:
+    R#1 extends Object declared in method <R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super T>,BiConsumer<R#1,R#1>)
+    T extends Object declared in interface Stream
+    R#2 extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+    A extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Object from capture of ?
+    CAP#2 extends Object from capture of ?
+/tmp/Main.java:15: error: method collect in interface IntStream cannot be applied to given types;
+    System.out.println(s.chars().skip(n).collect(Collectors.joining()));
+                                        ^
+  required: Supplier<R>,ObjIntConsumer<R>,BiConsumer<R,R>
+  found:    Collector<CharSequence,CAP#1,String>
+  reason: cannot infer type-variable(s) R
+    (actual and formal argument lists differ in length)
+  where R is a type-variable:
+    R extends Object declared in method <R>collect(Supplier<R>,ObjIntConsumer<R>,BiConsumer<R,R>)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+/tmp/Main.java:15: error: incompatible types: cannot infer type-variable(s) R
+    System.out.println(s.chars().skip(n).collect(Collectors.joining()));
+                                                ^
+    (argument mismatch; Collector<CharSequence,CAP#1,String> cannot be converted to Supplier<R>)
+  where R is a type-variable:
+    R extends Object declared in method <R>collect(Supplier<R>,ObjIntConsumer<R>,BiConsumer<R,R>)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+/tmp/Main.java:24: error: no suitable method found for collect(Collector<CharSequence,CAP#1,String>)
+          s.substring(cpos).chars().limit(m).mapToObj(c -> (char) c).collect(Collectors.joining()));
+                                                                    ^
+    method Stream.<R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super Character>,BiConsumer<R#1,R#1>) is not applicable
+      (cannot infer type-variable(s) R#1
+        (actual and formal argument lists differ in length))
+    method Stream.<R#2,A>collect(Collector<? super Character,A,R#2>) is not applicable
+      (cannot infer type-variable(s) R#2,A
+        (argument mismatch; Collector<CharSequence,CAP#2,String> cannot be converted to Collector<? super Character,A,R#2>))
+  where R#1,T,R#2,A are type-variables:
+    R#1 extends Object declared in method <R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super T>,BiConsumer<R#1,R#1>)
+    T extends Object declared in interface Stream
+    R#2 extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+    A extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Object from capture of ?
+    CAP#2 extends Object from capture of ?
+/tmp/Main.java:31: error: no suitable method found for collect(Collector<CharSequence,CAP#1,String>)
+          s.substring(spos).chars().limit(m).mapToObj(c -> (char) c).collect(Collectors.joining()));
+                                                                    ^
+    method Stream.<R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super Character>,BiConsumer<R#1,R#1>) is not applicable
+      (cannot infer type-variable(s) R#1
+        (actual and formal argument lists differ in length))
+    method Stream.<R#2,A>collect(Collector<? super Character,A,R#2>) is not applicable
+      (cannot infer type-variable(s) R#2,A
+        (argument mismatch; Collector<CharSequence,CAP#2,String> cannot be converted to Collector<? super Character,A,R#2>))
+  where R#1,T,R#2,A are type-variables:
+    R#1 extends Object declared in method <R#1>collect(Supplier<R#1>,BiConsumer<R#1,? super T>,BiConsumer<R#1,R#1>)
+    T extends Object declared in interface Stream
+    R#2 extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+    A extends Object declared in method <R#2,A>collect(Collector<? super T,A,R#2>)
+  where CAP#1,CAP#2 are fresh type-variables:
+    CAP#1 extends Object from capture of ?
+    CAP#2 extends Object from capture of ?
+5 errors

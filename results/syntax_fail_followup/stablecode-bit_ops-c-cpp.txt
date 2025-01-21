@@ -1,0 +1,22 @@
+/tmp/stablecode-bit_ops-c-cpp.cpp:5:35: error: reference to overloaded function could not be resolved; did you mean to call it?
+    5 |   cout << "a and b: " << a & b << endl;
+      |                                   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:6:34: error: reference to overloaded function could not be resolved; did you mean to call it?
+    6 |   cout << "a or b: " << a | b << endl;
+      |                                  ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:7:35: error: reference to overloaded function could not be resolved; did you mean to call it?
+    7 |   cout << "a xor b: " << a ^ b << endl;
+      |                                   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:12:3: error: void function 'bitwise' should not return a value [-Wreturn-type]
+   12 |   return 0;
+      |   ^      ~
+4 errors generated.

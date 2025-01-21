@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/magicoder7b-bit_ops-py-go.go:9:28: undefined: bits.FormatInt

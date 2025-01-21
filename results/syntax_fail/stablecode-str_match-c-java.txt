@@ -1,0 +1,13 @@
+/tmp/Main.java:7: error: ';' expected
+        return container.regionMatches(true, 0, target, 0, target.length()));
+                                                                           ^
+/tmp/Main.java:22: error: ';' expected
+        System.out.println("Starts with Test ( Hello,Hell ) : " + startsWith("Hello","Hell")));
+                                                                                             ^
+/tmp/Main.java:23: error: ';' expected
+        System.out.println("Ends with Test ( Code,ode ) ) : " + endsWith("Code","ode")));
+                                                                                       ^
+/tmp/Main.java:24: error: ';' expected
+        System.out.println("Contains Test ( Google,msn ) ) : " + doesContain("Google","msn"))));
+                                                                                             ^
+4 errors

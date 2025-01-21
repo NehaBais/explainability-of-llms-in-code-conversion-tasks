@@ -1,0 +1,14 @@
+/tmp/Main.java:10: error: primitive patterns are a preview feature and are disabled by default.
+    switch (true) {
+           ^
+  (use --enable-preview to enable primitive patterns)
+/tmp/Main.java:11: error: pattern or enum constant required
+      case n1 < n2:
+              ^
+/tmp/Main.java:14: error: pattern or enum constant required
+      case n1 == n2:
+              ^
+/tmp/Main.java:17: error: pattern or enum constant required
+      case n1 > n2:
+              ^
+4 errors

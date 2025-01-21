@@ -1,0 +1,9 @@
+/tmp/granitecode3b-str_concat-go-cpp.cpp:1:1: error: unknown type name 'package'
+    1 | package main import "fmt" func main() {
+      | ^
+/tmp/granitecode3b-str_concat-go-cpp.cpp:1:1: error: main cannot be declared as global variable
+/tmp/granitecode3b-str_concat-go-cpp.cpp:1:13: error: expected ';' after top level declarator
+    1 | package main import "fmt" func main() {
+      |             ^
+      |             ;
+3 errors generated.

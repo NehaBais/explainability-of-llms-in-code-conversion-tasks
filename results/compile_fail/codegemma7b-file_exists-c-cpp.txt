@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_exists-c-cpp.cpp:7:22: error: use of undeclared identifier 'std'
+    7 | bool check_reg(const std::string &path) {
+      |                      ^
+/tmp/codegemma7b-file_exists-c-cpp.cpp:13:22: error: use of undeclared identifier 'std'
+   13 | bool check_dir(const std::string &path) {
+      |                      ^
+/tmp/codegemma7b-file_exists-c-cpp.cpp:20:3: error: use of undeclared identifier 'std'
+   20 |   std::string cwd = ".";
+      |   ^
+/tmp/codegemma7b-file_exists-c-cpp.cpp:26:3: error: use of undeclared identifier 'std'
+   26 |   std::string root = "/";
+      |   ^
+4 errors generated.

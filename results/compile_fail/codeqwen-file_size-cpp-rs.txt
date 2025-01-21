@@ -1,0 +1,14 @@
+error[E0432]: unresolved import `human_bytes`
+ --> /tmp/codeqwen-file_size-cpp-rs.rs:1:5
+  |
+1 | use human_bytes::human_bytes;
+  |     ^^^^^^^^^^^ you might be missing crate `human_bytes`
+  |
+help: consider importing the `human_bytes` crate
+  |
+1 + extern crate human_bytes;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

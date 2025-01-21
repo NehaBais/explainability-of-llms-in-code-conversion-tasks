@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/codegeex4-bit_ops-go-rs.rs:1:1
+  |
+1 | let ror = (((a >> ub) | (a.wrapping_neg() & ((1u32 << ub) - 1) as i16).wrapping_neg()) 
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,10 @@
+/tmp/codegeex4-int_factors-py-cpp.cpp:23:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (int i : {45, 53, 64}) {
+      |              ^
+/tmp/codegeex4-int_factors-py-cpp.cpp:23:16: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   23 |   for (int i : {45, 53, 64}) {
+      |                ^
+/tmp/codegeex4-int_factors-py-cpp.cpp:25:21: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   25 |     for (int factor : factor(i)) {
+      |                     ^
+2 warnings and 1 error generated.

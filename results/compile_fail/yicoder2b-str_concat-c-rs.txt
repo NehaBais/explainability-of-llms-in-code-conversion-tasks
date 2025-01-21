@@ -1,0 +1,27 @@
+error[E0599]: no method named `extend_from_static` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-c-rs.rs:4:8
+  |
+4 |     s0.extend_from_static(&s2 as [char]);
+  |        ^^^^^^^^^^^^^^^^^^ method not found in `String`
+
+error[E0620]: cast to unsized type: `&&str` as `[char]`
+ --> /tmp/yicoder2b-str_concat-c-rs.rs:4:27
+  |
+4 |     s0.extend_from_static(&s2 as [char]);
+  |                           ^^^^^^^------
+  |                                  |
+  |                                  help: try casting to a reference instead: `&[char]`
+
+warning: value assigned to `s2` is never read
+  --> /tmp/yicoder2b-str_concat-c-rs.rs:10:13
+   |
+10 |     let mut s2: String = s.to_string();
+   |             ^^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0599, E0620.
+For more information about an error, try `rustc --explain E0599`.

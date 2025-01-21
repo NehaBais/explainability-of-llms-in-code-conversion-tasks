@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-dir_make-py-rs.rs:6:5
+  |
+6 |     {
+  |     ^ unclosed delimiter
+7 |         eprintln!("Error while creating directory: {}", err));
+  |                                                             ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-dir_make-py-rs.rs:9:1
+  |
+7 |         eprintln!("Error while creating directory: {}", err));
+  |                                                             - missing open `(` for this delimiter
+8 |     }
+9 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

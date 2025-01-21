@@ -1,0 +1,15 @@
+/tmp/stablecode-str_cmp-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_cmp-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_cmp-rs-c.c:8:7: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (strcmp(a, b)) {
+      |       ^
+/tmp/stablecode-str_cmp-rs-c.c:8:7: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/stablecode-str_cmp-rs-c.c:9:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     printf("The strings are equal\n");
+      |     ^
+/tmp/stablecode-str_cmp-rs-c.c:9:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.

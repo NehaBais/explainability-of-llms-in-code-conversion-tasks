@@ -1,0 +1,51 @@
+/tmp/granitecode8b-file_size-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_size-rs-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-file_size-rs-c.c:7:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     fprintf(stderr, "Usage: %s filenamen", argv[0]);
+      |     ^
+/tmp/granitecode8b-file_size-rs-c.c:7:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-file_size-rs-c.c:7:13: error: use of undeclared identifier 'stderr'
+    7 |     fprintf(stderr, "Usage: %s filenamen", argv[0]);
+      |             ^
+/tmp/granitecode8b-file_size-rs-c.c:10:15: error: variable has incomplete type 'struct stat'
+   10 |   struct stat file_info;
+      |               ^
+/tmp/granitecode8b-file_size-rs-c.c:10:10: note: forward declaration of 'struct stat'
+   10 |   struct stat file_info;
+      |          ^
+/tmp/granitecode8b-file_size-rs-c.c:11:12: error: call to undeclared function 'open'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   int fd = open(argv[1], O_RDONLY);
+      |            ^
+/tmp/granitecode8b-file_size-rs-c.c:11:26: error: use of undeclared identifier 'O_RDONLY'
+   11 |   int fd = open(argv[1], O_RDONLY);
+      |                          ^
+/tmp/granitecode8b-file_size-rs-c.c:13:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     perror("open");
+      |     ^
+/tmp/granitecode8b-file_size-rs-c.c:16:7: error: call to undeclared function 'fstat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   if (fstat(fd, &file_info) == -1) {
+      |       ^
+/tmp/granitecode8b-file_size-rs-c.c:17:5: error: call to undeclared function 'close'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     close(fd);
+      |     ^
+/tmp/granitecode8b-file_size-rs-c.c:18:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     perror("fstat");
+      |     ^
+/tmp/granitecode8b-file_size-rs-c.c:21:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   printf("Size of file.txt is %ld bytesn", (long)file_info.st_size);
+      |   ^
+/tmp/granitecode8b-file_size-rs-c.c:21:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-rs-c.c:22:3: error: call to undeclared function 'close'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |   close(fd);
+      |   ^
+1 warning and 15 errors generated.

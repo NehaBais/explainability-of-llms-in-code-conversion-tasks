@@ -1,0 +1,47 @@
+error: expected identifier, found keyword `match`
+ --> /tmp/granitecode8b-str_match-go-rs.rs:1:4
+  |
+1 | fn match(first: &str, second: &str) {
+  |    ^^^^^ expected identifier, found keyword
+  |
+help: escape `match` to use it as an identifier
+  |
+1 | fn r#match(first: &str, second: &str) {
+  |    ++
+
+error: expected one of `.`, `?`, `{`, or an operator, found `;`
+  --> /tmp/granitecode8b-str_match-go-rs.rs:19:29
+   |
+19 |  match("abracadabra", "abr");
+   |  -----                      ^ expected one of `.`, `?`, `{`, or an operator
+   |  |
+   |  while parsing this `match` expression
+   |  help: try removing this `match`
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+ --> /tmp/granitecode8b-str_match-go-rs.rs:3:43
+  |
+3 |  let mut i = first.find(second).unwrap_or(-1);
+  |                                           ^^ cannot apply unary operator `-`
+  |
+  = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `usize`
+  |
+3 |  let mut i = first.find(second).unwrap_or(usize::MAX);
+  |                                           ~~~~~~~~~~
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+ --> /tmp/granitecode8b-str_match-go-rs.rs:8:44
+  |
+8 |  i = first[start..].find(second).unwrap_or(-1);
+  |                                            ^^ cannot apply unary operator `-`
+  |
+  = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `usize`
+  |
+8 |  i = first[start..].find(second).unwrap_or(usize::MAX);
+  |                                            ~~~~~~~~~~
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0600`.

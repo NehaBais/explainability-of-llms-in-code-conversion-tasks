@@ -1,0 +1,49 @@
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:1:19: error: unknown type name 'int64_t'
+    1 | void printFactors(int64_t nr) {
+      |                   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:3:5: error: use of undeclared identifier 'std'
+    3 |     std::cout << "Factors of  " << nr << " not computed\n";
+      |     ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << "Factors of  " << nr << ":  ";
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::vector<int64_t> fs(1, 1);
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:7:15: error: use of undeclared identifier 'int64_t'
+    7 |   std::vector<int64_t> fs(1, 1);
+      |               ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:7:24: error: use of undeclared identifier 'fs'
+    7 |   std::vector<int64_t> fs(1, 1);
+      |                        ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:8:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |   auto apf = [&](int64_t p, int e) {
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:8:14: error: expected expression
+    8 |   auto apf = [&](int64_t p, int e) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:16:3: error: unknown type name 'int64_t'
+   16 |   int64_t e = 0;
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:22:8: error: unknown type name 'int64_t'
+   22 |   for (int64_t d = 3; nr > 1; d += 2) {
+      |        ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:35:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   35 |   for (const auto &f : fs) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:35:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   35 |   for (const auto &f : fs) {
+      |                      ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:35:24: error: use of undeclared identifier 'fs'
+   35 |   for (const auto &f : fs) {
+      |                        ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:36:5: error: use of undeclared identifier 'std'
+   36 |     std::cout << f << "  ";
+      |     ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:38:3: error: use of undeclared identifier 'std'
+   38 |   std::cout << "\nNumber of factors  =  " << fs.size() << "\n";
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:38:46: error: use of undeclared identifier 'fs'
+   38 |   std::cout << "\nNumber of factors  =  " << fs.size() << "\n";
+      |                                              ^
+3 warnings and 13 errors generated.

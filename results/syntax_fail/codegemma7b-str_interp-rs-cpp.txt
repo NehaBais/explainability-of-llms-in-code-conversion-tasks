@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_interp-rs-cpp.cpp:14:21: error: no member named 'format' in namespace 'std'
+   14 |   std::cout << std::format("{} had a {} lamb", "Mary", "little") << std::endl;
+      |                ~~~~~^
+1 error generated.

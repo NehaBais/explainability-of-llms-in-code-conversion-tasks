@@ -1,0 +1,34 @@
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:4:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    4 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |              ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:4:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    4 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                         ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:4:27: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    4 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                           ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:6:16: error: no member named 'filesystem' in namespace 'std'
+    6 |       if (std::filesystem::is_directory(file)) {
+      |           ~~~~~^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:7:14: error: no member named 'cout' in namespace 'std'; did you mean 'count'?
+    7 |         std::cout << file << " is a directory" << std::endl;
+      |         ~~~~~^~~~
+      |              count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:9:14: error: no member named 'cout' in namespace 'std'; did you mean 'count'?
+    9 |         std::cout << file << " is a file" << std::endl;
+      |         ~~~~~^~~~
+      |              count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:12:12: error: no member named 'cout' in namespace 'std'; did you mean 'count'?
+   12 |       std::cout << file << " does not exist" << std::endl;
+      |       ~~~~~^~~~
+      |            count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+2 warnings and 5 errors generated.

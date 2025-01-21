@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-int_factors-rs-go.go:11:47: expected operand, found ')' (and 6 more errors)

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_exists-py-go.go:11:23: expected ';', found ')' (and 3 more errors)

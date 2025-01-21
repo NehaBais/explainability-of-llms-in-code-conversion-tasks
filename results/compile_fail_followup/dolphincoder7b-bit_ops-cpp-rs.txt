@@ -1,0 +1,24 @@
+error[E0432]: unresolved imports `std::intrinsics::shift_left`, `std::intrinsics::shift_right`
+ --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:1:23
+  |
+1 | use std::intrinsics::{shift_left, shift_right};
+  |                       ^^^^^^^^^^  ^^^^^^^^^^^ no `shift_right` in `intrinsics`
+  |                       |
+  |                       no `shift_left` in `intrinsics`
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:22:2
+   |
+22 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-bit_ops-cpp-rs.rs`
+
+error[E0599]: no method named `shr_exact` found for struct `Wrapping` in the current scope
+  --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:15:34
+   |
+15 |     println!("a lsr b:   {}", ua.shr_exact(ub).0 as i32); // logical right shift (guaranteed)
+   |                                  ^^^^^^^^^ method not found in `Wrapping<u32>`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0599, E0601.
+For more information about an error, try `rustc --explain E0432`.

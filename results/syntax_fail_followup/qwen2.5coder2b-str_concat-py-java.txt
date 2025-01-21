@@ -1,0 +1,11 @@
+/tmp/Main.java:17: error: cannot find symbol
+    List<String> list = Arrays.asList(s1, "world", "mom");
+    ^
+  symbol:   class List
+  location: class Main
+/tmp/Main.java:20: error: cannot find symbol
+    System.out.println(s3);
+                       ^
+  symbol:   variable s3
+  location: class Main
+2 errors

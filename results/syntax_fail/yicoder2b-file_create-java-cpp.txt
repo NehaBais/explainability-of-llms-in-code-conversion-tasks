@@ -1,0 +1,7 @@
+/tmp/yicoder2b-file_create-java-cpp.cpp:35:32: error: invalid operands to binary expression ('const char[18]' and 'const char *')
+   35 |     perror("Could not create " + docs);
+      |            ~~~~~~~~~~~~~~~~~~~ ^ ~~~~
+/tmp/yicoder2b-file_create-java-cpp.cpp:42:32: error: invalid operands to binary expression ('const char[18]' and 'const char *')
+   42 |     perror("Could not create " + output_txt);
+      |            ~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~
+2 errors generated.

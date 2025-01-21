@@ -1,0 +1,28 @@
+/tmp/stablecode-file_exists-java-cpp.cpp:6:31: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::string path_cwd = std::filesystem::current_path().string();
+      |                          ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:7:12: error: no member named 'filesystem' in namespace 'std'
+    7 |   if (std::filesystem::exists(path_cwd + "/docs/input.txt") &&
+      |       ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |       std::filesystem::exists(path_cwd + "/docs") &&
+      |       ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:9:12: error: no member named 'filesystem' in namespace 'std'
+    9 |       std::filesystem::exists(path_cwd))) {
+      |       ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:9:41: error: extraneous ')' after condition, expected a statement
+    9 |       std::filesystem::exists(path_cwd))) {
+      |                                         ^
+/tmp/stablecode-file_exists-java-cpp.cpp:16:12: error: no member named 'filesystem' in namespace 'std'
+   16 |   if (std::filesystem::exists("/docs/input.txt") &&
+      |       ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:17:12: error: no member named 'filesystem' in namespace 'std'
+   17 |       std::filesystem::exists("/docs") && std::filesystem::exists("/"))) {
+      |       ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:17:48: error: no member named 'filesystem' in namespace 'std'
+   17 |       std::filesystem::exists("/docs") && std::filesystem::exists("/"))) {
+      |                                           ~~~~~^
+/tmp/stablecode-file_exists-java-cpp.cpp:17:72: error: extraneous ')' after condition, expected a statement
+   17 |       std::filesystem::exists("/docs") && std::filesystem::exists("/"))) {
+      |                                                                        ^
+9 errors generated.

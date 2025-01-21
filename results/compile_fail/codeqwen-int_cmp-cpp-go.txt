@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/codeqwen-int_cmp-cpp-go.go:16:10: undefined: strings
+/tmp/codeqwen-int_cmp-cpp-go.go:18:2: declared and not used: a
+/tmp/codeqwen-int_cmp-cpp-go.go:27:5: undefined: A
+/tmp/codeqwen-int_cmp-cpp-go.go:28:38: undefined: A
+/tmp/codeqwen-int_cmp-cpp-go.go:32:5: undefined: A
+/tmp/codeqwen-int_cmp-cpp-go.go:33:37: undefined: A
+/tmp/codeqwen-int_cmp-cpp-go.go:37:5: undefined: A
+/tmp/codeqwen-int_cmp-cpp-go.go:38:41: undefined: A

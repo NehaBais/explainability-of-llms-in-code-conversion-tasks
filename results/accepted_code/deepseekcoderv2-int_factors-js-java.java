@@ -1,14 +1,27 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-public class factors {
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    for (int i = 1; i <= Math.sqrt(n); i++) {
-      if (n % i == 0) {
-        System.out.println(i + " ");
-        if (n / i != i) System.out.println(n / i);
+public class Factors {
+  public static List<Integer> factors(int num) {
+    List<Integer> n_factors = new ArrayList<>();
+
+    for (int i = 1; i <= Math.floor(Math.sqrt(num)); i++) {
+      if (num % i == 0) {
+        n_factors.add(i);
+        if (num / i != i) {
+          n_factors.add(num / i);
+        }
       }
     }
+
+    Collections.sort(n_factors); // numeric sort
+    return n_factors;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(factors(45)); // [1,3,5,9,15,45]
+    System.out.println(factors(53)); // [1,53]
+    System.out.println(factors(64)); // [1,2,4,8,16,32,64]
   }
 }

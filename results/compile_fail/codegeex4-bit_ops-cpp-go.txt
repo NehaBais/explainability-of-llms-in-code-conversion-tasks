@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codegeex4-bit_ops-cpp-go.go:20:45: cannot use int(ua) (value of type int) as uint32 value in argument to bits.RotateLeft32
+/tmp/codegeex4-bit_ops-cpp-go.go:21:45: cannot use int(ua) (value of type int) as uint32 value in argument to bits.RotateLeft32

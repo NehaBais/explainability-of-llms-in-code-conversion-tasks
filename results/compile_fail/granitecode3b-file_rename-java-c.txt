@@ -1,0 +1,17 @@
+/tmp/granitecode3b-file_rename-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-java-c.c:8:13: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   success = rename(oldname, newname);
+      |             ^
+/tmp/granitecode3b-file_rename-java-c.c:10:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     perror("Rename failed");
+      |     ^
+/tmp/granitecode3b-file_rename-java-c.c:12:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("File renamed successfully\n");
+      |     ^
+/tmp/granitecode3b-file_rename-java-c.c:12:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

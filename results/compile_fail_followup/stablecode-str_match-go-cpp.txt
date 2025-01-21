@@ -1,0 +1,47 @@
+/tmp/stablecode-str_match-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_match-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_match-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/stablecode-str_match-go-cpp.cpp:4:12: error: unknown type name 'string'
+    4 | void match(string first, string second) {
+      |            ^
+/tmp/stablecode-str_match-go-cpp.cpp:4:26: error: unknown type name 'string'
+    4 | void match(string first, string second) {
+      |                          ^
+/tmp/stablecode-str_match-go-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "1. " << first << " starts with " << second << ": "
+      |   ^
+/tmp/stablecode-str_match-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "2. " << first << " contains " << second << ": " << (i >= 0)
+      |   ^
+/tmp/stablecode-str_match-go-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << "2.1. at location " << i << ",\n";
+      |     ^
+/tmp/stablecode-str_match-go-cpp.cpp:16:41: error: extraneous ')' before ';'
+   16 |    int index = first.find(second, start));
+      |                                         ^
+/tmp/stablecode-str_match-go-cpp.cpp:20:4: error: use of undeclared identifier 'cout'
+   20 |    cout << "2.2. at location " << index << ", \n";
+      |    ^
+/tmp/stablecode-str_match-go-cpp.cpp:23:5: error: use of undeclared identifier 'cout'
+   23 |     cout << "2.2. and that'
+      |     ^
+/tmp/stablecode-str_match-go-cpp.cpp:23:13: warning: missing terminating '"' character [-Winvalid-pp-token]
+   23 |     cout << "2.2. and that'
+      |             ^
+/tmp/stablecode-str_match-go-cpp.cpp:23:13: error: expected expression
+/tmp/stablecode-str_match-go-cpp.cpp:27:2: error: use of undeclared identifier 'cout'
+   27 |  cout << "3. " << first << " ends with " << second << ": " 
+      |  ^
+/tmp/stablecode-str_match-go-cpp.cpp:32:3: error: no matching function for call to 'match'
+   32 |   match("abracadabra", "abr");
+      |   ^~~~~
+/tmp/stablecode-str_match-go-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[12]' to 'int' for 1st argument
+    4 | void match(string first, string second) {
+      |      ^     ~~~~~~~~~~~~
+2 warnings and 13 errors generated.

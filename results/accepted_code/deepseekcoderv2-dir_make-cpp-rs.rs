@@ -1,17 +1,26 @@
-use std::fs::DirBuilder;
-use std::{io, string};
+use std::env;
+use std::fs;
+use std::io;
+use std::path::PathBuf;
 
-// This is a simple function to convert the C++ code into Rust code.
 fn main() {
-    let path = "/tmp/mydir"; // Change this to the directory you want to create
-    if !path_exists(path) {
-        println!("Creating directory: {}", path);
-        DirBuilder::new().recursive(true).create(path).unwrap();
-    } else {
-        println!("Directory already exists");
+    let args: Vec<String> = env::args().collect();
+    if args.len() != 2 {
+        eprintln!("usage: {} <path>", args[0]);
+        return;
     }
-}
 
-fn path_exists(path: &str) -> bool {
-    fs::metadata(path).is_ok()
+    let path_to_create: PathBuf = PathBuf::from(&args[1]);
+
+    if fs::metadata(&path_to_create).is_ok() {
+        return;
+    }
+
+    match fs::create_dir_all(&path_to_create) {
+        Ok(_) => {}
+        Err(e) => {
+            eprintln!("couldn't create directory: {}", e);
+            return;
+        }
+    }
 }

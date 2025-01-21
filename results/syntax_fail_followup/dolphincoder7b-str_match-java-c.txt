@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-str_match-java-c.c:71:18: error: call to undeclared function 'containsString'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   71 |   printf("%d\n", containsString(str5, str6)); // Returns true
+      |                  ^
+1 error generated.

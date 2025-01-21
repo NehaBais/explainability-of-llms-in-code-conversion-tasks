@@ -1,0 +1,56 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:37:25
+   |
+37 | fn str_fromstr(s: &str, in: &str, m: usize) -> Result<String,Utf8Error> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:38:17
+   |
+38 |  let n = s.find(in).ok_or(Utf8Error)?;
+   |                 ^^ expected expression
+
+error[E0423]: expected value, found struct `Utf8Error`
+ --> /tmp/granitecode8b-str_substring-c-rs.rs:9:13
+  |
+9 |  return Err(Utf8Error);
+  |             ^^^^^^^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+  |
+  = note: `Utf8Error` defined here
+
+error[E0423]: expected value, found struct `Utf8Error`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:19:13
+   |
+19 |  return Err(Utf8Error);
+   |             ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+   |
+   = note: `Utf8Error` defined here
+
+error[E0423]: expected value, found struct `Utf8Error`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:34:27
+   |
+34 |  let n = s.find(ch).ok_or(Utf8Error)?;
+   |                           ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+   |
+   = note: `Utf8Error` defined here
+
+warning: unused import: `ToString`
+ --> /tmp/granitecode8b-str_substring-c-rs.rs:3:29
+  |
+3 | use alloc::string::{String, ToString};
+  |                             ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `alloc::vec::Vec`
+ --> /tmp/granitecode8b-str_substring-c-rs.rs:4:5
+  |
+4 | use alloc::vec::Vec;
+  |     ^^^^^^^^^^^^^^^
+
+error: aborting due to 5 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0423`.

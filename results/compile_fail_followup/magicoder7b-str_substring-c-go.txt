@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-str_substring-c-go.go:60:17: cannot use &s (value of type *string) as string value in argument to substring
+/tmp/magicoder7b-str_substring-c-go.go:61:17: cannot use &s (value of type *string) as string value in argument to substring

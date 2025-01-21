@@ -1,0 +1,15 @@
+error[E0433]: failed to resolve: could not find `Dir` in `fs`
+  --> /tmp/yicoder2b-file_exists-js-rs.rs:10:29
+   |
+10 |     let folder_exists = fs::Dir::exists("docs");
+   |                             ^^^ could not find `Dir` in `fs`
+
+error[E0433]: failed to resolve: could not find `Dir` in `fs`
+  --> /tmp/yicoder2b-file_exists-js-rs.rs:13:29
+   |
+13 |     let folder_exists = fs::Dir::exists("c:/docs");
+   |                             ^^^ could not find `Dir` in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

@@ -1,0 +1,32 @@
+/tmp/stablecode-logic_ops-rs-c.c:4:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+    4 |     printf("%d and %d 
+      |            ^
+/tmp/stablecode-logic_ops-rs-c.c:4:12: error: expected expression
+/tmp/stablecode-logic_ops-rs-c.c:5:8: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 | -> %d\n", a, b, (a != 0) && (b != 0)));
+      |        ^
+/tmp/stablecode-logic_ops-rs-c.c:7:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 |     printf("%d or %d 
+      |            ^
+/tmp/stablecode-logic_ops-rs-c.c:9:8: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 | -> %d\n", a, b, (a != 0) || (b != 0)));
+      |        ^
+/tmp/stablecode-logic_ops-rs-c.c:11:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 |     printf("%d xor %d 
+      |            ^
+/tmp/stablecode-logic_ops-rs-c.c:13:8: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 | -> %d\n", a, b, (a != 0) ^ (b != 0)));
+      |        ^
+/tmp/stablecode-logic_ops-rs-c.c:15:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |     printf("not %d 
+      |            ^
+/tmp/stablecode-logic_ops-rs-c.c:17:8: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 | -> %d\n", a, !a);
+      |        ^
+/tmp/stablecode-logic_ops-rs-c.c:27:2: error: expected '}'
+   27 | }
+      |  ^
+/tmp/stablecode-logic_ops-rs-c.c:3:32: note: to match this '{'
+    3 | void boolean_ops(int a, int b) {
+      |                                ^
+8 warnings and 2 errors generated.

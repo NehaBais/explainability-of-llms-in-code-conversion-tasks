@@ -1,0 +1,13 @@
+/tmp/granitecode8b-file_rename-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-js-c.c:4:3: error: call to undeclared function '_rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   _rename("input.txt", "output.txt");
+      |   ^
+/tmp/granitecode8b-file_rename-js-c.c:10:3: error: call to undeclared function '_rmdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   _rmdir("docs");
+      |   ^
+/tmp/granitecode8b-file_rename-js-c.c:11:3: error: call to undeclared function '_mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   _mkdir("mydocs");
+      |   ^
+4 errors generated.

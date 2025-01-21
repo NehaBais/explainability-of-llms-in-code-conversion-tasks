@@ -1,21 +1,34 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <filesystem>
+#include <fstream>
+#include <iostream>
+#include <string>
+
+const std::string FILE_NAME = "output.txt";
+const std::string DIR_NAME = "docs";
+
+void create(const std::string &root) {
+  try {
+    auto f_path = std::filesystem::path(root) / FILE_NAME;
+    auto d_path = std::filesystem::path(root) / DIR_NAME;
+
+    if (!std::filesystem::is_directory(d_path)) {
+      std::filesystem::create_directory(d_path);
+    }
+
+    std::ofstream file(f_path, std::ios::trunc);
+    if (file) {
+      file.close();
+    } else {
+      throw std::runtime_error("Failed to create file: " + f_path.string());
+    }
+  } catch (const std::exception &e) {
+    std::cerr << "Error: " << e.what() << std::endl;
+    std::exit(1);
+  }
+}
 
 int main() {
-  // Create the file
-  FILE *file = fopen("output.txt", "w");
-  if (file == NULL) {
-    printf("Error creating the file.\n");
-    return 1;
-  }
-  fclose(file);
-
-  // Create the directory
-  int result = mkdir("docs", 0755);
-  if (result != 0) {
-    printf("Error creating the directory.\n");
-    return 1;
-  }
-
+  create(".");
+  create("/");
   return 0;
 }

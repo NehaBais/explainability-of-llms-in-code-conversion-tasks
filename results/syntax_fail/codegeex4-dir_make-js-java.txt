@@ -1,0 +1,6 @@
+/tmp/Mkdirp.java:9: error: cannot find symbol
+    Path path = Paths.get(pathStr).normalize();
+                ^
+  symbol:   variable Paths
+  location: class Mkdirp
+1 error

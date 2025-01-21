@@ -1,0 +1,49 @@
+/tmp/granitecode8b-file_rename-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string current_working_directory = get_current_working_directory();
+      |   ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:4:43: error: use of undeclared identifier 'get_current_working_directory'
+    4 |   std::string current_working_directory = get_current_working_directory();
+      |                                           ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::string separator = get_path_separator();
+      |   ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:13:15: error: use of undeclared identifier 'separator'; did you mean 'operator'?
+   13 |   std::string separator = get_path_separator();
+      |               ^~~~~~~~~
+      |               operator
+/tmp/granitecode8b-file_rename-py-cpp.cpp:14:11: error: use of undeclared identifier 'separator'; did you mean 'operator'?
+   14 |   rename((separator + "input.txt").c_str(), (separator + "output.txt").c_str());
+      |           ^~~~~~~~~
+      |           operator
+/tmp/granitecode8b-file_rename-py-cpp.cpp:14:11: error: use of undeclared 'operator+'
+/tmp/granitecode8b-file_rename-py-cpp.cpp:14:46: error: use of undeclared identifier 'separator'; did you mean 'operator'?
+   14 |   rename((separator + "input.txt").c_str(), (separator + "output.txt").c_str());
+      |                                              ^~~~~~~~~
+      |                                              operator
+/tmp/granitecode8b-file_rename-py-cpp.cpp:14:46: error: use of undeclared 'operator+'
+/tmp/granitecode8b-file_rename-py-cpp.cpp:15:11: error: use of undeclared identifier 'separator'; did you mean 'operator'?
+   15 |   rename((separator + "docs").c_str(), (separator + "mydocs").c_str());
+      |           ^~~~~~~~~
+      |           operator
+/tmp/granitecode8b-file_rename-py-cpp.cpp:15:11: error: use of undeclared 'operator+'
+/tmp/granitecode8b-file_rename-py-cpp.cpp:15:41: error: use of undeclared identifier 'separator'; did you mean 'operator'?
+   15 |   rename((separator + "docs").c_str(), (separator + "mydocs").c_str());
+      |                                         ^~~~~~~~~
+      |                                         operator
+/tmp/granitecode8b-file_rename-py-cpp.cpp:15:41: error: use of undeclared 'operator+'
+/tmp/granitecode8b-file_rename-py-cpp.cpp:19:1: error: use of undeclared identifier 'std'
+   19 | std::string get_current_working_directory() {
+      | ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:21:3: error: use of undeclared identifier 'std'
+   21 |   std::getcwd(buffer, sizeof(buffer));
+      |   ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:22:10: error: cannot initialize return object of type 'int' with an lvalue of type 'char[1024]'
+   22 |   return buffer;
+      |          ^~~~~~
+17 errors generated.

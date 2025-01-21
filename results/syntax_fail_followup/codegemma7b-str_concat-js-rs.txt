@@ -1,0 +1,23 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_concat-js-rs.rs:2:1
+  |
+2 | println!("{s} there!");
+  | ---------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_concat-js-rs.rs:1:8
+  |
+1 | const s = "hello";
+  |        ^
+  |
+help: provide a type for the item
+  |
+1 | const s: <type> = "hello";
+  |        ++++++++
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,26 @@
+/tmp/magicoder7b-file_create-js-c.c:8:27: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     printf("Error: %s\n", strerror(err));
+      |                           ^
+/tmp/magicoder7b-file_create-js-c.c:8:27: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/magicoder7b-file_create-js-c.c:13:16: error: call to undeclared function 'open'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   int result = open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
+      |                ^
+/tmp/magicoder7b-file_create-js-c.c:13:35: error: use of undeclared identifier 'O_CREAT'
+   13 |   int result = open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
+      |                                   ^
+/tmp/magicoder7b-file_create-js-c.c:13:45: error: use of undeclared identifier 'O_EXCL'
+   13 |   int result = open("output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
+      |                                             ^
+/tmp/magicoder7b-file_create-js-c.c:15:9: error: use of undeclared identifier 'errno'
+   15 |     fct(errno);
+      |         ^
+/tmp/magicoder7b-file_create-js-c.c:18:32: error: use of undeclared identifier 'O_CREAT'
+   18 |   result = open("/output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
+      |                                ^
+/tmp/magicoder7b-file_create-js-c.c:18:42: error: use of undeclared identifier 'O_EXCL'
+   18 |   result = open("/output.txt", O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
+      |                                          ^
+/tmp/magicoder7b-file_create-js-c.c:20:9: error: use of undeclared identifier 'errno'
+   20 |     fct(errno);
+      |         ^
+8 errors generated.

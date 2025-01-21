@@ -1,0 +1,48 @@
+error: expected `;`, found keyword `let`
+  --> /tmp/yicoder2b-file_create-cpp-rs.rs:9:154
+   |
+9  |     std::process::exit(fs::create_file(&[0x2f, 0x76, 0x6f, 0x75, 0x74, 0x3a, 0x2f, 0x2f, 0x6f, 0x75, 0x74, 0x65, 0x74]).expect(&"Failed to create file"))
+   |                                                                                                                                                          ^ help: add `;` here
+...
+12 |     let _ = fs::create_dir_in_root("docs").expect(&"Failed to create dir");
+   |     --- unexpected token
+
+error[E0425]: cannot find function `stdout` in crate `std`
+ --> /tmp/yicoder2b-file_create-cpp-rs.rs:5:22
+  |
+5 |     let mut f = std::stdout();
+  |                      ^^^^^^ not found in `std`
+  |
+help: consider importing this function
+  |
+1 + use io::stdout;
+  |
+help: if you import `stdout`, refer to it directly
+  |
+5 -     let mut f = std::stdout();
+5 +     let mut f = stdout();
+  |
+
+error[E0425]: cannot find function `create_dir_in_root` in module `fs`
+  --> /tmp/yicoder2b-file_create-cpp-rs.rs:12:17
+   |
+12 |     let _ = fs::create_dir_in_root("docs").expect(&"Failed to create dir");
+   |                 ^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `create_dir_in_root` in module `fs`
+  --> /tmp/yicoder2b-file_create-cpp-rs.rs:15:28
+   |
+15 |     std::process::exit(fs::create_dir_in_root("/docs").expect(&"Failed to create dir"))
+   |                            ^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+warning: unused import: `io`
+ --> /tmp/yicoder2b-file_create-cpp-rs.rs:1:15
+  |
+1 | use std::{fs, io};
+  |               ^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,0 +1,63 @@
+/tmp/granitecode8b-str_match-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:4:17: error: unknown type name 'optional'
+    4 | void printMatch(optional possibleMatch) {
+      |                 ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:6:5: error: use of undeclared identifier 'cout'
+    6 |     cout << "Found match at pos " << possibleMatch.value() << endl;
+      |     ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:6:63: error: use of undeclared identifier 'endl'
+    6 |     cout << "Found match at pos " << possibleMatch.value() << endl;
+      |                                                               ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "Did not find any matches" << endl;
+      |     ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:8:43: error: use of undeclared identifier 'endl'
+    8 |     cout << "Did not find any matches" << endl;
+      |                                           ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:12:3: error: unknown type name 'string'
+   12 |   string s1 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:13:3: error: unknown type name 'string'
+   13 |   string s2 = "abab";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:14:3: error: unknown type name 'string'
+   14 |   string s3 = "ab";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << boolalpha << s1.starts_with(s3) << endl;
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:17:11: error: use of undeclared identifier 'boolalpha'
+   17 |   cout << boolalpha << s1.starts_with(s3) << endl;
+      |           ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:17:46: error: use of undeclared identifier 'endl'
+   17 |   cout << boolalpha << s1.starts_with(s3) << endl;
+      |                                              ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:20:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   20 |   size_t pos = 0;
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-rs-cpp.cpp:20:10: error: use of undeclared identifier 'pos'
+   20 |   size_t pos = 0;
+      |          ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:21:3: error: use of undeclared identifier 'string'
+   21 |   string::const_iterator it;
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:24:5: error: use of undeclared identifier 'cout'
+   24 |     cout << "Found match at pos " << pos << endl;
+      |     ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:24:38: error: use of undeclared identifier 'pos'
+   24 |     cout << "Found match at pos " << pos << endl;
+      |                                      ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:24:45: error: use of undeclared identifier 'endl'
+   24 |     cout << "Found match at pos " << pos << endl;
+      |                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

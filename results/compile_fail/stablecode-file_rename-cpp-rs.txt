@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-file_rename-cpp-rs.rs:4:18
+  |
+4 | fn rename_file() {
+  |                  ^ unclosed delimiter
+...
+9 |     let dest_path = PathBuf::from(dest));
+  |                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-file_rename-cpp-rs.rs:15:33
+   |
+9  |     let dest_path = PathBuf::from(dest));
+   |                                        - missing open `(` for this delimiter
+...
+15 |     let src_path = cwd.join(src));
+   |                                 ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

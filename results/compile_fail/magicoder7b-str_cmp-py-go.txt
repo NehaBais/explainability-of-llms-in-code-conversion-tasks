@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/magicoder7b-str_cmp-py-go.go:5:2: "unicode" imported and not used
+/tmp/magicoder7b-str_cmp-py-go.go:11:5: invalid operation: a < b (operator < not defined on interface)
+/tmp/magicoder7b-str_cmp-py-go.go:14:5: invalid operation: a <= b (operator <= not defined on interface)
+/tmp/magicoder7b-str_cmp-py-go.go:17:5: invalid operation: a > b (operator > not defined on interface)
+/tmp/magicoder7b-str_cmp-py-go.go:20:5: invalid operation: a >= b (operator >= not defined on interface)

@@ -1,0 +1,49 @@
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:5:5: error: use of undeclared identifier 'std'
+    5 |     std::cerr << "Usage: " << argv[0] << " a b" << std::endl;
+      |     ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:5:52: error: use of undeclared identifier 'std'
+    5 |     std::cerr << "Usage: " << argv[0] << " a b" << std::endl;
+      |                                                    ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:9:11: error: use of undeclared identifier 'std'
+    9 |   int a = std::stoi(argv[1]);
+      |           ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:10:11: error: use of undeclared identifier 'std'
+   10 |   int b = std::stoi(argv[2]);
+      |           ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::cout << "sum:              " << a + b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:12:49: error: use of undeclared identifier 'std'
+   12 |   std::cout << "sum:              " << a + b << std::endl;
+      |                                                 ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << "difference:       " << a - b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:13:49: error: use of undeclared identifier 'std'
+   13 |   std::cout << "difference:       " << a - b << std::endl;
+      |                                                 ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::cout << "product:          " << a * b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:14:49: error: use of undeclared identifier 'std'
+   14 |   std::cout << "product:          " << a * b << std::endl;
+      |                                                 ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << "integer quotient: " << (a / b)
+      |   ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:16:16: error: use of undeclared identifier 'std'
+   16 |             << std::endl; // truncates towards zero
+      |                ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:17:3: error: use of undeclared identifier 'std'
+   17 |   std::cout << "remainder:        " << (a % b)
+      |   ^
+/tmp/granitecode8b-int_arith-rs-cpp.cpp:18:16: error: use of undeclared identifier 'std'
+   18 |             << std::endl; // same sign as first operand
+      |                ^
+16 errors generated.

@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-go-rs.rs:6:1
+  |
+6 | {
+  | ^ unclosed delimiter
+7 |     println!("a and b is {}", a && b));
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-go-rs.rs:8:37
+  |
+7 |     println!("a and b is {}", a && b));
+  |                                      - missing open `(` for this delimiter
+8 |     println!("a or b is {}", a || b));
+  |                                     ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-py-go.go:17:14: newline in string
+/tmp/codeqwen-str_cmp-py-go.go:17:14: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/codeqwen-str_cmp-py-go.go:18:10: syntax error: unexpected type at end of statement
+/tmp/codeqwen-str_cmp-py-go.go:18:52: newline in string

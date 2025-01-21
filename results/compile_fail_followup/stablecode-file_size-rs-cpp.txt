@@ -1,0 +1,36 @@
+/tmp/stablecode-file_size-rs-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_size-rs-cpp.cpp:13:7: error: use of undeclared identifier 'argc'
+   13 |   if (argc != 2)) {
+      |       ^
+/tmp/stablecode-file_size-rs-cpp.cpp:13:17: error: extraneous ')' after condition, expected a statement
+   13 |   if (argc != 2)) {
+      |                 ^
+/tmp/stablecode-file_size-rs-cpp.cpp:17:33: error: use of undeclared identifier 'argv'
+   17 |   const std::string file_name = argv[1];
+      |                                 ^
+/tmp/stablecode-file_size-rs-cpp.cpp:20:5: error: use of undeclared identifier 'fs'
+   20 |     fs::path path{file_name};
+      |     ^
+/tmp/stablecode-file_size-rs-cpp.cpp:20:18: error: expected ';' at end of declaration
+   20 |     fs::path path{file_name};
+      |                  ^
+      |                  ;
+/tmp/stablecode-file_size-rs-cpp.cpp:21:10: error: use of undeclared identifier 'fs'
+   21 |     if (!fs::exists(path))) {
+      |          ^
+/tmp/stablecode-file_size-rs-cpp.cpp:21:27: error: extraneous ')' after condition, expected a statement
+   21 |     if (!fs::exists(path))) {
+      |                           ^
+/tmp/stablecode-file_size-rs-cpp.cpp:22:55: error: extraneous ')' before ';'
+   22 |       throw std::runtime_error("File does not exist."));
+      |                                                       ^
+/tmp/stablecode-file_size-rs-cpp.cpp:25:62: error: use of undeclared identifier 'fs'
+   25 |     std::cout << "Size of file '" << file_name << "' is " << fs::file_size(path)
+      |                                                              ^
+/tmp/stablecode-file_size-rs-cpp.cpp:27:36: error: expected '{'
+   27 |   } catch (const std::exception &e)) {
+      |                                    ^
+/tmp/stablecode-file_size-rs-cpp.cpp:27:36: error: expected expression
+12 errors generated.

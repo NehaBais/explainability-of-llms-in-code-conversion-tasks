@@ -1,0 +1,28 @@
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:7:43: error: no template named 'function' in namespace 'std'
+    7 | void mkdirp(const std::string &path, std::function<void(std::error_code)> cb) {
+      |                                      ~~~~~^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:8:18: error: expected expression
+    8 |   cb = cb ? cb : [](std::error_code) {};
+      |                  ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:9:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |   auto resolvedPath = fs::path(path);
+      |   ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:9:23: error: use of undeclared identifier 'fs'
+    9 |   auto resolvedPath = fs::path(path);
+      |                       ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:11:8: error: use of undeclared identifier 'fs'
+   11 |   if (!fs::exists(resolvedPath)) {
+      |        ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:13:49: error: expected expression
+   13 |     mkdirp(resolvedPath.parent_path().string(), [cb](std::error_code er) {
+      |                                                 ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:20:8: error: expected expression
+   20 |     cb({}); // Successfully reached the directory that exists or was created.
+      |        ^
+/tmp/deepseekcoderv2-dir_make-js-cpp.cpp:26:19: error: expected expression
+   26 |   mkdirp(dirPath, [](std::error_code er) {
+      |                   ^
+1 warning and 8 errors generated.

@@ -1,5 +1,10 @@
+ Here's how you can convert the given Rust code to C, adhering to the requirements specified:
 
-### C code:
+1. Determine if the first string starts with the second string.
+2. Determine if the first string contains the second string at any location.
+3. Determine if the first string ends with the second string.
+4. Print the location of the match for part 2, and handle multiple occurrences.
+
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -17,81 +22,43 @@ int main() {
     char s2[] = "abab";
     char s3[] = "ab";
     
-    // Determining if the first string starts with second string
-    int result;
-#ifdef _WIN64
-    result = strncmp(s1, s3, strlen(s3));
-#else
-    result = strncmp(s1, s3, 2);
-#endif
-    if (result == 0) {
-        printf("String starts with %s\n", s3);
+    // Determining if the first string starts with the second string
+    if (strncmp(s1, s3, strlen(s3)) == 0) {
+        printf("The first string starts with the second string\n");
     } else {
-        printf("String does not start with %s\n", s3);
+        printf("The first string does not start with the second string\n");
     }
     
     // Determining if the first string contains the second string at any location
-#ifdef _WIN64
-    result = strstr(s1, s3) - s1;
-#else
-    char *ptr = strstr(s1, s3);
-    result = ptr ? (int)(ptr - s1) : -1;
-#endif
-    print_match(result);
+    char *pos = strstr(s1, s3);
+    if (pos != NULL) {
+        printf("Found match at pos %ld\n", pos - s1);
+    } else {
+        printf("Did not find any matches\n");
+    }
+    
+    // Print the location of the match for part 2, and handle multiple occurrences.
+    char *pos_multiple = strstr(s1, s3);
+    while (pos_multiple != NULL) {
+        printf("Found match at pos %ld\n", pos_multiple - s1);
+        pos_multiple = strstr(pos_multiple + 1, s3);
+    }
     
     // Determining if the first string ends with the second string
-#ifdef _WIN64
-    int len2 = strlen(s2);
-    char *endPtr = strchr(s2, s3[0]);
-    result = endPtr ? (int)(endPtr - s2) : -1;
-#else
-    // Note: This is a simplified version of the logic for single byte string comparison.
-    // In a more complex scenario, you'd need to consider multiple encodings and character sets.
-    int len2 = strlen(s2);
-    char *endPtr = strchr(s2, s3[0]);
-    result = endPtr ? (int)(endPtr - s2) : -1;
-#endif
-    if (result != -1 && strlen(s2) == 1 && len2 > 1) {
-        printf("String ends with %s\n", s3);
+    int len1 = strlen(s1);
+    int len2 = strlen(s3);
+    if (len1 >= len2 && strncmp(&s1[len1 - len2], s3, len2) == 0) {
+        printf("The first string ends with the second string\n");
     } else {
-        printf("String does not end with %s\n", s3);
+        printf("The first string does not end with the second string\n");
     }
     
     return 0;
 }
 ```
 
-### Rust code:
-
-fn print_match(possible_match: Option<usize>) {
-    match possible_match {
-        Some(match_pos) => println!("Found match at pos {}", match_pos),
-        None => println!("Did not find any matches")
-    }
-}
-
-fn main() {
-    let s1 = "abcd";
-    let s2 = "abab";
-    let s3 = "ab";
-    
-    // Determining if the first string starts with second string
-    assert!(s1.starts_with(s3));
-    
-    // Handling multiple occurrences for part 2: Finding all positions where s3 appears in s1
-    println!("All matches of {} in {}:", s3, s1);
-    for (index, _) in s1.match_indices(&s3).enumerate() {
-        println!("Match at position {}", index + 1);
-    }
-    
-    // Determining if the first string contains the second string at any location
-    assert!(s1.contains(s3));
-    print_match(s1.find(&s3)); // Found match at pos 0
-    print_match(s1.find(&s2)); // Did not find any matches
-    
-    // Determining if the first string ends with the second string
-    assert!(s2.ends_with(s3));
-}
-
-
-In Rust, you can use `starts_with`, `contains` for part 1 and 2 respectively. For handling multiple occurrences in part 2, we used the `match_indices` method to find all positions where s3 appears in s1.
+This C code performs the same operations as the Rust code:
+- It checks if `s1` starts with `s3`.
+- It finds the position of `s3` in `s1` and prints it.
+- It handles multiple occurrences by continuously searching for `s3` in `s1` starting from where it left off.
+- It checks if `s2` ends with `s3`.

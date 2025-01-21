@@ -1,0 +1,25 @@
+error[E0425]: cannot find function `stdin` in this scope
+  --> /tmp/yicoder9b-int_cmp-py-rs.rs:10:5
+   |
+10 |     stdin()
+   |     ^^^^^ not found in this scope
+   |
+help: consider importing this function
+   |
+1  + use io::stdin;
+   |
+
+error[E0425]: cannot find function `stdin` in this scope
+  --> /tmp/yicoder9b-int_cmp-py-rs.rs:18:5
+   |
+18 |     stdin()
+   |     ^^^^^ not found in this scope
+   |
+help: consider importing this function
+   |
+1  + use io::stdin;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

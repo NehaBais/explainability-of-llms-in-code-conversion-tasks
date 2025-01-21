@@ -1,0 +1,20 @@
+/tmp/granitecode8b-str_concat-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-py-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("%s world", s1);
+      |   ^
+/tmp/granitecode8b-str_concat-py-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_concat-py-c.c:5:11: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char s2[strlen(s1) + 6]; // add 6 for length of " world"
+      |           ^
+/tmp/granitecode8b-str_concat-py-c.c:5:11: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_concat-py-c.c:6:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strcpy(s2, s1);
+      |   ^
+/tmp/granitecode8b-str_concat-py-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_concat-py-c.c:7:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcat(s2, " world");
+      |   ^
+/tmp/granitecode8b-str_concat-py-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+5 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-file_size-c-go.go:9:6: declared and not used: foo

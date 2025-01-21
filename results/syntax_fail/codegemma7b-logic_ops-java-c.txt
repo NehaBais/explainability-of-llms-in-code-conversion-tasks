@@ -1,0 +1,25 @@
+/tmp/codegemma7b-logic_ops-java-c.c:1:12: error: unknown type name 'bool'
+    1 | void logic(bool a, bool b) {
+      |            ^
+/tmp/codegemma7b-logic_ops-java-c.c:1:20: error: unknown type name 'bool'
+    1 | void logic(bool a, bool b) {
+      |                    ^
+/tmp/codegemma7b-logic_ops-java-c.c:2:3: error: use of undeclared identifier 'cout'
+    2 |   cout << "a AND b: " << (a && b) << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-c.c:2:38: error: use of undeclared identifier 'endl'
+    2 |   cout << "a AND b: " << (a && b) << endl;
+      |                                      ^
+/tmp/codegemma7b-logic_ops-java-c.c:3:3: error: use of undeclared identifier 'cout'
+    3 |   cout << "a OR b: " << (a || b) << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-c.c:3:37: error: use of undeclared identifier 'endl'
+    3 |   cout << "a OR b: " << (a || b) << endl;
+      |                                     ^
+/tmp/codegemma7b-logic_ops-java-c.c:4:3: error: use of undeclared identifier 'cout'
+    4 |   cout << "NOT a: " << !a << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-c.c:4:30: error: use of undeclared identifier 'endl'
+    4 |   cout << "NOT a: " << !a << endl;
+      |                              ^
+8 errors generated.

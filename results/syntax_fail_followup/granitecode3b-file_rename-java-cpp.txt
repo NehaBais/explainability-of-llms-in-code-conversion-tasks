@@ -1,0 +1,40 @@
+/tmp/granitecode3b-file_rename-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string oldName = "input.txt";
+      |   ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string newName = "output.txt";
+      |   ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << "Error renaming file" << endl;
+      |     ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:10:38: error: use of undeclared identifier 'endl'
+   10 |     cout << "Error renaming file" << endl;
+      |                                      ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:12:5: error: use of undeclared identifier 'cout'
+   12 |     cout << "File renamed successfully" << endl;
+      |     ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:12:44: error: use of undeclared identifier 'endl'
+   12 |     cout << "File renamed successfully" << endl;
+      |                                            ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << "Error renaming directory" << endl;
+      |     ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:20:43: error: use of undeclared identifier 'endl'
+   20 |     cout << "Error renaming directory" << endl;
+      |                                           ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:22:5: error: use of undeclared identifier 'cout'
+   22 |     cout << "Directory renamed successfully" << endl;
+      |     ^
+/tmp/granitecode3b-file_rename-java-cpp.cpp:22:49: error: use of undeclared identifier 'endl'
+   22 |     cout << "Directory renamed successfully" << endl;
+      |                                                 ^
+1 warning and 12 errors generated.

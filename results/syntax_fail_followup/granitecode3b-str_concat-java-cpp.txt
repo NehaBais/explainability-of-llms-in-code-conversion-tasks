@@ -1,0 +1,25 @@
+/tmp/granitecode3b-str_concat-java-cpp.cpp:1:10: error: empty filename
+    1 | #include ""
+      |          ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:4:3: error: unknown type name 'string'
+    4 |   string s = "hello";
+      |   ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << s + " literal" << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:5:29: error: use of undeclared identifier 'endl'
+    5 |   cout << s + " literal" << endl;
+      |                             ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string s2 = s + " literal";
+      |   ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << s2 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-java-cpp.cpp:7:17: error: use of undeclared identifier 'endl'
+    7 |   cout << s2 << endl;
+      |                 ^
+1 warning and 7 errors generated.

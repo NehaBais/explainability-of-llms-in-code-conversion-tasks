@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `the`
+ --> /tmp/stablecode-file_create-py-rs.rs:1:9
+  |
+1 | Explain the error in a single line.
+  |         ^^^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

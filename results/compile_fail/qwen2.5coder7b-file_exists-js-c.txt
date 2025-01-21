@@ -1,0 +1,27 @@
+/tmp/qwen2.5coder7b-file_exists-js-c.c:16:3: error: use of undeclared identifier 'DIR'
+   16 |   DIR *dir = opendir(dirname);
+      |   ^
+/tmp/qwen2.5coder7b-file_exists-js-c.c:16:8: error: use of undeclared identifier 'dir'
+   16 |   DIR *dir = opendir(dirname);
+      |        ^
+/tmp/qwen2.5coder7b-file_exists-js-c.c:16:14: error: call to undeclared function 'opendir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   DIR *dir = opendir(dirname);
+      |              ^
+/tmp/qwen2.5coder7b-file_exists-js-c.c:17:7: error: use of undeclared identifier 'dir'; did you mean 'div'?
+   17 |   if (dir) {
+      |       ^~~
+      |       div
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:140:8: note: 'div' declared here
+  140 | div_t    div(int, int) __pure2;
+      |          ^
+/tmp/qwen2.5coder7b-file_exists-js-c.c:18:5: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     closedir(dir);
+      |     ^
+/tmp/qwen2.5coder7b-file_exists-js-c.c:18:14: error: use of undeclared identifier 'dir'; did you mean 'div'?
+   18 |     closedir(dir);
+      |              ^~~
+      |              div
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:140:8: note: 'div' declared here
+  140 | div_t    div(int, int) __pure2;
+      |          ^
+6 errors generated.

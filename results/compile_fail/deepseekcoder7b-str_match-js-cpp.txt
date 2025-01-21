@@ -1,0 +1,28 @@
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:43:18: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   43 |       for (const auto &match : q2matches) {
+      |                  ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:43:30: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   43 |       for (const auto &match : q2matches) {
+      |                              ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:1: error: expected expression
+   51 | <｜begin▁of▁sentence｜>
+      | ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:2: error: unexpected character <U+FF5C>
+   51 | <｜begin▁of▁sentence｜>
+      |  ^~
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:10: error: character <U+2581> not allowed in an identifier
+   51 | <｜begin▁of▁sentence｜>
+      |         ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:15: error: character <U+2581> not allowed in an identifier
+   51 | <｜begin▁of▁sentence｜>
+      |            ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:26: error: character <U+FF5C> not allowed in an identifier
+   51 | <｜begin▁of▁sentence｜>
+      |                     ^~
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:51:5: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   51 | <｜begin▁of▁sentence｜>
+      |    ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:52:3: error: expected expression
+   52 |   }
+      |   ^
+2 warnings and 7 errors generated.

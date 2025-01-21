@@ -1,10 +1,16 @@
+#include <cstring> // For strcpy and strlen
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main() {
-  string s = "my string";
-  s.insert(0, "changed ");
-  cout << s << endl;
+  std::string str = "my String";
+  const char *cstr = "Changed ";
+  char buffer[100];
+
+  // Prepend the string literal to the std::string
+  std::strcpy(buffer, cstr);
+  std::strcat(buffer, str.c_str());
+
+  std::cout << buffer << std::endl;
   return 0;
 }

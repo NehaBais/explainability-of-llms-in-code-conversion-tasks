@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-py-go.go:10:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:11:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:12:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:19:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:26:28: syntax error: unexpected ), expected {
+/tmp/stablecode-bit_ops-py-go.go:28:53: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:30:28: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:39:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:49:37: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:50:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-py-go.go:50:31: too many errors

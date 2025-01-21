@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-str_append-rs-go.go:9:29: syntax error: unexpected ) at end of statement

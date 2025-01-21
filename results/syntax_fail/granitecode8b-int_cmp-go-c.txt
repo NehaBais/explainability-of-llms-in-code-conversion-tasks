@@ -1,0 +1,21 @@
+/tmp/granitecode8b-int_cmp-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-go-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("Enter number: ");
+      |   ^
+/tmp/granitecode8b-int_cmp-go-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_cmp-go-c.c:6:7: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (scanf("%d", &n1) != 1) {
+      |       ^
+/tmp/granitecode8b-int_cmp-go-c.c:6:7: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode8b-int_cmp-go-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("Error reading input");
+      |     ^
+/tmp/granitecode8b-int_cmp-go-c.c:12:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     perror("Error reading input");
+      |     ^
+6 errors generated.

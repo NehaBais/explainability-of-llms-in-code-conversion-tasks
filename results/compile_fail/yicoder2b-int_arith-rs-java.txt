@@ -1,0 +1,209 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+extern crate num;
+^
+/tmp/None.java:2: error: class, interface, enum, or record expected
+use num::Integer;
+^
+/tmp/None.java:5: error: not a statement
+    let a = i32::from_str(env::args().get(1).unwrap()).unwrap();
+                          ^
+/tmp/None.java:6: error: not a statement
+    let b = i32::from_str(env::args().get(2).unwrap()).unwrap();
+                          ^
+/tmp/None.java:8: error: not a statement
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                                                            ^
+/tmp/None.java:9: error: not a statement
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                                                             ^
+/tmp/None.java:10: error: not a statement
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                                                            ^
+/tmp/None.java:11: error: not a statement
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                                                                           ^
+/tmp/None.java:14: error: not a statement
+    println!("sum:              {}", sum);
+    ^
+/tmp/None.java:14: error: not a statement
+    println!("sum:              {}", sum);
+                                     ^
+/tmp/None.java:15: error: not a statement
+    println!("difference:       {}", difference);
+    ^
+/tmp/None.java:15: error: not a statement
+    println!("difference:       {}", difference);
+                                     ^
+/tmp/None.java:16: error: not a statement
+    println!("product:          {}", product);
+    ^
+/tmp/None.java:16: error: not a statement
+    println!("product:          {}", product);
+                                     ^
+/tmp/None.java:17: error: not a statement
+    println!("integer quotient: {:?}", quotient);
+    ^
+/tmp/None.java:17: error: not a statement
+    println!("integer quotient: {:?}", quotient);
+                                       ^
+/tmp/None.java:18: error: not a statement
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+    ^
+/tmp/None.java:18: error: variable declaration not allowed here
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                              ^
+/tmp/None.java:18: error: not a statement
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                         ^
+/tmp/None.java:18: error: not a statement
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                             ^
+/tmp/None.java:18: error: not a statement
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                                                  ^
+/tmp/None.java:4: error: implicitly declared classes are a preview feature and are disabled by default.
+fn main() {
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:5: error: ';' expected
+    let a = i32::from_str(env::args().get(1).unwrap()).unwrap();
+                         ^
+/tmp/None.java:5: error: ';' expected
+    let a = i32::from_str(env::args().get(1).unwrap()).unwrap();
+                                   ^
+/tmp/None.java:5: error: ';' expected
+    let a = i32::from_str(env::args().get(1).unwrap()).unwrap();
+                                                     ^
+/tmp/None.java:6: error: ';' expected
+    let b = i32::from_str(env::args().get(2).unwrap()).unwrap();
+                         ^
+/tmp/None.java:6: error: ';' expected
+    let b = i32::from_str(env::args().get(2).unwrap()).unwrap();
+                                   ^
+/tmp/None.java:6: error: ';' expected
+    let b = i32::from_str(env::args().get(2).unwrap()).unwrap();
+                                                     ^
+/tmp/None.java:8: error: ';' expected
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+           ^
+/tmp/None.java:8: error: illegal start of expression
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                 ^
+/tmp/None.java:8: error: ',', ')', or '[' expected
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                        ^
+/tmp/None.java:8: error: illegal start of expression
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                                      ^
+/tmp/None.java:8: error: ';' expected
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                                               ^
+/tmp/None.java:8: error: illegal start of expression
+    let sum:       num::Num<i32> = (a as num::Num<i32>) + (b as num::Num<i32>);
+                                                                             ^
+/tmp/None.java:9: error: ';' expected
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                  ^
+/tmp/None.java:9: error: illegal start of expression
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                  ^
+/tmp/None.java:9: error: ',', ')', or '[' expected
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                         ^
+/tmp/None.java:9: error: illegal start of expression
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                                       ^
+/tmp/None.java:9: error: ';' expected
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                                                ^
+/tmp/None.java:9: error: illegal start of expression
+    let difference: num::Num<i32> = (a as num::Num<i32>) - (b as num::Num<i32>);
+                                                                              ^
+/tmp/None.java:10: error: ';' expected
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+               ^
+/tmp/None.java:10: error: illegal start of expression
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                 ^
+/tmp/None.java:10: error: ',', ')', or '[' expected
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                        ^
+/tmp/None.java:10: error: illegal start of expression
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                                      ^
+/tmp/None.java:10: error: ';' expected
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                                               ^
+/tmp/None.java:10: error: illegal start of expression
+    let product:   num::Num<i32> = (a as num::Num<i32>) * (b as num::Num<i32>);
+                                                                             ^
+/tmp/None.java:11: error: ';' expected
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                ^
+/tmp/None.java:11: error: illegal start of expression
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                      ^
+/tmp/None.java:11: error: ',', ')', or '[' expected
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                             ^
+/tmp/None.java:11: error: illegal start of expression
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                                                ^
+/tmp/None.java:11: error: ';' expected
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                                                         ^
+/tmp/None.java:11: error: illegal start of expression
+    let quotient:  num::Rational<i32> = (a as num::Rational<i32>) / (b as num::Rational<i32>);
+                                                                                            ^
+/tmp/None.java:12: error: ';' expected
+    let remainder: i32 = a % b;
+                 ^
+/tmp/None.java:14: error: ';' expected
+    println!("sum:              {}", sum);
+           ^
+/tmp/None.java:14: error: ';' expected
+    println!("sum:              {}", sum);
+                                        ^
+/tmp/None.java:15: error: ';' expected
+    println!("difference:       {}", difference);
+           ^
+/tmp/None.java:15: error: ';' expected
+    println!("difference:       {}", difference);
+                                               ^
+/tmp/None.java:16: error: ';' expected
+    println!("product:          {}", product);
+           ^
+/tmp/None.java:16: error: ';' expected
+    println!("product:          {}", product);
+                                            ^
+/tmp/None.java:17: error: ';' expected
+    println!("integer quotient: {:?}", quotient);
+           ^
+/tmp/None.java:17: error: ';' expected
+    println!("integer quotient: {:?}", quotient);
+                                               ^
+/tmp/None.java:18: error: ';' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+           ^
+/tmp/None.java:18: error: ')' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                          ^
+/tmp/None.java:18: error: ';' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                 ^
+/tmp/None.java:18: error: ';' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                          ^
+/tmp/None.java:18: error: ';' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                                      ^
+/tmp/None.java:18: error: ';' expected
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                                                     ^
+/tmp/None.java:18: error: 'else' without 'if'
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                                         ^
+/tmp/None.java:18: error: illegal start of expression
+    println!("remainder:        {}", if (a as i32).abs() > remainder.abs() { remainder } else { a % b });
+                                                                                                       ^
+69 errors

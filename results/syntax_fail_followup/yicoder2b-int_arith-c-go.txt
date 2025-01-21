@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-int_arith-c-go.go:6:10: undefined: strconv

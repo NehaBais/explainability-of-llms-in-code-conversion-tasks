@@ -1,8 +1,9 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main() {
-  string abc = "abc"; // or just "abc";
-  cout << abc;
+  std::string str = "def";
+  str = "abc" + str;
+  std::cout << str << std::endl;
   return 0;
 }

@@ -1,0 +1,26 @@
+warning: unused import: `self`
+ --> /tmp/yicoder2b-file_size-go-rs.rs:2:15
+  |
+2 | use std::io::{self, BufReader};
+  |               ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `read` found for struct `BufReader` in the current scope
+  --> /tmp/yicoder2b-file_size-go-rs.rs:16:20
+   |
+16 |             reader.read((b' ', 1024)) // 1kb buffer
+   |                    ^^^^ method not found in `BufReader<File>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/mod.rs:752:8
+   |
+   = note: the method is available for `BufReader<File>` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+help: trait `Read` which provides `read` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::io::Read;
+   |
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

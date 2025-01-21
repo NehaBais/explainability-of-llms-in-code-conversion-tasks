@@ -1,0 +1,16 @@
+/tmp/dolphincoder7b-str_interp-cpp-c.c:16:12: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   16 |   if ((pos = strstr(original, toBeReplaced)) != NULL) {
+      |            ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_interp-cpp-c.c:16:46: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   16 |   if ((pos = strstr(original, toBeReplaced)) != NULL) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/dolphincoder7b-str_interp-cpp-c.c:17:38: error: invalid operands to binary expression ('int' and 'char[19]')
+   17 |     strncpy(newString, original, pos - original);
+      |                                  ~~~ ^ ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:128:34: note: expanded from macro 'strncpy'
+  128 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                                ^~~~~~~~~~~
+/tmp/dolphincoder7b-str_interp-cpp-c.c:18:19: error: invalid operands to binary expression ('int' and 'char[19]')
+   18 |     newString[pos - original] = '\0';
+      |               ~~~ ^ ~~~~~~~~
+1 warning and 3 errors generated.

@@ -1,0 +1,7 @@
+/tmp/codegemma7b-logic_ops-js-c.c:3:12: error: unknown type name 'bool'
+    3 | void logic(bool a, bool b) {
+      |            ^
+/tmp/codegemma7b-logic_ops-js-c.c:3:20: error: unknown type name 'bool'
+    3 | void logic(bool a, bool b) {
+      |                    ^
+2 errors generated.

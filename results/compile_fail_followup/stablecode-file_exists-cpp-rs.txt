@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-file_exists-cpp-rs.rs:7:30
+   |
+7  |     match fs::metadata(path) {
+   |                              ^ unclosed delimiter
+...
+12 |         Err(_) => println!("{} does not exist", path.to_string_lossy()))  ,
+   |                                                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_exists-cpp-rs.rs:14:1
+   |
+12 |         Err(_) => println!("{} does not exist", path.to_string_lossy()))  ,
+   |                                                                        - missing open `(` for this delimiter
+13 |     }
+14 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

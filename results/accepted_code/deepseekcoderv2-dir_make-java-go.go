@@ -5,19 +5,17 @@ import (
 	"os"
 )
 
-func CreateDir(path string) error {
-	err := os.MkdirAll(path, 0755) // Create all directories in path if they don't exist
-	if err != nil {
-		return fmt.Errorf("failed to create directory: %v", err)
+func createDir(path string) error {
+	err := os.MkdirAll(path, os.ModePerm)
+	if err == nil {
+		fmt.Println("Path successfully created")
 	}
-	return nil
+	return err
 }
 
 func main() {
-	err := CreateDir("./parent/test")
+	err := createDir("C:/parent/test")
 	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println("Directory created successfully.")
+		fmt.Println("Error:", err)
 	}
 }

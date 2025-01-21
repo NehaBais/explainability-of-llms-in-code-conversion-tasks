@@ -1,0 +1,14 @@
+error[E0432]: unresolved import `rust_math`
+ --> /tmp/yicoder9b-int_arith-go-rs.rs:1:5
+  |
+1 | use rust_math::pow; // Fix 1: Change num to rust-math crate for pow function.
+  |     ^^^^^^^^^ you might be missing crate `rust_math`
+  |
+help: consider importing the `rust_math` crate
+  |
+1 + extern crate rust_math;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

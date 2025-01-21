@@ -1,0 +1,19 @@
+/tmp/granitecode8b-str_interp-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-cpp-c.c:11:7: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |       strcpy(&newString[index], replacement);
+      |       ^
+/tmp/granitecode8b-str_interp-cpp-c.c:11:7: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_interp-cpp-c.c:12:16: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |       index += strlen(replacement);
+      |                ^
+/tmp/granitecode8b-str_interp-cpp-c.c:12:16: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_interp-cpp-c.c:18:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   printf("String after replacement: %sn", newString);
+      |   ^
+/tmp/granitecode8b-str_interp-cpp-c.c:18:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

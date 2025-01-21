@@ -1,0 +1,15 @@
+error[E0599]: no method named `sqrt` found for type `u32` in the current scope
+ --> /tmp/magicoder7b-int_factors-py-rs.rs:3:19
+  |
+3 |     for x in 1..n.sqrt() as u32 + 1 {
+  |                   ^^^^ method not found in `u32`
+
+error[E0599]: no method named `sqrt` found for type `u32` in the current scope
+ --> /tmp/magicoder7b-int_factors-py-rs.rs:9:20
+  |
+9 |     let x: u32 = n.sqrt() as u32 + 1;
+  |                    ^^^^ method not found in `u32`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

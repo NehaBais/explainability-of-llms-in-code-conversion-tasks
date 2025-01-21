@@ -1,0 +1,59 @@
+/tmp/granitecode3b-file_exists-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::path path1("input.txt");
+      |   ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::error_code ec;
+      |   ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:7:7: error: use of undeclared identifier 'std'
+    7 |   if (std::filesystem::exists(path1, ec) &&
+      |       ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:7:31: error: use of undeclared identifier 'path1'
+    7 |   if (std::filesystem::exists(path1, ec) &&
+      |                               ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:8:7: error: use of undeclared identifier 'std'
+    8 |       std::filesystem::is_directory(path1, ec)) {
+      |       ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:8:37: error: use of undeclared identifier 'path1'
+    8 |       std::filesystem::is_directory(path1, ec)) {
+      |                                     ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cout << "input.txt is a directory" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:9:48: error: use of undeclared identifier 'std'
+    9 |     std::cout << "input.txt is a directory" << std::endl;
+      |                                                ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:11:5: error: use of undeclared identifier 'std'
+   11 |     std::cout << "input.txt is a file" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:11:43: error: use of undeclared identifier 'std'
+   11 |     std::cout << "input.txt is a file" << std::endl;
+      |                                           ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::filesystem::path path2("/");
+      |   ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:15:3: error: use of undeclared identifier 'path2'
+   15 |   path2 /= "input.txt";
+      |   ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:16:7: error: use of undeclared identifier 'std'
+   16 |   if (std::filesystem::exists(path2, ec) &&
+      |       ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:16:31: error: use of undeclared identifier 'path2'
+   16 |   if (std::filesystem::exists(path2, ec) &&
+      |                               ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:17:7: error: use of undeclared identifier 'std'
+   17 |       std::filesystem::is_directory(path2, ec)) {
+      |       ^
+/tmp/granitecode3b-file_exists-go-cpp.cpp:17:37: error: use of undeclared identifier 'path2'
+   17 |       std::filesystem::is_directory(path2, ec)) {
+      |                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

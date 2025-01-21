@@ -1,0 +1,4 @@
+/tmp/stablecode-int_cmp-cpp-c.c:6:31: error: extraneous ')' after condition, expected a statement
+    6 |   if (!scanf("%d %d", &a, &b))) {
+      |                               ^
+1 error generated.

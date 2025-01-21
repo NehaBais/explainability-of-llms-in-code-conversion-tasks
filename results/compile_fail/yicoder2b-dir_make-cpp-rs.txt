@@ -1,0 +1,32 @@
+error[E0432]: unresolved import `std::fs::create_dirs`
+ --> /tmp/yicoder2b-dir_make-cpp-rs.rs:1:15
+  |
+1 | use std::fs::{create_dirs, File};
+  |               ^^^^^^^^^^^
+  |               |
+  |               no `create_dirs` in `fs`
+  |               help: a similar name exists in the module: `create_dir`
+
+warning: unused import: `File`
+ --> /tmp/yicoder2b-dir_make-cpp-rs.rs:1:28
+  |
+1 | use std::fs::{create_dirs, File};
+  |                            ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: the trait bound `[String; 1]: AsRef<OsStr>` is not satisfied
+ --> /tmp/yicoder2b-dir_make-cpp-rs.rs:6:9
+  |
+6 |         PathBuf::from(&["./path/to/dir".to_string()]), /* mode */
+  |         ^^^^^^^ the trait `AsRef<OsStr>` is not implemented for `[String; 1]`, which is required by `PathBuf: From<&[String; 1]>`
+  |
+  = help: the following other types implement trait `AsRef<T>`:
+            [T; N]
+            [T]
+  = note: required for `PathBuf` to implement `From<&[String; 1]>`
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0432.
+For more information about an error, try `rustc --explain E0277`.

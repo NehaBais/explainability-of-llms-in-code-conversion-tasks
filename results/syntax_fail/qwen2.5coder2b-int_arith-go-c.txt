@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-int_arith-go-c.c:19:68: error: call to undeclared library function 'abs' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   int remainder = (a >= 0 && b > 0) || (a < 0 && b < 0) ? a % b : -abs(a % b);
+      |                                                                    ^
+/tmp/qwen2.5coder2b-int_arith-go-c.c:19:68: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+1 error generated.

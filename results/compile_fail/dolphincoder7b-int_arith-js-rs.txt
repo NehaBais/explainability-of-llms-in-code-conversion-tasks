@@ -1,0 +1,21 @@
+error[E0601]: `main` function not found in crate `dolphincoder7b_int_arith_js_rs`
+  --> /tmp/dolphincoder7b-int_arith-js-rs.rs:22:2
+   |
+22 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-int_arith-js-rs.rs`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-int_arith-js-rs.rs:20:9
+   |
+20 |         exponentiation,
+   |         ^^^^^^^^^^^^^^ expected `i32`, found `u32`
+   |
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+   |
+20 |         exponentiation.try_into().unwrap(),
+   |                       ++++++++++++++++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

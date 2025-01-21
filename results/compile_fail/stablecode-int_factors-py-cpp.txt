@@ -1,0 +1,40 @@
+/tmp/stablecode-int_factors-py-cpp.cpp:7:29: error: no member named 'isqrt' in namespace 'std'; did you mean 'sqrt'?
+    7 |   for (int x = 1; x <= std::isqrt(n); ++x) {
+      |                        ~~~~~^~~~~
+      |                             sqrt
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath:404:9: note: 'sqrt' declared here
+  404 | using ::sqrt _LIBCPP_USING_IF_EXISTS;
+      |         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:22:68: error: expected ';' after expression
+   22 |                         std::ostream_iterator<int>(std::cout, " ")))) << std::endl;
+      |                                                                    ^
+      |                                                                    ;
+/tmp/stablecode-int_factors-py-cpp.cpp:22:68: error: expected expression
+/tmp/stablecode-int_factors-py-cpp.cpp:27:16: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   27 |     for (const auto& i: {
+      |                ^
+/tmp/stablecode-int_factors-py-cpp.cpp:27:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   27 |     for (const auto& i: {
+      |                       ^
+/tmp/stablecode-int_factors-py-cpp.cpp:29:1: error: expected ')'
+   29 | }) {
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:27:9: note: to match this '('
+   27 |     for (const auto& i: {
+      |         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:27:25: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   27 |     for (const auto& i: {
+      |                         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:29:1: error: expected statement
+   29 | }) {
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:29:2: error: expected unqualified-id
+   29 | }) {
+      |  ^
+/tmp/stablecode-int_factors-py-cpp.cpp:33:1: error: expected unqualified-id
+   33 | return 0;
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:34:1: error: extraneous closing brace ('}')
+   34 | }
+      | ^
+2 warnings and 9 errors generated.

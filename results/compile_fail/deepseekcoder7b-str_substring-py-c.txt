@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-str_substring-py-c.c:1:10: fatal error: 'libiconv.h' file not found
+    1 | #include <libiconv.h>
+      |          ^~~~~~~~~~~~
+1 error generated.

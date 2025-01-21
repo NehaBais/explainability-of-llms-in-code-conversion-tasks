@@ -1,0 +1,23 @@
+/tmp/codeqwen-str_substring-rs-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::u32string s = u32 "abc文字化けdef";
+      | ^
+/tmp/codeqwen-str_substring-rs-cpp.cpp:1:20: error: use of undeclared identifier 'u32'
+    1 | std::u32string s = u32 "abc文字化けdef";
+      |                    ^
+/tmp/codeqwen-str_substring-rs-cpp.cpp:1:23: error: expected ';' after top level declarator
+    1 | std::u32string s = u32 "abc文字化けdef";
+      |                       ^
+      |                       ;
+/tmp/codeqwen-str_substring-rs-cpp.cpp:2:1: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    2 | auto cpos = s.find(u32 'b');
+      | ^
+/tmp/codeqwen-str_substring-rs-cpp.cpp:2:20: error: use of undeclared identifier 'u32'
+    2 | auto cpos = s.find(u32 'b');
+      |                    ^
+/tmp/codeqwen-str_substring-rs-cpp.cpp:3:1: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    3 | auto spos = s.find(u32 "けd");
+      | ^
+/tmp/codeqwen-str_substring-rs-cpp.cpp:3:20: error: use of undeclared identifier 'u32'
+    3 | auto spos = s.find(u32 "けd");
+      |                    ^
+2 warnings and 5 errors generated.

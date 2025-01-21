@@ -1,0 +1,7 @@
+/tmp/yicoder2b-int_factors-rs-cpp.cpp:9:49: error: expected ')'
+    9 |   for (int i = 1; i <= std::floor(std::sqrt(num as float)) + 1; ++i) {
+      |                                                 ^
+/tmp/yicoder2b-int_factors-rs-cpp.cpp:9:44: note: to match this '('
+    9 |   for (int i = 1; i <= std::floor(std::sqrt(num as float)) + 1; ++i) {
+      |                                            ^
+1 error generated.

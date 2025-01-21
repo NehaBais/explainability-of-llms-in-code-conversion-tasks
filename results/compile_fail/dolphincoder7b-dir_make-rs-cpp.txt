@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-dir_make-rs-cpp.cpp:9:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |   auto parent = path.substr(0, path.find_last_of('/'));
+      |   ^
+/tmp/dolphincoder7b-dir_make-rs-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |   if (std::filesystem::exists(parent))
+      |       ~~~~~^
+1 warning and 1 error generated.

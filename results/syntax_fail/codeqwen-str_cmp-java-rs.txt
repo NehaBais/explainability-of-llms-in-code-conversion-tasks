@@ -1,0 +1,243 @@
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:10:8
+   |
+10 |     if A == B {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+10 |     if a == B {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:11:56
+   |
+11 |         println!("'{}' and '{}' are lexically equal.", A, B);
+   |                                                        ^
+   |
+help: a local variable with a similar name exists
+   |
+11 |         println!("'{}' and '{}' are lexically equal.", a, B);
+   |                                                        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:13:60
+   |
+13 |         println!("'{}' and '{}' are not lexically equal.", A, B);
+   |                                                            ^
+   |
+help: a local variable with a similar name exists
+   |
+13 |         println!("'{}' and '{}' are not lexically equal.", a, B);
+   |                                                            ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:16:8
+   |
+16 |     if A.to_lowercase() == B.to_lowercase() {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+16 |     if a.to_lowercase() == B.to_lowercase() {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:17:73
+   |
+17 |         println!("'{}' and '{}' are case-insensitive lexically equal.", A, B);
+   |                                                                         ^
+   |
+help: a local variable with a similar name exists
+   |
+17 |         println!("'{}' and '{}' are case-insensitive lexically equal.", a, B);
+   |                                                                         ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:21:13
+   |
+21 |             A, B
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+21 |             a, B
+   |             ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:25:8
+   |
+25 |     if A.cmp(B) == std::cmp::Ordering::Less {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+25 |     if a.cmp(B) == std::cmp::Ordering::Less {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:29:13
+   |
+29 |             A, B
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+29 |             a, B
+   |             ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:31:15
+   |
+31 |     } else if A.cmp(B) == std::cmp::Ordering::Greater {
+   |               ^
+   |
+help: a local variable with a similar name exists
+   |
+31 |     } else if a.cmp(B) == std::cmp::Ordering::Greater {
+   |               ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:35:13
+   |
+35 |             A, B
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+35 |             a, B
+   |             ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:39:8
+   |
+39 |     if A.cmp(B) != std::cmp::Ordering::Less {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+39 |     if a.cmp(B) != std::cmp::Ordering::Less {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:43:13
+   |
+43 |             A, B
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+43 |             a, B
+   |             ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:46:8
+   |
+46 |     if A.cmp(B) != std::cmp::Ordering::Greater {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+46 |     if a.cmp(B) != std::cmp::Ordering::Greater {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:50:13
+   |
+50 |             A, B
+   |             ^
+   |
+help: a local variable with a similar name exists
+   |
+50 |             a, B
+   |             ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:54:11
+   |
+54 |     match A.cmp(B) {
+   |           ^
+   |
+help: a local variable with a similar name exists
+   |
+54 |     match a.cmp(B) {
+   |           ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-java-rs.rs:59:11
+   |
+59 |     match A.to_lowercase().cmp(&B.to_lowercase()) {
+   |           ^
+   |
+help: a local variable with a similar name exists
+   |
+59 |     match a.to_lowercase().cmp(&B.to_lowercase()) {
+   |           ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<const A: /* Type */>(a: &str, B: &str) {
+   |           +++++++++++++++++++++
+
+error: aborting due to 16 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

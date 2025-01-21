@@ -1,0 +1,11 @@
+/tmp/granitecode3b-str_interp-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-rs-c.c:3:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   printf("Mary had a %s lambn", "little");
+      |   ^
+/tmp/granitecode3b-str_interp-rs-c.c:3:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_interp-rs-c.c:7:51: warning: data argument not used by format string [-Wformat-extra-args]
+    7 |   printf("%s had a %sns lambn", "Mary", "little", "Mary", "little");
+      |          ~~~~~~~~~~~~~~~~~~~~~                    ^
+1 warning and 2 errors generated.

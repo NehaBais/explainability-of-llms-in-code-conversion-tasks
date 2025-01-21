@@ -1,0 +1,28 @@
+/tmp/stablecode-file_rename-cpp-c.c:15:7: error: call to undeclared function 'system'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (system(command)) {
+      |       ^
+/tmp/stablecode-file_rename-cpp-c.c:30:46: error: extraneous ')' after condition, expected a statement
+   30 |   if (renameFile(currentPath, fileToRename1)))) {
+      |                                              ^
+/tmp/stablecode-file_rename-cpp-c.c:30:47: error: extraneous ')' after condition, expected a statement
+   30 |   if (renameFile(currentPath, fileToRename1)))) {
+      |                                               ^
+/tmp/stablecode-file_rename-cpp-c.c:36:48: error: extraneous ')' after condition, expected a statement
+   36 |   if (renameFile(fileToRename1, fileToRename2)))) {
+      |                                                ^
+/tmp/stablecode-file_rename-cpp-c.c:36:49: error: extraneous ')' after condition, expected a statement
+   36 |   if (renameFile(fileToRename1, fileToRename2)))) {
+      |                                                 ^
+/tmp/stablecode-file_rename-cpp-c.c:42:46: error: extraneous ')' after condition, expected a statement
+   42 |   if (renameFile(currentPath, fileToRename3)))) {
+      |                                              ^
+/tmp/stablecode-file_rename-cpp-c.c:42:47: error: extraneous ')' after condition, expected a statement
+   42 |   if (renameFile(currentPath, fileToRename3)))) {
+      |                                               ^
+/tmp/stablecode-file_rename-cpp-c.c:48:38: error: extraneous ')' after condition, expected a statement
+   48 |   if (renameFile("/", fileToRename2)))) {
+      |                                      ^
+/tmp/stablecode-file_rename-cpp-c.c:48:39: error: extraneous ')' after condition, expected a statement
+   48 |   if (renameFile("/", fileToRename2)))) {
+      |                                       ^
+9 errors generated.

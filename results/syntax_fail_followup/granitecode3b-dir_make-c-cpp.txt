@@ -1,0 +1,40 @@
+/tmp/granitecode3b-dir_make-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:5:5: error: use of undeclared identifier 'std'
+    5 |     std::cerr << "usage: " << argv[0] << " <path>" << std::endl;
+      |     ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:5:55: error: use of undeclared identifier 'std'
+    5 |     std::cerr << "usage: " << argv[0] << " <path>" << std::endl;
+      |                                                       ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string path = argv[1];
+      |   ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:9:15: error: variable has incomplete type 'struct stat'
+    9 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:9:10: note: forward declaration of 'stat'
+    9 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:11:8: error: unknown type name 'size_t'
+   11 |   for (size_t i = 0; i < path.length(); ++i) {
+      |        ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:14:11: error: no viable conversion from 'stat' to 'int'
+   14 |       int res = stat(path.c_str(), &st);
+      |           ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode3b-dir_make-c-cpp.cpp:15:24: error: use of undeclared identifier 'errno'
+   15 |       if (res == -1 && errno != ENOENT) {
+      |                        ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:15:33: error: use of undeclared identifier 'ENOENT'
+   15 |       if (res == -1 && errno != ENOENT) {
+      |                                 ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:20:11: error: use of undeclared identifier 'std'
+   20 |           std::cerr << "couldn't create directory " << path << std::endl;
+      |           ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:20:64: error: use of undeclared identifier 'std'
+   20 |           std::cerr << "couldn't create directory " << path << std::endl;
+      |                                                                ^
+12 errors generated.

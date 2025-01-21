@@ -1,0 +1,13 @@
+/tmp/codellama7b-str_substring-c-cpp.cpp:23:7: error: no member named 'pop_front' in 'std::string'
+   23 |     s.pop_front();
+      |     ~ ^
+/tmp/codellama7b-str_substring-c-cpp.cpp:29:7: error: no member named 'pop_front' in 'std::string'
+   29 |     s.pop_front();
+      |     ~ ^
+/tmp/codellama7b-str_substring-c-cpp.cpp:44:31: error: use of undeclared identifier 'n'
+   44 |   return substring(s, index - n + 1, m);
+      |                               ^
+/tmp/codellama7b-str_substring-c-cpp.cpp:53:31: error: use of undeclared identifier 'n'
+   53 |   return substring(s, index - n + 1, m);
+      |                               ^
+4 errors generated.

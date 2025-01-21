@@ -1,0 +1,63 @@
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:4:1: error: unknown type name 'vector'
+    4 | vector factor(int num) {
+      | ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:5:3: error: use of undeclared identifier 'vector'; did you mean 'factor'?
+    5 |   vector factors;
+      |   ^~~~~~
+      |   factor
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int num) {
+      |        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:5:9: error: expected ';' after expression
+    5 |   vector factors;
+      |         ^
+      |         ;
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:5:10: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+    5 |   vector factors;
+      |          ^~~~~~~
+      |          factor
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int num) {
+      |        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:6:24: error: use of undeclared identifier 'sqrt'
+    6 |   for (int i = 1; i <= sqrt(num); i++) {
+      |                        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:8:7: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+    8 |       factors.push_back(i);
+      |       ^~~~~~~
+      |       factor
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int num) {
+      |        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:9:7: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+    9 |       factors.push_back(num / i);
+      |       ^~~~~~~
+      |       factor
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int num) {
+      |        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:12:8: error: use of undeclared identifier 'factors'
+   12 |   sort(factors.begin(), factors.end());
+      |        ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:12:25: error: use of undeclared identifier 'factors'
+   12 |   sort(factors.begin(), factors.end());
+      |                         ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:13:10: error: use of undeclared identifier 'factors'
+   13 |   return factors;
+      |          ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:16:32: error: expected expression
+   16 |   assert(factor(100) == vector({1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |                                ^
+/tmp/granitecode3b-int_factors-rs-cpp.cpp:17:32: error: expected expression
+   17 |   assert(factor(101) == vector({1, 101}));
+      |                                ^
+1 warning and 14 errors generated.

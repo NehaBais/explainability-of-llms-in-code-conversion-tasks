@@ -1,12 +1,11 @@
-String str1="mary had a little lamb";
-        String str2=str1.toUpperCase();
-        System.out.println(str2);
+public class Main {
+  public static void main(String[] args) {
+    String original = "Mary had a X lamb";
+    String little = "little";
 
-        int i=0;
-        for (i=0;i<8;i++) {
-            if (i==4) {
-                break;
-            } else{
-                continue;
-            }
-        }
+    // Replace "X" with "little" in the original string
+    String replaced = original.replace("X", little);
+
+    System.out.println(replaced); // Output: Mary had a little lamb
+  }
+}

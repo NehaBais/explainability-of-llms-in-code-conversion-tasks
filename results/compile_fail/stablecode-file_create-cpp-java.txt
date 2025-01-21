@@ -1,0 +1,19 @@
+/tmp/Main.java:10: error: ';' expected
+    private static final String HERE_PATH = System.getProperty("user.dir"));
+                                                                          ^
+/tmp/Main.java:15: error: ';' expected
+        File outputFileHere = new File(HERE_PATH, "output.txt"));
+                                                               ^
+/tmp/Main.java:19: error: ';' expected
+        String rootPath = System.getProperty("user.dir")).replace("/", "");
+                                                        ^
+/tmp/Main.java:23: error: ';' expected
+        File outputFileRoot = new File(ROOT, "output.txt"));
+                                                          ^
+/tmp/Main.java:27: error: ';' expected
+        Files.createDirectory(Paths.get(HERE_PATH, "docs")));
+                                                           ^
+/tmp/Main.java:30: error: ';' expected
+        Files.createDirectory(Paths.get(ROOT, "docs")));
+                                                      ^
+6 errors

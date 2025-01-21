@@ -5,9 +5,10 @@ import (
 	"sort"
 )
 
-func factors(n int) []int {
-	factors := make([]int, 0)
-	for i := 1; i*i <= n; i++ {
+// GenerateFactors computes the factors of a positive integer n.
+func GenerateFactors(n int) []int {
+	factors := []int{1, n}
+	for i := 2; i*i <= n; i++ {
 		if n%i == 0 {
 			factors = append(factors, i)
 			if i*i != n {
@@ -15,19 +16,18 @@ func factors(n int) []int {
 			}
 		}
 	}
+	sort.Ints(factors)
 	return factors
 }
 
 func main() {
-	sampleNumbers := []int{3135, 45, 60, 81}
-	for i := range sampleNumbers {
-		fmt.Printf("Factors of %d are: ", sampleNumbers[i])
-		factorsSorted := factors(sampleNumbers[i])
-		// Sort the slices with the given function
-		sort.Ints(factorsSorted)
-		// Print the slice using 'for' loop
-		for j := range factorsSorted {
-			fmt.Printf("%d ", factorsSorted[j])
+	samples := []int{3135, 45, 60, 81}
+
+	for _, sample := range samples {
+		factors := GenerateFactors(sample)
+		fmt.Printf("Factors of %4d are: ", sample)
+		for _, factor := range factors {
+			fmt.Printf("%d ", factor)
 		}
 		fmt.Println()
 	}

@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:40: error: expected expression
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                        ^
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:41: error: unexpected character <U+FF5C>
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                         ^~
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:49: error: character <U+2581> not allowed in an identifier
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                                ^
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:54: error: character <U+2581> not allowed in an identifier
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                                   ^
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:65: error: character <U+FF5C> not allowed in an identifier
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                                            ^~
+/tmp/deepseekcoder7b-file_rename-go-cpp.cpp:11:44: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   11 |   if (std::rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                           ^
+6 errors generated.

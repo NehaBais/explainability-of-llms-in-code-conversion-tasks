@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/yicoder2b-str_interp-rs-go.go:9:42: not enough arguments in call to interpolation
+	have (string, string)
+	want (string, string, string)
+/tmp/yicoder2b-str_interp-rs-go.go:13:32: not enough arguments in call to interpolationWithName
+	have (string, string)
+	want (string, string, string)

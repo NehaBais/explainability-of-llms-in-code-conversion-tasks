@@ -1,0 +1,50 @@
+error[E0463]: can't find crate for `fs`
+ --> /tmp/yicoder2b-dir_make-js-rs.rs:1:1
+  |
+1 | extern crate fs;
+  | ^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0432]: unresolved imports `std::fs::create_dir_recursive`, `std::fs::LinkOption`
+ --> /tmp/yicoder2b-dir_make-js-rs.rs:3:15
+  |
+3 | use std::fs::{create_dir_recursive, read, read_link, remove_file, LinkOption, Path};
+  |               ^^^^^^^^^^^^^^^^^^^^                                ^^^^^^^^^^ no `LinkOption` in `fs`
+  |               |
+  |               no `create_dir_recursive` in `fs`
+
+error[E0603]: struct `Path` is private
+ --> /tmp/yicoder2b-dir_make-js-rs.rs:3:79
+  |
+3 | use std::fs::{create_dir_recursive, read, read_link, remove_file, LinkOption, Path};
+  |                                                                               ^^^^ private struct
+  |
+note: the struct `Path` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:17:19
+help: import `Path` directly
+  |
+3 | use std::fs::{create_dir_recursive, read, read_link, remove_file, LinkOption, std::path::Path};
+  |                                                                               ~~~~~~~~~~~~~~~
+
+warning: unused import: `read`
+ --> /tmp/yicoder2b-dir_make-js-rs.rs:3:37
+  |
+3 | use std::fs::{create_dir_recursive, read, read_link, remove_file, LinkOption, Path};
+  |                                     ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-dir_make-js-rs.rs:7:12
+  |
+7 |     if let Some(_) = read_link(&path) {
+  |            ^^^^^^^   ---------------- this expression has type `Result<PathBuf, std::io::Error>`
+  |            |
+  |            expected `Result<PathBuf, Error>`, found `Option<_>`
+  |
+  = note: expected enum `Result<PathBuf, std::io::Error>`
+             found enum `Option<_>`
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0308, E0432, E0463, E0603.
+For more information about an error, try `rustc --explain E0308`.

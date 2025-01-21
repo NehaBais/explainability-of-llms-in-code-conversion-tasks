@@ -1,0 +1,68 @@
+error: 2 positional arguments in format string, but there is 1 argument
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:6:19
+  |
+6 |     println!("NOT {} is {}", !a);
+  |                   ^^    ^^   --
+
+error: 3 positional arguments in format string, but there are 2 arguments
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:7:15
+  |
+7 |     println!("{} XOR {} is {}", a ^ b, (a ^ b).count_ones());
+  |               ^^     ^^    ^^   -----  --------------------
+
+warning: unused imports: `BitAnd` and `BitOr`
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:1:16
+  |
+1 | use std::ops::{BitAnd, BitOr};
+  |                ^^^^^^  ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:16:2
+   |
+16 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-bit_ops-java-rs.rs`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:14:20
+   |
+14 |         (a << (b % bits)) | (a >> ((bits - b) % bits)),
+   |                    ^^^^ expected `i32`, found `usize`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `usize`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:14:18
+   |
+14 |         (a << (b % bits)) | (a >> ((bits - b) % bits)),
+   |                  ^ no implementation for `i32 % usize`
+   |
+   = help: the trait `Rem<usize>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:14:44
+   |
+14 |         (a << (b % bits)) | (a >> ((bits - b) % bits)),
+   |                                            ^ expected `usize`, found `i32`
+
+error[E0277]: cannot subtract `i32` from `usize`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:14:42
+   |
+14 |         (a << (b % bits)) | (a >> ((bits - b) % bits)),
+   |                                          ^ no implementation for `usize - i32`
+   |
+   = help: the trait `Sub<i32>` is not implemented for `usize`
+   = help: the following other types implement trait `Sub<Rhs>`:
+             `&'a usize` implements `Sub<usize>`
+             `&usize` implements `Sub<&usize>`
+             `usize` implements `Sub<&usize>`
+             `usize` implements `Sub`
+
+error: aborting due to 7 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

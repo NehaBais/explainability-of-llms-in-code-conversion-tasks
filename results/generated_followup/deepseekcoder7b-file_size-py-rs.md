@@ -1,0 +1,4 @@
+The error message is indicating that there's no associated item named `NotFound` for struct `std::io::Error` in the current scope. This typically means we are trying to access a field or method on an instance of `std::io::Error`, but it does not exist because Rust doesn’t have a built-in equivalent to Python's `os.path.getsize()` that works across all platforms and can give the same results as the original code in both cases (i.e., when providing relative path or absolute path).
+
+The fix is to use Rust's standard library function `std::fs::metadata()`, which returns a Result with either the metadata for the file if it exists, or an error indicating why it could not obtain the information. This will handle cases where the files don’t exist and provides consistent error handling across different platforms.
+

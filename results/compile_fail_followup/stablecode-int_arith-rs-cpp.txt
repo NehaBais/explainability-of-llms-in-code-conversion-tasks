@@ -1,0 +1,18 @@
+/tmp/stablecode-int_arith-rs-cpp.cpp:10:31: error: extraneous ')' before ';'
+   10 |     int a = std::stoi(argv[1]));
+      |                               ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:11:31: error: extraneous ')' before ';'
+   11 |     int b = std::stoi(argv[2]));
+      |                               ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:20:1: error: expected expression
+   20 | / b' as it will perform floor division 
+      | ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:20:4: warning: missing terminating ' character [-Winvalid-pp-token]
+   20 | / b' as it will perform floor division 
+      |    ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:31:54: error: expected ';' after expression
+   31 |         std::cout << static_cast<int>(std::pow(a, b)))) << std::endl;
+      |                                                      ^
+      |                                                      ;
+/tmp/stablecode-int_arith-rs-cpp.cpp:31:54: error: expected expression
+1 warning and 5 errors generated.

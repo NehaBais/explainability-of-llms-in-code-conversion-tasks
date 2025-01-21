@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-dir_make-cpp-rs.rs:10:11
+   |
+10 | fn main() {
+   |           ^ unclosed delimiter
+...
+13 |     match create_directories(&path)) {
+   |                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-dir_make-cpp-rs.rs:17:1
+   |
+13 |     match create_directories(&path)) {
+   |                                    - missing open `(` for this delimiter
+...
+17 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

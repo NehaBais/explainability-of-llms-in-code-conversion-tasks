@@ -1,0 +1,50 @@
+/tmp/codegeex4-dir_make-java-c.c:6:3: error: call to undeclared library function 'strncpy' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strncpy(buffer, path, sizeof(buffer));
+      |   ^
+/tmp/codegeex4-dir_make-java-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/tmp/codegeex4-dir_make-java-c.c:7:16: error: call to undeclared function 'strnlen'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   size_t len = strnlen(buffer, sizeof(buffer));
+      |                ^
+/tmp/codegeex4-dir_make-java-c.c:12:11: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |       if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |           ^
+/tmp/codegeex4-dir_make-java-c.c:12:25: error: use of undeclared identifier 'S_IRWXU'
+   12 |       if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                         ^
+/tmp/codegeex4-dir_make-java-c.c:12:35: error: use of undeclared identifier 'S_IRWXG'
+   12 |       if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                                   ^
+/tmp/codegeex4-dir_make-java-c.c:12:45: error: use of undeclared identifier 'S_IROTH'
+   12 |       if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                                             ^
+/tmp/codegeex4-dir_make-java-c.c:12:55: error: use of undeclared identifier 'S_IXOTH'
+   12 |       if (mkdir(buffer, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                                                       ^
+/tmp/codegeex4-dir_make-java-c.c:13:11: error: use of undeclared identifier 'errno'
+   13 |           errno != EEXIST) {
+      |           ^
+/tmp/codegeex4-dir_make-java-c.c:13:20: error: use of undeclared identifier 'EEXIST'
+   13 |           errno != EEXIST) {
+      |                    ^
+/tmp/codegeex4-dir_make-java-c.c:21:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |       ^
+/tmp/codegeex4-dir_make-java-c.c:21:19: error: use of undeclared identifier 'S_IRWXU'
+   21 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                   ^
+/tmp/codegeex4-dir_make-java-c.c:21:29: error: use of undeclared identifier 'S_IRWXG'
+   21 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                             ^
+/tmp/codegeex4-dir_make-java-c.c:21:39: error: use of undeclared identifier 'S_IROTH'
+   21 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                                       ^
+/tmp/codegeex4-dir_make-java-c.c:21:49: error: use of undeclared identifier 'S_IXOTH'
+   21 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) != 0 &&
+      |                                                 ^
+/tmp/codegeex4-dir_make-java-c.c:22:7: error: use of undeclared identifier 'errno'
+   22 |       errno != EEXIST) {
+      |       ^
+/tmp/codegeex4-dir_make-java-c.c:22:16: error: use of undeclared identifier 'EEXIST'
+   22 |       errno != EEXIST) {
+      |                ^
+16 errors generated.

@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:10: error: expected expression
+   22 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:11: error: unexpected character <U+FF5C>
+   22 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:19: error: character <U+2581> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:24: error: character <U+2581> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:35: error: character <U+FF5C> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-str_concat-py-cpp.cpp:22:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   22 |   return <｜begin▁of▁sentence｜ >
+      |             ^
+6 errors generated.

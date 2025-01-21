@@ -1,0 +1,65 @@
+/tmp/granitecode3b-str_cmp-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:6:6: error: expected ';' after expression
+    6 |   std::string a((argc > 1) ? argv[1] : "1.2.Foo");
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_cmp-cpp-c.c:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string a((argc > 1) ? argv[1] : "1.2.Foo");
+      |   ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:6:6: error: expected expression
+    6 |   std::string a((argc > 1) ? argv[1] : "1.2.Foo");
+      |      ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:7:6: error: expected ';' after expression
+    7 |   std::string b((argc > 2) ? argv[2] : "1.3.Bar");
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_cmp-cpp-c.c:7:3: error: use of undeclared identifier 'std'
+    7 |   std::string b((argc > 2) ? argv[2] : "1.3.Bar");
+      |   ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:7:6: error: expected expression
+    7 |   std::string b((argc > 2) ? argv[2] : "1.3.Bar");
+      |      ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:8:6: error: expected ';' after expression
+    8 |   std::cout << a << " and " << b << " are " << ((a == b) ? "" : "not ")
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_cmp-cpp-c.c:8:3: error: use of undeclared identifier 'std'
+    8 |   std::cout << a << " and " << b << " are " << ((a == b) ? "" : "not ")
+      |   ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:8:6: error: expected expression
+    8 |   std::cout << a << " and " << b << " are " << ((a == b) ? "" : "not ")
+      |      ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:11:6: error: expected ';' after expression
+   11 |   std::cout << a << " and " << b << " are " << ((a != b) ? "" : "not ")
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_cmp-cpp-c.c:11:3: error: use of undeclared identifier 'std'
+   11 |   std::cout << a << " and " << b << " are " << ((a != b) ? "" : "not ")
+      |   ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:11:6: error: expected expression
+   11 |   std::cout << a << " and " << b << " are " << ((a != b) ? "" : "not ")
+      |      ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:14:6: error: expected ';' after expression
+   14 |   std::cout << a << " is " << ((a < b) ? "" : "not ") << "ordered before " << b
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_cmp-cpp-c.c:14:3: error: use of undeclared identifier 'std'
+   14 |   std::cout << a << " is " << ((a < b) ? "" : "not ") << "ordered before " << b
+      |   ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:14:6: error: expected expression
+   14 |   std::cout << a << " is " << ((a < b) ? "" : "not ") << "ordered before " << b
+      |      ^
+/tmp/granitecode3b-str_cmp-cpp-c.c:17:6: error: expected ';' after expression
+   17 |   std::cout << a << " is " << ((a > b) ? "" : "not ") << "ordered after " << b
+      |      ^
+      |      ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

@@ -1,0 +1,32 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String s = "abcdefgh";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+int n, m;
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+char char;
+^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+System.out.println(s.substring(n-1, n+m-1));
+^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+System.out.println(s.substring(n-1));
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+System.out.println(s.substring(0, s.length()-1));
+^
+/tmp/None.java:12: error: '.class' expected
+int indx = s.indexOf(char);
+                         ^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+System.out.println(s.substring(indx, indx+m));
+^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+indx = s.indexOf(chars);
+^
+/tmp/None.java:16: error: class, interface, enum, or record expected
+System.out.println(s.substring(indx, indx+m));
+^
+10 errors

@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_exists-rs-cpp.cpp:1:10: fatal error: 'experimental/filesystem' file not found
+    1 | #include <experimental/filesystem>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,28 @@
+/tmp/granitecode3b-str_prepend-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-java-c.c:5:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    5 |   size_t len = strlen(string);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-str_prepend-java-c.c:5:16: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   size_t len = strlen(string);
+      |                ^
+/tmp/granitecode3b-str_prepend-java-c.c:5:16: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_prepend-java-c.c:5:14: error: expression is not assignable
+    5 |   size_t len = strlen(string);
+      |   ~~~~~~~~~~ ^
+/tmp/granitecode3b-str_prepend-java-c.c:5:10: error: use of undeclared identifier 'len'
+    5 |   size_t len = strlen(string);
+      |          ^
+/tmp/granitecode3b-str_prepend-java-c.c:6:19: error: use of undeclared identifier 'len'
+    6 |   char new_string[len + 5]; // Assuming we want to add "abc" before it
+      |                   ^
+/tmp/granitecode3b-str_prepend-java-c.c:7:3: error: call to undeclared library function 'sprintf' with type 'int (char *, const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   sprintf(new_string, "abc%s", string);
+      |   ^
+/tmp/granitecode3b-str_prepend-java-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+8 errors generated.

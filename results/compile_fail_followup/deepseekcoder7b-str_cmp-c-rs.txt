@@ -1,0 +1,76 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:36
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                    ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:42
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                           ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:45
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                              ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:54
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                                       ^^
+
+error[E0463]: can't find crate for `itertools`
+ --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:1:1
+  |
+1 | extern crate itertools;  // Add this line to import the 'itertools' crate at the top of your file
+  | ^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: argument never used
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:13:9
+   |
+6  |         "{} {} {} {} {} {}",
+   |         ------------------- formatting specifier missing
+...
+13 |         b
+   |         ^ argument never used
+
+error: comparison operators cannot be chained
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:29
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                             ^     ^
+
+error: expected `{`, found `of`
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:43
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                            ^^ expected `{`
+   |
+note: the `if` expression is missing a block after this condition
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:22:12
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁of▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: try placing this code inside a block
+   |
+22 |         if a.to_lowercase() > b.to<｜begin▁{ of }▁sentence｜>.to_lowercase() {"gt"} else {"lt"},
+   |                                            +    +
+
+error[E0599]: no method named `combinations` found for struct `std::slice::Iter` in the current scope
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:32:34
+   |
+32 |     for (a, b) in strings.iter().combinations(2) {  // Use combinations function from itertools trait
+   |                                  ^^^^^^^^^^^^
+   |
+help: there is a method `position` with a similar name
+   |
+32 |     for (a, b) in strings.iter().position(2) {  // Use combinations function from itertools trait
+   |                                  ~~~~~~~~
+
+error: aborting due to 9 previous errors
+
+Some errors have detailed explanations: E0463, E0599.
+For more information about an error, try `rustc --explain E0463`.

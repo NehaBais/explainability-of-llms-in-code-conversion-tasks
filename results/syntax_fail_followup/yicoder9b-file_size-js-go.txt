@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-file_size-js-go.go:20:5: undefined: runtime

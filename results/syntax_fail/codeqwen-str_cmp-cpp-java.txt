@@ -1,0 +1,5 @@
+/tmp/Main.java:45: error: incompatible types: double cannot be converted to String
+    demo_compare(numA, numB + "", "numerically");
+                 ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

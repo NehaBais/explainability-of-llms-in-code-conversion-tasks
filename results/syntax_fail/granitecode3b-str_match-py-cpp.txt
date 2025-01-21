@@ -1,0 +1,40 @@
+/tmp/granitecode3b-str_match-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str1 = "abcd";
+      |   ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string str2 = "ab";
+      |   ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "Does " << str1 << " start with " << str2
+      |   ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:11:40: error: use of undeclared identifier 'string'
+   11 |        << "?: " << (str1.find(str2) != string::npos) << endl;
+      |                                        ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:11:57: error: use of undeclared identifier 'endl'
+   11 |        << "?: " << (str1.find(str2) != string::npos) << endl;
+      |                                                         ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:15:17: error: use of undeclared identifier 'string'
+   15 |   while (loc != string::npos) {
+      |                 ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:16:5: error: use of undeclared identifier 'cout'
+   16 |     cout << "Found substring '" << str2 << "' at position " << loc << endl;
+      |     ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:16:71: error: use of undeclared identifier 'endl'
+   16 |     cout << "Found substring '" << str2 << "' at position " << loc << endl;
+      |                                                                       ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "Does " << str1 << " end with " << str2
+      |   ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:22:41: error: use of undeclared identifier 'string'
+   22 |        << "?: " << (str1.rfind(str2) != string::npos) << endl;
+      |                                         ^
+/tmp/granitecode3b-str_match-py-cpp.cpp:22:58: error: use of undeclared identifier 'endl'
+   22 |        << "?: " << (str1.rfind(str2) != string::npos) << endl;
+      |                                                          ^
+1 warning and 12 errors generated.

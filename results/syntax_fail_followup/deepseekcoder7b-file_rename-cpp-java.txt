@@ -1,0 +1,17 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+File currentDir = new File(".");  //get the current working directory
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:4: error: class, interface, enum, or record expected
+Files.move(Paths.get(currentDir.getAbsolutePath(), "input.txt"), Paths.get(currentDir.getAbsolutePath(), "output.txt"));
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+Files.move(Paths.get(currentDir.getAbsolutePath(), "docs"), Paths.get(currentDir.getAbsolutePath(), "mydocs"));
+^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+Files.move(Paths.get("/input.txt"), Paths.get("/output.txt"));
+^
+/tmp/None.java:12: error: class, interface, enum, or record expected
+Files.move(Paths.get("/docs"), Paths.get("/mydocs"));
+^
+5 errors

@@ -1,8 +1,6 @@
 fn main() {
     let s = "hello";
-    println!("{}", &s);
-
-    let mut s2 = String::from(&s);
-    s2.push_str(" literal");
-    println!("{:?}", s2);
+    println!("{} literal", s);
+    let s2 = format!("{}{}", s, " literal");
+    println!("{}", s2);
 }

@@ -1,0 +1,5 @@
+/tmp/yicoder2b-str_append-js-c.c:5:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   strcat(s1, ", World!");
+      |   ^
+/tmp/yicoder2b-str_append-js-c.c:5:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+1 error generated.

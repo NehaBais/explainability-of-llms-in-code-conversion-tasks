@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-py-go.go:9:1: syntax error: unexpected semicolon or newline before {
+/tmp/stablecode-file_rename-py-go.go:23:1: syntax error: unexpected semicolon or newline before {
+/tmp/stablecode-file_rename-py-go.go:37:1: syntax error: unexpected semicolon or newline before {

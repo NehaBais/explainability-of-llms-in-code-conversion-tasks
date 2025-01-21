@@ -1,0 +1,23 @@
+/tmp/codegeex4-str_cmp-py-cpp.cpp:1:20: error: use of undeclared identifier 'std'
+    1 | void compare(const std::string &a, const std::string &b) {
+      |                    ^
+/tmp/codegeex4-str_cmp-py-cpp.cpp:1:42: error: use of undeclared identifier 'std'
+    1 | void compare(const std::string &a, const std::string &b) {
+      |                                          ^
+/tmp/codegeex4-str_cmp-py-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::string str1 = "5.0";
+      |   ^
+/tmp/codegeex4-str_cmp-py-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::string str2 = "5";
+      |   ^
+/tmp/codegeex4-str_cmp-py-cpp.cpp:14:15: error: use of undeclared identifier 'str2'; did you mean 'str1'?
+   14 |   std::string str2 = "5";
+      |               ^~~~
+      |               str1
+/tmp/codegeex4-str_cmp-py-cpp.cpp:13:15: note: 'str1' declared here
+   13 |   std::string str1 = "5.0";
+      |               ^
+/tmp/codegeex4-str_cmp-py-cpp.cpp:16:17: error: use of undeclared identifier 'str2'
+   16 |   compare(str1, str2);
+      |                 ^
+6 errors generated.

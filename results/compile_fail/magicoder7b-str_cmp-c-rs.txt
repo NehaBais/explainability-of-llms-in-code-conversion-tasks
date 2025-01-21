@@ -1,0 +1,36 @@
+error[E0599]: no method named `ge_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/magicoder7b-str_cmp-c-rs.rs:20:12
+   |
+20 |         !a.ge_ignore_ascii_case(&b),
+   |            ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+20 |         !a.eq_ignore_ascii_case(&b),
+   |            ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `le_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/magicoder7b-str_cmp-c-rs.rs:22:12
+   |
+22 |         !a.le_ignore_ascii_case(&b),
+   |            ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+22 |         !a.eq_ignore_ascii_case(&b),
+   |            ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `lt_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/magicoder7b-str_cmp-c-rs.rs:23:12
+   |
+23 |         !a.lt_ignore_ascii_case(b)
+   |            ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+23 |         !a.eq_ignore_ascii_case(b)
+   |            ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

@@ -1,0 +1,13 @@
+/tmp/yicoder9b-file_rename-rs-c.c:10:22: error: use of undeclared identifier 'errno'
+   10 |             strerror(errno)); // Use strerror() to get the string description of
+      |                      ^
+/tmp/yicoder9b-file_rename-rs-c.c:16:47: error: use of undeclared identifier 'errno'
+   16 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+/tmp/yicoder9b-file_rename-rs-c.c:21:47: error: use of undeclared identifier 'errno'
+   21 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+/tmp/yicoder9b-file_rename-rs-c.c:26:47: error: use of undeclared identifier 'errno'
+   26 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+4 errors generated.

@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-bit_ops-js-c.c:2:24: error: expected comma in macro parameter list
+    2 | #define MASK_INT(sizeof(int) * 8 - 1)
+      |                        ^
+/tmp/dolphincoder7b-bit_ops-js-c.c:23:25: error: use of undeclared identifier 'MASK_INT'
+   23 |   int r = (b < 0) ? ~(~(MASK_INT + 1) << -b) : ((1 << b) - 1);
+      |                         ^
+/tmp/dolphincoder7b-bit_ops-js-c.c:24:52: error: use of undeclared identifier 'MASK_INT'
+   24 |   printf("a  >>> b:  %d\n", (a >> r) | (a << (~r & MASK_INT)));
+      |                                                    ^
+3 errors generated.

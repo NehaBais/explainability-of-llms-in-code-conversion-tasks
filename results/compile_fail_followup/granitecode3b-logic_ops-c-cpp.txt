@@ -1,0 +1,31 @@
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "Enter two logical values (0 or 1): ";
+      |   ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:6:3: error: use of undeclared identifier 'cin'
+    6 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "a and b is " << (a && b) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:8:40: error: use of undeclared identifier 'endl'
+    8 |   cout << "a and b is " << (a && b) << endl;
+      |                                        ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a or b is " << (a || b) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:9:39: error: use of undeclared identifier 'endl'
+    9 |   cout << "a or b is " << (a || b) << endl;
+      |                                       ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "not a is " << (!a) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-c-cpp.cpp:10:34: error: use of undeclared identifier 'endl'
+   10 |   cout << "not a is " << (!a) << endl;
+      |                                  ^
+1 warning and 9 errors generated.

@@ -1,0 +1,27 @@
+/tmp/stablecode-file_size-rs-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_size-rs-cpp.cpp:13:7: error: use of undeclared identifier 'argc'
+   13 |   if (argc != 2) {
+      |       ^
+/tmp/stablecode-file_size-rs-cpp.cpp:17:32: error: expected ';' at end of declaration
+   17 |     const std::string file_name {argv[1] ] };
+      |                                ^
+      |                                ;
+/tmp/stablecode-file_size-rs-cpp.cpp:20:7: error: use of undeclared identifier 'fs'
+   20 |       fs::path path{file_name};
+      |       ^
+/tmp/stablecode-file_size-rs-cpp.cpp:20:20: error: expected ';' at end of declaration
+   20 |       fs::path path{file_name};
+      |                    ^
+      |                    ;
+/tmp/stablecode-file_size-rs-cpp.cpp:21:12: error: use of undeclared identifier 'fs'
+   21 |       if (!fs::exists(path))
+      |            ^
+/tmp/stablecode-file_size-rs-cpp.cpp:22:61: error: extraneous ')' before ';'
+   22 |             throw std::runtime_error("File does not exist."));
+      |                                                             ^
+/tmp/stablecode-file_size-rs-cpp.cpp:25:20: error: use of undeclared identifier 'fs'
+   25 |                 << fs::file_size(path) << " bytes.\n";
+      |                    ^
+8 errors generated.

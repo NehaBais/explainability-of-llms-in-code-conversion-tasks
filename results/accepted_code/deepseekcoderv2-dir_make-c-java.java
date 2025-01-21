@@ -1,22 +1,29 @@
-import java.io.*;
+import java.io.File;
 
-public class MakeDir {
-  public static void main(String[] args) throws IOException {
+public class Mkdir {
+  public static void main(String[] args) {
     if (args.length != 1) {
-      System.out.println("Usage: java MakeDir <path>");
+      System.err.println("usage: java Mkdir <path>");
       System.exit(1);
     }
+
     String path = args[0];
     File file = new File(path);
-    if (!file.exists()) {
-      boolean success = file.mkdirs();
-      if (success) {
-        System.out.println("Directory created successfully");
-      } else {
-        System.out.println("Failed to create directory");
+
+    // Split the path by '/' and create each directory in the path
+    String[] parts = path.split("/");
+    StringBuilder currentPath = new StringBuilder();
+
+    for (String part : parts) {
+      if (!part.isEmpty()) {
+        currentPath.append(part);
+        File dir = new File(currentPath.toString());
+        if (!dir.exists() && !dir.mkdir()) {
+          System.err.println("Failed to create directory: " + path);
+          System.exit(1);
+        }
+        currentPath.append("/");
       }
-    } else {
-      System.out.println("Directory already exists");
     }
   }
 }

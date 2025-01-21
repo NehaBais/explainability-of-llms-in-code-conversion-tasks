@@ -1,0 +1,5 @@
+/tmp/codeqwen-str_substring-rs-c.c:11:15: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   char *sub = malloc((m + 1) * sizeof(char));
+      |               ^
+/tmp/codeqwen-str_substring-rs-c.c:11:15: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+1 error generated.

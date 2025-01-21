@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:12:19: error: expected ';' at end of declaration
+   12 |   vector<string> v{s1, "world", "mom"};
+      |                   ^
+      |                   ;
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:13:12: error: member reference base type 'const char[3]' is not a structure or union
+   13 |   s2 = ", ".join(v);
+      |        ~~~~^~~~~
+2 errors generated.

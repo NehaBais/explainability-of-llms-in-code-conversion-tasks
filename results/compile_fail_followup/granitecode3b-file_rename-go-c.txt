@@ -1,0 +1,4 @@
+/tmp/granitecode3b-file_rename-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+1 error generated.

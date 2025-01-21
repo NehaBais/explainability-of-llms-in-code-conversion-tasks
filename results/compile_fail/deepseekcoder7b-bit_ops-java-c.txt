@@ -1,0 +1,29 @@
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:10: error: expected expression
+   40 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   40 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:19: error: character <U+2581> not allowed in an identifier
+   40 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:24: error: character <U+2581> not allowed in an identifier
+   40 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   40 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-bit_ops-java-c.c:40:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   40 |   return <｜begin▁of▁sentence｜ >
+      |           ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:42:5: error: expected expression
+   42 |   * /
+      |     ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:42:6: error: expected expression
+   42 |   * /
+      |      ^
+/tmp/deepseekcoder7b-bit_ops-java-c.c:42:6: error: expected '}'
+/tmp/deepseekcoder7b-bit_ops-java-c.c:36:12: note: to match this '{'
+   36 | int main() {
+      |            ^
+2 warnings and 7 errors generated.

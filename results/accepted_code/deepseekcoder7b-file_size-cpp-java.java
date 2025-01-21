@@ -13,9 +13,8 @@ public class Main {
         System.out.println(filename + " does not exist!");
       }
     } catch (
-        Exception
-            ex) { // catching all exceptions because we are uncertain about the exact type of
-                  // exception that might be thrown
+        Exception ex) { // catching all exceptions because we are uncertain about the exact type of
+      // exception that might be thrown
       System.err.println(ex.getMessage());
     }
   }
@@ -24,7 +23,7 @@ public class Main {
     printFileSize("input.txt");
     printFileSize(
         "/input.txt"); // note: "/" is used in Unix systems to denote the root of the file system,
-                       // but it's not standard across all platforms and this might fail on Windows
-                       // if input.txt resides in a different drive.
+    // but it's not standard across all platforms and this might fail on Windows
+    // if input.txt resides in a different drive.
   }
 }

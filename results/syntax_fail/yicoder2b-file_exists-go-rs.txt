@@ -1,0 +1,27 @@
+error[E0425]: cannot find function `stat` in module `fs`
+ --> /tmp/yicoder2b-file_exists-go-rs.rs:9:25
+  |
+9 |     if let Err(e) = fs::stat(&input_file) {
+  |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:17:25
+   |
+17 |     if let Err(e) = fs::stat(&input_dir) {
+   |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:25:25
+   |
+25 |     if let Err(e) = fs::stat(&docs_file) {
+   |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:33:25
+   |
+33 |     if let Err(e) = fs::stat(&docs_dir) {
+   |                         ^^^^ not found in `fs`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

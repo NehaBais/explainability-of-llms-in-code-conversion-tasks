@@ -1,0 +1,32 @@
+error: macro expansion ignores token `match` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/macros/mod.rs:44:9
+  |
+ ::: /tmp/codellama7b-int_factors-js-rs.rs:5:1
+  |
+5 | assert_eq!(factors(45), vec![1, 3, 5, 9, 15, 45]);
+  | ------------------------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `assert_eq!` is likely invalid in item context
+
+error: macro expansion ignores token `match` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/macros/mod.rs:44:9
+  |
+ ::: /tmp/codellama7b-int_factors-js-rs.rs:6:1
+  |
+6 | assert_eq!(factors(53), vec![1, 53]);
+  | ------------------------------------ caused by the macro expansion here
+  |
+  = note: the usage of `assert_eq!` is likely invalid in item context
+
+error: macro expansion ignores token `match` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/macros/mod.rs:44:9
+  |
+ ::: /tmp/codellama7b-int_factors-js-rs.rs:7:1
+  |
+7 | assert_eq!(factors(64), vec![1, 2, 4, 8, 16, 32, 64]);
+  | ----------------------------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `assert_eq!` is likely invalid in item context
+
+error: aborting due to 3 previous errors
+

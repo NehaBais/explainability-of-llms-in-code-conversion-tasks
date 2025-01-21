@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-str_substring-cpp-c.c:15:11: error: member reference base type 'char[11]' is not a structure or union
+   15 |       &s[s.find(c)]); // Print the substring starting from a known character c
+      |          ~^~~~~
+/tmp/qwen2.5coder2b-str_substring-cpp-c.c:16:22: error: member reference base type 'char[11]' is not a structure or union
+   16 |   printf("%s\n", &s[s.find(sub)]); // Print the substring starting from a known
+      |                     ~^~~~~
+2 errors generated.

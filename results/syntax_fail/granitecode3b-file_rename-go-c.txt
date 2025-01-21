@@ -1,0 +1,7 @@
+/tmp/granitecode3b-file_rename-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-go-c.c:3:3: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   rename("input.txt", "output.txt");
+      |   ^
+2 errors generated.

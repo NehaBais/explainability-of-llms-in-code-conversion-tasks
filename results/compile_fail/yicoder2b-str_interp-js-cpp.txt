@@ -1,0 +1,29 @@
+/tmp/yicoder2b-str_interp-js-cpp.cpp:9:3: error: use of undeclared identifier 'cout'; did you mean 'count'?
+    9 |   cout << original << endl; // Outputs: "Mary had a little lamb"
+      |   ^~~~
+      |   count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/yicoder2b-str_interp-js-cpp.cpp:9:3: error: reference to overloaded function could not be resolved; did you mean to call it?
+    9 |   cout << original << endl; // Outputs: "Mary had a little lamb"
+      |   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: possible target for call
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4074:1: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>, _Allocator = std::allocator<char>] not viable: no overload of 'count' matching 'basic_ostream<char, char_traits<char> > &' for 1st argument
+ 4074 | operator<<(basic_ostream<_CharT, _Traits>& __os, const basic_string<_CharT, _Traits, _Allocator>& __str);
+      | ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:871:1: note: candidate template ignored: could not match 'basic_string_view' against 'basic_string'
+  871 | operator<<(basic_ostream<_CharT, _Traits>& __os, basic_string_view<_CharT, _Traits> __str);
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:1560:1: note: candidate template ignored: could not match 'shared_ptr' against 'basic_string'
+ 1560 | operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p);
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:234:1: note: candidate template ignored: could not match 'uniform_int_distribution' against 'basic_string'
+  234 | operator<<(basic_ostream<_CharT, _Traits>& __os, const uniform_int_distribution<_IT>& __x) {
+      | ^
+/tmp/yicoder2b-str_interp-js-cpp.cpp:9:23: error: use of undeclared identifier 'endl'
+    9 |   cout << original << endl; // Outputs: "Mary had a little lamb"
+      |                       ^
+3 errors generated.

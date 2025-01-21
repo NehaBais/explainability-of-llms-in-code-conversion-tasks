@@ -1,17 +1,33 @@
-### Solution
+ Sure! Below is the equivalent C++ code to verify that a file called `input.txt` and a directory called `docs` exist, both for the current working directory and the filesystem root.
 
-```java
-import java.io.File; 
-public class Main {
-    public static void main(String[] args) {
-        String currentDir = System.getProperty("user.dir");
-        String rootDirectory = "/"; // Root directory on UNIX systems, equivalent to 'C:\' in Windows
-        
-        File file1 = new File(currentDir + "/docs/input.txt");  // Assuming the input.txt is in a docs folder inside the current working directory
-        System.out.println("File exists: " + file1.exists());
-        
-        File file2 = new File(rootDirectory + "docs/input.txt");  
-        System.out.println("File exists: " + file2.exists());
+```cpp
+#include <filesystem>
+#include <iostream>
+
+int main() {
+    // Check for the current working directory
+    std::filesystem::path path_current = std::filesystem::current_path();
+    path_current /= "docs";
+    path_current /= "input.txt";
+
+    if (std::filesystem::exists(path_current)) {
+        std::cout << "File exists in the current working directory: " << path_current << std::endl;
+    } else {
+        std::cout << "File does not exist in the current working directory: " << path_current << std::endl;
     }
+
+    // Check for the filesystem root
+    std::filesystem::path path_root = "/docs";
+    path_root /= "input.txt";
+
+    if (std::filesystem::exists(path_root)) {
+        std::cout << "File exists in the filesystem root: " << path_root << std::endl;
+    } else {
+        std::cout << "File does not exist in the filesystem root: " << path_root << std::endl;
+    }
+
+    return 0;
 }
 ```
+
+This code uses the C++17 `std::filesystem` library to check if the file and directory exist. The first part checks for the current working directory, and the second part checks for the filesystem root (`/docs/input.txt`).

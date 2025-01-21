@@ -1,0 +1,15 @@
+/tmp/granitecode8b-str_append-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-go-c.c:6:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strcat(str, append_str);
+      |   ^
+/tmp/granitecode8b-str_append-go-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode8b-str_append-go-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("%s", str);
+      |   ^
+/tmp/granitecode8b-str_append-go-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.

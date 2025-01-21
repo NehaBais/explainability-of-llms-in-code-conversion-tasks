@@ -1,0 +1,25 @@
+/tmp/dolphincoder7b-int_factors-java-c.c:51:1: error: unknown type name 'TreeSet'
+   51 | TreeSet *factors(long n, int len, TreeSet *factors) {
+      | ^
+/tmp/dolphincoder7b-int_factors-java-c.c:51:35: error: unknown type name 'TreeSet'
+   51 | TreeSet *factors(long n, int len, TreeSet *factors) {
+      |                                   ^
+/tmp/dolphincoder7b-int_factors-java-c.c:63:3: error: use of undeclared identifier 'TreeSet'
+   63 |   TreeSet *factors = malloc(sizeof(TreeSet));
+      |   ^
+/tmp/dolphincoder7b-int_factors-java-c.c:63:36: error: use of undeclared identifier 'TreeSet'
+   63 |   TreeSet *factors = malloc(sizeof(TreeSet));
+      |                                    ^
+/tmp/dolphincoder7b-int_factors-java-c.c:68:3: error: use of undeclared identifier 'TreeSet'
+   68 |   TreeSet *result = factors(n, len, factors);
+      |   ^
+/tmp/dolphincoder7b-int_factors-java-c.c:68:12: error: use of undeclared identifier 'result'
+   68 |   TreeSet *result = factors(n, len, factors);
+      |            ^
+/tmp/dolphincoder7b-int_factors-java-c.c:69:23: error: use of undeclared identifier 'result'
+   69 |   for (int i = 0; i < result->size; i++) {
+      |                       ^
+/tmp/dolphincoder7b-int_factors-java-c.c:70:19: error: use of undeclared identifier 'result'
+   70 |     printf("%d ", result->elements[i]);
+      |                   ^
+8 errors generated.

@@ -1,0 +1,14 @@
+/tmp/codegeex4-file_exists-js-cpp.cpp:8:8: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path dir(path + "/" + folderName);
+      |   ~~~~~^
+/tmp/codegeex4-file_exists-js-cpp.cpp:18:12: error: no member named 'filesystem' in namespace 'std'
+   18 |   if (std::filesystem::exists(dir)) {
+      |       ~~~~~^
+/tmp/codegeex4-file_exists-js-cpp.cpp:18:31: error: use of undeclared identifier 'dir'; did you mean 'div'?
+   18 |   if (std::filesystem::exists(dir)) {
+      |                               ^~~
+      |                               div
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:147:38: note: 'div' declared here
+  147 | inline _LIBCPP_HIDE_FROM_ABI lldiv_t div(long long __x, long long __y) _NOEXCEPT { return ::lldiv(__x, __y); }
+      |                                      ^
+3 errors generated.

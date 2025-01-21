@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-file_size-c-go.go:16:47: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-c-go.go:24:44: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-c-go.go:42:37: syntax error: unexpected ) at end of statement

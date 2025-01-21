@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-java-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+2 |     compare("Hello", "Hello"));
+  |                              ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-java-rs.rs:3:24
+  |
+2 |     compare("Hello", "Hello"));
+  |                              - missing open `(` for this delimiter
+3 |     compare("5", "5.0"));
+  |                        ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

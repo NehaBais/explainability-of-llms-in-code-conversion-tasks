@@ -1,0 +1,29 @@
+/tmp/stablecode-file_create-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_create-py-cpp.cpp:7:28: error: expected ';' at end of declaration
+    7 |   std::ofstream output_file{fs::path{directory} / "output.txt"}
+      |                            ^
+      |                            ;
+/tmp/stablecode-file_create-py-cpp.cpp:16:1: error: unknown type name 'output_file'
+   16 | output_file.close();
+      | ^
+/tmp/stablecode-file_create-py-cpp.cpp:16:12: error: cannot use dot operator on a type
+   16 | output_file.close();
+      |            ^
+/tmp/stablecode-file_create-py-cpp.cpp:19:5: error: use of undeclared identifier 'fs'
+   19 |     fs::create_directories(fs::path{directory}/"docs"));
+      |     ^
+/tmp/stablecode-file_create-py-cpp.cpp:19:28: error: use of undeclared identifier 'fs'
+   19 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                            ^
+/tmp/stablecode-file_create-py-cpp.cpp:19:36: error: expected ')'
+   19 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                                    ^
+/tmp/stablecode-file_create-py-cpp.cpp:19:27: note: to match this '('
+   19 |     fs::create_directories(fs::path{directory}/"docs"));
+      |                           ^
+/tmp/stablecode-file_create-py-cpp.cpp:20:5: error: extraneous closing brace ('}')
+   20 |     }
+      |     ^
+8 errors generated.

@@ -1,0 +1,19 @@
+/tmp/stablecode-str_cmp-java-cpp.cpp:8:21: error: expected ';' after return statement
+    8 |     return !(A == B));
+      |                     ^
+      |                     ;
+/tmp/stablecode-str_cmp-java-cpp.cpp:12:14: error: no member named 'compareTo' in 'std::string'; did you mean 'compare'?
+   12 |     return A.compareTo(B));
+      |              ^~~~~~~~~
+      |              compare
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1689:59: note: 'compare' declared here
+ 1689 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const basic_string& __str) const _NOEXCEPT;
+      |                                                           ^
+/tmp/stablecode-str_cmp-java-cpp.cpp:12:26: error: expected ';' after return statement
+   12 |     return A.compareTo(B));
+      |                          ^
+      |                          ;
+/tmp/stablecode-str_cmp-java-cpp.cpp:15:65: error: expected function body after function declarator
+   15 | int caseSensitiveLexicalComparison(std::string A, std::string B)) 
+      |                                                                 ^
+4 errors generated.

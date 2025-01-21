@@ -1,40 +1,33 @@
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
-  public static void main(String[] args) throws IOException {
-    create(".");
-    create("/");
+  private static final String FILE_NAME = "output.txt";
+  private static final String DIR_NAME = "docs";
+
+  public static void main(String[] args) {
+    createFileAndDirectory(".", System.getProperty("user.dir"));
+    createFileAndDirectory("/", "/");
   }
 
-  private static boolean create(String root) throws IOException {
-    List<File> files = new ArrayList<>();
-    File dir = new File(root);
+  private static void createFileAndDirectory(String root, String path) {
+    try {
+      Path rootPath = Paths.get(root);
+      Path filePath = rootPath.resolve(FILE_NAME);
+      Path dirPath = rootPath.resolve(DIR_NAME);
 
-    // Check if the directory exists and is a directory
-    if (!dir.exists() || !dir.isDirectory()) {
-      System.out.println("Invalid Directory");
-      return false;
-    }
+      if (Files.notExists(dirPath)) {
+        Files.createDirectories(dirPath);
+      }
 
-    String fileToCreate1 = root + "/output.txt";
-    File f1 = new File(fileToCreate1);
-    if (f1.createNewFile()) {
-      System.out.println("File " + f1.getName() + " created successfully.");
-      files.add(f1);
-    } else {
-      System.out.println("File already exists");
+      if (Files.notExists(filePath)) {
+        Files.createFile(filePath);
+      }
+    } catch (IOException e) {
+      System.err.println("Error: " + e.getMessage());
+      System.exit(1);
     }
-    String dirToCreate = root + "/docs";
-    File d1 = new File(dirToCreate);
-    if (d1.mkdir()) {
-      System.out.println("Directory " + d1.getName() + " created successfully.");
-      files.add(d1);
-    } else {
-      System.out.println("Failed to create directory");
-    }
-    return true;
   }
 }

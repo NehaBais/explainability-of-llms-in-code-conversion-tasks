@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-cpp-go.go:9:12: assignment mismatch: 2 variables but os.Rename returns 1 value
+/tmp/stablecode-file_rename-cpp-go.go:11:6: undefined: errorIsNotFound
+/tmp/stablecode-file_rename-cpp-go.go:12:4: undefined: createParentDirIfNotExists
+/tmp/stablecode-file_rename-cpp-go.go:13:8: undefined: fileExist
+/tmp/stablecode-file_rename-cpp-go.go:17:13: undefined: errorIsPermission

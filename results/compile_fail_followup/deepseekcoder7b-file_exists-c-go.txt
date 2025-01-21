@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_exists-c-go.go:41:13: syntax error: unexpected <, expected }
+/tmp/deepseekcoder7b-file_exists-c-go.go:41:14: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_exists-c-go.go:41:22: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-file_exists-c-go.go:41:38: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_exists-c-go.go:44:1: syntax error: non-declaration statement outside function body

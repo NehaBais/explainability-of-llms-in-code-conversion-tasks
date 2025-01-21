@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-dir_make-js-c.c:1:10: fatal error: 'errno.<｜begin▁of▁sentence｜' file not found
+    1 | #include <errno.<｜begin▁of▁sentence｜>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

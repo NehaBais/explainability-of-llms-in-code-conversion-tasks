@@ -1,19 +1,28 @@
 import os
 
-# here
-file_name = "input.txt"
-new_file_name = "output.txt"
-os.rename(file_name, new_file_name)
 
-dir_name = "docs"
-new_dir_name = "mydocs"
-os.rename(dir_name, new_dir_name)
+def main():
+    err = "File move error"
+    try:
+        os.rename("input.txt", "output.txt")
+    except Exception as e:
+        print(f"{err}: {e}")
 
-# root
-file_name = "/input.txt"
-new_file_name = "/output.txt"
-os.rename(file_name, new_file_name)
+    try:
+        os.rename("docs", "mydocs")
+    except Exception as e:
+        print(f"{err}: {e}")
 
-dir_name = "/docs"
-new_dir_name = "/mydocs"
-os.rename(dir_name, new_dir_name)
+    try:
+        os.rename("/input.txt", "/output.txt")
+    except Exception as e:
+        print(f"{err}: {e}")
+
+    try:
+        os.rename("/docs", "/mydocs")
+    except Exception as e:
+        print(f"{err}: {e}")
+
+
+if __name__ == "__main__":
+    main()

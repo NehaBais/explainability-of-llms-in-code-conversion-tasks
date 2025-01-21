@@ -1,0 +1,16 @@
+/tmp/stablecode-dir_make-rs-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path fsPath(path);
+      |   ~~~~~^
+/tmp/stablecode-dir_make-rs-cpp.cpp:7:7: error: use of undeclared identifier 'fsPath'
+    7 |   if (fsPath.exists() && !fsPath.is_directory()) {
+      |       ^
+/tmp/stablecode-dir_make-rs-cpp.cpp:7:27: error: use of undeclared identifier 'fsPath'
+    7 |   if (fsPath.exists() && !fsPath.is_directory()) {
+      |                           ^
+/tmp/stablecode-dir_make-rs-cpp.cpp:13:10: error: no member named 'filesystem' in namespace 'std'
+   13 |     std::filesystem::create_directories(fsPath);
+      |     ~~~~~^
+/tmp/stablecode-dir_make-rs-cpp.cpp:18:65: error: use of undeclared identifier 'fsPath'
+   18 |   std::cout << "Directories created successfully at path - " << fsPath << '\n';
+      |                                                                 ^
+5 errors generated.

@@ -1,0 +1,15 @@
+error[E0268]: `continue` outside of a loop
+ --> /tmp/qwen2.5coder7b-int_cmp-py-rs.rs:9:19
+  |
+9 |         Err(_) => continue,
+  |                   ^^^^^^^^ cannot `continue` outside of a loop
+
+error[E0268]: `continue` outside of a loop
+  --> /tmp/qwen2.5coder7b-int_cmp-py-rs.rs:17:19
+   |
+17 |         Err(_) => continue,
+   |                   ^^^^^^^^ cannot `continue` outside of a loop
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0268`.

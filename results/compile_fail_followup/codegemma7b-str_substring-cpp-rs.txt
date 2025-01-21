@@ -1,0 +1,29 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_substring-cpp-rs.rs:1:1
+  |
+1 | println!("{}", &s[s.find(c).unwrap()..n + m]);
+  | --------------------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_substring-cpp-rs.rs:2:1
+  |
+2 | println!("{}", &s[s.find(&sub).unwrap()..n + m]);
+  | ------------------------------------------------ caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-str_substring-cpp-rs.rs:2:50
+  |
+2 | println!("{}", &s[s.find(&sub).unwrap()..n + m]);
+  |                                                  ^ consider adding a `main` function to `/tmp/codegemma7b-str_substring-cpp-rs.rs`
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

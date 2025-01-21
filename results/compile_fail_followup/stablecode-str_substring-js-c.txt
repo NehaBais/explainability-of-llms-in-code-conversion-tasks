@@ -1,0 +1,16 @@
+/tmp/stablecode-str_substring-js-c.c:14:26: error: extraneous ')' before ';'
+   14 |   printf("%s\n", str + n));         //  =>  "cdefgh"
+      |                          ^
+/tmp/stablecode-str_substring-js-c.c:15:32: error: extraneous ')' before ';'
+   15 |     printf("%s\n", str + n - 1)); //  =>  "cdefgh"
+      |                                ^
+/tmp/stablecode-str_substring-js-c.c:18:32: error: extraneous ')' before ';'
+   18 |     printf("%s\n", str + n - 2)); //   =>  "abcdefg"
+      |                                ^
+/tmp/stablecode-str_substring-js-c.c:23:27: error: extraneous ')' before ';'
+   23 |     printf("%s\n", target)); //   =>  "bcd"
+      |                           ^
+/tmp/stablecode-str_substring-js-c.c:28:27: error: extraneous ')' before ';'
+   28 |     printf("%s\n", source)); //   =>  "bcd"
+      |                           ^
+5 errors generated.

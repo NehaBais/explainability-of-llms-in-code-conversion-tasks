@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:10: error: expected expression
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |          ^
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:11: error: unexpected character <U+FF5C>
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |           ^~
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:19: error: character <U+2581> not allowed in an identifier
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |                  ^
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:24: error: character <U+2581> not allowed in an identifier
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |                     ^
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:35: error: character <U+FF5C> not allowed in an identifier
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |                              ^~
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |             ^
+/tmp/deepseekcoder7b-bit_ops-java-cpp.cpp:41:40: error: use of undeclared identifier '_s'
+   41 |   return <｜begin▁of▁sentence｜> _s;
+      |                                  ^
+7 errors generated.

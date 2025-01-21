@@ -1,0 +1,19 @@
+error: expected item, found keyword `let`
+ --> /tmp/granitecode8b-str_interp-java-rs.rs:2:1
+  |
+2 | let lyric = format!("Mary had a {} lamb", adjective);
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: missing type for `const` item
+ --> /tmp/granitecode8b-str_interp-java-rs.rs:1:16
+  |
+1 | const adjective = "big";
+  |                ^
+  |
+help: provide a type for the item
+  |
+1 | const adjective: <type> = "big";
+  |                ++++++++
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,45 @@
+error[E0599]: no method named `substr` found for reference `&str` in the current scope
+ --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:8:24
+  |
+8 |     println!("{}", str.substr(n, m)); // => "cde"
+  |                        ^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `substr` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:11:24
+   |
+11 |     println!("{}", str.substr(n)); // => "cdefgh"
+   |                        ^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `substring` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:12:24
+   |
+12 |     println!("{}", str.substring(n)); // => "cdefgh"
+   |                        ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substring` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:15:24
+   |
+15 |     println!("{}", str.substring(0, str.len() - 1)); // => "abcdefg"
+   |                        ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substr` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:19:24
+   |
+19 |     println!("{}", str.substr(index_b, m)); // => "bcd"
+   |                        ^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `substr` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_substring-js-rs.rs:23:24
+   |
+23 |     println!("{}", str.substr(index_bc, m)); // => "bcd"
+   |                        ^^^^^^ method not found in `&str`
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

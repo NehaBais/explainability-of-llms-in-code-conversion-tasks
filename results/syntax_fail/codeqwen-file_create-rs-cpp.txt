@@ -1,0 +1,13 @@
+/tmp/codeqwen-file_create-rs-cpp.cpp:13:28: error: use of undeclared identifier 'O_CREAT'
+   13 |   result = open(file_name, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
+      |                            ^
+/tmp/codeqwen-file_create-rs-cpp.cpp:13:38: error: use of undeclared identifier 'O_RDWR'
+   13 |   result = open(file_name, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
+      |                                      ^
+/tmp/codeqwen-file_create-rs-cpp.cpp:16:10: error: use of undeclared identifier 'EXIT_FAILURE'
+   16 |     exit(EXIT_FAILURE);
+      |          ^
+/tmp/codeqwen-file_create-rs-cpp.cpp:25:10: error: use of undeclared identifier 'EXIT_FAILURE'
+   25 |     exit(EXIT_FAILURE);
+      |          ^
+4 errors generated.

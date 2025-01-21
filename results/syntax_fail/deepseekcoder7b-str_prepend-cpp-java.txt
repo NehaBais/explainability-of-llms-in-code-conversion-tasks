@@ -1,0 +1,25 @@
+/tmp/Main.java:13: error: illegal character: '\uff5c'
+   <｜begin▁of▁sentence｜>		}
+    ^
+/tmp/Main.java:13: error: illegal character: '\u2581'
+   <｜begin▁of▁sentence｜>		}
+          ^
+/tmp/Main.java:13: error: not a statement
+   <｜begin▁of▁sentence｜>		}
+     ^
+/tmp/Main.java:13: error: illegal character: '\u2581'
+   <｜begin▁of▁sentence｜>		}
+             ^
+/tmp/Main.java:13: error: not a statement
+   <｜begin▁of▁sentence｜>		}
+           ^
+/tmp/Main.java:13: error: illegal character: '\uff5c'
+   <｜begin▁of▁sentence｜>		}
+                      ^
+/tmp/Main.java:13: error: not a statement
+   <｜begin▁of▁sentence｜>		}
+              ^
+/tmp/Main.java:13: error: reached end of file while parsing
+   <｜begin▁of▁sentence｜>		}
+                        		 ^
+8 errors

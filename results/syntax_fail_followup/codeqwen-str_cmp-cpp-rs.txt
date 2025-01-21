@@ -1,0 +1,44 @@
+error: expected identifier, found `""`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:8:61
+  |
+8 |     println!("{} Is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+  |                                                          -  ^^ expected identifier
+  |                                                          |
+  |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:8:65
+  |
+8 |     println!("{} Is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+  |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:9:60
+  |
+9 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+  |                                                         -  ^^ expected identifier
+  |                                                         |
+  |                                                         while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:9:64
+  |
+9 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+  |                                                                ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:17:61
+   |
+17 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                          -  ^^ expected identifier
+   |                                                          |
+   |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:17:65
+   |
+17 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: aborting due to 6 previous errors
+

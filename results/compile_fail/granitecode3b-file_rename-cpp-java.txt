@@ -1,0 +1,11 @@
+/tmp/Main.java:12: error: cannot find symbol
+      java.nio.file.Paths.get("/", "input.txt").toFile().renameTo(new File("/output.txt"));
+                                                                      ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+      java.nio.file.Paths.get("/", "docs").toFile().renameTo(new File("/mydocs"));
+                                                                 ^
+  symbol:   class File
+  location: class Main
+2 errors

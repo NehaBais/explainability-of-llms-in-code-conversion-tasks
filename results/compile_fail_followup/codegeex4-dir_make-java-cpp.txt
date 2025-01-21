@@ -1,0 +1,16 @@
+/tmp/codegeex4-dir_make-java-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegeex4-dir_make-java-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::path dirPath("C:/parent/test");
+      |     ^
+/tmp/codegeex4-dir_make-java-cpp.cpp:12:9: error: use of undeclared identifier 'fs'
+   12 |     if (fs::create_directories(dirPath)) {
+      |         ^
+/tmp/codegeex4-dir_make-java-cpp.cpp:12:32: error: use of undeclared identifier 'dirPath'
+   12 |     if (fs::create_directories(dirPath)) {
+      |                                ^
+/tmp/codegeex4-dir_make-java-cpp.cpp:15:18: error: use of undeclared identifier 'fs'
+   15 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+5 errors generated.

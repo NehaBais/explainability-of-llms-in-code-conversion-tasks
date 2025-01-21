@@ -1,0 +1,16 @@
+/tmp/Main.java:46: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+        ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:46: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+               ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:47: error: cannot find symbol
+      factors.addFactor(dvsr);
+                        ^
+  symbol:   variable dvsr
+  location: class Main
+3 errors

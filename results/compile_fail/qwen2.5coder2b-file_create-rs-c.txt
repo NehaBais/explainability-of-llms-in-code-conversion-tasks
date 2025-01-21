@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder2b-file_create-rs-c.c:10:7: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   if (create(".", 0) != 0 || create("/", 0) != 0) {
+      |       ^
+/tmp/qwen2.5coder2b-file_create-rs-c.c:24:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |   if (access(root, R_OK) == 0 && access(root, W_OK) == 0) {
+      |       ^
+/tmp/qwen2.5coder2b-file_create-rs-c.c:24:20: error: use of undeclared identifier 'R_OK'
+   24 |   if (access(root, R_OK) == 0 && access(root, W_OK) == 0) {
+      |                    ^
+/tmp/qwen2.5coder2b-file_create-rs-c.c:24:47: error: use of undeclared identifier 'W_OK'
+   24 |   if (access(root, R_OK) == 0 && access(root, W_OK) == 0) {
+      |                                               ^
+/tmp/qwen2.5coder2b-file_create-rs-c.c:28:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   if (mkdir(fpath, 0644) != 0 && mkdir(dpath, 0755) != 0) {
+      |       ^
+5 errors generated.

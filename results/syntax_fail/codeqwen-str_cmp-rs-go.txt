@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-str_cmp-rs-go.go:13:5: undefined: A

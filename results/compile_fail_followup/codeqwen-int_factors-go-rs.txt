@@ -1,0 +1,37 @@
+error[E0596]: cannot borrow `apf` as mutable, as it is not declared as mutable
+  --> /tmp/codeqwen-int_factors-go-rs.rs:7:9
+   |
+7  |     let apf = |p: i64, e: i32| {
+   |         ^^^ not mutable
+...
+12 |                 fs.push(fs[j] * pp);
+   |                 -- calling `apf` requires mutable binding due to mutable borrow of `fs`
+...
+22 |     apf(2, e as i32);
+   |     --- cannot borrow as mutable
+...
+31 |             apf(d, e);
+   |             --- cannot borrow as mutable
+   |
+help: consider changing this to be mutable
+   |
+7  |     let mut apf = |p: i64, e: i32| {
+   |         +++
+
+error[E0506]: cannot assign to `nr` because it is borrowed
+  --> /tmp/codeqwen-int_factors-go-rs.rs:28:13
+   |
+24 |     for d in (3..).step_by(2).take_while(|&d| d * d <= nr) {
+   |              ---------------------------------------------
+   |              |                           |             |
+   |              |                           |             borrow occurs due to use in closure
+   |              |                           `nr` is borrowed here
+   |              borrow later used here
+...
+28 |             nr /= d;
+   |             ^^^^^^^ `nr` is assigned to here but it was already borrowed
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0506, E0596.
+For more information about an error, try `rustc --explain E0506`.

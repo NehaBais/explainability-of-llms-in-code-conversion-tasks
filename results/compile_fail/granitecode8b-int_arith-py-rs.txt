@@ -1,0 +1,19 @@
+error[E0308]: mismatched types
+  --> /tmp/granitecode8b-int_arith-py-rs.rs:37:37
+   |
+37 |     let exponentiation = input1.pow(input2);
+   |                                 --- ^^^^^^ expected `u32`, found `i32`
+   |                                 |
+   |                                 arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+37 |     let exponentiation = input1.pow(input2.try_into().unwrap());
+   |                                           ++++++++++++++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

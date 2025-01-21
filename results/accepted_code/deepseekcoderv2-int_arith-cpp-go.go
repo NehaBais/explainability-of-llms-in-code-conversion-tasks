@@ -6,11 +6,13 @@ import (
 
 func main() {
 	var a, b int
-	fmt.Scanln(&a, &b)
-	fmt.Println("Sum:", a+b)
-	fmt.Println("Difference:", a-b)
-	fmt.Println("Product:", a*b)
-	quotient := float64(a) / float64(b)
-	remainder := a % b
-	fmt.Printf("Quotient: %.2f, Remainder: %d\n", quotient, remainder)
+	fmt.Scan(&a, &b)
+	fmt.Println("a+b =", a+b)
+	fmt.Println("a-b =", a-b)
+	fmt.Println("a*b =", a*b)
+	if b != 0 {
+		fmt.Println("a/b =", a/b, ", remainder", a%b)
+	} else {
+		fmt.Println("a/b = undefined (division by zero)")
+	}
 }

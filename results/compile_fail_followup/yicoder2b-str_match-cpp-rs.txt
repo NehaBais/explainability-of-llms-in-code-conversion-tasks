@@ -1,0 +1,80 @@
+error[E0277]: can't compare `str` with `&str`
+ --> /tmp/yicoder2b-str_match-cpp-rs.rs:6:37
+  |
+6 |     println!("{}", &s1[0..s3.len()] == &s3);
+  |                                     ^^ no implementation for `str == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+  = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+  |
+6 -     println!("{}", &s1[0..s3.len()] == &s3);
+6 +     println!("{}", &s1[0..s3.len()] == s3);
+  |
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-str_match-cpp-rs.rs:8:36
+  |
+8 |     println!("{}", &s1[&s1.len() - s3.len() as isize..] == &s3);
+  |                                    ^^^^^^^^^^^^^^^^^ expected `usize`, found `isize`
+
+error[E0277]: cannot subtract `isize` from `&usize`
+ --> /tmp/yicoder2b-str_match-cpp-rs.rs:8:34
+  |
+8 |     println!("{}", &s1[&s1.len() - s3.len() as isize..] == &s3);
+  |                                  ^ no implementation for `&usize - isize`
+  |
+  = help: the trait `Sub<isize>` is not implemented for `&usize`
+  = help: the following other types implement trait `Sub<Rhs>`:
+            `&'a usize` implements `Sub<usize>`
+            `&usize` implements `Sub<&usize>`
+            `usize` implements `Sub<&usize>`
+            `usize` implements `Sub`
+
+error[E0277]: can't compare `str` with `&str`
+ --> /tmp/yicoder2b-str_match-cpp-rs.rs:8:57
+  |
+8 |     println!("{}", &s1[&s1.len() - s3.len() as isize..] == &s3);
+  |                                                         ^^ no implementation for `str == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+  = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+  |
+8 -     println!("{}", &s1[&s1.len() - s3.len() as isize..] == &s3);
+8 +     println!("{}", &s1[&s1.len() - s3.len() as isize..] == s3);
+  |
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_match-cpp-rs.rs:10:37
+   |
+10 |     let loc = s2.find(s3).unwrap_or(&s2.len()); //returns usize
+   |                           --------- ^^^^^^^^^ expected `usize`, found `&usize`
+   |                           |
+   |                           arguments to this method are incorrect
+   |
+help: the return type of this call is `&usize` due to the type of the argument passed
+  --> /tmp/yicoder2b-str_match-cpp-rs.rs:10:15
+   |
+10 |     let loc = s2.find(s3).unwrap_or(&s2.len()); //returns usize
+   |               ^^^^^^^^^^^^^^^^^^^^^^---------^
+   |                                     |
+   |                                     this argument influences the return type of `unwrap_or`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:985:12
+help: consider removing the borrow
+   |
+10 -     let loc = s2.find(s3).unwrap_or(&s2.len()); //returns usize
+10 +     let loc = s2.find(s3).unwrap_or(s2.len()); //returns usize
+   |
+
+error[E0614]: type `usize` cannot be dereferenced
+  --> /tmp/yicoder2b-str_match-cpp-rs.rs:11:24
+   |
+11 |     println!("{}", &s2[*loc + 1..] == &s3);
+   |                        ^^^^
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0614.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,0 +1,7 @@
+/tmp/magicoder7b-dir_make-java-c.c:9:35: error: use of undeclared identifier 'errno'
+    9 |   if (mkfifo(path, 0755) == -1 && errno != EEXIST) {
+      |                                   ^
+/tmp/magicoder7b-dir_make-java-c.c:9:44: error: use of undeclared identifier 'EEXIST'
+    9 |   if (mkfifo(path, 0755) == -1 && errno != EEXIST) {
+      |                                            ^
+2 errors generated.

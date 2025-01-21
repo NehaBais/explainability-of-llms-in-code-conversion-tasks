@@ -1,22 +1,28 @@
-const fs = require("fs").promises;
+const fs = require("fs");
 const path = require("path");
-function create() {
-  try {
-    const fileContent = "";
-    const fileName = "output.txt";
-    const dirName = "docs";
-    if (!fs.existsSync(fileName)) {
-      fs.writeFile(fileName, fileContent);
-    } else {
-      console.log("file already exists");
-    }
-    if (!fs.existsSync(dirName)) {
-      fs.mkdir(dirName);
-    } else {
-      console.log("directory already exists");
-    }
-  } catch (err) {
-    console.error(err);
+
+const FILE_NAME = "output.txt";
+const DIR_NAME = "docs";
+
+function create(root) {
+  const fPath = path.join(root, FILE_NAME);
+  const dPath = path.join(root, DIR_NAME);
+
+  if (!fs.existsSync(dPath)) {
+    fs.mkdirSync(dPath);
   }
+
+  fs.writeFileSync(fPath, "");
 }
-create();
+
+function main() {
+  create(".") || errorHandler(`Error creating files in ${process.cwd()}`, 1);
+  create("/") || errorHandler(`Error creating files in root`, 1);
+}
+
+function errorHandler(errorMessage, code) {
+  console.error(errorMessage);
+  process.exit(code);
+}
+
+main();

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-bit_ops-py-go.go:37:43: undefined: mask
+/tmp/codellama7b-bit_ops-py-go.go:47:39: undefined: mask
+/tmp/codellama7b-bit_ops-py-go.go:57:43: undefined: mask

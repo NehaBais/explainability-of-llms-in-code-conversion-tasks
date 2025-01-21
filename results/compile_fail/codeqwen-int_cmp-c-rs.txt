@@ -1,0 +1,33 @@
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_cmp-c-rs.rs:18:8
+   |
+18 |     if A < b {
+   |        ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_cmp-c-rs.rs:19:40
+   |
+19 |         println!("{} is less than {}", A, b);
+   |                                        ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_cmp-c-rs.rs:20:15
+   |
+20 |     } else if A == b {
+   |               ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_cmp-c-rs.rs:21:39
+   |
+21 |         println!("{} is equal to {}", A, b);
+   |                                       ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_cmp-c-rs.rs:23:43
+   |
+23 |         println!("{} is greater than {}", A, b);
+   |                                           ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

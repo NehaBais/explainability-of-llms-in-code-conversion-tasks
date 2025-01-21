@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+GET two integers from user
+^
+1 error

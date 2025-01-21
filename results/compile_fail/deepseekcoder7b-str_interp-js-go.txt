@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_interp-js-go.go:13:6: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_interp-js-go.go:13:14: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-str_interp-js-go.go:13:30: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_interp-js-go.go:13:34: invalid character U+005C '\'
+/tmp/deepseekcoder7b-str_interp-js-go.go:13:36: syntax error: unexpected literal "Original: %s\nReplaced: %s\n" at end of statement

@@ -1,0 +1,4 @@
+/tmp/stablecode-int_cmp-go-cpp.cpp:1:1: error: expected unqualified-id
+    1 | switch (true) {
+      | ^
+1 error generated.

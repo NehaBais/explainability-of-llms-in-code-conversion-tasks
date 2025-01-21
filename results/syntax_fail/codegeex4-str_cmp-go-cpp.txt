@@ -1,0 +1,4 @@
+/tmp/codegeex4-str_cmp-go-cpp.cpp:33:18: error: expected expression
+   33 |                  [](unsigned char a, unsigned char b) {
+      |                  ^
+1 error generated.

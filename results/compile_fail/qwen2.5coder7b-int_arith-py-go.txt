@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-int_arith-py-go.go:32:7: cannot use float64(int(tt) - int(tt)) (value of type float64) as int value in assignment

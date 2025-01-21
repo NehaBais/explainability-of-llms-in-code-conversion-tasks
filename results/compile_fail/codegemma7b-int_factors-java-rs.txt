@@ -1,0 +1,25 @@
+error[E0432]: unresolved import `std::collections::TreeSet`
+ --> /tmp/codegemma7b-int_factors-java-rs.rs:1:5
+  |
+1 | use std::collections::TreeSet;
+  |     ^^^^^^^^^^^^^^^^^^-------
+  |     |                 |
+  |     |                 help: a similar name exists in the module: `BTreeSet`
+  |     no `TreeSet` in `collections`
+
+error[E0601]: `main` function not found in crate `codegemma7b_int_factors_java_rs`
+  --> /tmp/codegemma7b-int_factors-java-rs.rs:14:2
+   |
+14 | }
+   |  ^ consider adding a `main` function to `/tmp/codegemma7b-int_factors-java-rs.rs`
+
+error[E0599]: no method named `sqrt` found for type `u64` in the current scope
+ --> /tmp/codegemma7b-int_factors-java-rs.rs:7:28
+  |
+7 |     for test in (n - 1..=n.sqrt() as u64).rev() {
+  |                            ^^^^ method not found in `u64`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0599, E0601.
+For more information about an error, try `rustc --explain E0432`.

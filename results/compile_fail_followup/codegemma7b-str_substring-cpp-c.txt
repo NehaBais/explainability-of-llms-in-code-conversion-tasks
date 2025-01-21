@@ -1,0 +1,14 @@
+/tmp/codegemma7b-str_substring-cpp-c.c:1:8: error: expected parameter declarator
+    1 | printf("%.*s\n", m, (char *)strstr(s, sub) - s);
+      |        ^
+/tmp/codegemma7b-str_substring-cpp-c.c:1:8: error: expected ')'
+/tmp/codegemma7b-str_substring-cpp-c.c:1:7: note: to match this '('
+    1 | printf("%.*s\n", m, (char *)strstr(s, sub) - s);
+      |       ^
+/tmp/codegemma7b-str_substring-cpp-c.c:1:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    1 | printf("%.*s\n", m, (char *)strstr(s, sub) - s);
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-cpp-c.c:1:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/codegemma7b-str_substring-cpp-c.c:1:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+1 warning and 3 errors generated.

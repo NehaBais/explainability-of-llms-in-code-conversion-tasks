@@ -1,41 +1,29 @@
-Answer: Here's the JavaScript code that performs the same operations as your Rust program:
+ Sure, here's the equivalent JavaScript code to achieve the same functionality as your Rust code:
 
 ```javascript
 const readline = require('readline');
 
-// Create an interface for reading input from stdin
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+    input: process.stdin,
+    output: process.stdout
 });
 
-// Read two integers from the user using Promises
-function getUserInput() {
-    return new Promise((resolve) => {
-        rl.question('Enter first number: ', (input1) => {
-            rl.question('Enter second number: ', (input2) => {
-                resolve([parseInt(input1), parseInt(input2)]);
-            });
-        });
+rl.question('Enter the first integer: ', (num1) => {
+    rl.question('Enter the second integer: ', (num2) => {
+        const a = parseInt(num1, 10);
+        const b = parseInt(num2, 10);
+        
+        if (a < b) {
+            console.log(`${a} is less than ${b}`);
+        } else if (a === b) {
+            console.log(`${a} equals ${b}`);
+        } else if (a > b) {
+            console.log(`${a} is greater than ${b}`);
+        }
+        
+        rl.close();
     });
-}
-
-// Get user input and process it
-async function main() {
-    const [nums] = await getUserInput(); // Get the result of Promise.all with an array to retrieve multiple results from promises simultaneously (Promise.all) 
-    let a = nums[0];
-    let b = nums[1];
-    
-    if (a < b) {
-        console.log(`${a} is less than ${b}`);
-    } else if (a === b) {
-        console.log(`${a} equals ${b}`);
-    } else { // Must be greater than
-        console.log(`${a} is greater than ${b}`);
-    };
-    
-    rl.close();
-}
-
-main().catch(console.error);
+});
 ```
+
+This JavaScript code uses the `readline` module to prompt the user for two integers and then compares them using the appropriate comparison operators, displaying a message based on the result of the comparison.

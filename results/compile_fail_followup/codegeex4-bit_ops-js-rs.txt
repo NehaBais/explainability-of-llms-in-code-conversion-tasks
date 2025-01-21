@@ -1,0 +1,36 @@
+error[E0689]: can't call method `wrapping_shr` on ambiguous numeric type `{integer}`
+ --> /tmp/codegeex4-bit_ops-js-rs.rs:7:37
+  |
+7 |     let arith_right_shift: u32 = (a.wrapping_shr(b as u32)).into();
+  |                                     ^^^^^^^^^^^^
+  |
+help: you must specify a type for this binding, like `i32`
+  |
+2 |     let a: i32 = 42;
+  |          +++++
+
+error[E0689]: can't call method `rotate_left` on ambiguous numeric type `{integer}`
+ --> /tmp/codegeex4-bit_ops-js-rs.rs:8:30
+  |
+8 |     let left_rotate: u32 = a.rotate_left((b & 31) as u32);
+  |                              ^^^^^^^^^^^
+  |
+help: you must specify a type for this binding, like `i32`
+  |
+2 |     let a: i32 = 42;
+  |          +++++
+
+error[E0689]: can't call method `rotate_right` on ambiguous numeric type `{integer}`
+ --> /tmp/codegeex4-bit_ops-js-rs.rs:9:31
+  |
+9 |     let right_rotate: u32 = a.rotate_right((b & 31) as u32);
+  |                               ^^^^^^^^^^^^
+  |
+help: you must specify a type for this binding, like `i32`
+  |
+2 |     let a: i32 = 42;
+  |          +++++
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0689`.

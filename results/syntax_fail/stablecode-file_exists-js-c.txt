@@ -1,0 +1,22 @@
+/tmp/stablecode-file_exists-js-c.c:11:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (access(path1, F_OK)) {
+      |       ^
+/tmp/stablecode-file_exists-js-c.c:11:21: error: use of undeclared identifier 'F_OK'
+   11 |   if (access(path1, F_OK)) {
+      |                     ^
+/tmp/stablecode-file_exists-js-c.c:15:21: error: use of undeclared identifier 'F_OK'
+   15 |   if (access(path2, F_OK))) {
+      |                     ^
+/tmp/stablecode-file_exists-js-c.c:15:27: error: extraneous ')' after condition, expected a statement
+   15 |   if (access(path2, F_OK))) {
+      |                           ^
+/tmp/stablecode-file_exists-js-c.c:19:20: error: use of undeclared identifier 'F_OK'
+   19 |   if (access(dir1, F_OK)) {
+      |                    ^
+/tmp/stablecode-file_exists-js-c.c:23:20: error: use of undeclared identifier 'F_OK'
+   23 |   if (access(dir2, F_OK))) {
+      |                    ^
+/tmp/stablecode-file_exists-js-c.c:23:26: error: extraneous ')' after condition, expected a statement
+   23 |   if (access(dir2, F_OK))) {
+      |                          ^
+7 errors generated.

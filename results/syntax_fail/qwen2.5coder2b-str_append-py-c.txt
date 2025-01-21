@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-str_append-py-c.c:5:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   strcat(str, "9!");
+      |   ^
+/tmp/qwen2.5coder2b-str_append-py-c.c:5:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+1 error generated.

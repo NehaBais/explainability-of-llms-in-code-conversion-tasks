@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_substring-rs-go.go:5:2: "unicode" imported and not used

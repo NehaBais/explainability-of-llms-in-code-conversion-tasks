@@ -1,0 +1,8 @@
+/tmp/codellama7b-dir_make-py-c.c:8:3: error: call to undeclared function 'mkdirp'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   mkdirp("./path/to/dir");
+      |   ^
+/tmp/codellama7b-dir_make-py-c.c:8:3: note: did you mean 'mkdir'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:385:9: note: 'mkdir' declared here
+  385 | int     mkdir(const char *, mode_t);
+      |         ^
+1 error generated.

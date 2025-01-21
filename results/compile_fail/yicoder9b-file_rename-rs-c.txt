@@ -1,0 +1,17 @@
+/tmp/yicoder9b-file_rename-rs-c.c:8:38: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                      ^
+/tmp/yicoder9b-file_rename-rs-c.c:8:38: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/yicoder9b-file_rename-rs-c.c:8:47: error: use of undeclared identifier 'errno'
+    8 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+/tmp/yicoder9b-file_rename-rs-c.c:13:47: error: use of undeclared identifier 'errno'
+   13 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+/tmp/yicoder9b-file_rename-rs-c.c:18:47: error: use of undeclared identifier 'errno'
+   18 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+/tmp/yicoder9b-file_rename-rs-c.c:23:47: error: use of undeclared identifier 'errno'
+   23 |     fprintf(stderr, "%s: %s\n", err, strerror(errno));
+      |                                               ^
+5 errors generated.

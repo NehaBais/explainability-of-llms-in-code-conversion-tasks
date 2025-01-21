@@ -1,0 +1,13 @@
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:10:15: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   char *buf = malloc(len_pre + len_str + 1); // +1 for the null terminator
+      |               ^
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:10:15: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:13:5: error: call to undeclared library function 'exit' with type 'void (int) __attribute__((noreturn))'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     exit(1); // Or return in production code, depending on what's appropriate.
+      |     ^
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:13:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:25:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   free(buf); // Don'<｜begin▁of▁sentence｜>t forget to free!
+      |   ^
+/tmp/deepseekcoder7b-str_prepend-cpp-c.c:25:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+3 errors generated.

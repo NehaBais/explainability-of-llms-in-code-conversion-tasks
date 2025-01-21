@@ -1,0 +1,4 @@
+/tmp/yicoder2b-str_interp-go-cpp.cpp:9:15: error: no member named 'replace_format_placeholders' in namespace 'std'
+    9 |   oss << std::replace_format_placeholders(str, &txt);
+      |          ~~~~~^
+1 error generated.

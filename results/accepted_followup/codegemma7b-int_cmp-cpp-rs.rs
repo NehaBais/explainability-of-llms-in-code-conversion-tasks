@@ -1,0 +1,3 @@
+match io::stdin().read_line(&mut input).unwrap() {
+    // ...
+}

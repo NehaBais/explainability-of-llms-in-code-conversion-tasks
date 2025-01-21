@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-str_substring-js-go.go:21:16: undefined: utf8.RuneInString
+/tmp/granitecode3b-str_substring-js-go.go:25:15: undefined: utf8.runeInString

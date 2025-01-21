@@ -1,0 +1,4 @@
+/tmp/codellama7b-logic_ops-js-cpp.cpp:6:3: error: use of undeclared identifier 'logic'
+    6 |   logic(a, b);
+      |   ^
+1 error generated.

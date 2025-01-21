@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-int_factors-js-go.go:9:23: undefined: math
+/tmp/granitecode3b-int_factors-js-go.go:17:2: undefined: sort

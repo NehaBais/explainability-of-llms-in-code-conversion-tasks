@@ -1,0 +1,28 @@
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:13:5: error: use of undeclared identifier 'x'
+   13 |   ++x;
+      |     ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:14:7: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |       ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:14:11: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |           ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:15:24: error: use of undeclared identifier 'x'
+   15 |     factors1.push_back(x);
+      |                        ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |              ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |                      ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:24: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |                        ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:24:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |     for (auto factor : factor(i)) {
+      |          ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:24:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |     for (auto factor : factor(i)) {
+      |                      ^
+4 warnings and 5 errors generated.

@@ -1,0 +1,16 @@
+/tmp/yicoder2b-str_substring-py-c.c:16:35: error: use of undeclared identifier 'i'
+   16 |   printf("%.*s\n", m - 1, &s[0] + i);
+      |                                   ^
+/tmp/yicoder2b-str_substring-py-c.c:21:15: error: use of undeclared identifier 'i'
+   21 |   if ((char)s[i] == s[strlen(s) - 1]) {
+      |               ^
+/tmp/yicoder2b-str_substring-py-c.c:22:18: error: use of undeclared identifier 'i'
+   22 |     char_index = i;
+      |                  ^
+/tmp/yicoder2b-str_substring-py-c.c:23:5: error: 'break' statement not in loop or switch statement
+   23 |     break;
+      |     ^
+/tmp/yicoder2b-str_substring-py-c.c:32:26: error: use of undeclared identifier 'i'
+   32 |   printf("%.*s\n", m, &s[i] + m);
+      |                          ^
+5 errors generated.

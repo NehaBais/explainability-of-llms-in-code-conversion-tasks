@@ -1,30 +1,19 @@
-import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
 
 public class Main {
-  public static void main(String[] args) throws IOException {
-    List<String> files = new ArrayList<>();
-    files.add("input.txt");
-    files.add("docs");
-    files.add("/input.txt");
-    files.add("/docs");
+  public static void main(String[] args) {
+    String[] files = {"input.txt", "docs", "/input.txt", "/docs"};
 
-    for (int i = 0; i < files.size(); i++) {
-      Path p = FileSystems.getDefault().getPath(files.get(i));
-      try {
-        if (Files.exists(p) && Files.isDirectory(p)) {
-          System.out.println("'" + files.get(i) + "' is a directory");
-        } else if (!Files.exists(p)) {
-          System.out.println("'" + files.get(i) + "' does not exist");
+    for (String file : files) {
+      File f = new File(file);
+      if (f.exists()) {
+        if (f.isDirectory()) {
+          System.out.println(file + " is a directory");
         } else {
-          System.out.println("'" + files.get(i) + "' is a file");
+          System.out.println(file + " is a file");
         }
-      } catch (IOException e) {
-        System.err.println("Could not check status of '" + files.get(i) + "': " + e);
+      } else {
+        System.out.println(file + " does not exist");
       }
     }
   }

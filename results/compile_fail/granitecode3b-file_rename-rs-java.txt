@@ -1,0 +1,41 @@
+/tmp/Main.java:6: error: cannot find symbol
+    boolean result1 = new File("input.txt").renameTo(new File("output.txt"));
+                                                         ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    boolean result1 = new File("input.txt").renameTo(new File("output.txt"));
+                          ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:10: error: cannot find symbol
+    boolean result2 = new File("docs").renameTo(new File("mydocs"));
+                                                    ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:10: error: cannot find symbol
+    boolean result2 = new File("docs").renameTo(new File("mydocs"));
+                          ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    boolean result3 = new File("/input.txt").renameTo(new File("/output.txt"));
+                                                          ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    boolean result3 = new File("/input.txt").renameTo(new File("/output.txt"));
+                          ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    boolean result4 = new File("/docs").renameTo(new File("/mydocs"));
+                                                     ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    boolean result4 = new File("/docs").renameTo(new File("/mydocs"));
+                          ^
+  symbol:   class File
+  location: class Main
+8 errors

@@ -1,0 +1,7 @@
+/tmp/magicoder7b-bit_ops-go-cpp.cpp:5:42: error: expected '(' for function-style cast or type construction
+    5 |   cout << "a:   " << bitset<16>(unsigned short(a)) << endl;
+      |                                 ~~~~~~~~ ^
+/tmp/magicoder7b-bit_ops-go-cpp.cpp:6:42: error: expected '(' for function-style cast or type construction
+    6 |   cout << "b:   " << bitset<16>(unsigned short(b)) << endl;
+      |                                 ~~~~~~~~ ^
+2 errors generated.

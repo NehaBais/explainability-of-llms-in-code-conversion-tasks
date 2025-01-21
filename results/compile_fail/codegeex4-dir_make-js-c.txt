@@ -1,0 +1,7 @@
+/tmp/codegeex4-dir_make-js-c.c:28:26: error: use of undeclared identifier 'errno'
+   28 |       if (result != 0 && errno != EEXIST) {
+      |                          ^
+/tmp/codegeex4-dir_make-js-c.c:28:35: error: use of undeclared identifier 'EEXIST'
+   28 |       if (result != 0 && errno != EEXIST) {
+      |                                   ^
+2 errors generated.

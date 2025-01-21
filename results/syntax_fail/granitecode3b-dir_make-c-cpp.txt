@@ -1,0 +1,43 @@
+/tmp/granitecode3b-dir_make-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cerr << "usage: " << argv[0] << " <path>" << std::endl;
+      |     ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:6:55: error: use of undeclared identifier 'std'
+    6 |     std::cerr << "usage: " << argv[0] << " <path>" << std::endl;
+      |                                                       ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:9:3: error: use of undeclared identifier 'std'
+    9 |   std::string path = argv[1];
+      |   ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:10:15: error: variable has incomplete type 'struct stat'
+   10 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:10:10: note: forward declaration of 'stat'
+   10 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:12:8: error: unknown type name 'size_t'
+   12 |   for (size_t i = 0; i < path.length(); ++i) {
+      |        ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:15:11: error: no viable conversion from 'stat' to 'int'
+   15 |       int res = stat(path.c_str(), &st);
+      |           ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode3b-dir_make-c-cpp.cpp:16:24: error: use of undeclared identifier 'errno'
+   16 |       if (res == -1 && errno != ENOENT) {
+      |                        ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:16:33: error: use of undeclared identifier 'ENOENT'
+   16 |       if (res == -1 && errno != ENOENT) {
+      |                                 ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:21:11: error: use of undeclared identifier 'std'
+   21 |           std::cerr << "couldn't create directory " << path << std::endl;
+      |           ^
+/tmp/granitecode3b-dir_make-c-cpp.cpp:21:64: error: use of undeclared identifier 'std'
+   21 |           std::cerr << "couldn't create directory " << path << std::endl;
+      |                                                                ^
+13 errors generated.

@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `partial_cmp` in module `cmp`
+  --> /tmp/dolphincoder7b-str_cmp-cpp-rs.rs:30:23
+   |
+30 |     let result = cmp::partial_cmp(&a, &b);
+   |                       ^^^^^^^^^^^ not found in `cmp`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

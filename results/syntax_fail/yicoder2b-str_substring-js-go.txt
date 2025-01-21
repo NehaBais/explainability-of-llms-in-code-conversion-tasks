@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_substring-js-go.go:13:10: assignment mismatch: 2 variables but strings.Split returns 1 value

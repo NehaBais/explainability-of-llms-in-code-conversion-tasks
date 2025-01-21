@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-file_create-java-cpp.cpp:14:10: error: no member named 'filesystem' in namespace 'std'
+   14 |     std::filesystem::create_directory("docs");
+      |     ~~~~~^
+/tmp/dolphincoder7b-file_create-java-cpp.cpp:17:10: error: no member named 'filesystem' in namespace 'std'
+   17 |     std::filesystem::create_directory("/docs");
+      |     ~~~~~^
+2 errors generated.

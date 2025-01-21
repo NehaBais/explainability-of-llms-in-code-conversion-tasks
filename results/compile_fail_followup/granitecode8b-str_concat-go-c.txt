@@ -1,0 +1,26 @@
+/tmp/granitecode8b-str_concat-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-go-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-go-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%sn", s);
+      |   ^
+/tmp/granitecode8b-str_concat-go-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_concat-go-c.c:16:11: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   char s2[strlen(s) + strlen(" literal") + 1];
+      |           ^
+/tmp/granitecode8b-str_concat-go-c.c:16:11: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_concat-go-c.c:17:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   strcpy(s2, s);
+      |   ^
+/tmp/granitecode8b-str_concat-go-c.c:17:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_concat-go-c.c:18:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   strcat(s2, " literal");
+      |   ^
+/tmp/granitecode8b-str_concat-go-c.c:18:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+7 errors generated.

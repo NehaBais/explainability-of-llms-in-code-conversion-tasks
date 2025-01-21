@@ -1,0 +1,21 @@
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:7:7: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   if (strcmp(a, b))
+      |       ^
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:7:7: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:23:5: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |     strcpy(a, argv[1]);
+      |     ^
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:23:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:50:16: warning: incompatible pointer types passing 'double *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+   50 |   demo_compare(&numA, &numB, "numerically");
+      |                ^~~~~
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:5:31: note: passing argument to parameter 'a' here
+    5 | void demo_compare(const char *a, const char *b, const char *semantically) {
+      |                               ^
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:50:23: warning: incompatible pointer types passing 'double *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+   50 |   demo_compare(&numA, &numB, "numerically");
+      |                       ^~~~~
+/tmp/dolphincoder7b-str_cmp-cpp-c.c:5:46: note: passing argument to parameter 'b' here
+    5 | void demo_compare(const char *a, const char *b, const char *semantically) {
+      |                                              ^
+2 warnings and 2 errors generated.

@@ -1,0 +1,23 @@
+/tmp/granitecode8b-str_concat-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-rs-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("%s", s);
+      |   ^
+/tmp/granitecode8b-str_concat-rs-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_concat-rs-c.c:7:11: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   char s1[strlen(s) + strlen(" world") + 1];
+      |           ^
+/tmp/granitecode8b-str_concat-rs-c.c:7:11: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_concat-rs-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(s1, s);
+      |   ^
+/tmp/granitecode8b-str_concat-rs-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_concat-rs-c.c:9:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   strcat(s1, " world");
+      |   ^
+/tmp/granitecode8b-str_concat-rs-c.c:9:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+6 errors generated.

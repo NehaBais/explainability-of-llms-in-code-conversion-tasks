@@ -1,0 +1,54 @@
+error[E0277]: can't compare `str` with `&str`
+ --> /tmp/yicoder2b-str_match-js-rs.rs:9:23
+  |
+9 |     if &stringA[0..1] == &stringB{ q1 = true;  }
+  |                       ^^ no implementation for `str == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+  = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+  |
+9 -     if &stringA[0..1] == &stringB{ q1 = true;  }
+9 +     if &stringA[0..1] == stringB{ q1 = true;  }
+  |
+
+error[E0599]: no method named `as_str` found for reference `&str` in the current scope
+  --> /tmp/yicoder2b-str_match-js-rs.rs:16:34
+   |
+16 |     while let Some(&m) = stringB.as_str().find(&stringB) {
+   |                                 -^^^^^^-- help: remove this method call
+
+error[E0277]: can't compare `str` with `&str`
+  --> /tmp/yicoder2b-str_match-js-rs.rs:20:51
+   |
+20 |     if &stringA[&stringA.len() - stringB.len()..] == &stringB{ q3 = true; }
+   |                                                   ^^ no implementation for `str == &str`
+   |
+   = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+   = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+   |
+20 -     if &stringA[&stringA.len() - stringB.len()..] == &stringB{ q3 = true; }
+20 +     if &stringA[&stringA.len() - stringB.len()..] == stringB{ q3 = true; }
+   |
+
+error[E0599]: no method named `as_str` found for reference `&str` in the current scope
+  --> /tmp/yicoder2b-str_match-js-rs.rs:28:31
+   |
+28 |     if let Some(&m) = stringB.as_str().find(&stringB) {
+   |                              -^^^^^^-- help: remove this method call
+
+error[E0277]: `Vec<_>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder2b-str_match-js-rs.rs:34:39
+   |
+34 |     println!("4: The matches are {}", q2matches);
+   |                                       ^^^^^^^^^ `Vec<_>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Vec<_>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0599.
+For more information about an error, try `rustc --explain E0277`.

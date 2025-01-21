@@ -1,0 +1,16 @@
+/tmp/deepseekcoder7b-file_exists-py-cpp.cpp:7:22: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::cout << (std::filesystem::exists("input.txt") ? "File exists"
+      |                 ~~~~~^
+/tmp/deepseekcoder7b-file_exists-py-cpp.cpp:10:22: error: no member named 'filesystem' in namespace 'std'
+   10 |   std::cout << (std::filesystem::is_directory("docs")
+      |                 ~~~~~^
+/tmp/deepseekcoder7b-file_exists-py-cpp.cpp:27:14: error: no member named 'filesystem' in namespace 'std'
+   27 |     if (std::filesystem::exists(filePath))
+      |         ~~~~~^
+/tmp/deepseekcoder7b-file_exists-py-cpp.cpp:32:14: error: no member named 'filesystem' in namespace 'std'
+   32 |     if (std::filesystem::is_directory(dirPath))
+      |         ~~~~~^
+/tmp/deepseekcoder7b-file_exists-py-cpp.cpp:36:23: error: no member named 'filesystem' in namespace 'std'
+   36 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+5 errors generated.

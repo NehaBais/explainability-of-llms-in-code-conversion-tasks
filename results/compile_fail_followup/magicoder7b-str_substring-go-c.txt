@@ -1,0 +1,45 @@
+/tmp/magicoder7b-str_substring-go-c.c:50:5: error: use of undeclared identifier 'substring'; did you mean 'substr'?
+   50 |     substring = malloc((strlen(str) - dx) * sizeof(char));
+      |     ^~~~~~~~~
+      |     substr
+/tmp/magicoder7b-str_substring-go-c.c:45:9: note: 'substr' declared here
+   45 |   char *substr = "DE";
+      |         ^
+/tmp/magicoder7b-str_substring-go-c.c:51:12: error: use of undeclared identifier 'substring'; did you mean 'substr'?
+   51 |     memcpy(substring, &str[dx],
+      |            ^~~~~~~~~
+      |            substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:27: note: expanded from macro 'memcpy'
+   63 |                 __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+      |                                         ^
+/tmp/magicoder7b-str_substring-go-c.c:45:9: note: 'substr' declared here
+   45 |   char *substr = "DE";
+      |         ^
+/tmp/magicoder7b-str_substring-go-c.c:51:12: error: use of undeclared identifier 'substring'; did you mean 'substr'?
+   51 |     memcpy(substring, &str[dx],
+      |            ^~~~~~~~~
+      |            substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:62: note: expanded from macro 'memcpy'
+   63 |                 __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+      |                                                                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h:40:55: note: expanded from macro '__darwin_obsz0'
+   40 | #define __darwin_obsz0(object) __builtin_object_size (object, 0)
+      |                                                       ^
+/tmp/magicoder7b-str_substring-go-c.c:45:9: note: 'substr' declared here
+   45 |   char *substr = "DE";
+      |         ^
+/tmp/magicoder7b-str_substring-go-c.c:54:55: error: use of undeclared identifier 'substring'; did you mean 'substr'?
+   54 |     printf("Start '%s', length %d:  %s\n", substr, m, substring);
+      |                                                       ^~~~~~~~~
+      |                                                       substr
+/tmp/magicoder7b-str_substring-go-c.c:45:9: note: 'substr' declared here
+   45 |   char *substr = "DE";
+      |         ^
+/tmp/magicoder7b-str_substring-go-c.c:56:10: error: use of undeclared identifier 'substring'; did you mean 'substr'?
+   56 |     free(substring);
+      |          ^~~~~~~~~
+      |          substr
+/tmp/magicoder7b-str_substring-go-c.c:45:9: note: 'substr' declared here
+   45 |   char *substr = "DE";
+      |         ^
+5 errors generated.

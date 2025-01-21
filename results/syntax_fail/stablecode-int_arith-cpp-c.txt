@@ -1,0 +1,21 @@
+/tmp/stablecode-int_arith-cpp-c.c:14:12: error: use of undeclared identifier 'INT_MAX'
+   14 |   if (b == INT_MAX)) {
+      |            ^
+/tmp/stablecode-int_arith-cpp-c.c:14:20: error: extraneous ')' after condition, expected a statement
+   14 |   if (b == INT_MAX)) {
+      |                    ^
+/tmp/stablecode-int_arith-cpp-c.c:23:37: error: expected expression
+   23 |     if ((a % 2 == 0 && b % 2 != 0)) || 
+      |                                     ^
+/tmp/stablecode-int_arith-cpp-c.c:38:44: error: call to undeclared library function 'pow' with type 'double (double, double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   38 |     printf("Exponentiation of a^b = %d\n", pow(a, b)));
+      |                                            ^
+/tmp/stablecode-int_arith-cpp-c.c:38:44: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+/tmp/stablecode-int_arith-cpp-c.c:38:44: warning: format specifies type 'int' but the argument has type 'double' [-Wformat]
+   38 |     printf("Exponentiation of a^b = %d\n", pow(a, b)));
+      |                                     ~~     ^~~~~~~~~
+      |                                     %f
+/tmp/stablecode-int_arith-cpp-c.c:38:54: error: extraneous ')' before ';'
+   38 |     printf("Exponentiation of a^b = %d\n", pow(a, b)));
+      |                                                      ^
+1 warning and 5 errors generated.

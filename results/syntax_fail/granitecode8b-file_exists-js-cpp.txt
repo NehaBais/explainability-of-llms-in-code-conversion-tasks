@@ -1,0 +1,16 @@
+/tmp/granitecode8b-file_exists-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-js-cpp.cpp:3:33: error: use of undeclared identifier '_access'
+    3 |   bool fso_fileexists_1 = (0 != _access("input.txt", 0));
+      |                                 ^
+/tmp/granitecode8b-file_exists-js-cpp.cpp:4:33: error: use of undeclared identifier '_access'
+    4 |   bool fso_fileexists_2 = (0 != _access("c:/input.txt", 0));
+      |                                 ^
+/tmp/granitecode8b-file_exists-js-cpp.cpp:5:35: error: use of undeclared identifier '_access'
+    5 |   bool fso_folderexists_1 = (0 != _access("docs", 0));
+      |                                   ^
+/tmp/granitecode8b-file_exists-js-cpp.cpp:6:35: error: use of undeclared identifier '_access'
+    6 |   bool fso_folderexists_2 = (0 != _access("c:/docs", 0));
+      |                                   ^
+5 errors generated.

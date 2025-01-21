@@ -1,0 +1,15 @@
+/tmp/codegemma7b-file_size-go-c.c:6:11: error: called object type 'struct stat' is not a function or function pointer
+    6 |   if (stat(f, &stat) == -1) {
+      |       ~~~~^
+/tmp/codegemma7b-file_size-go-c.c:7:27: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     printf("Error: %s\n", strerror(errno));
+      |                           ^
+/tmp/codegemma7b-file_size-go-c.c:7:27: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/codegemma7b-file_size-go-c.c:7:36: error: use of undeclared identifier 'errno'
+    7 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+/tmp/codegemma7b-file_size-go-c.c:9:21: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+    9 |     printf("%ld\n", stat.st_size);
+      |             ~~~     ^~~~~~~~~~~~
+      |             %lld
+1 warning and 3 errors generated.

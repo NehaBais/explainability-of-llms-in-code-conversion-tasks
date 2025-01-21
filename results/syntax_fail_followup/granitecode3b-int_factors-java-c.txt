@@ -1,0 +1,19 @@
+/tmp/granitecode3b-int_factors-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-java-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("Enter a positive integer: ");
+      |   ^
+/tmp/granitecode3b-int_factors-java-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_factors-java-c.c:6:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   scanf("%ld", &n);
+      |   ^
+/tmp/granitecode3b-int_factors-java-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_factors-java-c.c:8:20: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   for (i = 2; i <= sqrt(n); i++) {
+      |                    ^
+/tmp/granitecode3b-int_factors-java-c.c:8:20: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+5 errors generated.

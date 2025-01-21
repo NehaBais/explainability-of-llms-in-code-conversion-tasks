@@ -1,0 +1,16 @@
+error[E0601]: `main` function not found in crate `dolphincoder7b_bit_ops_cpp_rs`
+  --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:21:2
+   |
+21 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-bit_ops-cpp-rs.rs`
+
+error[E0599]: no method named `shr_exact` found for struct `Wrapping` in the current scope
+  --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:14:33
+   |
+14 |     println!("a lsr b:  {}", ua.shr_exact(ub).0 as i32); // logical right shift (guaranteed)
+   |                                 ^^^^^^^^^ method not found in `Wrapping<u32>`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

@@ -1,0 +1,17 @@
+/tmp/dolphincoder7b-bit_ops-java-c.c:2:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 |   printf("a AND b: %d\n", a & b);
+      |   ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:2:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/dolphincoder7b-bit_ops-java-c.c:9:76: error: expected ')'
+    9 |     printf("a rol b: %d\n", (int)((((unsigned int)a << b) | (a>>(32 - b))));  //rotate left, C99+
+      |                                                                            ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:9:11: note: to match this '('
+    9 |     printf("a rol b: %d\n", (int)((((unsigned int)a << b) | (a>>(32 - b))));  //rotate left, C99+
+      |           ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:10:76: error: expected ')'
+   10 |     printf("a ror b: %d\n", (int)((((unsigned int)a >> b) | (a<<(32 - b))));  //rotate right, C99+
+      |                                                                            ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:10:11: note: to match this '('
+   10 |     printf("a ror b: %d\n", (int)((((unsigned int)a >> b) | (a<<(32 - b))));  //rotate right, C99+
+      |           ^
+3 errors generated.

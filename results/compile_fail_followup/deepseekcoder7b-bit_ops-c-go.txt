@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-bit_ops-c-go.go:20:6: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-c-go.go:20:14: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-bit_ops-c-go.go:20:30: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-c-go.go:20:34: syntax error: unexpected :, expected expression
+/tmp/deepseekcoder7b-bit_ops-c-go.go:22:4: syntax error: unexpected ] at end of statement

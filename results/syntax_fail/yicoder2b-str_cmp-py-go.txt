@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_cmp-py-go.go:9:69: undefined: strconv.TypeName

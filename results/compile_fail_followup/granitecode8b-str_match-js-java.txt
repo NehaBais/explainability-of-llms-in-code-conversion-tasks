@@ -1,0 +1,47 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String stringA = "tacoloco";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:8: error: class, interface, enum, or record expected
+q1 = stringA.startsWith(stringB);
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+q2 = stringA.indexOf(stringB);
+^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+while (m.find()) {
+^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+System.out.println("1: Does '" + stringA + "' start with '" + stringB + "'? " + (q1 ? "Yes." : "No."));
+^
+/tmp/None.java:19: error: class, interface, enum, or record expected
+System.out.print("2: Is '" + stringB + "' contained in '" + stringA + "'? ");
+^
+/tmp/None.java:20: error: class, interface, enum, or record expected
+if (q2 >= 0) {
+^
+/tmp/None.java:22: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:24: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:26: error: class, interface, enum, or record expected
+System.out.println(q2matches.size());
+^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+for (int i = 0; i < q2matches.size(); i++) {
+^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+for (int i = 0; i < q2matches.size(); i++) {
+                ^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+for (int i = 0; i < q2matches.size(); i++) {
+                                      ^
+/tmp/None.java:29: error: class, interface, enum, or record expected
+}
+^
+15 errors

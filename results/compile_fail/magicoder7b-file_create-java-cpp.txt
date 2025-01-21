@@ -1,0 +1,7 @@
+/tmp/magicoder7b-file_create-java-cpp.cpp:14:5: error: use of undeclared identifier 'mkdir'
+   14 |     mkdir("/docs", 0755);
+      |     ^
+/tmp/magicoder7b-file_create-java-cpp.cpp:23:5: error: use of undeclared identifier 'mkdir'
+   23 |     mkdir("/root/docs", 0755);
+      |     ^
+2 errors generated.

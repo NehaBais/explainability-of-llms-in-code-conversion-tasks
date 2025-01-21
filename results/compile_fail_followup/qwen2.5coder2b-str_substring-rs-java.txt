@@ -1,0 +1,16 @@
+/tmp/Main.java:11: error: cannot find symbol
+        s.chars().skip(n).limit(m).mapToObj(c -> (char) c).collect(new StringJoiner("")));
+                                                                       ^
+  symbol:   class StringJoiner
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    System.out.println(s.chars().skip(n).collect(new StringJoiner("")));
+                                                     ^
+  symbol:   class StringJoiner
+  location: class Main
+/tmp/Main.java:31: error: cannot find symbol
+                  .collect(new StringJoiner(""))));
+                               ^
+  symbol:   class StringJoiner
+  location: class Main
+3 errors

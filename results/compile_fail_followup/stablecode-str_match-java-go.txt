@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/stablecode-str_match-java-go.go:10:47: newline in string
+/tmp/stablecode-str_match-java-go.go:10:47: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-str_match-java-go.go:11:28: newline in string
+/tmp/stablecode-str_match-java-go.go:14:44: newline in string
+/tmp/stablecode-str_match-java-go.go:15:26: newline in string
+/tmp/stablecode-str_match-java-go.go:16:44: newline in string
+/tmp/stablecode-str_match-java-go.go:17:26: newline in string
+/tmp/stablecode-str_match-java-go.go:19:45: syntax error: unexpected ) at end of statement

@@ -1,0 +1,76 @@
+warning: unused import: `rename`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:1:21
+  |
+1 | use std::fs::{self, rename};
+  |                     ^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `PathBuf` and `Path`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:3:17
+  |
+3 | use std::path::{Path, PathBuf};
+  |                 ^^^^  ^^^^^^^
+
+error[E0277]: `OsStr` doesn't implement `std::fmt::Display`
+  --> /tmp/codegeex4-file_rename-js-rs.rs:15:51
+   |
+15 |             let new_name = format!("{}/{}", dest, src_path.file_name().unwrap());
+   |                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `OsStr` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `OsStr`, which is required by `&OsStr: std::fmt::Display`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0382]: use of moved value: `drive_letter`
+  --> /tmp/codegeex4-file_rename-js-rs.rs:51:50
+   |
+50 |         let drive_letter = std::env::var("SystemDrive").expect("Unable to get system drive");
+   |             ------------ move occurs because `drive_letter` has type `String`, which does not implement the `Copy` trait
+51 |         move_file(&(drive_letter + "/" + src), &(drive_letter + "/" + dest))?;
+   |                     ------------------           ^^^^^^^^^^^^ value used here after move
+   |                     |
+   |                     `drive_letter` moved due to usage in operator
+   |
+note: calling this operator moves the left-hand side
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/arith.rs:91:12
+help: consider cloning the value if the performance cost is acceptable
+   |
+51 |         move_file(&(drive_letter.clone() + "/" + src), &(drive_letter + "/" + dest))?;
+   |                                 ++++++++
+
+error[E0382]: use of moved value: `drive_letter`
+  --> /tmp/codegeex4-file_rename-js-rs.rs:52:20
+   |
+50 |         let drive_letter = std::env::var("SystemDrive").expect("Unable to get system drive");
+   |             ------------ move occurs because `drive_letter` has type `String`, which does not implement the `Copy` trait
+51 |         move_file(&(drive_letter + "/" + src), &(drive_letter + "/" + dest))?;
+   |                                                  ------------------ `drive_letter` moved due to usage in operator
+52 |         move_dir(&(drive_letter + "/" + src), &(drive_letter + "/" + dest))
+   |                    ^^^^^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+51 |         move_file(&(drive_letter + "/" + src), &(drive_letter.clone() + "/" + dest))?;
+   |                                                              ++++++++
+
+error[E0382]: use of moved value: `drive_letter`
+  --> /tmp/codegeex4-file_rename-js-rs.rs:52:49
+   |
+50 |         let drive_letter = std::env::var("SystemDrive").expect("Unable to get system drive");
+   |             ------------ move occurs because `drive_letter` has type `String`, which does not implement the `Copy` trait
+51 |         move_file(&(drive_letter + "/" + src), &(drive_letter + "/" + dest))?;
+52 |         move_dir(&(drive_letter + "/" + src), &(drive_letter + "/" + dest))
+   |                    ------------------           ^^^^^^^^^^^^ value used here after move
+   |                    |
+   |                    `drive_letter` moved due to usage in operator
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+52 |         move_dir(&(drive_letter.clone() + "/" + src), &(drive_letter + "/" + dest))
+   |                                ++++++++
+
+error: aborting due to 4 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0277, E0382.
+For more information about an error, try `rustc --explain E0277`.

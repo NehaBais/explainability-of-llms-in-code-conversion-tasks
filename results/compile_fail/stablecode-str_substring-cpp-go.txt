@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-cpp-go.go:17:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-cpp-go.go:18:46: syntax error: unexpected ] in argument list; possibly missing comma or )
+/tmp/stablecode-str_substring-cpp-go.go:19:48: syntax error: unexpected ] in argument list; possibly missing comma or )

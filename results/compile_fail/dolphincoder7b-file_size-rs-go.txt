@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_size-rs-go.go:15:15: assignment mismatch: 2 variables but syscall.Stat returns 1 value
+/tmp/dolphincoder7b-file_size-rs-go.go:15:28: not enough arguments in call to syscall.Stat
+	have (string)
+	want (string, *syscall.Stat_t)

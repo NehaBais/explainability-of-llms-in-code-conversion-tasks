@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-dir_make-py-c.c:19:38: error: use of undeclared identifier 'errno'
+   19 |       if (mkdir(_path, 0755) != 0 && errno != EEXIST) {
+      |                                      ^
+/tmp/qwen2.5coder7b-dir_make-py-c.c:19:47: error: use of undeclared identifier 'EEXIST'
+   19 |       if (mkdir(_path, 0755) != 0 && errno != EEXIST) {
+      |                                               ^
+/tmp/qwen2.5coder7b-dir_make-py-c.c:28:33: error: use of undeclared identifier 'errno'
+   28 |   if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                 ^
+/tmp/qwen2.5coder7b-dir_make-py-c.c:28:42: error: use of undeclared identifier 'EEXIST'
+   28 |   if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                          ^
+4 errors generated.

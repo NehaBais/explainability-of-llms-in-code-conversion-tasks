@@ -1,0 +1,84 @@
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:18:16
+   |
+18 |     if indx >= 0 {
+   |        ----    ^ expected `Option<usize>`, found integer
+   |        |
+   |        expected because this is `Option<usize>`
+   |
+   = note: expected enum `Option<usize>`
+              found type `{integer}`
+help: try wrapping the expression in `Some`
+   |
+18 |     if indx >= Some(0) {
+   |                +++++ +
+
+error[E0369]: cannot add `usize` to `Option<usize>`
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:20:38
+   |
+20 |         println!("{}", &s[indx..indx + m]);
+   |                                 ---- ^ - usize
+   |                                 |
+   |                                 Option<usize>
+   |
+note: the foreign item type `Option<usize>` doesn't implement `Add<usize>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:571:1
+   |
+   = note: not implement `Add<usize>`
+
+error[E0277]: the type `str` cannot be indexed by `std::ops::Range<Option<usize>>`
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:20:27
+   |
+20 |         println!("{}", &s[indx..indx + m]);
+   |                           ^^^^^^^^^^^^^^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `std::ops::Range<Option<usize>>`, which is required by `str: Index<_>`
+   = help: the following other types implement trait `SliceIndex<T>`:
+             `std::ops::Range<usize>` implements `SliceIndex<[T]>`
+             `std::ops::Range<usize>` implements `SliceIndex<str>`
+   = note: required for `str` to implement `Index<std::ops::Range<Option<usize>>>`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:24:16
+   |
+24 |     if indx >= 0 {
+   |        ----    ^ expected `Option<usize>`, found integer
+   |        |
+   |        expected because this is `Option<usize>`
+   |
+   = note: expected enum `Option<usize>`
+              found type `{integer}`
+help: try wrapping the expression in `Some`
+   |
+24 |     if indx >= Some(0) {
+   |                +++++ +
+
+error[E0369]: cannot add `usize` to `Option<usize>`
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:26:38
+   |
+26 |         println!("{}", &s[indx..indx + m]);
+   |                                 ---- ^ - usize
+   |                                 |
+   |                                 Option<usize>
+   |
+note: the foreign item type `Option<usize>` doesn't implement `Add<usize>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:571:1
+   |
+   = note: not implement `Add<usize>`
+
+error[E0277]: the type `str` cannot be indexed by `std::ops::Range<Option<usize>>`
+  --> /tmp/dolphincoder7b-str_substring-py-rs.rs:26:27
+   |
+26 |         println!("{}", &s[indx..indx + m]);
+   |                           ^^^^^^^^^^^^^^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `std::ops::Range<Option<usize>>`, which is required by `str: Index<_>`
+   = help: the following other types implement trait `SliceIndex<T>`:
+             `std::ops::Range<usize>` implements `SliceIndex<[T]>`
+             `std::ops::Range<usize>` implements `SliceIndex<str>`
+   = note: required for `str` to implement `Index<std::ops::Range<Option<usize>>>`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0369.
+For more information about an error, try `rustc --explain E0277`.

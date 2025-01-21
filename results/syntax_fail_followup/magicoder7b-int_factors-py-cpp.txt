@@ -1,0 +1,32 @@
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |        ^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:22: error: no member named 'initializer_list' in namespace 'std'
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |                 ~~~~~^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:42: error: expected '(' for function-style cast or type construction
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |                                       ~~~^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:55: error: expected ';' after expression
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |                                                       ^
+      |                                                       ;
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |               ^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:24:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |     auto factors = factor(i);
+      |     ^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:26:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   26 |     for (auto f : factors) {
+      |          ^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:26:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   26 |     for (auto f : factors) {
+      |                 ^
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:45: warning: left operand of comma operator has no effect [-Wunused-value]
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |                                             ^~
+/tmp/magicoder7b-int_factors-py-cpp.cpp:23:49: warning: left operand of comma operator has no effect [-Wunused-value]
+   23 |   for (auto i : std::initializer_list<int>({45, 53, 64})) {
+      |                                                 ^~
+7 warnings and 3 errors generated.

@@ -1,0 +1,13 @@
+/tmp/codegeex4-dir_make-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegeex4-dir_make-go-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::create_directories(path);
+      |     ^
+/tmp/codegeex4-dir_make-go-cpp.cpp:12:9: error: use of undeclared identifier 'fs'
+   12 |     if (fs::exists(path)) {
+      |         ^
+/tmp/codegeex4-dir_make-go-cpp.cpp:17:18: error: use of undeclared identifier 'fs'
+   17 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+4 errors generated.

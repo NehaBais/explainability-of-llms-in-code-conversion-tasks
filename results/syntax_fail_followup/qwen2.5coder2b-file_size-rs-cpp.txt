@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:15:10: error: no member named 'filesystem' in namespace 'std'
+   15 |     std::filesystem::path full_path(filename);
+      |     ~~~~~^
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:16:15: error: no member named 'filesystem' in namespace 'std'
+   16 |     if (!std::filesystem::exists(full_path)) {
+      |          ~~~~~^
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:16:34: error: use of undeclared identifier 'full_path'
+   16 |     if (!std::filesystem::exists(full_path)) {
+      |                                  ^
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:21:10: error: no member named 'filesystem' in namespace 'std'
+   21 |     std::filesystem::file_status status = std::filesystem::status(full_path);
+      |     ~~~~~^
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:21:48: error: no member named 'filesystem' in namespace 'std'
+   21 |     std::filesystem::file_status status = std::filesystem::status(full_path);
+      |                                           ~~~~~^
+/tmp/qwen2.5coder2b-file_size-rs-cpp.cpp:21:67: error: use of undeclared identifier 'full_path'
+   21 |     std::filesystem::file_status status = std::filesystem::status(full_path);
+      |                                                                   ^
+6 errors generated.

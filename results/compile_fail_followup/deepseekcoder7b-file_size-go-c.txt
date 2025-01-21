@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-file_size-go-c.c:12:45: error: no member named 'st' in 'struct stat'
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                          ~~ ^
+/tmp/deepseekcoder7b-file_size-go-c.c:12:48: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                ^~
+/tmp/deepseekcoder7b-file_size-go-c.c:12:56: error: character <U+2581> not allowed in an identifier
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                       ^
+/tmp/deepseekcoder7b-file_size-go-c.c:12:61: error: character <U+2581> not allowed in an identifier
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                          ^
+/tmp/deepseekcoder7b-file_size-go-c.c:12:72: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                                   ^~
+/tmp/deepseekcoder7b-file_size-go-c.c:12:48: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                ^
+/tmp/deepseekcoder7b-file_size-go-c.c:12:77: error: use of undeclared identifier '_size'
+   12 |     printf("%llu\n", (unsigned long long)st.st<｜begin▁of▁sentence｜> _size);
+      |                                                                       ^
+2 warnings and 5 errors generated.

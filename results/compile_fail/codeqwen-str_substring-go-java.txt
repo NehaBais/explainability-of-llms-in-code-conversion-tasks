@@ -1,0 +1,43 @@
+/tmp/Main.java:27: error: illegal character: '`'
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                          ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                           ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                              ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                ^
+/tmp/Main.java:27: error: illegal character: '\'
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                    ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                   ^
+/tmp/Main.java:27: error: illegal character: '`'
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                      ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                     ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                         ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                              ^
+/tmp/Main.java:27: error: not a statement
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                                ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                                 ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.printf(`Start "%s", length %d: %s\n`, sxStr, m, s.substring(sx, sx + m));
+                                                                                          ^
+14 errors

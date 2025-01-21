@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-dir_make-cpp-go.go:14:32: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-cpp-go.go:17:54: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-cpp-go.go:30:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-cpp-go.go:33:89: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-cpp-go.go:37:67: syntax error: unexpected ) at end of statement

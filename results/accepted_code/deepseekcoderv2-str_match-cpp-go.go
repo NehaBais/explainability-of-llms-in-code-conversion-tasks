@@ -1,33 +1,39 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// Beginning
 	s1 := "abcd"
+	s2 := "abab"
 	s3 := "ab"
-	if s1[:len(s3)] == s3 {
-		fmt.Println("Yes, string starts with s3")
+
+	// Beginning
+	if strings.HasPrefix(s1, s3) {
+		fmt.Println("String starts with the other string")
 	} else {
-		fmt.Println("No, string doesn't start with s3")
+		fmt.Println("String does not start with the other string")
 	}
 
 	// End
-	if s1[len(s1)-len(s3):] == s3 {
-		fmt.Println("Yes, string ends with s3")
+	if strings.HasSuffix(s1, s3) {
+		fmt.Println("String ends with the other string")
 	} else {
-		fmt.Println("No, string doesn't end with s3")
+		fmt.Println("String does not end with the other string")
 	}
 
 	// Anywhere
-	s2 := "abab"
-	if loc := s2.Index(s3); loc != -1 {
-		fmt.Printf("Yes, string contains '%v'\n", s3)
-		for loc >= 0 {
-			fmt.Println(loc)
-			loc = s2.Index(s3, loc+len(s3))
-		}
+	index := strings.Index(s2, s3)
+	if index == -1 {
+		fmt.Println("String is not contained within the other string")
 	} else {
-		fmt.Printf("No, string doesn't contain '%v'\n", s3)
+		fmt.Printf("String is contained at location: %d\n", index)
+
+		// Handle multiple occurrences
+		for i := strings.Index(s2[index+len(s3):], s3); i != -1; i = strings.Index(s2[i+len(s3):], s3) {
+			fmt.Printf("String is contained again at location: %d\n", i+index+len(s3))
+		}
 	}
 }

@@ -1,0 +1,4 @@
+/tmp/Main.java:9: error: bad operand type int for unary operator '!'
+    if (!a.compareTo(b) > 0) System.out.println("The first string is lexically before the second");
+        ^
+1 error

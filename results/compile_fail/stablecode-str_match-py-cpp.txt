@@ -1,0 +1,48 @@
+/tmp/stablecode-str_match-py-cpp.cpp:6:16: error: no viable conversion from returned value of type 'string' to function return type 'bool'
+    6 |         return s1.substr(0, s2.length())) == s2;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/stablecode-str_match-py-cpp.cpp:6:41: error: expected ';' after return statement
+    6 |         return s1.substr(0, s2.length())) == s2;
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-str_match-py-cpp.cpp:15:11: error: no viable conversion from 'string' to 'bool'
+   15 |       if (s1.substr(i, s2.length())) == s2) {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/stablecode-str_match-py-cpp.cpp:15:38: error: expected expression
+   15 |       if (s1.substr(i, s2.length())) == s2) {
+      |                                      ^
+/tmp/stablecode-str_match-py-cpp.cpp:25:34: error: extraneous ')' after condition, expected a statement
+   25 |   if (s1.length() >= s2.length())) {
+      |                                  ^
+/tmp/stablecode-str_match-py-cpp.cpp:26:16: error: no viable conversion from returned value of type 'string' to function return type 'bool'
+   26 |         return s1.substr(s1.length() - s2.length())) == s2;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/stablecode-str_match-py-cpp.cpp:26:52: error: expected ';' after return statement
+   26 |         return s1.substr(s1.length() - s2.length())) == s2;
+      |                                                    ^
+      |                                                    ;
+/tmp/stablecode-str_match-py-cpp.cpp:39:38: error: expected ';' after expression
+   39 |     std::cout << starts_with(str, s1)) << std::endl;
+      |                                      ^
+      |                                      ;
+/tmp/stablecode-str_match-py-cpp.cpp:39:38: error: expected expression
+/tmp/stablecode-str_match-py-cpp.cpp:40:36: error: expected ';' after expression
+   40 |     std::cout << ends_with(str, s2))) << std::endl;
+      |                                    ^
+      |                                    ;
+/tmp/stablecode-str_match-py-cpp.cpp:40:36: error: expected expression
+/tmp/stablecode-str_match-py-cpp.cpp:41:35: error: expected ';' after expression
+   41 |     std::cout << contains(str, s2))) << std::endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-str_match-py-cpp.cpp:41:35: error: expected expression
+13 errors generated.

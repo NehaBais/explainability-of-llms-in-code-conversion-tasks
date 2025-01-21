@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-str_concat-py-go.go:18:55: syntax error: unexpected } in argument list; possibly missing comma or )

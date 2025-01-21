@@ -1,0 +1,27 @@
+error[E0308]: mismatched types
+  --> /tmp/granitecode8b-str_prepend-c-rs.rs:11:25
+   |
+11 |         *c_string_mut = std::ptr::null_mut();
+   |         -------------   ^^^^^^^^^^^^^^^^^^^^ expected `i8`, found `*mut _`
+   |         |
+   |         expected due to the type of this binding
+   |
+   = note:     expected type `i8`
+           found raw pointer `*mut _`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> /tmp/granitecode8b-str_prepend-c-rs.rs:12:9
+   |
+12 |         libc::free(c_string_mut as *mut libc::c_void);
+   |         ^^^^ use of undeclared crate or module `libc`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `libc`
+  --> /tmp/granitecode8b-str_prepend-c-rs.rs:12:41
+   |
+12 |         libc::free(c_string_mut as *mut libc::c_void);
+   |                                         ^^^^ use of undeclared crate or module `libc`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0433.
+For more information about an error, try `rustc --explain E0308`.

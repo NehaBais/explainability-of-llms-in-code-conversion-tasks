@@ -1,0 +1,1 @@
+print(f"{A} and {B} are {'not ' If A != B else ''}inequal,")

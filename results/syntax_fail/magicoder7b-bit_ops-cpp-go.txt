@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/magicoder7b-bit_ops-cpp-go.go:35:9: invalid operation: ((x >> y) | (x << (32 - y))) & mask (mismatched types uint32 and int)

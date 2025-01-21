@@ -1,0 +1,62 @@
+/tmp/yicoder2b-int_factors-py-cpp.cpp:11:2: error: invalid preprocessing directive
+   11 | #changed to sqrt(n) + 1 for inclusive range if (n % x == 0) {
+      |  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:16:3: error: expected unqualified-id
+   16 |   for (int i = 0; i < factors2.size(); i++) {
+      |   ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:19:11: error: use of undeclared identifier 'factors1'; did you mean 'factor'?
+   19 |   reverse(factors1.begin(), factors1.end());
+      |           ^~~~~~~~
+      |           factor
+/tmp/yicoder2b-int_factors-py-cpp.cpp:8:13: note: 'factor' declared here
+    8 | vector<int> factor(int n) {
+      |             ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:19:3: error: a type specifier is required for all declarations
+   19 |   reverse(factors1.begin(), factors1.end());
+      |   ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:19:19: error: member reference base type 'vector<int> (int)' is not a structure or union
+   19 |   reverse(factors1.begin(), factors1.end());
+      |           ~~~~~~~~^~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:19:29: error: use of undeclared identifier 'factors1'
+   19 |   reverse(factors1.begin(), factors1.end());
+      |                             ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:20:2: error: invalid preprocessing directive
+   20 | #reversed the vector to have the same order as in Python
+      |  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:21:7: error: unknown type name 'version'
+   21 |       version return factors1;
+      |       ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:21:15: error: expected unqualified-id
+   21 |       version return factors1;
+      |               ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:22:1: error: extraneous closing brace ('}')
+   22 | }
+      | ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:26:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   26 |   for (int i : res) // print with range-based for loop
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:27:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   27 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:29:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   29 |   for (int i : res)
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:30:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   30 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:32:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   32 |   for (int i : res)
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:33:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   33 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:27:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   27 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:30:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   30 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:33:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   33 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+6 warnings and 13 errors generated.

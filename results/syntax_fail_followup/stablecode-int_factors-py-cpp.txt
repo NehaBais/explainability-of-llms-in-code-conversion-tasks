@@ -1,0 +1,34 @@
+/tmp/stablecode-int_factors-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:4:16: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    4 |     for (const auto& i: {
+      |                ^
+/tmp/stablecode-int_factors-py-cpp.cpp:4:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    4 |     for (const auto& i: {
+      |                       ^
+/tmp/stablecode-int_factors-py-cpp.cpp:6:1: error: expected ')'
+    6 | }) 
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:4:9: note: to match this '('
+    4 |     for (const auto& i: {
+      |         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:4:25: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    4 |     for (const auto& i: {
+      |                         ^
+/tmp/stablecode-int_factors-py-cpp.cpp:6:1: error: expected statement
+    6 | }) 
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:6:2: error: expected unqualified-id
+    6 | }) 
+      |  ^
+/tmp/stablecode-int_factors-py-cpp.cpp:11:1: error: expected unqualified-id
+   11 | return 0;
+      | ^
+/tmp/stablecode-int_factors-py-cpp.cpp:12:1: error: extraneous closing brace ('}')
+   12 | }
+      | ^
+2 warnings and 8 errors generated.

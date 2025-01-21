@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_rename-java-go.go:32:13: expected statement, found ')' (and 1 more errors)

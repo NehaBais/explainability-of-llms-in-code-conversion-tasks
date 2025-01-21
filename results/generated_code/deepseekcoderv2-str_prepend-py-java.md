@@ -1,5 +1,11 @@
-Answer: In Python, the code to prepend a string literal is as follows:
-```python
-s = str(0) + '12345678'
-```
+ Sure, here is the equivalent Java code for the given Python script:
 
+```java
+public class Main {
+    public static void main(String[] args) {
+        String s = "12345678";
+        s = "0" + s; // by concatenation
+        System.out.println(s);
+    }
+}
+```

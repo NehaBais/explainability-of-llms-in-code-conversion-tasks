@@ -1,16 +1,30 @@
-import * as path from "path";
-import * as fs from 'fs';
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-export function mkdirp(input: string, cb: (err?: Error) => any): void {
-    let resolved = path.resolve(input);
-    fs.mkdir(resolved, (er) => {
-        if (!er) { return cb(); }
-        switch (er.code) {
-            case 'ENOENT': // The directory doesn't exist. Make its parent and try again.
-                mkdirp(path.dirname(resolved), er => er ? cb(er) : mkdirp(input, cb));
-                break;
-            default:
-                cb(er);
-        }
-    });
+public class Mkdirp {
+  public static void mkdirp(String pathStr, Runnable onSuccess, Runnable onFailure) {
+    Path path = Paths.get(pathStr);
+    try {
+      if (!Files.exists(path)) {
+        // Create the parent directory recursively
+        Files.createDirectories(path);
+      }
+      if (onSuccess != null) {
+        onSuccess.run();
+      }
+    } catch (Exception e) {
+      if (onFailure != null) {
+        onFailure.run();
+      }
+    }
+  }
+
+  public static void main(String[] args) {
+    String dirPath = "./path/to/dir";
+    mkdirp(
+        dirPath,
+        () -> System.out.println("Directory created successfully."),
+        () -> System.err.println("Failed to create directory."));
+  }
 }

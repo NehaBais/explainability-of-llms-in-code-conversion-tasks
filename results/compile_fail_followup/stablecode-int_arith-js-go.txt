@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-js-go.go:20:38: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-js-go.go:21:45: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-js-go.go:22:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-js-go.go:23:49: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-js-go.go:24:45: syntax error: unexpected ) at end of statement

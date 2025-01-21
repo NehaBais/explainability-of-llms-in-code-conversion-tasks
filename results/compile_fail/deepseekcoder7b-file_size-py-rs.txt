@@ -1,0 +1,15 @@
+error[E0599]: no associated item named `NotFound` found for struct `std::io::Error` in the current scope
+  --> /tmp/deepseekcoder7b-file_size-py-rs.rs:10:20
+   |
+10 |             Error::NotFound => println!("File '{}' not found.", path),
+   |                    ^^^^^^^^ associated item not found in `Error`
+
+error[E0599]: no associated item named `NotFound` found for struct `std::io::Error` in the current scope
+  --> /tmp/deepseekcoder7b-file_size-py-rs.rs:22:20
+   |
+22 |             Error::NotFound => println!("File '{}' not found.", root_path),
+   |                    ^^^^^^^^ associated item not found in `Error`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

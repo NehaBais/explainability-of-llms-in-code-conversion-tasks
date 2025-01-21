@@ -1,29 +1,33 @@
-## Answer:
-This code has two function that are called `printFileSize` and `main`.  The first one prints the size of a file, if it exists or not with an error message if it doesn't exist in the current directory or root path respectively.  The second one is used to call this function twice with different parameters.
+ Certainly! Below is the equivalent code in C that verifies the size of a file called `input.txt` for both the current working directory and the root of the file system:
 
-To translate the code from Golang to C++, you need to define two functions that are `printFileSize` and `main`.  The first one takes a string as an argument, which represents the name of the file and prints out its size in bytes or an error message if it doesn't exist.  The second function calls this first function twice with different parameters: "input.txt" for current directory path and "/input.txt" for root path respectively.
-```
-#include <iostream>
-#include <fstream>
-using namespace std;
-void printFileSize(const string& filename) {
-    if (ifstream file(filename); !file) {
-        cout << "Error: could not open input.txt" << endl;
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <sys/stat.h>
+
+void printFileSize(const char *filename) {
+    struct stat st;
+    if (stat(filename, &st) == -1) {
+        perror("Error");
     } else {
-        long long size = file.tellg();
-        cout << "The size of input.txt is " << size << " bytes." << endl;
+        printf("%zu\n", st.st_size);
     }
 }
+
 int main() {
     printFileSize("input.txt");
     printFileSize("/input.txt");
     return 0;
 }
 ```
-## Questions:
-1. What is the purpose of this code and what does it do?
-2. How many functions are defined in the code, and what are their purposes?
-3. Can you explain how file size is calculated and stored?
-4. Are there any additional arguments that can be passed to the function `printFileSize`? If yes, please specify them.
-5. Is it possible to call this program from a command line with specific parameters such as "input.txt" or "/input.txt"?
 
+### Explanation:
+1. **Header Files**: The C code includes necessary headers similar to the Go code.
+2. **`printFileSize` Function**: This function takes a filename as an argument, uses `stat` to get file information, and prints the size if successful. If not, it prints an error using `perror`.
+3. **`main` Function**: Calls `printFileSize` for both local (`input.txt`) and root (`/input.txt`).
+
+### Notes:
+- In C, the function to get file information is `stat`, which takes a filename and a pointer to a `struct stat`.
+- The size of the file is accessed via `st.st_size`.
+- Error handling in C uses `perror` for system errors (like file not found).

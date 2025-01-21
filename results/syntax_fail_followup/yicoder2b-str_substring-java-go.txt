@@ -1,0 +1,1 @@
+/tmp/yicoder2b-str_substring-java-go.go:3:9: package encoding/utf8 is not in std (/opt/homebrew/Cellar/go/1.23.0/libexec/src/encoding/utf8)

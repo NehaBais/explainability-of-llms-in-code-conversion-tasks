@@ -1,0 +1,12 @@
+/tmp/stablecode-logic_ops-js-c.c:4:38: error: extraneous ')' before ';'
+    4 |     printf("a AND b: %d\n", (a && b)));
+      |                                      ^
+/tmp/stablecode-logic_ops-js-c.c:5:37: error: expected ';' after expression
+    5 |     printf("a OR b: %d\n", (a || b))));
+      |                                     ^
+      |                                     ;
+/tmp/stablecode-logic_ops-js-c.c:5:37: error: expected expression
+/tmp/stablecode-logic_ops-js-c.c:6:32: error: extraneous ')' before ';'
+    6 |     printf("NOT a: %d\n", (!a)));
+      |                                ^
+4 errors generated.

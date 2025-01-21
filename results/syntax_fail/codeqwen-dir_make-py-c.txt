@@ -1,0 +1,10 @@
+/tmp/codeqwen-dir_make-py-c.c:7:22: error: use of undeclared identifier 'errno'
+    7 |   if (result == 0 || errno == EEXIST) {
+      |                      ^
+/tmp/codeqwen-dir_make-py-c.c:7:31: error: use of undeclared identifier 'EEXIST'
+    7 |   if (result == 0 || errno == EEXIST) {
+      |                               ^
+/tmp/codeqwen-dir_make-py-c.c:10:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     perror("mkdirp");
+      |     ^
+3 errors generated.

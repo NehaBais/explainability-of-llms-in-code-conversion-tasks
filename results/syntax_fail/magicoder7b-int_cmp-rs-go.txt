@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/magicoder7b-int_cmp-rs-go.go:14:23: undefined: a

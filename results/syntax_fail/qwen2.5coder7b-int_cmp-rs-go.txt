@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-int_cmp-rs-go.go:15:23: undefined: strings

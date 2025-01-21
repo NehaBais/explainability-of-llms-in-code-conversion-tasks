@@ -1,0 +1,5 @@
+/tmp/codegeex4-int_arith-go-c.c:16:24: error: call to undeclared library function 'pow' with type 'double (double, double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   long double result = pow(a, b);
+      |                        ^
+/tmp/codegeex4-int_arith-go-c.c:16:24: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+1 error generated.

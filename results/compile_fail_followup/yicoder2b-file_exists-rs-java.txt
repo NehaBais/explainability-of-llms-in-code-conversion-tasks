@@ -1,0 +1,21 @@
+/tmp/Main.java:4: error: cannot find symbol
+  public static void main(String[] args) throws IOException {
+                                                ^
+  symbol:   class IOException
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+        BasicFileAttributes attr = Files.readAttributes(path, BasicFileAttributes.class);
+        ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+        BasicFileAttributes attr = Files.readAttributes(path, BasicFileAttributes.class);
+                                                              ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+/tmp/Main.java:16: error: cannot find symbol
+      } catch (IOException e) {
+               ^
+  symbol:   class IOException
+  location: class Main
+4 errors

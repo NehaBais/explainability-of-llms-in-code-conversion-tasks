@@ -1,0 +1,64 @@
+/tmp/granitecode8b-str_match-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str1 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string str2 = "ab";
+      |   ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "Does " << str1 << " start with " << str2 << "? " << startsWith
+      |   ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:10:11: error: use of undeclared identifier 'endl'
+   10 |        << endl;
+      |           ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:13:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   13 |   size_t pos = str1.find(str2);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-py-cpp.cpp:13:10: error: use of undeclared identifier 'pos'
+   13 |   size_t pos = str1.find(str2);
+      |          ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:14:20: error: use of undeclared identifier 'pos'
+   14 |   bool contains = (pos != string::npos);
+      |                    ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:14:27: error: use of undeclared identifier 'string'
+   14 |   bool contains = (pos != string::npos);
+      |                           ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:15:3: error: use of undeclared identifier 'cout'
+   15 |   cout << "Does " << str1 << " contain " << str2 << "? " << contains << endl;
+      |   ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:15:73: error: use of undeclared identifier 'endl'
+   15 |   cout << "Does " << str1 << " contain " << str2 << "? " << contains << endl;
+      |                                                                         ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:19:5: error: use of undeclared identifier 'cout'
+   19 |     cout << "The location of the match is: " << pos << endl;
+      |     ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:19:49: error: use of undeclared identifier 'pos'
+   19 |     cout << "The location of the match is: " << pos << endl;
+      |                                                 ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:19:56: error: use of undeclared identifier 'endl'
+   19 |     cout << "The location of the match is: " << pos << endl;
+      |                                                        ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:23:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   23 |   size_t prev = 0;
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-py-cpp.cpp:23:10: error: use of undeclared identifier 'prev'
+   23 |   size_t prev = 0;
+      |          ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:24:11: error: use of undeclared identifier 'pos'
+   24 |   while ((pos = str1.find(str2, prev)) != string::npos) {
+      |           ^
+/tmp/granitecode8b-str_match-py-cpp.cpp:24:33: error: use of undeclared identifier 'prev'
+   24 |   while ((pos = str1.find(str2, prev)) != string::npos) {
+      |                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

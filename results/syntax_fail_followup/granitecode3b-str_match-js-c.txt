@@ -1,0 +1,26 @@
+/tmp/granitecode3b-str_match-js-c.c:3:20: error: use of undeclared identifier 'stringA'
+    3 |   int q1 = !strcmp(stringA, stringB);
+      |                    ^
+/tmp/granitecode3b-str_match-js-c.c:3:29: error: use of undeclared identifier 'stringB'
+    3 |   int q1 = !strcmp(stringA, stringB);
+      |                             ^
+/tmp/granitecode3b-str_match-js-c.c:4:26: error: use of undeclared identifier 'stringA'
+    4 |   char *q2multi = strstr(stringA, stringB);
+      |                          ^
+/tmp/granitecode3b-str_match-js-c.c:4:35: error: use of undeclared identifier 'stringB'
+    4 |   char *q2multi = strstr(stringA, stringB);
+      |                                   ^
+/tmp/granitecode3b-str_match-js-c.c:5:29: error: use of undeclared identifier 'stringA'
+    5 |   unsigned long q3 = strlen(stringA);
+      |                             ^
+/tmp/granitecode3b-str_match-js-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("1: Does '%s' start with '%s'? %d\n", stringA, stringB, q1);
+      |   ^
+/tmp/granitecode3b-str_match-js-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_match-js-c.c:6:48: error: use of undeclared identifier 'stringA'
+    6 |   printf("1: Does '%s' start with '%s'? %d\n", stringA, stringB, q1);
+      |                                                ^
+/tmp/granitecode3b-str_match-js-c.c:6:57: error: use of undeclared identifier 'stringB'
+    6 |   printf("1: Does '%s' start with '%s'? %d\n", stringA, stringB, q1);
+      |                                                         ^
+8 errors generated.

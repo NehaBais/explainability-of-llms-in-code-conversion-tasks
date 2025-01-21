@@ -1,0 +1,41 @@
+error: expected item, found keyword `let`
+  --> /tmp/dolphincoder7b-str_match-cpp-rs.rs:12:1
+   |
+12 | let loc = s2.find(&s3).unwrap();
+   | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: missing type for `const` item
+ --> /tmp/dolphincoder7b-str_match-cpp-rs.rs:3:9
+  |
+3 | const s1  =  "abcd";
+  |         ^
+  |
+help: provide a type for the item
+  |
+3 | const s1: <type>  =  "abcd";
+  |         ++++++++
+
+error: missing type for `const` item
+ --> /tmp/dolphincoder7b-str_match-cpp-rs.rs:4:9
+  |
+4 | const s2  =  "abab";
+  |         ^
+  |
+help: provide a type for the item
+  |
+4 | const s2: <type>  =  "abab";
+  |         ++++++++
+
+error: missing type for `const` item
+ --> /tmp/dolphincoder7b-str_match-cpp-rs.rs:5:9
+  |
+5 | const s3  =  "ab";
+  |         ^
+  |
+help: provide a type for the item
+  |
+5 | const s3: <type>  =  "ab";
+  |         ++++++++
+
+error: aborting due to 4 previous errors
+

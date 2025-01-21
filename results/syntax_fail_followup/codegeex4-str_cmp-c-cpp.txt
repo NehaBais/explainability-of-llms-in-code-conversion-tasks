@@ -1,0 +1,19 @@
+/tmp/codegeex4-str_cmp-c-cpp.cpp:13:16: error: expected expression
+   13 |                [](int c1, int c2) { return tolower(c1) == tolower(c2); }),
+      |                ^
+/tmp/codegeex4-str_cmp-c-cpp.cpp:15:17: error: expected expression
+   15 |                 [](int c1, int c2) { return tolower(c1) == tolower(c2); }),
+      |                 ^
+/tmp/codegeex4-str_cmp-c-cpp.cpp:18:14: error: expected expression
+   18 |              [](char c1, char c2) { return tolower(c1) < tolower(c2); }),
+      |              ^
+/tmp/codegeex4-str_cmp-c-cpp.cpp:21:14: error: expected expression
+   21 |              [](char c1, char c2) { return tolower(c1) < tolower(c2); }),
+      |              ^
+/tmp/codegeex4-str_cmp-c-cpp.cpp:24:14: error: expected expression
+   24 |              [](char c1, char c2) { return tolower(c1) < tolower(c2); }) &&
+      |              ^
+/tmp/codegeex4-str_cmp-c-cpp.cpp:28:14: error: expected expression
+   28 |              [](char c1, char c2) { return tolower(c1) < tolower(c2); }) &&
+      |              ^
+6 errors generated.

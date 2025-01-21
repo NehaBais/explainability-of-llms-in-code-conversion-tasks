@@ -1,0 +1,21 @@
+/tmp/Main.java:6: error: cannot find symbol
+    MyStrings.add("prepended to");
+    ^
+  symbol:   variable MyStrings
+  location: class Main
+/tmp/Main.java:7: error: cannot find symbol
+    MyStrings.add("my string");
+    ^
+  symbol:   variable MyStrings
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+    String prepended = MyStrings.stream().reduce("", (a, b) -> A + b);
+                       ^
+  symbol:   variable MyStrings
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+    String prepended = MyStrings.stream().reduce("", (a, b) -> A + b);
+                                                               ^
+  symbol:   variable A
+  location: class Main
+4 errors

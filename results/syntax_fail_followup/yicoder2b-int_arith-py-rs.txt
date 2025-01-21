@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/yicoder2b-int_arith-py-rs.rs:1:1
+  |
+1 | let input1 = 4;
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

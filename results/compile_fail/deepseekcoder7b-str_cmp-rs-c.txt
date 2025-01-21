@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:1:10: fatal error: 'stdio.<｜begin▁of▁sentence｜' file not found
+    1 | #include <stdio.<｜begin▁of▁sentence｜>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

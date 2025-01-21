@@ -1,0 +1,14 @@
+/tmp/granitecode3b-bit_ops-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-cpp-c.c:3:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   printf("a and b: %d\n", a & b); // Note: parentheses are needed because & has
+      |   ^
+/tmp/granitecode3b-bit_ops-cpp-c.c:3:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-bit_ops-cpp-c.c:24:27: error: use of undeclared identifier 'std'
+   24 |   printf("a rol b: %u\n", std::rotl(ua, b));
+      |                           ^
+/tmp/granitecode3b-bit_ops-cpp-c.c:25:27: error: use of undeclared identifier 'std'
+   25 |   printf("a ror b: %u\n", std::rotr(ua, b));
+      |                           ^
+4 errors generated.

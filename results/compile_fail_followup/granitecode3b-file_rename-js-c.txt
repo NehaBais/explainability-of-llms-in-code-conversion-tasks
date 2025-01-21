@@ -1,0 +1,10 @@
+/tmp/granitecode3b-file_rename-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-js-c.c:3:3: error: use of undeclared identifier '_'
+    3 |   _ @_;
+      |   ^
+/tmp/granitecode3b-file_rename-js-c.c:4:3: error: call to undeclared function 'system'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   system("move \"input.txt\" \"output.txt\"");
+      |   ^
+3 errors generated.

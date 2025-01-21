@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-js-rs.rs:1:27
+  |
+1 | fn bitwise(a: i32, b: i32){
+  |                           ^ unclosed delimiter
+...
+8 |    println!("a >>> b: {}", a as usize >> b as usize)); // logical right shift
+  |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-bit_ops-js-rs.rs:9:1
+  |
+8 |    println!("a >>> b: {}", a as usize >> b as usize)); // logical right shift
+  |                                                     - missing open `(` for this delimiter
+9 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

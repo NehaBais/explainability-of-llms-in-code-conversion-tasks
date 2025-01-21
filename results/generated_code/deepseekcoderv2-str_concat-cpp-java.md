@@ -1,10 +1,14 @@
-Answer: In Java, strings are immutable, meaning that once they are created, their values cannot be changed. This means that the code needs to create a new string every time it wants to concatenate two strings together.
-
-Here is the equivalent Java code:
+ Here's the equivalent Java code for the given C++ program:
 
 ```java
-String s = "hello";
-System.out.println(s + " literal");
-String s2 = s + " literal";
-System.out.println(s2);
+public class Main {
+    public static void main(String[] args) {
+        String s = "hello";
+        System.out.println(s + " literal");
+        String s2 = s + " literal";
+        System.out.println(s2);
+    }
+}
 ```
+
+This Java code performs the same operations as the original C++ code: it initializes a string variable `s` with the value "hello", concatenates " literal" to it, and then prints both strings to the console.

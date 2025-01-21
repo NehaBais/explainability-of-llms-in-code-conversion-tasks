@@ -1,0 +1,66 @@
+warning: unused import: `std::cmp::Ordering`
+ --> /tmp/codegemma7b-str_cmp-c-rs.rs:1:5
+  |
+1 | use std::cmp::Ordering;
+  |     ^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `ne_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-c-rs.rs:22:11
+   |
+22 |         a.ne_ignore_ascii_case(b),
+   |           ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+22 |         a.eq_ignore_ascii_case(b),
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `gt_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-c-rs.rs:23:11
+   |
+23 |         a.gt_ignore_ascii_case(b),
+   |           ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+23 |         a.eq_ignore_ascii_case(b),
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `lt_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-c-rs.rs:24:11
+   |
+24 |         a.lt_ignore_ascii_case(b),
+   |           ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+24 |         a.eq_ignore_ascii_case(b),
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `ge_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-c-rs.rs:25:11
+   |
+25 |         a.ge_ignore_ascii_case(b),
+   |           ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+25 |         a.eq_ignore_ascii_case(b),
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `le_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-c-rs.rs:26:11
+   |
+26 |         a.le_ignore_ascii_case(b),
+   |           ^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+26 |         a.eq_ignore_ascii_case(b),
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 5 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

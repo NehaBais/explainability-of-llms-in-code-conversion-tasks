@@ -1,0 +1,147 @@
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:15:9
+   |
+8  | /         "    AND:     0b{:0width$b} 
+9  | |  & 0b{:0width$b} 
+10 | |  = 0b{:0width$b}
+11 | | ",
+   | |_- formatting specifier missing
+...
+15 |           width
+   |           ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:26:9
+   |
+19 | /         "    OR:      0b{:0width$b} 
+20 | |  | 0b{:0width$b} 
+21 | |  = 0b{:0width$b}
+22 | | ",
+   | |_- formatting specifier missing
+...
+26 |           width
+   |           ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:37:9
+   |
+30 | /         "    XOR:     0b{:0width$b} 
+31 | |  ^ 0b{:0width$b} 
+32 | |  = 0b{:0width$b}
+33 | | ",
+   | |_- formatting specifier missing
+...
+37 |           width
+   |           ^^^^^ argument never used
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:42:7
+   |
+42 | ", a, ~(a) & mask, width);
+   |       ^
+   |
+help: use `!` to perform bitwise not
+   |
+42 | ", a, !(a) & mask, width);
+   |       ~
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:42:20
+   |
+40 |       println!("    NOT:   ~ 0b{:0width$b} 
+   |  ______________-
+41 | |  = 0b{:0width$b}
+42 | | ", a, ~(a) & mask, width);
+   | | -                  ^^^^^ argument never used
+   | |_|
+   |   formatting specifier missing
+
+error: 4 positional arguments in format string, but there are 3 arguments
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:47:18
+   |
+47 |       RIGHT:   0b{:0width$b} >> 1
+   |                  ^^^^^^^^^^^
+48 |  = 0b{:0width$b}      
+   |      ^^^^^^^^^^^
+49 |       LEFT:    0b{:0width$b} << 1
+   |                  ^^^^^^^^^^^
+50 |  = 0b{:0width$b}      
+   |      ^^^^^^^^^^^
+51 | ",
+52 |         a,
+   |         -
+53 |         a >> 1 & mask,
+   |         -------------
+54 |         width
+   |         -----
+   |
+   = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:61:30
+   |
+61 |       RIGHT:   rotr({}, 0b{:0{}b}, {})
+   |                           -  ^ expected `'}'` in format string
+   |                           |
+   |                           because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:88:32
+   |
+88 |             "    asr({}:{}, {:0{}b}, {})
+   |                             -  ^ expected `'}'` in format string
+   |                             |
+   |                             because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error[E0425]: cannot find value `mask` in this scope
+   --> /tmp/granitecode8b-bit_ops-py-rs.rs:115:37
+    |
+115 |     (a >> shift) | ((a << rotate) & mask)
+    |                                     ^^^^ not found in this scope
+
+error[E0425]: cannot find value `mask` in this scope
+   --> /tmp/granitecode8b-bit_ops-py-rs.rs:127:21
+    |
+127 |     ((a << shift) & mask) | (a >> rotate)
+    |                     ^^^^ not found in this scope
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+   --> /tmp/granitecode8b-bit_ops-py-rs.rs:107:31
+    |
+107 |         return rotl(width, a, -n);
+    |                               ^^ cannot apply unary operator `-`
+    |
+    = note: unsigned values cannot be negated
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+   --> /tmp/granitecode8b-bit_ops-py-rs.rs:119:31
+    |
+119 |         return rotr(width, a, -n);
+    |                               ^^ cannot apply unary operator `-`
+    |
+    = note: unsigned values cannot be negated
+
+error[E0308]: mismatched types
+   --> /tmp/granitecode8b-bit_ops-py-rs.rs:131:40
+    |
+131 |         return (a as i32).wrapping_shr(n) as u32;
+    |                           ------------ ^ expected `u32`, found `usize`
+    |                           |
+    |                           arguments to this method are incorrect
+    |
+note: method defined here
+   --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+    = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+    |
+131 |         return (a as i32).wrapping_shr(n.try_into().unwrap()) as u32;
+    |                                         ++++++++++++++++++++
+
+error: aborting due to 13 previous errors
+
+Some errors have detailed explanations: E0308, E0425, E0600.
+For more information about an error, try `rustc --explain E0308`.

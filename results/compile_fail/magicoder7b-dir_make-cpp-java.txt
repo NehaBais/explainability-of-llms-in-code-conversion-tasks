@@ -1,0 +1,6 @@
+/tmp/Main.java:16: error: cannot find symbol
+    } catch (IOException e) {
+             ^
+  symbol:   class IOException
+  location: class Main
+1 error

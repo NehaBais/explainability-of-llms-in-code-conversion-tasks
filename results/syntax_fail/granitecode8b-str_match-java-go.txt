@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-str_match-java-go.go:25:18: undefined: strings.AllIndices

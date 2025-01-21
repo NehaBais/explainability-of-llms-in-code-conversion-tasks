@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-int_factors-java-go.go:12:29: invalid operation: test >= math.Sqrt(float64(n)) (mismatched types int64 and float64)

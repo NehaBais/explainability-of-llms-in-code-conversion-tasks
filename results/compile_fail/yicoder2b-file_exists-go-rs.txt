@@ -1,0 +1,52 @@
+error[E0425]: cannot find function `stat` in module `fs`
+ --> /tmp/yicoder2b-file_exists-go-rs.rs:9:25
+  |
+9 |     if let Err(e) = fs::stat(&input_file) {
+  |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:17:25
+   |
+17 |     if let Err(e) = fs::stat(&input_dir) {
+   |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:25:25
+   |
+25 |     if let Err(e) = fs::stat(&docs_file) {
+   |                         ^^^^ not found in `fs`
+
+error[E0425]: cannot find function `stat` in module `fs`
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:33:25
+   |
+33 |     if let Err(e) = fs::stat(&docs_dir) {
+   |                         ^^^^ not found in `fs`
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:11:25
+   |
+11 |     } else if fs::File::new(&input_file).map(|f| f.readable()).is_err() {
+   |                         ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_exists-go-rs.rs:27:25
+   |
+27 |     } else if fs::File::new(&docs_file).map(|f| f.readable()).is_err() {
+   |                         ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0425, E0599.
+For more information about an error, try `rustc --explain E0425`.

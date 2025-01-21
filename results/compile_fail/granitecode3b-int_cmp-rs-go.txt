@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-int_cmp-rs-go.go:13:34: undefined: a
+/tmp/granitecode3b-int_cmp-rs-go.go:14:34: undefined: b

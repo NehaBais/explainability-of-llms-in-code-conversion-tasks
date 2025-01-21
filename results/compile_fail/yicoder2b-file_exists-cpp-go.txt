@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-cpp-go.go:9:20: syntax error: unexpected name exists at end of statement

@@ -1,0 +1,14 @@
+error: 1 positional argument in format string, but no arguments were given
+  --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:22:25
+   |
+22 |     print_stat(format!("{}/input.txt").to_string().as_str());
+   |                         ^^
+
+error: 1 positional argument in format string, but no arguments were given
+  --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:23:25
+   |
+23 |     print_stat(format!("{}/docs/").to_string().as_str()); // Note the trailing slash for directories
+   |                         ^^
+
+error: aborting due to 2 previous errors
+

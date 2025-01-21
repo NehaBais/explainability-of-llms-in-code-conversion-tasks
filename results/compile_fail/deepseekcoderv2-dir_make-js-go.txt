@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-dir_make-js-go.go:15:2: declared and not used: absPath
+/tmp/deepseekcoderv2-dir_make-js-go.go:15:18: assignment mismatch: 2 variables but os.MkdirAll returns 1 value

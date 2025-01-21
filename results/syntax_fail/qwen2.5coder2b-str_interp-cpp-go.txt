@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-str_interp-cpp-go.go:12:15: undefined: strings

@@ -1,0 +1,23 @@
+error[E0432]: unresolved import `std::fs::create_dir_recursive`
+ --> /tmp/yicoder2b-dir_make-c-rs.rs:1:15
+  |
+1 | use std::fs::{create_dir_recursive, Path};
+  |               ^^^^^^^^^^^^^^^^^^^^ no `create_dir_recursive` in `fs`
+
+error[E0603]: struct `Path` is private
+ --> /tmp/yicoder2b-dir_make-c-rs.rs:1:37
+  |
+1 | use std::fs::{create_dir_recursive, Path};
+  |                                     ^^^^ private struct
+  |
+note: the struct `Path` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:17:19
+help: import `Path` directly
+  |
+1 | use std::fs::{create_dir_recursive, std::path::Path};
+  |                                     ~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0432, E0603.
+For more information about an error, try `rustc --explain E0432`.

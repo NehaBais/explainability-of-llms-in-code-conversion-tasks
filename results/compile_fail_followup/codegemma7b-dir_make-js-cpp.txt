@@ -1,0 +1,13 @@
+/tmp/codegemma7b-dir_make-js-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegemma7b-dir_make-js-cpp.cpp:8:5: error: use of undeclared identifier 'fs'
+    8 |     fs::create_directories(path);
+      |     ^
+/tmp/codegemma7b-dir_make-js-cpp.cpp:9:18: error: use of undeclared identifier 'fs'
+    9 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/codegemma7b-dir_make-js-cpp.cpp:10:21: error: use of undeclared identifier 'fs'
+   10 |     if (e.code() == fs::errc::directory_exists) {
+      |                     ^
+4 errors generated.

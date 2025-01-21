@@ -1,0 +1,6 @@
+/tmp/qwen2.5coder7b-bit_ops-go-cpp.cpp:40:156: error: expected ';' after expression
+   40 |     std::cout << "ror: " << std::bitset<16>(((a >> static_cast<unsigned short>(b)) & ((1 << (16 - b)) - 1)) | (static_cast<unsigned short>(a) << (16 - b)))) << "\n";
+      |                                                                                                                                                            ^
+      |                                                                                                                                                            ;
+/tmp/qwen2.5coder7b-bit_ops-go-cpp.cpp:40:156: error: expected expression
+2 errors generated.

@@ -1,0 +1,16 @@
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string s = "World";
+      |   ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << s << std::endl;
+      |   ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:6:21: error: use of undeclared identifier 'std'
+    6 |   std::cout << s << std::endl;
+      |                     ^
+5 errors generated.

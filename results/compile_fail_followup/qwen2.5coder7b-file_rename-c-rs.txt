@@ -1,0 +1,103 @@
+error[E0382]: borrow of moved value: `old_name`
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:25:9
+   |
+19 |     old_name: impl AsRef<std::path::Path>,
+   |     -------- move occurs because `old_name` has type `impl AsRef<std::path::Path>`, which does not implement the `Copy` trait
+...
+22 |     fs::rename(old_name, new_name)?;
+   |                -------- value moved here
+...
+25 |         old_name.as_ref().display(),
+   |         ^^^^^^^^ value borrowed here after move
+   |
+help: if `impl AsRef<std::path::Path>` implemented `Clone`, you could clone the value
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:19:15
+   |
+19 |     old_name: impl AsRef<std::path::Path>,
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^ consider constraining this type parameter with `Clone`
+...
+22 |     fs::rename(old_name, new_name)?;
+   |                -------- you could clone this value
+help: consider further restricting this bound
+   |
+19 |     old_name: impl AsRef<std::path::Path> + Copy,
+   |                                           ++++++
+
+error[E0382]: borrow of moved value: `new_name`
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:26:9
+   |
+20 |     new_name: impl AsRef<std::path::Path>,
+   |     -------- move occurs because `new_name` has type `impl AsRef<std::path::Path>`, which does not implement the `Copy` trait
+21 | ) -> io::Result<()> {
+22 |     fs::rename(old_name, new_name)?;
+   |                          -------- value moved here
+...
+26 |         new_name.as_ref().display()
+   |         ^^^^^^^^ value borrowed here after move
+   |
+help: if `impl AsRef<std::path::Path>` implemented `Clone`, you could clone the value
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:20:15
+   |
+20 |     new_name: impl AsRef<std::path::Path>,
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^ consider constraining this type parameter with `Clone`
+21 | ) -> io::Result<()> {
+22 |     fs::rename(old_name, new_name)?;
+   |                          -------- you could clone this value
+help: consider further restricting this bound
+   |
+19 |     old_name: impl AsRef<std::path::Path> + Copy,
+   |                                           ++++++
+
+error[E0382]: borrow of moved value: `old_name`
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:38:9
+   |
+32 |     old_name: impl AsRef<std::path::Path>,
+   |     -------- move occurs because `old_name` has type `impl AsRef<std::path::Path>`, which does not implement the `Copy` trait
+...
+35 |     fs::rename(old_name, new_name)?;
+   |                -------- value moved here
+...
+38 |         old_name.as_ref().display(),
+   |         ^^^^^^^^ value borrowed here after move
+   |
+help: if `impl AsRef<std::path::Path>` implemented `Clone`, you could clone the value
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:32:15
+   |
+32 |     old_name: impl AsRef<std::path::Path>,
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^ consider constraining this type parameter with `Clone`
+...
+35 |     fs::rename(old_name, new_name)?;
+   |                -------- you could clone this value
+help: consider further restricting this bound
+   |
+32 |     old_name: impl AsRef<std::path::Path> + Copy,
+   |                                           ++++++
+
+error[E0382]: borrow of moved value: `new_name`
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:39:9
+   |
+33 |     new_name: impl AsRef<std::path::Path>,
+   |     -------- move occurs because `new_name` has type `impl AsRef<std::path::Path>`, which does not implement the `Copy` trait
+34 | ) -> io::Result<()> {
+35 |     fs::rename(old_name, new_name)?;
+   |                          -------- value moved here
+...
+39 |         new_name.as_ref().display()
+   |         ^^^^^^^^ value borrowed here after move
+   |
+help: if `impl AsRef<std::path::Path>` implemented `Clone`, you could clone the value
+  --> /tmp/qwen2.5coder7b-file_rename-c-rs.rs:33:15
+   |
+33 |     new_name: impl AsRef<std::path::Path>,
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^ consider constraining this type parameter with `Clone`
+34 | ) -> io::Result<()> {
+35 |     fs::rename(old_name, new_name)?;
+   |                          -------- you could clone this value
+help: consider further restricting this bound
+   |
+32 |     old_name: impl AsRef<std::path::Path> + Copy,
+   |                                           ++++++
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

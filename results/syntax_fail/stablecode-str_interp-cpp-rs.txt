@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `toBeReplaced` in this scope
+  --> /tmp/stablecode-str_interp-cpp-rs.rs:10:9
+   |
+10 |         toBeReplaced.len(),
+   |         ^^^^^^^^^^^^ help: a local variable with a similar name exists: `to_be_replaced`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

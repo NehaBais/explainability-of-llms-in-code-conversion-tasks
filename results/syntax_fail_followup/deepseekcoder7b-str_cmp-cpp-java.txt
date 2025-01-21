@@ -1,0 +1,28 @@
+/tmp/Main.java:16: error: illegal character: '\uff5c'
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                          ^
+/tmp/Main.java:16: error: illegal character: '\u2581'
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                                ^
+/tmp/Main.java:16: error: not a statement
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                           ^
+/tmp/Main.java:16: error: illegal character: '\u2581'
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                                   ^
+/tmp/Main.java:16: error: not a statement
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                                 ^
+/tmp/Main.java:16: error: illegal character: '\uff5c'
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                                            ^
+/tmp/Main.java:16: error: not a statement
+            ((a.compareTo((String) String<｜begin▁of▁sentence｜>)) > 0) ? "" : "not ") + 
+                                                    ^
+/tmp/Main.java:17: error: not a statement
+            semantically + " ordered after " + b + '.');
+                                                 ^
+/tmp/Main.java:17: error: ';' expected
+            semantically + " ordered after " + b + '.');
+                                                      ^
+9 errors

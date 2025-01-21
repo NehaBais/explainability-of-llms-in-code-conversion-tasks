@@ -1,0 +1,60 @@
+/tmp/granitecode8b-int_factors-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-c.c:4:3: error: use of undeclared identifier 'int64_t'
+    4 |   int64_t nr = -1;
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:5:3: error: call to undeclared function 'printFactors'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printFactors(nr);
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:5:16: error: use of undeclared identifier 'nr'
+    5 |   printFactors(nr);
+      |                ^
+/tmp/granitecode8b-int_factors-go-c.c:8:19: error: unknown type name 'int64_t'
+    8 | void printFactors(int64_t nr) {
+      |                   ^
+/tmp/granitecode8b-int_factors-go-c.c:9:3: error: use of undeclared identifier 'int64_t'
+    9 |   int64_t *fs = malloc(sizeof(int64_t));
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:9:12: error: use of undeclared identifier 'fs'
+    9 |   int64_t *fs = malloc(sizeof(int64_t));
+      |            ^
+/tmp/granitecode8b-int_factors-go-c.c:9:17: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   int64_t *fs = malloc(sizeof(int64_t));
+      |                 ^
+/tmp/granitecode8b-int_factors-go-c.c:9:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-int_factors-go-c.c:9:31: error: use of undeclared identifier 'int64_t'
+    9 |   int64_t *fs = malloc(sizeof(int64_t));
+      |                               ^
+/tmp/granitecode8b-int_factors-go-c.c:10:3: error: use of undeclared identifier 'fs'
+   10 |   fs[0] = 1;
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:11:3: error: use of undeclared identifier 'int64_t'
+   11 |   int64_t i, pp;
+      |   ^
+/tmp/granitecode8b-int_factors-go-c.c:12:8: error: use of undeclared identifier 'i'
+   12 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |        ^
+/tmp/granitecode8b-int_factors-go-c.c:12:15: error: use of undeclared identifier 'pp'
+   12 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |               ^
+/tmp/granitecode8b-int_factors-go-c.c:12:28: error: use of undeclared identifier 'i'
+   12 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |                            ^
+/tmp/granitecode8b-int_factors-go-c.c:12:36: error: use of undeclared identifier 'i'
+   12 |   for (i = 2, pp = 2; nr % i == 0; i += 2) {
+      |                                    ^
+/tmp/granitecode8b-int_factors-go-c.c:13:5: error: use of undeclared identifier 'int64_t'
+   13 |     int64_t j;
+      |     ^
+/tmp/granitecode8b-int_factors-go-c.c:14:10: error: use of undeclared identifier 'j'
+   14 |     for (j = 0; j < sizeof(fs) / sizeof(fs[0]); j++) {
+      |          ^
+/tmp/granitecode8b-int_factors-go-c.c:14:28: error: use of undeclared identifier 'fs'
+   14 |     for (j = 0; j < sizeof(fs) / sizeof(fs[0]); j++) {
+      |                            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

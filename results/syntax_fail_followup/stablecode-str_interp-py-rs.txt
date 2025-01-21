@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/stablecode-str_interp-py-rs.rs:2:1
+  |
+2 | let new_str = format!("Mary had a {} lamb.", extra);
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

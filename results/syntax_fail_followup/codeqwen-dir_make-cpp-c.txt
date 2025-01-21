@@ -1,0 +1,7 @@
+/tmp/codeqwen-dir_make-cpp-c.c:17:7: error: use of undeclared identifier 'errno'
+   17 |       errno != EEXIST) {
+      |       ^
+/tmp/codeqwen-dir_make-cpp-c.c:17:16: error: use of undeclared identifier 'EEXIST'
+   17 |       errno != EEXIST) {
+      |                ^
+2 errors generated.

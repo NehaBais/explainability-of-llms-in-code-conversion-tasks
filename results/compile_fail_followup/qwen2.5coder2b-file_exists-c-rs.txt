@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `home_path` in module `std::env`
+ --> /tmp/qwen2.5coder2b-file_exists-c-rs.rs:4:31
+  |
+4 |     let home_path = std::env::home_path().unwrap();
+  |                               ^^^^^^^^^ not found in `std::env`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

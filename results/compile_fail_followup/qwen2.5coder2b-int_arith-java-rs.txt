@@ -1,0 +1,9 @@
+error[E0433]: failed to resolve: could not find `Scanner` in `io`
+ --> /tmp/qwen2.5coder2b-int_arith-java-rs.rs:5:27
+  |
+5 |     let mut scanner = io::Scanner::from(input);
+  |                           ^^^^^^^ could not find `Scanner` in `io`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.

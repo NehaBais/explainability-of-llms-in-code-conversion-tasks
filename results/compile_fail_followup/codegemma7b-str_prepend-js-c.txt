@@ -1,0 +1,22 @@
+/tmp/codegemma7b-str_prepend-js-c.c:6:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    6 | str = strcat(str, s);
+      | ^
+      | int
+/tmp/codegemma7b-str_prepend-js-c.c:6:1: error: redefinition of 'str' with a different type: 'int' vs 'char *'
+/tmp/codegemma7b-str_prepend-js-c.c:4:7: note: previous definition is here
+    4 | char *str = "Hello";
+      |       ^
+/tmp/codegemma7b-str_prepend-js-c.c:8:8: error: expected parameter declarator
+    8 | printf("%s", str);
+      |        ^
+/tmp/codegemma7b-str_prepend-js-c.c:8:8: error: expected ')'
+/tmp/codegemma7b-str_prepend-js-c.c:8:7: note: to match this '('
+    8 | printf("%s", str);
+      |       ^
+/tmp/codegemma7b-str_prepend-js-c.c:8:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    8 | printf("%s", str);
+      | ^
+      | int
+/tmp/codegemma7b-str_prepend-js-c.c:8:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/codegemma7b-str_prepend-js-c.c:8:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+1 warning and 5 errors generated.

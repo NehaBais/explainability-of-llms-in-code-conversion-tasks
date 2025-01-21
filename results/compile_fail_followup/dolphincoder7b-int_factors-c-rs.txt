@@ -1,0 +1,17 @@
+warning: unused import: `std::ptr`
+ --> /tmp/dolphincoder7b-int_factors-c-rs.rs:1:5
+  |
+1 | use std::ptr;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:44:2
+   |
+44 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-int_factors-c-rs.rs`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

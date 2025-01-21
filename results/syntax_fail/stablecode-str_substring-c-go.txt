@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_substring-c-go.go:23:21: expected ';', found ']' (and 5 more errors)

@@ -1,0 +1,10 @@
+/tmp/codeqwen-file_size-rs-c.c:15:47: error: use of undeclared identifier 'errno'
+   15 |   } else if (stat("/input.txt", &st) == -1 && errno == ENOENT) {
+      |                                               ^
+/tmp/codeqwen-file_size-rs-c.c:15:56: error: use of undeclared identifier 'ENOENT'
+   15 |   } else if (stat("/input.txt", &st) == -1 && errno == ENOENT) {
+      |                                                        ^
+/tmp/codeqwen-file_size-rs-c.c:17:24: error: use of undeclared identifier 'PATH_MAX'
+   17 |     char absolute_path[PATH_MAX];
+      |                        ^
+3 errors generated.

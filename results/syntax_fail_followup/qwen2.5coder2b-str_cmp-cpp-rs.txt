@@ -1,0 +1,11 @@
+error: argument never used
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:44:9
+   |
+40 |         "{} and {} are {} not unequal.",
+   |         ------------------------------- formatting specifier missing
+...
+44 |         semantically
+   |         ^^^^^^^^^^^^ argument never used
+
+error: aborting due to 1 previous error
+

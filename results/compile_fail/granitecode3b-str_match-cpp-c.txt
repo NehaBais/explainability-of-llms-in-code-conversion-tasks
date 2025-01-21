@@ -1,0 +1,27 @@
+/tmp/granitecode3b-str_match-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-cpp-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%d", strncmp(s1, s3, strlen(s3)) == 0);
+      |   ^
+/tmp/granitecode3b-str_match-cpp-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_match-cpp-c.c:8:16: error: call to undeclared library function 'strncmp' with type 'int (const char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%d", strncmp(s1, s3, strlen(s3)) == 0);
+      |                ^
+/tmp/granitecode3b-str_match-cpp-c.c:8:16: note: include the header <string.h> or explicitly provide a declaration for 'strncmp'
+/tmp/granitecode3b-str_match-cpp-c.c:8:32: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%d", strncmp(s1, s3, strlen(s3)) == 0);
+      |                                ^
+/tmp/granitecode3b-str_match-cpp-c.c:8:32: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_match-cpp-c.c:12:16: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("%d", strcmp(s1 + (strlen(s1) - strlen(s3)), s3) == 0);
+      |                ^
+/tmp/granitecode3b-str_match-cpp-c.c:12:16: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode3b-str_match-cpp-c.c:16:16: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   printf("%d", strstr(s2, s3) != NULL);
+      |                ^
+/tmp/granitecode3b-str_match-cpp-c.c:16:16: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode3b-str_match-cpp-c.c:16:34: error: use of undeclared identifier 'NULL'
+   16 |   printf("%d", strstr(s2, s3) != NULL);
+      |                                  ^
+7 errors generated.

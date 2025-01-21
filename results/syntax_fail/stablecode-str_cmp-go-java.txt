@@ -1,0 +1,49 @@
+/tmp/Main.java:10: error: illegal start of expression
+        if (c.equals(d))) {
+                        ^
+/tmp/Main.java:11: error: ';' expected
+            System.out.println(c + " is exactly equal to " + d));
+                                                               ^
+/tmp/Main.java:13: error: ';' expected
+            System.out.println(c + " is not exactly equal to " + d));
+                                                                   ^
+/tmp/Main.java:12: error: 'else' without 'if'
+        } else {
+          ^
+/tmp/Main.java:17: error: illegal start of expression
+        if (c.equalsIgnoreCase(d))) {
+                                  ^
+/tmp/Main.java:18: error: ';' expected
+            System.out.println(c + " is exactly equal ignoring case to " + d));
+                                                                             ^
+/tmp/Main.java:20: error: ';' expected
+            System.out.println(c + " is not exactly equal ignoring case to " + d));
+                                                                                 ^
+/tmp/Main.java:19: error: 'else' without 'if'
+        } else {
+          ^
+/tmp/Main.java:24: error: illegal start of type
+        if (c.compareToIgnoreCase(d)) < 0) {
+                                        ^
+/tmp/Main.java:25: error: ';' expected
+            System.out.println(c + " is lexically ordered before than " + d));
+                                                                            ^
+/tmp/Main.java:26: error: illegal start of expression
+        } else if (c.compareToIgnoreCase(d)) > 0) {
+                                             ^
+/tmp/Main.java:26: error: ';' expected
+        } else if (c.compareToIgnoreCase(d)) > 0) {
+                                                ^
+/tmp/Main.java:26: error: 'else' without 'if'
+        } else if (c.compareToIgnoreCase(d)) > 0) {
+          ^
+/tmp/Main.java:27: error: ';' expected
+            System.out.println(c + " is lexically ordered after than " + d));
+                                                                           ^
+/tmp/Main.java:29: error: ';' expected
+            System.out.println(c + " and " + d + " are not lexically ordered"));
+                                                                              ^
+/tmp/Main.java:28: error: 'else' without 'if'
+        } else {
+          ^
+16 errors

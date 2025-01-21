@@ -1,0 +1,41 @@
+warning: unused import: `std::io::prelude::*`
+ --> /tmp/codellama7b-file_create-c-rs.rs:2:5
+  |
+2 | use std::io::prelude::*;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::process::Command`
+ --> /tmp/codellama7b-file_create-c-rs.rs:5:5
+  |
+5 | use std::process::Command;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no method named `close` found for struct `File` in the current scope
+  --> /tmp/codellama7b-file_create-c-rs.rs:13:8
+   |
+13 |     fd.close()?;
+   |        ^^^^^ method not found in `File`
+
+error[E0599]: no method named `unwrap` found for struct `Permissions` in the current scope
+  --> /tmp/codellama7b-file_create-c-rs.rs:18:58
+   |
+18 |     let permissions = fs::metadata(&path)?.permissions().unwrap();
+   |                                                          ^^^^^^ method not found in `Permissions`
+
+error[E0599]: no method named `close` found for struct `File` in the current scope
+  --> /tmp/codellama7b-file_create-c-rs.rs:27:8
+   |
+27 |     fd.close()?;
+   |        ^^^^^ method not found in `File`
+
+error[E0599]: no method named `unwrap` found for struct `Permissions` in the current scope
+  --> /tmp/codellama7b-file_create-c-rs.rs:33:58
+   |
+33 |     let permissions = fs::metadata(&path)?.permissions().unwrap();
+   |                                                          ^^^^^^ method not found in `Permissions`
+
+error: aborting due to 4 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0599`.

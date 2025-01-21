@@ -1,0 +1,23 @@
+error: `<<` is interpreted as a start of generic arguments for `i32`, not a shift
+  --> /tmp/dolphincoder7b-bit_ops-go-rs.rs:25:40
+   |
+25 |     println!("las:  {:016b}", a as i32 << ub);
+   |                                        ^^ -- interpreted as generic arguments
+   |                                        |
+   |                                        not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+25 |     println!("las:  {:016b}", (a as i32) << ub);
+   |                               +        +
+
+warning: unused import: `std::fmt`
+ --> /tmp/dolphincoder7b-bit_ops-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+

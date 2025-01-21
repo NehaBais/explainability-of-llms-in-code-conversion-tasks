@@ -1,0 +1,71 @@
+/tmp/granitecode8b-file_exists-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:5:17: warning: using directive refers to implicitly-defined namespace 'std'
+    5 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:7:22: error: unknown type name 'string'
+    7 | bool check_reg(const string &path) {
+      |                      ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:8:15: error: variable has incomplete type 'struct stat'
+    8 |   struct stat sb;
+      |               ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:8:10: note: forward declaration of 'stat'
+    8 |   struct stat sb;
+      |          ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:9:34: error: invalid operands to binary expression ('stat' and 'int')
+    9 |   return stat(path.c_str(), &sb) == 0 && S_ISREG(sb.st_mode);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/granitecode8b-file_exists-c-cpp.cpp:12:22: error: unknown type name 'string'
+   12 | bool check_dir(const string &path) {
+      |                      ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:13:15: error: variable has incomplete type 'struct stat'
+   13 |   struct stat sb;
+      |               ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:13:10: note: forward declaration of 'stat'
+   13 |   struct stat sb;
+      |          ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:14:34: error: invalid operands to binary expression ('stat' and 'int')
+   14 |   return stat(path.c_str(), &sb) == 0 && S_ISDIR(sb.st_mode);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/granitecode8b-file_exists-c-cpp.cpp:17:3: error: unknown type name 'string'
+   17 |   string cwd = getcwd(nullptr, 0);
+      |   ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:17:23: error: use of undeclared identifier 'nullptr'
+   17 |   string cwd = getcwd(nullptr, 0);
+      |                       ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:18:7: error: no matching function for call to 'check_reg'
+   18 |   if (check_reg("input.txt") && check_dir("docs")) {
+      |       ^~~~~~~~~
+/tmp/granitecode8b-file_exists-c-cpp.cpp:7:6: note: candidate function not viable: no known conversion from 'const char[10]' to 'const int' for 1st argument
+    7 | bool check_reg(const string &path) {
+      |      ^         ~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_exists-c-cpp.cpp:19:5: error: use of undeclared identifier 'cout'
+   19 |     cout << "Input.txt is a regular file and docs is a directory in the "
+      |     ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:21:13: error: use of undeclared identifier 'endl'
+   21 |          << endl;
+      |             ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:23:5: error: use of undeclared identifier 'cout'
+   23 |     cout << "One or both of input.txt and docs are not found in the current "
+      |     ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:25:13: error: use of undeclared identifier 'endl'
+   25 |          << endl;
+      |             ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:28:5: error: use of undeclared identifier 'cout'
+   28 |     cout << "Input.txt is a regular file and docs is a directory in the root "
+      |     ^
+/tmp/granitecode8b-file_exists-c-cpp.cpp:30:13: error: use of undeclared identifier 'endl'
+   30 |          << endl;
+      |             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

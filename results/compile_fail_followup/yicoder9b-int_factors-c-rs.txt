@@ -1,0 +1,38 @@
+error: unexpected token: `...`
+ --> /tmp/yicoder9b-int_factors-c-rs.rs:9:1
+  |
+9 | ... } // code for the function `xferFactors`
+  | ^^^
+  |
+help: use `..` for an exclusive range
+  |
+9 | .. } // code for the function `xferFactors`
+  | ~~
+help: or `..=` for an inclusive range
+  |
+9 | ..= } // code for the function `xferFactors`
+  | ~~~
+
+error[E0586]: inclusive range with no end
+ --> /tmp/yicoder9b-int_factors-c-rs.rs:9:1
+  |
+9 | ... } // code for the function `xferFactors`
+  | ^^^
+  |
+  = note: inclusive ranges must be bounded at the end (`..=b` or `a..=b`)
+help: use `..` instead
+  |
+9 - ... } // code for the function `xferFactors`
+9 + .. } // code for the function `xferFactors`
+  |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/yicoder9b-int_factors-c-rs.rs:9:6
+  |
+9 | ... } // code for the function `xferFactors`
+  |      ^ consider adding a `main` function to `/tmp/yicoder9b-int_factors-c-rs.rs`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0586, E0601.
+For more information about an error, try `rustc --explain E0586`.

@@ -1,0 +1,10 @@
+/tmp/codellama7b-bit_ops-java-cpp.cpp:12:31: error: expected expression
+   12 |   cout << "a rol b: " << (a < < < b) << endl; // rotate left, C++11+
+      |                               ^
+/tmp/codellama7b-bit_ops-java-cpp.cpp:12:33: error: expected expression
+   12 |   cout << "a rol b: " << (a < < < b) << endl; // rotate left, C++11+
+      |                                 ^
+/tmp/codellama7b-bit_ops-java-cpp.cpp:13:31: error: expected expression
+   13 |   cout << "a ror b: " << (a >>> b) << endl;   // rotate right, C++11+
+      |                               ^
+3 errors generated.

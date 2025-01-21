@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:9:8: error: no member named 'variant' in namespace 'std'
+    9 |   std::variant<int> result;
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:9:19: error: expected '(' for function-style cast or type construction
+    9 |   std::variant<int> result;
+      |                ~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:9:21: error: use of undeclared identifier 'result'
+    9 |   std::variant<int> result;
+      |                     ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:12:5: error: use of undeclared identifier 'result'
+   12 |     result = static_cast<int>(str1.size());
+      |     ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:14:5: error: use of undeclared identifier 'result'
+   14 |     result = 0; // or any other default value
+      |     ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:17:30: error: use of undeclared identifier 'result'
+   17 |   std::cout << "Result: " << result << std::endl;
+      |                              ^
+6 errors generated.

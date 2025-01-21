@@ -1,0 +1,5 @@
+/tmp/stablecode-str_concat-js-c.c:11:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   strcat(s, another_string);
+      |   ^
+/tmp/stablecode-str_concat-js-c.c:11:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+1 error generated.

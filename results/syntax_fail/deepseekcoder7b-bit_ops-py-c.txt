@@ -1,0 +1,40 @@
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:10: error: expected expression
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |          ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |           ^~
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:19: error: character <U+2581> not allowed in an identifier
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |                  ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:24: error: character <U+2581> not allowed in an identifier
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |                     ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |                              ^~
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |           ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:40: error: use of undeclared identifier 'uper'
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |                                  ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:17:47: error: use of undeclared identifier 'SecretCodeThatNoOneKnows'
+   17 |   return <｜begin▁of▁sentence｜> uper - SecretCodeThatNoOneKnows <
+      |                                         ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:18:22: warning: missing terminating ' character [-Winvalid-pp-token]
+   18 |              3 but it's not really a code;<｜end▁of▁sentence｜><｜begin▁of▁sentence｜>/* This program is just an example on how to use the above functions in C programming language
+      |                      ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:21:55: warning: missing terminating ' character [-Winvalid-pp-token]
+   21 |              as these are separate functions which don't know anything about each other. So, if you need them both you would have to include their definition within main or call them separately. * /
+      |                                                       ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:31:14: error: function definition is not allowed here
+   31 |   int main() {
+      |              ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:36:4: error: expected '}'
+   36 |   }
+      |    ^
+/tmp/deepseekcoder7b-bit_ops-py-c.c:15:12: note: to match this '{'
+   15 | int main() {
+      |            ^
+4 warnings and 8 errors generated.

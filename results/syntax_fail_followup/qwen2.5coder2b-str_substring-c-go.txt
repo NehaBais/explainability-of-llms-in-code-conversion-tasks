@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-str_substring-c-go.go:15:31: '\uFFFD' (untyped rune constant 65533) overflows byte

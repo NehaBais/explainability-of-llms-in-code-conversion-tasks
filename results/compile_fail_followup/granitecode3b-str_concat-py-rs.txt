@@ -1,0 +1,10 @@
+error: expected item, found keyword `let`
+ --> /tmp/granitecode3b-str_concat-py-rs.rs:5:1
+  |
+5 | let mut S3 = String::from("hello");
+  | ^^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

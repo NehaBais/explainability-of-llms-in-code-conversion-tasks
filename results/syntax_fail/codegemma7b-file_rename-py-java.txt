@@ -1,0 +1,17 @@
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+File inputFile = new File("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:5: error: class, interface, enum, or record expected
+inputFile.renameTo(outputFile);
+^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+docsDirectory.renameTo(mydocsDirectory);
+^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+inputFileRoot.renameTo(outputFileRoot);
+^
+/tmp/None.java:17: error: class, interface, enum, or record expected
+docsDirectoryRoot.renameTo(mydocsDirectoryRoot);
+^
+5 errors

@@ -1,0 +1,22 @@
+/tmp/granitecode8b-str_cmp-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-js-c.c:10:12: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   result = strcmp(str1, str2);
+      |            ^
+/tmp/granitecode8b-str_cmp-js-c.c:10:12: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode8b-str_cmp-js-c.c:12:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("Truen");
+      |     ^
+/tmp/granitecode8b-str_cmp-js-c.c:12:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_cmp-js-c.c:52:12: error: call to undeclared library function 'strcasecmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   52 |   result = strcasecmp(str1, str2);
+      |            ^
+/tmp/granitecode8b-str_cmp-js-c.c:52:12: note: include the header <strings.h> or explicitly provide a declaration for 'strcasecmp'
+6 errors generated.

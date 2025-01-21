@@ -1,0 +1,9 @@
+/tmp/yicoder2b-file_rename-go-c.c:1:1: error: unknown type name 'package'
+    1 | package main import "os"
+      | ^
+/tmp/yicoder2b-file_rename-go-c.c:1:1: warning: variable named 'main' with external linkage has undefined behavior [-Wmain]
+/tmp/yicoder2b-file_rename-go-c.c:1:13: error: expected ';' after top level declarator
+    1 | package main import "os"
+      |             ^
+      |             ;
+1 warning and 2 errors generated.

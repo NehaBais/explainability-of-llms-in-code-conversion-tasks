@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/granitecode3b-bit_ops-c-go.go:6:25: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:6:25: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode3b-bit_ops-c-go.go:7:10: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:8:24: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:9:10: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:10:25: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:11:10: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:12:23: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:13:7: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:14:24: newline in string
+/tmp/granitecode3b-bit_ops-c-go.go:14:24: too many errors

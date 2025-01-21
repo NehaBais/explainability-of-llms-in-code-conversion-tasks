@@ -1,0 +1,17 @@
+/tmp/stablecode-str_substring-c-cpp.cpp:7:23: error: extraneous ')' after condition, expected a statement
+    7 |   if (m < 0 || n <= 0))
+      |                       ^
+/tmp/stablecode-str_substring-c-cpp.cpp:18:47: error: expected ';' after return statement
+   18 |     return substring(s, 0, std::strlen(s) - 1));
+      |                                               ^
+      |                                               ;
+/tmp/stablecode-str_substring-c-cpp.cpp:24:33: error: extraneous ')' after condition, expected a statement
+   24 |   if (start == nullptr || m < 0))
+      |                                 ^
+/tmp/stablecode-str_substring-c-cpp.cpp:29:43: error: extraneous ')' before ';'
+   29 |     std::strncat(result, s, start - s + m));
+      |                                           ^
+/tmp/stablecode-str_substring-c-cpp.cpp:34:69: error: expected function body after function declarator
+   34 | char* str_fromstr(const char* s, const std::string& in, ptrdiff_t m)) {
+      |                                                                     ^
+5 errors generated.

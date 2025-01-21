@@ -1,0 +1,5 @@
+/tmp/codegemma7b-str_match-py-c.c:28:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   printf("startswith: %d\n", startswith(str1, str2)); // Output: 1
+      |   ^
+/tmp/codegemma7b-str_match-py-c.c:28:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.

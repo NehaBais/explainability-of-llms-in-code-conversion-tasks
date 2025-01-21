@@ -1,0 +1,342 @@
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:11:9
+   |
+7  |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+11 |         gt(a, b),
+   |         ^^^^^^^^ argument never used
+12 |         lt(a, b),
+   |         ^^^^^^^^ argument never used
+13 |         ge(a, b),
+   |         ^^^^^^^^ argument never used
+14 |         le(a, b)
+   |         ^^^^^^^^ argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:22:9
+   |
+18 |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+22 |         cgt(a, b),
+   |         ^^^^^^^^^ argument never used
+23 |         clt(a, b),
+   |         ^^^^^^^^^ argument never used
+24 |         cge(a, b),
+   |         ^^^^^^^^^ argument never used
+25 |         cle(a, b)
+   |         ^^^^^^^^^ argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:33:9
+   |
+29 |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+33 |         ne(a.to_uppercase(), b),
+   |         ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+34 |         ne(a.to_lowercase(), b),
+   |         ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+35 |         ne("b", "B")
+   |         ^^^^^^^^^^^^ argument never used
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:33:30
+   |
+33 |         ne(a.to_uppercase(), b),
+   |         -- ----------------  ^- help: try using a conversion method: `.to_string()`
+   |         |  |                 |
+   |         |  |                 expected `String`, found `&str`
+   |         |  expected all arguments to be this `String` type because they need to match the type of this parameter
+   |         arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:48:4
+   |
+48 | fn ne<T>(x: T, y: T) -> bool {
+   |    ^^ -  ----  ---- this parameter needs to match the `String` type of `x`
+   |       |  |
+   |       |  `y` needs to match the `String` type of this parameter
+   |       `x` and `y` all reference this parameter T
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:34:30
+   |
+34 |         ne(a.to_lowercase(), b),
+   |         -- ----------------  ^- help: try using a conversion method: `.to_string()`
+   |         |  |                 |
+   |         |  |                 expected `String`, found `&str`
+   |         |  expected all arguments to be this `String` type because they need to match the type of this parameter
+   |         arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:48:4
+   |
+48 | fn ne<T>(x: T, y: T) -> bool {
+   |    ^^ -  ----  ---- this parameter needs to match the `String` type of `x`
+   |       |  |
+   |       |  `y` needs to match the `String` type of this parameter
+   |       `x` and `y` all reference this parameter T
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:31:9
+   |
+31 |         ord(a, b),
+   |         ^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:32:9
+   |
+32 |         ord(b, a),
+   |         ^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:41:16
+   |
+41 |         ord(a, &b as *const _),
+   |         --- -  ^^^^^^^^^^^^^^ expected `&str`, found `*const _`
+   |         |   |
+   |         |   expected all arguments to be this `&str` type because they need to match the type of this parameter
+   |         arguments to this function are incorrect
+   |
+   = note: expected reference `&str`
+            found raw pointer `*const _`
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:81:4
+   |
+81 | fn ord<T>(x: T, y: T) -> Ordering
+   |    ^^^ -  ----  ---- this parameter needs to match the `&str` type of `x`
+   |        |  |
+   |        |  `y` needs to match the `&str` type of this parameter
+   |        `x` and `y` all reference this parameter T
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:41:9
+   |
+41 |         ord(a, &b as *const _),
+   |         ^^^^^^^^^^^^^^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:42:9
+   |
+42 |         ord(&b as *const _, a)
+   |         ^^^^^^^^^^^^^^^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0606]: casting `&&str` as `*const str` is invalid
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:42:13
+   |
+42 |         ord(&b as *const _, a)
+   |             ^^^^^^^^^^^^^^
+
+error[E0369]: binary operation `==` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:46:7
+   |
+46 |     x == y
+   |     - ^^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+45 | fn eq<T: std::cmp::PartialEq>(x: T, y: T) -> bool {
+   |        +++++++++++++++++++++
+
+error[E0369]: binary operation `!=` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:49:7
+   |
+49 |     x != y
+   |     - ^^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+48 | fn ne<T: std::cmp::PartialEq>(x: T, y: T) -> bool {
+   |        +++++++++++++++++++++
+
+error[E0369]: binary operation `>` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:52:7
+   |
+52 |     x > y
+   |     - ^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+51 | fn gt<T: std::cmp::PartialOrd>(x: T, y: T) -> bool {
+   |        ++++++++++++++++++++++
+
+error[E0369]: binary operation `<` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:55:7
+   |
+55 |     x < y
+   |     - ^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+54 | fn lt<T: std::cmp::PartialOrd>(x: T, y: T) -> bool {
+   |        ++++++++++++++++++++++
+
+error[E0369]: binary operation `>=` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:58:7
+   |
+58 |     x >= y
+   |     - ^^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+57 | fn ge<T: std::cmp::PartialOrd>(x: T, y: T) -> bool {
+   |        ++++++++++++++++++++++
+
+error[E0369]: binary operation `<=` cannot be applied to type `T`
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:61:7
+   |
+61 |     x <= y
+   |     - ^^ - T
+   |     |
+   |     T
+   |
+help: consider restricting type parameter `T`
+   |
+60 | fn le<T: std::cmp::PartialOrd>(x: T, y: T) -> bool {
+   |        ++++++++++++++++++++++
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:64:7
+   |
+63 | fn ceq<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+64 |     x.to_lowercase() == y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:64:27
+   |
+63 | fn ceq<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+64 |     x.to_lowercase() == y.to_lowercase()
+   |                           ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:67:7
+   |
+66 | fn cne<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+67 |     x.to_lowercase() != y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:67:27
+   |
+66 | fn cne<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+67 |     x.to_lowercase() != y.to_lowercase()
+   |                           ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:70:7
+   |
+69 | fn cgt<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+70 |     x.to_lowercase() > y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:70:26
+   |
+69 | fn cgt<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+70 |     x.to_lowercase() > y.to_lowercase()
+   |                          ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:73:7
+   |
+72 | fn clt<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+73 |     x.to_lowercase() < y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:73:26
+   |
+72 | fn clt<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+73 |     x.to_lowercase() < y.to_lowercase()
+   |                          ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:76:7
+   |
+75 | fn cge<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+76 |     x.to_lowercase() >= y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:76:27
+   |
+75 | fn cge<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+76 |     x.to_lowercase() >= y.to_lowercase()
+   |                           ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:79:7
+   |
+78 | fn cle<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+79 |     x.to_lowercase() <= y.to_lowercase()
+   |       ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_lowercase` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:79:27
+   |
+78 | fn cle<T>(x: T, y: T) -> bool {
+   |        - method `to_lowercase` not found for this type parameter
+79 |     x.to_lowercase() <= y.to_lowercase()
+   |                           ^^^^^^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `cmp` found for type parameter `T` in the current scope
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:85:7
+   |
+81 | fn ord<T>(x: T, y: T) -> Ordering
+   |        - method `cmp` not found for this type parameter
+...
+85 |     x.cmp(&y)
+   |       ^^^ method cannot be called on `T` due to unsatisfied trait bounds
+   |
+   = help: items from traits can only be used if the type parameter is bounded by the trait
+help: the following traits define an item `cmp`, perhaps you need to restrict type parameter `T` with one of them:
+   |
+83 |     T: PartialOrd + Iterator,
+   |                   ++++++++++
+83 |     T: PartialOrd + Ord,
+   |                   +++++
+
+error: aborting due to 30 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0369, E0599, E0606.
+For more information about an error, try `rustc --explain E0277`.

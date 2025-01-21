@@ -1,0 +1,4 @@
+/tmp/stablecode-dir_make-c-cpp.cpp:1:10: fatal error: 'filesystem/path.hpp' file not found
+    1 | #include <filesystem/path.hpp> // Include filesystem library for path operations
+      |          ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,9 @@
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_followup/stablecode-bit_ops-rs-js.js:4
+console.log(`a      = ${a.toString(2).padStart(8, "0"))}`); // binary representation of 105 in 8-bit padded format
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v23.1.0

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_concat-py-go.go:16:37: cannot convert parts (variable of type []string) to type []interface{}

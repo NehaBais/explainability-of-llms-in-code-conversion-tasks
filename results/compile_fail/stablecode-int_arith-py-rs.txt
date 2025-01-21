@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_arith-py-rs.rs:1:11
+   |
+1  | fn main() {
+   |           ^ unclosed delimiter
+...
+25 |     let result_expo = (input1 as f64) .pow(input2 as i32));
+   |                                                          ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-int_arith-py-rs.rs:27:48
+   |
+25 |     let result_expo = (input1 as f64) .pow(input2 as i32));
+   |                                                          - missing open `(` for this delimiter
+26 |
+27 |     println!("Exponentiation: {}", result_expo));
+   |                                                ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,17 @@
+/tmp/stablecode-str_substring-js-cpp.cpp:15:20: error: no member named 'substring' in 'std::string'; did you mean 'substr'?
+   15 |   std::cout << str.substring(n) << std::endl; // => "cdefgh"
+      |                    ^~~~~~~~~
+      |                    substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:3: note: 'substr' declared here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |   ^
+/tmp/stablecode-str_substring-js-cpp.cpp:18:58: error: extraneous ')' before ';'
+   18 |     std::string end_str = str.substr(0, str.length() - 1));
+      |                                                          ^
+/tmp/stablecode-str_substring-js-cpp.cpp:23:46: error: extraneous ')' before ';'
+   23 |     std::string result = str.substr(index, m));
+      |                                              ^
+/tmp/stablecode-str_substring-js-cpp.cpp:28:34: error: extraneous ')' before ';'
+   28 |     result = str.substr(index, m));
+      |                                  ^
+4 errors generated.

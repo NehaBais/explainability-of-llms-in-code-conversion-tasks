@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_cmp-java-go.go:39:74: lowerA.CompareTo undefined (type string has no field or method CompareTo)

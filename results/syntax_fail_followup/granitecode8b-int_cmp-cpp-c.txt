@@ -1,0 +1,19 @@
+/tmp/granitecode8b-int_cmp-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-cpp-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("Enter two integers: ");
+      |   ^
+/tmp/granitecode8b-int_cmp-cpp-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_cmp-cpp-c.c:6:7: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (scanf("%d %d", &a, &b) != 2) {
+      |       ^
+/tmp/granitecode8b-int_cmp-cpp-c.c:6:7: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode8b-int_cmp-cpp-c.c:7:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     fprintf(stderr, "Could not read the numbers.n");
+      |     ^
+/tmp/granitecode8b-int_cmp-cpp-c.c:7:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-int_cmp-cpp-c.c:7:13: error: use of undeclared identifier 'stderr'
+    7 |     fprintf(stderr, "Could not read the numbers.n");
+      |             ^
+1 warning and 5 errors generated.

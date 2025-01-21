@@ -1,0 +1,19 @@
+/tmp/yicoder2b-file_create-cpp-c.c:5:8: error: call to undeclared function 'open'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |        ^
+/tmp/yicoder2b-file_create-cpp-c.c:5:22: error: use of undeclared identifier 'O_WRONLY'
+    5 |   fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |                      ^
+/tmp/yicoder2b-file_create-cpp-c.c:5:33: error: use of undeclared identifier 'O_CREAT'
+    5 |   fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |                                 ^
+/tmp/yicoder2b-file_create-cpp-c.c:5:42: error: use of undeclared identifier 'S_IRUSR'
+    5 |   fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |                                          ^
+/tmp/yicoder2b-file_create-cpp-c.c:5:52: error: use of undeclared identifier 'S_IWUSR'
+    5 |   fd = open("/docs", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+      |                                                    ^
+/tmp/yicoder2b-file_create-cpp-c.c:7:5: error: call to undeclared function 'close'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     close(fd);
+      |     ^
+6 errors generated.

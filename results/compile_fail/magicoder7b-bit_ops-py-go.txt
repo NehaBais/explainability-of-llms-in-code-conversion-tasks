@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/magicoder7b-bit_ops-py-go.go:9:28: undefined: bits.FormatInt
+/tmp/magicoder7b-bit_ops-py-go.go:25:26: undefined: bits.Size
+/tmp/magicoder7b-bit_ops-py-go.go:34:14: cannot use bits.RotateLeft(and(0b010, 1), 1) (value of type uint) as int value in argument to printBinary
+/tmp/magicoder7b-bit_ops-py-go.go:34:30: cannot use and(0b010, 1) (value of type int) as uint value in argument to bits.RotateLeft
+/tmp/magicoder7b-bit_ops-py-go.go:35:19: undefined: bits.RotateRight
+/tmp/magicoder7b-bit_ops-py-go.go:36:14: cannot use bits.RotateLeft(xor(0b010, 1), 1) (value of type uint) as int value in argument to printBinary
+/tmp/magicoder7b-bit_ops-py-go.go:36:30: cannot use xor(0b010, 1) (value of type int) as uint value in argument to bits.RotateLeft

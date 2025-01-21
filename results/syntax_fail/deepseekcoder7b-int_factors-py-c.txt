@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:10: error: expected expression
+   38 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   38 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:19: error: character <U+2581> not allowed in an identifier
+   38 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:24: error: character <U+2581> not allowed in an identifier
+   38 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   38 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-int_factors-py-c.c:38:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   38 |   return <｜begin▁of▁sentence｜ >
+      |           ^
+2 warnings and 4 errors generated.

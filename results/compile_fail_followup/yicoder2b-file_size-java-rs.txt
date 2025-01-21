@@ -1,0 +1,33 @@
+error[E0599]: no method named `bytes` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_size-java-rs.rs:6:21
+  |
+6 |     for _ in file_a.bytes() {
+  |                     ^^^^^ method not found in `File`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/mod.rs:1073:8
+  |
+  = note: the method is available for `File` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Read` which provides `bytes` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::io::Read;
+  |
+
+error[E0599]: no method named `bytes` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_size-java-rs.rs:12:21
+   |
+12 |     for _ in file_b.bytes() {
+   |                     ^^^^^ method not found in `File`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/mod.rs:1073:8
+   |
+   = note: the method is available for `File` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+help: trait `Read` which provides `bytes` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::io::Read;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

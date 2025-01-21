@@ -1,0 +1,19 @@
+/tmp/magicoder7b-file_size-py-cpp.cpp:8:8: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path cwd = std::filesystem::current_path();
+      |   ~~~~~^
+/tmp/magicoder7b-file_size-py-cpp.cpp:8:36: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path cwd = std::filesystem::current_path();
+      |                               ~~~~~^
+/tmp/magicoder7b-file_size-py-cpp.cpp:11:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   auto cwdFileSize = std::filesystem::file_size(cwd / inputFileName);
+      |   ^
+/tmp/magicoder7b-file_size-py-cpp.cpp:11:27: error: no member named 'filesystem' in namespace 'std'
+   11 |   auto cwdFileSize = std::filesystem::file_size(cwd / inputFileName);
+      |                      ~~~~~^
+/tmp/magicoder7b-file_size-py-cpp.cpp:17:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   auto rootFileSize = std::filesystem::file_size("/" + inputFileName);
+      |   ^
+/tmp/magicoder7b-file_size-py-cpp.cpp:17:28: error: no member named 'filesystem' in namespace 'std'
+   17 |   auto rootFileSize = std::filesystem::file_size("/" + inputFileName);
+      |                       ~~~~~^
+2 warnings and 4 errors generated.

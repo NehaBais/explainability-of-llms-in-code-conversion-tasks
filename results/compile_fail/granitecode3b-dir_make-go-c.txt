@@ -1,0 +1,7 @@
+/tmp/granitecode3b-dir_make-go-c.c:18:13: error: read-only variable is not assignable
+   18 |     path[i] = '/';
+      |     ~~~~~~~ ^
+/tmp/granitecode3b-dir_make-go-c.c:22:13: error: read-only variable is not assignable
+   22 |     path[i] = '\0';
+      |     ~~~~~~~ ^
+2 errors generated.

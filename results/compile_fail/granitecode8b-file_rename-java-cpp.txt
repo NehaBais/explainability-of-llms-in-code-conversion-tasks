@@ -1,0 +1,61 @@
+/tmp/granitecode8b-file_rename-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:4:23: error: unknown type name 'string'
+    4 | bool renameFile(const string &oldname, const string &newname) {
+      |                       ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:4:46: error: unknown type name 'string'
+    4 | bool renameFile(const string &oldname, const string &newname) {
+      |                                              ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:6:3: error: unknown type name 'FILE'
+    6 |   FILE *file = fopen(oldname.c_str(), "r");
+      |   ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:12:3: error: unknown type name 'FILE'
+   12 |   FILE *file2 = fopen(newname.c_str(), "r");
+      |   ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:20:17: error: unknown type name 'string'
+   20 | void test(const string &type, const string &oldname, const string &newname) {
+      |                 ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:20:37: error: unknown type name 'string'
+   20 | void test(const string &type, const string &oldname, const string &newname) {
+      |                                     ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:20:60: error: unknown type name 'string'
+   20 | void test(const string &type, const string &oldname, const string &newname) {
+      |                                                            ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "The following " << type << " called " << oldname
+      |   ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:24:29: error: use of undeclared identifier 'endl'
+   24 |        << newname << "." << endl;
+      |                             ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:27:3: error: no matching function for call to 'test'
+   27 |   test("file", "input.txt", "output.txt");
+      |   ^~~~
+/tmp/granitecode8b-file_rename-java-cpp.cpp:20:6: note: candidate function not viable: no known conversion from 'const char[5]' to 'const int' for 1st argument
+   20 | void test(const string &type, const string &oldname, const string &newname) {
+      |      ^    ~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_rename-java-cpp.cpp:28:22: error: use of undeclared identifier 'string'
+   28 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                      ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:28:49: error: use of undeclared identifier 'string'
+   28 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                                                 ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:29:3: error: no matching function for call to 'test'
+   29 |   test("directory", "docs", "mydocs");
+      |   ^~~~
+/tmp/granitecode8b-file_rename-java-cpp.cpp:20:6: note: candidate function not viable: no known conversion from 'const char[10]' to 'const int' for 1st argument
+   20 | void test(const string &type, const string &oldname, const string &newname) {
+      |      ^    ~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_rename-java-cpp.cpp:30:27: error: use of undeclared identifier 'string'
+   30 |   test("directory", "/" + string("docs") + "/", "/" + string("mydocs") + "/");
+      |                           ^
+/tmp/granitecode8b-file_rename-java-cpp.cpp:30:55: error: use of undeclared identifier 'string'
+   30 |   test("directory", "/" + string("docs") + "/", "/" + string("mydocs") + "/");
+      |                                                       ^
+1 warning and 17 errors generated.

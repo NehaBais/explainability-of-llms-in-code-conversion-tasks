@@ -1,0 +1,4 @@
+/tmp/stablecode-dir_make-c-cpp.cpp:9:10: fatal error: 'experimental/filesystem' file not found
+    9 | #include <experimental/filesystem> // Include experimental filesystem library
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

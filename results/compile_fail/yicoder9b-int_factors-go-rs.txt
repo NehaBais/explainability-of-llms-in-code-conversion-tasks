@@ -1,0 +1,31 @@
+error[E0600]: cannot apply unary operator `-` to type `u64`
+ --> /tmp/yicoder9b-int_factors-go-rs.rs:4:19
+  |
+4 |     print_factors(-1);
+  |                   ^^ cannot apply unary operator `-`
+  |
+  = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `u64`
+  |
+4 |     print_factors(u64::MAX);
+  |                   ~~~~~~~~
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-int_factors-go-rs.rs:38:20
+   |
+38 |     while let Some(&factor) = factors.pop() {
+   |                    ^^^^^^^    ------------- this expression has type `Option<u64>`
+   |                    |
+   |                    expected `u64`, found `&_`
+   |
+   = note:   expected type `u64`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+38 |     while let Some(factor) = factors.pop() {
+   |                    ~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0600.
+For more information about an error, try `rustc --explain E0308`.

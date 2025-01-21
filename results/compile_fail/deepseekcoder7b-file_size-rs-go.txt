@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_size-rs-go.go:6:2: "path/filepath" imported and not used

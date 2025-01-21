@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder7b-str_prepend-py-c.c:7:24: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   for (int i = 0; i <= strlen(s); i++) {
+      |                        ^
+/tmp/qwen2.5coder7b-str_prepend-py-c.c:7:24: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+1 error generated.

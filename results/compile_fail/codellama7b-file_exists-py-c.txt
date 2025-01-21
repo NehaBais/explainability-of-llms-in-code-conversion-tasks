@@ -1,0 +1,19 @@
+/tmp/codellama7b-file_exists-py-c.c:18:15: error: redefinition of 'buffer'
+   18 |   struct stat buffer;
+      |               ^
+/tmp/codellama7b-file_exists-py-c.c:9:15: note: previous definition is here
+    9 |   struct stat buffer;
+      |               ^
+/tmp/codellama7b-file_exists-py-c.c:27:15: error: redefinition of 'buffer'
+   27 |   struct stat buffer;
+      |               ^
+/tmp/codellama7b-file_exists-py-c.c:9:15: note: previous definition is here
+    9 |   struct stat buffer;
+      |               ^
+/tmp/codellama7b-file_exists-py-c.c:36:15: error: redefinition of 'buffer'
+   36 |   struct stat buffer;
+      |               ^
+/tmp/codellama7b-file_exists-py-c.c:9:15: note: previous definition is here
+    9 |   struct stat buffer;
+      |               ^
+3 errors generated.

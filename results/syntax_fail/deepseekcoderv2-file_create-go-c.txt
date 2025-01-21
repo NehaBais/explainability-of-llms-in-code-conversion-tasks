@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-file_create-go-c.c:16:16: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   int status = mkdir(dn, 0666);
+      |                ^
+/tmp/deepseekcoderv2-file_create-go-c.c:28:3: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   getcwd(path, sizeof(path));
+      |   ^
+2 errors generated.

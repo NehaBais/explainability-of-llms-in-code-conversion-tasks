@@ -1,0 +1,3 @@
+fn substring(str: &str) -> String {
+    // ...
+}

@@ -1,0 +1,39 @@
+error[E0425]: cannot find value `n` in this scope
+ --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:5:33
+  |
+5 |     println!("{}", &s[s.len() - n + 1..s.len() - n + m]);
+  |                                 ^ help: a local variable with a similar name exists: `s`
+
+error[E0425]: cannot find value `n` in this scope
+ --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:5:50
+  |
+5 |     println!("{}", &s[s.len() - n + 1..s.len() - n + m]);
+  |                                                  ^ help: a local variable with a similar name exists: `s`
+
+error[E0425]: cannot find value `m` in this scope
+ --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:5:54
+  |
+5 |     println!("{}", &s[s.len() - n + 1..s.len() - n + m]);
+  |                                                      ^ help: a local variable with a similar name exists: `s`
+
+error[E0425]: cannot find value `n` in this scope
+ --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:8:33
+  |
+8 |     println!("{}", &s[s.len() - n + 1..]);
+  |                                 ^ help: a local variable with a similar name exists: `s`
+
+error[E0425]: cannot find value `m` in this scope
+  --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:15:34
+   |
+15 |     println!("{}", &s[idx..idx + m]);
+   |                                  ^ help: a local variable with a similar name exists: `s`
+
+error[E0425]: cannot find value `m` in this scope
+  --> /tmp/qwen2.5coder2b-str_substring-py-rs.rs:19:34
+   |
+19 |     println!("{}", &s[idx..idx + m]);
+   |                                  ^ help: a local variable with a similar name exists: `s`
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

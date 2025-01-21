@@ -1,0 +1,13 @@
+/tmp/codegemma7b-dir_make-java-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegemma7b-dir_make-java-cpp.cpp:7:5: error: use of undeclared identifier 'fs'
+    7 |     fs::create_directories(path);
+      |     ^
+/tmp/codegemma7b-dir_make-java-cpp.cpp:8:10: error: no member named 'cout' in namespace 'std'
+    8 |     std::cout << "Path successfully created" << std::endl;
+      |     ~~~~~^
+/tmp/codegemma7b-dir_make-java-cpp.cpp:10:10: error: no member named 'cerr' in namespace 'std'
+   10 |     std::cerr << "Error creating directory: " << e.what() << std::endl;
+      |     ~~~~~^
+4 errors generated.

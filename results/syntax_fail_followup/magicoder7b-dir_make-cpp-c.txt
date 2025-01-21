@@ -1,0 +1,8 @@
+/tmp/magicoder7b-dir_make-cpp-c.c:30:7: error: use of undeclared identifier 'argc'; did you mean 'argv'?
+   30 |   if (argc != 2) {
+      |       ^~~~
+      |       argv
+/tmp/magicoder7b-dir_make-cpp-c.c:28:9: note: 'argv' declared here
+   28 |   char *argv[] = {"./path/to/dir", NULL};
+      |         ^
+1 error generated.

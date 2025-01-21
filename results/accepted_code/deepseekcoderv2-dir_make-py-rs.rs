@@ -1,22 +1,16 @@
 use std::fs;
 use std::io;
-
-fn main() {
-    println!("{}", mkdirp("./test"));
-}
+use std::path::Path;
 
 fn mkdirp(path: &str) -> io::Result<()> {
-    if let Err(_) = fs::create_dir_all(&path) {
-        Ok(())
-    } else {
-        match std::fs::metadata(&path) {
-            Ok(meta) => {
-                if !meta.is_dir() {
-                    return Err(io::Error::new(io::ErrorKind::Other, "Not a directory"));
-                }
-                Ok(())
-            }
-            Err(_) => Err(std::io::Error::from(std::io::ErrorKind::NotFound)),
-        }
+    fs::create_dir_all(path)?;
+    Ok(())
+}
+
+fn main() {
+    let path = "./path/to/dir";
+    match mkdirp(path) {
+        Ok(_) => println!("Directory created successfully."),
+        Err(e) => eprintln!("Error creating directory: {}", e),
     }
 }

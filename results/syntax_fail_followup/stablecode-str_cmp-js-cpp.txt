@@ -1,0 +1,13 @@
+/tmp/stablecode-str_cmp-js-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::string str1 = "Hello";
+      | ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:2:1: error: use of undeclared identifier 'std'
+    2 | std::string str2 = "World";
+      | ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:6:1: error: expected unqualified-id
+    6 | if (str1 == str2) {
+      | ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:8:3: error: expected unqualified-id
+    8 | } else {
+      |   ^
+4 errors generated.

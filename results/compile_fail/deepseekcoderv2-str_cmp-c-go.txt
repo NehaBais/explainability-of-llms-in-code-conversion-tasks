@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_cmp-c-go.go:59:38: newline in string
+/tmp/deepseekcoderv2-str_cmp-c-go.go:59:38: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/deepseekcoderv2-str_cmp-c-go.go:60:87: newline in string
+/tmp/deepseekcoderv2-str_cmp-c-go.go:65:52: newline in string
+/tmp/deepseekcoderv2-str_cmp-c-go.go:65:52: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/deepseekcoderv2-str_cmp-c-go.go:66:93: newline in string

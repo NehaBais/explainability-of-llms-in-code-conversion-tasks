@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-file_create-cpp-go.go:10:12: assignment mismatch: 2 variables but ioutil.WriteFile returns 1 value
+/tmp/codellama7b-file_create-cpp-go.go:20:9: no new variables on left side of :=
+/tmp/codellama7b-file_create-cpp-go.go:20:12: assignment mismatch: 2 variables but ioutil.WriteFile returns 1 value

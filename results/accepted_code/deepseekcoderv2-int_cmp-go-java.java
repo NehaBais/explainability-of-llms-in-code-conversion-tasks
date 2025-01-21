@@ -1,26 +1,23 @@
 import java.util.Scanner;
 
-public class CompareNumbers {
+public class Main {
   public static void main(String[] args) {
-    int num1, num2;
-
-    // Get user input for two numbers
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the first number: ");
-    num1 = scanner.nextInt();
-    System.out.print("Enter the second number: ");
-    num2 = scanner.nextInt();
 
-    // Compare numbers and print appropriate message
-    if (num1 < num2) {
-      System.out.println(num1 + " is less than " + num2);
-    } else if (num1 == num2) {
-      System.out.println(num1 + " is equal to " + num2);
-    } else {
-      System.out.println(num1 + " is greater than " + num2);
+    System.out.print("Enter number 1: ");
+    int n1 = scanner.nextInt();
+
+    System.out.print("Enter number 2: ");
+    int n2 = scanner.nextInt();
+
+    if (n1 < n2) {
+      System.out.println(n1 + " less than " + n2);
+    } else if (n1 == n2) {
+      System.out.println(n1 + " equal to " + n2);
+    } else if (n1 > n2) {
+      System.out.println(n1 + " greater than " + n2);
     }
 
-    // Close scanner
     scanner.close();
   }
 }

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-js-go.go:16:106: str.Index undefined (type string has no field or method Index)
+/tmp/qwen2.5coder2b-str_substring-js-go.go:17:106: str.Index undefined (type string has no field or method Index)
+/tmp/qwen2.5coder2b-str_substring-js-go.go:17:112: more than one character in rune literal

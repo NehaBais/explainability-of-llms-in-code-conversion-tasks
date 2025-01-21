@@ -1,0 +1,89 @@
+error: invalid format string: expected `'}'`, found `'{'`
+ --> /tmp/codeqwen-bit_ops-py-rs.rs:9:30
+  |
+9 |         "    AND:     0b{A:0>{width}b} 
+  |                         -    ^ expected `'}'` in format string
+  |                         |
+  |                         because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:29:20
+   |
+29 |             0b{A:0>{width}b} << 1   = 0b{}
+   |               -    ^ expected `'}'` in format string
+   |               |
+   |               because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:40:20
+   |
+40 |             0b{A:0>{width}b} rotl 1   = 0b{}
+   |               -    ^ expected `'}'` in format string
+   |               |
+   |               because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:52:20
+   |
+52 |             0b{A:0>{width}b} asr 1   = 0b{}
+   |               -    ^ expected `'}'` in format string
+   |               |
+   |               because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:89:62
+   |
+89 |             x |= !(0..=7).map(|_| 1 << 7 - _).fold(0, |a, B| A + B)
+   |                                                              ^
+   |
+help: a local variable with a similar name exists
+   |
+89 |             x |= !(0..=7).map(|_| 1 << 7 - _).fold(0, |a, B| a + B)
+   |                                                              ~
+help: you might be missing a const parameter
+   |
+85 | fn asr<const A: /* Type */>(mut x: u32, mut y: u32) -> u32 {
+   |       +++++++++++++++++++++
+
+warning: unnecessary parentheses around assigned value
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:75:17
+   |
+75 |         let t = (x & 1);
+   |                 ^     ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+75 -         let t = (x & 1);
+75 +         let t = x & 1;
+   |
+
+warning: unnecessary parentheses around assigned value
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:87:17
+   |
+87 |         let t = (x & 0b10000000);
+   |                 ^              ^
+   |
+help: remove these parentheses
+   |
+87 -         let t = (x & 0b10000000);
+87 +         let t = x & 0b10000000;
+   |
+
+error: in expressions, `_` can only be used on the left-hand side of an assignment
+  --> /tmp/codeqwen-bit_ops-py-rs.rs:89:44
+   |
+89 |             x |= !(0..=7).map(|_| 1 << 7 - _).fold(0, |a, B| A + B)
+   |                                            ^ `_` not allowed here
+
+error: aborting due to 6 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0425`.

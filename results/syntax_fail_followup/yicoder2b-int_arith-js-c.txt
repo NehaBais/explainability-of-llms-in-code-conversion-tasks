@@ -1,0 +1,5 @@
+/tmp/yicoder2b-int_arith-js-c.c:10:11: error: call to undeclared library function 'strtol' with type 'long (const char *, char **, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   int a = strtol(argv[1], NULL, 10); // Convert string to integer (base 10)
+      |           ^
+/tmp/yicoder2b-int_arith-js-c.c:10:11: note: include the header <stdlib.h> or explicitly provide a declaration for 'strtol'
+1 error generated.

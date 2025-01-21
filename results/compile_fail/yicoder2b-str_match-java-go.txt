@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/yicoder2b-str_match-java-go.go:12:9: undefined: strings
+/tmp/yicoder2b-str_match-java-go.go:16:9: undefined: strings
+/tmp/yicoder2b-str_match-java-go.go:20:9: undefined: strings
+/tmp/yicoder2b-str_match-java-go.go:28:27: not enough arguments in call to indexOf
+	have (string, string)
+	want (string, string, int)

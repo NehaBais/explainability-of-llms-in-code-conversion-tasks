@@ -1,0 +1,9 @@
+/tmp/codegeex4-str_prepend-cpp-c.c:9:20: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     totalLength += strlen(strArr[i]);
+      |                    ^
+/tmp/codegeex4-str_prepend-cpp-c.c:9:20: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codegeex4-str_prepend-cpp-c.c:20:5: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |     strcpy(tempStr, strArr[i]);
+      |     ^
+/tmp/codegeex4-str_prepend-cpp-c.c:20:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+2 errors generated.

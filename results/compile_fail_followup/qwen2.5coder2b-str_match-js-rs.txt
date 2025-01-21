@@ -1,0 +1,29 @@
+error[E0432]: unresolved import `regex`
+ --> /tmp/qwen2.5coder2b-str_match-js-rs.rs:1:5
+  |
+1 | use regex::Regex;
+  |     ^^^^^ you might be missing crate `regex`
+  |
+help: consider importing the `regex` crate
+  |
+1 + extern crate regex;
+  |
+
+error[E0308]: `if` and `else` have incompatible types
+  --> /tmp/qwen2.5coder2b-str_match-js-rs.rs:28:13
+   |
+25 | /         if q2 == 0 {
+26 | |             "No."
+   | |             ----- expected because of this
+27 | |         } else {
+28 | |             format!("Yes, at index {}.", q2)
+   | |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+29 | |         }
+   | |_________- `if` and `else` have incompatible types
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0432.
+For more information about an error, try `rustc --explain E0308`.

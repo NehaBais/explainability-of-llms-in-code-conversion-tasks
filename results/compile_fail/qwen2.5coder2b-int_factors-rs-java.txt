@@ -1,0 +1,6 @@
+/tmp/Main.java:21: error: cannot find symbol
+    Collections.sort(factors);
+    ^
+  symbol:   variable Collections
+  location: class Main
+1 error

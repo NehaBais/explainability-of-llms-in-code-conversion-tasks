@@ -1,0 +1,6 @@
+/tmp/Main.java:1: error: cannot find symbol
+import java.util.StringBuilder;
+                ^
+  symbol:   class StringBuilder
+  location: package java.util
+1 error

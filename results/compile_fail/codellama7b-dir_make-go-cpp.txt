@@ -1,0 +1,4 @@
+/tmp/codellama7b-dir_make-go-cpp.cpp:7:8: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::create_directories(path);
+      |   ~~~~~^
+1 error generated.

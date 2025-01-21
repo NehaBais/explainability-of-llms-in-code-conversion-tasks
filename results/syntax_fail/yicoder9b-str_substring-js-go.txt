@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-str_substring-js-go.go:5:2: "unicode" imported and not used

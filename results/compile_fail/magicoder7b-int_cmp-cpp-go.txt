@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-int_cmp-cpp-go.go:36:19: reader.ReadInt undefined (type *bufio.Reader has no field or method ReadInt)
+/tmp/magicoder7b-int_cmp-cpp-go.go:46:19: reader.ReadInt undefined (type *bufio.Reader has no field or method ReadInt)

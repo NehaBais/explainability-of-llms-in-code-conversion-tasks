@@ -1,0 +1,54 @@
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+ --> /tmp/yicoder2b-file_size-cpp-rs.rs:7:14
+  |
+7 |     for (i, &filename) in [("input.txt", "input:\\?.txt"), ("/input.txt", "/input:\\?.txt")].iter() {
+  |              ^^^^^^^^ doesn't have a size known at compile-time
+  |
+  = help: the trait `Sized` is not implemented for `str`
+  = note: all local variables must have a statically known size
+  = help: unsized locals are gated as an unstable feature
+
+error[E0277]: the trait bound `PathBuf: From<str>` is not satisfied
+ --> /tmp/yicoder2b-file_size-cpp-rs.rs:8:24
+  |
+8 |         let mut file = PathBuf::from(filename).expect(&format!("Couldn't open {}", filename));
+  |                        ^^^^^^^ the trait `From<str>` is not implemented for `PathBuf`
+  |
+  = help: the following other types implement trait `From<T>`:
+            `PathBuf` implements `From<&T>`
+            `PathBuf` implements `From<Box<Path>>`
+            `PathBuf` implements `From<Cow<'a, Path>>`
+            `PathBuf` implements `From<OsString>`
+            `PathBuf` implements `From<String>`
+
+error[E0599]: no method named `expect` found for struct `PathBuf` in the current scope
+ --> /tmp/yicoder2b-file_size-cpp-rs.rs:8:48
+  |
+8 |         let mut file = PathBuf::from(filename).expect(&format!("Couldn't open {}", filename));
+  |                                                ^^^^^^ method not found in `PathBuf`
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_size-cpp-rs.rs:11:30
+   |
+11 |         let size = fs::File::new(&file).expect(&format!("Couldn't open {}", filename))
+   |                              ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0277]: the type `[{integer}]` cannot be indexed by `&&str`
+  --> /tmp/yicoder2b-file_size-cpp-rs.rs:12:46
+   |
+12 |             .read_to_endless(&mut file_sizes[i]).unwrap();
+   |                                              ^ slice indices are of type `usize` or ranges of `usize`
+   |
+   = help: the trait `SliceIndex<[{integer}]>` is not implemented for `&&str`, which is required by `Vec<{integer}>: Index<_>`
+   = note: required for `Vec<{integer}>` to implement `Index<&&str>`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0599.
+For more information about an error, try `rustc --explain E0277`.

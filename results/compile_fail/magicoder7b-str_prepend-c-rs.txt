@@ -1,0 +1,39 @@
+warning: unused import: `std::mem`
+ --> /tmp/magicoder7b-str_prepend-c-rs.rs:2:5
+  |
+2 | use std::mem;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_prepend-c-rs.rs:10:38
+   |
+10 |         ptr::write(str.as_mut_ptr(), cstr.to_bytes()); // Prepend the string variable with another string literal
+   |         ----------                   ^^^^^^^^^^^^^^^ expected `u8`, found `&[u8]`
+   |         |
+   |         arguments to this function are incorrect
+   |
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ptr/mod.rs:1624:21
+
+error[E0425]: cannot find function `strdup` in this scope
+  --> /tmp/magicoder7b-str_prepend-c-rs.rs:11:19
+   |
+11 |         let dup = strdup(&*str);
+   |                   ^^^^^^ not found in this scope
+
+error[E0277]: `CString` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_prepend-c-rs.rs:14:28
+   |
+14 |             println!("{}", CString::from_raw(s));
+   |                            ^^^^^^^^^^^^^^^^^^^^ `CString` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `CString`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308, E0425.
+For more information about an error, try `rustc --explain E0277`.

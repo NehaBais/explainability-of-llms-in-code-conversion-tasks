@@ -1,0 +1,4 @@
+/tmp/codellama7b-str_append-rs-c.c:5:25: error: invalid operands to binary expression ('char *' and 'char[5]')
+    5 |   printf("%s\n", (hello + "!!!!"));
+      |                   ~~~~~ ^ ~~~~~~
+1 error generated.

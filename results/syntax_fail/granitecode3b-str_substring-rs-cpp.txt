@@ -1,0 +1,64 @@
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "abc文字化けdef";
+      |   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << s.substr(n, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:10:29: error: use of undeclared identifier 'endl'
+   10 |   cout << s.substr(n, m) << endl;
+      |                             ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:13:3: error: use of undeclared identifier 'cout'
+   13 |   cout << s.substr(n) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:13:26: error: use of undeclared identifier 'endl'
+   13 |   cout << s.substr(n) << endl;
+      |                          ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:16:3: error: unknown type name 'string'
+   16 |   string result = "";
+      |   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:20:3: error: use of undeclared identifier 'cout'
+   20 |   cout << result << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:20:21: error: use of undeclared identifier 'endl'
+   20 |   cout << result << endl;
+      |                     ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:23:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   23 |   size_t cpos = s.find('b');
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:23:10: error: use of undeclared identifier 'cpos'
+   23 |   size_t cpos = s.find('b');
+      |          ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:24:7: error: use of undeclared identifier 'cpos'
+   24 |   if (cpos != string::npos) {
+      |       ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:24:15: error: use of undeclared identifier 'string'
+   24 |   if (cpos != string::npos) {
+      |               ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:25:5: error: use of undeclared identifier 'cout'
+   25 |     cout << s.substr(cpos + m) << endl;
+      |     ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:25:22: error: use of undeclared identifier 'cpos'
+   25 |     cout << s.substr(cpos + m) << endl;
+      |                      ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:25:35: error: use of undeclared identifier 'endl'
+   25 |     cout << s.substr(cpos + m) << endl;
+      |                                   ^
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:29:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   29 |   size_t spos = s.find("けd");
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-str_substring-rs-cpp.cpp:29:10: error: use of undeclared identifier 'spos'
+   29 |   size_t spos = s.find("けd");
+      |          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,31 +1,30 @@
-const readline = require("readline").createInterface({
+const readline = require("readline");
+
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-function main() {
-  const a = parseInt(process.argv[2]);
-  const b = parseInt(process.argv[3]);
+rl.question("Enter first integer: ", (a) => {
+  rl.question("Enter second integer: ", (b) => {
+    a = parseInt(a);
+    b = parseInt(b);
 
-  if (isNaN(a) || isNaN(b)) {
-    console.error("Could not read the numbers");
-    process.exit(1);
-  }
+    // test for less-than
+    if (a < b) {
+      console.log(`${a} is less than ${b}`);
+    }
 
-  // test for less-than
-  if (a < b) {
-    console.log(`${a} is less than ${b}`);
-  }
+    // test for equality
+    if (a == b) {
+      console.log(`${a} is equal to ${b}`);
+    }
 
-  // test for equality
-  if (a === b) {
-    console.log(`${a} is equal to ${b}`);
-  }
+    // test for greater-than
+    if (a > b) {
+      console.log(`${a} is greater than ${b}`);
+    }
 
-  // test for greater-than
-  if (a > b) {
-    console.log(`${a} is greater than ${b}`);
-  }
-}
-
-main();
+    rl.close();
+  });
+});

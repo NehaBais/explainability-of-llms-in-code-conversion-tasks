@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/codellama7b-int_arith-py-rs.rs:27:38
+   |
+27 |     println!("Integer quotient: {}", int(rr));
+   |                                      ^^^ not found in this scope
+
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/codellama7b-int_arith-py-rs.rs:35:37
+   |
+35 |     println!("Whole Remainder: {}", int(uu));
+   |                                     ^^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

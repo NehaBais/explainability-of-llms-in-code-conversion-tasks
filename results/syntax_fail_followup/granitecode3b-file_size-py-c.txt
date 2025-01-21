@@ -1,0 +1,22 @@
+/tmp/granitecode3b-file_size-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-c.c:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat file_stat1, file_stat2;
+      |               ^
+/tmp/granitecode3b-file_size-py-c.c:6:10: note: forward declaration of 'struct stat'
+    6 |   struct stat file_stat1, file_stat2;
+      |          ^
+/tmp/granitecode3b-file_size-py-c.c:6:27: error: variable has incomplete type 'struct stat'
+    6 |   struct stat file_stat1, file_stat2;
+      |                           ^
+/tmp/granitecode3b-file_size-py-c.c:6:10: note: forward declaration of 'struct stat'
+    6 |   struct stat file_stat1, file_stat2;
+      |          ^
+/tmp/granitecode3b-file_size-py-c.c:9:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (stat("input.txt", &file_stat1) == 0) {
+      |       ^
+5 errors generated.

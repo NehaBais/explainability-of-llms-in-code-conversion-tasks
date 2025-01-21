@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-py-go.go:35:33: syntax error: unexpected ) at end of statement
+/tmp/yicoder2b-bit_ops-py-go.go:36:30: syntax error: unexpected ) at end of statement
+/tmp/yicoder2b-bit_ops-py-go.go:40:37: syntax error: mixed named and unnamed parameters

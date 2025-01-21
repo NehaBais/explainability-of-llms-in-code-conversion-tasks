@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_rename-c-cpp.cpp:1:10: fatal error: 'boost/filesystem.hpp' file not found
+    1 | #include <boost/filesystem.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

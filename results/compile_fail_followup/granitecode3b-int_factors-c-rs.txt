@@ -1,0 +1,19 @@
+error[E0382]: borrow of moved value: `flist`
+  --> /tmp/granitecode3b-int_factors-c-rs.rs:23:16
+   |
+8  |     let mut flist = vec![];
+   |         --------- move occurs because `flist` has type `Vec<i32>`, which does not implement the `Copy` trait
+...
+22 |         list: flist,
+   |               ----- value moved here
+23 |         count: flist.len(),
+   |                ^^^^^ value borrowed here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+22 |         list: flist.clone(),
+   |                    ++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.

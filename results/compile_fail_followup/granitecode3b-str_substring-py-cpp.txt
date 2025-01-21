@@ -1,0 +1,44 @@
+/tmp/granitecode3b-str_substring-py-cpp.cpp:2:3: error: unknown type name 'string'
+    2 |   string s = "abcdefgh";
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:4:8: error: cannot combine with previous 'char' declaration specifier
+    4 |   char char, chars;
+      |        ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:4:12: error: expected unqualified-id
+    4 |   char char, chars;
+      |            ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:5:3: error: use of undeclared identifier 'cin'
+    5 |   cin >> n >> m >> char >> chars;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:5:25: error: expected '(' for function-style cast or type construction
+    5 |   cin >> n >> m >> char >> chars;
+      |                    ~~~~ ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:5:28: error: use of undeclared identifier 'chars'
+    5 |   cin >> n >> m >> char >> chars;
+      |                            ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << s.substr(n - 1, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:6:33: error: use of undeclared identifier 'endl'
+    6 |   cout << s.substr(n - 1, m) << endl;
+      |                                 ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << s.substr(0, s.size() - 1) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:7:40: error: use of undeclared identifier 'endl'
+    7 |   cout << s.substr(0, s.size() - 1) << endl;
+      |                                        ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:8:25: error: expected '(' for function-style cast or type construction
+    8 |   int indx = s.find(char);
+      |                     ~~~~^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << s.substr(indx, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:9:32: error: use of undeclared identifier 'endl'; did you mean 'indx'?
+    9 |   cout << s.substr(indx, m) << endl;
+      |                                ^~~~
+      |                                indx
+/tmp/granitecode3b-str_substring-py-cpp.cpp:8:7: note: 'indx' declared here
+    8 |   int indx = s.find(char);
+      |       ^
+13 errors generated.

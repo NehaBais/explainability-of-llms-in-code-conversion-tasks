@@ -1,0 +1,7 @@
+/tmp/codeqwen-int_factors-js-c.c:19:40: error: use of undeclared identifier 'compare'
+   19 |   qsort(n_factors, count, sizeof(int), compare); // numeric sort
+      |                                        ^
+/tmp/codeqwen-int_factors-js-c.c:30:61: error: use of undeclared identifier 'A'
+   30 | int compare(const void *a, const void *B) { return (*(int *)A - *(int *)B); }
+      |                                                             ^
+2 errors generated.

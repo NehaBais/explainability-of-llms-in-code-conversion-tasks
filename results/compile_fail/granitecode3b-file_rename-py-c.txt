@@ -1,0 +1,60 @@
+/tmp/granitecode3b-file_rename-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-c.c:4:14: error: use of undeclared identifier 'PATH_MAX'
+    4 |   char path1[PATH_MAX];
+      |              ^
+/tmp/granitecode3b-file_rename-py-c.c:5:14: error: use of undeclared identifier 'PATH_MAX'
+    5 |   char path2[PATH_MAX];
+      |              ^
+/tmp/granitecode3b-file_rename-py-c.c:6:16: error: use of undeclared identifier 'NULL'
+    6 |   char *home = NULL;
+      |                ^
+/tmp/granitecode3b-file_rename-py-c.c:9:7: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (getcwd(path1, sizeof(path1)) == NULL) {
+      |       ^
+/tmp/granitecode3b-file_rename-py-c.c:9:39: error: use of undeclared identifier 'NULL'
+    9 |   if (getcwd(path1, sizeof(path1)) == NULL) {
+      |                                       ^
+/tmp/granitecode3b-file_rename-py-c.c:10:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   10 |     return EXIT_FAILURE;
+      |            ^
+/tmp/granitecode3b-file_rename-py-c.c:14:10: error: call to undeclared function 'getenv'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   home = getenv("HOME");
+      |          ^
+/tmp/granitecode3b-file_rename-py-c.c:14:8: error: incompatible integer to pointer conversion assigning to 'char *' from 'int' [-Wint-conversion]
+   14 |   home = getenv("HOME");
+      |        ^ ~~~~~~~~~~~~~~
+/tmp/granitecode3b-file_rename-py-c.c:15:15: error: use of undeclared identifier 'NULL'
+   15 |   if (home == NULL) {
+      |               ^
+/tmp/granitecode3b-file_rename-py-c.c:16:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |     printf("Error getting home directory");
+      |     ^
+/tmp/granitecode3b-file_rename-py-c.c:16:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_rename-py-c.c:17:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   17 |     return EXIT_FAILURE;
+      |            ^
+/tmp/granitecode3b-file_rename-py-c.c:21:7: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   if (rename("input.txt", "output.txt") != 0) {
+      |       ^
+/tmp/granitecode3b-file_rename-py-c.c:22:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     perror("Error renaming file");
+      |     ^
+/tmp/granitecode3b-file_rename-py-c.c:23:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   23 |     return EXIT_FAILURE;
+      |            ^
+/tmp/granitecode3b-file_rename-py-c.c:27:7: error: call to undeclared function 'chdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   27 |   if (chdir(home) == -1) {
+      |       ^
+/tmp/granitecode3b-file_rename-py-c.c:28:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |     perror("Error changing directory");
+      |     ^
+/tmp/granitecode3b-file_rename-py-c.c:29:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   29 |     return EXIT_FAILURE;
+      |            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

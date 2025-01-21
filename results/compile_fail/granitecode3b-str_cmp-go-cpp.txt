@@ -1,0 +1,62 @@
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string c = "cat";
+      |   ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string d = "dog";
+      |   ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << c << " is bytewise identical to " << d << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:8:55: error: use of undeclared identifier 'endl'
+    8 |     cout << c << " is bytewise identical to " << d << endl;
+      |                                                       ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << c << " is bytewise different from " << d << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:10:57: error: use of undeclared identifier 'endl'
+   10 |     cout << c << " is bytewise different from " << d << endl;
+      |                                                         ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << c << " is lexically bytewise greater than " << d << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:13:65: error: use of undeclared identifier 'endl'
+   13 |     cout << c << " is lexically bytewise greater than " << d << endl;
+      |                                                                 ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:15:5: error: use of undeclared identifier 'cout'
+   15 |     cout << c << " is lexically bytewise less than " << d << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:15:62: error: use of undeclared identifier 'endl'
+   15 |     cout << c << " is lexically bytewise less than " << d << endl;
+      |                                                              ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << c << " is lexically bytewise equal to " << d << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:17:61: error: use of undeclared identifier 'endl'
+   17 |     cout << c << " is lexically bytewise equal to " << d << endl;
+      |                                                             ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:19:7: error: use of undeclared identifier 'strings'
+   19 |   if (strings::lexicographical_compare(c.begin(), c.end(), d.begin(),
+      |       ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:21:5: error: use of undeclared identifier 'cout'
+   21 |     cout << c << " is lexically bytewise greater than or equal to " << d
+      |     ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:22:13: error: use of undeclared identifier 'endl'
+   22 |          << endl;
+      |             ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:23:14: error: use of undeclared identifier 'strings'
+   23 |   } else if (strings::lexicographical_compare(d.begin(), d.end(), c.begin(),
+      |              ^
+/tmp/granitecode3b-str_cmp-go-cpp.cpp:25:5: error: use of undeclared identifier 'cout'
+   25 |     cout << c << " is lexically bytewise less than or equal to " << d << endl;
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

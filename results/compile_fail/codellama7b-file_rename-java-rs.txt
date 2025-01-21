@@ -1,0 +1,53 @@
+error: expected identifier, found keyword `type`
+ --> /tmp/codellama7b-file_rename-java-rs.rs:9:9
+  |
+9 | fn test(type: &str, oldname: &str, newname: &str) {
+  |         ^^^^ expected identifier, found keyword
+  |
+help: escape `type` to use it as an identifier
+  |
+9 | fn test(r#type: &str, oldname: &str, newname: &str) {
+  |         ++
+
+error: expected expression, found keyword `type`
+  --> /tmp/codellama7b-file_rename-java-rs.rs:10:50
+   |
+10 |     println!("The following {} called {} {} {}", type, oldname,
+   |                                                  ^^^^ expected expression
+
+error[E0433]: failed to resolve: use of undeclared type `Path`
+ --> /tmp/codellama7b-file_rename-java-rs.rs:4:19
+  |
+4 |     let oldpath = Path::new(&oldname);
+  |                   ^^^^ use of undeclared type `Path`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::Path;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `Path`
+ --> /tmp/codellama7b-file_rename-java-rs.rs:5:19
+  |
+5 |     let newpath = Path::new(&newname);
+  |                   ^^^^ use of undeclared type `Path`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::Path;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `File`
+  --> /tmp/codellama7b-file_rename-java-rs.rs:16:23
+   |
+16 |     test("directory", File::separator + "docs", "mydocs");
+   |                       ^^^^ use of undeclared type `File`
+   |
+help: consider importing this struct
+   |
+1  + use fs::File;
+   |
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

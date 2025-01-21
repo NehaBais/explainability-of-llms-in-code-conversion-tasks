@@ -1,0 +1,29 @@
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_create-go-rs.rs:25:17
+   |
+25 |     create_file(cwd.join("output.txt"))?;
+   |     ----------- ^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `PathBuf`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/deepseekcoder7b-file_create-go-rs.rs:4:4
+   |
+4  | fn create_file(filename: &str) -> Result<()> {
+   |    ^^^^^^^^^^^ --------------
+
+error[E0599]: no method named `to_str` found for reference `&str` in the current scope
+  --> /tmp/deepseekcoder7b-file_create-go-rs.rs:27:21
+   |
+27 |     create_dir(root.to_str().unwrap().into_owned() + "docs")?; // This won't work on Windows due to backslashes in path names. It is not portable.
+   |                     ^^^^^^
+   |
+help: there is a method `to_string` with a similar name
+   |
+27 |     create_dir(root.to_string().unwrap().into_owned() + "docs")?; // This won't work on Windows due to backslashes in path names. It is not portable.
+   |                     ~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

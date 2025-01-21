@@ -1,0 +1,13 @@
+/tmp/deepseekcoderv2-file_create-java-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_create-java-cpp.cpp:10:8: error: use of undeclared identifier 'fs'
+   10 |   if (!fs::exists(path)) {
+      |        ^
+/tmp/deepseekcoderv2-file_create-java-cpp.cpp:11:5: error: use of undeclared identifier 'fs'
+   11 |     fs::create_directory(path);
+      |     ^
+/tmp/deepseekcoderv2-file_create-java-cpp.cpp:21:28: error: use of undeclared identifier 'fs'
+   21 |     std::string rootPath = fs::path("/").make_preferred().string();
+      |                            ^
+4 errors generated.

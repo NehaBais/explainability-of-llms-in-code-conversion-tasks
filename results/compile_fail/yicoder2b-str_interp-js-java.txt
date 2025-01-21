@@ -1,0 +1,8 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String original = "Mary had a X lamb";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:4: error: class, interface, enum, or record expected
+System.out.println(replaced);
+^
+2 errors

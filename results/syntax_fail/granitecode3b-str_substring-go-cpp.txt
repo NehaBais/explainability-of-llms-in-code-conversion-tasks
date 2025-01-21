@@ -1,0 +1,61 @@
+/tmp/granitecode3b-str_substring-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "ABCDEFGH";
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "Index: ";
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:11:5: error: use of undeclared identifier 'cout'
+   11 |     cout << i << " ";
+      |     ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:13:3: error: use of undeclared identifier 'cout'
+   13 |   cout << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:13:11: error: use of undeclared identifier 'endl'
+   13 |   cout << endl;
+      |           ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << "String: " << s << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:14:30: error: use of undeclared identifier 'endl'
+   14 |   cout << "String: " << s << endl;
+      |                              ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << "Start " << n << ", length " << m << ":    " << s.substr(n, m)
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:17:11: error: use of undeclared identifier 'endl'
+   17 |        << endl;
+      |           ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:19:3: error: use of undeclared identifier 'cout'
+   19 |   cout << "Start " << n << ", to end:      " << s.substr(n) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:19:64: error: use of undeclared identifier 'endl'
+   19 |   cout << "Start " << n << ", to end:      " << s.substr(n) << endl;
+      |                                                                ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "All but last:         " << s.substr(0, s.length() - 1) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:21:70: error: use of undeclared identifier 'endl'
+   21 |   cout << "All but last:         " << s.substr(0, s.length() - 1) << endl;
+      |                                                                      ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:24:3: error: use of undeclared identifier 'cout'
+   24 |   cout << "Start 'D', length " << m << ":  " << s.substr(dx, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:24:68: error: use of undeclared identifier 'endl'
+   24 |   cout << "Start 'D', length " << m << ":  " << s.substr(dx, m) << endl;
+      |                                                                    ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:27:3: error: use of undeclared identifier 'cout'
+   27 |   cout << "Start \"DE\", length " << m << ": " << s.substr(sx, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-go-cpp.cpp:27:70: error: use of undeclared identifier 'endl'
+   27 |   cout << "Start \"DE\", length " << m << ": " << s.substr(sx, m) << endl;
+      |                                                                      ^
+1 warning and 19 errors generated.

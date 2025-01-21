@@ -1,31 +1,31 @@
-import java.util.*; // needed for Scanner class
+import java.util.Scanner;
 
-public class Math1 {
+public class Main {
   public static void main(String[] args) {
-    int a, b;
-    System.out.println("Enter two numbers:");
-    Scanner scan = new Scanner(System.in);
-    a = scan.nextInt();
-    b = scan.nextInt();
+    Scanner scanner = new Scanner(System.in);
 
-    // int sum, difference, product, division, remainder;
-    // We don't need these variables as they are already defined in the JavaScript version of this
-    // code above
+    // Get two integers from the user
+    int a = Integer.parseInt(args[0]);
+    int b = Integer.parseInt(args[1]);
+
+    // Calculate and display their sum, difference, product, integer quotient, remainder, and
+    // exponentiation
     int sum = a + b;
     int difference = a - b;
     int product = a * b;
-    int division = a / b;
-    double remainder =
-        a % b; // This produces the remainder after dividing 'b' into 'a'. The '%' operator is
-    // called the 'modulo' operator
+    double division =
+        (double) a / b; // Ensure division is done in floating point for accurate quotient
+    int remainder = a % b;
+    double exponentiation = Math.pow(a, b); // Calculate exponentiation
 
-    System.out.println("The sum of these two numbers is: " + sum);
-    System.out.println("The difference of these two numbers is: " + difference);
-    System.out.println("The product of these two numbers is: " + product);
-    System.out.println(
-        "The division of the first number by the second number is: "
-            + division); // We can use a double value to display this result because we are dealing
-    // with an integer, but it's not a whole number (it has decimal places)
-    System.out.println("When you divide these two numbers, your remainder is: " + remainder);
+    // Output the results
+    System.out.println("a + b = " + sum);
+    System.out.println("a - b = " + difference);
+    System.out.println("a * b = " + product);
+    System.out.println("a / b = " + division); // Quotient is displayed as a floating point number
+    System.out.println("a % b = " + remainder); // Remainder operation
+    System.out.println("a ^ b = " + exponentiation); // Exponentiation operation
+
+    scanner.close();
   }
 }

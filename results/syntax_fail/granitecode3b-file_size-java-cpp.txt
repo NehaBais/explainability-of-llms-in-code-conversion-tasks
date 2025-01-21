@@ -1,0 +1,52 @@
+/tmp/granitecode3b-file_size-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::ifstream fileA("file.txt");
+      |   ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:6:7: error: use of undeclared identifier 'fileA'
+    6 |   if (fileA) {
+      |       ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:7:5: error: use of undeclared identifier 'std'
+    7 |     std::cout << fileA.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |     ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:7:41: error: use of undeclared identifier 'std'
+    7 |     std::cout << fileA.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                                         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:7:18: error: use of undeclared identifier 'fileA'
+    7 |     std::cout << fileA.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                  ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:8:18: error: use of undeclared identifier 'std'
+    8 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:9:5: error: use of undeclared identifier 'fileA'
+    9 |     fileA.close();
+      |     ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::ifstream fileB("/file.txt");
+      |   ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:12:7: error: use of undeclared identifier 'fileB'
+   12 |   if (fileB) {
+      |       ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << fileB.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |     ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:13:41: error: use of undeclared identifier 'std'
+   13 |     std::cout << fileB.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                                         ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:13:18: error: use of undeclared identifier 'fileB'
+   13 |     std::cout << fileB.tellg().seekp(0, std::ios_base::end).tellg() << " B"
+      |                  ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:14:18: error: use of undeclared identifier 'std'
+   14 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_size-java-cpp.cpp:15:5: error: use of undeclared identifier 'fileB'
+   15 |     fileB.close();
+      |     ^
+17 errors generated.

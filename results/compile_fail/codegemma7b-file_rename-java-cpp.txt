@@ -1,0 +1,22 @@
+/tmp/codegemma7b-file_rename-java-cpp.cpp:5:15: error: no member named 'filesystem' in namespace 'std'
+    5 |   return std::filesystem::rename(oldname, newname);
+      |          ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:18:21: error: no member named 'filesystem' in namespace 'std'
+   18 |   test("file", std::filesystem::path::root_directory() / "input.txt",
+      |                ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:19:13: error: no member named 'filesystem' in namespace 'std'
+   19 |        std::filesystem::path::root_directory() / "output.txt");
+      |        ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:22:13: error: no member named 'filesystem' in namespace 'std'
+   22 |        std::filesystem::path::root_directory() / "docs" /
+      |        ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:23:17: error: no member named 'filesystem' in namespace 'std'
+   23 |            std::filesystem::path::separator,
+      |            ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:24:13: error: no member named 'filesystem' in namespace 'std'
+   24 |        std::filesystem::path::root_directory() / "mydocs" /
+      |        ~~~~~^
+/tmp/codegemma7b-file_rename-java-cpp.cpp:25:17: error: no member named 'filesystem' in namespace 'std'
+   25 |            std::filesystem::path::separator);
+      |            ~~~~~^
+7 errors generated.

@@ -1,0 +1,17 @@
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/deepseekcoderv2-str_cmp-py-rs.rs:32:5
+   |
+32 |     compare(5.0, 5.0);
+   |     ^^^^^^^ ---  --- expected `&str`, found floating-point number
+   |             |
+   |             expected `&str`, found floating-point number
+   |
+note: function defined here
+  --> /tmp/deepseekcoderv2-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

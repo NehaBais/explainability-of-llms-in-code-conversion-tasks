@@ -4,43 +4,35 @@
 int main() {
   int input1, input2;
 
+  // Prompt user for input
   printf("Enter first integer: ");
   scanf("%d", &input1);
   printf("Enter second integer: ");
   scanf("%d", &input2);
 
-  // Sum
+  // Perform operations and print results
   int sum = input1 + input2;
-  printf("Sum: %d\n", sum);
+  printf("Sum: \t\t %d\n", sum);
 
-  // Difference
   int difference = input1 - input2;
-  printf("Difference: %d\n", difference);
+  printf("Difference: \t %d\n", difference);
 
-  // Product
   int product = input1 * input2;
-  printf("Product: %d\n", product);
+  printf("Product: \t %d\n", product);
 
-  // Integer quotient and remainder (towards zero)
-  int quotient_towards_zero = input1 / input2;
-  int remainder_towards_zero = input1 % input2;
-  printf("Integer quotient (towards zero): %d\n", quotient_towards_zero);
-  printf("Remainder (towards zero): %d\n", remainder_towards_zero);
+  // For quotient and remainder, use integer division and modulus operation
+  int quotient_int = input1 / input2;
+  float quotient_float = (float)input1 / input2;
+  printf("Integer quotient: \t %d\n", quotient_int);
+  printf("Float quotient: \t %.6f\n", quotient_float);
 
-  // Integer quotient and remainder (towards negative infinity)
-  int quotient_towards_negative = input1 / -input2;
-  int remainder_towards_negative = input1 % -input2;
-  printf("Integer quotient (towards negative): %d\n",
-         quotient_towards_negative);
-  printf("Remainder (towards negative): %d\n", remainder_towards_negative);
+  int remainder = input1 % input2;
+  printf("Whole Remainder: \t %d\n", remainder);
+  printf("Actual Remainder: \t %d\n", remainder);
 
-  // Float quotient
-  float float_quotient = (float)input1 / input2;
-  printf("Float quotient: %.6f\n", float_quotient);
-
-  // Exponentiation
+  // For exponentiation, use the pow function from math library
   double exponentiation = pow(input1, input2);
-  printf("Exponentiation: %lf\n", exponentiation);
+  printf("Exponentiation: \t %.0f\n", exponentiation);
 
   return 0;
 }

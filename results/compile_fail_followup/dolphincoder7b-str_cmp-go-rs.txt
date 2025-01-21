@@ -1,0 +1,21 @@
+error[E0463]: can't find crate for `unicode_segmentation`
+ --> /tmp/dolphincoder7b-str_cmp-go-rs.rs:1:1
+  |
+1 | extern crate unicode_segmentation;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0599]: no method named `cmp_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/dolphincoder7b-str_cmp-go-rs.rs:21:22
+   |
+21 |     let ordering = c.cmp_ignore_ascii_case(d);
+   |                      ^^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+21 |     let ordering = c.eq_ignore_ascii_case(d);
+   |                      ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0463, E0599.
+For more information about an error, try `rustc --explain E0463`.

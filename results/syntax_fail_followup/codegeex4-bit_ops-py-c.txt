@@ -1,0 +1,35 @@
+/tmp/codegeex4-bit_ops-py-c.c:12:12: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     return rotl(width, a, -n);
+      |            ^
+/tmp/codegeex4-bit_ops-py-c.c:12:12: note: did you mean 'rotr'?
+/tmp/codegeex4-bit_ops-py-c.c:10:10: note: 'rotr' declared here
+   10 | uint64_t rotr(int width, uint64_t a, int n) {
+      |          ^
+   11 |   if (n < 0)
+   12 |     return rotl(width, a, -n);
+      |            ~~~~
+      |            rotr
+/tmp/codegeex4-bit_ops-py-c.c:21:10: error: conflicting types for 'rotl'
+   21 | uint64_t rotl(int width, uint64_t a, int n) {
+      |          ^
+/tmp/codegeex4-bit_ops-py-c.c:12:12: note: previous implicit declaration is here
+   12 |     return rotl(width, a, -n);
+      |            ^
+/tmp/codegeex4-bit_ops-py-c.c:34:12: error: call to undeclared function 'lshr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |     return lshr(width, a, -n);
+      |            ^
+/tmp/codegeex4-bit_ops-py-c.c:34:12: note: did you mean 'ashr'?
+/tmp/codegeex4-bit_ops-py-c.c:32:10: note: 'ashr' declared here
+   32 | uint64_t ashr(int width, uint64_t a, int n) {
+      |          ^
+   33 |   if (n < 0)
+   34 |     return lshr(width, a, -n);
+      |            ~~~~
+      |            ashr
+/tmp/codegeex4-bit_ops-py-c.c:43:10: error: conflicting types for 'lshr'
+   43 | uint64_t lshr(int width, uint64_t a, int n) {
+      |          ^
+/tmp/codegeex4-bit_ops-py-c.c:34:12: note: previous implicit declaration is here
+   34 |     return lshr(width, a, -n);
+      |            ^
+4 errors generated.

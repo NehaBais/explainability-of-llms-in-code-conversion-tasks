@@ -1,0 +1,24 @@
+/tmp/stablecode-str_substring-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_substring-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_substring-go-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("Index: %d %d%d%d%d%d%d\n", '0', '1', '2', '3', '4', '5', '6', '7');
+      |   ^
+/tmp/stablecode-str_substring-go-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-str_substring-go-c.c:9:73: warning: data argument not used by format string [-Wformat-extra-args]
+    9 |   printf("Index: %d %d%d%d%d%d%d\n", '0', '1', '2', '3', '4', '5', '6', '7');
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~                                     ^
+/tmp/stablecode-str_substring-go-c.c:13:3: error: use of undeclared identifier 'sx'
+   13 |   sx = strstr(s, "DE"));
+      |   ^
+/tmp/stablecode-str_substring-go-c.c:13:8: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   sx = strstr(s, "DE"));
+      |        ^
+/tmp/stablecode-str_substring-go-c.c:13:8: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/stablecode-str_substring-go-c.c:14:53: error: use of undeclared identifier 'sx'
+   14 |   printf("Start \"DE\", length %d: \"%s\"\n", m, &s[sx - 1]));
+      |                                                     ^
+1 warning and 6 errors generated.

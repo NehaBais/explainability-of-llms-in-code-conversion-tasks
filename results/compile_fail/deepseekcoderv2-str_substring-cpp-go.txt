@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_substring-cpp-go.go:18:14: multiple-value findIndexAndSubstr(s, c) (value of type (int, string)) in single-value context
+/tmp/deepseekcoderv2-str_substring-cpp-go.go:19:14: multiple-value findIndexAndSubstr(s, sub) (value of type (int, string)) in single-value context
+/tmp/deepseekcoderv2-str_substring-cpp-go.go:27:34: undefined: m

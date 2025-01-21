@@ -1,0 +1,4 @@
+/tmp/yicoder9b-int_factors-java-cpp.cpp:6:18: error: non-aggregate type 'set<long long>' cannot be initialized with an initializer list
+    6 |   set<long long> factors = {n, 1};
+      |                  ^         ~~~~~~
+1 error generated.

@@ -1,0 +1,71 @@
+/tmp/Main.java:4: error: cannot find symbol
+        "YUP is of type " + YUP.getClass() + " and BALL is of type " + BALL.getClass());
+                            ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:4: error: cannot find symbol
+        "YUP is of type " + YUP.getClass() + " and BALL is of type " + BALL.getClass());
+                                                                       ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:5: error: cannot find symbol
+    if (YUP.compareTo(BALL) < 0) {
+                      ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:5: error: cannot find symbol
+    if (YUP.compareTo(BALL) < 0) {
+        ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    if (YUP.compareTo(BALL) <= 0) {
+                      ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    if (YUP.compareTo(BALL) <= 0) {
+        ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    if (YUP.compareTo(BALL) > 0) {
+                      ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    if (YUP.compareTo(BALL) > 0) {
+        ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    if (YUP.compareTo(BALL) >= 0) {
+                      ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    if (YUP.compareTo(BALL) >= 0) {
+        ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:17: error: cannot find symbol
+    if (YUP.equalsIgnoreCase(BALL)) {
+                             ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:17: error: cannot find symbol
+    if (YUP.equalsIgnoreCase(BALL)) {
+        ^
+  symbol:   variable YUP
+  location: class Main
+/tmp/Main.java:20: error: cannot find symbol
+    if (!YUP.equalsIgnoreCase(BALL)) {
+                              ^
+  symbol:   variable BALL
+  location: class Main
+/tmp/Main.java:20: error: cannot find symbol
+    if (!YUP.equalsIgnoreCase(BALL)) {
+         ^
+  symbol:   variable YUP
+  location: class Main
+14 errors

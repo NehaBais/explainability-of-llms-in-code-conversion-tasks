@@ -1,0 +1,27 @@
+/tmp/granitecode8b-int_arith-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-py-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter first number: ");
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_arith-py-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%d", &input1);
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode8b-int_arith-py-c.c:13:46: error: use of undeclared identifier 'endl'
+   13 |   printf("Sum:                   %d%c", sum, endl);
+      |                                              ^
+/tmp/granitecode8b-int_arith-py-c.c:14:45: error: use of undeclared identifier 'endl'
+   14 |   printf("Difference:    %d%c", difference, endl);
+      |                                             ^
+/tmp/granitecode8b-int_arith-py-c.c:15:42: error: use of undeclared identifier 'endl'
+   15 |   printf("Product:       %d%c", product, endl);
+      |                                          ^
+/tmp/granitecode8b-int_arith-py-c.c:16:43: error: use of undeclared identifier 'endl'
+   16 |   printf("Quotient:      %f%c", quotient, endl);
+      |                                           ^
+/tmp/granitecode8b-int_arith-py-c.c:17:44: error: use of undeclared identifier 'endl'
+   17 |   printf("Remainder:     %d%c", remainder, endl);
+      |                                            ^
+8 errors generated.

@@ -1,0 +1,9 @@
+error[E0614]: type `char` cannot be dereferenced
+ --> /tmp/yicoder2b-str_prepend-c-rs.rs:4:19
+  |
+4 |     str.insert(0, *cstr.chars().nth(0).unwrap());
+  |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0614`.

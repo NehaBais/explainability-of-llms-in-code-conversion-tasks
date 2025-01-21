@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-file_create-c-rs.rs:6:29
+  |
+6 | fn main() -> io::Result<()> {
+  |                             ^ unclosed delimiter
+...
+9 |     output_file.set_permissions(0o644))?;
+  |                                       ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_create-c-rs.rs:22:1
+   |
+9  |     output_file.set_permissions(0o644))?;
+   |                                       - missing open `(` for this delimiter
+...
+22 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

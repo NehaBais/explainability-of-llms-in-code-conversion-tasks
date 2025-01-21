@@ -1,0 +1,40 @@
+/tmp/deepseekcoder7b-str_match-go-c.c:9:5: error: expected expression
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |     ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:6: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |      ^~
+/tmp/deepseekcoder7b-str_match-go-c.c:9:14: error: character <U+2581> not allowed in an identifier
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |             ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:19: error: character <U+2581> not allowed in an identifier
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |                ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:30: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |                         ^~
+/tmp/deepseekcoder7b-str_match-go-c.c:9:6: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |      ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:35: error: call to undeclared function 'has_substring'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |                             ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:49: error: expected expression
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |                                           ^
+/tmp/deepseekcoder7b-str_match-go-c.c:9:66: error: expected expression
+    9 |     <｜begin▁of▁sentence｜> has_substring(const char *str, const char *sub) {
+      |                                                            ^
+/tmp/deepseekcoder7b-str_match-go-c.c:40:6: error: expected '}'
+   40 |     }
+      |      ^
+/tmp/deepseekcoder7b-str_match-go-c.c:7:10: note: to match this '{'
+    7 |   } else {
+      |          ^
+/tmp/deepseekcoder7b-str_match-go-c.c:40:6: error: expected '}'
+   40 |     }
+      |      ^
+/tmp/deepseekcoder7b-str_match-go-c.c:4:54: note: to match this '{'
+    4 | void starts_with(const char *str, const char *start) {
+      |                                                      ^
+2 warnings and 9 errors generated.

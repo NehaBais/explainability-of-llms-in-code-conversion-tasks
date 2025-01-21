@@ -1,0 +1,10 @@
+/tmp/magicoder7b-str_substring-js-c.c:79:10: error: member reference base type 'char[9]' is not a structure or union
+   79 |   n = str.indexOf('b'); // Index of 'b' in str
+      |       ~~~^~~~~~~~
+/tmp/magicoder7b-str_substring-js-c.c:84:23: error: member reference base type 'char[9]' is not a structure or union
+   84 |   substr_utf8(str, str.indexOf('bc'), 3);
+      |                    ~~~^~~~~~~~
+/tmp/magicoder7b-str_substring-js-c.c:84:32: warning: multi-character character constant [-Wmultichar]
+   84 |   substr_utf8(str, str.indexOf('bc'), 3);
+      |                                ^
+1 warning and 2 errors generated.

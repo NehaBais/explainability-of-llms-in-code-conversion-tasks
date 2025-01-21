@@ -1,0 +1,25 @@
+error[E0606]: casting `&usize` as `usize` is invalid
+  --> /tmp/yicoder9b-str_match-go-rs.rs:17:25
+   |
+17 |                     i + j as usize + 1
+   |                         ^^^^^^^^^^
+   |
+help: dereference the expression
+   |
+17 |                     i + *j as usize + 1
+   |                         +
+
+error[E0606]: casting `&usize` as `usize` is invalid
+  --> /tmp/yicoder9b-str_match-go-rs.rs:19:22
+   |
+19 |                 i += j as usize + 1;
+   |                      ^^^^^^^^^^
+   |
+help: dereference the expression
+   |
+19 |                 i += *j as usize + 1;
+   |                      +
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0606`.

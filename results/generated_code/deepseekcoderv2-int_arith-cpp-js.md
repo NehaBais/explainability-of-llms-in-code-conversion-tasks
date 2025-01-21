@@ -1,34 +1,23 @@
-"""
-def get_user_input():
-    while True:
-        try:
-            user_inputs = input("Enter two integers (e.g., '5 3'): ")
-            if not user_inputs:
-                raise ValueError("Empty input")
-            values = [int(num) for num in user_inputs.split()]
-            return tuple(values)
-        except ValueError as e:
-            print(f"Error: {e}")
-            continue
+ Here's the JavaScript equivalent of your C++ code, which reads two integers from the user and performs the required arithmetic operations:
 
-def main():
-    a, b = get_user_input()
-    
-    sum_result = a + b
-    difference_result = a - b
-    product_result = a * b
-    quotient_result = a // b  # Integer division in Python using double slash (//)
-    remainder_result = a % b  
-    exponentiation_result = None  # TODO: Implement the exponentiation logic if it exists in C++
-    
-    print("a+b =", sum_result)
-    print("a-b =", difference_result)
-    print("a*b =", product_result)
-    print("a/b =", quotient_result, "with remainder", remainder_result)
-    
-    if exponentiation_result is not None:
-        print(f"a^b = {exponentiation_result}")
-        
-if __name__ == "__main__":
-    main()
+```javascript
+process.stdin.setEncoding('utf8');
 
+console.log("Please enter two integers:");
+process.stdin.on('data', (chunk) => {
+  const [a, b] = chunk.split(' ').map(Number);
+  
+  console.log(`a+b = ${a + b}`);
+  console.log(`a-b = ${a - b}`);
+  console.log(`a*b = ${a * b}`);
+  
+  // For quotient and remainder, consider the specific behavior for JavaScript's '/' and '%' operators
+  const quotient = Math.floor(a / b); // Rounds towards negative infinity
+  const remainder = a % b;
+  console.log(`a/b = ${quotient}, remainder ${remainder}`);
+  
+  process.exit();
+});
+```
+
+This script sets up an event listener to read the input from stdin, processes it to extract two integers, and then performs the arithmetic operations as specified in your C++ code. Note that JavaScript's `/` operator for division always rounds towards zero (which is equivalent to rounding towards negative infinity for non-zero divisors), and `%` returns the remainder of integer division, with the sign of the remainder matching that of the dividend if they are different signs.

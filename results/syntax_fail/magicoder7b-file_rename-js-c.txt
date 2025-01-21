@@ -1,0 +1,20 @@
+/tmp/magicoder7b-file_rename-js-c.c:6:7: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (rename("input.txt", "output.txt") != 0) {
+      |       ^
+/tmp/magicoder7b-file_rename-js-c.c:6:7: note: did you mean 'devname'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/magicoder7b-file_rename-js-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("Failed to rename input.txt");
+      |     ^
+/tmp/magicoder7b-file_rename-js-c.c:12:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     perror("Failed to rename /input.txt");
+      |     ^
+/tmp/magicoder7b-file_rename-js-c.c:17:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     perror("Failed to rename docs");
+      |     ^
+/tmp/magicoder7b-file_rename-js-c.c:22:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     perror("Failed to rename /docs");
+      |     ^
+5 errors generated.

@@ -1,0 +1,38 @@
+/tmp/codegeex4-bit_ops-py-c.c:11:35: error: expected ';' after expression
+   11 |   "Rotate a, n times to the right" if (n < 0) return rotl(width, a, -n);
+      |                                   ^
+      |                                   ;
+/tmp/codegeex4-bit_ops-py-c.c:11:54: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   "Rotate a, n times to the right" if (n < 0) return rotl(width, a, -n);
+      |                                                      ^
+/tmp/codegeex4-bit_ops-py-c.c:11:54: note: did you mean 'rotr'?
+/tmp/codegeex4-bit_ops-py-c.c:10:10: note: 'rotr' declared here
+   10 | uint64_t rotr(int width, uint64_t a, int n) {
+      |          ^
+   11 |   "Rotate a, n times to the right" if (n < 0) return rotl(width, a, -n);
+      |                                                      ~~~~
+      |                                                      rotr
+/tmp/codegeex4-bit_ops-py-c.c:11:3: warning: expression result unused [-Wunused-value]
+   11 |   "Rotate a, n times to the right" if (n < 0) return rotl(width, a, -n);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-bit_ops-py-c.c:24:10: error: conflicting types for 'rotl'
+   24 | uint64_t rotl(int width, uint64_t a, int n) {
+      |          ^
+/tmp/codegeex4-bit_ops-py-c.c:11:54: note: previous implicit declaration is here
+   11 |   "Rotate a, n times to the right" if (n < 0) return rotl(width, a, -n);
+      |                                                      ^
+/tmp/codegeex4-bit_ops-py-c.c:25:34: error: expected ';' after expression
+   25 |   "Rotate a, n times to the left" if (n < 0) return rotr(width, a, -n);
+      |                                  ^
+      |                                  ;
+/tmp/codegeex4-bit_ops-py-c.c:25:3: warning: expression result unused [-Wunused-value]
+   25 |   "Rotate a, n times to the left" if (n < 0) return rotr(width, a, -n);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-bit_ops-py-c.c:39:65: error: expected ';' after expression
+   39 |   "Arithmetic shift a, n times to the right. (sign preserving)." if (n <
+      |                                                                 ^
+      |                                                                 ;
+/tmp/codegeex4-bit_ops-py-c.c:39:3: warning: expression result unused [-Wunused-value]
+   39 |   "Arithmetic shift a, n times to the right. (sign preserving)." if (n <
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings and 5 errors generated.

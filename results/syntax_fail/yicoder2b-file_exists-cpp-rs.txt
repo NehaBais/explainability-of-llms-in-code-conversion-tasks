@@ -1,0 +1,15 @@
+error: expected one of `.`, `=>`, `?`, or an operator, found `{`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:8:55
+  |
+8 |             Some(direntry) if direntry.is_directory() {
+  |                                                       ^ expected one of `.`, `=>`, `?`, or an operator
+
+error[E0433]: failed to resolve: could not find `FsEntry` in `fs`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:7:28
+  |
+7 |         Ok(_) => match fs::FsEntry::symlink_to_dir_entry(&p.into()) {
+  |                            ^^^^^^^ could not find `FsEntry` in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

@@ -1,0 +1,52 @@
+/tmp/stablecode-file_rename-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_rename-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_rename-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_rename-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/stablecode-file_rename-cpp-c.c:9:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   strcpy(command, "mv ");
+      |   ^
+/tmp/stablecode-file_rename-cpp-c.c:9:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/stablecode-file_rename-cpp-c.c:10:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   strcat(command, currentPath);
+      |   ^
+/tmp/stablecode-file_rename-cpp-c.c:10:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/stablecode-file_rename-cpp-c.c:15:7: error: call to undeclared function 'system'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (system(command)) {
+      |       ^
+/tmp/stablecode-file_rename-cpp-c.c:16:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |     printf("Error renaming file.\n");
+      |     ^
+/tmp/stablecode-file_rename-cpp-c.c:16:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_rename-cpp-c.c:29:46: error: extraneous ')' after condition, expected a statement
+   29 |   if (renameFile(currentPath, fileToRename1)))) {
+      |                                              ^
+/tmp/stablecode-file_rename-cpp-c.c:29:47: error: extraneous ')' after condition, expected a statement
+   29 |   if (renameFile(currentPath, fileToRename1)))) {
+      |                                               ^
+/tmp/stablecode-file_rename-cpp-c.c:34:48: error: extraneous ')' after condition, expected a statement
+   34 |   if (renameFile(fileToRename1, fileToRename2)))) {
+      |                                                ^
+/tmp/stablecode-file_rename-cpp-c.c:34:49: error: extraneous ')' after condition, expected a statement
+   34 |   if (renameFile(fileToRename1, fileToRename2)))) {
+      |                                                 ^
+/tmp/stablecode-file_rename-cpp-c.c:39:46: error: extraneous ')' after condition, expected a statement
+   39 |   if (renameFile(currentPath, fileToRename3)))) {
+      |                                              ^
+/tmp/stablecode-file_rename-cpp-c.c:39:47: error: extraneous ')' after condition, expected a statement
+   39 |   if (renameFile(currentPath, fileToRename3)))) {
+      |                                               ^
+/tmp/stablecode-file_rename-cpp-c.c:44:38: error: extraneous ')' after condition, expected a statement
+   44 |   if (renameFile("/", fileToRename2)))) {
+      |                                      ^
+/tmp/stablecode-file_rename-cpp-c.c:44:39: error: extraneous ')' after condition, expected a statement
+   44 |   if (renameFile("/", fileToRename2)))) {
+      |                                       ^
+16 errors generated.

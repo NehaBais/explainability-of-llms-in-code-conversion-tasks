@@ -1,0 +1,9 @@
+error[E0432]: unresolved import `libc::struct_stat`
+ --> /tmp/granitecode8b-file_size-c-rs.rs:3:5
+  |
+3 | use libc::struct_stat;
+  |     ^^^^^^^^^^^^^^^^^ no `struct_stat` in the root
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

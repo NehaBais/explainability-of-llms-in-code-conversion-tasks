@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-str_cmp-js-go.go:15:16: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-js-go.go:19:16: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-js-go.go:23:16: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-js-go.go:27:16: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-js-go.go:32:16: syntax error: unexpected ), expected := or = or comma

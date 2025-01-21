@@ -1,36 +1,75 @@
-## Solution - Golang
+ Sure, here is the equivalent code in Golang:
+
 ```go
 package main
-import "unicode/utf8"
-func main(){
-    s := []rune{'a','b','c','文','字','化','け','d','e','f'}
-	n, m := 2, 3
-	cpos := utf8.RuneCountInString(string(s))
-	fmt.Println("3文字目から出力")
-	fmt.Printf("%s\n", string(s[cpos+n:]))
-	fmt.Println("3文字目までの出力")
-	fmt.Printf("%s\n", string(s[cpos+n:]) ) 
-	fmt.Println("最後以外の出力")
-    fmt.Printf("%s\n", string(s[:len(s)-1]))
-	fmt.Println("bを探してそこから3文字目まで")
-	spos := bytes.IndexRune(s, 'b')
-	fmt.Printf("%s\n", string(s[spos+n:cpos])) 
-	fmt.Println("けdが出てくる最初のところから3文字目まで")
-	spos = bytes.IndexRune(s, 'け')
-	cpos = bytes.IndexRune(s, 'd')
-	fmt.Printf("%s\n", string(s[cpos+1:])) 
+
+import (
+	"fmt"
+	"unicode/utf8"
+)
+
+func main() {
+	s := "abc文字化けdef"
+	n := 2
+	m := 3
+
+	// Print 3 characters starting at index 2 (c文字)
+	runes := []rune(s)
+	if n < len(runes) && m <= len(runes)-n {
+		fmt.Println(string(runes[n : n+m]))
+	} else {
+		fmt.Println("Index out of range")
+	}
+
+	// Print all characters starting at index 2 (c文字化けdef)
+	if n < len(runes) {
+		fmt.Println(string(runes[n:]))
+	} else {
+		fmt.Println("Index out of range")
+	}
+
+	// Print all characters except the last (abc文字化けde)
+	if len(runes) > 1 {
+		fmt.Println(string(runes[:len(runes)-1]))
+	} else {
+		fmt.Println("String too short")
+	}
+
+	// Print 3 characters starting with 'b' (bc文)
+	cpos := -1
+	for i, r := range runes {
+		if r == 'b' {
+			cpos = i
+			break
+		}
+	}
+	if cpos != -1 && m <= len(runes)-cpos {
+		fmt.Println(string(runes[cpos : cpos+m]))
+	} else {
+		fmt.Println("Character not found or index out of range")
+	}
+
+	// Print 3 characters starting with "けd" (けde)
+	spos := -1
+	for i := 0; i <= len(runes)-2; i++ {
+		if string(runes[i:i+2]) == "けd" {
+			spos = i
+			break
+		}
+	}
+	if spos != -1 && m <= len(runes)-spos {
+		fmt.Println(string(runes[spos : spos+m]))
+	} else {
+		fmt.Println("Substring not found or index out of range")
+	}
 }
 ```
-## Output
 
-3文字目から出力
-けde
-3文字目までの出力
-けde
-最後以外の出力
-abc文字化けde
-bを探してそこから3文字目まで
-bc文
-けdが出てくる最初のところから3文字目まで
-けde
+This Golang code performs the same operations as the Rust code:
+1. Prints a substring starting from `n` characters in and of `m` length.
+2. Prints all characters starting from `n` characters in, up to the end of the string.
+3. Prints all characters except the last one.
+4. Prints 3 characters starting with a known character within the string.
+5. Prints 3 characters starting with a known substring within the string.
 
+Note that Go uses UTF-8 encoding by default, and `[]rune` is used to handle Unicode characters correctly. The code checks for index out of range conditions and handles them appropriately.

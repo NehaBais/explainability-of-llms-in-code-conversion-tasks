@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-file_create-js-go.go:20:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-js-go.go:25:35: syntax error: unexpected ) at end of statement

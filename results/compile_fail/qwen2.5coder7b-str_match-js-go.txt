@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_match-js-go.go:32:79: invalid character U+003F '?'
+/tmp/qwen2.5coder7b-str_match-js-go.go:32:81: syntax error: unexpected literal "Yes.", expected )
+/tmp/qwen2.5coder7b-str_match-js-go.go:33:84: invalid character U+003F '?'
+/tmp/qwen2.5coder7b-str_match-js-go.go:33:86: syntax error: unexpected literal "Yes, at index ", expected )
+/tmp/qwen2.5coder7b-str_match-js-go.go:35:135: invalid character U+003F '?'
+/tmp/qwen2.5coder7b-str_match-js-go.go:35:137: syntax error: unexpected literal "es", expected )
+/tmp/qwen2.5coder7b-str_match-js-go.go:37:77: invalid character U+003F '?'
+/tmp/qwen2.5coder7b-str_match-js-go.go:37:79: syntax error: unexpected literal "Yes.", expected )

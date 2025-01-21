@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder2b-file_create-java-c.c:7:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   if (access("output.txt", F_OK) == -1) {
+      |       ^
+/tmp/qwen2.5coder2b-file_create-java-c.c:7:28: error: use of undeclared identifier 'F_OK'
+    7 |   if (access("output.txt", F_OK) == -1) {
+      |                            ^
+/tmp/qwen2.5coder2b-file_create-java-c.c:8:9: error: call to undeclared function 'creat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     if (creat("output.txt", 0644) == -1) {
+      |         ^
+/tmp/qwen2.5coder2b-file_create-java-c.c:15:29: error: use of undeclared identifier 'F_OK'
+   15 |   if (access("/output.txt", F_OK) == -1) {
+      |                             ^
+/tmp/qwen2.5coder2b-file_create-java-c.c:16:9: error: call to undeclared function 'creat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |     if (creat("/output.txt", 0644) == -1) {
+      |         ^
+5 errors generated.

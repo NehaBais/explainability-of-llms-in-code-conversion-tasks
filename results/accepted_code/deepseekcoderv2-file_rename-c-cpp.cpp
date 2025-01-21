@@ -1,23 +1,27 @@
-#include <stdio.h>
-#include <string.h>
-int main() {
-  char input[] = "input.txt";
-  char output[] = "output.txt";
-  if (rename(input, output) == 0)
-    printf("File renamed successfully\n");
-  else
-    perror("Error renaming file");
-  char mydocs[] = "docs";
-  char input2[] = "/input.txt";
-  char output2[] = "/output.txt";
-  if (rename(mydocs, "mydocs") == 0)
-    printf("File renamed successfully\n");
-  else
-    perror("Error renaming file");
+#include <cstring> // For rename function
+#include <iostream>
 
-  if (rename(input2, output2) == 0)
-    printf("File renamed successfully\n");
-  else
-    perror("Error renaming file");
+int main() {
+  try {
+    // Rename in current working directory
+    if (rename("input.txt", "output.txt") != 0) {
+      throw std::runtime_error("Failed to rename input.txt to output.txt");
+    }
+    if (rename("docs", "mydocs") != 0) {
+      throw std::runtime_error("Failed to rename docs to mydocs");
+    }
+
+    // Rename in filesystem root
+    if (rename("/input.txt", "/output.txt") != 0) {
+      throw std::runtime_error("Failed to rename /input.txt to /output.txt");
+    }
+    if (rename("/docs", "/mydocs") != 0) {
+      throw std::runtime_error("Failed to rename /docs to /mydocs");
+    }
+  } catch (const std::exception &e) {
+    std::cerr << "Error: " << e.what() << std::endl;
+    return 1;
+  }
+
   return 0;
 }

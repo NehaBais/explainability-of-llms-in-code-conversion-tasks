@@ -1,0 +1,4 @@
+/tmp/codegemma7b-file_rename-rs-c.c:1:10: fatal error: 'rename.h' file not found
+    1 | #include <rename.h>
+      |          ^~~~~~~~~~
+1 error generated.

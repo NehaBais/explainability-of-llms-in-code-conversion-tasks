@@ -1,0 +1,27 @@
+/tmp/yicoder2b-file_exists-py-cpp.cpp:7:7: error: use of undeclared identifier 'stricmp'; did you mean 'strcmp'?
+    7 |   if (stricmp(filename, "input.txt") == 0 &&
+      |       ^~~~~~~
+      |       strcmp
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:6: note: 'strcmp' declared here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |          ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:8:24: error: use of undeclared identifier 'R_OK'
+    8 |       access(filename, R_OK | F_OK) == 0) {
+      |                        ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:8:31: error: use of undeclared identifier 'F_OK'
+    8 |       access(filename, R_OK | F_OK) == 0) {
+      |                               ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:16:7: error: use of undeclared identifier 'stricmp'; did you mean 'strcmp'?
+   16 |   if (stricmp(dirname, "/docs") == 0 && access(dirname, R_OK | F_OK) == 0) {
+      |       ^~~~~~~
+      |       strcmp
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:6: note: 'strcmp' declared here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |          ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:16:57: error: use of undeclared identifier 'R_OK'
+   16 |   if (stricmp(dirname, "/docs") == 0 && access(dirname, R_OK | F_OK) == 0) {
+      |                                                         ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:16:64: error: use of undeclared identifier 'F_OK'
+   16 |   if (stricmp(dirname, "/docs") == 0 && access(dirname, R_OK | F_OK) == 0) {
+      |                                                                ^
+6 errors generated.

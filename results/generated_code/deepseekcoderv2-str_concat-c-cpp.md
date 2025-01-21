@@ -1,21 +1,23 @@
+ Here's the equivalent code in C++:
 
-## Solution
-To solve this question, you need to use string concatenation. String concatenation is the process of joining two or more strings together with no intervening spaces. In C++, there are multiple ways to perform string concatenation. One way is to use the strcat() function from the <cstring> library. The strcat() function takes two arguments: a destination string and a source string. It concatenates the source string onto the end of the destination string, overwriting any existing characters in the destination string.
-Here's an example of how you can use the strcat() function to perform string concatenation in C++:
-```c
+```cpp
 #include <iostream>
 #include <string>
-using namespace std;
+
 int main() {
-    // Create a string variable equal to any text value
-    string s = "hello";
+    std::string s = "hello";
+    std::string s2;
+
+    std::cout << s << " literal" << std::endl;
     
-    // Concatenate another string literal with the original string
-    string s2 = s + " world!";
-    
-    // Print the concatenated string
-    cout << s2 << endl;
+    s2 = s + " literal";
+    std::cout << s2 << std::endl;
+
+    return 0;
 }
 ```
-This will print out: hello world! to the console.
 
+In this C++ code:
+- We use `std::string` for the string variables.
+- The concatenation of strings is done using the `+` operator, which is more straightforward than in C with functions like `strcat`.
+- The output is achieved using `std::cout`, similar to how `printf` is used in C.

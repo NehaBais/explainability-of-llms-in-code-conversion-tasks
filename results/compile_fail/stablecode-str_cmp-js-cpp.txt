@@ -1,0 +1,31 @@
+/tmp/stablecode-str_cmp-js-cpp.cpp:9:20: error: extraneous ')' after condition, expected a statement
+    9 |   if (str1 == str2)) {
+      |                    ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:14:15: error: expected expression
+   14 |   if (str1 == = str2)) {
+      |               ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:14:22: error: extraneous ')' after condition, expected a statement
+   14 |   if (str1 == = str2)) {
+      |                      ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:19:23: error: extraneous ')' after condition, expected a statement
+   19 |   if (!(str1 == str2))) {
+      |                       ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:25:20: error: extraneous ')' after condition, expected a statement
+   25 |   if (str1 != str2)) {
+      |                    ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:30:19: error: extraneous ')' after condition, expected a statement
+   30 |   if (str1 < str2)) {
+      |                   ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:35:19: error: extraneous ')' after condition, expected a statement
+   35 |   if (str1 > str2)) {
+      |                   ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:43:12: error: no member named 'toLowerCase' in 'std::string'
+   43 |   if (str3.toLowerCase() == str4.toLowerCase())) {
+      |       ~~~~ ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:43:34: error: no member named 'toLowerCase' in 'std::string'
+   43 |   if (str3.toLowerCase() == str4.toLowerCase())) {
+      |                             ~~~~ ^
+/tmp/stablecode-str_cmp-js-cpp.cpp:43:48: error: extraneous ')' after condition, expected a statement
+   43 |   if (str3.toLowerCase() == str4.toLowerCase())) {
+      |                                                ^
+10 errors generated.

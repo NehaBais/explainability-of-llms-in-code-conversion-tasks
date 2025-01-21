@@ -1,0 +1,47 @@
+error: expected one of `!`, `,`, `.`, `::`, `?`, `{`, or an operator, found `q2`
+  --> /tmp/codeqwen-str_match-js-rs.rs:33:73
+   |
+33 |     println!("2: Is '{}' contained in '{}'? {}", string_b, string_a, If q2 != 0 { format!("Yes, at index {}.", q2) } else { "No." });
+   |                                                                         ^^ expected one of 7 possible tokens
+
+error[E0425]: cannot find value `string_A` in this scope
+  --> /tmp/codeqwen-str_match-js-rs.rs:29:9
+   |
+29 |         string_A,
+   |         ^^^^^^^^ help: a local variable with a similar name exists: `string_a`
+
+error[E0425]: cannot find value `string_A` in this scope
+  --> /tmp/codeqwen-str_match-js-rs.rs:38:13
+   |
+38 |             string_A, string_b, matches
+   |             ^^^^^^^^ help: a local variable with a similar name exists: `string_a`
+
+error[E0425]: cannot find value `string_A` in this scope
+  --> /tmp/codeqwen-str_match-js-rs.rs:44:13
+   |
+44 |             string_A, string_b, matches[0]
+   |             ^^^^^^^^ help: a local variable with a similar name exists: `string_a`
+
+error[E0425]: cannot find value `string_A` in this scope
+  --> /tmp/codeqwen-str_match-js-rs.rs:49:13
+   |
+49 |             string_A, string_b
+   |             ^^^^^^^^ help: a local variable with a similar name exists: `string_a`
+
+error[E0425]: cannot find value `string_A` in this scope
+  --> /tmp/codeqwen-str_match-js-rs.rs:54:9
+   |
+54 |         string_A,
+   |         ^^^^^^^^ help: a local variable with a similar name exists: `string_a`
+
+warning: unused macro definition: `If`
+  --> /tmp/codeqwen-str_match-js-rs.rs:60:14
+   |
+60 | macro_rules! If {
+   |              ^^
+   |
+   = note: `#[warn(unused_macros)]` on by default
+
+error: aborting due to 6 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0425`.

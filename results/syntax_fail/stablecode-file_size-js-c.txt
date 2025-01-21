@@ -1,0 +1,19 @@
+/tmp/stablecode-file_size-js-c.c:24:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |       ^
+/tmp/stablecode-file_size-js-c.c:24:25: error: use of undeclared identifier 'F_OK'
+   24 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |                         ^
+/tmp/stablecode-file_size-js-c.c:24:58: error: use of undeclared identifier 'F_OK'
+   24 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |                                                          ^
+/tmp/stablecode-file_size-js-c.c:28:9: error: use of undeclared identifier 'fso'
+   28 |     if (fso->GetFile(files[0].name).Size && fso->GetFile(files[1].name)).Size) {
+      |         ^
+/tmp/stablecode-file_size-js-c.c:28:45: error: use of undeclared identifier 'fso'
+   28 |     if (fso->GetFile(files[0].name).Size && fso->GetFile(files[1].name)).Size) {
+      |                                             ^
+/tmp/stablecode-file_size-js-c.c:28:73: error: expected expression
+   28 |     if (fso->GetFile(files[0].name).Size && fso->GetFile(files[1].name)).Size) {
+      |                                                                         ^
+6 errors generated.

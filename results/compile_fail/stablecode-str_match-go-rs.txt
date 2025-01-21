@@ -1,0 +1,42 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-go-rs.rs:12:22
+   |
+12 |         if index > 0 {
+   |                      ^ unclosed delimiter
+13 |             println!("2.1. at location {}", index + 1));
+   |                                                       ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-go-rs.rs:15:61
+   |
+15 |             while let Some(i) = first[start..].find(second) {
+   |                                                             ^ unclosed delimiter
+...
+19 |                 ));
+   |                  ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-go-rs.rs:1:45
+   |
+1  | fn match_strings(first: &str, second: &str) {
+   |                                             ^ unclosed delimiter
+...
+22 |             println!("2.2. and that's all"));
+   |                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-str_match-go-rs.rs:23:9
+   |
+13 |             println!("2.1. at location {}", index + 1));
+   |                                                       - missing open `(` for this delimiter
+...
+19 |                 ));
+   |                  - missing open `(` for this delimiter
+...
+22 |             println!("2.2. and that's all"));
+   |                                            - missing open `(` for this delimiter
+23 |         }
+   |         ^ unexpected closing delimiter
+
+error: aborting due to 4 previous errors
+

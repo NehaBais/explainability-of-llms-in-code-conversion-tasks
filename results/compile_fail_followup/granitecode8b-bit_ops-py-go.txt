@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-bit_ops-py-go.go:52:54: undefined: mask

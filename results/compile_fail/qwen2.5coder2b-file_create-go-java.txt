@@ -1,0 +1,5 @@
+/tmp/Main.java:5: error: incompatible types: try-with-resources not applicable to variable type
+    try (File file = new File(fn)) {
+              ^
+    (File cannot be converted to AutoCloseable)
+1 error

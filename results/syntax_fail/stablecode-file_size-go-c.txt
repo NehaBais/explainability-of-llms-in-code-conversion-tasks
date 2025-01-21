@@ -1,0 +1,13 @@
+/tmp/stablecode-file_size-go-c.c:9:40: error: extraneous ')' after condition, expected a statement
+    9 |   if (0 != stat(fileName, &statBuffer))) {
+      |                                        ^
+/tmp/stablecode-file_size-go-c.c:10:90: error: extraneous ')' before ';'
+   10 |         fprintf(stderr, "Error occurred while accessing the file: %s\n", strerror(errno)));
+      |                                                                                          ^
+/tmp/stablecode-file_size-go-c.c:10:83: error: use of undeclared identifier 'errno'
+   10 |         fprintf(stderr, "Error occurred while accessing the file: %s\n", strerror(errno)));
+      |                                                                                   ^
+/tmp/stablecode-file_size-go-c.c:14:76: error: extraneous ')' before ';'
+   14 |         printf("File size is %lld bytes.\n", (long long)statBuffer.st_size));
+      |                                                                            ^
+4 errors generated.

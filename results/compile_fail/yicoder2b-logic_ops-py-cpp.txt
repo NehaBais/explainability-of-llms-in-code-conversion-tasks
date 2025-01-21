@@ -1,0 +1,9 @@
+/tmp/yicoder2b-logic_ops-py-cpp.cpp:8:1: warning: non-void function does not return a value [-Wreturn-type]
+    8 | }
+      | ^
+1 warning generated.
+Undefined symbols for architecture arm64:
+  "_main", referenced from:
+      <initial-undefines>
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)

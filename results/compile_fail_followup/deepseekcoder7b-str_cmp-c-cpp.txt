@@ -1,0 +1,10 @@
+/tmp/deepseekcoder7b-str_cmp-c-cpp.cpp:2:3: error: use of undeclared identifier 'cout'
+    2 |   cout << "     eq  ne  gt  lt  ge  le\n";
+      |   ^
+/tmp/deepseekcoder7b-str_cmp-c-cpp.cpp:5:5: error: use of undeclared identifier 'compare'
+    5 |     compare(a, b);
+      |     ^
+/tmp/deepseekcoder7b-str_cmp-c-cpp.cpp:6:5: error: use of undeclared identifier 'comparecase'
+    6 |     comparecase(a, b);
+      |     ^
+3 errors generated.

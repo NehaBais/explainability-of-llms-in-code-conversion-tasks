@@ -1,0 +1,4 @@
+/tmp/stablecode-file_size-c-cpp.cpp:20:36: error: extraneous ')' after condition, expected a statement
+   20 |   if (stat(filePath.c_str(), &foo))) {
+      |                                    ^
+1 error generated.

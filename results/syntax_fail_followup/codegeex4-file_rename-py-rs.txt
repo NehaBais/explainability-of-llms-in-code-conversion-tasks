@@ -1,0 +1,11 @@
+error: environment variable `CARGO_MANIFEST_DIR` not defined at compile time
+ --> /tmp/codegeex4-file_rename-py-rs.rs:5:23
+  |
+5 |     let current_dir = env!("CARGO_MANIFEST_DIR").to_string();
+  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: Cargo sets build script variables at run time. Use `std::env::var("CARGO_MANIFEST_DIR")` instead
+  = note: this error originates in the macro `env` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 1 previous error
+

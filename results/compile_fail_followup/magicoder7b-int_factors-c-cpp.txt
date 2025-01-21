@@ -1,0 +1,17 @@
+/tmp/magicoder7b-int_factors-c-cpp.cpp:10:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   10 |   for (auto ix = fctrs.list.size(); ix < flist.size(); ix++) {
+      |        ^
+/tmp/magicoder7b-int_factors-c-cpp.cpp:24:7: error: use of undeclared identifier 'dvsr'
+   24 |   if (dvsr * dvsr == num) {
+      |       ^
+/tmp/magicoder7b-int_factors-c-cpp.cpp:24:14: error: use of undeclared identifier 'dvsr'
+   24 |   if (dvsr * dvsr == num) {
+      |              ^
+/tmp/magicoder7b-int_factors-c-cpp.cpp:25:21: error: use of undeclared identifier 'dvsr'
+   25 |     flist.push_back(dvsr);
+      |                     ^
+/tmp/magicoder7b-int_factors-c-cpp.cpp:34:16: error: expected ';' at end of declaration
+   34 |   Factors ftors{};
+      |                ^
+      |                ;
+1 warning and 4 errors generated.

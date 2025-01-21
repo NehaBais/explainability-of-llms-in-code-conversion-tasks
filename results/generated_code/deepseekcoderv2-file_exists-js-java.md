@@ -1,18 +1,26 @@
-### Answer 2:
-
-The following Java code uses the `File` class to check if a file named "input.txt" exists in the current working directory and its root, as well as whether a folder named "docs" exists in both locations:
+ Sure, here is the equivalent Java code to verify that a file called `input.txt` and a directory called `docs` exist, both in the current working directory and in the filesystem root:
 
 ```java
-public class FileSystemCheck {
-    public static void main(String[] args) {
-        // Check if "input.txt" exists in the current working directory
-        File file = new File("input.txt");
-        System.out.println("Input file exists in current directory: " + file.exists());
+import java.io.File;
 
-        // Check if "docs" folder exists in the root of the filesystem
-        File rootFolder = new File("/");
-        File docsFolder = new File(rootFolder, "docs");
-        System.out.println("Docs folder exists in root of filesystem: " + docsFolder.exists());
+public class FileExistsExample {
+    public static void main(String[] args) {
+        // Check for file and directory in the current working directory
+        checkFileAndDirectory("input.txt", new File("docs"));
+
+        // Check for file and directory in the filesystem root
+        checkFileAndDirectory("c:/input.txt", new File("c:/docs"));
+    }
+
+    public static void checkFileAndDirectory(String filePath, File directory) {
+        File file = new File(filePath);
+        boolean fileExists = file.exists() && file.isFile();
+        boolean dirExists = directory.exists() && directory.isDirectory();
+
+        System.out.println("Checking for " + filePath + ": " + (fileExists ? "Exists" : "Does not exist"));
+        System.out.println("Checking for " + directory.getPath() + ": " + (dirExists ? "Exists" : "Does not exist"));
     }
 }
 ```
+
+This Java code uses the `java.io.File` class to check if a file or directory exists. The `checkFileAndDirectory` method takes two parameters: one for the file path and one for the directory, allowing you to verify both in the current working directory and in the filesystem root.

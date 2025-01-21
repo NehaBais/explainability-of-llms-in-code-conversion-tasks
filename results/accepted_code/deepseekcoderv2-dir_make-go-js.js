@@ -1,16 +1,14 @@
-function makeDirs(path) {
-  // Check if the path already exists
-  const stats = fs.statSync(path);
+const fs = require("fs");
+const path = require("path");
 
-  if (stats.isDirectory()) {
-    return true;
-  } else if (stats.isFile()) {
-    throw new Error("The specified file is not a directory.");
+function mkdirp(dir) {
+  if (!fs.existsSync(dir)) {
+    const dirPath = path.dirname(dir);
+    mkdirp(dirPath);
+    fs.mkdirSync(dir, { mode: 0o770 });
   }
-
-  // Create the parent directory if it doesn't exist
-  const dir = path.substring(0, path.lastIndexOf("/"));
-
-  fs.mkdirSync(dir);
-  return makeDirs(path);
 }
+
+// Example usage:
+const dirPath = "/tmp/some/path/to/dir";
+mkdirp(dirPath);

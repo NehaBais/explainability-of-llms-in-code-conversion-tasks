@@ -1,0 +1,7 @@
+/tmp/codegemma7b-str_concat-py-cpp.cpp:13:21: error: expected expression
+   13 |   cout << join(",", {s1, "world", "mom"}) << endl;
+      |                     ^
+/tmp/codegemma7b-str_concat-py-cpp.cpp:15:18: error: expected expression
+   15 |   s2 = join(",", {s1, "world", "mom"});
+      |                  ^
+2 errors generated.

@@ -1,0 +1,7 @@
+/tmp/Factor.java:38: error: incompatible types: Object cannot be converted to int
+            Integer.compare(a, b)); // sorts the factors into numerical order for viewing purposes
+                            ^
+Note: /tmp/Factor.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

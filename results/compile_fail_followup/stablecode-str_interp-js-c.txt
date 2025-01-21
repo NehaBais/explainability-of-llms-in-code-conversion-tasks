@@ -1,0 +1,32 @@
+/tmp/stablecode-str_interp-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_interp-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_interp-js-c.c:8:15: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   char *ptr = strstr(original, "X"));
+      |               ^
+/tmp/stablecode-str_interp-js-c.c:8:15: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/stablecode-str_interp-js-c.c:8:36: error: extraneous ')' before ';'
+    8 |   char *ptr = strstr(original, "X"));
+      |                                    ^
+/tmp/stablecode-str_interp-js-c.c:9:14: error: use of undeclared identifier 'NULL'
+    9 |   if (ptr != NULL) {
+      |              ^
+/tmp/stablecode-str_interp-js-c.c:13:5: error: call to undeclared library function 'strncpy' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     strncpy(ptr, little, strlen(little)));
+      |     ^
+/tmp/stablecode-str_interp-js-c.c:13:5: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/tmp/stablecode-str_interp-js-c.c:13:26: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     strncpy(ptr, little, strlen(little)));
+      |                          ^
+/tmp/stablecode-str_interp-js-c.c:13:26: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/stablecode-str_interp-js-c.c:13:41: error: extraneous ')' before ';'
+   13 |     strncpy(ptr, little, strlen(little)));
+      |                                         ^
+/tmp/stablecode-str_interp-js-c.c:17:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   printf("Modified string: %s\n", original);
+      |   ^
+/tmp/stablecode-str_interp-js-c.c:17:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+9 errors generated.

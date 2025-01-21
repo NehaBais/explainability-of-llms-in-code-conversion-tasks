@@ -1,0 +1,6 @@
+/tmp/Main.java:11: error: bad operand types for binary operator '!='
+    System.out.println("Does s1 contain s2? " + s1.indexOf(s2) != -1);
+                                                               ^
+  first type:  String
+  second type: int
+1 error

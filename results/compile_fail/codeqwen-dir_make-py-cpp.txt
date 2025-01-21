@@ -1,0 +1,7 @@
+/tmp/codeqwen-dir_make-py-cpp.cpp:3:21: error: no member named 'experimental' in namespace 'std'
+    3 | namespace fs = std::experimental::filesystem;
+      |                ~~~~~^
+/tmp/codeqwen-dir_make-py-cpp.cpp:5:40: error: use of undeclared identifier 'fs'
+    5 | void mkdirp(const std::string &path) { fs::create_directories(path); }
+      |                                        ^
+2 errors generated.

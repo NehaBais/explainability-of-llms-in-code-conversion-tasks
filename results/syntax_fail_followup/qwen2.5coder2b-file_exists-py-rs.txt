@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `path_exists` in module `fs`
+ --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:6:16
+  |
+6 |         if fs::path_exists("input.txt") {
+  |                ^^^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `path_exists` in module `fs`
+  --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:13:16
+   |
+13 |         if fs::path_exists("/input.txt") {
+   |                ^^^^^^^^^^^ not found in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,4 +1,7 @@
-let str = "my String"; // string variable equal to any text value.
+let str = "my String";
 const cstr = "Changed ";
+
+// Prepend the string literal to the existing string variable
 str = cstr + str;
+
 console.log(str);

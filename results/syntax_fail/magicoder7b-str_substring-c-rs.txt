@@ -1,0 +1,21 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:43:25
+   |
+43 | fn str_fromstr(s: &str, in: &str, m: usize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:44:60
+   |
+44 |     let in_index = s.as_bytes().iter().position(|&x| x == *in.as_bytes().first()?)?;
+   |                                                 ----       ^^ expected expression
+   |                                                 |
+   |                                                 while parsing the body of this closure
+   |
+help: you might have meant to open the body of the closure
+   |
+44 |     let in_index = s.as_bytes().iter().position(|&x| { x == *in.as_bytes().first()?})?;
+   |                                                      +                             +
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,52 @@
+/tmp/stablecode-str_concat-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_concat-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_concat-c-cpp.cpp:4:20: error: use of undeclared identifier 'std'
+    4 | void sconcat(const std::string &s1, const std::string &s2) {
+      |                    ^
+/tmp/stablecode-str_concat-c-cpp.cpp:4:43: error: use of undeclared identifier 'std'
+    4 | void sconcat(const std::string &s1, const std::string &s2) {
+      |                                           ^
+/tmp/stablecode-str_concat-c-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string s0 = new char[strlen(s1.c_str()) + strlen(s2.c_str()) + 1];
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:6:3: error: use of undeclared identifier 'strcpy'
+    6 |   strcpy(static_cast<char*>(const_cast<void*>(s0))))), s1.c_str());
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:6:52: error: expected ';' after expression
+    6 |   strcpy(static_cast<char*>(const_cast<void*>(s0))))), s1.c_str());
+      |                                                    ^
+      |                                                    ;
+/tmp/stablecode-str_concat-c-cpp.cpp:6:52: error: expected expression
+/tmp/stablecode-str_concat-c-cpp.cpp:7:3: error: use of undeclared identifier 'strcat'
+    7 |   strcat(static_cast<char*>(const_cast<void*>(s0))))), s2.c_str()));
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:7:52: error: expected ';' after expression
+    7 |   strcat(static_cast<char*>(const_cast<void*>(s0))))), s2.c_str()));
+      |                                                    ^
+      |                                                    ;
+/tmp/stablecode-str_concat-c-cpp.cpp:7:52: error: expected expression
+/tmp/stablecode-str_concat-c-cpp.cpp:8:53: error: expected ';' after expression
+    8 |   delete[] static_cast<char*>(const_cast<void*>(s0)))));
+      |                                                     ^
+      |                                                     ;
+/tmp/stablecode-str_concat-c-cpp.cpp:8:53: error: expected expression
+/tmp/stablecode-str_concat-c-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::string s = "hello";
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::string s2;
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << "\"" << s << "\" literal\n";
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:17:3: error: use of undeclared identifier 'std'
+   17 |   std::cout << "\"" << s << " \" literal\n";
+      |   ^
+/tmp/stablecode-str_concat-c-cpp.cpp:19:14: error: use of undeclared identifier 'std'
+   19 |   sconcat(s, std::string(" literal"));
+      |              ^
+18 errors generated.

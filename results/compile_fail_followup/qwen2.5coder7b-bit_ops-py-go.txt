@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:31:99: cannot use width (variable of type uint) as uint8 value in argument to asr
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:31:106: cannot use aRot (variable of type uint8) as uint value in argument to asr
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:32:97: cannot use width (variable of type uint) as uint8 value in argument to asr
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:32:104: cannot use aa (variable of type uint8) as uint value in argument to asr
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:33:99: cannot use width (variable of type uint) as uint8 value in argument to asr
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:33:106: cannot use aRot (variable of type uint8) as uint value in argument to asr

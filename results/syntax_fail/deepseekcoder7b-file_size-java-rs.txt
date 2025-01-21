@@ -1,0 +1,22 @@
+error: invalid format string: expected `'}'`, found `','`
+ --> /tmp/deepseekcoder7b-file_size-java-rs.rs:6:32
+  |
+6 |         Ok(val) => println!("{:,} B", val.len()),
+  |                              - ^ expected `'}'` in format string
+  |                              |
+  |                              because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `','`
+  --> /tmp/deepseekcoder7b-file_size-java-rs.rs:12:32
+   |
+12 |         Ok(val) => println!("{:,} B", val.len()),
+   |                              - ^ expected `'}'` in format string
+   |                              |
+   |                              because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: aborting due to 2 previous errors
+

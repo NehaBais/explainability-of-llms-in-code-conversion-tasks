@@ -1,0 +1,6 @@
+/tmp/Main.java:29: error: cannot find symbol
+    return Files.createDirectories(dPath).thenCompose(path -> Files.createFile(fPath));
+                                         ^
+  symbol:   method thenCompose((path)->Fi[...]Path))
+  location: interface Path
+1 error

@@ -1,0 +1,45 @@
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:10:25
+   |
+10 |         .read_line(&mut First)
+   |                         ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:16:28
+   |
+16 |     let first: i32 = match First.trim().parse() {
+   |                            ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:26:31
+   |
+26 |     println!("The sum is {}", First + Second);
+   |                               ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:27:38
+   |
+27 |     println!("The difference is {}", First - Second);
+   |                                      ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:28:35
+   |
+28 |     println!("The product is {}", First * Second);
+   |                                   ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:29:44
+   |
+29 |     println!("The integer quotient is {}", First / Second);
+   |                                            ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:30:37
+   |
+30 |     println!("The remainder is {}", First % Second);
+   |                                     ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error: aborting due to 7 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

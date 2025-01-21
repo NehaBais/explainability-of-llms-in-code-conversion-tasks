@@ -1,0 +1,19 @@
+/tmp/codellama7b-str_substring-py-cpp.cpp:8:8: error: cannot combine with previous 'char' declaration specifier
+    8 |   char char, chars[2];
+      |        ^
+/tmp/codellama7b-str_substring-py-cpp.cpp:8:12: error: expected unqualified-id
+    8 |   char char, chars[2];
+      |            ^
+/tmp/codellama7b-str_substring-py-cpp.cpp:24:14: error: expected '(' for function-style cast or type construction
+   24 |   cin >> char;
+      |          ~~~~^
+/tmp/codellama7b-str_substring-py-cpp.cpp:25:21: error: expected '(' for function-style cast or type construction
+   25 |   indx = s.find(char);
+      |                 ~~~~^
+/tmp/codellama7b-str_substring-py-cpp.cpp:34:10: error: use of undeclared identifier 'chars'
+   34 |   cin >> chars;
+      |          ^
+/tmp/codellama7b-str_substring-py-cpp.cpp:35:17: error: use of undeclared identifier 'chars'
+   35 |   indx = s.find(chars);
+      |                 ^
+6 errors generated.

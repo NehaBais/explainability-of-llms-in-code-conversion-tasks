@@ -1,0 +1,30 @@
+error: 4 positional arguments in format string, but there are 3 arguments
+  --> /tmp/codellama7b-str_match-go-rs.rs:16:22
+   |
+16 |         println!("2. {} contains {}: {:?}, at location {}", first, second, i);
+   |                      ^^          ^^  ^^^^              ^^   -----  ------  -
+
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-str_match-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0369]: cannot add `{integer}` to `Option<usize>`
+  --> /tmp/codellama7b-str_match-go-rs.rs:17:25
+   |
+17 |         for start in (i + 1).. {
+   |                       - ^ - {integer}
+   |                       |
+   |                       Option<usize>
+   |
+note: the foreign item type `Option<usize>` doesn't implement `Add<{integer}>`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/option.rs:571:1
+   |
+   = note: not implement `Add<{integer}>`
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0369`.

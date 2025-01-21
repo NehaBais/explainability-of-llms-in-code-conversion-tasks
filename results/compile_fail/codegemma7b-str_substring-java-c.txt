@@ -1,0 +1,25 @@
+/tmp/codegemma7b-str_substring-java-c.c:5:13: error: conflicting types for 'substr'
+    5 | const char *substr(const char *str, size_t n) { return str + n; }
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:3:13: note: previous definition is here
+    3 | const char *substr(const char *str, size_t n, size_t m) { return str + n; }
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:7:13: error: conflicting types for 'substr'
+    7 | const char *substr(const char *str) { return str; }
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:3:13: note: previous definition is here
+    3 | const char *substr(const char *str, size_t n, size_t m) { return str + n; }
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:9:13: error: conflicting types for 'substr'
+    9 | const char *substr(const char *str, char c, size_t m) {
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:3:13: note: previous definition is here
+    3 | const char *substr(const char *str, size_t n, size_t m) { return str + n; }
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:14:13: error: conflicting types for 'substr'
+   14 | const char *substr(const char *str, const char *sub, size_t m) {
+      |             ^
+/tmp/codegemma7b-str_substring-java-c.c:3:13: note: previous definition is here
+    3 | const char *substr(const char *str, size_t n, size_t m) { return str + n; }
+      |             ^
+4 errors generated.

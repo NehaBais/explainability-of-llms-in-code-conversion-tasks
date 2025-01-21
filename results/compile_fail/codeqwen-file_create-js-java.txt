@@ -1,0 +1,13 @@
+/tmp/Main.java:15: error: illegal start of expression
+        Files.createFile(file, FileAttribute<?>[] {});
+                                                  ^
+/tmp/Main.java:15: error: illegal start of expression
+        Files.createFile(file, FileAttribute<?>[] {});
+                                                    ^
+/tmp/Main.java:20: error: illegal start of expression
+        Files.createDirectory(dir, FileAttribute<?>[] {});
+                                                      ^
+/tmp/Main.java:20: error: illegal start of expression
+        Files.createDirectory(dir, FileAttribute<?>[] {});
+                                                        ^
+4 errors

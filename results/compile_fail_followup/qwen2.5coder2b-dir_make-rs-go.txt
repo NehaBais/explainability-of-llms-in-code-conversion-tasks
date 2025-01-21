@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-dir_make-rs-go.go:23:20: undefined: strings

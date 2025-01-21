@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-dir_make-java-c.c:11:57: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     fprintf(stderr, "Failed to create directory: %s\n", strerror(errno));
+      |                                                         ^
+/tmp/dolphincoder7b-dir_make-java-c.c:11:57: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/dolphincoder7b-dir_make-java-c.c:11:66: error: use of undeclared identifier 'errno'
+   11 |     fprintf(stderr, "Failed to create directory: %s\n", strerror(errno));
+      |                                                                  ^
+2 errors generated.

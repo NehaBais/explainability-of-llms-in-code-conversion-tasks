@@ -1,0 +1,13 @@
+/tmp/yicoder2b-file_rename-java-c.c:14:15: error: variable has incomplete type 'struct stat'
+   14 |   struct stat st;
+      |               ^
+/tmp/yicoder2b-file_rename-java-c.c:14:10: note: forward declaration of 'struct stat'
+   14 |   struct stat st;
+      |          ^
+/tmp/yicoder2b-file_rename-java-c.c:15:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (stat(dirname, &st) == 0 &&
+      |       ^
+/tmp/yicoder2b-file_rename-java-c.c:16:7: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |       S_ISDIR(st.st_mode)) { // If directory exists and is a directory
+      |       ^
+3 errors generated.

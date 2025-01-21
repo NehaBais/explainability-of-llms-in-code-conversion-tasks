@@ -1,0 +1,8 @@
+/tmp/qwen2.5coder2b-str_concat-java-c.c:7:15: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   char s2[] = strcat(s, " literal"); // Concatenate another string literal and
+      |               ^
+/tmp/qwen2.5coder2b-str_concat-java-c.c:7:15: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/qwen2.5coder2b-str_concat-java-c.c:7:8: error: array initializer must be an initializer list or string literal
+    7 |   char s2[] = strcat(s, " literal"); // Concatenate another string literal and
+      |        ^
+2 errors generated.

@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `create_directories` in module `fs`
+ --> /tmp/codellama7b-dir_make-cpp-rs.rs:9:19
+  |
+9 |     } else if fs::create_directories(&path_to_create) {
+  |                   ^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

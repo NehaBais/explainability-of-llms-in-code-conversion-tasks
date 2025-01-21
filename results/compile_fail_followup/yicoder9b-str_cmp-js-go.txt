@@ -1,0 +1,1 @@
+/tmp/yicoder9b-str_cmp-js-go.go:2:15: expected ';', found "strings"

@@ -1,0 +1,4 @@
+/tmp/codegemma7b-file_create-go-cpp.cpp:18:8: error: use of undeclared identifier 'filesystem'
+   18 |   if (!filesystem::create_directory(dn)) {
+      |        ^
+1 error generated.

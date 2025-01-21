@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-dir_make-java-c.c:12:66: error: use of undeclared identifier 'errno'
+   12 |     fprintf(stderr, "Failed to create directory: %s\n", strerror(errno));
+      |                                                                  ^
+1 error generated.

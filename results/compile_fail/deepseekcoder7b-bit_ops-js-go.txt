@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:4: use of package fmt not in selector
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:8: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:8: undefined: ｜begin▁of▁sentence｜
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:16: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:32: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-js-go.go:10:36: undefined: kipfmt

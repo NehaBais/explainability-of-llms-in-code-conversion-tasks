@@ -1,0 +1,22 @@
+/tmp/Main.java:12: error: ';' expected
+        System.out.println("a and b: " + (a & b))));
+                                                 ^
+/tmp/Main.java:13: error: ';' expected
+        System.out.println("a or b: " + (a | b))));
+                                                ^
+/tmp/Main.java:14: error: ';' expected
+        System.out.println("a xor b: " + (a ^ b))));
+                                                 ^
+/tmp/Main.java:15: error: ';' expected
+        System.out.println("not a: " + ~a));
+                                          ^
+/tmp/Main.java:16: error: ';' expected
+        System.out.println("a << n: " + (a << b))));  /* left shift */
+                                                 ^
+/tmp/Main.java:17: error: ';' expected
+        System.out.println("a >> n: " + ((int) a >> b))));  /* arithmetic right shift on Java, not just C++ */
+                                                       ^
+/tmp/Main.java:20: error: ';' expected
+        System.out.println("c >> b: " + (c >> b)))); /* logical right shift */
+                                                 ^
+7 errors

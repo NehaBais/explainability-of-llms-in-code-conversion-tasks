@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-str_append-c-cpp.cpp:13:5: error: use of undeclared identifier 'strcat_s'
+   13 |     strcat_s(str, sizeof(str), cstr.c_str());
+      |     ^
+/tmp/dolphincoder7b-str_append-c-cpp.cpp:17:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   17 |     sprintf(&str[x], "%s", cstr2.c_str());
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:274:1: note: 'sprintf' has been explicitly marked deprecated here
+  274 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning and 1 error generated.

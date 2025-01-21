@@ -1,0 +1,25 @@
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:18:7: error: use of undeclared identifier 'str'
+   18 |   if (str != NULL && str.find('b') != -1) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:18:22: error: use of undeclared identifier 'str'
+   18 |   if (str != NULL && str.find('b') != -1) {
+      |                      ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:19:32: error: use of undeclared identifier 'str'
+   19 |     for (int i = 0; i < m && s[str.find('b')] != '\0'; ++i) {
+      |                                ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:20:22: error: use of undeclared identifier 'str'
+   20 |       printf("%c", s[str.find('b') + i]);
+      |                      ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:26:7: error: use of undeclared identifier 'str'
+   26 |   if (str != NULL && str.find("けd") != -1) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:26:22: error: use of undeclared identifier 'str'
+   26 |   if (str != NULL && str.find("けd") != -1) {
+      |                      ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:27:32: error: use of undeclared identifier 'str'
+   27 |     for (int i = 0; i < m && s[str.find("けd")] != '\0'; ++i) {
+      |                                ^
+/tmp/qwen2.5coder2b-str_substring-rs-c.c:28:22: error: use of undeclared identifier 'str'
+   28 |       printf("%c", s[str.find("けd") + i]);
+      |                      ^
+8 errors generated.

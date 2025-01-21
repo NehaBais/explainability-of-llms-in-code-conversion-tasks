@@ -1,0 +1,13 @@
+/tmp/codeqwen-bit_ops-py-c.c:7:51: error: function definition is not allowed here
+    7 |   void bitwise_built_ins(int width, int A, int b) {
+      |                                                   ^
+/tmp/codeqwen-bit_ops-py-c.c:16:39: error: function definition is not allowed here
+   16 |   void helper_funcs(int width, int A) {
+      |                                       ^
+/tmp/codeqwen-bit_ops-py-c.c:27:3: error: call to undeclared function 'bitwise_built_ins'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   27 |   bitwise_built_ins(width, A, b);
+      |   ^
+/tmp/codeqwen-bit_ops-py-c.c:28:3: error: call to undeclared function 'helper_funcs'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   helper_funcs(width, A);
+      |   ^
+4 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-file_rename-java-go.go:15:4: syntax error: unexpected if, expected expression

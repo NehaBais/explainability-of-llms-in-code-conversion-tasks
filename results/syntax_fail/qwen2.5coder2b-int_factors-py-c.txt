@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-int_factors-py-c.c:6:25: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   int *factors = (int *)malloc(n * sizeof(int));
+      |                         ^
+/tmp/qwen2.5coder2b-int_factors-py-c.c:6:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/qwen2.5coder2b-int_factors-py-c.c:24:14: error: expected ';' in 'for' statement specifier
+   24 |   for (int i : numbers) {
+      |              ^
+/tmp/qwen2.5coder2b-int_factors-py-c.c:24:14: error: expected expression
+/tmp/qwen2.5coder2b-int_factors-py-c.c:35:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   35 |     free(factors); // Don't forget to free the memory allocated by the function
+      |     ^
+/tmp/qwen2.5coder2b-int_factors-py-c.c:35:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+4 errors generated.

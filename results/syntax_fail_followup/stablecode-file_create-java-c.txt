@@ -1,0 +1,44 @@
+/tmp/stablecode-file_create-java-c.c:7:5: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     getcwd(currDir, sizeof(currDir)));
+      |     ^
+/tmp/stablecode-file_create-java-c.c:7:37: error: extraneous ')' before ';'
+    7 |     getcwd(currDir, sizeof(currDir)));
+      |                                     ^
+/tmp/stablecode-file_create-java-c.c:19:48: error: extraneous ')' before ';'
+   19 |     result = asprintf(&rootPath, "%s", currDir));
+      |                                                ^
+/tmp/stablecode-file_create-java-c.c:29:60: error: extraneous ')' before ';'
+   29 |     result = asprintf(&filePath1, "%s/output.txt", currDir));
+      |                                                            ^
+/tmp/stablecode-file_create-java-c.c:36:61: error: extraneous ')' before ';'
+   36 |     result = asprintf(&filePath2, "%s/output.txt", rootPath));
+      |                                                             ^
+/tmp/stablecode-file_create-java-c.c:43:53: error: extraneous ')' before ';'
+   43 |     result = asprintf(&dirPath1, "%s/docs", currDir));
+      |                                                     ^
+/tmp/stablecode-file_create-java-c.c:50:54: error: extraneous ')' before ';'
+   50 |     result = asprintf(&dirPath2, "%s/docs", rootPath));
+      |                                                      ^
+/tmp/stablecode-file_create-java-c.c:61:34: error: extraneous ')' before ';'
+   61 |     file1 = fopen(filePath1, "w"));
+      |                                  ^
+/tmp/stablecode-file_create-java-c.c:63:64: error: extraneous ')' before ';'
+   63 |         fprintf(stderr, "Failed to create file: %s", filePath1));
+      |                                                                ^
+/tmp/stablecode-file_create-java-c.c:68:34: error: extraneous ')' before ';'
+   68 |     file2 = fopen(filePath2, "w"));
+      |                                  ^
+/tmp/stablecode-file_create-java-c.c:70:64: error: extraneous ')' before ';'
+   70 |         fprintf(stderr, "Failed to create file: %s", filePath2));
+      |                                                                ^
+/tmp/stablecode-file_create-java-c.c:77:68: error: extraneous ')' before ';'
+   77 |         fprintf(stderr, "Failed to create directory: %s", dirPath1));
+      |                                                                    ^
+/tmp/stablecode-file_create-java-c.c:84:68: error: extraneous ')' before ';'
+   84 |         fprintf(stderr, "Failed to create directory: %s", dirPath2));
+      |                                                                    ^
+/tmp/stablecode-file_create-java-c.c:88:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   88 |     free(filePath1);
+      |     ^
+/tmp/stablecode-file_create-java-c.c:88:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+14 errors generated.

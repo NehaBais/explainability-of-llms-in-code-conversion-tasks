@@ -1,0 +1,46 @@
+/tmp/stablecode-int_factors-rs-cpp.cpp:5:23: error: a space is required between consecutive right angle brackets (use '> >')
+    5 | std::vector < int32_t >> factor(int32_t num) {
+      |                       ^~
+      |                       > >
+/tmp/stablecode-int_factors-rs-cpp.cpp:5:24: error: expected unqualified-id
+    5 | std::vector < int32_t >> factor(int32_t num) {
+      |                        ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:12:4: error: expected unqualified-id
+   12 |   });
+      |    ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:13:1: error: extraneous closing brace ('}')
+   13 | }
+      | ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:1: error: extraneous closing brace ('}')
+   14 | }
+      | ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:10: error: a type specifier is required for all declarations
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |          ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:15: error: use of undeclared identifier 'factors'
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |               ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:32: error: use of undeclared identifier 'factors'
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |                                ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:51: error: expected unqualified-id
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |                                                   ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:51: error: expected ')'
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:50: note: to match this '('
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |                                                  ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:84: error: expected ';' after top level declarator
+   16 |     std::sort(factors.begin(), factors.end()), [](const auto& lhs, const auto& rhs) {
+      |                                                                                    ^
+      |                                                                                    ;
+/tmp/stablecode-int_factors-rs-cpp.cpp:18:6: error: expected unqualified-id
+   18 |     });
+      |      ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:20:5: error: expected unqualified-id
+   20 |     return factors;
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:21:5: error: extraneous closing brace ('}')
+   21 |     }
+      |     ^
+14 errors generated.

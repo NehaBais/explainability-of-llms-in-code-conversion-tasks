@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-str_concat-cpp-go.go:9:30: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_concat-cpp-go.go:12:20: syntax error: unexpected ) at end of statement

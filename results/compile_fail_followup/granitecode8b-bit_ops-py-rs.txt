@@ -1,0 +1,69 @@
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:28:9
+   |
+25 |         "    NOT:     ~ 0b{:0width$b} = 0b{:0width$b}",
+   |         ---------------------------------------------- formatting specifier missing
+...
+28 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:41:9
+   |
+35 |         "rotl:     0b{:0width$b} << {:0rotate$b} | 0b{:0a$b} >> {:0n$b} = 0b{:0result$b}",
+   |         --------------------------------------------------------------------------------- formatting specifier missing
+...
+41 |         (a >> shift) | ((a << rotate) & mask)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:50:9
+   |
+44 |         "rotr:     0b{:0width$b} >> {:0rotate$b} | 0b{:0a$b} << {:0n$b} = 0b{:0result$b}",
+   |         --------------------------------------------------------------------------------- formatting specifier missing
+...
+50 |         (a << shift) & mask | (a >> rotate)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:35:80
+   |
+35 |         "rotl:     0b{:0width$b} << {:0rotate$b} | 0b{:0a$b} >> {:0n$b} = 0b{:0result$b}",
+   |                                                                                ^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:44:80
+   |
+44 |         "rotr:     0b{:0width$b} >> {:0rotate$b} | 0b{:0a$b} << {:0n$b} = 0b{:0result$b}",
+   |                                                                                ^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:54:61
+   |
+54 |         " wrapping_shr:     0b{:0width$b} >> {:0n$b} = 0b{:0result$b}",
+   |                                                             ^^^^^^ not found in this scope
+
+error[E0599]: no method named `try_into` found for type `usize` in the current scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:57:35
+   |
+57 |         (a as i32).wrapping_shr(n.try_into().unwrap()) as u32
+   |                                   ^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+   |
+   = note: the method is available for `usize` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+   = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::convert::TryInto;
+   |
+help: there is a method `into` with a similar name
+   |
+57 |         (a as i32).wrapping_shr(n.into().unwrap()) as u32
+   |                                   ~~~~
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0425, E0599.
+For more information about an error, try `rustc --explain E0425`.

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-bit_ops-cpp-go.go:31:6: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-cpp-go.go:31:14: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-bit_ops-cpp-go.go:31:30: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-cpp-go.go:31:42: syntax error: unexpected literal "a ror b: " at end of statement

@@ -1,0 +1,28 @@
+/tmp/stablecode-str_substring-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_substring-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_substring-cpp-c.c:12:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("%.*s\n", m, strstr(s, &c[0])) + n);
+      |     ^
+/tmp/stablecode-str_substring-cpp-c.c:12:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-str_substring-cpp-c.c:12:25: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("%.*s\n", m, strstr(s, &c[0])) + n);
+      |                         ^
+/tmp/stablecode-str_substring-cpp-c.c:12:25: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/stablecode-str_substring-cpp-c.c:12:37: error: subscripted value is not an array, pointer, or vector
+   12 |     printf("%.*s\n", m, strstr(s, &c[0])) + n);
+      |                                    ~^~
+/tmp/stablecode-str_substring-cpp-c.c:13:30: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     printf("%.*s\n", m, s + (strlen(s) - 1)));
+      |                              ^
+/tmp/stablecode-str_substring-cpp-c.c:13:30: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/stablecode-str_substring-cpp-c.c:13:45: error: extraneous ')' before ';'
+   13 |     printf("%.*s\n", m, s + (strlen(s) - 1)));
+      |                                             ^
+/tmp/stablecode-str_substring-cpp-c.c:14:41: warning: expression result unused [-Wunused-value]
+   14 |     printf("%.*s\n", m, strstr(s, sub)) + n;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+1 warning and 7 errors generated.

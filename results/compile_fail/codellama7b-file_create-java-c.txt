@@ -1,0 +1,31 @@
+/tmp/codellama7b-file_create-java-c.c:24:3: error: use of undeclared identifier 'DIR'
+   24 |   DIR *doc_dir = opendir("docs");
+      |   ^
+/tmp/codellama7b-file_create-java-c.c:24:8: error: use of undeclared identifier 'doc_dir'
+   24 |   DIR *doc_dir = opendir("docs");
+      |        ^
+/tmp/codellama7b-file_create-java-c.c:24:18: error: call to undeclared function 'opendir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |   DIR *doc_dir = opendir("docs");
+      |                  ^
+/tmp/codellama7b-file_create-java-c.c:25:7: error: use of undeclared identifier 'doc_dir'
+   25 |   if (doc_dir == NULL) {
+      |       ^
+/tmp/codellama7b-file_create-java-c.c:29:3: error: call to undeclared function 'closedir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |   closedir(doc_dir);
+      |   ^
+/tmp/codellama7b-file_create-java-c.c:29:12: error: use of undeclared identifier 'doc_dir'
+   29 |   closedir(doc_dir);
+      |            ^
+/tmp/codellama7b-file_create-java-c.c:32:3: error: use of undeclared identifier 'DIR'
+   32 |   DIR *root_doc_dir = opendir("/docs");
+      |   ^
+/tmp/codellama7b-file_create-java-c.c:32:8: error: use of undeclared identifier 'root_doc_dir'
+   32 |   DIR *root_doc_dir = opendir("/docs");
+      |        ^
+/tmp/codellama7b-file_create-java-c.c:33:7: error: use of undeclared identifier 'root_doc_dir'
+   33 |   if (root_doc_dir == NULL) {
+      |       ^
+/tmp/codellama7b-file_create-java-c.c:37:12: error: use of undeclared identifier 'root_doc_dir'
+   37 |   closedir(root_doc_dir);
+      |            ^
+10 errors generated.

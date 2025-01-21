@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-c-go.go:17:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-c-go.go:18:38: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-c-go.go:19:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-c-go.go:20:64: newline in string
+/tmp/stablecode-int_arith-c-go.go:20:64: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-int_arith-c-go.go:22:3: invalid character U+005C '\'
+/tmp/stablecode-int_arith-c-go.go:22:18: newline in string
+/tmp/stablecode-int_arith-c-go.go:23:63: newline in string
+/tmp/stablecode-int_arith-c-go.go:25:3: invalid character U+005C '\'
+/tmp/stablecode-int_arith-c-go.go:25:19: newline in string
+/tmp/stablecode-int_arith-c-go.go:25:19: too many errors

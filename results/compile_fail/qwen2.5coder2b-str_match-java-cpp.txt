@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-str_match-java-cpp.cpp:20:3: error: use of undeclared identifier 'boolendsWith'
+   20 |   boolendsWith =
+      |   ^
+/tmp/qwen2.5coder2b-str_match-java-cpp.cpp:22:51: error: use of undeclared identifier 'endsWith'
+   22 |   std::cout << "Ends with '" << str2 << "'? " << (endsWith ? "true" : "false")
+      |                                                   ^
+2 errors generated.

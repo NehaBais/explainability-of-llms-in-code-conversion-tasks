@@ -2,36 +2,39 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 )
 
-func FileExists(path string) bool {
-	info, err := os.Stat(path)
-	if os.IsNotExist(err) {
-		return false
-	} else if err != nil {
-		log.Fatal("Error checking for file: ", err)
-	}
-	return !info.Mode().IsDir()
-}
-
-func DirExists(path string) bool {
-	info, err := os.Stat(path)
-	if os.IsNotExist(err) {
-		return false
-	} else if err != nil {
-		log.Fatal("Error checking for directory: ", err)
-	}
-	return info.Mode().IsDir()
-}
-
 func main() {
-	fmt.Println("Checking current working dir:")
-	FileExists("./input.txt")
-	DirExists("./docs")
+	// Check for input.txt in the current working directory
+	_, err := os.Stat("input.txt")
+	if os.IsNotExist(err) {
+		fmt.Println("input.txt does not exist in the current working directory")
+	} else {
+		fmt.Println("input.txt exists in the current working directory")
+	}
 
-	fmt.Println("\nChecking root of the filesystem:")
-	FileExists("/input.txt")
-	DirExists("/docs")
+	// Check for input.txt in the filesystem root (assuming Windows path syntax)
+	_, err = os.Stat("C:/input.txt")
+	if os.IsNotExist(err) {
+		fmt.Println("input.txt does not exist in the filesystem root")
+	} else {
+		fmt.Println("input.txt exists in the filesystem root")
+	}
+
+	// Check for docs in the current working directory
+	_, err = os.Stat("docs")
+	if os.IsNotExist(err) {
+		fmt.Println("docs does not exist in the current working directory")
+	} else {
+		fmt.Println("docs exists in the current working directory")
+	}
+
+	// Check for docs in the filesystem root (assuming Windows path syntax)
+	_, err = os.Stat("C:/docs")
+	if os.IsNotExist(err) {
+		fmt.Println("docs does not exist in the filesystem root")
+	} else {
+		fmt.Println("docs exists in the filesystem root")
+	}
 }

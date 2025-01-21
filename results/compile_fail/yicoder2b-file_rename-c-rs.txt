@@ -1,0 +1,56 @@
+error: 3 positional arguments in format string, but there are 2 arguments
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:22:30
+   |
+22 |             "Error renaming '{}' to '{}': {}",
+   |                              ^^      ^^   ^^
+23 |             format!("{}{}", mdirs.as_str(), src.as_str()),
+   |             ---------------------------------------------
+24 |             format!("{}{}", mdirs.as_str(), dst.as_str())
+   |             ---------------------------------------------
+
+error: 3 positional arguments in format string, but there are 2 arguments
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:32:30
+   |
+32 |             "Error renaming '{}' to '{}': {}",
+   |                              ^^      ^^   ^^
+33 |             format!("{}{}", mdirs.as_str(), src.as_str()),
+   |             ---------------------------------------------
+34 |             format!("{}{}", mdirs.as_str(), dst.as_str())
+   |             ---------------------------------------------
+
+warning: unused imports: `File` and `read_dir`
+ --> /tmp/yicoder2b-file_rename-c-rs.rs:1:15
+  |
+1 | use std::fs::{read_dir, rename, File};
+  |               ^^^^^^^^          ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::io::prelude::*`
+ --> /tmp/yicoder2b-file_rename-c-rs.rs:2:5
+  |
+2 | use std::io::prelude::*;
+  |     ^^^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `dirs`
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:13:9
+   |
+13 |     let dirs = "docs".to_string();
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_dirs`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `e`
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:17:16
+   |
+17 |     if let Err(e) = rename(
+   |                ^ help: if this is intentional, prefix it with an underscore: `_e`
+
+warning: unused variable: `e`
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:27:16
+   |
+27 |     if let Err(e) = rename(
+   |                ^ help: if this is intentional, prefix it with an underscore: `_e`
+
+error: aborting due to 2 previous errors; 5 warnings emitted
+

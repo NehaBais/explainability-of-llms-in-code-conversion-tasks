@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoderv2-str_match-py-go.go:29:42: too many arguments in call to strings.Index
+	have (string, string, int)
+	want (string, string)

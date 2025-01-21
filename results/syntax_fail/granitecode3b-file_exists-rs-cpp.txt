@@ -1,0 +1,63 @@
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::path path1 = "input.txt";
+      |   ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:6:7: error: use of undeclared identifier 'std'
+    6 |   if (std::filesystem::exists(path1)) {
+      |       ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:7:9: error: use of undeclared identifier 'std'
+    7 |     if (std::filesystem::is_directory(path1)) {
+      |         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:8:7: error: use of undeclared identifier 'std'
+    8 |       std::cout << path1 << " is a directory" << std::endl;
+      |       ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:8:50: error: use of undeclared identifier 'std'
+    8 |       std::cout << path1 << " is a directory" << std::endl;
+      |                                                  ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:10:7: error: use of undeclared identifier 'std'
+   10 |       std::cout << path1 << " is a file" << std::endl;
+      |       ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:10:45: error: use of undeclared identifier 'std'
+   10 |       std::cout << path1 << " is a file" << std::endl;
+      |                                             ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << path1 << " does not exist" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:13:48: error: use of undeclared identifier 'std'
+   13 |     std::cout << path1 << " does not exist" << std::endl;
+      |                                                ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:16:3: error: use of undeclared identifier 'std'
+   16 |   std::filesystem::path path2 = "/input.txt";
+      |   ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:16:25: error: use of undeclared identifier 'path2'; did you mean 'path1'?
+   16 |   std::filesystem::path path2 = "/input.txt";
+      |                         ^~~~~
+      |                         path1
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:5:25: note: 'path1' declared here
+    5 |   std::filesystem::path path1 = "input.txt";
+      |                         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:17:7: error: use of undeclared identifier 'std'
+   17 |   if (std::filesystem::exists(path2)) {
+      |       ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:17:31: error: use of undeclared identifier 'path2'
+   17 |   if (std::filesystem::exists(path2)) {
+      |                               ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:18:9: error: use of undeclared identifier 'std'
+   18 |     if (std::filesystem::is_directory(path2)) {
+      |         ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:18:39: error: use of undeclared identifier 'path2'
+   18 |     if (std::filesystem::is_directory(path2)) {
+      |                                       ^
+/tmp/granitecode3b-file_exists-rs-cpp.cpp:19:7: error: use of undeclared identifier 'std'
+   19 |       std::cout << path2 << " is a directory" << std::endl;
+      |       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

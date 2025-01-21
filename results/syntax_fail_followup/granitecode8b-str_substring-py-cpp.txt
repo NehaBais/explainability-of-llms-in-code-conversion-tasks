@@ -1,0 +1,49 @@
+/tmp/granitecode8b-str_substring-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string s = "abcdefgh";
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:6:8: error: cannot combine with previous 'char' declaration specifier
+    6 |   char char = 'd';
+      |        ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:6:13: error: expected unqualified-id
+    6 |   char char = 'd';
+      |             ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:9:3: error: use of undeclared identifier 'std'
+    9 |   std::cout << s.substr(n - 1, m) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:9:38: error: use of undeclared identifier 'std'
+    9 |   std::cout << s.substr(n - 1, m) << std::endl;
+      |                                      ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::cout << s.substr(n - 1) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:11:35: error: use of undeclared identifier 'std'
+   11 |   std::cout << s.substr(n - 1) << std::endl;
+      |                                   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << s.substr(0, s.length() - 1) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:13:47: error: use of undeclared identifier 'std'
+   13 |   std::cout << s.substr(0, s.length() - 1) << std::endl;
+      |                                               ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:14:25: error: expected '(' for function-style cast or type construction
+   14 |   int indx = s.find(char);
+      |                     ~~~~^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << s.substr(indx, m) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:15:37: error: use of undeclared identifier 'std'
+   15 |   std::cout << s.substr(indx, m) << std::endl;
+      |                                     ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:17:3: error: use of undeclared identifier 'std'
+   17 |   std::cout << s.substr(indx, m) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_substring-py-cpp.cpp:17:37: error: use of undeclared identifier 'std'
+   17 |   std::cout << s.substr(indx, m) << std::endl;
+      |                                     ^
+16 errors generated.

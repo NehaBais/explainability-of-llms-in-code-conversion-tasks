@@ -1,0 +1,19 @@
+/tmp/Main.java:18: error: ')' or ',' expected
+            Files.exists(inputPath, java.nio.file.StandardWatchService watcher);
+                                                                      ^
+/tmp/Main.java:18: error: not a statement
+            Files.exists(inputPath, java.nio.file.StandardWatchService watcher);
+                                                                       ^
+/tmp/Main.java:18: error: ';' expected
+            Files.exists(inputPath, java.nio.file.StandardWatchService watcher);
+                                                                              ^
+/tmp/Main.java:26: error: ')' or ',' expected
+            Files.isDirectory(docsPath, java.nio.file.StandardWatchService watcher);
+                                                                          ^
+/tmp/Main.java:26: error: not a statement
+            Files.isDirectory(docsPath, java.nio.file.StandardWatchService watcher);
+                                                                           ^
+/tmp/Main.java:26: error: ';' expected
+            Files.isDirectory(docsPath, java.nio.file.StandardWatchService watcher);
+                                                                                  ^
+6 errors

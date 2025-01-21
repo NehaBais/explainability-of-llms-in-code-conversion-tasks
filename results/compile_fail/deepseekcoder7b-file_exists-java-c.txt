@@ -1,0 +1,7 @@
+/tmp/deepseekcoder7b-file_exists-java-c.c:3:44: error: initializer element is not a compile-time constant
+    3 | int fileExists = access("input.txt", F_OK) == 0;
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/tmp/deepseekcoder7b-file_exists-java-c.c:4:38: error: initializer element is not a compile-time constant
+    4 | int dirExists = access("docs", F_OK) == 0;
+      |                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+2 errors generated.

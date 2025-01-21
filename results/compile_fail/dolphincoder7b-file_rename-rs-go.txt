@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_rename-rs-go.go:9:2: declared and not used: err
+/tmp/dolphincoder7b-file_rename-rs-go.go:12:5: undefined: fs.Rename
+/tmp/dolphincoder7b-file_rename-rs-go.go:13:5: undefined: fs.Rename

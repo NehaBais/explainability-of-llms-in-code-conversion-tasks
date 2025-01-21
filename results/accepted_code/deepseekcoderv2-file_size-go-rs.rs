@@ -1,14 +1,14 @@
 use std::fs;
 use std::io;
 
-fn print_file_size(filename: &str) -> Result<(), io::Error> {
-    let stat = fs::metadata(filename)?;
-    println!("{}", stat.len());
-    Ok(())
+fn print_file_size(path: &str) {
+    match fs::metadata(path) {
+        Ok(meta) => println!("{}", meta.len()),
+        Err(e) => eprintln!("Error: {}", e),
+    }
 }
 
-fn main() -> Result<(), io::Error> {
-    print_file_size("input.txt")?;
-    print_file_size("/input.txt")?;
-    Ok(())
+fn main() {
+    print_file_size("input.txt");
+    print_file_size("/input.txt");
 }

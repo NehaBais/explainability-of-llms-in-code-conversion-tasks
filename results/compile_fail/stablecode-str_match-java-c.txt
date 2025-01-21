@@ -1,0 +1,17 @@
+/tmp/stablecode-str_match-java-c.c:10:14: error: member reference base type 'char[6]' is not a structure or union
+   10 |          str1.startsWith(str2) ? "matches" : "doesn't match", str1, str2);
+      |          ~~~~^~~~~~~~~~~
+/tmp/stablecode-str_match-java-c.c:18:7: error: call to undeclared function 'strpos'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   if (strpos(str1, str2)) {
+      |       ^
+/tmp/stablecode-str_match-java-c.c:18:7: note: did you mean 'strtok'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:90:7: note: 'strtok' declared here
+   90 | char    *strtok(char *__str, const char *__sep);
+      |          ^
+/tmp/stablecode-str_match-java-c.c:24:44: error: too few arguments to function call, expected 3, have 2
+   24 |   if (strncmp(str1 + n - strlen(str2), str2)) == 0) {
+      |       ~~~~~~~                              ^
+/tmp/stablecode-str_match-java-c.c:24:47: error: expected expression
+   24 |   if (strncmp(str1 + n - strlen(str2), str2)) == 0) {
+      |                                               ^
+4 errors generated.

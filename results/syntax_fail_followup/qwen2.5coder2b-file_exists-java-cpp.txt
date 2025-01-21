@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-file_exists-java-cpp.cpp:5:26: error: expected ';' at end of declaration
+    5 |   std::ifstream inputFile{"docs/input.txt"};
+      |                          ^
+      |                          ;
+1 error generated.

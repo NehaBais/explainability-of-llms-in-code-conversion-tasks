@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_concat-py-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+2 |     let mut s1 = String::from("hello"));
+  |                                       ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_concat-py-rs.rs:6:48
+  |
+2 |     let mut s1 = String::from("hello"));
+  |                                       - missing open `(` for this delimiter
+...
+6 |     let mut s2 = format!("{}{}", &s1, " world"));
+  |                                                ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

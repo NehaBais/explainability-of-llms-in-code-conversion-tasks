@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-dir_make-js-c.c:1:10: fatal error: 'cstdlib' file not found
+    1 | #include <cstdlib>
+      |          ^~~~~~~~~
+1 error generated.

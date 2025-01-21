@@ -1,0 +1,17 @@
+error: missing type for `const` item
+ --> /tmp/granitecode8b-str_substring-js-rs.rs:2:11
+  |
+2 |  const str = String::from("abcdefgh");
+  |           ^ help: provide a type for the constant: `: String`
+
+error[E0015]: cannot call non-const fn `<String as From<&str>>::from` in constants
+ --> /tmp/granitecode8b-str_substring-js-rs.rs:2:14
+  |
+2 |  const str = String::from("abcdefgh");
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0015`.

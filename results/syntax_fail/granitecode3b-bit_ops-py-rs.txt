@@ -1,0 +1,22 @@
+error: invalid format string: expected `'}'`, found `'('`
+ --> /tmp/granitecode3b-bit_ops-py-rs.rs:6:17
+  |
+6 |            = 0b{(a & b) & mask :0>width}b
+  |                -^ expected `'}'` in format string
+  |                |
+  |                because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'('`
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:72:30
+   |
+72 |                =      0b{asar(width, a, 1):0>width}b      
+   |                         -    ^ expected `'}'` in format string
+   |                         |
+   |                         because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,26 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/dolphincoder7b-str_cmp-go-rs.rs:2:5
+  |
+2 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0599]: no method named `cmp_ignore_ascii_case` found for reference `&str` in the current scope
+  --> /tmp/dolphincoder7b-str_cmp-go-rs.rs:20:22
+   |
+20 |     let ordering = c.cmp_ignore_ascii_case(d);
+   |                      ^^^^^^^^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+20 |     let ordering = c.eq_ignore_ascii_case(d);
+   |                      ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

@@ -1,0 +1,31 @@
+The error occurs because Java's String methods like equals() or indexOf() return boolean values, but we're trying to assign this value directly to an int type variable in our functions.
+
+Fix: We need to convert the boolean result into an integer type before returning it.
+Here is the corrected code block:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Starts with Test ( Hello,Hell ) : " + startsWith("Hello", "Hell"));
+    System.out.println("Ends with Test ( Code,ode ) : " + endsWith("Code", "ode"));
+    System.out.println("Contains Test ( Google,msn ) : " + doesContain("Google", "msn"));
+  }
+
+  public static int startsWith(String container, String target) {
+    int clen = container.length(), tlen = target.length();
+    if (clen < tlen) return 0;
+    return (container.substring(0, tlen).equals(target)) ? 1 : 0; // convert boolean to int
+  }
+
+  public static int endsWith(String container, String target) {
+    int clen = container.length(), tlen = target.length();
+    if (clen < tlen) return 0;
+    return (container.substring(clen - tlen).equals(target)) ? 1 : 0; // convert boolean to int
+  }
+
+  public static int doesContain(String container, String target) {
+    int contains = (container.indexOf(target) != -1) ? 1 : 0; // convert boolean to int
+    return contains;
+  }
+}
+```

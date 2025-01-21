@@ -5,9 +5,12 @@ import (
 )
 
 func main() {
-	string := "def" // string literal assigned to a new string variable
-	fmt.Println("Original String: ", string)
-	// Prepend another string literal with the old one, using += and printing it out
-	string = "abc" + string
-	fmt.Println("New String after prepended: ", string)
+	// Create a string variable equal to any text value.
+	stringVar := "def"
+
+	// Prepend the string variable with another string literal.
+	stringVar = "abc" + stringVar
+
+	// Print the result
+	fmt.Println(stringVar)
 }

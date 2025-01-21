@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-str_substring-cpp-go.go:22:37: cannot use c (variable of type rune) as byte value in argument to strings.IndexByte

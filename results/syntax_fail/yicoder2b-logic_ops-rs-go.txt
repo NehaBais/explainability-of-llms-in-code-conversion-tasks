@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-logic_ops-rs-go.go:11:15: invalid operation: operator ^ not defined on a (variable of type bool)

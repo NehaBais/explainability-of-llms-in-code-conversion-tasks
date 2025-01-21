@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:5: use of package fmt not in selector
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:9: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:9: undefined: ｜begin▁of▁sentence｜
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:17: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:33: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:37: undefined: t
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:78: cannot convert a (variable of type bool) to type int
+/tmp/deepseekcoder7b-logic_ops-rs-go.go:8:85: cannot convert b (variable of type bool) to type int

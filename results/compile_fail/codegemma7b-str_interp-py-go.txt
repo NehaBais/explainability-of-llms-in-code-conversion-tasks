@@ -1,0 +1,1 @@
+/tmp/codegemma7b-str_interp-py-go.go:1:1: expected 'package', found extra

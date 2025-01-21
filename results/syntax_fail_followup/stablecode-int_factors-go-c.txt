@@ -1,0 +1,4 @@
+/tmp/stablecode-int_factors-go-c.c:15:60: error: extraneous ')' before ';'
+   15 |     printf("\nNumber of factors = %d\n", nr - 2 * (nr / 2)));
+      |                                                            ^
+1 error generated.

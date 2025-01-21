@@ -1,0 +1,25 @@
+/tmp/granitecode8b-str_append-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string string = "abc";
+      |   ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << string << endl;
+      |   ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:6:21: error: use of undeclared identifier 'endl'
+    6 |   cout << string << endl;
+      |                     ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << string << endl;
+      |   ^
+/tmp/granitecode8b-str_append-java-cpp.cpp:8:21: error: use of undeclared identifier 'endl'
+    8 |   cout << string << endl;
+      |                     ^
+1 warning and 7 errors generated.

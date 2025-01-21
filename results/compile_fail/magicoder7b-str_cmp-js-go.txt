@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/magicoder7b-str_cmp-js-go.go:6:2: undefined: fmt
+/tmp/magicoder7b-str_cmp-js-go.go:17:19: cannot use strings.Compare("ABCD", "abcd") (value of type int) as string value in argument to strings.ToLower
+/tmp/magicoder7b-str_cmp-js-go.go:17:55: invalid operation: strings.ToLower(strings.Compare("ABCD", "abcd")) == 0 (mismatched types string and untyped int)

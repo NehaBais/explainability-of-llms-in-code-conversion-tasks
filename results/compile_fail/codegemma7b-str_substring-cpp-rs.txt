@@ -1,0 +1,70 @@
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_substring-cpp-rs.rs:14:34
+   |
+14 |     println!("{}", &s[s.find(c)..n + m]);
+   |                                  ^^^^^ expected `Option<usize>`, found `usize`
+   |
+   = note: expected enum `Option<usize>`
+              found type `usize`
+help: try wrapping the expression in `Some`
+   |
+14 |     println!("{}", &s[s.find(c)..Some(n + m)]);
+   |                                  +++++     +
+
+error[E0277]: the type `str` cannot be indexed by `std::ops::Range<Option<usize>>`
+  --> /tmp/codegemma7b-str_substring-cpp-rs.rs:14:23
+   |
+14 |     println!("{}", &s[s.find(c)..n + m]);
+   |                       ^^^^^^^^^^^^^^^^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `std::ops::Range<Option<usize>>`, which is required by `String: Index<_>`
+   = help: the following other types implement trait `SliceIndex<T>`:
+             `std::ops::Range<usize>` implements `SliceIndex<[T]>`
+             `std::ops::Range<usize>` implements `SliceIndex<str>`
+   = note: required for `String` to implement `Index<std::ops::Range<Option<usize>>>`
+
+error[E0277]: the trait bound `String: Pattern` is not satisfied
+  --> /tmp/codegemma7b-str_substring-cpp-rs.rs:15:30
+   |
+15 |     println!("{}", &s[s.find(sub)..n + m]);
+   |                         ---- ^^^ the trait `Pattern` is not implemented for `String`
+   |                         |
+   |                         required by a bound introduced by this call
+   |
+   = note: required for `String` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+help: consider borrowing here
+   |
+15 |     println!("{}", &s[s.find(&sub)..n + m]);
+   |                              +
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_substring-cpp-rs.rs:15:36
+   |
+15 |     println!("{}", &s[s.find(sub)..n + m]);
+   |                                    ^^^^^ expected `Option<usize>`, found `usize`
+   |
+   = note: expected enum `Option<usize>`
+              found type `usize`
+help: try wrapping the expression in `Some`
+   |
+15 |     println!("{}", &s[s.find(sub)..Some(n + m)]);
+   |                                    +++++     +
+
+error[E0277]: the type `str` cannot be indexed by `std::ops::Range<Option<usize>>`
+  --> /tmp/codegemma7b-str_substring-cpp-rs.rs:15:23
+   |
+15 |     println!("{}", &s[s.find(sub)..n + m]);
+   |                       ^^^^^^^^^^^^^^^^^^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `std::ops::Range<Option<usize>>`, which is required by `String: Index<_>`
+   = help: the following other types implement trait `SliceIndex<T>`:
+             `std::ops::Range<usize>` implements `SliceIndex<[T]>`
+             `std::ops::Range<usize>` implements `SliceIndex<str>`
+   = note: required for `String` to implement `Index<std::ops::Range<Option<usize>>>`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

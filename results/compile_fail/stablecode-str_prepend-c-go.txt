@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-str_prepend-c-go.go:13:37: syntax error: unexpected ) at end of statement

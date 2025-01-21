@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-int_arith-cpp-go.go:13:45: undefined: math
+/tmp/codellama7b-int_arith-cpp-go.go:13:55: invalid operation: float64(a) / b (mismatched types float64 and int)

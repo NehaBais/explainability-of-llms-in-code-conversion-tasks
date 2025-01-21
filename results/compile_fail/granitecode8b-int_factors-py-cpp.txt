@@ -1,0 +1,97 @@
+/tmp/granitecode8b-int_factors-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:1: error: unknown type name 'vector'
+    4 | vector factor(int n) {
+      | ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:5:3: error: use of undeclared identifier 'vector'; did you mean 'factor'?
+    5 |   vector factors1, factors2;
+      |   ^~~~~~
+      |   factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:5:9: error: expected ';' after expression
+    5 |   vector factors1, factors2;
+      |         ^
+      |         ;
+/tmp/granitecode8b-int_factors-py-cpp.cpp:5:10: error: use of undeclared identifier 'factors1'; did you mean 'factor'?
+    5 |   vector factors1, factors2;
+      |          ^~~~~~~~
+      |          factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:5:20: error: use of undeclared identifier 'factors2'; did you mean 'factor'?
+    5 |   vector factors1, factors2;
+      |                    ^~~~~~~~
+      |                    factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:6:24: error: use of undeclared identifier 'sqrt'
+    6 |   for (int x = 1; x <= sqrt(n); x++) {
+      |                        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:8:7: error: use of undeclared identifier 'factors1'; did you mean 'factor'?
+    8 |       factors1.push_back(x);
+      |       ^~~~~~~~
+      |       factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:9:7: error: use of undeclared identifier 'factors2'; did you mean 'factor'?
+    9 |       factors2.push_back(n / x);
+      |       ^~~~~~~~
+      |       factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:12:11: error: use of undeclared identifier 'sqrt'
+   12 |   int x = sqrt(n) + 1;
+      |           ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:14:5: error: use of undeclared identifier 'factors1'; did you mean 'factor'?
+   14 |     factors1.push_back(x);
+      |     ^~~~~~~~
+      |     factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:16:16: error: use of undeclared identifier 'factors2'
+   16 |   for (int i = factors2.size() - 1; i >= 0; i--) {
+      |                ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:17:5: error: use of undeclared identifier 'factors1'; did you mean 'factor'?
+   17 |     factors1.push_back(factors2[i]);
+      |     ^~~~~~~~
+      |     factor
+/tmp/granitecode8b-int_factors-py-cpp.cpp:4:8: note: 'factor' declared here
+    4 | vector factor(int n) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:17:24: error: use of undeclared identifier 'factors2'
+   17 |     factors1.push_back(factors2[i]);
+      |                        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:19:10: error: use of undeclared identifier 'factors1'
+   19 |   return factors1;
+      |          ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:22:3: error: use of undeclared identifier 'cout'
+   22 |   cout << "Factors of 45: ";
+      |   ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:23:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : factor(45)) {
+      |        ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:23:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : factor(45)) {
+      |               ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:24:5: error: use of undeclared identifier 'cout'
+   24 |     cout << i << ' ';
+      |     ^
+/tmp/granitecode8b-int_factors-py-cpp.cpp:26:3: error: use of undeclared identifier 'cout'
+   26 |   cout << endl;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+3 warnings and 20 errors generated.

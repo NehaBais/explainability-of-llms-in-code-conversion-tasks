@@ -1,0 +1,12 @@
+/tmp/dolphincoder7b-file_create-py-c.c:9:31: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    9 |   FILE *output = fopen(strcat(directory, "/output.txt"), "w");
+      |                               ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:135:27: note: expanded from macro 'strcat'
+  135 |                 __builtin___strcat_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                         ^~~~
+1 warning generated.
+Undefined symbols for architecture arm64:
+  "_main", referenced from:
+      <initial-undefines>
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

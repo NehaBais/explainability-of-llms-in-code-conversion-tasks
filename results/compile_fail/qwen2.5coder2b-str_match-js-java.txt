@@ -1,0 +1,29 @@
+/tmp/StringMatchingExample.java:14: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB);
+    ^
+  symbol:   class Pattern
+  location: class StringMatchingExample
+/tmp/StringMatchingExample.java:14: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB);
+                      ^
+  symbol:   variable Pattern
+  location: class StringMatchingExample
+/tmp/StringMatchingExample.java:15: error: cannot find symbol
+    Matcher matcher = pattern.matcher(stringA);
+    ^
+  symbol:   class Matcher
+  location: class StringMatchingExample
+/tmp/StringMatchingExample.java:16: error: cannot find symbol
+    List<Integer> q2matches = new ArrayList<>();
+    ^
+  symbol:   class List
+  location: class StringMatchingExample
+/tmp/StringMatchingExample.java:16: error: cannot find symbol
+    List<Integer> q2matches = new ArrayList<>();
+                                  ^
+  symbol:   class ArrayList
+  location: class StringMatchingExample
+/tmp/StringMatchingExample.java:28: error: incompatible types: int cannot be converted to boolean
+    if (~q2) {
+        ^
+6 errors

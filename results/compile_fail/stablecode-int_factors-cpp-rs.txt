@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_factors-cpp-rs.rs:1:41
+  |
+1 | fn generate_factors(n: i32) -> Vec<i32> {
+  |                                         ^ unclosed delimiter
+2 |     let mut factors = vec![1, n];
+3 |     for i in 2..((n as f64).sqrt() as i32 + 1)) {
+  |                                               ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-int_factors-cpp-rs.rs:14:1
+   |
+3  |     for i in 2..((n as f64).sqrt() as i32 + 1)) {
+   |                                               - missing open `(` for this delimiter
+...
+14 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

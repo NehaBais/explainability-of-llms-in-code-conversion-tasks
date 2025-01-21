@@ -1,0 +1,31 @@
+/tmp/stablecode-bit_ops-c-cpp.cpp:6:35: error: reference to overloaded function could not be resolved; did you mean to call it?
+    6 |   cout << "a and b: " << a & b << endl;
+      |                                   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:7:34: error: reference to overloaded function could not be resolved; did you mean to call it?
+    7 |   cout << "a or b: " << a | b << endl;
+      |                                  ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:8:35: error: reference to overloaded function could not be resolved; did you mean to call it?
+    8 |   cout << "a xor b: " << a ^ b << endl;
+      |                                   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:9:24: error: use of undeclared identifier '__builtin_bitnot'; did you mean '__builtin_rint'?
+    9 |   cout << "not a: " << __builtin_bitnot(a)) << endl;
+      |                        ^~~~~~~~~~~~~~~~
+      |                        __builtin_rint
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/rounding_functions.h:193:10: note: '__builtin_rint' declared here
+  193 |   return __builtin_rint(__x);
+      |          ^
+/tmp/stablecode-bit_ops-c-cpp.cpp:9:43: error: expected ';' after expression
+    9 |   cout << "not a: " << __builtin_bitnot(a)) << endl;
+      |                                           ^
+      |                                           ;
+/tmp/stablecode-bit_ops-c-cpp.cpp:9:43: error: expected expression
+6 errors generated.

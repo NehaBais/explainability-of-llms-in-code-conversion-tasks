@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-bit_ops-py-go.go:14:49: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)

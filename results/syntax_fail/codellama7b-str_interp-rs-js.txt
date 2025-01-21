@@ -1,0 +1,9 @@
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_interp-rs-js.js:2
+  console.log("Mary had a " + little" lamb");
+                              ^^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v23.1.0

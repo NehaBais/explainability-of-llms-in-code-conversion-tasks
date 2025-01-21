@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_prepend-cpp-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+5 |     let prepended: String = my_strings.iter().fold(String::new(), |a, b| a + &b));
+  |                                                                                 ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-str_prepend-cpp-rs.rs:7:1
+  |
+5 |     let prepended: String = my_strings.iter().fold(String::new(), |a, b| a + &b));
+  |                                                                                 - missing open `(` for this delimiter
+6 |     println!("{}", prepended);
+7 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,9 @@
+/tmp/granitecode3b-int_factors-rs-c.c:2:26: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 |   int i, sqrt_num = (int)sqrt((float)num);
+      |                          ^
+/tmp/granitecode3b-int_factors-rs-c.c:2:26: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode3b-int_factors-rs-c.c:3:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   int *factors = malloc(
+      |                  ^
+/tmp/granitecode3b-int_factors-rs-c.c:3:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+2 errors generated.

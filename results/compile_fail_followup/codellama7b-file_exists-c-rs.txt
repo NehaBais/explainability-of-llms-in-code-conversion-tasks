@@ -1,0 +1,63 @@
+warning: unused imports: `FileType` and `self`
+ --> /tmp/codellama7b-file_exists-c-rs.rs:2:15
+  |
+2 | use std::fs::{self, FileType};
+  |               ^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `file_type` found for enum `Result` in the current scope
+ --> /tmp/codellama7b-file_exists-c-rs.rs:8:59
+  |
+8 |     if metadata(input_txt).is_ok() && metadata(input_txt).file_type().is_file() {
+  |                                                           ^^^^^^^^^ method not found in `Result<Metadata, Error>`
+  |
+note: the method `file_type` exists on the type `Metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1271:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+  |
+8 |     if metadata(input_txt).is_ok() && metadata(input_txt).expect("REASON").file_type().is_file() {
+  |                                                          +++++++++++++++++
+
+error[E0599]: no method named `file_type` found for enum `Result` in the current scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:16:49
+   |
+16 |     if metadata(docs).is_ok() && metadata(docs).file_type().is_dir() {
+   |                                                 ^^^^^^^^^ method not found in `Result<Metadata, Error>`
+   |
+note: the method `file_type` exists on the type `Metadata`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1271:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+   |
+16 |     if metadata(docs).is_ok() && metadata(docs).expect("REASON").file_type().is_dir() {
+   |                                                +++++++++++++++++
+
+error[E0599]: no method named `file_type` found for enum `Result` in the current scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:24:69
+   |
+24 |     if metadata(input_txt_root).is_ok() && metadata(input_txt_root).file_type().is_file() {
+   |                                                                     ^^^^^^^^^ method not found in `Result<Metadata, Error>`
+   |
+note: the method `file_type` exists on the type `Metadata`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1271:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+   |
+24 |     if metadata(input_txt_root).is_ok() && metadata(input_txt_root).expect("REASON").file_type().is_file() {
+   |                                                                    +++++++++++++++++
+
+error[E0599]: no method named `file_type` found for enum `Result` in the current scope
+  --> /tmp/codellama7b-file_exists-c-rs.rs:32:59
+   |
+32 |     if metadata(docs_root).is_ok() && metadata(docs_root).file_type().is_dir() {
+   |                                                           ^^^^^^^^^ method not found in `Result<Metadata, Error>`
+   |
+note: the method `file_type` exists on the type `Metadata`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1271:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+   |
+32 |     if metadata(docs_root).is_ok() && metadata(docs_root).expect("REASON").file_type().is_dir() {
+   |                                                          +++++++++++++++++
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

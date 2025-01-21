@@ -1,0 +1,12 @@
+/tmp/yicoder9b-bit_ops-py-c.c:17:12: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     return rotl(width, a, -n);
+      |            ^
+/tmp/yicoder9b-bit_ops-py-c.c:17:12: note: did you mean 'rotr'?
+/tmp/yicoder9b-bit_ops-py-c.c:15:5: note: 'rotr' declared here
+   15 | int rotr(unsigned int width, unsigned int a, int n) {
+      |     ^
+   16 |   if (n < 0)
+   17 |     return rotl(width, a, -n);
+      |            ~~~~
+      |            rotr
+1 error generated.

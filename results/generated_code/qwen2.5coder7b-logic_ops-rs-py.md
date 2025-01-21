@@ -1,0 +1,21 @@
+Here is the equivalent Python code for your Rust function:
+
+```python
+def boolean_ops(a: bool, b: bool):
+    print("{} and {} -> {}".format(a, b, a and b))
+    print("{} or {} -> {}".format(a, b, a or b))
+    # Python doesn't have XOR operator like Rust, so we use != to simulate it
+    print("{} xor {} -> {}".format(a, b, a != b))
+    print("not {} -> {}".format(a, not a))
+
+def main():
+    boolean_ops(True, True)
+    boolean_ops(True, False)
+    boolean_ops(False, True)
+    boolean_ops(False, False)
+
+if __name__ == "__main__":
+    main()
+```
+
+This Python code will produce the same output as your Rust code when run. The `and`, `or`, and `not` operators in Python work similarly to their counterparts in Rust. In Python, however, there isn't a direct XOR operator like there is in Rust (`^`). We simulate this behavior using the inequality operator `!=`.

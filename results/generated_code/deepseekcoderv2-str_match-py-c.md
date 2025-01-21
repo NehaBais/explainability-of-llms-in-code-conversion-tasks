@@ -1,38 +1,84 @@
-'''
-import re
-def startswith(string,subString):#to check if string starts with substring passed as argument.
-    return subString in string and (string[0] == subString[0])
+ Here's the equivalent C code for the given Python code:
 
-def endswith(string,substring):#to check whether a given string ends with the substring passed as an argument.
-    return substring in string and (string[-1]==substring[-1])
+```c
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    // Test startsWith
+    char str1[] = "abcd";
+    char str2[] = "ab";
+    if (strncmp(str1, str2, strlen(str2)) == 0) {
+        printf("startsWith: True\n");
+    } else {
+        printf("startsWith: False\n");
+    }
 
-def find_all(s,sub):
-    l = []
-    for m in re.finditer(sub, s):
-        l.append(m.start())
-    return l
+    // Test endswith
+    char str3[] = "bb";
+    char str4[] = "abab";
+    int len1 = strlen(str3);
+    int len2 = strlen(str4);
+    if (len2 >= len1 && strncmp(&str4[len2 - len1], str3, len1) == 0) {
+        printf("endswith: True\n");
+    } else {
+        printf("endswith: False\n");
+    }
 
-def contains(string,substring):#to check whether substring is present in the string passed as argument.
-    if len(set(substring) - set(string)) == 0:
-       return True
-    else:
-        return False    
+    // Test contains (contains at any location)
+    char str5[] = "abab";
+    if (strstr(str5, "bb") != NULL) {
+        printf("contains: True\n");
+    } else {
+        printf("contains: False\n");
+    }
 
-while (True):
-    s=input("enter first String\n")
-    st=input("enter Second String\n")
-    print("\nString contains the substring from starting \t",startswith(s,st))#to check whether string is starting with substring.
-    print("\nString ends with the given string \t",endswith(s,st))#to check whether string ends with a substring passed as argument to function endswith()
-    st_ind=find_all(s,st) #function call to find all index where substring is present in main string.
-    if (len(st_ind)!=0): 
-        print("\nSubstring found at these indices \t",end="")
-        for i in st_ind:
-            print("{}".format(i), end=" ") #to display all the index where substring is present.
-    else:
-         print("\nsubstring not found.")
-    if contains(s,st):#function call to check whether string conatins subString or not.
-        print("\nGiven String contaiin given substring")
-    else:
-        print("given String doesnot contain given SubString") 
+    // Test contains multiple occurrences
+    char str6[] = "abab";
+    char *pos = strstr(str6, "ab");
+    int count = 0;
+    while (pos != NULL) {
+        count++;
+        pos = strstr(pos + 1, "ab");
+    }
+    if (count > 0) {
+        printf("contains multiple: True\n");
+    } else {
+        printf("contains multiple: False\n");
+    }
 
+    // Test find and find multiple occurrences
+    char str7[] = "abab";
+    char *pos1 = strstr(str7, "bb");
+    if (pos1 != NULL) {
+        printf("find: %ld\n", pos1 - str7);
+    } else {
+        printf("find: Not found\n");
+    }
+
+    char str8[] = "abab";
+    char *pos2 = strstr(str8, "ab");
+    if (pos2 != NULL) {
+        printf("find: %ld\n", pos2 - str8);
+    } else {
+        printf("find: Not found\n");
+    }
+
+    char str9[] = "abab";
+    char *pos3 = strstr(str9, "ab");
+    if (pos3 != NULL) {
+        pos3 = strstr(pos3 + 1, "ab");
+        if (pos3 != NULL) {
+            printf("find multiple: %ld\n", pos3 - str9);
+        } else {
+            printf("find multiple: Not found\n");
+        }
+    } else {
+        printf("find multiple: Not found\n");
+    }
+
+    return 0;
+}
+```
+
+This C code performs the same operations as your Python example, including string matching and handling for multiple occurrences. The `strncmp` function is used to check if one string starts with another, `strstr` is used to find a substring within a string, and arithmetic operations are used to handle positions of matches.

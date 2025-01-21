@@ -1,0 +1,25 @@
+error[E0412]: cannot find type `Result` in module `fs`
+ --> /tmp/deepseekcoder7b-file_rename-c-rs.rs:3:18
+  |
+3 | fn main() -> fs::Result<()> {
+  |                  ^^^^^^ not found in `fs`
+  |
+help: consider importing one of these items
+  |
+1 + use std::fmt::Result;
+  |
+1 + use std::io::Result;
+  |
+1 + use std::result::Result;
+  |
+1 + use std::thread::Result;
+  |
+help: if you import `Result`, refer to it directly
+  |
+3 - fn main() -> fs::Result<()> {
+3 + fn main() -> Result<()> {
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0412`.

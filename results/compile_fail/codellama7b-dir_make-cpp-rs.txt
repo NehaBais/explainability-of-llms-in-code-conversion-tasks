@@ -1,0 +1,82 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/codellama7b-dir_make-cpp-rs.rs:3:14
+  |
+3 | fn main() -> io::Result<()> {
+  |              ^^ use of undeclared crate or module `io`
+  |
+help: a builtin type with a similar name exists
+  |
+3 | fn main() -> i8::Result<()> {
+  |              ~~
+help: consider importing this module
+  |
+1 + use std::io;
+  |
+
+error[E0425]: cannot find function `create_directories` in module `fs`
+ --> /tmp/codellama7b-dir_make-cpp-rs.rs:8:19
+  |
+8 |     } else if fs::create_directories(&path_to_create) {
+  |                   ^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+  --> /tmp/codellama7b-dir_make-cpp-rs.rs:12:20
+   |
+12 |         return Err(io::Error::new(
+   |                    ^^ use of undeclared crate or module `io`
+   |
+help: consider importing one of these items
+   |
+1  + use std::error::Error;
+   |
+1  + use std::fmt::Error;
+   |
+1  + use std::io::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+12 -         return Err(io::Error::new(
+12 +         return Err(Error::new(
+   |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+  --> /tmp/codellama7b-dir_make-cpp-rs.rs:13:13
+   |
+13 |             io::ErrorKind::Other,
+   |             ^^ use of undeclared crate or module `io`
+   |
+help: consider importing this enum
+   |
+1  + use std::io::ErrorKind;
+   |
+help: if you import `ErrorKind`, refer to it directly
+   |
+13 -             io::ErrorKind::Other,
+13 +             ErrorKind::Other,
+   |
+
+warning: unused import: `File`
+ --> /tmp/codellama7b-dir_make-cpp-rs.rs:1:21
+  |
+1 | use std::fs::{self, File};
+  |                     ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+ --> /tmp/codellama7b-dir_make-cpp-rs.rs:6:8
+  |
+6 |     if fs::exists(&path_to_create) {
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `bool`, found `Result<bool, Error>`
+  |
+  = note: expected type `bool`
+             found enum `Result<bool, std::io::Error>`
+help: consider using `Result::expect` to unwrap the `Result<bool, std::io::Error>` value, panicking if the value is a `Result::Err`
+  |
+6 |     if fs::exists(&path_to_create).expect("REASON") {
+  |                                   +++++++++++++++++
+
+error: aborting due to 5 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0308, E0425, E0433.
+For more information about an error, try `rustc --explain E0308`.

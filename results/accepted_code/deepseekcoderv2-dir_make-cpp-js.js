@@ -1,18 +1,24 @@
-var fs = require("fs");
+const fs = require("fs");
+const path = require("path");
 
-module.exports.mkdirp = function (path, opts, cb) {
-  var dirname = require("path").dirname;
-  path = typeof path === "string" ? path : "";
-  if (typeof opts === "function") return mkdirp(path, {}, opts);
-  if (!opts) opts = {};
-  fs.mkdir(path, parseInt("0755", 8), function (err) {
-    if (!err || (err && err.code !== "EEXIST")) return cb(err);
-    // Attempt to create the parent directory recursively
-    mkdirp(dirname(path), opts, function (er2) {
-      if (er2) return cb(er2);
-      mkdirp(path, opts, cb);
-    });
-  });
-};
+function mkdirp(dirPath) {
+  if (fs.existsSync(dirPath)) {
+    return 0;
+  }
 
-module.exports = mkdirp;
+  try {
+    fs.mkdirSync(dirPath, { recursive: true });
+    return 0;
+  } catch (err) {
+    console.error(`couldn't create directory: ${dirPath}`);
+    return -1;
+  }
+}
+
+if (process.argv.length !== 3) {
+  console.log("usage: node mkdirp <path>");
+  process.exit(1);
+}
+
+const dirPath = path.resolve(process.argv[2]);
+mkdirp(dirPath);

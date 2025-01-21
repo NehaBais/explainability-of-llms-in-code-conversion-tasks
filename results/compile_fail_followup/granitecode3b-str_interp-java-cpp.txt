@@ -1,0 +1,16 @@
+/tmp/granitecode3b-str_interp-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-java-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string adjective = "little";
+      |   ^
+/tmp/granitecode3b-str_interp-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string lyric = "Mary had a " + adjective + " lamb";
+      |   ^
+/tmp/granitecode3b-str_interp-java-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << lyric << std::endl;
+      |   ^
+/tmp/granitecode3b-str_interp-java-cpp.cpp:5:25: error: use of undeclared identifier 'std'
+    5 |   std::cout << lyric << std::endl;
+      |                         ^
+5 errors generated.

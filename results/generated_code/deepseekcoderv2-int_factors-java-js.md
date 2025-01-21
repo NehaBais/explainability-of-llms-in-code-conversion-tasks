@@ -1,15 +1,23 @@
-**Solution:**
-```
-function factors(n){
- const factors = new Set();
- factors.add(n);
- factors.add(1L);
- for (let test = n - 1; test >= Math.sqrt(n); test--){
-   if(n % test == 0) {
-     factors.add(test);
-     factors.add(n / test);
-   }
- }
- return Array.from(factors);
+ Here's the equivalent JavaScript code for the provided Java method `factors`:
+
+```javascript
+function factors(n) {
+    const factorSet = new Set<number>();
+    factorSet.add(n);
+    factorSet.add(1);
+    
+    // Start from n-1 and go down to Math.sqrt(n)
+    for (let test = n - 1; test >= Math.sqrt(n); test--) {
+        if (n % test === 0) {
+            factorSet.add(test);
+            factorSet.add(n / test);
+        }
+    }
+    
+    // Convert the Set to an ordered array and then convert it back to a Set for uniqueness
+    const factors = Array.from(factorSet).sort((a, b) => a - b);
+    return new Set(factors);
 }
 ```
+
+This JavaScript function `factors` performs the same operation as the Java method: it computes the factors of a positive integer and returns them in a sorted set.

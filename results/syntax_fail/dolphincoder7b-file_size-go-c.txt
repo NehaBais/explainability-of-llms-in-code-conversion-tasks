@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-file_size-go-c.c:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat st;
+      |               ^
+/tmp/dolphincoder7b-file_size-go-c.c:6:10: note: forward declaration of 'struct stat'
+    6 |   struct stat st;
+      |          ^
+/tmp/dolphincoder7b-file_size-go-c.c:7:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   if (stat(file, &st) == -1) {
+      |       ^
+2 errors generated.

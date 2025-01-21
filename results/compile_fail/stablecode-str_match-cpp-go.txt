@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-str_match-cpp-go.go:11:59: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-cpp-go.go:15:71: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-cpp-go.go:19:57: syntax error: unexpected ) at end of statement

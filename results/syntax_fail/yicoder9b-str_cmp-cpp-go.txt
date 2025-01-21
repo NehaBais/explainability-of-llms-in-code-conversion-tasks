@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-str_cmp-cpp-go.go:12:10: invalid operation: a < b (operator < not defined on interface)

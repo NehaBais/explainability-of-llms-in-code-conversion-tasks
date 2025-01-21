@@ -1,0 +1,11 @@
+/tmp/Main.java:28: error: cannot find symbol
+    if (!Files.exists(path)) {
+         ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:29: error: cannot find symbol
+      Files.createDirectories(path);
+      ^
+  symbol:   variable Files
+  location: class Main
+2 errors

@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-file_exists-go-cpp.cpp:8:7: error: no matching function for call to 'stat'
+    8 |   if (stat(p, &s))
+      |       ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:387:9: note: candidate function not viable: no known conversion from 'const std::string' (aka 'const basic_string<char>') to 'const char *' for 1st argument
+  387 | int     stat(const char *, struct stat *) __DARWIN_INODE64(stat);
+      |         ^    ~~~~~~~~~~~~
+1 error generated.

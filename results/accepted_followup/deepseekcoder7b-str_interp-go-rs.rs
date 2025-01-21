@@ -1,0 +1,1 @@
+let out = format!("{} {}", str, txt);

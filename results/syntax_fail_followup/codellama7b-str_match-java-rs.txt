@@ -1,0 +1,21 @@
+error[E0425]: cannot find function `starts_with` in this scope
+ --> /tmp/codellama7b-str_match-java-rs.rs:5:20
+  |
+5 |     println!("{}", starts_with(str1, str2)); // true
+  |                    ^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `ends_with` in this scope
+ --> /tmp/codellama7b-str_match-java-rs.rs:6:20
+  |
+6 |     println!("{}", ends_with(str1, str2)); // false
+  |                    ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `contains` in this scope
+ --> /tmp/codellama7b-str_match-java-rs.rs:7:20
+  |
+7 |     println!("{}", contains(str1, str2)); // true
+  |                    ^^^^^^^^ not found in this scope
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

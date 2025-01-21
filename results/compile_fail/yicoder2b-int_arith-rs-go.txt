@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/yicoder2b-int_arith-rs-go.go:9:13: assignment mismatch: 1 variable but getArgs returns 2 values
+/tmp/yicoder2b-int_arith-rs-go.go:10:3: declared and not used: a
+/tmp/yicoder2b-int_arith-rs-go.go:10:13: undefined: strconv
+/tmp/yicoder2b-int_arith-rs-go.go:11:3: declared and not used: b
+/tmp/yicoder2b-int_arith-rs-go.go:11:13: undefined: strconv

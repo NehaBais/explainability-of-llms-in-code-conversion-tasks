@@ -1,0 +1,1 @@
+/tmp/codegemma7b-file_size-cpp-go.go:1:1: expected 'package', found 'import'

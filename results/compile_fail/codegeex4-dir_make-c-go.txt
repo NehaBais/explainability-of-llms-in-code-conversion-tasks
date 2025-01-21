@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-dir_make-c-go.go:15:16: undefined: strings

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/magicoder7b-file_create-rs-go.go:5:2: "io/ioutil" imported and not used
+/tmp/magicoder7b-file_create-rs-go.go:16:3: undefined: log
+/tmp/magicoder7b-file_create-rs-go.go:21:3: undefined: log

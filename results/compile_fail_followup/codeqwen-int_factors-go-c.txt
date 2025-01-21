@@ -1,0 +1,23 @@
+/tmp/codeqwen-int_factors-go-c.c:5:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 |         printf("
+      |                ^
+/tmp/codeqwen-int_factors-go-c.c:5:16: error: expected expression
+/tmp/codeqwen-int_factors-go-c.c:6:28: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 | Factors of %ld not computed", nr);
+      |                            ^
+/tmp/codeqwen-int_factors-go-c.c:9:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |     printf("
+      |            ^
+/tmp/codeqwen-int_factors-go-c.c:10:17: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 | Factors of %ld: ", nr);
+      |                 ^
+/tmp/codeqwen-int_factors-go-c.c:37:12: error: function definition is not allowed here
+   37 | int main() {
+      |            ^
+/tmp/codeqwen-int_factors-go-c.c:50:2: error: expected '}'
+   50 | }
+      |  ^
+/tmp/codeqwen-int_factors-go-c.c:3:31: note: to match this '{'
+    3 | void printFactors(int64_t nr) {
+      |                               ^
+4 warnings and 3 errors generated.

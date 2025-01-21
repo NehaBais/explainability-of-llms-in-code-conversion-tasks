@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-logic_ops-cpp-c.c:3:18: error: unknown type name 'bool'
+    3 | void print_logic(bool a, bool b) {
+      |                  ^
+/tmp/qwen2.5coder2b-logic_ops-cpp-c.c:3:26: error: unknown type name 'bool'
+    3 | void print_logic(bool a, bool b) {
+      |                          ^
+2 errors generated.

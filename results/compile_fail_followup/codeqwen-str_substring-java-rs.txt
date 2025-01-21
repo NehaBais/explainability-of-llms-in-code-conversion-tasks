@@ -1,0 +1,49 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codeqwen-str_substring-java-rs.rs:11:2
+   |
+11 | }
+   |  ^ consider adding a `main` function to `/tmp/codeqwen-str_substring-java-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_substring-java-rs.rs:1:40
+  |
+1 | pub fn substring(s: &str, n: usize) -> &str {
+  |        ---------                       ^^^^ expected `&str`, found `()`
+  |        |
+  |        implicitly returns `()` as its body has no tail or `return` expression
+  |
+help: consider returning the local binding `s`
+  |
+1 ~ pub fn substring(s: &str, n: usize) -> &str {
+2 +     s
+  |
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_substring-java-rs.rs:5:51
+  |
+5 | pub fn substring_with_length(s: &str, c: char) -> Option<&str> {
+  |        ---------------------                      ^^^^^^^^^^^^ expected `Option<&str>`, found `()`
+  |        |
+  |        implicitly returns `()` as its body has no tail or `return` expression
+  |
+  = note:   expected enum `Option<&str>`
+          found unit type `()`
+
+error[E0308]: mismatched types
+ --> /tmp/codeqwen-str_substring-java-rs.rs:9:62
+  |
+9 | pub fn substring_range(s: &str, start: usize, end: usize) -> &str {
+  |        ---------------                                       ^^^^ expected `&str`, found `()`
+  |        |
+  |        implicitly returns `()` as its body has no tail or `return` expression
+  |
+help: consider returning the local binding `s`
+  |
+9 ~ pub fn substring_range(s: &str, start: usize, end: usize) -> &str {
+10+     s
+  |
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

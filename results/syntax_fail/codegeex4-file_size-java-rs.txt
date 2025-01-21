@@ -1,0 +1,22 @@
+error: invalid format string: expected `'}'`, found `','`
+ --> /tmp/codegeex4-file_size-java-rs.rs:6:17
+  |
+6 |     println!("{:,} B", size_a);
+  |               - ^ expected `'}'` in format string
+  |               |
+  |               because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `','`
+  --> /tmp/codegeex4-file_size-java-rs.rs:10:17
+   |
+10 |     println!("{:,} B", size_b);
+   |               - ^ expected `'}'` in format string
+   |               |
+   |               because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: aborting due to 2 previous errors
+

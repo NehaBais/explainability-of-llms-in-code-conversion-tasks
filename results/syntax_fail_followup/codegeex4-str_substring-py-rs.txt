@@ -1,0 +1,27 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/codegeex4-str_substring-py-rs.rs:1:5
+  |
+1 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `unicode_segmentation`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:13:12
+   |
+13 |         &s[unicode_segmentation::UnicodeStr::new(&s)[n - 1..n + m - 1].collect::<String>()]
+   |            ^^^^^^^^^^^^^^^^^^^^ use of undeclared crate or module `unicode_segmentation`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `unicode_segmentation`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:19:12
+   |
+19 |         &s[unicode_segmentation::UnicodeStr::new(&s)[n - 1..].collect::<String>()]
+   |            ^^^^^^^^^^^^^^^^^^^^ use of undeclared crate or module `unicode_segmentation`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0433.
+For more information about an error, try `rustc --explain E0432`.

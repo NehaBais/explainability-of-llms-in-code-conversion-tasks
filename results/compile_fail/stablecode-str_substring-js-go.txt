@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-js-go.go:15:22: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-js-go.go:20:37: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-js-go.go:23:24: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-js-go.go:26:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-js-go.go:27:29: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-js-go.go:30:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-js-go.go:31:29: syntax error: unexpected ] at end of statement

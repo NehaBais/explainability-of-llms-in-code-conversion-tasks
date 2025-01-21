@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_create-java-go.go:19:77: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-java-go.go:25:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-java-go.go:27:75: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-java-go.go:46:51: syntax error: unexpected ) at end of statement

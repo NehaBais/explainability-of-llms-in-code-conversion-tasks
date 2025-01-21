@@ -1,0 +1,49 @@
+warning: unused import: `Path`
+ --> /tmp/qwen2.5coder2b-file_rename-js-rs.rs:2:17
+  |
+2 | use std::path::{Path, PathBuf};
+  |                 ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or another type that implements `FromResidual`)
+  --> /tmp/qwen2.5coder2b-file_rename-js-rs.rs:20:37
+   |
+4  | fn main() {
+   | --------- this function should return `Result` or `Option` to accept `?`
+...
+20 |     move_directory("docs", "mydocs")?;
+   |                                     ^ cannot use the `?` operator in a function that returns `()`
+   |
+   = help: the trait `FromResidual<Result<Infallible, Box<dyn std::error::Error>>>` is not implemented for `()`
+help: consider adding return type
+   |
+4  ~ fn main() -> Result<(), Box<dyn std::error::Error>> {
+5  |     // Create a function that performs the required task for one directory
+...
+25 |     println!("Directories successfully moved.");
+26 +     Ok(())
+   |
+
+error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or another type that implements `FromResidual`)
+  --> /tmp/qwen2.5coder2b-file_rename-js-rs.rs:23:43
+   |
+4  | fn main() {
+   | --------- this function should return `Result` or `Option` to accept `?`
+...
+23 |     move_directory("c:/docs", "c:/mydocs")?;
+   |                                           ^ cannot use the `?` operator in a function that returns `()`
+   |
+   = help: the trait `FromResidual<Result<Infallible, Box<dyn std::error::Error>>>` is not implemented for `()`
+help: consider adding return type
+   |
+4  ~ fn main() -> Result<(), Box<dyn std::error::Error>> {
+5  |     // Create a function that performs the required task for one directory
+...
+25 |     println!("Directories successfully moved.");
+26 +     Ok(())
+   |
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0277`.

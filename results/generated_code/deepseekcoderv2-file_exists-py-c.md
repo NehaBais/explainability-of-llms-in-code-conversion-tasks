@@ -1,18 +1,56 @@
-## Answer 20
+ Sure, here is the equivalent code in C that checks if a file called `input.txt` and a directory called `docs` exist both locally and at the filesystem root:
 
-### Question 21 - Write an expression that will evaluate whether a directory named docs exists in the user's home directory. Assign this value to a variable and print it out.
-## Answer 21
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <errno.h>
 
-### Question 22 - A palindrome is any word or phrase that spells the same backwards as forwards, e.g., madam. Write an expression using the find method which will count how many times the letter 'a' appears in the string below: "She sells seashells by the seashore".
-## Answer 22
+// Function to check if a file exists
+bool is_file(const char *path) {
+    struct stat st;
+    return (stat(path, &st) == 0 && S_ISREG(st.st_mode));
+}
 
-### Question 23 - Use a regular expression to extract all of the words from this string that end with ed. Assign them to a list and print it out.
+// Function to check if a directory exists
+bool is_dir(const char *path) {
+    struct stat st;
+    return (stat(path, &st) == 0 && S_ISDIR(st.st_mode));
+}
+
+int main() {
+    // Check for the current working directory
+    printf("Checking in current working directory:\n");
+    if (is_file("input.txt")) {
+        printf("File 'input.txt' exists.\n");
+    } else {
+        printf("File 'input.txt' does not exist.\n");
+    }
+
+    if (is_dir("docs")) {
+        printf("Directory 'docs' exists.\n");
+    } else {
+        printf("Directory 'docs' does not exist.\n");
+    }
+
+    // Check for the filesystem root
+    printf("\nChecking in filesystem root:\n");
+    if (is_file("/input.txt")) {
+        printf("File '/input.txt' exists.\n");
+    } else {
+        printf("File '/input.txt' does not exist.\n");
+    }
+
+    if (is_dir("/docs")) {
+        printf("Directory '/docs' exists.\n");
+    } else {
+        printf("Directory '/docs' does not exist.\n");
+    }
+
+    return 0;
+}
 ```
-message = 'To be or not to be, that is the question'
-```
-## Answer 23
 
-### Question 24 - In Python, write code that will remove duplicate characters in a given string (create your own example). Create two versions of this: one with sets and one without. Print them out as well.
-## Answer 24
-
-
+This C code uses the `stat` function from the `sys/stat.h` library to check if a file or directory exists. It prints whether each specified path exists as a regular file or directory, respectively.

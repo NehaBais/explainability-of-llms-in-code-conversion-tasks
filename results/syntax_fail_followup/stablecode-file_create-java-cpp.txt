@@ -1,0 +1,13 @@
+/tmp/stablecode-file_create-java-cpp.cpp:5:10: error: no member named 'filesystem' in namespace 'std'
+    5 |     std::filesystem::path currentDirPath(std::filesystem::current_path()));
+      |     ~~~~~^
+/tmp/stablecode-file_create-java-cpp.cpp:6:15: error: no member named 'filesystem' in namespace 'std'
+    6 |     if (!std::filesystem::exists(currentDirPath))) {
+      |          ~~~~~^
+/tmp/stablecode-file_create-java-cpp.cpp:6:34: error: use of undeclared identifier 'currentDirPath'
+    6 |     if (!std::filesystem::exists(currentDirPath))) {
+      |                                  ^
+/tmp/stablecode-file_create-java-cpp.cpp:6:50: error: extraneous ')' after condition, expected a statement
+    6 |     if (!std::filesystem::exists(currentDirPath))) {
+      |                                                  ^
+4 errors generated.

@@ -1,0 +1,3 @@
+const filePathRoot = '/input.txt';
+// ...
+console.log(`/${filePathRoot} is a regular file? ${await check_reg('/' + filePathRoot)}}`));

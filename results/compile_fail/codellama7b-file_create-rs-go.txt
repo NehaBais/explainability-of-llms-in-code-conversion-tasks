@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-file_create-rs-go.go:4:2: "fmt" imported and not used
+/tmp/codellama7b-file_create-rs-go.go:5:2: "io" imported and not used
+/tmp/codellama7b-file_create-rs-go.go:14:14: create(".").and undefined (type error has no field or method and)

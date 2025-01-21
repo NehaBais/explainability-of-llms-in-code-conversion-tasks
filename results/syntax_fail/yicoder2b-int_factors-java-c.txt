@@ -1,0 +1,9 @@
+/tmp/yicoder2b-int_factors-java-c.c:10:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   printf("%ld\n", 1); // Always print 1 as factor
+      |   ^
+/tmp/yicoder2b-int_factors-java-c.c:10:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/yicoder2b-int_factors-java-c.c:10:19: warning: format specifies type 'long' but the argument has type 'int' [-Wformat]
+   10 |   printf("%ld\n", 1); // Always print 1 as factor
+      |           ~~~     ^
+      |           %d
+1 warning and 1 error generated.

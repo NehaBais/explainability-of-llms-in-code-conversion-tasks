@@ -1,0 +1,83 @@
+error: expected one of `)`, `,`, `.`, `?`, or an operator, found `", "mydocs`
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:5:18
+  |
+5 |  fs::rename("docs", "mydocs")?;
+  |                  -^^^^^^^^^
+  |                  |
+  |                  expected one of `)`, `,`, `.`, `?`, or an operator
+  |                  help: missing `,`
+
+error: expected one of `)`, `,`, `.`, `?`, or an operator, found `")?;
+        fs::rename("`
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:5:28
+  |
+5 |    fs::rename("docs", "mydocs")?;
+  |                              ^
+  |                              |
+  |                              expected one of `)`, `,`, `.`, `?`, or an operator
+  |  ____________________________help: missing `,`
+  | |
+6 | |  fs::rename("/input.txt", "/output.txt)?;
+  | |_____________^ unexpected token
+
+error: expected one of `(`, `)`, `,`, `.`, `::`, `?`, or an operator, found `", "`
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:6:24
+  |
+6 |  fs::rename("/input.txt", "/output.txt)?;
+  |                        -^^^
+  |                        |
+  |                        expected one of 7 possible tokens
+  |                        help: missing `,`
+
+error[E0425]: cannot find value `input` in this scope
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:6:15
+  |
+6 |  fs::rename("/input.txt", "/output.txt)?;
+  |               ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `output` in this scope
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:6:29
+  |
+6 |  fs::rename("/input.txt", "/output.txt)?;
+  |                             ^^^^^^ not found in this scope
+
+error: suffixes on string literals are invalid
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:4:26
+  |
+4 |    fs::rename("input.txt", "output.txt)?;
+  |  __________________________^
+5 | |  fs::rename("docs", "mydocs")?;
+  | |_________________^ invalid suffix `docs`
+
+error: suffixes on string literals are invalid
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:5:18
+  |
+5 |  fs::rename("docs", "mydocs")?;
+  |                  ^^^^^^^^^^ invalid suffix `mydocs`
+
+error[E0061]: this function takes 2 arguments but 5 arguments were supplied
+ --> /tmp/granitecode3b-file_rename-go-rs.rs:4:2
+  |
+4 |    fs::rename("input.txt", "output.txt)?;
+  |    ^^^^^^^^^^
+5 |    fs::rename("docs", "mydocs")?;
+  |  __________________-----------
+  | |                  |
+  | |                  unexpected argument #3
+6 | |  fs::rename("/input.txt", "/output.txt)?;
+  | |                       ---------------- unexpected argument #5 of type `str`
+  | |_______________________|
+  |                         unexpected argument #4 of type `str`
+  |
+note: function defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:8
+help: remove the extra arguments
+  |
+5 -  fs::rename("docs", "mydocs")?;
+5 +  fs::rename("docs)?;
+  |
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0061, E0425.
+For more information about an error, try `rustc --explain E0061`.

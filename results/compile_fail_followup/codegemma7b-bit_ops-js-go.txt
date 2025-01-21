@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegemma7b-bit_ops-js-go.go:12:31: syntax error: unexpected >, expected expression

@@ -1,0 +1,7 @@
+/tmp/Main.java:20: error: not a statement
+        unsigned int c = a;
+        ^
+/tmp/Main.java:20: error: ';' expected
+        unsigned int c = a;
+                ^
+2 errors

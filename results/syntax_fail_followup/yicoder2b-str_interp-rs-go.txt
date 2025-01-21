@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_interp-rs-go.go:9:40: not enough arguments in call to interpolationWithName
+	have (string, string)
+	want (string, string, string)

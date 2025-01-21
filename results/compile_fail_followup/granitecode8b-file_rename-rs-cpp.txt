@@ -1,0 +1,48 @@
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string input_file("input.txt");
+      |   ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string output_file("output.txt");
+      |   ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:8:3: error: unknown type name 'string'
+    8 |   string docs_dir("docs");
+      |   ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:9:3: error: unknown type name 'string'
+    9 |   string mydocs_dir("mydocs");
+      |   ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:11:5: error: use of undeclared identifier 'cerr'; did you mean 'err'?
+   11 |     cerr << err << endl;
+      |     ^~~~
+      |     err
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:5:15: note: 'err' declared here
+    5 |   const char *err = "File move error";
+      |               ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:11:10: error: invalid operands to binary expression ('const char *' and 'const char *')
+   11 |     cerr << err << endl;
+      |     ~~~~ ^  ~~~
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:11:20: error: use of undeclared identifier 'endl'
+   11 |     cerr << err << endl;
+      |                    ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:15:5: error: use of undeclared identifier 'cerr'; did you mean 'err'?
+   15 |     cerr << err << endl;
+      |     ^~~~
+      |     err
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:5:15: note: 'err' declared here
+    5 |   const char *err = "File move error";
+      |               ^
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:15:10: error: invalid operands to binary expression ('const char *' and 'const char *')
+   15 |     cerr << err << endl;
+      |     ~~~~ ^  ~~~
+/tmp/granitecode8b-file_rename-rs-cpp.cpp:15:20: error: use of undeclared identifier 'endl'
+   15 |     cerr << err << endl;
+      |                    ^
+1 warning and 12 errors generated.

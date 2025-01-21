@@ -1,0 +1,1 @@
+The errors are due to using `is_less()` and `is_greater()` methods which do not exist for the `Ordering` enum in Rust. Instead, we can use `is_le()` (is less or equal) and `is_ge()` (is greater or equal) respectively.

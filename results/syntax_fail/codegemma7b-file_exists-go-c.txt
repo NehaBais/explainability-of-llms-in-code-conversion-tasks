@@ -1,0 +1,8 @@
+/tmp/codegemma7b-file_exists-go-c.c:7:20: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     printf("%s\n", strerror(errno));
+      |                    ^
+/tmp/codegemma7b-file_exists-go-c.c:7:20: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/codegemma7b-file_exists-go-c.c:7:29: error: use of undeclared identifier 'errno'
+    7 |     printf("%s\n", strerror(errno));
+      |                             ^
+2 errors generated.

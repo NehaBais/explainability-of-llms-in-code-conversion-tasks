@@ -1,0 +1,25 @@
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/qwen2.5coder7b-int_factors-go-rs.rs:20:9
+   |
+20 |         nr /= 2;
+   |         ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/qwen2.5coder7b-int_factors-go-rs.rs:34:13
+   |
+34 |             nr /= d;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0384`.

@@ -1,0 +1,1 @@
+"    NOT:   ~ 0b{:width$b} = 0b{:width$b}\n",

@@ -1,0 +1,43 @@
+error[E0603]: struct `OsStr` is private
+ --> /tmp/qwen2.5coder2b-file_create-py-rs.rs:2:17
+  |
+2 | use std::path::{OsStr, PathBuf};
+  |                 ^^^^^ private struct
+  |
+note: the struct `OsStr` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/path.rs:78:26
+help: import `OsStr` directly
+  |
+2 | use std::path::{std::ffi::os_str::OsStr, PathBuf};
+  |                 ~~~~~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `create_dir` found for mutable reference `&mut DirBuilder` in the current scope
+  --> /tmp/qwen2.5coder2b-file_create-py-rs.rs:12:10
+   |
+10 | /     fs::DirBuilder::new()
+11 | |         .recursive(true)
+12 | |         .create_dir(PathBuf::from(directory).join("docs"))
+   | |_________-^^^^^^^^^^
+   |
+help: there is a method `create` with a similar name
+   |
+12 |         .create(PathBuf::from(directory).join("docs"))
+   |          ~~~~~~
+
+error[E0599]: no method named `create_dir` found for mutable reference `&mut DirBuilder` in the current scope
+  --> /tmp/qwen2.5coder2b-file_create-py-rs.rs:20:10
+   |
+18 | /     fs::DirBuilder::new()
+19 | |         .recursive(true)
+20 | |         .create_dir(PathBuf::from("/").join("docs"))
+   | |_________-^^^^^^^^^^
+   |
+help: there is a method `create` with a similar name
+   |
+20 |         .create(PathBuf::from("/").join("docs"))
+   |          ~~~~~~
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0599, E0603.
+For more information about an error, try `rustc --explain E0599`.

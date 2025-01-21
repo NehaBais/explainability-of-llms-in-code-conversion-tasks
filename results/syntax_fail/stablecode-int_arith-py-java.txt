@@ -1,0 +1,25 @@
+/tmp/Main.java:8: error: ';' expected
+        Scanner scanner = new Scanner(System.in));
+                                                ^
+/tmp/Main.java:25: error: ';' expected
+        System.out.println("Sum: " + sum));
+                                         ^
+/tmp/Main.java:26: error: ';' expected
+        System.out.println("Difference: " + difference));
+                                                       ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.println("Product: " + product));
+                                                 ^
+/tmp/Main.java:28: error: ';' expected
+        System.out.println("Integer quotient (towards zero): " + integerQuotient));
+                                                                                 ^
+/tmp/Main.java:29: error: ';' expected
+        System.out.println("Float quotient: " + floatQuotient));
+                                                              ^
+/tmp/Main.java:30: error: ';' expected
+        System.out.println("Whole Remainder: " + wholeRemainder));
+                                                                ^
+/tmp/Main.java:31: error: ';' expected
+        System.out.println("Actual Remainder after exponentiation: " + actualRemainder)));
+                                                                                       ^
+8 errors

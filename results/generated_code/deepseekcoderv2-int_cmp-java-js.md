@@ -1,24 +1,30 @@
-Answer: Here's the JavaScript code that performs the same comparison as Java code:
+ Sure, here's the equivalent JavaScript code that performs the same task as your Java code:
 
 ```javascript
-import java.io.*;
+const readline = require('readline');
 
-public class compInt {
-    public static void main(String[] args) {
-        try {
-            BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-            int nbr1 = Integer.parseInt(in.readLine());
-            int nbr2 = Integer.parseInt(in.readLine());
-
-            if (nbr1 < nbr2) {
-                System.out.println(nbr1 + " is less than " + nbr2);
-            } else if (nbr1 > nbr2) {
-                System.out.println(nbr1 + " is greater than " + nbr2);
-            } else {
-                System.out.println(nbr1 + " is equal to " + nbr2);
-            }
-        } catch (IOException e) { }
-    }
-}
+rl.question('Enter the first integer: ', (nbr1Str) => {
+    const nbr1 = parseInt(nbr1Str);
+    
+    rl.question('Enter the second integer: ', (nbr2Str) => {
+        const nbr2 = parseInt(nbr2Str);
+        
+        if (nbr1 < nbr2) {
+            console.log(`${nbr1} is less than ${nbr2}`);
+        } else if (nbr1 > nbr2) {
+            console.log(`${nbr1} is greater than ${nbr2}`);
+        } else {
+            console.log(`${nbr1} is equal to ${nbr2}`);
+        }
+        
+        rl.close();
+    });
+});
 ```
+
+This JavaScript code uses the `readline` module to get input from the user and then performs the comparisons using if-else statements, similar to your Java code.

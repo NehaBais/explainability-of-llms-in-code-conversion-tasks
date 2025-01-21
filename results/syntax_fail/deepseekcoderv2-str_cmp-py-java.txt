@@ -1,0 +1,5 @@
+/tmp/StringComparison.java:62: error: incompatible types: double cannot be converted to String
+    compare(5.0, 5);
+            ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

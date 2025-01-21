@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:9:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |   auto cmp = [&](string s1, string s2) { return s1.compare(s2); };
+      |   ^
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:9:14: error: expected expression
+    9 |   auto cmp = [&](string s1, string s2) { return s1.compare(s2); };
+      |              ^
+1 warning and 1 error generated.

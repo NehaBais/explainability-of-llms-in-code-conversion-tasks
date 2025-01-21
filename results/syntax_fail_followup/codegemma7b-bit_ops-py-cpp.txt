@@ -1,0 +1,46 @@
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:9:36: error: use of undeclared identifier 'a'
+    9 |   cout << "AND: " << bitset<width>(a & b & mask) << endl;
+      |                                    ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:9:40: error: use of undeclared identifier 'b'
+    9 |   cout << "AND: " << bitset<width>(a & b & mask) << endl;
+      |                                        ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:9:44: error: use of undeclared identifier 'mask'
+    9 |   cout << "AND: " << bitset<width>(a & b & mask) << endl;
+      |                                            ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:10:35: error: use of undeclared identifier 'a'
+   10 |   cout << "OR: " << bitset<width>(a | b & mask) << endl;
+      |                                   ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:10:39: error: use of undeclared identifier 'b'
+   10 |   cout << "OR: " << bitset<width>(a | b & mask) << endl;
+      |                                       ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:10:43: error: use of undeclared identifier 'mask'
+   10 |   cout << "OR: " << bitset<width>(a | b & mask) << endl;
+      |                                           ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:11:36: error: use of undeclared identifier 'a'
+   11 |   cout << "XOR: " << bitset<width>(a ^ b & mask) << endl;
+      |                                    ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:11:40: error: use of undeclared identifier 'b'
+   11 |   cout << "XOR: " << bitset<width>(a ^ b & mask) << endl;
+      |                                        ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:11:44: error: use of undeclared identifier 'mask'
+   11 |   cout << "XOR: " << bitset<width>(a ^ b & mask) << endl;
+      |                                            ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:12:37: error: use of undeclared identifier 'a'
+   12 |   cout << "NOT: " << bitset<width>(~a & mask) << endl;
+      |                                     ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:12:41: error: use of undeclared identifier 'mask'
+   12 |   cout << "NOT: " << bitset<width>(~a & mask) << endl;
+      |                                         ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:13:38: error: use of undeclared identifier 'a'
+   13 |   cout << "RIGHT: " << bitset<width>(a >> 1 & mask) << endl;
+      |                                      ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:13:47: error: use of undeclared identifier 'mask'
+   13 |   cout << "RIGHT: " << bitset<width>(a >> 1 & mask) << endl;
+      |                                               ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:14:37: error: use of undeclared identifier 'a'
+   14 |   cout << "LEFT: " << bitset<width>(a << 1 & mask) << endl;
+      |                                     ^
+/tmp/codegemma7b-bit_ops-py-cpp.cpp:14:46: error: use of undeclared identifier 'mask'
+   14 |   cout << "LEFT: " << bitset<width>(a << 1 & mask) << endl;
+      |                                              ^
+15 errors generated.

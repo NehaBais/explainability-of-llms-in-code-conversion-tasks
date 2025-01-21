@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-str_match-cpp-c.c:34:15: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   34 |   while ((loc = strstr(&s2[loc + 1], s3)) != NULL) {
+      |               ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder7b-str_match-cpp-c.c:34:43: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   34 |   while ((loc = strstr(&s2[loc + 1], s3)) != NULL) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/qwen2.5coder7b-str_match-cpp-c.c:35:60: error: invalid operands to binary expression ('int' and 'char[5]')
+   35 |     printf("s1 contains s3 at location: %ld\n", (long)(loc - s2));
+      |                                                        ~~~ ^ ~~
+1 warning and 2 errors generated.

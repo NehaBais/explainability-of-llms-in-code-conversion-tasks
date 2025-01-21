@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-str_interp-java-go.go:4:1: syntax error: non-declaration statement outside function body

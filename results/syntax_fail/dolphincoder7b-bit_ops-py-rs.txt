@@ -1,0 +1,513 @@
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:14
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |              ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:27
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |                           ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:35
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |                                   ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:47
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |                                               ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:55
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |                                                       ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:68
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |                                                                    ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: 6 positional arguments in format string, but there are 3 arguments
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:54:10
+   |
+54 |         "{:#0w}\tAND\t{:#0w}\n{:#0w}\tOR\t{:#0w}\n{:#0w}\tXOR\t{:#0w}",
+   |          ^^^^^^       ^^^^^^  ^^^^^^      ^^^^^^  ^^^^^^       ^^^^^^
+55 |         a & b,
+   |         -----
+56 |         a | b,
+   |         -----
+57 |         a ^ b
+   |         -----
+   |
+   = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:19
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                   ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:33
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                 ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:41
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                         ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:55
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                       ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:63
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                               ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:77
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                             ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:85
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                     ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:99
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                                   ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:107
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                                           ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:121
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                                                         ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:129
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                                                                 ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:143
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |                                                                                                                                               ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: 12 positional arguments in format string, but there are 7 arguments
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:65:15
+   |
+65 |     println!("{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotR\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}\n{:#0w}\tRotL\t{:#0w}",
+   |               ^^^^^^        ^^^^^^  ^^^^^^        ^^^^^^  ^^^^^^        ^^^^^^  ^^^^^^        ^^^^^^  ^^^^^^        ^^^^^^  ^^^^^^        ^^^^^^
+66 |         a, rotr(8, a, 1), rotr(8, a, 2), rotr(8, a, 4),
+   |         -  -------------  -------------  -------------
+67 |         rotl(8, a, 1), rotl(8, a, 2), rotl(8, a, 4));
+   |         -------------  -------------  -------------
+   |
+   = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:14
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |              ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:27
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                           ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:35
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                   ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:48
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                                ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:56
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                                        ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:69
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                                                     ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:77
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                                                             ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: unknown format trait `w`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:90
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |                                                                                          ^
+   |
+   = note: the only appropriate formatting traits are:
+           - ``, which uses the `Display` trait
+           - `?`, which uses the `Debug` trait
+           - `e`, which uses the `LowerExp` trait
+           - `E`, which uses the `UpperExp` trait
+           - `o`, which uses the `Octal` trait
+           - `p`, which uses the `Pointer` trait
+           - `b`, which uses the `Binary` trait
+           - `x`, which uses the `LowerHex` trait
+           - `X`, which uses the `UpperHex` trait
+
+error: 8 positional arguments in format string, but there are 5 arguments
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:71:10
+   |
+71 |         "{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}\n{:#0w}\tASR\t{:#0w}",
+   |          ^^^^^^       ^^^^^^  ^^^^^^       ^^^^^^  ^^^^^^       ^^^^^^  ^^^^^^       ^^^^^^
+72 |         a,
+   |         -
+73 |         asr(8, a, 1),
+   |         ------------
+74 |         asr(8, aa, 1),
+   |         -------------
+75 |         asr(8, a, 2),
+   |         ------------
+76 |         asr(8, aa, 2)
+   |         -------------
+   |
+   = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error[E0573]: expected type, found const parameter `W`
+ --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:1:32
+  |
+1 | fn rotr<const W: usize>(width: W, a: u64, n: i64) -> u64 {
+  |                                ^ not a type
+
+error[E0573]: expected type, found const parameter `W`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:22:32
+   |
+22 | fn rotl<const W: usize>(width: W, a: u64, n: u32) -> u64 {
+   |                                ^ not a type
+
+error[E0573]: expected type, found const parameter `W`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:41:31
+   |
+41 | fn asr<const W: usize>(width: W, a: u64, n: i32) -> i64 {
+   |                               ^ not a type
+
+error[E0573]: expected type, found const parameter `W`
+  --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:52:45
+   |
+52 | fn bitwise_built_ins<const W: usize>(width: W, a: u64, b: u64) {
+   |                                             ^ not a type
+
+error: aborting due to 33 previous errors
+
+For more information about this error, try `rustc --explain E0573`.

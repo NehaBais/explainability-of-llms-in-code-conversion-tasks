@@ -1,3 +1,26 @@
-This is how it should look like in C++:
-Replace all "X" with "little" and make sure that the original one does not get changed.  
-The result of this replacement would be a new string called replaced, which contains "Mary had a little lamb". The function shall take three arguments. One for the original string, another for the value to replace, and third parameter will contain the new string.
+ Sure, here is the equivalent code in C++:
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string original = "Mary had a X lamb";
+    std::string little = "little";
+    
+    // Find and replace the substring "X" with "little"
+    size_t pos = original.find("X");
+    if (pos != std::string::npos) {
+        original.replace(pos, 1, little);
+    }
+
+    std::cout << original << std::endl; // Output: Mary had a little lamb
+    return 0;
+}
+```
+
+In this C++ code:
+- We define the original string and the replacement string.
+- We use the `find` method to locate the position of "X" in the original string.
+- If "X" is found, we replace it with "little" using the `replace` method.
+- Finally, we output the modified string.

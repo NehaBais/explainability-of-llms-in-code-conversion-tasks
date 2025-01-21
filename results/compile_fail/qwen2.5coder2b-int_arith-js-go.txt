@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_arith-js-go.go:8:10: undefined: os
+/tmp/qwen2.5coder2b-int_arith-js-go.go:14:12: undefined: strconv
+/tmp/qwen2.5coder2b-int_arith-js-go.go:20:12: undefined: strconv
+/tmp/qwen2.5coder2b-int_arith-js-go.go:32:14: undefined: math
+/tmp/qwen2.5coder2b-int_arith-js-go.go:50:17: undefined: math
+/tmp/qwen2.5coder2b-int_arith-js-go.go:52:24: undefined: math

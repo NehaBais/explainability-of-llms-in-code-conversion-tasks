@@ -1,0 +1,1 @@
+Fix: To fix this issue, we need to make sure that every opening parenthesis '(' has a corresponding closing parenthesis ')'. In this case, the extra closing parenthesis ')' is causing the error. We can remove this extraneous closing parenthesis to fix the issue.

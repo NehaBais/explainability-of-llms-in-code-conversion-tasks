@@ -1,0 +1,118 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:14:25
+   |
+14 |     println!("~a = {}", ~a);
+   |                         ^
+   |
+help: use `!` to perform bitwise not
+   |
+14 |     println!("~a = {}", !a);
+   |                         ~
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:39:19
+   |
+39 |         a >> (n % width)
+   |                   ^^^^^ expected `i32`, found `u8`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u8`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:39:17
+   |
+39 |         a >> (n % width)
+   |                 ^ no implementation for `i32 % u8`
+   |
+   = help: the trait `Rem<u8>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:45:20
+   |
+45 |         a << (-n % width)
+   |                    ^^^^^ expected `i32`, found `u8`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u8`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:45:18
+   |
+45 |         a << (-n % width)
+   |                  ^ no implementation for `i32 % u8`
+   |
+   = help: the trait `Rem<u8>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:47:19
+   |
+47 |         a << (n % width)
+   |                   ^^^^^ expected `i32`, found `u8`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u8`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:47:17
+   |
+47 |         a << (n % width)
+   |                 ^ no implementation for `i32 % u8`
+   |
+   = help: the trait `Rem<u8>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:53:22
+   |
+53 |         ((a >> (-n % width)) | ((1 << width) - 1)) as i32
+   |                      ^^^^^ expected `i32`, found `u8`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u8`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:53:20
+   |
+53 |         ((a >> (-n % width)) | ((1 << width) - 1)) as i32
+   |                    ^ no implementation for `i32 % u8`
+   |
+   = help: the trait `Rem<u8>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:55:20
+   |
+55 |         (a >> (n % width)) as i32
+   |                    ^^^^^ expected `i32`, found `u8`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u8`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:55:18
+   |
+55 |         (a >> (n % width)) as i32
+   |                  ^ no implementation for `i32 % u8`
+   |
+   = help: the trait `Rem<u8>` is not implemented for `i32`
+   = help: the following other types implement trait `Rem<Rhs>`:
+             `&'a i32` implements `Rem<i32>`
+             `&i32` implements `Rem<&i32>`
+             `i32` implements `Rem<&i32>`
+             `i32` implements `Rem`
+
+warning: unused variable: `mask`
+  --> /tmp/codellama7b-bit_ops-py-rs.rs:29:9
+   |
+29 |     let mask: i32 = (1 << width) - 1;
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_mask`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 11 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

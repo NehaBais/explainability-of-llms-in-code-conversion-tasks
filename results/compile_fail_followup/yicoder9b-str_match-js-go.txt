@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_match-js-go.go:45:5: invalid operation: len(matches) > 1 && "s" (mismatched types untyped bool and untyped string)

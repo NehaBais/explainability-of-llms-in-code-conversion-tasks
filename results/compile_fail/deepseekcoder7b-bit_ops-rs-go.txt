@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-bit_ops-rs-go.go:19:9: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-rs-go.go:19:17: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-bit_ops-rs-go.go:19:33: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-bit_ops-rs-go.go:19:38: syntax error: unexpected :=, expected expression
+/tmp/deepseekcoder7b-bit_ops-rs-go.go:20:5: syntax error: non-declaration statement outside function body

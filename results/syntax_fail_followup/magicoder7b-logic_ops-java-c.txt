@@ -1,0 +1,7 @@
+/tmp/magicoder7b-logic_ops-java-c.c:10:9: error: use of undeclared identifier 'true'
+   10 |   logic(true, false); // Test case
+      |         ^
+/tmp/magicoder7b-logic_ops-java-c.c:10:15: error: use of undeclared identifier 'false'
+   10 |   logic(true, false); // Test case
+      |               ^
+2 errors generated.

@@ -1,0 +1,1 @@
+/tmp/yicoder2b-dir_make-cpp-go.go:1:1: expected 'package', found 'import'

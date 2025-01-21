@@ -1,0 +1,11 @@
+# command-line-arguments
+/tmp/granitecode8b-str_substring-java-go.go:6:6: Substring redeclared in this block
+	/tmp/granitecode8b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/granitecode8b-str_substring-java-go.go:9:6: Substring redeclared in this block
+	/tmp/granitecode8b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/granitecode8b-str_substring-java-go.go:12:6: Substring redeclared in this block
+	/tmp/granitecode8b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/granitecode8b-str_substring-java-go.go:13:7: undefined: strings
+/tmp/granitecode8b-str_substring-java-go.go:19:6: Substring redeclared in this block
+	/tmp/granitecode8b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/granitecode8b-str_substring-java-go.go:20:7: undefined: strings

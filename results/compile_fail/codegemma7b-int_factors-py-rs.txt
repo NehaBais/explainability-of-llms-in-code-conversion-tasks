@@ -1,0 +1,15 @@
+error: expected `{`, found `,`
+  --> /tmp/codegemma7b-int_factors-py-rs.rs:24:16
+   |
+24 |     for i in 45, 53, 64 {
+   |                ^ expected `{`
+
+error[E0432]: unresolved import `std::cmp::sqrt`
+ --> /tmp/codegemma7b-int_factors-py-rs.rs:1:5
+  |
+1 | use std::cmp::sqrt;
+  |     ^^^^^^^^^^^^^^ no `sqrt` in `cmp`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

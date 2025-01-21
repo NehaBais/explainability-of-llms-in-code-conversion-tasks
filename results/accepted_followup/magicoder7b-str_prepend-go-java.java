@@ -1,0 +1,2 @@
+var s = "world!";
+s = "Hello, " + s;

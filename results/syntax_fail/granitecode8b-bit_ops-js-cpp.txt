@@ -1,0 +1,46 @@
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:2:3: error: use of undeclared identifier 'cout'
+    2 |   cout << "a AND b: " << (a & b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:2:37: error: use of undeclared identifier 'endl'
+    2 |   cout << "a AND b: " << (a & b) << endl;
+      |                                     ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:3:3: error: use of undeclared identifier 'cout'
+    3 |   cout << "a OR b: " << (a | b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:3:36: error: use of undeclared identifier 'endl'
+    3 |   cout << "a OR b: " << (a | b) << endl;
+      |                                    ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:4:3: error: use of undeclared identifier 'cout'
+    4 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:4:37: error: use of undeclared identifier 'endl'
+    4 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |                                     ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "NOT a: " << ~a << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:5:30: error: use of undeclared identifier 'endl'
+    5 |   cout << "NOT a: " << ~a << endl;
+      |                              ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:6:37: error: use of undeclared identifier 'endl'
+    6 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |                                     ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:7:37: error: use of undeclared identifier 'endl'
+    7 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |                                     ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |   ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:8:31: error: expected expression
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                               ^
+/tmp/granitecode8b-bit_ops-js-cpp.cpp:8:39: error: use of undeclared identifier 'endl'
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                                       ^
+15 errors generated.

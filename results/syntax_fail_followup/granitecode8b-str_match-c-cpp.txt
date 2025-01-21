@@ -1,0 +1,64 @@
+/tmp/granitecode8b-str_match-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:4:22: error: unknown type name 'string'
+    4 | int startsWith(const string &container, const string &target) {
+      |                      ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:4:47: error: unknown type name 'string'
+    4 | int startsWith(const string &container, const string &target) {
+      |                                               ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:5:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    5 |   size_t clen = container.length(), tlen = target.length();
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-c-cpp.cpp:5:10: error: use of undeclared identifier 'clen'
+    5 |   size_t clen = container.length(), tlen = target.length();
+      |          ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:5:37: error: use of undeclared identifier 'tlen'
+    5 |   size_t clen = container.length(), tlen = target.length();
+      |                                     ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:6:14: error: use of undeclared identifier 'tlen'
+    6 |   if (clen < tlen)
+      |              ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:6:7: error: use of undeclared identifier 'clen'
+    6 |   if (clen < tlen)
+      |       ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:8:30: error: use of undeclared identifier 'tlen'
+    8 |   return container.substr(0, tlen).compare(target) == 0;
+      |                              ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:10:20: error: unknown type name 'string'
+   10 | int endsWith(const string &container, const string &target) {
+      |                    ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:10:45: error: unknown type name 'string'
+   10 | int endsWith(const string &container, const string &target) {
+      |                                             ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:11:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   11 |   size_t clen = container.length(), tlen = target.length();
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-c-cpp.cpp:11:10: error: use of undeclared identifier 'clen'
+   11 |   size_t clen = container.length(), tlen = target.length();
+      |          ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:11:37: error: use of undeclared identifier 'tlen'
+   11 |   size_t clen = container.length(), tlen = target.length();
+      |                                     ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:12:14: error: use of undeclared identifier 'tlen'
+   12 |   if (clen < tlen)
+      |              ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:12:7: error: use of undeclared identifier 'clen'
+   12 |   if (clen < tlen)
+      |       ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:14:27: error: use of undeclared identifier 'clen'
+   14 |   return container.substr(clen - tlen).compare(target) == 0;
+      |                           ^
+/tmp/granitecode8b-str_match-c-cpp.cpp:14:34: error: use of undeclared identifier 'tlen'
+   14 |   return container.substr(clen - tlen).compare(target) == 0;
+      |                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-dir_make-go-c.c:16:10: error: read-only variable is not assignable
+   16 |       *s = '\0';
+      |       ~~ ^
+/tmp/dolphincoder7b-dir_make-go-c.c:19:7: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |       free(parent);
+      |       ^
+/tmp/dolphincoder7b-dir_make-go-c.c:19:7: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

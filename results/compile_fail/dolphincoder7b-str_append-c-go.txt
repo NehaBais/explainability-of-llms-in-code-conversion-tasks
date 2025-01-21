@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_append-c-go.go:14:42: invalid argument: str (variable of type string) for built-in cap

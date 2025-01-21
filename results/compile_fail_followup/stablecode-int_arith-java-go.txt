@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-java-go.go:20:29: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-java-go.go:21:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-java-go.go:22:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-java-go.go:23:47: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-java-go.go:24:49: syntax error: unexpected ) at end of statement

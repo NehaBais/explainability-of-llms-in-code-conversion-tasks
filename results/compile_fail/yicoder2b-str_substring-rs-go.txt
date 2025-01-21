@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-str_substring-rs-go.go:37:40: syntax error: unexpected ], expected type argument list

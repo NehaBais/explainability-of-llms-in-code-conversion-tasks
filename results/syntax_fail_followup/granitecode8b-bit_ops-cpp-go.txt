@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-bit_ops-cpp-go.go:19:34: undefined: bits.RotateRight32

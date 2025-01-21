@@ -1,0 +1,36 @@
+/tmp/granitecode3b-int_factors-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-go-c.c:2:1: error: unknown type name 'int64_t'
+    2 | int64_t nr;
+      | ^
+/tmp/granitecode3b-int_factors-go-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter a positive integer: ");
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_factors-go-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%" SCNd64, &nr);
+      |   ^
+/tmp/granitecode3b-int_factors-go-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_factors-go-c.c:5:13: error: expected ')'
+    5 |   scanf("%" SCNd64, &nr);
+      |             ^
+/tmp/granitecode3b-int_factors-go-c.c:5:8: note: to match this '('
+    5 |   scanf("%" SCNd64, &nr);
+      |        ^
+/tmp/granitecode3b-int_factors-go-c.c:11:24: error: expected identifier
+   11 |   void (*apf)(int64_t, int) = NULL;
+      |                        ^
+/tmp/granitecode3b-int_factors-go-c.c:11:31: error: use of undeclared identifier 'NULL'
+   11 |   void (*apf)(int64_t, int) = NULL;
+      |                               ^
+/tmp/granitecode3b-int_factors-go-c.c:12:7: error: use of undeclared identifier 'e'
+   12 |   if (e > 0) {
+      |       ^
+/tmp/granitecode3b-int_factors-go-c.c:13:12: error: use of undeclared identifier 'printFactor'
+   13 |     apf = &printFactor;
+      |            ^
+/tmp/granitecode3b-int_factors-go-c.c:17:7: error: use of undeclared identifier 'fs'
+   17 |       fs[0] = d;
+      |       ^
+10 errors generated.

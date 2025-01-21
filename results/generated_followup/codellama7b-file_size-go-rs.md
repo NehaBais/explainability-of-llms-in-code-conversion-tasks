@@ -1,0 +1,16 @@
+Error: The `len` method is not defined for the `Result` enum, which is returned by the `metadata` function when there is an error.
+
+Fix: Use the `expect` method to unwrap the `Metadata` value and panic if the value is an error.
+
+Code:
+```rs
+use std::fs;
+
+fn main() {
+    // Prints the size of the input.txt file in the current working directory
+    println!("Size of input.txt: {}", fs::metadata("input.txt").expect("REASON").len());
+
+    // Prints the size of the /input.txt file located in root folder
+    println!("Size of /input.txt: {}", fs::metadata("/input.txt").expect("REASON").len());
+}
+```

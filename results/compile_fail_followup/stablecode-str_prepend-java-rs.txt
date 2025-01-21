@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/stablecode-str_prepend-java-rs.rs:1:1
+  |
+1 | let string = "abc".to_string() + "def";
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

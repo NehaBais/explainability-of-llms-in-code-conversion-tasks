@@ -1,0 +1,8 @@
+/tmp/granitecode3b-str_prepend-rs-c.c:1:10: error: expected "FILENAME" or <FILENAME>
+    1 | #include stdio.h
+      |          ^
+/tmp/granitecode3b-str_prepend-rs-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%sn", new_s);
+      |   ^
+/tmp/granitecode3b-str_prepend-rs-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 errors generated.

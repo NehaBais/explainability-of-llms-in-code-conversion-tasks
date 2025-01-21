@@ -1,19 +1,27 @@
 fn main() {
-    let string = String::from("0123456789");
-    // substrings starting from n characters in and of m length
-    println!("{:?}", &string[n..m + n]);
-    // substrings starting from n characters in, up to the end of the string
-    println!("{:?}", &string[n..]);
-    // whole string minus the last character
-    let s = string.clone();
-    println!("{}", &s[0..s.len() - 1]);
-    // starting from a known character within the string and of m length
-    println!("{:?}", &string[&c as usize..m + &c as usize]);
-    //starting from a known substring within the string and of m length
-    let index = sub
-        .as_bytes()
-        .iter()
-        .position(|a| *a == sub.as_bytes()[0])
-        .unwrap();
-    println!("{:?}", &string[index..m + index as usize]);
+    let s = String::from("0123456789");
+
+    let n = 3;
+    let m = 4;
+    let c = '2';
+    let sub = "456";
+
+    // Starting from n characters in and of m length
+    println!("{}", &s[n..n + m]);
+
+    // Starting from n characters in, up to the end of the string
+    println!("{}", &s[n..]);
+
+    // Whole string minus the last character
+    println!("{}", &s[..s.len() - 1]);
+
+    // Starting from a known character within the string and of m length
+    if let Some(pos) = s.find(c) {
+        println!("{}", &s[pos..pos + m]);
+    }
+
+    // Starting from a known substring within the string and of m length
+    if let Some(pos) = s.find(sub) {
+        println!("{}", &s[pos..pos + m]);
+    }
 }

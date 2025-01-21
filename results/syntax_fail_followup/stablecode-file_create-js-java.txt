@@ -1,0 +1,19 @@
+/tmp/Main.java:16: error: ';' expected
+        Files.write(Paths.get("output.txt"), "".getBytes()));
+                                                           ^
+/tmp/Main.java:22: error: ';' expected
+        Path root = Paths.get("/"));
+                                  ^
+/tmp/Main.java:24: error: illegal start of expression
+        if (Files.notExists(root))) {
+                                  ^
+/tmp/Main.java:26: error: ';' expected
+                Files.createDirectories(root));
+                                             ^
+/tmp/Main.java:34: error: ';' expected
+        Files.write(Paths.get("/output.txt"), "".getBytes()));
+                                                            ^
+/tmp/Main.java:41: error: ';' expected
+            Files.createDirectory(Paths.get("/docs"))));
+                                                     ^
+6 errors

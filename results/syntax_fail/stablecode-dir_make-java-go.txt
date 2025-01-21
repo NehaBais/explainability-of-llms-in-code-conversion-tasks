@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-dir_make-java-go.go:10:42: expected statement, found ')'

@@ -1,0 +1,13 @@
+/tmp/codegeex4-logic_ops-java-c.c:10:3: error: use of undeclared identifier 'bool'
+   10 |   bool a = 1; // true
+      |   ^
+/tmp/codegeex4-logic_ops-java-c.c:11:3: error: use of undeclared identifier 'bool'
+   11 |   bool b = 0; // false
+      |   ^
+/tmp/codegeex4-logic_ops-java-c.c:13:9: error: use of undeclared identifier 'a'
+   13 |   logic(a, b);
+      |         ^
+/tmp/codegeex4-logic_ops-java-c.c:13:12: error: use of undeclared identifier 'b'
+   13 |   logic(a, b);
+      |            ^
+4 errors generated.

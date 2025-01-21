@@ -1,0 +1,21 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `env`
+ --> /tmp/codegeex4-file_exists-py-rs.rs:4:15
+  |
+4 |     let pwd = env::current_dir().expect("Failed to get current directory");
+  |               ^^^ use of undeclared crate or module `env`
+  |
+help: consider importing this module
+  |
+1 + use std::env;
+  |
+
+error[E0601]: `main` function not found in crate `codegeex4_file_exists_py_rs`
+  --> /tmp/codegeex4-file_exists-py-rs.rs:30:2
+   |
+30 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-file_exists-py-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0433, E0601.
+For more information about an error, try `rustc --explain E0433`.

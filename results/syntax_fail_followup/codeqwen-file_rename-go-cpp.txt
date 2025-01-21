@@ -1,0 +1,25 @@
+/tmp/codeqwen-file_rename-go-cpp.cpp:2:21: error: no member named 'experimental' in namespace 'std'
+    2 | namespace fs = std::experimental::filesystem;
+      |                ~~~~~^
+/tmp/codeqwen-file_rename-go-cpp.cpp:6:3: error: use of undeclared identifier 'fs'
+    6 |   fs::rename("input.txt", "output.txt");
+      |   ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::rename("docs", "mydocs");
+      |   ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:13:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |   for (const auto &entry : fs::directory_iterator("/root/docs")) {
+      |              ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:13:28: error: use of undeclared identifier 'fs'
+   13 |   for (const auto &entry : fs::directory_iterator("/root/docs")) {
+      |                            ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:13:26: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   13 |   for (const auto &entry : fs::directory_iterator("/root/docs")) {
+      |                          ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:15:7: error: use of undeclared identifier 'fs'
+   15 |       fs::rename(entry, "/root/mydocs/" + entry.path().filename());
+      |       ^
+/tmp/codeqwen-file_rename-go-cpp.cpp:19:3: error: use of undeclared identifier 'fs'
+   19 |   fs::remove("/root/docs");
+      |   ^
+2 warnings and 6 errors generated.

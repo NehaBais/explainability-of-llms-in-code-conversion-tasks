@@ -1,0 +1,11 @@
+/tmp/magicoder7b-dir_make-go-c.c:11:13: error: call to undeclared function 'strdupa'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   char *p = strdupa(path);
+      |             ^
+/tmp/magicoder7b-dir_make-go-c.c:11:13: note: did you mean 'strdup'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:117:7: note: 'strdup' declared here
+  117 | char    *strdup(const char *__s1);
+      |          ^
+/tmp/magicoder7b-dir_make-go-c.c:11:9: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   11 |   char *p = strdupa(path);
+      |         ^   ~~~~~~~~~~~~~
+2 errors generated.

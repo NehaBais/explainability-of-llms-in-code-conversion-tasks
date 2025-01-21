@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/granitecode8b-str_cmp-py-go.go:12:19: newline in string
+/tmp/granitecode8b-str_cmp-py-go.go:12:19: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-str_cmp-py-go.go:13:9: newline in string
+/tmp/granitecode8b-str_cmp-py-go.go:14:19: newline in string
+/tmp/granitecode8b-str_cmp-py-go.go:15:9: newline in string
+/tmp/granitecode8b-str_cmp-py-go.go:16:2: syntax error: unexpected if at end of statement

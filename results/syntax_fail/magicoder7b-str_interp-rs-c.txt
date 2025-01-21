@@ -1,0 +1,13 @@
+/tmp/magicoder7b-str_interp-rs-c.c:13:10: error: use of undeclared identifier 'Mary_'
+   13 |   printf(STRINGIFY(Mary) " had a %s lamb\n", "little");
+      |          ^
+/tmp/magicoder7b-str_interp-rs-c.c:3:22: note: expanded from macro 'STRINGIFY'
+    3 | #define STRINGIFY(a) STRINGIFY2(a, _)
+      |                      ^
+/tmp/magicoder7b-str_interp-rs-c.c:2:26: note: expanded from macro 'STRINGIFY2'
+    2 | #define STRINGIFY2(a, b) a##b
+      |                          ^
+<scratch space>:348:1: note: expanded from here
+  348 | Mary_
+      | ^
+1 error generated.

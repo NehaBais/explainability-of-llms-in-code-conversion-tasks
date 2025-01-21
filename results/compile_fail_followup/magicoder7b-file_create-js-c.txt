@@ -1,0 +1,28 @@
+/tmp/magicoder7b-file_create-js-c.c:15:32: error: too many arguments to function call, expected 2, have 3
+   15 |   return open(pathname, flags, S_IRUSR | S_IWUSR);
+      |          ~~~~                  ^~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_s_ifmt.h:50:25: note: expanded from macro 'S_IRUSR'
+   50 | #define S_IRUSR         0000400         /* [XSI] R for owner */
+      |                         ^
+/tmp/magicoder7b-file_create-js-c.c:14:5: note: 'open' declared here
+   14 | int open(const char *pathname, int flags) {
+      |     ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/magicoder7b-file_create-js-c.c:19:35: error: use of undeclared identifier 'O_CREAT'
+   19 |   int result = open("output.txt", O_CREAT | O_EXCL,
+      |                                   ^
+/tmp/magicoder7b-file_create-js-c.c:19:45: error: use of undeclared identifier 'O_EXCL'
+   19 |   int result = open("output.txt", O_CREAT | O_EXCL,
+      |                                             ^
+/tmp/magicoder7b-file_create-js-c.c:23:9: error: use of undeclared identifier 'errno'
+   23 |     fct(errno);
+      |         ^
+/tmp/magicoder7b-file_create-js-c.c:25:32: error: use of undeclared identifier 'O_CREAT'
+   25 |   result = open("/output.txt", O_CREAT | O_EXCL, 0644);
+      |                                ^
+/tmp/magicoder7b-file_create-js-c.c:25:42: error: use of undeclared identifier 'O_EXCL'
+   25 |   result = open("/output.txt", O_CREAT | O_EXCL, 0644);
+      |                                          ^
+/tmp/magicoder7b-file_create-js-c.c:27:9: error: use of undeclared identifier 'errno'
+   27 |     fct(errno);
+      |         ^
+7 errors generated.

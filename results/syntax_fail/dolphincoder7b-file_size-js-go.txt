@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-file_size-js-go.go:6:2: "path/filepath" imported and not used

@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codegeex4-str_match-java-go.go:11:14: undefined: startsWith
+/tmp/codegeex4-str_match-java-go.go:14:14: undefined: endsWith
+/tmp/codegeex4-str_match-java-go.go:22:23: not enough arguments in call to indexOf
+	have (string, string)
+	want (string, string, int)

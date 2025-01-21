@@ -1,0 +1,13 @@
+/tmp/yicoder2b-str_cmp-js-cpp.cpp:12:18: error: expected expression
+   12 |   cout << (s1 == = s2)
+      |                  ^
+/tmp/yicoder2b-str_cmp-js-cpp.cpp:15:18: error: expected expression
+   15 |   cout << (s3 == = s4)
+      |                  ^
+/tmp/yicoder2b-str_cmp-js-cpp.cpp:26:16: error: no member named 'toupper' in 'std::string'
+   26 |   cout << ((s1.toupper() < s2.toupper()) ? "True" : "False")
+      |             ~~ ^
+/tmp/yicoder2b-str_cmp-js-cpp.cpp:26:31: error: no member named 'toupper' in 'std::string'
+   26 |   cout << ((s1.toupper() < s2.toupper()) ? "True" : "False")
+      |                            ~~ ^
+4 errors generated.

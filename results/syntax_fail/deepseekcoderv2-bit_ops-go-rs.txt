@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `uint16` in this scope
+  --> /tmp/deepseekcoderv2-bit_ops-go-rs.rs:29:23
+   |
+29 |     let shift_right = uint16(ua >> ub) >> (16 - ub);
+   |                       ^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `uint16` in this scope
+  --> /tmp/deepseekcoderv2-bit_ops-go-rs.rs:32:23
+   |
+32 |     let shift_right = uint16(ua >> ub) << (16 - ub);
+   |                       ^^^^^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

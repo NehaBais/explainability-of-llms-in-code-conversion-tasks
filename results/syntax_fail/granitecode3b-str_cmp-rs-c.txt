@@ -1,0 +1,57 @@
+/tmp/granitecode3b-str_cmp-rs-c.c:1:10: error: expected "FILENAME" or <FILENAME>
+    1 | #include &lt; string.h & gt;
+      |          ^
+/tmp/granitecode3b-str_cmp-rs-c.c:13:7: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   if (strcmp(a, b) == 0) {
+      |       ^
+/tmp/granitecode3b-str_cmp-rs-c.c:13:7: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode3b-str_cmp-rs-c.c:14:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     printf("The strings are equaln");
+      |     ^
+/tmp/granitecode3b-str_cmp-rs-c.c:14:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_cmp-rs-c.c:19:22: error: use of undeclared identifier 'gt'
+   19 |   if (strcmp(a, b) & gt; 0) {
+      |                      ^
+/tmp/granitecode3b-str_cmp-rs-c.c:19:24: error: expected ')'
+   19 |   if (strcmp(a, b) & gt; 0) {
+      |                        ^
+/tmp/granitecode3b-str_cmp-rs-c.c:19:6: note: to match this '('
+   19 |   if (strcmp(a, b) & gt; 0) {
+      |      ^
+/tmp/granitecode3b-str_cmp-rs-c.c:19:27: error: expected ';' after expression
+   19 |   if (strcmp(a, b) & gt; 0) {
+      |                           ^
+      |                           ;
+/tmp/granitecode3b-str_cmp-rs-c.c:19:27: error: expected expression
+/tmp/granitecode3b-str_cmp-rs-c.c:42:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   42 |   strcpy(a2, a);
+      |   ^
+/tmp/granitecode3b-str_cmp-rs-c.c:42:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode3b-str_cmp-rs-c.c:42:10: error: use of undeclared identifier 'a2'
+   42 |   strcpy(a2, a);
+      |          ^
+/tmp/granitecode3b-str_cmp-rs-c.c:43:3: error: call to undeclared function 'strupper'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   43 |   strupper(a2);
+      |   ^
+/tmp/granitecode3b-str_cmp-rs-c.c:43:12: error: use of undeclared identifier 'a2'
+   43 |   strupper(a2);
+      |            ^
+/tmp/granitecode3b-str_cmp-rs-c.c:45:14: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   char *b2 = malloc(strlen(b) + 1);
+      |              ^
+/tmp/granitecode3b-str_cmp-rs-c.c:45:14: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode3b-str_cmp-rs-c.c:45:21: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   char *b2 = malloc(strlen(b) + 1);
+      |                     ^
+/tmp/granitecode3b-str_cmp-rs-c.c:45:21: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_cmp-rs-c.c:50:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   50 |   free(a2);
+      |   ^
+/tmp/granitecode3b-str_cmp-rs-c.c:50:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/granitecode3b-str_cmp-rs-c.c:50:8: error: use of undeclared identifier 'a2'
+   50 |   free(a2);
+      |        ^
+/tmp/granitecode3b-str_cmp-rs-c.c:19:26: warning: expression result unused [-Wunused-value]
+   19 |   if (strcmp(a, b) & gt; 0) {
+      |                          ^
+1 warning and 15 errors generated.

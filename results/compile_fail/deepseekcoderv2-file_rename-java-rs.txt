@@ -1,0 +1,35 @@
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:17:18
+   |
+17 |     test("file", format!("{}/input.txt", std::env::current_dir().unwrap().display()), format!("{}/output.txt", std::env::current_dir().unwrap().display()));
+   |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:17:87
+   |
+17 |     test("file", format!("{}/input.txt", std::env::current_dir().unwrap().display()), format!("{}/output.txt", std::env::current_dir().unwrap().display()));
+   |                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:19:23
+   |
+19 |     test("directory", format!("{}/docs/", std::env::current_dir().unwrap().display()), format!("{}/mydocs/", std::env::current_dir().unwrap().display()));
+   |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:19:88
+   |
+19 |     test("directory", format!("{}/docs/", std::env::current_dir().unwrap().display()), format!("{}/mydocs/", std::env::current_dir().unwrap().display()));
+   |                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

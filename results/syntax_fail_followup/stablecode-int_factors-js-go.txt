@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-int_factors-js-go.go:12:41: expected statement, found ')' (and 6 more errors)

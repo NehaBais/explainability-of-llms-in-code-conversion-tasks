@@ -1,0 +1,8 @@
+/tmp/codegeex4-int_factors-java-c.c:30:26: error: called object type 'long *' is not a function or function pointer
+   30 |   long *factors = factors(100, &size);
+      |                   ~~~~~~~^
+/tmp/codegeex4-int_factors-java-c.c:33:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |     printf("%ld ", factors[i]);
+      |     ^
+/tmp/codegeex4-int_factors-java-c.c:33:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 errors generated.

@@ -1,23 +1,27 @@
 #include <math.h>
 #include <stdio.h>
-int factor(int n) {
-  int i;
-  int factors[n];
-  int num_factors = 0;
-  for (i = 1; i <= sqrt(n); i++) {
-    if (n % i == 0) {
-      factors[num_factors++] = i;
-      if (i != n / i) {
-        factors[num_factors++] = n / i;
+
+void factor(int n) {
+  int x;
+  for (x = 1; x * x < n; x++) {
+    if (n % x == 0) {
+      printf("%d ", x);
+      if (n / x != x) {
+        printf("%d ", n / x);
       }
     }
   }
-  return num_factors;
+  if (x * x == n) {
+    printf("%d ", x);
+  }
 }
+
 int main() {
-  int factor(n);
-  printf("%d: %d\n", 45, factor(45));
-  printf("%d: %d\n", 53, factor(53));
-  printf("%d: %d\n", 64, factor(64));
+  int numbers[] = {45, 53, 64};
+  for (int i = 0; i < 3; i++) {
+    printf("%i: factors: ", numbers[i]);
+    factor(numbers[i]);
+    printf("\n");
+  }
   return 0;
 }

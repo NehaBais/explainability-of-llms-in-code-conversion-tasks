@@ -1,0 +1,4 @@
+/tmp/Main.java:14: error: illegal start of type
+        System.out.printf("A <<< 1 = %08d%n", A <<< 1);
+                                                    ^
+1 error

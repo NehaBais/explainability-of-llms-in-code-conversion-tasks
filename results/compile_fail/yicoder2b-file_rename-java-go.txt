@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_rename-java-go.go:8:11: syntax error: unexpected type, expected )
+/tmp/yicoder2b-file_rename-java-go.go:10:50: syntax error: unexpected type, expected expression
+/tmp/yicoder2b-file_rename-java-go.go:10:101: invalid character U+003F '?'

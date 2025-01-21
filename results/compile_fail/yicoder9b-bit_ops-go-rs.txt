@@ -1,0 +1,39 @@
+warning: variable does not need to be mutable
+ --> /tmp/yicoder9b-bit_ops-go-rs.rs:1:24
+  |
+1 | fn bitwise(mut a: i32, mut b: u32) {
+  |                        ----^
+  |                        |
+  |                        help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+error: literal out of range for `i32`
+  --> /tmp/yicoder9b-bit_ops-go-rs.rs:40:30
+   |
+40 |         a = (a << b) | ((a & 0xFFFF_FFFF) >> (16 - b));
+   |                              ^^^^^^^^^^^
+   |
+   = note: the literal `0xFFFF_FFFF` (decimal `4294967295`) does not fit into the type `i32` and will become `-1i32`
+   = help: consider using the type `u32` instead
+   = note: `#[deny(overflowing_literals)]` on by default
+help: to use as a negative number (decimal `-1`), consider using the type `u32` for the literal and cast it to `i32`
+   |
+40 |         a = (a << b) | ((a & 0xFFFF_FFFFu32 as i32) >> (16 - b));
+   |                              ~~~~~~~~~~~~~~~~~~~~~
+
+error: literal out of range for `i32`
+  --> /tmp/yicoder9b-bit_ops-go-rs.rs:45:19
+   |
+45 |         a = ((a & 0xFFFF_FFFF) >> b) | (a << (16 - b));
+   |                   ^^^^^^^^^^^
+   |
+   = note: the literal `0xFFFF_FFFF` (decimal `4294967295`) does not fit into the type `i32` and will become `-1i32`
+   = help: consider using the type `u32` instead
+help: to use as a negative number (decimal `-1`), consider using the type `u32` for the literal and cast it to `i32`
+   |
+45 |         a = ((a & 0xFFFF_FFFFu32 as i32) >> b) | (a << (16 - b));
+   |                   ~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors; 1 warning emitted
+

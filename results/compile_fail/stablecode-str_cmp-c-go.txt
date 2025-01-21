@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-str_cmp-c-go.go:9:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-c-go.go:11:35: newline in string
+/tmp/stablecode-str_cmp-c-go.go:11:35: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-str_cmp-c-go.go:12:3: newline in string
+/tmp/stablecode-str_cmp-c-go.go:14:62: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-c-go.go:20:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-c-go.go:22:35: newline in string
+/tmp/stablecode-str_cmp-c-go.go:22:35: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-str_cmp-c-go.go:23:3: newline in string
+/tmp/stablecode-str_cmp-c-go.go:25:66: syntax error: unexpected ), expected := or = or comma
+/tmp/stablecode-str_cmp-c-go.go:25:66: too many errors

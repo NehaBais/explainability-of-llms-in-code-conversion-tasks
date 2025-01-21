@@ -1,0 +1,9 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `regex`
+  --> /tmp/deepseekcoderv2-str_match-js-rs.rs:18:14
+   |
+18 |     let re = regex::Regex::new(string_b).unwrap();
+   |              ^^^^^ use of undeclared crate or module `regex`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.

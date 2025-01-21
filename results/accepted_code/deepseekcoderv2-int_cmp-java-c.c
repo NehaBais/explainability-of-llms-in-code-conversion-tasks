@@ -1,12 +1,24 @@
 #include <stdio.h>
+
 int main() {
-  int num1, num2;
-  printf("Enter 2 numbers:");
-  scanf("%d %d", &num1, &num2);
-  if (num1 < num2) {
-    printf("\n%d is less than %d\n", num1, num2);
-  } else if (num1 > num2) {
-    printf("\n%d is greater than %d\n", num1, num2);
-  } else
-    printf("\n%d is equal to %d\n", num1, num2);
+  int nbr1, nbr2;
+
+  printf("Enter the first integer: ");
+  scanf("%d", &nbr1);
+  printf("Enter the second integer: ");
+  scanf("%d", &nbr2);
+
+  if (nbr1 < nbr2) {
+    printf("%d is less than %d\n", nbr1, nbr2);
+  }
+
+  if (nbr1 > nbr2) {
+    printf("%d is greater than %d\n", nbr1, nbr2);
+  }
+
+  if (nbr1 == nbr2) {
+    printf("%d is equal to %d\n", nbr1, nbr2);
+  }
+
+  return 0;
 }

@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-int_factors-java-cpp.cpp:5:23: error: non-aggregate type 'std::set<long long>' cannot be initialized with an initializer list
+    5 |   std::set<long long> factors = {n, 1};
+      |                       ^         ~~~~~~
+1 error generated.

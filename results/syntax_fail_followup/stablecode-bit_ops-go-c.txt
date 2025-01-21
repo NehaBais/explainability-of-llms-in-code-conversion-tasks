@@ -1,0 +1,28 @@
+/tmp/stablecode-bit_ops-go-c.c:5:28: error: extraneous ')' before ';'
+    5 |   printf("a:   %016b\n", a));
+      |                            ^
+/tmp/stablecode-bit_ops-go-c.c:6:30: error: extraneous ')' before ';'
+    6 |     printf("b:   %016b\n", b));
+      |                              ^
+/tmp/stablecode-bit_ops-go-c.c:9:34: error: extraneous ')' before ';'
+    9 |     printf("and: %016b\n", a & b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:10:34: error: extraneous ')' before ';'
+   10 |     printf("or : %016b\n", a | b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:11:34: error: extraneous ')' before ';'
+   11 |     printf("xor :%016b\n", a ^ b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:13:35: error: extraneous ')' before ';'
+   13 |     printf("shl: %016b\n", a << b));
+      |                                   ^
+/tmp/stablecode-bit_ops-go-c.c:14:35: error: extraneous ')' before ';'
+   14 |     printf("shr: %016b\n", a >> b));
+      |                                   ^
+/tmp/stablecode-bit_ops-go-c.c:18:34: error: extraneous ')' before ';'
+   18 |     printf("Sum  : %d\n", result));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:20:40: error: extraneous ')' before ';'
+   20 |     printf("Difference : %d\n", result));
+      |                                        ^
+9 errors generated.

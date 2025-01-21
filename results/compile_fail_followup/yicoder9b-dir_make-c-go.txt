@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-dir_make-c-go.go:22:14: invalid operation: operator ! not defined on (info.Mode() & os.ModeDir) (value of type fs.FileMode)

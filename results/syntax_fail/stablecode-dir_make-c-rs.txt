@@ -1,0 +1,20 @@
+error[E0603]: struct `Path` is private
+ --> /tmp/stablecode-dir_make-c-rs.rs:4:20
+  |
+4 |     let path = fs::Path::new(path);
+  |                    ^^^^ private struct
+  |
+note: the struct `Path` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:17:19
+help: consider importing this struct instead
+  |
+4 |     let path = std::path::Path::new(path);
+  |                ~~~~~~~~~~~~~~~
+help: import `Path` directly
+  |
+4 |     let path = std::path::Path(path);
+  |                ~~~~~~~~~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0603`.

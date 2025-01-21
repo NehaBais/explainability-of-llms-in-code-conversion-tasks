@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/yicoder9b-str_prepend-cpp-go.go:9:27: syntax error: unexpected {, expected expression
+/tmp/yicoder9b-str_prepend-cpp-go.go:11:2: syntax error: non-declaration statement outside function body

@@ -1,0 +1,65 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:7:1
+  |
+1 | fn substring(s: &str, n: usize, m: Option) -> String {
+  | ---------------------------------------------------- previous definition of the value `substring` here
+...
+7 | fn substring(s: &str, n: usize) -> String {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:10:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+10 | fn substring(s: &str) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:13:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+13 | fn substring(s: &str, c: char, m: usize) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:17:1
+   |
+1  | fn substring(s: &str, n: usize, m: Option) -> String {
+   | ---------------------------------------------------- previous definition of the value `substring` here
+...
+17 | fn substring(s: &str, sub: &str, m: usize) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0601]: `main` function not found in crate `granitecode8b_str_substring_java_rs`
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:20:2
+   |
+20 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode8b-str_substring-java-rs.rs`
+
+error[E0107]: missing generics for enum `Option`
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:1:36
+  |
+1 | fn substring(s: &str, n: usize, m: Option) -> String {
+  |                                    ^^^^^^ expected 1 generic argument
+  |
+help: add missing generic argument
+  |
+1 | fn substring(s: &str, n: usize, m: Option<T>) -> String {
+  |                                          +++
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0107, E0428, E0601.
+For more information about an error, try `rustc --explain E0107`.

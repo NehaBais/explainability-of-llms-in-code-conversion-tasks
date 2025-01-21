@@ -1,0 +1,22 @@
+/tmp/magicoder7b-str_match-rs-cpp.cpp:5:29: error: no template named 'optional' in namespace 'std'
+    5 | void print_match(const std::optional<size_t> &possible_match) {
+      |                        ~~~~~^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:19:3: error: use of undeclared identifier 'assert'
+   19 |   assert(s1.find(s3) == 0);
+      |   ^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:22:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |   auto position = s1.find(s2);
+      |   ^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:24:26: error: no member named 'make_optional' in namespace 'std'
+   24 |                   ? std::make_optional<size_t>(position)
+      |                     ~~~~~^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:24:40: error: unexpected type name 'size_t': expected expression
+   24 |                   ? std::make_optional<size_t>(position)
+      |                                        ^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:25:26: error: no member named 'nullopt' in namespace 'std'
+   25 |                   : std::nullopt); // Found match at pos 0
+      |                     ~~~~~^
+/tmp/magicoder7b-str_match-rs-cpp.cpp:28:3: error: use of undeclared identifier 'assert'
+   28 |   assert(s2.find(s3, s2.length() - s3.length()) != std::string::npos);
+      |   ^
+1 warning and 6 errors generated.

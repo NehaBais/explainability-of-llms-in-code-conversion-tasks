@@ -1,0 +1,4 @@
+/tmp/Main.java:17: error: ';' expected
+        long size2 = new File(path.substring(index))).length();
+                                                    ^
+1 error

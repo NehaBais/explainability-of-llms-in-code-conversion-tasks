@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-c-go.go:15:31: '\uFFFD' (untyped rune constant 65533) overflows byte
+/tmp/qwen2.5coder2b-str_substring-c-go.go:17:5: undefined: i
+/tmp/qwen2.5coder2b-str_substring-c-go.go:21:17: undefined: i
+/tmp/qwen2.5coder2b-str_substring-c-go.go:26:9: multiple-value substring(s, 0, len(s) - 1) (value of type (string, error)) in single-value context
+/tmp/qwen2.5coder2b-str_substring-c-go.go:46:11: undefined: strings

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegeex4-file_rename-java-go.go:15:33: invalid character U+003F '?'
+/tmp/codegeex4-file_rename-java-go.go:15:35: syntax error: unexpected literal "was renamed as", expected )
+/tmp/codegeex4-file_rename-java-go.go:16:37: syntax error: unexpected ), expected := or = or comma

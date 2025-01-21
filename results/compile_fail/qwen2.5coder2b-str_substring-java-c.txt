@@ -1,0 +1,31 @@
+/tmp/qwen2.5coder2b-str_substring-java-c.c:11:7: error: conflicting types for 'substring'
+   11 | char *substring(char *str, int n) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:18:7: error: conflicting types for 'substring'
+   18 | char *substring(char *str) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:25:7: error: conflicting types for 'substring'
+   25 | char *substring(char *str, char c, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:27:30: warning: ordered comparison between pointer and integer ('char *' and 'unsigned long')
+   27 |   if (pos != NULL && pos + m < strlen(str)) {
+      |                      ~~~~~~~ ^ ~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_substring-java-c.c:33:7: error: conflicting types for 'substring'
+   33 | char *substring(char *str, const char *sub, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:35:30: warning: ordered comparison between pointer and integer ('char *' and 'unsigned long')
+   35 |   if (pos != NULL && pos + m < strlen(str)) {
+      |                      ~~~~~~~ ^ ~~~~~~~~~~~
+2 warnings and 4 errors generated.

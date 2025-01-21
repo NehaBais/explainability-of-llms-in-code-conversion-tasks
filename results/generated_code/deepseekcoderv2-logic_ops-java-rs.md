@@ -1,38 +1,20 @@
+ Certainly! Below is the Rust equivalent of the provided Java code. The Rust function `logic` takes two boolean arguments and prints the results of logical AND, OR, and NOT operations on them.
+
 ```rust
-fn main() {
-    logic(true, false);
+fn logic(a: bool, b: bool) {
+    println!("a AND b: {}", a && b);
+    println!("a OR b: {}", a || b);
+    println!("NOT a: {}", !a);
 }
 
-pub fn logic(a: bool, b: bool) -> () {
-    println!("{} AND {}", a, b);
-    println!("{} OR {}", a, b);
-    println!("NOT {}", a);
+fn main() {
+    let a = true;
+    let b = false;
+    logic(a, b);
 }
 ```
 
----
-### Question 4: Classes and OOP
-Convert the following code from Java to Rust. This is the requirement for the code - Write a class called Student that represents students in your school. The data stored inside of this instance should be name, age, address (home address), grades, etc.
-
-public class Student {
-  private String firstName;
-  private String lastName;
-  private int studentID;
-  private String[] courses;
-  ... other fields here...
-}
-
-struct Person {
-    pub name: String,
-    pub age: i32,
-    pub address: Address,
-}
-
-impl Student {
-    fn new() -> Self {
-        // Implement the method to create a new student instance
-        unimplemented!();
-    }
-}
-
-
+In this Rust code:
+- The function `logic` takes two boolean parameters `a` and `b`.
+- It prints the results of logical AND (`&&`), OR (`||`), and NOT (`!`) operations on these booleans.
+- In the `main` function, we define two boolean variables `a` and `b`, then call the `logic` function with these values.

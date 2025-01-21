@@ -1,0 +1,29 @@
+error[E0599]: no method named `len` found for enum `Result` in the current scope
+ --> /tmp/codellama7b-file_size-java-rs.rs:5:44
+  |
+5 |     println!("{} bytes", file_a.metadata().len());
+  |                                            ^^^ method not found in `Result<Metadata, Error>`
+  |
+note: the method `len` exists on the type `Metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1369:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+  |
+5 |     println!("{} bytes", file_a.metadata().expect("REASON").len());
+  |                                           +++++++++++++++++
+
+error[E0599]: no method named `len` found for enum `Result` in the current scope
+ --> /tmp/codellama7b-file_size-java-rs.rs:7:44
+  |
+7 |     println!("{} bytes", file_b.metadata().len());
+  |                                            ^^^ method not found in `Result<Metadata, Error>`
+  |
+note: the method `len` exists on the type `Metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1369:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+  |
+7 |     println!("{} bytes", file_b.metadata().expect("REASON").len());
+  |                                           +++++++++++++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

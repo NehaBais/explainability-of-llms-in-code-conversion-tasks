@@ -1,58 +1,90 @@
-#include <stdio.h>
-#include <string.h>
+import java.util.Scanner;
 
-int main() {
-    char str1[] = "hello";
-    char str2[] = "world";
-    int result;
+public class StringComparison {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
 
-    // Compare two strings for exact equality
-    result = strcmp(str1, str2);
-    if (result == 0) {
-        printf("Strings are equal.\n");
-    } else {
-        printf("Strings are not equal.\n");
+    System.out.println("	eq , ne , gt , lt , ge , le");
+    for (int i = 0; i < args.length; i += 2) {
+      String a = args[i];
+      String b = args[i + 1];
+
+      compare(a, b);
+      compareCaseInsensitive(a, b);
     }
+  }
 
-    // Compare two strings for inequality
-    result = strcmp(str1, str2);
-    if (result != 0) {
-        printf("Strings are not equal.\n");
-    } else {
-        printf("Strings are equal.\n");
-    }
+  public static void compare(String a, String b) {
+    System.out.printf(
+        "%s %2d%2d%2d%2d%2d%2d %s%n",
+        a,
+        equals(a, b),
+        notEquals(a, b),
+        greaterThan(a, b),
+        lessThan(a, b),
+        greaterEqual(a, b),
+        lessEqual(a, b),
+        b);
+  }
 
-    // Compare two strings to see if one is lexically ordered before the other
-    result = strcmp(str1, str2);
-    if (result < 0) {
-        printf("%s comes before %s in lexicographic order.\n", str1, str2);
-    } else {
-        printf("%s does not come before %s in lexicographic order.\n", str1, str2);
-    }
+  public static void compareCaseInsensitive(String a, String b) {
+    System.out.printf(
+        "%s %2d%2d%2d%2d%2d%2d %s ignoring case%n",
+        a,
+        equalsIgnoreCase(a, b),
+        notEqualsIgnoreCase(a, b),
+        greaterThanIgnoreCase(a, b),
+        lessThanIgnoreCase(a, b),
+        greaterEqualIgnoreCase(a, b),
+        lessEqualIgnoreCase(a, b),
+        b);
+  }
 
-    // Compare two strings to see if one is lexically ordered after the other
-    result = strcmp(str1, str2);
-    if (result > 0) {
-        printf("%s comes after %s in lexicographic order.\n", str1, str2);
-    } else {
-        printf("%s does not come after %s in lexicographic order.\n", str1, str2);
-    }
+  public static int equals(String a, String b) {
+    return a.equals(b) ? 1 : 0;
+  }
 
-    // Compare two strings to see if one is lexically ordered before the other (case-insensitive)
-    result = stricmp(str1, str2);
-    if (result < 0) {
-        printf("%s comes before %s in lexicographic order.\n", str1, str2);
-    } else {
-        printf("%s does not come before %s in lexicographic order.\n", str1, str2);
-    }
+  public static int notEquals(String a, String b) {
+    return !a.equals(b) ? 1 : 0;
+  }
 
-    // Compare two strings to see if one is lexically ordered after the other (case-insensitive)
-    result = stricmp(str1, str2);
-    if (result > 0) {
-        printf("%s comes after %s in lexicographic order.\n", str1, str2);
-    } else {
-        printf("%s does not come after %s in lexicographic order.\n", str1, str2);
-    }
+  public static int greaterThan(String a, String b) {
+    return a.compareTo(b) > 0 ? 1 : 0;
+  }
 
-    return 0;
+  public static int lessThan(String a, String b) {
+    return a.compareTo(b) < 0 ? 1 : 0;
+  }
+
+  public static int greaterEqual(String a, String b) {
+    return a.compareTo(b) >= 0 ? 1 : 0;
+  }
+
+  public static int lessEqual(String a, String b) {
+    return a.compareTo(b) <= 0 ? 1 : 0;
+  }
+
+  public static int equalsIgnoreCase(String a, String b) {
+    return a.equalsIgnoreCase(b) ? 1 : 0;
+  }
+
+  public static int notEqualsIgnoreCase(String a, String b) {
+    return !a.equalsIgnoreCase(b) ? 1 : 0;
+  }
+
+  public static int greaterThanIgnoreCase(String a, String b) {
+    return a.compareToIgnoreCase(b) > 0 ? 1 : 0;
+  }
+
+  public static int lessThanIgnoreCase(String a, String b) {
+    return a.compareToIgnoreCase(b) < 0 ? 1 : 0;
+  }
+
+  public static int greaterEqualIgnoreCase(String a, String b) {
+    return a.compareToIgnoreCase(b) >= 0 ? 1 : 0;
+  }
+
+  public static int lessEqualIgnoreCase(String a, String b) {
+    return a.compareToIgnoreCase(b) <= 0 ? 1 : 0;
+  }
 }

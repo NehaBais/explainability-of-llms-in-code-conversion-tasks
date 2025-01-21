@@ -1,0 +1,30 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-dir_make-go-rs.rs:4:33
+  |
+4 | fn create_directory(path: &str) {
+  |                                 ^ unclosed delimiter
+...
+7 |     if let Err(e) = fs::create_dir_all(&path)) {
+  |                                              ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-dir_make-go-rs.rs:7:48
+  |
+7 |     if let Err(e) = fs::create_dir_all(&path)) {
+  |                                                ^ unclosed delimiter
+8 |         eprintln!("Failed to create directory: {}", e));
+  |                                                       ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-dir_make-go-rs.rs:10:5
+   |
+7  |     if let Err(e) = fs::create_dir_all(&path)) {
+   |                                              - missing open `(` for this delimiter
+8  |         eprintln!("Failed to create directory: {}", e));
+   |                                                       - missing open `(` for this delimiter
+9  |         return;
+10 |     }
+   |     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

@@ -1,0 +1,29 @@
+error[E0308]: mismatched types
+ --> /tmp/codellama7b-str_append-c-rs.rs:9:22
+  |
+9 |         str.push_str(cstr.as_ptr());
+  |             -------- ^^^^^^^^^^^^^ expected `&str`, found `*const i8`
+  |             |
+  |             arguments to this method are incorrect
+  |
+  = note: expected reference `&str`
+           found raw pointer `*const i8`
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:1063:12
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_append-c-rs.rs:10:22
+   |
+10 |         str.push_str(cstr2.as_ptr());
+   |             -------- ^^^^^^^^^^^^^^ expected `&str`, found `*const i8`
+   |             |
+   |             arguments to this method are incorrect
+   |
+   = note: expected reference `&str`
+            found raw pointer `*const i8`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:1063:12
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

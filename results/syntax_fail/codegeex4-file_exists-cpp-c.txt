@@ -1,0 +1,18 @@
+/tmp/codegeex4-file_exists-cpp-c.c:15:14: warning: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Wstring-compare]
+   15 |     if (type == "directory") {
+      |              ^  ~~~~~~~~~~~
+/tmp/codegeex4-file_exists-cpp-c.c:27:7: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   27 |   if (getcwd(cwd, sizeof(cwd)) != NULL) {
+      |       ^
+/tmp/codegeex4-file_exists-cpp-c.c:27:32: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   27 |   if (getcwd(cwd, sizeof(cwd)) != NULL) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/codegeex4-file_exists-cpp-c.c:31:5: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |     strcpy(cwd + strlen(cwd), "/docs/");
+      |     ^
+/tmp/codegeex4-file_exists-cpp-c.c:31:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/codegeex4-file_exists-cpp-c.c:31:18: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |     strcpy(cwd + strlen(cwd), "/docs/");
+      |                  ^
+/tmp/codegeex4-file_exists-cpp-c.c:31:18: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+2 warnings and 3 errors generated.

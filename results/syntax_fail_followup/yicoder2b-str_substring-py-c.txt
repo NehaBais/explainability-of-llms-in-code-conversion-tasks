@@ -1,0 +1,11 @@
+/tmp/yicoder2b-str_substring-py-c.c:12:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     if ((char)s[i] == s[strlen(s) - 1])
+      |                         ^
+/tmp/yicoder2b-str_substring-py-c.c:12:25: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/yicoder2b-str_substring-py-c.c:15:30: error: use of undeclared identifier 'i'
+   15 |   printf("%.*s\n", m - 1, &s[i]);
+      |                              ^
+/tmp/yicoder2b-str_substring-py-c.c:31:26: error: use of undeclared identifier 'i'
+   31 |   printf("%.*s\n", m, &s[i] + m);
+      |                          ^
+3 errors generated.

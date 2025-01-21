@@ -1,0 +1,26 @@
+/tmp/Main.java:8: error: cannot find symbol
+    ArrayList<Integer> q2matches = new ArrayList<>();
+    ^
+  symbol:   class ArrayList
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    ArrayList<Integer> q2matches = new ArrayList<>();
+                                       ^
+  symbol:   class ArrayList
+  location: class Main
+/tmp/Main.java:17: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB);
+    ^
+  symbol:   class Pattern
+  location: class Main
+/tmp/Main.java:17: error: cannot find symbol
+    Pattern pattern = Pattern.compile(stringB);
+                      ^
+  symbol:   variable Pattern
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    Matcher matcher = pattern.matcher(stringA);
+    ^
+  symbol:   class Matcher
+  location: class Main
+5 errors

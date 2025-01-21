@@ -1,0 +1,21 @@
+/tmp/Main.java:3: error: cannot find symbol
+    LogicCalculator.printLogic(true, true);
+    ^
+  symbol:   variable LogicCalculator
+  location: class Main
+/tmp/Main.java:4: error: cannot find symbol
+    LogicCalculator.printLogic(true, false);
+    ^
+  symbol:   variable LogicCalculator
+  location: class Main
+/tmp/Main.java:5: error: cannot find symbol
+    LogicCalculator.printLogic(false, true);
+    ^
+  symbol:   variable LogicCalculator
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    LogicCalculator.printLogic(false, false);
+    ^
+  symbol:   variable LogicCalculator
+  location: class Main
+4 errors

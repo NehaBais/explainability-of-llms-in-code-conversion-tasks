@@ -1,0 +1,43 @@
+/tmp/granitecode8b-int_factors-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:5:1: error: unknown type name 'vector'
+    5 | vector factors(int num) {
+      | ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:6:3: error: unknown type name 'vector'
+    6 |   vector n_factors;
+      |   ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:7:24: error: use of undeclared identifier 'sqrt'
+    7 |   for (int i = 1; i <= sqrt(num); i++) {
+      |                        ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:10:16: error: use of undeclared identifier 'sqrt'
+   10 |       if (i != sqrt(num)) { // avoid adding duplicate factors
+      |                ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:20:3: error: unknown type name 'vector'
+   20 |   vector factors = factors(num);
+      |   ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "[";
+      |   ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:23:5: error: use of undeclared identifier 'cout'
+   23 |     cout << factors[i];
+      |     ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:25:7: error: use of undeclared identifier 'cout'
+   25 |       cout << ", ";
+      |       ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:28:3: error: use of undeclared identifier 'cout'
+   28 |   cout << "]" << endl;
+      |   ^
+/tmp/granitecode8b-int_factors-js-cpp.cpp:28:18: error: use of undeclared identifier 'endl'
+   28 |   cout << "]" << endl;
+      |                  ^
+1 warning and 13 errors generated.

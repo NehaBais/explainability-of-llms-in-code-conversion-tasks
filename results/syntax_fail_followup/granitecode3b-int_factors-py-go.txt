@@ -1,0 +1,1 @@
+/tmp/granitecode3b-int_factors-py-go.go:1:1: expected 'package', found 'import'

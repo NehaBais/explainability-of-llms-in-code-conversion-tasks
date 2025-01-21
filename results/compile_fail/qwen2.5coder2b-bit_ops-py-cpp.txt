@@ -1,0 +1,43 @@
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:18:38: error: member reference base type 'unsigned long' is not a structure or union
+   18 |             << (~a_bitset.to_ulong()).to_string();
+      |                ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:10:27: error: use of undeclared identifier 'mask'
+   10 |             << ((a & b) & mask).to_string() << "\n OR:      0b"
+      |                           ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:13:27: error: use of undeclared identifier 'mask'
+   13 |             << ((a | b) & mask).to_string() << "\n XOR:     0b"
+      |                           ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:16:27: error: use of undeclared identifier 'mask'
+   16 |             << ((a ^ b) & mask).to_string() << "\n NOT:   ~ 0b"
+      |                           ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:21:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   21 |   for (int shift : shifts) {
+      |                  ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:24:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |     for (int s : shifts) {
+      |                ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:26:48: error: member reference base type 'unsigned long' is not a structure or union
+   26 |                 << ((a_bitset >> s).to_ulong()).to_string();
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:33:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   33 |   for (int s : shifts) {
+      |              ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:35:63: error: member reference base type 'unsigned long' is not a structure or union
+   35 |               << s << ") = 0b" << ((a_bitset >> s).to_ulong()).to_string();
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:49:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   49 |   for (int shift : shifts) {
+      |                  ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:52:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   52 |     for (int s : shifts) {
+      |                ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:54:48: error: member reference base type 'unsigned long' is not a structure or union
+   54 |                 << ((a_bitset >> s).to_ulong()).to_string();
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:61:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   61 |   for (int s : shifts) {
+      |              ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:63:63: error: member reference base type 'unsigned long' is not a structure or union
+   63 |               << s << ") = 0b" << ((a_bitset >> s).to_ulong()).to_string();
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+6 warnings and 8 errors generated.

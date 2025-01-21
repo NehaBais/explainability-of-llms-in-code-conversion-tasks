@@ -1,0 +1,62 @@
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:6:3: error: use of undeclared identifier 'compare'
+    6 |   compare("Hello", "Hello");
+      |   ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:7:3: error: use of undeclared identifier 'compare'
+    7 |   compare("5", "5.0");
+      |   ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:8:3: error: use of undeclared identifier 'compare'
+    8 |   compare("java", "Java");
+      |   ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:9:3: error: use of undeclared identifier 'compare'
+    9 |   compare("ĴÃVÁ", "ĴÃVÁ");
+      |   ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:10:3: error: use of undeclared identifier 'compare'
+   10 |   compare("ĴÃVÁ", "ĵãvá");
+      |   ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:40:66: error: invalid operands to binary expression ('std::string' (aka 'basic_string<char>') and 'const std::string' (aka 'const basic_string<char>'))
+   40 |   std::cout << "The lexical relationship is: " << std::string(A) - B << "\n";
+      |                                                   ~~~~~~~~~~~~~~ ^ ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:295:1: note: candidate template ignored: could not match 'reverse_iterator' against 'basic_string'
+  295 | operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:310:1: note: candidate template ignored: could not match 'move_iterator' against 'basic_string'
+  310 | operator-(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:186:5: note: candidate template ignored: could not match '__wrap_iter' against 'basic_string'
+  186 |     operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h:60:40: note: candidate template ignored: could not match 'fpos' against 'basic_string'
+   60 | inline _LIBCPP_HIDE_FROM_ABI streamoff operator-(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+      |                                        ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:42:31: error: invalid operands to binary expression ('std::string' (aka 'basic_string<char>') and 'const std::string' (aka 'const basic_string<char>'))
+   42 |             << std::string(A) - B << "\n";
+      |                ~~~~~~~~~~~~~~ ^ ~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:295:1: note: candidate template ignored: could not match 'reverse_iterator' against 'basic_string'
+  295 | operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:310:1: note: candidate template ignored: could not match 'move_iterator' against 'basic_string'
+  310 | operator-(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:186:5: note: candidate template ignored: could not match '__wrap_iter' against 'basic_string'
+  186 |     operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h:60:40: note: candidate template ignored: could not match 'fpos' against 'basic_string'
+   60 | inline _LIBCPP_HIDE_FROM_ABI streamoff operator-(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+      |                                        ^
+In file included from /tmp/yicoder2b-str_cmp-java-cpp.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1855:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl_any_all_none_of.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:14:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl_backend.h:12:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backend.h:65:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/transform.h:13:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/transform.h:24:15: error: cannot assign to return value because function 'operator*' returns a const value
+   24 |     *__result = __op(*__first);
+      |     ~~~~~~~~~ ^
+/tmp/yicoder2b-str_cmp-java-cpp.cpp:21:10: note: in instantiation of function template specialization 'std::transform<std::__wrap_iter<const char *>, std::__wrap_iter<const char *>, int (*)(int)>' requested here
+   21 |     std::transform(B.begin(), B.end(), B.begin(), ::tolower);
+      |          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:48:55: note: function 'operator*' which returns const-qualified type 'reference' (aka 'const char &') declared here
+   48 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 reference operator*() const _NOEXCEPT { return *__i_; }
+      |                                                       ^~~~~~~~~
+8 errors generated.

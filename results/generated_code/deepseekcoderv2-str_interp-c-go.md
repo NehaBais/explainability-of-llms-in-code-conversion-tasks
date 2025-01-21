@@ -1,4 +1,5 @@
-*/
+ Sure, here is the equivalent code in Golang:
+
 ```go
 package main
 
@@ -7,12 +8,9 @@ import (
 )
 
 func main() {
-	// Define the original string, value and interpolation function
-	originalString := "Mary had a %s lamb."
-	value := "little"
-
-	// Interpolate the original string with the given variable or value
-	result := fmt.Sprintf(originalString, value)
-	fmt.Println(result)
+	extra := "little"
+	fmt.Printf("Mary had a %s lamb.\n", extra)
 }
 ```
+
+In this Go code, we define the `extra` variable with the string "little". We then use the `fmt.Printf` function to perform string interpolation by replacing the placeholder `%s` in the format string with the value of `extra`.

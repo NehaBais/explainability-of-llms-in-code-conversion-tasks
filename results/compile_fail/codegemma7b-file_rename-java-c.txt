@@ -1,0 +1,41 @@
+/tmp/codegemma7b-file_rename-java-c.c:5:1: error: unknown type name 'bool'
+    5 | bool renameFile(const char *oldname, const char *newname) {
+      | ^
+/tmp/codegemma7b-file_rename-java-c.c:17:22: error: call to undeclared function 'string'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                      ^
+/tmp/codegemma7b-file_rename-java-c.c:17:20: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+   17 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                ~~~~^~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:17:20: note: use array indexing to silence this warning
+   17 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                    ^                    
+      |                &   [                    ]
+/tmp/codegemma7b-file_rename-java-c.c:17:47: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+   17 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                                           ~~~~^~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:17:47: note: use array indexing to silence this warning
+   17 |   test("file", "/" + string("input.txt"), "/" + string("output.txt"));
+      |                                               ^                     
+      |                                           &   [                     ]
+/tmp/codegemma7b-file_rename-java-c.c:19:25: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                     ~~~~^~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:19:25: note: use array indexing to silence this warning
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                         ^
+      |                     &   [                ]
+/tmp/codegemma7b-file_rename-java-c.c:19:43: error: invalid operands to binary expression ('char *' and 'char[2]')
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                     ~~~~~~~~~~~~~~~~~~~~~ ^ ~~~
+/tmp/codegemma7b-file_rename-java-c.c:19:54: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                                                  ~~~~^~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-file_rename-java-c.c:19:54: note: use array indexing to silence this warning
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                                                      ^
+      |                                                  &   [                  ]
+/tmp/codegemma7b-file_rename-java-c.c:19:74: error: invalid operands to binary expression ('char *' and 'char[2]')
+   19 |   test("directory", "/" + string("docs/") + "/", "/" + string("mydocs/") + "/");
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~
+4 warnings and 4 errors generated.

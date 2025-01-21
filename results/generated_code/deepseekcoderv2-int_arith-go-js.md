@@ -1,22 +1,15 @@
-*/
-package main
+ Here's the equivalent JavaScript code for the provided Go program:
 
-import "fmt"
+```javascript
+process.stdout.write("Enter two integers: ");
+let a = +readlineSync();
+let b = +readlineSync();
+console.log(`${a} + ${b} = ${a + b}`);
+console.log(`${a} - ${b} = ${a - b}`);
+console.log(`${a} * ${b} = ${a * b}`);
+console.log(`${a} / ${b} = ${Math.floor(a / b)}`);  // truncates towards zero
+console.log(`${a} % ${b} = ${a % b}`);             // same sign as first operand
+// no exponentiation operator in JavaScript, but you can use a function if needed
+```
 
-func main() {
-	var a, b int
-	fmt.Print("Enter two integers: ")
-	fmt.Scanln(&a, &b)
-	fmt.Printf("%d + %d = %d\n", a, b, a+b)
-	fmt.Printf("%d - %d = %d\n", a, b, a-b)
-	fmt.Printf("%d * %d = %d\n", a, b, a*b)
-	fmt.Printf("%d / %d = %d (truncates towards 0)\n", a, b, a/b)
-	if b == 0 {
-		fmt.Println("Cannot divide by zero")
-	} else if b > 0 && a%b != 0 { // remainder sign same as first operand
-		fmt.Printf("%d %% %d = %d (remainder has the same sign as the first operand)\n", a, b, a%b)
-	} else if b < 0 && a%b != 0 { // remainder sign same as second operand
-		fmt.Printf("%d %% %d = %d (remainder has the same sign as the second operand)\n", a, b, a%b)
-	}
-	// no exponentiation operator in Go
-}
+This code uses the `readlineSync` module from the `readline-sync` package to get input from the user. The quotient is calculated using `Math.floor()` to truncate towards zero, and the remainder follows the rules specified (same sign as the first operand). Note that JavaScript does not have a built-in exponentiation operator, but you can use a function for that if needed.

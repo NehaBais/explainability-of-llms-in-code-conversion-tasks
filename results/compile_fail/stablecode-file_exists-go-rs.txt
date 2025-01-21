@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-file_exists-go-rs.rs:5:27
+  |
+5 |     match fs::metadata(p) {
+  |                           ^ unclosed delimiter
+...
+8 |         Err(e) => eprintln!("Error: {}", e)),
+  |                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_exists-go-rs.rs:10:1
+   |
+8  |         Err(e) => eprintln!("Error: {}", e)),
+   |                                            - missing open `(` for this delimiter
+9  |     }
+10 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

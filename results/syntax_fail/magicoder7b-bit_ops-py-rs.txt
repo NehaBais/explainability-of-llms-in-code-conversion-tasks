@@ -1,0 +1,85 @@
+error: invalid format string: expected `'}'`, found `'{'`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:9:23
+  |
+9 |         "AND:\n\t0b{:0{}b}\n\t& 0b{:0{}b}\n\t= 0b{:0{}b}",
+  |                    -  ^ expected `'}'` in format string
+  |                    |
+  |                    because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:19:22
+   |
+19 |         "OR:\n\t0b{:0{}b}\n\t| 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                   -  ^ expected `'}'` in format string
+   |                   |
+   |                   because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:29:23
+   |
+29 |         "XOR:\n\t0b{:0{}b}\n\t^ 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:40:19
+   |
+40 |         a, width, ~a & mask, width
+   |                   ^
+   |
+help: use `!` to perform bitwise not
+   |
+40 |         a, width, !a & mask, width
+   |                   ~
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:39:23
+   |
+39 |         "NOT:\n~ 0b{:0{}b}\n= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:94:28
+   |
+94 |         "ROTATIONS\n\t0b{:0{}b}\n\trotr({}, 0b{:0{}b}, 1)\n=       0b{:0{}b}",
+   |                         -  ^ expected `'}'` in format string
+   |                         |
+   |                         because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+   --> /tmp/magicoder7b-bit_ops-py-rs.rs:105:21
+    |
+105 |         "      0b{:0{}b}\n\torotl({}, 0b{:0{}b}, 1)\n=       0b{:0{}b}",
+    |                  -  ^ expected `'}'` in format string
+    |                  |
+    |                  because of this opening brace
+    |
+    = note: if you intended to print `{`, you can escape it using `{{`
+
+error[E0432]: unresolved import `bit`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:1:5
+  |
+1 | use bit::{BitSlice, BitVec};
+  |     ^^^ you might be missing crate `bit`
+  |
+help: consider importing the `bit` crate
+  |
+1 + extern crate bit;
+  |
+
+error: aborting due to 8 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

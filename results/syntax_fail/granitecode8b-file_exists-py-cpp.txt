@@ -1,0 +1,56 @@
+/tmp/granitecode8b-file_exists-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:3:28: error: use of undeclared identifier 'std'
+    3 | bool checkFileExists(const std::string &filename) {
+      |                            ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::ifstream file(filename);
+      |   ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:5:10: error: use of undeclared identifier 'file'; did you mean 'false'?
+    5 |   return file.good();
+      |          ^~~~
+      |          false
+/tmp/granitecode8b-file_exists-py-cpp.cpp:5:14: error: member reference base type 'bool' is not a structure or union
+    5 |   return file.good();
+      |          ~~~~^~~~~
+/tmp/granitecode8b-file_exists-py-cpp.cpp:11:5: error: use of undeclared identifier 'std'
+   11 |     std::cout
+      |     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:13:12: error: use of undeclared identifier 'std'
+   13 |         << std::endl;
+      |            ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:17:21: error: use of undeclared identifier 'std'
+   17 |   bool dirExists = (std::filesystem::exists("docs") &&
+      |                     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:18:21: error: use of undeclared identifier 'std'
+   18 |                     std::filesystem::is_directory("docs"));
+      |                     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:20:5: error: use of undeclared identifier 'std'
+   20 |     std::cout << "Error: docs does not exist in the current working directory."
+      |     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:21:18: error: use of undeclared identifier 'std'
+   21 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:27:5: error: use of undeclared identifier 'std'
+   27 |     std::cout << "Error: input.txt does not exist in the filesystem root."
+      |     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:28:18: error: use of undeclared identifier 'std'
+   28 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:32:16: error: use of undeclared identifier 'std'
+   32 |   dirExists = (std::filesystem::exists("/docs") &&
+      |                ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:33:16: error: use of undeclared identifier 'std'
+   33 |                std::filesystem::is_directory("/docs"));
+      |                ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:35:5: error: use of undeclared identifier 'std'
+   35 |     std::cout << "Error: docs does not exist in the filesystem root."
+      |     ^
+/tmp/granitecode8b-file_exists-py-cpp.cpp:36:18: error: use of undeclared identifier 'std'
+   36 |               << std::endl;
+      |                  ^
+18 errors generated.

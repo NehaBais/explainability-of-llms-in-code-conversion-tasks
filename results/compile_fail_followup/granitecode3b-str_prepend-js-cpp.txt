@@ -1,0 +1,10 @@
+/tmp/granitecode3b-str_prepend-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-js-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string s = "Hello, ";
+      |   ^
+/tmp/granitecode3b-str_prepend-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << s;
+      |   ^
+3 errors generated.

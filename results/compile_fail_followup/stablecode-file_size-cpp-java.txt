@@ -1,0 +1,7 @@
+/tmp/Main.java:9: error: ';' expected
+            long size = Files.size(Paths.get(filename)));
+                                                       ^
+/tmp/Main.java:12: error: ';' expected
+            System.err.println(ex.getMessage()));
+                                               ^
+2 errors

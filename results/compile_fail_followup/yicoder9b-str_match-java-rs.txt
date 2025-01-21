@@ -1,0 +1,14 @@
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_match-java-rs.rs:10:20
+   |
+10 |     while let Some((start, _)) = s1[pos..].find(s2) {
+   |                    ^^^^^^^^^^    ------------------ this expression has type `Option<usize>`
+   |                    |
+   |                    expected `usize`, found `(_, _)`
+   |
+   = note: expected type `usize`
+             found tuple `(_, _)`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

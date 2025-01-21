@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoder7b-logic_ops-c-go.go:10:8: illegal character U+FF5C '｜' (and 5 more errors)

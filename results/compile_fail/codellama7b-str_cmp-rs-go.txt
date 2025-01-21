@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-str_cmp-rs-go.go:39:10: undefined: strings
+/tmp/codellama7b-str_cmp-rs-go.go:46:8: undefined: strings
+/tmp/codellama7b-str_cmp-rs-go.go:47:8: undefined: strings

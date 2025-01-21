@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-file_create-py-cpp.cpp:6:17: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    6 |   std::ofstream outputFile(directory + "/output.txt");
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/qwen2.5coder2b-file_create-py-cpp.cpp:16:3: error: use of undeclared identifier 'mkdir'
+   16 |   mkdir(directory.c_str(), 0755);
+      |   ^
+/tmp/qwen2.5coder2b-file_create-py-cpp.cpp:18:7: error: use of undeclared identifier 'mkdir'
+   18 |   if (mkdir(dirname, 0755) == -1 && errno != EEXIST) {
+      |       ^
+3 errors generated.

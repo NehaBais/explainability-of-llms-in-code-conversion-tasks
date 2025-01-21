@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-str_substring-rs-c.c:3:10: fatal error: 'unicode/ucnv.h' file not found
+    3 | #include <unicode/ucnv.h>
+      |          ^~~~~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,75 @@
+warning: unused variable: `zero_length_txt_path`
+  --> /tmp/granitecode3b-file_exists-cpp-rs.rs:50:9
+   |
+50 |     let zero_length_txt_path = format!("{}/zero_length.txt", docs_directory);
+   |         ^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_zero_length_txt_path`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `zero_length_txt_path`
+  --> /tmp/granitecode3b-file_exists-cpp-rs.rs:63:9
+   |
+63 |     let zero_length_txt_path = format!("{}/zero_length.txt", docs_directory);
+   |         ^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_zero_length_txt_path`
+
+error[E0382]: use of moved value: `input_txt_path`
+  --> /tmp/granitecode3b-file_exists-cpp-rs.rs:55:47
+   |
+49 |     let input_txt_path = format!("{}/input.txt", docs_directory);
+   |         -------------- move occurs because `input_txt_path` has type `String`, which does not implement the `Copy` trait
+...
+52 |     if fs::metadata(input_txt_path).is_err() {
+   |                     -------------- value moved here
+...
+55 |         let input_txt_metadata = fs::metadata(input_txt_path).unwrap();
+   |                                               ^^^^^^^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+52 |     if fs::metadata(input_txt_path.clone()).is_err() {
+   |                                   ++++++++
+
+error[E0382]: use of moved value: `input_txt_path`
+  --> /tmp/granitecode3b-file_exists-cpp-rs.rs:64:21
+   |
+49 |     let input_txt_path = format!("{}/input.txt", docs_directory);
+   |         -------------- move occurs because `input_txt_path` has type `String`, which does not implement the `Copy` trait
+...
+52 |     if fs::metadata(input_txt_path).is_err() {
+   |                     -------------- value moved here
+...
+55 |         let input_txt_metadata = fs::metadata(input_txt_path).unwrap();
+   |                                               -------------- value moved here
+...
+64 |     if fs::metadata(input_txt_path).is_err() {
+   |                     ^^^^^^^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+55 |         let input_txt_metadata = fs::metadata(input_txt_path.clone()).unwrap();
+   |                                                             ++++++++
+help: consider cloning the value if the performance cost is acceptable
+   |
+52 |     if fs::metadata(input_txt_path.clone()).is_err() {
+   |                                   ++++++++
+
+error[E0382]: use of moved value: `input_txt_path`
+  --> /tmp/granitecode3b-file_exists-cpp-rs.rs:67:47
+   |
+49 |     let input_txt_path = format!("{}/input.txt", docs_directory);
+   |         -------------- move occurs because `input_txt_path` has type `String`, which does not implement the `Copy` trait
+...
+64 |     if fs::metadata(input_txt_path).is_err() {
+   |                     -------------- value moved here
+...
+67 |         let input_txt_metadata = fs::metadata(input_txt_path).unwrap();
+   |                                               ^^^^^^^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+64 |     if fs::metadata(input_txt_path.clone()).is_err() {
+   |                                   ++++++++
+
+error: aborting due to 3 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0382`.

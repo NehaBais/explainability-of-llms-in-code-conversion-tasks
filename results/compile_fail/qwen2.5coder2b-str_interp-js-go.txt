@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_interp-js-go.go:11:13: undefined: strings

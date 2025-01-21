@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codellama7b-file_rename-cpp-go.go:14:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:16:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:24:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:26:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:30:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:31:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:34:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:36:3: undefined: fmt
+/tmp/codellama7b-file_rename-cpp-go.go:40:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:41:22: multiple-value os.Getwd() (value of type (dir string, err error)) in single-value context
+/tmp/codellama7b-file_rename-cpp-go.go:41:22: too many errors

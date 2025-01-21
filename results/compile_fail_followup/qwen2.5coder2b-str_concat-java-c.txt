@@ -1,0 +1,8 @@
+/tmp/qwen2.5coder2b-str_concat-java-c.c:8:10: error: use of undeclared identifier 's2'
+    8 |   strcpy(s2, strcat(s, " literal")); // Concatenate another string literal and
+      |          ^
+/tmp/qwen2.5coder2b-str_concat-java-c.c:8:10: error: use of undeclared identifier 's2'
+/tmp/qwen2.5coder2b-str_concat-java-c.c:10:18: error: use of undeclared identifier 's2'
+   10 |   printf("%s\n", s2);                // Output: helloliteral
+      |                  ^
+3 errors generated.

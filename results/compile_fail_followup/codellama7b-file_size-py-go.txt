@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-file_size-py-go.go:7:1: syntax error: non-declaration statement outside function body

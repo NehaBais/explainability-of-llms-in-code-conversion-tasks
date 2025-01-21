@@ -1,0 +1,9 @@
+error[E0599]: no method named `prepend_owned` found for struct `String` in the current scope
+ --> /tmp/deepseekcoder7b-str_prepend-go-rs.rs:3:7
+  |
+3 |     s.prepend_owned(String::from("Hello, ")); // Appends the content of `"Hello, "` to `s`
+  |       ^^^^^^^^^^^^^ method not found in `String`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

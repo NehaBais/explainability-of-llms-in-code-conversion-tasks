@@ -1,11 +1,17 @@
 #include <stdio.h>
+#include <string.h> // For strcat
 
 int main() {
-  // Create a string variable and assign any text value to it
-  char str[] = "Hello";
+  char s[50] = ", World"; // Assuming a maximum string length of 49 characters
+                          // plus null terminator
+  char hello[] = "Hello";
 
-  // Prepend another string literal with the existing string variable
-  printf("%s", ", World");
+  // Prepend the string literal to the existing string variable
+  strcpy(s, ""); // Clear the initial content of s
+  strcat(s, hello);
+  strcat(s, ", World");
+
+  printf("%s\n", s);
 
   return 0;
 }

@@ -1,4 +1,5 @@
-*/
+ Sure! Below is the equivalent code in Golang:
+
 ```go
 package main
 
@@ -7,9 +8,9 @@ import (
 )
 
 func main() {
-	originalString := "Original String."
-	fmt.Printf("The original string is: %s\n", originalString)
-	newString := fmt.Sprintf("%s new appended.", originalString) // The Sprintf function returns a formatted string, which is assigned to the variable "newString".
-	fmt.Println(newString)                                         // Println prints out the value of this string on one line
+	s := "hello"
+	fmt.Println(s + " there!")
 }
 ```
+
+In this Go code, we declare a string variable `s` with the initial value "hello". Then, we print the concatenated result of `s` and the string " there!" using the `fmt.Println` function from the standard library.

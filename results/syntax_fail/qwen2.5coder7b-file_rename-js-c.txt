@@ -1,0 +1,25 @@
+/tmp/qwen2.5coder7b-file_rename-js-c.c:9:35: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |     rename(currentPath, output.txt");
+      |                                   ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:9:25: error: use of undeclared identifier 'output'
+    9 |     rename(currentPath, output.txt");
+      |                         ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:12:32: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 |     rename(rootPath, output.txt");
+      |                                ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:12:22: error: use of undeclared identifier 'output'
+   12 |     rename(rootPath, output.txt");
+      |                      ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:15:31: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |     rename(currentPath, mydocs");
+      |                               ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:15:25: error: use of undeclared identifier 'mydocs'
+   15 |     rename(currentPath, mydocs");
+      |                         ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:18:28: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 |     rename(rootPath, mydocs");
+      |                            ^
+/tmp/qwen2.5coder7b-file_rename-js-c.c:18:22: error: use of undeclared identifier 'mydocs'
+   18 |     rename(rootPath, mydocs");
+      |                      ^
+4 warnings and 4 errors generated.

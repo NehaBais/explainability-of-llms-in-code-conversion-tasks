@@ -1,0 +1,28 @@
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "hello";
+      |   ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << s << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:6:16: error: use of undeclared identifier 'endl'
+    6 |   cout << s << endl;
+      |                ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:8:3: error: unknown type name 'string'
+    8 |   string s1 = s + " world";
+      |   ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << s1 << endl;
+      |   ^
+/tmp/granitecode3b-str_concat-rs-cpp.cpp:9:17: error: use of undeclared identifier 'endl'
+    9 |   cout << s1 << endl;
+      |                 ^
+1 warning and 8 errors generated.

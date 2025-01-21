@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-bit_ops-c-go.go:14:20: expected ';', found int (and 1 more errors)

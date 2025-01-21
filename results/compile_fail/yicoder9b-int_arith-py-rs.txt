@@ -1,0 +1,23 @@
+error: comparison operators cannot be chained
+  --> /tmp/yicoder9b-int_arith-py-rs.rs:27:10
+   |
+27 |     if a < 0 ^ b < 0 { // if the operands are of different signs...
+   |          ^       ^
+   |
+   = help: use `::<...>` instead of `<...>` to specify lifetime, type, or const arguments
+   = help: or use `(...)` if you meant to specify fn arguments
+help: split the comparison into two
+   |
+27 |     if a < 0 ^ b && 0 ^ b < 0 { // if the operands are of different signs...
+   |                  ++++++++
+
+warning: unused import: `Write`
+ --> /tmp/yicoder9b-int_arith-py-rs.rs:1:21
+  |
+1 | use std::io::{self, Write};
+  |                     ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+

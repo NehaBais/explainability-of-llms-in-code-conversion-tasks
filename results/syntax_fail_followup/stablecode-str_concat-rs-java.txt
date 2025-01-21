@@ -1,0 +1,7 @@
+/tmp/Main.java:7: error: ';' expected
+        System.out.println("Original String: " + s));
+                                                   ^
+/tmp/Main.java:11: error: ';' expected
+        System.out.println("Concatenated String: " + s1));
+                                                        ^
+2 errors

@@ -1,56 +1,45 @@
+#include <iostream>
 #include <windows.h>
 
+bool FileExists(const std::wstring &path) {
+  DWORD fileAttributes = GetFileAttributesW(path.c_str());
+  return (fileAttributes != INVALID_FILE_ATTRIBUTES &&
+          !(fileAttributes & FILE_ATTRIBUTE_DIRECTORY));
+}
+
+bool DirectoryExists(const std::wstring &path) {
+  DWORD fileAttributes = GetFileAttributesW(path.c_str());
+  return (fileAttributes != INVALID_FILE_ATTRIBUTES &&
+          (fileAttributes & FILE_ATTRIBUTE_DIRECTORY));
+}
+
 int main() {
-  char input_file[] = "input.txt";
-  char root_directory[] = "/";
-  char folder[] = "docs/";
+  // Check for the current working directory
+  std::wstring inputPath1 = L"input.txt";
+  std::wstring docsPath1 = L"docs";
 
-  // Check if file exists in current directory
-  HANDLE handle = CreateFile(input_file, GENERIC_READ, FILE_SHARE_READ, NULL,
-                             OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  BOOL result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
-
-  if (result) {
-    printf("File %s does not exist in current directory.\n", input_file);
+  if (FileExists(inputPath1) && DirectoryExists(docsPath1)) {
+    std::wcout << "Both file '" << inputPath1 << "' and directory '"
+               << docsPath1 << "' exist in the current working directory."
+               << std::endl;
   } else {
-    printf("File %s exists in current directory.\n", input_file);
+    std::wcout << "Either file '" << inputPath1 << "' or directory '"
+               << docsPath1
+               << "' does not exist in the current working directory."
+               << std::endl;
   }
 
-  // Check if file exists in root directory
-  handle = CreateFile(root_directory, GENERIC_READ, FILE_SHARE_READ, NULL,
-                      OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
+  // Check for the filesystem root (assuming C: drive)
+  std::wstring inputPath2 = L"c:/input.txt";
+  std::wstring docsPath2 = L"c:/docs";
 
-  if (result) {
-    printf("File %s does not exist in root directory.\n", input_file);
+  if (FileExists(inputPath2) && DirectoryExists(docsPath2)) {
+    std::wcout << "Both file '" << inputPath2 << "' and directory '"
+               << docsPath2 << "' exist in the filesystem root." << std::endl;
   } else {
-    printf("File %s exists in root directory.\n", input_file);
-  }
-
-  // Check if folder exists in current directory
-  handle = CreateFile(folder, GENERIC_READ, FILE_SHARE_READ, NULL,
-                      OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
-
-  if (result) {
-    printf("Folder %s does not exist in current directory.\n", folder);
-  } else {
-    printf("Folder %s exists in current directory.\n", folder);
-  }
-
-  // Check if folder exists in root directory
-  handle = CreateFile(root_directory, GENERIC_READ, FILE_SHARE_READ, NULL,
-                      OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
-
-  if (result) {
-    printf("Folder %s does not exist in root directory.\n", folder);
-  } else {
-    printf("Folder %s exists in root directory.\n", folder);
+    std::wcout << "Either file '" << inputPath2 << "' or directory '"
+               << docsPath2 << "' does not exist in the filesystem root."
+               << std::endl;
   }
 
   return 0;

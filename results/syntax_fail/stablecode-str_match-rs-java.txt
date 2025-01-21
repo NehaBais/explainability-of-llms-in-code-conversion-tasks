@@ -1,0 +1,19 @@
+/tmp/Main.java:4: error: ';' expected
+    possibleMatch.ifPresent(matchPos -> System.out.println("Found match at pos " + matchPos)));
+                                                                                             ^
+/tmp/Main.java:16: error: ';' expected
+    assert(s1.startsWith(s3)));
+                             ^
+/tmp/Main.java:18: error: ';' expected
+    assert(s1.contains(s3))));
+                           ^
+/tmp/Main.java:20: error: ';' expected
+    printMatch(s1.indexOf(s3))); // Found match at pos 0
+                              ^
+/tmp/Main.java:21: error: ';' expected
+    printMatch(s1.lastIndexOf(s3))); // Did not find any matches
+                                  ^
+/tmp/Main.java:23: error: ';' expected
+    assert(s2.endsWith(s3))));
+                           ^
+6 errors

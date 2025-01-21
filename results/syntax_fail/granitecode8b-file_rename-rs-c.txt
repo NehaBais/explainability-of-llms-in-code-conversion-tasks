@@ -1,0 +1,22 @@
+/tmp/granitecode8b-file_rename-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-rs-c.c:8:13: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   int err = rename(input_path, output_path);
+      |             ^
+/tmp/granitecode8b-file_rename-rs-c.c:10:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     perror("File move error");
+      |     ^
+/tmp/granitecode8b-file_rename-rs-c.c:15:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     perror("Directory move error");
+      |     ^
+/tmp/granitecode8b-file_rename-rs-c.c:20:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |     perror("File move error");
+      |     ^
+/tmp/granitecode8b-file_rename-rs-c.c:25:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |     perror("Directory move error");
+      |     ^
+7 errors generated.

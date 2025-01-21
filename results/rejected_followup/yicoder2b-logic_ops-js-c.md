@@ -1,0 +1,6 @@
+The error `Undefined symbols for architecture arm64: "_main", referenced from: <initial-undefines>` means that some symbols are missing in the linker when you compile with `arm64` architecture. This happens because the compiler expects certain symbols to be defined when compiling for an ARM architecture.
+
+The fix is to define those missing symbols when linking. The way to do it depends on your specific situation (where exactly these symbols come from), but here's a general idea:
+- If you don't know which symbols are needed, you can start by adding `-v` option to the linker command line (`clang -v`). This will print the list of all symbols defined in your project, and you can choose to link only these.
+- Alternatively, if you have some specific reason for including a particular symbol in your linking, you can provide it with a proper definition or undefine it (`undefine <symbol>`). For instance, if `_main` is a special symbol for the main function of your program, it may be defined in the preprocessor directives when compiling with certain compilers like GCC.
+- The error message should tell you which symbols are undefined and which ones are needed by your program. If they are not needed by your program at all, you can just remove them from the linker command line or use `undefine <symbol>` to prevent them from being defined in your build process.

@@ -1,0 +1,37 @@
+warning: unused import: `std::str::FromStr`
+ --> /tmp/codegeex4-str_cmp-cpp-rs.rs:1:5
+  |
+1 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0369]: binary operation `<` cannot be applied to type `T`
+  --> /tmp/codegeex4-str_cmp-cpp-rs.rs:48:15
+   |
+48 |         if *a < *b { "" } else { "not " },
+   |            -- ^ -- T
+   |            |
+   |            T
+   |
+help: consider further restricting this bound
+   |
+28 | fn demo_compare<T: std::cmp::PartialEq + std::fmt::Display + std::cmp::PartialOrd>(a: &T, b: &T, semantically: &str) {
+   |                                                            ++++++++++++++++++++++
+
+error[E0369]: binary operation `>` cannot be applied to type `T`
+  --> /tmp/codegeex4-str_cmp-cpp-rs.rs:55:15
+   |
+55 |         if *a > *b { "" } else { "not " },
+   |            -- ^ -- T
+   |            |
+   |            T
+   |
+help: consider further restricting this bound
+   |
+28 | fn demo_compare<T: std::cmp::PartialEq + std::fmt::Display + std::cmp::PartialOrd>(a: &T, b: &T, semantically: &str) {
+   |                                                            ++++++++++++++++++++++
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0369`.

@@ -1,0 +1,8 @@
+/tmp/codellama7b-file_size-rs-cpp.cpp:28:17: error: expected ';' at end of declaration
+   28 |   FileSize input{};
+      |                 ^
+      |                 ;
+/tmp/codellama7b-file_size-rs-cpp.cpp:30:18: error: non-aggregate type 'vector<string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   30 |   vector<string> args = {"input.txt"};
+      |                  ^      ~~~~~~~~~~~~~
+2 errors generated.

@@ -1,0 +1,13 @@
+/tmp/yicoder9b-str_prepend-rs-c.c:5:13: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *s = malloc(sizeof(char) *
+      |             ^
+/tmp/yicoder9b-str_prepend-rs-c.c:5:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/yicoder9b-str_prepend-rs-c.c:13:7: error: call to undeclared library function 'realloc' with type 'void *(void *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   s = realloc(s, sizeof(char) *
+      |       ^
+/tmp/yicoder9b-str_prepend-rs-c.c:13:7: note: include the header <stdlib.h> or explicitly provide a declaration for 'realloc'
+/tmp/yicoder9b-str_prepend-rs-c.c:25:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   free(s); // Don't forget to free allocated memory when it is no longer needed.
+      |   ^
+/tmp/yicoder9b-str_prepend-rs-c.c:25:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+3 errors generated.

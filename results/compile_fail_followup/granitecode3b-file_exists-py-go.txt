@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/granitecode3b-file_exists-py-go.go:14:19: undefined: os.Pathisfile
+/tmp/granitecode3b-file_exists-py-go.go:20:23: undefined: os.Pathisfile
+/tmp/granitecode3b-file_exists-py-go.go:26:21: undefined: os.Pathisdir
+/tmp/granitecode3b-file_exists-py-go.go:32:25: undefined: os.Pathisdir

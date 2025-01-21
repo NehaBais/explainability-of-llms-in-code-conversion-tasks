@@ -1,0 +1,40 @@
+/tmp/stablecode-file_exists-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:3:17: error: use of undeclared identifier 'std'
+    3 | using namespace std::filesystem;
+      |                 ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:5:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    5 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |              ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:5:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    5 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:5:27: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    5 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                           ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:7:30: error: extraneous ')' after condition, expected a statement
+    7 |       if (is_directory(file))) {
+      |                              ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:8:9: error: use of undeclared identifier 'cout'
+    8 |         cout << file << " is a directory." << endl;
+      |         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:8:47: error: use of undeclared identifier 'endl'
+    8 |         cout << file << " is a directory." << endl;
+      |                                               ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:11:9: error: use of undeclared identifier 'cout'
+   11 |         cout << file << " is a file." << endl;
+      |         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:11:42: error: use of undeclared identifier 'endl'
+   11 |         cout << file << " is a file." << endl;
+      |                                          ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:14:7: error: use of undeclared identifier 'cout'
+   14 |       cout << file << " does not exist." << endl;
+      |       ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:14:45: error: use of undeclared identifier 'endl'
+   14 |       cout << file << " does not exist." << endl;
+      |                                             ^
+2 warnings and 11 errors generated.

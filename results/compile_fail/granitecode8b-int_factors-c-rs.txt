@@ -1,0 +1,31 @@
+error[E0107]: missing generics for struct `Vec`
+ --> /tmp/granitecode8b-int_factors-c-rs.rs:2:11
+  |
+2 |     list: Vec,
+  |           ^^^ expected at least 1 generic argument
+  |
+help: add missing generic argument
+  |
+2 |     list: Vec<T>,
+  |              +++
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode8b-int_factors-c-rs.rs:29:29
+   |
+29 |                 fctrs.merge(&factor(num / dvsr, &mut Factors::new()));
+   |                       ----- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&Factors`, found `&()`
+   |                       |
+   |                       arguments to this method are incorrect
+   |
+   = note: expected reference `&Factors`
+              found reference `&()`
+note: method defined here
+  --> /tmp/granitecode8b-int_factors-c-rs.rs:18:8
+   |
+18 |     fn merge(&mut self, other: &Factors) {
+   |        ^^^^^            ---------------
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0107, E0308.
+For more information about an error, try `rustc --explain E0107`.

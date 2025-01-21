@@ -1,25 +1,39 @@
-## Answer
-The following code converts the Rust code to C++.
-Note that there are some minor differences between rust and c++ in their syntax for declaring variables, defining functions, etc.
-In this example we have used typedefs to map from one language's naming convention to another as required by the task specifications.
-```
+ To convert the given Rust code to C++, we need to use the standard library functions provided by the `<filesystem>` module, which is part of the C++17 standard. Here's how you can achieve the same functionality in C++:
+
+```cpp
 #include <iostream>
-#include <fstream>
-#include <string>
-using namespace std;
-typedef string String;
-typedef ifstream InFileStream;
+#include <filesystem>
+
+namespace fs = std::filesystem;
+
 int main() {
-  // Read input from file and store it in a vector
-  Vector<String> lines;
-  InFileStream infile("input.txt");
-  int lineNo = 0;
-  while (infile) {
-    getline(infile, line);
-    if (!infile) break;
-    // Process the current line here as required by problem specs
-  }
-  cout << "Finished processing lines." << endl;
-  return 0;
+    const char* files[] = {"input.txt", "docs", "/input.txt", "/docs"};
+    
+    for (const auto& file : files) {
+        try {
+            if (fs::exists(file)) {
+                if (fs::is_directory(file)) {
+                    std::cout << file << " is a directory" << std::endl;
+                } else {
+                    std::cout << file << " is a file" << std::endl;
+                }
+            } else {
+                std::cout << file << " does not exist" << std::endl;
+            }
+        } catch (const fs::filesystem_error& e) {
+            std::cerr << "Filesystem error: " << e.what() << std::endl;
+        }
+    }
 }
 ```
+
+### Explanation:
+1. **Namespace Alias**: We use `namespace fs = std::filesystem;` to simplify the usage of filesystem functions.
+2. **File Array**: The array `files[]` contains both relative and absolute paths.
+3. **Loop Through Files**: We loop through each file in the array.
+4. **Check Existence and Type**: 
+   - Use `fs::exists(file)` to check if the path exists.
+   - Use `fs::is_directory(file)` to check if the path is a directory.
+5. **Error Handling**: We catch any filesystem errors using a try-catch block, which prints an error message if an exception occurs (though this part of your original Rust code didn't specify handling for exceptions).
+
+This C++ code will perform the same checks as the provided Rust code, verifying the existence and type of files or directories in both relative and absolute paths.

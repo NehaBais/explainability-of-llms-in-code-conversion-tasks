@@ -1,0 +1,22 @@
+error: expected one of `.`, `?`, `{`, or an operator, found `;`
+ --> /tmp/yicoder2b-str_match-go-rs.rs:6:26
+  |
+6 |     match(input1, input2);
+  |     -----                ^ expected one of `.`, `?`, `{`, or an operator
+  |     |
+  |     while parsing this `match` expression
+  |     help: try removing this `match`
+
+error: expected identifier, found keyword `match`
+ --> /tmp/yicoder2b-str_match-go-rs.rs:9:4
+  |
+9 | fn match(first: String, second: String) {
+  |    ^^^^^ expected identifier, found keyword
+  |
+help: escape `match` to use it as an identifier
+  |
+9 | fn r#match(first: String, second: String) {
+  |    ++
+
+error: aborting due to 2 previous errors
+

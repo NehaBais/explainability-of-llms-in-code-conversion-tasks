@@ -1,0 +1,61 @@
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string A = "Hello";
+      |   ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string B = "Hello";
+      |   ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "'" << A << "' and '" << B << "' are lexically equal." << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:8:71: error: use of undeclared identifier 'endl'
+    8 |     cout << "'" << A << "' and '" << B << "' are lexically equal." << endl;
+      |                                                                       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << "'" << A << "' and '" << B << "' are not lexically equal." << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:10:75: error: use of undeclared identifier 'endl'
+   10 |     cout << "'" << A << "' and '" << B << "' are not lexically equal." << endl;
+      |                                                                           ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << endl;
+      |   ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:11:11: error: use of undeclared identifier 'endl'
+   11 |   cout << endl;
+      |           ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:15:7: error: use of undeclared identifier 'cout'
+   15 |       cout << "'" << A << "' and '" << B
+      |       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:16:60: error: use of undeclared identifier 'endl'
+   16 |            << "' are case-insensitive lexically equal." << endl;
+      |                                                            ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:18:7: error: use of undeclared identifier 'cout'
+   18 |       cout << "'" << A << "' and '" << B
+      |       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:19:64: error: use of undeclared identifier 'endl'
+   19 |            << "' are not case-insensitive lexically equal." << endl;
+      |                                                                ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:22:7: error: use of undeclared identifier 'cout'
+   22 |       cout << "'" << A << "' and '" << B
+      |       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:23:60: error: use of undeclared identifier 'endl'
+   23 |            << "' are case-insensitive lexically equal." << endl;
+      |                                                            ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:25:7: error: use of undeclared identifier 'cout'
+   25 |       cout << "'" << A << "' is lexically before '" << B << "'." << endl;
+      |       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:25:69: error: use of undeclared identifier 'endl'
+   25 |       cout << "'" << A << "' is lexically before '" << B << "'." << endl;
+      |                                                                     ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:27:7: error: use of undeclared identifier 'cout'
+   27 |       cout << "'" << A << "' is lexically after '" << B << "'." << endl;
+      |       ^
+/tmp/granitecode3b-str_cmp-java-cpp.cpp:27:68: error: use of undeclared identifier 'endl'
+   27 |       cout << "'" << A << "' is lexically after '" << B << "'." << endl;
+      |                                                                    ^
+1 warning and 19 errors generated.

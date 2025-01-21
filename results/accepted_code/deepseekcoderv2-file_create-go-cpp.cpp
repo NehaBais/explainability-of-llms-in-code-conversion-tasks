@@ -1,41 +1,39 @@
-#include <filesystem>
+#include <cerrno>
 #include <fstream>
 #include <iostream>
+#include <string>
+#include <unistd.h> // For chdir to change directory
+
+void createFile(const std::string &fn) {
+  std::ofstream file(fn);
+  if (!file) {
+    std::cerr << "Error creating file: " << strerror(errno) << std::endl;
+    return;
+  }
+  std::cout << "File " << fn << " created!" << std::endl;
+}
+
+void createDir(const std::string &dn) {
+  int result = mkdir(dn.c_str(), 0666);
+  if (result != 0) {
+    std::cerr << "Error creating directory: " << strerror(errno) << std::endl;
+    return;
+  }
+  std::cout << "Directory " << dn << " created!" << std::endl;
+}
 
 int main() {
-  // Create file in current directory
-  std::ofstream outFile("output.txt");
-
-  if (!outFile) {
-    std::cerr << "Failed to create output.txt" << std::endl;
+  // Change to the current working directory
+  if (chdir(".") == -1) {
+    std::cerr << "Error changing to current directory: " << strerror(errno)
+              << std::endl;
     return 1;
   }
-  std::cout << "file output.txt created!" << std::endl;
-  outFile.close();
 
-  // Create file in filesystem root
-  std::ofstream outRoot("/output.txt");
-
-  if (!outRoot) {
-    std::cerr << "Failed to create /output.txt" << std::endl;
-    return 1;
-  }
-  std::cout << "file /output.txt created!" << std::endl;
-  outRoot.close();
-
-  // Create directory in current directory
-  if (!std::filesystem::create_directory("docs")) {
-    std::cerr << "Failed to create docs" << std::endl;
-    return 1;
-  }
-  std::cout << "directory docs created!" << std::endl;
-
-  // Create directory in filesystem root
-  if (!std::filesystem::create_directory("/docs")) {
-    std::cerr << "Failed to create /docs" << std::endl;
-    return 1;
-  }
-  std::cout << "directory /docs created!" << std::endl;
+  createFile("input.txt");
+  createFile("/input.txt");
+  createDir("docs");
+  createDir("/docs");
 
   return 0;
 }

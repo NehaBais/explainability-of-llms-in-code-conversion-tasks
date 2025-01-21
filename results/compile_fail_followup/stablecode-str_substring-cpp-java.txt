@@ -1,0 +1,13 @@
+/tmp/Main.java:18: error: ';' expected
+        System.out.println(s.substring(n))) 
+                                          ^
+/tmp/Main.java:20: error: ';' expected
+        System.out.println(s.substring(0, s.length()-1)))) 
+                                                        ^
+/tmp/Main.java:22: error: ';' expected
+        System.out.println(s.substring(s.indexOf(c)), m)));
+                                                        ^
+/tmp/Main.java:23: error: ';' expected
+        System.out.println(s.substring(s.indexOf(sub), m))));
+                                                          ^
+4 errors

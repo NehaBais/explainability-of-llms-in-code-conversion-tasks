@@ -1,0 +1,4 @@
+/tmp/Main.java:9: error: ';' expected
+            long size = Files.size(Paths.get(filename)));
+                                                       ^
+1 error

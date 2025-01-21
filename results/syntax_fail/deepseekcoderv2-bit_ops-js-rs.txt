@@ -1,0 +1,15 @@
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+  --> /tmp/deepseekcoderv2-bit_ops-js-rs.rs:11:42
+   |
+11 |     println!("a >>> b: {:08b}", a as u32 << (32 - (b & 0x1F)) | a >> (b & 0x1F)); // Logical right shift, assuming 8-bit representation for output
+   |                                          ^^ --- interpreted as generic arguments
+   |                                          |
+   |                                          not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+11 |     println!("a >>> b: {:08b}", (a as u32) << (32 - (b & 0x1F)) | a >> (b & 0x1F)); // Logical right shift, assuming 8-bit representation for output
+   |                                 +        +
+
+error: aborting due to 1 previous error
+

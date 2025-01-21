@@ -1,0 +1,61 @@
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:39:13: error: no matching member function for call to 'compare'
+   39 |        << A.compare(B, 0, A.length(), B.data(), 0, B.length()) << endl;
+      |           ~~^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1702:3: note: candidate function not viable: requires at most 5 arguments, but 6 were provided
+ 1702 |   compare(size_type __pos1, size_type __n1, const basic_string& __str, size_type __pos2, size_type __n2 = npos) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1709:3: note: candidate function template not viable: requires at most 5 arguments, but 6 were provided
+ 1709 |   compare(size_type __pos1, size_type __n1, const _Tp& __t, size_type __pos2, size_type __n2 = npos) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1714:3: note: candidate function not viable: requires 4 arguments, but 6 were provided
+ 1714 |   compare(size_type __pos1, size_type __n1, const value_type* __s, size_type __n2) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1697:3: note: candidate function template not viable: requires 3 arguments, but 6 were provided
+ 1697 |   compare(size_type __pos1, size_type __n1, const _Tp& __t) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1700:3: note: candidate function not viable: requires 3 arguments, but 6 were provided
+ 1700 |   compare(size_type __pos1, size_type __n1, const basic_string& __str) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1712:37: note: candidate function not viable: requires 3 arguments, but 6 were provided
+ 1712 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(size_type __pos1, size_type __n1, const value_type* __s) const;
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1689:59: note: candidate function not viable: requires single argument '__str', but 6 arguments were provided
+ 1689 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const basic_string& __str) const _NOEXCEPT;
+      |                                                           ^       ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1693:3: note: candidate function template not viable: requires single argument '__t', but 6 arguments were provided
+ 1693 |   compare(const _Tp& __t) const _NOEXCEPT;
+      |   ^       ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1711:37: note: candidate function not viable: requires single argument '__s', but 6 arguments were provided
+ 1711 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const value_type* __s) const _NOEXCEPT;
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:43:3: error: no matching function for call to 'compare'
+   43 |   compare("Hello", "Hello");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:6:6: note: candidate function not viable: no known conversion from 'const char[6]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    6 | void compare(string &A, string &B) {
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:44:3: error: no matching function for call to 'compare'
+   44 |   compare("5", "5.0");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:6:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    6 | void compare(string &A, string &B) {
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:45:3: error: no matching function for call to 'compare'
+   45 |   compare("java", "Java");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:6:6: note: candidate function not viable: no known conversion from 'const char[5]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    6 | void compare(string &A, string &B) {
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:46:3: error: no matching function for call to 'compare'
+   46 |   compare("ĴÃVÁ", "ĴÃVÁ");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:6:6: note: candidate function not viable: no known conversion from 'const char[8]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    6 | void compare(string &A, string &B) {
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:47:3: error: no matching function for call to 'compare'
+   47 |   compare("ĴÃVÁ", "ĵãvá");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:6:6: note: candidate function not viable: no known conversion from 'const char[8]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    6 | void compare(string &A, string &B) {
+      |      ^       ~~~~~~~~~
+6 errors generated.

@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var s string = ", World" // Declare and initialize string variable s with value ", World"
-	s = "Hello" + s          // Prepend the string variable s with another string literal "Hello", and assign it back to s
-	fmt.Println(s)           // Print the updated value of s, which is now "Hello, World"
+	// Create a string variable equal to any text value.
+	s := ", World"
+
+	// Prepend the string variable with another string literal.
+	s = "Hello" + s
+
+	// Print the result.
+	fmt.Println(s)
 }

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-file_create-rs-go.go:12:21: create(".").and undefined (type error has no field or method and)

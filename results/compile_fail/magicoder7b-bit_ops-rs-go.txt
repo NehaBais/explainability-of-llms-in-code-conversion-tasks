@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/magicoder7b-bit_ops-rs-go.go:11:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:12:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:13:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:14:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:15:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:16:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:16:54: invalid operation: operator ! not defined on a (variable of type uint8)
+/tmp/magicoder7b-bit_ops-rs-go.go:17:35: undefined: bits.FormatUint
+/tmp/magicoder7b-bit_ops-rs-go.go:18:35: undefined: bits.FormatUint

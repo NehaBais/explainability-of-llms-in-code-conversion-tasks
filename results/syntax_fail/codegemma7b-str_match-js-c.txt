@@ -1,0 +1,5 @@
+/tmp/codegemma7b-str_match-js-c.c:26:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   26 |   printf("1: Does '%s' start with '%s'? %s\n", stringA, stringB,
+      |   ^
+/tmp/codegemma7b-str_match-js-c.c:26:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.

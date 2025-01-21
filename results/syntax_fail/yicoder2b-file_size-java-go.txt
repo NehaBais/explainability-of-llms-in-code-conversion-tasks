@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_size-java-go.go:6:2: "path/filepath" imported and not used

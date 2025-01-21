@@ -1,0 +1,47 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/codegeex4-str_substring-py-rs.rs:1:5
+  |
+1 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `unicode_segmentation`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:13:12
+   |
+13 |         &s[unicode_segmentation::UnicodeStr::new(&s)[n - 1..n + m - 1].collect::<String>()]
+   |            ^^^^^^^^^^^^^^^^^^^^ use of undeclared crate or module `unicode_segmentation`
+
+error[E0433]: failed to resolve: use of undeclared crate or module `unicode_segmentation`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:19:12
+   |
+19 |         &s[unicode_segmentation::UnicodeStr::new(&s)[n - 1..].collect::<String>()]
+   |            ^^^^^^^^^^^^^^^^^^^^ use of undeclared crate or module `unicode_segmentation`
+
+error[E0277]: the trait bound `CharIndices<'_>: Pattern` is not satisfied
+  --> /tmp/codegeex4-str_substring-py-rs.rs:32:31
+   |
+32 |     if let Some(pos) = s.find(chars) {
+   |                          ---- ^^^^^ the trait `FnMut(char)` is not implemented for `CharIndices<'_>`, which is required by `CharIndices<'_>: Pattern`
+   |                          |
+   |                          required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `Pattern`:
+             &'b String
+             &'b [char; N]
+             &'b [char]
+             &'b str
+             &'c &'b str
+             [char; N]
+             char
+   = note: required for `CharIndices<'_>` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0277, E0432, E0433.
+For more information about an error, try `rustc --explain E0277`.

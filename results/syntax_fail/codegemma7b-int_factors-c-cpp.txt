@@ -1,0 +1,10 @@
+/tmp/codegemma7b-int_factors-c-cpp.cpp:35:7: error: use of undeclared identifier 'dvsr'
+   35 |   if (dvsr * dvsr == num)
+      |       ^
+/tmp/codegemma7b-int_factors-c-cpp.cpp:35:14: error: use of undeclared identifier 'dvsr'
+   35 |   if (dvsr * dvsr == num)
+      |              ^
+/tmp/codegemma7b-int_factors-c-cpp.cpp:36:21: error: use of undeclared identifier 'dvsr'
+   36 |     flist[flix++] = dvsr;
+      |                     ^
+3 errors generated.

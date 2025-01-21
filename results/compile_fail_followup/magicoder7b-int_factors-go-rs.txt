@@ -1,0 +1,28 @@
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/magicoder7b-int_factors-go-rs.rs:30:9
+   |
+30 |         nr /= 2;
+   |         ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+14 | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign twice to immutable variable `d`
+  --> /tmp/magicoder7b-int_factors-go-rs.rs:47:9
+   |
+35 |     let d: i64 = 3;
+   |         - first assignment to `d`
+...
+47 |         d += 2;
+   |         ^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+35 |     let mut d: i64 = 3;
+   |         +++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0384`.

@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:74:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   74 |   for (uint32_t cp : code_points) {
+      |                    ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:138:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+  138 |   auto it = std::find(code_points.begin(), code_points.end(),
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:156:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+  156 |   auto it = std::find(code_points.begin(), code_points.end(),
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:184:62: error: character too large for enclosing character literal type
+  184 |               << substr_from_known_char_and_of_m_length(str, '世', m)
+      |                                                              ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:187:56: error: character too large for enclosing character literal type
+  187 |               << substr_from_known_char_up_to_end(str, '世') << std::endl;
+      |                                                        ^
+3 warnings and 2 errors generated.

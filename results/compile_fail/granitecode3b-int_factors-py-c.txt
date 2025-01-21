@@ -1,0 +1,33 @@
+/tmp/granitecode3b-int_factors-py-c.c:1:10: error: expected "FILENAME" or <FILENAME>
+    1 | #include math.h
+      |          ^
+/tmp/granitecode3b-int_factors-py-c.c:2:10: error: expected "FILENAME" or <FILENAME>
+    2 | #include stdbool.h
+      |          ^
+/tmp/granitecode3b-int_factors-py-c.c:7:37: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 | void destroy_factors(factors_t f) { free(f.factors); }
+      |                                     ^
+/tmp/granitecode3b-int_factors-py-c.c:7:37: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/granitecode3b-int_factors-py-c.c:9:23: error: use of undeclared identifier 'NULL'
+    9 |   factors_t result = {NULL, 0};
+      |                       ^
+/tmp/granitecode3b-int_factors-py-c.c:12:24: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   for (int i = 2; i <= sqrt(n); ++i) {
+      |                        ^
+/tmp/granitecode3b-int_factors-py-c.c:12:24: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode3b-int_factors-py-c.c:14:26: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |       int *new_factors = malloc((result.size + 2) * sizeof(int));
+      |                          ^
+/tmp/granitecode3b-int_factors-py-c.c:14:26: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode3b-int_factors-py-c.c:15:7: error: call to undeclared library function 'memcpy' with type 'void *(void *, const void *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |       memcpy(new_factors, result.factors, result.size * sizeof(int));
+      |       ^
+/tmp/granitecode3b-int_factors-py-c.c:15:7: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/tmp/granitecode3b-int_factors-py-c.c:35:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   35 |   printf("Factors of %d: [", f.n);
+      |   ^
+/tmp/granitecode3b-int_factors-py-c.c:35:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_factors-py-c.c:35:32: error: no member named 'n' in 'factors_t'
+   35 |   printf("Factors of %d: [", f.n);
+      |                              ~ ^
+9 errors generated.

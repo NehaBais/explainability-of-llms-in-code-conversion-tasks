@@ -1,0 +1,25 @@
+/tmp/codegeex4-str_match-cpp-c.c:9:1: error: expected identifier or '('
+    9 | if (strncmp(s1, s3, strlen(s3)) == 0) {
+      | ^
+/tmp/codegeex4-str_match-cpp-c.c:11:3: error: expected identifier or '('
+   11 | } else {
+      |   ^
+/tmp/codegeex4-str_match-cpp-c.c:16:14: error: initializer element is not a compile-time constant
+   16 | int len_s3 = strlen(s3);
+      |              ^~~~~~~~~~
+/tmp/codegeex4-str_match-cpp-c.c:17:1: error: expected identifier or '('
+   17 | if (strncmp(&s1[strlen(s1) - len_s3], s3, len_s3) == 0) {
+      | ^
+/tmp/codegeex4-str_match-cpp-c.c:19:3: error: expected identifier or '('
+   19 | } else {
+      |   ^
+/tmp/codegeex4-str_match-cpp-c.c:24:13: error: initializer element is not a compile-time constant
+   24 | char *pos = strstr(s1, s2);
+      |             ^~~~~~~~~~~~~~
+/tmp/codegeex4-str_match-cpp-c.c:25:1: error: expected identifier or '('
+   25 | if (pos != NULL) {
+      | ^
+/tmp/codegeex4-str_match-cpp-c.c:27:3: error: expected identifier or '('
+   27 | } else {
+      |   ^
+8 errors generated.

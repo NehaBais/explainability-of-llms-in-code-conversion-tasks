@@ -1,0 +1,302 @@
+/tmp/Main.java:4: error: ';' expected
+        System.out.printf("Comparison between %s and %s", a, b));
+                                                               ^
+/tmp/Main.java:6: error: illegal start of expression
+        if (a.compareTo(b) < 0)) {
+                               ^
+/tmp/Main.java:7: error: unclosed character literal
+            System.out.println('%r is strictly less than  %r' 
+                               ^
+/tmp/Main.java:7: error: ';' expected
+            System.out.println('%r is strictly less than  %r' 
+                                     ^
+/tmp/Main.java:7: error: ';' expected
+            System.out.println('%r is strictly less than  %r' 
+                                                   ^
+/tmp/Main.java:7: error: unclosed character literal
+            System.out.println('%r is strictly less than  %r' 
+                                                            ^
+/tmp/Main.java:7: error: not a statement
+            System.out.println('%r is strictly less than  %r' 
+                                                          ^
+/tmp/Main.java:8: error: not a statement
+% ((String)a, (String)b)));
+    ^
+/tmp/Main.java:8: error: ';' expected
+% ((String)a, (String)b)));
+          ^
+/tmp/Main.java:8: error: not a statement
+% ((String)a, (String)b)));
+           ^
+/tmp/Main.java:8: error: ';' expected
+% ((String)a, (String)b)));
+            ^
+/tmp/Main.java:8: error: not a statement
+% ((String)a, (String)b)));
+               ^
+/tmp/Main.java:8: error: ';' expected
+% ((String)a, (String)b)));
+                     ^
+/tmp/Main.java:8: error: not a statement
+% ((String)a, (String)b)));
+                      ^
+/tmp/Main.java:8: error: ';' expected
+% ((String)a, (String)b)));
+                       ^
+/tmp/Main.java:10: error: illegal start of expression
+        if (a.compareTo(b) <= 0)) {
+                                ^
+/tmp/Main.java:11: error: unclosed character literal
+            System.out.println('%r is less than or equal to 
+                               ^
+/tmp/Main.java:11: error: ';' expected
+            System.out.println('%r is less than or equal to 
+                                     ^
+/tmp/Main.java:11: error: ';' expected
+            System.out.println('%r is less than or equal to 
+                                               ^
+/tmp/Main.java:11: error: ';' expected
+            System.out.println('%r is less than or equal to 
+                                                        ^
+/tmp/Main.java:12: error: unclosed character literal
+%r' 
+  ^
+/tmp/Main.java:12: error: not a statement
+%r' 
+^
+/tmp/Main.java:13: error: not a statement
+% ((String) a, (String) b)));
+    ^
+/tmp/Main.java:13: error: ';' expected
+% ((String) a, (String) b)));
+          ^
+/tmp/Main.java:13: error: not a statement
+% ((String) a, (String) b)));
+            ^
+/tmp/Main.java:13: error: ';' expected
+% ((String) a, (String) b)));
+             ^
+/tmp/Main.java:13: error: not a statement
+% ((String) a, (String) b)));
+                ^
+/tmp/Main.java:13: error: ';' expected
+% ((String) a, (String) b)));
+                      ^
+/tmp/Main.java:13: error: not a statement
+% ((String) a, (String) b)));
+                        ^
+/tmp/Main.java:13: error: ';' expected
+% ((String) a, (String) b)));
+                         ^
+/tmp/Main.java:16: error: illegal start of expression
+        if (a.compareTo(b) > 0)) {
+                               ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('%r is strictly greater than  %r' 
+                               ^
+/tmp/Main.java:17: error: ';' expected
+            System.out.println('%r is strictly greater than  %r' 
+                                     ^
+/tmp/Main.java:17: error: ';' expected
+            System.out.println('%r is strictly greater than  %r' 
+                                                      ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('%r is strictly greater than  %r' 
+                                                               ^
+/tmp/Main.java:17: error: not a statement
+            System.out.println('%r is strictly greater than  %r' 
+                                                             ^
+/tmp/Main.java:18: error: not a statement
+% ((String) a, (String) b)));
+    ^
+/tmp/Main.java:18: error: ';' expected
+% ((String) a, (String) b)));
+          ^
+/tmp/Main.java:18: error: not a statement
+% ((String) a, (String) b)));
+            ^
+/tmp/Main.java:18: error: ';' expected
+% ((String) a, (String) b)));
+             ^
+/tmp/Main.java:18: error: not a statement
+% ((String) a, (String) b)));
+                ^
+/tmp/Main.java:18: error: ';' expected
+% ((String) a, (String) b)));
+                      ^
+/tmp/Main.java:18: error: not a statement
+% ((String) a, (String) b)));
+                        ^
+/tmp/Main.java:18: error: ';' expected
+% ((String) a, (String) b)));
+                         ^
+/tmp/Main.java:20: error: illegal start of expression
+        if (a.compareTo(b) >= 0)) {
+                                ^
+/tmp/Main.java:21: error: unclosed character literal
+            System.out.println('%r is greater than or equal to 
+                               ^
+/tmp/Main.java:21: error: ';' expected
+            System.out.println('%r is greater than or equal to 
+                                     ^
+/tmp/Main.java:21: error: ';' expected
+            System.out.println('%r is greater than or equal to 
+                                                  ^
+/tmp/Main.java:21: error: ';' expected
+            System.out.println('%r is greater than or equal to 
+                                                           ^
+/tmp/Main.java:22: error: unclosed character literal
+%r' 
+  ^
+/tmp/Main.java:22: error: not a statement
+%r' 
+^
+/tmp/Main.java:23: error: not a statement
+% ((String) a, (String) b)));
+    ^
+/tmp/Main.java:23: error: ';' expected
+% ((String) a, (String) b)));
+          ^
+/tmp/Main.java:23: error: not a statement
+% ((String) a, (String) b)));
+            ^
+/tmp/Main.java:23: error: ';' expected
+% ((String) a, (String) b)));
+             ^
+/tmp/Main.java:23: error: not a statement
+% ((String) a, (String) b)));
+                ^
+/tmp/Main.java:23: error: ';' expected
+% ((String) a, (String) b)));
+                      ^
+/tmp/Main.java:23: error: not a statement
+% ((String) a, (String) b)));
+                        ^
+/tmp/Main.java:23: error: ';' expected
+% ((String) a, (String) b)));
+                         ^
+/tmp/Main.java:27: error: illegal start of expression
+        if ("YUP".equals("YUP"))) {
+                                ^
+/tmp/Main.java:28: error: unclosed character literal
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                               ^
+/tmp/Main.java:28: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                              ^
+/tmp/Main.java:28: error: illegal start of expression
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                                           ^
+/tmp/Main.java:28: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                                             ^
+/tmp/Main.java:28: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                                                      ^
+/tmp/Main.java:28: error: unclosed character literal
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                                                            ^
+/tmp/Main.java:28: error: not a statement
+            System.out.println('Case Sensitive Comparison: %r is equal to %r' 
+                                                                          ^
+/tmp/Main.java:29: error: not a statement
+% ((String)a, (String)b)));
+    ^
+/tmp/Main.java:29: error: ';' expected
+% ((String)a, (String)b)));
+          ^
+/tmp/Main.java:29: error: not a statement
+% ((String)a, (String)b)));
+           ^
+/tmp/Main.java:29: error: ';' expected
+% ((String)a, (String)b)));
+            ^
+/tmp/Main.java:29: error: not a statement
+% ((String)a, (String)b)));
+               ^
+/tmp/Main.java:29: error: ';' expected
+% ((String)a, (String)b)));
+                     ^
+/tmp/Main.java:29: error: not a statement
+% ((String)a, (String)b)));
+                      ^
+/tmp/Main.java:29: error: ';' expected
+% ((String)a, (String)b)));
+                       ^
+/tmp/Main.java:31: error: unclosed character literal
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                               ^
+/tmp/Main.java:31: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                              ^
+/tmp/Main.java:31: error: illegal start of expression
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                           ^
+/tmp/Main.java:31: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                             ^
+/tmp/Main.java:31: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                                    ^
+/tmp/Main.java:31: error: ';' expected
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                                             ^
+/tmp/Main.java:31: error: unclosed character literal
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                                                ^
+/tmp/Main.java:31: error: not a statement
+            System.out.println('Case Sensitive Comparison: %r is not equal to %r' 
+                                                                               ^
+/tmp/Main.java:32: error: not a statement
+% ((String) a, (String) b)));
+    ^
+/tmp/Main.java:32: error: ';' expected
+% ((String) a, (String) b)));
+          ^
+/tmp/Main.java:32: error: not a statement
+% ((String) a, (String) b)));
+            ^
+/tmp/Main.java:32: error: ';' expected
+% ((String) a, (String) b)));
+             ^
+/tmp/Main.java:32: error: not a statement
+% ((String) a, (String) b)));
+                ^
+/tmp/Main.java:32: error: ';' expected
+% ((String) a, (String) b)));
+                      ^
+/tmp/Main.java:32: error: not a statement
+% ((String) a, (String) b)));
+                        ^
+/tmp/Main.java:32: error: ';' expected
+% ((String) a, (String) b)));
+                         ^
+/tmp/Main.java:30: error: 'else' without 'if'
+        } else {
+          ^
+/tmp/Main.java:36: error: illegal start of expression
+        if ("YUP".equalsIgnoreCase("yup"))) {
+                                          ^
+/tmp/Main.java:37: error: unclosed character literal
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                               ^
+/tmp/Main.java:37: error: ';' expected
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                ^
+/tmp/Main.java:37: error: illegal start of expression
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                             ^
+/tmp/Main.java:37: error: ';' expected
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                               ^
+/tmp/Main.java:37: error: ';' expected
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                                        ^
+/tmp/Main.java:37: error: unclosed character literal
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                                              ^
+/tmp/Main.java:37: error: not a statement
+            System.out.println('Case Insensitive Comparison: %r is equal to %r' 
+                                                                            ^
+100 errors
+only showing the first 100 errors, of 125 total; use -Xmaxerrs if you would like to see more

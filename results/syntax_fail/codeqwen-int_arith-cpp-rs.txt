@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `input_A` in this scope
+  --> /tmp/codeqwen-int_arith-cpp-rs.rs:11:18
+   |
+11 |     let A: i32 = input_A.trim().parse().expect("Please type a number!");
+   |                  ^^^^^^^ help: a local variable with a similar name exists: `input_a`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

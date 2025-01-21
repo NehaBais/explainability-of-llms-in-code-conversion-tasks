@@ -1,0 +1,63 @@
+/tmp/granitecode8b-dir_make-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-c.c:4:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    4 |   size_t len;
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-dir_make-java-c.c:4:10: error: use of undeclared identifier 'len'
+    4 |   size_t len;
+      |          ^
+/tmp/granitecode8b-dir_make-java-c.c:5:19: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   const char *p = strchr(path, '/');
+      |                   ^
+/tmp/granitecode8b-dir_make-java-c.c:5:19: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/granitecode8b-dir_make-java-c.c:6:12: error: use of undeclared identifier 'PATH_MAX'
+    6 |   char dir[PATH_MAX];
+      |            ^
+/tmp/granitecode8b-dir_make-java-c.c:7:15: error: use of undeclared identifier 'NULL'
+    7 |   while (p != NULL) {
+      |               ^
+/tmp/granitecode8b-dir_make-java-c.c:8:5: error: use of undeclared identifier 'len'
+    8 |     len = p - path + 1;
+      |     ^
+/tmp/granitecode8b-dir_make-java-c.c:9:5: error: call to undeclared library function 'memcpy' with type 'void *(void *, const void *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     memcpy(dir, path, len);
+      |     ^
+/tmp/granitecode8b-dir_make-java-c.c:9:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/tmp/granitecode8b-dir_make-java-c.c:9:23: error: use of undeclared identifier 'len'
+    9 |     memcpy(dir, path, len);
+      |                       ^
+/tmp/granitecode8b-dir_make-java-c.c:10:9: error: use of undeclared identifier 'len'
+   10 |     dir[len] = '\\0';
+      |         ^
+/tmp/granitecode8b-dir_make-java-c.c:10:16: warning: multi-character character constant [-Wmultichar]
+   10 |     dir[len] = '\\0';
+      |                ^
+/tmp/granitecode8b-dir_make-java-c.c:11:5: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     mkdir(dir);
+      |     ^
+/tmp/granitecode8b-dir_make-java-c.c:11:5: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-java-c.c:3:6: note: 'mkdirp' declared here
+    3 | void mkdirp(const char *path) {
+      |      ^
+    4 |   size_t len;
+    5 |   const char *p = strchr(path, '/');
+    6 |   char dir[PATH_MAX];
+    7 |   while (p != NULL) {
+    8 |     len = p - path + 1;
+    9 |     memcpy(dir, path, len);
+   10 |     dir[len] = '\\0';
+   11 |     mkdir(dir);
+      |     ~~~~~
+      |     mkdirp
+/tmp/granitecode8b-dir_make-java-c.c:12:13: error: use of undeclared identifier 'len'
+   12 |     path += len;
+      |             ^
+/tmp/granitecode8b-dir_make-java-c.c:4:3: warning: expression result unused [-Wunused-value]
+    4 |   size_t len;
+      |   ^~~~~~~~~~
+2 warnings and 13 errors generated.

@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_rename-py-c.c:37:37: error: use of undeclared identifier 'errno'
+   37 |   if (mkdir(dir_path, 0755) != 0 && errno != EEXIST) {
+      |                                     ^
+/tmp/qwen2.5coder2b-file_rename-py-c.c:37:46: error: use of undeclared identifier 'EEXIST'
+   37 |   if (mkdir(dir_path, 0755) != 0 && errno != EEXIST) {
+      |                                              ^
+2 errors generated.

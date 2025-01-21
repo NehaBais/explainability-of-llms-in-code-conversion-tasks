@@ -1,0 +1,23 @@
+/tmp/Main.java:14: error: incompatible types: incompatible parameter types in lambda expression
+            (fpath, dirs) -> {
+            ^
+/tmp/Main.java:16: error: no suitable method found for get(T)
+                if (!Files.exists(Paths.get(fpath))) {
+                                       ^
+    method Paths.get(String,String...) is not applicable
+      (argument mismatch; T cannot be converted to String)
+    method Paths.get(URI) is not applicable
+      (argument mismatch; T cannot be converted to URI)
+  where T is a type-variable:
+    T extends Object declared in interface Stream
+/tmp/Main.java:17: error: no suitable method found for get(T)
+                  Files.createFile(Paths.get(fpath));
+                                        ^
+    method Paths.get(String,String...) is not applicable
+      (argument mismatch; T cannot be converted to String)
+    method Paths.get(URI) is not applicable
+      (argument mismatch; T cannot be converted to URI)
+  where T is a type-variable:
+    T extends Object declared in interface Stream
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors

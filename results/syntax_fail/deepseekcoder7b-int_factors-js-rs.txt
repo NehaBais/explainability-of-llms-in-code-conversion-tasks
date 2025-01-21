@@ -1,0 +1,39 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:12:5
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:12:11
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:12:14
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:12:23
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:12:12
+   |
+12 |    <｜begin▁of▁sentence｜>}
+   |             ^^ expected one of 7 possible tokens
+
+error[E0463]: can't find crate for `itertools`
+ --> /tmp/deepseekcoder7b-int_factors-js-rs.rs:1:1
+  |
+1 | extern crate itertools;
+  | ^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0463`.

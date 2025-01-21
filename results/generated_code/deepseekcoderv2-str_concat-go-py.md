@@ -1,8 +1,22 @@
-"""
+ Sure! Below is the equivalent Python code for the provided Golang code:
+
 ```python
-s = 'hello'
-print('original value', s)
-# this is the same as assignment in golang, though it can be done with any expression:
-s += ' literal'
-print('new value:', s)
+# Create a string variable equal to any text value
+s = "hello"
+
+# Output string variable
+print(s)
+
+# Concatenate variable and literal, assign result to another string variable
+s2 = s + " literal"
+
+# Output second string variable
+print(s2)
 ```
+
+When you run this Python code, it will produce the following output:
+
+
+hello
+hello literal
+

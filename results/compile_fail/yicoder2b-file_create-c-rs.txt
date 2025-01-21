@@ -1,0 +1,110 @@
+error[E0432]: unresolved import `std::fs::open`
+ --> /tmp/yicoder2b-file_create-c-rs.rs:1:27
+  |
+1 | use std::fs::{create_dir, open, File};
+  |                           ^^^^ no `open` in `fs`
+
+warning: unused import: `std::io::Write`
+ --> /tmp/yicoder2b-file_create-c-rs.rs:2:5
+  |
+2 | use std::io::Write;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0107]: enum takes 2 generic arguments but 1 generic argument was supplied
+ --> /tmp/yicoder2b-file_create-c-rs.rs:6:17
+  |
+6 |     let mut fd: Result<File> = open("output.txt", Ok(File::new()));
+  |                 ^^^^^^ ---- supplied 1 generic argument
+  |                 |
+  |                 expected 2 generic arguments
+  |
+help: add missing generic argument
+  |
+6 |     let mut fd: Result<File, E> = open("output.txt", Ok(File::new()));
+  |                            +++
+
+error[E0107]: enum takes 2 generic arguments but 1 generic argument was supplied
+  --> /tmp/yicoder2b-file_create-c-rs.rs:15:13
+   |
+15 |     let fd: Result<File> = open("docs", Ok(File::new()));
+   |             ^^^^^^ ---- supplied 1 generic argument
+   |             |
+   |             expected 2 generic arguments
+   |
+help: add missing generic argument
+   |
+15 |     let fd: Result<File, E> = open("docs", Ok(File::new()));
+   |                        +++
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_create-c-rs.rs:6:60
+  |
+6 |     let mut fd: Result<File> = open("output.txt", Ok(File::new()));
+  |                                                            ^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0277]: the trait bound `[&str; 1]: AsRef<Path>` is not satisfied
+ --> /tmp/yicoder2b-file_create-c-rs.rs:8:26
+  |
+8 |         fd = create_dir(&["output.txt"])
+  |              ----------  ^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 1]`, which is required by `&[&str; 1]: AsRef<Path>`
+  |              |
+  |              required by a bound introduced by this call
+  |
+  = help: the following other types implement trait `AsRef<T>`:
+            [T; N]
+            [T]
+  = note: required for `&[&str; 1]` to implement `AsRef<Path>`
+note: required by a bound in `create_dir`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2379:1
+
+error[E0599]: no method named `create` found for unit type `()` in the current scope
+ --> /tmp/yicoder2b-file_create-c-rs.rs:9:28
+  |
+9 |             .map(|mut f| f.create().expect("Failed to create output.txt file"))
+  |                            ^^^^^^ method not found in `()`
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_create-c-rs.rs:15:50
+   |
+15 |     let fd: Result<File> = open("docs", Ok(File::new()));
+   |                                                  ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0277]: the trait bound `[&str; 1]: AsRef<Path>` is not satisfied
+  --> /tmp/yicoder2b-file_create-c-rs.rs:17:21
+   |
+17 |         create_dir(&["docs"])
+   |         ----------  ^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 1]`, which is required by `&[&str; 1]: AsRef<Path>`
+   |         |
+   |         required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `AsRef<T>`:
+             [T; N]
+             [T]
+   = note: required for `&[&str; 1]` to implement `AsRef<Path>`
+note: required by a bound in `create_dir`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2379:1
+
+error[E0599]: no method named `set_permissions` found for unit type `()` in the current scope
+  --> /tmp/yicoder2b-file_create-c-rs.rs:19:19
+   |
+19 |                 f.set_permissions(
+   |                 --^^^^^^^^^^^^^^^ method not found in `()`
+
+error: aborting due to 9 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0107, E0277, E0432, E0599.
+For more information about an error, try `rustc --explain E0107`.

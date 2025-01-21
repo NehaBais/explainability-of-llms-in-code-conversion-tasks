@@ -1,0 +1,21 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codeqwen-str_substring-c-rs.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-str_substring-c-rs.rs`
+
+error[E0618]: expected function, found `&str`
+ --> /tmp/codeqwen-str_substring-c-rs.rs:4:22
+  |
+1 | fn str_fromstr(s: &str, substring: &str, m: Option<usize>) -> Result<String, &'static str> {
+  |                         --------- `substring` has type `&str`
+...
+4 |         Some(pos) => substring(s, pos, m),
+  |                      ^^^^^^^^^-----------
+  |                      |
+  |                      call expression requires function
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0601, E0618.
+For more information about an error, try `rustc --explain E0601`.

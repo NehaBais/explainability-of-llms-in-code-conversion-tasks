@@ -1,0 +1,7 @@
+/tmp/Main.java:14: error: int cannot be dereferenced
+    System.out.println("a.rotateLeft(3) = " + String.format("%08b", a.rotateLeft(3)));
+                                                                     ^
+/tmp/Main.java:15: error: int cannot be dereferenced
+    System.out.println("a.rotateRight(3) = " + String.format("%08b", a.rotateRight(3)));
+                                                                      ^
+2 errors

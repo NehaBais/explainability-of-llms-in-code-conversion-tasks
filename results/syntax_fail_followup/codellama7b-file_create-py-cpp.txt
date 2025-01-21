@@ -1,0 +1,10 @@
+/tmp/codellama7b-file_create-py-cpp.cpp:12:12: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+   12 |   ofstream outputFile(outputFilePath);
+      |            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/codellama7b-file_create-py-cpp.cpp:20:23: error: no member named 'filesystem' in namespace 'std'
+   20 |   bool success = std::filesystem::create_directory(docsDirectoryPath);
+      |                  ~~~~~^
+2 errors generated.

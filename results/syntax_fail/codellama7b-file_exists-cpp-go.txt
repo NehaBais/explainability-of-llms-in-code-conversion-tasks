@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-file_exists-cpp-go.go:11:10: too many return values
+	have (bool)
+	want ()

@@ -1,4 +1,25 @@
-### Solution 1: Java code with comments added for clarification on how original Go program was converted to Java
-[Java Code](https://github.com/jbeezley/java-basics/blob/main/src/main/java/org/javacourse/helloworld/HelloWorldString.java)
-### Solution 2: Java code without comments, demonstrating that a full solution can be implemented with minimal comments.
-[Java Code](https://github.com/jbeezley/java-basics/blob/main/src/main/java/org/javacourse/helloworld/HelloWorldStringMinimalComments.java)
+ Sure! Below is the equivalent Java code for the provided Golang code:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // text assigned to a string variable
+        String s = "hello";
+
+        // output string variable
+        System.out.println(s);
+
+        // concatenate variable and literal, assign result to another string variable
+        String s2 = s + " literal";
+
+        // output second string variable
+        System.out.println(s2);
+    }
+}
+```
+
+This Java code performs the same operations as the original Golang code:
+1. It creates a `String` variable `s` initialized with the value `"hello"`.
+2. It prints the content of `s`.
+3. It concatenates `s` with the string literal `" literal"` and assigns the result to another `String` variable `s2`.
+4. It prints the content of `s2`.

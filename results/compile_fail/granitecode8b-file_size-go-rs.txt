@@ -1,0 +1,22 @@
+error[E0599]: no method named `size` found for struct `Metadata` in the current scope
+ --> /tmp/granitecode8b-file_size-go-rs.rs:3:29
+  |
+3 |         println!("{}", stat.size());
+  |                             ^^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/os/unix/fs.rs:564:8
+  |
+  = note: the method is available for `Metadata` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `MetadataExt` which provides `size` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::os::unix::fs::MetadataExt;
+  |
+help: there is a method `blksize` with a similar name
+  |
+3 |         println!("{}", stat.blksize());
+  |                             ~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

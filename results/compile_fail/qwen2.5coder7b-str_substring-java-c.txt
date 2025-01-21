@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-str_substring-java-c.c:3:10: fatal error: 'unicode/ustream.h' file not found
+    3 | #include <unicode/ustream.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.

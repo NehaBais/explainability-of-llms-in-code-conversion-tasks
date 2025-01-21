@@ -1,0 +1,11 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_factors-c-go.go:10:26: invalid operation: operator * not defined on i (variable of type *big.Int)
+/tmp/qwen2.5coder2b-int_factors-c-go.go:10:38: i.Add(i, big.NewInt(1)).Mod(num) == nil (untyped bool value) is not used
+/tmp/qwen2.5coder2b-int_factors-c-go.go:10:66: not enough arguments in call to i.Add(i, big.NewInt(1)).Mod
+	have (*big.Int)
+	want (*big.Int, *big.Int)
+/tmp/qwen2.5coder2b-int_factors-c-go.go:11:26: factors.Len undefined (type []*big.Int has no field or method Len)
+/tmp/qwen2.5coder2b-int_factors-c-go.go:16:5: undefined: i
+/tmp/qwen2.5coder2b-int_factors-c-go.go:17:26: factors.Len undefined (type []*big.Int has no field or method Len)
+/tmp/qwen2.5coder2b-int_factors-c-go.go:19:28: undefined: i
+/tmp/qwen2.5coder2b-int_factors-c-go.go:21:18: undefined: factorCount

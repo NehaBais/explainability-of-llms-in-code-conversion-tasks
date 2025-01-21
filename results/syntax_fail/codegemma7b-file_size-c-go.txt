@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-file_size-c-go.go:16:14: invalid operation: cannot call non-function foo.Size (variable of type int64)

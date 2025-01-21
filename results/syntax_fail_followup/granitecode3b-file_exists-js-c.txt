@@ -1,0 +1,17 @@
+/tmp/granitecode3b-file_exists-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-js-c.c:4:22: error: variable has incomplete type 'struct _finddata_t'
+    4 |   struct _finddata_t fileinfo;
+      |                      ^
+/tmp/granitecode3b-file_exists-js-c.c:4:10: note: forward declaration of 'struct _finddata_t'
+    4 |   struct _finddata_t fileinfo;
+      |          ^
+/tmp/granitecode3b-file_exists-js-c.c:9:13: error: call to undeclared function '_findfirst'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   retcode = _findfirst("input.txt", &fileinfo);
+      |             ^
+/tmp/granitecode3b-file_exists-js-c.c:11:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     printf("Input file found\n");
+      |     ^
+/tmp/granitecode3b-file_exists-js-c.c:11:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.

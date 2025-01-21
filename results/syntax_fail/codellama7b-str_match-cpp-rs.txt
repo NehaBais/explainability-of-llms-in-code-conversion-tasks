@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `npos` in module `std::string`
+  --> /tmp/codellama7b-str_match-cpp-rs.rs:24:33
+   |
+24 |     if location == std::string::npos {
+   |                                 ^^^^ not found in `std::string`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

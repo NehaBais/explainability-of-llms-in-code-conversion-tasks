@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_create-java-go.go:10:23: err.Type undefined (type error has no field or method Type)
+/tmp/yicoder2b-file_create-java-go.go:10:36: undefined: os.Exist
+/tmp/yicoder2b-file_create-java-go.go:13:16: assignment mismatch: 2 variables but os.Mkdir returns 1 value

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-str_prepend-c-go.go:13:8: undefined: C

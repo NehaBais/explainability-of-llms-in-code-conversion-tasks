@@ -1,0 +1,14 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/codellama7b-str_substring-java-rs.rs:5:1
+  |
+1 | fn substring(str: &str, n: usize, m: usize) -> String {
+  | ----------------------------------------------------- previous definition of the value `substring` here
+...
+5 | fn substring(str: &str, n: usize) -> String {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0428`.

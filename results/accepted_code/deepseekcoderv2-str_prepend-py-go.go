@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	s := "12345678"
-	// Append a 0 before s using string concatenation
+	// Prepend a string literal to s
 	s = "0" + s
 	fmt.Println(s)
 }

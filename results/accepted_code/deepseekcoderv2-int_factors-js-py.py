@@ -1,21 +1,15 @@
 def factors(num):
-    # Compute the square root of num and cast it to an integer for use as the upper bound
-    sqrt_num = int(num**0.5)
+    n_factors = []
+    for i in range(1, int(num**0.5) + 1):
+        if num % i == 0:
+            n_factors.append(i)
+            if num // i != i:
+                n_factors.append(num // i)
+    n_factors.sort()  # numeric sort
+    return n_factors
 
-    # Create a list of integers from 1 up to (and including) the square root of num
-    factors = [i for i in range(1, sqrt_num + 1)]
 
-    # Iterate through the list and check if each integer is divisible by num with no remainder. If so, add it to the factors list.
-    for factor in factors:
-        if num % factor == 0:
-            # Check to see if we've already added a duplicate of this factor
-            # This could be done more efficiently without using .sort(), but since its just checking equality it should be fine here
-            duplicates = [j for j in factors if j != factor and num % (num // j) == 0]
-            for dup in duplicates:
-                if dup not in factors:
-                    factors.append(dup)
-
-    # Sort the list of factors
-    factors.sort()
-
-    return factors
+# Test cases
+print(factors(45))  # [1, 3, 5, 9, 15, 45]
+print(factors(53))  # [1, 53]
+print(factors(64))  # [1, 2, 4, 8, 16, 32, 64]

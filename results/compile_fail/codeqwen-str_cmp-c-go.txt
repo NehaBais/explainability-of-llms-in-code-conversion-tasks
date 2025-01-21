@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-c-go.go:29:20: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:31:20: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:33:20: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:35:20: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:42:11: undefined: os
+/tmp/codeqwen-str_cmp-c-go.go:44:8: undefined: os
+/tmp/codeqwen-str_cmp-c-go.go:45:8: undefined: os

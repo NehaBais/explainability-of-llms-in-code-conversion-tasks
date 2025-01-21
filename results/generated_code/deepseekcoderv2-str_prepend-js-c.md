@@ -1,17 +1,26 @@
-Answer:
+ Here's the equivalent C code for your JavaScript snippet:
 
 ```c
 #include <stdio.h>
+#include <string.h> // For strcat
 
 int main() {
-    // Create a string variable and assign any text value to it
-    char str[] = "Hello";
-    
-    // Prepend another string literal with the existing string variable
-    printf("%s", ", World");
-    
+    char s[50] = ", World"; // Assuming a maximum string length of 49 characters plus null terminator
+    char hello[] = "Hello";
+
+    // Prepend the string literal to the existing string variable
+    strcpy(s, ""); // Clear the initial content of s
+    strcat(s, hello);
+    strcat(s, ", World");
+
+    printf("%s\n", s);
+
     return 0;
 }
 ```
 
-In this code, we first create a character array named `str` and assign any text value to it. Then, we use the `printf()` function to print the modified string by appending another string literal with the existing string variable. The output will be "Hello, World".
+This C code does the following:
+1. Defines a character array `s` with an initial size of 50 characters (including space for the null terminator).
+2. Initializes the string literal `"Hello"` and places it before the content of `s`.
+3. Uses the `strcat` function to concatenate `hello` and `", World"` to `s`.
+4. Prints the final concatenated string using `printf`.

@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/granitecode8b-file_size-c-go.go:12:16: newline in string
+/tmp/granitecode8b-file_size-c-go.go:12:16: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-file_size-c-go.go:13:14: newline in string
+/tmp/granitecode8b-file_size-c-go.go:19:16: newline in string
+/tmp/granitecode8b-file_size-c-go.go:19:16: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-file_size-c-go.go:20:14: newline in string

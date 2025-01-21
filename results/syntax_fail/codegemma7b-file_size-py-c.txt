@@ -1,0 +1,15 @@
+/tmp/codegemma7b-file_size-py-c.c:8:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     printf("Size of input.txt in current working directory: %ld bytes\n",
+      |     ^
+/tmp/codegemma7b-file_size-py-c.c:8:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-file_size-py-c.c:9:12: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+    8 |     printf("Size of input.txt in current working directory: %ld bytes\n",
+      |                                                             ~~~
+      |                                                             %lld
+    9 |            s.st_size);
+      |            ^~~~~~~~~
+/tmp/codegemma7b-file_size-py-c.c:13:66: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   13 |     printf("Size of input.txt in file system root: %ld bytes\n", s.st_size);
+      |                                                    ~~~           ^~~~~~~~~
+      |                                                    %lld
+2 warnings and 1 error generated.

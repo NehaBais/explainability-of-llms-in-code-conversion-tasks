@@ -1,0 +1,23 @@
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-bit_ops-go-rs.rs:35:11
+   |
+35 |         | ((ua << (16 - ub)) | (ua >> ub));
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i16`, found `u16`
+
+error[E0277]: no implementation for `i16 | u16`
+  --> /tmp/codegeex4-bit_ops-go-rs.rs:35:9
+   |
+35 |         | ((ua << (16 - ub)) | (ua >> ub));
+   |         ^ no implementation for `i16 | u16`
+   |
+   = help: the trait `BitOr<u16>` is not implemented for `i16`
+   = help: the following other types implement trait `BitOr<Rhs>`:
+             `&'a i16` implements `BitOr<i16>`
+             `&i16` implements `BitOr<&i16>`
+             `i16` implements `BitOr<&i16>`
+             `i16` implements `BitOr`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

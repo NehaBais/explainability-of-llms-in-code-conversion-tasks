@@ -1,0 +1,42 @@
+error[E0428]: the name `size` is defined multiple times
+ --> /tmp/codegemma7b-file_size-py-rs.rs:2:1
+  |
+1 | const size: u64 = fs::metadata("input.txt").unwrap().len();
+  | ----------------------------------------------------------- previous definition of the value `size` here
+2 | const size: u64 = fs::metadata("/input.txt").unwrap().len();
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `size` redefined here
+  |
+  = note: `size` must be defined only once in the value namespace of this module
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/codegemma7b-file_size-py-rs.rs:1:19
+  |
+1 | const size: u64 = fs::metadata("input.txt").unwrap().len();
+  |                   ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this module
+  |
+1 + use std::fs;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/codegemma7b-file_size-py-rs.rs:2:19
+  |
+2 | const size: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                   ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this module
+  |
+1 + use std::fs;
+  |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-file_size-py-rs.rs:2:61
+  |
+2 | const size: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                                                             ^ consider adding a `main` function to `/tmp/codegemma7b-file_size-py-rs.rs`
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0428, E0433, E0601.
+For more information about an error, try `rustc --explain E0428`.

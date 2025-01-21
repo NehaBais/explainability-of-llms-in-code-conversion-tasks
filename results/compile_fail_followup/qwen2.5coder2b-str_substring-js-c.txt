@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-str_substring-js-c.c:32:18: error: member reference base type 'char[9]' is not a structure or union
+   32 |   int index = str.index('b');
+      |               ~~~^~~~~~
+/tmp/qwen2.5coder2b-str_substring-js-c.c:40:19: error: member reference base type 'char[9]' is not a structure or union
+   40 |   int index2 = str.index('bc');
+      |                ~~~^~~~~~
+/tmp/qwen2.5coder2b-str_substring-js-c.c:40:26: warning: multi-character character constant [-Wmultichar]
+   40 |   int index2 = str.index('bc');
+      |                          ^
+1 warning and 2 errors generated.

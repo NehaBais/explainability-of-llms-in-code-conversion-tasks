@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_create-rs-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegemma7b-file_create-rs-cpp.cpp:8:3: error: use of undeclared identifier 'create'
+    8 |   create(".");
+      |   ^
+/tmp/codegemma7b-file_create-rs-cpp.cpp:9:3: error: use of undeclared identifier 'create'
+    9 |   create("/");
+      |   ^
+/tmp/codegemma7b-file_create-rs-cpp.cpp:14:3: error: use of undeclared identifier 'fs'
+   14 |   fs::create_directory(root + "/docs");
+      |   ^
+4 errors generated.

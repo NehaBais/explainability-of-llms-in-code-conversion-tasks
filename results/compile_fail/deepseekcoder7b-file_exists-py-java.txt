@@ -1,0 +1,47 @@
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+Path path1 = Paths.get("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: class, interface, enum, or record expected
+if(Files.exists(path1, LinkOption.NOFOLLOW_LINKS)) {
+^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+    }
+    ^
+/tmp/None.java:11: error: illegal character: '\uff5c'
+if (Files.exists(path2, LinkOption<｜begin▁of▁sentence｜>.NOFOLLOW_LINKS)) {
+                                   ^
+/tmp/None.java:11: error: illegal character: '\u2581'
+if (Files.exists(path2, LinkOption<｜begin▁of▁sentence｜>.NOFOLLOW_LINKS)) {
+                                         ^
+/tmp/None.java:11: error: illegal character: '\u2581'
+if (Files.exists(path2, LinkOption<｜begin▁of▁sentence｜>.NOFOLLOW_LINKS)) {
+                                            ^
+/tmp/None.java:11: error: illegal character: '\uff5c'
+if (Files.exists(path2, LinkOption<｜begin▁of▁sentence｜>.NOFOLLOW_LINKS)) {
+                                                     ^
+/tmp/None.java:12: error: illegal character: '\uff5c'
+    if (Files.isDirectory(path2, LinkOption.NOFOLLOW<｜begin▁of▁sentence｜>_LINKS)) {
+                                                     ^
+/tmp/None.java:12: error: illegal character: '\u2581'
+    if (Files.isDirectory(path2, LinkOption.NOFOLLOW<｜begin▁of▁sentence｜>_LINKS)) {
+                                                           ^
+/tmp/None.java:12: error: illegal character: '\u2581'
+    if (Files.isDirectory(path2, LinkOption.NOFOLLOW<｜begin▁of▁sentence｜>_LINKS)) {
+                                                              ^
+/tmp/None.java:12: error: illegal character: '\uff5c'
+    if (Files.isDirectory(path2, LinkOption.NOFOLLOW<｜begin▁of▁sentence｜>_LINKS)) {
+                                                                       ^
+/tmp/None.java:14: error: class, interface, enum, or record expected
+    }
+    ^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+if(Files.exists(path3, LinkOption.NOFOLLOW_LINKS)) {
+^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+    }
+    ^
+/tmp/None.java:26: error: class, interface, enum, or record expected
+    }
+    ^
+15 errors

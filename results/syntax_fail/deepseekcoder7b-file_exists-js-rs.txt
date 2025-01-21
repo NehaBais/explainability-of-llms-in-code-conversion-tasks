@@ -1,0 +1,14 @@
+error: expected expression, found `,`
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:26:18
+   |
+26 |                 },
+   |                  ^ expected expression
+
+error: expected expression, found `,`
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:27:36
+   |
+27 |             }else{"No".to_string()},
+   |                                    ^ expected expression
+
+error: aborting due to 2 previous errors
+

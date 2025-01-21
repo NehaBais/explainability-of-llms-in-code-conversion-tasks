@@ -1,0 +1,96 @@
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-int_factors-c-rs.rs:7:34
+  |
+7 |     let new_size = fctrs.count + flix;
+  |                                  ^^^^ expected `i16`, found `usize`
+
+error[E0277]: cannot add `usize` to `i16`
+ --> /tmp/yicoder2b-int_factors-c-rs.rs:7:32
+  |
+7 |     let new_size = fctrs.count + flix;
+  |                                ^ no implementation for `i16 + usize`
+  |
+  = help: the trait `Add<usize>` is not implemented for `i16`
+  = help: the following other types implement trait `Add<Rhs>`:
+            `&'a i16` implements `Add<i16>`
+            `&i16` implements `Add<&i16>`
+            `i16` implements `Add<&i16>`
+            `i16` implements `Add`
+
+error[E0614]: type `Option<Vec<i32>>` cannot be dereferenced
+ --> /tmp/yicoder2b-int_factors-c-rs.rs:8:34
+  |
+8 |     if let Some(mut list) = &mut *fctrs.list {
+  |                                  ^^^^^^^^^^^
+
+error[E0614]: type `Option<Vec<i32>>` cannot be dereferenced
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:13:9
+   |
+13 |         *fctrs.list = vec![0; new_size];
+   |         ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:13:31
+   |
+13 |         *fctrs.list = vec![0; new_size];
+   |                       --------^^^^^^^^-
+   |                       |       |
+   |                       |       expected `usize`, found `i16`
+   |                       arguments to this function are incorrect
+   |
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/vec/mod.rs:2751:8
+help: you can convert an `i16` to a `usize` and panic if the converted value doesn't fit
+   |
+13 |         *fctrs.list = vec![0; new_size.try_into().unwrap()];
+   |                                       ++++++++++++++++++++
+
+error[E0614]: type `Option<Vec<i32>>` cannot be dereferenced
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:16:9
+   |
+16 |         (*fctrs.list)[i + fctrs.count] = val;
+   |         ^^^^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:16:27
+   |
+16 |         (*fctrs.list)[i + fctrs.count] = val;
+   |                           ^^^^^^^^^^^ expected `usize`, found `i16`
+
+error[E0277]: cannot add `i16` to `usize`
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:16:25
+   |
+16 |         (*fctrs.list)[i + fctrs.count] = val;
+   |                         ^ no implementation for `usize + i16`
+   |
+   = help: the trait `Add<i16>` is not implemented for `usize`
+   = help: the following other types implement trait `Add<Rhs>`:
+             `&'a usize` implements `Add<usize>`
+             `&usize` implements `Add<&usize>`
+             `usize` implements `Add<&usize>`
+             `usize` implements `Add`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:56:17
+   |
+55 |             match j {
+   |                   - this expression has type `Vec<i32>`
+56 |                 Some(val) => println!("{:?}", val),
+   |                 ^^^^^^^^^ expected `Vec<i32>`, found `Option<_>`
+   |
+   = note: expected struct `Vec<i32>`
+                found enum `Option<_>`
+
+warning: value assigned to `flix` is never read
+  --> /tmp/yicoder2b-int_factors-c-rs.rs:35:9
+   |
+35 |         flix += 1;
+   |         ^^^^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` on by default
+
+error: aborting due to 9 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308, E0614.
+For more information about an error, try `rustc --explain E0277`.

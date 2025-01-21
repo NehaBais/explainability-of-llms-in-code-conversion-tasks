@@ -1,0 +1,20 @@
+error: argument never used
+  --> /tmp/codegeex4-str_cmp-c-rs.rs:20:9
+   |
+12 |         "{:<6}{:<2}{:<2}{:<2}{:<2}{:<2} {:<}",
+   |         ------------------------------------- formatting specifier missing
+...
+20 |         b
+   |         ^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-str_cmp-c-rs.rs:34:9
+   |
+26 |         "{:<6}{:<2}{:<2}{:<2}{:<2}{:<2} {:<}",
+   |         ------------------------------------- formatting specifier missing
+...
+34 |         b
+   |         ^ argument never used
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,64 @@
+error[E0601]: `main` function not found in crate `yicoder9b_bit_ops_js_rs`
+  --> /tmp/yicoder9b-bit_ops-js-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder9b-bit_ops-js-rs.rs`
+
+error[E0277]: the trait bound `u32: From<i32>` is not satisfied
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:6:22
+  |
+6 |     let left_shift = u32::from(a) << b; // left shift
+  |                      ^^^ the trait `From<i32>` is not implemented for `u32`
+  |
+  = help: the following other types implement trait `From<T>`:
+            `u32` implements `From<Char>`
+            `u32` implements `From<Ipv4Addr>`
+            `u32` implements `From<bool>`
+            `u32` implements `From<char>`
+            `u32` implements `From<u16>`
+            `u32` implements `From<u8>`
+
+error[E0277]: the trait bound `i32: From<u32>` is not satisfied
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:7:30
+  |
+7 |     println!("a << b: {:?}", i32::from(left_shift));
+  |                              ^^^ the trait `From<u32>` is not implemented for `i32`
+  |
+  = help: the following other types implement trait `From<T>`:
+            `i32` implements `From<bool>`
+            `i32` implements `From<i16>`
+            `i32` implements `From<i8>`
+            `i32` implements `From<u16>`
+            `i32` implements `From<u8>`
+
+error[E0277]: the trait bound `u32: From<i32>` is not satisfied
+  --> /tmp/yicoder9b-bit_ops-js-rs.rs:11:23
+   |
+11 |     let right_shift = u32::from(a) >> b;
+   |                       ^^^ the trait `From<i32>` is not implemented for `u32`
+   |
+   = help: the following other types implement trait `From<T>`:
+             `u32` implements `From<Char>`
+             `u32` implements `From<Ipv4Addr>`
+             `u32` implements `From<bool>`
+             `u32` implements `From<char>`
+             `u32` implements `From<u16>`
+             `u32` implements `From<u8>`
+
+error[E0277]: the trait bound `i32: From<u32>` is not satisfied
+  --> /tmp/yicoder9b-bit_ops-js-rs.rs:12:31
+   |
+12 |     println!("a >>> b: {:?}", i32::from(right_shift)); // logical right shift
+   |                               ^^^ the trait `From<u32>` is not implemented for `i32`
+   |
+   = help: the following other types implement trait `From<T>`:
+             `i32` implements `From<bool>`
+             `i32` implements `From<i16>`
+             `i32` implements `From<i8>`
+             `i32` implements `From<u16>`
+             `i32` implements `From<u8>`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0601.
+For more information about an error, try `rustc --explain E0277`.

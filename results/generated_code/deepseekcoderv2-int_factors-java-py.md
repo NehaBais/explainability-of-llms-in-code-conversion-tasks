@@ -1,27 +1,20 @@
-# Solution
-
-## Python Code:
+ Here's the Python equivalent of the provided Java code to compute the factors of a positive integer:
 
 ```python
-# This code is contributed by Naseem Hasan
-def Factors(num):
-   """
-     Compute the factors of a positive integer n, which is defined as the positive integers by which the number being factored can be divided to yield a positive integer result.
-     Args: 
-         num (int) : The input integer
-     Returns:
-        list_set : A set containing all factors of the given number n in ascending order
-    """
-   # TreeSet is an ordered collection that contains no duplicate elements, it will be used to store factors of a positive integers.
-   tree_set = []
-   if num == 0:
-       return "please enter other numbers"
-   elif num < 0:
-       print("input should not less than zero")
-   else:
-       for i in range(1, int(num ** 0.5)+1): # the loop is from 1 to the sqrt of given number n  
-           if (num % i == 0):  # check if num is divisible by integer between [1,sqrt(n)]
-               tree_set.add(i)
-               tree_set.add(int(num / i))
-   return sorted(tree_set)
+def factors(n):
+    from math import sqrt
+    from collections import TreeSet
+    
+    factors = TreeSet()
+    factors.add(n)
+    factors.add(1)
+    
+    for test in range(n - 1, int(sqrt(n)) - 1, -1):
+        if n % test == 0:
+            factors.add(test)
+            factors.add(n // test)
+    
+    return factors
 ```
+
+This Python function `factors` takes a positive integer `n` as input and returns a `TreeSet` containing all the factors of `n`. The function uses a similar approach to the Java code, iterating from `n - 1` down to the square root of `n`, checking for divisors, and adding both the divisor and its complement to the result set.

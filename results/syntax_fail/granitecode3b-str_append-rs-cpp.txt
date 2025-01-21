@@ -1,0 +1,13 @@
+/tmp/granitecode3b-str_append-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_append-rs-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string hello = "Hello world";
+      |   ^
+/tmp/granitecode3b-str_append-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << hello << std::endl;
+      |   ^
+/tmp/granitecode3b-str_append-rs-cpp.cpp:5:25: error: use of undeclared identifier 'std'
+    5 |   std::cout << hello << std::endl;
+      |                         ^
+4 errors generated.

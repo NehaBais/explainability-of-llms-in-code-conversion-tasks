@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/dolphincoder7b-logic_ops-c-go.go:6:32: invalid operation: operator && not defined on a (variable of type int)
+/tmp/dolphincoder7b-logic_ops-c-go.go:7:31: invalid operation: operator || not defined on a (variable of type int)
+/tmp/dolphincoder7b-logic_ops-c-go.go:8:31: invalid operation: operator ! not defined on a (variable of type int)

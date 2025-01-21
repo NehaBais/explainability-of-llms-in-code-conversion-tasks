@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-str_substring-js-cpp.cpp:15:20: error: no member named 'substring' in 'std::string'; did you mean 'substr'?
+   15 |   std::cout << str.substring(n) << "\n"; // Not a standard function in C++
+      |                    ^~~~~~~~~
+      |                    substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:3: note: 'substr' declared here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |   ^
+1 error generated.

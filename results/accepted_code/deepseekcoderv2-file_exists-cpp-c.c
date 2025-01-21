@@ -1,24 +1,44 @@
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 
 void file_exists(const char *path) {
-  printf("%s", path);
-  if (exists(path)) {
-    if (is_directory(path)) {
+  struct stat path_stat;
+  if (stat(path, &path_stat) == 0) {
+    printf("%s", path);
+    if (S_ISDIR(path_stat.st_mode)) {
       printf(" is a directory\n");
     } else {
-      printf(" exists with a file size of %lld bytes.\n", get_file_size(path));
+      printf(" exists with a file size of %ld bytes.\n", path_stat.st_size);
     }
   } else {
-    printf(" does not exist\n");
+    printf("%s does not exist\n", path);
   }
 }
 
 int main() {
-  file_exists("input.txt");
-  file_exists("zero_length.txt");
-  file_exists("docs/input.txt");
-  file_exists("docs/zero_length.txt");
+  char path[256];
+
+  // For the current working directory
+  strcpy(path, "input.txt");
+  file_exists(path);
+  strcpy(path, "zero_length.txt");
+  file_exists(path);
+  strcpy(path, "docs/input.txt");
+  file_exists(path);
+  strcpy(path, "docs/zero_length.txt");
+  file_exists(path);
+
+  // For the filesystem root
+  strcpy(path, "/input.txt");
+  file_exists(path);
+  strcpy(path, "/zero_length.txt");
+  file_exists(path);
+  strcpy(path, "/docs/input.txt");
+  file_exists(path);
+  strcpy(path, "/docs/zero_length.txt");
+  file_exists(path);
+
+  return 0;
 }

@@ -1,0 +1,31 @@
+/tmp/granitecode3b-dir_make-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:4:16: error: use of undeclared identifier 'std'
+    4 | namespace fs = std::filesystem;
+      |                ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:5:19: error: use of undeclared identifier 'std'
+    5 | void mkdirp(const std::string &path) {
+      |                   ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:7:5: error: use of undeclared identifier 'fs'
+    7 |     fs::create_directories(path);
+      |     ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:8:18: error: use of undeclared identifier 'std'
+    8 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:9:21: error: use of undeclared identifier 'std'
+    9 |     if (e.code() == std::errc::file_exists) {
+      |                     ^
+/tmp/granitecode3b-dir_make-js-cpp.cpp:17:3: error: no matching function for call to 'mkdirp'
+   17 |   mkdirp("path/to/dir");
+      |   ^~~~~~
+/tmp/granitecode3b-dir_make-js-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[12]' to 'const int' for 1st argument
+    5 | void mkdirp(const std::string &path) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~~~~
+9 errors generated.

@@ -1,0 +1,25 @@
+error[E0277]: the trait bound `File: AsRef<Path>` is not satisfied
+ --> /tmp/magicoder7b-file_size-java-rs.rs:5:35
+  |
+5 |     println!("{} B", fs::metadata(fileA).unwrap().len());
+  |                      ------------ ^^^^^ the trait `AsRef<Path>` is not implemented for `File`
+  |                      |
+  |                      required by a bound introduced by this call
+  |
+note: required by a bound in `std::fs::metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2043:1
+
+error[E0277]: the trait bound `File: AsRef<Path>` is not satisfied
+ --> /tmp/magicoder7b-file_size-java-rs.rs:8:35
+  |
+8 |     println!("{} B", fs::metadata(fileB).unwrap().len());
+  |                      ------------ ^^^^^ the trait `AsRef<Path>` is not implemented for `File`
+  |                      |
+  |                      required by a bound introduced by this call
+  |
+note: required by a bound in `std::fs::metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2043:1
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

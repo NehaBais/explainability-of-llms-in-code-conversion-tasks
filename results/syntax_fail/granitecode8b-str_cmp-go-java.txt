@@ -1,0 +1,6 @@
+/tmp/Main.java:39: error: variable c is already defined in method main(String[])
+    Comparator c = Comparator.naturalOrder();
+               ^
+Note: /tmp/Main.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

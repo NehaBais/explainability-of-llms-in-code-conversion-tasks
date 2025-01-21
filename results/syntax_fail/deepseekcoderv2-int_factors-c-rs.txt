@@ -1,0 +1,21 @@
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:50:9
+   |
+50 |     if (dvsr * dvsr) == num {
+   |         ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:50:16
+   |
+50 |     if (dvsr * dvsr) == num {
+   |                ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:51:20
+   |
+51 |         flist.push(dvsr);
+   |                    ^^^^ not found in this scope
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

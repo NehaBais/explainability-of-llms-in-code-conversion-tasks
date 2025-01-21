@@ -1,0 +1,41 @@
+/tmp/granitecode8b-str_match-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-java-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%d", !strcmp(str1, str2));
+      |   ^
+/tmp/granitecode8b-str_match-java-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_match-java-c.c:9:17: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%d", !strcmp(str1, str2));
+      |                 ^
+/tmp/granitecode8b-str_match-java-c.c:9:17: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode8b-str_match-java-c.c:12:18: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf(", %d", strstr(str1, str2) != NULL);
+      |                  ^
+/tmp/granitecode8b-str_match-java-c.c:12:18: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode8b-str_match-java-c.c:12:40: error: use of undeclared identifier 'NULL'
+   12 |   printf(", %d", strstr(str1, str2) != NULL);
+      |                                        ^
+/tmp/granitecode8b-str_match-java-c.c:15:33: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   printf(", %d", !strcmp(str1 + strlen(str1) - strlen(str2), str2));
+      |                                 ^
+/tmp/granitecode8b-str_match-java-c.c:15:33: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_match-java-c.c:20:7: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   20 |   loc = strstr(str1, str2);
+      |       ^ ~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-str_match-java-c.c:21:17: error: use of undeclared identifier 'NULL'
+   21 |   while (loc != NULL) {
+      |                 ^
+/tmp/granitecode8b-str_match-java-c.c:22:22: error: invalid operands to binary expression ('int' and 'char[5]')
+   22 |     printf("%d", loc - str1);
+      |                  ~~~ ^ ~~~~
+/tmp/granitecode8b-str_match-java-c.c:23:18: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   23 |     loc = strstr(loc + 1, str2);
+      |                  ^~~~~~~
+/tmp/granitecode8b-str_match-java-c.c:23:9: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   23 |     loc = strstr(loc + 1, str2);
+      |         ^ ~~~~~~~~~~~~~~~~~~~~~
+12 errors generated.

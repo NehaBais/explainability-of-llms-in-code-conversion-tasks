@@ -1,0 +1,7 @@
+/tmp/codegemma7b-bit_ops-cpp-c.c:14:27: error: use of unknown builtin '__builtin_rol' [-Wimplicit-function-declaration]
+   14 |   printf("a rol b: %d\n", __builtin_rol(ua, b));
+      |                           ^
+/tmp/codegemma7b-bit_ops-cpp-c.c:15:27: error: use of unknown builtin '__builtin_ror' [-Wimplicit-function-declaration]
+   15 |   printf("a ror b: %d\n", __builtin_ror(ua, b));
+      |                           ^
+2 errors generated.

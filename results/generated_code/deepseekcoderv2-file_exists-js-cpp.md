@@ -1,59 +1,49 @@
-Answer: Here is the C++ code that implements the given requirement:
+ To convert the given JavaScript code to C++, you can use the standard library for file and directory operations in Windows, as well as a few functions from the Windows API if needed. Below is an example of how you might achieve this in C++:
 
 ```cpp
 #include <windows.h>
+#include <iostream>
+
+bool FileExists(const std::wstring& path) {
+    DWORD fileAttributes = GetFileAttributesW(path.c_str());
+    return (fileAttributes != INVALID_FILE_ATTRIBUTES && !(fileAttributes & FILE_ATTRIBUTE_DIRECTORY));
+}
+
+bool DirectoryExists(const std::wstring& path) {
+    DWORD fileAttributes = GetFileAttributesW(path.c_str());
+    return (fileAttributes != INVALID_FILE_ATTRIBUTES && (fileAttributes & FILE_ATTRIBUTE_DIRECTORY));
+}
 
 int main() {
-  char input_file[] = "input.txt";
-  char root_directory[] = "/";
-  char folder[] = "docs/";
+    // Check for the current working directory
+    std::wstring inputPath1 = L"input.txt";
+    std::wstring docsPath1 = L"docs";
 
-  // Check if file exists in current directory
-  HANDLE handle = CreateFile(input_file, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  BOOL result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
+    if (FileExists(inputPath1) && DirectoryExists(docsPath1)) {
+        std::wcout << "Both file '" << inputPath1 << "' and directory '" << docsPath1 << "' exist in the current working directory." << std::endl;
+    } else {
+        std::wcout << "Either file '" << inputPath1 << "' or directory '" << docsPath1 << "' does not exist in the current working directory." << std::endl;
+    }
 
-  if (result) {
-    printf("File %s does not exist in current directory.\n", input_file);
-  } else {
-    printf("File %s exists in current directory.\n", input_file);
-  }
+    // Check for the filesystem root (assuming C: drive)
+    std::wstring inputPath2 = L"c:/input.txt";
+    std::wstring docsPath2 = L"c:/docs";
 
-  // Check if file exists in root directory
-  handle = CreateFile(root_directory, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
+    if (FileExists(inputPath2) && DirectoryExists(docsPath2)) {
+        std::wcout << "Both file '" << inputPath2 << "' and directory '" << docsPath2 << "' exist in the filesystem root." << std::endl;
+    } else {
+        std::wcout << "Either file '" << inputPath2 << "' or directory '" << docsPath2 << "' does not exist in the filesystem root." << std::endl;
+    }
 
-  if (result) {
-    printf("File %s does not exist in root directory.\n", input_file);
-  } else {
-    printf("File %s exists in root directory.\n", input_file);
-  }
-
-  // Check if folder exists in current directory
-  handle = CreateFile(folder, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
-
-  if (result) {
-    printf("Folder %s does not exist in current directory.\n", folder);
-  } else {
-    printf("Folder %s exists in current directory.\n", folder);
-  }
-
-  // Check if folder exists in root directory
-  handle = CreateFile(root_directory, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-  result = GetLastError() == ERROR_FILE_NOT_FOUND;
-  CloseHandle(handle);
-
-  if (result) {
-    printf("Folder %s does not exist in root directory.\n", folder);
-  } else {
-    printf("Folder %s exists in root directory.\n", folder);
-  }
-
-  return 0;
+    return 0;
 }
 ```
 
-This code uses the Windows API to check if a file or folder exists. The CreateFile function is used to open the file or folder and GetLastError is called to determine if an error occurred when opening the object. If the error code returned by GetLastError is ERROR_FILE_NOT_FOUND, then the file or folder does not exist. Otherwise, it exists.
+### Explanation:
+1. **FileExists and DirectoryExists Functions**: These functions use `GetFileAttributesW` to check if a file or directory exists, respectively. The function returns `INVALID_FILE_ATTRIBUTES` if the file does not exist or is a directory.
+2. **Path Strings**: The paths are defined as wide strings (`std::wstring`) to handle Unicode characters properly. If you need to handle ANSI paths, you can replace `L` with an empty string and use narrow strings (`std::string`).
+3. **Main Function**: The main function checks if the file `input.txt` and directory `docs` exist in both the current working directory and the filesystem root (assuming C: drive for simplicity). It prints a message indicating whether they exist or not.
+
+### Note:
+- This code assumes Windows as it uses wide strings (`std::wstring`) and Windows API functions. If you need to run this on other operating systems, you would need to use different libraries and APIs.
+- Adjust the paths and checks according to your specific requirements and environment.

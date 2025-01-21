@@ -1,0 +1,11 @@
+/tmp/yicoder9b-int_factors-go-cpp.cpp:11:17: error: expected ';' at end of declaration
+   11 |   vector<int> fs{1};
+      |                 ^
+      |                 ;
+/tmp/yicoder9b-int_factors-go-cpp.cpp:13:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |   auto apf = [&](long long int p, int e) {
+      |   ^
+/tmp/yicoder9b-int_factors-go-cpp.cpp:13:14: error: expected expression
+   13 |   auto apf = [&](long long int p, int e) {
+      |              ^
+1 warning and 2 errors generated.

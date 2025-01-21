@@ -1,0 +1,7 @@
+/tmp/codegeex4-str_cmp-cpp-c.c:37:10: error: read-only variable is not assignable
+   37 |     a[i] = tolower((unsigned char)a[i]);
+      |     ~~~~ ^
+/tmp/codegeex4-str_cmp-cpp-c.c:39:10: error: read-only variable is not assignable
+   39 |     b[j] = tolower((unsigned char)b[j]);
+      |     ~~~~ ^
+2 errors generated.

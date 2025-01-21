@@ -1,0 +1,49 @@
+/tmp/granitecode8b-int_arith-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:6:5: error: use of undeclared identifier 'exit'
+    6 |     exit(1);
+      |     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:7:7: error: use of undeclared identifier 'std'
+    7 |   b = std::atoi(argv[--argc]);
+      |       ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:9:5: error: use of undeclared identifier 'exit'
+    9 |     exit(2);
+      |     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:10:7: error: use of undeclared identifier 'std'
+   10 |   a = std::atoi(argv[--argc]);
+      |       ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::cout << "a+b = " << a + b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:11:37: error: use of undeclared identifier 'std'
+   11 |   std::cout << "a+b = " << a + b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::cout << "a-b = " << a - b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:12:37: error: use of undeclared identifier 'std'
+   12 |   std::cout << "a-b = " << a - b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << "a*b = " << a * b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:13:37: error: use of undeclared identifier 'std'
+   13 |   std::cout << "a*b = " << a * b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << "a/b = " << static_cast<double>(a) / b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:58: error: use of undeclared identifier 'std'
+   15 |   std::cout << "a/b = " << static_cast<double>(a) / b << std::endl;
+      |                                                          ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:16:3: error: use of undeclared identifier 'std'
+   16 |   std::cout << "a%%b = " << a % b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:16:38: error: use of undeclared identifier 'std'
+   16 |   std::cout << "a%%b = " << a % b << std::endl;
+      |                                      ^
+16 errors generated.

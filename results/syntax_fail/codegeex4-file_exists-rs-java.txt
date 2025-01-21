@@ -1,0 +1,11 @@
+/tmp/Main.java:7: error: cannot find symbol
+      File file = new File(path);
+      ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:7: error: cannot find symbol
+      File file = new File(path);
+                      ^
+  symbol:   class File
+  location: class Main
+2 errors

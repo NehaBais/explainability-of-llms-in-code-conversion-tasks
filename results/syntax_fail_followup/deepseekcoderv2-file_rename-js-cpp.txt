@@ -1,0 +1,22 @@
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:8:9: error: use of undeclared identifier 'fs'
+    8 |     if (fs::exists(oldPath)) {
+      |         ^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:9:7: error: use of undeclared identifier 'fs'
+    9 |       fs::rename(oldPath, newPath);
+      |       ^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:15:18: error: use of undeclared identifier 'fs'
+   15 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:22:9: error: use of undeclared identifier 'fs'
+   22 |     if (fs::exists(oldPath)) {
+      |         ^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:23:7: error: use of undeclared identifier 'fs'
+   23 |       fs::rename(oldPath, newPath);
+      |       ^
+/tmp/deepseekcoderv2-file_rename-js-cpp.cpp:29:18: error: use of undeclared identifier 'fs'
+   29 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+7 errors generated.

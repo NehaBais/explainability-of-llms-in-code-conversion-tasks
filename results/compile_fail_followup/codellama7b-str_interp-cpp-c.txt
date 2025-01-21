@@ -1,0 +1,4 @@
+/tmp/codellama7b-str_interp-cpp-c.c:11:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   11 |   int index = strstr(original, toBeReplaced);
+      |       ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

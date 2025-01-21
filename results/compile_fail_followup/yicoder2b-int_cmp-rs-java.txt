@@ -1,0 +1,224 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+use io::{self, BufRead};
+^
+/tmp/None.java:6: error: not a statement
+    match reader.read_line(&mut buffer) {
+                                ^
+/tmp/None.java:12: error: not a statement
+        println!("Error reading input: {}", e);
+        ^
+/tmp/None.java:12: error: not a statement
+        println!("Error reading input: {}", e);
+                                            ^
+/tmp/None.java:18: error: not a statement
+    println!("Enter another integer:");
+    ^
+/tmp/None.java:19: error: not a statement
+    match reader.read_line(&mut buffer) {
+                                ^
+/tmp/None.java:24: error: not a statement
+        println!("Error reading input: {}", e);
+        ^
+/tmp/None.java:24: error: not a statement
+        println!("Error reading input: {}", e);
+                                            ^
+/tmp/None.java:30: error: not a statement
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                                                   ^
+/tmp/None.java:30: error: not a statement
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                                                      ^
+/tmp/None.java:31: error: not a statement
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                                              ^
+/tmp/None.java:31: error: not a statement
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                                                 ^
+/tmp/None.java:32: error: not a statement
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                                                         ^
+/tmp/None.java:32: error: not a statement
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                                                            ^
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+fn main() {
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:4: error: ';' expected
+    let mut reader = io::stdin();
+           ^
+/tmp/None.java:4: error: ';' expected
+    let mut reader = io::stdin();
+                              ^
+/tmp/None.java:5: error: ';' expected
+    let mut buffer = String::new();
+           ^
+/tmp/None.java:5: error: ';' expected
+    let mut buffer = String::new();
+                                ^
+/tmp/None.java:6: error: ';' expected
+    match reader.read_line(&mut buffer) {
+                ^
+/tmp/None.java:6: error: illegal start of expression
+    match reader.read_line(&mut buffer) {
+                           ^
+/tmp/None.java:6: error: ')' or ',' expected
+    match reader.read_line(&mut buffer) {
+                               ^
+/tmp/None.java:6: error: ';' expected
+    match reader.read_line(&mut buffer) {
+                                      ^
+/tmp/None.java:7: error: -> expected
+        Ok(()) => {},
+             ^
+/tmp/None.java:7: error: illegal start of expression
+        Ok(()) => {},
+                ^
+/tmp/None.java:7: error: illegal start of expression
+        Ok(()) => {},
+                  ^
+/tmp/None.java:7: error: illegal start of expression
+        Ok(()) => {},
+                    ^
+/tmp/None.java:8: error: illegal start of expression
+        Err(_e) => println!("Not a valid number"),
+                 ^
+/tmp/None.java:8: error: ';' expected
+        Err(_e) => println!("Not a valid number"),
+                          ^
+/tmp/None.java:11: error: '(' expected
+    if let Err(e) = buffer.parse::<i32>() {
+      ^
+/tmp/None.java:11: error: ')' expected
+    if let Err(e) = buffer.parse::<i32>() {
+          ^
+/tmp/None.java:11: error: <identifier> expected
+    if let Err(e) = buffer.parse::<i32>() {
+                                       ^
+/tmp/None.java:12: error: ';' expected
+        println!("Error reading input: {}", e);
+               ^
+/tmp/None.java:12: error: ';' expected
+        println!("Error reading input: {}", e);
+                                             ^
+/tmp/None.java:15: error: ')' expected
+    let nums = (0, &buffer.trim() as i32);
+                 ^
+/tmp/None.java:15: error: <identifier> expected
+    let nums = (0, &buffer.trim() as i32);
+                  ^
+/tmp/None.java:15: error: ';' expected
+    let nums = (0, &buffer.trim() as i32);
+                                 ^
+/tmp/None.java:15: error: ';' expected
+    let nums = (0, &buffer.trim() as i32);
+                                        ^
+/tmp/None.java:16: error: ';' expected
+    let a: i32 = *nums;
+         ^
+/tmp/None.java:16: error: illegal start of expression
+    let a: i32 = *nums;
+                 ^
+/tmp/None.java:18: error: ';' expected
+    println!("Enter another integer:");
+           ^
+/tmp/None.java:19: error: ';' expected
+    match reader.read_line(&mut buffer) {
+                ^
+/tmp/None.java:19: error: illegal start of expression
+    match reader.read_line(&mut buffer) {
+                           ^
+/tmp/None.java:19: error: ')' or ',' expected
+    match reader.read_line(&mut buffer) {
+                               ^
+/tmp/None.java:19: error: ';' expected
+    match reader.read_line(&mut buffer) {
+                                      ^
+/tmp/None.java:20: error: -> expected
+        Ok(()) => {},
+             ^
+/tmp/None.java:20: error: illegal start of expression
+        Ok(()) => {},
+                ^
+/tmp/None.java:20: error: illegal start of expression
+        Ok(()) => {},
+                  ^
+/tmp/None.java:20: error: illegal start of expression
+        Ok(()) => {},
+                    ^
+/tmp/None.java:21: error: illegal start of expression
+        Err(_e) => println!("Not a valid number"), 
+                 ^
+/tmp/None.java:21: error: ';' expected
+        Err(_e) => println!("Not a valid number"), 
+                          ^
+/tmp/None.java:23: error: '(' expected
+    if let Err(e) = buffer.parse::<i32>() {
+      ^
+/tmp/None.java:23: error: ')' expected
+    if let Err(e) = buffer.parse::<i32>() {
+          ^
+/tmp/None.java:23: error: <identifier> expected
+    if let Err(e) = buffer.parse::<i32>() {
+                                       ^
+/tmp/None.java:24: error: ';' expected
+        println!("Error reading input: {}", e);
+               ^
+/tmp/None.java:24: error: ';' expected
+        println!("Error reading input: {}", e);
+                                             ^
+/tmp/None.java:27: error: ';' expected
+    let b: i32 = *buffer as i32;
+         ^
+/tmp/None.java:27: error: illegal start of expression
+    let b: i32 = *buffer as i32;
+                 ^
+/tmp/None.java:27: error: ';' expected
+    let b: i32 = *buffer as i32;
+                        ^
+/tmp/None.java:29: error: ';' expected
+    match a.cmp(&b) {
+           ^
+/tmp/None.java:29: error: illegal start of expression
+    match a.cmp(&b) {
+                ^
+/tmp/None.java:29: error: ';' expected
+    match a.cmp(&b) {
+                   ^
+/tmp/None.java:30: error: illegal start of expression
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                  ^
+/tmp/None.java:30: error: ';' expected
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                           ^
+/tmp/None.java:30: error: ';' expected
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                                                    ^
+/tmp/None.java:30: error: ';' expected
+        std::cmp::Ordering::Less => println!("{} is less than {}", a, b),
+                                                                       ^
+/tmp/None.java:31: error: illegal start of expression
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                   ^
+/tmp/None.java:31: error: ';' expected
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                            ^
+/tmp/None.java:31: error: ';' expected
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                                               ^
+/tmp/None.java:31: error: ';' expected
+        std::cmp::Ordering::Equal => println!("{} equals {}", a, b),
+                                                                  ^
+/tmp/None.java:32: error: illegal start of expression
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                     ^
+/tmp/None.java:32: error: ';' expected
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                              ^
+/tmp/None.java:32: error: ';' expected
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                                                          ^
+/tmp/None.java:32: error: ';' expected
+        std::cmp::Ordering::Greater => println!("{} is greater than {}", a, b),
+                                                                             ^
+74 errors

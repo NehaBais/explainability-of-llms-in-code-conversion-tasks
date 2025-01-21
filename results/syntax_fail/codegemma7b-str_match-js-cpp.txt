@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_match-js-cpp.cpp:36:28: error: no member named 'join' in 'std::vector<int>'
+   36 |               << q2matches.join(", ") << "." << std::endl;
+      |                  ~~~~~~~~~ ^
+1 error generated.

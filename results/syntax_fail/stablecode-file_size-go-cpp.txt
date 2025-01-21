@@ -1,0 +1,16 @@
+/tmp/stablecode-file_size-go-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::path filePath(f);
+      |     ~~~~~^
+/tmp/stablecode-file_size-go-cpp.cpp:8:15: error: no member named 'filesystem' in namespace 'std'
+    8 |     if (!std::filesystem::exists(filePath)) {
+      |          ~~~~~^
+/tmp/stablecode-file_size-go-cpp.cpp:8:34: error: use of undeclared identifier 'filePath'
+    8 |     if (!std::filesystem::exists(filePath)) {
+      |                                  ^
+/tmp/stablecode-file_size-go-cpp.cpp:13:27: error: no member named 'filesystem' in namespace 'std'
+   13 |     uintmax_t size = std::filesystem::file_size(filePath);
+      |                      ~~~~~^
+/tmp/stablecode-file_size-go-cpp.cpp:13:49: error: use of undeclared identifier 'filePath'
+   13 |     uintmax_t size = std::filesystem::file_size(filePath);
+      |                                                 ^
+5 errors generated.

@@ -1,0 +1,27 @@
+error[E0603]: struct `Path` is private
+ --> /tmp/stablecode-dir_make-c-rs.rs:4:20
+  |
+4 |     let path = fs::Path::new(path);
+  |                    ^^^^ private struct
+  |
+note: the struct `Path` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:17:19
+help: consider importing this struct instead
+  |
+4 |     let path = std::path::Path::new(path);
+  |                ~~~~~~~~~~~~~~~
+help: import `Path` directly
+  |
+4 |     let path = std::path::Path(path);
+  |                ~~~~~~~~~~~~~~~
+
+error[E0601]: `main` function not found in crate `stablecode_dir_make_c_rs`
+  --> /tmp/stablecode-dir_make-c-rs.rs:11:2
+   |
+11 | }
+   |  ^ consider adding a `main` function to `/tmp/stablecode-dir_make-c-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0601, E0603.
+For more information about an error, try `rustc --explain E0601`.

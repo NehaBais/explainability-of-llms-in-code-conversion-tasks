@@ -1,0 +1,9 @@
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-str_concat-py-js.js:12
+s2 = ", ".join([s1, "world", "mom"]));
+                                    ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v23.1.0

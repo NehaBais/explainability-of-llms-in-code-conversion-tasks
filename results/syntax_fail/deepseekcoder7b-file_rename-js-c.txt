@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:10: error: expected expression
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:19: error: character <U+2581> not allowed in an identifier
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:24: error: character <U+2581> not allowed in an identifier
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-file_rename-js-c.c:21:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   21 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^
+2 warnings and 4 errors generated.

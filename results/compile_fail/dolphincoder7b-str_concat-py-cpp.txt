@@ -1,0 +1,19 @@
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:12:15: error: member reference base type 'const char[3]' is not a structure or union
+   12 |   cout << ", ".join([ s1, "world", "mom" ]) << endl;
+      |           ~~~~^~~~~
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:12:21: error: expected expression
+   12 |   cout << ", ".join([ s1, "world", "mom" ]) << endl;
+      |                     ^
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:14:10: error: redefinition of 's2'
+   14 |   string s2 = ", ".join([ s1, "world", "mom" ]);
+      |          ^
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:8:10: note: previous definition is here
+    8 |   string s2 = s1 + " world";
+      |          ^
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:14:19: error: member reference base type 'const char[3]' is not a structure or union
+   14 |   string s2 = ", ".join([ s1, "world", "mom" ]);
+      |               ~~~~^~~~~
+/tmp/dolphincoder7b-str_concat-py-cpp.cpp:14:25: error: expected expression
+   14 |   string s2 = ", ".join([ s1, "world", "mom" ]);
+      |                         ^
+5 errors generated.

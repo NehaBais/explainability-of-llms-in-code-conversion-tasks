@@ -1,0 +1,7 @@
+/tmp/stablecode-str_substring-rs-cpp.cpp:1:1: error: unknown type name 'Fix'
+    1 | Fix: Replace the `:` in the for loop with an equals sign `=` to correctly specify the range-based for statement.
+      | ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:1:4: error: expected unqualified-id
+    1 | Fix: Replace the `:` in the for loop with an equals sign `=` to correctly specify the range-based for statement.
+      |    ^
+2 errors generated.

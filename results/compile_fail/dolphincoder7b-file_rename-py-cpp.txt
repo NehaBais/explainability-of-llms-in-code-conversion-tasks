@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-file_rename-py-cpp.cpp:3:16: error: use of undeclared identifier 'rename'
+    3 |   int result = rename("input.txt", "output.txt");
+      |                ^
+/tmp/dolphincoder7b-file_rename-py-cpp.cpp:6:5: error: use of undeclared identifier 'printf'
+    6 |     printf("File renamed successfully.\n");
+      |     ^
+/tmp/dolphincoder7b-file_rename-py-cpp.cpp:8:36: error: use of undeclared identifier 'errno'
+    8 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+3 errors generated.

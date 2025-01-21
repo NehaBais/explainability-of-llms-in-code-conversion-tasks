@@ -1,0 +1,49 @@
+/tmp/granitecode8b-file_size-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::wstring input_file = L"input.txt";
+      |   ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::wstring root_path = L"c:/";
+      |   ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:8:3: error: unknown type name 'WIN32_FILE_ATTRIBUTE_DATA'
+    8 |   WIN32_FILE_ATTRIBUTE_DATA fad;
+      |   ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:9:47: error: use of undeclared identifier 'GetFileExInfoStandard'
+    9 |   if (GetFileAttributesEx(input_file.c_str(), GetFileExInfoStandard, &fad)) {
+      |                                               ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::wcout << "File size in current working directory: " << fad.nFileSizeLow
+      |     ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:11:31: error: use of undeclared identifier 'std'
+   11 |                << " bytes" << std::endl;
+      |                               ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::wcerr << L"Error getting file size in current working directory"
+      |     ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:14:19: error: use of undeclared identifier 'std'
+   14 |                << std::endl;
+      |                   ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:18:47: error: use of undeclared identifier 'GetFileExInfoStandard'
+   18 |   if (GetFileAttributesEx(input_file.c_str(), GetFileExInfoStandard, &fad)) {
+      |                                               ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:19:5: error: use of undeclared identifier 'std'
+   19 |     std::wcout << "File size in root path: " << fad.nFileSizeLow << " bytes"
+      |     ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:20:19: error: use of undeclared identifier 'std'
+   20 |                << std::endl;
+      |                   ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:22:5: error: use of undeclared identifier 'std'
+   22 |     std::wcerr << L"Error getting file size in root path" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_size-js-cpp.cpp:22:62: error: use of undeclared identifier 'std'
+   22 |     std::wcerr << L"Error getting file size in root path" << std::endl;
+      |                                                              ^
+16 errors generated.

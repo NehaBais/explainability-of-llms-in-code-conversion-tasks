@@ -1,0 +1,20 @@
+error[E0425]: cannot find value `npos` in module `std::string`
+  --> /tmp/codellama7b-str_match-cpp-rs.rs:24:33
+   |
+24 |     if location == std::string::npos {
+   |                                 ^^^^ not found in `std::string`
+
+error[E0277]: `Option<usize>` doesn't implement `std::fmt::Display`
+  --> /tmp/codellama7b-str_match-cpp-rs.rs:27:59
+   |
+27 |         println!("{} was found at location {} in {}", s3, location, s2);
+   |                                                           ^^^^^^^^ `Option<usize>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<usize>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0425.
+For more information about an error, try `rustc --explain E0277`.

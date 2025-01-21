@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_create-go-cpp.cpp:18:7: error: use of undeclared identifier 'mkdir'
+   18 |   if (mkdir(dn.c_str(), 0755) == 0) // mkdir returns 0 on success
+      |       ^
+1 error generated.

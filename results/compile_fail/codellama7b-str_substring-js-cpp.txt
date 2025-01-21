@@ -1,0 +1,14 @@
+/tmp/codellama7b-str_substring-js-cpp.cpp:17:20: error: no member named 'substring' in 'std::string'; did you mean 'substr'?
+   17 |   std::cout << str.substring(0, str.length() - 1)
+      |                    ^~~~~~~~~
+      |                    substr
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:3: note: 'substr' declared here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |   ^
+/tmp/codellama7b-str_substring-js-cpp.cpp:23:31: error: no member named 'indexOf' in 'std::string'
+   23 |   std::cout << str.substr(str.indexOf(known_char), m)
+      |                           ~~~ ^
+/tmp/codellama7b-str_substring-js-cpp.cpp:29:31: error: no member named 'indexOf' in 'std::string'
+   29 |   std::cout << str.substr(str.indexOf(known_substring), m)
+      |                           ~~~ ^
+3 errors generated.

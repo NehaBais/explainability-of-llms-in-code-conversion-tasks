@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-int_cmp-py-go.go:15:2: declared and not used: a
+/tmp/codeqwen-int_cmp-py-go.go:16:24: undefined: A
+/tmp/codeqwen-int_cmp-py-go.go:17:24: undefined: A

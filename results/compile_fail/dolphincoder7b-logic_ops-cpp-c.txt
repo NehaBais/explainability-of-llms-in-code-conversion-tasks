@@ -1,0 +1,14 @@
+/tmp/dolphincoder7b-logic_ops-cpp-c.c:1:18: error: unknown type name 'bool'
+    1 | void print_logic(bool a, bool b) {
+      |                  ^
+/tmp/dolphincoder7b-logic_ops-cpp-c.c:1:26: error: unknown type name 'bool'
+    1 | void print_logic(bool a, bool b) {
+      |                          ^
+/tmp/dolphincoder7b-logic_ops-cpp-c.c:3:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   printf("%s\n", true ? "true" : "false");
+      |   ^
+/tmp/dolphincoder7b-logic_ops-cpp-c.c:3:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/dolphincoder7b-logic_ops-cpp-c.c:3:18: error: use of undeclared identifier 'true'
+    3 |   printf("%s\n", true ? "true" : "false");
+      |                  ^
+4 errors generated.

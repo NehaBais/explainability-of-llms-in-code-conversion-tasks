@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-dir_make-cpp-go.go:17:18: undefined: filepath.MkdirAll

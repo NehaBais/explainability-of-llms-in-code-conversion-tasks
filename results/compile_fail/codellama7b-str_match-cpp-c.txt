@@ -1,0 +1,22 @@
+/tmp/codellama7b-str_match-cpp-c.c:9:7: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (strcmp(s1, s3) == 0) {
+      |       ^
+/tmp/codellama7b-str_match-cpp-c.c:9:7: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/codellama7b-str_match-cpp-c.c:16:19: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   if (strcmp(s1 + strlen(s1) - strlen(s3), s3) == 0) {
+      |                   ^
+/tmp/codellama7b-str_match-cpp-c.c:16:19: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codellama7b-str_match-cpp-c.c:23:13: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   int loc = strstr(s2, s3);
+      |             ^
+/tmp/codellama7b-str_match-cpp-c.c:23:13: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/codellama7b-str_match-cpp-c.c:23:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   23 |   int loc = strstr(s2, s3);
+      |       ^     ~~~~~~~~~~~~~~
+/tmp/codellama7b-str_match-cpp-c.c:24:11: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   24 |   if (loc != NULL) {
+      |       ~~~ ^  ~~~~
+/tmp/codellama7b-str_match-cpp-c.c:25:72: error: invalid operands to binary expression ('int' and 'char[5]')
+   25 |     printf("First string contains second string at location %d\n", loc - s2);
+      |                                                                    ~~~ ^ ~~
+1 warning and 5 errors generated.

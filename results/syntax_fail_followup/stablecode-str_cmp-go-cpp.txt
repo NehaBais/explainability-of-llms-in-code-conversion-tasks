@@ -1,0 +1,7 @@
+/tmp/stablecode-str_cmp-go-cpp.cpp:42:28: error: extraneous ')' after condition, expected a statement
+   42 |   if (compareStrings(c, d)))) {
+      |                            ^
+/tmp/stablecode-str_cmp-go-cpp.cpp:42:29: error: extraneous ')' after condition, expected a statement
+   42 |   if (compareStrings(c, d)))) {
+      |                             ^
+2 errors generated.

@@ -1,0 +1,50 @@
+/tmp/granitecode8b-file_create-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:3:16: error: use of undeclared identifier 'boost'
+    3 | void fct(const boost::system::error_code &err) {
+      |                ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:5:5: error: use of undeclared identifier 'std'
+    5 |     std::cout << err.message() << std::endl;
+      |     ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:5:35: error: use of undeclared identifier 'std'
+    5 |     std::cout << err.message() << std::endl;
+      |                                   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:8:3: error: use of undeclared identifier 'boost'
+    8 |   boost::filesystem::path path("output.txt");
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:9:3: error: use of undeclared identifier 'boost'
+    9 |   boost::system::error_code ec;
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:10:3: error: use of undeclared identifier 'boost'
+   10 |   boost::filesystem::remove(path, ec); // remove file if it exists
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:10:29: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   10 |   boost::filesystem::remove(path, ec); // remove file if it exists
+      |                             ^~~~
+      |                             catch
+/tmp/granitecode8b-file_create-js-cpp.cpp:10:29: error: expected expression
+/tmp/granitecode8b-file_create-js-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::ofstream file(path.string());   // create new file
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:12:3: error: use of undeclared identifier 'file'
+   12 |   file << "";                          // write empty string to file
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:13:3: error: use of undeclared identifier 'path'
+   13 |   path = "docs";
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:14:3: error: use of undeclared identifier 'boost'
+   14 |   boost::filesystem::remove_all(
+      |   ^
+/tmp/granitecode8b-file_create-js-cpp.cpp:15:7: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   15 |       path, ec); // remove directory and all its contents if it exists
+      |       ^~~~
+      |       catch
+/tmp/granitecode8b-file_create-js-cpp.cpp:15:7: error: expected expression
+/tmp/granitecode8b-file_create-js-cpp.cpp:16:3: error: use of undeclared identifier 'boost'
+   16 |   boost::filesystem::create_directory(path); // create new directory
+      |   ^
+17 errors generated.

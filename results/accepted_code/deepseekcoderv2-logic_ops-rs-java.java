@@ -1,8 +1,16 @@
-public class BooleanOperations {
+public class BooleanOps {
+  public static void booleanOps(boolean a, boolean b) {
+    System.out.println("" + a + " and " + b + " -> " + (a && b));
+    System.out.println("" + a + " or " + b + " -> " + (a || b));
+    // In Java, there is no direct XOR operator for boolean values, so we use ! to represent it
+    System.out.println("" + a + " xor " + b + " -> " + (!a && b || a && !b));
+    System.out.println("not " + a + " -> " + !a);
+  }
+
   public static void main(String[] args) {
-    System.out.println("and (true, true): " + (true && true));
-    System.out.println("or (true, false): " + (true || false));
-    System.out.println("xor (false, true): " + (false ^ true));
-    System.out.println("not (false): " + !false);
+    booleanOps(true, true);
+    booleanOps(true, false);
+    booleanOps(false, true);
+    booleanOps(false, false);
   }
 }

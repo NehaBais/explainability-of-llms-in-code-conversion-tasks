@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-rs-go.go:11:40: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-rs-go.go:16:47: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-rs-go.go:21:40: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-rs-go.go:25:47: syntax error: unexpected ) at end of statement

@@ -1,4 +1,8 @@
-String s = "world";
+public class Main {
+  public static void main(String[] args) {
+    String s = "world!";
+    s = "Hello, " + s;
 
-// Concatenate strings using '+'.
-s = ("Hello," + s);
+    System.out.println(s);
+  }
+}

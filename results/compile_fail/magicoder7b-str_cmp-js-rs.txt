@@ -1,0 +1,87 @@
+error: invalid comparison operator `===`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:36
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                    ^^^
+  |
+help: `===` is not a valid comparison operator, use `==`
+  |
+4 |         , "abcd" == "abcd", "abcd" == "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                    ~~
+
+error: invalid comparison operator `!==`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:80
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                                ^^^
+  |
+help: `!==` is not a valid comparison operator, use `!=`
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 != "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                                ~~
+
+error: 10 positional arguments in format string, but there are 8 arguments
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:3:24
+  |
+3 |         "abcd == abcd: {}, {} === abcd: {}, {} != abcd: {}, {} !== '123': {}, abcd < dcba: {}, abcd > dcba: {}, ABCD.to_lowercase() == abcd.to_lowercase(): {}"
+  |                        ^^  ^^           ^^  ^^          ^^  ^^            ^^               ^^               ^^                                              ^^
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |           ----------------  -----------------  ------------  ------------  -------------  ---------------  ---------------  ----------------------------------------------
+
+error[E0277]: can't compare `{integer}` with `&str`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:52
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                    ^^ no implementation for `{integer} == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `{integer}`
+  = help: the following other types implement trait `PartialEq<Rhs>`:
+            f128
+            f16
+            f32
+            f64
+            i128
+            i16
+            i32
+            i64
+          and 8 others
+
+error[E0277]: can't compare `{integer}` with `&str`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:66
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                  ^^ no implementation for `{integer} == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `{integer}`
+  = help: the following other types implement trait `PartialEq<Rhs>`:
+            f128
+            f16
+            f32
+            f64
+            i128
+            i16
+            i32
+            i64
+          and 8 others
+
+error[E0277]: can't compare `{integer}` with `&str`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:80
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                                ^^ no implementation for `{integer} == &str`
+  |
+  = help: the trait `PartialEq<&str>` is not implemented for `{integer}`
+  = help: the following other types implement trait `PartialEq<Rhs>`:
+            f128
+            f16
+            f32
+            f64
+            i128
+            i16
+            i32
+            i64
+          and 8 others
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

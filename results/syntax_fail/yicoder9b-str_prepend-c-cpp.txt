@@ -1,0 +1,4 @@
+/tmp/yicoder9b-str_prepend-c-cpp.cpp:17:14: error: no member named 'strdup' in namespace 'std'
+   17 |   dup = std::strdup(
+      |         ~~~~~^
+1 error generated.

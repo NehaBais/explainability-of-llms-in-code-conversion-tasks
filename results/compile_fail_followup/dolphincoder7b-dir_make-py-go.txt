@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-dir_make-py-go.go:15:28: syntax error: unexpected literal 1, expected type

@@ -1,0 +1,20 @@
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:5:23: error: expected namespace name
+    5 |   namespace fs = std::filesystem;
+      |                  ~~~~~^
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::path p{"./path/to/dir"};
+      |   ^
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:7:13: error: expected ';' at end of declaration
+    7 |   fs::path p{"./path/to/dir"};
+      |             ^
+      |             ;
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:10:10: error: use of undeclared identifier 'fs'
+   10 |     if (!fs::exists(p)) {        // If the path does not exist...
+      |          ^
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:11:7: error: use of undeclared identifier 'fs'
+   11 |       fs::create_directories(p); // Create all directories along the path.
+      |       ^
+/tmp/deepseekcoder7b-dir_make-rs-cpp.cpp:13:18: error: use of undeclared identifier 'fs'
+   13 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+6 errors generated.

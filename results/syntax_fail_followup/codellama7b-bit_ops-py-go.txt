@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-bit_ops-py-go.go:37:43: undefined: mask

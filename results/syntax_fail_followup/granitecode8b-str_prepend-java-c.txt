@@ -1,0 +1,28 @@
+/tmp/granitecode8b-str_prepend-java-c.c:2:28: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | char *new_string = (char *)malloc(strlen("abc") + strlen(string) + 1);
+      |                            ^
+/tmp/granitecode8b-str_prepend-java-c.c:2:28: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-str_prepend-java-c.c:2:35: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | char *new_string = (char *)malloc(strlen("abc") + strlen(string) + 1);
+      |                                   ^
+/tmp/granitecode8b-str_prepend-java-c.c:2:35: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_prepend-java-c.c:2:20: error: initializer element is not a compile-time constant
+    2 | char *new_string = (char *)malloc(strlen("abc") + strlen(string) + 1);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-str_prepend-java-c.c:3:20: error: expected identifier
+    3 | strcat(new_string, "abc");
+      |                    ^
+/tmp/granitecode8b-str_prepend-java-c.c:3:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    3 | strcat(new_string, "abc");
+      | ^
+      | int
+/tmp/granitecode8b-str_prepend-java-c.c:3:1: warning: incompatible redeclaration of library function 'strcat' [-Wincompatible-library-redeclaration]
+/tmp/granitecode8b-str_prepend-java-c.c:3:1: note: 'strcat' is a builtin with type 'char *(char *, const char *)'
+/tmp/granitecode8b-str_prepend-java-c.c:4:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    4 | strcat(new_string, string);
+      | ^
+      | int
+/tmp/granitecode8b-str_prepend-java-c.c:4:8: error: a parameter list without types is only allowed in a function definition
+    4 | strcat(new_string, string);
+      |        ^
+1 warning and 7 errors generated.

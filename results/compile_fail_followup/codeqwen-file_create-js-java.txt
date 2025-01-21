@@ -1,0 +1,11 @@
+/tmp/Main.java:15: error: cannot find symbol
+    Files.createFile(file, new FileAttribute<?>[] {});
+                               ^
+  symbol:   class FileAttribute
+  location: class Main
+/tmp/Main.java:20: error: cannot find symbol
+    Files.createDirectory(dir, new FileAttribute<?>[] {});
+                                   ^
+  symbol:   class FileAttribute
+  location: class Main
+2 errors

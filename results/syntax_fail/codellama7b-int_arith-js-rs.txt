@@ -1,0 +1,19 @@
+error[E0425]: cannot find function `args` in module `process`
+ --> /tmp/codellama7b-int_arith-js-rs.rs:6:25
+  |
+6 |     let args = process::args();
+  |                         ^^^^ not found in `process`
+  |
+help: consider importing this function
+  |
+1 + use std::env::args;
+  |
+help: if you import `args`, refer to it directly
+  |
+6 -     let args = process::args();
+6 +     let args = args();
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-file_rename-rs-go.go:17:11: undefined: fs.Rename

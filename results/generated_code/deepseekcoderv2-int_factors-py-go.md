@@ -1,29 +1,32 @@
-### Solution - Golang
+ Sure! Here's the equivalent Go code for the provided Python script that computes the factors of a positive integer:
+
 ```go
 package main
-import "math"
-func isqrt(x int) int { return int(math.Sqrt(float64(x))) }
+
+import (
+	"fmt"
+	"math"
+)
+
+// Function to compute factors of a positive integer
 func factor(n int) []int {
-	var factors1, factors2 []int
-	for x := 1; x < isqrt(n); x++ {
+	factors := []int{}
+	for x := 1; x*x <= n; x++ {
 		if n%x == 0 {
-			factors1 = append(factors1, x)
-			factors2 = append(factors2, n/x)
+			factors = append(factors, x)
+			if x != n/x {
+				factors = append(factors, n/x)
+			}
 		}
 	}
-	x += 1
-	if x*x == n {
-		factors1 = append(factors1, x)
-	}
-	for i := len(factors2) - 1; i >= 0; i-- {
-		factors1 = append(factors1, factors2[i])
-	}
-	return factors1
+	return factors
 }
+
 func main() {
-	nums := []int{45, 53, 64}
-	for _, n := range nums {
-		fmt.Printf("%d: %v\n", n, factor(n))
+	for _, i := range []int{45, 53, 64} {
+		fmt.Printf("%d: factors: %v\n", i, factor(i))
 	}
 }
 ```
+
+This Go code defines a function `factor` that takes an integer `n` and returns its factors. The main function iterates over a list of integers (45, 53, 64), computes their factors using the `factor` function, and prints them in the specified format.

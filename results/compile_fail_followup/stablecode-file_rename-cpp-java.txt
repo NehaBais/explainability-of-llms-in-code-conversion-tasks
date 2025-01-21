@@ -1,0 +1,16 @@
+/tmp/Main.java:7: error: ';' expected
+        File currentDirectory = new File("."));
+                                             ^
+/tmp/Main.java:8: error: ';' expected
+        File inputFile = new File(currentDirectory, "input.txt"));
+                                                                ^
+/tmp/Main.java:9: error: ';' expected
+        File outputFile = new File(currentDirectory, "output.txt"));
+                                                                  ^
+/tmp/Main.java:14: error: ';' expected
+        File docsDirectory = new File(rootDirectory, "docs"));
+                                                            ^
+/tmp/Main.java:15: error: ';' expected
+        File mydocsDirectory = new File(rootDirectory, "mydocs"));
+                                                                ^
+5 errors

@@ -1,0 +1,27 @@
+error[E0412]: cannot find type `HANDLE` in this scope
+ --> /tmp/granitecode8b-file_size-js-rs.rs:5:24
+  |
+5 | fn get_file_size(fso: &HANDLE, filename: &str) -> Result<u64, IOError> {
+  |                        ^^^^^^ not found in this scope
+
+error[E0412]: cannot find type `IOError` in this scope
+ --> /tmp/granitecode8b-file_size-js-rs.rs:5:63
+  |
+5 | fn get_file_size(fso: &HANDLE, filename: &str) -> Result<u64, IOError> {
+  |                                                               ^^^^^^^ not found in this scope
+  |
+help: you might be missing a type parameter
+  |
+5 | fn get_file_size<IOError>(fso: &HANDLE, filename: &str) -> Result<u64, IOError> {
+  |                 +++++++++
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/granitecode8b-file_size-js-rs.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode8b-file_size-js-rs.rs`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0412, E0601.
+For more information about an error, try `rustc --explain E0412`.

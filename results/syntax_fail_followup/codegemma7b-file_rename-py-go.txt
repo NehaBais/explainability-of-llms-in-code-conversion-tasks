@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-file_rename-py-go.go:6:1: expected declaration, found os

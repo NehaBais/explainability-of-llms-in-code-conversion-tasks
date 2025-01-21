@@ -1,0 +1,6 @@
+/tmp/Factorizer.java:28: error: incompatible types: Object cannot be converted to Entry
+    for (Map.Entry entry : data.entrySet()) {
+                                        ^
+Note: /tmp/Factorizer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

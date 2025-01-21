@@ -1,0 +1,58 @@
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string a("abc");
+      |   ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string b("Bac");
+      |   ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << "The strings are equal" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:13:40: error: use of undeclared identifier 'endl'
+   13 |     cout << "The strings are equal" << endl;
+      |                                        ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:16:5: error: use of undeclared identifier 'cout'
+   16 |     cout << "The strings are not equal" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:16:44: error: use of undeclared identifier 'endl'
+   16 |     cout << "The strings are not equal" << endl;
+      |                                            ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:19:5: error: use of undeclared identifier 'cout'
+   19 |     cout << "The first string is lexically after the second" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:19:65: error: use of undeclared identifier 'endl'
+   19 |     cout << "The first string is lexically after the second" << endl;
+      |                                                                 ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:22:5: error: use of undeclared identifier 'cout'
+   22 |     cout << "The first string is lexically before the second" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:22:66: error: use of undeclared identifier 'endl'
+   22 |     cout << "The first string is lexically before the second" << endl;
+      |                                                                  ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:25:5: error: use of undeclared identifier 'cout'
+   25 |     cout << "The first string is not lexically before the second" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:25:70: error: use of undeclared identifier 'endl'
+   25 |     cout << "The first string is not lexically before the second" << endl;
+      |                                                                      ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:28:5: error: use of undeclared identifier 'cout'
+   28 |     cout << "The first string is not lexically after the second" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:28:69: error: use of undeclared identifier 'endl'
+   28 |     cout << "The first string is not lexically after the second" << endl;
+      |                                                                     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:35:5: error: use of undeclared identifier 'cout'
+   35 |     cout << "Both strings are equal when ignoring case" << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-cpp.cpp:35:60: error: use of undeclared identifier 'endl'
+   35 |     cout << "Both strings are equal when ignoring case" << endl;
+      |                                                            ^
+1 warning and 18 errors generated.

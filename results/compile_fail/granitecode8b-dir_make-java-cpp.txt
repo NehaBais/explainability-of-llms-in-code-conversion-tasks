@@ -1,0 +1,49 @@
+/tmp/granitecode8b-dir_make-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string path = "C:/parent/test";
+      |   ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:5:27: error: use of undeclared identifier 'S_IRWXU'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == 0) {
+      |                           ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:5:37: error: use of undeclared identifier 'S_IRWXG'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == 0) {
+      |                                     ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:5:47: error: use of undeclared identifier 'S_IROTH'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == 0) {
+      |                                               ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:5:57: error: use of undeclared identifier 'S_IXOTH'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == 0) {
+      |                                                         ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cout << "Directory created successfully" << std::endl;
+      |     ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:6:54: error: use of undeclared identifier 'std'
+    6 |     std::cout << "Directory created successfully" << std::endl;
+      |                                                      ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:7:14: error: use of undeclared identifier 'errno'
+    7 |   } else if (errno == EEXIST) {
+      |              ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:7:23: error: use of undeclared identifier 'EEXIST'
+    7 |   } else if (errno == EEXIST) {
+      |                       ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:8:5: error: use of undeclared identifier 'std'
+    8 |     std::cout << "Directory already exists" << std::endl;
+      |     ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:8:48: error: use of undeclared identifier 'std'
+    8 |     std::cout << "Directory already exists" << std::endl;
+      |                                                ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cerr << "Error creating directory: " << strerror(errno) << std::endl;
+      |     ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:10:59: error: use of undeclared identifier 'errno'
+   10 |     std::cerr << "Error creating directory: " << strerror(errno) << std::endl;
+      |                                                           ^
+/tmp/granitecode8b-dir_make-java-cpp.cpp:10:69: error: use of undeclared identifier 'std'
+   10 |     std::cerr << "Error creating directory: " << strerror(errno) << std::endl;
+      |                                                                     ^
+16 errors generated.

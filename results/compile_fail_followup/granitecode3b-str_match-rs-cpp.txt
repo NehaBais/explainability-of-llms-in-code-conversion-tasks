@@ -1,0 +1,44 @@
+/tmp/granitecode3b-str_match-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string s1 = "abcd";
+      |   ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string s2 = "abab";
+      |   ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string s3 = "ab";
+      |   ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:11:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   11 |   size_t pos = s1.find(s3);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-str_match-rs-cpp.cpp:11:10: error: use of undeclared identifier 'pos'
+   11 |   size_t pos = s1.find(s3);
+      |          ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:12:10: error: use of undeclared identifier 'pos'
+   12 |   while (pos != std::string::npos) {
+      |          ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:12:17: error: use of undeclared identifier 'std'
+   12 |   while (pos != std::string::npos) {
+      |                 ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << "Found match at position " << pos << std::endl;
+      |     ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:13:48: error: use of undeclared identifier 'pos'
+   13 |     std::cout << "Found match at position " << pos << std::endl;
+      |                                                ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:13:55: error: use of undeclared identifier 'std'
+   13 |     std::cout << "Found match at position " << pos << std::endl;
+      |                                                       ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:14:5: error: use of undeclared identifier 'pos'
+   14 |     pos = s1.find(s3, pos + 1);
+      |     ^
+/tmp/granitecode3b-str_match-rs-cpp.cpp:14:23: error: use of undeclared identifier 'pos'
+   14 |     pos = s1.find(s3, pos + 1);
+      |                       ^
+14 errors generated.

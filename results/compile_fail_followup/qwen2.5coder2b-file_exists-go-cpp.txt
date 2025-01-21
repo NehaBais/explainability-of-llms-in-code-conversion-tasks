@@ -1,0 +1,23 @@
+/tmp/qwen2.5coder2b-file_exists-go-cpp.cpp:5:17: error: expected namespace name
+    5 | using namespace filesystem;
+      |                 ^
+/tmp/qwen2.5coder2b-file_exists-go-cpp.cpp:8:7: error: use of undeclared identifier 'exists'; did you mean 'exit'?
+    8 |   if (exists(p)) {
+      |       ^~~~~~
+      |       exit
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:141:7: note: 'exit' declared here
+  141 | void     exit(int) __dead2;
+      |          ^
+/tmp/qwen2.5coder2b-file_exists-go-cpp.cpp:8:14: error: no viable conversion from 'string' (aka 'basic_string<char>') to 'int'
+    8 |   if (exists(p)) {
+      |              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:141:15: note: passing argument to parameter here
+  141 | void     exit(int) __dead2;
+      |                  ^
+/tmp/qwen2.5coder2b-file_exists-go-cpp.cpp:9:9: error: use of undeclared identifier 'is_directory'
+    9 |     if (is_directory(p))
+      |         ^
+4 errors generated.

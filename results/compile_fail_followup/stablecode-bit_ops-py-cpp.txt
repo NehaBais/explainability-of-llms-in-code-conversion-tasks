@@ -1,0 +1,34 @@
+/tmp/stablecode-bit_ops-py-cpp.cpp:12:28: error: use of undeclared identifier 'bitset'; did you mean 'std::bitset'?
+   12 |                         << bitset<32>(a)).to_string() 
+      |                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:608:28: note: 'std::bitset' declared here
+  608 | class _LIBCPP_TEMPLATE_VIS bitset
+      |                            ^
+/tmp/stablecode-bit_ops-py-cpp.cpp:12:41: error: expected ';' after expression
+   12 |                         << bitset<32>(a)).to_string() 
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:12:41: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:19:28: error: use of undeclared identifier 'bitset'; did you mean 'std::bitset'?
+   19 |                         << bitset<32>(a)).to_string() 
+      |                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:608:28: note: 'std::bitset' declared here
+  608 | class _LIBCPP_TEMPLATE_VIS bitset
+      |                            ^
+/tmp/stablecode-bit_ops-py-cpp.cpp:19:41: error: expected ';' after expression
+   19 |                         << bitset<32>(a)).to_string() 
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:19:41: error: expected expression
+/tmp/stablecode-bit_ops-py-cpp.cpp:26:28: error: use of undeclared identifier 'bitset'; did you mean 'std::bitset'?
+   26 |                         << bitset<32>(a)).to_string() 
+      |                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:608:28: note: 'std::bitset' declared here
+  608 | class _LIBCPP_TEMPLATE_VIS bitset
+      |                            ^
+/tmp/stablecode-bit_ops-py-cpp.cpp:26:41: error: expected ';' after expression
+   26 |                         << bitset<32>(a)).to_string() 
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-py-cpp.cpp:26:41: error: expected expression
+9 errors generated.

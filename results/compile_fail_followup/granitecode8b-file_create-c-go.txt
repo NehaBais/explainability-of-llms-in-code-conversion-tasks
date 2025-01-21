@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-file_create-c-go.go:23:56: undefined: os.O_CREAT

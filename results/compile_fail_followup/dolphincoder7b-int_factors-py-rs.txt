@@ -1,0 +1,32 @@
+error[E0432]: unresolved import `num_bigint`
+ --> /tmp/dolphincoder7b-int_factors-py-rs.rs:1:5
+  |
+1 | use num_bigint::Integer;
+  |     ^^^^^^^^^^ you might be missing crate `num_bigint`
+  |
+help: consider importing the `num_bigint` crate
+  |
+1 + extern crate num_bigint;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `cmp`
+ --> /tmp/dolphincoder7b-int_factors-py-rs.rs:3:29
+  |
+3 |     let min = Integer::from(cmp::min(n, n as f64).sqrt() as u64);
+  |                             ^^^ use of undeclared crate or module `cmp`
+  |
+help: consider importing this module
+  |
+1 + use std::cmp;
+  |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/dolphincoder7b-int_factors-py-rs.rs:20:2
+   |
+20 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-int_factors-py-rs.rs`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0433, E0601.
+For more information about an error, try `rustc --explain E0432`.

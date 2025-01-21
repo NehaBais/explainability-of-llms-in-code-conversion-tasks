@@ -1,58 +1,52 @@
-## Solution:
-The following code converts the given Golang program to Rust using a similar approach as described in my previous answer. The changes are as follows:
-
-1. In the `main` function, we use string literals instead of variables for strings `"cat"` and `"dog"`. This allows us to directly compare them without needing separate variable declarations.
-2. We import the `std::string::String` module from Rust's standard library to handle string comparisons.
-3. We use the `eq`, `ne`, `gt`, `lt`, `ge`, and `le` methods of the `String` struct for comparison operations, which are similar to their Go language counterparts in terms of functionality.
-4. For case-insensitive comparison, we utilize the Rust's standard library function `eq_ignore_ascii_case()` from the string module to compare strings without considering ASCII letter casing. If necessary, this can be modified for a more thorough treatment that also accounts for Unicode code point normalization and locale-dependent comparisons.
-5. In terms of numeric string comparison, Rust will automatically interpret numbers as their numerical value when comparing them with other numerical values or character types such as `char`, which is similar to how Go handles these comparisons. However, it's important to note that direct comparison between strings representing numbers and non-numeric characters may yield unexpected results due to type coercion.
-6. Finally, we also demonstrate additional string equality checks like comparing two strings lexicographically using the Rust library function `cmp::Ordering::eq` from the crate std::cmp.
+ Certainly! Below is the Rust equivalent of the provided Golang code, demonstrating various string comparisons:
 
 ```rust
-use std::string;
-
 fn main() {
     let c = "cat";
     let d = "dog";
-    
-    // Compare bytewise equality and inequality
+
+    // Comparing two strings for exact equality
     if c == d {
-        println!("{} is identical to {}", c, d);
+        println!("{} is bytewise identical to {}", c, d);
     } else {
         println!("{} is not equal to {}", c, d);
     }
-    
-    // Compare strings lexically for ordering
-    match string::String::cmp(c, d) {
-        std::cmp::Ordering::Less => println!("{} is less than {}", c, d),
+
+    // Comparing two strings for inequality (i.e., the inverse of exact equality)
+    if c != d {
+        println!("{} is bytewise different from {}", c, d);
+    } else {
+        println!("{} is equal to {}", c, d);
+    }
+
+    // Comparing two strings to see if one is lexically ordered before than the other
+    match c.cmp(&d) {
+        std::cmp::Ordering::Less => println!("{} is lexically less than {}", c, d),
         std::cmp::Ordering::Equal => println!("{} is equal to {}", c, d),
-        std::cmp::Ordering::Greater => println!("{} is greater than {}", c, d)
+        std::cmp::Ordering::Greater => println!("{} is lexically greater than {}", c, d),
     }
-    
-    // Case-insensitive comparison using Rust's built-in string function for case folding
-    if string::String::eq_ignore_ascii_case(c, d) {
-        println!("Case insensitive: {} equals {}", c, d);
-    } else {
-        println!("Case insensitive: {} does not equal {}", c, d);
+
+    // Comparing two strings to see if one is lexically ordered after than the other
+    match c.cmp(&d) {
+        std::cmp::Ordering::Less => println!("{} is lexically less than {}", c, d),
+        std::cmp::Ordering::Equal => println!("{} is equal to {}", c, d),
+        std::cmp::Ordering::Greater => println!("{} is lexically greater than {}", c, d),
     }
-    
-    // Numeric string comparison (Rust will automatically interpret numbers as their numerical value when compared with other numeric values or characters)
-    let a = "123";
-    let b = 456;
-    if a == b {
-        println!("{} equals {}", a, b);
+
+    // Case insensitive comparison using `to_lowercase` and `eq`
+    let eqf = "when interpreted as UTF-8 and compared under Unicode simple case folding rules.";
+    if c.to_lowercase() == d.to_lowercase() {
+        println!("{} equal to {} {}", c, d, eqf);
     } else {
-        println!("{} does not equal {}", a, b);
-    }
-    
-    // Additional string comparison using Rust's built-in library function for lexicographic ordering of strings
-    let e = "apple";
-    let f = "banana";
-    if std::cmp::Ordering::eq(e.as_str(), f) {
-        println!("{} and {} are lexically equal", e, f);
-    } else {
-        println!("{} and {} are not lexically equal", e, f);
+        println!("{} not equal to {} {}", c, d, eqf);
     }
 }
 ```
 
+### Explanation:
+1. **Exact Equality and Inequality**: Rust uses the `==` and `!=` operators for exact equality and inequality respectively.
+2. **Lexical Comparison**: Rust uses the `cmp` method on strings which returns an `Ordering` enum (`Less`, `Equal`, `Greater`). This allows for easy comparison of strings lexically.
+3. **Case Insensitive Comparison**: In Rust, you can convert strings to lowercase using `to_lowercase` and then compare them with the `eq` method.
+4. **Numeric Strings**: Rust treats numeric strings differently from string literals because it is a statically typed language. If you have numeric types mixed in string comparisons, they will not be treated lexically unless explicitly converted to the appropriate type.
+
+This Rust code provides similar functionality and demonstrates how to handle various types of string comparisons while adhering to Rust's strong typing principles.

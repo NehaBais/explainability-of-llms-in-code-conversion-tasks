@@ -1,35 +1,45 @@
-def str_eq(str1: str, str2: str) -> bool:
-    """Compare two strings for exact equality"""
-    return str1 == str2
+import os
+import sys
 
 
-def str_ne(str1: str, str2: str) -> bool:
-    """Compare two strings for inequality (i.e., the inverse of exact equality)"""
-    return not str_eq(str1, str2)
+def str_compare(a, b):
+    return 0 if a == b else (1 if a > b else -1)
 
 
-def str_gt(str1: str, str2: str) -> bool:
-    """Compare two strings to see if one is lexically ordered before than the other"""
-    return str1 > str2
-
-
-def str_lt(str1: str, str2: str) -> bool:
-    """Compare two strings to see if one is lexically ordered after than the other"""
-    return str1 < str2
-
-
-def str_ge(str1: str, str2: str) -> bool:
-    """Compare two strings to see if one is lexically ordered before or equal than the other"""
-    return str1 >= str2
-
-
-def str_le(str1: str, str2: str) -> bool:
-    """Compare two strings to see if one is lexically ordered after or equal than the other"""
-    return str1 <= str2
-
-
-def str_casecmp(str1: str, str2: str) -> int:
-    """Case-insensitive string comparison"""
-    return (
-        -1 if str1.lower() < str2.lower() else 1 if str1.lower() > str2.lower() else 0
+def compare(a, b):
+    result = (
+        [str_compare(a, b)] * 2
+        + [str_compare(a, b) > 0] * 2
+        + [str_compare(a, b) < 0] * 2
     )
+    print(f"{a} {' '.join(['1' if x else '0' for x in result])} {b}")
+
+
+def case_insensitive_compare(a, b):
+    return str_compare(a.lower(), b.lower())
+
+
+def comparecase(a, b):
+    result = (
+        [case_insensitive_compare(a, b)] * 2
+        + [case_insensitive_compare(a, b) > 0] * 2
+        + [case_insensitive_compare(a, b) < 0] * 2
+    )
+    print(f"{a} {' '.join(['1' if x else '0' for x in result])} {b} ignoring case")
+
+
+def main():
+    args = sys.argv[1:]
+    if len(args) % 2 != 0:
+        print("Usage: python script.py string1 string2 [string3 string4 ...]")
+        return
+
+    for i in range(0, len(args), 2):
+        a = args[i]
+        b = args[i + 1]
+        compare(a, b)
+        comparecase(a, b)
+
+
+if __name__ == "__main__":
+    main()

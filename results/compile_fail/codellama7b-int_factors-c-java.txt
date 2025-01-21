@@ -1,0 +1,36 @@
+/tmp/Main.java:20: error: cannot find symbol
+  public static void factor(int num, Factors fctrs) {
+                                     ^
+  symbol:   class Factors
+  location: class Main
+/tmp/Main.java:40: error: cannot find symbol
+  public static void xferFactors(Factors fctrs, int[] flist, int flix) {
+                                 ^
+  symbol:   class Factors
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    Factors ftors = new Factors();
+    ^
+  symbol:   class Factors
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    Factors ftors = new Factors();
+                        ^
+  symbol:   class Factors
+  location: class Main
+/tmp/Main.java:32: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+        ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:32: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+               ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:33: error: cannot find symbol
+      flist[flix++] = dvsr;
+                      ^
+  symbol:   variable dvsr
+  location: class Main
+7 errors

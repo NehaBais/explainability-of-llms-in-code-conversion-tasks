@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:10: error: expected expression
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |          ^
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:11: error: unexpected character <U+FF5C>
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |           ^~
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:19: error: character <U+2581> not allowed in an identifier
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |                  ^
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:24: error: character <U+2581> not allowed in an identifier
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |                     ^
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:35: error: character <U+FF5C> not allowed in an identifier
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |                              ^~
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |             ^
+/tmp/deepseekcoder7b-str_concat-c-cpp.cpp:14:40: error: use of undeclared identifier 'concat'
+   14 |   return <｜begin▁of▁sentence｜> concat(s, " literal");
+      |                                  ^
+7 errors generated.

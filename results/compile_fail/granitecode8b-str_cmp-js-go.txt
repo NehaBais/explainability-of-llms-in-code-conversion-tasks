@@ -1,0 +1,1 @@
+/tmp/granitecode8b-str_cmp-js-go.go:1:1: expected 'package', found 'func'

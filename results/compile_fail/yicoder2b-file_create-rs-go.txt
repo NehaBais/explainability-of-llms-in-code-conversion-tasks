@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/yicoder2b-file_create-rs-go.go:16:6: multiple-value Create(".") (value of type (bool, error)) in single-value context
+/tmp/yicoder2b-file_create-rs-go.go:16:22: multiple-value Create("/") (value of type (bool, error)) in single-value context
+/tmp/yicoder2b-file_create-rs-go.go:25:2: declared and not used: file
+/tmp/yicoder2b-file_create-rs-go.go:27:10: assignment mismatch: 2 variables but ioutil.WriteFile returns 1 value

@@ -1,0 +1,55 @@
+/tmp/granitecode3b-str_match-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string first = "abracadabra";
+      |   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:8:3: error: unknown type name 'string'
+    8 |   string second = "abr";
+      |   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "1. " << first << " starts with " << second << ": "
+      |   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:11:40: error: use of undeclared identifier 'endl'
+   11 |        << (first.find(second) == 0) << endl;
+      |                                        ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << "2. " << first << " contains " << second << ": "
+      |   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:15:17: error: use of undeclared identifier 'string'
+   15 |        << (i != string::npos) << ", ";
+      |                 ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:16:12: error: use of undeclared identifier 'string'
+   16 |   if (i != string::npos) {
+      |            ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << "at location " << i << ", ";
+      |     ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:22:7: error: use of undeclared identifier 'cout'
+   22 |       cout << "at location " << start + j << ", ";
+      |       ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:25:5: error: use of undeclared identifier 'cout'
+   25 |     cout << "and that's all" << endl;
+      |     ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:25:33: error: use of undeclared identifier 'endl'
+   25 |     cout << "and that's all" << endl;
+      |                                 ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:28:3: error: use of undeclared identifier 'cout'
+   28 |   cout << "3. " << first << " ends with " << second << ": "
+      |   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:29:35: error: use of undeclared identifier 'string'
+   29 |        << (first.rfind(second) != string::npos) << endl;
+      |                                   ^
+/tmp/granitecode3b-str_match-go-cpp.cpp:29:52: error: use of undeclared identifier 'endl'
+   29 |        << (first.rfind(second) != string::npos) << endl;
+      |                                                    ^
+1 warning and 17 errors generated.

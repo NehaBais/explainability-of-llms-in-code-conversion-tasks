@@ -1,0 +1,9 @@
+/tmp/stablecode-bit_ops-java-cpp.cpp:6:65: error: extraneous ')' before ';'
+    6 |         throw std::runtime_error("Failed to read integer value"));
+      |                                                                 ^
+/tmp/stablecode-bit_ops-java-cpp.cpp:8:35: error: expected ';' after expression
+    8 |     n = static_cast<int>(is.get()))();
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-bit_ops-java-cpp.cpp:8:35: error: expected expression
+3 errors generated.

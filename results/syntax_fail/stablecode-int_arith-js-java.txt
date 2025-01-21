@@ -1,0 +1,7 @@
+/tmp/Main.java:22: error: ';' expected
+        System.out.println("Quotient of " + a + " and " + b + " (rounded towards zero) is: " + Math.round(division)));  // The Math.round() method rounds a floating-point value to the nearest integer, rounded towards zero.
+                                                                                                                    ^
+/tmp/Main.java:27: error: ';' expected
+        System.out.println("Exponentiation of " + a + " raised to the power of " + b + " is: " + Math.pow(a, b)));  // The Math.pow() method returns the value of the first argument raised to the power of the second argument.
+                                                                                                                ^
+2 errors

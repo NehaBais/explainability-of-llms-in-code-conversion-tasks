@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-str_match-js-go.go:28:146: syntax error: unexpected ) at end of statement
+/tmp/yicoder2b-str_match-js-go.go:30:70: syntax error: unexpected ) at end of statement
+/tmp/yicoder2b-str_match-js-go.go:32:70: syntax error: unexpected ) at end of statement

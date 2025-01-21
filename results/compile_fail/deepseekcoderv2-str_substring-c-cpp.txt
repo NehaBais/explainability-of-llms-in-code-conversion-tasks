@@ -1,0 +1,16 @@
+/tmp/deepseekcoderv2-str_substring-c-cpp.cpp:16:19: error: no matching function for call to 'min'
+   16 |   size_t length = std::min(m, s.size() - start);
+      |                   ^~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h:35:1: note: candidate template ignored: deduced conflicting types for parameter '_Tp' ('ptrdiff_t' (aka 'long') vs. 'size_t' (aka 'unsigned long'))
+   35 | min(_LIBCPP_LIFETIMEBOUND const _Tp& __a, _LIBCPP_LIFETIMEBOUND const _Tp& __b) {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h:29:1: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+   29 | min(_LIBCPP_LIFETIMEBOUND const _Tp& __a, _LIBCPP_LIFETIMEBOUND const _Tp& __b, _Compare __comp) {
+      | ^                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/deepseekcoderv2-str_substring-c-cpp.cpp:31:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   31 |   auto pos = s.find(ch);
+      |   ^
+/tmp/deepseekcoderv2-str_substring-c-cpp.cpp:41:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   41 |   auto pos = s.find(in);
+      |   ^
+2 warnings and 1 error generated.

@@ -1,0 +1,4 @@
+/tmp/yicoder9b-file_create-py-c.c:11:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   mkdir("docs", 0700); // Create an empty directory named "docs" with read/write
+      |   ^
+1 error generated.

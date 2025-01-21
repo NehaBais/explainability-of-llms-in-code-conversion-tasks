@@ -1,4 +1,4 @@
 def print_logic(a, b):
-    print("a and b is {}".format(int(a and b)))
-    print("a or b is {}".format(int(a or b)))
-    print("not a is {}".format(int(not a)))
+    print(f"a and b is {int(a and b)}")
+    print(f"a or b is {int(a or b)}")
+    print(f"not a is {int(not a)}")

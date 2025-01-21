@@ -1,11 +1,19 @@
-# Get two integers from user. They will always be ints as they get converted to ints below if not already so no typeof check needed here
-a = input("Enter first integer: ")
-b = input("Enter second integer: ")
-a = int(a)  # convert string to int for comparison
-b = int(b)
-if a == b:
-    print(str(a), "equals", str(b))
-elif a < b:
-    print(str(a), "is less than", str(b))
+def compare(a, b):
+    if a == b:
+        print(f"{a} equals {b}")
+    elif a < b:
+        print(f"{a} is less than {b}")
+    elif a > b:
+        print(f"{a} is greater than {b}")
+    else:
+        print(f"{a} and {b} are not of the same type and cannot be compared.")
+
+
+# Get input from the user
+try:
+    a = int(input("Enter the first integer: "))
+    b = int(input("Enter the second integer: "))
+except ValueError:
+    print("Please enter valid integers.")
 else:
-    print(str(a), "is greater than", str(b))
+    compare(a, b)

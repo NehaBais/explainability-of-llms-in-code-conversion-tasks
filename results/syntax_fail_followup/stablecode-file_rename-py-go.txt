@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_rename-py-go.go:9:1: unexpected semicolon or newline before { (and 4 more errors)

@@ -1,0 +1,192 @@
+error: argument never used
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:44:9
+   |
+40 |         "{} and {} are {} not unequal.",
+   |         ------------------------------- formatting specifier missing
+...
+44 |         semantically
+   |         ^^^^^^^^^^^^ argument never used
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:34:9
+   |
+34 |         a,
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:35:9
+   |
+35 |         b,
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0369]: binary operation `==` cannot be applied to type `T`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:36:14
+   |
+36 |         if a == b { "" } else { "not " },
+   |            - ^^ - T
+   |            |
+   |            T
+   |
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::cmp::PartialEq>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++++
+
+error[E0369]: binary operation `!=` cannot be applied to type `T`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:43:14
+   |
+43 |         if a != b { "" } else { "not " },
+   |            - ^^ - T
+   |            |
+   |            T
+   |
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::cmp::PartialEq>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:48:9
+   |
+48 |         a,
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0369]: binary operation `<` cannot be applied to type `T`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:49:14
+   |
+49 |         if a < b { "" } else { "not " },
+   |            - ^ - T
+   |            |
+   |            T
+   |
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::cmp::PartialOrd>(a: T, b: T, semantically: &str) {
+   |                  ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:50:9
+   |
+50 |         b
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:54:9
+   |
+54 |         a,
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0369]: binary operation `>` cannot be applied to type `T`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:55:14
+   |
+55 |         if a > b { "" } else { "not " },
+   |            - ^ - T
+   |            |
+   |            T
+   |
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::cmp::PartialOrd>(a: T, b: T, semantically: &str) {
+   |                  ++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:56:9
+   |
+56 |         b
+   |         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider restricting type parameter `T`
+   |
+31 | fn demo_compare<T: std::fmt::Display>(a: T, b: T, semantically: &str) {
+   |                  +++++++++++++++++++
+
+error[E0382]: borrow of moved value: `a`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:19:9
+   |
+12 |     let a = a.to_lowercase();
+   |         - move occurs because `a` has type `String`, which does not implement the `Copy` trait
+13 |     let b = b.to_lowercase();
+14 |     demo_compare(a, b, "lexically");
+   |                  - value moved here
+...
+19 |         a.parse().unwrap()
+   |         ^^^^^^^^^ value borrowed here after move
+   |
+note: consider changing this parameter type in function `demo_compare` to borrow instead if owning the value isn't necessary
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:31:23
+   |
+31 | fn demo_compare<T>(a: T, b: T, semantically: &str) {
+   |    ------------       ^ this parameter takes ownership of the value
+   |    |
+   |    in this function
+   = note: borrow occurs due to deref coercion to `str`
+help: consider cloning the value if the performance cost is acceptable
+   |
+14 |     demo_compare(a.clone(), b, "lexically");
+   |                   ++++++++
+
+error[E0382]: borrow of moved value: `b`
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:24:9
+   |
+13 |     let b = b.to_lowercase();
+   |         - move occurs because `b` has type `String`, which does not implement the `Copy` trait
+14 |     demo_compare(a, b, "lexically");
+   |                     - value moved here
+...
+24 |         b.parse().unwrap()
+   |         ^^^^^^^^^ value borrowed here after move
+   |
+note: consider changing this parameter type in function `demo_compare` to borrow instead if owning the value isn't necessary
+  --> /tmp/qwen2.5coder2b-str_cmp-cpp-rs.rs:31:29
+   |
+31 | fn demo_compare<T>(a: T, b: T, semantically: &str) {
+   |    ------------             ^ this parameter takes ownership of the value
+   |    |
+   |    in this function
+   = note: borrow occurs due to deref coercion to `str`
+help: consider cloning the value if the performance cost is acceptable
+   |
+14 |     demo_compare(a, b.clone(), "lexically");
+   |                      ++++++++
+
+error: aborting due to 13 previous errors
+
+Some errors have detailed explanations: E0277, E0369, E0382.
+For more information about an error, try `rustc --explain E0277`.

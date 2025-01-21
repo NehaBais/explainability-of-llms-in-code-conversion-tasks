@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_interp-java-go.go:7:58: expected statement, found ')' (and 1 more errors)

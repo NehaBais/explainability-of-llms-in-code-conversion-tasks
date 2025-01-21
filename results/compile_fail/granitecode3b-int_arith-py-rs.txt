@@ -1,0 +1,111 @@
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+ --> /tmp/granitecode3b-int_arith-py-rs.rs:6:10
+  |
+6 |         .read_line()
+  |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+  |
+6 |         .read_line(/* &mut String */)
+  |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+ --> /tmp/granitecode3b-int_arith-py-rs.rs:8:10
+  |
+5 |       input1 = std::io::stdin()
+  |  ______________-
+6 | |         .read_line()
+7 | |         .unwrap()
+8 | |         .trim()
+  | |         -^^^^ method not found in `usize`
+  | |_________|
+  |
+
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:13:10
+   |
+13 |         .read_line()
+   |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+   |
+13 |         .read_line(/* &mut String */)
+   |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `trim` found for type `usize` in the current scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:15:10
+   |
+12 |       input2 = std::io::stdin()
+   |  ______________-
+13 | |         .read_line()
+14 | |         .unwrap()
+15 | |         .trim()
+   | |         -^^^^ method not found in `usize`
+   | |_________|
+   |
+
+error[E0689]: can't call method `pow` on ambiguous numeric type `{integer}`
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:24:33
+   |
+24 |     let exponentiation = input1.pow(input2);
+   |                                 ^^^
+   |
+help: you must specify a type for this binding, like `i32`
+   |
+2  |     let mut input1: i32 = 0;
+   |                   +++++
+
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:29:38
+   |
+29 |     println!("Integer quotient: {}", int(quotient));
+   |                                      ^^^ not found in this scope
+
+error[E0425]: cannot find function `float` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:30:39
+   |
+30 |     println!("Float quotient: {:.3}", float(quotient));
+   |                                       ^^^^^ not found in this scope
+
+error[E0689]: can't call method `pow` on ambiguous numeric type `{integer}`
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:39
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                                       ^^^
+   |
+help: you must specify a type for this binding, like `i32`
+   |
+2  |     let mut input1: i32 = 0;
+   |                   +++++
+
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:28
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                            ^^^ not found in this scope
+
+error[E0689]: can't call method `pow` on ambiguous numeric type `{integer}`
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:64
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                                                                ^^^
+   |
+help: you must specify a type for this binding, like `i32`
+   |
+2  |     let mut input1: i32 = 0;
+   |                   +++++
+
+error[E0425]: cannot find function `float` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:51
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                                                   ^^^^^ not found in this scope
+
+error: aborting due to 11 previous errors
+
+Some errors have detailed explanations: E0061, E0425, E0599, E0689.
+For more information about an error, try `rustc --explain E0061`.

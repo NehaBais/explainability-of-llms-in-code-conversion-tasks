@@ -1,0 +1,4 @@
+/tmp/yicoder9b-file_size-java-cpp.cpp:3:10: fatal error: 'sys/stat' file not found
+    3 | #include <sys/stat>
+      |          ^~~~~~~~~~
+1 error generated.

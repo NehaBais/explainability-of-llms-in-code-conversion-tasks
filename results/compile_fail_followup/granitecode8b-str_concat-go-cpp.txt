@@ -1,0 +1,31 @@
+/tmp/granitecode8b-str_concat-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string s = "hello";
+      |   ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << s << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:5:21: error: use of undeclared identifier 'std'
+    5 |   std::cout << s << std::endl;
+      |                     ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << s + " literal" << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:6:34: error: use of undeclared identifier 'std'
+    6 |   std::cout << s + " literal" << std::endl;
+      |                                  ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::string s2 = s + " literal";
+      |   ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::cout << s2 << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-go-cpp.cpp:8:22: error: use of undeclared identifier 'std'
+    8 |   std::cout << s2 << std::endl;
+      |                      ^
+10 errors generated.

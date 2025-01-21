@@ -1,0 +1,51 @@
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::rename("input.txt", "output.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:10:5: error: use of undeclared identifier 'fs'
+   10 |     fs::rename("docs", "mydocs");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:5: error: use of undeclared identifier 'fs'
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:16: error: use of undeclared identifier 'fs'
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |                ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:25: error: expected parameter declarator
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |                         ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:25: error: expected ')'
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:24: note: to match this '('
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |                        ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:30: error: expected ')'
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |                              ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:13:15: note: to match this '('
+   13 |     fs::rename(fs::path("/") / "input.txt", fs::path("/") / "output.txt");
+      |               ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:5: error: use of undeclared identifier 'fs'
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:16: error: use of undeclared identifier 'fs'
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |                ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:25: error: expected parameter declarator
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |                         ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:25: error: expected ')'
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:24: note: to match this '('
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |                        ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:30: error: expected ')'
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |                              ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:14:15: note: to match this '('
+   14 |     fs::rename(fs::path("/") / "docs", fs::path("/") / "mydocs");
+      |               ^
+/tmp/deepseekcoderv2-file_rename-py-cpp.cpp:15:18: error: use of undeclared identifier 'fs'
+   15 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+14 errors generated.

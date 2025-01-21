@@ -1,0 +1,49 @@
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:6:3: error: use of undeclared identifier 'cin'
+    6 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "a and b: " << a & b << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:8:35: error: use of undeclared identifier 'endl'
+    8 |   cout << "a and b: " << a & b << endl;
+      |                                   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a or b: " << a | b << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:9:34: error: use of undeclared identifier 'endl'
+    9 |   cout << "a or b: " << a | b << endl;
+      |                                  ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "a xor b: " << a ^ b << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:10:35: error: use of undeclared identifier 'endl'
+   10 |   cout << "a xor b: " << a ^ b << endl;
+      |                                   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "not a: " << ~a << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:11:30: error: use of undeclared identifier 'endl'
+   11 |   cout << "not a: " << ~a << endl;
+      |                              ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "a << n: " << a << " << " << b << " = " << a << " << " << b << " = "
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:13:31: error: use of undeclared identifier 'endl'
+   13 |        << a << " << " << b << endl;
+      |                               ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:15:3: error: use of undeclared identifier 'cout'
+   15 |   cout << "c >> b: " << c >> b << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-c-cpp.cpp:15:35: error: use of undeclared identifier 'endl'
+   15 |   cout << "c >> b: " << c >> b << endl;
+      |                                   ^
+1 warning and 15 errors generated.

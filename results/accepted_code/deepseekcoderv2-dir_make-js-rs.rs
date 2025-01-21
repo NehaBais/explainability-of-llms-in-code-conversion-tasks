@@ -1,27 +1,34 @@
-use std::path::Path;
 use std::fs;
-fn mkdirp<P>(p: P) -> std::io::Result<()>
-where
-    P: AsRef<Path>,
-{
-    let p = path.resolve(p);
-    fs.mkdir(p, function (er) {
-        if (!er) {
-            return cb(null);
-        }
-        switch (er.code) {
-            case 'ENOENT':
-                // The directory doesn't exist. Make its parent and try again.
-                mkdirp(path.dirname(p), function (er) {
-                    if (er) cb(er);
-                    else mkdirp(p, cb);
-                });
-                break;
+use std::path::Path;
 
+fn mkdirp(p: &str, cb: fn(std::io::Result<()>)) {
+    let p = Path::new(p).canonicalize().unwrap();
+
+    match fs::create_dir(&p) {
+        Ok(_) => cb(Ok(())),
+        Err(e) => {
+            if e.kind() == std::io::ErrorKind::NotFound {
+                // The directory doesn't exist. Make its parent and try again.
+                let parent = p.parent().unwrap();
+                mkdirp(&parent.to_string_lossy(), |result| {
+                    match result {
+                        Ok(_) => mkdirp(&p.to_string_lossy(), cb),
+                        Err(e) => cb(Err(e)),
+                    }
+                });
+            } else {
                 // In the case of any other error, something is borked.
-            default:
-                cb(er);
-                break;
+                cb(Err(e));
+            }
         }
-    })
+    }
+}
+
+fn main() {
+    mkdirp("./path/to/dir", |result| {
+        match result {
+            Ok(_) => println!("Directory created successfully."),
+            Err(e) => eprintln!("Error creating directory: {:?}", e),
+        }
+    });
 }

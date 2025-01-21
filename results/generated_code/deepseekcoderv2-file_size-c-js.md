@@ -1,25 +1,29 @@
-### Answer:
-This is the converted code in JavaScript:
+ Here's the equivalent JavaScript code to verify the size of a file called `input.txt` for both the current working directory and the root file system:
 
 ```javascript
 const fs = require('fs');
-const path = '/path/to/file'; // Replace with your file's path
+const path = require('path');
 
-// Check for input.txt in current directory
-try {
-  const stats = fs.statSync(path);
-  console.log("File size:", stats.size, "bytes");
-} catch (err) {
-  console.error("Error checking file size:", err.message);
+function getFileSize(filePath) {
+  try {
+    const stats = fs.statSync(filePath);
+    return stats.size;
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      console.log(`${filePath} not found`);
+    } else {
+      throw err;
+    }
+  }
 }
 
-// Check for input.txt in the root directory
-try {
-  const stats = fs.statSync('/input.txt');
-  console.log("File size:", stats.size, "bytes");
-} catch (err) {
-  console.error("Error checking file size:", err.message);
-}
+// Current working directory
+const currentFilePath = path.join(__dirname, 'input.txt');
+console.log(getFileSize(currentFilePath));
+
+// Root file system
+const rootFilePath = '/input.txt';
+console.log(getFileSize(rootFilePath));
 ```
 
-This code uses the Node.js `fs` module to interact with the file system, including checking the size of files. The path variable is set to '/path/to/file', replace it with your actual path for input.txt in both current directory and root directory. If the path doesn't exist or you don't have permission to access it, an error will be logged.
+This JavaScript code uses the `fs` module to check the size of the file and handles errors for files that do not exist. The `path.join(__dirname, 'input.txt')` is used to construct the path relative to the current working directory, while `/input.txt` directly refers to the root file system.

@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_rename-go-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::rename("input.txt", "output.txt");
+      |   ~~~~~^
+/tmp/codellama7b-file_rename-go-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::rename("docs", "mydocs");
+      |   ~~~~~^
+/tmp/codellama7b-file_rename-go-cpp.cpp:7:8: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::rename("/input.txt", "/output.txt");
+      |   ~~~~~^
+/tmp/codellama7b-file_rename-go-cpp.cpp:8:8: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::rename("/docs", "/mydocs");
+      |   ~~~~~^
+4 errors generated.

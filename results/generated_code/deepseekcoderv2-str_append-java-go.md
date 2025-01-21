@@ -1,14 +1,20 @@
-### Solution
+ Certainly! Below is the equivalent code in Golang that performs the same operations as the provided Java code:
+
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var myString string = "My name is Kunal" // declare a variable of type string and initialize it with the value "My name is Kunal"
-	fmt.Println(myString)                      // print the value of the variable to the console
-	myString += " 26 years old"                 // append the string literal "My age is 26" to the end of the variable using the + operator
-	fmt.Println(myString)                     // print the updated value of the variable to the console
+	str := "abc"
+	fmt.Println(str)
+	str += "def"
+	fmt.Println(str)
 }
 ```
 
+In this Go code:
+- We declare a string variable `str` and initialize it with the value `"abc"`.
+- We print the contents of the string before and after appending `"def"` to it using the `fmt.Println` function.

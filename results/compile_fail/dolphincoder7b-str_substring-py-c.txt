@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_substring-py-c.c:7:8: error: cannot combine with previous 'char' declaration specifier
+    7 |   char char = 'd';
+      |        ^
+/tmp/dolphincoder7b-str_substring-py-c.c:7:13: error: expected identifier or '('
+    7 |   char char = 'd';
+      |             ^
+2 errors generated.

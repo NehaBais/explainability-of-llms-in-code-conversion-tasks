@@ -1,0 +1,35 @@
+/tmp/granitecode8b-str_interp-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string original = "Mary had a X lamb";
+      |   ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string little = "little";
+      |   ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string replaced = original;
+      |   ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:6:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    6 |   size_t pos = replaced.find("X");
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_interp-js-cpp.cpp:6:10: error: use of undeclared identifier 'pos'
+    6 |   size_t pos = replaced.find("X");
+      |          ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:7:7: error: use of undeclared identifier 'pos'
+    7 |   if (pos != std::string::npos) {
+      |       ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:7:14: error: use of undeclared identifier 'std'
+    7 |   if (pos != std::string::npos) {
+      |              ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:8:22: error: use of undeclared identifier 'pos'
+    8 |     replaced.replace(pos, 1, little);
+      |                      ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:10:3: error: use of undeclared identifier 'std'
+   10 |   std::cout << replaced << std::endl;
+      |   ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:10:28: error: use of undeclared identifier 'std'
+   10 |   std::cout << replaced << std::endl;
+      |                            ^
+11 errors generated.

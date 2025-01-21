@@ -1,0 +1,13 @@
+/tmp/StringComparisonDemo.java:8: error: ';' expected
+                a.equals(b), a.compareTo(b)>0, a.compareTo(b)<0, a.compareToIgnoreCase(b)>0, a.compareToIgnoreCase(b)<0));
+                                                                                                                        ^
+/tmp/StringComparisonDemo.java:14: error: ';' expected
+                a.equals(b), a.compareTo(b)>0, a.compareTo(b)<0, a.compareToIgnoreCase(b)>0, a.compareToIgnoreCase(b)<0));
+                                                                                                                        ^
+/tmp/StringComparisonDemo.java:20: error: ';' expected
+            compare(strings[i], strings[i + 1]));
+                                               ^
+/tmp/StringComparisonDemo.java:21: error: ';' expected
+            comparecase(strings[i], strings[i + 1])));
+                                                   ^
+4 errors

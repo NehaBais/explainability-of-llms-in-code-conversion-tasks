@@ -1,0 +1,37 @@
+/tmp/qwen2.5coder2b-bit_ops-js-cpp.cpp:22:19: error: no matching constructor for initialization of 'std::bitset<32>'
+   22 |   std::bitset<32> rightShifted(leftShifted >> 1);
+      |                   ^            ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:608:28: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'bitset<64>' to 'const bitset<32>' for 1st argument
+  608 | class _LIBCPP_TEMPLATE_VIS bitset
+      |                            ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:620:43: note: candidate constructor not viable: no known conversion from 'bitset<64>' to 'unsigned long long' for 1st argument
+  620 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR bitset(unsigned long long __v) _NOEXCEPT : base(__v) {}
+      |                                           ^      ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:622:64: note: candidate template ignored: could not match 'const _CharT *' against 'bitset<64>'
+  622 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit bitset(
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:651:64: note: candidate template ignored: could not match 'basic_string' against 'bitset'
+  651 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit bitset(
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:619:43: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+  619 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR bitset() _NOEXCEPT {}
+      |                                           ^
+/tmp/qwen2.5coder2b-bit_ops-js-cpp.cpp:26:19: error: no matching constructor for initialization of 'std::bitset<32>'
+   26 |   std::bitset<32> rightArithShifted(leftShifted >> 1);
+      |                   ^                 ~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:608:28: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'bitset<64>' to 'const bitset<32>' for 1st argument
+  608 | class _LIBCPP_TEMPLATE_VIS bitset
+      |                            ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:620:43: note: candidate constructor not viable: no known conversion from 'bitset<64>' to 'unsigned long long' for 1st argument
+  620 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR bitset(unsigned long long __v) _NOEXCEPT : base(__v) {}
+      |                                           ^      ~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:622:64: note: candidate template ignored: could not match 'const _CharT *' against 'bitset<64>'
+  622 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit bitset(
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:651:64: note: candidate template ignored: could not match 'basic_string' against 'bitset'
+  651 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit bitset(
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:619:43: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+  619 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR bitset() _NOEXCEPT {}
+      |                                           ^
+2 errors generated.

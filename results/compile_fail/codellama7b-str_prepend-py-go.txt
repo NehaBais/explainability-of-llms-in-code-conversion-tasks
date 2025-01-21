@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-str_prepend-py-go.go:10:19: cannot use "0" (untyped string constant) as []string value in argument to strings.Join

@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/codeqwen-file_exists-c-go.go:28:100: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:28:102: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/codeqwen-file_exists-c-go.go:29:85: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:29:87: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/codeqwen-file_exists-c-go.go:36:102: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:36:104: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/codeqwen-file_exists-c-go.go:37:87: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:37:89: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )

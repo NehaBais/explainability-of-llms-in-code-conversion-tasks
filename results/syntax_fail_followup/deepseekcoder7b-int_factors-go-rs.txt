@@ -1,0 +1,60 @@
+error: unknown start of token: \u{ff5c}
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:63
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                               ^^
+
+error: unknown start of token: \u{2581}
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:69
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                                      ^
+
+error: unknown start of token: \u{2581}
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:72
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                                         ^
+
+error: unknown start of token: \u{ff5c}
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:81
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                                                  ^^
+
+error: comparison operators cannot be chained
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:51
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                   ^^         ^
+  |
+help: parenthesize the comparison
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == (std::cmp<｜begin)▁of▁sentence｜>Ordering::Less {
+  |                                                      +                +
+
+error: expected `{`, found `of`
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:70
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |                                                                       ^^ expected `{`
+  |
+note: the `if` expression is missing a block after this condition
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:7:15
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁of▁sentence｜>Ordering::Less {
+  |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: try placing this code inside a block
+  |
+7 |     } else if nr.cmp(&num_bigint::BigUint::one()) == std::cmp<｜begin▁{ of }▁sentence｜>Ordering::Less {
+  |                                                                       +    +
+
+error[E0433]: failed to resolve: use of undeclared crate or module `num_bigint`
+ --> /tmp/deepseekcoder7b-int_factors-go-rs.rs:1:34
+  |
+1 | fn printFactorsOrMessage<F>(nr: &num_bigint::BigUint, fmt: F) -> std::result::Result<(), Box<dyn std::error::Error>>
+  |                                  ^^^^^^^^^^ use of undeclared crate or module `num_bigint`
+
+error: aborting due to 7 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

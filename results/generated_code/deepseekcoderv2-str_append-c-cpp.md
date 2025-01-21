@@ -1,15 +1,25 @@
-## Solution
+ Sure, here is the equivalent code in C++:
 
-### C++ Code:
+```cpp
+#include <iostream>
+#include <string>
 
-```
-#include<iostream>
-using namespace std;
 int main() {
-char str[13] = "Good Morning";
-// Append the string variable with another string literal in the most idiomatic way.
-strcat(str, " to all");
-cout << str << endl;
-return 0;
+    std::string str = "Good Morning";
+    std::string cstr = " to all";
+    std::string cstr2 = " !!!";
+
+    // Append the strings using the most idiomatic way in C++
+    str += cstr;
+    str += cstr2;
+
+    // Show the contents of the variable after the append operation
+    std::cout << str << std::endl;
+
+    return 0;
 }
 ```
+
+In this C++ code:
+- We use `std::string` for the string manipulation.
+- The concatenation is done using the `+=` operator, which is idiomatic in C++.

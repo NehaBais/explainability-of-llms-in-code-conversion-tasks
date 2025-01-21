@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-rs-go.go:13:5: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:19:5: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:21:12: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:23:12: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:25:12: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:30:23: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:37:5: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:39:12: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:44:24: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:54:21: undefined: A
+/tmp/codeqwen-str_cmp-rs-go.go:54:21: too many errors

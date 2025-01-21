@@ -1,0 +1,4 @@
+/tmp/stablecode-str_prepend-rs-c.c:9:24: error: extraneous ')' before ';'
+    9 |     strcat(s, "Hello ")); // prepend the string with another string literal
+      |                        ^
+1 error generated.

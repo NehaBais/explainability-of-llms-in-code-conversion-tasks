@@ -1,7 +1,9 @@
-# Create a string variable equal to any text value.
+# Create a string variable equal to any text value
 s = "hello"
+
+# Print the content of the original variable
 print(s)
 
-# Create another string variable whose value is the original variable concatenated with another string literal.
+# Concatenate with another string literal and print the result
 s2 = s + " literal"
 print(s2)

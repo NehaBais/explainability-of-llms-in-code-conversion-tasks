@@ -1,0 +1,35 @@
+/tmp/stablecode-str_match-rs-cpp.cpp:5:6: error: variable has incomplete type 'void'
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |      ^
+/tmp/stablecode-str_match-rs-cpp.cpp:5:23: error: no member named 'optional' in namespace 'std'
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |                  ~~~~~^
+/tmp/stablecode-str_match-rs-cpp.cpp:5:32: error: unexpected type name 'size_t': expected expression
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |                                ^
+/tmp/stablecode-str_match-rs-cpp.cpp:5:40: error: expected expression
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |                                        ^
+/tmp/stablecode-str_match-rs-cpp.cpp:5:42: error: use of undeclared identifier 'possible_match'
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |                                          ^
+/tmp/stablecode-str_match-rs-cpp.cpp:5:57: error: expected ';' after top level declarator
+    5 | void print_match(std::optional<size_t> > possible_match) {
+      |                                                         ^
+      |                                                         ;
+/tmp/stablecode-str_match-rs-cpp.cpp:19:3: error: use of undeclared identifier 'assert'
+   19 |   assert(s1.rfind(s3, 0) == 0));
+      |   ^
+/tmp/stablecode-str_match-rs-cpp.cpp:19:31: error: extraneous ')' before ';'
+   19 |   assert(s1.rfind(s3, 0) == 0));
+      |                               ^
+/tmp/stablecode-str_match-rs-cpp.cpp:20:3: error: use of undeclared identifier 'assert'
+   20 |   assert(s1.find(s2) != std::string::npos));
+      |   ^
+/tmp/stablecode-str_match-rs-cpp.cpp:20:43: error: extraneous ')' before ';'
+   20 |   assert(s1.find(s2) != std::string::npos));
+      |                                           ^
+/tmp/stablecode-str_match-rs-cpp.cpp:21:15: error: expected expression
+   21 |   print_match({s1.rfind(s3, 0), s1.find(s2)});
+      |               ^
+11 errors generated.

@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_concat-java-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+5 |     let s2 = format!("{}{}", s, " literal"));
+  |                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_concat-java-rs.rs:6:23
+  |
+5 |     let s2 = format!("{}{}", s, " literal"));
+  |                                            - missing open `(` for this delimiter
+6 |     println!("{}", s2));
+  |                       ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

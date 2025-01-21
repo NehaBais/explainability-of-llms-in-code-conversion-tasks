@@ -1,0 +1,4 @@
+/tmp/codellama7b-file_create-c-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::create_directory("docs"); // creates a directory called docs
+      |   ~~~~~^
+1 error generated.

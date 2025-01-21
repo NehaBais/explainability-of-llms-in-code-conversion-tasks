@@ -1,0 +1,1 @@
+/tmp/yicoder2b-int_cmp-rs-go.go:2:1: expected 'package', found 'func'

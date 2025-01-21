@@ -1,0 +1,24 @@
+/tmp/codeqwen-file_rename-java-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codeqwen-file_rename-java-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::path file(oldname);
+      |   ^
+/tmp/codeqwen-file_rename-java-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::path file2(newname);
+      |   ^
+/tmp/codeqwen-file_rename-java-cpp.cpp:12:10: error: use of undeclared identifier 'fs'
+   12 |   return fs::rename(file, file2);
+      |          ^
+/tmp/codeqwen-file_rename-java-cpp.cpp:12:21: error: use of undeclared identifier 'file'; did you mean 'false'?
+   12 |   return fs::rename(file, file2);
+      |                     ^~~~
+      |                     false
+/tmp/codeqwen-file_rename-java-cpp.cpp:12:27: error: use of undeclared identifier 'file2'; did you mean 'fileno'?
+   12 |   return fs::rename(file, file2);
+      |                           ^~~~~
+      |                           fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+6 errors generated.

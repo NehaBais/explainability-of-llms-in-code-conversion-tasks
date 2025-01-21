@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-file_rename-java-cpp.cpp:11:10: error: no member named 'filesystem' in namespace 'std'
+   11 |     std::filesystem::rename("docs", "mydocs");
+      |     ~~~~~^
+1 error generated.

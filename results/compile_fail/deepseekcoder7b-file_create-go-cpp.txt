@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:1:10: fatal error: 'direct.h' file not found
+    1 | #include <direct.h> // For _mkdir in windows
+      |          ^~~~~~~~~~
+1 error generated.

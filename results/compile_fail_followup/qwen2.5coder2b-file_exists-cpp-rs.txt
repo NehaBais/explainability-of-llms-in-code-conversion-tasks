@@ -1,0 +1,26 @@
+error[E0277]: `Path` doesn't implement `std::fmt::Display`
+ --> /tmp/qwen2.5coder2b-file_exists-cpp-rs.rs:4:20
+  |
+4 |     println!("{}", path);
+  |                    ^^^^ `Path` cannot be formatted with the default formatter; call `.display()` on it
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `Path`, which is required by `&Path: std::fmt::Display`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: call `.display()` or `.to_string_lossy()` to safely print paths, as they may contain non-Unicode data
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `file_size` found for struct `Metadata` in the current scope
+  --> /tmp/qwen2.5coder2b-file_exists-cpp-rs.rs:10:37
+   |
+10 |                 let size = metadata.file_size();
+   |                                     ^^^^^^^^^
+   |
+help: there is a method `file_type` with a similar name
+   |
+10 |                 let size = metadata.file_type();
+   |                                     ~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0599.
+For more information about an error, try `rustc --explain E0277`.

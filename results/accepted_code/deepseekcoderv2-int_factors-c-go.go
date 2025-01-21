@@ -1,66 +1,72 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type Factors struct {
-	list []int
+	list  []int
 	count int
 }
 
 func xferFactors(fctrs *Factors, flist []int, flix int) {
 	newSize := fctrs.count + flix
-	if newSize > flix {
-		fctrs.list = append(fctrs.list, make([]int, newSize-len(fctrs.list))...)
+	if newSize > len(fctrs.list) {
+		fctrs.list = append(make([]int, 0, newSize), fctrs.list...)
 	} else {
 		fctrs.list = make([]int, newSize)
 	}
-	for ij, ix := 0, fctrs.count; ix < newSize; ij, ix++ {
+	for ij, ix := 0, fctrs.count; ix < newSize; ij, ix = ij+1, ix+1 {
 		fctrs.list[ix] = flist[ij]
 	}
 	fctrs.count = newSize
 }
 
-func factor(num int, fctrs *Factors) *Factors {
-	var flist []int
-	var dvsr int
+func factor(num int) *Factors {
+	var fctrs Factors
+	flist := make([]int, 301)
 	flix := 0
-	fctrs.count = 0
-	for ix := range fctrs.list {
-		fctrs.list[ix] = 0
-	}
-	for dvsr = 1; dvsr*dvsr < num; dvsr++ {
+	dvsr := 1
+	for dvsr*dvsr < num {
 		if num%dvsr != 0 {
+			dvsr++
 			continue
 		}
 		if flix == 300 {
-			xferFactors(fctrs, flist, flix)
+			xferFactors(&fctrs, flist, flix)
 			flix = 0
 		}
-		flist[flix], flist[flix+1] = dvsr, num/dvsr
+		flist[flix] = dvsr
+		flist[flix+1] = num / dvsr
 		flix += 2
+		dvsr++
 	}
 	if dvsr*dvsr == num {
+		if flix == 300 {
+			xferFactors(&fctrs, flist, flix)
+			flix = 0
+		}
 		flist[flix] = dvsr
 		flix++
 	}
-	xferFactors(fctrs, flist, flix)
-	return fctrs
+	if flix > 0 {
+		xferFactors(&fctrs, flist, flix)
+	}
+	return &fctrs
 }
 
 func main() {
 	nums2factor := []int{2059, 223092870, 3135, 45}
-	var ftors Factors
-	for i := range nums2factor {
-		ftors = *factor(nums2factor[i], &ftors)
-		fmt.Printf("Factors of %d are: ", nums2factor[i])
+	for _, num := range nums2factor {
+		fctrs := factor(num)
+		fmt.Printf("Factors of %d are: \n", num)
 		sep := ' '
-		for j, v := range ftors.list {
-			if j != 0 && sep == ',' {
+		for j, f := range fctrs.list {
+			if j > 0 {
 				fmt.Print(", ")
-			} else if j != 0 {
-				fmt.Print(" ")
 			}
-			fmt.Printf("%c%d", sep, v)
+			fmt.Printf("%c %d", sep, f)
 			sep = ','
 		}
 		fmt.Println()

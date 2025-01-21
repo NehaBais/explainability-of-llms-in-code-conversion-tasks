@@ -1,3 +1,11 @@
-fn func_name(arg1: type, arg2: type, ...) -> return_type {
-    // your code here
+fn logic(a: bool, b: bool) {
+    println!("a and b: {}", a && b);
+    println!("a or b: {}", a || b);
+    println!("not a: {}", !a);
+}
+
+fn main() {
+    let a = true;
+    let b = false;
+    logic(a, b);
 }

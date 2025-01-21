@@ -1,35 +1,37 @@
-Answer: Here is the Golang code that does what you are asking:
+ Sure, here is the equivalent code in Golang:
 
-```
+```go
 package main
+
 import (
-"fmt"
-"os"
+	"fmt"
+	"os"
 )
+
 func main() {
-// Check if input.txt exists in current directory
-if _, err := os.Stat("input.txt"); err == nil {
-fmt.Println("input.txt exists")
-} else {
-fmt.Println("input.txt does not exist")
+	// Check for input.txt and docs in the current working directory
+	currentWorkingDir := "."
+	fmt.Println(isFileExists(currentWorkingDir + "/input.txt"))
+	fmt.Println(isFileExists("/" + "input.txt"))
+	fmt.Println(isDirExists(currentWorkingDir + "/docs"))
+	fmt.Println(isDirExists("/" + "docs"))
 }
-// Check if /input.txt exists in root of filesystem
-if _, err := os.Stat("/input.txt"); err == nil {
-fmt.Println("/input.txt exists")
-} else {
-fmt.Println("/input.txt does not exist")
+
+func isFileExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return !info.IsDir()
 }
-// Check if docs directory exists in current directory
-if _, err := os.Stat("docs"); err == nil {
-fmt.Println("docs directory exists")
-} else {
-fmt.Println("docs directory does not exist")
-}
-// Check if /docs directory exists in root of filesystem
-if _, err := os.Stat("/docs"); err == nil {
-fmt.Println("/docs directory exists")
-} else {
-fmt.Println("/docs directory does not exist")
-}
+
+func isDirExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return info.IsDir()
 }
 ```
+
+This Golang code performs the same checks as the provided Python code: it verifies whether `input.txt` is a file and whether `docs` is a directory, both in the current working directory and in the filesystem root.

@@ -1,45 +1,54 @@
-## 5.3.4
-### 1) Use the language of your choice to implement a function called `is_palindrome`. This function should receive one argument, which is expected to be a string containing at least one character. It must return either true or false depending on whether or not that given string is a palindrome (i.e., reads the same forwards as backwards).
-```
-bool is_palindrome(const std::string& str) {
-    int n = str.length();
-    for (int i = 0; i < n / 2; ++i) {
-        if (str[i] != str[n - i - 1]) {
-            return false;
-        }
+ Below is the equivalent C++ code for the provided Java methods that handle substrings as described in your requirements:
+
+```cpp
+#include <iostream>
+#include <string>
+
+// Function to get a substring starting from index n and of length m
+std::string Substring(const std::string& str, int n, int m) {
+    return str.substr(n, m);
+}
+
+// Function to get a substring starting from index n until the end of the string
+std::string Substring(const std::string& str, int n) {
+    return str.substr(n);
+}
+
+// Function to get a substring excluding the last character
+std::string Substring(const std::string& str) {
+    if (str.empty()) return "";
+    return str.substr(0, str.length() - 1);
+}
+
+// Function to get a substring starting from a known character within the string and of length m
+std::string Substring(const std::string& str, char c, int m) {
+    size_t pos = str.find(c);
+    if (pos != std::string::npos) {
+        return str.substr(pos, m + 1);
     }
-    return true;
+    return "";
+}
+
+// Function to get a substring starting from a known substring within the string and of length m
+std::string Substring(const std::string& str, const std::string& sub, int m) {
+    size_t pos = str.find(sub);
+    if (pos != std::string::npos) {
+        return str.substr(pos, m + 1);
+    }
+    return "";
+}
+
+int main() {
+    // Test cases
+    std::string testStr = "Hello, World!";
+    std::cout << Substring(testStr, 7, 5) << std::endl; // Output: "World"
+    std::cout << Substring(testStr, 7) << std::endl;   // Output: "World!"
+    std::cout << Substring(testStr) << std::endl;     // Output: "Hello, World"
+    std::cout << Substring(testStr, 'W', 5) << std::endl; // Output: "World!"
+    std::cout << Substring(testStr, "World", 5) << std::endl; // Output: "World!"
+
+    return 0;
 }
 ```
-### 2) Use the language of your choice to implement a function called `palindrome_type`. This function should receive one argument, which is expected to be a string containing at least one character. The function must identify whether that given string is:
-- A palindrome. If so, it should return "a regular palindrome".
-- An almost palindrome (i.e., only the last digit of the number has been swapped with another digit). If so, it should return "almost a palindrome", followed by the position where that was found (counting from 1 to N characters starting at index 0), and then also show which digits were involved in the swap operation (in sequence, separated by commas and without spaces)
-- Not a palindrome. If so, it should return "not a palindrome" followed by one of:
-    - the length of that string; or if no single digit was swapped to make an almost palindrome, then instead show the positions where a pair of characters were swapped (in sequence, separated by commas and without spaces)
-```
-string palindrome_type(const string& str) {
-    int n = str.length();
-    bool isPalindrome = true;
-    for (int i = 0; i < n / 2; ++i) {
-        if (str[i] != str[n - i - 1]) {
-            isPalindrome = false;
-            break;
-        }
-    }
-    if (isPalindrome) {
-        return "a regular palindrome";
-    } else {
-        for (int i = 0; i < n / 2; ++i) {
-            if (str[i] != str[n - i - 1]) {
-                swap(str[i], str[n - i - 1]);
-                if (is_palindrome(str)) {
-                    return "almost a palindrome, position: " + to_string(i) + ", swapped digits: " + str[i] + "," + str[n - i - 1];
-                } else {
-                    swap(str[i], str[n - i - 1]);
-                }
-            }
-        }
-        return "not a palindrome, length: " + to_string(n);
-    }
-}
-```
+
+This C++ code mirrors the functionality of the provided Java methods. It handles substrings based on starting position and length, from a specific character or substring, and it also excludes the last character from the string. The functions are designed to work with Unicode strings and handle any valid Unicode code point.

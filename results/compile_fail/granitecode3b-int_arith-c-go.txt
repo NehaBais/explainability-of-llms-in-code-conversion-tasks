@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/granitecode3b-int_arith-c-go.go:17:99: newline in string
+/tmp/granitecode3b-int_arith-c-go.go:17:99: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode3b-int_arith-c-go.go:18:36: newline in string

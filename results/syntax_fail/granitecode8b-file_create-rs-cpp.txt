@@ -1,0 +1,28 @@
+/tmp/granitecode8b-file_create-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::ofstream file(FILE_NAME);
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:9:3: error: use of undeclared identifier 'file'
+    9 |   file.close();
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::filesystem::create_directory(DIR_NAME);
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::string root = "/";
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:18:3: error: use of undeclared identifier 'std'
+   18 |   std::ofstream root_file(root + FILE_NAME);
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:19:3: error: use of undeclared identifier 'root_file'
+   19 |   root_file.close();
+      |   ^
+/tmp/granitecode8b-file_create-rs-cpp.cpp:22:3: error: use of undeclared identifier 'std'
+   22 |   std::filesystem::create_directory(root + DIR_NAME);
+      |   ^
+9 errors generated.

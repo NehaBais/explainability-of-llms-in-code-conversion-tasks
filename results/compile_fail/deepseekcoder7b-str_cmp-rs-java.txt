@@ -1,0 +1,31 @@
+/tmp/Main.java:14: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                       ^
+/tmp/Main.java:14: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                      ^
+/tmp/Main.java:14: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                             ^
+/tmp/Main.java:14: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                        ^
+/tmp/Main.java:14: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                                ^
+/tmp/Main.java:14: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                              ^
+/tmp/Main.java:14: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                                         ^
+/tmp/Main.java:14: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                                 ^
+/tmp/Main.java:14: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                                              ^
+/tmp/Main.java:14: error: ';' expected
+            System.out<｜begin▁of▁sentence｜>out.kinen!"The strings are not equal";
+                                                    ^
+10 errors

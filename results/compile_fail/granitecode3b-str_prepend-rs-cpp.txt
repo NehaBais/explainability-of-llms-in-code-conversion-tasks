@@ -1,0 +1,19 @@
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "World";
+      |   ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << s << endl;
+      |   ^
+/tmp/granitecode3b-str_prepend-rs-cpp.cpp:7:16: error: use of undeclared identifier 'endl'
+    7 |   cout << s << endl;
+      |                ^
+1 warning and 5 errors generated.

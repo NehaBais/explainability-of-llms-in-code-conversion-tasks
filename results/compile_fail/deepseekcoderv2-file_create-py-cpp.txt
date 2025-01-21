@@ -1,0 +1,19 @@
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:12:3: error: use of undeclared identifier 'fs'
+   12 |   fs::create_directory(fs::path(directory) / "docs");
+      |   ^
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:12:24: error: use of undeclared identifier 'fs'
+   12 |   fs::create_directory(fs::path(directory) / "docs");
+      |                        ^
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:12:33: error: unknown type name 'directory'
+   12 |   fs::create_directory(fs::path(directory) / "docs");
+      |                                 ^
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:12:44: error: expected ')'
+   12 |   fs::create_directory(fs::path(directory) / "docs");
+      |                                            ^
+/tmp/deepseekcoderv2-file_create-py-cpp.cpp:12:23: note: to match this '('
+   12 |   fs::create_directory(fs::path(directory) / "docs");
+      |                       ^
+5 errors generated.

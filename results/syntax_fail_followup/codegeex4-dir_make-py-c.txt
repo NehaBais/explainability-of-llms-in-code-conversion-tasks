@@ -1,0 +1,19 @@
+/tmp/codegeex4-dir_make-py-c.c:27:12: error: read-only variable is not assignable
+   27 |     *slash = '\0'; // Null-terminate after the slash to get a directory name
+      |     ~~~~~~ ^
+/tmp/codegeex4-dir_make-py-c.c:29:9: error: use of undeclared identifier 'errno'
+   29 |         errno !=
+      |         ^
+/tmp/codegeex4-dir_make-py-c.c:30:13: error: use of undeclared identifier 'EEXIST'
+   30 |             EEXIST) { // If it fails and it's not because of an existing dir
+      |             ^
+/tmp/codegeex4-dir_make-py-c.c:34:12: error: read-only variable is not assignable
+   34 |     *slash = '/'; // Restore slash before next iteration
+      |     ~~~~~~ ^
+/tmp/codegeex4-dir_make-py-c.c:39:28: error: use of undeclared identifier 'errno'
+   39 |   if (mkdir(path, 0755) && errno != EEXIST) {
+      |                            ^
+/tmp/codegeex4-dir_make-py-c.c:39:37: error: use of undeclared identifier 'EEXIST'
+   39 |   if (mkdir(path, 0755) && errno != EEXIST) {
+      |                                     ^
+6 errors generated.

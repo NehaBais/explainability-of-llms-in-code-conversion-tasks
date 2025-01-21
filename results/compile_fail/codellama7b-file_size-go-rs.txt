@@ -1,0 +1,37 @@
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-file_size-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `len` found for enum `Result` in the current scope
+ --> /tmp/codellama7b-file_size-go-rs.rs:6:65
+  |
+6 |     println!("Size of input.txt: {}", fs::metadata("input.txt").len());
+  |                                                                 ^^^ method not found in `Result<Metadata, Error>`
+  |
+note: the method `len` exists on the type `Metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1369:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+  |
+6 |     println!("Size of input.txt: {}", fs::metadata("input.txt").expect("REASON").len());
+  |                                                                +++++++++++++++++
+
+error[E0599]: no method named `len` found for enum `Result` in the current scope
+ --> /tmp/codellama7b-file_size-go-rs.rs:9:67
+  |
+9 |     println!("Size of /input.txt: {}", fs::metadata("/input.txt").len());
+  |                                                                   ^^^ method not found in `Result<Metadata, Error>`
+  |
+note: the method `len` exists on the type `Metadata`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:1369:5
+help: consider using `Result::expect` to unwrap the `Metadata` value, panicking if the value is a `Result::Err`
+  |
+9 |     println!("Size of /input.txt: {}", fs::metadata("/input.txt").expect("REASON").len());
+  |                                                                  +++++++++++++++++
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

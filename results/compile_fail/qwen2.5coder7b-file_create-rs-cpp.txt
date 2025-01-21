@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-file_create-rs-cpp.cpp:11:7: error: no matching function for call to 'mkdir'
+   11 |   if (mkdir(root + "/" + DIR_NAME.c_str(), 0755) == -1) {
+      |       ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:385:9: note: candidate function not viable: no known conversion from 'string' to 'const char *' for 1st argument
+  385 | int     mkdir(const char *, mode_t);
+      |         ^     ~~~~~~~~~~~~
+1 error generated.

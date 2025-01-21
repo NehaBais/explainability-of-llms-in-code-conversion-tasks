@@ -1,20 +1,23 @@
-import java.io.*; // for handling input/output
-import java.util.*; // contains Collections framework
+import java.util.Scanner;
 
-// don't change the name of this class
-// you can add inner classes if needed
-class Main {
+public class Main {
   public static void main(String[] args) {
-    // Your code here
-    Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    int b = sc.nextInt();
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter the first integer:");
+    int a = scanner.nextInt();
+
+    System.out.println("Enter the second integer:");
+    int b = scanner.nextInt();
+
     if (a < b) {
-      System.out.println("Less than");
+      System.out.printf("%d is less than %d\n", a, b);
+    } else if (a == b) {
+      System.out.printf("%d equals %d\n", a, b);
     } else if (a > b) {
-      System.out.println("Greater than");
-    } else {
-      System.out.println("Equal to");
+      System.out.printf("%d is greater than %d\n", a, b);
     }
+
+    scanner.close();
   }
 }

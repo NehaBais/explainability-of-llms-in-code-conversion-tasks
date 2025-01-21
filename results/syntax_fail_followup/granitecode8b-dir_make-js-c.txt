@@ -1,0 +1,31 @@
+/tmp/granitecode8b-dir_make-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:5:14: error: unknown type name 'size_t'
+    5 | char *malloc(size_t size);
+      |              ^
+/tmp/granitecode8b-dir_make-js-c.c:7:5: warning: incompatible redeclaration of library function 'strlen' [-Wincompatible-library-redeclaration]
+    7 | int strlen(const char *str);
+      |     ^
+/tmp/granitecode8b-dir_make-js-c.c:7:5: note: 'strlen' is a builtin with type 'unsigned long (const char *)'
+/tmp/granitecode8b-dir_make-js-c.c:8:6: warning: incompatible redeclaration of library function 'strcpy' [-Wincompatible-library-redeclaration]
+    8 | void strcpy(char *dst, const char *src);
+      |      ^
+/tmp/granitecode8b-dir_make-js-c.c:8:6: note: 'strcpy' is a builtin with type 'char *(char *, const char *)'
+/tmp/granitecode8b-dir_make-js-c.c:10:13: warning: incompatible redeclaration of library function 'strchr' [-Wincompatible-library-redeclaration]
+   10 | const char *strchr(const char *str, int c);
+      |             ^
+/tmp/granitecode8b-dir_make-js-c.c:10:13: note: 'strchr' is a builtin with type 'char *(const char *, int)'
+/tmp/granitecode8b-dir_make-js-c.c:14:25: error: use of undeclared identifier 'NULL'
+   14 |   if (strchr(p, '/') != NULL) {
+      |                         ^
+/tmp/granitecode8b-dir_make-js-c.c:15:11: warning: initializing 'char *' with an expression of type 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   15 |     char *dir = strchr(p, '/');
+      |           ^     ~~~~~~~~~~~~~~
+4 warnings and 5 errors generated.

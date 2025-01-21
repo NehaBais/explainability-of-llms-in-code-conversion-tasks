@@ -1,0 +1,62 @@
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string a = "YUP";
+      |   ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string b = "YUP";
+      |   ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << a << " is of type " << typeid(a).name() << endl;
+      |   ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:8:34: error: you need to include <typeinfo> before using the 'typeid' operator
+    8 |   cout << a << " is of type " << typeid(a).name() << endl;
+      |                                  ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:8:54: error: use of undeclared identifier 'endl'
+    8 |   cout << a << " is of type " << typeid(a).name() << endl;
+      |                                                      ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << b << " is of type " << typeid(b).name() << endl;
+      |   ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:9:34: error: you need to include <typeinfo> before using the 'typeid' operator
+    9 |   cout << b << " is of type " << typeid(b).name() << endl;
+      |                                  ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:9:54: error: use of undeclared identifier 'endl'
+    9 |   cout << b << " is of type " << typeid(b).name() << endl;
+      |                                                      ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:11:5: error: use of undeclared identifier 'cout'
+   11 |     cout << a << " is strictly less than  " << b << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:11:53: error: use of undeclared identifier 'endl'
+   11 |     cout << a << " is strictly less than  " << b << endl;
+      |                                                     ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << a << " is less than or equal to " << b << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:14:55: error: use of undeclared identifier 'endl'
+   14 |     cout << a << " is less than or equal to " << b << endl;
+      |                                                       ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << a << " is strictly greater than  " << b << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:17:56: error: use of undeclared identifier 'endl'
+   17 |     cout << a << " is strictly greater than  " << b << endl;
+      |                                                        ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << a << " is greater than or equal to " << b << endl;
+      |     ^
+/tmp/granitecode3b-str_cmp-py-cpp.cpp:20:58: error: use of undeclared identifier 'endl'
+   20 |     cout << a << " is greater than or equal to " << b << endl;
+      |                                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

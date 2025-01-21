@@ -1,0 +1,16 @@
+/tmp/yicoder2b-str_substring-rs-c.c:10:24: error: invalid operands to binary expression ('char *' and 'char *')
+   10 |   printf("%s\n", &s[n] + strncat(&s[n], "\0",
+      |                  ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~
+   11 |                                  m)); // Null termination added for simplicity
+      |                                  ~~
+/tmp/yicoder2b-str_substring-rs-c.c:25:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   25 |   int cpos = strncat(strchr(&s[0], 'b'), "\0",
+      |       ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   26 |                      m); // Null termination added for simplicity and to avoid
+      |                      ~~
+/tmp/yicoder2b-str_substring-rs-c.c:32:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   32 |   int spos = strncat(&s[0], "けd",
+      |       ^      ~~~~~~~~~~~~~~~~~~~~~
+   33 |                      m); // Null termination added for simplicity and to avoid
+      |                      ~~
+3 errors generated.

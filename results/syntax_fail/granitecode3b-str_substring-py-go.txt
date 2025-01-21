@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-str_substring-py-go.go:21:7: no new variables on left side of :=

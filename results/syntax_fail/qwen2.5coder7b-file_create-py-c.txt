@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-file_create-py-c.c:30:7: error: call to undeclared function 'chdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   if (chdir("/") != 0) {
+      |       ^
+1 error generated.

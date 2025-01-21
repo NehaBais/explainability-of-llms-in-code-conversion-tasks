@@ -1,0 +1,11 @@
+/tmp/stablecode-file_size-rs-c.c:1:1: error: unknown type name 'Explanation'
+    1 | Explanation of the error
+      | ^
+/tmp/stablecode-file_size-rs-c.c:1:15: error: expected ';' after top level declarator
+    1 | Explanation of the error
+      |               ^
+      |               ;
+/tmp/stablecode-file_size-rs-c.c:4:49: warning: missing terminating ' character [-Winvalid-pp-token]
+    4 |           there is an extra ')' where it shouldn't be. 
+      |                                                 ^
+1 warning and 2 errors generated.

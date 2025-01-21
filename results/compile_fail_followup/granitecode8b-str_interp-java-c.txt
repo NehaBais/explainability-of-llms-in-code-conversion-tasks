@@ -1,0 +1,12 @@
+/tmp/granitecode8b-str_interp-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-java-c.c:5:3: error: call to undeclared library function 'sprintf' with type 'int (char *, const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   sprintf(lyric, "Mary had a %s lamb.", adjective);
+      |   ^
+/tmp/granitecode8b-str_interp-java-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/tmp/granitecode8b-str_interp-java-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("%sn", lyric);
+      |   ^
+/tmp/granitecode8b-str_interp-java-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.

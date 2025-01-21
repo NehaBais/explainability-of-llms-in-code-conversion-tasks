@@ -1,0 +1,10 @@
+/tmp/Logic.java:3: error: ';' expected
+        System.out.println("a && b is " + (a && b)));
+                                                   ^
+/tmp/Logic.java:4: error: ';' expected
+        System.out.println("a || b is " + (a || b)));
+                                                   ^
+/tmp/Logic.java:5: error: ';' expected
+        System.out.println("not a is " + (!a)));
+                                              ^
+3 errors

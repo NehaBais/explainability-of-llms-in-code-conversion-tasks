@@ -1,0 +1,105 @@
+error[E0463]: can't find crate for `winsapi`
+ --> /tmp/granitecode8b-file_size-js-rs.rs:1:1
+  |
+1 | extern crate winsapi;
+  | ^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0432]: unresolved import `std::ffi::wide`
+ --> /tmp/granitecode8b-file_size-js-rs.rs:2:16
+  |
+2 | use std::ffi::{wide, OsStr};
+  |                ^^^^ no `wide` in `ffi`
+
+error[E0412]: cannot find type `HANDLE` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:17:43
+   |
+17 | fn windows_file_system_object() -> Result<HANDLE, IOError> {
+   |                                           ^^^^^^ not found in this scope
+   |
+help: you might be missing a type parameter
+   |
+17 | fn windows_file_system_object<HANDLE>() -> Result<HANDLE, IOError> {
+   |                              ++++++++
+
+error[E0425]: cannot find value `GENERIC_READ` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:22:13
+   |
+22 |             GENERIC_READ,
+   |             ^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `FILE_SHARE_READ` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:23:13
+   |
+23 |             FILE_SHARE_READ,
+   |             ^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `OPEN_EXISTING` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:25:13
+   |
+25 |             OPEN_EXISTING,
+   |             ^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `FILE_ATTRIBUTE_NORMAL` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:26:13
+   |
+26 |             FILE_ATTRIBUTE_NORMAL,
+   |             ^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0412]: cannot find type `HANDLE` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:33:24
+   |
+33 | fn get_file_size(fso: &HANDLE, filename: &str) -> Result<u64, IOError> {
+   |                        ^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `ERROR_INCOMPLETE_READ` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:49:31
+   |
+49 |                     if err == ERROR_INCOMPLETE_READ {
+   |                               ^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0433]: failed to resolve: use of undeclared type `OVERLAPPED`
+  --> /tmp/granitecode8b-file_size-js-rs.rs:45:34
+   |
+45 |             let mut overlapped = OVERLAPPED::default();
+   |                                  ^^^^^^^^^^ use of undeclared type `OVERLAPPED`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `CreateFileW` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:20:9
+   |
+20 |         CreateFileW(
+   |         ^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `Handle` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:30:14
+   |
+30 |     .map(|h| Handle(h))
+   |              ^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `GetFileSize` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:35:14
+   |
+35 |     unsafe { GetFileSize(fso.0, std::ptr::null_mut()) }
+   |              ^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `GetLastError` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:41:48
+   |
+41 |                 Err(IOError::from_raw_os_error(GetLastError() as i32))
+   |                                                ^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `GetFileSizeEx` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:46:22
+   |
+46 |             unsafe { GetFileSizeEx(fso.0, &mut size as *mut u64, &mut overlapped) }
+   |                      ^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function, tuple struct or tuple variant `CloseHandle` in this scope
+  --> /tmp/granitecode8b-file_size-js-rs.rs:57:22
+   |
+57 |             unsafe { CloseHandle(fso.0) };
+   |                      ^^^^^^^^^^^ not found in this scope
+
+error: aborting due to 16 previous errors
+
+Some errors have detailed explanations: E0412, E0425, E0432, E0433, E0463.
+For more information about an error, try `rustc --explain E0412`.

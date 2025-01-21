@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+demo_compare((double) numA, (double) numB + "", "numerically");
+^
+1 error

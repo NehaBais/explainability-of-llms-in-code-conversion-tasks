@@ -1,0 +1,138 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:39:25
+   |
+39 | fn str_fromstr(s: &str, in: &str, m: isize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:40:26
+   |
+40 |     let mut pos = s.find(in)?;
+   |                          ^^ expected expression
+
+warning: unused imports: `CStr` and `CString`
+ --> /tmp/codellama7b-str_substring-c-rs.rs:1:16
+  |
+1 | use std::ffi::{CStr, CString};
+  |                ^^^^  ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::mem`
+ --> /tmp/codellama7b-str_substring-c-rs.rs:2:5
+  |
+2 | use std::mem;
+  |     ^^^^^^^^
+
+warning: unused import: `std::ptr`
+ --> /tmp/codellama7b-str_substring-c-rs.rs:4:5
+  |
+4 | use std::ptr;
+  |     ^^^^^^^^
+
+warning: unused import: `std::slice`
+ --> /tmp/codellama7b-str_substring-c-rs.rs:5:5
+  |
+5 | use std::slice;
+  |     ^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_substring-c-rs.rs:14:17
+   |
+14 |         (n, n + m)
+   |                 ^ expected `usize`, found `isize`
+
+error[E0277]: cannot add `isize` to `usize`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:14:15
+   |
+14 |         (n, n + m)
+   |               ^ no implementation for `usize + isize`
+   |
+   = help: the trait `Add<isize>` is not implemented for `usize`
+   = help: the following other types implement trait `Add<Rhs>`:
+             `&'a usize` implements `Add<usize>`
+             `&usize` implements `Add<&usize>`
+             `usize` implements `Add<&usize>`
+             `usize` implements `Add`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_substring-c-rs.rs:16:20
+   |
+16 |         (s.len() - (-m), s.len())
+   |                    ^^^^ expected `usize`, found `isize`
+
+error[E0277]: cannot subtract `isize` from `usize`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:16:18
+   |
+16 |         (s.len() - (-m), s.len())
+   |                  ^ no implementation for `usize - isize`
+   |
+   = help: the trait `Sub<isize>` is not implemented for `usize`
+   = help: the following other types implement trait `Sub<Rhs>`:
+             `&'a usize` implements `Sub<usize>`
+             `&usize` implements `Sub<&usize>`
+             `usize` implements `Sub<&usize>`
+             `usize` implements `Sub`
+
+error[E0277]: `&str` is not an iterator
+  --> /tmp/codellama7b-str_substring-c-rs.rs:18:14
+   |
+18 |     for c in &s[start..end] {
+   |              ^^^^^^^^^^^^^^ `&str` is not an iterator; try calling `.chars()` or `.bytes()`
+   |
+   = help: the trait `Iterator` is not implemented for `&str`, which is required by `&str: IntoIterator`
+   = note: required for `&str` to implement `IntoIterator`
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_substring-c-rs.rs:26:21
+   |
+26 |     substring(s, 0, s.len() - 1)
+   |     ---------       ^^^^^^^^^^^ expected `isize`, found `usize`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codellama7b-str_substring-c-rs.rs:7:4
+   |
+7  | fn substring(s: &str, n: usize, m: isize) -> Option<String> {
+   |    ^^^^^^^^^                    --------
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+26 |     substring(s, 0, (s.len() - 1).try_into().unwrap())
+   |                     +           +++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_substring-c-rs.rs:32:17
+   |
+32 |         if c == ch {
+   |            -    ^^ expected `u8`, found `i8`
+   |            |
+   |            expected because this is `u8`
+   |
+help: you can convert an `i8` to a `u8` and panic if the converted value doesn't fit
+   |
+32 |         if c == ch.try_into().unwrap() {
+   |                   ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-str_substring-c-rs.rs:50:36
+   |
+50 |     println!("{:?}", str_fromch(s, b'w', 5)); // "world"
+   |                      ----------    ^^^^ expected `i8`, found `u8`
+   |                      |
+   |                      arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codellama7b-str_substring-c-rs.rs:29:4
+   |
+29 | fn str_fromch(s: &str, ch: c_char, m: isize) -> Option<String> {
+   |    ^^^^^^^^^^          ----------
+help: you can convert a `u8` to an `i8` and panic if the converted value doesn't fit
+   |
+50 |     println!("{:?}", str_fromch(s, b'w'.try_into().unwrap(), 5)); // "world"
+   |                                        ++++++++++++++++++++
+
+error: aborting due to 10 previous errors; 4 warnings emitted
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

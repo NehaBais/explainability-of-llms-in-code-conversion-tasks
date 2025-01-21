@@ -1,0 +1,7 @@
+/tmp/granitecode3b-bit_ops-cpp-c.c:25:27: error: use of undeclared identifier 'std'
+   25 |   printf("a rol b: %u\n", std::rotl(ua, b));
+      |                           ^
+/tmp/granitecode3b-bit_ops-cpp-c.c:26:27: error: use of undeclared identifier 'std'
+   26 |   printf("a ror b: %u\n", std::rotr(ua, b));
+      |                           ^
+2 errors generated.

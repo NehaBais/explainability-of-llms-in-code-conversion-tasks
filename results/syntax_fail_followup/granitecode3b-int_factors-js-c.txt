@@ -1,0 +1,12 @@
+/tmp/granitecode3b-int_factors-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-js-c.c:4:26: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   int i, sqrt_num = (int)sqrt(num);
+      |                          ^
+/tmp/granitecode3b-int_factors-js-c.c:4:26: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode3b-int_factors-js-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("Factors of %d are:n", num);
+      |   ^
+/tmp/granitecode3b-int_factors-js-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.

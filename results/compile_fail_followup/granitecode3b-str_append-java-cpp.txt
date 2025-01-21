@@ -1,0 +1,19 @@
+/tmp/granitecode3b-str_append-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_append-java-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string string = "abc";
+      |   ^
+/tmp/granitecode3b-str_append-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::cout << string << std::endl;
+      |   ^
+/tmp/granitecode3b-str_append-java-cpp.cpp:4:26: error: use of undeclared identifier 'std'
+    4 |   std::cout << string << std::endl;
+      |                          ^
+/tmp/granitecode3b-str_append-java-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::cout << string << std::endl;
+      |   ^
+/tmp/granitecode3b-str_append-java-cpp.cpp:6:26: error: use of undeclared identifier 'std'
+    6 |   std::cout << string << std::endl;
+      |                          ^
+6 errors generated.

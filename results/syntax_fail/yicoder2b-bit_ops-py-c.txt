@@ -1,0 +1,14 @@
+/tmp/yicoder2b-bit_ops-py-c.c:5:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 |     printf("    AND:     0b%o\n           & 0b%o\n           = 0b%o\n\n    OR:      0b%o\n           | 0b%o\n           = 0b%o\n\n    XOR:     0b%o\n           ^ 0b%o\n           = 0b%o\n\n    NOT:   ~ 0b%o\n           = 0b%o\n\n    SHIFTS\n                   0b%o >> 1\n                   = 0b%o\n                   
+      |            ^
+/tmp/yicoder2b-bit_ops-py-c.c:5:12: error: expected expression
+/tmp/yicoder2b-bit_ops-py-c.c:7:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 | ",a & b, a & mask, (a & b) & mask, a | b, a & mask, (a | b) & mask, a ^ b, a & mask, ((a >> 1) ^ b) & mask, a << 1, a ^ b);
+      | ^
+/tmp/yicoder2b-bit_ops-py-c.c:25:2: error: expected '}'
+   25 | }
+      |  ^
+/tmp/yicoder2b-bit_ops-py-c.c:3:49: note: to match this '{'
+    3 | void bitwise_built_ins(int width, int a, int b) {
+      |                                                 ^
+2 warnings and 2 errors generated.

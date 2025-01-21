@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/magicoder7b-str_substring-c-go.go:59:11: invalid operation: r == "" (mismatched types *string and untyped string)
+/tmp/magicoder7b-str_substring-c-go.go:68:22: cannot use &s (value of type *string) as string value in argument to str_wholeless1
+/tmp/magicoder7b-str_substring-c-go.go:69:18: cannot use &s (value of type *string) as string value in argument to str_fromch
+/tmp/magicoder7b-str_substring-c-go.go:70:19: cannot use &s (value of type *string) as string value in argument to str_fromstr

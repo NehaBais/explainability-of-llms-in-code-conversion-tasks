@@ -1,0 +1,4 @@
+/tmp/Main.java:17: error: class LogicTester is public, should be declared in a file named LogicTester.java
+public class LogicTester {
+       ^
+1 error

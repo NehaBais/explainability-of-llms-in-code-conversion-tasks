@@ -1,0 +1,33 @@
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:2:5
+  |
+2 |     substring(s, n, None)
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:5:5
+  |
+5 |     substring(s, n, None)
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:8:5
+  |
+8 |     substring(s, 0, Some(s.len() - 1))
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:12:5
+   |
+12 |     substring(s, i, Some(m + 1))
+   |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:16:5
+   |
+16 |     substring(s, i, Some(m + 1))
+   |     ^^^^^^^^^ not found in this scope
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

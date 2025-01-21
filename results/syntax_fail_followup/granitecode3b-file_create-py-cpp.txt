@@ -1,0 +1,16 @@
+/tmp/granitecode3b-file_create-py-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path current_directory = ".";
+      |   ~~~~~^
+/tmp/granitecode3b-file_create-py-cpp.cpp:7:8: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::path root_directory = "/";
+      |   ~~~~~^
+/tmp/granitecode3b-file_create-py-cpp.cpp:12:28: error: no member named 'filesystem' in namespace 'std'
+   12 | void createFile(const std::filesystem::path &directory) {
+      |                       ~~~~~^
+/tmp/granitecode3b-file_create-py-cpp.cpp:18:33: error: no member named 'filesystem' in namespace 'std'
+   18 | void createDirectory(const std::filesystem::path &directory) {
+      |                            ~~~~~^
+/tmp/granitecode3b-file_create-py-cpp.cpp:19:8: error: no member named 'filesystem' in namespace 'std'
+   19 |   std::filesystem::create_directory(directory.string() + "/docs");
+      |   ~~~~~^
+5 errors generated.

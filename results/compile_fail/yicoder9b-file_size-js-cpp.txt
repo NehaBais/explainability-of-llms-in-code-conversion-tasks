@@ -1,0 +1,19 @@
+/tmp/yicoder9b-file_size-js-cpp.cpp:5:23: error: expected namespace name
+    5 |   namespace fs = std::filesystem;
+      |                  ~~~~~^
+/tmp/yicoder9b-file_size-js-cpp.cpp:8:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |     auto size1 = fs::file_size("input.txt");
+      |     ^
+/tmp/yicoder9b-file_size-js-cpp.cpp:8:18: error: use of undeclared identifier 'fs'
+    8 |     auto size1 = fs::file_size("input.txt");
+      |                  ^
+/tmp/yicoder9b-file_size-js-cpp.cpp:13:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |     auto size2 = fs::file_size("C:\\input.txt");
+      |     ^
+/tmp/yicoder9b-file_size-js-cpp.cpp:13:18: error: use of undeclared identifier 'fs'
+   13 |     auto size2 = fs::file_size("C:\\input.txt");
+      |                  ^
+/tmp/yicoder9b-file_size-js-cpp.cpp:15:23: error: no member named 'filesystem' in namespace 'std'
+   15 |   } catch (const std::filesystem::filesystem_error &err) {
+      |                  ~~~~~^
+2 warnings and 4 errors generated.

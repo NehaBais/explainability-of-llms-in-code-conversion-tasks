@@ -1,10 +1,37 @@
-*/
+ Here's the equivalent JavaScript code for the provided Go code:
 
-// JavaScript code for the same logic
+```javascript
+const readline = require('readline');
 
-/*
-Explanation:
-- The `switch` statement is used in Go for multiple conditionals and to run different blocks of code based on conditions that are met. In this case, it checks if `n1` is less than `n2`, equal to `n2`, or greater than `n2`. If the first conditional isn't true, then the second one will be evaluated (and so on).
-- The other parts of the code should also work with no modifications required.
-*/
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
+rl.question("Enter number: ", (n1) => {
+  n1 = parseInt(n1, 10); // Convert the string to an integer
+  rl.question("Enter another number: ", (n2) => {
+    n2 = parseInt(n2, 10); // Convert the string to an integer
+    if (isNaN(n1) || isNaN(n2)) {
+      console.log("Please enter valid numbers.");
+    } else {
+      switch (true) {
+        case n1 < n2:
+          console.log(`${n1} less than ${n2}`);
+          break;
+        case n1 === n2:
+          console.log(`${n1} equal to ${n2}`);
+          break;
+        case n1 > n2:
+          console.log(`${n1} greater than ${n2}`);
+          break;
+        default:
+          console.log("Invalid input.");
+      }
+    }
+    rl.close();
+  });
+});
+```
+
+This JavaScript code uses the `readline` module to get user input and then performs the comparisons using a switch statement, similar to the Go code you provided.

@@ -1,11 +1,10 @@
 #include <iostream>
-using namespace std;
-int main() {
-  cout << "C++" << endl;
-  string str = "";
-  str += "Hello ";
-  str += "World!";
-  cout << str << endl;
+#include <string>
 
+int main() {
+  std::string str = "abc";
+  std::cout << str << std::endl;
+  str += "def";
+  std::cout << str << std::endl;
   return 0;
 }

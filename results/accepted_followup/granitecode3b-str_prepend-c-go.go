@@ -1,0 +1,1 @@
+fmt.Println(fmt.Sprintf("%s%s", cstr, str))

@@ -1,0 +1,50 @@
+/tmp/codeqwen-str_match-go-cpp.cpp:6:17: error: use of undeclared identifier 'First'; did you mean 'first'?
+    6 |             << (First.find(Second, 0) == 0 ? "true" : "false") << "\n";
+      |                 ^~~~~
+      |                 first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:5:25: error: use of undeclared identifier 'First'; did you mean 'first'?
+    5 |   std::cout << "1. " << First << " starts with " << Second << ": "
+      |                         ^~~~~
+      |                         first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:8:16: error: use of undeclared identifier 'First'; did you mean 'first'?
+    8 |   size_t pos = First.find(Second);
+      |                ^~~~~
+      |                first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:9:25: error: use of undeclared identifier 'First'; did you mean 'first'?
+    9 |   std::cout << "2. " << First << " contains " << Second << ": "
+      |                         ^~~~~
+      |                         first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:15:18: error: use of undeclared identifier 'First'; did you mean 'first'?
+   15 |       if ((pos = First.find(Second, start)) == std::string::npos)
+      |                  ^~~~~
+      |                  first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:25:17: error: use of undeclared identifier 'First'; did you mean 'first'?
+   25 |             << (First.rfind(Second) != std::string::npos ? "true" : "false")
+      |                 ^~~~~
+      |                 first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+/tmp/codeqwen-str_match-go-cpp.cpp:24:25: error: use of undeclared identifier 'First'; did you mean 'first'?
+   24 |   std::cout << "3. " << First << " ends with " << Second << ": "
+      |                         ^~~~~
+      |                         first
+/tmp/codeqwen-str_match-go-cpp.cpp:4:24: note: 'first' declared here
+    4 | void match(std::string first, std::string Second) {
+      |                        ^
+7 errors generated.

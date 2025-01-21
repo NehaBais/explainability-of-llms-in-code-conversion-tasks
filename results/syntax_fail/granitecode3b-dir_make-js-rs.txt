@@ -1,0 +1,23 @@
+error[E0412]: cannot find type `Error` in module `fs`
+ --> /tmp/granitecode3b-dir_make-js-rs.rs:4:65
+  |
+4 | fn mkdirp<P: AsRef<Path>>(path: P, mode: u32) -> Result<(), fs::Error> {
+  |                                                                 ^^^^^ not found in `fs`
+  |
+help: consider importing one of these items
+  |
+1 + use std::error::Error;
+  |
+1 + use std::fmt::Error;
+  |
+1 + use std::io::Error;
+  |
+help: if you import `Error`, refer to it directly
+  |
+4 - fn mkdirp<P: AsRef<Path>>(path: P, mode: u32) -> Result<(), fs::Error> {
+4 + fn mkdirp<P: AsRef<Path>>(path: P, mode: u32) -> Result<(), Error> {
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0412`.

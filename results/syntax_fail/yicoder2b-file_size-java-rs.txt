@@ -1,0 +1,34 @@
+error[E0432]: unresolved import `std::io::Pipe`
+ --> /tmp/yicoder2b-file_size-java-rs.rs:2:21
+  |
+2 | use std::io::{self, Pipe};
+  |                     ^^^^ no `Pipe` in `io`
+
+error[E0433]: failed to resolve: could not find `Errno` in `io`
+  --> /tmp/yicoder2b-file_size-java-rs.rs:15:33
+   |
+15 |             io::Error::from(io::Errno::ENOSPC),
+   |                                 ^^^^^ could not find `Errno` in `io`
+
+error[E0433]: failed to resolve: could not find `Errno` in `io`
+  --> /tmp/yicoder2b-file_size-java-rs.rs:24:33
+   |
+24 |             io::Error::from(io::Errno::ENOSPC),
+   |                                 ^^^^^ could not find `Errno` in `io`
+
+error[E0433]: failed to resolve: could not find `Errno` in `io`
+  --> /tmp/yicoder2b-file_size-java-rs.rs:41:71
+   |
+41 |                 .expect("Couldn't write to pipe", io::Error::from(io::Errno::ENOSPC))
+   |                                                                       ^^^^^ could not find `Errno` in `io`
+
+error[E0433]: failed to resolve: use of undeclared type `Process`
+ --> /tmp/yicoder2b-file_size-java-rs.rs:7:26
+  |
+7 |     let mut pipe: Pipe = Process::new(&["wc", "-c"]) // wc is the word count command for Unix/Linux systems
+  |                          ^^^^^^^ use of undeclared type `Process`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0432, E0433.
+For more information about an error, try `rustc --explain E0432`.

@@ -1,38 +1,16 @@
-```js
-// Solution 1
-const fs = require('fs')
+ Certainly! Below is the JavaScript code that performs the same checks as your Java code:
+
+```javascript
+const fs = require('fs');
 const path = require('path');
 
-const currentFileExists = (currentPath, fileName) => {
-    const fileToCheck = `${currentPath}/${fileName}`;
-    
-    if(fileToCheck.indexOf("/") === -1){
-        return false;
-    } 
-    
-    try{
-        fs.accessSync(`${path.resolve()}/${fileToCheck}`);
-        return true;
-    } catch (error) {
-        console.log("File does not exist!");
-        return false;
-    }
-}
+// Check for current working directory
+const filePath1 = path.join(__dirname, 'docs', 'input.txt');
+console.log(fs.existsSync(filePath1));
 
-const rootFileExists = (fileName, currentPath) => {
-    const fileToCheck = `${currentPath}/${fileName}`;
-    
-    try{
-        fs.accessSync(`${fileToCheck}`);
-        return true;
-    } catch (error) {
-        console.log("File does not exist!");
-        return false;
-    }
-}
-
-const fileExists = currentFileExists('input.txt', 'docs');
-console.log(fileExists);
-const rootExists = rootFileExists('input.txt', '/docs')
-console.log(rootExists)
+// Check for filesystem root
+const filePath2 = path.join('/', 'docs', 'input.txt');
+console.log(fs.existsSync(filePath2));
 ```
+
+This code uses Node.js's `fs` module to check if the files or directories exist. The `path.join` function is used to construct file paths relative to the current working directory and the root of the filesystem, respectively.

@@ -1,0 +1,8 @@
+/tmp/magicoder7b-file_exists-go-c.c:11:27: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     printf("Error: %s\n", strerror(errno));
+      |                           ^
+/tmp/magicoder7b-file_exists-go-c.c:11:27: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/magicoder7b-file_exists-go-c.c:11:36: error: use of undeclared identifier 'errno'
+   11 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+2 errors generated.

@@ -1,13 +1,29 @@
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 
-class CreateFile {
-  public static void main(String[] args) throws Exception {
-    File f = new File("output.txt");
-    boolean b = f.createNewFile(); // creates a new file
-    if (b) {
-      System.out.println("file created successfully!");
+public class FileCreator {
+  public static void main(String[] args) {
+    createDirectory("."); // current directory
+    createDirectory("/"); // root directory
+  }
+
+  private static void createDirectory(String path) {
+    File file = new File(path, "output.txt");
+    try {
+      if (file.createNewFile()) {
+        System.out.println("Created empty file: " + file.getAbsolutePath());
+      } else {
+        System.out.println("File already exists: " + file.getAbsolutePath());
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    File docsDir = new File(path, "docs");
+    if (docsDir.mkdir()) {
+      System.out.println("Created directory: " + docsDir.getAbsolutePath());
     } else {
-      System.out.println("File already exists.");
+      System.out.println("Directory already exists: " + docsDir.getAbsolutePath());
     }
   }
 }

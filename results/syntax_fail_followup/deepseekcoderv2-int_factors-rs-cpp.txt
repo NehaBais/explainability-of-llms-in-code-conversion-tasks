@@ -1,0 +1,13 @@
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:25:27: error: expected '(' for function-style cast or type construction
+   25 |           std::vector<int>{
+      |           ~~~~~~~~~~~~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:75:25: note: expanded from macro 'assert'
+   75 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:28:42: error: expected '(' for function-style cast or type construction
+   28 |   assert((factor(101) == std::vector<int>{1, 101}));
+      |                          ~~~~~~~~~~~~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:75:25: note: expanded from macro 'assert'
+   75 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+2 errors generated.

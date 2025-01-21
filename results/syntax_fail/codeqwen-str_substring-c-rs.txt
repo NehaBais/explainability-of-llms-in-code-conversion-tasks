@@ -1,0 +1,15 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/codeqwen-str_substring-c-rs.rs:31:25
+   |
+31 | fn str_fromstr(s: &str, in: &str, m: Option<usize>) -> Result<String, &'static str> {
+   |                         ^^ expected parameter name
+
+error[E0425]: cannot find value `In` in this scope
+  --> /tmp/codeqwen-str_substring-c-rs.rs:32:22
+   |
+32 |     let pos = s.find(In);
+   |                      ^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

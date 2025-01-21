@@ -1,0 +1,7 @@
+/tmp/stablecode-str_interp-py-c.c:8:5: error: expected expression
+    8 |     snprintf(new_str, sizeof(new_str)), sprintf(new_str, format, extra));
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:57:73: note: expanded from macro 'snprintf'
+   57 |   __builtin___snprintf_chk (str, len, 0, __darwin_obsz(str), __VA_ARGS__)
+      |                                                                         ^
+1 error generated.

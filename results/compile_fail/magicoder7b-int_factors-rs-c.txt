@@ -1,0 +1,4 @@
+/tmp/magicoder7b-int_factors-rs-c.c:23:14: error: array has incomplete element type 'int[]'
+   23 |   int factors[2][]; // Assuming we know the array size is always at most 2.
+      |              ^
+1 error generated.

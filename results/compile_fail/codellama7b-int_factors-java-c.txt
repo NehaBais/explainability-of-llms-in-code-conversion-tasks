@@ -1,0 +1,7 @@
+/tmp/codellama7b-int_factors-java-c.c:16:10: error: incompatible pointer to integer conversion returning 'long[1000]' from a function with result type 'long' [-Wint-conversion]
+   16 |   return factors;
+      |          ^~~~~~~
+/tmp/codellama7b-int_factors-java-c.c:16:10: warning: address of stack memory associated with local variable 'factors' returned [-Wreturn-stack-address]
+   16 |   return factors;
+      |          ^~~~~~~
+1 warning and 1 error generated.

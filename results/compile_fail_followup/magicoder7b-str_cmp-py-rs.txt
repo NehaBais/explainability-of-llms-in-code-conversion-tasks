@@ -1,0 +1,193 @@
+warning: unused import: `std::fmt`
+ --> /tmp/magicoder7b-str_cmp-py-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-py-rs.rs:6:9
+  |
+6 |         a,
+  |         ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+3 | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+  |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-py-rs.rs:8:9
+  |
+8 |         b,
+  |         ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+3 | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+  |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:12:50
+   |
+12 |         println!("{} is strictly less than  {}", a, b);
+   |                                                  ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:12:53
+   |
+12 |         println!("{} is strictly less than  {}", a, b);
+   |                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:15:52
+   |
+15 |         println!("{} is less than or equal to {}", a, b);
+   |                                                    ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:15:55
+   |
+15 |         println!("{} is less than or equal to {}", a, b);
+   |                                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:18:53
+   |
+18 |         println!("{} is strictly greater than  {}", a, b);
+   |                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:18:56
+   |
+18 |         println!("{} is strictly greater than  {}", a, b);
+   |                                                        ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:21:55
+   |
+21 |         println!("{} is greater than or equal to {}", a, b);
+   |                                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:21:58
+   |
+21 |         println!("{} is greater than or equal to {}", a, b);
+   |                                                          ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:24:39
+   |
+24 |         println!("{} is equal to {}", a, b);
+   |                                       ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:24:42
+   |
+24 |         println!("{} is equal to {}", a, b);
+   |                                          ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:27:43
+   |
+27 |         println!("{} is not equal to {}", a, b);
+   |                                           ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-py-rs.rs:27:46
+   |
+27 |         println!("{} is not equal to {}", a, b);
+   |                                              ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+3  | fn compare<T: PartialEq + Ord + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error: aborting due to 14 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0277`.

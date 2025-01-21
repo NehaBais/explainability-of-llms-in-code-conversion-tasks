@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_match-py-rs.rs:2:1
+  |
+2 | {
+  | ^ unclosed delimiter
+...
+5 |     println!("{}", str1.starts_with("ab"))); 
+  |                                           ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-str_match-py-rs.rs:6:1
+  |
+5 |     println!("{}", str1.starts_with("ab"))); 
+  |                                           - missing open `(` for this delimiter
+6 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

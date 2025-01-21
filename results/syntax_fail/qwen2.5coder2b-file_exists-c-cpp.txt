@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_exists-c-cpp.cpp:5:15: error: no member named 'filesystem' in namespace 'std'
+    5 |   return std::filesystem::exists(path);
+      |          ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-c-cpp.cpp:9:15: error: no member named 'filesystem' in namespace 'std'
+    9 |   return std::filesystem::is_directory(path);
+      |          ~~~~~^
+2 errors generated.

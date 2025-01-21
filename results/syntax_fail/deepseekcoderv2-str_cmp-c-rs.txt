@@ -1,0 +1,32 @@
+error: multiple unused formatting arguments
+  --> /tmp/deepseekcoderv2-str_cmp-c-rs.rs:13:9
+   |
+6  |         "{} {} {} {} {} {}",
+   |         ------------------- multiple missing formatting specifiers
+...
+13 |         (a <= b) as i32,
+   |         ^^^^^^^^^^^^^^^ argument never used
+14 |         b
+   |         ^ argument never used
+
+error: argument never used
+  --> /tmp/deepseekcoderv2-str_cmp-c-rs.rs:28:9
+   |
+20 |         "{} {} {} {} {} {} {}",
+   |         ---------------------- formatting specifier missing
+...
+28 |         b
+   |         ^ argument never used
+
+error[E0432]: unresolved import `std::str::Eq`
+ --> /tmp/deepseekcoderv2-str_cmp-c-rs.rs:2:22
+  |
+2 | use std::str::{self, Eq};
+  |                      ^^ no `Eq` in `str`
+  |
+  = help: consider importing this trait instead:
+          std::cmp::Eq
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

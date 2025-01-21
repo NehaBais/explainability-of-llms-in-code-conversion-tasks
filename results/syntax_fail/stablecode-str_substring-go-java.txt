@@ -1,0 +1,19 @@
+/tmp/Main.java:9: error: ';' expected
+        Scanner scanner = new Scanner(System.in));
+                                                ^
+/tmp/Main.java:21: error: ';' expected
+        System.out.printf("Substring from %d to %d: %s%n", n, n+m-1, s.substring(n - 1, n + m - 2)));
+                                                                                                   ^
+/tmp/Main.java:22: error: ';' expected
+        System.out.printf("Substring up to the end of the string: %s%n", s.substring(n - 1))));
+                                                                                            ^
+/tmp/Main.java:23: error: ';' expected
+        System.out.printf("Substring excluding the last character: %s%n", s.substring(0, n-1))));
+                                                                                              ^
+/tmp/Main.java:24: error: ';' expected
+        System.out.printf("Substring from a known character within the string and of length m: %s%n", s.substring((int) dx - 1, (int) dx + m - 2))));
+                                                                                                                                                  ^
+/tmp/Main.java:25: error: ';' expected
+        System.out.printf("Substring from a known substring within the string and of length m: %s%n", s.substring(sx - 1, sx + m - 2)))));
+                                                                                                                                      ^
+6 errors

@@ -1,0 +1,10 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/granitecode3b-str_substring-go-rs.rs:19:49
+   |
+19 |     println!("Start \"DE\", length {}: {}", m, s[(sx..(sx+m)).into_iter().take(s.len()).collect::<String>());
+   |             -                                   ^ unclosed delimiter                                       ^ mismatched closing delimiter
+   |             |
+   |             closing delimiter possibly meant for this
+
+error: aborting due to 1 previous error
+

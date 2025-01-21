@@ -1,0 +1,11 @@
+/tmp/StringSubstrings.java:42: error: cannot find symbol
+    if (index == -1 || n < 0 || m < 0) {
+                       ^
+  symbol:   variable n
+  location: class StringSubstrings
+/tmp/StringSubstrings.java:61: error: cannot find symbol
+    if (index == -1 || n < 0 || m < 0) {
+                       ^
+  symbol:   variable n
+  location: class StringSubstrings
+2 errors

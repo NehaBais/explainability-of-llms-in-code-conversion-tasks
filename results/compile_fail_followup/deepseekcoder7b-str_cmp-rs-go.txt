@@ -1,0 +1,1 @@
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:2:15: expected ';', found "strings"

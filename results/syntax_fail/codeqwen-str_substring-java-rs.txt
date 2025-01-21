@@ -1,0 +1,76 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/codeqwen-str_substring-java-rs.rs:5:1
+  |
+1 | pub fn substring(&self, n: usize) -> &str {
+  | ----------------------------------------- previous definition of the value `substring` here
+...
+5 | pub fn substring(&self, n: usize, m: usize) -> &str {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/codeqwen-str_substring-java-rs.rs:9:1
+  |
+1 | pub fn substring(&self, n: usize) -> &str {
+  | ----------------------------------------- previous definition of the value `substring` here
+...
+9 | pub fn substring(&self) -> &str {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/codeqwen-str_substring-java-rs.rs:13:1
+   |
+1  | pub fn substring(&self, n: usize) -> &str {
+   | ----------------------------------------- previous definition of the value `substring` here
+...
+13 | pub fn substring(&self, c: char) -> Option<&str> {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error: `self` parameter is only allowed in associated functions
+ --> /tmp/codeqwen-str_substring-java-rs.rs:1:18
+  |
+1 | pub fn substring(&self, n: usize) -> &str {
+  |                  ^^^^^ not semantically valid as function parameter
+  |
+  = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+ --> /tmp/codeqwen-str_substring-java-rs.rs:5:18
+  |
+5 | pub fn substring(&self, n: usize, m: usize) -> &str {
+  |                  ^^^^^ not semantically valid as function parameter
+  |
+  = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+ --> /tmp/codeqwen-str_substring-java-rs.rs:9:18
+  |
+9 | pub fn substring(&self) -> &str {
+  |                  ^^^^^ not semantically valid as function parameter
+  |
+  = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+  --> /tmp/codeqwen-str_substring-java-rs.rs:13:18
+   |
+13 | pub fn substring(&self, c: char) -> Option<&str> {
+   |                  ^^^^^ not semantically valid as function parameter
+   |
+   = note: associated functions are those in `impl` or `trait` definitions
+
+error: `self` parameter is only allowed in associated functions
+  --> /tmp/codeqwen-str_substring-java-rs.rs:18:30
+   |
+18 | pub fn substring_with_length(&self, sub: &str, m: usize) -> Option<&str> {
+   |                              ^^^^^ not semantically valid as function parameter
+   |
+   = note: associated functions are those in `impl` or `trait` definitions
+
+error: aborting due to 8 previous errors
+
+For more information about this error, try `rustc --explain E0428`.

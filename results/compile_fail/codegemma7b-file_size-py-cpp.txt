@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_size-py-cpp.cpp:3:20: error: no member named 'filesystem' in namespace 'std'
+    3 | size_t size = std::filesystem::file_size("input.txt");
+      |               ~~~~~^
+/tmp/codegemma7b-file_size-py-cpp.cpp:4:8: error: redefinition of 'size'
+    4 | size_t size = std::filesystem::file_size("/input.txt");
+      |        ^
+/tmp/codegemma7b-file_size-py-cpp.cpp:3:8: note: previous definition is here
+    3 | size_t size = std::filesystem::file_size("input.txt");
+      |        ^
+/tmp/codegemma7b-file_size-py-cpp.cpp:4:20: error: no member named 'filesystem' in namespace 'std'
+    4 | size_t size = std::filesystem::file_size("/input.txt");
+      |               ~~~~~^
+3 errors generated.

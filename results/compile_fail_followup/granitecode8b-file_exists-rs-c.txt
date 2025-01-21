@@ -1,0 +1,32 @@
+/tmp/granitecode8b-file_exists-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat attr;
+      |               ^
+/tmp/granitecode8b-file_exists-rs-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat attr;
+      |          ^
+/tmp/granitecode8b-file_exists-rs-c.c:7:17: error: use of undeclared identifier 'NULL'
+    7 |        *file != NULL; file++) {
+      |                 ^
+/tmp/granitecode8b-file_exists-rs-c.c:7:27: error: cannot increment value of type 'char *[4]'
+    7 |        *file != NULL; file++) {
+      |                       ~~~~^
+/tmp/granitecode8b-file_exists-rs-c.c:8:9: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     if (stat(*file, &attr) == 0) {
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:9:11: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |       if (S_ISDIR(attr.st_mode)) {
+      |           ^
+/tmp/granitecode8b-file_exists-rs-c.c:10:9: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |         printf("%s is a directoryn", *file);
+      |         ^
+/tmp/granitecode8b-file_exists-rs-c.c:10:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+9 errors generated.

@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/granitecode3b-str_cmp-cpp-go.go:7:44: invalid character U+003F '?'
+/tmp/granitecode3b-str_cmp-cpp-go.go:7:46: syntax error: unexpected literal "", expected )
+/tmp/granitecode3b-str_cmp-cpp-go.go:8:44: invalid character U+003F '?'
+/tmp/granitecode3b-str_cmp-cpp-go.go:8:46: syntax error: unexpected literal "", expected )
+/tmp/granitecode3b-str_cmp-cpp-go.go:9:32: invalid character U+003F '?'
+/tmp/granitecode3b-str_cmp-cpp-go.go:9:34: syntax error: unexpected literal "", expected )
+/tmp/granitecode3b-str_cmp-cpp-go.go:10:32: invalid character U+003F '?'
+/tmp/granitecode3b-str_cmp-cpp-go.go:10:34: syntax error: unexpected literal "", expected )

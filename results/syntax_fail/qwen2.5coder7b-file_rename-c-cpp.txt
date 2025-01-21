@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-file_rename-c-cpp.cpp:9:10: error: no member named 'filesystem' in namespace 'std'
+    9 |     std::filesystem::rename("docs", "mydocs");
+      |     ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-c-cpp.cpp:13:10: error: no member named 'filesystem' in namespace 'std'
+   13 |     std::filesystem::rename("/docs", "/mydocs");
+      |     ~~~~~^
+2 errors generated.

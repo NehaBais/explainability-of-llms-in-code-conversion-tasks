@@ -1,0 +1,14 @@
+
+The errors occur due to the use of implicit int and redeclaration of library functions. The fix includes including the header <string.h> or providing an explicit declaration for 'strchr'. The corrected code is:
+```
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[8] = "abcdefg";
+    int n = 3, m = 4;
+    strncpy(str, n, m);
+    printf("%s\n", str); // => "cdefgh"
+    return 0;
+}
+```

@@ -1,0 +1,12 @@
+error[E0423]: expected function, found struct `stat`
+ --> /tmp/dolphincoder7b-file_size-c-rs.rs:5:22
+  |
+5 |     let file_info1 = stat("input.txt").unwrap();
+  |                      ^^^^^^^^^^^^^^^^^ help: use struct literal syntax instead: `stat { st_dev: val, st_mode: val, st_nlink: val, st_ino: val, st_uid: val, st_gid: val, st_rdev: val, st_atime: val, st_atime_nsec: val, st_mtime: val, st_mtime_nsec: val, st_ctime: val, st_ctime_nsec: val, st_birthtime: val, st_birthtime_nsec: val, st_size: val, st_blocks: val, st_blksize: val, st_flags: val, st_gen: val, st_lspare: val, st_qspare: val }`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/os/darwin/raw.rs:28:1
+  |
+  = note: `stat` defined here
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0423`.

@@ -1,12 +1,9 @@
-```javascript
-#!/usr/bin/env node
-// @flow
-function printStr() {
-  let str = '12345678';
-  str += '9!';
-  console.log(str);
-}
+ Sure, here is the equivalent JavaScript code for your Python script:
 
-printStr();
+```javascript
+let str = "12345678";
+str += "9!";
+console.log(str);
 ```
 
+This code will output: `123456789!`

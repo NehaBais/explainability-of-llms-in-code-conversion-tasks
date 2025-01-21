@@ -1,0 +1,25 @@
+/tmp/granitecode8b-dir_make-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:3:16: error: use of undeclared identifier 'std'
+    3 | namespace fs = std::filesystem;
+      |                ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:4:19: error: use of undeclared identifier 'std'
+    4 | void mkdirp(const std::string &path) {
+      |                   ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:5:7: error: use of undeclared identifier 'fs'
+    5 |   if (fs::exists(path)) {
+      |       ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:8:3: error: use of undeclared identifier 'fs'
+    8 |   fs::path p(path);
+      |   ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:9:11: error: use of undeclared identifier 'p'
+    9 |   while (!p.empty()) {
+      |           ^
+/tmp/granitecode8b-dir_make-py-cpp.cpp:10:5: error: use of undeclared identifier 'fs'
+   10 |     fs::create_directory(p);
+      |     ^
+8 errors generated.

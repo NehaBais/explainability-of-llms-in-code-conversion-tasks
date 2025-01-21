@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_create-cpp-c.c:15:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (mkdir(dirname, 0777) == -1) {
+      |       ^
+1 error generated.

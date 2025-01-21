@@ -1,0 +1,4 @@
+/tmp/yicoder9b-bit_ops-go-cpp.cpp:8:3: error: expected expression
+    8 |   ... // rest of the function body remains same as original code
+      |   ^
+1 error generated.

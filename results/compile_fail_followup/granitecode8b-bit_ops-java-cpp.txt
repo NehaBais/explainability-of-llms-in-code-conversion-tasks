@@ -1,0 +1,16 @@
+/tmp/granitecode8b-bit_ops-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-java-cpp.cpp:9:3: error: use of undeclared identifier 'std'
+    9 |   std::cout << "Number of bits required to swap : " << count << std::endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-java-cpp.cpp:9:65: error: use of undeclared identifier 'std'
+    9 |   std::cout << "Number of bits required to swap : " << count << std::endl;
+      |                                                                 ^
+/tmp/granitecode8b-bit_ops-java-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::cout << "End of program" << std::endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-java-cpp.cpp:14:36: error: use of undeclared identifier 'std'
+   14 |   std::cout << "End of program" << std::endl;
+      |                                    ^
+5 errors generated.

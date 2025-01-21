@@ -1,0 +1,52 @@
+/tmp/granitecode3b-file_exists-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::filesystem::path cwd = std::filesystem::current_path();
+      |   ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:4:31: error: use of undeclared identifier 'std'
+    4 |   std::filesystem::path cwd = std::filesystem::current_path();
+      |                               ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::path inputFile = "input.txt";
+      |   ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:7:7: error: use of undeclared identifier 'std'
+    7 |   if (std::filesystem::exists(cwd / inputFile)) {
+      |       ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:8:5: error: use of undeclared identifier 'std'
+    8 |     std::cout << "The current working directory exists." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:8:61: error: use of undeclared identifier 'std'
+    8 |     std::cout << "The current working directory exists." << std::endl;
+      |                                                             ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << "The current working directory does not exist." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:10:69: error: use of undeclared identifier 'std'
+   10 |     std::cout << "The current working directory does not exist." << std::endl;
+      |                                                                     ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::filesystem::path rootPath = "/";
+      |   ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::filesystem::path docsPath = "docs/";
+      |   ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:17:7: error: use of undeclared identifier 'std'
+   17 |   if (std::filesystem::exists(rootPath / docsPath / inputFile)) {
+      |       ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:18:5: error: use of undeclared identifier 'std'
+   18 |     std::cout << "The filesystem root exists." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:18:51: error: use of undeclared identifier 'std'
+   18 |     std::cout << "The filesystem root exists." << std::endl;
+      |                                                   ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:20:5: error: use of undeclared identifier 'std'
+   20 |     std::cout << "The filesystem root does not exist." << std::endl;
+      |     ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:20:59: error: use of undeclared identifier 'std'
+   20 |     std::cout << "The filesystem root does not exist." << std::endl;
+      |                                                           ^
+17 errors generated.

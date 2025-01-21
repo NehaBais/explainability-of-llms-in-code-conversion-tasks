@@ -1,0 +1,123 @@
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:25:26
+   |
+25 |     println!("Sum:           " + &qq.to_string());
+   |                                ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:26:32
+   |
+26 |     println!("Difference:       " + &ww.to_string());
+   |                                   ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:27:29
+   |
+27 |     println!("Product:       " + &ee.to_string());
+   |                                ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:28:35
+   |
+28 |     println!("Integer quotient: " + &rr.to_string());
+   |                                   ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:32:35
+   |
+32 |     println!("Exponentiation:   " + &yy.to_string());
+   |                                   ^ expected `,`
+
+error[E0689]: can't call method `pow` on ambiguous numeric type `{integer}`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:23:21
+   |
+23 |     let yy = input1.pow(input2);
+   |                     ^^^
+   |
+help: you must specify a type for this binding, like `i32`
+   |
+2  |     let mut input1: i32 = 18;
+   |                   +++++
+
+error[E0369]: cannot add `&String` to `&str`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:29:34
+   |
+29 |     println("Float quotient:   " + &tt.to_string());
+   |             -------------------- ^ --------------- &String
+   |             |                    |
+   |             |                    `+` cannot be used to concatenate two `&str` strings
+   |             &str
+   |
+   = note: string concatenation requires an owned `String` on the left
+help: create an owned `String` from a string reference
+   |
+29 |     println("Float quotient:   ".to_owned() + &tt.to_string());
+   |                                 +++++++++++
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:29:5
+   |
+29 |     println("Float quotient:   " + &tt.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+29 |     println!("Float quotient:   " + &tt.to_string());
+   |            +
+
+error[E0369]: cannot add `&String` to `&str`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:30:34
+   |
+30 |     println("Whole Remainder:  " + &uu.to_string());
+   |             -------------------- ^ --------------- &String
+   |             |                    |
+   |             |                    `+` cannot be used to concatenate two `&str` strings
+   |             &str
+   |
+   = note: string concatenation requires an owned `String` on the left
+help: create an owned `String` from a string reference
+   |
+30 |     println("Whole Remainder:  ".to_owned() + &uu.to_string());
+   |                                 +++++++++++
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:30:5
+   |
+30 |     println("Whole Remainder:  " + &uu.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+30 |     println!("Whole Remainder:  " + &uu.to_string());
+   |            +
+
+error[E0369]: cannot add `&String` to `&str`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:31:34
+   |
+31 |     println("Actual Remainder: " + &uu.to_string());
+   |             -------------------- ^ --------------- &String
+   |             |                    |
+   |             |                    `+` cannot be used to concatenate two `&str` strings
+   |             &str
+   |
+   = note: string concatenation requires an owned `String` on the left
+help: create an owned `String` from a string reference
+   |
+31 |     println("Actual Remainder: ".to_owned() + &uu.to_string());
+   |                                 +++++++++++
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:31:5
+   |
+31 |     println("Actual Remainder: " + &uu.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+31 |     println!("Actual Remainder: " + &uu.to_string());
+   |            +
+
+error: aborting due to 12 previous errors
+
+Some errors have detailed explanations: E0369, E0423, E0689.
+For more information about an error, try `rustc --explain E0369`.

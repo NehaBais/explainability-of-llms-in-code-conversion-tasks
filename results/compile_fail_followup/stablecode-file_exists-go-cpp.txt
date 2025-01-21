@@ -1,0 +1,50 @@
+/tmp/stablecode-file_exists-go-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_exists-go-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::path path(p);
+      |     ^
+/tmp/stablecode-file_exists-go-cpp.cpp:10:9: error: use of undeclared identifier 'fs'
+   10 |     if (fs::exists(path))) 
+      |         ^
+/tmp/stablecode-file_exists-go-cpp.cpp:10:20: error: use of undeclared identifier 'path'
+   10 |     if (fs::exists(path))) 
+      |                    ^
+/tmp/stablecode-file_exists-go-cpp.cpp:10:26: error: extraneous ')' after condition, expected a statement
+   10 |     if (fs::exists(path))) 
+      |                          ^
+/tmp/stablecode-file_exists-go-cpp.cpp:12:14: error: use of undeclared identifier 'fs'
+   12 |         if ((fs::is_regular_file(path)))) 
+      |              ^
+/tmp/stablecode-file_exists-go-cpp.cpp:12:34: error: use of undeclared identifier 'path'
+   12 |         if ((fs::is_regular_file(path)))) 
+      |                                  ^
+/tmp/stablecode-file_exists-go-cpp.cpp:12:41: error: extraneous ')' after condition, expected a statement
+   12 |         if ((fs::is_regular_file(path)))) 
+      |                                         ^
+/tmp/stablecode-file_exists-go-cpp.cpp:14:22: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   14 |         std::cout << path << " is a file" << std::endl;
+      |                      ^~~~
+      |                      catch
+/tmp/stablecode-file_exists-go-cpp.cpp:14:22: error: expected expression
+/tmp/stablecode-file_exists-go-cpp.cpp:16:19: error: use of undeclared identifier 'fs'
+   16 |         else if ((fs::is_directory(path)))) 
+      |                   ^
+/tmp/stablecode-file_exists-go-cpp.cpp:16:36: error: use of undeclared identifier 'path'
+   16 |         else if ((fs::is_directory(path)))) 
+      |                                    ^
+/tmp/stablecode-file_exists-go-cpp.cpp:16:43: error: extraneous ')' after condition, expected a statement
+   16 |         else if ((fs::is_directory(path)))) 
+      |                                           ^
+/tmp/stablecode-file_exists-go-cpp.cpp:18:22: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   18 |         std::cout << path << " is a directory" << std::endl;
+      |                      ^~~~
+      |                      catch
+/tmp/stablecode-file_exists-go-cpp.cpp:18:22: error: expected expression
+/tmp/stablecode-file_exists-go-cpp.cpp:22:57: error: no member named 'category' in 'std::system_error'
+   22 |       throw std::system_error(errno, std::system_error::category(), "Path does not exist"));
+      |                                      ~~~~~~~~~~~~~~~~~~~^
+/tmp/stablecode-file_exists-go-cpp.cpp:24:18: error: use of undeclared identifier 'fs'
+   24 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+17 errors generated.

@@ -1,0 +1,52 @@
+error[E0255]: the name `stat` is defined multiple times
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:10:1
+   |
+2  | use self::libc::{stat, S_ISDIR, S_ISREG};
+   |                  ---- previous import of the value `stat` here
+...
+10 | unsafe fn stat(path: *const c_char, buf: *mut libc::stat) -> i32 {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `stat` redefined here
+   |
+   = note: `stat` must be defined only once in the value namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+2  | use self::libc::{stat as other_stat, S_ISDIR, S_ISREG};
+   |                       +++++++++++++
+
+error[E0432]: unresolved imports `self::libc::S_ISDIR`, `self::libc::S_ISREG`
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:2:24
+  |
+2 | use self::libc::{stat, S_ISDIR, S_ISREG};
+  |                        ^^^^^^^  ^^^^^^^ no `S_ISREG` in the root
+  |                        |
+  |                        no `S_ISDIR` in the root
+  |
+help: a similar name exists in the module
+  |
+2 | use self::libc::{stat, S_IFDIR, S_ISREG};
+  |                        ~~~~~~~
+help: a similar name exists in the module
+  |
+2 | use self::libc::{stat, S_ISDIR, S_IFREG};
+  |                                 ~~~~~~~
+
+error[E0433]: failed to resolve: use of undeclared crate or module `mem`
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:22:19
+   |
+22 |     let mut buf = mem::MaybeUninit::<libc::stat>::uninit();
+   |                   ^^^ use of undeclared crate or module `mem`
+   |
+help: consider importing this union
+   |
+2  + use std::mem::MaybeUninit;
+   |
+help: if you import `MaybeUninit`, refer to it directly
+   |
+22 -     let mut buf = mem::MaybeUninit::<libc::stat>::uninit();
+22 +     let mut buf = MaybeUninit::<libc::stat>::uninit();
+   |
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0255, E0432, E0433.
+For more information about an error, try `rustc --explain E0255`.

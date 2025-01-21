@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-logic_ops-rs-go.go:8:41: invalid operation: operator ^ not defined on a (variable of type bool)
+/tmp/qwen2.5coder2b-logic_ops-rs-go.go:8:48: invalid operation: operator & not defined on a (variable of type bool)
+/tmp/qwen2.5coder2b-logic_ops-rs-go.go:8:55: invalid operation: operator & not defined on !a (value of type bool)

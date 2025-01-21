@@ -1,0 +1,16 @@
+/tmp/codegemma7b-file_exists-java-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:7:8: error: use of undeclared identifier 'fs'
+    7 |   if (!fs::exists(workingDir + "/docs/input.txt")) {
+      |        ^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:12:8: error: use of undeclared identifier 'fs'
+   12 |   if (!fs::exists("/docs/input.txt")) {
+      |        ^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:21:28: error: use of undeclared identifier 'fs'
+   21 |   std::string workingDir = fs::current_path().string();
+      |                            ^
+/tmp/codegemma7b-file_exists-java-cpp.cpp:27:8: error: no member named 'cout' in namespace 'std'
+   27 |   std::cout << "Files and directory exist: " << filesExist << std::endl;
+      |   ~~~~~^
+5 errors generated.

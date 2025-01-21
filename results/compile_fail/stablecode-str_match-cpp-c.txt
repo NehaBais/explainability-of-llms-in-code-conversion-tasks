@@ -1,0 +1,9 @@
+/tmp/stablecode-str_match-cpp-c.c:10:52: error: expected ';' at end of declaration
+   10 |     int start_with_ab = strncmp(s1, s3, strlen(s3))) ? 0 : 1;
+      |                                                    ^
+      |                                                    ;
+/tmp/stablecode-str_match-cpp-c.c:17:84: error: expected ';' at end of declaration
+   17 |     int ends_with_ab = (strncmp(s1 + strlen(s1) - strlen(s3), s3, strlen(s3))) == 0)? 1: 0;
+      |                                                                                    ^
+      |                                                                                    ;
+2 errors generated.

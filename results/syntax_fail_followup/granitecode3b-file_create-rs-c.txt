@@ -1,0 +1,56 @@
+/tmp/granitecode3b-file_create-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_create-rs-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode3b-file_create-rs-c.c:5:1: error: unknown type name 'using'
+    5 | using namespace std;
+      | ^
+/tmp/granitecode3b-file_create-rs-c.c:5:16: error: expected ';' after top level declarator
+    5 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode3b-file_create-rs-c.c:11:3: error: use of undeclared identifier 'ofstream'
+   11 |   ofstream f(file_name);
+      |   ^
+/tmp/granitecode3b-file_create-rs-c.c:12:7: error: use of undeclared identifier 'f'
+   12 |   if (f.fail()) {
+      |       ^
+/tmp/granitecode3b-file_create-rs-c.c:13:5: error: use of undeclared identifier 'cerr'
+   13 |     cerr << "Error opening file" << endl;
+      |     ^
+/tmp/granitecode3b-file_create-rs-c.c:13:37: error: use of undeclared identifier 'endl'
+   13 |     cerr << "Error opening file" << endl;
+      |                                     ^
+/tmp/granitecode3b-file_create-rs-c.c:18:3: error: use of undeclared identifier 'string'
+   18 |   string dir_path = "/" + string(dir_name);
+      |   ^
+/tmp/granitecode3b-file_create-rs-c.c:19:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |   ^
+/tmp/granitecode3b-file_create-rs-c.c:19:9: error: use of undeclared identifier 'dir_path'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |         ^
+/tmp/granitecode3b-file_create-rs-c.c:19:27: error: use of undeclared identifier 'S_IRWXU'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |                           ^
+/tmp/granitecode3b-file_create-rs-c.c:19:37: error: use of undeclared identifier 'S_IRGRP'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |                                     ^
+/tmp/granitecode3b-file_create-rs-c.c:19:47: error: use of undeclared identifier 'S_IXGRP'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |                                               ^
+/tmp/granitecode3b-file_create-rs-c.c:19:57: error: use of undeclared identifier 'S_IROTH'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |                                                         ^
+/tmp/granitecode3b-file_create-rs-c.c:19:67: error: use of undeclared identifier 'S_IXOTH'
+   19 |   mkdir(dir_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH, 0);
+      |                                                                   ^
+18 errors generated.

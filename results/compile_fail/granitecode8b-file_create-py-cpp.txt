@@ -1,0 +1,28 @@
+/tmp/granitecode8b-file_create-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-py-cpp.cpp:3:19: error: use of undeclared identifier 'std'
+    3 | void create(const std::string &directory) {
+      |                   ^
+/tmp/granitecode8b-file_create-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::ofstream output("output.txt");
+      |   ^
+/tmp/granitecode8b-file_create-py-cpp.cpp:5:3: error: use of undeclared identifier 'output'
+    5 |   output.close();
+      |   ^
+/tmp/granitecode8b-file_create-py-cpp.cpp:9:3: error: no matching function for call to 'create'
+    9 |   create("."); // current directory
+      |   ^~~~~~
+/tmp/granitecode8b-file_create-py-cpp.cpp:3:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'const int' for 1st argument
+    3 | void create(const std::string &directory) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-file_create-py-cpp.cpp:10:3: error: no matching function for call to 'create'
+   10 |   create("/"); // root directory
+      |   ^~~~~~
+/tmp/granitecode8b-file_create-py-cpp.cpp:3:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'const int' for 1st argument
+    3 | void create(const std::string &directory) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 errors generated.

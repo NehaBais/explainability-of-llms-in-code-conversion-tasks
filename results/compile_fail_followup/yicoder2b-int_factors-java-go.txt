@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-int_factors-java-go.go:14:6: invalid operation: operator % not defined on float64(n) (value of type float64)

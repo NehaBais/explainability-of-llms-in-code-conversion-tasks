@@ -1,0 +1,14 @@
+error[E0432]: unresolved import `regex`
+ --> /tmp/deepseekcoderv2-str_match-js-rs.rs:1:5
+  |
+1 | use regex::Regex;
+  |     ^^^^^ you might be missing crate `regex`
+  |
+help: consider importing the `regex` crate
+  |
+1 + extern crate regex;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

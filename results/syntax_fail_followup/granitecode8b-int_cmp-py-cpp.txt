@@ -1,0 +1,37 @@
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "Enter value of a: ";
+      |   ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:7:3: error: use of undeclared identifier 'cin'
+    7 |   cin >> a;
+      |   ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "Enter value of b: ";
+      |   ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:10:3: error: use of undeclared identifier 'cin'
+   10 |   cin >> b;
+      |   ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << "a is less than b" << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:13:35: error: use of undeclared identifier 'endl'
+   13 |     cout << "a is less than b" << endl;
+      |                                   ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:15:5: error: use of undeclared identifier 'cout'
+   15 |     cout << "a is greater than b" << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:15:38: error: use of undeclared identifier 'endl'
+   15 |     cout << "a is greater than b" << endl;
+      |                                      ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << "a is equal to b" << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-py-cpp.cpp:17:34: error: use of undeclared identifier 'endl'
+   17 |     cout << "a is equal to b" << endl;
+      |                                  ^
+1 warning and 11 errors generated.

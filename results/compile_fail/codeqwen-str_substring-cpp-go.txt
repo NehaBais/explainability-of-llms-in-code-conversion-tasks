@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-str_substring-cpp-go.go:5:2: "unicode/utf8" imported and not used
+/tmp/codeqwen-str_substring-cpp-go.go:23:10: undefined: strings
+/tmp/codeqwen-str_substring-cpp-go.go:30:10: undefined: strings

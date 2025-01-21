@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder7b-file_size-go-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-file_size-go-cpp.cpp:9:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |     auto stat = fs::status(f);
+      |     ^
+/tmp/qwen2.5coder7b-file_size-go-cpp.cpp:9:17: error: use of undeclared identifier 'fs'
+    9 |     auto stat = fs::status(f);
+      |                 ^
+/tmp/qwen2.5coder7b-file_size-go-cpp.cpp:10:18: error: use of undeclared identifier 'fs'
+   10 |     std::cout << fs::file_size(stat) << '\n';
+      |                  ^
+/tmp/qwen2.5coder7b-file_size-go-cpp.cpp:11:12: error: use of undeclared identifier 'fs'
+   11 |   } catch (fs::filesystem_error &e) {
+      |            ^
+1 warning and 4 errors generated.

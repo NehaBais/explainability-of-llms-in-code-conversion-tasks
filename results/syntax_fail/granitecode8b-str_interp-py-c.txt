@@ -1,0 +1,12 @@
+/tmp/granitecode8b-str_interp-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-py-c.c:5:3: error: call to undeclared library function 'sprintf' with type 'int (char *, const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   sprintf(new_str, "Mary had a %s lamb.", extra);
+      |   ^
+/tmp/granitecode8b-str_interp-py-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/tmp/granitecode8b-str_interp-py-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("%s", new_str);
+      |   ^
+/tmp/granitecode8b-str_interp-py-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.

@@ -1,23 +1,22 @@
-def startsWith(container, target):
-    clen = len(container)
-    tlen = len(target)
-    if clen < tlen:
-        return False
-    return container[:tlen] == target
+def starts_with(container, target):
+    return container.startswith(target)
 
 
-def endsWith(container, target):
-    clen = len(container)
-    tlen = len(target)
-    if clen < tlen:
-        return False
-    return container[-tlen:] == target
+def ends_with(container, target):
+    return container.endswith(target)
 
 
-def doesContain(container, target):
-    return target in container
+import re
 
 
-print("Starts with Test ( Hello,Hell ) :", startsWith("Hello", "Hell"))
-print("Ends with Test ( Code,ode ) :", endsWith("Code", "ode"))
-print("Contains Test ( Google,msn ) :", doesContain("Google", "msn"))
+def does_contain(container, target):
+    if match := re.search(target, container):
+        print(f"Match found at index: {match.start()}")
+        return True
+    return False
+
+
+# Test cases
+print("Starts with Test ( Hello,Hell ) :", starts_with("Hello", "Hell"))
+print("Ends with Test ( Code,ode ) :", ends_with("Code", "ode"))
+print("Contains Test ( Google,msn ) :", does_contain("Google", "msn"))

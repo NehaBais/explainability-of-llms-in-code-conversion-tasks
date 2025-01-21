@@ -1,0 +1,22 @@
+/tmp/Main.java:9: error: illegal character: '\uff5c'
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                              ^
+/tmp/Main.java:9: error: illegal character: '\u2581'
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                                    ^
+/tmp/Main.java:9: error: not a statement
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                               ^
+/tmp/Main.java:9: error: illegal character: '\u2581'
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                                       ^
+/tmp/Main.java:9: error: not a statement
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                                     ^
+/tmp/Main.java:9: error: illegal character: '\uff5c'
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                                                ^
+/tmp/Main.java:9: error: not a statement
+        System.out.println("/docs is a directory? " + Files.isDirectory(Paths<｜begin▁of▁sentence｜>("/docs")));
+                                                                                        ^
+7 errors

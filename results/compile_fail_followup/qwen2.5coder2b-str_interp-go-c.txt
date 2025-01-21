@@ -1,0 +1,9 @@
+/tmp/qwen2.5coder2b-str_interp-go-c.c:6:3: error: call to undeclared library function 'va_start' with type 'void (__builtin_va_list &, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   va_start(args, format);
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-go-c.c:6:3: note: include the header <stdarg.h> or explicitly provide a declaration for 'va_start'
+/tmp/qwen2.5coder2b-str_interp-go-c.c:8:3: error: call to undeclared library function 'va_end' with type 'void (__builtin_va_list &)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   va_end(args);
+      |   ^
+/tmp/qwen2.5coder2b-str_interp-go-c.c:8:3: note: include the header <stdarg.h> or explicitly provide a declaration for 'va_end'
+2 errors generated.

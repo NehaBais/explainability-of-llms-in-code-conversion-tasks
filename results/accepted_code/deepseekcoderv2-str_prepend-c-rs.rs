@@ -1,6 +1,9 @@
 fn main() {
-    let mut str_var: String = "my String".to_string();
-    str_var.insert_str(0, "Changed ");
-
-    println!("{}", str_var); // Output: Changed my String
+    let mut str = String::from("my String");
+    let cstr = "Changed ";
+    
+    // Prepend the string with another string literal
+    str = format!("{}{}", cstr, str);
+    
+    println!("{}", str);
 }

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-str_substring-js-go.go:26:31: illegal rune literal (and 1 more errors)

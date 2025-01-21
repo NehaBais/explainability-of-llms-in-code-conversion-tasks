@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:1: error: expected expression
+   12 | <｜begin▁of▁sentence｜>
+      | ^
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:2: error: unexpected character <U+FF5C>
+   12 | <｜begin▁of▁sentence｜>
+      |  ^~
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:10: error: character <U+2581> not allowed in an identifier
+   12 | <｜begin▁of▁sentence｜>
+      |         ^
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:15: error: character <U+2581> not allowed in an identifier
+   12 | <｜begin▁of▁sentence｜>
+      |            ^
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:26: error: character <U+FF5C> not allowed in an identifier
+   12 | <｜begin▁of▁sentence｜>
+      |                     ^~
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:12:5: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   12 | <｜begin▁of▁sentence｜>
+      |    ^
+/tmp/deepseekcoder7b-str_interp-go-cpp.cpp:13:3: error: expected expression
+   13 |   }
+      |   ^
+7 errors generated.

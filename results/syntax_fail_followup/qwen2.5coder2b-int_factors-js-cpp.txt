@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-int_factors-js-cpp.cpp:6:20: error: non-aggregate type 'std::vector<int>' cannot be initialized with an initializer list
+    6 |   std::vector<int> v = {1, 2, 3, 4};
+      |                    ^   ~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-int_factors-js-cpp.cpp:8:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &i : v) {
+      |              ^
+/tmp/qwen2.5coder2b-int_factors-js-cpp.cpp:8:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &i : v) {
+      |                      ^
+2 warnings and 1 error generated.

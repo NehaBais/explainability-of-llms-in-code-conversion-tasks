@@ -1,0 +1,29 @@
+/tmp/granitecode8b-file_size-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-c.c:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat file_info;
+      |               ^
+/tmp/granitecode8b-file_size-go-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat file_info;
+      |          ^
+/tmp/granitecode8b-file_size-go-c.c:8:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (stat(file_path, &file_info) == -1) {
+      |       ^
+/tmp/granitecode8b-file_size-go-c.c:9:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     perror("Error getting file size");
+      |     ^
+/tmp/granitecode8b-file_size-go-c.c:11:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     printf("File size: %ld bytesn", (long)file_info.st_size);
+      |     ^
+/tmp/granitecode8b-file_size-go-c.c:11:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-go-c.c:17:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     perror("Error getting file size");
+      |     ^
+8 errors generated.

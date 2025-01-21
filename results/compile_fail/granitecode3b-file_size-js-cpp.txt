@@ -1,0 +1,51 @@
+/tmp/granitecode3b-file_size-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:4:3: error: use of undeclared identifier 'Windows'
+    4 |   Windows::Storage::FileIO fileIO =
+      |   ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:5:7: error: use of undeclared identifier 'Windows'
+    5 |       Windows::Storage::FileIO::imread(L"input.txt");
+      |       ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:8:5: error: use of undeclared identifier 'std'
+    8 |     std::wcout << L"Size of input.txt in the current working directory: "
+      |     ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:9:27: error: use of undeclared identifier 'std'
+    9 |                << size << std::endl;
+      |                           ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:11:3: error: use of undeclared identifier 'Windows'
+   11 |   Windows::Storage::StorageFolder rootFolder =
+      |   ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:12:7: error: use of undeclared identifier 'Windows'
+   12 |       Windows::Storage::ApplicationData::current()->localFolder();
+      |       ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:13:3: error: use of undeclared identifier 'Windows'
+   13 |   Windows::Storage::FileIO fileIO2 =
+      |   ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:13:28: error: use of undeclared identifier 'fileIO2'; did you mean 'fileIO'?
+   13 |   Windows::Storage::FileIO fileIO2 =
+      |                            ^~~~~~~
+      |                            fileIO
+/tmp/granitecode3b-file_size-js-cpp.cpp:4:28: note: 'fileIO' declared here
+    4 |   Windows::Storage::FileIO fileIO =
+      |                            ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:15:7: error: use of undeclared identifier 'fileIO2'; did you mean 'fileIO'?
+   15 |   if (fileIO2.getFileExists()) {
+      |       ^~~~~~~
+      |       fileIO
+/tmp/granitecode3b-file_size-js-cpp.cpp:4:28: note: 'fileIO' declared here
+    4 |   Windows::Storage::FileIO fileIO =
+      |                            ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:16:23: error: use of undeclared identifier 'fileIO2'
+   16 |     long long size2 = fileIO2.readTextAsync().get();
+      |                       ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:17:5: error: use of undeclared identifier 'std'
+   17 |     std::wcout << L"Size of input.txt in the file system root: " << size2
+      |     ^
+/tmp/granitecode3b-file_size-js-cpp.cpp:18:19: error: use of undeclared identifier 'std'
+   18 |                << std::endl;
+      |                   ^
+14 errors generated.

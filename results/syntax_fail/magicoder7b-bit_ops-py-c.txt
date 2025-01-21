@@ -1,0 +1,27 @@
+/tmp/magicoder7b-bit_ops-py-c.c:22:12: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     return rotl(width, a, -n);
+      |            ^
+/tmp/magicoder7b-bit_ops-py-c.c:22:12: note: did you mean 'rotr'?
+/tmp/magicoder7b-bit_ops-py-c.c:20:14: note: 'rotr' declared here
+   20 | unsigned int rotr(unsigned int width, unsigned int a, int n) {
+      |              ^
+   21 |   if (n < 0)
+   22 |     return rotl(width, a, -n);
+      |            ~~~~
+      |            rotr
+/tmp/magicoder7b-bit_ops-py-c.c:31:14: error: conflicting types for 'rotl'
+   31 | unsigned int rotl(unsigned int width, unsigned int a, int n) {
+      |              ^
+/tmp/magicoder7b-bit_ops-py-c.c:22:12: note: previous implicit declaration is here
+   22 |     return rotl(width, a, -n);
+      |            ^
+/tmp/magicoder7b-bit_ops-py-c.c:49:75: error: expected ')'
+   49 |         return ((a >> n) | (((a & (1<<(width-1))) ? (1 << (width-n)) : 0));
+      |                                                                           ^
+/tmp/magicoder7b-bit_ops-py-c.c:49:16: note: to match this '('
+   49 |         return ((a >> n) | (((a & (1<<(width-1))) ? (1 << (width-n)) : 0));
+      |                ^
+/tmp/magicoder7b-bit_ops-py-c.c:71:34: error: use of undeclared identifier 'i'
+   71 |   printBin(rotr(WIDTH, a & mask, i));
+      |                                  ^
+4 errors generated.

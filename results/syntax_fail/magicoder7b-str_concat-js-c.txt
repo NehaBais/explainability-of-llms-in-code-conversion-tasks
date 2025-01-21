@@ -1,0 +1,9 @@
+/tmp/magicoder7b-str_concat-js-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(concat, s);
+      |   ^
+/tmp/magicoder7b-str_concat-js-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/magicoder7b-str_concat-js-c.c:9:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   strcat(concat, " there!");
+      |   ^
+/tmp/magicoder7b-str_concat-js-c.c:9:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+2 errors generated.

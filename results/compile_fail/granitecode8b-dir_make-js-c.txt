@@ -1,0 +1,48 @@
+/tmp/granitecode8b-dir_make-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-c.c:4:31: error: unknown type name 'mode_t'
+    4 | void mkdirp(const char *path, mode_t mode) {
+      |                               ^
+/tmp/granitecode8b-dir_make-js-c.c:5:21: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *p = (char *)malloc(strlen(path) + 1);
+      |                     ^
+/tmp/granitecode8b-dir_make-js-c.c:5:21: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-dir_make-js-c.c:5:28: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *p = (char *)malloc(strlen(path) + 1);
+      |                            ^
+/tmp/granitecode8b-dir_make-js-c.c:5:28: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-dir_make-js-c.c:6:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strcpy(p, path);
+      |   ^
+/tmp/granitecode8b-dir_make-js-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-dir_make-js-c.c:10:24: error: use of undeclared identifier 'NULL'
+   10 |     p[strlen(p) - 1] = NULL;
+      |                        ^
+/tmp/granitecode8b-dir_make-js-c.c:20:16: error: use of undeclared identifier 'NULL'
+   20 |       dir[j] = NULL;
+      |                ^
+/tmp/granitecode8b-dir_make-js-c.c:21:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |       mkdir(dir, mode);
+      |       ^
+/tmp/granitecode8b-dir_make-js-c.c:21:7: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-js-c.c:4:6: note: 'mkdirp' declared here
+    4 | void mkdirp(const char *path, mode_t mode) {
+      |      ^
+/tmp/granitecode8b-dir_make-js-c.c:29:12: error: use of undeclared identifier 'NULL'
+   29 |   dir[j] = NULL;
+      |            ^
+/tmp/granitecode8b-dir_make-js-c.c:30:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   mkdir(dir, mode);
+      |   ^
+/tmp/granitecode8b-dir_make-js-c.c:32:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |   free(p);
+      |   ^
+/tmp/granitecode8b-dir_make-js-c.c:32:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+13 errors generated.

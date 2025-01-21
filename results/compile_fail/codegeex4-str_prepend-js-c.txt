@@ -1,0 +1,9 @@
+/tmp/codegeex4-str_prepend-js-c.c:9:27: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *new_str = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+      |                           ^
+/tmp/codegeex4-str_prepend-js-c.c:9:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegeex4-str_prepend-js-c.c:19:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   free(new_str);
+      |   ^
+/tmp/codegeex4-str_prepend-js-c.c:19:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

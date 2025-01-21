@@ -1,0 +1,10 @@
+/tmp/stablecode-int_arith-js-c.c:7:13: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     int a = atoi(argv[1]));
+      |             ^
+/tmp/stablecode-int_arith-js-c.c:7:26: error: extraneous ')' before ';'
+    7 |     int a = atoi(argv[1]));
+      |                          ^
+/tmp/stablecode-int_arith-js-c.c:8:26: error: extraneous ')' before ';'
+    8 |     int b = atoi(argv[2]));
+      |                          ^
+3 errors generated.

@@ -1,0 +1,4 @@
+/tmp/Main.java:5: error: reached end of file while parsing
+    public static void main(String[] args)
+                                          ^
+1 error

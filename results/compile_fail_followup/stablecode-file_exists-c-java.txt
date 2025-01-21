@@ -1,0 +1,10 @@
+/tmp/Main.java:10: error: ';' expected
+        System.out.println("Does the file 'input.txt' exist in the current working directory? " + (exists1 ? "Yes" : "No")));
+                                                                                                                           ^
+/tmp/Main.java:16: error: ';' expected
+        System.out.println("Does the file '/input.txt' exist in the root directory of the filesystem? " + (exists2 ? "Yes" : "No")));
+                                                                                                                                   ^
+/tmp/Main.java:17: error: ';' expected
+        System.out.println("Does the directory '/docs' exist in the root directory of the filesystem? " + (exists3 ? "Yes" : "No"))));
+                                                                                                                                   ^
+3 errors

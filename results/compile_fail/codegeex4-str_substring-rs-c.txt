@@ -1,0 +1,4 @@
+/tmp/codegeex4-str_substring-rs-c.c:1:10: fatal error: 'unicode/ucnv.h' file not found
+    1 | #include "unicode/ucnv.h"
+      |          ^~~~~~~~~~~~~~~~
+1 error generated.

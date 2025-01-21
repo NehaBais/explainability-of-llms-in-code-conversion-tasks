@@ -1,0 +1,19 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+GET A FROM USER;
+^
+/tmp/None.java:2: error: class, interface, enum, or record expected
+GET B FROM USER;
+^
+/tmp/None.java:4: error: class, interface, enum, or record expected
+IF (A < B) {
+^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+} ELSE IF (A > B) {
+^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+} ELSE {
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+}
+^
+6 errors

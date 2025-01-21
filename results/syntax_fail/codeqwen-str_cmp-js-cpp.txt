@@ -1,0 +1,10 @@
+/tmp/codeqwen-str_cmp-js-cpp.cpp:23:21: error: no member named 'toLowerCase' in 'std::string'
+   23 |   cout << (s1 == s2.toLowerCase()) << endl; // false
+      |                  ~~ ^
+/tmp/codeqwen-str_cmp-js-cpp.cpp:26:15: error: no member named 'toLowerCase' in 'std::string'
+   26 |   cout << (s1.toLowerCase() == s2.toLowerCase()) << endl; // true
+      |            ~~ ^
+/tmp/codeqwen-str_cmp-js-cpp.cpp:26:35: error: no member named 'toLowerCase' in 'std::string'
+   26 |   cout << (s1.toLowerCase() == s2.toLowerCase()) << endl; // true
+      |                                ~~ ^
+3 errors generated.

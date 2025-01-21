@@ -1,0 +1,24 @@
+/tmp/granitecode3b-str_cmp-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_cmp-java-c.c:3:3: error: call to undeclared function 'compare'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   compare("Hello", "Hello");
+      |   ^
+/tmp/granitecode3b-str_cmp-java-c.c:10:6: error: conflicting types for 'compare'
+   10 | void compare(char *A, char *B) {
+      |      ^
+/tmp/granitecode3b-str_cmp-java-c.c:3:3: note: previous implicit declaration is here
+    3 |   compare("Hello", "Hello");
+      |   ^
+/tmp/granitecode3b-str_cmp-java-c.c:11:7: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (strcmp(A, B) == 0)
+      |       ^
+/tmp/granitecode3b-str_cmp-java-c.c:11:7: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode3b-str_cmp-java-c.c:12:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("'%s' and '%s' are lexically equal.\n", A, B);
+      |     ^
+/tmp/granitecode3b-str_cmp-java-c.c:12:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_cmp-java-c.c:16:7: error: call to undeclared function 'strcmpi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   if (strcmpi(A, B) == 0)
+      |       ^
+6 errors generated.

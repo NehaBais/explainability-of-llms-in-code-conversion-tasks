@@ -1,9 +1,10 @@
 #include <iostream>
-using namespace std;
+#include <string>
+
 int main() {
-  string s = "hello";
-  cout << s + " literal" << endl;
-  string s2 = s + " literal";
-  cout << s2 << endl;
+  std::string s = "hello";
+  std::cout << s + " literal" << std::endl;
+  std::string s2 = s + " literal";
+  std::cout << s2 << std::endl;
   return 0;
 }

@@ -1,0 +1,10 @@
+error: expected item, found keyword `match`
+ --> /tmp/codegemma7b-int_cmp-cpp-rs.rs:1:1
+  |
+1 | match io::stdin().read_line(&mut input).unwrap() {
+  | ^^^^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

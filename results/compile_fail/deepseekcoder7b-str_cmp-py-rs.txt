@@ -1,0 +1,33 @@
+error[E0599]: no method named `get_type` found for reference `&str` in the current scope
+ --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:5:11
+  |
+5 |         a.get_type(),
+  |           ^^^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `get_type` found for reference `&str` in the current scope
+ --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:7:11
+  |
+7 |         b.get_type()
+  |           ^^^^^^^^ method not found in `&str`
+
+error[E0283]: type annotations needed
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:31:5
+   |
+31 |     compare("YUP", "YUP");
+   |     ^^^^^^^ cannot infer type of the type parameter `T` declared on the function `compare`
+   |
+   = note: cannot satisfy `_: Ord`
+note: required by a bound in `compare`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:1:15
+   |
+1  | fn compare<T: std::cmp::Ord>(a: &str, b: &str) {
+   |               ^^^^^^^^^^^^^ required by this bound in `compare`
+help: consider specifying the generic argument
+   |
+31 |     compare::<T>("YUP", "YUP");
+   |            +++++
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0283, E0599.
+For more information about an error, try `rustc --explain E0283`.

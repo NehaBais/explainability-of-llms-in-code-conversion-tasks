@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_concat-c-go.go:14:31: expected statement, found ')' (and 1 more errors)

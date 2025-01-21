@@ -1,0 +1,17 @@
+warning: unused import: `std::fmt`
+ --> /tmp/granitecode3b-dir_make-cpp-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `display` found for struct `String` in the current scope
+ --> /tmp/granitecode3b-dir_make-cpp-rs.rs:9:60
+  |
+9 |             eprintln!("Error creating directory: {}", path.display());
+  |                                                            ^^^^^^^ method not found in `String`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

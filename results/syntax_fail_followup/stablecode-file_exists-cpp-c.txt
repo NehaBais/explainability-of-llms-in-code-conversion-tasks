@@ -1,0 +1,35 @@
+/tmp/stablecode-file_exists-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_exists-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_exists-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_exists-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/stablecode-file_exists-cpp-c.c:7:15: error: variable has incomplete type 'struct stat'
+    7 |   struct stat st;
+      |               ^
+/tmp/stablecode-file_exists-cpp-c.c:7:10: note: forward declaration of 'struct stat'
+    7 |   struct stat st;
+      |          ^
+/tmp/stablecode-file_exists-cpp-c.c:9:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (stat(path, &st))) {
+      |       ^
+/tmp/stablecode-file_exists-cpp-c.c:9:23: error: extraneous ')' after condition, expected a statement
+    9 |   if (stat(path, &st))) {
+      |                       ^
+/tmp/stablecode-file_exists-cpp-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("%s does not exist\n", path);
+      |     ^
+/tmp/stablecode-file_exists-cpp-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_exists-cpp-c.c:13:9: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     if (S_ISDIR(st.st_mode))) {
+      |         ^
+/tmp/stablecode-file_exists-cpp-c.c:13:29: error: extraneous ')' after condition, expected a statement
+   13 |     if (S_ISDIR(st.st_mode))) {
+      |                             ^
+10 errors generated.

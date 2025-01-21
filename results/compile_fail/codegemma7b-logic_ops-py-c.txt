@@ -1,0 +1,11 @@
+/tmp/codegemma7b-logic_ops-py-c.c:1:12: error: unknown type name 'bool'
+    1 | void logic(bool a, bool b) {
+      |            ^
+/tmp/codegemma7b-logic_ops-py-c.c:1:20: error: unknown type name 'bool'
+    1 | void logic(bool a, bool b) {
+      |                    ^
+/tmp/codegemma7b-logic_ops-py-c.c:2:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 |   printf("a and b: %d\n", a && b);
+      |   ^
+/tmp/codegemma7b-logic_ops-py-c.c:2:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.

@@ -1,0 +1,1 @@
+/tmp/magicoder7b-logic_ops-cpp-go.go:5:2: package logical is not in std (/opt/homebrew/Cellar/go/1.23.0/libexec/src/logical)

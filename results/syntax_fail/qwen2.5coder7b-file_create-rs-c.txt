@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder7b-file_create-rs-c.c:19:11: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   19 |   sprintf(full_path_to_file, "%s/%s", path, FILE_NAME);
+      |           ^~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:28: note: expanded from macro 'sprintf'
+   47 |   __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+      |                            ^~~
+/tmp/qwen2.5coder7b-file_create-rs-c.c:28:11: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   28 |   sprintf(full_path_to_dir, "%s/%s", path, DIR_NAME);
+      |           ^~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:28: note: expanded from macro 'sprintf'
+   47 |   __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+      |                            ^~~
+/tmp/qwen2.5coder7b-file_create-rs-c.c:31:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |   if (mkdir(full_path_to_dir, 0755) != 0) {
+      |       ^
+2 warnings and 1 error generated.

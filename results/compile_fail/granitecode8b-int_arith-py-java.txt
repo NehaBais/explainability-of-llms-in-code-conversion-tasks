@@ -1,0 +1,4 @@
+/tmp/Main.java:21: error: -> expected
+ double floatQuotient = (double)(int quotient) + (rr - intQuotient);
+                                              ^
+1 error

@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `codeqwen_bit_ops_js_rs`
+ --> /tmp/codeqwen-bit_ops-js-rs.rs:8:2
+  |
+8 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-bit_ops-js-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

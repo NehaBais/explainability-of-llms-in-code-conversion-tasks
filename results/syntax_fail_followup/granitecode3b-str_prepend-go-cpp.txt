@@ -1,0 +1,10 @@
+/tmp/granitecode3b-str_prepend-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-go-cpp.cpp:2:1: error: use of undeclared identifier 'std'
+    2 | std::string s("world!");
+      | ^
+/tmp/granitecode3b-str_prepend-go-cpp.cpp:3:1: error: a type specifier is required for all declarations
+    3 | s = "Hello, " + s;
+      | ^
+3 errors generated.

@@ -1,0 +1,16 @@
+/tmp/stablecode-int_cmp-go-c.c:13:8: error: expression is not an integer constant expression
+   13 |   case n1 < n2 ? n1 + 1: n1 - 1:
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-int_cmp-go-c.c:14:50: error: extraneous ')' before ';'
+   14 |             printf("%d 'less than' %d\n", n1, n2));
+      |                                                  ^
+/tmp/stablecode-int_cmp-go-c.c:16:8: error: expression is not an integer constant expression
+   16 |   case n1 == n2 ? 0: 1:
+      |        ^~~~~~~~~~~~~~~
+/tmp/stablecode-int_cmp-go-c.c:17:49: error: extraneous ')' before ';'
+   17 |             printf("%d 'equal to' %d\n", n1, n2));
+      |                                                 ^
+/tmp/stablecode-int_cmp-go-c.c:20:53: error: extraneous ')' before ';'
+   20 |             printf("%d 'greater than' %d\n", n1, n2));
+      |                                                     ^
+5 errors generated.

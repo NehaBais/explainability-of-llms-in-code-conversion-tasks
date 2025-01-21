@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoder7b-file_create-c-go.go:9:23: os.DirFS(".").MkdirAll undefined (type fs.FS has no field or method MkdirAll)

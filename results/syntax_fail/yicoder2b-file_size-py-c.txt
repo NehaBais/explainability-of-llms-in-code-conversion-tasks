@@ -1,0 +1,10 @@
+/tmp/yicoder2b-file_size-py-c.c:8:15: error: variable has incomplete type 'struct stat'
+    8 |   struct stat st;
+      |               ^
+/tmp/yicoder2b-file_size-py-c.c:8:10: note: forward declaration of 'struct stat'
+    8 |   struct stat st;
+      |          ^
+/tmp/yicoder2b-file_size-py-c.c:9:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (stat("input.txt", &st) == 0) {
+      |       ^
+2 errors generated.

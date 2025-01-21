@@ -1,0 +1,11 @@
+/tmp/codellama7b-str_match-py-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("The string %s starts with %s\n", str1, str2);
+      |     ^
+/tmp/codellama7b-str_match-py-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codellama7b-str_match-py-c.c:13:12: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+   12 |     printf("The string %s contains the substring %s at index %d\n", str1, str2,
+      |                                                              ~~
+      |                                                              %ld
+   13 |            strstr(str1, str2) - str1);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.

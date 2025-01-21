@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:18:15: error: call to undeclared function 'getFileSize'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   if ((size = getFileSize(path)) == 0) {
+      |               ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:25:6: error: conflicting types for 'getFileSize'
+   25 | long getFileSize(const char *path) {
+      |      ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:18:15: note: previous implicit declaration is here
+   18 |   if ((size = getFileSize(path)) == 0) {
+      |               ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:26:15: error: variable has incomplete type 'struct stat'
+   26 |   struct stat st;
+      |               ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:26:10: note: forward declaration of 'struct stat'
+   26 |   struct stat st;
+      |          ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:27:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   27 |   if (stat(path, &st) != 0)
+      |       ^
+4 errors generated.

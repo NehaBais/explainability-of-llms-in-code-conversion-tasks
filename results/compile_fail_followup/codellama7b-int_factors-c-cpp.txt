@@ -1,0 +1,44 @@
+/tmp/codellama7b-int_factors-c-cpp.cpp:13:18: error: assigning to 'int *' from incompatible type 'void *'
+   13 |     fctrs.list = realloc(fctrs.list, newSize * sizeof(int));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-int_factors-c-cpp.cpp:15:5: error: use of undeclared identifier 'fctors'; did you mean 'fctrs'?
+   15 |     fctors.list = malloc(newSize * sizeof(int));
+      |     ^~~~~~
+      |     fctrs
+/tmp/codellama7b-int_factors-c-cpp.cpp:9:27: note: 'fctrs' declared here
+    9 | void xferFactors(Factors &fctrs, int *flist, int flix) {
+      |                           ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:15:19: error: assigning to 'int *' from incompatible type 'void *'
+   15 |     fctors.list = malloc(newSize * sizeof(int));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-int_factors-c-cpp.cpp:18:21: error: use of undeclared identifier 'dvsr'
+   18 |     flist[flix++] = dvsr;
+      |                     ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:19:21: error: use of undeclared identifier 'num'
+   19 |     flist[flix++] = num / dvsr;
+      |                     ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:19:27: error: use of undeclared identifier 'dvsr'
+   19 |     flist[flix++] = num / dvsr;
+      |                           ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:21:7: error: use of undeclared identifier 'dvsr'
+   21 |   if (dvsr * dvsr == num) {
+      |       ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:21:14: error: use of undeclared identifier 'dvsr'
+   21 |   if (dvsr * dvsr == num) {
+      |              ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:21:22: error: use of undeclared identifier 'num'
+   21 |   if (dvsr * dvsr == num) {
+      |                      ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:22:21: error: use of undeclared identifier 'dvsr'
+   22 |     flist[flix++] = dvsr;
+      |                     ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:27:3: error: void function 'xferFactors' should not return a value [-Wreturn-type]
+   27 |   return fctrs;
+      |   ^      ~~~~~
+/tmp/codellama7b-int_factors-c-cpp.cpp:37:5: error: use of undeclared identifier 'factor'; did you mean 'Factors'?
+   37 |     factor(nums2factor[i], &ftors);
+      |     ^
+/tmp/codellama7b-int_factors-c-cpp.cpp:4:8: note: 'Factors' declared here
+    4 | struct Factors {
+      |        ^
+12 errors generated.

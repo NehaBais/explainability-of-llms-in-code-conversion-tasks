@@ -1,0 +1,13 @@
+/tmp/magicoder7b-file_create-rs-c.c:19:25: error: expected ')'
+   19 |       fopen("/path/to/" FILE_NAME, "w"); // Replace "/path/to/" with root path.
+      |                         ^
+/tmp/magicoder7b-file_create-rs-c.c:19:12: note: to match this '('
+   19 |       fopen("/path/to/" FILE_NAME, "w"); // Replace "/path/to/" with root path.
+      |            ^
+/tmp/magicoder7b-file_create-rs-c.c:28:32: error: expected ')'
+   28 |       system((char *)"mkdir /" DIR_NAME); // Replace "/" with root path.
+      |                                ^
+/tmp/magicoder7b-file_create-rs-c.c:28:13: note: to match this '('
+   28 |       system((char *)"mkdir /" DIR_NAME); // Replace "/" with root path.
+      |             ^
+2 errors generated.

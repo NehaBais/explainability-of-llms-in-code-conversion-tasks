@@ -1,0 +1,28 @@
+/tmp/granitecode3b-str_match-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_match-java-c.c:7:14: error: call to undeclared function 'strstartswith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   int res1 = strstartswith(str1, str2);  // returns 1 (true)
+      |              ^
+/tmp/granitecode3b-str_match-java-c.c:8:14: error: call to undeclared library function 'strrchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   int res2 = strrchr(str1, 'b') != NULL; // returns 0 (false)
+      |              ^
+/tmp/granitecode3b-str_match-java-c.c:8:14: note: include the header <string.h> or explicitly provide a declaration for 'strrchr'
+/tmp/granitecode3b-str_match-java-c.c:8:36: error: use of undeclared identifier 'NULL'
+    8 |   int res2 = strrchr(str1, 'b') != NULL; // returns 0 (false)
+      |                                    ^
+/tmp/granitecode3b-str_match-java-c.c:9:14: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   int res3 = strstr(str1, "ab") != NULL; // returns 1 (true)
+      |              ^
+/tmp/granitecode3b-str_match-java-c.c:9:14: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode3b-str_match-java-c.c:9:36: error: use of undeclared identifier 'NULL'
+    9 |   int res3 = strstr(str1, "ab") != NULL; // returns 1 (true)
+      |                                    ^
+/tmp/granitecode3b-str_match-java-c.c:11:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   printf("startsWith: %d, contains: %d, endsWith: %d", res1, res2, res3);
+      |   ^
+/tmp/granitecode3b-str_match-java-c.c:11:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+8 errors generated.

@@ -1,0 +1,32 @@
+error[E0600]: cannot apply unary operator `!` to type `Result<bool, std::io::Error>`
+ --> /tmp/yicoder2b-file_exists-py-rs.rs:7:8
+  |
+7 |     if !fs::exists(&current) {
+  |        ^^^^^^^^^^^^^^^^^^^^^ cannot apply unary operator `!`
+  |
+note: the foreign item type `Result<bool, std::io::Error>` doesn't implement `Not`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:527:1
+  |
+  = note: not implement `Not`
+
+error[E0599]: no method named `unwrap` found for struct `ReadDir` in the current scope
+  --> /tmp/yicoder2b-file_exists-py-rs.rs:11:38
+   |
+11 |                 for entry in entries.unwrap() {
+   |                                      ^^^^^^ method not found in `ReadDir`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_exists-py-rs.rs:23:16
+   |
+23 |         if let Some(_) = fs::read_dir(&current) {
+   |                ^^^^^^^   ---------------------- this expression has type `Result<ReadDir, std::io::Error>`
+   |                |
+   |                expected `Result<ReadDir, Error>`, found `Option<_>`
+   |
+   = note: expected enum `Result<ReadDir, std::io::Error>`
+              found enum `Option<_>`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0599, E0600.
+For more information about an error, try `rustc --explain E0308`.

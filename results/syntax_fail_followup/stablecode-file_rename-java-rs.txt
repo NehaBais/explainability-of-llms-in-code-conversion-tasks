@@ -1,0 +1,13 @@
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_rename-java-rs.rs:15:1
+   |
+12 | } else {
+   |        - this opening brace...
+13 |     false
+14 | }
+   | - ...matches this closing brace
+15 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

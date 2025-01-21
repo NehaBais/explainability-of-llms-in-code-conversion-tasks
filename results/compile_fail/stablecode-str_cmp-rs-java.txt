@@ -1,0 +1,19 @@
+/tmp/Main.java:13: error: illegal start of expression
+        if (a.equals(b))) {
+                        ^
+/tmp/Main.java:17: error: illegal start of expression
+        if (a.compareTo(b)) != 0) {
+                            ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.compareTo(b)) != 0) {
+                                ^
+/tmp/Main.java:19: error: illegal start of expression
+        } else if (a.compareToIgnoreCase(b))) == -1) {
+                                            ^
+/tmp/Main.java:19: error: 'else' without 'if'
+        } else if (a.compareToIgnoreCase(b))) == -1) {
+          ^
+/tmp/Main.java:24: error: illegal start of expression
+        if (a.equalsIgnoreCase(b)))) {
+                                  ^
+6 errors

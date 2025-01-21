@@ -1,0 +1,10 @@
+/tmp/yicoder2b-int_arith-js-c.c:6:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   int a = atoi(argv[1]);
+      |           ^
+/tmp/yicoder2b-int_arith-js-c.c:6:16: error: use of undeclared identifier 'argv'
+    6 |   int a = atoi(argv[1]);
+      |                ^
+/tmp/yicoder2b-int_arith-js-c.c:7:16: error: use of undeclared identifier 'argv'
+    7 |   int b = atoi(argv[2]);
+      |                ^
+3 errors generated.

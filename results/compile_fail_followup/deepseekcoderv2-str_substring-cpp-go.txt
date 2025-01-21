@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-str_substring-cpp-go.go:11:2: declared and not used: n

@@ -1,0 +1,61 @@
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "    AND:     0b" << hex << a << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:5:32: error: use of undeclared identifier 'hex'
+    5 |   cout << "    AND:     0b" << hex << a << " ";
+      |                                ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "& 0b" << hex << b << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:6:21: error: use of undeclared identifier 'hex'
+    6 |   cout << "& 0b" << hex << b << " ";
+      |                     ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "= 0b" << hex << (a & b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:7:21: error: use of undeclared identifier 'hex'
+    7 |   cout << "= 0b" << hex << (a & b) << endl;
+      |                     ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:7:39: error: use of undeclared identifier 'endl'
+    7 |   cout << "= 0b" << hex << (a & b) << endl;
+      |                                       ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "    OR:      0b" << hex << a << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:8:32: error: use of undeclared identifier 'hex'
+    8 |   cout << "    OR:      0b" << hex << a << " ";
+      |                                ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "| 0b" << hex << b << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:9:21: error: use of undeclared identifier 'hex'
+    9 |   cout << "| 0b" << hex << b << " ";
+      |                     ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "= 0b" << hex << (a | b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:10:21: error: use of undeclared identifier 'hex'
+   10 |   cout << "= 0b" << hex << (a | b) << endl;
+      |                     ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:10:39: error: use of undeclared identifier 'endl'
+   10 |   cout << "= 0b" << hex << (a | b) << endl;
+      |                                       ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "    XOR:     0b" << hex << a << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:11:32: error: use of undeclared identifier 'hex'
+   11 |   cout << "    XOR:     0b" << hex << a << " ";
+      |                                ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "^ 0b" << hex << b << " ";
+      |   ^
+/tmp/granitecode3b-bit_ops-py-cpp.cpp:12:21: error: use of undeclared identifier 'hex'
+   12 |   cout << "^ 0b" << hex << b << " ";
+      |                     ^
+1 warning and 19 errors generated.

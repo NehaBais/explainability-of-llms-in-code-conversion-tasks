@@ -1,0 +1,31 @@
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:6:3: error: use of undeclared identifier 'cin'
+    6 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:9:5: error: use of undeclared identifier 'cout'
+    9 |     cout << a << " is less than " << b << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:9:43: error: use of undeclared identifier 'endl'
+    9 |     cout << a << " is less than " << b << endl;
+      |                                           ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << a << " is equal to " << b << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:13:42: error: use of undeclared identifier 'endl'
+   13 |     cout << a << " is equal to " << b << endl;
+      |                                          ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << a << " is greater than " << b << endl;
+      |     ^
+/tmp/granitecode8b-int_cmp-c-cpp.cpp:17:46: error: use of undeclared identifier 'endl'
+   17 |     cout << a << " is greater than " << b << endl;
+      |                                              ^
+1 warning and 9 errors generated.

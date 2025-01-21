@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-cpp-rs.rs:1:36
+  |
+1 | fn bitwise(mut a: u32, mut b: i32) {
+  |                                    ^ unclosed delimiter
+...
+4 |     println!("a or b:  {}", a | u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-cpp-rs.rs:6:93
+  |
+4 |     println!("a or b:  {}", a | u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             - missing open `(` for this delimiter
+5 |
+6 |     println!("a xor b: {}", a ^ u32::from_ne_bytes([0x0000, 0x00FF, 0xFF00, 0xFFFF]) as u32)) // Assuming little-endian encoding for unsigned integers.
+  |                                                                                             ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

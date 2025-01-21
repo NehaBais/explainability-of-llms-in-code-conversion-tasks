@@ -1,0 +1,81 @@
+error: expected expression, found `>`
+  --> /tmp/yicoder9b-bit_ops-js-rs.rs:18:34
+   |
+18 |    let right_logical_shift = a >>> b; // logical right shift
+   |                                  ^ expected expression
+
+error[E0277]: the trait bound `u32: From<i32>` is not satisfied
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:6:13
+  |
+6 |     let a = u32::from(a_i32);
+  |             ^^^ the trait `From<i32>` is not implemented for `u32`
+  |
+  = help: the following other types implement trait `From<T>`:
+            `u32` implements `From<Char>`
+            `u32` implements `From<Ipv4Addr>`
+            `u32` implements `From<bool>`
+            `u32` implements `From<char>`
+            `u32` implements `From<u16>`
+            `u32` implements `From<u8>`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:7:34
+  |
+7 |    println!("a AND b: {:?}", a & b as i32);
+  |                                  ^^^^^^^^ expected `u32`, found `i32`
+
+error[E0277]: no implementation for `u32 & i32`
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:7:32
+  |
+7 |    println!("a AND b: {:?}", a & b as i32);
+  |                                ^ no implementation for `u32 & i32`
+  |
+  = help: the trait `BitAnd<i32>` is not implemented for `u32`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a u32` implements `BitAnd<u32>`
+            `&u32` implements `BitAnd<&u32>`
+            `u32` implements `BitAnd<&u32>`
+            `u32` implements `BitAnd`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:8:33
+  |
+8 |    println!("a OR b: {:?}", a | b as i32);
+  |                                 ^^^^^^^^ expected `u32`, found `i32`
+
+error[E0277]: no implementation for `u32 | i32`
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:8:31
+  |
+8 |    println!("a OR b: {:?}", a | b as i32);
+  |                               ^ no implementation for `u32 | i32`
+  |
+  = help: the trait `BitOr<i32>` is not implemented for `u32`
+  = help: the following other types implement trait `BitOr<Rhs>`:
+            `&'a u32` implements `BitOr<u32>`
+            `&u32` implements `BitOr<&u32>`
+            `u32` implements `BitOr<&u32>`
+            `u32` implements `BitOr`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:9:34
+  |
+9 |    println!("a XOR b: {:?}", a ^ b as i32);
+  |                                  ^^^^^^^^ expected `u32`, found `i32`
+
+error[E0277]: no implementation for `u32 ^ i32`
+ --> /tmp/yicoder9b-bit_ops-js-rs.rs:9:32
+  |
+9 |    println!("a XOR b: {:?}", a ^ b as i32);
+  |                                ^ no implementation for `u32 ^ i32`
+  |
+  = help: the trait `BitXor<i32>` is not implemented for `u32`
+  = help: the following other types implement trait `BitXor<Rhs>`:
+            `&'a u32` implements `BitXor<u32>`
+            `&u32` implements `BitXor<&u32>`
+            `u32` implements `BitXor<&u32>`
+            `u32` implements `BitXor`
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

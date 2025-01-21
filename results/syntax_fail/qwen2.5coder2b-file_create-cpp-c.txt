@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_create-cpp-c.c:6:7: error: call to undeclared function 'system'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (system("touch output.txt") != 0) {
+      |       ^
+/tmp/qwen2.5coder2b-file_create-cpp-c.c:12:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   if (mkdir("docs", 0777) != 0) {
+      |       ^
+2 errors generated.

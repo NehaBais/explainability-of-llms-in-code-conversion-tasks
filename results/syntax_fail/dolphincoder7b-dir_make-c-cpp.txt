@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-dir_make-c-cpp.cpp:21:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   21 |   for (const auto &directory : directories) {
+      |              ^
+/tmp/dolphincoder7b-dir_make-c-cpp.cpp:21:30: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   21 |   for (const auto &directory : directories) {
+      |                              ^
+/tmp/dolphincoder7b-dir_make-c-cpp.cpp:22:15: error: no member named 'filesystem' in namespace 'std'
+   22 |     if (!std::filesystem::exists(directory)) {
+      |          ~~~~~^
+/tmp/dolphincoder7b-dir_make-c-cpp.cpp:24:14: error: no member named 'filesystem' in namespace 'std'
+   24 |         std::filesystem::create_directory(directory);
+      |         ~~~~~^
+2 warnings and 2 errors generated.

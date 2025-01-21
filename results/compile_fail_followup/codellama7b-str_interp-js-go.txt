@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-str_interp-js-go.go:10:2: declared and not used: replaced

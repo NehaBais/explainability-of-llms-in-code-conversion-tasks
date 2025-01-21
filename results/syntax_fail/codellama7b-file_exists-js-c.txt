@@ -1,0 +1,7 @@
+/tmp/codellama7b-file_exists-js-c.c:15:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (access(directory, F_OK) != 0) {
+      |       ^
+/tmp/codellama7b-file_exists-js-c.c:15:25: error: use of undeclared identifier 'F_OK'
+   15 |   if (access(directory, F_OK) != 0) {
+      |                         ^
+2 errors generated.

@@ -1,0 +1,16 @@
+/tmp/Main.java:13: error: illegal start of expression
+                if (file.isDirectory())) 
+                                       ^
+/tmp/Main.java:15: error: ';' expected
+                    System.out.println(path + " is a directory"));
+                                                                ^
+/tmp/Main.java:18: error: ';' expected
+                    System.out.println(path + " is a file"));
+                                                           ^
+/tmp/Main.java:16: error: 'else' without 'if'
+                } else 
+                  ^
+/tmp/Main.java:22: error: ';' expected
+                System.out.println(path + " does not exist"));
+                                                            ^
+5 errors

@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-str_interp-go-cpp.cpp:8:21: error: no member named 'format' in namespace 'std'
+    8 |   std::cout << std::format(str, txt)
+      |                ~~~~~^
+1 error generated.

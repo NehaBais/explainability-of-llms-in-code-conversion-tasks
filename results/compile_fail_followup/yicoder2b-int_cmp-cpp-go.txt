@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-int_cmp-cpp-go.go:11:2: declared and not used: reader

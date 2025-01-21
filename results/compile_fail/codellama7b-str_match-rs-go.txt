@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codellama7b-str_match-rs-go.go:19:14: undefined: strings
+/tmp/codellama7b-str_match-rs-go.go:22:14: undefined: strings
+/tmp/codellama7b-str_match-rs-go.go:25:13: undefined: strings
+/tmp/codellama7b-str_match-rs-go.go:26:13: undefined: strings
+/tmp/codellama7b-str_match-rs-go.go:29:14: undefined: strings

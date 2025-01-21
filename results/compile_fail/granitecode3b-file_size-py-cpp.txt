@@ -1,0 +1,55 @@
+/tmp/granitecode3b-file_size-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::ifstream input("input.txt");
+      |   ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:5:7: error: use of undeclared identifier 'input'
+    5 |   if (input) {
+      |       ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cout << "Size of input.txt: " << input.tellg() << " bytes"
+      |     ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:6:43: error: use of undeclared identifier 'input'
+    6 |     std::cout << "Size of input.txt: " << input.tellg() << " bytes"
+      |                                           ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:7:18: error: use of undeclared identifier 'std'
+    7 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cerr << "Error: Unable to open file input.txt" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:9:60: error: use of undeclared identifier 'std'
+    9 |     std::cerr << "Error: Unable to open file input.txt" << std::endl;
+      |                                                            ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:11:3: error: use of undeclared identifier 'input'
+   11 |   input.close();
+      |   ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::ifstream rootInput("/input.txt");
+      |   ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:14:7: error: use of undeclared identifier 'rootInput'
+   14 |   if (rootInput) {
+      |       ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:15:5: error: use of undeclared identifier 'std'
+   15 |     std::cout << "Size of /input.txt: " << rootInput.tellg() << " bytes"
+      |     ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:15:44: error: use of undeclared identifier 'rootInput'
+   15 |     std::cout << "Size of /input.txt: " << rootInput.tellg() << " bytes"
+      |                                            ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:16:18: error: use of undeclared identifier 'std'
+   16 |               << std::endl;
+      |                  ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:18:5: error: use of undeclared identifier 'std'
+   18 |     std::cerr << "Error: Unable to open file /input.txt" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:18:61: error: use of undeclared identifier 'std'
+   18 |     std::cerr << "Error: Unable to open file /input.txt" << std::endl;
+      |                                                             ^
+/tmp/granitecode3b-file_size-py-cpp.cpp:20:3: error: use of undeclared identifier 'rootInput'
+   20 |   rootInput.close();
+      |   ^
+18 errors generated.

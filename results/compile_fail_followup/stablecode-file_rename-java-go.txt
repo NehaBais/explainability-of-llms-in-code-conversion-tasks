@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-java-go.go:16:110: syntax error: unexpected ), expected { after if clause
+/tmp/stablecode-file_rename-java-go.go:17:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-java-go.go:35:13: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_rename-java-go.go:44:137: syntax error: unexpected ) at end of statement

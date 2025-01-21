@@ -1,0 +1,7 @@
+/tmp/Main.java:11: error: method createDirectories in class Files cannot be applied to given types;
+      Files.createDirectories(directoryPath, 0770);
+           ^
+  required: Path,FileAttribute<?>[]
+  found:    Path,int
+  reason: varargs mismatch; int cannot be converted to FileAttribute<?>
+1 error

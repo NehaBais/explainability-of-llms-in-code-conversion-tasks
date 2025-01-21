@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-str_interp-js-cpp.cpp:8:21: error: implicit instantiation of undefined template 'std::basic_stringstream<char>'
+    8 |   std::stringstream ss;
+      |                     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h:29:28: note: template is declared here
+   29 | class _LIBCPP_TEMPLATE_VIS basic_stringstream;
+      |                            ^
+1 error generated.

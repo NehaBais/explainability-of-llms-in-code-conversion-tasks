@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `codellama7b_int_factors_cpp_rs`
+  --> /tmp/codellama7b-int_factors-cpp-rs.rs:19:2
+   |
+19 | }
+   |  ^ consider adding a `main` function to `/tmp/codellama7b-int_factors-cpp-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

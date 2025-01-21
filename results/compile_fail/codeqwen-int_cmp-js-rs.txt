@@ -1,0 +1,93 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:2:8
+  |
+2 |     if A == b {
+  |        ^
+  |
+help: a local variable with a similar name exists
+  |
+2 |     if a == b {
+  |        ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:3:34
+  |
+3 |         println!("{} equals {}", A, b);
+  |                                  ^
+  |
+help: a local variable with a similar name exists
+  |
+3 |         println!("{} equals {}", a, b);
+  |                                  ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:5:8
+  |
+5 |     if A < b {
+  |        ^
+  |
+help: a local variable with a similar name exists
+  |
+5 |     if a < b {
+  |        ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:6:40
+  |
+6 |         println!("{} is less than {}", A, b);
+  |                                        ^
+  |
+help: a local variable with a similar name exists
+  |
+6 |         println!("{} is less than {}", a, b);
+  |                                        ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:8:8
+  |
+8 |     if A > b {
+  |        ^
+  |
+help: a local variable with a similar name exists
+  |
+8 |     if a > b {
+  |        ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_cmp-js-rs.rs:9:43
+  |
+9 |         println!("{} is greater than {}", A, b);
+  |                                           ^
+  |
+help: a local variable with a similar name exists
+  |
+9 |         println!("{} is greater than {}", a, b);
+  |                                           ~
+help: you might be missing a const parameter
+  |
+1 | fn compare<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

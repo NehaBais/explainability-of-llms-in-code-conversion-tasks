@@ -1,0 +1,10 @@
+/tmp/codellama7b-str_prepend-go-cpp.cpp:1:1: error: unknown type name 'string'
+    1 | string hello = "Hello, ";
+      | ^
+/tmp/codellama7b-str_prepend-go-cpp.cpp:2:1: error: unknown type name 'string'
+    2 | string world = "world!";
+      | ^
+/tmp/codellama7b-str_prepend-go-cpp.cpp:3:1: error: unknown type name 'string'
+    3 | string greeting = hello + world;
+      | ^
+3 errors generated.

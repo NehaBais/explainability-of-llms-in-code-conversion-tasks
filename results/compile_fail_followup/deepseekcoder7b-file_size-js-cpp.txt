@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:7:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    7 |   auto size = fs::file_size("input.txt");
+      |   ^
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:7:15: error: use of undeclared identifier 'fs'
+    7 |   auto size = fs::file_size("input.txt");
+      |               ^
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:14:3: error: use of undeclared identifier 'fs'
+   14 |   fs::path p = "/home/user/input.txt";
+      |   ^
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:15:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   15 |   auto size2 = fs::file_size(p);
+      |   ^
+/tmp/deepseekcoder7b-file_size-js-cpp.cpp:15:16: error: use of undeclared identifier 'fs'
+   15 |   auto size2 = fs::file_size(p);
+      |                ^
+2 warnings and 4 errors generated.

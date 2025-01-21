@@ -1,0 +1,42 @@
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_cmp-js-rs.rs:7:20
+  |
+7 |         .read_line(&mut a)
+  |          --------- ^^^^^^ expected `&mut String`, found `&mut {integer}`
+  |          |
+  |          arguments to this method are incorrect
+  |
+  = note: expected mutable reference `&mut String`
+             found mutable reference `&mut {integer}`
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error[E0599]: no method named `trim` found for type `{integer}` in the current scope
+ --> /tmp/granitecode3b-int_cmp-js-rs.rs:9:11
+  |
+9 |     a = a.trim().parse::<i32>().unwrap();
+  |           ^^^^ method not found in `{integer}`
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-int_cmp-js-rs.rs:13:20
+   |
+13 |         .read_line(&mut b)
+   |          --------- ^^^^^^ expected `&mut String`, found `&mut {integer}`
+   |          |
+   |          arguments to this method are incorrect
+   |
+   = note: expected mutable reference `&mut String`
+              found mutable reference `&mut {integer}`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error[E0599]: no method named `trim` found for type `{integer}` in the current scope
+  --> /tmp/granitecode3b-int_cmp-js-rs.rs:15:11
+   |
+15 |     b = b.trim().parse::<i32>().unwrap();
+   |           ^^^^ method not found in `{integer}`
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

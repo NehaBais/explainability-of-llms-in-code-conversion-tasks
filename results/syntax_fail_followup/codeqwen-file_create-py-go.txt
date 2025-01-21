@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-file_create-py-go.go:11:3: undefined: log

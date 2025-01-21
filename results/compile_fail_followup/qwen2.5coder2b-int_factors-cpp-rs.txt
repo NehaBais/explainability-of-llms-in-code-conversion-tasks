@@ -1,0 +1,86 @@
+warning: unnecessary parentheses around `for` iterator expression
+ --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:6:14
+  |
+6 |     for i in (2..=((n as f64).sqrt() as usize)) {
+  |              ^                                ^
+  |
+  = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+  |
+6 -     for i in (2..=((n as f64).sqrt() as usize)) {
+6 +     for i in 2..=((n as f64).sqrt() as usize) {
+  |
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:7:16
+  |
+7 |         if n % i == 0 {
+  |                ^ expected `i32`, found `usize`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `usize`
+ --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:7:14
+  |
+7 |         if n % i == 0 {
+  |              ^ no implementation for `i32 % usize`
+  |
+  = help: the trait `Rem<usize>` is not implemented for `i32`
+  = help: the following other types implement trait `Rem<Rhs>`:
+            `&'a i32` implements `Rem<i32>`
+            `&i32` implements `Rem<&i32>`
+            `i32` implements `Rem<&i32>`
+            `i32` implements `Rem`
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:8:26
+  |
+4 |         return factors;
+  |                ------- here the type of `factors` is inferred to be `Vec<i32>`
+...
+8 |             factors.push(i);
+  |                     ---- ^ expected `i32`, found `usize`
+  |                     |
+  |                     arguments to this method are incorrect
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/vec/mod.rs:2003:12
+help: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit
+  |
+8 |             factors.push(i.try_into().unwrap());
+  |                           ++++++++++++++++++++
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:9:25
+  |
+9 |             if i * i != n {
+  |                -----    ^ expected `usize`, found `i32`
+  |                |
+  |                expected because this is `usize`
+  |
+help: you can convert an `i32` to a `usize` and panic if the converted value doesn't fit
+  |
+9 |             if i * i != n.try_into().unwrap() {
+  |                          ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:10:34
+   |
+10 |                 factors.push(n / i);
+   |                                  ^ expected `i32`, found `usize`
+
+error[E0277]: cannot divide `i32` by `usize`
+  --> /tmp/qwen2.5coder2b-int_factors-cpp-rs.rs:10:32
+   |
+10 |                 factors.push(n / i);
+   |                                ^ no implementation for `i32 / usize`
+   |
+   = help: the trait `Div<usize>` is not implemented for `i32`
+   = help: the following other types implement trait `Div<Rhs>`:
+             `&'a i32` implements `Div<i32>`
+             `&i32` implements `Div<&i32>`
+             `i32` implements `Div<&i32>`
+             `i32` implements `Div`
+
+error: aborting due to 6 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

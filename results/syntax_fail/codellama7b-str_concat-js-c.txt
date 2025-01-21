@@ -1,0 +1,17 @@
+/tmp/codellama7b-str_concat-js-c.c:7:22: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   char *concat_str = malloc(strlen(s) + strlen(" there!") + 1);
+      |                      ^
+/tmp/codellama7b-str_concat-js-c.c:7:22: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codellama7b-str_concat-js-c.c:7:29: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   char *concat_str = malloc(strlen(s) + strlen(" there!") + 1);
+      |                             ^
+/tmp/codellama7b-str_concat-js-c.c:7:29: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codellama7b-str_concat-js-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(concat_str, s);
+      |   ^
+/tmp/codellama7b-str_concat-js-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/codellama7b-str_concat-js-c.c:9:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   strcat(concat_str, " there!");
+      |   ^
+/tmp/codellama7b-str_concat-js-c.c:9:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+4 errors generated.

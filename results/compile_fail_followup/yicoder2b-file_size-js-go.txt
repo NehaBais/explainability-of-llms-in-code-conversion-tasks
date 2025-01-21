@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_size-js-go.go:15:16: file.Fstat undefined (type *os.File has no field or method Fstat)
+/tmp/yicoder2b-file_size-js-go.go:20:12: no new variables on left side of :=
+/tmp/yicoder2b-file_size-js-go.go:26:16: file.Fstat undefined (type *os.File has no field or method Fstat)

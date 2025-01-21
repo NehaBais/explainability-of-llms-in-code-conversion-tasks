@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-bit_ops-js-cpp.cpp:16:34: error: expected expression
+   16 |   cout << "a   >>> b:  " << (a >>> b) << endl; // logical right shift
+      |                                  ^
+1 error generated.

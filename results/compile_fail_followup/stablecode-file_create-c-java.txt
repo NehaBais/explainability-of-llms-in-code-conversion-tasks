@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+new File("output.txt").
+^
+1 error

@@ -1,0 +1,4 @@
+/tmp/codeqwen-logic_ops-java-cpp.cpp:11:9: error: use of undeclared identifier 'A'
+   11 |   logic(A, B);
+      |         ^
+1 error generated.

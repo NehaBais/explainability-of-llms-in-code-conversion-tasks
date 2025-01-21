@@ -1,0 +1,54 @@
+error: expected `mut` or `const` keyword in raw pointer type
+  --> /tmp/yicoder2b-int_cmp-go-rs.rs:26:23
+   |
+26 |     if &*n1 as i32 < &*n2 as i32{
+   |                       ^
+   |
+help: add `mut` or `const` here
+   |
+26 |     if &*n1 as i32 < &*mut n2 as i32{
+   |                        +++
+26 |     if &*n1 as i32 < &*const n2 as i32{
+   |                        +++++
+
+error: expected one of `,`, `:`, or `}`, found `!`
+  --> /tmp/yicoder2b-int_cmp-go-rs.rs:27:16
+   |
+26 |     if &*n1 as i32 < &*n2 as i32{
+   |                              --- while parsing this struct
+27 |         println!("{} is less than {}", *n1, *n2);
+   |         -------^ expected one of `,`, `:`, or `}`
+   |         |
+   |         while parsing this struct field
+
+error: expected identifier, found `*`
+  --> /tmp/yicoder2b-int_cmp-go-rs.rs:27:40
+   |
+26 |     if &*n1 as i32 < &*n2 as i32{
+   |                              --- while parsing this struct
+27 |         println!("{} is less than {}", *n1, *n2);
+   |                                        ^ expected identifier
+
+error: expected identifier, found `*`
+  --> /tmp/yicoder2b-int_cmp-go-rs.rs:27:45
+   |
+26 |     if &*n1 as i32 < &*n2 as i32{
+   |                              --- while parsing this struct
+27 |         println!("{} is less than {}", *n1, *n2);
+   |                                             ^ expected identifier
+
+error: `<` is interpreted as a start of generic arguments for `i32`, not a comparison
+  --> /tmp/yicoder2b-int_cmp-go-rs.rs:26:20
+   |
+26 |     if &*n1 as i32 < &*n2 as i32{
+   |                    ^ ------- interpreted as generic arguments
+   |                    |
+   |                    not interpreted as comparison
+   |
+help: try comparing the cast value
+   |
+26 |     if (&*n1 as i32) < &*n2 as i32{
+   |        +           +
+
+error: aborting due to 5 previous errors
+

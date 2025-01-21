@@ -1,0 +1,13 @@
+/tmp/stablecode-str_concat-py-c.c:9:25: error: extraneous ')' before ';'
+    9 |     strcat(s1, " world"));
+      |                         ^
+/tmp/stablecode-str_concat-py-c.c:22:31: error: extraneous ')' before ';'
+   22 |     strcat(joined, strings[0]));
+      |                               ^
+/tmp/stablecode-str_concat-py-c.c:23:25: error: extraneous ')' before ';'
+   23 |     strcat(joined, ", "));
+      |                         ^
+/tmp/stablecode-str_concat-py-c.c:24:31: error: extraneous ')' before ';'
+   24 |     strcat(joined, strings[1]));
+      |                               ^
+4 errors generated.

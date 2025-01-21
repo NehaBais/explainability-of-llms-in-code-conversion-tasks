@@ -1,0 +1,23 @@
+/tmp/granitecode8b-file_exists-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-py-c.c:7:15: error: variable has incomplete type 'struct stat'
+    7 |   struct stat st;
+      |               ^
+/tmp/granitecode8b-file_exists-py-c.c:7:10: note: forward declaration of 'struct stat'
+    7 |   struct stat st;
+      |          ^
+/tmp/granitecode8b-file_exists-py-c.c:8:12: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   int rc = stat(filename, &st);
+      |            ^
+/tmp/granitecode8b-file_exists-py-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("File %s exists in the current working directory.n", filename);
+      |     ^
+/tmp/granitecode8b-file_exists-py-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+6 errors generated.

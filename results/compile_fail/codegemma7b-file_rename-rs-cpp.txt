@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_rename-rs-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::rename("input.txt", "output.txt");
+      |   ~~~~~^
+/tmp/codegemma7b-file_rename-rs-cpp.cpp:7:8: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::rename("docs", "mydocs");
+      |   ~~~~~^
+/tmp/codegemma7b-file_rename-rs-cpp.cpp:10:8: error: no member named 'filesystem' in namespace 'std'
+   10 |   std::filesystem::rename("/input.txt", "/output.txt");
+      |   ~~~~~^
+/tmp/codegemma7b-file_rename-rs-cpp.cpp:11:8: error: no member named 'filesystem' in namespace 'std'
+   11 |   std::filesystem::rename("/docs", "/mydocs");
+      |   ~~~~~^
+4 errors generated.

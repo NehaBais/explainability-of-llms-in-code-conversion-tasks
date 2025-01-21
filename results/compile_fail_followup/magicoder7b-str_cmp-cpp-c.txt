@@ -1,0 +1,7 @@
+/tmp/magicoder7b-str_cmp-cpp-c.c:50:16: error: passing 'double' to parameter of incompatible type 'const char *'
+   50 |   demo_compare(numA, numB);
+      |                ^~~~
+/tmp/magicoder7b-str_cmp-cpp-c.c:6:31: note: passing argument to parameter 'a' here
+    6 | void demo_compare(const char *a, const char *b) {
+      |                               ^
+1 error generated.

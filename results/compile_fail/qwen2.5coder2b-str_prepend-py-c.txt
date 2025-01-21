@@ -1,0 +1,9 @@
+/tmp/qwen2.5coder2b-str_prepend-py-c.c:7:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcpy(s, "12345678");
+      |   ^
+/tmp/qwen2.5coder2b-str_prepend-py-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/qwen2.5coder2b-str_prepend-py-c.c:8:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcat(s, "0"); // by concatenation
+      |   ^
+/tmp/qwen2.5coder2b-str_prepend-py-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+2 errors generated.

@@ -1,0 +1,1 @@
+/tmp/codegemma7b-str_prepend-js-go.go:2:1: expected 'package', found 'var'

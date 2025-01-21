@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-dir_make-rs-cpp.cpp:5:27: error: use of undeclared identifier 'S_IRWXU'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IXGRP | S_IROTH)) {
+      |                           ^
+/tmp/qwen2.5coder2b-dir_make-rs-cpp.cpp:5:37: error: use of undeclared identifier 'S_IXGRP'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IXGRP | S_IROTH)) {
+      |                                     ^
+/tmp/qwen2.5coder2b-dir_make-rs-cpp.cpp:5:47: error: use of undeclared identifier 'S_IROTH'
+    5 |   if (mkdir(path.c_str(), S_IRWXU | S_IXGRP | S_IROTH)) {
+      |                                               ^
+3 errors generated.

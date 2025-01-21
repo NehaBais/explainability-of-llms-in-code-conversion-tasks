@@ -1,0 +1,50 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+use std::io;
+^
+/tmp/None.java:2: error: implicitly declared classes are a preview feature and are disabled by default.
+fn main() -> io::Result<()> {
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: ';' expected
+fn main() -> io::Result<()> {
+         ^
+/tmp/None.java:2: error: class, interface, enum, or record expected
+fn main() -> io::Result<()> {
+                       ^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+    let mut reader = io::stdin();
+    ^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+    let mut buffer = String::new();
+    ^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+    match reader.read_line(&mut buffer) {
+    ^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+        return Ok(();
+        ^
+/tmp/None.java:16: error: class, interface, enum, or record expected
+    }
+    ^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+    let a: i32 = *nums;
+    ^
+/tmp/None.java:20: error: class, interface, enum, or record expected
+    println!("Enter another integer:");
+    ^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+    match reader.read_line(&mut buffer) {
+    ^
+/tmp/None.java:27: error: class, interface, enum, or record expected
+        return Ok(();
+        ^
+/tmp/None.java:28: error: class, interface, enum, or record expected
+    }
+    ^
+/tmp/None.java:31: error: class, interface, enum, or record expected
+    match a.cmp(&b) {
+    ^
+/tmp/None.java:38: error: class, interface, enum, or record expected
+}
+^
+16 errors

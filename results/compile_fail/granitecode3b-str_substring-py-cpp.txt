@@ -1,0 +1,66 @@
+/tmp/granitecode3b-str_substring-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "abcdefgh";
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:7:8: error: cannot combine with previous 'char' declaration specifier
+    7 |   char char, chars[3];
+      |        ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:7:12: error: expected unqualified-id
+    7 |   char char, chars[3];
+      |            ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:8:3: error: use of undeclared identifier 'cin'
+    8 |   cin >> n >> m >> char >> chars;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:8:25: error: expected '(' for function-style cast or type construction
+    8 |   cin >> n >> m >> char >> chars;
+      |                    ~~~~ ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:8:28: error: use of undeclared identifier 'chars'
+    8 |   cin >> n >> m >> char >> chars;
+      |                            ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << s.substr(n - 1, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:10:33: error: use of undeclared identifier 'endl'
+   10 |   cout << s.substr(n - 1, m) << endl;
+      |                                 ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << s.substr(n - 1) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:12:30: error: use of undeclared identifier 'endl'
+   12 |   cout << s.substr(n - 1) << endl;
+      |                              ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << s.substr(0, s.size() - 1) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:14:40: error: use of undeclared identifier 'endl'
+   14 |   cout << s.substr(0, s.size() - 1) << endl;
+      |                                        ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:16:25: error: expected '(' for function-style cast or type construction
+   16 |   int indx = s.find(char);
+      |                     ~~~~^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << s.substr(indx, m) << endl;
+      |   ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:17:32: error: use of undeclared identifier 'endl'; did you mean 'indx'?
+   17 |   cout << s.substr(indx, m) << endl;
+      |                                ^~~~
+      |                                indx
+/tmp/granitecode3b-str_substring-py-cpp.cpp:16:7: note: 'indx' declared here
+   16 |   int indx = s.find(char);
+      |       ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:20:17: error: use of undeclared identifier 'chars'
+   20 |   indx = s.find(chars);
+      |                 ^
+/tmp/granitecode3b-str_substring-py-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << s.substr(indx, m) << endl;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

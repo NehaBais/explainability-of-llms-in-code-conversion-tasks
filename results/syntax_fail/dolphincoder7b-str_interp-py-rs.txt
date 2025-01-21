@@ -1,0 +1,13 @@
+error: character literal may only contain one codepoint
+ --> /tmp/dolphincoder7b-str_interp-py-rs.rs:4:17
+  |
+4 |     let extra = 'little';
+  |                 ^^^^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+4 |     let extra = "little";
+  |                 ~      ~
+
+error: aborting due to 1 previous error
+

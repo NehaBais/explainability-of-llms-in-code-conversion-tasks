@@ -1,0 +1,16 @@
+/tmp/codegemma7b-file_create-rs-c.c:10:3: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   create(".");
+      |   ^
+/tmp/codegemma7b-file_create-rs-c.c:17:18: error: use of undeclared identifier 'PATH_MAX'
+   17 |   char file_path[PATH_MAX];
+      |                  ^
+/tmp/codegemma7b-file_create-rs-c.c:18:17: error: use of undeclared identifier 'PATH_MAX'
+   18 |   char dir_path[PATH_MAX];
+      |                 ^
+/tmp/codegemma7b-file_create-rs-c.c:20:23: error: use of undeclared identifier 'PATH_MAX'
+   20 |   snprintf(file_path, PATH_MAX, "%s/%s", root, FILE_NAME);
+      |                       ^
+/tmp/codegemma7b-file_create-rs-c.c:21:22: error: use of undeclared identifier 'PATH_MAX'
+   21 |   snprintf(dir_path, PATH_MAX, "%s/%s", root, DIR_NAME);
+      |                      ^
+5 errors generated.

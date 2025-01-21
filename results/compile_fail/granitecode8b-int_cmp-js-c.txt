@@ -1,0 +1,37 @@
+/tmp/granitecode8b-int_cmp-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_cmp-js-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter two integers:");
+      |   ^
+/tmp/granitecode8b-int_cmp-js-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_cmp-js-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%d %d", &a, &b);
+      |   ^
+/tmp/granitecode8b-int_cmp-js-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode8b-int_cmp-js-c.c:8:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 |  printf("%d equals %d
+      |         ^
+/tmp/granitecode8b-int_cmp-js-c.c:8:9: error: expected expression
+/tmp/granitecode8b-int_cmp-js-c.c:9:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 | ");
+      | ^
+/tmp/granitecode8b-int_cmp-js-c.c:11:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 |  printf("%d is less than %d
+      |         ^
+/tmp/granitecode8b-int_cmp-js-c.c:12:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 | ");
+      | ^
+/tmp/granitecode8b-int_cmp-js-c.c:14:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |  printf("%d is greater than %d
+      |         ^
+/tmp/granitecode8b-int_cmp-js-c.c:15:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ");
+      | ^
+/tmp/granitecode8b-int_cmp-js-c.c:19:2: error: expected '}'
+   19 | }
+      |  ^
+/tmp/granitecode8b-int_cmp-js-c.c:2:12: note: to match this '{'
+    2 | int main() {
+      |            ^
+6 warnings and 5 errors generated.

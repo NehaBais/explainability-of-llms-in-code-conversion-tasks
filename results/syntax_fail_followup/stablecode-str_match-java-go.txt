@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_match-java-go.go:10:17: string literal not terminated (and 10 more errors)

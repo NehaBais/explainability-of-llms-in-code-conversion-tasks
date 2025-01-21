@@ -1,0 +1,16 @@
+/tmp/magicoder7b-file_create-rs-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directory("/" + std::filesystem::path{"docs"});
+      |     ~~~~~^
+/tmp/magicoder7b-file_create-rs-cpp.cpp:7:50: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directory("/" + std::filesystem::path{"docs"});
+      |                                             ~~~~~^
+/tmp/magicoder7b-file_create-rs-cpp.cpp:10:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   10 |     auto currentPath = std::filesystem::current_path();
+      |     ^
+/tmp/magicoder7b-file_create-rs-cpp.cpp:10:29: error: no member named 'filesystem' in namespace 'std'
+   10 |     auto currentPath = std::filesystem::current_path();
+      |                        ~~~~~^
+/tmp/magicoder7b-file_create-rs-cpp.cpp:11:10: error: no member named 'filesystem' in namespace 'std'
+   11 |     std::filesystem::create_directory(currentPath / "docs");
+      |     ~~~~~^
+1 warning and 4 errors generated.

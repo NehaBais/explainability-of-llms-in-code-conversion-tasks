@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/granitecode8b-int_cmp-cpp-go.go:15:32: newline in string
+/tmp/granitecode8b-int_cmp-cpp-go.go:15:32: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-int_cmp-cpp-go.go:16:9: newline in string
+/tmp/granitecode8b-int_cmp-cpp-go.go:20:31: newline in string
+/tmp/granitecode8b-int_cmp-cpp-go.go:20:31: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-int_cmp-cpp-go.go:21:9: newline in string
+/tmp/granitecode8b-int_cmp-cpp-go.go:25:35: newline in string
+/tmp/granitecode8b-int_cmp-cpp-go.go:25:35: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-int_cmp-cpp-go.go:26:9: newline in string

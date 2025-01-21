@@ -1,0 +1,46 @@
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::error_code ec;
+      |   ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:6:7: error: use of undeclared identifier 'std'
+    6 |   if (std::rename("input.txt", "output.txt", &ec) != 0 && ec != std::errc()) {
+      |       ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:6:65: error: use of undeclared identifier 'std'
+    6 |   if (std::rename("input.txt", "output.txt", &ec) != 0 && ec != std::errc()) {
+      |                                                                 ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:7:11: error: use of undeclared identifier 'std'
+    7 |     throw std::system_error(ec, err);
+      |           ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:9:7: error: use of undeclared identifier 'std'
+    9 |   if (std::rename("docs", "mydocs", &ec) != 0 && ec != std::errc()) {
+      |       ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:9:56: error: use of undeclared identifier 'std'
+    9 |   if (std::rename("docs", "mydocs", &ec) != 0 && ec != std::errc()) {
+      |                                                        ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:10:11: error: use of undeclared identifier 'std'
+   10 |     throw std::system_error(ec, err);
+      |           ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:12:7: error: use of undeclared identifier 'std'
+   12 |   if (std::rename("/input.txt", "/output.txt", &ec) != 0 && ec != std::errc()) {
+      |       ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:12:67: error: use of undeclared identifier 'std'
+   12 |   if (std::rename("/input.txt", "/output.txt", &ec) != 0 && ec != std::errc()) {
+      |                                                                   ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:13:11: error: use of undeclared identifier 'std'
+   13 |     throw std::system_error(ec, err);
+      |           ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:15:7: error: use of undeclared identifier 'std'
+   15 |   if (std::rename("/docs", "/mydocs", &ec) != 0 && ec != std::errc()) {
+      |       ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:15:58: error: use of undeclared identifier 'std'
+   15 |   if (std::rename("/docs", "/mydocs", &ec) != 0 && ec != std::errc()) {
+      |                                                          ^
+/tmp/granitecode3b-file_rename-rs-cpp.cpp:16:11: error: use of undeclared identifier 'std'
+   16 |     throw std::system_error(ec, err);
+      |           ^
+15 errors generated.

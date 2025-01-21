@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/magicoder7b-str_cmp-cpp-go.go:9:48: invalid character U+003F '?'
+/tmp/magicoder7b-str_cmp-cpp-go.go:9:50: syntax error: unexpected literal "", expected )
+/tmp/magicoder7b-str_cmp-cpp-go.go:10:48: invalid character U+003F '?'
+/tmp/magicoder7b-str_cmp-cpp-go.go:10:50: syntax error: unexpected literal "", expected )
+/tmp/magicoder7b-str_cmp-cpp-go.go:11:34: invalid character U+003F '?'
+/tmp/magicoder7b-str_cmp-cpp-go.go:11:36: syntax error: unexpected literal "", expected )
+/tmp/magicoder7b-str_cmp-cpp-go.go:12:34: invalid character U+003F '?'
+/tmp/magicoder7b-str_cmp-cpp-go.go:12:36: syntax error: unexpected literal "", expected )
+/tmp/magicoder7b-str_cmp-cpp-go.go:17:29: invalid character U+003F '?'
+/tmp/magicoder7b-str_cmp-cpp-go.go:17:31: syntax error: unexpected name os at end of statement
+/tmp/magicoder7b-str_cmp-cpp-go.go:17:31: too many errors

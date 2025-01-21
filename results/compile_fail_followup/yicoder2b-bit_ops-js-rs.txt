@@ -1,0 +1,21 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/yicoder2b-bit_ops-js-rs.rs:10:15
+   |
+10 |     let NOT = ~a & (2 << 8); // NOT --> ~5 AND (2 << 8)==-6 which is -94 in decimal
+   |               ^
+   |
+help: use `!` to perform bitwise not
+   |
+10 |     let NOT = !a & (2 << 8); // NOT --> ~5 AND (2 << 8)==-6 which is -94 in decimal
+   |               ~
+
+warning: unused imports: `BitAnd`, `BitOr`, and `BitXor`
+ --> /tmp/yicoder2b-bit_ops-js-rs.rs:1:16
+  |
+1 | use std::ops::{BitAnd, BitOr, BitXor};
+  |                ^^^^^^  ^^^^^  ^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+

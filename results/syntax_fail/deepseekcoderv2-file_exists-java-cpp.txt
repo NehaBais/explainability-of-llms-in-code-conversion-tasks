@@ -1,0 +1,16 @@
+/tmp/deepseekcoderv2-file_exists-java-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path path_current = std::filesystem::current_path();
+      |   ~~~~~^
+/tmp/deepseekcoderv2-file_exists-java-cpp.cpp:6:45: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path path_current = std::filesystem::current_path();
+      |                                        ~~~~~^
+/tmp/deepseekcoderv2-file_exists-java-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |   if (std::filesystem::exists(path_current)) {
+      |       ~~~~~^
+/tmp/deepseekcoderv2-file_exists-java-cpp.cpp:19:8: error: no member named 'filesystem' in namespace 'std'
+   19 |   std::filesystem::path path_root = "/docs";
+      |   ~~~~~^
+/tmp/deepseekcoderv2-file_exists-java-cpp.cpp:22:12: error: no member named 'filesystem' in namespace 'std'
+   22 |   if (std::filesystem::exists(path_root)) {
+      |       ~~~~~^
+5 errors generated.

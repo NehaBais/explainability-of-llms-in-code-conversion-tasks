@@ -1,0 +1,9 @@
+/tmp/Main.java:59: error: cannot find symbol
+  private static BiConsumer<Long, Integer> apf;
+                 ^
+  symbol:   class BiConsumer
+  location: class Main
+/tmp/Main.java:27: error: lambda expression not expected here
+        (p, e) -> {
+        ^
+2 errors

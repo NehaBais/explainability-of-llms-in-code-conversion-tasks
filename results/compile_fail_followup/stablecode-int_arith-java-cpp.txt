@@ -1,0 +1,11 @@
+/tmp/stablecode-int_arith-java-cpp.cpp:6:26: error: extraneous ')' before ';'
+    6 |     int a = atoi(argv[1]));
+      |                          ^
+/tmp/stablecode-int_arith-java-cpp.cpp:7:26: error: extraneous ')' before ';'
+    7 |     int b = atoi(argv[2]));
+      |                          ^
+/tmp/stablecode-int_arith-java-cpp.cpp:13:45: error: expected ';' at end of declaration
+   13 |     double division = static_cast<double>(a)) / static_cast<double>(b));   // performs true division, can represent fractional results
+      |                                             ^
+      |                                             ;
+3 errors generated.

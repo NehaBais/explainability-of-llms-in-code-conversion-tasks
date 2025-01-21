@@ -1,0 +1,56 @@
+/tmp/Main.java:9: error: cannot find symbol
+    System.out.println("AND:     0b" + Integer.toBinaryString(a).padStart(width, '0'));
+                                                                ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:10: error: cannot find symbol
+    System.out.println("   &       0b" + Integer.toBinaryString(b).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:11: error: cannot find symbol
+    System.out.println(" = 0b" + Integer.toBinaryString((a & b) & mask).padStart(width, '0'));
+                                                                       ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:13: error: cannot find symbol
+    System.out.println("\nOR:      0b" + Integer.toBinaryString(a).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:14: error: cannot find symbol
+    System.out.println("   |       0b" + Integer.toBinaryString(b).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:15: error: cannot find symbol
+    System.out.println(" = 0b" + Integer.toBinaryString((a | b) & mask).padStart(width, '0'));
+                                                                       ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:17: error: cannot find symbol
+    System.out.println("\nXOR:     0b" + Integer.toBinaryString(a).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:18: error: cannot find symbol
+    System.out.println("   ^       0b" + Integer.toBinaryString(b).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:19: error: cannot find symbol
+    System.out.println(" = 0b" + Integer.toBinaryString((a ^ b) & mask).padStart(width, '0'));
+                                                                       ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:21: error: cannot find symbol
+    System.out.println("\nNOT:   ~ 0b" + Integer.toBinaryString(a).padStart(width, '0'));
+                                                                  ^
+  symbol:   method padStart(int,char)
+  location: class String
+/tmp/Main.java:22: error: cannot find symbol
+    System.out.println("   = 0b" + Integer.toBinaryString(~a & mask).padStart(width, '0'));
+                                                                    ^
+  symbol:   method padStart(int,char)
+  location: class String
+11 errors

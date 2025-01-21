@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_cmp-cpp-go.go:6:2: "unicode/utf8" imported and not used
+/tmp/dolphincoder7b-str_cmp-cpp-go.go:53:17: undefined: strconv

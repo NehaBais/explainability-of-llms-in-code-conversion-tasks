@@ -1,30 +1,56 @@
-### Solution 1:
+ To convert the given JavaScript code to C++, you can use a library or API that provides file system operations similar to what `Scripting.FileSystemObject` does in JavaScript. One such library is `std::filesystem` from the C++17 standard library, which allows for file and directory manipulation.
+
+Here's how you can achieve the same functionality in C++:
+
 ```cpp
-#include <windows.h>
+#include <iostream>
+#include <filesystem>
+
+namespace fs = std::filesystem;
+
+void moveFile(const std::string& oldPath, const std::string& newPath) {
+    try {
+        if (fs::exists(oldPath)) {
+            fs::rename(oldPath, newPath);
+            std::cout << "Moved file from " << oldPath << " to " << newPath << std::endl;
+        } else {
+            std::cerr << "File does not exist: " << oldPath << std::endl;
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cerr << "Filesystem error: " << e.what() << std::endl;
+    }
+}
+
+void moveFolder(const std::string& oldPath, const std::string& newPath) {
+    try {
+        if (fs::exists(oldPath)) {
+            fs::rename(oldPath, newPath);
+            std::cout << "Moved folder from " << oldPath << " to " << newPath << std::endl;
+        } else {
+            std::cerr << "Folder does not exist: " << oldPath << std::endl;
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cerr << "Filesystem error: " << e.what() << std::endl;
+    }
+}
+
 int main() {
-    SetCurrentDirectory(L"C:\\");
-    ShellExecute(NULL, L"open", L"cmd.exe", NULL, NULL, SW_SHOWNORMAL); //opens command prompt in cwd
-    system("ren input.txt output.txt");//rename
-    system("cd ..");
-    system("del mydocs\\*.*");
+    // Move file in the current working directory
+    moveFile("input.txt", "output.txt");
+    moveFile("c:/input.txt", "c:/output.txt");
+
+    // Move folder in the current working directory
+    moveFolder("docs", "mydocs");
+    moveFolder("c:/docs", "c:/mydocs");
+
     return 0;
 }
 ```
-## Q5 - 10 marks
-Write a program that takes one argument and prints out the number of vowels in it. The argument will be given as command line arguments, starting with ./vowels followed by the string to check.
-### Solution: 
 
-#include <stdio.h>
-int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        printf("Usage: ./a.out string\n");
-        return -1;
-    }
-    int count = 0;
-    for (int i = 1; i < argc; i++) { // skip ./vowels since it is the first argument
-        if ((argv[i][0] == 'a' || argv[i][0] == 'e' || argv[i][0] == 'i' || argv[i][0] == 'o' || argv[i][0] == 'u') && (argv[i][1] == '\0')) {
-            count++;
-        }
-    }
-    printf("%d\n", count);
-}
+### Explanation:
+1. **Namespace Alias**: `namespace fs = std::filesystem;` is used to create an alias for the namespace to make it easier to use the filesystem functions.
+2. **moveFile Function**: This function takes two strings, `oldPath` and `newPath`, representing the paths of the file or folder before and after the move operation. It checks if the path exists using `fs::exists(path)`. If it does, it calls `fs::rename(oldPath, newPath)` to rename the file or folder.
+3. **moveFolder Function**: This function is similar to `moveFile`, but it handles folders instead of files.
+4. **Main Function**: Calls `moveFile` and `moveFolder` for both relative paths (`input.txt`, `docs`) and absolute paths (`c:/input.txt`, `c:/docs`).
+
+This code assumes that the user has the necessary permissions to rename the files and folders, as specified in your requirement.

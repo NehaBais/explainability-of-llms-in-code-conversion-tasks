@@ -1,0 +1,14 @@
+/tmp/codellama7b-file_exists-rs-cpp.cpp:17:11: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |     const auto &file = {current_working_directory, input_file_path,
+      |           ^
+/tmp/codellama7b-file_exists-rs-cpp.cpp:17:24: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   17 |     const auto &file = {current_working_directory, input_file_path,
+      |                        ^
+/tmp/codellama7b-file_exists-rs-cpp.cpp:19:44: error: expected ';' at end of declaration
+   19 |                         root_docs_dir_path}[i];
+      |                                            ^
+      |                                            ;
+/tmp/codellama7b-file_exists-rs-cpp.cpp:22:16: error: no member named 'filesystem' in namespace 'std'
+   22 |       if (std::filesystem::is_directory(file)) {
+      |           ~~~~~^
+1 warning and 3 errors generated.

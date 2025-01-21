@@ -1,0 +1,19 @@
+/tmp/deepseekcoderv2-bit_ops-java-c.c:24:29: error: call to undeclared function '_rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |     printf("a rol b: %u\n", _rotl((int)a, (int)b)); // rotate left
+      |                             ^
+/tmp/deepseekcoderv2-bit_ops-java-c.c:29:29: error: call to undeclared function '_rotr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |     printf("a ror b: %u\n", _rotr((int)a, (int)b)); // rotate right
+      |                             ^
+/tmp/deepseekcoderv2-bit_ops-java-c.c:36:10: error: conflicting types for '_rotl'
+   36 | uint32_t _rotl(uint32_t value, int shift) {
+      |          ^
+/tmp/deepseekcoderv2-bit_ops-java-c.c:24:29: note: previous implicit declaration is here
+   24 |     printf("a rol b: %u\n", _rotl((int)a, (int)b)); // rotate left
+      |                             ^
+/tmp/deepseekcoderv2-bit_ops-java-c.c:40:10: error: conflicting types for '_rotr'
+   40 | uint32_t _rotr(uint32_t value, int shift) {
+      |          ^
+/tmp/deepseekcoderv2-bit_ops-java-c.c:29:29: note: previous implicit declaration is here
+   29 |     printf("a ror b: %u\n", _rotr((int)a, (int)b)); // rotate right
+      |                             ^
+4 errors generated.

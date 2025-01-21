@@ -1,0 +1,32 @@
+error: expected one of `.`, `=>`, `?`, or an operator, found `{`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:8:55
+  |
+8 |             Some(direntry) if direntry.is_directory() {
+  |                                                       ^ expected one of `.`, `=>`, `?`, or an operator
+
+error[E0433]: failed to resolve: could not find `FsEntry` in `fs`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:7:28
+  |
+7 |         Ok(_) => match fs::FsEntry::symlink_to_dir_entry(&p.into()) {
+  |                            ^^^^^^^ could not find `FsEntry` in `fs`
+
+error[E0599]: no function or associated item named `read_dir` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:6:21
+  |
+6 |     match fs::File::read_dir(&p) {
+  |                     ^^^^^^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+help: there is a method `read` with a similar name
+  |
+6 |     match fs::File::read(&p) {
+  |                     ~~~~
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.

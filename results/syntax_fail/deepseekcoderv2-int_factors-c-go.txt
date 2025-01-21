@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoderv2-int_factors-c-go.go:5:2: "math" imported and not used

@@ -1,15 +1,26 @@
 #include <iostream>
-int main() {
-  int num1, num2;
-  std::cout << "Enter your first number: ";
-  std::cin >> num1;
-  std::cout << "\nEnter your second number: ";
-  std::cin >> num2;
-  if (num1 == num2) {
-    std::cout << num1 << " equals " << num2 << std::endl;
-  } else if (num1 > num2) {
-    std::cout << num1 << " is greater than " << num2 << std::endl;
-  } else {
-    std::cout << num1 << " is less than " << num2 << std::endl;
+using namespace std;
+
+void compare(int a, int b) {
+  if (a == b) {
+    cout << a << " equals " << b << endl;
   }
+  if (a < b) {
+    cout << a << " is less than " << b << endl;
+  }
+  if (a > b) {
+    cout << a << " is greater than " << b << endl;
+  }
+}
+
+int main() {
+  int a, b;
+  cout << "Enter the first integer: ";
+  cin >> a;
+  cout << "Enter the second integer: ";
+  cin >> b;
+
+  compare(a, b);
+
+  return 0;
 }

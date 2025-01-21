@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-func concateString(str *string) {
-	*str = fmt.Sprintf("%s %s", "Hello", *str)
-	fmt.Println(*str)
-}
 func main() {
-	str := "World"
-	concateString(&str)
+	s := "hello"
+	fmt.Println(s, "literal")
+	// or
+	fmt.Println(s + " literal")
+
+	s2 := s + " literal"
+	fmt.Println(s2)
 }

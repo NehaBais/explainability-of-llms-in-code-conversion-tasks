@@ -1,37 +1,20 @@
-function renameFiles() {
-  // Rename file "input.txt" to "output.txt" in current working directory
-  fs.rename("input.txt", "output.txt", (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("File renamed successfully!");
-    }
-  });
+const fs = require("fs");
+const path = require("path");
 
-  // Rename directory "docs" to "mydocs" in current working directory
-  fs.rename("docs", "mydocs", (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("Directory renamed successfully!");
-    }
-  });
-
-  // Rename file "input.txt" to "output.txt" in filesystem root
-  fs.rename("/input.txt", "/output.txt", (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("File renamed successfully!");
-    }
-  });
-
-  // Rename directory "docs" to "mydocs" in filesystem root
-  fs.rename("/docs", "/mydocs", (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("Directory renamed successfully!");
-    }
-  });
+// Function to rename a file or directory
+function renameFileOrDirectory(source, destination) {
+  try {
+    fs.renameSync(source, destination);
+    console.log(`Renamed ${source} to ${destination}`);
+  } catch (err) {
+    console.error(`Error renaming ${source} to ${destination}:`, err);
+  }
 }
+
+// In the current working directory
+renameFileOrDirectory("input.txt", "output.txt");
+renameFileOrDirectory("docs", "mydocs");
+
+// In the filesystem root
+renameFileOrDirectory("/input.txt", "/output.txt");
+renameFileOrDirectory("/docs", "/mydocs");

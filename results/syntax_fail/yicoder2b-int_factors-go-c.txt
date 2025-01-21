@@ -1,0 +1,10 @@
+/tmp/yicoder2b-int_factors-go-c.c:5:3: error: call to undeclared function 'printFactors'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printFactors(-1);
+      |   ^
+/tmp/yicoder2b-int_factors-go-c.c:18:6: error: conflicting types for 'printFactors'
+   18 | void printFactors(int nr) {
+      |      ^
+/tmp/yicoder2b-int_factors-go-c.c:5:3: note: previous implicit declaration is here
+    5 |   printFactors(-1);
+      |   ^
+2 errors generated.

@@ -1,0 +1,11 @@
+/tmp/Main.java:9: error: cannot find symbol
+    Path currentWorkingDir = Paths.get(System.getProperty("user.dir"));
+                             ^
+  symbol:   variable Paths
+  location: class Main
+/tmp/Main.java:12: error: cannot find symbol
+    Path fileAndDirectoryRoot = Paths.get("/");
+                                ^
+  symbol:   variable Paths
+  location: class Main
+2 errors

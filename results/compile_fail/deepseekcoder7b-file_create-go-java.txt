@@ -1,0 +1,25 @@
+/tmp/Main.java:18: error: illegal character: '\uff5c'
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                           ^
+/tmp/Main.java:18: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                          ^
+/tmp/Main.java:18: error: illegal character: '\u2581'
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                                 ^
+/tmp/Main.java:18: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                            ^
+/tmp/Main.java:18: error: illegal character: '\u2581'
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                                    ^
+/tmp/Main.java:18: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                                  ^
+/tmp/Main.java:18: error: illegal character: '\uff5c'
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                                             ^
+/tmp/Main.java:18: error: not a statement
+                System.out<｜begin▁of▁sentence｜>.println(fn + " already exists");
+                                     ^
+8 errors

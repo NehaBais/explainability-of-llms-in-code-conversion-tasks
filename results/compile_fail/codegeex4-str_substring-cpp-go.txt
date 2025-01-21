@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codegeex4-str_substring-cpp-go.go:16:22: undefined: strings.Substring
+/tmp/codegeex4-str_substring-cpp-go.go:17:22: undefined: strings.Substring
+/tmp/codegeex4-str_substring-cpp-go.go:20:23: undefined: strings.Substring
+/tmp/codegeex4-str_substring-cpp-go.go:23:23: undefined: strings.Substring

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-rs-go.go:4:2: "fmt" imported and not used
+/tmp/stablecode-str_substring-rs-go.go:8:2: declared and not used: s
+/tmp/stablecode-str_substring-rs-go.go:9:2: declared and not used: n
+/tmp/stablecode-str_substring-rs-go.go:10:2: declared and not used: m

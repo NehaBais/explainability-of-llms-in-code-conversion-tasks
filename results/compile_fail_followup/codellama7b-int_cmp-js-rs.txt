@@ -1,0 +1,45 @@
+error[E0432]: unresolved import `std::ptr::gt`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:2:5
+  |
+2 | use std::ptr::gt;
+  |     ^^^^^^^^^^^^ no `gt` in `ptr`
+
+error[E0432]: unresolved import `std::ptr::lt`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:3:5
+  |
+3 | use std::ptr::lt;
+  |     ^^^^^^^^^^^^ no `lt` in `ptr`
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codellama7b-int_cmp-js-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/codellama7b-int_cmp-js-rs.rs`
+
+error[E0308]: arguments to this function are incorrect
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:6:8
+  |
+6 |     if eq(a, b) {
+  |        ^^
+  |
+note: expected `*const _`, found `i32`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:6:11
+  |
+6 |     if eq(a, b) {
+  |           ^
+  = note: expected raw pointer `*const _`
+                    found type `i32`
+note: expected `*const _`, found `i32`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:6:14
+  |
+6 |     if eq(a, b) {
+  |              ^
+  = note: expected raw pointer `*const _`
+                    found type `i32`
+note: function defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ptr/mod.rs:2143:8
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0432, E0601.
+For more information about an error, try `rustc --explain E0308`.

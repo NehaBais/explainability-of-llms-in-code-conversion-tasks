@@ -1,21 +1,31 @@
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-        String input1 = "abcd";
-        String input2 = "ab";
-        System.out.println("Is first string starts with second string: "+input1.startsWith(input2));
-        System.out.println("Is first string contains the second string at any location: "+input1.contains(input2));
-        System.out.println("Is first string ends with second string: "+input1.endsWith(input2));
-        int loc = -1;
-        loc = input1.indexOf(input2);
-        if (loc !=-1) {
-            while (loc != -1) {
-                System.out.println("Location of match for type 2 is: " + loc);
-                loc = input1.indexOf(input2, loc+1);
-            }
-        } else {
-            System.out.println("Type 2 does not have any match");
-        }
-    }
-}
+def string_matching(str1, str2):
+    # Check if str1 starts with str2
+    print(f'"{str1}" starts with "{str2}":', str1.startswith(str2))
+
+    # Check if str1 contains str2 at any location
+    print(f'"{str1}" contains "{str2}":', str2 in str1)
+
+    # Check if str1 ends with str2
+    print(f'"{str1}" ends with "{str2}":', str1.endswith(str2))
+
+    # Optional: Print the location of the match for part 2
+    if str2 in str1:
+        first_loc = str1.find(str2)
+        print(f'First occurrence of "{str2}" in "{str1}":', first_loc)
+
+        # Handle multiple occurrences
+        loc = first_loc
+        count = 0
+        while True:
+            loc = str1.find(str2, loc + 1)
+            if loc == -1:
+                break
+            print(f'Occurrence {count} of "{str2}" in "{str1}":', loc)
+            count += 1
+
+
+# Test the function with the provided examples
+string_matching("abcd", "ab")
+string_matching("abcd", "zn")
+string_matching("abab", "bb")
+string_matching("abab", "ab")

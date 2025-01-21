@@ -1,0 +1,19 @@
+error[E0614]: type `str` cannot be dereferenced
+ --> /tmp/yicoder2b-str_concat-go-rs.rs:6:15
+  |
+6 |     *s = &mut **s + " literal";
+  |               ^^^
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+ --> /tmp/yicoder2b-str_concat-go-rs.rs:6:5
+  |
+6 |     *s = &mut **s + " literal";
+  |     ^^ doesn't have a size known at compile-time
+  |
+  = help: the trait `Sized` is not implemented for `str`
+  = note: the left-hand-side of an assignment must have a statically known size
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0614.
+For more information about an error, try `rustc --explain E0277`.

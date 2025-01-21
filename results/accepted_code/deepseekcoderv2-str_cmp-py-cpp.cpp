@@ -1,42 +1,45 @@
 #include <iostream>
 #include <string>
-using namespace std;
-void compare(const string &a, const string &b) {
-  cout << "Comparing strings..." << endl;
-  if (a == b) {
-    cout << "'" << a << "' is equal to '" << b << "'." << endl;
-  } else {
-    cout << "'" << a << "' is not equal to '" << b << "'." << endl;
-  }
+#include <typeinfo>
+
+void compare(const std::string &a, const std::string &b) {
+  std::cout << "\"" << a << "\" is of type " << typeid(a).name() << " and \""
+            << b << "\" is of type " << typeid(b).name() << std::endl;
+
+  if (a < b)
+    std::cout << "\"" << a << "\" is strictly less than \"" << b << "\""
+              << std::endl;
+  if (a <= b)
+    std::cout << "\"" << a << "\" is less than or equal to \"" << b << "\""
+              << std::endl;
+  if (a > b)
+    std::cout << "\"" << a << "\" is strictly greater than \"" << b << "\""
+              << std::endl;
+  if (a >= b)
+    std::cout << "\"" << a << "\" is greater than or equal to \"" << b << "\""
+              << std::endl;
+  if (a == b)
+    std::cout << "\"" << a << "\" is equal to \"" << b << "\"" << std::endl;
+  if (a != b)
+    std::cout << "\"" << a << "\" is not equal to \"" << b << "\"" << std::endl;
+  // Object identity comparisons are not applicable in C++ as they don't use
+  // pointers like in Python
 }
-void compare(int a, int b) {
-  cout << "Comparing integers..." << endl;
-  if (a == b) {
-    cout << a << " is equal to " << b << "." << endl;
-  } else {
-    cout << a << " is not equal to " << b << "." << endl;
-  }
+
+void compare(const char *a, const char *b) {
+  std::string sa(a), sb(b);
+  compare(sa, sb);
 }
-void compare(double a, double b) {
-  cout << "Comparing doubles..." << endl;
-  if (a == b) {
-    cout << a << " is equal to " << b << "." << endl;
-  } else {
-    cout << a << " is not equal to " << b << "." << endl;
-  }
-}
+
 int main() {
-  string s1 = "YUP";
-  string s2 = "YUP";
-  compare(s1, s2);
-  string s3 = "BALL";
-  string s4 = "BELL";
-  compare(s3, s4);
-  int i1 = 5;
-  int i2 = 7;
-  compare(i1, i2);
-  double d1 = 3.14;
-  double d2 = 3.14;
-  compare(d1, d2);
+  compare("YUP", "YUP");
+  compare("BALL", "BELL");
+  // Uncomment the following lines to test numeric string comparisons
+  // compare("24", "123"); // This will not work as expected due to
+  // lexicographical comparison of strings compare(24, 123); // This will not
+  // work because direct integer or double comparison without type conversion is
+  // not possible in C++ compare(5.0, 5); // This will not work for the same
+  // reason
+
   return 0;
 }

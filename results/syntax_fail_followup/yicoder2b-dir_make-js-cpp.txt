@@ -1,0 +1,10 @@
+/tmp/yicoder2b-dir_make-js-cpp.cpp:12:22: error: implicit instantiation of undefined template 'std::basic_istringstream<char>'
+   12 |   std::istringstream tokenStream(s);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h:25:28: note: template is declared here
+   25 | class _LIBCPP_TEMPLATE_VIS basic_istringstream;
+      |                            ^
+/tmp/yicoder2b-dir_make-js-cpp.cpp:24:33: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |     for (const std::string &dir : dirs) {
+      |                                 ^
+1 warning and 1 error generated.

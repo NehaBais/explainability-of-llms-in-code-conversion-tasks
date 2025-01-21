@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-file_rename-py-go.go:11:12: invalid operation: os.PathSeparator + "docs" (mismatched types untyped rune and untyped string)

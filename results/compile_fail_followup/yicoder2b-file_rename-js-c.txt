@@ -1,0 +1,7 @@
+/tmp/yicoder2b-file_rename-js-c.c:1:1: error: expected identifier or '('
+    1 | for /R "c:\docs" ren "mydocs"
+      | ^
+/tmp/yicoder2b-file_rename-js-c.c:3:25: warning: missing terminating '"' character [-Winvalid-pp-token]
+    3 | for /R "c:\" ren "mydocs"
+      |                         ^
+1 warning and 1 error generated.

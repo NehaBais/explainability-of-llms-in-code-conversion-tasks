@@ -1,0 +1,21 @@
+error[E0601]: `main` function not found in crate `yicoder9b_bit_ops_java_rs`
+  --> /tmp/yicoder9b-bit_ops-java-rs.rs:23:2
+   |
+23 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder9b-bit_ops-java-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-bit_ops-java-rs.rs:3:24
+  |
+3 |         b if b < 32 => b,
+  |                        ^ expected `u32`, found `usize`
+  |
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+  |
+3 |         b if b < 32 => b.try_into().unwrap(),
+  |                         ++++++++++++++++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

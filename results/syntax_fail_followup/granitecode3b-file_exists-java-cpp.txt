@@ -1,0 +1,10 @@
+/tmp/granitecode3b-file_exists-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:3:25: error: expected '}'
+    3 |   // rest of the code...
+      |                         ^
+/tmp/granitecode3b-file_exists-java-cpp.cpp:2:12: note: to match this '{'
+    2 | int main() {
+      |            ^
+2 errors generated.

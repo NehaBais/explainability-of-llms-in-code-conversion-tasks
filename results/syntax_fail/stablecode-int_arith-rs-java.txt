@@ -1,0 +1,13 @@
+/tmp/Main.java:19: error: ';' expected
+        System.out.println("Sum:              " + (a + b)));
+                                                          ^
+/tmp/Main.java:22: error: ';' expected
+        System.out.println("Difference:       " + (a - b)));
+                                                          ^
+/tmp/Main.java:25: error: ';' expected
+        System.out.println("Product:          " + (a * b)));
+                                                          ^
+/tmp/Main.java:28: error: ';' expected
+        System.out.println("Integer Quotient: " + ((float) a / b))));  // truncates towards zero
+                                                                  ^
+4 errors

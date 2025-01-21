@@ -1,0 +1,59 @@
+error: `<<` is interpreted as a start of generic arguments for `i32`, not a shift
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:39:40
+   |
+39 |     println!("las: {:016b}", (a as i32 << ub as usize));
+   |                                        ^^ ------------ interpreted as generic arguments
+   |                                        |
+   |                                        not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+39 |     println!("las: {:016b}", ((a as i32) << ub as usize));
+   |                               +        +
+
+error[E0576]: cannot find associated type `Target` in trait `Copy`
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:12:18
+   |
+12 |     <U as Copy>::Target: fmt::Debug,
+   |                  ^^^^^^ not found in `Copy`
+
+error[E0599]: no method named `to_bits` found for type parameter `T` in the current scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:14:30
+   |
+10 | fn bitwise<T: fmt::Debug + Copy + From<u16>, U: Copy>(mut a: T, b: U)
+   |            - method `to_bits` not found for this type parameter
+...
+14 |     println!("a: {:016b}", a.to_bits());
+   |                              ^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_bits` found for type parameter `U` in the current scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:15:30
+   |
+10 | fn bitwise<T: fmt::Debug + Copy + From<u16>, U: Copy>(mut a: T, b: U)
+   |                                              - method `to_bits` not found for this type parameter
+...
+15 |     println!("b: {:016b}", b.to_bits());
+   |                              ^^^^^^^ method not found in `U`
+
+error[E0599]: no method named `to_bits` found for type parameter `T` in the current scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:17:16
+   |
+10 | fn bitwise<T: fmt::Debug + Copy + From<u16>, U: Copy>(mut a: T, b: U)
+   |            - method `to_bits` not found for this type parameter
+...
+17 |     let ua = a.to_bits();
+   |                ^^^^^^^ method not found in `T`
+
+error[E0599]: no method named `to_bits` found for type parameter `T` in the current scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:38:15
+   |
+10 | fn bitwise<T: fmt::Debug + Copy + From<u16>, U: Copy>(mut a: T, b: U)
+   |            - method `to_bits` not found for this type parameter
+...
+38 |     let a = a.to_bits();
+   |               ^^^^^^^ method not found in `T`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0576, E0599.
+For more information about an error, try `rustc --explain E0576`.

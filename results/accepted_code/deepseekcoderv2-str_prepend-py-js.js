@@ -1,3 +1,3 @@
-var s = "12345678";
+let s = "12345678";
 s = "0" + s; // by concatenation
 console.log(s);

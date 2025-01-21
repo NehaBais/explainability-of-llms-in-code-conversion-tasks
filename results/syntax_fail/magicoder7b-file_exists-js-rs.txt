@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/magicoder7b-file_exists-js-rs.rs:4:11
+   |
+4  | fn main() {
+   |           ^ unclosed delimiter
+...
+10 |     check_exist(&input_txt, &"."););
+   |                                   ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/magicoder7b-file_exists-js-rs.rs:14:1
+   |
+10 |     check_exist(&input_txt, &"."););
+   |                                   - missing open `(` for this delimiter
+...
+14 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

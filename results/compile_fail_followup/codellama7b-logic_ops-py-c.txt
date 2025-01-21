@@ -1,0 +1,5 @@
+/tmp/codellama7b-logic_ops-py-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("a and b: %d\n", a && b);
+      |   ^
+/tmp/codellama7b-logic_ops-py-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.

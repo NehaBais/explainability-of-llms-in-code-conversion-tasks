@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-str_concat-go-c.c:15:13: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   int len = strlen(s);
+      |             ^
+/tmp/qwen2.5coder2b-str_concat-go-c.c:15:13: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/qwen2.5coder2b-str_concat-go-c.c:16:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   strcpy(s2, s);
+      |   ^
+/tmp/qwen2.5coder2b-str_concat-go-c.c:16:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/qwen2.5coder2b-str_concat-go-c.c:17:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   strcat(s2, " literal");
+      |   ^
+/tmp/qwen2.5coder2b-str_concat-go-c.c:17:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+3 errors generated.

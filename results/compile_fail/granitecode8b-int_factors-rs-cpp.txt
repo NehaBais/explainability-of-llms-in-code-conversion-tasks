@@ -1,0 +1,88 @@
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:1: error: unknown type name 'vector'
+    5 | vector factor(int num) {
+      | ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:6:3: error: use of undeclared identifier 'vector'; did you mean 'factor'?
+    6 |   vector factors; // creates a new vector for the factors of the number
+      |   ^~~~~~
+      |   factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:6:9: error: expected ';' after expression
+    6 |   vector factors; // creates a new vector for the factors of the number
+      |         ^
+      |         ;
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:6:10: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+    6 |   vector factors; // creates a new vector for the factors of the number
+      |          ^~~~~~~
+      |          factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:8:24: error: use of undeclared identifier 'sqrt'
+    8 |   for (int i = 1; i <= sqrt(num); i++) {
+      |                        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:10:7: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+   10 |       factors.push_back(i);       // pushes smallest factor to factors
+      |       ^~~~~~~
+      |       factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:11:7: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+   11 |       factors.push_back(num / i); // pushes largest factor to factors
+      |       ^~~~~~~
+      |       factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:14:8: error: use of undeclared identifier 'factors'
+   14 |   sort(factors.begin(), factors.end()); // sorts the factors into numerical
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:14:25: error: use of undeclared identifier 'factors'
+   14 |   sort(factors.begin(), factors.end()); // sorts the factors into numerical
+      |                         ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:16:10: error: use of undeclared identifier 'factors'
+   16 |   return factors;                       // returns the factors
+      |          ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:3: error: use of undeclared identifier 'vector'; did you mean 'factor'?
+   19 |   vector expected = {1,  2,  4,  5,  10, 10,
+      |   ^~~~~~
+      |   factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:9: error: expected ';' after expression
+   19 |   vector expected = {1,  2,  4,  5,  10, 10,
+      |         ^
+      |         ;
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:10: error: use of undeclared identifier 'expected'
+   19 |   vector expected = {1,  2,  4,  5,  10, 10,
+      |          ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:19:21: error: expected expression
+   19 |   vector expected = {1,  2,  4,  5,  10, 10,
+      |                     ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:24:10: error: use of undeclared identifier 'expected'
+   24 |          expected); // asserts that two expressions are equal to each other
+      |          ^
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:26:3: error: use of undeclared identifier 'vector'; did you mean 'factor'?
+   26 |   vector actual = factor(
+      |   ^~~~~~
+      |   factor
+/tmp/granitecode8b-int_factors-rs-cpp.cpp:5:8: note: 'factor' declared here
+    5 | vector factor(int num) {
+      |        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

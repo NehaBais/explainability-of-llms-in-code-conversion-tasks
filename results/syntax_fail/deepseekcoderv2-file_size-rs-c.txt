@@ -1,0 +1,10 @@
+/tmp/deepseekcoderv2-file_size-rs-c.c:19:15: error: variable has incomplete type 'struct stat'
+   19 |   struct stat st;
+      |               ^
+/tmp/deepseekcoderv2-file_size-rs-c.c:19:10: note: forward declaration of 'struct stat'
+   19 |   struct stat st;
+      |          ^
+/tmp/deepseekcoderv2-file_size-rs-c.c:21:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   if (stat(file_name, &st) == -1) {
+      |       ^
+2 errors generated.

@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/codellama7b-int_factors-c-go.go:17:3: undefined: fctors
+/tmp/codellama7b-int_factors-c-go.go:18:8: undefined: fctors
+/tmp/codellama7b-int_factors-c-go.go:20:21: undefined: fctors
+/tmp/codellama7b-int_factors-c-go.go:48:5: undefined: sep
+/tmp/codellama7b-int_factors-c-go.go:50:5: undefined: sep
+/tmp/codellama7b-int_factors-c-go.go:52:26: undefined: sep

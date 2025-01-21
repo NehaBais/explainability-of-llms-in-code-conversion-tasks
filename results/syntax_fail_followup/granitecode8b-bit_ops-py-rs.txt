@@ -1,0 +1,48 @@
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:28:9
+   |
+25 |         "    NOT:     ~ 0b{:0width$b} = 0b{:0width$b}",
+   |         ---------------------------------------------- formatting specifier missing
+...
+28 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:41:9
+   |
+35 |         "rotl:     0b{:0width$b} << {:0rotate$b} | 0b{:0a$b} >> {:0n$b} = 0b{:0result$b}",
+   |         --------------------------------------------------------------------------------- formatting specifier missing
+...
+41 |         (a >> shift) | ((a << rotate) & mask)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:50:9
+   |
+44 |         "rotr:     0b{:0width$b} >> {:0rotate$b} | 0b{:0a$b} << {:0n$b} = 0b{:0result$b}",
+   |         --------------------------------------------------------------------------------- formatting specifier missing
+...
+50 |         (a << shift) & mask | (a >> rotate)
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:35:80
+   |
+35 |         "rotl:     0b{:0width$b} << {:0rotate$b} | 0b{:0a$b} >> {:0n$b} = 0b{:0result$b}",
+   |                                                                                ^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:44:80
+   |
+44 |         "rotr:     0b{:0width$b} >> {:0rotate$b} | 0b{:0a$b} << {:0n$b} = 0b{:0result$b}",
+   |                                                                                ^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `result` in this scope
+  --> /tmp/granitecode8b-bit_ops-py-rs.rs:54:61
+   |
+54 |         " wrapping_shr:     0b{:0width$b} >> {:0n$b} = 0b{:0result$b}",
+   |                                                             ^^^^^^ not found in this scope
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

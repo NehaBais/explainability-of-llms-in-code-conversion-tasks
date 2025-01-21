@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-file_size-rs-go.go:15:38: not enough arguments in call to syscall.Stat
+	have (string)
+	want (string, *syscall.Stat_t)

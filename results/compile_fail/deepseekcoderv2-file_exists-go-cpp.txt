@@ -1,0 +1,16 @@
+/tmp/deepseekcoderv2-file_exists-go-cpp.cpp:6:11: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    6 |     const auto file_status = std::filesystem::status(path);
+      |           ^
+/tmp/deepseekcoderv2-file_exists-go-cpp.cpp:6:35: error: no member named 'filesystem' in namespace 'std'
+    6 |     const auto file_status = std::filesystem::status(path);
+      |                              ~~~~~^
+/tmp/deepseekcoderv2-file_exists-go-cpp.cpp:7:14: error: no member named 'filesystem' in namespace 'std'
+    7 |     if (std::filesystem::exists(file_status)) {
+      |         ~~~~~^
+/tmp/deepseekcoderv2-file_exists-go-cpp.cpp:8:16: error: no member named 'filesystem' in namespace 'std'
+    8 |       if (std::filesystem::is_directory(file_status)) {
+      |           ~~~~~^
+/tmp/deepseekcoderv2-file_exists-go-cpp.cpp:16:23: error: no member named 'filesystem' in namespace 'std'
+   16 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+1 warning and 4 errors generated.

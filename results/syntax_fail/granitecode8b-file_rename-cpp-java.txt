@@ -1,0 +1,31 @@
+/tmp/Rename.java:15: error: cannot find symbol
+    rootDocs = new File(rootDocs, "docs");
+    ^
+  symbol:   variable rootDocs
+  location: class Rename
+/tmp/Rename.java:15: error: cannot find symbol
+    rootDocs = new File(rootDocs, "docs");
+                        ^
+  symbol:   variable rootDocs
+  location: class Rename
+/tmp/Rename.java:16: error: cannot find symbol
+    rootMydocs = new File(rootMydocs, "mydocs");
+    ^
+  symbol:   variable rootMydocs
+  location: class Rename
+/tmp/Rename.java:16: error: cannot find symbol
+    rootMydocs = new File(rootMydocs, "mydocs");
+                          ^
+  symbol:   variable rootMydocs
+  location: class Rename
+/tmp/Rename.java:18: error: cannot find symbol
+    rootDocs.renameTo(rootMydocs);
+                      ^
+  symbol:   variable rootMydocs
+  location: class Rename
+/tmp/Rename.java:18: error: cannot find symbol
+    rootDocs.renameTo(rootMydocs);
+    ^
+  symbol:   variable rootDocs
+  location: class Rename
+6 errors

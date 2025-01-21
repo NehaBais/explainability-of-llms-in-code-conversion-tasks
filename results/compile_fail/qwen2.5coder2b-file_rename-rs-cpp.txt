@@ -1,0 +1,35 @@
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path path("input.txt");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:6:13: error: no member named 'filesystem' in namespace 'std'
+    6 |   if (!std::filesystem::exists(path)) {
+      |        ~~~~~^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:6:32: error: use of undeclared identifier 'path'
+    6 |   if (!std::filesystem::exists(path)) {
+      |                                ^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:10:8: error: no member named 'filesystem' in namespace 'std'
+   10 |   std::filesystem::rename(path, "output.txt");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:10:27: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   10 |   std::filesystem::rename(path, "output.txt");
+      |                           ^~~~
+      |                           catch
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:10:27: error: expected expression
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:12:3: error: use of undeclared identifier 'path'
+   12 |   path = "docs";
+      |   ^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:13:13: error: no member named 'filesystem' in namespace 'std'
+   13 |   if (!std::filesystem::exists(path)) {
+      |        ~~~~~^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:13:32: error: use of undeclared identifier 'path'
+   13 |   if (!std::filesystem::exists(path)) {
+      |                                ^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:17:8: error: no member named 'filesystem' in namespace 'std'
+   17 |   std::filesystem::rename(path, "mydocs");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:17:27: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   17 |   std::filesystem::rename(path, "mydocs");
+      |                           ^~~~
+      |                           catch
+/tmp/qwen2.5coder2b-file_rename-rs-cpp.cpp:17:27: error: expected expression
+12 errors generated.

@@ -1,0 +1,31 @@
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:6:15: error: no member named 'filesystem' in namespace 'std'
+    6 |     if (!std::filesystem::exists(path)) {
+      |          ~~~~~^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |       std::filesystem::create_directories(path);
+      |       ~~~~~^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:1: error: expected expression
+   13 | <｜begin▁of▁sentence｜>
+      | ^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:2: error: unexpected character <U+FF5C>
+   13 | <｜begin▁of▁sentence｜>
+      |  ^~
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:10: error: character <U+2581> not allowed in an identifier
+   13 | <｜begin▁of▁sentence｜>
+      |         ^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:15: error: character <U+2581> not allowed in an identifier
+   13 | <｜begin▁of▁sentence｜>
+      |            ^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:26: error: character <U+FF5C> not allowed in an identifier
+   13 | <｜begin▁of▁sentence｜>
+      |                     ^~
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:13:5: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   13 | <｜begin▁of▁sentence｜>
+      |    ^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:14:5: error: expected expression
+   14 |     }
+      |     ^
+/tmp/deepseekcoder7b-dir_make-go-cpp.cpp:15:23: error: no member named 'filesystem' in namespace 'std'
+   15 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+10 errors generated.

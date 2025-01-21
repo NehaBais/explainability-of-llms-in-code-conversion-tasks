@@ -1,0 +1,46 @@
+/tmp/granitecode8b-dir_make-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-go-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-go-c.c:5:16: error: call to undeclared library function 'strdup' with type 'char *(const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *copy = strdup(path);
+      |                ^
+/tmp/granitecode8b-dir_make-go-c.c:5:16: note: include the header <string.h> or explicitly provide a declaration for 'strdup'
+/tmp/granitecode8b-dir_make-go-c.c:7:14: error: use of undeclared identifier 'S_IRWXU'
+    7 |   int mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |              ^
+/tmp/granitecode8b-dir_make-go-c.c:7:24: error: use of undeclared identifier 'S_IRWXG'
+    7 |   int mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                        ^
+/tmp/granitecode8b-dir_make-go-c.c:7:34: error: use of undeclared identifier 'S_IROTH'
+    7 |   int mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                  ^
+/tmp/granitecode8b-dir_make-go-c.c:7:44: error: use of undeclared identifier 'S_IXOTH'
+    7 |   int mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+      |                                            ^
+/tmp/granitecode8b-dir_make-go-c.c:11:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |       mkdir(copy, mode);
+      |       ^
+/tmp/granitecode8b-dir_make-go-c.c:11:7: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-go-c.c:4:6: note: 'mkdirp' declared here
+    4 | void mkdirp(const char *path) {
+      |      ^
+    5 |   char *copy = strdup(path);
+    6 |   char *p = copy;
+    7 |   int mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+    8 |   for (; *p; p++) {
+    9 |     if (*p == '/') {
+   10 |       *p = 0;
+   11 |       mkdir(copy, mode);
+      |       ~~~~~
+      |       mkdirp
+/tmp/granitecode8b-dir_make-go-c.c:15:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   free(copy);
+      |   ^
+/tmp/granitecode8b-dir_make-go-c.c:15:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+10 errors generated.

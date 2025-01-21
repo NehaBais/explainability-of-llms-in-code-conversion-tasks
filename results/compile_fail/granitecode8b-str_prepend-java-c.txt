@@ -1,0 +1,4 @@
+/tmp/granitecode8b-str_prepend-java-c.c:2:26: error: invalid operands to binary expression ('char[4]' and 'char *')
+    2 | char *new_string = "abc" + string;
+      |                    ~~~~~ ^ ~~~~~~
+1 error generated.

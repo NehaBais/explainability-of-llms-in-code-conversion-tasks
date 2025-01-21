@@ -1,0 +1,31 @@
+/tmp/bitwise.java:20: error: ')' or ',' expected
+        System.out.println("a rol b: "+ std::rotl(ua,b));
+                                                 ^
+/tmp/bitwise.java:20: error: not a statement
+        System.out.println("a rol b: "+ std::rotl(ua,b));
+                                                  ^
+/tmp/bitwise.java:20: error: ';' expected
+        System.out.println("a rol b: "+ std::rotl(ua,b));
+                                                    ^
+/tmp/bitwise.java:20: error: not a statement
+        System.out.println("a rol b: "+ std::rotl(ua,b));
+                                                     ^
+/tmp/bitwise.java:20: error: ';' expected
+        System.out.println("a rol b: "+ std::rotl(ua,b));
+                                                      ^
+/tmp/bitwise.java:21: error: ')' or ',' expected
+        System.out.println("a ror b: "+std::rotr(ua,b));
+                                                ^
+/tmp/bitwise.java:21: error: not a statement
+        System.out.println("a ror b: "+std::rotr(ua,b));
+                                                 ^
+/tmp/bitwise.java:21: error: ';' expected
+        System.out.println("a ror b: "+std::rotr(ua,b));
+                                                   ^
+/tmp/bitwise.java:21: error: not a statement
+        System.out.println("a ror b: "+std::rotr(ua,b));
+                                                    ^
+/tmp/bitwise.java:21: error: ';' expected
+        System.out.println("a ror b: "+std::rotr(ua,b));
+                                                     ^
+10 errors

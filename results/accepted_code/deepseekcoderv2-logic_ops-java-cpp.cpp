@@ -1,5 +1,14 @@
-void logic(bool_t &a, bool_t &b) {
-  cout << "\nA AND B: " << ((a && b) ? "TRUE" : "FALSE") << endl;
-  cout << "A OR B:" << ((a || b) ? "TRUE" : "FALSE") << endl;
-  cout << "NOT A:" << (!a ? "TRUE" : "FALSE");
+#include <iostream>
+
+void logic(bool a, bool b) {
+  std::cout << "a AND b: " << (a && b) << std::endl;
+  std::cout << "a OR b: " << (a || b) << std::endl;
+  std::cout << "NOT a: " << (!a) << std::endl;
+}
+
+int main() {
+  bool a = true;  // or false, depending on your test case
+  bool b = false; // or true, depending on your test case
+  logic(a, b);
+  return 0;
 }

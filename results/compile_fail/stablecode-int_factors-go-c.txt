@@ -1,0 +1,36 @@
+/tmp/stablecode-int_factors-go-c.c:7:44: warning: format specifies type 'int' but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+    7 |     printf("Factors of %d not computed\n", nr);
+      |                        ~~                  ^~
+      |                        %lld
+/tmp/stablecode-int_factors-go-c.c:11:29: warning: format specifies type 'int' but the argument has type 'int64_t' (aka 'long long') [-Wformat]
+   11 |   printf("Factors of %d: ", nr);
+      |                      ~~     ^~
+      |                      %lld
+/tmp/stablecode-int_factors-go-c.c:13:41: error: invalid operands to binary expression ('void *' and 'int')
+   13 |   int64_t *fs = malloc(sizeof(int64_t)) * 2;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+/tmp/stablecode-int_factors-go-c.c:19:30: error: function definition is not allowed here
+   19 |   void apf(int64_t p, int e) {
+      |                              ^
+/tmp/stablecode-int_factors-go-c.c:32:11: error: redefinition of 'd' with a different type: 'int64_t' (aka 'long long') vs 'int'
+   32 |   int64_t d;
+      |           ^
+/tmp/stablecode-int_factors-go-c.c:14:10: note: previous definition is here
+   14 |   int i, d;
+      |          ^
+/tmp/stablecode-int_factors-go-c.c:36:7: error: call to undeclared function 'apf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |       apf(p, e);
+      |       ^
+/tmp/stablecode-int_factors-go-c.c:36:14: error: use of undeclared identifier 'e'
+   36 |       apf(p, e);
+      |              ^
+/tmp/stablecode-int_factors-go-c.c:41:19: error: call to undeclared function 'len'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   41 |   for (i = 1; i < len(fs); i++) {
+      |                   ^
+/tmp/stablecode-int_factors-go-c.c:42:31: error: extraneous ')' before ';'
+   42 |         printf("%lld ", fs[i]));
+      |                               ^
+/tmp/stablecode-int_factors-go-c.c:46:48: error: extraneous ')' before ';'
+   46 |     printf("Number of factors = %d\n", len(fs)));
+      |                                                ^
+2 warnings and 8 errors generated.

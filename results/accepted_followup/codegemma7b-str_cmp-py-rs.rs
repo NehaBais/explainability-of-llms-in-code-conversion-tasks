@@ -1,0 +1,3 @@
+fn compare(a: &str, b: &str) {
+    // ...
+}

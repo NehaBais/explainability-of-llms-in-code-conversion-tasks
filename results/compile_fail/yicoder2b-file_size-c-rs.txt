@@ -1,0 +1,126 @@
+error: expected one of `!`, `(`, `)`, `,`, `...`, `..=`, `..`, `::`, `{`, or `|`, found `_e`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:23:23
+   |
+23 |         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+   |                      -^^ expected one of 10 possible tokens
+   |                      |
+   |                      help: missing `,`
+
+error: expected one of `!`, `(`, `)`, `,`, `...`, `..=`, `..`, `::`, `{`, or `|`, found `_e`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:36:23
+   |
+36 |         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+   |                      -^^ expected one of 10 possible tokens
+   |                      |
+   |                      help: missing `,`
+
+error[E0432]: unresolved import `std::io::Parser`
+ --> /tmp/yicoder2b-file_size-c-rs.rs:2:21
+  |
+2 | use std::io::{self, Parser, Result};
+  |                     ^^^^^^ no `Parser` in `io`
+
+error[E0532]: expected unit struct, unit variant or constant, found struct `io::Error`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:23:13
+   |
+23 |         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+   |             ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/error.rs:64:1
+   |
+   = note: `io::Error` defined here
+   |
+help: consider importing this unit struct instead
+   |
+1  + use std::fmt::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+23 -         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+23 +         Err(Error _e) => { println!("Failed to open file: {}", file); },
+   |
+
+error[E0532]: expected unit struct, unit variant or constant, found struct `io::Error`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:36:13
+   |
+36 |         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+   |             ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/error.rs:64:1
+   |
+   = note: `io::Error` defined here
+   |
+help: consider importing this unit struct instead
+   |
+1  + use std::fmt::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+36 -         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+36 +         Err(Error _e) => { println!("Failed to open root file: {}", root); },
+   |
+
+warning: unused import: `Result`
+ --> /tmp/yicoder2b-file_size-c-rs.rs:2:29
+  |
+2 | use std::io::{self, Parser, Result};
+  |                             ^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::process`
+ --> /tmp/yicoder2b-file_size-c-rs.rs:3:5
+  |
+3 | use std::process;
+  |     ^^^^^^^^^^^^
+
+warning: unused import: `std::path::PathBuf`
+ --> /tmp/yicoder2b-file_size-c-rs.rs:4:5
+  |
+4 | use std::path::PathBuf;
+  |     ^^^^^^^^^^^^^^^^^^
+
+error[E0425]: cannot find function `process_args` in this scope
+ --> /tmp/yicoder2b-file_size-c-rs.rs:7:29
+  |
+7 |     let args: Vec<String> = process_args();
+  |                             ^^^^^^^^^^^^ not found in this scope
+
+error[E0023]: this pattern has 2 fields, but the corresponding tuple variant has 1 field
+  --> /tmp/yicoder2b-file_size-c-rs.rs:23:13
+   |
+23 |         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+   |             ^^^^^^^^^ ^^ expected 1 field, found 2
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:536:55
+   |
+   = note: tuple variant has 1 field
+
+error[E0599]: no method named `read_line` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_size-c-rs.rs:17:32
+   |
+17 |             while let read = f.read_line(&mut line) {
+   |                                ^^^^^^^^^
+   |
+help: there is a method `read_at` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/os/unix/fs.rs:59:5
+
+error[E0023]: this pattern has 2 fields, but the corresponding tuple variant has 1 field
+  --> /tmp/yicoder2b-file_size-c-rs.rs:36:13
+   |
+36 |         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+   |             ^^^^^^^^^ ^^ expected 1 field, found 2
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:536:55
+   |
+   = note: tuple variant has 1 field
+
+error[E0599]: no method named `read_line` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_size-c-rs.rs:30:32
+   |
+30 |             while let read = f.read_line(&mut line) {
+   |                                ^^^^^^^^^
+   |
+help: there is a method `read_at` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/os/unix/fs.rs:59:5
+
+error: aborting due to 10 previous errors; 3 warnings emitted
+
+Some errors have detailed explanations: E0023, E0425, E0432, E0532, E0599.
+For more information about an error, try `rustc --explain E0023`.

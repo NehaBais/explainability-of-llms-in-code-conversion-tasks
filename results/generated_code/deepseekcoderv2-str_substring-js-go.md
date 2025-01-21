@@ -1,4 +1,4 @@
-## Solution:
+ Sure, here is the equivalent code in GoLang for each requirement you've specified:
 
 ```go
 package main
@@ -7,87 +7,93 @@ import (
 	"fmt"
 )
 
-var str = "abcdefgh"
+func main() {
+	str := "abcdefgh"
 
-func substrings() {
+	//  * starting from n characters in and of m length;
 	n := 2
 	m := 3
+	fmt.Println(str[n : n+m]) // => "cde"
 
-	// * starting from n characters in and of m length;
-	fmt.Printf("substr(n, m): %s\n", str[n:n+m]) // => "cde"
+	//  * starting from n characters in, up to the end of the string;
+	fmt.Println(str[n:]) // => "cdefgh"
 
-	// * starting from n characters in, up to the end of the string;
-	fmt.Println("substr(n): ", str[n:]) // => "cdefgh"
+	//  * whole string minus last character;
+	fmt.Println(str[:len(str)-1]) // => "abcdefg"
 
-	// * whole string minus last character;
-	fmt.Println("substring before last char:", str[:len(str)-1]) // => "abcdefg"
-
-	// * starting from a known character within the string and of m length;
-	substr := func() {
-		ch, index := 'b', 0
-
-		for i, chs := range str {
-			if ch == chs {
-				index = i + 1 // index starts with 1
-				break
-			}
-		}
-		fmt.Printf("substr(index, m): %s\n", str[index:index+m]) // => "bcd"
+	//  * starting from a known character within the string and of m length;
+	bIndex := indexOf(str, 'b')
+	if bIndex != -1 {
+		fmt.Println(str[bIndex : bIndex+m]) // => "bcd"
 	}
-	substr()
 
-	// * starting from a known substring within the string and of m length.
-	substring := func() {
-		s := "bc"
-		index := 0
-
-		for i, chs := range str {
-			if s == string(chs) {
-				index = i + 1 // index starts with 1
-				break
-			}
-		}
-		fmt.Printf("substr(index, m): %s\n", str[index:index+m]) // => "bcd"
+	//  * starting from a known substring within the string and of m length.
+	bcIndex := indexOf(str, 'b', 'c')
+	if bcIndex != -1 {
+		fmt.Println(str[bcIndex : bcIndex+m]) // => "bcd"
 	}
-	substring()
 }
 
-func main() {
-	fmt.Println("\nSubstring of string 'abcdefgh'")
-
-	var a = [3]string{"str.substr(n, m)", "str.substr(n)", "whole string minus last character"}
-	for _, v := range a {
-		switch v {
-		case "str.substr(n, m)":
-			fmt.Printf("%s\n", str[2:5]) // => "cde"
-		case "str.substr(n)", "whole string minus last character":
-			fmt.Println("str.substr(n): ", str[2:]) // => "cdefgh"
-			fmt.Println("whole string minus last char:", str[:len(str)-1])   // => "abcdefg"
+// Helper function to find the index of a character or substring in a string
+func indexOf(s string, target interface{}) int {
+	switch v := target.(type) {
+	case rune:
+		for i, r := range s {
+			if r == v {
+				return i
+			}
 		}
-	}
-
-	// * starting from a known character within the string and of m length;
-	var ch = [3]string{"b", "d", "f"}
-	for _, v := range ch {
-		switch v {
-		case "b":
-			fmt.Printf("str.substr(index, m): %s\n", str[1:4]) // => "bcd"
-		case "d":
-			fmt.Println("No character 'd'")
-		case "f":
-			fmt.Printf("str.substr(index, m): %s\n", str[5:8]) // => "fgh"
+	case string:
+		if len(v) == 0 {
+			return -1
 		}
-	}
-
-	// * starting from a known substring within the string and of m length.
-	var substrings = [2]string{"bc", "de"}
-	for _, v := range substrings {
-		switch v {
-		case "bc":
-			fmt.Printf("str.substr(index, m): %s\n", str[1:4]) // => "bcd"
-		case "de":
-			fmt.Println("No substring 'de'")
+		for i := 0; i <= len(s)-len(v); i++ {
+			if s[i:i+len(v)] == v {
+				return i
+			}
 		}
+	default:
+		return -1
 	}
+	return -1
 }
 ```
+
+### Explanation:
+1. **Starting from `n` characters in and of `m` length:**
+   ```go
+   fmt.Println(str[n : n+m]) // => "cde"
+   ```
+   This uses Go's string slicing to get the substring starting from index `n` with length `m`.
+
+2. **Starting from `n` characters in, up to the end of the string:**
+   ```go
+   fmt.Println(str[n:]) // => "cdefgh"
+   ```
+   This uses Go's string slicing to get the substring starting from index `n` to the end of the string.
+
+3. **Whole string minus the last character:**
+   ```go
+   fmt.Println(str[:len(str)-1]) // => "abcdefg"
+   ```
+   This uses Go's string slicing to get all characters except the last one.
+
+4. **Starting from a known character within the string and of `m` length:**
+   ```go
+   bIndex := indexOf(str, 'b')
+   if bIndex != -1 {
+       fmt.Println(str[bIndex : bIndex+m]) // => "bcd"
+   }
+   ```
+   This finds the index of character `'b'` and then slices the substring from that index with length `m`.
+
+5. **Starting from a known substring within the string and of `m` length:**
+   ```go
+   bcIndex := indexOf(str, 'b', 'c')
+   if bcIndex != -1 {
+       fmt.Println(str[bcIndex : bcIndex+m]) // => "bcd"
+   }
+   ```
+   This finds the index of substring `'bc'` and then slices the substring from that index with length `m`.
+
+The helper function `indexOf` is used to find the index of a character or substring within the string.

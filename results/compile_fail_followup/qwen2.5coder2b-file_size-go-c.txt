@@ -1,0 +1,6 @@
+Undefined symbols for architecture arm64:
+  "_getFileSize", referenced from:
+      _main in qwen2-5123ff.o
+      _main in qwen2-5123ff.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

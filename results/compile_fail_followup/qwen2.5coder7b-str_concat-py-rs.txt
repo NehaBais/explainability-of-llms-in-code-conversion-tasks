@@ -1,0 +1,22 @@
+error[E0382]: borrow of moved value: `s1`
+ --> /tmp/qwen2.5coder7b-str_concat-py-rs.rs:5:34
+  |
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     println!("{}", s1 + " world");
+  |                    ------------- `s1` moved due to usage in operator
+4 |
+5 |     let s2 = format!("{} world", s1);
+  |                                  ^^ value borrowed here after move
+  |
+note: calling this operator moves the left-hand side
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/arith.rs:91:12
+  = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 |     println!("{}", s1.clone() + " world");
+  |                      ++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.

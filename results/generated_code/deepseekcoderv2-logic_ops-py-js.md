@@ -1,11 +1,14 @@
-Here is an example of how your function should behave:
-Input:   True, False
-Output:  and: False; or: True; not: False.
-```
-function logic(a,b){
-	console.log("and: " + (a && b)); //print true if both the value are true else false
-	console.log("or: " + (a || b)); //print true if any one of values is true else false
-	console.log("not a: "+ !a); //this will return inverse of given boolean value
+ Here's the equivalent JavaScript code for the given Python function:
+
+```javascript
+function logic(a, b) {
+  console.log('a and b:', a && b);
+  console.log('a or b:', a || b);
+  console.log('not a:', !a);
 }
+
+// Example usage:
+logic(true, false);
 ```
 
+This JavaScript function `logic` takes two boolean arguments `a` and `b`, and outputs the results of "and" (`&&`), "or" (`||`), and "not" (`!`) operations on these arguments.

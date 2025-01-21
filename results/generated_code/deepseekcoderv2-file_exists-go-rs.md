@@ -1,84 +1,28 @@
-## Answer:
-
-Here is the Rust code that implements this functionality and follows a similar structure to the Golang code provided in the requirement:
+ Sure! Below is the equivalent Rust code for the provided Go code:
 
 ```rust
 use std::fs;
 use std::io;
 
-fn main() -> io::Result<()> {
-    // Current working directory stat
-    println!("Current working directory:");
-    match fs::canonicalize("./") {
-        Ok(path) => {
-            if let Some(file_name) = path.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
+fn print_stat(path: &str) {
+    match fs::metadata(path) {
+        Ok(meta) => {
+            if meta.is_dir() {
+                println!("{} is a directory", path);
             } else {
-                println!("<no-filename>");
+                println!("{} is a file", path);
             }
         },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
+        Err(e) => eprintln!("Error: {}", e),
     }
+}
 
-    let current_path = std::env::current_dir().expect("Failed to get the current working directory");
-    
-    println!("\nCurrent working directory stats:");
-    match fs::canonicalize(&current_path) {
-        Ok(file_or_directory_name) => {
-            if let Some(file_name) = file_or_directory_name.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
-            } else {
-                println!("<no-filename>");
-            }
-        },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
-    }
-    
-    match fs::canonicalize("./input.txt") {
-        Ok(file_or_directory_name) => {
-            if let Some(file_name) = file_or_directory_name.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
-            } else {
-                println!("<no-filename>");
-            }
-        },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
-    }
-    
-    match fs::canonicalize("/input.txt") {
-        Ok(file_or_directory_name) => {
-            if let Some(file_name) = file_or_directory_name.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
-            } else {
-                println!("<no-filename>");
-            }
-        },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
-    }
-    
-    match fs::canonicalize("./docs") {
-        Ok(file_or_directory_name) => {
-            if let Some(file_name) = file_or_directory_name.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
-            } else {
-                println!("<no-filename>");
-            }
-        },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
-    }
-    
-    match fs::canonicalize("/docs") {
-        Ok(file_or_directory_name) => {
-            if let Some(file_name) = file_or_directory_name.file_name().and_then(|s| s.to_str()) {
-                println!("{}", file_name);
-            } else {
-                println!("<no-filename>");
-            }
-        },
-        Err(_) => {}, // Print an error message or handle the error in your application's way
-    }
-    
-    Ok(())
+fn main() {
+    print_stat("input.txt");
+    print_stat("/input.txt");
+    print_stat("docs");
+    print_stat("/docs");
 }
 ```
 
+This Rust code performs the same checks as the Go code: it verifies if `input.txt` and `docs` files or directories exist in both the current working directory and the filesystem root. The `print_stat` function uses the `fs::metadata` function to check the metadata of the given path, and then prints whether it is a file or a directory. If there's an error (e.g., the file or directory does not exist), it prints the error message.

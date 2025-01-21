@@ -1,0 +1,7 @@
+/tmp/yicoder9b-str_substring-go-cpp.cpp:1:1: error: unknown type name 'cout'
+    1 | cout << R"(Start "DE", length ${m} :)" << substr << endl;
+      | ^
+/tmp/yicoder9b-str_substring-go-cpp.cpp:1:6: error: expected unqualified-id
+    1 | cout << R"(Start "DE", length ${m} :)" << substr << endl;
+      |      ^
+2 errors generated.

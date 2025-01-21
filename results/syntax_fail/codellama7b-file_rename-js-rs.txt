@@ -1,0 +1,47 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `path`
+ --> /tmp/codellama7b-file_rename-js-rs.rs:4:20
+  |
+4 |     let cwd_path = path::PathBuf::from(current_working_directory);
+  |                    ^^^^ use of undeclared crate or module `path`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+help: if you import `PathBuf`, refer to it directly
+  |
+4 -     let cwd_path = path::PathBuf::from(current_working_directory);
+4 +     let cwd_path = PathBuf::from(current_working_directory);
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `Path`
+  --> /tmp/codellama7b-file_rename-js-rs.rs:12:16
+   |
+12 |     let path = Path::new(path);
+   |                ^^^^ use of undeclared type `Path`
+   |
+help: consider importing this struct
+   |
+1  + use std::path::Path;
+   |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+  --> /tmp/codellama7b-file_rename-js-rs.rs:15:11
+   |
+15 |     match fs::rename(&from_path, &to_path) {
+   |           ^^ use of undeclared crate or module `fs`
+   |
+help: consider importing this module
+   |
+1  + use std::fs;
+   |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/codellama7b-file_rename-js-rs.rs:2:23
+  |
+2 |     let file_system = fs::FileSystem;
+  |                       ^^ use of undeclared crate or module `fs`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

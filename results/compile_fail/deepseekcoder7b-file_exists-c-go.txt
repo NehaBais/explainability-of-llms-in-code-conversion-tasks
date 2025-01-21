@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_exists-c-go.go:22:31: invalid character U+003F '?'
+/tmp/deepseekcoder7b-file_exists-c-go.go:22:33: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/deepseekcoder7b-file_exists-c-go.go:24:26: invalid character U+003F '?'
+/tmp/deepseekcoder7b-file_exists-c-go.go:24:28: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/deepseekcoder7b-file_exists-c-go.go:26:32: invalid character U+003F '?'
+/tmp/deepseekcoder7b-file_exists-c-go.go:26:34: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/deepseekcoder7b-file_exists-c-go.go:28:27: invalid character U+003F '?'
+/tmp/deepseekcoder7b-file_exists-c-go.go:28:29: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )

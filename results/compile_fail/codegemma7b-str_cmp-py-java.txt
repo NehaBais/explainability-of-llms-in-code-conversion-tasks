@@ -1,0 +1,8 @@
+/tmp/StringComparison.java:37: error: incompatible types: int cannot be converted to String
+    compare(24, 123);
+            ^
+/tmp/StringComparison.java:38: error: incompatible types: double cannot be converted to String
+    compare(5.0, 5);
+            ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors

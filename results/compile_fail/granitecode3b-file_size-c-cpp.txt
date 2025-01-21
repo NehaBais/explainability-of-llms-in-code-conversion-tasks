@@ -1,0 +1,46 @@
+/tmp/granitecode3b-file_size-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat info;
+      |               ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:5:10: note: forward declaration of 'stat'
+    5 |   struct stat info;
+      |          ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:6:32: error: invalid operands to binary expression ('stat' and 'int')
+    6 |   if (stat("input.txt", &info) == 0) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/granitecode3b-file_size-c-cpp.cpp:7:5: error: use of undeclared identifier 'cout'
+    7 |     cout << "Size of input.txt: " << info.st_size << endl;
+      |     ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:7:54: error: use of undeclared identifier 'endl'
+    7 |     cout << "Size of input.txt: " << info.st_size << endl;
+      |                                                      ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:9:5: error: use of undeclared identifier 'cout'
+    9 |     cout << "Error accessing input.txt" << endl;
+      |     ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:9:44: error: use of undeclared identifier 'endl'
+    9 |     cout << "Error accessing input.txt" << endl;
+      |                                            ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:11:33: error: invalid operands to binary expression ('stat' and 'int')
+   11 |   if (stat("/input.txt", &info) == 0) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/granitecode3b-file_size-c-cpp.cpp:12:5: error: use of undeclared identifier 'cout'
+   12 |     cout << "Size of /input.txt: " << info.st_size << endl;
+      |     ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:12:55: error: use of undeclared identifier 'endl'
+   12 |     cout << "Size of /input.txt: " << info.st_size << endl;
+      |                                                       ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << "Error accessing /input.txt" << endl;
+      |     ^
+/tmp/granitecode3b-file_size-c-cpp.cpp:14:45: error: use of undeclared identifier 'endl'
+   14 |     cout << "Error accessing /input.txt" << endl;
+      |                                             ^
+1 warning and 13 errors generated.

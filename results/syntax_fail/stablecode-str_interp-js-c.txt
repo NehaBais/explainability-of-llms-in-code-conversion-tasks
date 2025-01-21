@@ -1,0 +1,4 @@
+/tmp/stablecode-str_interp-js-c.c:13:45: error: extraneous ')' before ';'
+   13 |         strncpy(ptr, little, strlen(little)));
+      |                                             ^
+1 error generated.

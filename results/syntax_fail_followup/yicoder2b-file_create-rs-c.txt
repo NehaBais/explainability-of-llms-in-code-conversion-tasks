@@ -1,0 +1,13 @@
+/tmp/yicoder2b-file_create-rs-c.c:20:22: error: expected ')'
+   20 |   int fd = open(path "/output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                      ^
+/tmp/yicoder2b-file_create-rs-c.c:20:16: note: to match this '('
+   20 |   int fd = open(path "/output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                ^
+/tmp/yicoder2b-file_create-rs-c.c:24:54: error: expected ')'
+   24 |     fprintf(stderr, "Error opening file: %s\n", path "/output.txt");
+      |                                                      ^
+/tmp/yicoder2b-file_create-rs-c.c:24:12: note: to match this '('
+   24 |     fprintf(stderr, "Error opening file: %s\n", path "/output.txt");
+      |            ^
+2 errors generated.

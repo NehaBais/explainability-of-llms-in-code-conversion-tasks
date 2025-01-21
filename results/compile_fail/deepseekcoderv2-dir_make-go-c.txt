@@ -1,0 +1,13 @@
+/tmp/deepseekcoderv2-dir_make-go-c.c:24:46: error: use of undeclared identifier 'errno'
+   24 |         if (mkdir(mutablePath, 0770) != 0 && errno != EEXIST) {
+      |                                              ^
+/tmp/deepseekcoderv2-dir_make-go-c.c:24:55: error: use of undeclared identifier 'EEXIST'
+   24 |         if (mkdir(mutablePath, 0770) != 0 && errno != EEXIST) {
+      |                                                       ^
+/tmp/deepseekcoderv2-dir_make-go-c.c:38:42: error: use of undeclared identifier 'errno'
+   38 |     if (mkdir(mutablePath, 0770) != 0 && errno != EEXIST) {
+      |                                          ^
+/tmp/deepseekcoderv2-dir_make-go-c.c:38:51: error: use of undeclared identifier 'EEXIST'
+   38 |     if (mkdir(mutablePath, 0770) != 0 && errno != EEXIST) {
+      |                                                   ^
+4 errors generated.

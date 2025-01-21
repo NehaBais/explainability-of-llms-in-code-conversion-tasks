@@ -1,0 +1,78 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:7:30
+  |
+7 |     println!("not a: {:?}", (~a) as i32);
+  |                              ^
+  |
+help: use `!` to perform bitwise not
+  |
+7 |     println!("not a: {:?}", (!a) as i32);
+  |                              ~
+
+error[E0601]: `main` function not found in crate `yicoder2b_bit_ops_c_rs`
+  --> /tmp/yicoder2b-bit_ops-c-rs.rs:12:2
+   |
+12 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-bit_ops-c-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:4:36
+  |
+4 |     println!("a and b: {:?}", (a & b) as u32);
+  |                                    ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 & u32`
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:4:34
+  |
+4 |     println!("a and b: {:?}", (a & b) as u32);
+  |                                  ^ no implementation for `i32 & u32`
+  |
+  = help: the trait `BitAnd<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a i32` implements `BitAnd<i32>`
+            `&i32` implements `BitAnd<&i32>`
+            `i32` implements `BitAnd<&i32>`
+            `i32` implements `BitAnd`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:5:35
+  |
+5 |     println!("a or b: {:?}", (a | b) as u32);
+  |                                   ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 | u32`
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:5:33
+  |
+5 |     println!("a or b: {:?}", (a | b) as u32);
+  |                                 ^ no implementation for `i32 | u32`
+  |
+  = help: the trait `BitOr<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitOr<Rhs>`:
+            `&'a i32` implements `BitOr<i32>`
+            `&i32` implements `BitOr<&i32>`
+            `i32` implements `BitOr<&i32>`
+            `i32` implements `BitOr`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:6:36
+  |
+6 |     println!("a xor b: {:?}", (a ^ b) as u32);
+  |                                    ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 ^ u32`
+ --> /tmp/yicoder2b-bit_ops-c-rs.rs:6:34
+  |
+6 |     println!("a xor b: {:?}", (a ^ b) as u32);
+  |                                  ^ no implementation for `i32 ^ u32`
+  |
+  = help: the trait `BitXor<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitXor<Rhs>`:
+            `&'a i32` implements `BitXor<i32>`
+            `&i32` implements `BitXor<&i32>`
+            `i32` implements `BitXor<&i32>`
+            `i32` implements `BitXor`
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

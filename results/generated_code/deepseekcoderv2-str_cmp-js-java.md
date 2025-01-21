@@ -1,29 +1,56 @@
-## Java:
+ Sure, here is the equivalent Java code that demonstrates the requested comparisons:
+
 ```java
-public class Main {
-  public static void main(String[] args) {
-    String str1 = "hello";
-    String str2 = "world";
-    
-    // Comparing two strings for exact equality
-    System.out.println("str1 == str2: " + (str1 == str2)); // false
-    
-    // Comparing two strings for inequality
-    System.out.println("str1 != str2: " + !(str1 == str2)); // true
-    
-    // Comparing two strings to see if one is lexically ordered before the other
-    System.out.println("str1 < str2: " + (str1.compareTo(str2) < 0)); // true
-    
-    // Comparing two strings to see if one is lexically ordered after the other
-    System.out.println("str1 > str2: " + (str1.compareTo(str2) > 0)); // false
-    
-    // Case-sensitive comparison
-    String str3 = "hello";
-    String str4 = "HELLO";
-    System.out.println("str3 == str4: " + (str3 == str4)); // false
-    
-    // Case-insensitive comparison
-    System.out.println("str3 equalsIgnoreCase(str4): " + str3.equalsIgnoreCase(str4)); // true
-  }
+public class StringComparison {
+    public static void main(String[] args) {
+        System.out.println("abcd".equals("abcd")); // true
+        System.out.println("abcd".equals("abcd")); // true
+        System.out.println(123 == Integer.parseInt("123")); // true
+        System.out.println(!("abcd".equals("dcba"))); // true
+        System.out.println(123 != Integer.parseInt("123")); // false
+        System.out.println(!("abcd".equals("abcd"))); // true
+        System.out.println("ABCD".equalsIgnoreCase("abcd")); // true (case insensitive)
+    }
 }
 ```
+
+### Explanation:
+
+1. **Comparing two strings for exact equality**:
+   - In Java, use the `equals` method to compare string values.
+   ```java
+   System.out.println("abcd".equals("abcd")); // true
+   ```
+
+2. **Comparing two strings for inequality (i.e., the inverse of exact equality)**:
+   - Use the negation of the `equals` method.
+   ```java
+   System.out.println(!("abcd".equals("dcba"))); // true
+   ```
+
+3. **Comparing two strings to see if one is lexically ordered before than the other**:
+   - Use the `compareTo` method for lexicographical comparison.
+   ```java
+   System.out.println("abcd".compareTo("dcba") < 0); // true
+   ```
+
+4. **Comparing two strings to see if one is lexically ordered after than the other**:
+   - Again, use the `compareTo` method.
+   ```java
+   System.out.println("abcd".compareTo("dcba") > 0); // false
+   ```
+
+5. **How to achieve both case sensitive comparisons and case insensitive comparisons within the language**:
+   - Use the `equalsIgnoreCase` method for case-insensitive comparison.
+   ```java
+   System.out.println("ABCD".equalsIgnoreCase("abcd")); // true
+   ```
+
+6. **Comparing numeric strings if these are not treated lexically**:
+   - Convert the string to an integer and compare the integers.
+   ```java
+   System.out.println(123 == Integer.parseInt("123")); // true
+   ```
+
+### Additional Comparisons:
+Java provides various methods for comparing strings, such as `compareTo`, `equalsIgnoreCase`, and more. The provided Java code demonstrates these comparisons effectively.

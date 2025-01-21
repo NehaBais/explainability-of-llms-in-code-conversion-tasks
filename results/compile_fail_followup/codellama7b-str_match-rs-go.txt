@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-str_match-rs-go.go:26:13: cannot use strings.Index(s1, s3) (value of type int) as *int value in argument to printMatch
+/tmp/codellama7b-str_match-rs-go.go:27:13: cannot use strings.Index(s1, s2) (value of type int) as *int value in argument to printMatch

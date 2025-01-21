@@ -1,0 +1,62 @@
+/tmp/granitecode8b-str_match-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str1 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string str2 = "ab";
+      |   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "Determining if the first string starts with second string: "
+      |   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:9:25: error: use of undeclared identifier 'endl'
+    9 |        << startsWith << endl;
+      |                         ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:11:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   11 |   size_t pos = 0;
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-java-cpp.cpp:11:10: error: use of undeclared identifier 'pos'
+   11 |   size_t pos = 0;
+      |          ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:12:11: error: use of undeclared identifier 'pos'
+   12 |   while ((pos = str1.find(str2, pos)) != string::npos) {
+      |           ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:12:33: error: use of undeclared identifier 'pos'
+   12 |   while ((pos = str1.find(str2, pos)) != string::npos) {
+      |                                 ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:12:42: error: use of undeclared identifier 'string'
+   12 |   while ((pos = str1.find(str2, pos)) != string::npos) {
+      |                                          ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << "Match found at position: " << pos << endl;
+      |     ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:13:44: error: use of undeclared identifier 'pos'
+   13 |     cout << "Match found at position: " << pos << endl;
+      |                                            ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:13:51: error: use of undeclared identifier 'endl'
+   13 |     cout << "Match found at position: " << pos << endl;
+      |                                                   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:14:5: error: use of undeclared identifier 'pos'
+   14 |     pos++; // Avoid finding overlapping matches
+      |     ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << "Determining if the first string contains the second string at any "
+      |   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:17:23: error: use of undeclared identifier 'endl'
+   17 |        << contains << endl;
+      |                       ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:19:3: error: use of undeclared identifier 'cout'
+   19 |   cout << "Determining if the first string ends with the second string: "
+      |   ^
+/tmp/granitecode8b-str_match-java-cpp.cpp:20:23: error: use of undeclared identifier 'endl'
+   20 |        << endsWith << endl;
+      |                       ^
+1 warning and 19 errors generated.

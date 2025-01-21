@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_create-java-c.c:22:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |   if (mkdir("docs", 0777) != 0) {
+      |       ^
+1 error generated.

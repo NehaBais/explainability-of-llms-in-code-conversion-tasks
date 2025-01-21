@@ -1,0 +1,21 @@
+/tmp/Main.java:5: error: cannot find symbol
+    System.rename("input.txt", "output.txt");
+          ^
+  symbol:   method rename(String,String)
+  location: class System
+/tmp/Main.java:6: error: cannot find symbol
+    System.rename("docs", "mydocs");
+          ^
+  symbol:   method rename(String,String)
+  location: class System
+/tmp/Main.java:9: error: cannot find symbol
+    System.rename("/input.txt", "/output.txt");
+          ^
+  symbol:   method rename(String,String)
+  location: class System
+/tmp/Main.java:10: error: cannot find symbol
+    System.rename("/docs", "/mydocs");
+          ^
+  symbol:   method rename(String,String)
+  location: class System
+4 errors

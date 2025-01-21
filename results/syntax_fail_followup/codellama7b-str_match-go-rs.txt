@@ -1,0 +1,8 @@
+error: 4 positional arguments in format string, but there are 3 arguments
+  --> /tmp/codellama7b-str_match-go-rs.rs:16:22
+   |
+16 |         println!("2. {} contains {}: {:?}, at location {}", first, second, i);
+   |                      ^^          ^^  ^^^^              ^^   -----  ------  -
+
+error: aborting due to 1 previous error
+

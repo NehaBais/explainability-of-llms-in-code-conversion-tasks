@@ -1,0 +1,58 @@
+/tmp/codellama7b-bit_ops-java-c.c:2:3: error: use of undeclared identifier 'cout'
+    2 |   cout << "a AND b: " << (a & b) << endl;
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:2:37: error: use of undeclared identifier 'endl'
+    2 |   cout << "a AND b: " << (a & b) << endl;
+      |                                     ^
+/tmp/codellama7b-bit_ops-java-c.c:3:3: error: use of undeclared identifier 'cout'
+    3 |   cout << "a OR b: " << (a | b) << endl;
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:3:36: error: use of undeclared identifier 'endl'
+    3 |   cout << "a OR b: " << (a | b) << endl;
+      |                                    ^
+/tmp/codellama7b-bit_ops-java-c.c:4:3: error: use of undeclared identifier 'cout'
+    4 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:4:37: error: use of undeclared identifier 'endl'
+    4 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |                                     ^
+/tmp/codellama7b-bit_ops-java-c.c:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "NOT a: " << ~a << endl;
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:5:30: error: use of undeclared identifier 'endl'
+    5 |   cout << "NOT a: " << ~a << endl;
+      |                              ^
+/tmp/codellama7b-bit_ops-java-c.c:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:6:37: error: use of undeclared identifier 'endl'
+    6 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |                                     ^
+/tmp/codellama7b-bit_ops-java-c.c:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:7:37: error: use of undeclared identifier 'endl'
+    7 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |                                     ^
+/tmp/codellama7b-bit_ops-java-c.c:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:8:31: error: expected expression
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                               ^
+/tmp/codellama7b-bit_ops-java-c.c:8:39: error: use of undeclared identifier 'endl'
+    8 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                                       ^
+/tmp/codellama7b-bit_ops-java-c.c:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a rol b: " << a << b << endl;    // rotate left, C 1.5+
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:9:36: error: use of undeclared identifier 'endl'
+    9 |   cout << "a rol b: " << a << b << endl;    // rotate left, C 1.5+
+      |                                    ^
+/tmp/codellama7b-bit_ops-java-c.c:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "a ror b: " << a << b << endl;    // rotate right, C 1.5+
+      |   ^
+/tmp/codellama7b-bit_ops-java-c.c:10:36: error: use of undeclared identifier 'endl'
+   10 |   cout << "a ror b: " << a << b << endl;    // rotate right, C 1.5+
+      |                                    ^
+19 errors generated.

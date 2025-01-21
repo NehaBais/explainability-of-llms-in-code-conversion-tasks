@@ -1,0 +1,7 @@
+/tmp/yicoder9b-bit_ops-cpp-c.c:5:40: error: expected expression
+    5 |   int a = /*insert first integer here*/;
+      |                                        ^
+/tmp/yicoder9b-bit_ops-cpp-c.c:6:41: error: expected expression
+    6 |   int b = /*insert second integer here*/;
+      |                                         ^
+2 errors generated.

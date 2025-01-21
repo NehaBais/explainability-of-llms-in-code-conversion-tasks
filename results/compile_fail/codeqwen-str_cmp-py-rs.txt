@@ -1,0 +1,300 @@
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:2:13
+  |
+2 |     compare('YUP', 'YUP');
+  |             ^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+2 |     compare("YUP", 'YUP');
+  |             ~   ~
+
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:2:20
+  |
+2 |     compare('YUP', 'YUP');
+  |                    ^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+2 |     compare('YUP', "YUP");
+  |                    ~   ~
+
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:3:13
+  |
+3 |     compare('BALL', 'BELL');
+  |             ^^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+3 |     compare("BALL", 'BELL');
+  |             ~    ~
+
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:3:21
+  |
+3 |     compare('BALL', 'BELL');
+  |                     ^^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+3 |     compare('BALL', "BELL");
+  |                     ~    ~
+
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:4:13
+  |
+4 |     compare('24', '123');
+  |             ^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+4 |     compare("24", '123');
+  |             ~  ~
+
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_cmp-py-rs.rs:4:19
+  |
+4 |     compare('24', '123');
+  |                   ^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+4 |     compare('24', "123");
+  |                   ~   ~
+
+error: expected one of `!`, `.`, `::`, `;`, `?`, `else`, `{`, or an operator, found keyword `let`
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:33:22
+   |
+33 |     let b_lower = If let Some(c) = b.to_ascii_lowercase().chars().next() { c } else { '\0' };
+   |                      ^^^ expected one of 8 possible tokens
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:10:55
+   |
+10 |     println!("{} is of type {} and {} is of type {}", A, type_name_of(&A), b, type_name_of(&b));
+   |                                                       ^
+   |
+help: a local variable with a similar name exists
+   |
+10 |     println!("{} is of type {} and {} is of type {}", a, type_name_of(&A), b, type_name_of(&b));
+   |                                                       ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:10:72
+   |
+10 |     println!("{} is of type {} and {} is of type {}", A, type_name_of(&A), b, type_name_of(&b));
+   |                                                                        ^
+   |
+help: a local variable with a similar name exists
+   |
+10 |     println!("{} is of type {} and {} is of type {}", A, type_name_of(&a), b, type_name_of(&b));
+   |                                                                        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:12:8
+   |
+12 |     if A < b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+12 |     if a < b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:13:50
+   |
+13 |         println!("{} is strictly less than  {}", A, b);
+   |                                                  ^
+   |
+help: a local variable with a similar name exists
+   |
+13 |         println!("{} is strictly less than  {}", a, b);
+   |                                                  ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:15:8
+   |
+15 |     if A <= b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+15 |     if a <= b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:16:52
+   |
+16 |         println!("{} is less than or equal to {}", A, b);
+   |                                                    ^
+   |
+help: a local variable with a similar name exists
+   |
+16 |         println!("{} is less than or equal to {}", a, b);
+   |                                                    ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:18:8
+   |
+18 |     if A > b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+18 |     if a > b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:19:53
+   |
+19 |         println!("{} is strictly greater than  {}", A, b);
+   |                                                     ^
+   |
+help: a local variable with a similar name exists
+   |
+19 |         println!("{} is strictly greater than  {}", a, b);
+   |                                                     ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:21:8
+   |
+21 |     if A >= b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+21 |     if a >= b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:22:55
+   |
+22 |         println!("{} is greater than or equal to {}", A, b);
+   |                                                       ^
+   |
+help: a local variable with a similar name exists
+   |
+22 |         println!("{} is greater than or equal to {}", a, b);
+   |                                                       ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:24:8
+   |
+24 |     if A == b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+24 |     if a == b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:25:39
+   |
+25 |         println!("{} is equal to {}", A, b);
+   |                                       ^
+   |
+help: a local variable with a similar name exists
+   |
+25 |         println!("{} is equal to {}", a, b);
+   |                                       ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:27:8
+   |
+27 |     if A != b {
+   |        ^
+   |
+help: a local variable with a similar name exists
+   |
+27 |     if a != b {
+   |        ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:28:43
+   |
+28 |         println!("{} is not equal to {}", A, b);
+   |                                           ^
+   |
+help: a local variable with a similar name exists
+   |
+28 |         println!("{} is not equal to {}", a, b);
+   |                                           ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-str_cmp-py-rs.rs:32:36
+   |
+32 |     let a_lower = if let Some(c) = A.to_ascii_lowercase().chars().next() { c } else { '\0' };
+   |                                    ^
+   |
+help: a local variable with a similar name exists
+   |
+32 |     let a_lower = if let Some(c) = a.to_ascii_lowercase().chars().next() { c } else { '\0' };
+   |                                    ~
+help: you might be missing a const parameter
+   |
+9  | fn compare<T: PartialEq + PartialOrd + std::fmt::Display, const A: /* Type */>(a: T, b: T) {
+   |                                                         +++++++++++++++++++++
+
+error: aborting due to 22 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

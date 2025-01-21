@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-dir_make-cpp-c.c:19:7: error: use of undeclared identifier 'errno'
+   19 |   if (errno != ENOENT) {
+      |       ^
+/tmp/qwen2.5coder7b-dir_make-cpp-c.c:19:16: error: use of undeclared identifier 'ENOENT'
+   19 |   if (errno != ENOENT) {
+      |                ^
+/tmp/qwen2.5coder7b-dir_make-cpp-c.c:28:35: error: use of undeclared identifier 'errno'
+   28 |     if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                   ^
+/tmp/qwen2.5coder7b-dir_make-cpp-c.c:28:44: error: use of undeclared identifier 'EEXIST'
+   28 |     if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                            ^
+4 errors generated.

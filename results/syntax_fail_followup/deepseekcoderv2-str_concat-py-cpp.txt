@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-str_concat-py-cpp.cpp:13:34: error: expected expression
+   13 |   std::vector<std::string> words({s1, "world", "mom"});
+      |                                  ^
+1 error generated.

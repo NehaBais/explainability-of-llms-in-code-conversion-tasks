@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-java-go.go:11:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-java-go.go:12:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-java-go.go:13:41: syntax error: unexpected >, expected expression
+/tmp/stablecode-bit_ops-java-go.go:14:46: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-java-go.go:15:47: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-java-go.go:19:38: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-java-go.go:23:38: syntax error: unexpected ) at end of statement

@@ -1,0 +1,16 @@
+/tmp/codellama7b-logic_ops-js-c.c:4:27: error: use of undeclared identifier 'a'
+    4 |   printf("a AND b: %d\n", a && b);
+      |                           ^
+/tmp/codellama7b-logic_ops-js-c.c:4:32: error: use of undeclared identifier 'b'
+    4 |   printf("a AND b: %d\n", a && b);
+      |                                ^
+/tmp/codellama7b-logic_ops-js-c.c:5:26: error: use of undeclared identifier 'a'
+    5 |   printf("a OR b: %d\n", a || b);
+      |                          ^
+/tmp/codellama7b-logic_ops-js-c.c:5:31: error: use of undeclared identifier 'b'
+    5 |   printf("a OR b: %d\n", a || b);
+      |                               ^
+/tmp/codellama7b-logic_ops-js-c.c:6:26: error: use of undeclared identifier 'a'
+    6 |   printf("NOT a: %d\n", !a);
+      |                          ^
+5 errors generated.

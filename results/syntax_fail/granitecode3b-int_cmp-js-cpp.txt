@@ -1,0 +1,31 @@
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:7:3: error: use of undeclared identifier 'cin'
+    7 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << a << " is less than " << b << endl;
+      |     ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:10:43: error: use of undeclared identifier 'endl'
+   10 |     cout << a << " is less than " << b << endl;
+      |                                           ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:12:5: error: use of undeclared identifier 'cout'
+   12 |     cout << a << " equals " << b << endl;
+      |     ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:12:37: error: use of undeclared identifier 'endl'
+   12 |     cout << a << " equals " << b << endl;
+      |                                     ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << a << " is greater than " << b << endl;
+      |     ^
+/tmp/granitecode3b-int_cmp-js-cpp.cpp:14:46: error: use of undeclared identifier 'endl'
+   14 |     cout << a << " is greater than " << b << endl;
+      |                                              ^
+1 warning and 9 errors generated.

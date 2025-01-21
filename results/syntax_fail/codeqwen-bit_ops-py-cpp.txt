@@ -1,0 +1,59 @@
+/tmp/codeqwen-bit_ops-py-cpp.cpp:6:38: error: no member named 'setfill' in namespace 'std'
+    6 |   std::cout << "AND:     0b" << std::setfill('0') << std::setw(width)
+      |                                 ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:6:59: error: no member named 'setw' in namespace 'std'
+    6 |   std::cout << "AND:     0b" << std::setfill('0') << std::setw(width)
+      |                                                      ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:8:39: error: no member named 'setfill' in namespace 'std'
+    8 |   std::cout << "        & 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:8:60: error: no member named 'setw' in namespace 'std'
+    8 |   std::cout << "        & 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:10:39: error: no member named 'setfill' in namespace 'std'
+   10 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:10:60: error: no member named 'setw' in namespace 'std'
+   10 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:13:38: error: no member named 'setfill' in namespace 'std'
+   13 |   std::cout << "OR:      0b" << std::setfill('0') << std::setw(width)
+      |                                 ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:13:59: error: no member named 'setw' in namespace 'std'
+   13 |   std::cout << "OR:      0b" << std::setfill('0') << std::setw(width)
+      |                                                      ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:15:39: error: no member named 'setfill' in namespace 'std'
+   15 |   std::cout << "        | 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:15:60: error: no member named 'setw' in namespace 'std'
+   15 |   std::cout << "        | 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:17:39: error: no member named 'setfill' in namespace 'std'
+   17 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:17:60: error: no member named 'setw' in namespace 'std'
+   17 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:20:38: error: no member named 'setfill' in namespace 'std'
+   20 |   std::cout << "XOR:     0b" << std::setfill('0') << std::setw(width)
+      |                                 ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:20:59: error: no member named 'setw' in namespace 'std'
+   20 |   std::cout << "XOR:     0b" << std::setfill('0') << std::setw(width)
+      |                                                      ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:22:39: error: no member named 'setfill' in namespace 'std'
+   22 |   std::cout << "        ^ 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:22:60: error: no member named 'setw' in namespace 'std'
+   22 |   std::cout << "        ^ 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:24:39: error: no member named 'setfill' in namespace 'std'
+   24 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                  ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:24:60: error: no member named 'setw' in namespace 'std'
+   24 |   std::cout << "        = 0b" << std::setfill('0') << std::setw(width)
+      |                                                       ~~~~~^
+/tmp/codeqwen-bit_ops-py-cpp.cpp:27:38: error: no member named 'setfill' in namespace 'std'
+   27 |   std::cout << "NOT:     0b" << std::setfill('0') << std::setw(width)
+      |                                 ~~~~~^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

@@ -1,0 +1,10 @@
+/tmp/Main.java:17: error: ';' expected
+            sb.replace(index, index + 1), little); // replace 'X' with "little"  
+                                        ^
+/tmp/Main.java:17: error: not a statement
+            sb.replace(index, index + 1), little); // replace 'X' with "little"  
+                                          ^
+/tmp/Main.java:17: error: ';' expected
+            sb.replace(index, index + 1), little); // replace 'X' with "little"  
+                                                ^
+3 errors

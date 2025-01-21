@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_cmp-py-go.go:9:18: newline in string
+/tmp/dolphincoder7b-str_cmp-py-go.go:9:18: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/dolphincoder7b-str_cmp-py-go.go:10:47: newline in string
+/tmp/dolphincoder7b-str_cmp-py-go.go:11:68: syntax error: unexpected ) at end of statement

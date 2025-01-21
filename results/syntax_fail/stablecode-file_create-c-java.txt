@@ -1,0 +1,4 @@
+/tmp/Main.java:9: error: ';' expected
+                createNewFile(false, 0644));
+                                          ^
+1 error

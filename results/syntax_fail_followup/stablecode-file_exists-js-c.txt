@@ -1,0 +1,20 @@
+/tmp/stablecode-file_exists-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_exists-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_exists-js-c.c:8:21: error: use of undeclared identifier 'F_OK'
+    8 |   if (access(path1, F_OK)) {
+      |                     ^
+/tmp/stablecode-file_exists-js-c.c:9:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     printf("'%s' does not exist.\n", path1);
+      |     ^
+/tmp/stablecode-file_exists-js-c.c:9:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_exists-js-c.c:12:20: error: use of undeclared identifier 'F_OK'
+   12 |   if (access(dir1, F_OK))) {
+      |                    ^
+/tmp/stablecode-file_exists-js-c.c:12:26: error: extraneous ')' after condition, expected a statement
+   12 |   if (access(dir1, F_OK))) {
+      |                          ^
+6 errors generated.

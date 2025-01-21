@@ -1,0 +1,13 @@
+/tmp/StringMatchDemo.java:13: error: ';' expected
+        Pattern pattern = Pattern.compile("\\Q" + second + "\\E", Pattern.CASE_INSENSITIVE));
+                                                                                           ^
+/tmp/StringMatchDemo.java:25: error: ';' expected
+        System.out.println("1. Does 'abracadabra' start with 'abr'? " + startsWith("abracadabra", "abr")));
+                                                                                                         ^
+/tmp/StringMatchDemo.java:26: error: ';' expected
+        System.out.println("2. Does 'abracadabra' contain 'abr' at any location? " + contains("abracadabra", "abr")));
+                                                                                                                    ^
+/tmp/StringMatchDemo.java:27: error: ';' expected
+        System.out.println("3. Does 'abracadabra' end with 'abr'? " + endsWith("abracadabra", "abr")));
+                                                                                                     ^
+4 errors

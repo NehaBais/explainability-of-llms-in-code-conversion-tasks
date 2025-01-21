@@ -1,0 +1,10 @@
+/tmp/stablecode-dir_make-js-c.c:9:24: error: extraneous ')' before ';'
+    9 |     dir = opendir(path));
+      |                        ^
+/tmp/stablecode-dir_make-js-c.c:10:16: error: use of undeclared identifier 'NULL'
+   10 |     if (dir != NULL) {
+      |                ^
+/tmp/stablecode-dir_make-js-c.c:18:43: error: extraneous ')' before ';'
+   18 |                 result = mkdir(path, 0777));
+      |                                           ^
+3 errors generated.

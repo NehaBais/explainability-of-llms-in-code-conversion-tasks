@@ -1,0 +1,46 @@
+/tmp/granitecode3b-int_factors-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:10:1: error: a type specifier is required for all declarations
+   10 | voidxrefFactors(Factors *fctrs, int *flist, int flix) {
+      | ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:14:19: error: use of undeclared identifier 'realloc'
+   14 |     fctrs->list = realloc(fctrs->list, newSize * sizeof(int));
+      |                   ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:16:19: error: use of undeclared identifier 'malloc'
+   16 |     fctrs->list = malloc(newSize * sizeof(int));
+      |                   ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:29:3: error: use of undeclared identifier 'free'
+   29 |   free(fctrs->list);
+      |   ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:30:17: error: use of undeclared identifier 'NULL'
+   30 |   fctrs->list = NULL;
+      |                 ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:35:7: error: use of undeclared identifier 'xferFactors'
+   35 |       xferFactors(fctrs, flist, flix);
+      |       ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:44:5: error: use of undeclared identifier 'xferFactors'
+   44 |     xferFactors(fctrs, flist, flix);
+      |     ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:57:5: error: use of undeclared identifier 'cout'
+   57 |     cout << "Factors of " << nums2factor[i] << " are: ";
+      |     ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:60:7: error: use of undeclared identifier 'cout'
+   60 |       cout << sep << ftors.list[j];
+      |       ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:63:5: error: use of undeclared identifier 'cout'
+   63 |     cout << endl;
+      |     ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:63:13: error: use of undeclared identifier 'endl'
+   63 |     cout << endl;
+      |             ^
+/tmp/granitecode3b-int_factors-c-cpp.cpp:64:5: error: use of undeclared identifier 'free'
+   64 |     free(ftors.list);
+      |     ^
+1 warning and 14 errors generated.

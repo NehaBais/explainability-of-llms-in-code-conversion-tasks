@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-str_cmp-go-cpp.cpp:30:13: error: expected expression
+   30 |             [](char a, char b) { return tolower(a) == tolower(b); }))
+      |             ^
+1 error generated.

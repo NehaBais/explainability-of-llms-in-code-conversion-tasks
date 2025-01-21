@@ -1,0 +1,4 @@
+/tmp/codegeex4-file_size-js-cpp.cpp:2:10: fatal error: 'windows.h' file not found
+    2 | #include <windows.h>
+      |          ^~~~~~~~~~~
+1 error generated.

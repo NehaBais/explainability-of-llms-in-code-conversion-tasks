@@ -1,0 +1,31 @@
+error[E0425]: cannot find function `eq` in module `cmp`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:4:13
+  |
+4 |     if cmp::eq(a, b) {
+  |             ^^ not found in `cmp`
+  |
+help: consider importing this function
+  |
+1 + use std::ptr::eq;
+  |
+help: if you import `eq`, refer to it directly
+  |
+4 -     if cmp::eq(a, b) {
+4 +     if eq(a, b) {
+  |
+
+error[E0425]: cannot find function `lt` in module `cmp`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:6:20
+  |
+6 |     } else if cmp::lt(a, b) {
+  |                    ^^ not found in `cmp`
+
+error[E0425]: cannot find function `gt` in module `cmp`
+ --> /tmp/codellama7b-int_cmp-js-rs.rs:8:20
+  |
+8 |     } else if cmp::gt(a, b) {
+  |                    ^^ not found in `cmp`
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

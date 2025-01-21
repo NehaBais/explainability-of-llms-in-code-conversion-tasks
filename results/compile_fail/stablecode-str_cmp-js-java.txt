@@ -1,0 +1,25 @@
+/tmp/StringComparisonDemo.java:4: error: ';' expected
+        System.out.println("abcd" == "abcd")); // true
+                                            ^
+/tmp/StringComparisonDemo.java:5: error: illegal start of expression
+        System.out.println("abcd" === "abcd")); // false (Java is strictly typed)
+                                    ^
+/tmp/StringComparisonDemo.java:5: error: ';' expected
+        System.out.println("abcd" === "abcd")); // false (Java is strictly typed)
+                                             ^
+/tmp/StringComparisonDemo.java:6: error: ';' expected
+        System.out.println(123 == "123")); // true
+                                        ^
+/tmp/StringComparisonDemo.java:7: error: illegal start of expression
+        System.out.println(123 === "123")); // false (Java is not strictly typed)
+                                 ^
+/tmp/StringComparisonDemo.java:7: error: ';' expected
+        System.out.println(123 === "123")); // false (Java is not strictly typed)
+                                         ^
+/tmp/StringComparisonDemo.java:8: error: not a statement
+        System.out.println("ABCD".toLowerCase()) == ("abcd".toLowerCase())); // true (case insensitive comparison)
+                                                 ^
+/tmp/StringComparisonDemo.java:8: error: ';' expected
+        System.out.println("ABCD".toLowerCase()) == ("abcd".toLowerCase())); // true (case insensitive comparison)
+                                                                          ^
+8 errors

@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_create-go-cpp.cpp:7:8: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::path here = std::filesystem::current_path();
+      |   ~~~~~^
+/tmp/codellama7b-file_create-go-cpp.cpp:7:37: error: no member named 'filesystem' in namespace 'std'
+    7 |   std::filesystem::path here = std::filesystem::current_path();
+      |                                ~~~~~^
+/tmp/codellama7b-file_create-go-cpp.cpp:8:8: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path root = std::filesystem::root_path();
+      |   ~~~~~^
+/tmp/codellama7b-file_create-go-cpp.cpp:8:37: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path root = std::filesystem::root_path();
+      |                                ~~~~~^
+4 errors generated.

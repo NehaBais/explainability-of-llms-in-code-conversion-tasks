@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `magicoder7b_logic_ops_c_rs`
+ --> /tmp/magicoder7b-logic_ops-c-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/magicoder7b-logic_ops-c-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-logic_ops-rs-go.go:8:40: invalid operation: operator ^ not defined on a (variable of type bool)

@@ -1,5 +1,8 @@
-## Solution 1 - Rust
+ Sure, here's the equivalent Rust code to achieve the same functionality:
+
 ```rust
+use std::cmp::Ordering;
+
 fn main() {
     compare("Hello", "Hello");
     compare("5", "5.0");
@@ -7,6 +10,7 @@ fn main() {
     compare("ĴÃVÁ", "ĴÃVÁ");
     compare("ĴÃVÁ", "ĵãvá");
 }
+
 fn compare(a: &str, b: &str) {
     if a == b {
         println!("'{}' and '{}' are lexically equal.", a, b);
@@ -20,77 +24,45 @@ fn compare(a: &str, b: &str) {
         println!("'{}' and '{}' are not case-insensitive lexically equal.", a, b);
     }
 
-    if a.cmp(b) < 0 {
+    if a.cmp(b) < Ordering::Equal {
         println!("'{}' is lexically before '{}'.", a, b);
-    } else if a.cmp(b) > 0 {
+    } else if a.cmp(b) > Ordering::Equal {
         println!("'{}' is lexically after '{}'.", a, b);
     }
 
-    if a.cmp(b) >= 0 {
-        println!("'{}' is not lexically before '{}'.", a, b);
-    } else if a.cmp(b) <= 0 {
-        println!("'{}' is not lexically after '{}'.", a, b);
+    match a.cmp(b) {
+        Ordering::Less => println!("'{}' is lexically before '{}'.", a, b),
+        Ordering::Greater => println!("'{}' is lexically after '{}'.", a, b),
+        Ordering::Equal => println!("'{}' is not lexically before '{}'.
+", a, b),
+    }
+
+    match a.cmp(b) {
+        Ordering::Greater => println!("'{}' is not lexically after '{}'.", a, b),
+        _ => println!("'{}' is not lexically after '{}'.", a, b),
+    }
+
+    match a.cmp(b) {
+        Ordering::Less => println!("'{}' is not lexically before '{}'.", a, b),
+        _ => println!("'{}' is not lexically before '{}'.", a, b),
     }
 
     println!("The lexical relationship is: {}", a.cmp(b));
-    println!("The case-insensitive lexical relationship is: {}", a.to_lowercase().cmp(&b.to_lowercase()));
+    println!("The case-insensitive lexical relationship is: {}", a.cmp_ignore_ascii_case(b));
 }
 ```
-### Output - Rust 1.74.0
 
-'Hello' and 'Hello' are lexically equal.
-'Hello' and 'Hello' are case-insensitive lexically equal.
-'Hello' is not lexically before 'Hello'.
-'Hello' is not lexically after 'Hello'.
-The lexical relationship is: 0
-The case-insensitive lexical relationship is: 0
-'5' and '5.0' are not lexically equal.
-'5' and '5.0' are case-insensitive lexically equal.
-'5' is lexically before '5.0'.
-'5' is not lexically after '5.0'.
-The lexical relationship is: -1
-The case-insensitive lexical relationship is: 1
-'java' and 'Java' are not lexically equal.
-'java' and 'Java' are case-sensitive lexically equal.
-'java' is not lexically before 'Java'.
-'java' is not lexically after 'Java'.
-The lexical relationship is: -32
-The case-insensitive lexical relationship is: 0
-'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
-'ĴÃVÁ' and 'ĵãvá' are case-sensitive lexically equal.
-'ĴÃVÁ' is not lexically before 'ĵãvá'.
-'ĴÃVÁ' is not lexically after 'ĵãvá'.
-The lexical relationship is: 0
-The case-insensitive lexical relationship is: -32
+### Explanation:
+1. **Exact Equality and Inequality**:
+   - Rust uses the `==` operator for exact equality and the `!=` operator for inequality.
+   
+2. **Lexical Comparison**:
+   - Rust's `cmp` method is used to compare strings lexicographically, returning an `Ordering`.
 
-## Solution 2 - Python (3.11)
+3. **Case Sensitivity**:
+   - The `eq_ignore_ascii_case` method is used for case-insensitive comparison.
 
-def compare(a, b):
-    if a == b:
-        print("'{}' and '{}' are lexically equal.".format(a, b))
-    else:
-        print("'{}' and '{}' are not lexically equal.".format(a, b))
+4. **Numeric Strings**:
+   - If you need to treat numeric strings lexically, Rust will do this automatically when using the `cmp` method.
 
-    if a.lower() == b.lower():
-        print("'{}' and '{}' are case-insensitive lexically equal.".format(a, b))
-    else:
-        print("'{}' and '{}' are not case-insensitive lexically equal.".format(a, b))
-
-    if a < b:
-        print("'{}' is lexically before '{}'.".format(a, b))
-    elif a > b:
-        print("'{}' is lexically after '{}'.".format(a, b))
-
-    if not (a < b):
-        print("'{}' is not lexically before '{}'.".format(a, b))
-    if not (a > b):
-        print("'{}' is not lexically after '{}'.".format(a, b))
-
-    print("The lexical relationship is: {}".format(ord(a) - ord(b)))
-    print("The case-insensitive lexical relationship is: {}".format(ord(a.lower()) - ord(b.lower())))
-
-compare("Hello", "Hello")
-compare("5", "5.0")
-compare("java", "Java")
-compare("ĴÃVÁ", "ĵãvá")
-
+This Rust code mirrors the functionality of the provided Java code, demonstrating exact equality, inequality, lexicographical comparison, and case sensitivity in both cases.

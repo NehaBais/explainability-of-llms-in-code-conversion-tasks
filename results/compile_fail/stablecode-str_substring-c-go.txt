@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-c-go.go:23:21: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-c-go.go:27:53: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:41:21: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-c-go.go:45:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:55:21: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-c-go.go:61:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:62:34: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:63:32: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:64:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:65:38: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:65:38: too many errors

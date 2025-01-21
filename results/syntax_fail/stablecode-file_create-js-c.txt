@@ -1,0 +1,10 @@
+/tmp/stablecode-file_create-js-c.c:6:38: error: extraneous ')' before ';'
+    6 |     FILE *file = fopen(filePath, "w"));
+      |                                      ^
+/tmp/stablecode-file_create-js-c.c:17:18: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     int result = mkdir(dirPath, 0700));
+      |                  ^
+/tmp/stablecode-file_create-js-c.c:17:38: error: extraneous ')' before ';'
+   17 |     int result = mkdir(dirPath, 0700));
+      |                                      ^
+3 errors generated.

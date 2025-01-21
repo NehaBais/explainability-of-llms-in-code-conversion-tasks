@@ -1,0 +1,8 @@
+/tmp/yicoder9b-file_create-java-c.c:12:44: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("Error opening the file: %s\n", strerror(errno));
+      |                                            ^
+/tmp/yicoder9b-file_create-java-c.c:12:44: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/yicoder9b-file_create-java-c.c:19:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   if (mkdir("docs", 0777) == -1) {
+      |       ^
+2 errors generated.

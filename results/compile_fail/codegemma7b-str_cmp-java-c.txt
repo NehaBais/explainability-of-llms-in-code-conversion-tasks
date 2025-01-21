@@ -1,0 +1,17 @@
+/tmp/codegemma7b-str_cmp-java-c.c:5:3: error: call to undeclared function 'compare'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   compare("Hello", "Hello");
+      |   ^
+/tmp/codegemma7b-str_cmp-java-c.c:14:6: error: conflicting types for 'compare'
+   14 | void compare(const char *A, const char *B) {
+      |      ^
+/tmp/codegemma7b-str_cmp-java-c.c:5:3: note: previous implicit declaration is here
+    5 |   compare("Hello", "Hello");
+      |   ^
+/tmp/codegemma7b-str_cmp-java-c.c:21:7: error: call to undeclared function 'strcmpi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   if (strcmpi(A, B) == 0) {
+      |       ^
+/tmp/codegemma7b-str_cmp-java-c.c:21:7: note: did you mean 'strcmp'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:6: note: 'strcmp' declared here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |          ^
+3 errors generated.

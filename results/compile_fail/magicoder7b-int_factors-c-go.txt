@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/magicoder7b-int_factors-c-go.go:5:2: "math" imported and not used
+/tmp/magicoder7b-int_factors-c-go.go:59:2: declared and not used: fctors
+/tmp/magicoder7b-int_factors-c-go.go:63:27: undefined: fctrs
+/tmp/magicoder7b-int_factors-c-go.go:65:21: undefined: fctrs
+/tmp/magicoder7b-int_factors-c-go.go:67:15: os.Stdout.WriteRune undefined (type *os.File has no field or method WriteRune)
+/tmp/magicoder7b-int_factors-c-go.go:70:15: os.Stdout.WriteRune undefined (type *os.File has no field or method WriteRune)
+/tmp/magicoder7b-int_factors-c-go.go:73:29: undefined: fctrs

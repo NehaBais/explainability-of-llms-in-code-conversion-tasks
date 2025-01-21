@@ -1,0 +1,46 @@
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:13:5: error: use of undeclared identifier 'x'
+   13 |   ++x;
+      |     ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:14:7: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |       ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:14:11: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |           ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:15:24: error: use of undeclared identifier 'x'
+   15 |     factors1.push_back(x);
+      |                        ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |              ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |                      ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:22:24: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   22 |   for (const auto &i : {45, 53, 64}) {
+      |                        ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:24:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |     for (auto factor : factor(i)) {
+      |          ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:24:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |     for (auto factor : factor(i)) {
+      |                      ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:10: error: expected expression
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:11: error: unexpected character <U+FF5C>
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:19: error: character <U+2581> not allowed in an identifier
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:24: error: character <U+2581> not allowed in an identifier
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:35: error: character <U+FF5C> not allowed in an identifier
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-int_factors-py-cpp.cpp:29:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   29 |   return <｜begin▁of▁sentence｜ > 0;
+      |             ^
+4 warnings and 11 errors generated.

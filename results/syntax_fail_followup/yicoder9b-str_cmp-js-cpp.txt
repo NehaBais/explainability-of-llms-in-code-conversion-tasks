@@ -1,0 +1,4 @@
+/tmp/yicoder9b-str_cmp-js-cpp.cpp:9:16: error: expected expression
+    9 |                [](char a, char b) -> bool { return tolower(a) == tolower(b); });
+      |                ^
+1 error generated.

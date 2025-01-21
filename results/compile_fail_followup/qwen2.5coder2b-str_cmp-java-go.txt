@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:24:45: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:24:45: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:25:9: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:27:44: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:27:44: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:28:9: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:32:49: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:32:49: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:33:9: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:36:48: newline in string
+/tmp/qwen2.5coder2b-str_cmp-java-go.go:36:48: too many errors

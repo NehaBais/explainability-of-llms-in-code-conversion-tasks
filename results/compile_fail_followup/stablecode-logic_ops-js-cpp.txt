@@ -1,0 +1,25 @@
+/tmp/stablecode-logic_ops-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "a AND b: " << (a && b) << endl;
+      |   ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:5:38: error: use of undeclared identifier 'endl'
+    5 |   cout << "a AND b: " << (a && b) << endl;
+      |                                      ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a OR b: " << (a || b) << endl;
+      |   ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:6:37: error: use of undeclared identifier 'endl'
+    6 |   cout << "a OR b: " << (a || b) << endl;
+      |                                     ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "NOT a: " << (!a) << endl;
+      |   ^
+/tmp/stablecode-logic_ops-js-cpp.cpp:7:32: error: use of undeclared identifier 'endl'
+    7 |   cout << "NOT a: " << (!a) << endl;
+      |                                ^
+1 warning and 7 errors generated.

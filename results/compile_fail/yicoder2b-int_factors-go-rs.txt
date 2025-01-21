@@ -1,0 +1,41 @@
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:22:17
+   |
+22 |         let n = fs.len();
+   |                 ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:24:13
+   |
+24 |             fs.resize(n * p as usize, 0);
+   |             ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0277]: `Vec<i64>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:52:9
+   |
+52 |         fs.iter().map(|x| x as i64).collect::<Vec<_>>()
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Vec<i64>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Vec<i64>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0606]: casting `&{integer}` as `i64` is invalid
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:52:27
+   |
+52 |         fs.iter().map(|x| x as i64).collect::<Vec<_>>()
+   |                           ^^^^^^^^
+   |
+help: dereference the expression
+   |
+52 |         fs.iter().map(|x| *x as i64).collect::<Vec<_>>()
+   |                           +
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0277, E0434, E0606.
+For more information about an error, try `rustc --explain E0277`.

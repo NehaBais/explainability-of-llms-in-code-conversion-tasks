@@ -1,0 +1,139 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:6:21
+  |
+6 |    let not_result = ~a;
+  |                     ^
+  |
+help: use `!` to perform bitwise not
+  |
+6 |    let not_result = !a;
+  |                     ~
+
+error: expected expression, found `>`
+  --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:19:52
+   |
+19 |        println!("a RIGHT LOGICAL SHIFT b: {}", a >>> b);
+   |                                                    ^ expected expression
+
+error: macro expansion ignores token `{` and any following
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+   |
+  ::: /tmp/deepseekcoder7b-bit_ops-js-rs.rs:36:1
+   |
+36 | println!("a LEFT ROTATE b: {}", left_rotate(a,b)); 
+   | ------------------------------------------------- caused by the macro expansion here
+   |
+   = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+   |
+  ::: /tmp/deepseekcoder7b-bit_ops-js-rs.rs:37:1
+   |
+37 | println!("a RIGHT ROTATE b: {}", right_rotate(a,b));
+   | --------------------------------------------------- caused by the macro expansion here
+   |
+   = note: the usage of `println!` is likely invalid in item context
+
+error[E0601]: `main` function not found in crate `deepseekcoder7b_bit_ops_js_rs`
+  --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:37:53
+   |
+37 | println!("a RIGHT ROTATE b: {}", right_rotate(a,b));
+   |                                                     ^ consider adding a `main` function to `/tmp/deepseekcoder7b-bit_ops-js-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:2:33
+  |
+2 |    println!("a AND b: {}", a &= b); 
+  |                                 ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 &= u32`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:2:30
+  |
+2 |    println!("a AND b: {}", a &= b); 
+  |                              ^^ no implementation for `i32 &= u32`
+  |
+  = help: the trait `BitAndAssign<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitAndAssign<Rhs>`:
+            `i32` implements `BitAndAssign<&i32>`
+            `i32` implements `BitAndAssign`
+
+error[E0277]: `()` doesn't implement `std::fmt::Display`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:2:28
+  |
+2 |    println!("a AND b: {}", a &= b); 
+  |                            ^^^^^^ `()` cannot be formatted with the default formatter
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `()`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:3:32
+  |
+3 |    println!("a OR b: {}", a |= b);
+  |                                ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 |= u32`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:3:29
+  |
+3 |    println!("a OR b: {}", a |= b);
+  |                             ^^ no implementation for `i32 |= u32`
+  |
+  = help: the trait `BitOrAssign<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitOrAssign<Rhs>`:
+            `i32` implements `BitOrAssign<&i32>`
+            `i32` implements `BitOrAssign`
+
+error[E0277]: `()` doesn't implement `std::fmt::Display`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:3:27
+  |
+3 |    println!("a OR b: {}", a |= b);
+  |                           ^^^^^^ `()` cannot be formatted with the default formatter
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `()`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:4:33
+  |
+4 |    println!("a XOR b: {}", a ^= b);
+  |                                 ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 ^= u32`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:4:30
+  |
+4 |    println!("a XOR b: {}", a ^= b);
+  |                              ^^ no implementation for `i32 ^= u32`
+  |
+  = help: the trait `BitXorAssign<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitXorAssign<Rhs>`:
+            `i32` implements `BitXorAssign<&i32>`
+            `i32` implements `BitXorAssign`
+
+error[E0277]: `()` doesn't implement `std::fmt::Display`
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:4:28
+  |
+4 |    println!("a XOR b: {}", a ^= b);
+  |                            ^^^^^^ `()` cannot be formatted with the default formatter
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `()`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_sign_positive` found for type `i32` in the current scope
+  --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:18:19
+   |
+18 |    if b < 32 && a.is_sign_positive() { // Logical right shift is only defined for 0 <= b <= 31 and a >= 0
+   |                   ^^^^^^^^^^^^^^^^
+   |
+help: there is a method `is_positive` with a similar name
+   |
+18 |    if b < 32 && a.is_positive() { // Logical right shift is only defined for 0 <= b <= 31 and a >= 0
+   |                   ~~~~~~~~~~~
+
+error: aborting due to 15 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0599, E0601.
+For more information about an error, try `rustc --explain E0277`.

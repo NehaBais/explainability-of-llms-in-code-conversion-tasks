@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-dir_make-py-cpp.cpp:5:13: error: no member named 'filesystem' in namespace 'std'
+    5 |   if (!std::filesystem::exists(path))
+      |        ~~~~~^
+/tmp/qwen2.5coder7b-dir_make-py-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::create_directories(path);
+      |     ~~~~~^
+2 errors generated.

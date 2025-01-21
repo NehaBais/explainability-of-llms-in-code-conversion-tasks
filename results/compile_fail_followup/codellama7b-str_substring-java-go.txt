@@ -1,0 +1,11 @@
+# command-line-arguments
+/tmp/codellama7b-str_substring-java-go.go:6:6: Substring redeclared in this block
+	/tmp/codellama7b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/codellama7b-str_substring-java-go.go:9:6: Substring redeclared in this block
+	/tmp/codellama7b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/codellama7b-str_substring-java-go.go:12:6: Substring redeclared in this block
+	/tmp/codellama7b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/codellama7b-str_substring-java-go.go:13:17: str.Index undefined (type string has no field or method Index)
+/tmp/codellama7b-str_substring-java-go.go:15:6: Substring redeclared in this block
+	/tmp/codellama7b-str_substring-java-go.go:3:6: other declaration of Substring
+/tmp/codellama7b-str_substring-java-go.go:16:17: str.Index undefined (type string has no field or method Index)

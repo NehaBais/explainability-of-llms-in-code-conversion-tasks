@@ -1,0 +1,30 @@
+/tmp/stablecode-str_substring-py-c.c:10:13: warning: incompatible pointer types passing 'int *' to parameter of type 'char *' [-Wincompatible-pointer-types]
+   10 |     strncpy(&n, char_value, strlen(char_value))));
+      |             ^~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:128:28: note: expanded from macro 'strncpy'
+  128 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+/tmp/stablecode-str_substring-py-c.c:10:48: error: expected ';' after expression
+   10 |     strncpy(&n, char_value, strlen(char_value))));
+      |                                                ^
+      |                                                ;
+/tmp/stablecode-str_substring-py-c.c:10:48: error: expected expression
+/tmp/stablecode-str_substring-py-c.c:11:13: warning: incompatible pointer types passing 'int *' to parameter of type 'char *' [-Wincompatible-pointer-types]
+   11 |     strncpy(&m, chars, strlen(chars)));
+      |             ^~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:128:28: note: expanded from macro 'strncpy'
+  128 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+/tmp/stablecode-str_substring-py-c.c:11:38: error: extraneous ')' before ';'
+   11 |     strncpy(&m, chars, strlen(chars)));
+      |                                      ^
+/tmp/stablecode-str_substring-py-c.c:15:22: error: invalid operands to binary expression ('char[9]' and 'char *(const char *, int)')
+   15 |     printf("%s\n", s + index));
+      |                    ~ ^ ~~~~~
+/tmp/stablecode-str_substring-py-c.c:15:30: error: extraneous ')' before ';'
+   15 |     printf("%s\n", s + index));
+      |                              ^
+/tmp/stablecode-str_substring-py-c.c:19:53: error: extraneous ')' after condition, expected a statement
+   19 |       if (!strncmp(s + index, chars, strlen(chars)))) break;
+      |                                                     ^
+2 warnings and 6 errors generated.

@@ -1,0 +1,39 @@
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:3:12: error: unknown type name 'bool'
+    3 | void logic(bool a, bool b) {
+      |            ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:3:20: error: unknown type name 'bool'
+    3 | void logic(bool a, bool b) {
+      |                    ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:11:9: error: use of undeclared identifier 'true'
+   11 |   logic(true, true);   // Output: a AND b: 1
+      |         ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:11:15: error: use of undeclared identifier 'true'
+   11 |   logic(true, true);   // Output: a AND b: 1
+      |               ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:14:9: error: use of undeclared identifier 'true'
+   14 |   logic(true, false);  // Output: a AND b: 0
+      |         ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:14:15: error: use of undeclared identifier 'false'
+   14 |   logic(true, false);  // Output: a AND b: 0
+      |               ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:17:9: error: use of undeclared identifier 'false'; did you mean 'else'?
+   17 |   logic(false, true);  // Output: a AND b: 0
+      |         ^~~~~
+      |         else
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:17:9: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:17:16: error: use of undeclared identifier 'true'
+   17 |   logic(false, true);  // Output: a AND b: 0
+      |                ^
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:20:9: error: use of undeclared identifier 'false'; did you mean 'else'?
+   20 |   logic(false, false); // Output: a AND b: 0
+      |         ^~~~~
+      |         else
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:20:9: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-java-c.c:20:16: error: use of undeclared identifier 'false'; did you mean 'fclose'?
+   20 |   logic(false, false); // Output: a AND b: 0
+      |                ^~~~~
+      |                fclose
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:230:6: note: 'fclose' declared here
+  230 | int      fclose(FILE *);
+      |          ^
+12 errors generated.

@@ -1,14 +1,23 @@
 #include <iostream>
-using namespace std;
+#include <string>
+
 int main() {
   int a, b;
-  cout << "Enter two integers: ";
-  cin >> a >> b;
+
+  // Get two integers from the user
+  std::cout << "Enter first integer: ";
+  std::cin >> a;
+  std::cout << "Enter second integer: ";
+  std::cin >> b;
+
+  // Display a message based on the comparison of the two integers
   if (a < b) {
-    cout << a << " is less than " << b << endl;
+    std::cout << a << " is less than " << b << std::endl;
   } else if (a == b) {
-    cout << a << " equals " << b << endl;
+    std::cout << a << " equals " << b << std::endl;
   } else if (a > b) {
-    cout << a << " is greater than " << b << endl;
+    std::cout << a << " is greater than " << b << std::endl;
   }
+
+  return 0;
 }

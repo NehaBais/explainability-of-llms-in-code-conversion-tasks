@@ -1,0 +1,14 @@
+/tmp/stablecode-logic_ops-cpp-c.c:5:29: error: extraneous ')' before ';'
+    5 |     printf("%d\n", (a && b)));
+      |                             ^
+/tmp/stablecode-logic_ops-cpp-c.c:6:29: error: expected ';' after expression
+    6 |     printf("%d\n", (a || b))));
+      |                             ^
+      |                             ;
+/tmp/stablecode-logic_ops-cpp-c.c:6:29: error: expected expression
+/tmp/stablecode-logic_ops-cpp-c.c:7:25: error: expected ';' after expression
+    7 |     printf("%d\n", (!a))));
+      |                         ^
+      |                         ;
+/tmp/stablecode-logic_ops-cpp-c.c:7:25: error: expected expression
+5 errors generated.

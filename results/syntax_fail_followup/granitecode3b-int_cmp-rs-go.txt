@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-int_cmp-rs-go.go:6:12: undefined: bufio

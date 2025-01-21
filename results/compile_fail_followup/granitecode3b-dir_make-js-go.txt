@@ -1,0 +1,1 @@
+/tmp/granitecode3b-dir_make-js-go.go:1:1: expected 'package', found 'func'

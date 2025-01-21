@@ -1,0 +1,31 @@
+/tmp/Factorization.java:18: error: unclosed string literal
+            System.out.printf("
+                              ^
+/tmp/Factorization.java:19: error: ';' expected
+Factors of %d not computed\n", nr);
+          ^
+/tmp/Factorization.java:19: error: ';' expected
+Factors of %d not computed\n", nr);
+                 ^
+/tmp/Factorization.java:19: error: illegal character: '\'
+Factors of %d not computed\n", nr);
+                          ^
+/tmp/Factorization.java:19: error: not a statement
+Factors of %d not computed\n", nr);
+                  ^
+/tmp/Factorization.java:19: error: unclosed string literal
+Factors of %d not computed\n", nr);
+                            ^
+/tmp/Factorization.java:19: error: not a statement
+Factors of %d not computed\n", nr);
+                           ^
+/tmp/Factorization.java:22: error: unclosed string literal
+        System.out.printf("
+                          ^
+/tmp/Factorization.java:23: error: ';' expected
+Factors of %d:  ", nr);
+          ^
+/tmp/Factorization.java:23: error: unclosed string literal
+Factors of %d:  ", nr);
+                ^
+10 errors

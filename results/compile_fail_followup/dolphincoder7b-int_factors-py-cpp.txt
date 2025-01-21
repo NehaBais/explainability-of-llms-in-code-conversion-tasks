@@ -1,0 +1,11 @@
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:23:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (int i : factors1) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:30:22: error: expected ';' at end of declaration
+   30 |   vector<int> numbers{45, 53, 64};
+      |                      ^
+      |                      ;
+/tmp/dolphincoder7b-int_factors-py-cpp.cpp:33:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   33 |   for (const int &num : numbers) {
+      |                       ^
+2 warnings and 1 error generated.

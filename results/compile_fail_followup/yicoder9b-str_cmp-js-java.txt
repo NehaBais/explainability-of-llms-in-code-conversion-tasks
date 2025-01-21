@@ -1,0 +1,4 @@
+/tmp/Main.java:13: error: bad operand type int for unary operator '!'
+        !"abcd".compareTo("dcba") > 0); // false (check for inequality - case sensitive)
+        ^
+1 error

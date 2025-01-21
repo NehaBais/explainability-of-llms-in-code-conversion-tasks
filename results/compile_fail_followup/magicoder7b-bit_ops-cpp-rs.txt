@@ -1,0 +1,22 @@
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+  --> /tmp/magicoder7b-bit_ops-cpp-rs.rs:17:30
+   |
+17 |     println!("{}", (a as u32 << shift_amount) & 0xffffffff);
+   |                              ^^ ------------- interpreted as generic arguments
+   |                              |
+   |                              not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+17 |     println!("{}", ((a as u32) << shift_amount) & 0xffffffff);
+   |                     +        +
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/magicoder7b-bit_ops-cpp-rs.rs:31:2
+   |
+31 | }
+   |  ^ consider adding a `main` function to `/tmp/magicoder7b-bit_ops-cpp-rs.rs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

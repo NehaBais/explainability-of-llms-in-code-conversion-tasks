@@ -1,0 +1,29 @@
+error[E0601]: `main` function not found in crate `codegemma7b_bit_ops_js_rs`
+ --> /tmp/codegemma7b-bit_ops-js-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/codegemma7b-bit_ops-js-rs.rs`
+
+error[E0599]: no method named `shr` found for type `i32` in the current scope
+ --> /tmp/codegemma7b-bit_ops-js-rs.rs:8:31
+  |
+8 |     println!("a >>> b: {}", a.shr(b)); // logical right shift
+  |                               ^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/bit.rs:576:8
+  |
+  = note: the method is available for `i32` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Shr` which provides `shr` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::ops::Shr;
+  |
+help: there is a method `shl` with a similar name
+  |
+8 |     println!("a >>> b: {}", a.shl(b)); // logical right shift
+  |                               ~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

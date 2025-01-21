@@ -1,0 +1,9 @@
+/tmp/deepseekcoderv2-file_create-py-c.c:19:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   if (mkdir(strcat(strcpy(malloc(strlen(directory) + 5), directory), "/docs") ==
+      |       ^
+/tmp/deepseekcoderv2-file_create-py-c.c:19:79: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+   19 |   if (mkdir(strcat(strcpy(malloc(strlen(directory) + 5), directory), "/docs") ==
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+   20 |             -1)) {
+      |             ~~
+1 warning and 1 error generated.

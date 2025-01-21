@@ -1,0 +1,4 @@
+/tmp/stablecode-dir_make-java-c.c:16:25: error: extraneous ')' after condition, expected a statement
+   16 |   if (mkdir(path, 0777))) { // mkdir on POSIX systems
+      |                         ^
+1 error generated.

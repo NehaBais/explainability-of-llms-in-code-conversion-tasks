@@ -1,17 +1,20 @@
-import math
+def main():
+    assert factor(100) == [1, 2, 4, 5, 10, 10, 20, 25, 50, 100]
+    assert factor(101) == [1, 101]
 
 
-def factor(num):
-    # Creates a new vector for the factors of the number
+def factor(num: int) -> list[int]:
     factors = []
-    # Iterates through every integer from 1 up to sqrt(num)+1
-    for i in range(1, int((math.sqrt(num)) + 1)):
-        # If num is divisible by i, add both i and num/i to the list of factors
-        if num % i == 0:
-            factors.append(int(i))
-            if int(num / i) != int(math.sqrt(num)):
-                factors.append(int(num / i))
-    # Sorts the factors into numerical order for viewing purposes
-    factors.sort()
 
+    for i in range(1, int((num**0.5)) + 1):
+        if num % i == 0:
+            factors.append(i)
+            if i != num // i:  # Avoid adding the square root twice for perfect squares
+                factors.append(num // i)
+
+    factors.sort()
     return factors
+
+
+# Call the main function to run the assertions
+main()

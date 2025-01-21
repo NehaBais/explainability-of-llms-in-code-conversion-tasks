@@ -1,6 +1,9 @@
 fn main() {
-    let original = "Mary had a X lamb";
-    let little = "little";
-    let replaced = format!("{}", original.replace("X", little)); //does not change the original string
-    println!("{}", replaced);
+    let original = String::from("Mary had a X lamb");
+    let little = String::from("little");
+    
+    // Perform replacement
+    let replaced = original.replace("X", &little);
+    
+    println!("{}", replaced); // Output: Mary had a little lamb
 }

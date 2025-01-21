@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:10: error: expected expression
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |          ^
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:11: error: unexpected character <U+FF5C>
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |           ^~
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:19: error: character <U+2581> not allowed in an identifier
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |                  ^
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:24: error: character <U+2581> not allowed in an identifier
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |                     ^
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:35: error: character <U+FF5C> not allowed in an identifier
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |                              ^~
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:27:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   27 |   return <｜begin▁of▁sentence｜> // this isn't used in the given code, so it's
+      |             ^
+/tmp/deepseekcoder7b-int_arith-c-cpp.cpp:33:1: error: expected expression
+   33 | }
+      | ^
+7 errors generated.

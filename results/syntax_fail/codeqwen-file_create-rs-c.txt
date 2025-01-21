@@ -1,0 +1,10 @@
+/tmp/codeqwen-file_create-rs-c.c:6:13: error: use of undeclared identifier 'PATH_MAX'
+    6 |   char path[PATH_MAX];
+      |             ^
+/tmp/codeqwen-file_create-rs-c.c:7:18: error: use of undeclared identifier 'PATH_MAX'
+    7 |   snprintf(path, PATH_MAX, "%s/%s", directory, file);
+      |                  ^
+/tmp/codeqwen-file_create-rs-c.c:8:3: error: call to undeclared function 'creat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   creat(path,
+      |   ^
+3 errors generated.

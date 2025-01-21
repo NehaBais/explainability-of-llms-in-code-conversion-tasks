@@ -1,0 +1,7 @@
+/tmp/yicoder2b-int_factors-rs-c.c:8:33: error: expected ')'
+    8 |   for (int i = 1; i <= sqrt(num as float) + 1; ++i) {
+      |                                 ^
+/tmp/yicoder2b-int_factors-rs-c.c:8:28: note: to match this '('
+    8 |   for (int i = 1; i <= sqrt(num as float) + 1; ++i) {
+      |                            ^
+1 error generated.

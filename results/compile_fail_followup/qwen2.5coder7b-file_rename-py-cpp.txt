@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path current_path = std::filesystem::current_path();
+      |   ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:5:45: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path current_path = std::filesystem::current_path();
+      |                                        ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:8:14: error: no member named 'filesystem' in namespace 'std'
+    8 |     if (std::filesystem::exists(current_path / "file.txt")) {
+      |         ~~~~~^
+3 errors generated.

@@ -1,0 +1,4 @@
+/tmp/codegeex4-str_cmp-py-c.c:32:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |   int a = atoi("24");
+      |           ^
+1 error generated.

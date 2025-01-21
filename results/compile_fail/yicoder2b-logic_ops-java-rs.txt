@@ -1,0 +1,51 @@
+error[E0601]: `main` function not found in crate `yicoder2b_logic_ops_java_rs`
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/yicoder2b-logic_ops-java-rs.rs`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:1:10
+  |
+1 | fn logic(mut a: bool, mut b: bool) {
+  |          ----^
+  |          |
+  |          help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:1:23
+  |
+1 | fn logic(mut a: bool, mut b: bool) {
+  |                       ----^
+  |                       |
+  |                       help: remove this `mut`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:2:9
+  |
+2 |     let mut res1 = a && b;
+  |         ----^^^^
+  |         |
+  |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:3:9
+  |
+3 |     let mut res2 = a || b;
+  |         ----^^^^
+  |         |
+  |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-java-rs.rs:4:9
+  |
+4 |     let mut res3 = !a;
+  |         ----^^^^
+  |         |
+  |         help: remove this `mut`
+
+error: aborting due to 1 previous error; 5 warnings emitted
+
+For more information about this error, try `rustc --explain E0601`.

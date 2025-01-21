@@ -1,0 +1,13 @@
+error[E0277]: `Option<usize>` doesn't implement `std::fmt::Display`
+  --> /tmp/dolphincoder7b-str_match-py-rs.rs:19:56
+   |
+19 |         Some(_) => println!("Location of match is {}", loc),
+   |                                                        ^^^ `Option<usize>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<usize>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0277`.

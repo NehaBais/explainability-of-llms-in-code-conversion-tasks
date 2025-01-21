@@ -1,0 +1,62 @@
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string a = "YUP";
+      |   ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string b = "BALL";
+      |   ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << a << " is equal to " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:8:42: error: use of undeclared identifier 'endl'
+    8 |     cout << a << " is equal to " << b << endl;
+      |                                          ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << a << " is not equal to " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:10:46: error: use of undeclared identifier 'endl'
+   10 |     cout << a << " is not equal to " << b << endl;
+      |                                              ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << a << " is not equal to " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:14:46: error: use of undeclared identifier 'endl'
+   14 |     cout << a << " is not equal to " << b << endl;
+      |                                              ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:16:5: error: use of undeclared identifier 'cout'
+   16 |     cout << a << " is equal to " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:16:42: error: use of undeclared identifier 'endl'
+   16 |     cout << a << " is equal to " << b << endl;
+      |                                          ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << a << " is lexically less than " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:20:53: error: use of undeclared identifier 'endl'
+   20 |     cout << a << " is lexically less than " << b << endl;
+      |                                                     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:22:5: error: use of undeclared identifier 'cout'
+   22 |     cout << a << " is not lexically less than " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:22:57: error: use of undeclared identifier 'endl'
+   22 |     cout << a << " is not lexically less than " << b << endl;
+      |                                                         ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:26:5: error: use of undeclared identifier 'cout'
+   26 |     cout << a << " is lexically greater than " << b << endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:26:56: error: use of undeclared identifier 'endl'
+   26 |     cout << a << " is lexically greater than " << b << endl;
+      |                                                        ^
+/tmp/granitecode8b-str_cmp-py-cpp.cpp:28:5: error: use of undeclared identifier 'cout'
+   28 |     cout << a << " is not lexically greater than " << b << endl;
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

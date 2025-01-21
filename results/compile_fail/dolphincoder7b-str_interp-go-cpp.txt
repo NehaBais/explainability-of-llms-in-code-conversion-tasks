@@ -1,0 +1,61 @@
+/tmp/dolphincoder7b-str_interp-go-cpp.cpp:7:9: error: no matching function for call to 'to_string'
+    7 |   out = std::to_string(str) + "\n" + std::to_string(txt);
+      |         ^~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4009:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'int' for 1st argument
+ 4009 | _LIBCPP_EXPORTED_FROM_ABI string to_string(int __val);
+      |                                  ^         ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4010:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned int' for 1st argument
+ 4010 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned __val);
+      |                                  ^         ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4011:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long' for 1st argument
+ 4011 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long __val);
+      |                                  ^         ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4012:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned long' for 1st argument
+ 4012 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4013:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long long' for 1st argument
+ 4013 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4014:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned long long' for 1st argument
+ 4014 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned long long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4015:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'float' for 1st argument
+ 4015 | _LIBCPP_EXPORTED_FROM_ABI string to_string(float __val);
+      |                                  ^         ~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4016:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'double' for 1st argument
+ 4016 | _LIBCPP_EXPORTED_FROM_ABI string to_string(double __val);
+      |                                  ^         ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4017:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long double' for 1st argument
+ 4017 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long double __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_interp-go-cpp.cpp:7:38: error: no matching function for call to 'to_string'
+    7 |   out = std::to_string(str) + "\n" + std::to_string(txt);
+      |                                      ^~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4009:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'int' for 1st argument
+ 4009 | _LIBCPP_EXPORTED_FROM_ABI string to_string(int __val);
+      |                                  ^         ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4010:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned int' for 1st argument
+ 4010 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned __val);
+      |                                  ^         ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4011:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long' for 1st argument
+ 4011 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long __val);
+      |                                  ^         ~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4012:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned long' for 1st argument
+ 4012 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4013:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long long' for 1st argument
+ 4013 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4014:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'unsigned long long' for 1st argument
+ 4014 | _LIBCPP_EXPORTED_FROM_ABI string to_string(unsigned long long __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4015:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'float' for 1st argument
+ 4015 | _LIBCPP_EXPORTED_FROM_ABI string to_string(float __val);
+      |                                  ^         ~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4016:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'double' for 1st argument
+ 4016 | _LIBCPP_EXPORTED_FROM_ABI string to_string(double __val);
+      |                                  ^         ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4017:34: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'long double' for 1st argument
+ 4017 | _LIBCPP_EXPORTED_FROM_ABI string to_string(long double __val);
+      |                                  ^         ~~~~~~~~~~~~~~~~~
+2 errors generated.

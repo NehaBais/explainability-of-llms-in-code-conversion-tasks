@@ -1,0 +1,166 @@
+error: expected identifier, found keyword `else`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:24:23
+   |
+24 |                     } else { 
+   |                       ^^^^ expected identifier, found keyword
+   |
+help: escape `else` to use it as an identifier
+   |
+24 |                     } r#else { 
+   |                       ++
+
+error: expected `,`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:25:30
+   |
+24 |                     } else { 
+   |                       ---- while parsing the fields for this pattern
+25 |                         last1.cmp(&last2) == Some(order),
+   |                              ^
+
+error: expected identifier, found keyword `else`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:31:15
+   |
+31 |             } else { 
+   |               ^^^^ expected identifier, found keyword
+   |
+help: escape `else` to use it as an identifier
+   |
+31 |             } r#else { 
+   |               ++
+
+error: expected `,`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:32:21
+   |
+31 |             } else { 
+   |               ---- while parsing the fields for this pattern
+32 |                 str1.chars().next_back().unwrap().cmp(&str2.chars().next_back().unwrap()),
+   |                     ^
+
+error: expected item, found `;`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:36:2
+   |
+36 | };
+   |  ^
+   |
+   = help: function declarations are not followed by a semicolon
+help: remove this semicolon
+   |
+36 - };
+36 + }
+   |
+
+error[E0425]: cannot find value `order` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:20:58
+   |
+20 |                     Some(_) => last1.cmp(&last2) == Some(order), 
+   |                                                          ^^^^^ not found in this scope
+
+error[E0422]: cannot find struct, variant or union type `r#else` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:24:23
+   |
+24 |                     } else { 
+   |                       ^^^^ not found in this scope
+
+error[E0422]: cannot find struct, variant or union type `r#else` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:31:15
+   |
+31 |             } else { 
+   |               ^^^^ not found in this scope
+
+error: `match` arm with no body
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:24:23
+   |
+24 |                       } else { 
+   |  _______________________^
+25 | |                         last1.cmp(&last2) == Some(order),
+26 | |                     }
+   | |                     ^- help: add a body after the pattern: `=> todo!(),`
+   | |_____________________|
+   |
+
+error: `match` arm with no body
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:31:15
+   |
+31 |               } else { 
+   |  _______________^
+32 | |                 str1.chars().next_back().unwrap().cmp(&str2.chars().next_back().unwrap()),
+33 | |             }
+   | |             ^- help: add a body after the pattern: `=> todo!(),`
+   | |_____________|
+   |
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:20:42
+   |
+20 |                     Some(_) => last1.cmp(&last2) == Some(order), 
+   |                                      --- ^^^^^^ expected `&char`, found `&Option<char>`
+   |                                      |
+   |                                      arguments to this method are incorrect
+   |
+   = note: expected reference `&char`
+              found reference `&Option<char>`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:838:8
+
+error[E0599]: no method named `is_uppercase` found for enum `Option` in the current scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:22:59
+   |
+22 |                     None if last1.is_lowercase() && last2.is_uppercase() || last2.is_lowercase() && last1.is_uppercase() => {
+   |                                                           ^^^^^^^^^^^^ method not found in `Option<char>`
+   |
+note: the method `is_uppercase` exists on the type `char`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/char/methods.rs:826:5
+help: consider using `Option::expect` to unwrap the `char` value, panicking if the value is an `Option::None`
+   |
+22 |                     None if last1.is_lowercase() && last2.expect("REASON").is_uppercase() || last2.is_lowercase() && last1.is_uppercase() => {
+   |                                                          +++++++++++++++++
+
+error[E0599]: no method named `is_lowercase` found for enum `Option` in the current scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:22:83
+   |
+22 |                     None if last1.is_lowercase() && last2.is_uppercase() || last2.is_lowercase() && last1.is_uppercase() => {
+   |                                                                                   ^^^^^^^^^^^^ method not found in `Option<char>`
+   |
+note: the method `is_lowercase` exists on the type `char`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/char/methods.rs:784:5
+help: consider using `Option::expect` to unwrap the `char` value, panicking if the value is an `Option::None`
+   |
+22 |                     None if last1.is_lowercase() && last2.is_uppercase() || last2.expect("REASON").is_lowercase() && last1.is_uppercase() => {
+   |                                                                                  +++++++++++++++++
+
+error[E0308]: `if` and `else` have incompatible types
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:16:9
+   |
+11 |        } else if str1.len() != str2.len() {
+   |  _____________-
+12 | |          false
+   | |          ----- expected because of this
+13 | |      } else {
+14 | |          // Compare lexically for strings
+15 | |          let result = str1.chars().next_back();
+16 | |/         match result {
+17 | ||             Some(last1) => {
+18 | ||                 let last2 = str2.chars().next_back();
+19 | ||                 match last2 {
+...  ||
+33 | ||             }
+34 | ||         };
+   | ||          ^
+   | ||          |
+   | ||__________help: consider removing this semicolon
+   | |           expected `bool`, found `()`
+35 | |      };
+   | |______- `if` and `else` have incompatible types
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-str_cmp-js-rs.rs:5:24
+  |
+5 | fn string_compare() -> bool {
+  |    --------------      ^^^^ expected `bool`, found `()`
+  |    |
+  |    implicitly returns `()` as its body has no tail or `return` expression
+
+error: aborting due to 15 previous errors
+
+Some errors have detailed explanations: E0308, E0422, E0425, E0599.
+For more information about an error, try `rustc --explain E0308`.

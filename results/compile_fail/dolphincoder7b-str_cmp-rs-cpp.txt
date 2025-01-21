@@ -1,0 +1,16 @@
+/tmp/dolphincoder7b-str_cmp-rs-cpp.cpp:17:19: error: indirection requires pointer operand ('std::string' (aka 'basic_string<char>') invalid)
+   17 |   } else if (*a > *b) // lexicographic order comparison
+      |                   ^~
+/tmp/dolphincoder7b-str_cmp-rs-cpp.cpp:19:17: error: indirection requires pointer operand ('std::string' (aka 'basic_string<char>') invalid)
+   19 |   else if (*a < *b)
+      |                 ^~
+/tmp/dolphincoder7b-str_cmp-rs-cpp.cpp:25:19: error: member reference base type 'const char *' is not a structure or union
+   25 |   if (std::equal(a.begin(), a.end(), b.begin(), b.end(),
+      |                  ~^~~~~~
+/tmp/dolphincoder7b-str_cmp-rs-cpp.cpp:25:30: error: member reference base type 'const char *' is not a structure or union
+   25 |   if (std::equal(a.begin(), a.end(), b.begin(), b.end(),
+      |                             ~^~~~
+/tmp/dolphincoder7b-str_cmp-rs-cpp.cpp:26:18: error: expected expression
+   26 |                  [](char a, char b) { return tolower(a) == tolower(b); })) {
+      |                  ^
+5 errors generated.

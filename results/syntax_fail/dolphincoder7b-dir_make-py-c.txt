@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-dir_make-py-c.c:8:3: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   getcwd(cwd, sizeof(cwd));
+      |   ^
+1 error generated.

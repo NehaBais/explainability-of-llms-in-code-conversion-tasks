@@ -1,0 +1,6 @@
+/tmp/Mkdir.java:12: error: cannot find symbol
+    Path pathToCreate = Paths.get(args[1]);
+    ^
+  symbol:   class Path
+  location: class Mkdir
+1 error

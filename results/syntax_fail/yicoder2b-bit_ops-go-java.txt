@@ -1,0 +1,11 @@
+/tmp/Main.java:38: error: cannot find symbol
+        "rol: " + Integer.toBinaryString((a <<= ub) | Integer.getLowestBit(a >> ub)));
+                                                             ^
+  symbol:   method getLowestBit(int)
+  location: class Integer
+/tmp/Main.java:40: error: cannot find symbol
+        "ror: " + Integer.toBinaryString((Integer.getLowestBit(a >> ub) | a >>>= ub) <<= ub));
+                                                 ^
+  symbol:   method getLowestBit(int)
+  location: class Integer
+2 errors

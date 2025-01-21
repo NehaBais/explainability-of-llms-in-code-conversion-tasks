@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	var myStrings []string = []string{"prepended to", "my string"}
-	fmt.Println(strings.Join(myStrings, " "))
+	myStrings := []string{"prepended to", "my string"}
+	prepended := strings.Join(myStrings, "")
+	fmt.Println(prepended)
 }

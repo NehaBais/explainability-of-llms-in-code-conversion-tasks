@@ -1,0 +1,23 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String s = "abc texto化けdef";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:4: error: class, interface, enum, or record expected
+System.out.println(s.substring(n, n + m));
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+System.out.println(s.substring(n));
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+sb.reverse();
+^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+System.out.println(sb.toString().substring(1));
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+System.out.println(s.substring(bpos, bpos + m));
+^
+/tmp/None.java:12: error: class, interface, enum, or record expected
+System.out.println(s.substring(epos, epos + m));
+^
+7 errors

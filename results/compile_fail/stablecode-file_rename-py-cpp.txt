@@ -1,0 +1,22 @@
+/tmp/stablecode-file_rename-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_rename-py-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::rename("input.txt", "output.txt");
+      |   ^
+/tmp/stablecode-file_rename-py-cpp.cpp:12:3: error: use of undeclared identifier 'fs'
+   12 |   fs::rename("docs", "mydocs");
+      |   ^
+/tmp/stablecode-file_rename-py-cpp.cpp:15:25: error: use of undeclared identifier 'fs'
+   15 |   std::string newPath = fs::path("/root/") / "input.txt";
+      |                         ^
+/tmp/stablecode-file_rename-py-cpp.cpp:16:3: error: use of undeclared identifier 'fs'
+   16 |   fs::rename(newPath, "/root/output.txt");
+      |   ^
+/tmp/stablecode-file_rename-py-cpp.cpp:19:22: error: invalid operands to binary expression ('const char[7]' and 'const char[5]')
+   19 |   newPath = "/root/" + "docs";
+      |             ~~~~~~~~ ^ ~~~~~~
+/tmp/stablecode-file_rename-py-cpp.cpp:20:3: error: use of undeclared identifier 'fs'
+   20 |   fs::rename(newPath, "/root/mydocs");
+      |   ^
+7 errors generated.

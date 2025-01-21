@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_create-js-c.c:29:22: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |   int mkdir_result = mkdir("docs", 0777);
+      |                      ^
+1 error generated.

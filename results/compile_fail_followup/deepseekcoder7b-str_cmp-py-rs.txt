@@ -1,0 +1,32 @@
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:14:25
+   |
+14 |     if a == b { println!-- "{} equals to {}", a, b }           // Equivalent to Python's `==` for strings
+   |                         ^ expected one of `(`, `[`, or `{`
+
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:15:25
+   |
+15 |     if a != b { println!-- "{} not equals to {}", a, b}        // Equivalent to Python's `！=` for strings
+   |                         ^ expected one of `(`, `[`, or `{`
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:19:13
+   |
+19 |   compare::<str>("YUP","YUP");
+   |             ^^^ doesn't have a size known at compile-time
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `compare`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:1:12
+   |
+1  | fn compare<T>(a: &str, b: &str) where T: std::cmp::PartialEq + std::fmt::Debug {  // Specify generic argument and add constraints on PartialEq and Debug traits.
+   |            ^ required by the implicit `Sized` requirement on this type parameter in `compare`
+help: consider relaxing the implicit `Sized` restriction
+   |
+1  | fn compare<T>(a: &str, b: &str) where T: std::cmp::PartialEq + std::fmt::Debug + ?Sized {  // Specify generic argument and add constraints on PartialEq and Debug traits.
+   |                                                                                ++++++++
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

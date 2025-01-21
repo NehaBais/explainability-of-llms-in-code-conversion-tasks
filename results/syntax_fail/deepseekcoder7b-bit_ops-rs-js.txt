@@ -1,0 +1,9 @@
+/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-rs-js.js:10
+console.log("a >> 3 = " + ((a >> 3)).toString(2).padStart<｜begin▁of▁sentence｜>8, '0');
+                                                          
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v23.1.0

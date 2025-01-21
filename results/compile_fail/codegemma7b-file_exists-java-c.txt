@@ -1,0 +1,10 @@
+/tmp/codegemma7b-file_exists-java-c.c:8:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (access("docs/input.txt", F_OK) == 0) {
+      |       ^
+/tmp/codegemma7b-file_exists-java-c.c:8:32: error: use of undeclared identifier 'F_OK'
+    8 |   if (access("docs/input.txt", F_OK) == 0) {
+      |                                ^
+/tmp/codegemma7b-file_exists-java-c.c:16:33: error: use of undeclared identifier 'F_OK'
+   16 |   if (access("/docs/input.txt", F_OK) == 0) {
+      |                                 ^
+3 errors generated.

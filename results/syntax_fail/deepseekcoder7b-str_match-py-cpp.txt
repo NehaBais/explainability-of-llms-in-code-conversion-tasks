@@ -1,0 +1,45 @@
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:10: error: expected expression
+   26 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:11: error: unexpected character <U+FF5C>
+   26 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:19: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:24: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:35: error: character <U+FF5C> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:26:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   26 |   return <｜begin▁of▁sentence｜ >
+      |             ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:34:7: error: expected expression
+   34 |       <!DOCTYPE html>
+      |       ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:34:9: error: use of undeclared identifier 'DOCTYPE'
+   34 |       <!DOCTYPE html>
+      |         ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:57:11: error: expected ';' after expression
+   57 |       2017 Flying Saucers, Inc.All rights reserved.</ p></ footer>
+      |           ^
+      |           ;
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:57:12: error: unknown type name 'Flying'
+   57 |       2017 Flying Saucers, Inc.All rights reserved.</ p></ footer>
+      |            ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:57:31: error: expected ';' at end of declaration
+   57 |       2017 Flying Saucers, Inc.All rights reserved.</ p></ footer>
+      |                               ^
+      |                               ;
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:58:74: error: expected '}'
+   58 |                            <!--other content goes here--></ body></ html>
+      |                                                                          ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:5:12: note: to match this '{'
+    5 | int main() {
+      |            ^
+/tmp/deepseekcoder7b-str_match-py-cpp.cpp:57:7: warning: expression result unused [-Wunused-value]
+   57 |       2017 Flying Saucers, Inc.All rights reserved.</ p></ footer>
+      |       ^~~~
+1 warning and 12 errors generated.

@@ -6,28 +6,26 @@ import (
 )
 
 func main() {
-	// Check if input.txt exists in current directory
-	if _, err := os.Stat("input.txt"); err == nil {
-		fmt.Println("input.txt exists")
-	} else {
-		fmt.Println("input.txt does not exist")
+	// Check for input.txt and docs in the current working directory
+	currentWorkingDir := "."
+	fmt.Println(isFileExists(currentWorkingDir + "/input.txt"))
+	fmt.Println(isFileExists("/" + "input.txt"))
+	fmt.Println(isDirExists(currentWorkingDir + "/docs"))
+	fmt.Println(isDirExists("/" + "docs"))
+}
+
+func isFileExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
 	}
-	// Check if /input.txt exists in root of filesystem
-	if _, err := os.Stat("/input.txt"); err == nil {
-		fmt.Println("/input.txt exists")
-	} else {
-		fmt.Println("/input.txt does not exist")
+	return !info.IsDir()
+}
+
+func isDirExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
 	}
-	// Check if docs directory exists in current directory
-	if _, err := os.Stat("docs"); err == nil {
-		fmt.Println("docs directory exists")
-	} else {
-		fmt.Println("docs directory does not exist")
-	}
-	// Check if /docs directory exists in root of filesystem
-	if _, err := os.Stat("/docs"); err == nil {
-		fmt.Println("/docs directory exists")
-	} else {
-		fmt.Println("/docs directory does not exist")
-	}
+	return info.IsDir()
 }

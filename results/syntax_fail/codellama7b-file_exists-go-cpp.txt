@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_exists-go-cpp.cpp:8:7: error: no matching function for call to 'stat'
+    8 |   if (stat(currentDirectoryPath, &inputStat) == -1) {
+      |       ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:387:9: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument
+  387 | int     stat(const char *, struct stat *) __DARWIN_INODE64(stat);
+      |         ^    ~~~~~~~~~~~~
+/tmp/codellama7b-file_exists-go-cpp.cpp:17:7: error: no matching function for call to 'stat'
+   17 |   if (stat(rootPath, &docsStat) == -1) {
+      |       ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:387:9: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument
+  387 | int     stat(const char *, struct stat *) __DARWIN_INODE64(stat);
+      |         ^    ~~~~~~~~~~~~
+2 errors generated.

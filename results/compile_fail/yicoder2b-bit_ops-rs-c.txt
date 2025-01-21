@@ -1,0 +1,34 @@
+/tmp/yicoder2b-bit_ops-rs-c.c:1:1: error: unknown type name 'fn'
+    1 | fn main() {
+      | ^
+/tmp/yicoder2b-bit_ops-rs-c.c:2:3: error: use of undeclared identifier 'let'
+    2 |   let a : u8 = 105;
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:3:3: error: use of undeclared identifier 'let'
+    3 |   let b : u8 = 91;
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:4:3: error: use of undeclared identifier 'println'
+    4 |   println !("a      = {:b}", a);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:5:3: error: use of undeclared identifier 'println'
+    5 |   println !("b      = {:b}", b);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:6:3: error: use of undeclared identifier 'println'
+    6 |   println !("a | b  = {:b}", a | b);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:7:3: error: use of undeclared identifier 'println'
+    7 |   println !("a & b  = {:b}", a & b);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:8:3: error: use of undeclared identifier 'println'
+    8 |   println !("a ^ b  = {:b}", a ^ b);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:9:3: error: use of undeclared identifier 'println'
+    9 |   println !("!a     = {:b}", !a);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:10:3: error: use of undeclared identifier 'println'
+   10 |   println !("a << 3 = {:b}", a << 3);
+      |   ^
+/tmp/yicoder2b-bit_ops-rs-c.c:11:3: error: use of undeclared identifier 'println'
+   11 |   println !("a >> 3 = {:b}", a >> 3);
+      |   ^
+11 errors generated.

@@ -1,0 +1,19 @@
+/tmp/yicoder2b-logic_ops-cpp-c.c:3:3: error: use of undeclared identifier 'bool'
+    3 |   bool a = true, b = false; // initialize two boolean variables
+      |   ^
+/tmp/yicoder2b-logic_ops-cpp-c.c:6:3: error: call to undeclared function 'print_logic'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   print_logic(a, b);
+      |   ^
+/tmp/yicoder2b-logic_ops-cpp-c.c:6:15: error: use of undeclared identifier 'a'
+    6 |   print_logic(a, b);
+      |               ^
+/tmp/yicoder2b-logic_ops-cpp-c.c:6:18: error: use of undeclared identifier 'b'
+    6 |   print_logic(a, b);
+      |                  ^
+/tmp/yicoder2b-logic_ops-cpp-c.c:11:18: error: unknown type name 'bool'
+   11 | void print_logic(bool a, bool b) {
+      |                  ^
+/tmp/yicoder2b-logic_ops-cpp-c.c:11:26: error: unknown type name 'bool'
+   11 | void print_logic(bool a, bool b) {
+      |                          ^
+6 errors generated.

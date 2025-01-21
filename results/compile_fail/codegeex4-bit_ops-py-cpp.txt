@@ -1,0 +1,35 @@
+/tmp/codegeex4-bit_ops-py-cpp.cpp:6:35: error: expected ';' after expression
+    6 |   "Rotate a, n times to the right" if (n < 0) { return rotl<width>(a, -n); }
+      |                                   ^
+      |                                   ;
+/tmp/codegeex4-bit_ops-py-cpp.cpp:6:56: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    6 |   "Rotate a, n times to the right" if (n < 0) { return rotl<width>(a, -n); }
+      |                                                        ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:6:3: warning: expression result unused [-Wunused-value]
+    6 |   "Rotate a, n times to the right" if (n < 0) { return rotl<width>(a, -n); }
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-bit_ops-py-cpp.cpp:20:34: error: expected ';' after expression
+   20 |   "Rotate a, n times to the left" if (n < 0) { return rotr<width>(a, -n); }
+      |                                  ^
+      |                                  ;
+/tmp/codegeex4-bit_ops-py-cpp.cpp:20:3: warning: expression result unused [-Wunused-value]
+   20 |   "Rotate a, n times to the left" if (n < 0) { return rotr<width>(a, -n); }
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-bit_ops-py-cpp.cpp:34:65: error: expected ';' after expression
+   34 |   "Arithmetic shift a, n times to the right. (sign preserving)." uint64_t mask =
+      |                                                                 ^
+      |                                                                 ;
+/tmp/codegeex4-bit_ops-py-cpp.cpp:47:39: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   47 |       return a >> n | (signs << width - n);
+      |                              ~~ ~~~~~~^~~
+/tmp/codegeex4-bit_ops-py-cpp.cpp:47:39: note: place parentheses around the '-' expression to silence this warning
+   47 |       return a >> n | (signs << width - n);
+      |                                       ^  
+      |                                 (        )
+/tmp/codegeex4-bit_ops-py-cpp.cpp:34:3: warning: expression result unused [-Wunused-value]
+   34 |   "Arithmetic shift a, n times to the right. (sign preserving)." uint64_t mask =
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-bit_ops-py-cpp.cpp:119:3: error: use of undeclared identifier 'bitwise_operations'
+  119 |   bitwise_operations(a);
+      |   ^
+5 warnings and 4 errors generated.

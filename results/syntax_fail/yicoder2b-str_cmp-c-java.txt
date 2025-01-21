@@ -1,0 +1,7 @@
+/tmp/None.java:56: error: bad operand type int for unary operator '!'
+    return !areEqual(a, b) ? 1 : 0;
+           ^
+/tmp/None.java:80: error: bad operand type int for unary operator '!'
+    return !areEqualCaseInsensitive(a, b) ? 1 : 0;
+           ^
+2 errors

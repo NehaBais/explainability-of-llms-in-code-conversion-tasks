@@ -1,0 +1,55 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-go-rs.rs:2:31
+  |
+2 |     println!("A and B is {}", A && B);
+  |                               ^
+  |
+help: a local variable with a similar name exists
+  |
+2 |     println!("A and B is {}", a && B);
+  |                               ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, B: bool) {
+  |               +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-go-rs.rs:3:30
+  |
+3 |     println!("A or B is {}", A || B);
+  |                              ^
+  |
+help: a local variable with a similar name exists
+  |
+3 |     println!("A or B is {}", a || B);
+  |                              ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, B: bool) {
+  |               +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-go-rs.rs:4:30
+  |
+4 |     println!("not A is {}", !A);
+  |                              ^
+  |
+help: a local variable with a similar name exists
+  |
+4 |     println!("not A is {}", !a);
+  |                              ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, B: bool) {
+  |               +++++++++++++++++++++
+
+error[E0601]: `main` function not found in crate `codeqwen_logic_ops_go_rs`
+ --> /tmp/codeqwen-logic_ops-go-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-logic_ops-go-rs.rs`
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0425, E0601.
+For more information about an error, try `rustc --explain E0425`.

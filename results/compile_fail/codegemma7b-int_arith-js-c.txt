@@ -1,0 +1,10 @@
+/tmp/codegemma7b-int_arith-js-c.c:4:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   int a = atoi(argv[1]);
+      |           ^
+/tmp/codegemma7b-int_arith-js-c.c:17:14: warning: flag ' ' results in undefined behavior with 'b' conversion specifier [-Wformat]
+   17 |   printf("a % b = %d\n", remainder);
+      |             ~^~
+/tmp/codegemma7b-int_arith-js-c.c:17:20: warning: more '%' conversions than data arguments [-Wformat-insufficient-args]
+   17 |   printf("a % b = %d\n", remainder);
+      |                   ~^
+2 warnings and 1 error generated.

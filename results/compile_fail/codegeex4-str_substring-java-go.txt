@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-str_substring-java-go.go:49:11: undefined: strings

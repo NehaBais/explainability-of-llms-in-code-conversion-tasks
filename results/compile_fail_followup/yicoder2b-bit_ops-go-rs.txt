@@ -1,0 +1,82 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:16:2
+   |
+16 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-bit_ops-go-rs.rs`
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+ --> /tmp/yicoder2b-bit_ops-go-rs.rs:4:1
+  |
+4 | impl ops::BitAnd<u8> for i16 {}
+  | ^^^^^---------------^^^^^---
+  | |    |                   |
+  | |    |                   `i16` is not defined in the current crate
+  | |    `u8` is not defined in the current crate
+  | impl doesn't use only types from inside the current crate
+  |
+  = note: define and implement a trait or new type instead
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+ --> /tmp/yicoder2b-bit_ops-go-rs.rs:9:1
+  |
+9 | impl ops::BitAnd<i16> for i16 {}
+  | ^^^^^----------------^^^^^---
+  | |    |                    |
+  | |    |                    `i16` is not defined in the current crate
+  | |    `i16` is not defined in the current crate
+  | impl doesn't use only types from inside the current crate
+  |
+  = note: define and implement a trait or new type instead
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+ --> /tmp/yicoder2b-bit_ops-go-rs.rs:5:1
+  |
+5 | impl ops::BitOr<u8> for i16 {}
+  | ^^^^^--------------^^^^^---
+  | |    |                  |
+  | |    |                  `i16` is not defined in the current crate
+  | |    `u8` is not defined in the current crate
+  | impl doesn't use only types from inside the current crate
+  |
+  = note: define and implement a trait or new type instead
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:10:1
+   |
+10 | impl ops::BitOr<i16> for i16 {}
+   | ^^^^^---------------^^^^^---
+   | |    |                   |
+   | |    |                   `i16` is not defined in the current crate
+   | |    `i16` is not defined in the current crate
+   | impl doesn't use only types from inside the current crate
+   |
+   = note: define and implement a trait or new type instead
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+ --> /tmp/yicoder2b-bit_ops-go-rs.rs:6:1
+  |
+6 | impl ops::BitXor<u8> for i16 {}
+  | ^^^^^---------------^^^^^---
+  | |    |                   |
+  | |    |                   `i16` is not defined in the current crate
+  | |    `u8` is not defined in the current crate
+  | impl doesn't use only types from inside the current crate
+  |
+  = note: define and implement a trait or new type instead
+
+error[E0117]: only traits defined in the current crate can be implemented for primitive types
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:11:1
+   |
+11 | impl ops::BitXor<i16> for i16 {}
+   | ^^^^^----------------^^^^^---
+   | |    |                    |
+   | |    |                    `i16` is not defined in the current crate
+   | |    `i16` is not defined in the current crate
+   | impl doesn't use only types from inside the current crate
+   |
+   = note: define and implement a trait or new type instead
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0117, E0601.
+For more information about an error, try `rustc --explain E0117`.

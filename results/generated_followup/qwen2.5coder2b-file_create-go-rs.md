@@ -1,0 +1,30 @@
+The error message indicates that the crate name cannot start with a period (`.`). To fix this, you need to change the crate name.
+
+```rust
+use std::fs;
+use std::path::{PathBuf};
+
+fn create_file(file_path: PathBuf) -> Result<(), Box<dyn std::error::Error>> {
+    fs::File::create(&file_path)?;
+    println!("File created at: {:?}", file_path);
+    Ok(())
+}
+
+fn create_dir(dir_path: PathBuf) -> Result<(), Box<dyn std::error::Error>> {
+    fs::create_dir_all(&dir_path)?;
+    println!("Directory created at: {:?}", dir_path);
+    Ok(())
+}
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let current_dir = PathBuf::from(".");
+    let root_dir = PathBuf::from("/");
+
+    create_file(current_dir.join("input.txt"))?;
+    create_file(root_dir.join("/input.txt"));
+    create_dir(current_dir.join("docs"))?;
+    create_dir(root_dir.join("/docs"));
+
+    Ok(())
+}
+```

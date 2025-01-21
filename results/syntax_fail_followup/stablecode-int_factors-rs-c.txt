@@ -1,0 +1,4 @@
+/tmp/stablecode-int_factors-rs-c.c:7:40: error: extraneous ')' before ';'
+    7 |       printf("%d and %d\n", i, num / i));
+      |                                        ^
+1 error generated.

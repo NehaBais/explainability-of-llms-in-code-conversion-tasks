@@ -1,0 +1,7 @@
+/tmp/yicoder2b-str_substring-cpp-c.c:12:13: warning: field precision should have type 'int', but argument has type 'unsigned long' [-Wformat]
+   12 |   printf("%.*s\n", strlen(&s[0]) - 1,
+      |           ~~^~     ~~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-str_substring-cpp-c.c:20:25: error: array subscript is not an integer
+   20 |     if ((&s[n + i] == &s[sub]) || // Starting from a known substring within the
+      |                         ^~~~
+1 warning and 1 error generated.

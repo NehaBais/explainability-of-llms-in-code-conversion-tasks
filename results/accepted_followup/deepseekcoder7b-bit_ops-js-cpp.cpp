@@ -1,0 +1,1 @@
+cout << "a right shift by b with fill 0: " << (ar & ((1u << b) - 1u)) << endl;

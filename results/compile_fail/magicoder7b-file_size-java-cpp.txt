@@ -1,0 +1,30 @@
+/tmp/magicoder7b-file_size-java-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path fileA = "file.txt";
+      |   ~~~~~^
+/tmp/magicoder7b-file_size-java-cpp.cpp:6:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    6 |   auto fileSize = std::filesystem::file_size(fileA);
+      |   ^
+/tmp/magicoder7b-file_size-java-cpp.cpp:6:24: error: no member named 'filesystem' in namespace 'std'
+    6 |   auto fileSize = std::filesystem::file_size(fileA);
+      |                   ~~~~~^
+/tmp/magicoder7b-file_size-java-cpp.cpp:9:8: error: no member named 'filesystem' in namespace 'std'
+    9 |   std::filesystem::path fileB = "/file.txt";
+      |   ~~~~~^
+/tmp/magicoder7b-file_size-java-cpp.cpp:9:25: error: use of undeclared identifier 'fileB'; did you mean 'fileA'?
+    9 |   std::filesystem::path fileB = "/file.txt";
+      |                         ^~~~~
+      |                         fileA
+/tmp/magicoder7b-file_size-java-cpp.cpp:5:25: note: 'fileA' declared here
+    5 |   std::filesystem::path fileA = "file.txt";
+      |                         ^
+/tmp/magicoder7b-file_size-java-cpp.cpp:10:19: error: no member named 'filesystem' in namespace 'std'
+   10 |   fileSize = std::filesystem::file_size(fileB);
+      |              ~~~~~^
+/tmp/magicoder7b-file_size-java-cpp.cpp:10:41: error: use of undeclared identifier 'fileB'; did you mean 'fileno'?
+   10 |   fileSize = std::filesystem::file_size(fileB);
+      |                                         ^~~~~
+      |                                         fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+1 warning and 6 errors generated.

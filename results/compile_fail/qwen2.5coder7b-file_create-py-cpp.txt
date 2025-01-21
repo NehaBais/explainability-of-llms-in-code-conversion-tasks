@@ -1,0 +1,25 @@
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::path filePath(directory);
+      |   ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:10:3: error: use of undeclared identifier 'filePath'
+   10 |   filePath /= "output.txt";
+      |   ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:11:21: error: use of undeclared identifier 'filePath'
+   11 |   std::ofstream ofs(filePath, std::ios::out | std::ios::binary);
+      |                     ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:20:3: error: use of undeclared identifier 'filePath'
+   20 |   filePath /= "docs";
+      |   ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:21:8: error: use of undeclared identifier 'fs'
+   21 |   if (!fs::create_directory(filePath)) {
+      |        ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:21:29: error: use of undeclared identifier 'filePath'
+   21 |   if (!fs::create_directory(filePath)) {
+      |                             ^
+/tmp/qwen2.5coder7b-file_create-py-cpp.cpp:35:18: error: use of undeclared identifier 'fs'
+   35 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+8 errors generated.

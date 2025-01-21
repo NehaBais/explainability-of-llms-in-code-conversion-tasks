@@ -1,0 +1,9 @@
+/tmp/Main.java:28: error: incompatible types: Object cannot be converted to long
+      long p = factors.get(i);
+                          ^
+/tmp/Main.java:38: error: incompatible types: Object cannot be converted to long
+    for (long factor : factors) {
+                       ^
+Note: /tmp/Main.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

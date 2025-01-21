@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-str_match-rs-go.go:26:13: cannot use strings.Index(s1, s3) (value of type int) as *int value in argument to printMatch

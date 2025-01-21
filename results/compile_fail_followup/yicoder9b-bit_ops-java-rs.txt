@@ -1,0 +1,30 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/yicoder9b-bit_ops-java-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/yicoder9b-bit_ops-java-rs.rs`
+
+error[E0599]: no method named `try_into` found for type `usize` in the current scope
+ --> /tmp/yicoder9b-bit_ops-java-rs.rs:3:26
+  |
+3 |         b if b < 32 => b.try_into().unwrap(), // Convert usize to u32 and panic if it doesn't fit
+  |                          ^^^^^^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+  |
+  = note: the method is available for `usize` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+  = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::convert::TryInto;
+  |
+help: there is a method `into` with a similar name
+  |
+3 |         b if b < 32 => b.into().unwrap(), // Convert usize to u32 and panic if it doesn't fit
+  |                          ~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

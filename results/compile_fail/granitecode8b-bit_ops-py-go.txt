@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/granitecode8b-bit_ops-py-go.go:17:47: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/granitecode8b-bit_ops-py-go.go:27:2: "Rotate a, n times to the right" (untyped string constant) is not used
+/tmp/granitecode8b-bit_ops-py-go.go:39:2: "Rotate a, n times to the left" (untyped string constant) is not used
+/tmp/granitecode8b-bit_ops-py-go.go:51:2: "Sign-extended arithmetic shift right" (untyped string constant) is not used
+/tmp/granitecode8b-bit_ops-py-go.go:55:54: undefined: mask

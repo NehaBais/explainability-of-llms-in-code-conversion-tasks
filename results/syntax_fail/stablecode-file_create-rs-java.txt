@@ -1,0 +1,10 @@
+/tmp/Main.java:12: error: ';' expected
+                .unwrapOrElseThrow(e -> new RuntimeException("Error: " + e.getMessage(), e)), 1);
+                                                                                            ^
+/tmp/Main.java:16: error: ';' expected
+        Path f_path = Paths.get(root).resolveSibling(FILE_NAME));
+                                                               ^
+/tmp/Main.java:17: error: ';' expected
+        Path d_path = Paths.get(root).resolveSibling(DIR_NAME));
+                                                              ^
+3 errors

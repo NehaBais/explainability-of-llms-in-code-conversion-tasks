@@ -1,49 +1,26 @@
+ Here's the equivalent code in C that performs the same operations as your Golang code:
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
-int main() {
-    char input_file[] = "input.txt";
-    char output_file[] = "output.txt";
-    char docs_dir[] = "docs";
-    char mydocs_dir[] = "mydocs";
-
-    // Rename file locally
-    if (rename(input_file, output_file) != 0) {
-        perror("Error renaming input.txt to output.txt");
-        exit(1);
-    }
-
-    // Create directory in local filesystem
-    if (mkdir(mydocs_dir, 0755) == -1) {
-        perror("Error creating mydocs directory");
-        exit(1);
-    }
-
-    // Move file into created directory
-    char docs_path[strlen(docs_dir) + strlen("/") + strlen(mydocs_dir)];
-    strcpy(docs_path, docs_dir);
-    strcat(docs_path, "/");
-    strcat(docs_path, mydocs_dir);
-    if (rename(input_file, docs_path) != 0) {
-        perror("Error moving input.txt to /mydocs directory");
-        exit(1);
-    }
-
-    // Rename file in root filesystem
-    char root_output[] = "/output.txt";
-    if (rename(input_file, root_output) != 0) {
-        perror("Error renaming input.txt to /output.txt");
-        exit(1);
-    }
-
-    // Rename directory in root filesystem
-    char root_mydocs[] = "/mydocs";
-    if (rename(docs_dir, root_mydocs) != 0) {
-        perror("Error renaming docs directory to /mydocs");
-        exit(1);
+void rename_file(const char *oldname, const char *newname) {
+    if (rename(oldname, newname) != 0) {
+        perror("Error renaming file");
+        exit(EXIT_FAILURE);
     }
 }
+
+int main() {
+    rename_file("input.txt", "output.txt");
+    rename_file("docs", "mydocs");
+    rename_file("/input.txt", "/output.txt");
+    rename_file("/docs", "/mydocs");
+    return 0;
+}
 ```
+
+In this C code:
+- The `rename_file` function is defined to handle the renaming of files and directories. It takes two arguments, `oldname` and `newname`, which are the old and new names respectively.
+- The `rename` system call is used to rename the files and directories as specified.
+- If the `rename` call fails (indicated by `rename` returning a value other than 0), an error message is printed using `perror`, and the program exits with a failure status.

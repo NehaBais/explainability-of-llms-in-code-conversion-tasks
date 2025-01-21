@@ -1,25 +1,27 @@
-const readlineSync = require("readline-sync");
-var x = parseInt(readlineSync.question("Enter an integer : "));
-var y = parseInt(readlineSync.question("Enter another integer : "));
-console.log(`a + b = ${x + y}`);
-console.log(`a - b = ${x - y}`);
-console.log(`a * b = ${x * y}`);
-var z;
-if (y == 0) {
-  console.log("Not defined");
-} else {
-  if (x / y > 0) {
-    z = Math.floor(x / y);
-  } else {
-    z = Math.ceil(x / y);
-  }
-  console.log(`quotient of a / b (truncated to integer) = ${z}`);
-}
-if (x < 0 && y > 0) {
-  console.log(`Remainder of a % b is negative`);
-} else if (x > 0 && y < 0) {
-  console.log("Remainder of a % b is negative");
-} else {
-  console.log(`Remainder of a % b is positive`);
-}
-console.log(`a ^ b = ${Math.pow(x, y)}`);
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Enter the first integer: ", (a) => {
+  a = parseInt(a);
+  rl.question("Enter the second integer: ", (b) => {
+    b = parseInt(b);
+
+    const sum = a + b; // The result of adding 'a' and 'b'
+    const difference = a - b; // The result of subtracting 'b' from 'a'
+    const product = a * b; // The result of multiplying 'a' and 'b'
+    const division = Math.floor(a / b); // The result of dividing 'a' by 'b' (truncates towards zero)
+    const remainder = a % b; // The remainder of dividing 'a' by 'b', same sign as first operand
+
+    console.log(`a + b = ${sum}`);
+    console.log(`a - b = ${difference}`);
+    console.log(`a * b = ${product}`);
+    console.log(`quotient of a / b = ${division}`); // truncates towards zero
+    console.log(`remainder of a / b = ${remainder}`); // same sign as first operand
+
+    rl.close();
+  });
+});

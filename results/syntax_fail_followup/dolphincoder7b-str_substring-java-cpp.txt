@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_substring-java-cpp.cpp:1:1: error: unknown type name 'cout'
+    1 | cout << Substring::Substring(str, "Wo", 2); // Corrected code without errors
+      | ^
+/tmp/dolphincoder7b-str_substring-java-cpp.cpp:1:6: error: expected unqualified-id
+    1 | cout << Substring::Substring(str, "Wo", 2); // Corrected code without errors
+      |      ^
+2 errors generated.

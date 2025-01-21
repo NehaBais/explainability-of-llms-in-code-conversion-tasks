@@ -1,0 +1,37 @@
+/tmp/stablecode-int_factors-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_factors-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-int_factors-py-c.c:7:24: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   for (int x = 1; x <= sqrt(n); x++) {
+      |                        ^
+/tmp/stablecode-int_factors-py-c.c:7:24: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/stablecode-int_factors-py-c.c:15:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   printf("Factors of number: 
+      |   ^
+/tmp/stablecode-int_factors-py-c.c:15:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-int_factors-py-c.c:15:10: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |   printf("Factors of number: 
+      |          ^
+/tmp/stablecode-int_factors-py-c.c:15:10: error: expected expression
+/tmp/stablecode-int_factors-py-c.c:16:5: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 | %d\n", n);
+      |     ^
+/tmp/stablecode-int_factors-py-c.c:22:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   22 |         printf("(%d, 
+      |                ^
+/tmp/stablecode-int_factors-py-c.c:23:23: warning: missing terminating '"' character [-Winvalid-pp-token]
+   23 |                % d)\n ", factors1[j], factors2[j]));
+      |                       ^
+/tmp/stablecode-int_factors-py-c.c:26:14: warning: missing terminating '"' character [-Winvalid-pp-token]
+   26 |       printf("(%d, 
+      |              ^
+/tmp/stablecode-int_factors-py-c.c:28:31: warning: missing terminating '"' character [-Winvalid-pp-token]
+   28 |           Factor repetition\n ", factors1[j], factors2[j]));
+      |                               ^
+/tmp/stablecode-int_factors-py-c.c:31:1: error: extraneous closing brace ('}')
+   31 | }
+      | ^
+6 warnings and 6 errors generated.

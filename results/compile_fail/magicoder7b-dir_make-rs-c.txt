@@ -1,0 +1,47 @@
+/tmp/magicoder7b-dir_make-rs-c.c:9:13: error: call to undeclared library function 'strrchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *p = strrchr(
+      |             ^
+/tmp/magicoder7b-dir_make-rs-c.c:9:13: note: include the header <string.h> or explicitly provide a declaration for 'strrchr'
+/tmp/magicoder7b-dir_make-rs-c.c:19:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   for (i = 1; i <= (int)strlen(path); i++) {
+      |                         ^
+/tmp/magicoder7b-dir_make-rs-c.c:19:25: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/magicoder7b-dir_make-rs-c.c:22:5: error: call to undeclared library function 'strncpy' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     strncpy(temp, path, i);
+      |     ^
+/tmp/magicoder7b-dir_make-rs-c.c:22:5: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/tmp/magicoder7b-dir_make-rs-c.c:26:44: error: use of undeclared identifier 'st'
+   26 |     if ((stat(temp, &st) == -1 || !S_ISDIR(st.st_mode))) {
+      |                                            ^
+/tmp/magicoder7b-dir_make-rs-c.c:26:22: error: use of undeclared identifier 'st'
+   26 |     if ((stat(temp, &st) == -1 || !S_ISDIR(st.st_mode))) {
+      |                      ^
+/tmp/magicoder7b-dir_make-rs-c.c:30:11: error: use of undeclared identifier 'errno'
+   30 |           errno != EEXIST) { // If it's an error but not already exists, return
+      |           ^
+/tmp/magicoder7b-dir_make-rs-c.c:30:20: error: use of undeclared identifier 'EEXIST'
+   30 |           errno != EEXIST) { // If it's an error but not already exists, return
+      |                    ^
+/tmp/magicoder7b-dir_make-rs-c.c:32:61: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |         printf("Failed to create directory %s: %s\n", temp, strerror(errno));
+      |                                                             ^
+/tmp/magicoder7b-dir_make-rs-c.c:32:61: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/magicoder7b-dir_make-rs-c.c:32:70: error: use of undeclared identifier 'errno'
+   32 |         printf("Failed to create directory %s: %s\n", temp, strerror(errno));
+      |                                                                      ^
+/tmp/magicoder7b-dir_make-rs-c.c:42:12: error: use of undeclared identifier 'st'
+   42 |            st.st_mode))) { // If the final directory does not exist, create it
+      |            ^
+/tmp/magicoder7b-dir_make-rs-c.c:40:20: error: use of undeclared identifier 'st'
+   40 |   if ((stat(path, &st) == -1 ||
+      |                    ^
+/tmp/magicoder7b-dir_make-rs-c.c:46:9: error: use of undeclared identifier 'errno'
+   46 |         errno !=
+      |         ^
+/tmp/magicoder7b-dir_make-rs-c.c:47:13: error: use of undeclared identifier 'EEXIST'
+   47 |             EEXIST) { // If it's an error but not already exists, return with -1
+      |             ^
+/tmp/magicoder7b-dir_make-rs-c.c:48:68: error: use of undeclared identifier 'errno'
+   48 |       printf("Failed to create directory %s: %s\n", path, strerror(errno));
+      |                                                                    ^
+14 errors generated.

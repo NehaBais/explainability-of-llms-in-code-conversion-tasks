@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-cpp-go.go:13:61: invalid character U+003F '?'
+/tmp/codeqwen-str_cmp-cpp-go.go:13:63: syntax error: unexpected literal "not", expected )
+/tmp/codeqwen-str_cmp-cpp-go.go:14:63: invalid character U+003F '?'
+/tmp/codeqwen-str_cmp-cpp-go.go:14:65: syntax error: unexpected literal "", expected )
+/tmp/codeqwen-str_cmp-cpp-go.go:22:61: invalid character U+003F '?'
+/tmp/codeqwen-str_cmp-cpp-go.go:22:63: syntax error: unexpected literal "not", expected )
+/tmp/codeqwen-str_cmp-cpp-go.go:23:63: invalid character U+003F '?'
+/tmp/codeqwen-str_cmp-cpp-go.go:23:65: syntax error: unexpected literal "", expected )
+/tmp/codeqwen-str_cmp-cpp-go.go:30:60: invalid character U+003F '?'
+/tmp/codeqwen-str_cmp-cpp-go.go:30:62: syntax error: unexpected literal "", expected )
+/tmp/codeqwen-str_cmp-cpp-go.go:30:62: too many errors

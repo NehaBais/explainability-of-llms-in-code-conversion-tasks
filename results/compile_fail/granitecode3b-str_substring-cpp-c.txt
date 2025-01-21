@@ -1,0 +1,58 @@
+/tmp/granitecode3b-str_substring-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:8:6: error: expected ';' after expression
+    8 |   std::string const sub = "456";
+      |      ^
+      |      ;
+/tmp/granitecode3b-str_substring-cpp-c.c:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string const sub = "456";
+      |   ^
+/tmp/granitecode3b-str_substring-cpp-c.c:8:6: error: expected expression
+    8 |   std::string const sub = "456";
+      |      ^
+/tmp/granitecode3b-str_substring-cpp-c.c:10:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |  printf("%.*s
+      |  ^
+/tmp/granitecode3b-str_substring-cpp-c.c:10:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_substring-cpp-c.c:10:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 |  printf("%.*s
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:10:9: error: expected expression
+/tmp/granitecode3b-str_substring-cpp-c.c:11:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 | ", m, s + n);
+      | ^
+/tmp/granitecode3b-str_substring-cpp-c.c:12:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 |  printf("%s
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:13:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 | ", s + n);
+      | ^
+/tmp/granitecode3b-str_substring-cpp-c.c:14:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |  printf("%.*s
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:15:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ", (int)strlen(s) - 1, s);
+      | ^
+/tmp/granitecode3b-str_substring-cpp-c.c:16:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 |  printf("%.*s
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:17:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 | ", m, strstr(s, c));
+      | ^
+/tmp/granitecode3b-str_substring-cpp-c.c:18:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 |  printf("%.*s
+      |         ^
+/tmp/granitecode3b-str_substring-cpp-c.c:19:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 | ", m, strstr(s, sub));
+      | ^
+/tmp/granitecode3b-str_substring-cpp-c.c:21:2: error: expected '}'
+   21 | }
+      |  ^
+/tmp/granitecode3b-str_substring-cpp-c.c:3:12: note: to match this '{'
+    3 | int main() {
+      |            ^
+10 warnings and 8 errors generated.

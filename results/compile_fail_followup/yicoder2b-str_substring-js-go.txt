@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/yicoder2b-str_substring-js-go.go:12:10: assignment mismatch: 2 variables but strings.Split returns 1 value
+/tmp/yicoder2b-str_substring-js-go.go:14:7: no new variables on left side of :=
+/tmp/yicoder2b-str_substring-js-go.go:14:10: assignment mismatch: 2 variables but strings.Split returns 1 value
+/tmp/yicoder2b-str_substring-js-go.go:16:7: no new variables on left side of :=
+/tmp/yicoder2b-str_substring-js-go.go:16:10: assignment mismatch: 2 variables but strings.Split returns 1 value
+/tmp/yicoder2b-str_substring-js-go.go:18:7: no new variables on left side of :=
+/tmp/yicoder2b-str_substring-js-go.go:18:10: assignment mismatch: 2 variables but strings.Split returns 1 value
+/tmp/yicoder2b-str_substring-js-go.go:20:7: no new variables on left side of :=
+/tmp/yicoder2b-str_substring-js-go.go:20:10: assignment mismatch: 2 variables but strings.Split returns 1 value

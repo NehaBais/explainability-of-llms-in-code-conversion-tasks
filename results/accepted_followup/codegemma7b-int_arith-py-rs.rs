@@ -1,0 +1,1 @@
+let yy = input1.try_into().unwrap().pow(input2.try_into().unwrap());

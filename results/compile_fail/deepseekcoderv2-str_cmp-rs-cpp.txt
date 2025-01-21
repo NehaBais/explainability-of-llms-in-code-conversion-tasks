@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-str_cmp-rs-cpp.cpp:32:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   32 |   auto to_lower = [](char c) -> char { return std::tolower(c); };
+      |   ^
+/tmp/deepseekcoderv2-str_cmp-rs-cpp.cpp:32:19: error: expected expression
+   32 |   auto to_lower = [](char c) -> char { return std::tolower(c); };
+      |                   ^
+1 warning and 1 error generated.

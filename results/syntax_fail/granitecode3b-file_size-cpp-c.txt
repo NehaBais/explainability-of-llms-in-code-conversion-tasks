@@ -1,0 +1,64 @@
+/tmp/granitecode3b-file_size-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_size-cpp-c.c:5:3: error: use of undeclared identifier 'FILE'
+    5 |   FILE *file = fopen("input.txt", "r");
+      |   ^
+/tmp/granitecode3b-file_size-cpp-c.c:5:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+    5 |   FILE *file = fopen("input.txt", "r");
+      |         ^~~~
+      |         while
+/tmp/granitecode3b-file_size-cpp-c.c:5:9: error: expected expression
+/tmp/granitecode3b-file_size-cpp-c.c:6:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+    6 |   if (file == NULL) {
+      |       ^~~~
+      |       while
+/tmp/granitecode3b-file_size-cpp-c.c:6:7: error: expected expression
+/tmp/granitecode3b-file_size-cpp-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("Error opening file");
+      |     ^
+/tmp/granitecode3b-file_size-cpp-c.c:11:3: error: call to undeclared function 'fseek'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   fseek(file, 0, SEEK_END);
+      |   ^
+/tmp/granitecode3b-file_size-cpp-c.c:11:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+   11 |   fseek(file, 0, SEEK_END);
+      |         ^~~~
+      |         while
+/tmp/granitecode3b-file_size-cpp-c.c:11:9: error: expected expression
+/tmp/granitecode3b-file_size-cpp-c.c:11:18: error: use of undeclared identifier 'SEEK_END'
+   11 |   fseek(file, 0, SEEK_END);
+      |                  ^
+/tmp/granitecode3b-file_size-cpp-c.c:12:15: error: call to undeclared function 'ftell'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   long size = ftell(file);
+      |               ^
+/tmp/granitecode3b-file_size-cpp-c.c:12:21: error: use of undeclared identifier 'file'
+   12 |   long size = ftell(file);
+      |                     ^
+/tmp/granitecode3b-file_size-cpp-c.c:13:3: error: call to undeclared function 'rewind'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   rewind(file);
+      |   ^
+/tmp/granitecode3b-file_size-cpp-c.c:13:10: error: use of undeclared identifier 'file'; did you mean 'size'?
+   13 |   rewind(file);
+      |          ^~~~
+      |          size
+/tmp/granitecode3b-file_size-cpp-c.c:12:8: note: 'size' declared here
+   12 |   long size = ftell(file);
+      |        ^
+/tmp/granitecode3b-file_size-cpp-c.c:15:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   printf("Size of file input.txt is %ld bytes.%n", size, &size);
+      |   ^
+/tmp/granitecode3b-file_size-cpp-c.c:15:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_size-cpp-c.c:15:58: warning: format specifies type 'int *' but the argument has type 'long *' [-Wformat]
+   15 |   printf("Size of file input.txt is %ld bytes.%n", size, &size);
+      |                                               ~~         ^~~~~
+/tmp/granitecode3b-file_size-cpp-c.c:17:3: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   fclose(file);
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_create-go-cpp.cpp:16:13: error: no member named 'filesystem' in namespace 'std'
+   16 |   if (!std::filesystem::create_directories(path)) {
+      |        ~~~~~^
+1 error generated.

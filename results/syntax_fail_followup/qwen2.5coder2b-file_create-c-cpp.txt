@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_create-c-cpp.cpp:15:8: error: no member named 'filesystem' in namespace 'std'
+   15 |   std::filesystem::create_directory("docs");
+      |   ~~~~~^
+1 error generated.

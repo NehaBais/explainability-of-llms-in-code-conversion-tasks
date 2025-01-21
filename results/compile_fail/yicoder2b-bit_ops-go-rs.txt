@@ -1,0 +1,94 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:15:17
+   |
+15 |     let not_a = ~a;
+   |                 ^
+   |
+help: use `!` to perform bitwise not
+   |
+15 |     let not_a = !a;
+   |                 ~
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:12:23
+   |
+12 |     let a_and_b = a & b; 
+   |                       ^ expected `i16`, found `u8`
+
+error[E0277]: no implementation for `i16 & u8`
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:12:21
+   |
+12 |     let a_and_b = a & b; 
+   |                     ^ no implementation for `i16 & u8`
+   |
+   = help: the trait `BitAnd<u8>` is not implemented for `i16`
+   = help: the following other types implement trait `BitAnd<Rhs>`:
+             `&'a i16` implements `BitAnd<i16>`
+             `&i16` implements `BitAnd<&i16>`
+             `i16` implements `BitAnd<&i16>`
+             `i16` implements `BitAnd`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:13:22
+   |
+13 |     let a_or_b = a | b; 
+   |                      ^ expected `i16`, found `u8`
+
+error[E0277]: no implementation for `i16 | u8`
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:13:20
+   |
+13 |     let a_or_b = a | b; 
+   |                    ^ no implementation for `i16 | u8`
+   |
+   = help: the trait `BitOr<u8>` is not implemented for `i16`
+   = help: the following other types implement trait `BitOr<Rhs>`:
+             `&'a i16` implements `BitOr<i16>`
+             `&i16` implements `BitOr<&i16>`
+             `i16` implements `BitOr<&i16>`
+             `i16` implements `BitOr`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:14:23
+   |
+14 |     let a_xor_b = a ^ b;
+   |                       ^ expected `i16`, found `u8`
+
+error[E0277]: no implementation for `i16 ^ u8`
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:14:21
+   |
+14 |     let a_xor_b = a ^ b;
+   |                     ^ no implementation for `i16 ^ u8`
+   |
+   = help: the trait `BitXor<u8>` is not implemented for `i16`
+   = help: the following other types implement trait `BitXor<Rhs>`:
+             `&'a i16` implements `BitXor<i16>`
+             `&i16` implements `BitXor<&i16>`
+             `i16` implements `BitXor<&i16>`
+             `i16` implements `BitXor`
+
+error[E0599]: no function or associated item named `from_bits` found for type `i16` in the current scope
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:40:31
+   |
+40 |     let rot_a = (lua<<ub|i16::from_bits(ua>>ub)) as u16; 
+   |                               ^^^^^^^^^ function or associated item not found in `i16`
+   |
+help: there is an associated function `from_be` with a similar name
+   |
+40 |     let rot_a = (lua<<ub|i16::from_be(ua>>ub)) as u16; 
+   |                               ~~~~~~~
+
+error[E0599]: no function or associated item named `from_bits` found for type `i16` in the current scope
+  --> /tmp/yicoder2b-bit_ops-go-rs.rs:41:23
+   |
+41 |     let rot_b = (i16::from_bits(ua>>ub)|lua<<(16-ub)) as u16; 
+   |                       ^^^^^^^^^ function or associated item not found in `i16`
+   |
+help: there is an associated function `from_be` with a similar name
+   |
+41 |     let rot_b = (i16::from_be(ua>>ub)|lua<<(16-ub)) as u16; 
+   |                       ~~~~~~~
+
+error: aborting due to 9 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0599.
+For more information about an error, try `rustc --explain E0277`.

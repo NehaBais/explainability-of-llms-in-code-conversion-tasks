@@ -1,0 +1,21 @@
+/tmp/Main.java:8: error: cannot find symbol
+    File_exists("input.txt");
+    ^
+  symbol:   method File_exists(String)
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+    File_exists("zero_length.txt");
+    ^
+  symbol:   method File_exists(String)
+  location: class Main
+/tmp/Main.java:10: error: cannot find symbol
+    File_exists("docs/input.txt");
+    ^
+  symbol:   method File_exists(String)
+  location: class Main
+/tmp/Main.java:11: error: cannot find symbol
+    File_exists("docs/zero_length.txt");
+    ^
+  symbol:   method File_exists(String)
+  location: class Main
+4 errors

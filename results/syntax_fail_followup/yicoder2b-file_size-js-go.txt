@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_size-js-go.go:15:16: file.Fstat undefined (type *os.File has no field or method Fstat)

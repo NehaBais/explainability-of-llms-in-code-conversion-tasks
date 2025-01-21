@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_create-rs-go.go:16:6: multiple-value Create(".") (value of type (bool, error)) in single-value context

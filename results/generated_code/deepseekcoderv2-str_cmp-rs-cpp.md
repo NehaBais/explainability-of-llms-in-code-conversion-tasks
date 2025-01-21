@@ -1,60 +1,73 @@
-
-## Code:
+ To convert the given Rust code to C++, we need to handle string comparisons in a similar way, considering type conversions and case insensitivity. Below is the equivalent C++ code that demonstrates the same functionalities:
 
 ```cpp
-#include <cstring>
 #include <iostream>
-// #include <string_view> // c++20, not available in VS 17
-
-bool compare(const char *a, const char *b) {
-    return std::strcmp(a, b) == 0;
-}
-bool necompare(const char *a, const char *b) {
-    return !std::strcmp(a, b);
-}
-bool lessthan(const char *a, const char *b) {
-    return std::strcmp(a, b) < 0;
-}
-bool greaterthan(const char *a, const char *b) {
-    return std::strcmp(a, b) > 0;
-}
-
-bool compare_ascii(const char *a, const char *b) {
-    // this function returns false if case doesn't match but the same content is present in both cases.
-    int i = 0;
-    while (1) {
-        if ((i >= std::strlen(a)) || (i >= std::strlen(b))) return true;
-        const auto a_ch = static_cast<unsigned char>(a[i]);
-        const auto b_ch = static_cast<unsigned char>(b[i]);
-        // ASCII is an 8-bit character set, i.e., the unsigned char type can hold any value between 0 and 255 (inclusive)
-        if ((a_ch >= 'A') && (a_ch <= 'Z')) { // convert to lowercase: this means only ascii case is considered for comparison; otherwise no conversion takes place
-            a[i] = static_cast<char>(std::tolower(static_cast<unsigned char>(a[i])));
-        }
-        if ((b_ch >= 'A') && (b_ch <= 'Z')) {
-            b[i] = static_cast<char>(std::tolower(static_cast<unsigned char>(b[i])));
-        }
-        i++;
-    }
-}
+#include <string>
+#include <algorithm> // for std::transform
 
 int main() {
-  // only same types can be compared
-  const char* a = "abc";
-  std::string b = "Bac";
+    std::string a = "abc";
+    std::string b = "Bac";
 
-  if (compare(a, b.c_str())) { std::cout << "The strings are equal" << std::endl; }
-  if (necompare(a, b.c_str())) { std::cout << "The strings are not equal" << std::endl; }
-  if (lessthan(a, b.c_str())) { std::cout << "The first string is lexically after the second" << std::endl; }
-  if (greaterthan(a, b.c_str())) { std::cout << "The first string is lexically before the second" << std::endl; }
+    // Exact equality and inequality
+    if (a == b) {
+        std::cout << "The strings are equal" << std::endl;
+    } else {
+        std::cout << "The strings are not equal" << std::endl;
+    }
 
-  // case-insensitives:
-  char a2[4] = {'A', 'b', 'C'};
-  char b2[3]; strcpy(b2, b.c_str());
-  
-  if (compare_ascii(a2, b2)) { std::cout << "Both strings are equal when ignoring case" << std::endl; }
+    if (a != b) {
+        std::cout << "The strings are not equal" << std::endl;
+    } else {
+        std::cout << "The strings are equal" << std::endl;
+    }
+
+    // Lexical comparison
+    if (a > b) {
+        std::cout << "The first string is lexically after the second" << std::endl;
+    } else if (a < b) {
+        std::cout << "The first string is lexically before the second" << std::endl;
+    } else {
+        std::cout << "The strings are lexicographically equal" << std::endl;
+    }
+
+    // Case-insensitive comparison using std::equal with a custom comparator
+    auto to_lower = [](char c) -> char { return std::tolower(c); };
+    std::string a_lowercase, b_lowercase;
+    std::transform(a.begin(), a.end(), std::back_inserter(a_lowercase), to_lower);
+    std::transform(b.begin(), b.end(), std::back_inserter(b_lowercase), to_lower);
+
+    if (a_lowercase == b_lowercase) {
+        std::cout << "Both strings are equal when ignoring case" << std::endl;
+    }
+
+    // Numerical string comparison (not lexically, but strictly as strings)
+    std::string num1 = "123";
+    std::string num2 = "456";
+
+    if (num1 < num2) {
+        std::cout << "The first numerical string is less than the second" << std::endl;
+    } else if (num1 > num2) {
+        std::cout << "The first numerical string is greater than the second" << std::endl;
+    } else {
+        std::cout << "The two numerical strings are equal" << std::endl;
+    }
+
+    return 0;
 }
 ```
 
-## Output:
+### Explanation:
+1. **Exact Equality and Inequality**:
+   - We use the `==` operator for equality check and `!=` for inequality check.
 
-![output](images/strings.png)
+2. **Lexical Comparison**:
+   - For lexical comparison, we directly compare strings using relational operators (`>`, `<`).
+
+3. **Case-Insensitive Comparison**:
+   - We convert both strings to lowercase using `std::transform` with a lambda function and then compare the converted strings.
+
+4. **Numerical String Comparison**:
+   - For numerical strings, we directly compare them as strings since they are not lexically compared but strictly by their ASCII values.
+
+This C++ code provides similar functionality to the provided Rust code, handling string comparisons in a way that mirrors Rust's behavior.

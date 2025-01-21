@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_concat-py-go.go:25:18: cannot use [3]string{…} (value of type [3]string) as []string value in argument to join

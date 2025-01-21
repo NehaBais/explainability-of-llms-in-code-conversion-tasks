@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-str_concat-java-go.go:7:32: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_concat-java-go.go:10:20: syntax error: unexpected ) at end of statement

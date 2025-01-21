@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-int_arith-py-cpp.cpp:44:57: error: indirection requires pointer operand ('int' invalid)
+   44 |   double exponentiation = static_cast<double>(input1) * *input2;
+      |                                                         ^~~~~~~
+1 error generated.

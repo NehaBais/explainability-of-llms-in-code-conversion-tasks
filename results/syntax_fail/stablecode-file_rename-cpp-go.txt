@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_rename-cpp-go.go:9:12: assignment mismatch: 2 variables but os.Rename returns 1 value

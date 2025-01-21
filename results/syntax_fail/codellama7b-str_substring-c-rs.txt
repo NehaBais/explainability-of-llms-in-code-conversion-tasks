@@ -1,0 +1,14 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:39:25
+   |
+39 | fn str_fromstr(s: &str, in: &str, m: isize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/codellama7b-str_substring-c-rs.rs:40:26
+   |
+40 |     let mut pos = s.find(in)?;
+   |                          ^^ expected expression
+
+error: aborting due to 2 previous errors
+

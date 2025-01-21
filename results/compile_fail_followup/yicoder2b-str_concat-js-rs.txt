@@ -1,0 +1,39 @@
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:3:7
+  |
+3 |     s.push_back(' '); // Add a space between "hello" and " there!"
+  |       ^^^^^^^^^ method not found in `String`
+
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:4:7
+  |
+4 |     s.push_back('t');
+  |       ^^^^^^^^^ method not found in `String`
+
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:5:7
+  |
+5 |     s.push_back('h');
+  |       ^^^^^^^^^ method not found in `String`
+
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:6:7
+  |
+6 |     s.push_back('e');
+  |       ^^^^^^^^^ method not found in `String`
+
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:7:7
+  |
+7 |     s.push_back('r');
+  |       ^^^^^^^^^ method not found in `String`
+
+error[E0599]: no method named `push_back` found for struct `String` in the current scope
+ --> /tmp/yicoder2b-str_concat-js-rs.rs:8:7
+  |
+8 |     s.push_back('e');
+  |       ^^^^^^^^^ method not found in `String`
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

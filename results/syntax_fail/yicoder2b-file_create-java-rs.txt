@@ -1,0 +1,18 @@
+error: cannot find macro `path` in this scope
+  --> /tmp/yicoder2b-file_create-java-rs.rs:13:35
+   |
+13 |     let file = if fs::File::new(&*path!["output.txt"]).is_dir() {
+   |                                   ^^^^
+   |
+   = note: `path` is in scope, but it is an attribute: `#[path]`
+
+error: cannot find macro `path` in this scope
+  --> /tmp/yicoder2b-file_create-java-rs.rs:14:30
+   |
+14 |         Some(fs::File::new(&*path!["output.txt"]).dup())
+   |                              ^^^^
+   |
+   = note: `path` is in scope, but it is an attribute: `#[path]`
+
+error: aborting due to 2 previous errors
+

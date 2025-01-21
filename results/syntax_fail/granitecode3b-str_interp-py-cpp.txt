@@ -1,0 +1,19 @@
+/tmp/granitecode3b-str_interp-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_interp-py-cpp.cpp:4:3: error: unknown type name 'string'
+    4 |   string extra = "little";
+      |   ^
+/tmp/granitecode3b-str_interp-py-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string new_str = "Mary had a " + extra + " lamb.";
+      |   ^
+/tmp/granitecode3b-str_interp-py-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << new_str << endl;
+      |   ^
+/tmp/granitecode3b-str_interp-py-cpp.cpp:6:22: error: use of undeclared identifier 'endl'
+    6 |   cout << new_str << endl;
+      |                      ^
+1 warning and 5 errors generated.

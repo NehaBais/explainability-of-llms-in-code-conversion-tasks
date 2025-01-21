@@ -1,0 +1,10 @@
+/tmp/codellama7b-dir_make-js-cpp.cpp:10:39: error: no template named 'function'
+   10 | void mkdirp(const string &path, const function<void(int)> &cb) {
+      |                                       ^
+/tmp/codellama7b-dir_make-js-cpp.cpp:19:24: error: use of undeclared identifier 'dirExists'
+   19 |   if (parent != "" && !dirExists(parent)) {
+      |                        ^
+/tmp/codellama7b-dir_make-js-cpp.cpp:21:20: error: expected expression
+   21 |     mkdirp(parent, [](int er) {
+      |                    ^
+3 errors generated.

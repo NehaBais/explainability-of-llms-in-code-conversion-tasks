@@ -1,0 +1,5 @@
+a, b = map(int, input("Enter two integers: ").split())
+print(f"a + b = {a+b}")
+print(f"a - b = {a-b}")
+print(f"a * b = {a*b}")
+print(f"a // b = {a//b}, remainder {a%b}")

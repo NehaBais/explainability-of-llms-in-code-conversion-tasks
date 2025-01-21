@@ -1,0 +1,29 @@
+/tmp/granitecode3b-dir_make-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-cpp-c.c:5:5: error: call to undeclared function 'fprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |     fprintf(stderr, "usage: %s <path>\n", argv[0]);
+      |     ^
+/tmp/granitecode3b-dir_make-cpp-c.c:5:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode3b-dir_make-cpp-c.c:5:13: error: use of undeclared identifier 'stderr'
+    5 |     fprintf(stderr, "usage: %s <path>\n", argv[0]);
+      |             ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |   ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:18: error: use of undeclared identifier 'S_IRWXU'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                  ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:28: error: use of undeclared identifier 'S_IRWXG'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                            ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:38: error: use of undeclared identifier 'S_IROTH'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                      ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:48: error: use of undeclared identifier 'S_IXOTH'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                ^
+1 warning and 9 errors generated.

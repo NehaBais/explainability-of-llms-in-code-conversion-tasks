@@ -1,0 +1,33 @@
+error[E0425]: cannot find value `Second` in this scope
+ --> /tmp/codeqwen-str_match-go-rs.rs:4:52
+  |
+4 |         println!("2. {} contains {}: true", first, Second);
+  |                                                    ^^^^^^ help: a local variable with a similar name exists (notice the capitalization): `second`
+
+error[E0425]: cannot find value `First` in this scope
+ --> /tmp/codeqwen-str_match-go-rs.rs:6:29
+  |
+6 |         while let Some(j) = First[start..].find(second) {
+  |                             ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+ --> /tmp/codeqwen-str_match-go-rs.rs:9:17
+  |
+9 |                 First,
+  |                 ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `Second` in this scope
+  --> /tmp/codeqwen-str_match-go-rs.rs:10:17
+   |
+10 |                 Second,
+   |                 ^^^^^^ help: a local variable with a similar name exists (notice the capitalization): `second`
+
+error[E0425]: cannot find value `Second` in this scope
+  --> /tmp/codeqwen-str_match-go-rs.rs:16:53
+   |
+16 |         println!("2. {} contains {}: false", first, Second);
+   |                                                     ^^^^^^ help: a local variable with a similar name exists (notice the capitalization): `second`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

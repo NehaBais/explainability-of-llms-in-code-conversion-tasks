@@ -1,0 +1,61 @@
+/tmp/yicoder9b-str_substring-java-cpp.cpp:5:10: error: no viable conversion from returned value of type 'basic_string<wchar_t>' to function return type 'basic_string<char>'
+    5 |   return std::wstring(str.begin() + n, str.begin() + n + m);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const string &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const char *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/yicoder9b-str_substring-java-cpp.cpp:9:10: error: no viable conversion from returned value of type 'basic_string<wchar_t>' to function return type 'basic_string<char>'
+    9 |   return std::wstring(str.begin() + n, str.end());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const string &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const char *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/yicoder9b-str_substring-java-cpp.cpp:13:10: error: no viable conversion from returned value of type 'basic_string<wchar_t>' to function return type 'basic_string<char>'
+   13 |   return std::wstring(str.begin(), str.end() - 1);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const string &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'std::wstring' (aka 'basic_string<wchar_t>') to 'const char *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/yicoder9b-str_substring-java-cpp.cpp:18:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |   auto pos = str.find(c);
+      |   ^
+/tmp/yicoder9b-str_substring-java-cpp.cpp:29:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   29 |   auto pos = str.find(sub);
+      |   ^
+2 warnings and 3 errors generated.

@@ -1,0 +1,26 @@
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:13:47
+   |
+13 |                      check_reg("input.txt") ? "yes" : "no");
+   |                                               ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:16:41
+   |
+16 |                     check_dir("docs") ? "yes" : "no");
+   |                                         ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:19:46
+   |
+19 |                    check_reg("/input.txt") ? "yes" : "no");
+   |                                              ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:22:41
+   |
+22 |                    check_dir("/docs") ? "yes" : "no");
+   |                                         ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: aborting due to 4 previous errors
+

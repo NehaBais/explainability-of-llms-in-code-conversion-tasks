@@ -1,0 +1,11 @@
+/tmp/stablecode-logic_ops-c-cpp.cpp:5:61: error: expected ';' after expression
+    5 |     std::cout << "a and b is " << std::boolalpha << (a && b)) << std::endl;
+      |                                                             ^
+      |                                                             ;
+/tmp/stablecode-logic_ops-c-cpp.cpp:5:61: error: expected expression
+/tmp/stablecode-logic_ops-c-cpp.cpp:7:70: error: expected ';' after expression
+    7 |     std::cout << "a or b is " << std::boolalpha << ((a || b) && true))) << std::endl;
+      |                                                                      ^
+      |                                                                      ;
+/tmp/stablecode-logic_ops-c-cpp.cpp:7:70: error: expected expression
+4 errors generated.

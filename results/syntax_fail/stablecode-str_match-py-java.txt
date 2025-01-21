@@ -1,0 +1,19 @@
+/tmp/Main.java:6: error: ';' expected
+        System.out.println(str1.startsWith(str2))); //returns True
+                                                 ^
+/tmp/Main.java:9: error: ';' expected
+        System.out.println(str1.endsWith(str2)))); //returns False
+                                               ^
+/tmp/Main.java:12: error: illegal start of expression
+        if("bb".equals(str1.substring(str1.indexOf(str2), str1.length())))) {
+                                                                          ^
+/tmp/Main.java:13: error: ';' expected
+            System.out.println("String found at index: " + str1.indexOf(str2))); 
+                                                                              ^
+/tmp/Main.java:16: error: illegal start of expression
+        if ("ab".equals(str1.substring(str1.lastIndexOf(str2) + 1, str1.length())))) {
+                                                                                   ^
+/tmp/Main.java:18: error: ';' expected
+            System.out.println("String found at index: " + loc)); 
+                                                               ^
+6 errors

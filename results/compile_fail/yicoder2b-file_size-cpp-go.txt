@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/yicoder2b-file_size-cpp-go.go:14:16: multiple-value os.Stat(info) (value of type (fs.FileInfo, error)) in single-value context
+/tmp/yicoder2b-file_size-cpp-go.go:24:16: too many arguments in call to printFileSize
+	have (string, error)
+	want (string)

@@ -1,0 +1,66 @@
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:25:26
+   |
+25 |     println!("Sum:           " + &qq.to_string());
+   |                                ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:26:32
+   |
+26 |     println!("Difference:       " + &ww.to_string());
+   |                                   ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:27:29
+   |
+27 |     println!("Product:       " + &ee.to_string());
+   |                                ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:28:35
+   |
+28 |     println!("Integer quotient: " + &rr.to_string());
+   |                                   ^ expected `,`
+
+error: expected `,`, found `+`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:32:35
+   |
+32 |     println!("Exponentiation:   " + &yy.to_string());
+   |                                   ^ expected `,`
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:29:5
+   |
+29 |     println("Float quotient:   " + &tt.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+29 |     println!("Float quotient:   " + &tt.to_string());
+   |            +
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:30:5
+   |
+30 |     println("Whole Remainder:  " + &uu.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+30 |     println!("Whole Remainder:  " + &uu.to_string());
+   |            +
+
+error[E0423]: expected function, found macro `println`
+  --> /tmp/qwen2.5coder2b-int_arith-py-rs.rs:31:5
+   |
+31 |     println("Actual Remainder: " + &uu.to_string());
+   |     ^^^^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+31 |     println!("Actual Remainder: " + &uu.to_string());
+   |            +
+
+error: aborting due to 8 previous errors
+
+For more information about this error, try `rustc --explain E0423`.

@@ -1,0 +1,44 @@
+error[E0599]: no method named `get_type` found for reference `&str` in the current scope
+ --> /tmp/granitecode3b-str_cmp-py-rs.rs:5:11
+  |
+5 |         a.get_type(),
+  |           ^^^^^^^^ method not found in `&str`
+
+error[E0599]: no method named `get_type` found for reference `&str` in the current scope
+ --> /tmp/granitecode3b-str_cmp-py-rs.rs:7:11
+  |
+7 |         b.get_type()
+  |           ^^^^^^^^ method not found in `&str`
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:38:5
+   |
+38 |     compare(24, 123);
+   |     ^^^^^^^ --  --- expected `&str`, found integer
+   |             |
+   |             expected `&str`, found integer
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:39:5
+   |
+39 |     compare(5.0, 5);
+   |     ^^^^^^^ ---  - expected `&str`, found integer
+   |             |
+   |             expected `&str`, found floating-point number
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

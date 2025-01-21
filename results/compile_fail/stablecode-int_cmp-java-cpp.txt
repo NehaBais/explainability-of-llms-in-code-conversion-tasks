@@ -1,0 +1,10 @@
+/tmp/stablecode-int_cmp-java-cpp.cpp:13:19: error: extraneous ')' after condition, expected a statement
+   13 |   if (nbr1 < nbr2))
+      |                   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:16:19: error: extraneous ')' after condition, expected a statement
+   16 |   if (nbr1 > nbr2))
+      |                   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:19:20: error: extraneous ')' after condition, expected a statement
+   19 |   if (nbr1 == nbr2))
+      |                    ^
+3 errors generated.

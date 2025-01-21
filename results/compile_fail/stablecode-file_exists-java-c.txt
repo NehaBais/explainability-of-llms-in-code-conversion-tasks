@@ -1,0 +1,4 @@
+/tmp/stablecode-file_exists-java-c.c:28:24: error: extraneous ')' after condition, expected a statement
+   28 |   if (checkFile(path2))) {
+      |                        ^
+1 error generated.

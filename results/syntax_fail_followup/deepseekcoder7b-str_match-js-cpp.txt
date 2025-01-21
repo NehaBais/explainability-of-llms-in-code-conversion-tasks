@@ -1,0 +1,10 @@
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:1:1: error: expected unqualified-id
+    1 | for (std::vector<int>::size_type i = 0; i < q2matches.size(); ++i) {
+      | ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:4:1: error: use of undeclared identifier 'std'
+    4 | std::cout << '.';
+      | ^
+/tmp/deepseekcoder7b-str_match-js-cpp.cpp:4:11: error: expected unqualified-id
+    4 | std::cout << '.';
+      |           ^
+3 errors generated.

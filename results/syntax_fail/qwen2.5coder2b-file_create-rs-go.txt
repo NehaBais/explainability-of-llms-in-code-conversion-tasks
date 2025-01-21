@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-file_create-rs-go.go:20:8: assignment mismatch: 1 variable but os.Create returns 2 values

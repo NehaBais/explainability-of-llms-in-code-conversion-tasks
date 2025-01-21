@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-int_cmp-js-go.go:25:10: cannot use "1" (untyped string constant) as int value in argument to compare

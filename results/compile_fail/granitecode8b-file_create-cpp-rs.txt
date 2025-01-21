@@ -1,0 +1,33 @@
+error[E0433]: failed to resolve: use of undeclared type `File`
+ --> /tmp/granitecode8b-file_create-cpp-rs.rs:4:17
+  |
+4 |     let mut f = File::create("output.txt").expect("Unable to create file");
+  |                 ^^^^ use of undeclared type `File`
+  |
+help: consider importing this struct
+  |
+1 + use fs::File;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `OpenOptions`
+ --> /tmp/granitecode8b-file_create-cpp-rs.rs:6:17
+  |
+6 |     let mut f = OpenOptions::new()
+  |                 ^^^^^^^^^^^ use of undeclared type `OpenOptions`
+  |
+help: consider importing this struct
+  |
+1 + use fs::OpenOptions;
+  |
+
+warning: unused import: `std::io::prelude`
+ --> /tmp/granitecode8b-file_create-cpp-rs.rs:2:5
+  |
+2 | use std::io::prelude::*;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0433`.

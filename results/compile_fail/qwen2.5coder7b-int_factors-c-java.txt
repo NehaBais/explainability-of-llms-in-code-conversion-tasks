@@ -1,0 +1,21 @@
+/tmp/Main.java:23: error: cannot find symbol
+      flist.clear();
+      ^
+  symbol:   variable flist
+  location: class Main
+/tmp/Main.java:24: error: cannot find symbol
+      flist.add(dvsr);
+      ^
+  symbol:   variable flist
+  location: class Main
+/tmp/Main.java:25: error: cannot find symbol
+      flist.add(num / dvsr);
+      ^
+  symbol:   variable flist
+  location: class Main
+/tmp/Main.java:27: error: cannot find symbol
+      xferFactors(fctrs, flist);
+                         ^
+  symbol:   variable flist
+  location: class Main
+4 errors

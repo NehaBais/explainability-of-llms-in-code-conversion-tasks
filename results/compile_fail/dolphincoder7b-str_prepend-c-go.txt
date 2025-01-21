@@ -1,0 +1,2 @@
+package command-line-arguments
+	imports syscall/js: build constraints exclude all Go files in /opt/homebrew/Cellar/go/1.23.0/libexec/src/syscall/js

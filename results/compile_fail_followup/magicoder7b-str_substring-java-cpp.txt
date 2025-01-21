@@ -1,0 +1,8 @@
+/tmp/magicoder7b-str_substring-java-cpp.cpp:1:1: error: unknown type name 'sudo'
+    1 | sudo apt - get install libboost - all -
+      | ^
+/tmp/magicoder7b-str_substring-java-cpp.cpp:1:9: error: expected ';' after top level declarator
+    1 | sudo apt - get install libboost - all -
+      |         ^
+      |         ;
+2 errors generated.

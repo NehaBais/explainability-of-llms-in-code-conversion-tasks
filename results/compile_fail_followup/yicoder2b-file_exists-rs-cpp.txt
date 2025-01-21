@@ -1,0 +1,19 @@
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:10:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   10 |     auto parent_path = std::filesystem::path(rootDir).parent_path();
+      |     ^
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:10:29: error: no member named 'filesystem' in namespace 'std'
+   10 |     auto parent_path = std::filesystem::path(rootDir).parent_path();
+      |                        ~~~~~^
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:17:21: error: no member named 'filesystem' in namespace 'std'
+   17 |     } else if (std::filesystem::exists(parent_path, ec)) {
+      |                ~~~~~^
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:25:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   25 |   for (const auto &file : std::filesystem::directory_iterator(rootDir)) {
+      |              ^
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:25:32: error: no member named 'filesystem' in namespace 'std'
+   25 |   for (const auto &file : std::filesystem::directory_iterator(rootDir)) {
+      |                           ~~~~~^
+/tmp/yicoder2b-file_exists-rs-cpp.cpp:25:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   25 |   for (const auto &file : std::filesystem::directory_iterator(rootDir)) {
+      |                         ^
+3 warnings and 3 errors generated.

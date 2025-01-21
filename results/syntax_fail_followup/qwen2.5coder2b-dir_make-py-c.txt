@@ -1,0 +1,36 @@
+/tmp/qwen2.5coder2b-dir_make-py-c.c:6:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (mkdir(path, 0755) != 0 && errno == ENOENT) {
+      |       ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:6:7: note: did you mean 'mkdirp'?
+/tmp/qwen2.5coder2b-dir_make-py-c.c:5:5: note: 'mkdirp' declared here
+    5 | int mkdirp(const char *path) {
+      |     ^
+    6 |   if (mkdir(path, 0755) != 0 && errno == ENOENT) {
+      |       ~~~~~
+      |       mkdirp
+/tmp/qwen2.5coder2b-dir_make-py-c.c:6:33: error: use of undeclared identifier 'errno'
+    6 |   if (mkdir(path, 0755) != 0 && errno == ENOENT) {
+      |                                 ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:6:42: error: use of undeclared identifier 'ENOENT'
+    6 |   if (mkdir(path, 0755) != 0 && errno == ENOENT) {
+      |                                          ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:8:22: error: call to undeclared function 'dirname'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     int ret = mkdirp(dirname(path));
+      |                      ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:8:22: note: did you mean 'devname'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:8:22: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    8 |     int ret = mkdirp(dirname(path));
+      |                      ^~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-dir_make-py-c.c:5:24: note: passing argument to parameter 'path' here
+    5 | int mkdirp(const char *path) {
+      |                        ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:13:14: error: use of undeclared identifier 'errno'
+   13 |   } else if (errno != 0) {
+      |              ^
+/tmp/qwen2.5coder2b-dir_make-py-c.c:32:57: error: use of undeclared identifier 'errno'
+   32 |     printf("Failed to create directory: %s\n", strerror(errno));
+      |                                                         ^
+7 errors generated.

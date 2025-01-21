@@ -1,0 +1,34 @@
+/tmp/granitecode8b-file_create-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:4:31: error: use of undeclared identifier 'O_WRONLY'
+    4 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                               ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:4:42: error: use of undeclared identifier 'O_CREAT'
+    4 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                                          ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:4:52: error: use of undeclared identifier 'O_TRUNC'
+    4 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                                                    ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:5:17: error: use of undeclared identifier 'S_IRUSR'
+    5 |                 S_IRUSR | S_IWUSR); // rights 0640 for rw-r-----
+      |                 ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:5:27: error: use of undeclared identifier 'S_IWUSR'
+    5 |                 S_IRUSR | S_IWUSR); // rights 0640 for rw-r-----
+      |                           ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:6:3: error: use of undeclared identifier 'close'
+    6 |   close(fd);
+      |   ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:8:17: error: use of undeclared identifier 'S_IRWXU'
+    8 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                 ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:8:27: error: use of undeclared identifier 'S_IXGRP'
+    8 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                           ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:8:37: error: use of undeclared identifier 'S_IXOTH'
+    8 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                                     ^
+11 errors generated.

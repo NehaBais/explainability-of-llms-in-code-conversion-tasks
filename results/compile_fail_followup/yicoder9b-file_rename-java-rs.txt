@@ -1,0 +1,39 @@
+error[E0061]: this function takes 3 arguments but 2 arguments were supplied
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:20:5
+   |
+20 |       test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\input.txt"), 
+   |  _____^^^^-
+21 | |           &format!("{}{}", curr_dir.to_str().unwrap(), "\\output.txt")); // use format! macro to concat file paths with directory path  
+   | |_______________________________________________________________________- argument #3 of type `&str` is missing
+   |
+note: function defined here
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:7:4
+   |
+7  | fn test(type_str: &str, oldname: &str, newname: &str) {
+   |    ^^^^ --------------  -------------  -------------
+help: provide the argument
+   |
+20 |     test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\input.txt"), &format!("{}{}", curr_dir.to_str().unwrap(), "\\output.txt"), /* &str */); // use format! macro to concat file paths with directory path  
+   |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error[E0061]: this function takes 3 arguments but 2 arguments were supplied
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:22:5
+   |
+22 |       test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\docs"), 
+   |  _____^^^^-
+23 | |           &format!("{}{}", curr_dir.to_str().unwrap(), "\\mydocs")); // same as above
+   | |___________________________________________________________________- argument #3 of type `&str` is missing
+   |
+note: function defined here
+  --> /tmp/yicoder9b-file_rename-java-rs.rs:7:4
+   |
+7  | fn test(type_str: &str, oldname: &str, newname: &str) {
+   |    ^^^^ --------------  -------------  -------------
+help: provide the argument
+   |
+22 |     test(&format!("{}{}", curr_dir.to_str().unwrap(), "\\docs"), &format!("{}{}", curr_dir.to_str().unwrap(), "\\mydocs"), /* &str */); // same as above
+   |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0061`.

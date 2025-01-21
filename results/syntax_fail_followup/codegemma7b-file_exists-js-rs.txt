@@ -1,0 +1,35 @@
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:1:18
+  |
+1 | const current_dir = std::env::current_dir().unwrap();
+  |                  ^
+  |
+help: provide a type for the item
+  |
+1 | const current_dir: <type> = std::env::current_dir().unwrap();
+  |                  ++++++++
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:2:17
+  |
+2 | const input_file = current_dir.join("input.txt");
+  |                 ^
+  |
+help: provide a type for the item
+  |
+2 | const input_file: <type> = current_dir.join("input.txt");
+  |                 ++++++++
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-file_exists-js-rs.rs:3:15
+  |
+3 | const docs_dir = current_dir.join("docs");
+  |               ^
+  |
+help: provide a type for the item
+  |
+3 | const docs_dir: <type> = current_dir.join("docs");
+  |               ++++++++
+
+error: aborting due to 3 previous errors
+

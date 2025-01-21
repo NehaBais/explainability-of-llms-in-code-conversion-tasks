@@ -1,0 +1,53 @@
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:16:19: error: no matching member function for call to 'operator()'
+   16 |   if (locale("C").operator()<char, char>(A.begin(), A.end(), B.begin(),
+      |       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:310:14: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+  310 | bool locale::operator()(const basic_string<_CharT, _Traits, _Allocator>& __x,
+      |              ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |                         const basic_string<_CharT, _Traits, _Allocator>& __y) const {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:32:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   32 |   auto cmp = [&](string s1, string s2) { return s1.compare(s2); };
+      |   ^
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:32:14: error: expected expression
+   32 |   auto cmp = [&](string s1, string s2) { return s1.compare(s2); };
+      |              ^
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:40:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   40 |   auto icmp = [&](string s1, string s2) {
+      |   ^
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:40:15: error: expected expression
+   40 |   auto icmp = [&](string s1, string s2) {
+      |               ^
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:61:19: error: no matching member function for call to 'operator()'
+   61 |   if (locale("C").operator()<char, char>(C.begin(), C.end(), D.begin(),
+      |       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:310:14: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+  310 | bool locale::operator()(const basic_string<_CharT, _Traits, _Allocator>& __x,
+      |              ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |                         const basic_string<_CharT, _Traits, _Allocator>& __y) const {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:73:19: error: no matching member function for call to 'operator()'
+   73 |   if (locale("C").operator()<char, char>(E.begin(), E.end(), F.begin(),
+      |       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:310:14: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+  310 | bool locale::operator()(const basic_string<_CharT, _Traits, _Allocator>& __x,
+      |              ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |                         const basic_string<_CharT, _Traits, _Allocator>& __y) const {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:85:19: error: no matching member function for call to 'operator()'
+   85 |   if (locale("C").operator()<char, char>(G.begin(), G.end(), H.begin(),
+      |       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:310:14: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+  310 | bool locale::operator()(const basic_string<_CharT, _Traits, _Allocator>& __x,
+      |              ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |                         const basic_string<_CharT, _Traits, _Allocator>& __y) const {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-java-cpp.cpp:106:29: error: no matching member function for call to 'operator()'
+  106 |   int icmpLex = locale("C").operator()<char, char>(A.begin(), A.end(),
+      |                 ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:310:14: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+  310 | bool locale::operator()(const basic_string<_CharT, _Traits, _Allocator>& __x,
+      |              ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |                         const basic_string<_CharT, _Traits, _Allocator>& __y) const {
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings and 7 errors generated.

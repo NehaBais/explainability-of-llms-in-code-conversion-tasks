@@ -1,0 +1,10 @@
+/tmp/stablecode-int_arith-go-c.c:30:3: error: expected expression
+   30 |   ```c
+      |   ^
+/tmp/stablecode-int_arith-go-c.c:71:21: error: expected '}'
+   71 |     Sandeep Kulkarni
+      |                     ^
+/tmp/stablecode-int_arith-go-c.c:3:12: note: to match this '{'
+    3 | int main() {
+      |            ^
+2 errors generated.

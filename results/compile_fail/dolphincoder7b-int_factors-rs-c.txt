@@ -1,0 +1,28 @@
+/tmp/dolphincoder7b-int_factors-rs-c.c:12:3: error: call to undeclared function 'assert_equal'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   assert_equal(computeFactors, factor, arr1, size1);
+      |   ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:12:16: error: use of undeclared identifier 'computeFactors'
+   12 |   assert_equal(computeFactors, factor, arr1, size1);
+      |                ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:12:32: error: use of undeclared identifier 'factor'
+   12 |   assert_equal(computeFactors, factor, arr1, size1);
+      |                                ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:13:16: error: use of undeclared identifier 'computeFactors'
+   13 |   assert_equal(computeFactors, factor, arr2, size2);
+      |                ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:13:32: error: use of undeclared identifier 'factor'
+   13 |   assert_equal(computeFactors, factor, arr2, size2);
+      |                                ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:26:24: error: call to undeclared function 'sortArray'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   26 |   int *sortedFactors = sortArray(factors, factorsSize * 2);
+      |                        ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:26:8: error: incompatible integer to pointer conversion initializing 'int *' with an expression of type 'int' [-Wint-conversion]
+   26 |   int *sortedFactors = sortArray(factors, factorsSize * 2);
+      |        ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-int_factors-rs-c.c:40:24: error: call to undeclared function 'sortArray'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   40 |   int *sortedFactors = sortArray(factors, factorsSize * 2);
+      |                        ^
+/tmp/dolphincoder7b-int_factors-rs-c.c:40:8: error: incompatible integer to pointer conversion initializing 'int *' with an expression of type 'int' [-Wint-conversion]
+   40 |   int *sortedFactors = sortArray(factors, factorsSize * 2);
+      |        ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9 errors generated.

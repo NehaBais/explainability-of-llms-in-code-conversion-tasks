@@ -1,0 +1,7 @@
+/tmp/codellama7b-file_exists-rs-c.c:25:23: error: expected ')'
+   25 |   if ((ret = stat("/" strcat(file, &sb)) == 0) {
+      |                       ^
+/tmp/codellama7b-file_exists-rs-c.c:25:18: note: to match this '('
+   25 |   if ((ret = stat("/" strcat(file, &sb)) == 0) {
+      |                  ^
+1 error generated.

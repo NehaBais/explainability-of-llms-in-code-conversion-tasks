@@ -1,0 +1,25 @@
+/tmp/codeqwen-file_size-rs-cpp.cpp:12:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |     auto cwd = std::filesystem::current_path();
+      |     ^
+/tmp/codeqwen-file_size-rs-cpp.cpp:12:21: error: no member named 'filesystem' in namespace 'std'
+   12 |     auto cwd = std::filesystem::current_path();
+      |                ~~~~~^
+/tmp/codeqwen-file_size-rs-cpp.cpp:13:10: error: no member named 'filesystem' in namespace 'std'
+   13 |     std::filesystem::path file(cwd / "input.txt");
+      |     ~~~~~^
+/tmp/codeqwen-file_size-rs-cpp.cpp:15:15: error: no member named 'filesystem' in namespace 'std'
+   15 |     if (!std::filesystem::exists(file)) {
+      |          ~~~~~^
+/tmp/codeqwen-file_size-rs-cpp.cpp:15:34: error: use of undeclared identifier 'file'
+   15 |     if (!std::filesystem::exists(file)) {
+      |                                  ^
+/tmp/codeqwen-file_size-rs-cpp.cpp:19:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   19 |     auto size = std::filesystem::file_size(file);
+      |     ^
+/tmp/codeqwen-file_size-rs-cpp.cpp:19:22: error: no member named 'filesystem' in namespace 'std'
+   19 |     auto size = std::filesystem::file_size(file);
+      |                 ~~~~~^
+/tmp/codeqwen-file_size-rs-cpp.cpp:19:44: error: use of undeclared identifier 'file'
+   19 |     auto size = std::filesystem::file_size(file);
+      |                                            ^
+2 warnings and 6 errors generated.

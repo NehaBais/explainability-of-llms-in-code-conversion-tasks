@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `stablecode_dir_make_cpp_rs`
+  --> /tmp/stablecode-dir_make-cpp-rs.rs:10:2
+   |
+10 | }
+   |  ^ consider adding a `main` function to `/tmp/stablecode-dir_make-cpp-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

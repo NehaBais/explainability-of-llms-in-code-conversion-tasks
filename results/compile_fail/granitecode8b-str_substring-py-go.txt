@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode8b-str_substring-py-go.go:15:10: undefined: strings
+/tmp/granitecode8b-str_substring-py-go.go:18:9: undefined: strings

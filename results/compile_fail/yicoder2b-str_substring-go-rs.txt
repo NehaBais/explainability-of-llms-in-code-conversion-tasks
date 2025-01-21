@@ -1,0 +1,52 @@
+error: 3 positional arguments in format string, but there is 1 argument
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:18:17
+   |
+18 |         "Start '{}', length {}: {}",
+   |                 ^^          ^^  ^^
+19 |         &str::from_utf8_lossy(&s)[sx as usize..sx + m]
+   |         ----------------------------------------------
+
+error[E0277]: the type `str` cannot be indexed by `usize`
+ --> /tmp/yicoder2b-str_substring-go-rs.rs:7:34
+  |
+7 |     println!("Index: {:0>8}", &s[n - 1 as usize]); // prints '   2345678'
+  |                                  ^^^^^^^^^^^^^^ string indices are ranges of `usize`
+  |
+  = help: the trait `SliceIndex<str>` is not implemented for `usize`, which is required by `String: Index<_>`
+  = help: the trait `SliceIndex<[_]>` is implemented for `usize`
+  = help: for that trait implementation, expected `[_]`, found `str`
+  = note: required for `String` to implement `Index<usize>`
+
+error[E0277]: the type `str` cannot be indexed by `usize`
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:10:38
+   |
+10 |     println!("Start '{}' to end:", s[n - 1 as usize]); // prints "Start 2 to end:", s[:len(&s) - 1])
+   |                                      ^^^^^^^^^^^^^^ string indices are ranges of `usize`
+   |
+   = help: the trait `SliceIndex<str>` is not implemented for `usize`, which is required by `String: Index<_>`
+   = help: the trait `SliceIndex<[_]>` is implemented for `usize`
+   = help: for that trait implementation, expected `[_]`, found `str`
+   = note: required for `String` to implement `Index<usize>`
+
+error[E0599]: no function or associated item named `from_utf8_lossy` found for type `str` in the current scope
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:11:19
+   |
+11 |     let dx = str::from_utf8_lossy(&s)
+   |                   ^^^^^^^^^^^^^^^ function or associated item not found in `str`
+
+error[E0599]: no function or associated item named `from_utf8_lossy` found for type `str` in the current scope
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:16:19
+   |
+16 |     let sx = str::from_utf8_lossy(&s).find("DE").unwrap();
+   |                   ^^^^^^^^^^^^^^^ function or associated item not found in `str`
+
+error[E0599]: no function or associated item named `from_utf8_lossy` found for type `str` in the current scope
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:19:15
+   |
+19 |         &str::from_utf8_lossy(&s)[sx as usize..sx + m]
+   |               ^^^^^^^^^^^^^^^ function or associated item not found in `str`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0599.
+For more information about an error, try `rustc --explain E0277`.

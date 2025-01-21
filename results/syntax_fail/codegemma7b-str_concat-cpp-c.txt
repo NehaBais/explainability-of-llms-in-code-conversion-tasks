@@ -1,0 +1,9 @@
+/tmp/codegemma7b-str_concat-cpp-c.c:7:14: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   char *s2 = malloc(strlen(s) + 7);
+      |              ^
+/tmp/codegemma7b-str_concat-cpp-c.c:7:14: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegemma7b-str_concat-cpp-c.c:11:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   free(s2);
+      |   ^
+/tmp/codegemma7b-str_concat-cpp-c.c:11:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

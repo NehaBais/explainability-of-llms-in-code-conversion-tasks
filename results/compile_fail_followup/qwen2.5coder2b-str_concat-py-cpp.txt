@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder2b-str_concat-py-cpp.cpp:13:28: error: non-aggregate type 'std::vector<std::string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   13 |   std::vector<std::string> strings = {"world", "mom"};
+      |                            ^         ~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_concat-py-cpp.cpp:14:15: error: redefinition of 's2'
+   14 |   std::string s2;
+      |               ^
+/tmp/qwen2.5coder2b-str_concat-py-cpp.cpp:9:15: note: previous definition is here
+    9 |   std::string s2 = s1 + " world";
+      |               ^
+/tmp/qwen2.5coder2b-str_concat-py-cpp.cpp:15:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   15 |   for (const auto &str : strings) {
+      |              ^
+/tmp/qwen2.5coder2b-str_concat-py-cpp.cpp:15:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   15 |   for (const auto &str : strings) {
+      |                        ^
+2 warnings and 2 errors generated.

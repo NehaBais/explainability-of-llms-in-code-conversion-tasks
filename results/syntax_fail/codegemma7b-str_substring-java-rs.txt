@@ -1,0 +1,15 @@
+error[E0106]: missing lifetime specifier
+  --> /tmp/codegemma7b-str_substring-java-rs.rs:18:68
+   |
+18 | pub fn substring_from_substring(str: &str, sub: &str, m: usize) -> &str {
+   |                                      ----       ----               ^ expected named lifetime parameter
+   |
+   = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `str` or `sub`
+help: consider introducing a named lifetime parameter
+   |
+18 | pub fn substring_from_substring<'a>(str: &'a str, sub: &'a str, m: usize) -> &'a str {
+   |                                ++++       ++            ++                    ++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0106`.

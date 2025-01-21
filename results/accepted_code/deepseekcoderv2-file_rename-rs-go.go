@@ -1,16 +1,26 @@
 package main
 
 import (
+	"fmt"
 	"os"
 )
 
 func main() {
-	err := os.Rename("input.txt", "output.txt")
-	if err != nil {
-		panic(err)
+	err := "File move error"
+	renameErr := os.Rename("input.txt", "output.txt")
+	if renameErr != nil {
+		fmt.Println(err, ":", renameErr)
 	}
-	err = os.Rename("docs", "mydocs")
-	if err != nil {
-		panic(err)
+	renameErr = os.Rename("docs", "mydocs")
+	if renameErr != nil {
+		fmt.Println(err, ":", renameErr)
+	}
+	renameErr = os.Rename("/input.txt", "/output.txt")
+	if renameErr != nil {
+		fmt.Println(err, ":", renameErr)
+	}
+	renameErr = os.Rename("/docs", "/mydocs")
+	if renameErr != nil {
+		fmt.Println(err, ":", renameErr)
 	}
 }

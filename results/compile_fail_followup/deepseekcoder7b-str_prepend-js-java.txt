@@ -1,0 +1,17 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+StringBuilder sb = new StringBuilder();
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+--enable-preview
+^
+/tmp/None.java:4: error: class, interface, enum, or record expected
+System.out.println(sb);  
+^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+sb.insert(0,"anotherText");  // Insert "anotherText" at position 0 (start)
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+System.out.println(sb);
+^
+5 errors

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-str_cmp-py-go.go:5:2: "unicode" imported and not used

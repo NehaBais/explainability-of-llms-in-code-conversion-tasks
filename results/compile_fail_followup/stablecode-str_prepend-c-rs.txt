@@ -1,0 +1,52 @@
+error: unknown start of token: `
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:35
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!` macro. 
+  |                                   ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to add a space between 'format!` and the opening parenthesis of the `format!` macro. 
+  |                                   ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:43
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!` macro. 
+  |                                           ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to add a space between `format!' and the opening parenthesis of the `format!` macro. 
+  |                                           ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:80
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!` macro. 
+  |                                                                                ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the 'format!` macro. 
+  |                                                                                ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:88
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!` macro. 
+  |                                                                                        ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!' macro. 
+  |                                                                                        ~
+
+error: expected one of `!` or `::`, found `fix`
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:5
+  |
+1 | The fix is to add a space between `format!` and the opening parenthesis of the `format!` macro. 
+  |     ^^^ expected one of `!` or `::`
+
+error: aborting due to 5 previous errors
+

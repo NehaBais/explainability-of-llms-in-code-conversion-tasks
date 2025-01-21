@@ -1,0 +1,45 @@
+/tmp/dolphincoder7b-file_rename-java-c.c:2:1: error: unknown type name 'using'
+    2 | using System;
+      | ^
+/tmp/dolphincoder7b-file_rename-java-c.c:3:1: error: unknown type name 'using'
+    3 | using System.IO;
+      | ^
+/tmp/dolphincoder7b-file_rename-java-c.c:3:13: error: expected ';' after top level declarator
+    3 | using System.IO;
+      |             ^
+      |             ;
+/tmp/dolphincoder7b-file_rename-java-c.c:5:1: error: unknown type name 'public'
+    5 | public
+      | ^
+/tmp/dolphincoder7b-file_rename-java-c.c:6:6: error: expected ';' after top level declarator
+    6 | class FileRenameTest {
+      |      ^
+      |      ;
+/tmp/dolphincoder7b-file_rename-java-c.c:22:78: warning: missing terminating '"' character [-Winvalid-pp-token]
+   22 |                           "{(RenameFile(oldname, newname) ? " was renamed as " 
+      |                                                                              ^
+/tmp/dolphincoder7b-file_rename-java-c.c:24:6: warning: missing terminating '"' character [-Winvalid-pp-token]
+   24 |   }  " 
+      |      ^
+/tmp/dolphincoder7b-file_rename-java-c.c:28:1: error: unknown type name 'public'
+   28 | public static void
+      | ^
+/tmp/dolphincoder7b-file_rename-java-c.c:30:3: error: call to undeclared function 'Test'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   Test("file", "input.txt", "output.txt");
+      |   ^
+/tmp/dolphincoder7b-file_rename-java-c.c:31:16: error: use of undeclared identifier 'Path'
+   31 |   Test("file", Path.Combine(Directory.GetCurrentDirectory(), "input.txt"),
+      |                ^
+/tmp/dolphincoder7b-file_rename-java-c.c:31:29: error: use of undeclared identifier 'Directory'
+   31 |   Test("file", Path.Combine(Directory.GetCurrentDirectory(), "input.txt"),
+      |                             ^
+/tmp/dolphincoder7b-file_rename-java-c.c:32:8: error: use of undeclared identifier 'Path'
+   32 |        Path.Combine(Directory.GetCurrentDirectory(), "output.txt"));
+      |        ^
+/tmp/dolphincoder7b-file_rename-java-c.c:32:21: error: use of undeclared identifier 'Directory'
+   32 |        Path.Combine(Directory.GetCurrentDirectory(), "output.txt"));
+      |                     ^
+/tmp/dolphincoder7b-file_rename-java-c.c:40:1: error: extraneous closing brace ('}')
+   40 | }
+      | ^
+2 warnings and 12 errors generated.

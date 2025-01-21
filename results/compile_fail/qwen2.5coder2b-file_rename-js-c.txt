@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_rename-js-c.c:1:10: fatal error: 'filesystem' file not found
+    1 | #include <filesystem>
+      |          ^~~~~~~~~~~~
+1 error generated.

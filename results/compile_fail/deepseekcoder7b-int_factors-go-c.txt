@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-int_factors-go-c.c:2:10: fatal error: 'vector' file not found
+    2 | #include <vector>
+      |          ^~~~~~~~
+1 error generated.

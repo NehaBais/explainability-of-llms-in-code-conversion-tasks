@@ -1,0 +1,28 @@
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-dir_make-js-rs.rs:13:51
+   |
+13 |                   mkdirp(&parent.to_string_lossy(), |result| match result {
+   |  _________________------____________________________^
+   | |                 |
+   | |                 arguments to this function are incorrect
+14 | |                     Ok(_) => mkdirp(&p.to_string_lossy(), cb),
+15 | |                     Err(e) => cb(Err(e)),
+16 | |                 });
+   | |_________________^ expected fn pointer, found closure
+   |
+   = note: expected fn pointer `fn(Result<(), std::io::Error>)`
+                 found closure `{closure@/tmp/deepseekcoderv2-dir_make-js-rs.rs:13:51: 13:59}`
+note: closures can only be coerced to `fn` types if they do not capture any variables
+  --> /tmp/deepseekcoderv2-dir_make-js-rs.rs:14:38
+   |
+14 |                     Ok(_) => mkdirp(&p.to_string_lossy(), cb),
+   |                                      ^ `p` captured here  ^^ `cb` captured here
+note: function defined here
+  --> /tmp/deepseekcoderv2-dir_make-js-rs.rs:4:4
+   |
+4  | fn mkdirp(p: &str, cb: fn(std::io::Result<()>)) {
+   |    ^^^^^^          ---------------------------
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

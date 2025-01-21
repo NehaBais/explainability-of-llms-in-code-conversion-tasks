@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-cpp-go.go:16:21: undefined: filepath.CreateDirAll
+/tmp/yicoder2b-dir_make-cpp-go.go:16:55: cannot use os.Args[1:] (value of type []string) as string value in argument to filepath.Join

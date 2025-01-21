@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_match-cpp-go.go:32:32: too many arguments in call to strings.Index
+	have (string, string, int)
+	want (string, string)

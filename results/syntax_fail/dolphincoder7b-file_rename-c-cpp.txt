@@ -1,0 +1,19 @@
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:5:3: error: use of undeclared identifier 'rename'
+    5 |   rename("input.txt", "output.txt");
+      |   ^
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:6:3: error: use of undeclared identifier 'rename'
+    6 |   rename("docs", "mydocs");
+      |   ^
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:7:3: error: use of undeclared identifier 'rename'
+    7 |   rename("/input.txt", "/output.txt");
+      |   ^
+/tmp/dolphincoder7b-file_rename-c-cpp.cpp:8:3: error: use of undeclared identifier 'rename'
+    8 |   rename("/docs", "/mydocs");
+      |   ^
+1 warning and 5 errors generated.

@@ -1,0 +1,22 @@
+warning: unused import: `self`
+ --> /tmp/qwen2.5coder2b-str_cmp-java-rs.rs:1:16
+  |
+1 | use std::cmp::{self, Ordering};
+  |                ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `eq_ignore_case` found for reference `&str` in the current scope
+  --> /tmp/qwen2.5coder2b-str_cmp-java-rs.rs:27:11
+   |
+27 |     if s1.eq_ignore_case(s2) {
+   |           ^^^^^^^^^^^^^^
+   |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+   |
+27 |     if s1.eq_ignore_ascii_case(s2) {
+   |           ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

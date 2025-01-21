@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `granitecode8b_int_factors_java_rs`
+  --> /tmp/granitecode8b-int_factors-java-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode8b-int_factors-java-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

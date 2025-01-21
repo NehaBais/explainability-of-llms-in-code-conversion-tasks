@@ -1,25 +1,36 @@
-### Solution
-The following code implements the three string matching types given in requirement and prints the location of match for type 2. It uses `index` function to locate substring in a string, it returns -1 if not found else index at which substr is located . This implementation can handle multiple occurrences by calling the index method recursively with updated startIndex parameter.
-```java
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-        String input1 = "abcd";
-        String input2 = "ab";
-        System.out.println("Is first string starts with second string: "+input1.startsWith(input2));
-        System.out.println("Is first string contains the second string at any location: "+input1.contains(input2));
-        System.out.println("Is first string ends with second string: "+input1.endsWith(input2));
-        int loc = -1;
-        loc = input1.indexOf(input2);
-        if (loc !=-1) {
-            while (loc != -1) {
-                System.out.println("Location of match for type 2 is: " + loc);
-                loc = input1.indexOf(input2, loc+1);
-            }
-        } else {
-            System.out.println("Type 2 does not have any match");
-        }
-    }
-}
+ Here's the Python code that performs the same operations as the provided Java code:
+
+```python
+def string_matching(str1, str2):
+    # Check if str1 starts with str2
+    print(f'"{str1}" starts with "{str2}":', str1.startswith(str2))
+    
+    # Check if str1 contains str2 at any location
+    print(f'"{str1}" contains "{str2}":', str2 in str1)
+    
+    # Check if str1 ends with str2
+    print(f'"{str1}" ends with "{str2}":', str1.endswith(str2))
+    
+    # Optional: Print the location of the match for part 2
+    if str2 in str1:
+        first_loc = str1.find(str2)
+        print(f'First occurrence of "{str2}" in "{str1}":', first_loc)
+        
+        # Handle multiple occurrences
+        loc = first_loc
+        count = 0
+        while True:
+            loc = str1.find(str2, loc + 1)
+            if loc == -1:
+                break
+            print(f'Occurrence {count} of "{str2}" in "{str1}":', loc)
+            count += 1
+
+# Test the function with the provided examples
+string_matching("abcd", "ab")
+string_matching("abcd", "zn")
+string_matching("abab", "bb")
+string_matching("abab", "ab")
 ```
+
+This Python code defines a function `string_matching` that takes two strings as input and performs the three types of string matching operations. It uses Python's built-in methods: `startswith`, `endswith`, and `find`. The optional requirement to print the location of multiple occurrences is also implemented using a loop that continues searching for the substring after each occurrence until no more matches are found.

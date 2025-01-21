@@ -1,0 +1,58 @@
+/tmp/granitecode8b-str_cmp-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-rs-c.c:4:6: error: expected ';' after expression
+    4 |   std::string a("ABC");
+      |      ^
+      |      ;
+/tmp/granitecode8b-str_cmp-rs-c.c:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string a("ABC");
+      |   ^
+/tmp/granitecode8b-str_cmp-rs-c.c:4:6: error: expected expression
+    4 |   std::string a("ABC");
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:5:6: error: expected ';' after expression
+    5 |   std::string b("Bac");
+      |      ^
+      |      ;
+/tmp/granitecode8b-str_cmp-rs-c.c:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string b("Bac");
+      |   ^
+/tmp/granitecode8b-str_cmp-rs-c.c:5:6: error: expected expression
+    5 |   std::string b("Bac");
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:6:7: error: use of undeclared identifier 'std'
+    6 |   if (std::strcmp(a.c_str(), b.c_str()) == 0) {
+      |       ^
+/tmp/granitecode8b-str_cmp-rs-c.c:6:10: error: expected ')'
+    6 |   if (std::strcmp(a.c_str(), b.c_str()) == 0) {
+      |          ^
+/tmp/granitecode8b-str_cmp-rs-c.c:6:6: note: to match this '('
+    6 |   if (std::strcmp(a.c_str(), b.c_str()) == 0) {
+      |      ^
+/tmp/granitecode8b-str_cmp-rs-c.c:7:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     printf("The strings are equaln");
+      |     ^
+/tmp/granitecode8b-str_cmp-rs-c.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_cmp-rs-c.c:8:14: error: use of undeclared identifier 'std'
+    8 |   } else if (std::strcmp(a.c_str(), b.c_str()) > 0) {
+      |              ^
+/tmp/granitecode8b-str_cmp-rs-c.c:8:17: error: expected ')'
+    8 |   } else if (std::strcmp(a.c_str(), b.c_str()) > 0) {
+      |                 ^
+/tmp/granitecode8b-str_cmp-rs-c.c:8:13: note: to match this '('
+    8 |   } else if (std::strcmp(a.c_str(), b.c_str()) > 0) {
+      |             ^
+/tmp/granitecode8b-str_cmp-rs-c.c:10:14: error: use of undeclared identifier 'std'
+   10 |   } else if (std::strcmp(a.c_str(), b.c_str()) < 0) {
+      |              ^
+/tmp/granitecode8b-str_cmp-rs-c.c:10:17: error: expected ')'
+   10 |   } else if (std::strcmp(a.c_str(), b.c_str()) < 0) {
+      |                 ^
+/tmp/granitecode8b-str_cmp-rs-c.c:10:13: note: to match this '('
+   10 |   } else if (std::strcmp(a.c_str(), b.c_str()) < 0) {
+      |             ^
+15 errors generated.

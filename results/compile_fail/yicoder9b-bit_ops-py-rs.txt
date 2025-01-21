@@ -1,0 +1,50 @@
+error: 11 positional arguments in format string, but there are 9 arguments
+  --> /tmp/yicoder9b-bit_ops-py-rs.rs:5:12
+   |
+5  | AND:     0b{:0width$x} \n& 0b{:0width$x}\n= 0b{:0width$x}\n\
+   |            ^^^^^^^^^^^       ^^^^^^^^^^^      ^^^^^^^^^^^
+6  | OR:      0b{:0width$x} \n| 0b{:0width$x}\n= 0b{:0width$x}\n\
+   |            ^^^^^^^^^^^       ^^^^^^^^^^^      ^^^^^^^^^^^
+7  | XOR:     0b{:0width$x} \n^ 0b{:0width$x}\n= 0b{:0width$x}\n\
+   |            ^^^^^^^^^^^       ^^^^^^^^^^^      ^^^^^^^^^^^
+8  | NOT:    ~0b{:0width$x}\n= 0b{:0width$x}\n",
+   |            ^^^^^^^^^^^      ^^^^^^^^^^^
+9  |         a & mask,
+   |         --------
+10 |         b & mask,
+   |         --------
+11 |         a & b & mask,
+   |         ------------
+12 |         a & mask,
+   |         --------
+13 |         b & mask,
+   |         --------
+14 |         (a | b) & mask,
+   |         --------------
+15 |         a & mask,
+   |         --------
+16 |         b & mask,
+   |         --------
+17 |         ((!a) as u64) & mask
+   |         --------------------
+   |
+   = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-bit_ops-py-rs.rs:8:32
+  |
+8 | NOT:    ~0b{:0width$x}\n= 0b{:0width$x}\n",
+  |                                ^^^^^^
+  |                                |
+  |                                expected `&usize`, found `&u32`
+  |                                arguments to this function are incorrect
+  |
+  = note: expected reference `&usize`
+             found reference `&u32`
+note: associated function defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:153:12
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

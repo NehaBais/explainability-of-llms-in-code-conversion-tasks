@@ -1,0 +1,11 @@
+/tmp/FileAndDirectoryCheck.java:22: error: cannot find symbol
+            && files.isDirectory(docsDirPath));
+               ^
+  symbol:   variable files
+  location: class FileAndDirectoryCheck
+/tmp/FileAndDirectoryCheck.java:34: error: cannot find symbol
+            && files.isDirectory(docsDirPath));
+               ^
+  symbol:   variable files
+  location: class FileAndDirectoryCheck
+2 errors

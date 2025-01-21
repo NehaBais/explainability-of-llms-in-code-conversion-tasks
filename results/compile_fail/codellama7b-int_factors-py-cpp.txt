@@ -1,0 +1,28 @@
+/tmp/codellama7b-int_factors-py-cpp.cpp:13:5: error: use of undeclared identifier 'x'
+   13 |   ++x;
+      |     ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:14:7: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |       ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:14:11: error: use of undeclared identifier 'x'
+   14 |   if (x * x == n) {
+      |           ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:15:24: error: use of undeclared identifier 'x'
+   15 |     factors1.push_back(x);
+      |                        ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:22:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |   for (auto i : {45, 53, 64}) {
+      |        ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:22:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   22 |   for (auto i : {45, 53, 64}) {
+      |               ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:22:17: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   22 |   for (auto i : {45, 53, 64}) {
+      |                 ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:25:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   25 |     for (auto f : factors) {
+      |          ^
+/tmp/codellama7b-int_factors-py-cpp.cpp:25:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   25 |     for (auto f : factors) {
+      |                 ^
+4 warnings and 5 errors generated.

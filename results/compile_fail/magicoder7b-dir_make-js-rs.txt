@@ -1,0 +1,17 @@
+warning: unused import: `Path`
+ --> /tmp/magicoder7b-dir_make-js-rs.rs:2:17
+  |
+2 | use std::path::{Path, PathBuf};
+  |                 ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `magicoder7b_dir_make_js_rs`
+  --> /tmp/magicoder7b-dir_make-js-rs.rs:18:2
+   |
+18 | }
+   |  ^ consider adding a `main` function to `/tmp/magicoder7b-dir_make-js-rs.rs`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

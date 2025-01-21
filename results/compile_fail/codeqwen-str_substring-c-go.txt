@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-str_substring-c-go.go:40:28: undefined: In

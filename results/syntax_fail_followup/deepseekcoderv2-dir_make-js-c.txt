@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-dir_make-js-c.c:49:27: error: expected expression
+   49 |   mkdirp("./path/to/dir", [](int err, const char *msg) {
+      |                           ^
+1 error generated.

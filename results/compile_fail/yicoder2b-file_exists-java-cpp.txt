@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_exists-java-cpp.cpp:4:10: fatal error: 'unistd' file not found
+    4 | #include <unistd>
+      |          ^~~~~~~~
+1 error generated.

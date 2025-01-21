@@ -1,0 +1,157 @@
+error[E0580]: `main` function has wrong type
+ --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:2:1
+  |
+2 | fn main(args: Vec<String>) {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^ incorrect number of function parameters
+  |
+  = note: expected signature `fn()`
+             found signature `fn(Vec<String>)`
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:10:69
+   |
+10 |         Ordering::Equal => println!("{} and {} are exactly equal.", a, b),
+   |                                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:10:72
+   |
+10 |         Ordering::Equal => println!("{} and {} are exactly equal.", a, b),
+   |                                                                        ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:11:64
+   |
+11 |         Ordering::Less => println!("{} is ordered before {}.", a, b),
+   |                                                                ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:11:67
+   |
+11 |         Ordering::Less => println!("{} is ordered before {}.", a, b),
+   |                                                                   ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:12:66
+   |
+12 |         Ordering::Greater => println!("{} is ordered after {}.", a, b),
+   |                                                                  ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:12:69
+   |
+12 |         Ordering::Greater => println!("{} is ordered after {}.", a, b),
+   |                                                                     ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: can't compare `str` with `T`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:14:25
+   |
+14 |     match a.as_ref().ne(&b) {
+   |                      -- ^^ no implementation for `str == T`
+   |                      |
+   |                      required by a bound introduced by this call
+   |
+   = help: the trait `PartialEq<T>` is not implemented for `str`
+help: consider introducing a `where` clause, but there might be an alternative better way to express this requirement
+   |
+8  | fn demo_compare<T: AsRef<str>>(a: T, b: T) where str: PartialEq<T> {
+   |                                            +++++++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:15:54
+   |
+15 |         true => println!("{} and {} are not equal.", a, b),
+   |                                                      ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:15:57
+   |
+15 |         true => println!("{} and {} are not equal.", a, b),
+   |                                                         ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:16:59
+   |
+16 |         false => println!("{} and {} are exactly equal.", a, b),
+   |                                                           ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_cmp-cpp-rs.rs:16:62
+   |
+16 |         false => println!("{} and {} are exactly equal.", a, b),
+   |                                                              ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+8  | fn demo_compare<T: AsRef<str> + std::fmt::Display>(a: T, b: T) {
+   |                               +++++++++++++++++++
+
+error: aborting due to 12 previous errors
+
+Some errors have detailed explanations: E0277, E0580.
+For more information about an error, try `rustc --explain E0277`.

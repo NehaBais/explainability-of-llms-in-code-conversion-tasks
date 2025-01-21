@@ -1,0 +1,20 @@
+warning: unused import: `std::iter::FromIterator`
+ --> /tmp/magicoder7b-int_factors-cpp-rs.rs:1:5
+  |
+1 | use std::iter::FromIterator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: the method `join` exists for struct `Vec<i32>`, but its trait bounds were not satisfied
+  --> /tmp/magicoder7b-int_factors-cpp-rs.rs:27:32
+   |
+27 |         println!("{}", factors.join(" "));
+   |                                ^^^^ method cannot be called on `Vec<i32>` due to unsatisfied trait bounds
+   |
+   = note: the following trait bounds were not satisfied:
+           `[i32]: Join<_>`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

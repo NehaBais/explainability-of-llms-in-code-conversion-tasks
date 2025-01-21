@@ -1,0 +1,277 @@
+/tmp/Main.java:3: error: unclosed character literal
+        comparator('YUP', 'YUP');
+                   ^
+/tmp/Main.java:3: error: unclosed character literal
+        comparator('YUP', 'YUP');
+                       ^
+/tmp/Main.java:3: error: not a statement
+        comparator('YUP', 'YUP');
+                     ^
+/tmp/Main.java:4: error: unclosed character literal
+        comparator('BALL', 'BELL');
+                   ^
+/tmp/Main.java:4: error: unclosed character literal
+        comparator('BALL', 'BELL');
+                        ^
+/tmp/Main.java:4: error: not a statement
+        comparator('BALL', 'BELL');
+                     ^
+/tmp/Main.java:5: error: unclosed character literal
+        comparator('24', '123');
+                   ^
+/tmp/Main.java:5: error: unclosed character literal
+        comparator('24', '123');
+                      ^
+/tmp/Main.java:11: error: unclosed string literal
+        System.out.println("
+                           ^
+/tmp/Main.java:12: error: ';' expected
+%s is of type %s and %s is of type %s" 
+     ^
+/tmp/Main.java:12: error: ';' expected
+%s is of type %s and %s is of type %s" 
+             ^
+/tmp/Main.java:12: error: ';' expected
+%s is of type %s and %s is of type %s" 
+                    ^
+/tmp/Main.java:12: error: ';' expected
+%s is of type %s and %s is of type %s" 
+                          ^
+/tmp/Main.java:12: error: ';' expected
+%s is of type %s and %s is of type %s" 
+                                  ^
+/tmp/Main.java:12: error: unclosed string literal
+%s is of type %s and %s is of type %s" 
+                                     ^
+/tmp/Main.java:12: error: not a statement
+%s is of type %s and %s is of type %s" 
+                                    ^
+/tmp/Main.java:13: error: ';' expected
+                       .formatted(a, a.getClass(), b, b.getClass()));
+                                                                   ^
+/tmp/Main.java:14: error: unclosed character literal
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                            ^
+/tmp/Main.java:14: error: ';' expected
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                  ^
+/tmp/Main.java:14: error: ';' expected
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                ^
+/tmp/Main.java:14: error: unclosed character literal
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                           ^
+/tmp/Main.java:14: error: not a statement
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                         ^
+/tmp/Main.java:14: error: not a statement
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                              ^
+/tmp/Main.java:14: error: ';' expected
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                               ^
+/tmp/Main.java:14: error: not a statement
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                                 ^
+/tmp/Main.java:14: error: ';' expected
+        if (a.hashCode() <  b.hashCode()) System.out.format('%s is strictly less than  %s%n', a, b);
+                                                                                                  ^
+/tmp/Main.java:15: error: unclosed character literal
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                            ^
+/tmp/Main.java:15: error: ';' expected
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                  ^
+/tmp/Main.java:15: error: ';' expected
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                            ^
+/tmp/Main.java:15: error: ';' expected
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                     ^
+/tmp/Main.java:15: error: unclosed character literal
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                             ^
+/tmp/Main.java:15: error: not a statement
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                           ^
+/tmp/Main.java:15: error: not a statement
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                                ^
+/tmp/Main.java:15: error: ';' expected
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                                 ^
+/tmp/Main.java:15: error: not a statement
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                                   ^
+/tmp/Main.java:15: error: ';' expected
+        if (a.hashCode() <= b.hashCode()) System.out.format('%s is less than or equal to %s%n', a, b);
+                                                                                                    ^
+/tmp/Main.java:16: error: unclosed character literal
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                            ^
+/tmp/Main.java:16: error: ';' expected
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                  ^
+/tmp/Main.java:16: error: ';' expected
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                   ^
+/tmp/Main.java:16: error: unclosed character literal
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                              ^
+/tmp/Main.java:16: error: not a statement
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                            ^
+/tmp/Main.java:16: error: not a statement
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                                 ^
+/tmp/Main.java:16: error: ';' expected
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                                  ^
+/tmp/Main.java:16: error: not a statement
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                                    ^
+/tmp/Main.java:16: error: ';' expected
+        if (a.hashCode() >  b.hashCode()) System.out.format('%s is strictly greater than  %s%n', a, b);
+                                                                                                     ^
+/tmp/Main.java:17: error: unclosed character literal
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                            ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                  ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                               ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                        ^
+/tmp/Main.java:17: error: unclosed character literal
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                                ^
+/tmp/Main.java:17: error: not a statement
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                              ^
+/tmp/Main.java:17: error: not a statement
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                                   ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                                    ^
+/tmp/Main.java:17: error: not a statement
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                                      ^
+/tmp/Main.java:17: error: ';' expected
+        if (a.hashCode() >= b.hashCode()) System.out.format('%s is greater than or equal to %s%n', a, b);
+                                                                                                       ^
+/tmp/Main.java:18: error: unclosed character literal
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                ^
+/tmp/Main.java:18: error: ';' expected
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                      ^
+/tmp/Main.java:18: error: ';' expected
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                               ^
+/tmp/Main.java:18: error: unclosed character literal
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                    ^
+/tmp/Main.java:18: error: not a statement
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                  ^
+/tmp/Main.java:18: error: not a statement
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                       ^
+/tmp/Main.java:18: error: ';' expected
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                        ^
+/tmp/Main.java:18: error: not a statement
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                          ^
+/tmp/Main.java:18: error: ';' expected
+        if (a.equals(b))      System.out.format('%s is equal to %s%n', a, b);
+                                                                           ^
+/tmp/Main.java:19: error: unclosed character literal
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                ^
+/tmp/Main.java:19: error: ';' expected
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                      ^
+/tmp/Main.java:19: error: ';' expected
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                ^
+/tmp/Main.java:19: error: unclosed character literal
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                        ^
+/tmp/Main.java:19: error: not a statement
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                      ^
+/tmp/Main.java:19: error: not a statement
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                           ^
+/tmp/Main.java:19: error: ';' expected
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                            ^
+/tmp/Main.java:19: error: not a statement
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                              ^
+/tmp/Main.java:19: error: ';' expected
+        if (!a.equals(b))     System.out.format('%s is not equal to %s%n', a, b);
+                                                                               ^
+/tmp/Main.java:20: error: unclosed character literal
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                               ^
+/tmp/Main.java:20: error: ';' expected
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                      ^
+/tmp/Main.java:20: error: ';' expected
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                      ^
+/tmp/Main.java:20: error: unclosed character literal
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                                ^
+/tmp/Main.java:20: error: not a statement
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                              ^
+/tmp/Main.java:20: error: not a statement
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                                   ^
+/tmp/Main.java:20: error: ';' expected
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                                    ^
+/tmp/Main.java:20: error: not a statement
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                                      ^
+/tmp/Main.java:20: error: ';' expected
+        if (a ==  b)         System.out.format('%s has object identity with %s%n', a, b);
+                                                                                       ^
+/tmp/Main.java:21: error: unclosed character literal
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                               ^
+/tmp/Main.java:21: error: ';' expected
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                      ^
+/tmp/Main.java:21: error: ';' expected
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                     ^
+/tmp/Main.java:21: error: ';' expected
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                   ^
+/tmp/Main.java:21: error: unclosed character literal
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                        ^
+/tmp/Main.java:21: error: not a statement
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                      ^
+/tmp/Main.java:21: error: not a statement
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                           ^
+/tmp/Main.java:21: error: ';' expected
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                            ^
+/tmp/Main.java:21: error: not a statement
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                              ^
+/tmp/Main.java:21: error: ';' expected
+        if (a !=  b)         System.out.format('%s has negated object identity with %s%n', a, b);
+                                                                                               ^
+92 errors

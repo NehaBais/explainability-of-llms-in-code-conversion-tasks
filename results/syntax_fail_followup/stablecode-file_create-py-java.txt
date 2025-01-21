@@ -1,0 +1,10 @@
+/tmp/Main.java:11: error: ';' expected
+        File outputFile = new File(directory, "output.txt"));
+                                                           ^
+/tmp/Main.java:15: error: ';' expected
+        File docsDir = new File(directory, "docs"));
+                                                  ^
+/tmp/Main.java:22: error: ';' expected
+        create("."));  // current directory
+                   ^
+3 errors

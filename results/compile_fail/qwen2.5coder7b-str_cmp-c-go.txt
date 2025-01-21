@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_cmp-c-go.go:11:11: undefined: strings.Equal
+/tmp/qwen2.5coder7b-str_cmp-c-go.go:11:32: undefined: strings.NotEqual
+/tmp/qwen2.5coder7b-str_cmp-c-go.go:20:36: undefined: strings.NotEqualFold

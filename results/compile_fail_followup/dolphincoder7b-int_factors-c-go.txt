@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-int_factors-c-go.go:10:19: invalid operation: i <= math.Sqrt(float64(num)) (mismatched types int and float64)

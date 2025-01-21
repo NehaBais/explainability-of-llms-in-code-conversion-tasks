@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `dolphincoder7b_dir_make_py_rs`
+ --> /tmp/dolphincoder7b-dir_make-py-rs.rs:8:2
+  |
+8 | }
+  |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-dir_make-py-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_match-go-c.c:13:17: error: incompatible pointer to integer conversion assigning to 'size_t' (aka 'unsigned long') from 'char *' [-Wint-conversion]
+   13 |   while ((start = strstr(first + start, second))) {
+      |                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_match-go-c.c:14:25: error: invalid operands to binary expression ('size_t' (aka 'unsigned long') and 'const char *')
+   14 |     printf("%d ", start - first);
+      |                   ~~~~~ ^ ~~~~~
+2 errors generated.

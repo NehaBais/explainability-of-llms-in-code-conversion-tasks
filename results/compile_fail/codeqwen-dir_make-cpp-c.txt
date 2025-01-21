@@ -1,0 +1,13 @@
+/tmp/codeqwen-dir_make-cpp-c.c:12:21: error: use of undeclared identifier 'PATH_MAX'
+   12 |   char pathToCreate[PATH_MAX];
+      |                     ^
+/tmp/codeqwen-dir_make-cpp-c.c:13:26: error: use of undeclared identifier 'PATH_MAX'
+   13 |   snprintf(pathToCreate, PATH_MAX, "%s", argv[1]);
+      |                          ^
+/tmp/codeqwen-dir_make-cpp-c.c:17:7: error: use of undeclared identifier 'errno'
+   17 |       errno != EEXIST) {
+      |       ^
+/tmp/codeqwen-dir_make-cpp-c.c:17:16: error: use of undeclared identifier 'EEXIST'
+   17 |       errno != EEXIST) {
+      |                ^
+4 errors generated.

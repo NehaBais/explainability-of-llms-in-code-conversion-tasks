@@ -1,0 +1,55 @@
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+ --> /tmp/codellama7b-str_substring-py-rs.rs:9:20
+  |
+9 |     println!("{}", s[n..n + m]);
+  |               --   ^^^^^^^^^^^ doesn't have a size known at compile-time
+  |               |
+  |               required by a bound introduced by this call
+  |
+  = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:12:20
+   |
+12 |     println!("{}", s[n..]);
+   |               --   ^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:15:20
+   |
+15 |     println!("{}", s[n..8]);
+   |               --   ^^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: `if` and `else` have incompatible types
+  --> /tmp/codellama7b-str_substring-py-rs.rs:23:13
+   |
+20 | /         if n + m <= s.len() {
+21 | |             s[n..n + m]
+   | |             ----------- expected because of this
+22 | |         } else {
+23 | |             "Index out of bounds"
+   | |             ^^^^^^^^^^^^^^^^^^^^^ expected `str`, found `&str`
+24 | |         }
+   | |_________- `if` and `else` have incompatible types
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

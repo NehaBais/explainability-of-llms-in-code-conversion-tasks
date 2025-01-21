@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-int_cmp-cpp-go.go:16:25: undefined: strings
+/tmp/codellama7b-int_cmp-cpp-go.go:23:9: no new variables on left side of :=
+/tmp/codellama7b-int_cmp-cpp-go.go:23:25: undefined: strings

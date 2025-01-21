@@ -1,0 +1,43 @@
+/tmp/codellama7b-str_interp-js-cpp.cpp:8:16: error: no matching member function for call to 'replace'
+    8 |       original.replace("X", little); // does not change the original string
+      |       ~~~~~~~~~^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1497:3: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1497 |   replace(size_type __pos1, size_type __n1, const basic_string& __str) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1503:3: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+ 1503 |   replace(size_type __pos1, size_type __n1, const _Tp& __t) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1520:47: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1520 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& replace(size_type __pos, size_type __n1, const value_type* __s);
+      |                                               ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1524:3: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1524 |   replace(const_iterator __i1, const_iterator __i2, const basic_string& __str) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1531:3: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+ 1531 |   replace(const_iterator __i1, const_iterator __i2, const _Tp& __t) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1542:3: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1542 |   replace(const_iterator __i1, const_iterator __i2, const value_type* __s) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1519:3: note: candidate function not viable: requires 4 arguments, but 2 were provided
+ 1519 |   replace(size_type __pos, size_type __n1, const value_type* __s, size_type __n2);
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1521:47: note: candidate function not viable: requires 4 arguments, but 2 were provided
+ 1521 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& replace(size_type __pos, size_type __n1, size_type __n2, value_type __c);
+      |                                               ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1537:3: note: candidate function not viable: requires 4 arguments, but 2 were provided
+ 1537 |   replace(const_iterator __i1, const_iterator __i2, const value_type* __s, size_type __n) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1547:3: note: candidate function not viable: requires 4 arguments, but 2 were provided
+ 1547 |   replace(const_iterator __i1, const_iterator __i2, size_type __n, value_type __c) {
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1553:3: note: candidate function template not viable: requires 4 arguments, but 2 were provided
+ 1553 |   replace(const_iterator __i1, const_iterator __i2, _InputIterator __j1, _InputIterator __j2);
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1509:3: note: candidate function not viable: requires at least 4 arguments, but 2 were provided
+ 1509 |   replace(size_type __pos1, size_type __n1, const basic_string& __str, size_type __pos2, size_type __n2 = npos);
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1516:3: note: candidate function template not viable: requires at least 4 arguments, but 2 were provided
+ 1516 |   replace(size_type __pos1, size_type __n1, const _Tp& __t, size_type __pos2, size_type __n2 = npos);
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

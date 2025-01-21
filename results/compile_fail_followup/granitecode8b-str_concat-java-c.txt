@@ -1,0 +1,12 @@
+/tmp/granitecode8b-str_concat-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-java-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("%s literaln", s);
+      |   ^
+/tmp/granitecode8b-str_concat-java-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_concat-java-c.c:6:3: error: call to undeclared library function 'sprintf' with type 'int (char *, const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   sprintf(s2, "%s literal", s);
+      |   ^
+/tmp/granitecode8b-str_concat-java-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+3 errors generated.

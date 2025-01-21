@@ -1,0 +1,14 @@
+/tmp/yicoder2b-str_cmp-py-c.c:5:56: error: call to undeclared function '__typeid_str'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("\n%s is of type %s and %s is of type %s", a, __typeid_str(a), b,
+      |                                                        ^
+/tmp/yicoder2b-str_cmp-py-c.c:5:56: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    5 |   printf("\n%s is of type %s and %s is of type %s", a, __typeid_str(a), b,
+      |                           ~~                           ^~~~~~~~~~~~~~~
+      |                           %d
+/tmp/yicoder2b-str_cmp-py-c.c:6:10: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    5 |   printf("\n%s is of type %s and %s is of type %s", a, __typeid_str(a), b,
+      |                                                ~~
+      |                                                %d
+    6 |          __typeid_str(b));
+      |          ^~~~~~~~~~~~~~~
+2 warnings and 1 error generated.

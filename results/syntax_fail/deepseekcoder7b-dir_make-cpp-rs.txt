@@ -1,0 +1,32 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-dir_make-cpp-rs.rs:22:13
+   |
+22 |            <｜begin▁of▁sentence｜>}
+   |             ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-dir_make-cpp-rs.rs:22:19
+   |
+22 |            <｜begin▁of▁sentence｜>}
+   |                    ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-dir_make-cpp-rs.rs:22:22
+   |
+22 |            <｜begin▁of▁sentence｜>}
+   |                       ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-dir_make-cpp-rs.rs:22:31
+   |
+22 |            <｜begin▁of▁sentence｜>}
+   |                                ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /tmp/deepseekcoder7b-dir_make-cpp-rs.rs:22:20
+   |
+22 |            <｜begin▁of▁sentence｜>}
+   |                     ^^ expected one of 7 possible tokens
+
+error: aborting due to 5 previous errors
+

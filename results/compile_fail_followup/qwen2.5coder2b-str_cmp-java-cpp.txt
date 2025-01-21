@@ -1,0 +1,31 @@
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:7:3: error: no matching function for call to 'compare'
+    7 |   compare("Hello", "Hello");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[6]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    4 | void compare(string &A, string &B) { cout << A.compare(B) << endl; }
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:8:3: error: no matching function for call to 'compare'
+    8 |   compare("5", "5.0");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    4 | void compare(string &A, string &B) { cout << A.compare(B) << endl; }
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:9:3: error: no matching function for call to 'compare'
+    9 |   compare("java", "Java");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[5]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    4 | void compare(string &A, string &B) { cout << A.compare(B) << endl; }
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:10:3: error: no matching function for call to 'compare'
+   10 |   compare("ĴÃVÁ", "ĴÃVÁ");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[8]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    4 | void compare(string &A, string &B) { cout << A.compare(B) << endl; }
+      |      ^       ~~~~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:11:3: error: no matching function for call to 'compare'
+   11 |   compare("ĴÃVÁ", "ĵãvá");
+      |   ^~~~~~~
+/tmp/qwen2.5coder2b-str_cmp-java-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[8]' to 'string &' (aka 'basic_string<char> &') for 1st argument
+    4 | void compare(string &A, string &B) { cout << A.compare(B) << endl; }
+      |      ^       ~~~~~~~~~
+5 errors generated.

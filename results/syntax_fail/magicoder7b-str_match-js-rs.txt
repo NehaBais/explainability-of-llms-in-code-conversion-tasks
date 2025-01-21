@@ -1,0 +1,28 @@
+error[E0463]: can't find crate for `regex`
+ --> /tmp/magicoder7b-str_match-js-rs.rs:1:1
+  |
+1 | extern crate regex;
+  | ^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:27:33
+   |
+27 |             string_b, string_a, q2, q2multi.len(), string_a, (if q2multi.len() > 1 {"es"} else {""}), q2multi.join(", "), (if q2multi.len() > 1 {"es"} else {""}))
+   |                                 ^^ help: a local variable with a similar name exists: `q1`
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:33:18
+   |
+33 |             (if !q2 {
+   |                  ^^ help: a local variable with a similar name exists: `q1`
+
+error[E0425]: cannot find value `q2` in this scope
+  --> /tmp/magicoder7b-str_match-js-rs.rs:36:37
+   |
+36 |                 "Yes, at index " + &q2.to_string() + "."
+   |                                     ^^ help: a local variable with a similar name exists: `q1`
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0425, E0463.
+For more information about an error, try `rustc --explain E0425`.

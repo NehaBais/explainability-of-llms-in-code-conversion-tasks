@@ -1,0 +1,41 @@
+error: unmatched angle bracket
+ --> /tmp/stablecode-int_factors-java-rs.rs:4:98
+  |
+4 |     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+  |                                                                                                  ^
+  |
+help: remove extra angle bracket
+  |
+4 -     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+4 +     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>();
+  |
+
+error[E0601]: `main` function not found in crate `stablecode_int_factors_java_rs`
+  --> /tmp/stablecode-int_factors-java-rs.rs:15:2
+   |
+15 | }
+   |  ^ consider adding a `main` function to `/tmp/stablecode-int_factors-java-rs.rs`
+
+error[E0618]: expected function, found `i64`
+ --> /tmp/stablecode-int_factors-java-rs.rs:4:23
+  |
+4 |     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
+  |                       |
+  |                       call expression requires function
+
+error[E0689]: can't call method `rev` on type `i64`
+ --> /tmp/stablecode-int_factors-java-rs.rs:8:73
+  |
+8 |     for test in ((n as f64).sqrt() as i64)..=((n as f64).sqrt() as i64).rev() {
+  |                                                                         ^^^ can't call method `rev` on type `i64`
+  |
+help: you must surround the range in parentheses to call its `rev` function
+  |
+8 |     for test in (((n as f64).sqrt() as i64)..=((n as f64).sqrt() as i64)).rev() {
+  |                 +                                                       +
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0601, E0618, E0689.
+For more information about an error, try `rustc --explain E0601`.

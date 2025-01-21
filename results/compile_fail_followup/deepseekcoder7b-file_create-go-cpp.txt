@@ -1,0 +1,25 @@
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:14:7: error: use of undeclared identifier 'mkdir'
+   14 |   if (mkdir(dn.c_str(), 0666) == 0) {
+      |       ^
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:5: error: unexpected namespace name 'std': expected expression
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |     ^
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:9: error: unexpected character <U+FF5C>
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |         ^~
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:17: error: character <U+2581> not allowed in an identifier
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |                ^
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:22: error: character <U+2581> not allowed in an identifier
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |                   ^
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:33: error: character <U+FF5C> not allowed in an identifier
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |                            ^~
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:12: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |           ^
+/tmp/deepseekcoder7b-file_create-go-cpp.cpp:17:38: error: use of undeclared identifier 'err'
+   17 |     std<｜begin▁of▁sentence｜> err << "Error creating directory: " << dn
+      |                                ^
+8 errors generated.

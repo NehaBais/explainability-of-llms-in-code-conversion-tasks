@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/dolphincoder7b-int_arith-rs-go.go:11:1: syntax error: non-declaration statement outside function body
+/tmp/dolphincoder7b-int_arith-rs-go.go:13:5: syntax error: non-declaration statement outside function body

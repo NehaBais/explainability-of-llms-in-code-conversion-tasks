@@ -1,0 +1,19 @@
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:7:15: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    7 |   short count = 0;
+      |               ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:45:17: error: no member named 'make_unique' in namespace 'std'
+   45 |     return std::make_unique<Factors>();
+      |            ~~~~~^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:45:29: error: 'Factors' does not refer to a value
+   45 |     return std::make_unique<Factors>();
+      |                             ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:5:8: note: declared here
+    5 | struct Factors {
+      |        ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:45:38: error: expected expression
+   45 |     return std::make_unique<Factors>();
+      |                                      ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:60:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   60 |     auto factors = ftors.factor(nums2factor[i]);
+      |     ^
+2 warnings and 3 errors generated.

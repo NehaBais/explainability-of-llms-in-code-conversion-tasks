@@ -1,0 +1,135 @@
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:4:23: error: unknown type name 'string'; did you mean 'std::string'?
+    4 | bool startsWith(const string &str, const string &prefix) {
+      |                       ^~~~~~
+      |                       std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:4:42: error: unknown type name 'string'; did you mean 'std::string'?
+    4 | bool startsWith(const string &str, const string &prefix) {
+      |                                          ^~~~~~
+      |                                          std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:8:21: error: unknown type name 'string'; did you mean 'std::string'?
+    8 | bool endsWith(const string &str, const string &suffix) {
+      |                     ^~~~~~
+      |                     std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:8:40: error: unknown type name 'string'; did you mean 'std::string'?
+    8 | bool endsWith(const string &str, const string &suffix) {
+      |                                        ^~~~~~
+      |                                        std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:13:21: error: unknown type name 'string'; did you mean 'std::string'?
+   13 | bool contains(const string &str, const string &subStr) {
+      |                     ^~~~~~
+      |                     std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:13:40: error: unknown type name 'string'; did you mean 'std::string'?
+   13 | bool contains(const string &str, const string &subStr) {
+      |                                        ^~~~~~
+      |                                        std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:14:30: error: use of undeclared identifier 'string'; did you mean 'std::string'?
+   14 |   return str.find(subStr) != string::npos;
+      |                              ^~~~~~
+      |                              std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:17:16: error: unknown type name 'string'; did you mean 'std::string'?
+   17 | int find(const string &str, const string &substr, int pos = 0) {
+      |                ^~~~~~
+      |                std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:17:35: error: unknown type name 'string'; did you mean 'std::string'?
+   17 | int find(const string &str, const string &substr, int pos = 0) {
+      |                                   ^~~~~~
+      |                                   std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:23:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   23 |   cout << boolalpha; // Print booleans as true/false
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:23:11: error: use of undeclared identifier 'boolalpha'; did you mean 'std::boolalpha'?
+   23 |   cout << boolalpha; // Print booleans as true/false
+      |           ^~~~~~~~~
+      |           std::boolalpha
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:704:40: note: 'std::boolalpha' declared here
+  704 | _LIBCPP_HIDE_FROM_ABI inline ios_base& boolalpha(ios_base& __str) {
+      |                                        ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:25:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   25 |   cout << "startsWith('abcd', 'ab'): " << startsWith("abcd", "ab") << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:25:71: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+   25 |   cout << "startsWith('abcd', 'ab'): " << startsWith("abcd", "ab") << endl;
+      |                                                                       ^~~~
+      |                                                                       std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:26:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   26 |   cout << "endsWith('abcd', 'zn'): " << endsWith("abcd", "zn") << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:26:67: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+   26 |   cout << "endsWith('abcd', 'zn'): " << endsWith("abcd", "zn") << endl;
+      |                                                                   ^~~~
+      |                                                                   std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:27:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   27 |   cout << "contains('bb', 'abab'): " << contains("bb", "abab") << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:27:67: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+   27 |   cout << "contains('bb', 'abab'): " << contains("bb", "abab") << endl;
+      |                                                                   ^~~~
+      |                                                                   std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:30:14: error: use of undeclared identifier 'string'; did you mean 'std::string'?
+   30 |   if (loc != string::npos) {
+      |              ^~~~~~
+      |              std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/qwen2.5coder2b-str_match-py-cpp.cpp:31:5: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   31 |     cout << "find('abab', 'bb') returns: " << loc << endl;
+      |     ^~~~
+      |     std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

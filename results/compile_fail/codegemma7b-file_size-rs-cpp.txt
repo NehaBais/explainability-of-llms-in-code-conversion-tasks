@@ -1,0 +1,28 @@
+/tmp/codegemma7b-file_size-rs-cpp.cpp:9:7: error: use of undeclared identifier 'argc'
+    9 |   if (argc < 2) {
+      |       ^
+/tmp/codegemma7b-file_size-rs-cpp.cpp:13:17: error: use of undeclared identifier 'argv'; did you mean 'prev'?
+   13 |     file_name = argv[1];
+      |                 ^~~~
+      |                 prev
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: 'prev' declared here
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+/tmp/codegemma7b-file_size-rs-cpp.cpp:13:17: error: reference to overloaded function could not be resolved; did you mean to call it?
+   13 |     file_name = argv[1];
+      |                 ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: possible target for call
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+/tmp/codegemma7b-file_size-rs-cpp.cpp:17:5: error: use of undeclared identifier 'filesystem'
+   17 |     filesystem::path path(file_name);
+      |     ^
+/tmp/codegemma7b-file_size-rs-cpp.cpp:18:27: error: use of undeclared identifier 'path'; did you mean 'catch'?
+   18 |     cout << "Size of " << path.filename() << " is " << path.file_size()
+      |                           ^~~~
+      |                           catch
+/tmp/codegemma7b-file_size-rs-cpp.cpp:18:27: error: expected expression
+/tmp/codegemma7b-file_size-rs-cpp.cpp:20:18: error: use of undeclared identifier 'filesystem'
+   20 |   } catch (const filesystem::filesystem_error &e) {
+      |                  ^
+7 errors generated.

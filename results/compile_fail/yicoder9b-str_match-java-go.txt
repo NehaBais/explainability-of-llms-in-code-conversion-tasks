@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_match-java-go.go:29:16: undefined: strings.IndexFrom

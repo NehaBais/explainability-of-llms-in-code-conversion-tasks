@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-int_factors-js-go.go:13:25: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_factors-js-go.go:13:33: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-int_factors-js-go.go:13:49: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_factors-js-go.go:13:53: syntax error: unexpected comma, expected expression

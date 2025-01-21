@@ -1,0 +1,12 @@
+/tmp/granitecode3b-str_interp-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-go-c.c:7:3: error: call to undeclared library function 'sprintf' with type 'int (char *, const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   sprintf(out, str, txt);
+      |   ^
+/tmp/granitecode3b-str_interp-go-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/tmp/granitecode3b-str_interp-go-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%s", out);
+      |   ^
+/tmp/granitecode3b-str_interp-go-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.

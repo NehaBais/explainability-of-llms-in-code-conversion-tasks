@@ -1,0 +1,13 @@
+/tmp/codeqwen-file_exists-go-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codeqwen-file_exists-go-cpp.cpp:6:8: error: use of undeclared identifier 'fs'
+    6 |   if (!fs::exists(p)) {
+      |        ^
+/tmp/codeqwen-file_exists-go-cpp.cpp:11:7: error: use of undeclared identifier 'fs'
+   11 |   if (fs::is_directory(p)) {
+      |       ^
+/tmp/codeqwen-file_exists-go-cpp.cpp:13:14: error: use of undeclared identifier 'fs'
+   13 |   } else if (fs::is_regular_file(p)) {
+      |              ^
+4 errors generated.

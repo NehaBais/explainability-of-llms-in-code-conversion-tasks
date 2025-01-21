@@ -1,0 +1,21 @@
+error[E0601]: `main` function not found in crate `granitecode3b_dir_make_py_rs`
+ --> /tmp/granitecode3b-dir_make-py-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode3b-dir_make-py-rs.rs`
+
+error[E0277]: the trait bound `P: AsRef<Path>` is not satisfied
+ --> /tmp/granitecode3b-dir_make-py-rs.rs:3:24
+  |
+3 |     fs::create_dir_all(path)?;
+  |     ------------------ ^^^^ the trait `AsRef<Path>` is not implemented for `P`
+  |     |
+  |     required by a bound introduced by this call
+  |
+note: required by a bound in `create_dir_all`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2425:1
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0601.
+For more information about an error, try `rustc --explain E0277`.

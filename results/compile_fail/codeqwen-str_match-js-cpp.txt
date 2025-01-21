@@ -1,0 +1,7 @@
+/tmp/codeqwen-str_match-js-cpp.cpp:30:26: error: no matching function for call to 'distance'
+   30 |     size_t match_index = std::distance(stringA.begin(), *q2matches_begin);
+      |                          ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/distance.h:46:1: note: candidate template ignored: deduced conflicting types for parameter '_InputIter' ('iterator' (aka '__wrap_iter<char *>') vs. 'value_type' (aka 'match_results<std::__wrap_iter<const char *> >'))
+   46 | distance(_InputIter __first, _InputIter __last) {
+      | ^
+1 error generated.

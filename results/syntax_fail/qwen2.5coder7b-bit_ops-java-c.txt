@@ -1,0 +1,23 @@
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:23:30: warning: format specifies type 'unsigned long' but the argument has type 'unsigned int' [-Wformat]
+   23 |     printf("a >>> b: %lu\n", ((unsigned int)a >> b)); // logical right shift
+      |                      ~~~     ^~~~~~~~~~~~~~~~~~~~~~
+      |                      %u
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:29:29: error: call to undeclared function 'rotate_left'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |     printf("a rol b: %u\n", rotate_left(a, b));
+      |                             ^
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:36:29: error: call to undeclared function 'rotate_right'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |     printf("a ror b: %u\n", rotate_right(a, b));
+      |                             ^
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:43:14: error: conflicting types for 'rotate_left'
+   43 | unsigned int rotate_left(unsigned int value, int count) {
+      |              ^
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:29:29: note: previous implicit declaration is here
+   29 |     printf("a rol b: %u\n", rotate_left(a, b));
+      |                             ^
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:47:14: error: conflicting types for 'rotate_right'
+   47 | unsigned int rotate_right(unsigned int value, int count) {
+      |              ^
+/tmp/qwen2.5coder7b-bit_ops-java-c.c:36:29: note: previous implicit declaration is here
+   36 |     printf("a ror b: %u\n", rotate_right(a, b));
+      |                             ^
+1 warning and 4 errors generated.

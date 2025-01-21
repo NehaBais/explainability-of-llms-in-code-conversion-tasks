@@ -1,21 +1,42 @@
-```
+ Sure! Here's the equivalent Rust code for the provided Golang code:
+
+```rust
 use std::io;
 
 fn main() {
-    println!("Enter two numbers:");
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Failed to read line");
-    let n1: i32 = input.trim().parse().expect("Invalid input, please enter a number.");
-    input.clear();
-    io::stdin().read_line(&mut input).expect("Failed to read line");
-    let n2: i32 = input.trim().parse().expect("Invalid input, please enter a number.");
+    let mut n1 = String::new();
+    let mut n2 = String::new();
+
+    println!("Enter number 1:");
+    io::stdin().read_line(&mut n1).expect("Failed to read line");
+    let n1: i32 = match n1.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Please enter a valid integer.");
+            return;
+        }
+    };
+
+    println!("Enter number 2:");
+    io::stdin().read_line(&mut n2).expect("Failed to read line");
+    let n2: i32 = match n2.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Please enter a valid integer.");
+            return;
+        }
+    };
 
     if n1 < n2 {
-        println!("{} is less than {}", n1, n2);
+        println!("{} less than {}", n1, n2);
     } else if n1 == n2 {
-        println!("{} is equal to {}", n1, n2);
-    } else {
-        println!("{} is greater than {}", n1, n2);
+        println!("{} equal to {}", n1, n2);
+    } else if n1 > n2 {
+        println!("{} greater than {}", n1, n2);
     }
 }
 ```
+
+This Rust code does the following:
+1. Reads two integers from the user input.
+2. Checks and prints whether the first integer is less than, equal to, or greater than the second integer using conditional statements.

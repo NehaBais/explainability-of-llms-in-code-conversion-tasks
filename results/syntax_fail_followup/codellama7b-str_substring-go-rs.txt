@@ -1,0 +1,23 @@
+error: argument never used
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:30
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |              --------------  ^^^^^^^^^^^^^^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error[E0425]: cannot find value `len` in this scope
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:36
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |                                    ^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+16 -     println!("All but last", &s[0..len - 1]);
+16 +     println!("All but last", &s[0.len - 1]);
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

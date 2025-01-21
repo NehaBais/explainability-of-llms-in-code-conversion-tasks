@@ -1,0 +1,10 @@
+/tmp/stablecode-str_prepend-c-cpp.cpp:11:76: error: extraneous ')' before ';'
+   11 |   str = cstr + std::string(dup = strdup(str.c_str())), ' ', cstr.size() - 1);
+      |                                                                            ^
+/tmp/stablecode-str_prepend-c-cpp.cpp:11:56: warning: left operand of comma operator has no effect [-Wunused-value]
+   11 |   str = cstr + std::string(dup = strdup(str.c_str())), ' ', cstr.size() - 1);
+      |                                                        ^~~
+/tmp/stablecode-str_prepend-c-cpp.cpp:11:73: warning: expression result unused [-Wunused-value]
+   11 |   str = cstr + std::string(dup = strdup(str.c_str())), ' ', cstr.size() - 1);
+      |                                                             ~~~~~~~~~~~ ^ ~
+2 warnings and 1 error generated.

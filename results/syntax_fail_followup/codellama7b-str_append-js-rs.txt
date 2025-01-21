@@ -1,0 +1,19 @@
+error: expected one of `!` or `::`, found `+=`
+ --> /tmp/codellama7b-str_append-js-rs.rs:2:4
+  |
+2 | s1 += ", World!".to_string();
+  |    ^^ expected one of `!` or `::`
+
+error: missing type for `const` item
+ --> /tmp/codellama7b-str_append-js-rs.rs:1:9
+  |
+1 | const s1 = "Hello".to_string();
+  |         ^
+  |
+help: provide a type for the item
+  |
+1 | const s1: <type> = "Hello".to_string();
+  |         ++++++++
+
+error: aborting due to 2 previous errors
+

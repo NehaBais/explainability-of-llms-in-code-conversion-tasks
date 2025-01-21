@@ -1,0 +1,49 @@
+/tmp/granitecode3b-int_arith-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:6:3: error: use of undeclared identifier 'cin'
+    6 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "Error: Division by zero." << endl;
+      |     ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:8:43: error: use of undeclared identifier 'endl'
+    8 |     cout << "Error: Division by zero." << endl;
+      |                                           ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << "Sum: " << sum << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:16:29: error: use of undeclared identifier 'endl'
+   16 |   cout << "Sum: " << sum << endl;
+      |                             ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << "Difference: " << diff << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:17:37: error: use of undeclared identifier 'endl'
+   17 |   cout << "Difference: " << diff << endl;
+      |                                     ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:18:3: error: use of undeclared identifier 'cout'
+   18 |   cout << "Product: " << prod << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:18:34: error: use of undeclared identifier 'endl'
+   18 |   cout << "Product: " << prod << endl;
+      |                                  ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:19:3: error: use of undeclared identifier 'cout'
+   19 |   cout << "Quotient: " << quot << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:19:35: error: use of undeclared identifier 'endl'
+   19 |   cout << "Quotient: " << quot << endl;
+      |                                   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:20:3: error: use of undeclared identifier 'cout'
+   20 |   cout << "Remainder: " << rem << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-c-cpp.cpp:20:35: error: use of undeclared identifier 'endl'
+   20 |   cout << "Remainder: " << rem << endl;
+      |                                   ^
+1 warning and 15 errors generated.

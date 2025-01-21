@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_create-py-go.go:10:37: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-py-go.go:15:54: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-py-go.go:17:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-py-go.go:25:2: syntax error: non-declaration statement outside function body

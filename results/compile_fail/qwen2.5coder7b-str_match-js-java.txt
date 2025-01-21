@@ -1,0 +1,11 @@
+/tmp/Main.java:8: error: cannot find symbol
+    List<Integer> q2matches = new ArrayList<>();
+    ^
+  symbol:   class List
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    List<Integer> q2matches = new ArrayList<>();
+                                  ^
+  symbol:   class ArrayList
+  location: class Main
+2 errors

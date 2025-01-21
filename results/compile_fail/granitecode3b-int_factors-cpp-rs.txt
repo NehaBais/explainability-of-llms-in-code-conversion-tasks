@@ -1,0 +1,70 @@
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:5:16
+  |
+5 |         if n % i == 0 {
+  |                ^ expected `i32`, found `u32`
+
+error[E0277]: cannot calculate the remainder of `i32` divided by `u32`
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:5:14
+  |
+5 |         if n % i == 0 {
+  |              ^ no implementation for `i32 % u32`
+  |
+  = help: the trait `Rem<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `Rem<Rhs>`:
+            `&'a i32` implements `Rem<i32>`
+            `&i32` implements `Rem<&i32>`
+            `i32` implements `Rem<&i32>`
+            `i32` implements `Rem`
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:6:26
+  |
+6 |             factors.push(i);
+  |                     ---- ^ expected `i32`, found `u32`
+  |                     |
+  |                     arguments to this method are incorrect
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/vec/mod.rs:2003:12
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+  |
+6 |             factors.push(i.try_into().unwrap());
+  |                           ++++++++++++++++++++
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:8:25
+  |
+8 |             if i * i != n {
+  |                -----    ^ expected `u32`, found `i32`
+  |                |
+  |                expected because this is `u32`
+  |
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+  |
+8 |             if i * i != n.try_into().unwrap() {
+  |                          ++++++++++++++++++++
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:9:34
+  |
+9 |                 factors.push(n / i);
+  |                                  ^ expected `i32`, found `u32`
+
+error[E0277]: cannot divide `i32` by `u32`
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:9:32
+  |
+9 |                 factors.push(n / i);
+  |                                ^ no implementation for `i32 / u32`
+  |
+  = help: the trait `Div<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `Div<Rhs>`:
+            `&'a i32` implements `Div<i32>`
+            `&i32` implements `Div<&i32>`
+            `i32` implements `Div<&i32>`
+            `i32` implements `Div`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,25 +1,38 @@
-fn main() {
-    // Create file in current working directory
-    let mut output_file = std::fs::File::create("output.txt").expect("Failed to create file");
+use std::fs;
+use std::io;
 
-    // Create empty directory in current working directory
-    if let Err(err) = std::fs::create_dir("./docs") {
-        eprintln!("Failed to create directory: {}", err);
-    } else {
-        println!("Directory 'docs' created successfully.");
-    }
+fn create_file(filename: &str) -> io::Result<()> {
+    fs::write(filename, b"")?;
+    println!("file {} created!", filename);
+    Ok(())
+}
 
-    // Create file in filesystem root
-    if let Err(err) = std::fs::File::create("/output.txt") {
-        eprintln!("Failed to create file: {}", err);
-    } else {
-        println!("File '/output.txt' created successfully.");
-    }
+fn create_dir(dirname: &str) -> io::Result<()> {
+    fs::create_dir(dirname)?;
+    println!("directory {} created!", dirname);
+    Ok(())
+}
 
-    // Create empty directory in filesystem root
-    if let Err(err) = std::fs::create_dir("/docs") {
-        eprintln!("Failed to create directory: {}", err);
+fn main() -> io::Result<()> {
+    // Create file in the current working directory
+    create_file("input.txt")?;
+    
+    // Create file in the filesystem root (requires superuser privileges)
+    if let Err(_) = create_file("/input.txt") {
+        eprintln!("Failed to create file in root directory");
     } else {
-        println!("Directory '/docs' created successfully.");
+        println!("file /input.txt created!");
     }
+    
+    // Create directory in the current working directory
+    create_dir("docs")?;
+    
+    // Create directory in the filesystem root (requires superuser privileges)
+    if let Err(_) = create_dir("/docs") {
+        eprintln!("Failed to create directory in root directory");
+    } else {
+        println!("directory /docs created!");
+    }
+    
+    Ok(())
 }

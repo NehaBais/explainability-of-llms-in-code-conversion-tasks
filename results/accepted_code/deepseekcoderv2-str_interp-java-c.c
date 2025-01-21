@@ -1,19 +1,15 @@
-char *adjective = "big";
-char *lyric;
-int i, j; // loop control variables
+#include <stdio.h>
+#include <string.h>
 
-strcpy(lyric, "Mary had a ");
-for (i = 0, j = 1; lyric[i]; ++i) { /* skip spaces */
-  if (isspace(lyric[i]))
-    continue;
-  if (lyric[i] == 'a')
-    break;
+int main() {
+  char adjective[] = "little";
+  char lyric[100]; // Assuming the maximum length of the resulting string will
+                   // not exceed 100 characters
+
+  // Use sprintf to format the string with the adjective
+  sprintf(lyric, "Mary had a %s lamb", adjective);
+
+  printf("%s\n", lyric);
+
+  return 0;
 }
-strcat(lyric, adjective);  // append the string to the current string
-for (++j; lyric[j]; ++j) { /* skip spaces */
-  if (isspace(lyric[j]))
-    continue;
-  else
-    break;
-}
-strcat(lyric, " lamb"); // append the final word

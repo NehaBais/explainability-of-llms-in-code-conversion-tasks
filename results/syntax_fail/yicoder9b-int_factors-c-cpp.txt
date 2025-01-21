@@ -1,0 +1,13 @@
+/tmp/yicoder9b-int_factors-c-cpp.cpp:8:15: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    8 |   short count = 0; // initializing it to zero
+      |               ^
+/tmp/yicoder9b-int_factors-c-cpp.cpp:41:15: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+   41 |   vector<int> nums2factor = {2059, 223092870, 3135, 45};
+      |               ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder9b-int_factors-c-cpp.cpp:45:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   45 |   for (auto &num :
+      |        ^
+/tmp/yicoder9b-int_factors-c-cpp.cpp:45:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   45 |   for (auto &num :
+      |                  ^
+3 warnings and 1 error generated.

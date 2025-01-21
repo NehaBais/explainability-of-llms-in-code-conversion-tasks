@@ -1,8 +1,10 @@
+from constants import *
 import shutil
 import os
 import re
 
 RESULTS_FOLDER = "results"
+REFERENCE_CODE_FOLDER = os.path.join(RESULTS_FOLDER, "reference_code")
 GENERATED_CODE_FOLDER = os.path.join(RESULTS_FOLDER, "generated_code")
 ACCEPTED_CODE_FOLDER = os.path.join(RESULTS_FOLDER, "accepted_code")
 REJECTED_CODE_FOLDER = os.path.join(RESULTS_FOLDER, "rejected_code")
@@ -10,8 +12,15 @@ REJECTED_CODE_FOLDER = os.path.join(RESULTS_FOLDER, "rejected_code")
 PATTERN = r"^```(?:[\w+]+)?\s*\n(.*?)(?=^```)```"
 
 
+def replace_newlines(match):
+    quote = match.group(1)
+    content = match.group(2)
+    escaped = content.replace("\n", "\\n")
+    return f"{quote}{escaped}{quote}"
+
+
 def extract_code(filepath):
-    filename = filepath.split(".")[0].split(os.sep)[-1]
+    filename = os.path.basename(filepath)[:-3]
     extension = filename.split("-")[-1]
     if os.path.exists(os.path.join(ACCEPTED_CODE_FOLDER, f"{filename}.{extension}")):
         return
@@ -24,8 +33,14 @@ def extract_code(filepath):
             shutil.copyfile(
                 filepath, os.path.join(REJECTED_CODE_FOLDER, f"{filename}.md")
             )
+            return
         # the first code block usually contains the code
         code = code[0].strip()
+        if len(code) == 0:
+            shutil.copyfile(
+                filepath, os.path.join(REJECTED_CODE_FOLDER, f"{filename}.md")
+            )
+            return
         with open(
             os.path.join(ACCEPTED_CODE_FOLDER, f"{filename}.{extension}"), "w"
         ) as fp:
@@ -41,6 +56,17 @@ def main():
         file_path = os.path.join(GENERATED_CODE_FOLDER, filename)
         if os.path.isfile(file_path):
             extract_code(file_path)
+
+    pattern = r'([\'"])((?:(?!\1).|\n)*?)\1'
+    for lang in REFERENCE_CODE.keys():
+        for task in REFERENCE_CODE[lang].keys():
+            code = REFERENCE_CODE[lang][task]
+            filename = f"{task}.{lang.lower()}"
+            if os.path.exists(os.path.join(REFERENCE_CODE_FOLDER, filename)):
+                continue
+            with open(os.path.join(REFERENCE_CODE_FOLDER, filename), "w") as fp:
+                code = re.sub(pattern, replace_newlines, code, flags=re.DOTALL)
+                fp.write(code.strip())
 
 
 if __name__ == "__main__":

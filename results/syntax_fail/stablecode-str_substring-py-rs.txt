@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_substring-py-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+9 |     println!("{}", &s[n-1..n+m-1].to_string()));
+  |                                               ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_substring-py-rs.rs:12:42
+   |
+9  |     println!("{}", &s[n-1..n+m-1].to_string()));
+   |                                               - missing open `(` for this delimiter
+...
+12 |     println!("{}", &s[n-1..].to_string()));
+   |                                          ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-logic_ops-c-go.go:4:2: undefined: fmt

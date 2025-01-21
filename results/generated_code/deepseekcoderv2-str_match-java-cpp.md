@@ -1,12 +1,47 @@
-### Solution
-#### Part 1: Determining if the first string starts with second string
-We can use function `startsWith()` to solve this part. The syntax for it is as follows:
-```c++
-string s;
-s.starts_with(substring);
+ Sure, here is the equivalent code in C++ that performs the same string matching operations as described:
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str1 = "abcd";
+    std::string str2 = "ab";
+    std::string str3 = "zn";
+    std::string str4 = "bb";
+    std::string str5 = "ab";
+    std::string str6 = "ab";
+
+    // 1. Determining if the first string starts with the second string
+    bool startsWithResult = str1.substr(0, str2.length()) == str2;
+    std::cout << (startsWithResult ? "true" : "false") << std::endl; // Output: true
+
+    // 2. Determining if the first string contains the second string at any location
+    size_t pos = str1.find(str4);
+    bool containsResult = pos != std::string::npos;
+    std::cout << (containsResult ? "true" : "false") << std::endl; // Output: false
+
+    pos = str1.find(str5);
+    containsResult = pos != std::string::npos;
+    std::cout << (containsResult ? "true" : "false") << std::endl; // Output: true
+    if (containsResult) {
+        std::cout << "Location: " << pos << std::endl; // Output: Location: 0
+    }
+
+    // Handling multiple occurrences for part 2
+    std::string str7 = "abab";
+    std::string str8 = "ab";
+    size_t loc = -1;
+    while ((loc = str7.find(str8, loc + 1)) != std::string::npos) {
+        std::cout << "Location: " << loc << std::endl; // Output: Location: 0, Location: 2
+    }
+
+    // 3. Determining if the first string ends with the second string
+    bool endsWithResult = str1.substr(str1.length() - str3.length(), str3.length()) == str3;
+    std::cout << (endsWithResult ? "true" : "false") << std::endl; // Output: false
+
+    return 0;
+}
 ```
-In C++, we define a variable of type `std::string` and call the member functions of the object using dot notation (i.e., `stringVar.functionName()`). The function returns boolean value true if string starts with substring otherwise false. This can be used to check whether string starts with given string or not.
-#### Part 2: Determining if the first string contains the second string at any location
-This part is a bit tricky because we need to find all occurrences of the search string and return their positions. The function `find()` in C++ returns -1 when substring is not found, otherwise it returns position at which substring occurs for the first time in the original string after the specified index (starting with 0). If startIndex is greater than or equal to length(), find() will never cause an exception and return npos.
-#### Part 3: Determining if the first string ends with second string
-This part can be solved by calling `endsWith()` function on original string object, which returns true if last character of this sequence matches given argument else false.
+
+This C++ code performs the same operations as the Java code you provided, including string matching and handling multiple occurrences for part 2.

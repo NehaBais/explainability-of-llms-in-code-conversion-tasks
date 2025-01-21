@@ -1,0 +1,24 @@
+/tmp/codeqwen-str_cmp-cpp-c.c:16:10: error: use of undeclared identifier 'A_lower'
+   16 |   strcpy(A_lower, A);
+      |          ^
+/tmp/codeqwen-str_cmp-cpp-c.c:16:10: error: use of undeclared identifier 'A_lower'
+/tmp/codeqwen-str_cmp-cpp-c.c:18:19: error: use of undeclared identifier 'A_lower'
+   18 |   for (int i = 0; A_lower[i] != '\0'; i++) {
+      |                   ^
+/tmp/codeqwen-str_cmp-cpp-c.c:19:5: error: use of undeclared identifier 'A_lower'
+   19 |     A_lower[i] = tolower(A_lower[i]);
+      |     ^
+/tmp/codeqwen-str_cmp-cpp-c.c:19:26: error: use of undeclared identifier 'A_lower'
+   19 |     A_lower[i] = tolower(A_lower[i]);
+      |                          ^
+/tmp/codeqwen-str_cmp-cpp-c.c:26:18: error: use of undeclared identifier 'A_lower'
+   26 |          (strcmp(A_lower, B_lower) == 0) ? "" : "not");
+      |                  ^
+/tmp/codeqwen-str_cmp-cpp-c.c:28:18: error: use of undeclared identifier 'A_lower'
+   28 |          (strcmp(A_lower, B_lower) != 0) ? "" : "not");
+      |                  ^
+/tmp/codeqwen-str_cmp-cpp-c.c:33:17: error: call to undeclared library function 'strtod' with type 'double (const char *, char **)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |   double numA = strtod(A, &endptr1);
+      |                 ^
+/tmp/codeqwen-str_cmp-cpp-c.c:33:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'strtod'
+8 errors generated.

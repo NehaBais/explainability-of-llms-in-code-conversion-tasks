@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_exists-go-cpp.cpp:3:16: error: use of undeclared identifier 'boost'
+    3 | namespace fs = boost::filesystem;
+      |                ^
+1 error generated.

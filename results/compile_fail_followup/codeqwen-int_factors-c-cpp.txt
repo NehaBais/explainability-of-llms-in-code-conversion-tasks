@@ -1,0 +1,13 @@
+/tmp/codeqwen-int_factors-c-cpp.cpp:3:3: error: unknown type name 'Factors'
+    3 |   Factors fctrs = {NULL, 0};
+      |   ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:3:20: error: use of undeclared identifier 'NULL'
+    3 |   Factors fctrs = {NULL, 0};
+      |                    ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:10:5: error: use of undeclared identifier 'printf'
+   10 |     printf("factors of %d are:", nums2factor[i]);
+      |     ^
+/tmp/codeqwen-int_factors-c-cpp.cpp:16:5: error: use of undeclared identifier 'printf'
+   16 |     printf("\n");
+      |     ^
+4 errors generated.

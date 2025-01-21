@@ -1,5 +1,15 @@
-char str[] = "Mary had a little lamb.";
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-printf("%s", str);
+int main() {
+  char extra[] = "little";
+  char new_str[100]; // Assuming the final string won't exceed 100 characters
 
-return 0;
+  // Using sprintf to interpolate the variable into the string
+  sprintf(new_str, "Mary had a %s lamb.", extra);
+
+  printf("%s\n", new_str);
+
+  return 0;
+}

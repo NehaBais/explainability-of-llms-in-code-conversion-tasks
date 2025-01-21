@@ -1,6 +1,7 @@
 public class Main {
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     String extra = "little";
-    System.out.println("Mary had a " + extra + " lamb.");
+    String newStr = String.format("Mary had a %s lamb.", extra);
+    System.out.println(newStr);
   }
 }

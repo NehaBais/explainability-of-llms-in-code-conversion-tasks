@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:6:24: error: no template named 'function' in namespace 'std'
+    6 |             const std::function<void(std::error_code)> &cb) {
+      |                   ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:7:12: error: no member named 'filesystem' in namespace 'std'
+    7 |   if (std::filesystem::exists(path))
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:8:15: error: expected expression
+    8 |     return cb({});
+      |               ^
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:10:10: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::create_directories(path);
+      |     ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:11:8: error: expected expression
+   11 |     cb({});
+      |        ^
+/tmp/qwen2.5coder2b-dir_make-js-cpp.cpp:13:10: error: no member named 'code' in 'std::exception'
+   13 |     cb(e.code());
+      |        ~ ^
+6 errors generated.

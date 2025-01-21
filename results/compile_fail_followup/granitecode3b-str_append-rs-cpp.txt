@@ -1,0 +1,4 @@
+/tmp/granitecode3b-str_append-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+1 error generated.

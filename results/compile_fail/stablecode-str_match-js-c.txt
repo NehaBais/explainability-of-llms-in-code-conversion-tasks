@@ -1,0 +1,4 @@
+/tmp/stablecode-str_match-js-c.c:17:39: error: expected function body after function declarator
+   17 | int ends_with(char *str, char *suffix)) {
+      |                                       ^
+1 error generated.

@@ -1,0 +1,15 @@
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:18:25: error: non-aggregate type 'std::vector<uint32_t>' (aka 'vector<unsigned int>') cannot be initialized with an initializer list
+   18 |   std::vector<uint32_t> code_points = {
+      |                         ^             ~
+   19 |       0x4E16}; // Example unicode point for '世'
+      |       ~~~~~~~
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:28:22: error: character too large for enclosing character literal type
+   28 |   char target_char = '世';
+      |                      ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:38:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   38 |   auto result1 = substr_from_known_char_and_of_m_length(str, target_char, 1);
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-js-cpp.cpp:39:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   39 |   auto result2 = substr_from_known_char_up_to_end(str, target_char);
+      |   ^
+2 warnings and 2 errors generated.

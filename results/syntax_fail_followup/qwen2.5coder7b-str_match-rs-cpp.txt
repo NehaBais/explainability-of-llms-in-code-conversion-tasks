@@ -1,0 +1,23 @@
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:5:6: error: variable has incomplete type 'void'
+    5 | void printMatch(std::optional<size_t> possibleMatch) {
+      |      ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:5:22: error: no member named 'optional' in namespace 'std'
+    5 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                 ~~~~~^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:5:31: error: unexpected type name 'size_t': expected expression
+    5 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                               ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:5:39: error: use of undeclared identifier 'possibleMatch'
+    5 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                                       ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:5:53: error: expected ';' after top level declarator
+    5 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                                                     ^
+      |                                                     ;
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:28:21: error: no member named 'make_optional' in namespace 'std'
+   28 |     printMatch(std::make_optional(pos));
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:32:21: error: no member named 'nullopt' in namespace 'std'
+   32 |     printMatch(std::nullopt); // Use std::nullopt instead of {}
+      |                ~~~~~^
+7 errors generated.

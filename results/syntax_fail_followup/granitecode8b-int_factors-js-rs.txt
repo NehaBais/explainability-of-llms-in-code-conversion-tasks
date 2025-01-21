@@ -1,0 +1,8 @@
+error: expected one of `!`, `(`, `+`, `::`, `<`, `where`, or `{`, found `>`
+ --> /tmp/granitecode8b-int_factors-js-rs.rs:1:28
+  |
+1 | fn factors(num: i32) -> Vec> {
+  |                            ^ expected one of 7 possible tokens
+
+error: aborting due to 1 previous error
+

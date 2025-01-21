@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-int_arith-rs-go.go:9:13: assignment mismatch: 1 variable but getArgs returns 2 values

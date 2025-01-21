@@ -1,0 +1,29 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String str = "abcdefgh";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: ';' expected
+String result1 = str.substring(n, n + m));  // 
+                                        ^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+=> "cde"
+^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+=> "cdefgh"
+^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+=> "abcdefg"
+^
+/tmp/None.java:17: error: ';' expected
+String result4 = str.substring(index, index + m));  // 
+                                                ^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+=> "bcd"
+^
+/tmp/None.java:22: error: ';' expected
+String result5 = str.substring(index2, index2 + m)); // 
+                                                  ^
+/tmp/None.java:23: error: class, interface, enum, or record expected
+=> "bcd"
+^
+9 errors

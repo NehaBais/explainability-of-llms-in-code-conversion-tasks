@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+Files.createDirectory(Paths.get("/docs"), null);
+^
+1 error

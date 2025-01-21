@@ -1,21 +1,18 @@
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 
-public class Main {
-  public static void main(String[] args) throws IOException {
-    File file = new File("input.txt");
-    if (file.exists()) {
-      System.out.println("Size of input.txt is " + Files.size(file.toPath()));
-    } else {
-      System.err.println("File not found: input.txt");
+public class FileSize {
+  public static void printFileSize(String filename) {
+    try {
+      File file = new File(filename);
+      long size = file.length();
+      System.out.println("Size of file " + filename + " is " + size + " bytes.");
+    } catch (Exception ex) {
+      System.err.println(ex.getMessage());
     }
+  }
 
-    File root = new File("/");
-    if (root.exists()) {
-      System.out.println("Size of / is " + Files.size(root.toPath()));
-    } else {
-      System.err.println("Directory not found: /");
-    }
+  public static void main(String[] args) {
+    printFileSize("input.txt");
+    printFileSize("/input.txt");
   }
 }

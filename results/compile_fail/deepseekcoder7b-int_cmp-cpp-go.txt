@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:3: use of package fmt not in selector
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:7: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:7: undefined: ｜begin▁of▁sentence｜
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:15: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:31: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_cmp-cpp-go.go:22:35: undefined: printf

@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-cpp-rs.rs:1:34
+  |
+1 | fn print_logic(a: bool, b: bool) {
+  |                                  ^ unclosed delimiter
+...
+4 |     println!("{}", !a));
+  |                       ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-logic_ops-cpp-rs.rs:5:1
+  |
+4 |     println!("{}", !a));
+  |                       - missing open `(` for this delimiter
+5 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

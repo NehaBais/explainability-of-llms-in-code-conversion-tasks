@@ -1,0 +1,1 @@
+/tmp/granitecode3b-file_rename-js-go.go:1:1: expected 'package', found 'import'

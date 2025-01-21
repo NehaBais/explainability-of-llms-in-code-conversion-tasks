@@ -1,0 +1,7 @@
+/tmp/granitecode3b-str_prepend-java-cpp.cpp:1:10: error: expected "FILENAME" or <FILENAME>
+    1 | #include using namespace std;
+      |          ^
+/tmp/granitecode3b-str_prepend-java-cpp.cpp:3:3: error: unknown type name 'string'
+    3 |   string string = "def";
+      |   ^
+2 errors generated.

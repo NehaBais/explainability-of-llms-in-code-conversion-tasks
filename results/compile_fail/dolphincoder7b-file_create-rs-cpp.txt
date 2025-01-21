@@ -1,0 +1,20 @@
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:9:10: error: no member named 'filesystem' in namespace 'std'
+    9 |     std::filesystem::path f_path = root + "/" + filename;
+      |     ~~~~~^
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:21:10: error: no member named 'filesystem' in namespace 'std'
+   21 |     std::filesystem::path d_path = root + "/" + directory_name;
+      |     ~~~~~^
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:21:27: error: use of undeclared identifier 'd_path'; did you mean 'f_path'?
+   21 |     std::filesystem::path d_path = root + "/" + directory_name;
+      |                           ^~~~~~
+      |                           f_path
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:9:27: note: 'f_path' declared here
+    9 |     std::filesystem::path f_path = root + "/" + filename;
+      |                           ^
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:22:10: error: no member named 'filesystem' in namespace 'std'
+   22 |     std::filesystem::create_directory(d_path);
+      |     ~~~~~^
+/tmp/dolphincoder7b-file_create-rs-cpp.cpp:24:14: error: no member named 'filesystem' in namespace 'std'
+   24 |     if (std::filesystem::is_directory(d_path))
+      |         ~~~~~^
+5 errors generated.

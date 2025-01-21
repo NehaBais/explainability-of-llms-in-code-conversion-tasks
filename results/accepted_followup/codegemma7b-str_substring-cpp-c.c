@@ -1,0 +1,1 @@
+printf("%.*s\n", m, (char *)strstr(s, sub) - s);

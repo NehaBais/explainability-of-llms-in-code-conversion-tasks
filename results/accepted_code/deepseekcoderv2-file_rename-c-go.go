@@ -1,25 +1,29 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
-func check(e error) {
-	if e != nil {
-		fmt.Println("Error")
-	}
-}
-
 func main() {
-	dir, err := os.Getwd() // get current working directory
-	check(err)
-	err = os.Rename(fmt.Sprintf("%s/input.txt", dir), fmt.Sprintf("%s/output.txt", dir))
-	check(err)
+	// Rename in current working directory
+	err := os.Rename("input.txt", "output.txt")
+	if err != nil {
+		fmt.Println("Error renaming input.txt to output.txt:", err)
+	}
+
 	err = os.Rename("docs", "mydocs")
-	check(err)
+	if err != nil {
+		fmt.Println("Error renaming docs to mydocs:", err)
+	}
+
+	// Rename in filesystem root
 	err = os.Rename("/input.txt", "/output.txt")
-	check(err)
+	if err != nil {
+		fmt.Println("Error renaming /input.txt to /output.txt:", err)
+	}
+
 	err = os.Rename("/docs", "/mydocs")
-	check(err)
+	if err != nil {
+		fmt.Println("Error renaming /docs to /mydocs:", err)
+	}
 }

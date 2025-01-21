@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-file_size-js-go.go:5:2: "path/filepath" imported and not used

@@ -1,0 +1,50 @@
+/tmp/stablecode-file_size-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_size-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_size-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_size-js-c.c:17:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   strcpy(files[0].name, fileName1);
+      |   ^
+/tmp/stablecode-file_size-js-c.c:17:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/stablecode-file_size-js-c.c:23:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |       ^
+/tmp/stablecode-file_size-js-c.c:23:25: error: use of undeclared identifier 'F_OK'
+   23 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |                         ^
+/tmp/stablecode-file_size-js-c.c:23:58: error: use of undeclared identifier 'F_OK'
+   23 |   if (access(fileName1, F_OK) != -1 && access(fileName2, F_OK) != -1) {
+      |                                                          ^
+/tmp/stablecode-file_size-js-c.c:24:48: error: expected ';' after expression
+   24 |     files[0].size = fso->GetFile(files[0].name))->Size;
+      |                                                ^
+      |                                                ;
+/tmp/stablecode-file_size-js-c.c:24:21: error: use of undeclared identifier 'fso'
+   24 |     files[0].size = fso->GetFile(files[0].name))->Size;
+      |                     ^
+/tmp/stablecode-file_size-js-c.c:24:48: error: expected expression
+   24 |     files[0].size = fso->GetFile(files[0].name))->Size;
+      |                                                ^
+/tmp/stablecode-file_size-js-c.c:25:48: error: expected ';' after expression
+   25 |     files[1].size = fso->GetFile(files[1].name))->Size;
+      |                                                ^
+      |                                                ;
+/tmp/stablecode-file_size-js-c.c:25:21: error: use of undeclared identifier 'fso'
+   25 |     files[1].size = fso->GetFile(files[1].name))->Size;
+      |                     ^
+/tmp/stablecode-file_size-js-c.c:25:48: error: expected expression
+   25 |     files[1].size = fso->GetFile(files[1].name))->Size;
+      |                                                ^
+/tmp/stablecode-file_size-js-c.c:27:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   27 |     printf("The size of %s is %ld\n", files[0].name, files[0].size);
+      |     ^
+/tmp/stablecode-file_size-js-c.c:27:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_size-js-c.c:30:81: error: extraneous ')' before ';'
+   30 |     printf("Unable to access the file %s or %s\n", files[0].name, files[1].name));
+      |                                                                                 ^
+15 errors generated.

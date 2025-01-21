@@ -1,0 +1,4 @@
+/tmp/Main.java:15: error: ')' or ',' expected
+        System.out.println(str.substring(0, str.length() - 1);   //  =>  "abcdefg"
+                                                             ^
+1 error

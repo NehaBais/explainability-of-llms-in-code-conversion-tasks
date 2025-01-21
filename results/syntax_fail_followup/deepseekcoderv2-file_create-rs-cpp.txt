@@ -1,0 +1,19 @@
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:12:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |     auto f_path = std::filesystem::path(root) / FILE_NAME;
+      |     ^
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:12:24: error: no member named 'filesystem' in namespace 'std'
+   12 |     auto f_path = std::filesystem::path(root) / FILE_NAME;
+      |                   ~~~~~^
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:13:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |     auto d_path = std::filesystem::path(root) / DIR_NAME;
+      |     ^
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:13:24: error: no member named 'filesystem' in namespace 'std'
+   13 |     auto d_path = std::filesystem::path(root) / DIR_NAME;
+      |                   ~~~~~^
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:15:15: error: no member named 'filesystem' in namespace 'std'
+   15 |     if (!std::filesystem::is_directory(d_path)) {
+      |          ~~~~~^
+/tmp/deepseekcoderv2-file_create-rs-cpp.cpp:16:12: error: no member named 'filesystem' in namespace 'std'
+   16 |       std::filesystem::create_directory(d_path);
+      |       ~~~~~^
+2 warnings and 4 errors generated.

@@ -1,0 +1,10 @@
+/tmp/deepseekcoderv2-str_cmp-py-c.c:6:56: error: expected expression
+    6 |   printf("%s is of type %s and %s is of type %s\n", a, typeof(a), b, typeof(b));
+      |                                                        ^
+/tmp/deepseekcoderv2-str_cmp-py-c.c:6:70: error: expected expression
+    6 |   printf("%s is of type %s and %s is of type %s\n", a, typeof(a), b, typeof(b));
+      |                                                                      ^
+/tmp/deepseekcoderv2-str_cmp-py-c.c:43:17: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   43 |     int num_a = atoi(a);
+      |                 ^
+3 errors generated.

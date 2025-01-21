@@ -1,26 +1,36 @@
-The code below is the solution to this problem.
+ To convert the given Python code to Rust, you can use the `std::fs` module to get the size of a file. Below is the equivalent Rust code for verifying the size of a file called `input.txt`:
 
-<details><summary>Click here for a hint:</summary>
-<blockquote>Try looking at <a href="https://doc.rust-lang.org/std/fs/struct.File.html">this</a> in Rust.</blockquote></details>
+1. For the file in the current working directory.
+2. And another one in the file system root.
 
-```Rust
-use std::{
-    env,
-    fs::File,
-    io::Read,
-};
-fn main() {
-    let path = env::current_dir().unwrap();
-    println!("{:?}", &path);
-    //let file_name = "input.txt";
-    let mut file = match File::open(format!("{}/input.txt", path.to_string_lossy())) {
-        Ok(f) => f,
-        Err(_e) => return println!(
-            "[FAILED] to open the input.txt in {} folder, error: {}", 
-                &path.display(), _e),
-    };
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).unwrap();
-    println!("{}", contents);
+```rust
+use std::fs;
+use std::io;
+
+fn main() -> io::Result<()> {
+    // Get size of input.txt from the current working directory
+    let size_current = fs::metadata("input.txt")?.len();
+    println!("Size of input.txt in current directory: {} bytes", size_current);
+
+    // Get size of input.txt from the root directory
+    let size_root = fs::metadata("/input.txt")?;
+    println!("Size of /input.txt (root directory): {} bytes", size_root.len());
+
+    Ok(())
 }
 ```
+
+### Explanation:
+- `fs::metadata` is used to get the metadata of a file, including its length (`len()` method).
+- The first call uses `"input.txt"` which assumes the current working directory.
+- The second call uses `/input.txt`, which tries to access the file from the root directory. This requires appropriate permissions and might not work in all environments without superuser privileges.
+
+### Running the Code:
+To run this Rust code, you need to have Rust installed on your system. Save the code to a file named `main.rs` and then compile and run it using the following commands:
+
+
+rustc main.rs
+./main
+
+
+If you want to ensure that the second path is correct, make sure that `/input.txt` exists and you have permission to access it in the file system root.

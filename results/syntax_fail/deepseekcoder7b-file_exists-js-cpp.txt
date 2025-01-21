@@ -1,0 +1,13 @@
+/tmp/deepseekcoder7b-file_exists-js-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |   if (std::filesystem::exists(filePath1)) {
+      |       ~~~~~^
+/tmp/deepseekcoder7b-file_exists-js-cpp.cpp:11:14: error: no member named 'filesystem' in namespace 'std'
+   11 |     if (std::filesystem::is_regular_file(filePath1))
+      |         ~~~~~^
+/tmp/deepseekcoder7b-file_exists-js-cpp.cpp:19:12: error: no member named 'filesystem' in namespace 'std'
+   19 |   if (std::filesystem::exists(filePath2)) {
+      |       ~~~~~^
+/tmp/deepseekcoder7b-file_exists-js-cpp.cpp:20:14: error: no member named 'filesystem' in namespace 'std'
+   20 |     if (std::filesystem::is_regular_file(filePath2))
+      |         ~~~~~^
+4 errors generated.

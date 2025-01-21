@@ -1,0 +1,7 @@
+/tmp/FileExists.java:25: error: exception IOException is never thrown in body of corresponding try statement
+    } catch (IOException e) {
+      ^
+/tmp/FileExists.java:47: error: exception IOException is never thrown in body of corresponding try statement
+    } catch (IOException e) {
+      ^
+2 errors

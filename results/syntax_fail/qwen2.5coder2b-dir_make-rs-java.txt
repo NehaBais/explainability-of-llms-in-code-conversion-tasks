@@ -1,0 +1,11 @@
+/tmp/Main.java:7: error: cannot find symbol
+      Files.createDirectories(Paths.get(dirPath));
+      ^
+  symbol:   variable Files
+  location: class Main
+/tmp/Main.java:7: error: cannot find symbol
+      Files.createDirectories(Paths.get(dirPath));
+                              ^
+  symbol:   variable Paths
+  location: class Main
+2 errors

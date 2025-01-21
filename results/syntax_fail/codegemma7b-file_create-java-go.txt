@@ -1,0 +1,1 @@
+/tmp/codegemma7b-file_create-java-go.go:1:1: expected 'package', found 'import'

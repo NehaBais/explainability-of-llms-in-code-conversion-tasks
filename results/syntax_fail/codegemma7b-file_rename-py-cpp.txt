@@ -1,0 +1,40 @@
+/tmp/codegemma7b-file_rename-py-cpp.cpp:3:21: error: expected namespace name
+    3 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::rename("input.txt", "output.txt");
+      |   ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:8:3: error: use of undeclared identifier 'fs'
+    8 |   fs::rename("docs", "mydocs");
+      |   ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:11:3: error: use of undeclared identifier 'fs'
+   11 |   fs::rename(fs::path(fs::sep) / "input.txt", fs::path(fs::sep) / "output.txt");
+      |   ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:11:14: error: use of undeclared identifier 'fs'
+   11 |   fs::rename(fs::path(fs::sep) / "input.txt", fs::path(fs::sep) / "output.txt");
+      |              ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:11:23: error: use of undeclared identifier 'fs'
+   11 |   fs::rename(fs::path(fs::sep) / "input.txt", fs::path(fs::sep) / "output.txt");
+      |                       ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:11:32: error: expected ')'
+   11 |   fs::rename(fs::path(fs::sep) / "input.txt", fs::path(fs::sep) / "output.txt");
+      |                                ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:11:13: note: to match this '('
+   11 |   fs::rename(fs::path(fs::sep) / "input.txt", fs::path(fs::sep) / "output.txt");
+      |             ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:12:3: error: use of undeclared identifier 'fs'
+   12 |   fs::rename(fs::path(fs::sep) / "docs", fs::path(fs::sep) / "mydocs");
+      |   ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:12:14: error: use of undeclared identifier 'fs'
+   12 |   fs::rename(fs::path(fs::sep) / "docs", fs::path(fs::sep) / "mydocs");
+      |              ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:12:23: error: use of undeclared identifier 'fs'
+   12 |   fs::rename(fs::path(fs::sep) / "docs", fs::path(fs::sep) / "mydocs");
+      |                       ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:12:32: error: expected ')'
+   12 |   fs::rename(fs::path(fs::sep) / "docs", fs::path(fs::sep) / "mydocs");
+      |                                ^
+/tmp/codegemma7b-file_rename-py-cpp.cpp:12:13: note: to match this '('
+   12 |   fs::rename(fs::path(fs::sep) / "docs", fs::path(fs::sep) / "mydocs");
+      |             ^
+11 errors generated.

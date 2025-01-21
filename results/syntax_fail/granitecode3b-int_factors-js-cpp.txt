@@ -1,0 +1,49 @@
+/tmp/granitecode3b-int_factors-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:4:1: error: unknown type name 'vector'
+    4 | vector factors(int num) {
+      | ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:5:3: error: unknown type name 'vector'
+    5 |   vector n_factors;
+      |   ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:6:24: error: use of undeclared identifier 'sqrt'
+    6 |   for (int i = 1; i <= sqrt(num); i++) {
+      |                        ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:19:3: error: unknown type name 'vector'
+   19 |   vector factors = factors(num);
+      |   ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:21:5: error: use of undeclared identifier 'cout'
+   21 |     cout << factors[i] << " ";
+      |     ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:23:3: error: use of undeclared identifier 'cout'
+   23 |   cout << endl;
+      |   ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:23:11: error: use of undeclared identifier 'endl'
+   23 |   cout << endl;
+      |           ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:27:5: error: use of undeclared identifier 'cout'
+   27 |     cout << factors[i] << " ";
+      |     ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:29:3: error: use of undeclared identifier 'cout'
+   29 |   cout << endl;
+      |   ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:29:11: error: use of undeclared identifier 'endl'
+   29 |   cout << endl;
+      |           ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:33:5: error: use of undeclared identifier 'cout'
+   33 |     cout << factors[i] << " ";
+      |     ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:35:3: error: use of undeclared identifier 'cout'
+   35 |   cout << endl;
+      |   ^
+/tmp/granitecode3b-int_factors-js-cpp.cpp:35:11: error: use of undeclared identifier 'endl'
+   35 |   cout << endl;
+      |           ^
+1 warning and 15 errors generated.

@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-str_interp-rs-cpp.cpp:6:35: error: no member named 'format' in namespace 'std'
+    6 |   std::string interpolated = std::format("Mary had a {} lamb", "little");
+      |                              ~~~~~^
+/tmp/qwen2.5coder7b-str_interp-rs-cpp.cpp:10:23: error: no member named 'format' in namespace 'std'
+   10 |   interpolated = std::format("{1} had a {0} lamb", "little", "Mary");
+      |                  ~~~~~^
+/tmp/qwen2.5coder7b-str_interp-rs-cpp.cpp:18:12: error: no member named 'format' in namespace 'std'
+   18 |       std::format("{name} had a {adj} lamb", std::make_pair("name", name),
+      |       ~~~~~^
+3 errors generated.

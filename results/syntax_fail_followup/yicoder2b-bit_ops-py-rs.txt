@@ -1,0 +1,58 @@
+error: 20 positional arguments in format string, but no arguments were given
+  --> /tmp/yicoder2b-bit_ops-py-rs.rs:4:25
+   |
+4  |         "    AND:     0b{:b}
+   |                         ^^^^
+5  |                & 0b{:b}
+   |                    ^^^^
+6  |                = 0b{:b}
+   |                    ^^^^
+7  |                
+8  |     OR:      0b{:b} 
+   |                ^^^^
+9  |                | 0b{:b} 
+   |                    ^^^^
+10 |                = 0b{:b}
+   |                    ^^^^
+11 |                
+12 |     XOR:     0b{:b} 
+   |                ^^^^
+13 |                ^ 0b{:b} 
+   |                    ^^^^
+14 |                = 0b{:b}
+   |                    ^^^^
+15 |                
+16 |     NOT:   ~ 0b{:b}
+   |                ^^^^
+17 |                = 0b{:b}
+   |                    ^^^^
+...
+22 |               == 0b{:b}
+   |                    ^^^^
+...
+25 |               == 0b{:b}
+   |                    ^^^^
+...
+29 |                =       0b{:b}
+   |                          ^^^^
+30 |                rotr({width}, a, 2)
+31 |                =       0b{:b}
+   |                          ^^^^
+...
+34 |                 =       0b{:b}
+   |                           ^^^^
+35 |                 rotl({width}, a, 2)
+36 |                 =       0b{:b}
+   |                           ^^^^
+...
+40 |                =      0b{:b}
+   |                         ^^^^
+41 |                asr(width, aa, 1)
+42 |                =      0b{:b}
+   |                         ^^^^
+43 |                asr(width, a, 2)
+44 |                =      0b{:b}
+   |                         ^^^^
+
+error: aborting due to 1 previous error
+

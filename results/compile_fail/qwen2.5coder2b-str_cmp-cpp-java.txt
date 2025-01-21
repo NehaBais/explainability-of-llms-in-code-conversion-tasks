@@ -1,0 +1,13 @@
+/tmp/StringComparison.java:56: error: not a statement
+                      + "equal.");
+                      ^
+/tmp/StringComparison.java:56: error: ';' expected
+                      + "equal.");
+                                ^
+/tmp/StringComparison.java:59: error: not a statement
+                      + "inequal.");
+                      ^
+/tmp/StringComparison.java:59: error: ';' expected
+                      + "inequal.");
+                                  ^
+4 errors

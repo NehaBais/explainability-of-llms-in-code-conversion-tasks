@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_rename-cpp-go.go:6:2: "path/filepath" imported and not used
+/tmp/dolphincoder7b-file_rename-cpp-go.go:31:3: undefined: fmt
+/tmp/dolphincoder7b-file_rename-cpp-go.go:38:3: undefined: fmt
+/tmp/dolphincoder7b-file_rename-cpp-go.go:45:3: undefined: fmt
+/tmp/dolphincoder7b-file_rename-cpp-go.go:52:3: undefined: fmt

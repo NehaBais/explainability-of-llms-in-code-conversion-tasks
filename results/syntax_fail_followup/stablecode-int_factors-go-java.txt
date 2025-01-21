@@ -1,0 +1,61 @@
+/tmp/Main.java:9: error: illegal start of type
+    if (nr.compareTo(BigInteger.ONE)) < 0 ) 
+                                        ^
+/tmp/Main.java:11: error: ';' expected
+      System.out.println("Factors of " + nr + " not computed"));
+                                                              ^
+/tmp/Main.java:15: error: ';' expected
+    fs.add(BigInteger.ONE));
+                          ^
+/tmp/Main.java:17: error: ';' expected
+    for (int d = 3; nr.compareTo(BigInteger.valueOf(d))) > 0; d += 2) 
+                                                       ^
+/tmp/Main.java:17: error: illegal start of expression
+    for (int d = 3; nr.compareTo(BigInteger.valueOf(d))) > 0; d += 2) 
+                                                         ^
+/tmp/Main.java:17: error: ';' expected
+    for (int d = 3; nr.compareTo(BigInteger.valueOf(d))) > 0; d += 2) 
+                                                                    ^
+/tmp/Main.java:19: error: illegal start of expression
+      if (nr.mod(BigInteger.valueOf(d))).equals(BigInteger.ZERO)) 
+                                        ^
+/tmp/Main.java:19: error: ';' expected
+      if (nr.mod(BigInteger.valueOf(d))).equals(BigInteger.ZERO)) 
+                                                                ^
+/tmp/Main.java:21: error: ';' expected
+        fs.add(mult*d));
+                      ^
+/tmp/Main.java:22: error: ';' expected
+        mult *= BigInteger.valueOf(d));
+                                     ^
+/tmp/Main.java:23: error: ';' expected
+        nr /= BigInteger.valueOf(d));
+                                   ^
+/tmp/Main.java:26: error: ';' expected
+    Collections.sort(fs, Comparator.reverseOrder()));
+                                                   ^
+/tmp/Main.java:28: error: ';' expected
+    System.out.println("Factors of " + nr + ": " + fs));
+                                                      ^
+/tmp/Main.java:29: error: ';' expected
+    System.out.println("Number of factors = " + (fs == null ? 0 : fs.size()))));
+                                                                             ^
+/tmp/Main.java:34: error: ';' expected
+    printFactors(BigInteger.valueOf(-1))));
+                                        ^
+/tmp/Main.java:35: error: ';' expected
+    printFactors(BigInteger.ZERO));
+                                 ^
+/tmp/Main.java:36: error: ';' expected
+    printFactors(BigInteger.ONE)));
+                                ^
+/tmp/Main.java:37: error: ';' expected
+    printFactors(BigInteger.valueOf(2))));
+                                       ^
+/tmp/Main.java:38: error: ';' expected
+    printFactors(BigInteger.valueOf(3))));
+                                       ^
+/tmp/Main.java:39: error: ';' expected
+    printFactors(BigInteger.valueOf(4))));
+                                       ^
+20 errors

@@ -1,0 +1,7 @@
+/tmp/CodeConversion.java:15: error: variable a might not have been initialized
+    if (a < b) {
+        ^
+/tmp/CodeConversion.java:15: error: variable b might not have been initialized
+    if (a < b) {
+            ^
+2 errors

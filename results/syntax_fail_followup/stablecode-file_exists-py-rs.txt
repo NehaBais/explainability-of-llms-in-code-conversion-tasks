@@ -1,0 +1,8 @@
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-file_exists-py-rs.rs:8:58
+  |
+8 | let input_txt_cwd = cwd.and_then(|d| d.join("input.txt")));
+  |                                                          ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

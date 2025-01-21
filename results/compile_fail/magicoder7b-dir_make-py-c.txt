@@ -1,0 +1,9 @@
+/tmp/magicoder7b-dir_make-py-c.c:18:28: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     if (errno == EEXIST && strchr(path, '/')) {
+      |                            ^
+/tmp/magicoder7b-dir_make-py-c.c:18:28: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/magicoder7b-dir_make-py-c.c:19:17: error: call to undeclared library function 'strrchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |       char *p = strrchr(path, '/');
+      |                 ^
+/tmp/magicoder7b-dir_make-py-c.c:19:17: note: include the header <string.h> or explicitly provide a declaration for 'strrchr'
+2 errors generated.

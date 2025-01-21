@@ -1,0 +1,46 @@
+/tmp/granitecode3b-int_factors-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-rs-c.c:6:3: error: call to undeclared function 'assert'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   assert(0 == memcmp(factor(100), (int[]){1, 2, 4, 5, 10, 10, 20, 25, 50, 100},
+      |   ^
+/tmp/granitecode3b-int_factors-rs-c.c:6:15: error: call to undeclared library function 'memcmp' with type 'int (const void *, const void *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   assert(0 == memcmp(factor(100), (int[]){1, 2, 4, 5, 10, 10, 20, 25, 50, 100},
+      |               ^
+/tmp/granitecode3b-int_factors-rs-c.c:6:15: note: include the header <string.h> or explicitly provide a declaration for 'memcmp'
+/tmp/granitecode3b-int_factors-rs-c.c:6:22: error: call to undeclared function 'factor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   assert(0 == memcmp(factor(100), (int[]){1, 2, 4, 5, 10, 10, 20, 25, 50, 100},
+      |                      ^
+/tmp/granitecode3b-int_factors-rs-c.c:6:22: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const void *' [-Wint-conversion]
+    6 |   assert(0 == memcmp(factor(100), (int[]){1, 2, 4, 5, 10, 10, 20, 25, 50, 100},
+      |                      ^~~~~~~~~~~
+/tmp/granitecode3b-int_factors-rs-c.c:8:22: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const void *' [-Wint-conversion]
+    8 |   assert(0 == memcmp(factor(101), (int[]){1, 101}, 2 * sizeof(int)));
+      |                      ^~~~~~~~~~~
+/tmp/granitecode3b-int_factors-rs-c.c:11:6: error: conflicting types for 'factor'
+   11 | int *factor(int num) {
+      |      ^
+/tmp/granitecode3b-int_factors-rs-c.c:6:22: note: previous implicit declaration is here
+    6 |   assert(0 == memcmp(factor(100), (int[]){1, 2, 4, 5, 10, 10, 20, 25, 50, 100},
+      |                      ^
+/tmp/granitecode3b-int_factors-rs-c.c:12:26: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   int i, sqrt_num = (int)sqrt((float)num);
+      |                          ^
+/tmp/granitecode3b-int_factors-rs-c.c:12:26: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode3b-int_factors-rs-c.c:13:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   int *factors = malloc(
+      |                  ^
+/tmp/granitecode3b-int_factors-rs-c.c:13:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode3b-int_factors-rs-c.c:22:40: error: use of undeclared identifier 'compare'
+   22 |   qsort(factors, 1 + num, sizeof(int), compare); // sorts the array of factors
+      |                                        ^
+13 errors generated.

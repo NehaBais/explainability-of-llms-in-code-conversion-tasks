@@ -1,0 +1,61 @@
+/tmp/stablecode-bit_ops-go-c.c:5:30: error: extraneous ')' before ';'
+    5 |     printf("b:   %016b\n", b));
+      |                              ^
+/tmp/stablecode-bit_ops-go-c.c:8:34: error: extraneous ')' before ';'
+    8 |     printf("and: %016b\n", a & b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:9:34: error: extraneous ')' before ';'
+    9 |     printf("or:  %016b\n", a | b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:10:34: error: extraneous ')' before ';'
+   10 |     printf("xor: %016b\n", a ^ b));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:11:31: error: extraneous ')' before ';'
+   11 |     printf("not: %016b\n", ~a));
+      |                               ^
+/tmp/stablecode-bit_ops-go-c.c:18:13: error: expected ';' after expression
+   18 |     uint16_t ua = a;
+      |             ^
+      |             ;
+/tmp/stablecode-bit_ops-go-c.c:18:5: error: use of undeclared identifier 'uint16_t'
+   18 |     uint16_t ua = a;
+      |     ^
+/tmp/stablecode-bit_ops-go-c.c:18:14: error: use of undeclared identifier 'ua'
+   18 |     uint16_t ua = a;
+      |              ^
+/tmp/stablecode-bit_ops-go-c.c:19:13: error: expected ';' after expression
+   19 |     uint32_t ub = b;
+      |             ^
+      |             ;
+/tmp/stablecode-bit_ops-go-c.c:19:5: error: use of undeclared identifier 'uint32_t'
+   19 |     uint32_t ub = b;
+      |     ^
+/tmp/stablecode-bit_ops-go-c.c:19:14: error: use of undeclared identifier 'ub'
+   19 |     uint32_t ub = b;
+      |              ^
+/tmp/stablecode-bit_ops-go-c.c:22:37: error: extraneous ')' before ';'
+   22 |     printf("shl: %016b\n", ua << ub));
+      |                                     ^
+/tmp/stablecode-bit_ops-go-c.c:22:28: error: use of undeclared identifier 'ua'
+   22 |     printf("shl: %016b\n", ua << ub));
+      |                            ^
+/tmp/stablecode-bit_ops-go-c.c:22:34: error: use of undeclared identifier 'ub'
+   22 |     printf("shl: %016b\n", ua << ub));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:23:37: error: extraneous ')' before ';'
+   23 |     printf("shr: %016b\n", ua >> ub));
+      |                                     ^
+/tmp/stablecode-bit_ops-go-c.c:23:28: error: use of undeclared identifier 'ua'
+   23 |     printf("shr: %016b\n", ua >> ub));
+      |                            ^
+/tmp/stablecode-bit_ops-go-c.c:23:34: error: use of undeclared identifier 'ub'
+   23 |     printf("shr: %016b\n", ua >> ub));
+      |                                  ^
+/tmp/stablecode-bit_ops-go-c.c:26:36: error: extraneous ')' before ';'
+   26 |     printf("las: %016b\n", a << ub));
+      |                                    ^
+/tmp/stablecode-bit_ops-go-c.c:26:33: error: use of undeclared identifier 'ub'
+   26 |     printf("las: %016b\n", a << ub));
+      |                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

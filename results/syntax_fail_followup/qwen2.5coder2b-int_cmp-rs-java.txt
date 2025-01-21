@@ -1,0 +1,15 @@
+/tmp/Main.java:6: error: incompatible types: InputStream cannot be converted to Reader
+    BufferedReader reader = new BufferedReader(System.in);
+                                                     ^
+/tmp/Main.java:9: error: cannot find symbol
+    List<String> input = new ArrayList<>();
+    ^
+  symbol:   class List
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+    List<String> input = new ArrayList<>();
+                             ^
+  symbol:   class ArrayList
+  location: class Main
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors

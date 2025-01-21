@@ -1,0 +1,45 @@
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:11:9
+   |
+7  |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+11 |         gt(a, b),
+   |         ^^^^^^^^ argument never used
+12 |         lt(a, b),
+   |         ^^^^^^^^ argument never used
+13 |         ge(a, b),
+   |         ^^^^^^^^ argument never used
+14 |         le(a, b)
+   |         ^^^^^^^^ argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:22:9
+   |
+18 |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+22 |         cgt(a, b),
+   |         ^^^^^^^^^ argument never used
+23 |         clt(a, b),
+   |         ^^^^^^^^^ argument never used
+24 |         cge(a, b),
+   |         ^^^^^^^^^ argument never used
+25 |         cle(a, b)
+   |         ^^^^^^^^^ argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/granitecode3b-str_cmp-c-rs.rs:33:9
+   |
+29 |         "{} {} {}",
+   |         ---------- multiple missing formatting specifiers
+...
+33 |         ne(a.to_uppercase(), b),
+   |         ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+34 |         ne(a.to_lowercase(), b),
+   |         ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+35 |         ne("b", "B")
+   |         ^^^^^^^^^^^^ argument never used
+
+error: aborting due to 3 previous errors
+

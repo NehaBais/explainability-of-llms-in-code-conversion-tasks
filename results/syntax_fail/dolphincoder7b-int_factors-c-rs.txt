@@ -1,0 +1,63 @@
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:41:40
+   |
+41 |             Factors::xfer_factors(&mut fctrs, &flist, flix);
+   |                                        ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:48:8
+   |
+48 |     if dvsr * dvsr == num {
+   |        ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:48:15
+   |
+48 |     if dvsr * dvsr == num {
+   |               ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:49:20
+   |
+49 |         flist.push(dvsr);
+   |                    ^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:53:36
+   |
+53 |         Factors::xfer_factors(&mut fctrs, &flist, flix);
+   |                                    ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:56:12
+   |
+56 |     return fctrs;
+   |            ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:68:22
+   |
+68 |         print!("{}", fctrs.list[0]);
+   |                      ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:69:21
+   |
+69 |         for i in 1..fctrs.count as usize {
+   |                     ^^^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+69 -         for i in 1..fctrs.count as usize {
+69 +         for i in 1.fctrs.count as usize {
+   |
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/dolphincoder7b-int_factors-c-rs.rs:70:35
+   |
+70 |             print!("{}, {}", sep, fctrs.list[i]);
+   |                                   ^^^^^ not found in this scope
+
+error: aborting due to 9 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

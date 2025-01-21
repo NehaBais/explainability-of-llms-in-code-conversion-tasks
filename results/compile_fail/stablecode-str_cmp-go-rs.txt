@@ -1,0 +1,29 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-go-rs.rs:9:12
+   |
+9  |     } else {
+   |            ^ unclosed delimiter
+10 |         println!("{} is bytewise different from {}", c, d));
+   |                                                           ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-go-rs.rs:13:20
+   |
+13 |     match c.cmp(d) {
+   |                    ^ unclosed delimiter
+14 |         Ordering::Equal => println!("{} is lexically bytewise identical to {}", c, d)),
+   |                                                                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-go-rs.rs:15:88
+   |
+10 |         println!("{} is bytewise different from {}", c, d));
+   |                                                           - missing open `(` for this delimiter
+...
+14 |         Ordering::Equal => println!("{} is lexically bytewise identical to {}", c, d)),
+   |                                                                                      - missing open `(` for this delimiter
+15 |         Ordering::Greater => println!("{} is lexically bytewise greater than {}", c, d)),
+   |                                                                                        ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

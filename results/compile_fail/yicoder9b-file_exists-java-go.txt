@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-file_exists-java-go.go:14:9: no new variables on left side of :=

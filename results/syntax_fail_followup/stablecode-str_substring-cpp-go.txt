@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_substring-cpp-go.go:17:46: missing ',' in argument list (and 1 more errors)

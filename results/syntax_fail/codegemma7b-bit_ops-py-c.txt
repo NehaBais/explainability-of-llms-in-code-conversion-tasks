@@ -1,0 +1,13 @@
+/tmp/codegemma7b-bit_ops-py-c.c:30:39: error: call to undeclared function 'rotr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   printf("rotr(a, 1): %0*b\n", width, rotr(a, 1));
+      |                                       ^
+/tmp/codegemma7b-bit_ops-py-c.c:34:39: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   34 |   printf("rotl(a, 1): %0*b\n", width, rotl(a, 1));
+      |                                       ^
+/tmp/codegemma7b-bit_ops-py-c.c:41:40: error: use of undeclared identifier 'width'
+   41 |   return (value >> shift) | (value << (width - shift));
+      |                                        ^
+/tmp/codegemma7b-bit_ops-py-c.c:45:40: error: use of undeclared identifier 'width'
+   45 |   return (value << shift) | (value >> (width - shift));
+      |                                        ^
+4 errors generated.

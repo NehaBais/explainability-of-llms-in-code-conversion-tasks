@@ -1,0 +1,12 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/granitecode8b-str_concat-js-rs.rs:2:1
+  |
+2 | println!("{} there!", s);
+  | ------------------------ caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: aborting due to 1 previous error
+

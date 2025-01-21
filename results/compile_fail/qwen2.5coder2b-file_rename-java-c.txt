@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_rename-java-c.c:15:7: error: call to undeclared function 'chdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (chdir("/") != 0) {
+      |       ^
+1 error generated.

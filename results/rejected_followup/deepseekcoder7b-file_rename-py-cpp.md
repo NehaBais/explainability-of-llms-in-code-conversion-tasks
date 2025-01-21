@@ -1,0 +1,3 @@
+The error message "`'experimental/filesystem' file not found" indicates that the C++ compiler does not recognize `<experimental/filesystem>`. This is because filesystem support in the C++ standard library is still considered experimental and might be missing from certain compilers (such as gcc-8 or older).
+
+The fix for this issue can vary based on the specifics of your environment, but a common solution could involve linking against an external library that provides filesystem functionality. One such option is Boost which has `boost/filesystem` available to add file system support to C++ projects. 

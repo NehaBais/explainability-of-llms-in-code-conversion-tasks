@@ -1,0 +1,17 @@
+/tmp/granitecode8b-file_rename-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-py-c.c:6:3: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   rename("input.txt", "output.txt");
+      |   ^
+/tmp/granitecode8b-file_rename-py-c.c:12:3: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   getcwd(cwd, sizeof(cwd));
+      |   ^
+/tmp/granitecode8b-file_rename-py-c.c:13:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   strcat(cwd, "/input.txt");
+      |   ^
+/tmp/granitecode8b-file_rename-py-c.c:13:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+5 errors generated.

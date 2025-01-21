@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-str_cmp-py-go.go:9:20: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:12:55: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:14:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:17:49: syntax error: unexpected ), expected {
+/tmp/stablecode-str_cmp-py-go.go:18:60: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:19:55: syntax error: unexpected ), expected {
+/tmp/stablecode-str_cmp-py-go.go:20:87: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:23:48: syntax error: unexpected ), expected {
+/tmp/stablecode-str_cmp-py-go.go:24:86: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:32:24: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-py-go.go:32:24: too many errors

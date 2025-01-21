@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-str_concat-py-cpp.cpp:13:28: error: non-aggregate type 'std::vector<std::string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   13 |   std::vector<std::string> words = {s1, "world", "mom"};
+      |                            ^       ~~~~~~~~~~~~~~~~~~~~
+1 error generated.

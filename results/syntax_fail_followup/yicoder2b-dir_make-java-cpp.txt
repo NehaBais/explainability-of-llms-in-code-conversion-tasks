@@ -1,0 +1,13 @@
+/tmp/yicoder2b-dir_make-java-cpp.cpp:36:28: error: use of undeclared identifier 'S_IRWXU'
+   36 |     if (mkdir(dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IWOTH) &&
+      |                            ^
+/tmp/yicoder2b-dir_make-java-cpp.cpp:36:38: error: use of undeclared identifier 'S_IRWXG'
+   36 |     if (mkdir(dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IWOTH) &&
+      |                                      ^
+/tmp/yicoder2b-dir_make-java-cpp.cpp:36:48: error: use of undeclared identifier 'S_IROTH'
+   36 |     if (mkdir(dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IWOTH) &&
+      |                                                ^
+/tmp/yicoder2b-dir_make-java-cpp.cpp:36:58: error: use of undeclared identifier 'S_IWOTH'
+   36 |     if (mkdir(dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IWOTH) &&
+      |                                                          ^
+4 errors generated.

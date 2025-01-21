@@ -1,0 +1,1 @@
+System.out.printf("Start \"%s\", length %d: %s\n", sxStr, m, s.substring(sx, sx + m));

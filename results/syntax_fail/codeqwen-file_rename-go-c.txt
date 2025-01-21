@@ -1,0 +1,7 @@
+/tmp/codeqwen-file_rename-go-c.c:16:18: error: use of undeclared identifier 'PATH_MAX'
+   16 |   char root_path[PATH_MAX] = "/";
+      |                  ^
+/tmp/codeqwen-file_rename-go-c.c:23:18: error: use of undeclared identifier 'PATH_MAX'
+   23 |   char root_docs[PATH_MAX] = "/";
+      |                  ^
+2 errors generated.

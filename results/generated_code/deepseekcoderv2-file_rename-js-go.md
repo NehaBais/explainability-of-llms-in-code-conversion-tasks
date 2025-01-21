@@ -1,77 +1,38 @@
+ Sure, here is the equivalent code in GoLang:
+
 ```go
 package main
 
 import (
 	"fmt"
-	fs "io/fs"
+	"os"
 )
 
 func main() {
-	var fso FSO = &FSOImpl{}
-	fso.RenameFile("input.txt", "output.txt")
-	fmt.Println(fso.GetCurrentDirectory())
-}
-
-type FS interface {
-	RenameFolder(old, new string) error
-	ExistsFolder(path string) bool
-	CreateNewFolder(name string) (fs.DirEntry, error)
-	RemoveFolder(path string) error
-	RenameFile(old, new string) error
-	GetCurrentDirectory() string
-}
-type FSO interface {
-	FS
-}
-
-type FSOImpl struct {
-	fs fs.FS
-}
-
-func (fso *FSOImpl) RenameFolder(oldName, newName string) error {
-	if fso.ExistsFolder(newName) {
-		return fmt.Errorf("folder %s already exists", newName)
-	}
-	// make sure parent folder exists
-	parentDir := oldName[:len(oldName)-len(newName)] // remove last part of the path, since this is the name we want to rename to
-	if !fso.ExistsFolder(parentDir) {
-		return fmt.Errorf("folder %s does not exist", parentDir)
-	}
-	err := fso.RemoveFolder(oldName)
+	// Rename file in current working directory
+	err := os.Rename("input.txt", "output.txt")
 	if err != nil {
-		return err
+		fmt.Println("Error renaming file in current directory:", err)
 	}
-	return fso.CreateNewFolder(newName)
-}
-func (fso *FSOImpl) GetCurrentDirectory() string {
-	return "/go" //TODO: get current directory
-}
-func (fso *FSOImpl) ExistsFolder(path string) bool {
-	if _, err := fso.fs.Open(path); os.IsNotExist(err) {
-		return false
-	}
-	return true
-}
-func (fso *FSOImpl) CreateNewFolder(name string) (fs.DirEntry, error) {
-	// check if folder already exists
-	if fso.ExistsFolder(name) {
-		return nil, fmt.Errorf("folder %s already exists", name)
-	}
-	fh, err := fso.fs.Open(fso.GetCurrentDirectory())
+
+	// Rename file in filesystem root
+	err = os.Rename("c:/input.txt", "c:/output.txt")
 	if err != nil {
-		return nil, err
+		fmt.Println("Error renaming file in filesystem root:", err)
 	}
-	defer func() { _ = fh.Close() }()
-	return fh.Create(name)
-}
-func (fso *FSOImpl) RemoveFolder(path string) error {
-	return os.RemoveAll(path)
-}
-func (fso *FSOImpl) RenameFile(old, new string) error {
-	// check if file exists
-	if !fso.ExistsFolder(new) {
-		return fmt.Errorf("file %s does not exist", old)
+
+	// Rename directory in current working directory
+	err = os.Rename("docs", "mydocs")
+	if err != nil {
+		fmt.Println("Error renaming directory in current directory:", err)
 	}
-	return os.Rename(old, new)
+
+	// Rename directory in filesystem root
+	err = os.Rename("c:/docs", "c:/mydocs")
+	if err != nil {
+		fmt.Println("Error renaming directory in filesystem root:", err)
+	}
 }
 ```
+
+This Go code performs the same operations as the provided JavaScript code: it renames `input.txt` to `output.txt` and `docs` to `mydocs`, both within the current working directory and at the filesystem root. It handles errors by printing them if they occur.

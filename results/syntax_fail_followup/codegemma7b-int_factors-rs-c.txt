@@ -1,0 +1,10 @@
+/tmp/codegemma7b-int_factors-rs-c.c:18:46: error: use of undeclared identifier 'compare'
+   18 |         (int (*)(const void *, const void *))compare);
+      |                                              ^
+/tmp/codegemma7b-int_factors-rs-c.c:26:7: error: array initializer must be an initializer list or wide string literal
+   26 |   int factors1[] = factor(100);
+      |       ^
+/tmp/codegemma7b-int_factors-rs-c.c:29:7: error: array initializer must be an initializer list or wide string literal
+   29 |   int factors2[] = factor(101);
+      |       ^
+3 errors generated.

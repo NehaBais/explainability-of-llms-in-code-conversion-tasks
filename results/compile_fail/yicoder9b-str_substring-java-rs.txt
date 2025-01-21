@@ -1,0 +1,86 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/yicoder9b-str_substring-java-rs.rs:6:1
+  |
+1 | pub fn substring(s: &str, n: usize, m: usize) -> &str {
+  | ----------------------------------------------------- previous definition of the value `substring` here
+...
+6 | pub fn substring(s: &str, n: usize) -> &str {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:11:1
+   |
+1  | pub fn substring(s: &str, n: usize, m: usize) -> &str {
+   | ----------------------------------------------------- previous definition of the value `substring` here
+...
+11 | pub fn substring(s: &str) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:16:1
+   |
+1  | pub fn substring(s: &str, n: usize, m: usize) -> &str {
+   | ----------------------------------------------------- previous definition of the value `substring` here
+...
+16 | pub fn substring(s: &str, c: char, m: usize) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:25:1
+   |
+1  | pub fn substring(s: &str, n: usize, m: usize) -> &str {
+   | ----------------------------------------------------- previous definition of the value `substring` here
+...
+25 | pub fn substring(s: &str, sub: &str, m: usize) -> &str {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0106]: missing lifetime specifier
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:25:51
+   |
+25 | pub fn substring(s: &str, sub: &str, m: usize) -> &str {
+   |                     ----       ----               ^ expected named lifetime parameter
+   |
+   = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `s` or `sub`
+help: consider introducing a named lifetime parameter
+   |
+25 | pub fn substring<'a>(s: &'a str, sub: &'a str, m: usize) -> &'a str {
+   |                 ++++     ++            ++                    ++
+
+error[E0601]: `main` function not found in crate `yicoder9b_str_substring_java_rs`
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:32:2
+   |
+32 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder9b-str_substring-java-rs.rs`
+
+warning: unused variable: `a`
+ --> /tmp/yicoder9b-str_substring-java-rs.rs:2:10
+  |
+2 |     let (a, b) = s.split_at(n);
+  |          ^ help: if this is intentional, prefix it with an underscore: `_a`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `a`
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:12:10
+   |
+12 |     let (a, b) = s.split_at(s.len() - 1);
+   |          ^ help: if this is intentional, prefix it with an underscore: `_a`
+
+warning: unused variable: `a`
+  --> /tmp/yicoder9b-str_substring-java-rs.rs:18:14
+   |
+18 |         let (a, b) = s.split_at(pos);
+   |              ^ help: if this is intentional, prefix it with an underscore: `_a`
+
+error: aborting due to 6 previous errors; 3 warnings emitted
+
+Some errors have detailed explanations: E0106, E0428, E0601.
+For more information about an error, try `rustc --explain E0106`.

@@ -1,0 +1,59 @@
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:9:15: error: no member named 'filesystem' in namespace 'std'
+    9 |     if (!std::filesystem::exists(path)) { // Check if directory exists
+      |          ~~~~~^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |       std::filesystem::create_directories(
+      |       ~~~~~^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:13:23: error: no member named 'filesystem' in namespace 'std'
+   13 |   } catch (const std::filesystem::filesystem_error &err) {
+      |                  ~~~~~^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:5: error: expected expression
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |     ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:6: error: unexpected character <U+FF5C>
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |      ^~
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:14: error: character <U+2581> not allowed in an identifier
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |             ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:19: error: character <U+2581> not allowed in an identifier
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |                ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:30: error: character <U+FF5C> not allowed in an identifier
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |                         ^~
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:9: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |        ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:15:35: error: expected expression
+   15 |     <｜begin▁of▁sentence｜> return 1;
+      |                             ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:1: error: expected expression
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      | ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:2: error: unexpected character <U+FF5C>
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |  ^~
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:8: error: character <U+2581> not allowed in an identifier
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |       ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:13: error: character <U+2581> not allowed in an identifier
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |          ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:24: error: character <U+FF5C> not allowed in an identifier
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |                   ^~
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:5: error: use of undeclared identifier 'end▁of▁sentence｜'
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |    ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:28: error: expected expression
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |                      ^
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:29: error: unexpected character <U+FF5C>
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |                       ^~
+/tmp/deepseekcoder7b-dir_make-js-cpp.cpp:16:37: error: character <U+2581> not allowed in an identifier
+   16 | <｜end▁of▁sentence｜><｜begin▁of▁sentence｜>
+      |                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

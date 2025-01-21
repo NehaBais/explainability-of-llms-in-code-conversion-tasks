@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-int_factors-py-go.go:17:2: undefined: x

@@ -1,0 +1,19 @@
+/tmp/codegeex4-int_factors-go-c.c:14:26: error: function definition is not allowed here
+   14 |   void apf(int p, int e) {
+      |                          ^
+/tmp/codegeex4-int_factors-go-c.c:25:3: error: call to undeclared function 'apf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   25 |   apf(2, e);
+      |   ^
+/tmp/codegeex4-int_factors-go-c.c:46:52: warning: 'sizeof (fs)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+   46 |   printf("\nNumber of factors = %lu\n", sizeof(fs) / sizeof(int));
+      |                                         ~~~~~~~~~~ ^
+/tmp/codegeex4-int_factors-go-c.c:11:8: note: pointer 'fs' declared here
+   11 |   int *fs = malloc(10000 * sizeof(int));
+      |        ^
+/tmp/codegeex4-int_factors-go-c.c:59:16: warning: implicit conversion from 'long' to 'int' changes value from 600851475143 to -443946297 [-Wconstant-conversion]
+   59 |   printFactors(600851475143);
+      |   ~~~~~~~~~~~~ ^~~~~~~~~~~~
+/tmp/codegeex4-int_factors-go-c.c:60:16: warning: implicit conversion from 'long' to 'int' changes value from 999999999999999989 to -1486618635 [-Wconstant-conversion]
+   60 |   printFactors(999999999999999989);
+      |   ~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+3 warnings and 2 errors generated.

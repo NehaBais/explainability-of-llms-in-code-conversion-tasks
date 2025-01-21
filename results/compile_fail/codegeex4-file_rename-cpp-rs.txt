@@ -1,0 +1,50 @@
+error[E0433]: failed to resolve: you might be missing crate `nix`
+ --> /tmp/codegeex4-file_rename-cpp-rs.rs:1:5
+  |
+1 | use nix::unistd::rename;
+  |     ^^^ you might be missing crate `nix`
+  |
+help: consider importing the `nix` crate
+  |
+1 + extern crate nix;
+  |
+
+error[E0432]: unresolved import `nix`
+ --> /tmp/codegeex4-file_rename-cpp-rs.rs:2:5
+  |
+2 | use nix::NixPath;
+  |     ^^^ you might be missing crate `nix`
+  |
+help: consider importing the `nix` crate
+  |
+1 + extern crate nix;
+  |
+
+error[E0599]: no method named `as_nix` found for struct `PathBuf` in the current scope
+  --> /tmp/codegeex4-file_rename-cpp-rs.rs:11:32
+   |
+11 |         root.join("input.txt").as_nix(),
+   |                                ^^^^^^ method not found in `PathBuf`
+
+error[E0599]: no method named `as_nix` found for struct `PathBuf` in the current scope
+  --> /tmp/codegeex4-file_rename-cpp-rs.rs:12:33
+   |
+12 |         root.join("output.txt").as_nix(),
+   |                                 ^^^^^^ method not found in `PathBuf`
+
+error[E0599]: no method named `as_nix` found for struct `PathBuf` in the current scope
+  --> /tmp/codegeex4-file_rename-cpp-rs.rs:15:30
+   |
+15 |     rename(root.join("docs").as_nix(), root.join("mydocs").as_nix())
+   |                              ^^^^^^ method not found in `PathBuf`
+
+error[E0599]: no method named `as_nix` found for struct `PathBuf` in the current scope
+  --> /tmp/codegeex4-file_rename-cpp-rs.rs:15:60
+   |
+15 |     rename(root.join("docs").as_nix(), root.join("mydocs").as_nix())
+   |                                                            ^^^^^^ method not found in `PathBuf`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0432, E0433, E0599.
+For more information about an error, try `rustc --explain E0432`.

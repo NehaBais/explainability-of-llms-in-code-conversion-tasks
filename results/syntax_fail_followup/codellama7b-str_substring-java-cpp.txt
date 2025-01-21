@@ -1,0 +1,13 @@
+/tmp/codellama7b-str_substring-java-cpp.cpp:19:31: error: no member named 'indexOf' in 'std::string'
+   19 |   std::cout << str.substr(str.indexOf(c), m + 1) << "\n";
+      |                           ~~~ ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:19:39: error: use of undeclared identifier 'c'
+   19 |   std::cout << str.substr(str.indexOf(c), m + 1) << "\n";
+      |                                       ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:22:31: error: no member named 'indexOf' in 'std::string'
+   22 |   std::cout << str.substr(str.indexOf(sub), m + 1) << "\n";
+      |                           ~~~ ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:22:39: error: use of undeclared identifier 'sub'
+   22 |   std::cout << str.substr(str.indexOf(sub), m + 1) << "\n";
+      |                                       ^
+4 errors generated.

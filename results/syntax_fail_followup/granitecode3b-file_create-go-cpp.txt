@@ -1,0 +1,59 @@
+/tmp/granitecode3b-file_create-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::ofstream file("output.txt");
+      |   ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:5:7: error: use of undeclared identifier 'file'
+    5 |   if (file.is_open()) {
+      |       ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cout << " successfully opened for writing!" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:6:57: error: use of undeclared identifier 'std'
+    6 |     std::cout << " successfully opened for writing!" << std::endl;
+      |                                                         ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:7:5: error: use of undeclared identifier 'file'
+    7 |     file.close();
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cerr << " could not open for writing" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:9:51: error: use of undeclared identifier 'std'
+    9 |     std::cerr << " could not open for writing" << std::endl;
+      |                                                   ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:14:7: error: use of undeclared identifier 'mkdir'
+   14 |   if (mkdir(path, 0777) == -1) {
+      |       ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:15:5: error: use of undeclared identifier 'perror'
+   15 |     perror("mkdir");
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:17:5: error: use of undeclared identifier 'std'
+   17 |     std::cout << "directory created!" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:17:42: error: use of undeclared identifier 'std'
+   17 |     std::cout << "directory created!" << std::endl;
+      |                                          ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:21:7: error: use of undeclared identifier 'std'
+   21 |   if (std::ofstream output(path)) {
+      |       ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:22:5: error: use of undeclared identifier 'std'
+   22 |     std::cout << " successfully opened for writing!" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:22:57: error: use of undeclared identifier 'std'
+   22 |     std::cout << " successfully opened for writing!" << std::endl;
+      |                                                         ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:23:5: error: use of undeclared identifier 'output'
+   23 |     output.close();
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:25:5: error: use of undeclared identifier 'std'
+   25 |     std::cerr << " could not open for writing" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_create-go-cpp.cpp:25:51: error: use of undeclared identifier 'std'
+   25 |     std::cerr << " could not open for writing" << std::endl;
+      |                                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

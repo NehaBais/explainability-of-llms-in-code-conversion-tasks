@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoderv2-str_substring-js-go.go:28:31: too many arguments in call to indexOf
+	have (string, number, number)
+	want (string, interface{})

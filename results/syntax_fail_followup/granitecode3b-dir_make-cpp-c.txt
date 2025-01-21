@@ -1,0 +1,16 @@
+/tmp/granitecode3b-dir_make-cpp-c.c:8:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |   ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:18: error: use of undeclared identifier 'S_IRWXU'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                  ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:28: error: use of undeclared identifier 'S_IRWXG'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                            ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:38: error: use of undeclared identifier 'S_IROTH'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                      ^
+/tmp/granitecode3b-dir_make-cpp-c.c:8:48: error: use of undeclared identifier 'S_IXOTH'
+    8 |   mkdir(argv[1], S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                ^
+5 errors generated.

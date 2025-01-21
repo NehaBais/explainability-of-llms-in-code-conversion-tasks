@@ -1,0 +1,46 @@
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:8:3: error: use of undeclared identifier 'cin'
+    8 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "sum:              " << a + b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:9:44: error: use of undeclared identifier 'endl'
+    9 |   cout << "sum:              " << a + b << endl;
+      |                                            ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "difference:       " << a - b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:10:44: error: use of undeclared identifier 'endl'
+   10 |   cout << "difference:       " << a - b << endl;
+      |                                            ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "product:          " << a * b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:11:44: error: use of undeclared identifier 'endl'
+   11 |   cout << "product:          " << a * b << endl;
+      |                                            ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "integer quotient: " << a / b << endl; // truncates towards zero
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:12:44: error: use of undeclared identifier 'endl'
+   12 |   cout << "integer quotient: " << a / b << endl; // truncates towards zero
+      |                                            ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:13:3: error: use of undeclared identifier 'cout'
+   13 |   cout << "remainder:        " << a % b << endl; // same sign as first operand
+      |   ^
+/tmp/granitecode3b-int_arith-rs-cpp.cpp:13:44: error: use of undeclared identifier 'endl'
+   13 |   cout << "remainder:        " << a % b << endl; // same sign as first operand
+      |                                            ^
+1 warning and 14 errors generated.

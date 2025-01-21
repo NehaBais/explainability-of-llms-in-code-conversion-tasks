@@ -1,0 +1,19 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+try {
+^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+       Files.createDirectory(Paths.get("/docs"));
+       ^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+       Files.write(Paths.get("/output.txt"), new byte[0]);
+       ^
+/tmp/None.java:12: error: class, interface, enum, or record expected
+       Files.createDirectory(Paths.get("./docs"));
+       ^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+   } catch (IOException e) {
+   ^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+   }
+   ^
+6 errors

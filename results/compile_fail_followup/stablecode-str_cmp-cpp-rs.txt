@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-cpp-rs.rs:11:12
+   |
+11 |     } else {
+   |            ^ unclosed delimiter
+12 |         std::cout << ((a < b) ? "" : "not")) << semantic_t << " ordered before." << std::endl;
+   |                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-str_cmp-cpp-rs.rs:14:1
+   |
+12 |         std::cout << ((a < b) ? "" : "not")) << semantic_t << " ordered before." << std::endl;
+   |                                            - missing open `(` for this delimiter
+13 |     }
+14 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

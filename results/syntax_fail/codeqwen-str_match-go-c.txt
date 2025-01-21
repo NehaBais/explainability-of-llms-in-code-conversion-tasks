@@ -1,0 +1,19 @@
+/tmp/codeqwen-str_match-go-c.c:12:39: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+   12 |       printf("2.1. At location %d\n", result - first);
+      |                                ~~     ^~~~~~~~~~~~~~
+      |                                %ld
+/tmp/codeqwen-str_match-go-c.c:13:21: error: use of undeclared identifier 'First'; did you mean 'first'?
+   13 |       i += result - First + 1;
+      |                     ^~~~~
+      |                     first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+/tmp/codeqwen-str_match-go-c.c:21:37: error: use of undeclared identifier 'First'; did you mean 'first'?
+   21 |          strrchr(first, *second) == First + strlen(first) - 1 ? "true"
+      |                                     ^~~~~
+      |                                     first
+/tmp/codeqwen-str_match-go-c.c:4:18: note: 'first' declared here
+    4 | void match(char *first, char *second) {
+      |                  ^
+1 warning and 2 errors generated.

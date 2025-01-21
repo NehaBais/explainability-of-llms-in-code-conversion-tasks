@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-bit_ops-cpp-go.go:22:31: undefined: math

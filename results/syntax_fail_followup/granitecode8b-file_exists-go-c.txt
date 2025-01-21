@@ -1,0 +1,10 @@
+/tmp/granitecode8b-file_exists-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-go-c.c:18:7: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   if (S_ISDIR(buf.st_mode)) {
+      |       ^
+3 errors generated.

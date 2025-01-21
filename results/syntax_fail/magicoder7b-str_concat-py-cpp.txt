@@ -1,0 +1,19 @@
+/tmp/magicoder7b-str_concat-py-cpp.cpp:13:28: error: non-aggregate type 'std::vector<std::string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   13 |   std::vector<std::string> vec = {s1, "world", "mom"};
+      |                            ^     ~~~~~~~~~~~~~~~~~~~~
+/tmp/magicoder7b-str_concat-py-cpp.cpp:15:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   15 |   for (const auto &str : vec)
+      |              ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:15:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   15 |   for (const auto &str : vec)
+      |                        ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:18:33: error: expected ']'
+   18 |   std::cout << "\"" + os.str()[1:] + "\""; // Output: hello,world,mom
+      |                                 ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:18:31: note: to match this '['
+   18 |   std::cout << "\"" + os.str()[1:] + "\""; // Output: hello,world,mom
+      |                               ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:20:24: error: member reference base type 'const char[3]' is not a structure or union
+   20 |   std::string s3 = ", ".join(vec);
+      |                    ~~~~^~~~~
+2 warnings and 3 errors generated.

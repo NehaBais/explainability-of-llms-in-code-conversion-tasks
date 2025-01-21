@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-int_factors-py-go.go:10:24: undefined: math.Isqrt

@@ -1,0 +1,31 @@
+/tmp/codegemma7b-str_cmp-go-cpp.cpp:37:9: error: no matching member function for call to 'compare'
+   37 |   if (c.compare(d, std::locale("en_US.UTF-8")) == 0) {
+      |       ~~^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1689:59: note: candidate function not viable: requires single argument '__str', but 2 arguments were provided
+ 1689 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const basic_string& __str) const _NOEXCEPT;
+      |                                                           ^       ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1693:3: note: candidate function template not viable: requires single argument '__t', but 2 arguments were provided
+ 1693 |   compare(const _Tp& __t) const _NOEXCEPT;
+      |   ^       ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1711:37: note: candidate function not viable: requires single argument '__s', but 2 arguments were provided
+ 1711 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const value_type* __s) const _NOEXCEPT;
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1697:3: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+ 1697 |   compare(size_type __pos1, size_type __n1, const _Tp& __t) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1700:3: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1700 |   compare(size_type __pos1, size_type __n1, const basic_string& __str) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1712:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+ 1712 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(size_type __pos1, size_type __n1, const value_type* __s) const;
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1714:3: note: candidate function not viable: requires 4 arguments, but 2 were provided
+ 1714 |   compare(size_type __pos1, size_type __n1, const value_type* __s, size_type __n2) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1702:3: note: candidate function not viable: requires at least 4 arguments, but 2 were provided
+ 1702 |   compare(size_type __pos1, size_type __n1, const basic_string& __str, size_type __pos2, size_type __n2 = npos) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1709:3: note: candidate function template not viable: requires at least 4 arguments, but 2 were provided
+ 1709 |   compare(size_type __pos1, size_type __n1, const _Tp& __t, size_type __pos2, size_type __n2 = npos) const;
+      |   ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

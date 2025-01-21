@@ -1,0 +1,16 @@
+/tmp/stablecode-str_cmp-rs-cpp.cpp:1:2: error: invalid preprocessing directive
+    1 | #Error explanation:
+      |  ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:2:2: error: invalid preprocessing directive
+    2 | #/ tmp / stablecode - str_cmp - rs - cpp                                                                                                      \
+      |  ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:5:2: error: invalid preprocessing directive
+    5 | #This error occurs because the variable 'a' is defined as an integer in        \
+      |  ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:9:2: error: invalid preprocessing directive
+    9 | #Fix:
+      |  ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:10:2: error: invalid preprocessing directive
+   10 | #To fix this error,                                                            \
+      |  ^
+5 errors generated.

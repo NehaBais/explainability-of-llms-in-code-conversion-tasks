@@ -1,0 +1,51 @@
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-int_cmp-java-rs.rs:5:33
+  |
+5 |     match io::stdin().read_line(&s) {
+  |                       --------- ^^ types differ in mutability
+  |                       |
+  |                       arguments to this method are incorrect
+  |
+  = note: expected mutable reference `&mut String`
+                     found reference `&String`
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_cmp-java-rs.rs:11:33
+   |
+11 |     match io::stdin().read_line(&s) {
+   |                       --------- ^^ types differ in mutability
+   |                       |
+   |                       arguments to this method are incorrect
+   |
+   = note: expected mutable reference `&mut String`
+                      found reference `&String`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_cmp-java-rs.rs:16:12
+   |
+16 |     if let Err(e1) = &nbr1 <&nbr2 {
+   |            ^^^^^^^   ------------ this expression has type `bool`
+   |            |
+   |            expected `bool`, found `Result<_, _>`
+   |
+   = note: expected type `bool`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-int_cmp-java-rs.rs:18:19
+   |
+18 |     } else if let Err(e2) = &nbr1 >&nbr2 {
+   |                   ^^^^^^^   ------------ this expression has type `bool`
+   |                   |
+   |                   expected `bool`, found `Result<_, _>`
+   |
+   = note: expected type `bool`
+              found enum `Result<_, _>`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-bit_ops-py-go.go:37:44: undefined: aa
+/tmp/qwen2.5coder2b-bit_ops-py-go.go:38:43: undefined: aa
+/tmp/qwen2.5coder2b-bit_ops-py-go.go:41:44: undefined: aa
+/tmp/qwen2.5coder2b-bit_ops-py-go.go:42:43: undefined: aa

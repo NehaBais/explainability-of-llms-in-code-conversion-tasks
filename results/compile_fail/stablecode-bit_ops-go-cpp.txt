@@ -1,0 +1,51 @@
+/tmp/stablecode-bit_ops-go-cpp.cpp:8:37: error: expected ';' after expression
+    8 |     cout << "a:   " << bitset<16>(a)) << endl;
+      |                                     ^
+      |                                     ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:8:37: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:9:37: error: expected ';' after expression
+    9 |     cout << "b:   " << bitset<16>(b)) << endl;
+      |                                     ^
+      |                                     ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:9:37: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:12:41: error: expected ';' after expression
+   12 |     cout << "and: " << bitset<16>(a & b))) << endl;
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:12:41: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:13:41: error: expected ';' after expression
+   13 |     cout << "or:  " << bitset<16>(a | b))) << endl;
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:13:41: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:14:41: error: expected ';' after expression
+   14 |     cout << "xor: " << bitset<16>(a ^ b))) << endl;
+      |                                         ^
+      |                                         ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:14:41: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:15:38: error: expected ';' after expression
+   15 |     cout << "not: " << bitset<16>(~a))) << endl;
+      |                                      ^
+      |                                      ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:15:38: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:23:43: error: extraneous ')' before ';'
+   23 |     uint16_t ua = static_cast<uint16_t>(a));
+      |                                           ^
+/tmp/stablecode-bit_ops-go-cpp.cpp:24:43: error: extraneous ')' before ';'
+   24 |     uint32_t ub = static_cast<uint32_t>(b));
+      |                                           ^
+/tmp/stablecode-bit_ops-go-cpp.cpp:27:44: error: expected ';' after expression
+   27 |     cout << "shl: " << bitset<16>(ua << ub))) << endl;
+      |                                            ^
+      |                                            ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:27:44: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:28:54: error: expected ';' after expression
+   28 |     cout << "shr: " << bitset<16>((uint32_t)ua >> ub))) << endl;
+      |                                                      ^
+      |                                                      ;
+/tmp/stablecode-bit_ops-go-cpp.cpp:28:54: error: expected expression
+/tmp/stablecode-bit_ops-go-cpp.cpp:31:51: error: use of undeclared identifier 'uint16'
+   31 |     cout << "las: " << bitset<16>(a << ub | int16(uint16(a) >> (16 - ub)))) << endl;
+      |                                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

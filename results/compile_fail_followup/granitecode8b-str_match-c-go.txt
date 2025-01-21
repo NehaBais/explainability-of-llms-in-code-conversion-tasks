@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/granitecode8b-str_match-c-go.go:13:50: newline in string
+/tmp/granitecode8b-str_match-c-go.go:13:50: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode8b-str_match-c-go.go:14:31: newline in string
+/tmp/granitecode8b-str_match-c-go.go:15:46: newline in string
+/tmp/granitecode8b-str_match-c-go.go:16:27: newline in string
+/tmp/granitecode8b-str_match-c-go.go:17:47: newline in string
+/tmp/granitecode8b-str_match-c-go.go:18:32: newline in string

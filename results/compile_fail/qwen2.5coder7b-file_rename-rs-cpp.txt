@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:5:23: error: expected namespace name
+    5 |   namespace fs = std::filesystem;
+      |                  ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::rename("input.txt", "output.txt");
+      |     ^
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:10:5: error: use of undeclared identifier 'fs'
+   10 |     fs::rename("docs", "mydocs");
+      |     ^
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:13:5: error: use of undeclared identifier 'fs'
+   13 |     fs::rename("/input.txt", "/output.txt");
+      |     ^
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:14:5: error: use of undeclared identifier 'fs'
+   14 |     fs::rename("/docs", "/mydocs");
+      |     ^
+/tmp/qwen2.5coder7b-file_rename-rs-cpp.cpp:15:18: error: use of undeclared identifier 'fs'
+   15 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+6 errors generated.

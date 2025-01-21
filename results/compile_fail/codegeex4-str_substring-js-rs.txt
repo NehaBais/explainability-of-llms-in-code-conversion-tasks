@@ -1,0 +1,24 @@
+error[E0463]: can't find crate for `unicode_segmentation`
+ --> /tmp/codegeex4-str_substring-js-rs.rs:1:1
+  |
+1 | extern crate unicode_segmentation;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+warning: unused import: `std::char`
+ --> /tmp/codegeex4-str_substring-js-rs.rs:3:5
+  |
+3 | use std::char;
+  |     ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no method named `graphemes` found for reference `&str` in the current scope
+ --> /tmp/codegeex4-str_substring-js-rs.rs:7:24
+  |
+7 |     let mut iter = str.graphemes(true).skip(n);
+  |                        ^^^^^^^^^ method not found in `&str`
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0463, E0599.
+For more information about an error, try `rustc --explain E0463`.

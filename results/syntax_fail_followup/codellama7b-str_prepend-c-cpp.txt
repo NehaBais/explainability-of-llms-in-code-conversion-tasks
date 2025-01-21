@@ -1,0 +1,4 @@
+/tmp/codellama7b-str_prepend-c-cpp.cpp:9:13: error: no member named 'format' in 'std::string'
+    9 |   dup = str.format("%s%s", cstr,
+      |         ~~~ ^
+1 error generated.

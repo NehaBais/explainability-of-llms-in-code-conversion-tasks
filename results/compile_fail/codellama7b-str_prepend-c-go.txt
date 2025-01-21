@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-str_prepend-c-go.go:9:9: invalid operation: not enough arguments for unsafe.Slice(str) (expected 2, found 1)
+/tmp/codellama7b-str_prepend-c-go.go:10:2: undefined: sprintf
+/tmp/codellama7b-str_prepend-c-go.go:11:2: undefined: free

@@ -1,0 +1,61 @@
+error[E0308]: mismatched types
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:6:19
+  |
+6 |     let and = a & b;
+  |                   ^ expected `i16`, found `u16`
+
+error[E0277]: no implementation for `i16 & u16`
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:6:17
+  |
+6 |     let and = a & b;
+  |                 ^ no implementation for `i16 & u16`
+  |
+  = help: the trait `BitAnd<u16>` is not implemented for `i16`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a i16` implements `BitAnd<i16>`
+            `&i16` implements `BitAnd<&i16>`
+            `i16` implements `BitAnd<&i16>`
+            `i16` implements `BitAnd`
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:7:18
+  |
+7 |     let or = a | b;
+  |                  ^ expected `i16`, found `u16`
+
+error[E0277]: no implementation for `i16 | u16`
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:7:16
+  |
+7 |     let or = a | b;
+  |                ^ no implementation for `i16 | u16`
+  |
+  = help: the trait `BitOr<u16>` is not implemented for `i16`
+  = help: the following other types implement trait `BitOr<Rhs>`:
+            `&'a i16` implements `BitOr<i16>`
+            `&i16` implements `BitOr<&i16>`
+            `i16` implements `BitOr<&i16>`
+            `i16` implements `BitOr`
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:8:19
+  |
+8 |     let xor = a ^ b;
+  |                   ^ expected `i16`, found `u16`
+
+error[E0277]: no implementation for `i16 ^ u16`
+ --> /tmp/granitecode8b-bit_ops-go-rs.rs:8:17
+  |
+8 |     let xor = a ^ b;
+  |                 ^ no implementation for `i16 ^ u16`
+  |
+  = help: the trait `BitXor<u16>` is not implemented for `i16`
+  = help: the following other types implement trait `BitXor<Rhs>`:
+            `&'a i16` implements `BitXor<i16>`
+            `&i16` implements `BitXor<&i16>`
+            `i16` implements `BitXor<&i16>`
+            `i16` implements `BitXor`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

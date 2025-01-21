@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codegeex4-str_cmp-cpp-go.go:31:13: undefined: strconv
+/tmp/codegeex4-str_cmp-cpp-go.go:32:13: undefined: strconv

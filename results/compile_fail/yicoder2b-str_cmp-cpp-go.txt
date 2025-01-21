@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/yicoder2b-str_cmp-cpp-go.go:28:6: syntax error: missing statement after label
+/tmp/yicoder2b-str_cmp-cpp-go.go:29:4: syntax error: unexpected else after top level declaration

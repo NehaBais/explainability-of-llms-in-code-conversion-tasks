@@ -1,0 +1,4 @@
+/tmp/magicoder7b-file_rename-c-cpp.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+    1 | #include <bits/stdc++.h>
+      |          ^~~~~~~~~~~~~~~
+1 error generated.

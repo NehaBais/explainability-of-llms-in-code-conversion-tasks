@@ -1,0 +1,4 @@
+/tmp/FileSizeChecker.java:17: error: exception IOException is never thrown in body of corresponding try statement
+    } catch (IOException e) {
+      ^
+1 error

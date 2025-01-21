@@ -2,35 +2,41 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"os"
 )
 
-const FILE_NAME = "output.txt"
-const DIR_NAME = "docs"
-
-func create(root string) error {
-	// TODO: Handle errors returned by os.MkdirAll and os.Create
-	if err := os.MkdirAll(filepath.Join(root, DIR_NAME), 0755); err != nil {
-		return fmt.Errorf("failed to create directory: %w", err)
-	}
-	// TODO: Handle errors returned by os.Create and filepath.Join
-	if _, err := os.Create(filepath.Join(root, FILE_NAME)); err != nil {
-		return fmt.Errorf("failed to create file: %w", err)
-	}
-	return nil
-}
+const fileName = "output.txt"
+const dirName = "docs"
 
 func main() {
-	// TODO: Handle errors returned by create and errorHandler
-	if err := create("."); err != nil {
-		errorHandler(err, 1)
+	err := create(".")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		os.Exit(1)
 	}
-	if err := create("/"); err != nil {
-		errorHandler(err, 2)
+
+	err = create("/")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		os.Exit(1)
 	}
 }
 
-func errorHandler(error error, code int) {
-	fmt.Fprintf(os.Stderr, "Error: %v\n", error)
-	os.Exit(code)
+func create(root string) error {
+	fPath := root + "/" + fileName
+	dPath := root + "/" + dirName
+
+	err := os.MkdirAll(dPath, 0755)
+	if err != nil {
+		return err
+	}
+
+	file, err := os.Create(fPath)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	return nil
 }

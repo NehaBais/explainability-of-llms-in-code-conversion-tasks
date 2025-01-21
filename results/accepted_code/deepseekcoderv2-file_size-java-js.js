@@ -1,13 +1,17 @@
-import fs from "fs";
-const { promisify } = require("util");
+const fs = require("fs");
+const path = require("path");
 
-async function main() {
-  const readFileAsync = promisify(fs.readFile);
+function getFileSize(filePath) {
   try {
-    let inputData = await readFileAsync("input.txt", "utf8");
-    console.log(`%,d B%n`, fileA.length());
-  } catch (e) {
-    console.error(e.message);
+    const stats = fs.statSync(filePath);
+    console.log(`%,d B`, stats.size);
+  } catch (err) {
+    console.error(`Error getting size of ${filePath}:`, err.message);
   }
 }
-main();
+
+// Check file in the current working directory
+getFileSize(path.join(__dirname, "file.txt"));
+
+// Check file in the root directory
+getFileSize("/file.txt");

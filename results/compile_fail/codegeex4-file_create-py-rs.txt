@@ -1,0 +1,8 @@
+error: expected one of `;` or `as`, found `::`
+ --> /tmp/codegeex4-file_create-py-rs.rs:1:17
+  |
+1 | extern crate std::fs;
+  |                 ^^ expected one of `;` or `as`
+
+error: aborting due to 1 previous error
+

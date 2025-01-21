@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/yicoder9b-file_rename-java-go.go:19:23: invalid character U+003F '?'
+/tmp/yicoder9b-file_rename-java-go.go:19:25: syntax error: unexpected literal " was renamed as ", expected )
+/tmp/yicoder9b-file_rename-java-go.go:21:5: syntax error: unexpected ), expected }
+/tmp/yicoder9b-file_rename-java-go.go:22:1: syntax error: non-declaration statement outside function body

@@ -1,0 +1,43 @@
+/tmp/granitecode8b-file_rename-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:4:7: error: use of undeclared identifier 'rename'
+    4 |   if (rename("input.txt", "output.txt") != 0) {
+      |       ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:5:5: error: use of undeclared identifier 'std'
+    5 |     std::cerr << "Error renaming file in current working directory"
+      |     ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:6:18: error: use of undeclared identifier 'std'
+    6 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:9:7: error: use of undeclared identifier 'rename'
+    9 |   if (rename("docs", "mydocs") != 0) {
+      |       ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cerr << "Error renaming directory in current working directory"
+      |     ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:11:18: error: use of undeclared identifier 'std'
+   11 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:14:7: error: use of undeclared identifier 'rename'
+   14 |   if (rename("/input.txt", "/output.txt") != 0) {
+      |       ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:15:5: error: use of undeclared identifier 'std'
+   15 |     std::cerr << "Error renaming file in root filesystem" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:15:62: error: use of undeclared identifier 'std'
+   15 |     std::cerr << "Error renaming file in root filesystem" << std::endl;
+      |                                                              ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:18:7: error: use of undeclared identifier 'rename'
+   18 |   if (rename("/docs", "/mydocs") != 0) {
+      |       ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:19:5: error: use of undeclared identifier 'std'
+   19 |     std::cerr << "Error renaming directory in root filesystem" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_rename-go-cpp.cpp:19:67: error: use of undeclared identifier 'std'
+   19 |     std::cerr << "Error renaming directory in root filesystem" << std::endl;
+      |                                                                   ^
+14 errors generated.

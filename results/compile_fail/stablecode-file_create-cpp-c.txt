@@ -1,0 +1,4 @@
+/tmp/stablecode-file_create-cpp-c.c:19:21: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   int mkdirResult = mkdir("docs", 0755);
+      |                     ^
+1 error generated.

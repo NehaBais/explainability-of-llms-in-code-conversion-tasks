@@ -1,50 +1,39 @@
-### Answer
+ Here's the equivalent Java code for the provided Rust code:
 
-Here is the Java code:
 ```java
 import java.io.File;
 
-public class FileMove {
-public static void main(String[] args) {
-// Here, we are assuming that "input.txt" and "docs" files/directories exist in the current working directory ("./").
-// If they don't exist, you may need to use absolute paths or check for existence before renaming.
+public class FileRenamer {
+    public static void main(String[] args) {
+        String errorMessage = "File move error";
+        
+        // In current working directory
+        File file1 = new File("input.txt");
+        File file2 = new File("output.txt");
+        if (!file1.renameTo(file2)) {
+            throw new RuntimeException(errorMessage);
+        }
 
-try {
-File input = new File("input.txt");
-File output = new File("output.txt");
-if (input.renameTo(output)) {
-System.out.println("Renamed file from 'input.txt' to 'output.txt'");
-} else {
-System.err.println("Failed to rename the file.");
-}
+        File dir1 = new File("docs");
+        File dir2 = new File("mydocs");
+        if (!dir1.renameTo(dir2)) {
+            throw new RuntimeException(errorMessage);
+        }
 
-File docs = new File("docs");
-File mydocs = new File("mydocs");
-if (docs.renameTo(mydocs)) {
-System.out.println("Renamed directory from 'docs' to 'mydocs'");
-} else {
-System.err.println("Failed to rename the directory.");
-}
+        // In filesystem root
+        File file3 = new File("/input.txt");
+        File file4 = new File("/output.txt");
+        if (!file3.renameTo(file4)) {
+            throw new RuntimeException(errorMessage);
+        }
 
-// Renaming files/directories in filesystem root:
-File inputRoot = new File("/input.txt");
-File outputRoot = new File("/output.txt");
-if (inputRoot.renameTo(outputRoot)) {
-System.out.println("Renamed file from '/input.txt' to '/output.txt'");
-} else {
-System.err.println("Failed to rename the file.");
-}
-
-File docsRoot = new File("/docs");
-File mydocsRoot = new File("/mydocs");
-if (docsRoot.renameTo(mydocsRoot)) {
-System.out.println("Renamed directory from '/docs' to '/mydocs'");
-} else {
-System.err.println("Failed to rename the directory.");
-}
-} catch (Exception e) {
-e.printStackTrace();
-}
-}
+        File dir3 = new File("/docs");
+        File dir4 = new File("/mydocs");
+        if (!dir3.renameTo(dir4)) {
+            throw new RuntimeException(errorMessage);
+        }
+    }
 }
 ```
+
+This Java code performs the same operations as the Rust code: it renames `input.txt` to `output.txt` and `docs` to `mydocs`, both in the current working directory and in the filesystem root, with error handling for file renaming.

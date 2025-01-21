@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-int_factors-c-go.go:28:8: more than one character in rune literal

@@ -1,0 +1,4 @@
+/tmp/codellama7b-bit_ops-cpp-c.c:1:10: fatal error: 'bits' file not found
+    1 | #include <bits>
+      |          ^~~~~~
+1 error generated.

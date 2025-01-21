@@ -1,0 +1,45 @@
+/tmp/granitecode8b-str_substring-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-rs-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-rs-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-rs-c.c:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-rs-c.c:12:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("%.*s", m, s + n);
+      |   ^
+/tmp/granitecode8b-str_substring-rs-c.c:12:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_substring-rs-c.c:15:18: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   printf("%.*s", strlen(s) - n, s + n);
+      |                  ^
+/tmp/granitecode8b-str_substring-rs-c.c:15:18: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_substring-rs-c.c:15:13: warning: field precision should have type 'int', but argument has type 'unsigned long' [-Wformat]
+   15 |   printf("%.*s", strlen(s) - n, s + n);
+      |           ~~^~   ~~~~~~~~~~~~~
+/tmp/granitecode8b-str_substring-rs-c.c:18:15: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   char *rev = malloc(strlen(s));
+      |               ^
+/tmp/granitecode8b-str_substring-rs-c.c:18:15: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode8b-str_substring-rs-c.c:21:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   strcpy(rev, s);
+      |   ^
+/tmp/granitecode8b-str_substring-rs-c.c:21:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_substring-rs-c.c:24:3: error: call to undeclared function 'strrev'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |   strrev(rev);
+      |   ^
+/tmp/granitecode8b-str_substring-rs-c.c:27:13: warning: field precision should have type 'int', but argument has type 'unsigned long' [-Wformat]
+   27 |   printf("%.*s", strlen(rev) - 1, rev + 1);
+      |           ~~^~   ~~~~~~~~~~~~~~~
+/tmp/granitecode8b-str_substring-rs-c.c:30:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   30 |   free(rev);
+      |   ^
+/tmp/granitecode8b-str_substring-rs-c.c:30:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 warnings and 11 errors generated.

@@ -1,0 +1,81 @@
+error: expected expression, found `,`
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:26:18
+   |
+26 |                 },
+   |                  ^ expected expression
+
+error: expected expression, found `,`
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:27:36
+   |
+27 |             }else{"No".to_string()},
+   |                                    ^ expected expression
+
+error[E0599]: no method named `next` found for enum `Result` in the current scope
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:20:51
+   |
+20 |             if let Some(meta)=fs::read_dir(&path).next(){
+   |                                                   ^^^^ method not found in `Result<ReadDir, Error>`
+   |
+note: the method `next` exists on the type `ReadDir`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/iter/traits/iterator.rs:75:5
+help: consider using `Result::expect` to unwrap the `ReadDir` value, panicking if the value is a `Result::Err`
+   |
+20 |             if let Some(meta)=fs::read_dir(&path).expect("REASON").next(){
+   |                                                  +++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:21:17
+   |
+21 | /                 match meta{
+22 | |                     Ok(meta)=>match meta.file_type().unwrap().is_dir(){
+23 | |                         true=>"Yes".to_string(), 
+24 | |                         false=>"No".to_string()
+25 | |                     }
+26 | |                 },
+   | |                 ^- help: consider using a semicolon here
+   | |_________________|
+   |                   expected `()`, found `String`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:27:19
+   |
+20 | /             if let Some(meta)=fs::read_dir(&path).next(){
+21 | |                 match meta{
+22 | |                     Ok(meta)=>match meta.file_type().unwrap().is_dir(){
+23 | |                         true=>"Yes".to_string(), 
+...  |
+26 | |                 },
+27 | |             }else{"No".to_string()},
+   | |___________________^^^^^^^^^^^^^^^^- expected this to be `()`
+   |                     |
+   |                     expected `()`, found `String`
+   |
+help: consider using a semicolon here
+   |
+27 |             }else{"No".to_string();},
+   |                                   +
+help: consider using a semicolon here
+   |
+27 |             }else{"No".to_string()};,
+   |                                    +
+help: you might have meant to return this value
+   |
+27 |             }else{return "No".to_string();},
+   |                   ++++++                 +
+
+error[E0599]: no method named `join` found for reference `&str` in the current scope
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:31:30
+   |
+31 |     file_checker(current_dir.join(".//input.txt")); // Use join to append paths in the case that they are relative and might not start with `./`.
+   |                              ^^^^ method not found in `&str`
+
+error[E0599]: no method named `join` found for reference `&str` in the current scope
+  --> /tmp/deepseekcoder7b-file_exists-js-rs.rs:32:29
+   |
+32 |     dir_checker(current_dir.join("docs")); // Same here for directory path.
+   |                             ^^^^ method not found in `&str`
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

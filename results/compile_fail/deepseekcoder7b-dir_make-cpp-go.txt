@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-dir_make-cpp-go.go:26:7: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-dir_make-cpp-go.go:26:15: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-dir_make-cpp-go.go:26:31: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-dir_make-cpp-go.go:26:35: syntax error: unexpected ., expected expression

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-int_arith-js-go.go:32:20: undefined: math

@@ -1,0 +1,10 @@
+/tmp/codellama7b-int_factors-go-cpp.cpp:10:19: error: non-aggregate type 'vector<int64_t>' (aka 'vector<long long>') cannot be initialized with an initializer list
+   10 |   vector<int64_t> fs = {1};
+      |                   ^    ~~~
+/tmp/codellama7b-int_factors-go-cpp.cpp:11:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   auto apf = [&](int64_t p, int e) {
+      |   ^
+/tmp/codellama7b-int_factors-go-cpp.cpp:11:14: error: expected expression
+   11 |   auto apf = [&](int64_t p, int e) {
+      |              ^
+1 warning and 2 errors generated.

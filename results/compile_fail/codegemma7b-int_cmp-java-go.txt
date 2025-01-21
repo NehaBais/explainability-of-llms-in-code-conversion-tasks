@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codegemma7b-int_cmp-java-go.go:7:2: "strconv" imported and not used
+/tmp/codegemma7b-int_cmp-java-go.go:11:2: declared and not used: reader

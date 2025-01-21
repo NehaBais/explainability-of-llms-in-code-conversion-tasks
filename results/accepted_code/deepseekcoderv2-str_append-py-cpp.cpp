@@ -1,6 +1,9 @@
-#!/ usr / bin / env python
-#- * - coding : utf - 8 - * - #
+#include <iostream>
+#include <string>
 
-str = "12345678";
-str += "9!";
-print(str)
+int main() {
+  std::string str = "12345678";
+  str += "9!";
+  std::cout << str << std::endl;
+  return 0;
+}

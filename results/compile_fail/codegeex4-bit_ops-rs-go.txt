@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-bit_ops-rs-go.go:5:2: "math/bits" imported and not used

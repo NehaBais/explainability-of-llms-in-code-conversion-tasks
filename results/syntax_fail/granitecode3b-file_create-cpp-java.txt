@@ -1,0 +1,16 @@
+/tmp/FileManipulator.java:1: error: cannot find symbol
+import java.io.fstream;
+              ^
+  symbol:   class fstream
+  location: package java.io
+/tmp/FileManipulator.java:8: error: cannot find symbol
+    try (fstream f = new fstream("output.txt", true)) {}
+         ^
+  symbol:   class fstream
+  location: class FileManipulator
+/tmp/FileManipulator.java:8: error: cannot find symbol
+    try (fstream f = new fstream("output.txt", true)) {}
+                         ^
+  symbol:   class fstream
+  location: class FileManipulator
+3 errors

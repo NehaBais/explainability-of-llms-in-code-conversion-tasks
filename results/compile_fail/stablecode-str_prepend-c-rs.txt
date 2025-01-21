@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_prepend-c-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+2 |     let mut str = String::from("my String"));
+  |                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_prepend-c-rs.rs:6:37
+  |
+2 |     let mut str = String::from("my String"));
+  |                                            - missing open `(` for this delimiter
+...
+6 |     str = format!("{}{}", cstr, str));
+  |                                     ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

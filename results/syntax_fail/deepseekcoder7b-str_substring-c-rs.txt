@@ -1,0 +1,25 @@
+error[E0432]: unresolved import `unicode_scalar`
+ --> /tmp/deepseekcoder7b-str_substring-c-rs.rs:2:5
+  |
+2 | use unicode_scalar::UnicodeScalar;
+  |     ^^^^^^^^^^^^^^ you might be missing crate `unicode_scalar`
+  |
+help: consider importing the `unicode_scalar` crate
+  |
+1 + extern crate unicode_scalar;
+  |
+
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/deepseekcoder7b-str_substring-c-rs.rs:3:5
+  |
+3 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

@@ -1,0 +1,5 @@
+/tmp/yicoder2b-file_create-go-c.c:13:40: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     printf("Cannot create file: %s\n", strerror(errno));
+      |                                        ^
+/tmp/yicoder2b-file_create-go-c.c:13:40: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+1 error generated.

@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/codegemma7b-bit_ops-c-go.go:4:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:5:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:6:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:7:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:8:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:9:2: undefined: fmt
+/tmp/codegemma7b-bit_ops-c-go.go:12:2: undefined: fmt

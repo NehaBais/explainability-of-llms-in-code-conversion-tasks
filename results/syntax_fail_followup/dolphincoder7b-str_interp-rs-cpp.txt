@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_interp-rs-cpp.cpp:3:45: error: use of undeclared identifier 'name'
+    3 |   std::cout << "{name} had a {adj} lamb\n", name = "Mary", adj = "little";
+      |                                             ^
+/tmp/dolphincoder7b-str_interp-rs-cpp.cpp:3:60: error: use of undeclared identifier 'adj'
+    3 |   std::cout << "{name} had a {adj} lamb\n", name = "Mary", adj = "little";
+      |                                                            ^
+2 errors generated.

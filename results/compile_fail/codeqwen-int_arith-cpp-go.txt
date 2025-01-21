@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-int_arith-cpp-go.go:17:2: declared and not used: exponentiation

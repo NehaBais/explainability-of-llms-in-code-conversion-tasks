@@ -1,0 +1,25 @@
+/tmp/codellama7b-str_cmp-py-cpp.cpp:6:42: error: no member named 'get_type' in 'std::string'
+    6 |   cout << "'" << a << "' of type '" << a.get_type() << "' and '" << b
+      |                                        ~ ^
+/tmp/codellama7b-str_cmp-py-cpp.cpp:7:30: error: no member named 'get_type' in 'std::string'
+    7 |        << "' of type '" << b.get_type() << "'" << endl;
+      |                            ~ ^
+/tmp/codellama7b-str_cmp-py-cpp.cpp:20:9: error: no member named 'is' in 'std::string'
+   20 |   if (a.is(b))
+      |       ~ ^
+/tmp/codellama7b-str_cmp-py-cpp.cpp:22:10: error: no member named 'is' in 'std::string'
+   22 |   if (!a.is(b))
+      |        ~ ^
+/tmp/codellama7b-str_cmp-py-cpp.cpp:31:3: error: no matching function for call to 'compare'
+   31 |   compare(24, 123);
+      |   ^~~~~~~
+/tmp/codellama7b-str_cmp-py-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'int' to 'const string' (aka 'const basic_string<char>') for 1st argument
+    5 | void compare(const string &a, const string &b) {
+      |      ^       ~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_cmp-py-cpp.cpp:32:3: error: no matching function for call to 'compare'
+   32 |   compare(5.0, 5);
+      |   ^~~~~~~
+/tmp/codellama7b-str_cmp-py-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'double' to 'const string' (aka 'const basic_string<char>') for 1st argument
+    5 | void compare(const string &a, const string &b) {
+      |      ^       ~~~~~~~~~~~~~~~
+6 errors generated.

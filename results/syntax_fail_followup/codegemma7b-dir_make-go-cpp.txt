@@ -1,0 +1,7 @@
+/tmp/codegemma7b-dir_make-go-cpp.cpp:4:8: error: no member named 'filesystem' in namespace 'std'
+    4 |   std::filesystem::path p(path);
+      |   ~~~~~^
+/tmp/codegemma7b-dir_make-go-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::create_directories(p);
+      |   ~~~~~^
+2 errors generated.

@@ -1,0 +1,7 @@
+/tmp/stablecode-str_concat-c-cpp.cpp:17:3: error: no matching function for call to 'free'
+   17 |   free(s2);
+      |   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'void *' for 1st argument; take the address of the argument with &
+   56 | void  free(void * __unsafe_indexable);
+      |       ^    ~~~~~~
+1 error generated.

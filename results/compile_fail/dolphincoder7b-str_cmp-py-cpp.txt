@@ -1,0 +1,22 @@
+/tmp/dolphincoder7b-str_cmp-py-cpp.cpp:31:13: warning: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Wstring-compare]
+   31 |   if ("abc" == "ABC") {
+      |       ~~~~~ ^
+/tmp/dolphincoder7b-str_cmp-py-cpp.cpp:37:7: error: no matching function for call to 'tolower'
+   37 |   if (std::tolower("abc") == std::tolower("ABC")) {
+      |       ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'const char[4]' to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_cmp-py-cpp.cpp:37:30: error: no matching function for call to 'tolower'
+   37 |   if (std::tolower("abc") == std::tolower("ABC")) {
+      |                              ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'const char[4]' to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 2 errors generated.

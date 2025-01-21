@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-int_arith-py-c.c:35:13: error: call to undeclared library function 'pow' with type 'double (double, double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   35 |       (int)(pow(input1, input2) + 0.5f); // Use pow function for exponentiation
+      |             ^
+/tmp/qwen2.5coder2b-int_arith-py-c.c:35:13: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+1 error generated.

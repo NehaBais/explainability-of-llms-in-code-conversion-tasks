@@ -1,0 +1,16 @@
+/tmp/BitwiseOperations.java:13: error: ';' expected
+        System.out.println("Bitwise AND: " + Integer.toBinaryString(a & b) & mask));
+                                                                                  ^
+/tmp/BitwiseOperations.java:14: error: ';' expected
+        System.out.println("Bitwise OR: " + Integer.toBinaryString(a | b) & mask));
+                                                                                 ^
+/tmp/BitwiseOperations.java:15: error: ';' expected
+        System.out.println("Bitwise XOR: " + Integer.toBinaryString(a ^ b) & mask));
+                                                                                  ^
+/tmp/BitwiseOperations.java:22: error: ';' expected
+        System.out.println("Right Rotation: " + Integer.toBinaryString((a >> 1)) & ((1 << width) - 1))));
+                                                                                                      ^
+/tmp/BitwiseOperations.java:23: error: ';' expected
+        System.out.println("Left Rotation: " + Integer.toBinaryString((a << 1) & ((1 << width) - 1)))));
+                                                                                                     ^
+5 errors

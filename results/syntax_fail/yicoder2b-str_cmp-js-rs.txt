@@ -1,0 +1,73 @@
+error: expected identifier, found keyword `else`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:24:23
+   |
+24 |                     } else { 
+   |                       ^^^^ expected identifier, found keyword
+   |
+help: escape `else` to use it as an identifier
+   |
+24 |                     } r#else { 
+   |                       ++
+
+error: expected `,`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:25:30
+   |
+24 |                     } else { 
+   |                       ---- while parsing the fields for this pattern
+25 |                         last1.cmp(&last2) == Some(order),
+   |                              ^
+
+error: expected identifier, found keyword `else`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:31:15
+   |
+31 |             } else { 
+   |               ^^^^ expected identifier, found keyword
+   |
+help: escape `else` to use it as an identifier
+   |
+31 |             } r#else { 
+   |               ++
+
+error: expected `,`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:32:21
+   |
+31 |             } else { 
+   |               ---- while parsing the fields for this pattern
+32 |                 str1.chars().next_back().unwrap().cmp(&str2.chars().next_back().unwrap()),
+   |                     ^
+
+error: expected item, found `;`
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:36:2
+   |
+36 | };
+   |  ^
+   |
+   = help: function declarations are not followed by a semicolon
+help: remove this semicolon
+   |
+36 - };
+36 + }
+   |
+
+error[E0425]: cannot find value `order` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:20:58
+   |
+20 |                     Some(_) => last1.cmp(&last2) == Some(order), 
+   |                                                          ^^^^^ not found in this scope
+
+error[E0422]: cannot find struct, variant or union type `r#else` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:24:23
+   |
+24 |                     } else { 
+   |                       ^^^^ not found in this scope
+
+error[E0422]: cannot find struct, variant or union type `r#else` in this scope
+  --> /tmp/yicoder2b-str_cmp-js-rs.rs:31:15
+   |
+31 |             } else { 
+   |               ^^^^ not found in this scope
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0422, E0425.
+For more information about an error, try `rustc --explain E0422`.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegemma7b-file_rename-java-go.go:4:2: "os" imported and not used

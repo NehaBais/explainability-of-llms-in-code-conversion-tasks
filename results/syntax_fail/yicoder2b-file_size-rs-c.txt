@@ -1,0 +1,10 @@
+/tmp/yicoder2b-file_size-rs-c.c:7:15: error: variable has incomplete type 'struct stat'
+    7 |   struct stat buffer;
+      |               ^
+/tmp/yicoder2b-file_size-rs-c.c:7:10: note: forward declaration of 'struct stat'
+    7 |   struct stat buffer;
+      |          ^
+/tmp/yicoder2b-file_size-rs-c.c:9:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (stat(file_name, &buffer) == -1) {
+      |       ^
+2 errors generated.

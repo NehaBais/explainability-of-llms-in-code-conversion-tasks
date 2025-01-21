@@ -1,0 +1,7 @@
+/tmp/codegemma7b-file_size-go-c.c:7:11: error: called object type 'struct stat' is not a function or function pointer
+    7 |   if (stat(f, &stat) == -1) {
+      |       ~~~~^
+/tmp/codegemma7b-file_size-go-c.c:8:36: error: use of undeclared identifier 'errno'
+    8 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+2 errors generated.

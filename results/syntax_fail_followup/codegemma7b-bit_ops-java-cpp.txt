@@ -1,0 +1,7 @@
+/tmp/codegemma7b-bit_ops-java-cpp.cpp:12:36: error: no member named 'rotateLeft' in namespace 'std'
+   12 |   std::cout << "a ROL b: " << std::rotateLeft(a, b) << std::endl; // rotate left
+      |                               ~~~~~^
+/tmp/codegemma7b-bit_ops-java-cpp.cpp:13:36: error: no member named 'rotateRight' in namespace 'std'
+   13 |   std::cout << "a ROR b: " << std::rotateRight(a, b)
+      |                               ~~~~~^
+2 errors generated.

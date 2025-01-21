@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-dir_make-js-go.go:5:2: "path/filepath" imported and not used

@@ -1,0 +1,40 @@
+error[E0382]: borrow of moved value: `s1`
+ --> /tmp/codegeex4-str_concat-py-rs.rs:5:42
+  |
+2 |     let mut s1: String = String::from("hello");
+  |         ------ move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     println!("{}", s1 + " world");
+  |                    ------------- `s1` moved due to usage in operator
+4 |
+5 |     let s2: String = format!("{} world", s1);
+  |                                          ^^ value borrowed here after move
+  |
+note: calling this operator moves the left-hand side
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/arith.rs:91:12
+  = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 |     println!("{}", s1.clone() + " world");
+  |                      ++++++++
+
+error[E0382]: borrow of moved value: `s1`
+  --> /tmp/codegeex4-str_concat-py-rs.rs:11:44
+   |
+2  |     let mut s1: String = String::from("hello");
+   |         ------ move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+...
+9  |     println!("{}", s1 + ", " + &"world" + ", " + &"mom");
+   |                    --------- `s1` moved due to usage in operator
+10 |
+11 |     let s2: String = format!("{}, {}, {}", s1, "world", "mom");
+   |                                            ^^ value borrowed here after move
+   |
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider cloning the value if the performance cost is acceptable
+   |
+9  |     println!("{}", s1.clone() + ", " + &"world" + ", " + &"mom");
+   |                      ++++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

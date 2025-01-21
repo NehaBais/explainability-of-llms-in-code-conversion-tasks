@@ -1,0 +1,48 @@
+error[E0601]: `main` function not found in crate `granitecode3b_int_factors_go_rs`
+  --> /tmp/granitecode3b-int_factors-go-rs.rs:32:2
+   |
+32 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode3b-int_factors-go-rs.rs`
+
+warning: value assigned to `d` is never read
+  --> /tmp/granitecode3b-int_factors-go-rs.rs:19:13
+   |
+19 |             d -= 1;
+   |             ^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` on by default
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/granitecode3b-int_factors-go-rs.rs:18:13
+   |
+18 |             nr /= d;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign twice to immutable variable `d`
+  --> /tmp/granitecode3b-int_factors-go-rs.rs:19:13
+   |
+11 |     for d in 2..=nr {
+   |         - first assignment to `d`
+...
+19 |             d -= 1;
+   |             ^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+11 |     for mut d in 2..=nr {
+   |         +++
+help: to modify the original value, take a borrow instead
+   |
+11 |     for ref mut d in 2..=nr {
+   |         +++++++
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0384, E0601.
+For more information about an error, try `rustc --explain E0384`.

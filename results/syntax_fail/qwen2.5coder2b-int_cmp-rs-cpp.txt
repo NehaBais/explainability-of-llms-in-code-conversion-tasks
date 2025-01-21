@@ -1,0 +1,34 @@
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:6:19: error: expected '(' for function-style cast or type construction
+    6 |   std::cin >> int a >> int b;
+      |               ~~~ ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:9:11: error: use of undeclared identifier 'b'
+    9 |   if (a < b) {
+      |           ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:9:7: error: use of undeclared identifier 'a'
+    9 |   if (a < b) {
+      |       ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:10:18: error: use of undeclared identifier 'a'
+   10 |     std::cout << a << " is less than " << b << std::endl;
+      |                  ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:10:43: error: use of undeclared identifier 'b'
+   10 |     std::cout << a << " is less than " << b << std::endl;
+      |                                           ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:11:14: error: use of undeclared identifier 'a'
+   11 |   } else if (a == b) {
+      |              ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:11:19: error: use of undeclared identifier 'b'
+   11 |   } else if (a == b) {
+      |                   ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:12:18: error: use of undeclared identifier 'a'
+   12 |     std::cout << a << " equals " << b << std::endl;
+      |                  ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:12:37: error: use of undeclared identifier 'b'
+   12 |     std::cout << a << " equals " << b << std::endl;
+      |                                     ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:14:18: error: use of undeclared identifier 'a'
+   14 |     std::cout << a << " is greater than " << b << std::endl;
+      |                  ^
+/tmp/qwen2.5coder2b-int_cmp-rs-cpp.cpp:14:46: error: use of undeclared identifier 'b'
+   14 |     std::cout << a << " is greater than " << b << std::endl;
+      |                                              ^
+11 errors generated.

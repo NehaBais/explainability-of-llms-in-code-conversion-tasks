@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-file_create-cpp-rs.rs:6:28
+  |
+6 |     if !docs_path.exists() {
+  |                            ^ unclosed delimiter
+7 |         std::fs::create_dir(&docs_path)).unwrap();
+  |                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-file_create-cpp-rs.rs:9:1
+  |
+7 |         std::fs::create_dir(&docs_path)).unwrap();
+  |                                        - missing open `(` for this delimiter
+8 |     }
+9 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

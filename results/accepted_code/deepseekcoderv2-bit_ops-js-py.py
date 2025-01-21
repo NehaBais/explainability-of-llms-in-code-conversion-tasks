@@ -1,8 +1,14 @@
 def bitwise(a, b):
-    print("a AND b:", a & b)
-    print("a OR b:", a | b)
-    print("a XOR b:", a ^ b)
-    print("NOT a: ", ~a)
-    print("a << b:", a << b)  # left shift
-    print("a >> b:", a >> b)  # arithmetic right shift
-    print("a >>> b:", a >>> b)  # logical right shift
+    print(f"a AND b: {a & b}")
+    print(f"a OR b: {a | b}")
+    print(f"a XOR b: {a ^ b}")
+    print(f"NOT a: {~a}")
+    print(f"a << b: {a << b}")  # left shift
+    print(f"a >> b: {a >> b}")  # arithmetic right shift
+    print(
+        f"a >>> b: {a >> b}"
+    )  # logical right shift (Python does not have unsigned right shift, so it's the same as arithmetic)
+
+
+# Example usage:
+bitwise(5, 3)

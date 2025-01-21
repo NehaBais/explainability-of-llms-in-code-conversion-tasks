@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-str_substring-java-go.go:4:2: "fmt" imported and not used

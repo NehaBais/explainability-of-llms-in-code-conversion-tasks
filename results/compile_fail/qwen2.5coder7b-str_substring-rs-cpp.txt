@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-str_substring-rs-cpp.cpp:1:10: fatal error: 'unicode/segment.h' file not found
+    1 | #include "unicode/segment.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated.

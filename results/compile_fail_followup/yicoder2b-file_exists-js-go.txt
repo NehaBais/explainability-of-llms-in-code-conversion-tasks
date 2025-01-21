@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-js-go.go:8:11: undefined: os.FileSystem
+/tmp/yicoder2b-file_exists-js-go.go:15:10: no new variables on left side of :=
+/tmp/yicoder2b-file_exists-js-go.go:27:12: no new variables on left side of :=

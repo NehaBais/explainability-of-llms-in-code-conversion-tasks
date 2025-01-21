@@ -1,0 +1,61 @@
+error[E0308]: mismatched types
+ --> /tmp/codegemma7b-bit_ops-go-rs.rs:9:36
+  |
+9 |     println!("and: {:016b}", a_u & b_u);
+  |                                    ^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+ --> /tmp/codegemma7b-bit_ops-go-rs.rs:9:34
+  |
+9 |     println!("and: {:016b}", a_u & b_u);
+  |                                  ^ no implementation for `u16 & u32`
+  |
+  = help: the trait `BitAnd<u32>` is not implemented for `u16`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a u16` implements `BitAnd<u16>`
+            `&u16` implements `BitAnd<&u16>`
+            `u16` implements `BitAnd<&u16>`
+            `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-bit_ops-go-rs.rs:10:36
+   |
+10 |     println!("or:  {:016b}", a_u | b_u);
+   |                                    ^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 | u32`
+  --> /tmp/codegemma7b-bit_ops-go-rs.rs:10:34
+   |
+10 |     println!("or:  {:016b}", a_u | b_u);
+   |                                  ^ no implementation for `u16 | u32`
+   |
+   = help: the trait `BitOr<u32>` is not implemented for `u16`
+   = help: the following other types implement trait `BitOr<Rhs>`:
+             `&'a u16` implements `BitOr<u16>`
+             `&u16` implements `BitOr<&u16>`
+             `u16` implements `BitOr<&u16>`
+             `u16` implements `BitOr`
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-bit_ops-go-rs.rs:11:36
+   |
+11 |     println!("xor: {:016b}", a_u ^ b_u);
+   |                                    ^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 ^ u32`
+  --> /tmp/codegemma7b-bit_ops-go-rs.rs:11:34
+   |
+11 |     println!("xor: {:016b}", a_u ^ b_u);
+   |                                  ^ no implementation for `u16 ^ u32`
+   |
+   = help: the trait `BitXor<u32>` is not implemented for `u16`
+   = help: the following other types implement trait `BitXor<Rhs>`:
+             `&'a u16` implements `BitXor<u16>`
+             `&u16` implements `BitXor<&u16>`
+             `u16` implements `BitXor<&u16>`
+             `u16` implements `BitXor`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

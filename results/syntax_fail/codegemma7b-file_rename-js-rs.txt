@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `(`
+ --> /tmp/codegemma7b-file_rename-js-rs.rs:4:11
+  |
+4 | fs::rename("input.txt", "output.txt").expect("Failed to move file");
+  |           ^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

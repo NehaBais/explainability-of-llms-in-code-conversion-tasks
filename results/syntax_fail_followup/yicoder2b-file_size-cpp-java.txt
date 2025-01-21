@@ -1,0 +1,5 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+private static void printFileSize(String filename) throws IOException {
+               ^
+  (use --enable-preview to enable implicitly declared classes)
+1 error

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-logic_ops-rs-go.go:12:121: invalid operation: operator ^ not defined on a (variable of type bool)

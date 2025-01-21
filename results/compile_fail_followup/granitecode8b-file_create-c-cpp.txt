@@ -1,0 +1,37 @@
+/tmp/granitecode8b-file_create-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:5:31: error: use of undeclared identifier 'O_WRONLY'
+    5 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                               ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:5:42: error: use of undeclared identifier 'O_CREAT'
+    5 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                                          ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:5:52: error: use of undeclared identifier 'O_TRUNC'
+    5 |   int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
+      |                                                    ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:6:17: error: use of undeclared identifier 'S_IRUSR'
+    6 |                 S_IRUSR | S_IWUSR); // rights 0640 for rw-r-----
+      |                 ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:6:27: error: use of undeclared identifier 'S_IWUSR'
+    6 |                 S_IRUSR | S_IWUSR); // rights 0640 for rw-r-----
+      |                           ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:7:3: error: use of undeclared identifier 'close'
+    7 |   close(fd);
+      |   ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:9:17: error: use of undeclared identifier 'S_IRWXU'
+    9 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                 ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:9:27: error: use of undeclared identifier 'S_IXGRP'
+    9 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                           ^
+/tmp/granitecode8b-file_create-c-cpp.cpp:9:37: error: use of undeclared identifier 'S_IXOTH'
+    9 |   mkdir("docs", S_IRWXU | S_IXGRP | S_IXOTH); // rights 0750 for rwxr-x---
+      |                                     ^
+12 errors generated.

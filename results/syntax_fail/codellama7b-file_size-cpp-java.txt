@@ -1,0 +1,6 @@
+/tmp/FileSize.java:7: error: cannot find symbol
+    Path inputFile = Paths.get("input.txt");
+                     ^
+  symbol:   variable Paths
+  location: class FileSize
+1 error

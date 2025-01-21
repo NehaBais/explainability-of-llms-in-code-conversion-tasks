@@ -1,0 +1,11 @@
+/tmp/Main.java:7: error: cannot find symbol
+        .equals(new ArrayList<Integer>(Arrays.asList(1, 2, 4, 5, 10, 10, 20, 25, 50, 100)));
+                                       ^
+  symbol:   variable Arrays
+  location: class Main
+/tmp/Main.java:8: error: cannot find symbol
+    assert factor(101).equals(new ArrayList<Integer>(Arrays.asList(1, 101)));
+                                                     ^
+  symbol:   variable Arrays
+  location: class Main
+2 errors

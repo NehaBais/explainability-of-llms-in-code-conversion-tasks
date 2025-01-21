@@ -1,0 +1,37 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/codellama7b-str_match-js-rs.rs:40:8
+   |
+40 |     if ~q2 && q2multi.len() > 1 {
+   |        ^
+   |
+help: use `!` to perform bitwise not
+   |
+40 |     if !q2 && q2multi.len() > 1 {
+   |        ~
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/codellama7b-str_match-js-rs.rs:39:68
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, ~q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                    ^
+   |
+help: use `!` to perform bitwise not
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, !q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                    ~
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"Yes, at index {}."`
+  --> /tmp/codellama7b-str_match-js-rs.rs:39:74
+   |
+39 |     println!("2: Is '{}' contained in '{}'? {}", stringB, stringA, ~q2 ? "Yes, at index {}." : "No.", q2);
+   |                                                                          ^^^^^^^^^^^^^^^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error[E0425]: cannot find value `q2matches` in this scope
+  --> /tmp/codellama7b-str_match-js-rs.rs:41:102
+   |
+41 |         println!("   In fact, it happens {} times within '{}', at index{}.", q2multi.len(), stringA, q2matches.join(','));
+   |                                                                                                      ^^^^^^^^^ not found in this scope
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

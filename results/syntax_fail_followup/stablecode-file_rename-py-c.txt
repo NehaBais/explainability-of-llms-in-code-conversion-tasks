@@ -1,0 +1,19 @@
+/tmp/stablecode-file_rename-py-c.c:7:9: error: expected "FILENAME" or <FILENAME>
+    7 | #include
+      |         ^
+/tmp/stablecode-file_rename-py-c.c:20:38: error: extraneous ')' after condition, expected a statement
+   20 |   if (0 == rename(srcPath, destPath))))
+      |                                      ^
+/tmp/stablecode-file_rename-py-c.c:20:39: error: extraneous ')' after condition, expected a statement
+   20 |   if (0 == rename(srcPath, destPath))))
+      |                                       ^
+/tmp/stablecode-file_rename-py-c.c:40:38: error: extraneous ')' after condition, expected a statement
+   40 |   if (0 == rename(srcPath, destPath))))
+      |                                      ^
+/tmp/stablecode-file_rename-py-c.c:40:39: error: extraneous ')' after condition, expected a statement
+   40 |   if (0 == rename(srcPath, destPath))))
+      |                                       ^
+/tmp/stablecode-file_rename-py-c.c:63:44: error: extraneous ')' after condition, expected a statement
+   63 |   if (renameDirectory(srcPath2, destPath2))) {
+      |                                            ^
+6 errors generated.

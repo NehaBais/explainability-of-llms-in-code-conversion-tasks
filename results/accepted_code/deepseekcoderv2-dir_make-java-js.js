@@ -1,11 +1,19 @@
-function mkdir(pathStr) {
-  const path = require("path");
+const fs = require("fs");
+const path = require("path");
+
+function createDir(dirPath) {
   try {
-    if (!path.existsSync(path)) {
-      fs.mkdirSync(path);
+    const resolvedPath = path.resolve(dirPath);
+    if (fs.existsSync(resolvedPath)) {
+      console.log("path already exists");
+      return;
     }
-    console.log("File successfully created");
+    fs.mkdirSync(resolvedPath, { recursive: true });
+    console.log("path successfully created");
   } catch (err) {
     console.error(err);
   }
 }
+
+// Usage example
+createDir("C:/parent/test");

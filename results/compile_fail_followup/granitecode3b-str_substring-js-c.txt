@@ -1,0 +1,13 @@
+/tmp/granitecode3b-str_substring-js-c.c:26:23: error: member reference base type 'char[9]' is not a structure or union
+   26 |   printf("%c", str[str.length - 1]);
+      |                    ~~~^~~~~~~
+/tmp/granitecode3b-str_substring-js-c.c:30:18: error: member reference base type 'char[9]' is not a structure or union
+   30 |   int index = str.indexOf('b');
+      |               ~~~^~~~~~~~
+/tmp/granitecode3b-str_substring-js-c.c:35:24: error: member reference base type 'char[9]' is not a structure or union
+   35 |   int start_index = str.indexOf('bc');
+      |                     ~~~^~~~~~~~
+/tmp/granitecode3b-str_substring-js-c.c:35:33: warning: multi-character character constant [-Wmultichar]
+   35 |   int start_index = str.indexOf('bc');
+      |                                 ^
+1 warning and 3 errors generated.

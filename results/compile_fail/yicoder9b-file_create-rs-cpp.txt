@@ -1,0 +1,7 @@
+/tmp/yicoder9b-file_create-rs-cpp.cpp:25:14: error: use of undeclared identifier 'chdir'
+   25 |   } else if (chdir(DIR_NAME) <
+      |              ^
+/tmp/yicoder9b-file_create-rs-cpp.cpp:46:14: error: use of undeclared identifier 'chdir'
+   46 |   } else if (chdir(DIR_NAME) <
+      |              ^
+2 errors generated.

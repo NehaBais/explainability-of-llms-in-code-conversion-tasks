@@ -1,0 +1,70 @@
+error[E0106]: missing lifetime specifier
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:30:59
+   |
+30 | fn str_fromstr(s: &str, in_str: &str, m: isize) -> Option<&str> {
+   |                   ----          ----                      ^ expected named lifetime parameter
+   |
+   = help: this function's return type contains a borrowed value, but the signature does not say whether it is borrowed from `s` or `in_str`
+help: consider introducing a named lifetime parameter
+   |
+30 | fn str_fromstr<'a>(s: &'a str, in_str: &'a str, m: isize) -> Option<&'a str> {
+   |               ++++     ++               ++                           ++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:20:21
+   |
+20 |     substring(s, 0, s.len() - 1)
+   |     ---------       ^^^^^^^^^^^ expected `isize`, found `usize`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:1:4
+   |
+1  | fn substring(s: &str, n: usize, m: isize) -> Option<&str> {
+   |    ^^^^^^^^^                    --------
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+20 |     substring(s, 0, (s.len() - 1).try_into().unwrap())
+   |                     +           +++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:25:40
+   |
+25 |         return substring(&s[pos..], 0, m as usize);
+   |                ---------               ^^^^^^^^^^ expected `isize`, found `usize`
+   |                |
+   |                arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:1:4
+   |
+1  | fn substring(s: &str, n: usize, m: isize) -> Option<&str> {
+   |    ^^^^^^^^^                    --------
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+25 |         return substring(&s[pos..], 0, (m as usize).try_into().unwrap());
+   |                                        +          +++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:32:40
+   |
+32 |         return substring(&s[pos..], 0, m as usize);
+   |                ---------               ^^^^^^^^^^ expected `isize`, found `usize`
+   |                |
+   |                arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/qwen2.5coder2b-str_substring-c-rs.rs:1:4
+   |
+1  | fn substring(s: &str, n: usize, m: isize) -> Option<&str> {
+   |    ^^^^^^^^^                    --------
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+32 |         return substring(&s[pos..], 0, (m as usize).try_into().unwrap());
+   |                                        +          +++++++++++++++++++++
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0106, E0308.
+For more information about an error, try `rustc --explain E0106`.

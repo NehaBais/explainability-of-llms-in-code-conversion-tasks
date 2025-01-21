@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-int_arith-py-go.go:24:24: undefined: math

@@ -1,0 +1,21 @@
+/tmp/magicoder7b-file_size-c-cpp.cpp:5:32: error: expected ';' after top level declarator
+    5 | const std::string inputFileName{"input.txt"};
+      |                                ^
+      |                                ;
+/tmp/magicoder7b-file_size-c-cpp.cpp:7:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    7 | static auto checkFileSize = [](const std::string &fileName) {
+      |        ^
+/tmp/magicoder7b-file_size-c-cpp.cpp:7:29: error: expected expression
+    7 | static auto checkFileSize = [](const std::string &fileName) {
+      |                             ^
+/tmp/magicoder7b-file_size-c-cpp.cpp:27:16: error: expected expression
+   27 |   std::at_exit([] { std::cout << "Program finished successfully.\n"; });
+      |                ^
+/tmp/magicoder7b-file_size-c-cpp.cpp:27:8: error: no member named 'at_exit' in namespace 'std'; did you mean 'atexit'?
+   27 |   std::at_exit([] { std::cout << "Program finished successfully.\n"; });
+      |   ~~~~~^~~~~~~
+      |        atexit
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdlib:125:9: note: 'atexit' declared here
+  125 | using ::atexit _LIBCPP_USING_IF_EXISTS;
+      |         ^
+1 warning and 4 errors generated.

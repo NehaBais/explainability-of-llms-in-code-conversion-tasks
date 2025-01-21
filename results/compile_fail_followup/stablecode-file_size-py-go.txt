@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_size-py-go.go:19:29: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-py-go.go:31:30: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-py-go.go:34:86: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-py-go.go:35:84: syntax error: unexpected ) at end of statement

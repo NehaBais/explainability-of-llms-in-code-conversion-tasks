@@ -1,13 +1,20 @@
-use std::path::PathBuf;
+use std::fs;
+use std::path::Path;
 
 fn main() {
-    let mut path1 = PathBuf::from(".");
-    path1.push("docs");
-    path1.push("input.txt");
-    println!("{}", std::fs::metadata(&path1).is_ok());
-    // use push_str to append string literal
-    let mut path2 = PathBuf::from("/");
-    path2.push("docs");
-    path2.push("input.txt");
-    println!("{}", std::fs::metadata(&path2).is_ok());
+    // Check for the file and directory in the current working directory
+    check_file_and_directory("input.txt", "docs");
+    
+    // Check for the file and directory in the filesystem root
+    check_file_and_directory("/docs/input.txt", "/docs");
+}
+
+fn check_file_and_directory(file_name: &str, dir_name: &str) {
+    let path = Path::new(dir_name).join(file_name);
+    
+    if fs::metadata(path).is_ok() {
+        println!("The file or directory {} exists.", path.display());
+    } else {
+        println!("The file or directory {} does not exist.", path.display());
+    }
 }

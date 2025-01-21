@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_match-js-go.go:9:13: cannot convert len(a) >= len(b) (untyped bool value) to type int
+/tmp/dolphincoder7b-str_match-js-go.go:22:13: cannot convert len(a) >= len(b) (untyped bool value) to type int
+/tmp/dolphincoder7b-str_match-js-go.go:38:12: cannot use regexp.MustCompile(stringB).FindAllStringIndex(stringA, -1) (value of type [][]int) as int value in assignment
+/tmp/dolphincoder7b-str_match-js-go.go:40:9: range over q2multi (variable of type int) permits only one iteration variable
+/tmp/dolphincoder7b-str_match-js-go.go:45:2: undefined: q3
+/tmp/dolphincoder7b-str_match-js-go.go:54:68: undefined: q3

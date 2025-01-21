@@ -1,0 +1,22 @@
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:5:23: error: expected namespace name
+    5 |   namespace fs = std::filesystem;
+      |                  ~~~~~^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:7:7: error: use of undeclared identifier 'fs'
+    7 |   if (fs::exists("input.txt")) {
+      |       ^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:10:7: error: use of undeclared identifier 'fs'
+   10 |       fs::rename("input.txt", "output.txt");
+      |       ^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:11:7: error: use of undeclared identifier 'fs'
+   11 |       fs::rename("docs", "mydocs");
+      |       ^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:14:7: error: use of undeclared identifier 'fs'
+   14 |       fs::rename("/input.txt", "/output.txt");
+      |       ^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:15:7: error: use of undeclared identifier 'fs'
+   15 |       fs::rename("/docs", "/mydocs");
+      |       ^
+/tmp/dolphincoder7b-file_rename-rs-cpp.cpp:16:19: error: no member named 'filesystem' in namespace 'std'
+   16 |     } catch (std::filesystem::filesystem_error &e) {
+      |              ~~~~~^
+7 errors generated.

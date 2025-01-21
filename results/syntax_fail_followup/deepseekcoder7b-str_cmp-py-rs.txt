@@ -1,0 +1,14 @@
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:14:25
+   |
+14 |     if a == b { println!-- "{} equals to {}", a, b }           // Equivalent to Python's `==` for strings
+   |                         ^ expected one of `(`, `[`, or `{`
+
+error: expected one of `(`, `[`, or `{`, found `-`
+  --> /tmp/deepseekcoder7b-str_cmp-py-rs.rs:15:25
+   |
+15 |     if a != b { println!-- "{} not equals to {}", a, b}        // Equivalent to Python's `！=` for strings
+   |                         ^ expected one of `(`, `[`, or `{`
+
+error: aborting due to 2 previous errors
+

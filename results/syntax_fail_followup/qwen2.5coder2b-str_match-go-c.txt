@@ -1,0 +1,32 @@
+/tmp/qwen2.5coder2b-str_match-go-c.c:47:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   47 |     printf("1. %s starts with %s: %d
+      |            ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:47:12: error: expected expression
+/tmp/qwen2.5coder2b-str_match-go-c.c:48:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   48 | ", str1, str2, startsWith(str1, str2));
+      | ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:49:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   49 |     printf("2. %s contains %s: %d
+      |            ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:50:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   50 | ", str1, str2, contains(str1, str2));
+      | ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:54:20: warning: missing terminating '"' character [-Winvalid-pp-token]
+   54 |             printf("2.1. at location %d
+      |                    ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:55:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   55 | ", index);
+      | ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:58:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   58 |     printf("3. %s ends with %s: %d
+      |            ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:59:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   59 | ", str1, str2, endsWith(str1, str2));
+      | ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:60:2: error: expected '}'
+   60 | }
+      |  ^
+/tmp/qwen2.5coder2b-str_match-go-c.c:46:48: note: to match this '{'
+   46 | void match(const char *str1, const char *str2) {
+      |                                                ^
+8 warnings and 2 errors generated.

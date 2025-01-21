@@ -1,0 +1,61 @@
+/tmp/BitwiseOperations.java:17: error: cannot find symbol
+    System.out.println("a:   " + Integer.toBINARYString(a));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:18: error: cannot find symbol
+    System.out.println("b:   " + Integer.toBINARYString(b));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:25: error: cannot find symbol
+    System.out.println("and: " + Integer.toBINARYString(and));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:26: error: cannot find symbol
+    System.out.println("or:  " + Integer.toBINARYString(or));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:27: error: cannot find symbol
+    System.out.println("xor: " + Integer.toBINARYString(xor));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:28: error: cannot find symbol
+    System.out.println("not: " + Integer.toBINARYString(not));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:42: error: cannot find symbol
+    System.out.println("shl: " + Integer.toBINARYString(shl));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:43: error: cannot find symbol
+    System.out.println("shr: " + Integer.toBINARYString(shr));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:48: error: cannot find symbol
+    System.out.println("las: " + Integer.toBINARYString(las));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:49: error: cannot find symbol
+    System.out.println("ras: " + Integer.toBINARYString(ras));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:54: error: cannot find symbol
+    System.out.println("rol: " + Integer.toBINARYString(rol));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+/tmp/BitwiseOperations.java:55: error: cannot find symbol
+    System.out.println("ror: " + Integer.toBINARYString(ror));
+                                        ^
+  symbol:   method toBINARYString(int)
+  location: class Integer
+12 errors

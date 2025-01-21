@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_size-rs-go.go:12:24: err.Type undefined (type error has no field or method Type)

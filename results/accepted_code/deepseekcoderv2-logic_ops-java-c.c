@@ -1,21 +1,16 @@
-public
-class BooleanLogic {
-public
-  static void main(String[] args) {
-    Scanner sc = new Scanner(System.in); // for input from user
+#include <stdbool.h>
+#include <stdio.h>
 
-    System.out.println("Enter two boolean values (true/false): ");
-    String firstInput = sc.nextLine();
-    String secondInput = sc.nextLine();
-    logic(Boolean.parseBoolean(firstInput),
-          Boolean.parseBoolean(secondInput)); // convert strings to booleans and
-                                              // pass into function logic()
-  }
+void logic(bool a, bool b) {
+  printf("a AND b: %d\n", a && b);
+  printf("a OR b: %d\n", a || b);
+  printf("NOT a: %d\n", !a);
+}
 
-public
-  static void logic(boolean a, boolean b) {
-    System.out.println("a AND b: " + (a && b));
-    System.out.println("a OR b: " + (a || b));
-    System.out.println("NOT a: " + (!a));
-  }
+int main() {
+  logic(true, true);
+  logic(true, false);
+  logic(false, true);
+  logic(false, false);
+  return 0;
 }

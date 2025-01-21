@@ -1,0 +1,4 @@
+/tmp/stablecode-str_concat-go-c.c:13:26: error: extraneous ')' before ';'
+   13 |     strcat(s, " literal"));
+      |                          ^
+1 error generated.

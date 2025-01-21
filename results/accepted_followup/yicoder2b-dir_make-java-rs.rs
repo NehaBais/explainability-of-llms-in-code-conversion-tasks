@@ -1,0 +1,1 @@
+if let error = PathBuf::read_dir(&path) { return println!("Error reading directory '{}'", path.as_str()); }

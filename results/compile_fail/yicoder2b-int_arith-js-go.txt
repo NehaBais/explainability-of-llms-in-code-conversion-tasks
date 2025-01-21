@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-int_arith-js-go.go:10:25: undefined: os
+/tmp/yicoder2b-int_arith-js-go.go:14:25: undefined: os
+/tmp/yicoder2b-int_arith-js-go.go:31:15: undefined: sign

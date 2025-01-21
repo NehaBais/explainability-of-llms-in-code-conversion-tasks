@@ -1,0 +1,61 @@
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:4:29: error: no template named 'optional' in namespace 'std'
+    4 | void print_match(const std::optional<int> &match_pos) {
+      |                        ~~~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:34: error: no member named 'optional' in namespace 'std'
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                             ~~~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:46: error: expected '(' for function-style cast or type construction
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                                           ~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:47: error: expected expression
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                                               ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:47: error: expected ':'
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                                               ^
+      |                                               : 
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:27: note: to match this '?'
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                           ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:19:47: error: expected expression
+   19 |   print_match(start_match ? std::optional<int>{0} : std::nullopt);
+      |                                               ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:37: error: no member named 'optional' in namespace 'std'
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                                ~~~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:49: error: expected '(' for function-style cast or type construction
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                                              ~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:50: error: expected expression
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                                                  ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:50: error: expected ':'
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                                                  ^
+      |                                                  : 
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:30: note: to match this '?'
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                              ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:23:50: error: expected expression
+   23 |   print_match(contains_match ? std::optional<int>{s1.find(s3)} : std::nullopt);
+      |                                                  ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:32: error: no member named 'optional' in namespace 'std'
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                           ~~~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:44: error: expected '(' for function-style cast or type construction
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                                         ~~~^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:45: error: expected expression
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                                             ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:45: error: expected ':'
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                                             ^
+      |                                             : 
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:25: note: to match this '?'
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                         ^
+/tmp/qwen2.5coder2b-str_match-rs-cpp.cpp:34:45: error: expected expression
+   34 |   print_match(end_match ? std::optional<int>{s1.length() - s2.length()}
+      |                                             ^
+16 errors generated.

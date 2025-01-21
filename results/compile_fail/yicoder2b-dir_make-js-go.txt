@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-js-go.go:10:36: undefined: os.IsDir
+/tmp/yicoder2b-dir_make-js-go.go:18:10: undefined: os.ErrNotDir
+/tmp/yicoder2b-dir_make-js-go.go:21:12: mkdirp(parent, nil) (no value) used as value
+/tmp/yicoder2b-dir_make-js-go.go:24:10: mkdirp(abspath, nil) (no value) used as value

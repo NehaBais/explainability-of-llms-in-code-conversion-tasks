@@ -1,0 +1,29 @@
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:5:6: error: variable has incomplete type 'void'
+    5 | void print_match(std::optional<size_t> possible_match) {
+      |      ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:5:23: error: no member named 'optional' in namespace 'std'
+    5 | void print_match(std::optional<size_t> possible_match) {
+      |                  ~~~~~^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:5:32: error: unexpected type name 'size_t': expected expression
+    5 | void print_match(std::optional<size_t> possible_match) {
+      |                                ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:5:40: error: use of undeclared identifier 'possible_match'
+    5 | void print_match(std::optional<size_t> possible_match) {
+      |                                        ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:5:55: error: expected ';' after top level declarator
+    5 | void print_match(std::optional<size_t> possible_match) {
+      |                                                       ^
+      |                                                       ;
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:18:13: error: no member named 'starts_with' in 'std::string'
+   18 |   assert(s1.starts_with(s3));
+      |          ~~ ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:21:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   21 |   auto start_pos = s1.find(s3);
+      |   ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:22:3: error: use of undeclared identifier 'assert'
+   22 |   assert(start_pos != std::string::npos);
+      |   ^
+/tmp/dolphincoder7b-str_match-rs-cpp.cpp:28:13: error: no member named 'ends_with' in 'std::string'
+   28 |   assert(s2.ends_with(s3));
+      |          ~~ ^
+1 warning and 8 errors generated.

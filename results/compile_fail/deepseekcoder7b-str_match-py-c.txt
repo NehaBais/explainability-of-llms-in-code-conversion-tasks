@@ -1,0 +1,25 @@
+/tmp/deepseekcoder7b-str_match-py-c.c:52:16: error: expression is not assignable
+   52 |          loc ? --(loc - str3) : "False"); // returns the position of first
+      |                ^ ~~~~~~~~~~~~
+/tmp/deepseekcoder7b-str_match-py-c.c:57:17: error: expression is not assignable
+   57 |          next ? --(next - str3)
+      |                 ^ ~~~~~~~~~~~~~
+/tmp/deepseekcoder7b-str_match-py-c.c:60:10: error: expected expression
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-str_match-py-c.c:60:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-str_match-py-c.c:60:19: error: character <U+2581> not allowed in an identifier
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-str_match-py-c.c:60:24: error: character <U+2581> not allowed in an identifier
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-str_match-py-c.c:60:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-str_match-py-c.c:60:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   60 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^
+2 warnings and 6 errors generated.

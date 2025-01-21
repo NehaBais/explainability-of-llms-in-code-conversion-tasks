@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:21:41: error: expected '(' for function-style cast or type construction
+   21 |   assert(factor(100) == std::vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100});
+      |                         ~~~~~~~~~~~~~~~~^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:22:41: error: expected '(' for function-style cast or type construction
+   22 |   assert(factor(101) == std::vector<int>{1, 101});
+      |                         ~~~~~~~~~~~~~~~~^
+2 errors generated.

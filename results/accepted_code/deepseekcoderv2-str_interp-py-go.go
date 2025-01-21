@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-	variable := "little" // Variable
-	var originalString string = "Mary had a %s lamb."
-	fmt.Printf("Original String: %s \n", originalString)
-	fmt.Printf("%s\n", fmt.Sprintf(originalString, variable)) // Converted Code
+	extra := "little"
+	newStr := fmt.Sprintf("Mary had a %s lamb.", extra)
+	fmt.Println(newStr)
 }

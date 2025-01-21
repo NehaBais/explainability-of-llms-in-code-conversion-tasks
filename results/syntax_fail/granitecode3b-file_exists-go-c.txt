@@ -1,0 +1,35 @@
+/tmp/granitecode3b-file_exists-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-go-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat info;
+      |               ^
+/tmp/granitecode3b-file_exists-go-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat info;
+      |          ^
+/tmp/granitecode3b-file_exists-go-c.c:5:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (stat("input.txt", &info) == -1) {
+      |       ^
+/tmp/granitecode3b-file_exists-go-c.c:6:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     perror("Error getting file info");
+      |     ^
+/tmp/granitecode3b-file_exists-go-c.c:9:7: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (S_ISDIR(info.st_mode)) {
+      |       ^
+/tmp/granitecode3b-file_exists-go-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("%s is a directoryn", "input.txt");
+      |     ^
+/tmp/granitecode3b-file_exists-go-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_exists-go-c.c:15:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     perror("Error getting file info");
+      |     ^
+/tmp/granitecode3b-file_exists-go-c.c:24:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |     perror("Error getting file info");
+      |     ^
+/tmp/granitecode3b-file_exists-go-c.c:33:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |     perror("Error getting file info");
+      |     ^
+10 errors generated.

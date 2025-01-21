@@ -1,0 +1,22 @@
+/tmp/Main.java:7: error: ';' expected
+    private static final String ROOT_PATH = System.getProperty("user.dir")).replace("/", "");
+                                                                          ^
+/tmp/Main.java:7: error: invalid method declaration; return type required
+    private static final String ROOT_PATH = System.getProperty("user.dir")).replace("/", "");
+                                                                            ^
+/tmp/Main.java:7: error: illegal start of type
+    private static final String ROOT_PATH = System.getProperty("user.dir")).replace("/", "");
+                                                                                    ^
+/tmp/Main.java:8: error: ';' expected
+    private static final String HERE_PATH = System.getProperty("user.dir"));
+                                                                          ^
+/tmp/Main.java:12: error: ';' expected
+        File outputFileRoot = new File(ROOT_PATH, "output.txt"));
+                                                               ^
+/tmp/Main.java:15: error: ';' expected
+        Files.createDirectory(Paths.get(HERE_PATH, "docs")));
+                                                           ^
+/tmp/Main.java:17: error: ';' expected
+        Files.createDirectory(Paths.get(ROOT_PATH, "docs"))));
+                                                           ^
+7 errors

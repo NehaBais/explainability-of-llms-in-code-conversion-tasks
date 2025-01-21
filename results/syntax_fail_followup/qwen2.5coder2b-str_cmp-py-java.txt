@@ -1,0 +1,4 @@
+/tmp/Main.java:16: error: incompatible types: int cannot be converted to Double
+    Double d2 = 5;
+                ^
+1 error

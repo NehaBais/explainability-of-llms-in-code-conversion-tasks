@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-bit_ops-c-go.go:5:2: "math/bits" imported and not used

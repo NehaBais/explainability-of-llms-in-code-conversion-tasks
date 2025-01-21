@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-java-go.go:14:2: declared and not used: r
+/tmp/qwen2.5coder2b-str_substring-java-go.go:17:11: invalid operation: r == c (mismatched types rune and byte)
+/tmp/qwen2.5coder2b-str_substring-java-go.go:30:2: declared and not used: r
+/tmp/qwen2.5coder2b-str_substring-java-go.go:32:9: declared and not used: r
+/tmp/qwen2.5coder2b-str_substring-java-go.go:46:37: too many arguments in call to Substring
+	have (string, number, number)
+	want (string, int)

@@ -1,0 +1,19 @@
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:8:5: error: use of undeclared identifier 'fs'
+    8 |     fs::rename("input.txt", "output.txt");
+      |     ^
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::rename("docs", "mydocs");
+      |     ^
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:10:5: error: use of undeclared identifier 'fs'
+   10 |     fs::rename("/input.txt", "/output.txt");
+      |     ^
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:11:5: error: use of undeclared identifier 'fs'
+   11 |     fs::rename("/docs", "/mydocs");
+      |     ^
+/tmp/magicoder7b-file_rename-rs-cpp.cpp:12:23: error: no member named 'filesystem' in namespace 'std'
+   12 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+6 errors generated.

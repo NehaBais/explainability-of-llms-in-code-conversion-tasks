@@ -1,0 +1,25 @@
+/tmp/yicoder9b-file_create-py-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/yicoder9b-file_create-py-cpp.cpp:7:13: error: use of undeclared identifier 'fs'
+    7 | void create(fs::path directory) {
+      |             ^
+/tmp/yicoder9b-file_create-py-cpp.cpp:12:5: error: use of undeclared identifier 'fs'
+   12 |     fs::create_directory(directory / "docs");
+      |     ^
+/tmp/yicoder9b-file_create-py-cpp.cpp:13:18: error: use of undeclared identifier 'fs'
+   13 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/yicoder9b-file_create-py-cpp.cpp:19:3: error: no matching function for call to 'create'
+   19 |   create("."); // current directory
+      |   ^~~~~~
+/tmp/yicoder9b-file_create-py-cpp.cpp:7:6: note: candidate function not viable: no known conversion from 'const char[2]' to 'int' for 1st argument
+    7 | void create(fs::path directory) {
+      |      ^      ~~~~~~~~~~~~~~~~~~
+/tmp/yicoder9b-file_create-py-cpp.cpp:20:6: error: expected '(' after 'if'
+   20 |   if constexpr (fs::path::string_type::value_type == '\\')
+      |      ^
+/tmp/yicoder9b-file_create-py-cpp.cpp:23:3: error: expected expression
+   23 |   else
+      |   ^
+7 errors generated.

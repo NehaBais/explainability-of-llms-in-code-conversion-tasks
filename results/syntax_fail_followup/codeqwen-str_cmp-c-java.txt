@@ -1,0 +1,11 @@
+/tmp/Main.java:26: error: cannot find symbol
+    return IsNotLessThan(A, B);
+           ^
+  symbol:   method IsNotLessThan(String,String)
+  location: class Main
+/tmp/Main.java:31: error: cannot find symbol
+    return IsNotGreaterThan(A, B);
+           ^
+  symbol:   method IsNotGreaterThan(String,String)
+  location: class Main
+2 errors

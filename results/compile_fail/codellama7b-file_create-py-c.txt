@@ -1,0 +1,22 @@
+/tmp/codellama7b-file_create-py-c.c:12:40: error: too many arguments to function call, expected 2, have 3
+   12 |   if ((fp = fopen(directory, filename, "w")) == NULL) {
+      |             ~~~~~                      ^~~
+/tmp/codellama7b-file_create-py-c.c:16:9: warning: incompatible pointer types passing 'FILE *' (aka 'struct __sFILE *') to parameter of type 'const char *' [-Wincompatible-pointer-types]
+   16 |   chmod(fp, S_IRUSR | S_IWUSR);
+      |         ^~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:381:27: note: passing argument to parameter here
+  381 | int     chmod(const char *, mode_t) __DARWIN_ALIAS(chmod);
+      |                           ^
+/tmp/codellama7b-file_create-py-c.c:26:15: error: too many arguments to function call, expected single argument 'directory', have 2 arguments
+   26 |   create(".", "output.txt"); // current working directory
+      |   ~~~~~~      ^~~~~~~~~~~~
+/tmp/codellama7b-file_create-py-c.c:5:6: note: 'create' declared here
+    5 | void create(char *directory) {
+      |      ^      ~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_create-py-c.c:27:15: error: too many arguments to function call, expected single argument 'directory', have 2 arguments
+   27 |   create("/", "docs");       // root directory
+      |   ~~~~~~      ^~~~~~
+/tmp/codellama7b-file_create-py-c.c:5:6: note: 'create' declared here
+    5 | void create(char *directory) {
+      |      ^      ~~~~~~~~~~~~~~~
+1 warning and 3 errors generated.

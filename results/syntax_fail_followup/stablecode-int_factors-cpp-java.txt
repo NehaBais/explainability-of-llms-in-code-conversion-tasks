@@ -1,0 +1,7 @@
+/tmp/FactorGenerator.java:13: error: ';' expected
+                    factors.add(n / i));
+                                      ^
+/tmp/FactorGenerator.java:24: error: ';' expected
+            Vector<Integer> factors = generateFactors(sampleNumbers[i]));
+                                                                       ^
+2 errors

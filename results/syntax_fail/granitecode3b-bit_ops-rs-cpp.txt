@@ -1,0 +1,62 @@
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "a      = " << setfill('0') << setw(8) << binary << a << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:7:26: error: use of undeclared identifier 'setfill'
+    7 |   cout << "a      = " << setfill('0') << setw(8) << binary << a << endl;
+      |                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:7:42: error: use of undeclared identifier 'setw'
+    7 |   cout << "a      = " << setfill('0') << setw(8) << binary << a << endl;
+      |                                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:7:53: error: use of undeclared identifier 'binary'
+    7 |   cout << "a      = " << setfill('0') << setw(8) << binary << a << endl;
+      |                                                     ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:7:68: error: use of undeclared identifier 'endl'
+    7 |   cout << "a      = " << setfill('0') << setw(8) << binary << a << endl;
+      |                                                                    ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "b      = " << setfill('0') << setw(8) << binary << b << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:8:26: error: use of undeclared identifier 'setfill'
+    8 |   cout << "b      = " << setfill('0') << setw(8) << binary << b << endl;
+      |                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:8:42: error: use of undeclared identifier 'setw'
+    8 |   cout << "b      = " << setfill('0') << setw(8) << binary << b << endl;
+      |                                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:8:53: error: use of undeclared identifier 'binary'
+    8 |   cout << "b      = " << setfill('0') << setw(8) << binary << b << endl;
+      |                                                     ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:8:68: error: use of undeclared identifier 'endl'
+    8 |   cout << "b      = " << setfill('0') << setw(8) << binary << b << endl;
+      |                                                                    ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a | b  = " << setfill('0') << setw(8) << binary << (a | b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:9:26: error: use of undeclared identifier 'setfill'
+    9 |   cout << "a | b  = " << setfill('0') << setw(8) << binary << (a | b) << endl;
+      |                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:9:42: error: use of undeclared identifier 'setw'
+    9 |   cout << "a | b  = " << setfill('0') << setw(8) << binary << (a | b) << endl;
+      |                                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:9:53: error: use of undeclared identifier 'binary'
+    9 |   cout << "a | b  = " << setfill('0') << setw(8) << binary << (a | b) << endl;
+      |                                                     ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:9:74: error: use of undeclared identifier 'endl'
+    9 |   cout << "a | b  = " << setfill('0') << setw(8) << binary << (a | b) << endl;
+      |                                                                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "a & b  = " << setfill('0') << setw(8) << binary << (a & b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:10:26: error: use of undeclared identifier 'setfill'
+   10 |   cout << "a & b  = " << setfill('0') << setw(8) << binary << (a & b) << endl;
+      |                          ^
+/tmp/granitecode3b-bit_ops-rs-cpp.cpp:10:42: error: use of undeclared identifier 'setw'
+   10 |   cout << "a & b  = " << setfill('0') << setw(8) << binary << (a & b) << endl;
+      |                                          ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

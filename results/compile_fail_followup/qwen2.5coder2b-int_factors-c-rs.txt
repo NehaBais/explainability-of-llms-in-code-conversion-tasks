@@ -1,0 +1,12 @@
+error[E0599]: the method `join` exists for struct `Vec<i32>`, but its trait bounds were not satisfied
+ --> /tmp/qwen2.5coder2b-int_factors-c-rs.rs:5:57
+  |
+5 |         println!("factors of {} are: {}", *num, factors.join(", "));
+  |                                                         ^^^^ method cannot be called on `Vec<i32>` due to unsatisfied trait bounds
+  |
+  = note: the following trait bounds were not satisfied:
+          `[i32]: Join<_>`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

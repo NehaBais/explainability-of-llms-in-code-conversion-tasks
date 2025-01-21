@@ -1,0 +1,54 @@
+/tmp/stablecode-str_substring-rs-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("%.*s\n", m, strchrnuc(s, n)));
+      |   ^
+/tmp/stablecode-str_substring-rs-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-str_substring-rs-c.c:7:23: error: call to undeclared function 'strchrnuc'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("%.*s\n", m, strchrnuc(s, n)));
+      |                       ^
+/tmp/stablecode-str_substring-rs-c.c:7:23: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    7 |   printf("%.*s\n", m, strchrnuc(s, n)));
+      |           ~~~~        ^~~~~~~~~~~~~~~
+      |           %.*d
+/tmp/stablecode-str_substring-rs-c.c:7:39: error: extraneous ')' before ';'
+    7 |   printf("%.*s\n", m, strchrnuc(s, n)));
+      |                                       ^
+/tmp/stablecode-str_substring-rs-c.c:8:18: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    8 |   printf("%s\n", strchrnuc(s, n)));
+      |           ~~     ^~~~~~~~~~~~~~~
+      |           %d
+/tmp/stablecode-str_substring-rs-c.c:8:34: error: extraneous ')' before ';'
+    8 |   printf("%s\n", strchrnuc(s, n)));
+      |                                  ^
+/tmp/stablecode-str_substring-rs-c.c:9:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char* substr = malloc(strlen(s) - 1));
+      |                  ^
+/tmp/stablecode-str_substring-rs-c.c:9:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/stablecode-str_substring-rs-c.c:9:25: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char* substr = malloc(strlen(s) - 1));
+      |                         ^
+/tmp/stablecode-str_substring-rs-c.c:9:25: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/stablecode-str_substring-rs-c.c:9:39: error: extraneous ')' before ';'
+    9 |   char* substr = malloc(strlen(s) - 1));
+      |                                       ^
+/tmp/stablecode-str_substring-rs-c.c:13:25: error: extraneous ')' before ';'
+   13 |   printf("%s\n", substr));
+      |                         ^
+/tmp/stablecode-str_substring-rs-c.c:15:9: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   15 |   char *bpos = strchrnuc(s, n);
+      |         ^      ~~~~~~~~~~~~~~~
+/tmp/stablecode-str_substring-rs-c.c:17:23: error: extraneous ')' after condition, expected a statement
+   17 |     if (s[i] == *bpos)) {
+      |                       ^
+/tmp/stablecode-str_substring-rs-c.c:18:33: error: extraneous ')' before ';'
+   18 |       printf("%.*s\n", m, &s[i]));
+      |                                 ^
+/tmp/stablecode-str_substring-rs-c.c:23:9: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+   23 |   char *kpos = strchrnuc(s, n);
+      |         ^      ~~~~~~~~~~~~~~~
+/tmp/stablecode-str_substring-rs-c.c:25:23: error: extraneous ')' after condition, expected a statement
+   25 |     if (s[i] == *kpos)) {
+      |                       ^
+/tmp/stablecode-str_substring-rs-c.c:26:33: error: extraneous ')' before ';'
+   26 |       printf("%.*s\n", m, &s[i]));
+      |                                 ^
+2 warnings and 14 errors generated.

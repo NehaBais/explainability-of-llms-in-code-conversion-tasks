@@ -1,0 +1,39 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-str_match-js-rs.rs:21:5
+   |
+21 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-str_match-js-rs.rs:21:11
+   |
+21 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-str_match-js-rs.rs:21:14
+   |
+21 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-str_match-js-rs.rs:21:23
+   |
+21 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: expected one of `!`, `(`, `+`, `::`, `<`, `>`, or `as`, found `of`
+  --> /tmp/deepseekcoder7b-str_match-js-rs.rs:21:12
+   |
+21 |    <｜begin▁of▁sentence｜>}
+   |             ^^ expected one of 7 possible tokens
+
+error[E0463]: can't find crate for `regex`
+ --> /tmp/deepseekcoder7b-str_match-js-rs.rs:1:1
+  |
+1 | extern crate regex;
+  | ^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0463`.

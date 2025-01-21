@@ -1,0 +1,8 @@
+/tmp/Main.java:9: error: incompatible types: String cannot be converted to Path
+    renameFileOrDirectory("input.txt", "output.txt");
+                          ^
+/tmp/Main.java:10: error: incompatible types: String cannot be converted to Path
+    renameFileOrDirectory("docs", "mydocs");
+                          ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors

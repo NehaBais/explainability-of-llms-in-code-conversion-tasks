@@ -1,0 +1,11 @@
+/tmp/codegemma7b-dir_make-go-c.c:7:16: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   size_t len = strlen(path);
+      |                ^
+/tmp/codegemma7b-dir_make-go-c.c:7:16: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codegemma7b-dir_make-go-c.c:10:15: error: read-only variable is not assignable
+   10 |       path[i] = '\0';
+      |       ~~~~~~~ ^
+/tmp/codegemma7b-dir_make-go-c.c:14:15: error: read-only variable is not assignable
+   14 |       path[i] = '/';
+      |       ~~~~~~~ ^
+3 errors generated.

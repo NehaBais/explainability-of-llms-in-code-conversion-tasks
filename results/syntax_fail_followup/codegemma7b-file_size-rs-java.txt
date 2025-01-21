@@ -1,0 +1,20 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+try {
+^
+/tmp/None.java:3: error: implicitly declared classes are a preview feature and are disabled by default.
+  long size = file.length();
+  ^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:4: error: class, interface, enum, or record expected
+  System.out.println("Size of " + fileName + " is " + size + " bytes");
+  ^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+} catch (IOException e) {
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+  System.exit(1);
+  ^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+}
+^
+6 errors

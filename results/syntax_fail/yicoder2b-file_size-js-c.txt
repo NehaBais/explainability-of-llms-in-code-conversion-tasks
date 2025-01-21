@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_size-js-c.c:2:10: fatal error: 'windows.h' file not found
+    2 | #include <windows.h> // Include for Windows
+      |          ^~~~~~~~~~~
+1 error generated.

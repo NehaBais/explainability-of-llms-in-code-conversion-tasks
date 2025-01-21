@@ -1,0 +1,13 @@
+/tmp/stablecode-str_cmp-py-c.c:14:44: error: extraneous ')' before ';'
+   14 |   printf("%d\n", str_compare("YUP", "YUP")));
+      |                                            ^
+/tmp/stablecode-str_cmp-py-c.c:16:46: error: extraneous ')' before ';'
+   16 |   printf("%d\n", str_compare("BALL", "BELL")));
+      |                                              ^
+/tmp/stablecode-str_cmp-py-c.c:18:43: error: extraneous ')' before ';'
+   18 |   printf("%d\n", str_compare("24", "123")));
+      |                                           ^
+/tmp/stablecode-str_cmp-py-c.c:20:46: error: extraneous ')' before ';'
+   20 |   printf("%d\n", str_compare("five", "nine")));
+      |                                              ^
+4 errors generated.

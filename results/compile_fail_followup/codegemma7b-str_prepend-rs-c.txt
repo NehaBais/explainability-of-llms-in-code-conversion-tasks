@@ -1,0 +1,9 @@
+/tmp/codegemma7b-str_prepend-rs-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("%s\n", s);
+      |   ^
+/tmp/codegemma7b-str_prepend-rs-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-str_prepend-rs-c.c:8:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   free(s);
+      |   ^
+/tmp/codegemma7b-str_prepend-rs-c.c:8:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

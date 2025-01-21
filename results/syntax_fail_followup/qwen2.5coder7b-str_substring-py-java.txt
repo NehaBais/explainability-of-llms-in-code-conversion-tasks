@@ -1,0 +1,5 @@
+/tmp/SubstringExample.java:43: error: incompatible types: Iterator is not a functional interface
+        () -> {
+        ^
+    multiple non-overriding abstract methods found in interface Iterator
+1 error

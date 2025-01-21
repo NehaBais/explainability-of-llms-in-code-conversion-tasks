@@ -1,0 +1,10 @@
+/tmp/yicoder9b-dir_make-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/yicoder9b-dir_make-go-cpp.cpp:6:20: error: use of undeclared identifier 'fs'
+    6 | void mkdir_p(const fs::path &p) {
+      |                    ^
+/tmp/yicoder9b-dir_make-go-cpp.cpp:8:3: error: use of undeclared identifier 'fs'
+    8 |   fs::create_directories(p, ec); // create all directories in the path
+      |   ^
+3 errors generated.

@@ -1,0 +1,13 @@
+/tmp/magicoder7b-str_prepend-go-c.c:7:3: error: call to undeclared library function 'strncpy' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strncpy(s, "Hello, ", MAX_SIZE); // Prepend the constant string to `s`
+      |   ^
+/tmp/magicoder7b-str_prepend-go-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/tmp/magicoder7b-str_prepend-go-c.c:8:3: error: call to undeclared library function 'strncat' with type 'char *(char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strncat(s, string1, MAX_SIZE - strlen(s)); // Append the second string to `s`
+      |   ^
+/tmp/magicoder7b-str_prepend-go-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strncat'
+/tmp/magicoder7b-str_prepend-go-c.c:8:34: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strncat(s, string1, MAX_SIZE - strlen(s)); // Append the second string to `s`
+      |                                  ^
+/tmp/magicoder7b-str_prepend-go-c.c:8:34: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+3 errors generated.

@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-file_exists-js-cpp.cpp:7:15: error: no member named 'filesystem' in namespace 'std'
+    7 |   return std::filesystem::exists(path);
+      |          ~~~~~^
+/tmp/deepseekcoderv2-file_exists-js-cpp.cpp:11:15: error: no member named 'filesystem' in namespace 'std'
+   11 |   return std::filesystem::is_directory(path);
+      |          ~~~~~^
+2 errors generated.

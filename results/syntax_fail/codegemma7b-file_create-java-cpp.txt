@@ -1,0 +1,25 @@
+/tmp/codegemma7b-file_create-java-cpp.cpp:8:24: error: no member named 'filesystem' in namespace 'std'
+    8 |     std::ofstream(std::filesystem::root_path() / "output.txt");
+      |                   ~~~~~^
+/tmp/codegemma7b-file_create-java-cpp.cpp:8:48: error: expected ')'
+    8 |     std::ofstream(std::filesystem::root_path() / "output.txt");
+      |                                                ^
+/tmp/codegemma7b-file_create-java-cpp.cpp:8:18: note: to match this '('
+    8 |     std::ofstream(std::filesystem::root_path() / "output.txt");
+      |                  ^
+/tmp/codegemma7b-file_create-java-cpp.cpp:9:10: error: no member named 'filesystem' in namespace 'std'
+    9 |     std::filesystem::create_directory("docs");
+      |     ~~~~~^
+/tmp/codegemma7b-file_create-java-cpp.cpp:10:10: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::create_directory(std::filesystem::root_path() / "docs");
+      |     ~~~~~^
+/tmp/codegemma7b-file_create-java-cpp.cpp:10:44: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::create_directory(std::filesystem::root_path() / "docs");
+      |                                       ~~~~~^
+/tmp/codegemma7b-file_create-java-cpp.cpp:10:68: error: expected ')'
+   10 |     std::filesystem::create_directory(std::filesystem::root_path() / "docs");
+      |                                                                    ^
+/tmp/codegemma7b-file_create-java-cpp.cpp:10:38: note: to match this '('
+   10 |     std::filesystem::create_directory(std::filesystem::root_path() / "docs");
+      |                                      ^
+6 errors generated.

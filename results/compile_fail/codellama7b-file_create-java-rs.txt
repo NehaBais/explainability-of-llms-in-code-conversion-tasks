@@ -1,0 +1,25 @@
+error[E0433]: failed to resolve: use of undeclared type `File`
+ --> /tmp/codellama7b-file_create-java-rs.rs:6:38
+  |
+6 |     fs::File::create(format!("{}{}", File::separator(), "output.txt"))?;
+  |                                      ^^^^ use of undeclared type `File`
+  |
+help: consider importing this struct
+  |
+1 + use fs::File;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `File`
+  --> /tmp/codellama7b-file_create-java-rs.rs:10:33
+   |
+10 |         .create(format!("{}{}", File::separator(), "docs"))?;
+   |                                 ^^^^ use of undeclared type `File`
+   |
+help: consider importing this struct
+   |
+1  + use fs::File;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

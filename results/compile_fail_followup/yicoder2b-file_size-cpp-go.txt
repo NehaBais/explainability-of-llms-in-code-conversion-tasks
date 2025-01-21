@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_size-cpp-go.go:27:32: too many arguments in call to printFileSize
+	have (string, error)
+	want (string)

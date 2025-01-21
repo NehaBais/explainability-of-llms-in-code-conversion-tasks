@@ -1,0 +1,11 @@
+error[E0432]: unresolved imports `std::intrinsics::shift_left`, `std::intrinsics::shift_right`
+ --> /tmp/dolphincoder7b-bit_ops-cpp-rs.rs:1:23
+  |
+1 | use std::intrinsics::{shift_left, shift_right};
+  |                       ^^^^^^^^^^  ^^^^^^^^^^^ no `shift_right` in `intrinsics`
+  |                       |
+  |                       no `shift_left` in `intrinsics`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

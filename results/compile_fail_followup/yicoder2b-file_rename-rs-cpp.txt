@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_rename-rs-cpp.cpp:12:52: error: use of undeclared identifier 'strerror'
+   12 |     fprintf(stderr, "Failed to rename file: %s\n", strerror(errno));
+      |                                                    ^
+1 error generated.

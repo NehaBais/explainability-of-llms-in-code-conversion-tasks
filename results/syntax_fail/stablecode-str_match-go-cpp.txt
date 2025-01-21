@@ -1,0 +1,9 @@
+/tmp/stablecode-str_match-go-cpp.cpp:16:50: error: extraneous ')' before ';'
+   16 |             int index = first.find(second, start));
+      |                                                  ^
+/tmp/stablecode-str_match-go-cpp.cpp:26:160: error: expected ';' after expression
+   26 |     std::cout << "3. " << first << " ends with " << second << ": " << (first.compare(second) == 0 && first.find(second, first.length() - second.length()) >= 0)) << "\n";
+      |                                                                                                                                                                ^
+      |                                                                                                                                                                ;
+/tmp/stablecode-str_match-go-cpp.cpp:26:160: error: expected expression
+3 errors generated.

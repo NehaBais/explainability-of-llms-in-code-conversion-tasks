@@ -1,0 +1,4 @@
+/tmp/codegemma7b-bit_ops-js-c.c:10:31: error: expected expression
+   10 |   printf("a >>> b: %d\n", a >>> b); // logical right shift
+      |                               ^
+1 error generated.

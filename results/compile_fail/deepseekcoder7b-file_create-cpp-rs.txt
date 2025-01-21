@@ -1,0 +1,32 @@
+error[E0432]: unresolved import `dirs`
+ --> /tmp/deepseekcoder7b-file_create-cpp-rs.rs:1:5
+  |
+1 | use dirs;
+  |     ^^^^ no `dirs` in the root
+
+error[E0599]: no method named `write` found for mutable reference `&mut DirBuilder` in the current scope
+  --> /tmp/deepseekcoder7b-file_create-cpp-rs.rs:16:14
+   |
+14 |           let _ = fs::DirBuilder::new()
+   |  _________________-
+15 | |             .recursive(true)
+16 | |             .write(true)
+   | |             -^^^^^ method not found in `&mut DirBuilder`
+   | |_____________|
+   |
+
+error[E0599]: no method named `write` found for mutable reference `&mut DirBuilder` in the current scope
+  --> /tmp/deepseekcoder7b-file_create-cpp-rs.rs:24:18
+   |
+22 |               let _ = fs::DirBuilder::new()
+   |  _____________________-
+23 | |                 .recursive(true)
+24 | |                 .write(true)
+   | |                 -^^^^^ method not found in `&mut DirBuilder`
+   | |_________________|
+   |
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

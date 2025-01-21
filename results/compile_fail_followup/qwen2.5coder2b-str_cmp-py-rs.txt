@@ -1,0 +1,31 @@
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/qwen2.5coder2b-str_cmp-py-rs.rs:47:5
+   |
+47 |     compare(24, 123);
+   |     ^^^^^^^ --  --- expected `&str`, found integer
+   |             |
+   |             expected `&str`, found integer
+   |
+note: function defined here
+  --> /tmp/qwen2.5coder2b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/qwen2.5coder2b-str_cmp-py-rs.rs:48:5
+   |
+48 |     compare(5.0, 5);
+   |     ^^^^^^^ ---  - expected `&str`, found integer
+   |             |
+   |             expected `&str`, found floating-point number
+   |
+note: function defined here
+  --> /tmp/qwen2.5coder2b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

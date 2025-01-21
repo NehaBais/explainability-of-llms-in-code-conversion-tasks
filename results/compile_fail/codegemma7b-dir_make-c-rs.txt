@@ -1,0 +1,24 @@
+error[E0601]: `main` function not found in crate `codegemma7b_dir_make_c_rs`
+  --> /tmp/codegemma7b-dir_make-c-rs.rs:14:2
+   |
+14 | }
+   |  ^ consider adding a `main` function to `/tmp/codegemma7b-dir_make-c-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/codegemma7b-dir_make-c-rs.rs:9:24
+  |
+6 |     let mut current_path = Path::new("");
+  |                            ------------- expected due to this value
+...
+9 |         current_path = current_path.join(component);
+  |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&Path`, found `PathBuf`
+  |
+help: consider borrowing here
+  |
+9 |         current_path = &current_path.join(component);
+  |                        +
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

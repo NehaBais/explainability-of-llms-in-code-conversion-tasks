@@ -1,9 +1,22 @@
-The code in Golang should be written to have the same interface as its Python counterpart. The input arguments are represented by two booleans, i.e., 0 for false and 1 for true.
+ Sure! Below is the equivalent code in Golang:
 
-Example:
-Input: a = 0 (false), b= 1 (true)
-Output:
-a and b: 0
-a or b: 1
-not a: 1
+```go
+package main
 
+import "fmt"
+
+func logic(a, b bool) {
+    fmt.Println("a and b:", a && b)
+    fmt.Println("a or b:", a || b)
+    fmt.Println("not a:", !a)
+}
+
+func main() {
+    logic(true, true)
+    logic(true, false)
+    logic(false, true)
+    logic(false, false)
+}
+```
+
+This Golang code defines a function `logic` that takes two boolean arguments and prints the results of "and" (`&&`), "or" (`||`), and "not" (`!`) operations on these arguments. The `main` function demonstrates how to call this `logic` function with different combinations of boolean values.

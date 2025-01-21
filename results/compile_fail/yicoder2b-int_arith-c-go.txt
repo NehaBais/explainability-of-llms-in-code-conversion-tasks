@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/yicoder2b-int_arith-c-go.go:6:10: undefined: strconv
+/tmp/yicoder2b-int_arith-c-go.go:6:23: undefined: readLine
+/tmp/yicoder2b-int_arith-c-go.go:7:10: undefined: strconv
+/tmp/yicoder2b-int_arith-c-go.go:7:23: undefined: readLine

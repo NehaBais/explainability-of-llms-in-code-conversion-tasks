@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-str_concat-c-go.go:14:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_concat-c-go.go:17:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_concat-c-go.go:19:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_concat-c-go.go:20:17: syntax error: unexpected ) at end of statement

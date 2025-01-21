@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_rename-js-cpp.cpp:4:12: error: no member named 'filesystem' in namespace 'std'
+    4 |   if (std::filesystem::exists(oldName)) {
+      |       ~~~~~^
+/tmp/codellama7b-file_rename-js-cpp.cpp:5:10: error: no member named 'filesystem' in namespace 'std'
+    5 |     std::filesystem::rename(oldName, newName);
+      |     ~~~~~^
+/tmp/codellama7b-file_rename-js-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |   if (std::filesystem::exists(oldName)) {
+      |       ~~~~~^
+/tmp/codellama7b-file_rename-js-cpp.cpp:11:10: error: no member named 'filesystem' in namespace 'std'
+   11 |     std::filesystem::rename(oldName, newName);
+      |     ~~~~~^
+4 errors generated.

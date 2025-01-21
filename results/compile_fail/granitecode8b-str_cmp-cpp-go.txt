@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-str_cmp-cpp-go.go:5:2: "io" imported and not used

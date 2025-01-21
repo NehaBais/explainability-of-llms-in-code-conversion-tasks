@@ -1,0 +1,10 @@
+/tmp/Main.java:4: error: illegal start of expression
+    System.out.println("abcd" === "abcd"); // true
+                                ^
+/tmp/Main.java:6: error: illegal start of expression
+    System.out.println(123 === "123"); // false
+                             ^
+/tmp/Main.java:10: error: illegal start of expression
+    System.out.println(123 !== "123"); // true
+                             ^
+3 errors

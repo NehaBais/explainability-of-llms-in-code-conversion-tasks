@@ -1,0 +1,60 @@
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:1:1: error: unknown type name 'use'
+    1 | use std::env;
+      | ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:1:5: error: use of undeclared identifier 'std'
+    1 | use std::env;
+      |     ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:3:1: error: unknown type name 'fn'
+    3 | fn main() {
+      | ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:4:3: error: unknown type name 'let'
+    4 |   let args : Vec<_> = env::args().collect();
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:4:12: error: expected ';' at end of declaration
+    4 |   let args : Vec<_> = env::args().collect();
+      |            ^
+      |            ;
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:4:18: error: use of undeclared identifier '_'
+    4 |   let args : Vec<_> = env::args().collect();
+      |                  ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:4:23: error: use of undeclared identifier 'env'
+    4 |   let args : Vec<_> = env::args().collect();
+      |                       ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:5:3: error: unknown type name 'let'
+    5 |   let a = args[1].parse::<i32>().unwrap();
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:5:26: error: expected unqualified-id
+    5 |   let a = args[1].parse::<i32>().unwrap();
+      |                          ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:5:27: error: use of undeclared identifier 'i32'
+    5 |   let a = args[1].parse::<i32>().unwrap();
+      |                           ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:5:32: error: expected expression
+    5 |   let a = args[1].parse::<i32>().unwrap();
+      |                                ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:6:3: error: unknown type name 'let'
+    6 |   let b = args[2].parse::<i32>().unwrap();
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:6:26: error: expected unqualified-id
+    6 |   let b = args[2].parse::<i32>().unwrap();
+      |                          ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:6:27: error: use of undeclared identifier 'i32'
+    6 |   let b = args[2].parse::<i32>().unwrap();
+      |                           ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:6:32: error: expected expression
+    6 |   let b = args[2].parse::<i32>().unwrap();
+      |                                ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:8:3: error: use of undeclared identifier 'println'
+    8 |   println !("sum:              {}", add_integers(a, b));
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:9:3: error: use of undeclared identifier 'println'
+    9 |   println !("difference:       {}", subtract_integers(a, b));
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:10:3: error: use of undeclared identifier 'println'
+   10 |   println !("product:          {}", multiply_integers(a, b));
+      |   ^
+/tmp/yicoder2b-int_arith-rs-cpp.cpp:15:3: error: use of undeclared identifier 'println'
+   15 |   println !("integer quotient: {}", a / b); // truncates towards zero
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

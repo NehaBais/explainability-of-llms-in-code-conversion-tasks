@@ -1,0 +1,8 @@
+error: expected one of `(`, `.`, `::`, `;`, `?`, `}`, or an operator, found `!`
+ --> /tmp/deepseekcoder7b-str_interp-js-rs.rs:6:22
+  |
+6 |     original.replacen!(original.as_str(), "X", &little, std::usize::MAX); 
+  |                      ^ expected one of 7 possible tokens
+
+error: aborting due to 1 previous error
+

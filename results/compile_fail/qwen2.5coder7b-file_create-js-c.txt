@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-file_create-js-c.c:6:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |       ^
+/tmp/qwen2.5coder7b-file_create-js-c.c:6:33: error: use of undeclared identifier 'errno'
+    6 |   if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                 ^
+/tmp/qwen2.5coder7b-file_create-js-c.c:6:42: error: use of undeclared identifier 'EEXIST'
+    6 |   if (mkdir(path, 0755) != 0 && errno != EEXIST) {
+      |                                          ^
+3 errors generated.

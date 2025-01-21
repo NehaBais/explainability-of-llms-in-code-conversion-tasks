@@ -1,5 +1,11 @@
+package main
+
+import (
+	"fmt"
+)
+
 func main() {
-    var s string
-    s := "World"
-    s = s + " Hello" 
+	s := "World"
+	s = "Hello " + s
+	fmt.Println(s)
 }

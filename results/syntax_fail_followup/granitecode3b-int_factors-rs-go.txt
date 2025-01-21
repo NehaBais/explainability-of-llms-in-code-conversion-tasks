@@ -1,0 +1,1 @@
+/tmp/granitecode3b-int_factors-rs-go.go:1:1: expected 'package', found 'for'

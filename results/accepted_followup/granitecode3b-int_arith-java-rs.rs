@@ -1,0 +1,1 @@
+let nums = String::new().split(" ").collect();

@@ -1,0 +1,13 @@
+/tmp/Main.java:20: error: ';' expected
+                    cb.onError(e));
+                                 ^
+/tmp/Main.java:22: error: ';' expected
+            }));
+              ^
+/tmp/Main.java:32: error: ';' expected
+            cb.onError(new Exception("Path exists but it'S not a directory")));
+                                                                             ^
+/tmp/Main.java:40: error: ';' expected
+        void onError(Exception e));
+                                 ^
+4 errors

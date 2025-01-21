@@ -1,0 +1,4 @@
+/tmp/Main.java:7: error: ';' expected
+    String out = String.format(str, txt));
+                                        ^
+1 error

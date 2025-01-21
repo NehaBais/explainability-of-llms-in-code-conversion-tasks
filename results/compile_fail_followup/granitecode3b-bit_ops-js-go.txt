@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/granitecode3b-bit_ops-js-go.go:4:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:5:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:6:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:7:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:8:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:9:2: undefined: fmt
+/tmp/granitecode3b-bit_ops-js-go.go:10:2: undefined: fmt

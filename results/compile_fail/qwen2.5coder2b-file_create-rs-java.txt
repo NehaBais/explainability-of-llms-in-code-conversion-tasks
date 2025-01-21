@@ -1,0 +1,16 @@
+/tmp/Main.java:9: error: cannot find symbol
+      create(".").and(create("/"));
+                 ^
+  symbol:   method and(Path)
+  location: interface Path
+/tmp/Main.java:17: error: cannot find symbol
+    Path fPath = Paths.get(root, FILE_NAME);
+                                 ^
+  symbol:   variable FILE_NAME
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    Path dPath = Paths.get(root, DIR_NAME);
+                                 ^
+  symbol:   variable DIR_NAME
+  location: class Main
+3 errors

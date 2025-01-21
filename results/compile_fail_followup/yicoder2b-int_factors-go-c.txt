@@ -1,0 +1,12 @@
+/tmp/yicoder2b-int_factors-go-c.c:20:10: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+   19 |   printf("Number of factors = %d\n",
+      |                               ~~
+      |                               %lu
+   20 |          sizeof(factors) / sizeof(int)); // Print the number of factors
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+Undefined symbols for architecture arm64:
+  "_main", referenced from:
+      <initial-undefines>
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

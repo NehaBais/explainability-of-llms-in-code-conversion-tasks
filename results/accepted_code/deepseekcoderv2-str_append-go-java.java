@@ -1,10 +1,7 @@
-package com.example;
-
-public class StringsBuilder {
+public class Main {
   public static void main(String[] args) {
-    StringBuilder sb = new StringBuilder();
-    sb.append("foo");
-    sb.append("bar");
-    System.out.println(sb.toString());
+    StringBuilder s = new StringBuilder("foo");
+    s.append("bar");
+    System.out.println(s.toString());
   }
 }

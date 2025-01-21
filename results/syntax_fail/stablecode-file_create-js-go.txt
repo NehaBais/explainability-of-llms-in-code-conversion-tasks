@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-file_create-js-go.go:20:33: expected statement, found ')' (and 1 more errors)

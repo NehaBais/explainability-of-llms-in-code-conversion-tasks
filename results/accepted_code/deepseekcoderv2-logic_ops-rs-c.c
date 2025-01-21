@@ -1,20 +1,18 @@
-#include <stdbool.h>
 #include <stdio.h>
 
-void print_result(const char *operation, bool a, bool b, bool result) {
-  printf("%s %d and %d -> %d\n", operation, a, b, result);
-}
-
-void boolean_ops(bool a, bool b) {
-  print_result("and", a, b, a && b);
-  print_result("or", a, b, a || b);
-  print_result("xor", a, b, a ^ b);
+void boolean_ops(int a, int b) {
+  printf("%d and %d -> %d\n", a, b, a && b);
+  printf("%d or %d -> %d\n", a, b, a || b);
+  // In C, there's no direct xor operator for booleans, so we represent it using
+  // 0 and 1
+  printf("%d xor %d -> %d\n", a, b, (a != b) ? 1 : 0);
   printf("not %d -> %d\n", a, !a);
 }
 
 int main() {
-  boolean_ops(true, true);
-  boolean_ops(true, false);
-  boolean_ops(false, true);
-  boolean_ops(false, false) return 0;
+  boolean_ops(1, 1);
+  boolean_ops(1, 0);
+  boolean_ops(0, 1);
+  boolean_ops(0, 0);
+  return 0;
 }

@@ -1,0 +1,7 @@
+/tmp/codeqwen-file_rename-js-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::rename(from, to);
+      |     ~~~~~^
+/tmp/codeqwen-file_rename-js-cpp.cpp:15:10: error: no member named 'filesystem' in namespace 'std'
+   15 |     std::filesystem::rename(from, to);
+      |     ~~~~~^
+2 errors generated.

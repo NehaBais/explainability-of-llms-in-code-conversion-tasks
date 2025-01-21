@@ -1,0 +1,1 @@
+This error arises because Golang does not support division and modulo operations directly similar to Rust, so we cannot provide equivalent results as in Rust with the division truncating towards zero and remainder sign matching the first operand's sign if different. The solution provided in the Golang code block should display desired outputs.

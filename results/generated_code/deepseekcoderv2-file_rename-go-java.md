@@ -1,39 +1,25 @@
-### Answer
-
-Here is the Java code:
+ Here's the equivalent Java code for the provided Golang code:
 
 ```java
-import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.io.IOException;
 
-public class RenameFiles {
+public class Main {
     public static void main(String[] args) {
-        File file = new File("input.txt");
-        if (file.renameTo(new File("output.txt"))) {
-            System.out.println("Input file renamed successfully.");
-        } else {
-            System.out.println("Failed to rename input file.");
-        }
-
-        File directory = new File("docs");
-        if (directory.renameTo(new File("mydocs"))) {
-            System.out.println("Directory docs renamed successfully.");
-        } else {
-            System.out.println("Failed to rename directory.");
-        }
-
-        file = new File("/input.txt");
-        if (file.renameTo(new File("/output.txt"))) {
-            System.out.println("Input file renamed successfully in root directory.");
-        } else {
-            System.out.println("Failed to rename input file in root directory.");
-        }
-
-        directory = new File("/docs");
-        if (directory.renameTo(new File("/mydocs"))) {
-            System.out.println("Directory docs renamed successfully in root directory.");
-        } else {
-            System.out.println("Failed to rename directory in root directory.");
+        try {
+            // Rename in the current working directory
+            Files.move(Paths.get("input.txt"), Paths.get("output.txt"));
+            Files.move(Paths.get("docs"), Paths.get("mydocs"));
+            
+            // Rename in the filesystem root
+            Files.move(Paths.get("/input.txt"), Paths.get("/output.txt"));
+            Files.move(Paths.get("/docs"), Paths.get("/mydocs"));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
 ```
+
+This Java code uses the `Files.move` method from the `java.nio.file` package to rename files and directories, similar to how the Golang code uses `os.Rename`.

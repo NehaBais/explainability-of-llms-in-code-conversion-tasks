@@ -1,0 +1,21 @@
+/tmp/qwen2.5coder2b-str_concat-py-c.c:8:16: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   s2 = (char *)malloc((strlen(s1) + strlen(" world")) * sizeof(char));
+      |                ^
+/tmp/qwen2.5coder2b-str_concat-py-c.c:8:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/qwen2.5coder2b-str_concat-py-c.c:8:24: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   s2 = (char *)malloc((strlen(s1) + strlen(" world")) * sizeof(char));
+      |                        ^
+/tmp/qwen2.5coder2b-str_concat-py-c.c:8:24: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/qwen2.5coder2b-str_concat-py-c.c:12:5: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     strcpy(s2, s1);
+      |     ^
+/tmp/qwen2.5coder2b-str_concat-py-c.c:12:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/qwen2.5coder2b-str_concat-py-c.c:13:5: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     strcat(s2, " world");
+      |     ^
+/tmp/qwen2.5coder2b-str_concat-py-c.c:13:5: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/qwen2.5coder2b-str_concat-py-c.c:15:5: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     free(s2);
+      |     ^
+/tmp/qwen2.5coder2b-str_concat-py-c.c:15:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+5 errors generated.

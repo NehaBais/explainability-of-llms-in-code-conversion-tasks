@@ -1,0 +1,8 @@
+/tmp/codeqwen-file_create-c-cpp.cpp:37:3: error: use of undeclared identifier 'If'
+   37 |   If(dir_status == -1) {
+      |   ^
+/tmp/codeqwen-file_create-c-cpp.cpp:37:23: error: expected ';' after expression
+   37 |   If(dir_status == -1) {
+      |                       ^
+      |                       ;
+2 errors generated.

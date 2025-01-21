@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder9b-int_factors-rs-go.go:17:2: undefined: sort
+/tmp/yicoder9b-int_factors-rs-go.go:22:6: undefined: fmt.Assert
+/tmp/yicoder9b-int_factors-rs-go.go:23:6: undefined: fmt.Assert

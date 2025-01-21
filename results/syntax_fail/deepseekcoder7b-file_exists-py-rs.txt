@@ -1,0 +1,26 @@
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:21:1
+   |
+21 | assert!(check_file_exists("input.txt"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:22:1
+   |
+22 | assert!(check_directory_exists("docs"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:25:1
+   |
+25 | assert!(check_file_exists("/input.txt"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:26:1
+   |
+26 | assert!(check_directory_exists("/docs")); // Rust does not support checking if "/docs" exists, you would need to provide an absolute path.
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 4 previous errors
+

@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-file_exists-java-c.c:5:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (access("docs/input.txt", F_OK) == 0) {
+      |       ^
+/tmp/qwen2.5coder2b-file_exists-java-c.c:5:32: error: use of undeclared identifier 'F_OK'
+    5 |   if (access("docs/input.txt", F_OK) == 0) {
+      |                                ^
+/tmp/qwen2.5coder2b-file_exists-java-c.c:12:33: error: use of undeclared identifier 'F_OK'
+   12 |   if (access("/docs/input.txt", F_OK) == 0) {
+      |                                 ^
+3 errors generated.

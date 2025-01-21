@@ -1,0 +1,25 @@
+error[E0599]: no method named `read_i32` found for struct `Stdin` in the current scope
+ --> /tmp/magicoder7b-int_arith-java-rs.rs:8:11
+  |
+8 |     stdin.read_i32(&mut a).unwrap();
+  |           ^^^^^^^^
+  |
+help: there is a method `read` with a similar name
+  |
+8 |     stdin.read(&mut a).unwrap();
+  |           ~~~~
+
+error[E0599]: no method named `read_i32` found for struct `Stdin` in the current scope
+ --> /tmp/magicoder7b-int_arith-java-rs.rs:9:11
+  |
+9 |     stdin.read_i32(&mut b).unwrap();
+  |           ^^^^^^^^
+  |
+help: there is a method `read` with a similar name
+  |
+9 |     stdin.read(&mut b).unwrap();
+  |           ~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

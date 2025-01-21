@@ -1,19 +1,14 @@
-use std::{env, fs::File, io::Read};
-fn main() {
-    let path = env::current_dir().unwrap();
-    println!("{:?}", &path);
-    //let file_name = "input.txt";
-    let mut file = match File::open(format!("{}/input.txt", path.to_string_lossy())) {
-        Ok(f) => f,
-        Err(_e) => {
-            return println!(
-                "[FAILED] to open the input.txt in {} folder, error: {}",
-                &path.display(),
-                _e
-            )
-        }
-    };
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).unwrap();
-    println!("{}", contents);
+use std::fs;
+use std::io;
+
+fn main() -> io::Result<()> {
+    // Get size of input.txt from the current working directory
+    let size_current = fs::metadata("input.txt")?.len();
+    println!("Size of input.txt in current directory: {} bytes", size_current);
+
+    // Get size of input.txt from the root directory
+    let size_root = fs::metadata("/input.txt")?;
+    println!("Size of /input.txt (root directory): {} bytes", size_root.len());
+
+    Ok(())
 }

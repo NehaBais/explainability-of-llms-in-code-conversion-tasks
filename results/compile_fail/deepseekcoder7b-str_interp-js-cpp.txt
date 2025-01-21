@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:10: error: expected expression
+   20 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:11: error: unexpected character <U+FF5C>
+   20 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:19: error: character <U+2581> not allowed in an identifier
+   20 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:24: error: character <U+2581> not allowed in an identifier
+   20 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:35: error: character <U+FF5C> not allowed in an identifier
+   20 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-str_interp-js-cpp.cpp:20:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   20 |   return <｜begin▁of▁sentence｜ >
+      |             ^
+6 errors generated.

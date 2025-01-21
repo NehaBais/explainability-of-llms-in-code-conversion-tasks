@@ -1,0 +1,43 @@
+/tmp/granitecode3b-int_arith-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "Enter two integers: ";
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:7:3: error: use of undeclared identifier 'cin'
+    7 |   cin >> a >> b;
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << a << " + " << b << " = " << a + b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:8:48: error: use of undeclared identifier 'endl'
+    8 |   cout << a << " + " << b << " = " << a + b << endl;
+      |                                                ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << a << " - " << b << " = " << a - b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:9:48: error: use of undeclared identifier 'endl'
+    9 |   cout << a << " - " << b << " = " << a - b << endl;
+      |                                                ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << a << " * " << b << " = " << a * b << endl;
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:10:48: error: use of undeclared identifier 'endl'
+   10 |   cout << a << " * " << b << " = " << a * b << endl;
+      |                                                ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << a << " / " << b << " = " << a / b << endl; // truncates towards 0
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:11:48: error: use of undeclared identifier 'endl'
+   11 |   cout << a << " / " << b << " = " << a / b << endl; // truncates towards 0
+      |                                                ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << a << " %% " << b << " = " << (a % b)
+      |   ^
+/tmp/granitecode3b-int_arith-go-cpp.cpp:13:11: error: use of undeclared identifier 'endl'
+   13 |        << endl; // same sign as first operand
+      |           ^
+1 warning and 13 errors generated.

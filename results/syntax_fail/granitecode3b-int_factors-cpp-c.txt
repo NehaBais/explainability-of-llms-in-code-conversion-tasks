@@ -1,0 +1,69 @@
+/tmp/granitecode3b-int_factors-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:6:9: error: expected "FILENAME" or <FILENAME>
+    6 | #include
+      |         ^
+/tmp/granitecode3b-int_factors-cpp-c.c:10:8: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   10 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ^~~~~~
+      |        sizeof
+/tmp/granitecode3b-int_factors-cpp-c.c:10:17: error: expression is not assignable
+   10 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ~~~~~~~~ ^
+/tmp/granitecode3b-int_factors-cpp-c.c:10:15: error: use of undeclared identifier 'i'
+   10 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |               ^
+/tmp/granitecode3b-int_factors-cpp-c.c:10:22: error: use of undeclared identifier 'i'
+   10 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                      ^
+/tmp/granitecode3b-int_factors-cpp-c.c:10:65: error: use of undeclared identifier 'i'
+   10 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                                                                 ^
+/tmp/granitecode3b-int_factors-cpp-c.c:11:8: error: expected ';' after expression
+   11 |     std::vector factors;
+      |        ^
+      |        ;
+/tmp/granitecode3b-int_factors-cpp-c.c:11:5: error: use of undeclared identifier 'std'
+   11 |     std::vector factors;
+      |     ^
+/tmp/granitecode3b-int_factors-cpp-c.c:11:8: error: expected expression
+   11 |     std::vector factors;
+      |        ^
+/tmp/granitecode3b-int_factors-cpp-c.c:12:32: error: use of undeclared identifier 'i'
+   12 |     int number = SampleNumbers[i];
+      |                                ^
+/tmp/granitecode3b-int_factors-cpp-c.c:15:9: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+   15 |         factors.push_back(factor);
+      |         ^~~~~~~
+      |         factor
+/tmp/granitecode3b-int_factors-cpp-c.c:13:14: note: 'factor' declared here
+   13 |     for (int factor = 2; factor * factor <= number; ++factor) {
+      |              ^
+/tmp/granitecode3b-int_factors-cpp-c.c:15:16: error: member reference base type 'int' is not a structure or union
+   15 |         factors.push_back(factor);
+      |         ~~~~~~~^~~~~~~~~~
+/tmp/granitecode3b-int_factors-cpp-c.c:17:11: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+   17 |           factors.push_back(number / factor);
+      |           ^~~~~~~
+      |           factor
+/tmp/granitecode3b-int_factors-cpp-c.c:13:14: note: 'factor' declared here
+   13 |     for (int factor = 2; factor * factor <= number; ++factor) {
+      |              ^
+/tmp/granitecode3b-int_factors-cpp-c.c:17:18: error: member reference base type 'int' is not a structure or union
+   17 |           factors.push_back(number / factor);
+      |           ~~~~~~~^~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

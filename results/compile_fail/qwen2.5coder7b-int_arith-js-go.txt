@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-int_arith-js-go.go:14:14: invalid operation: a / float64(b) (mismatched types int and float64)
+/tmp/qwen2.5coder7b-int_arith-js-go.go:16:34: invalid operation: cannot indirect float64(b) (value of type float64)

@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-str_substring-js-go.go:23:9: undefined: strings
+/tmp/magicoder7b-str_substring-js-go.go:31:8: undefined: strings

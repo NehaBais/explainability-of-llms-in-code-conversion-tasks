@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:11:22
+   |
+11 |     println!("{}", &s[unicode_segmentation::UnicodeStr::new(&s)[n-1..n+m-1].collect::<String>());
+   |             -        ^ unclosed delimiter                                                      ^ mismatched closing delimiter
+   |             |
+   |             closing delimiter possibly meant for this
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/codegeex4-str_substring-py-rs.rs:14:22
+   |
+14 |     println!("{}", &s[unicode_segmentation::UnicodeStr::new(&s)[n-1..].collect::<String>());
+   |             -        ^ unclosed delimiter                                                 ^ mismatched closing delimiter
+   |             |
+   |             closing delimiter possibly meant for this
+
+error: aborting due to 2 previous errors
+

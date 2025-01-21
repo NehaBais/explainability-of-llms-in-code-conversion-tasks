@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-str_cmp-go-cpp.cpp:7:18: error: expected expression
+    7 |                  [](unsigned char c) { return std::tolower(c); });
+      |                  ^
+/tmp/qwen2.5coder2b-str_cmp-go-cpp.cpp:9:18: error: expected expression
+    9 |                  [](unsigned char c) { return std::tolower(c); });
+      |                  ^
+/tmp/qwen2.5coder2b-str_cmp-go-cpp.cpp:49:4: error: expected '}'
+   49 |   }
+      |    ^
+/tmp/qwen2.5coder2b-str_cmp-go-cpp.cpp:14:12: note: to match this '{'
+   14 | int main() {
+      |            ^
+3 errors generated.

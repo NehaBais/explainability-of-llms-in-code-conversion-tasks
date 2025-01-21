@@ -1,25 +1,20 @@
-function main() {
-  const string = "ABCDEFGH";
+let s = "ABCDEFGH";
+let n = 2;
+let m = 3;
 
-  // starting from n characters in and of m length
-  console.log("Start 2, length 3:", string.slice(2, 5));
+// Display a substring starting from n characters in and of m length
+console.log("Start", n, "length", m, ":    ", s.substring(n, n + m));
 
-  // starting from n characters in, up to the end of the string
-  console.log("Start 2, to end:", string.slice(2));
+// Starting from n characters in, up to the end of the string
+console.log("Start", n, "to end:      ", s.substring(n));
 
-  // whole string minus last character
-  console.log("All but last:", string.slice(0, -1));
+// Whole string minus the last character
+console.log("All but last:         ", s.slice(0, -1));
 
-  // starting from a known character within the string and of m length
-  const idx = string.indexOf("D");
-  console.log(`Start 'D', length 3:`, string.slice(idx, idx + 3));
+// Starting from a known character within the string and of m length
+let dx = s.indexOf("D");
+console.log("Start 'D', length", m, ":  ", s.substring(dx, dx + m));
 
-  // starting from a known substring within the string and of m length
-  const substrIndex = string.indexOf("DE");
-  console.log(
-    'Start "DE", length 3:',
-    string.slice(substrIndex, substrIndex + 3),
-  );
-}
-
-main();
+// Starting from a known substring within the string and of m length
+let sx = s.indexOf("DE");
+console.log(`Start "DE", length ${m}: `, s.substring(sx, sx + m));

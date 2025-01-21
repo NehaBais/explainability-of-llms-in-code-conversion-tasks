@@ -1,0 +1,13 @@
+/tmp/yicoder9b-file_exists-js-cpp.cpp:6:12: error: no member named 'filesystem' in namespace 'std'
+    6 |   if (std::filesystem::exists("input.txt"))
+      |       ~~~~~^
+/tmp/yicoder9b-file_exists-js-cpp.cpp:11:12: error: no member named 'filesystem' in namespace 'std'
+   11 |   if (std::filesystem::exists("docs"))
+      |       ~~~~~^
+/tmp/yicoder9b-file_exists-js-cpp.cpp:17:12: error: no member named 'filesystem' in namespace 'std'
+   17 |   if (std::filesystem::exists("c:\\input.txt"))
+      |       ~~~~~^
+/tmp/yicoder9b-file_exists-js-cpp.cpp:22:12: error: no member named 'filesystem' in namespace 'std'
+   22 |   if (std::filesystem::exists("c:\\docs"))
+      |       ~~~~~^
+4 errors generated.

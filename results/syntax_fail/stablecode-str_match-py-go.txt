@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_match-py-go.go:14:20: str1.StartsWith undefined (type string has no field or method StartsWith)

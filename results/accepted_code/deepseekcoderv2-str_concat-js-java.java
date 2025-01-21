@@ -1,9 +1,9 @@
-package main
-import java.util.Scanner; // Import to read from console
-public class Main{
-    public static void main (String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s = sc.nextLine();
-        System.out.println(s + " there!");
-    }
+public class Main {
+  public static void main(String[] args) {
+    // Create a string variable equal to any text value.
+    String s = "hello";
+
+    // Concatenate another string literal with the original variable and print it.
+    System.out.println(s + " there!");
+  }
 }

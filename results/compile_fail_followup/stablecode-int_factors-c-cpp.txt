@@ -1,0 +1,22 @@
+/tmp/stablecode-int_factors-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_factors-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-int_factors-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-int_factors-c-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::vector<int> list;
+      |   ^
+/tmp/stablecode-int_factors-c-cpp.cpp:7:13: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    7 |   int count = 0;
+      |             ^
+/tmp/stablecode-int_factors-c-cpp.cpp:10:34: error: use of undeclared identifier 'std'
+   10 | void xferFactors(Factors *fctrs, std::vector<int> &flist, int flix) {
+      |                                  ^
+/tmp/stablecode-int_factors-c-cpp.cpp:14:41: error: expected function body after function declarator
+   14 | Factors *factor(int num, Factors *fctrs)) {
+      |                                         ^
+1 warning and 6 errors generated.

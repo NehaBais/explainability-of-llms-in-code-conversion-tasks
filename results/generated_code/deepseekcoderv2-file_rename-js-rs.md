@@ -1,31 +1,24 @@
+ Sure, here is the equivalent Rust code to achieve the same functionality:
+
 ```rust
 use std::fs;
+use std::io;
 
-fn main() {
-    // Rename file in current directory
-    fs::rename("input.txt", "output.txt").unwrap();
+fn main() -> io::Result<()> {
+    // Move file in current working directory
+    fs::rename("input.txt", "output.txt")?;
     
-    // Rename file in filesystem root
-    if let Ok(file_contents) = fs::read_to_string("c:/input.txt") {
-        println!("{}", file_contents);
-        
-        // Write the contents of input.txt to output.txt
-        fs::write("output.txt", file_contents).unwrap();
-    } else {
-        eprintln!("Error: Could not read c:/input.txt");
-    }
+    // Move file in filesystem root (assuming the user has permissions)
+    fs::rename("c:/input.txt", "c:/output.txt")?;
     
-    // Rename directory in current directory
-    fs::rename("docs", "mydocs").unwrap();
+    // Move folder in current working directory
+    fs::rename("docs", "mydocs")?;
     
-    // Rename directory in filesystem root
-    if let Ok(dir_contents) = fs::read_to_string("c:/docs") {
-        println!("{}", dir_contents);
-        
-        // Write the contents of c:/docs to c:/mydocs
-        fs::write("c:/mydocs", dir_contents).unwrap();
-    } else {
-        eprintln!("Error: Could not read c:/docs");
-    }
+    // Move folder in filesystem root (assuming the user has permissions)
+    fs::rename("c:/docs", "c:/mydocs")?;
+
+    Ok(())
 }
 ```
+
+This Rust code uses the `std::fs` module to rename files and directories. The `fs::rename` function is used to move the files and directories as specified. Note that on Windows, paths are typically in the format `C:/path/to/file`, and this code assumes you have permissions to perform these operations.

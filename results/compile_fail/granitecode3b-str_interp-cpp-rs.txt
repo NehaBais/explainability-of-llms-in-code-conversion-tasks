@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `toBeReplaced` in this scope
+ --> /tmp/granitecode3b-str_interp-cpp-rs.rs:5:40
+  |
+5 |     let new_string = original.replace(&toBeReplaced, &replacement);
+  |                                        ^^^^^^^^^^^^ help: a local variable with a similar name exists: `to_be_replaced`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

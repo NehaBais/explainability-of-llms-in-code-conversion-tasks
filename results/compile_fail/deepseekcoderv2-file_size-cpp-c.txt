@@ -1,0 +1,17 @@
+/tmp/deepseekcoderv2-file_size-cpp-c.c:10:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 |         printf("Size of file %s is %ld bytes.
+      |                ^
+/tmp/deepseekcoderv2-file_size-cpp-c.c:10:16: error: expected expression
+/tmp/deepseekcoderv2-file_size-cpp-c.c:11:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 | ", filename, file_info.st_size);
+      | ^
+/tmp/deepseekcoderv2-file_size-cpp-c.c:17:12: error: function definition is not allowed here
+   17 | int main() {
+      |            ^
+/tmp/deepseekcoderv2-file_size-cpp-c.c:21:2: error: expected '}'
+   21 | }
+      |  ^
+/tmp/deepseekcoderv2-file_size-cpp-c.c:7:44: note: to match this '{'
+    7 | void print_file_size(const char *filename) {
+      |                                            ^
+2 warnings and 3 errors generated.

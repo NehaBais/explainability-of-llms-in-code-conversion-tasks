@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-file_create-js-rs.rs:6:1
+  |
+6 | {
+  | ^ unclosed delimiter
+7 |         Ok(_) => (),
+8 |         Err(e) => println!("{}", e)),
+  |                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_create-js-rs.rs:10:1
+   |
+8  |         Err(e) => println!("{}", e)),
+   |                                    - missing open `(` for this delimiter
+9  |     }
+10 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

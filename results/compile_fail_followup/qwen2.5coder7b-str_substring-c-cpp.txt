@@ -1,0 +1,22 @@
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:11:22: error: no template named 'function' in namespace 'std'
+   11 | void test(const std::function<std::string()> &func) {
+      |                 ~~~~~^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:12:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   auto r = func();
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:18:8: error: expected expression
+   18 |   test([s]() { return substring(s, 12, 5); });   // get "short"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:19:8: error: expected expression
+   19 |   test([s]() { return substring(s, 6, -1); });   // get "world shortest program"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:20:8: error: expected expression
+   20 |   test([s]() { return str_wholeless1(s); });     // "... progra"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:21:8: error: expected expression
+   21 |   test([s]() { return str_fromch(s, 'w', 5); }); // "world"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:22:8: error: expected expression
+   22 |   test([s]() { return str_fromstr(s, "ro", 3); }); // "rog"
+      |        ^
+1 warning and 6 errors generated.

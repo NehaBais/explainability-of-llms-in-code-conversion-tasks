@@ -1,0 +1,53 @@
+error: expected one of `=>`, `if`, or `|`, found `->`
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:110
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                                                                                                              ^^
+  |                                                                                                              |
+  |                                                                                                              expected one of `=>`, `if`, or `|`
+  |                                                                                                              help: use a fat arrow to start a match arm: `=>`
+
+error[E0412]: cannot find type `RegExp` in this scope
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:22
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                      ^^^^^^ not found in this scope
+
+error[E0433]: failed to resolve: use of undeclared crate or module `regex`
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:37
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                                     ^^^^^ use of undeclared crate or module `regex`
+
+error[E0277]: can't compare `str` with `&str`
+  --> /tmp/yicoder2b-str_match-js-rs.rs:10:23
+   |
+10 |     if &stringA[0..1] == &stringB{ q1 = true;  }
+   |                       ^^ no implementation for `str == &str`
+   |
+   = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+   = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+   |
+10 -     if &stringA[0..1] == &stringB{ q1 = true;  }
+10 +     if &stringA[0..1] == stringB{ q1 = true;  }
+   |
+
+error[E0277]: can't compare `str` with `&str`
+  --> /tmp/yicoder2b-str_match-js-rs.rs:21:51
+   |
+21 |     if &stringA[&stringA.len() - stringB.len()..] == &stringB{ q3 = true; }
+   |                                                   ^^ no implementation for `str == &str`
+   |
+   = help: the trait `PartialEq<&str>` is not implemented for `str`, which is required by `&str: PartialEq<&&str>`
+   = note: required for `&str` to implement `PartialEq<&&str>`
+help: consider removing the borrow
+   |
+21 -     if &stringA[&stringA.len() - stringB.len()..] == &stringB{ q3 = true; }
+21 +     if &stringA[&stringA.len() - stringB.len()..] == stringB{ q3 = true; }
+   |
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0412, E0433.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,0 +1,5 @@
+/tmp/magicoder7b-str_append-py-c.c:9:17: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   sprintf(str + strlen(str), "%s", "9!");
+      |                 ^
+/tmp/magicoder7b-str_append-py-c.c:9:17: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+1 error generated.

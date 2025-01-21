@@ -1,0 +1,106 @@
+/tmp/Main.java:5: error: illegal start of expression
+        const char *s = "hello world shortest program";
+        ^
+/tmp/Main.java:5: error: not a statement
+        const char *s = "hello world shortest program";
+              ^
+/tmp/Main.java:5: error: ';' expected
+        const char *s = "hello world shortest program";
+                  ^
+/tmp/Main.java:7: error: ';' expected
+        System.out.println(substring(s, 12, 5))); // get "short"
+                                               ^
+/tmp/Main.java:8: error: ';' expected
+        System.out.println(substring(s, 6, -1))); // get "world shortest program"
+                                               ^
+/tmp/Main.java:9: error: ';' expected
+        System.out.println(str_wholeless1(s))); // "... progra"
+                                             ^
+/tmp/Main.java:10: error: ';' expected
+        System.out.println(str_fromch(s, 'w', 5))); // "world"
+                                                 ^
+/tmp/Main.java:11: error: ';' expected
+        System.out.println(str_fromstr(s, "ro", 3)))); // "rog"
+                                                   ^
+/tmp/Main.java:14: error: illegal start of type
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                   ^
+/tmp/Main.java:14: error: <identifier> expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                             ^
+/tmp/Main.java:14: error: <identifier> expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                                ^
+/tmp/Main.java:14: error: ';' expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                                        ^
+/tmp/Main.java:14: error: <identifier> expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                                          ^
+/tmp/Main.java:14: error: ';' expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                                                     ^
+/tmp/Main.java:14: error: <identifier> expected
+    public static char[] substring(const char *s, size_t n, ptrdiff_t m) {
+                                                                       ^
+/tmp/Main.java:33: error: illegal start of type
+    public static char[] str_wholeless1(const char *s) {
+                                        ^
+/tmp/Main.java:33: error: <identifier> expected
+    public static char[] str_wholeless1(const char *s) {
+                                                  ^
+/tmp/Main.java:33: error: <identifier> expected
+    public static char[] str_wholeless1(const char *s) {
+                                                     ^
+/tmp/Main.java:34: error: ';' expected
+        return substring(s, 0, s.length() - 1));
+                                              ^
+/tmp/Main.java:37: error: illegal start of type
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                    ^
+/tmp/Main.java:37: error: <identifier> expected
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                              ^
+/tmp/Main.java:37: error: <identifier> expected
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                                 ^
+/tmp/Main.java:37: error: <identifier> expected
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                                  ^
+/tmp/Main.java:37: error: ';' expected
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                                                    ^
+/tmp/Main.java:37: error: <identifier> expected
+    public static char[] str_fromch(const char *s, int ch, ptrdiff_t m) {
+                                                                      ^
+/tmp/Main.java:46: error: ';' expected
+        return substring(s, s.indexOf("w") - 1, m));
+                                                  ^
+/tmp/Main.java:49: error: illegal start of type
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                     ^
+/tmp/Main.java:49: error: <identifier> expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                               ^
+/tmp/Main.java:49: error: <identifier> expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                                  ^
+/tmp/Main.java:49: error: ';' expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                                          ^
+/tmp/Main.java:49: error: <identifier> expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                                             ^
+/tmp/Main.java:49: error: ';' expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                                                        ^
+/tmp/Main.java:49: error: <identifier> expected
+    public static char[] str_fromstr(const char *s, String in, ptrdiff_t m) {
+                                                                          ^
+/tmp/Main.java:53: error: illegal start of expression
+            if (s.substring(index).indexOf(in) == 0)) {
+                                                    ^
+/tmp/Main.java:58: error: ';' expected
+        return substring(s, index - 1, m));
+                                         ^
+35 errors

@@ -1,0 +1,7 @@
+/tmp/stablecode-int_factors-py-c.c:20:59: error: extraneous ')' before ';'
+   20 |             printf("(%d, %d)\n", factors1[j], factors2[j]));
+      |                                                           ^
+/tmp/stablecode-int_factors-py-c.c:22:78: error: extraneous ')' before ';'
+   22 |             printf("(%d, %d), Factor repetition\n", factors1[j], factors2[j]));
+      |                                                                              ^
+2 errors generated.

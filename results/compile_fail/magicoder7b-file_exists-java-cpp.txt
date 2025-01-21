@@ -1,0 +1,10 @@
+/tmp/magicoder7b-file_exists-java-cpp.cpp:16:8: error: no member named 'filesystem' in namespace 'std'
+   16 |   std::filesystem::path p("/docs/input.txt");
+      |   ~~~~~^
+/tmp/magicoder7b-file_exists-java-cpp.cpp:18:12: error: no member named 'filesystem' in namespace 'std'
+   18 |   if (std::filesystem::exists(p)) {
+      |       ~~~~~^
+/tmp/magicoder7b-file_exists-java-cpp.cpp:18:31: error: use of undeclared identifier 'p'
+   18 |   if (std::filesystem::exists(p)) {
+      |                               ^
+3 errors generated.

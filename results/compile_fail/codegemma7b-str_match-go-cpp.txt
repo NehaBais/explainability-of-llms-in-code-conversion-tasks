@@ -1,0 +1,79 @@
+/tmp/codegemma7b-str_match-go-cpp.cpp:8:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+    8 |       0 << std::endl;
+      |            ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:7:56: warning: overloaded operator << has higher precedence than comparison operator [-Woverloaded-shift-op-parentheses]
+    6 |   std::cout << "1. " << first << " starts with " << second << ": "
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    7 |             << first.compare(0, second.size(), second) ==
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+    8 |       0 << std::endl;
+      |       ~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_match-go-cpp.cpp:7:13: note: place parentheses around the '<<' expression to silence this warning
+    6 |   std::cout << "1. " << first << " starts with " << second << ": "
+      |   (
+    7 |             << first.compare(0, second.size(), second) ==
+      |             ^
+      |                                                       )
+/tmp/codegemma7b-str_match-go-cpp.cpp:7:56: note: place parentheses around comparison expression to evaluate it first
+    7 |             << first.compare(0, second.size(), second) ==
+      |                                                        ^
+      |                (
+    8 |       0 << std::endl;
+      |                     
+      |                     )
+/tmp/codegemma7b-str_match-go-cpp.cpp:11:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   11 |       0 << std::endl;
+      |            ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:10:70: warning: overloaded operator << has higher precedence than comparison operator [-Woverloaded-shift-op-parentheses]
+   10 |   std::cout << "2. " << first << " contains " << second << ": " << i >=
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+   11 |       0 << std::endl;
+      |       ~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_match-go-cpp.cpp:10:65: note: place parentheses around the '<<' expression to silence this warning
+   10 |   std::cout << "2. " << first << " contains " << second << ": " << i >=
+      |                                                                 ^
+      |   (                                                                 )
+/tmp/codegemma7b-str_match-go-cpp.cpp:10:70: note: place parentheses around comparison expression to evaluate it first
+   10 |   std::cout << "2. " << first << " contains " << second << ": " << i >=
+      |                                                                      ^
+      |                                                                    (
+   11 |       0 << std::endl;
+      |                     
+      |                     )
+/tmp/codegemma7b-str_match-go-cpp.cpp:24:12: error: reference to overloaded function could not be resolved; did you mean to call it?
+   24 |       0 << std::endl;
+      |            ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: possible target for call
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/codegemma7b-str_match-go-cpp.cpp:23:38: warning: overloaded operator << has higher precedence than comparison operator [-Woverloaded-shift-op-parentheses]
+   21 |   std::cout << "3. " << first << " ends with " << second << ": "
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   22 |             << first.compare(first.size() - second.size(), second.size(),
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   23 |                              second) ==
+      |                              ~~~~~~~ ^
+   24 |       0 << std::endl;
+      |       ~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_match-go-cpp.cpp:22:13: note: place parentheses around the '<<' expression to silence this warning
+   21 |   std::cout << "3. " << first << " ends with " << second << ": "
+      |   (
+   22 |             << first.compare(first.size() - second.size(), second.size(),
+      |             ^
+   23 |                              second) ==
+      |                                     )
+/tmp/codegemma7b-str_match-go-cpp.cpp:23:38: note: place parentheses around comparison expression to evaluate it first
+   22 |             << first.compare(first.size() - second.size(), second.size(),
+      |                (
+   23 |                              second) ==
+      |                                      ^
+   24 |       0 << std::endl;
+      |                     
+      |                     )
+3 warnings and 3 errors generated.

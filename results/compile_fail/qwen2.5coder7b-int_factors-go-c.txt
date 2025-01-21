@@ -1,0 +1,45 @@
+/tmp/qwen2.5coder7b-int_factors-go-c.c:19:18: warning: & has lower precedence than ==; == will be evaluated first [-Wparentheses]
+   19 |   for (e = 0; nr & 1 == 0; e++)
+      |                  ^~~~~~~~
+/tmp/qwen2.5coder7b-int_factors-go-c.c:19:18: note: place parentheses around the '==' expression to silence this warning
+   19 |   for (e = 0; nr & 1 == 0; e++)
+      |                  ^       
+      |                    (     )
+/tmp/qwen2.5coder7b-int_factors-go-c.c:19:18: note: place parentheses around the & expression to evaluate it first
+   19 |   for (e = 0; nr & 1 == 0; e++)
+      |                  ^
+      |               (     )
+/tmp/qwen2.5coder7b-int_factors-go-c.c:23:3: error: call to undeclared function 'apf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   apf(2, e);
+      |   ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:25:8: error: use of undeclared identifier 'd'
+   25 |   for (d = 3; nr > 1; d += 2) {
+      |        ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:25:23: error: use of undeclared identifier 'd'
+   25 |   for (d = 3; nr > 1; d += 2) {
+      |                       ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:26:9: error: use of undeclared identifier 'd'
+   26 |     if (d * d > nr)
+      |         ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:26:13: error: use of undeclared identifier 'd'
+   26 |     if (d * d > nr)
+      |             ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:27:7: error: use of undeclared identifier 'd'
+   27 |       d = nr;
+      |       ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:30:22: error: use of undeclared identifier 'd'
+   30 |     for (e = 0; nr % d == 0; e++)
+      |                      ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:31:13: error: use of undeclared identifier 'd'
+   31 |       nr /= d;
+      |             ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:34:11: error: use of undeclared identifier 'd'
+   34 |       apf(d, e);
+      |           ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:39:18: warning: 'sizeof (fs)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+   39 |   n = sizeof(fs) / sizeof(fs[0]);
+      |       ~~~~~~~~~~ ^
+/tmp/qwen2.5coder7b-int_factors-go-c.c:13:12: note: pointer 'fs' declared here
+   13 |   int64_t *fs = malloc(sizeof(int64_t));
+      |            ^
+2 warnings and 9 errors generated.

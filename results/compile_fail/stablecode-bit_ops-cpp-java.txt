@@ -1,0 +1,49 @@
+/tmp/BitwiseOperations.java:11: error: ';' expected
+        System.out.println("a and b: " + (a & b)));
+                                                 ^
+/tmp/BitwiseOperations.java:12: error: ';' expected
+        System.out.println("a or b:  " + (a | b)));
+                                                 ^
+/tmp/BitwiseOperations.java:13: error: ';' expected
+        System.out.println("a xor b: " + (a ^ b))));
+                                                 ^
+/tmp/BitwiseOperations.java:17: error: ';' expected
+        System.out.println("not a:   " + notA));
+                                              ^
+/tmp/BitwiseOperations.java:21: error: ';' expected
+        System.out.println("a shl b: " + aShiftL));
+                                                 ^
+/tmp/BitwiseOperations.java:25: error: ';' expected
+        System.out.println("a shr b:  " + aShiftR));
+                                                  ^
+/tmp/BitwiseOperations.java:28: error: ';' expected
+        int arithmeticRightShift = (int) Math.round(a * Math.pow(2, -b))));
+                                                                        ^
+/tmp/BitwiseOperations.java:29: error: ';' expected
+        System.out.println("a arshr b: " + arithmeticRightShift));
+                                                                ^
+/tmp/BitwiseOperations.java:32: error: ';' expected
+        int aRotateL = IntStream.rangeClosed(1, Integer.MAX_VALUE)).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> x % a)).findFirst().getAsInt());
+                                                                  ^
+/tmp/BitwiseOperations.java:32: error: ';' expected
+        int aRotateL = IntStream.rangeClosed(1, Integer.MAX_VALUE)).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> x % a)).findFirst().getAsInt());
+                                                                                                                                 ^
+/tmp/BitwiseOperations.java:32: error: ';' expected
+        int aRotateL = IntStream.rangeClosed(1, Integer.MAX_VALUE)).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> x % a)).findFirst().getAsInt());
+                                                                                                                                                         ^
+/tmp/BitwiseOperations.java:33: error: ';' expected
+        System.out.println("a rol b:  " + aRotateL));
+                                                   ^
+/tmp/BitwiseOperations.java:36: error: ';' expected
+        int aRightRotate = IntStream.rangeClosed(1, Integer.MAX_VALUE))).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> ((x % a) + a) % a)).findFirst().getAsInt());
+                                                                      ^
+/tmp/BitwiseOperations.java:36: error: ';' expected
+        int aRightRotate = IntStream.rangeClosed(1, Integer.MAX_VALUE))).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> ((x % a) + a) % a)).findFirst().getAsInt());
+                                                                                                                                                  ^
+/tmp/BitwiseOperations.java:36: error: ';' expected
+        int aRightRotate = IntStream.rangeClosed(1, Integer.MAX_VALUE))).filter(x -> x <= (Integer.MAX_VALUE / a) * b).map(x -> ((x % a) + a) % a)).findFirst().getAsInt());
+                                                                                                                                                                          ^
+/tmp/BitwiseOperations.java:37: error: ';' expected
+        System.out.println("a ror b:  " + aRightRotate));
+                                                       ^
+16 errors

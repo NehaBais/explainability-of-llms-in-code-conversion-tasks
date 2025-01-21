@@ -1,0 +1,15 @@
+/tmp/codegeex4-bit_ops-go-c.c:36:38: error: use of undeclared identifier 'rort'; did you mean 'short'?
+   36 |   printf("ror: %016llx\n", (uint64_t)rort);
+      |                                      ^~~~
+      |                                      short
+/tmp/codegeex4-bit_ops-go-c.c:36:38: error: address of overloaded function 'rint' does not match required type 'unsigned long long'
+   36 |   printf("ror: %016llx\n", (uint64_t)rort);
+      |                                      ^~~~
+/tmp/codegeex4-bit_ops-go-c.c:40:24: error: expected identifier or '('
+   40 |   int16_t a, b = -460, 6;
+      |                        ^
+/tmp/codegeex4-bit_ops-go-c.c:40:23: error: expected ';' at end of declaration
+   40 |   int16_t a, b = -460, 6;
+      |                       ^
+      |                       ;
+4 errors generated.

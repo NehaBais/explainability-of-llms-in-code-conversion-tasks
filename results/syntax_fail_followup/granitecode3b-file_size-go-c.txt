@@ -1,0 +1,25 @@
+/tmp/granitecode3b-file_size-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-go-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_size-go-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("stat");
+      |     ^
+/tmp/granitecode3b-file_size-go-c.c:11:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     perror("stat");
+      |     ^
+/tmp/granitecode3b-file_size-go-c.c:14:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   printf("%zu %zun", st1.st_size, st2.st_size);
+      |   ^
+/tmp/granitecode3b-file_size-go-c.c:14:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_size-go-c.c:14:22: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   14 |   printf("%zu %zun", st1.st_size, st2.st_size);
+      |           ~~~        ^~~~~~~~~~~
+      |           %lld
+/tmp/granitecode3b-file_size-go-c.c:14:35: warning: format specifies type 'size_t' (aka 'unsigned long') but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   14 |   printf("%zu %zun", st1.st_size, st2.st_size);
+      |               ~~~                 ^~~~~~~~~~~
+      |               %lld
+2 warnings and 5 errors generated.

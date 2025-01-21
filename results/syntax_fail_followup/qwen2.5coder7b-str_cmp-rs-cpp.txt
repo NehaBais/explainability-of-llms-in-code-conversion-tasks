@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-str_cmp-rs-cpp.cpp:24:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |   auto areEqual = [](unsigned char a, unsigned char b) -> bool {
+      |   ^
+/tmp/qwen2.5coder7b-str_cmp-rs-cpp.cpp:24:19: error: expected expression
+   24 |   auto areEqual = [](unsigned char a, unsigned char b) -> bool {
+      |                   ^
+1 warning and 1 error generated.

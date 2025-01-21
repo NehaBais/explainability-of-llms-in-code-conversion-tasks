@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_size-go-c.c:11:23: error: no member named 'f' in 'struct stat'
+   11 |   if ((status = stat->f, &stat)) != 0) {
+      |                 ~~~~  ^
+/tmp/codellama7b-file_size-go-c.c:11:34: error: expected expression
+   11 |   if ((status = stat->f, &stat)) != 0) {
+      |                                  ^
+/tmp/codellama7b-file_size-go-c.c:19:23: error: no member named 'root_file' in 'struct stat'
+   19 |   if ((status = stat->root_file, &stat)) != 0) {
+      |                 ~~~~  ^
+/tmp/codellama7b-file_size-go-c.c:19:42: error: expected expression
+   19 |   if ((status = stat->root_file, &stat)) != 0) {
+      |                                          ^
+4 errors generated.

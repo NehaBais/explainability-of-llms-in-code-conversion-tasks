@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-bit_ops-java-go.go:23:39: syntax error: unexpected >, expected expression

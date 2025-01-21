@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/deepseekcoder7b-str_substring-c-rs.rs:9:24
+  |
+9 |     else {return Some(s[((n as usize)..((n+m) as usize)).to_string());}}
+  |                      - ^ unclosed delimiter                         ^ mismatched closing delimiter
+  |                      |
+  |                      closing delimiter possibly meant for this
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/deepseekcoder7b-str_substring-c-rs.rs:10:1
+   |
+9  |     else {return Some(s[((n as usize)..((n+m) as usize)).to_string());}}
+   |                                                                     - missing open `(` for this delimiter
+10 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

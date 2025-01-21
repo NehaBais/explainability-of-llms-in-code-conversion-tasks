@@ -1,11 +1,25 @@
 import os
 
 
-def mkdir_p(path):
+def mkdirp(p):
+    p = os.path.normpath(p)
     try:
-        os.makedirs(path)
-    except OSError as exc:  # Python >2.5
-        if exc.errno == errno.EEXIST and os.path.isdir(path):
-            pass
+        os.makedirs(p, exist_ok=True)
+        return True
+    except Exception as e:
+        if "ENOENT" in str(e):
+            parent_dir = os.path.dirname(p)
+            mkdirp(parent_dir)
+            try:
+                os.makedirs(p, exist_ok=True)
+                return True
+            except Exception as e:
+                print(f"Error creating directory {p}: {e}")
+                return False
         else:
-            raise
+            print(f"Error creating directory {p}: {e}")
+            return False
+
+
+# Example usage:
+mkdirp("./path/to/dir")

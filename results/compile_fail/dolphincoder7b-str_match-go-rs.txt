@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/dolphincoder7b-str_match-go-rs.rs:3:37
+  |
+3 | fn match(first: &str, second: &str) {
+  |                                     ^ unclosed delimiter
+...
+6 |     let re = Regex::new(&format!("(?<={}", second)).as_str()).unwrap();
+  |                                                             ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/dolphincoder7b-str_match-go-rs.rs:12:1
+   |
+6  |     let re = Regex::new(&format!("(?<={}", second)).as_str()).unwrap();
+   |                                                             - missing open `(` for this delimiter
+...
+12 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

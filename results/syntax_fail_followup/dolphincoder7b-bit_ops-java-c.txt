@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-bit_ops-java-c.c:10:77: error: expected ')'
+   10 |     printf("a rol b: %d\n", (int)((((unsigned int)a  << b) | (a>>(32 - b))));   //rotate left, C99+
+      |                                                                             ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:10:11: note: to match this '('
+   10 |     printf("a rol b: %d\n", (int)((((unsigned int)a  << b) | (a>>(32 - b))));   //rotate left, C99+
+      |           ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:11:77: error: expected ')'
+   11 |     printf("a ror b: %d\n", (int)((((unsigned int)a  >> b) | (a<<(32 - b))));   //rotate right, C99+
+      |                                                                             ^
+/tmp/dolphincoder7b-bit_ops-java-c.c:11:11: note: to match this '('
+   11 |     printf("a ror b: %d\n", (int)((((unsigned int)a  >> b) | (a<<(32 - b))));   //rotate right, C99+
+      |           ^
+2 errors generated.

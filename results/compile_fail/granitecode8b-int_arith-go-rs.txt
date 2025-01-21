@@ -1,0 +1,15 @@
+error[E0599]: no method named `trim` found for type `{integer}` in the current scope
+ --> /tmp/granitecode8b-int_arith-go-rs.rs:7:11
+  |
+7 |     a = a.trim().parse().unwrap();
+  |           ^^^^ method not found in `{integer}`
+
+error[E0599]: no method named `trim` found for type `{integer}` in the current scope
+ --> /tmp/granitecode8b-int_arith-go-rs.rs:8:11
+  |
+8 |     b = b.trim().parse().unwrap();
+  |           ^^^^ method not found in `{integer}`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

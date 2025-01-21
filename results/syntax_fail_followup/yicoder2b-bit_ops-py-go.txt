@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-bit_ops-py-go.go:35:33: expected statement, found ')' (and 4 more errors)

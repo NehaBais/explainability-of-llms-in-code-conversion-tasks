@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_prepend-go-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+4 |     s = format!("{}{}", hello, s));
+  |                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_prepend-go-rs.rs:6:22
+  |
+4 |     s = format!("{}{}", hello, s));
+  |                                  - missing open `(` for this delimiter
+5 |
+6 |     println!("{}", s));
+  |                      ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

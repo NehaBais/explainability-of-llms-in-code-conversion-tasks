@@ -1,0 +1,21 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/stablecode-str_cmp-java-rs.rs:3:2
+  |
+3 | }
+  |  ^ consider adding a `main` function to `/tmp/stablecode-str_cmp-java-rs.rs`
+
+error[E0599]: no method named `eq_ignore_ascii_whitespace` found for reference `&str` in the current scope
+ --> /tmp/stablecode-str_cmp-java-rs.rs:2:7
+  |
+2 |     a.eq_ignore_ascii_whitespace(b)
+  |       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+help: there is a method `eq_ignore_ascii_case` with a similar name
+  |
+2 |     a.eq_ignore_ascii_case(b)
+  |       ~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

@@ -1,0 +1,59 @@
+/tmp/granitecode8b-str_concat-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string s1 = "hello";
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << s1 + " world" << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:5:33: error: use of undeclared identifier 'std'
+    5 |   std::cout << s1 + " world" << std::endl;
+      |                                 ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string s2 = s1 + " world";
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::cout << s2 << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:7:22: error: use of undeclared identifier 'std'
+    7 |   std::cout << s2 << std::endl;
+      |                      ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:9:3: error: use of undeclared identifier 'std'
+    9 |   std::vector strs = {"world", "mom"};
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:10:3: error: use of undeclared identifier 'std'
+   10 |   std::string s3 = ", ".join(strs);
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:10:24: error: member reference base type 'const char[3]' is not a structure or union
+   10 |   std::string s3 = ", ".join(strs);
+      |                    ~~~~^~~~~
+/tmp/granitecode8b-str_concat-py-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::cout << ", ".join({s1, s3}) << std::endl;
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:11:20: error: member reference base type 'const char[3]' is not a structure or union
+   11 |   std::cout << ", ".join({s1, s3}) << std::endl;
+      |                ~~~~^~~~~
+/tmp/granitecode8b-str_concat-py-cpp.cpp:11:26: error: expected expression
+   11 |   std::cout << ", ".join({s1, s3}) << std::endl;
+      |                          ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:11:39: error: use of undeclared identifier 'std'
+   11 |   std::cout << ", ".join({s1, s3}) << std::endl;
+      |                                       ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::string s4 = ", ".join({s1, s3});
+      |   ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:12:24: error: member reference base type 'const char[3]' is not a structure or union
+   12 |   std::string s4 = ", ".join({s1, s3});
+      |                    ~~~~^~~~~
+/tmp/granitecode8b-str_concat-py-cpp.cpp:12:30: error: expected expression
+   12 |   std::string s4 = ", ".join({s1, s3});
+      |                              ^
+/tmp/granitecode8b-str_concat-py-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << s4 << std::endl;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

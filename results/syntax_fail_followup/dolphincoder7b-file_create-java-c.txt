@@ -1,0 +1,16 @@
+/tmp/dolphincoder7b-file_create-java-c.c:10:13: error: call to undeclared function 'creat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   if ((int)(creat(filename, S_IRUSR | S_IWUSR | S_IXUSR)) != 0) {
+      |             ^
+/tmp/dolphincoder7b-file_create-java-c.c:15:23: error: expected ')'
+   15 |   if ((int)(creat("/" filename, S_IRUSR | S_IWUSR | S_IXUSR)) != 0) {
+      |                       ^
+/tmp/dolphincoder7b-file_create-java-c.c:15:18: note: to match this '('
+   15 |   if ((int)(creat("/" filename, S_IRUSR | S_IWUSR | S_IXUSR)) != 0) {
+      |                  ^
+/tmp/dolphincoder7b-file_create-java-c.c:25:24: error: incompatible pointer to integer conversion passing 'const char *' to parameter of type 'mode_t' (aka 'unsigned short') [-Wint-conversion]
+   25 |   if ((int)(mkdir("/", dirname)) != 0) {
+      |                        ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:385:35: note: passing argument to parameter here
+  385 | int     mkdir(const char *, mode_t);
+      |                                   ^
+3 errors generated.

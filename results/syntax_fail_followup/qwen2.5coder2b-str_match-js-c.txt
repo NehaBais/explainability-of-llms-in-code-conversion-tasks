@@ -1,0 +1,9 @@
+/tmp/qwen2.5coder2b-str_match-js-c.c:47:21: error: invalid operands to binary expression ('int' and 'const char[9]')
+   47 |            (int)(q2 - stringA));
+      |                  ~~ ^ ~~~~~~~
+/tmp/qwen2.5coder2b-str_match-js-c.c:47:12: warning: data argument not used by format string [-Wformat-extra-args]
+   46 |     printf("2: Is '%s' contained in '%s'? Yes.\n", stringB, stringA,
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   47 |            (int)(q2 - stringA));
+      |            ^
+1 warning and 1 error generated.

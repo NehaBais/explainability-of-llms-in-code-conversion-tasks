@@ -1,0 +1,9 @@
+error[E0599]: no method named `display` found for struct `String` in the current scope
+ --> /tmp/granitecode3b-dir_make-cpp-rs.rs:9:60
+  |
+9 |             eprintln!("Error creating directory: {}", path.display());
+  |                                                            ^^^^^^^ method not found in `String`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

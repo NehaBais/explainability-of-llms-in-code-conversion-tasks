@@ -1,0 +1,23 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:3:2
+  |
+3 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-bit_ops-cpp-rs.rs`
+
+warning: unused variable: `a`
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:1:26
+  |
+1 | fn bitwise<const A: i32>(a: i32, b: i32) {
+  |                          ^ help: if this is intentional, prefix it with an underscore: `_a`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `b`
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:1:34
+  |
+1 | fn bitwise<const A: i32>(a: i32, b: i32) {
+  |                                  ^ help: if this is intentional, prefix it with an underscore: `_b`
+
+error: aborting due to 1 previous error; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0601`.

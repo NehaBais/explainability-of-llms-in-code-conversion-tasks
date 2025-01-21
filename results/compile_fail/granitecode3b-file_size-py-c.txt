@@ -1,0 +1,32 @@
+/tmp/granitecode3b-file_size-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-py-c.c:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat file_stat1, file_stat2;
+      |               ^
+/tmp/granitecode3b-file_size-py-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat file_stat1, file_stat2;
+      |          ^
+/tmp/granitecode3b-file_size-py-c.c:5:27: error: variable has incomplete type 'struct stat'
+    5 |   struct stat file_stat1, file_stat2;
+      |                           ^
+/tmp/granitecode3b-file_size-py-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat file_stat1, file_stat2;
+      |          ^
+/tmp/granitecode3b-file_size-py-c.c:8:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (stat("input.txt", &file_stat1) == 0) {
+      |       ^
+/tmp/granitecode3b-file_size-py-c.c:9:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     printf("File size of input.txt: %ldn", file_stat1.st_size);
+      |     ^
+/tmp/granitecode3b-file_size-py-c.c:9:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_size-py-c.c:11:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     perror("Error getting file size of input.txt");
+      |     ^
+/tmp/granitecode3b-file_size-py-c.c:18:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     perror("Error getting file size of /input.txt");
+      |     ^
+8 errors generated.

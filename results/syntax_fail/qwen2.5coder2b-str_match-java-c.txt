@@ -1,0 +1,34 @@
+/tmp/qwen2.5coder2b-str_match-java-c.c:27:15: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   27 |   while ((pos = strstr(str1 + pos, str2)) != NULL) {
+      |               ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:27:43: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   27 |   while ((pos = strstr(str1 + pos, str2)) != NULL) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:34:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   34 |   int loc = strstr(str1, str2);
+      |       ^     ~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:35:11: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   35 |   if (loc != NULL) {
+      |       ~~~ ^  ~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:37:16: error: invalid operands to binary expression ('int' and 'const char *')
+   37 |            loc - str1);
+      |            ~~~ ^ ~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:67:7: error: incompatible pointer to integer conversion initializing 'int' with an expression of type 'char *' [-Wint-conversion]
+   67 |   int loc = strstr(str1, "ab");
+      |       ^     ~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:68:14: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   68 |   while (loc != NULL) {
+      |          ~~~ ^  ~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:69:58: error: invalid operands to binary expression ('int' and 'const char *')
+   69 |     printf("Found occurrence of 'ab' at index %d\n", loc - str1);
+      |                                                      ~~~ ^ ~~~~
+/tmp/qwen2.5coder2b-str_match-java-c.c:70:18: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   70 |     loc = strstr(loc + 1, "ab");
+      |                  ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:26: note: passing argument to parameter '__big' here
+   89 | char    *strstr(const char *__big, const char *__little);
+      |                             ^
+/tmp/qwen2.5coder2b-str_match-java-c.c:70:9: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   70 |     loc = strstr(loc + 1, "ab");
+      |         ^ ~~~~~~~~~~~~~~~~~~~~~
+3 warnings and 7 errors generated.

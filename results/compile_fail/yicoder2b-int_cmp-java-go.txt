@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/yicoder2b-int_cmp-java-go.go:10:28: undefined: os
+/tmp/yicoder2b-int_cmp-java-go.go:14:6: assignment mismatch: 1 variable but reader.Read returns 2 values
+/tmp/yicoder2b-int_cmp-java-go.go:14:18: cannot use &nbr1 (value of type *int) as []byte value in argument to reader.Read
+/tmp/yicoder2b-int_cmp-java-go.go:17:6: assignment mismatch: 1 variable but reader.Read returns 2 values
+/tmp/yicoder2b-int_cmp-java-go.go:17:18: cannot use &nbr2 (value of type *int) as []byte value in argument to reader.Read

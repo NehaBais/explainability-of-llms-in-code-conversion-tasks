@@ -1,0 +1,31 @@
+error[E0277]: the trait bound `u32: From<i16>` is not satisfied
+  --> /tmp/deepseekcoderv2-bit_ops-go-rs.rs:17:21
+   |
+17 |     let ub: u32 = b.into();
+   |                     ^^^^ the trait `From<i16>` is not implemented for `u32`, which is required by `i16: Into<_>`
+   |
+   = help: the following other types implement trait `From<T>`:
+             `u32` implements `From<Char>`
+             `u32` implements `From<Ipv4Addr>`
+             `u32` implements `From<bool>`
+             `u32` implements `From<char>`
+             `u32` implements `From<u16>`
+             `u32` implements `From<u8>`
+   = note: required for `i16` to implement `Into<u32>`
+
+error[E0425]: cannot find function `uint16` in this scope
+  --> /tmp/deepseekcoderv2-bit_ops-go-rs.rs:29:23
+   |
+29 |     let shift_right = uint16(ua >> ub) >> (16 - ub);
+   |                       ^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `uint16` in this scope
+  --> /tmp/deepseekcoderv2-bit_ops-go-rs.rs:32:23
+   |
+32 |     let shift_right = uint16(ua >> ub) << (16 - ub);
+   |                       ^^^^^^ not found in this scope
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0277, E0425.
+For more information about an error, try `rustc --explain E0277`.

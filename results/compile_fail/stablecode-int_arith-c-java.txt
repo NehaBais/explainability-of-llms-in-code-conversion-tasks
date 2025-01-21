@@ -1,0 +1,16 @@
+/tmp/Main.java:13: error: ';' expected
+        System.out.println("a+b = " + (a + b)));
+                                              ^
+/tmp/Main.java:14: error: ';' expected
+        System.out.println("a-b = " + (a - b)));
+                                              ^
+/tmp/Main.java:15: error: ';' expected
+        System.out.println("a*b = " + (a * b)));
+                                              ^
+/tmp/Main.java:18: error: ';' expected
+        System.out.println("a/b = " + ((double) a / b))));
+                                                       ^
+/tmp/Main.java:19: error: ';' expected
+        System.out.println("a%%b = " + (a % b)));
+                                               ^
+5 errors

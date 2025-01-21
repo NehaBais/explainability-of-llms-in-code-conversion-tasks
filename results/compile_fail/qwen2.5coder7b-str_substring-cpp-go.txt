@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_substring-cpp-go.go:20:40: cannot use sub[0] (value of type byte) as rune value in argument to runeIndex

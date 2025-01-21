@@ -1,47 +1,41 @@
-### Solution - Bitwise Operations
+ Here's the JavaScript equivalent of the provided C code, which performs bitwise operations on two integers `a` and `b`:
 
 ```javascript
-function bitwise(a, b) {
-    let result = {};
+function bitwise(int a, int b) {
+    console.log("a and b:", a & b);
+    console.log("a or b:", a | b);
+    console.log("a xor b:", a ^ b);
+    console.log("not a:", ~a);
+    console.log("a << n (left shift):", a << b); // Left shift is straightforward in JavaScript
+    console.log("a >> n (right arithmetic shift, assuming signed integer):", a >> b);
+    console.log("c >> n (logical right shift, treating signed int as unsigned):", 
+                 ((a & 0xFFFFFFFF) >>> b)); // Logical shift right for a signed integer
 
-    // AND operation
-    result.and = a & b;
-
-    // OR operation
-    result.or = a | b;
-
-    // XOR operation
-    result.xor = a ^ b;
-
-    // NOT operation (bitwise complement)
-    result.notA = ~a;
-
-    // Left shift
-    result.leftShift = a << b;
-
-    // Right arithmetic shift (arithmetic right shift)
-    result.rightArithmeticShift = Math.floor(a / 2 ** b); // Convert to integer for consistency with C behavior
-
-    // Logical right shift (logical right shift)
-    let unsignedA = a & ((1 << 32) - 1); // Ensure the integer is treated as an unsigned value
-    result.rightLogicalShift = unsignedA >>> b;
-
-    // Left rotation (not supported in C, but you can implement it)
-    function leftRotate(value, shiftAmount) {
-        const bitCount = 32; // Assuming a 32-bit integer
-        return (value << shiftAmount) | (value >> (bitCount - shiftAmount));
+    // For left rotate and right rotate, JavaScript doesn't have built-in operators, so we simulate them:
+    function leftRotate(value, shiftBits) {
+        const bits = value.toString(2).padStart(32, '0').split('');
+        while (shiftBits-- > 0) {
+            const msb = bits.pop();
+            bits.unshift(msb);
+        }
+        return parseInt(bits.join(''), 2);
     }
 
-    result.leftRotate = leftRotate(a, b);
-
-    // Right rotation (not supported in C, but you can implement it)
-    function rightRotate(value, shiftAmount) {
-        const bitCount = 32; // Assuming a 32-bit integer
-        return (value >> shiftAmount) | (value << (bitCount - shiftAmount));
+    function rightRotate(value, shiftBits) {
+        const bits = value.toString(2).padStart(32, '0').split('');
+        while (shiftBits-- > 0) {
+            const lsb = bits.shift();
+            bits.push(lsb);
+        }
+        return parseInt(bits.join(''), 2);
     }
 
-    result.rightRotate = rightRotate(a, b);
-
-    return result;
+    console.log("a << b (left rotate):", leftRotate(a, b));
+    console.log("a >> b (right rotate):", rightRotate(a, b));
 }
+
+// Example usage:
+bitwise(5, 3); // Assuming a and b are integers
 ```
+
+This JavaScript function `bitwise` performs the same operations as the C code you provided but includes additional logic for simulating left and right rotations since JavaScript does not have built-in operators for these operations. The logical shift (`>>>`) is used to simulate a right shift operation, treating signed integers as if they were unsigned in this specific case.

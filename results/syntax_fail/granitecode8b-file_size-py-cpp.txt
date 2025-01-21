@@ -1,0 +1,68 @@
+/tmp/granitecode8b-file_size-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string filename1 = "input.txt";
+      |   ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string filename2 = "/input.txt";
+      |   ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:5:15: error: use of undeclared identifier 'filename2'; did you mean 'filename1'?
+    5 |   std::string filename2 = "/input.txt";
+      |               ^~~~~~~~~
+      |               filename1
+/tmp/granitecode8b-file_size-py-cpp.cpp:4:15: note: 'filename1' declared here
+    4 |   std::string filename1 = "input.txt";
+      |               ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat info1, info2;
+      |               ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:6:10: note: forward declaration of 'stat'
+    6 |   struct stat info1, info2;
+      |          ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:6:22: error: variable has incomplete type 'struct stat'
+    6 |   struct stat info1, info2;
+      |                      ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:6:10: note: forward declaration of 'stat'
+    6 |   struct stat info1, info2;
+      |          ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:8:39: error: invalid operands to binary expression ('stat' and 'int')
+    8 |   if (stat(filename1.c_str(), &info1) != 0) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/granitecode8b-file_size-py-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cerr << "Error getting file size for " << filename1 << std::endl;
+      |     ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:9:65: error: use of undeclared identifier 'std'
+    9 |     std::cerr << "Error getting file size for " << filename1 << std::endl;
+      |                                                                 ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:13:12: error: use of undeclared identifier 'filename2'
+   13 |   if (stat(filename2.c_str(), &info2) != 0) {
+      |            ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:14:5: error: use of undeclared identifier 'std'
+   14 |     std::cerr << "Error getting file size for " << filename2 << std::endl;
+      |     ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:14:52: error: use of undeclared identifier 'filename2'
+   14 |     std::cerr << "Error getting file size for " << filename2 << std::endl;
+      |                                                    ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:14:65: error: use of undeclared identifier 'std'
+   14 |     std::cerr << "Error getting file size for " << filename2 << std::endl;
+      |                                                                 ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:18:3: error: use of undeclared identifier 'std'
+   18 |   std::cout << "File size for " << filename1 << ": " << info1.st_size
+      |   ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:19:16: error: use of undeclared identifier 'std'
+   19 |             << std::endl;
+      |                ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:20:3: error: use of undeclared identifier 'std'
+   20 |   std::cout << "File size for " << filename2 << ": " << info2.st_size
+      |   ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:20:36: error: use of undeclared identifier 'filename2'
+   20 |   std::cout << "File size for " << filename2 << ": " << info2.st_size
+      |                                    ^
+/tmp/granitecode8b-file_size-py-cpp.cpp:21:16: error: use of undeclared identifier 'std'
+   21 |             << std::endl;
+      |                ^
+19 errors generated.

@@ -1,0 +1,15 @@
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:10:25
+   |
+10 |         .read_line(&mut First)
+   |                         ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error[E0425]: cannot find value `First` in this scope
+  --> /tmp/codeqwen-int_arith-c-rs.rs:16:28
+   |
+16 |     let First: i32 = match First.trim().parse() {
+   |                            ^^^^^ help: a local variable with a similar name exists (notice the capitalization): `first`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

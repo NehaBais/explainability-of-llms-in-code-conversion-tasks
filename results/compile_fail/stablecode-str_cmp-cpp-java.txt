@@ -1,0 +1,16 @@
+/tmp/Main.java:8: error: not a statement
+        System.out.println(a + " and " + b + " are " + ((!a.equals(b))) ? "" : "not ") + type + " ordered before " + b + '.');
+                                                                                                                       ^
+/tmp/Main.java:8: error: ';' expected
+        System.out.println(a + " and " + b + " are " + ((!a.equals(b))) ? "" : "not ") + type + " ordered before " + b + '.');
+                                                                                                                            ^
+/tmp/Main.java:9: error: not a statement
+        System.out.println(a + " and " + b + " are " + ((!a.equals(b)) == false) ? "" : "not ") + type + " ordered after " + b + '.');
+                                                                                                                               ^
+/tmp/Main.java:9: error: ';' expected
+        System.out.println(a + " and " + b + " are " + ((!a.equals(b)) == false) ? "" : "not ") + type + " ordered after " + b + '.');
+                                                                                                                                    ^
+/tmp/Main.java:21: error: ';' expected
+        demoCompare(a, b, "lexically"));
+                                      ^
+5 errors

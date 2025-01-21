@@ -1,0 +1,30 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_factors-c-rs.rs:23:9
+   |
+23 |         {
+   |         ^ unclosed delimiter
+24 |             if let Some(last_dvsr)) = flist.get(flix - 1))
+   |                                   ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_factors-c-rs.rs:19:5
+   |
+19 |     {
+   |     ^ unclosed delimiter
+...
+24 |             if let Some(last_dvsr)) = flist.get(flix - 1))
+   |                                                          ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-int_factors-c-rs.rs:30:5
+   |
+24 |             if let Some(last_dvsr)) = flist.get(flix - 1))
+   |                                   -                      - missing open `(` for this delimiter
+   |                                   |
+   |                                   missing open `(` for this delimiter
+...
+30 |     }
+   |     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

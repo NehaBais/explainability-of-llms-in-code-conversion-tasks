@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_match-rs-go.go:34:22: s1.IndexOf undefined (type string has no field or method IndexOf)

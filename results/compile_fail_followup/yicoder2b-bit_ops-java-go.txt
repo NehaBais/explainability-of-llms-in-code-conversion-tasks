@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-java-go.go:11:10: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/yicoder2b-bit_ops-java-go.go:15:16: undefined: bits
+/tmp/yicoder2b-bit_ops-java-go.go:16:17: undefined: bits

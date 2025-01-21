@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-str_prepend-c-go.go:9:22: invalid argument: str (variable of type []byte) is not a pointer
+/tmp/codellama7b-str_prepend-c-go.go:10:2: undefined: sprintf
+/tmp/codellama7b-str_prepend-c-go.go:11:2: undefined: free

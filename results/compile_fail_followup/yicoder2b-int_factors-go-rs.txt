@@ -1,0 +1,45 @@
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:11:29
+   |
+11 |             while let &is = fs.first() {
+   |                             ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:19:2
+   |
+19 | } // end print_factors
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-int_factors-go-rs.rs`
+
+error[E0277]: `Vec<i64>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:17:42
+   |
+17 |     println!("Factors of {} are: {}", n, fs.iter().map(|x| x as i64).collect::<Vec<_>>());
+   |                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Vec<i64>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Vec<i64>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0606]: casting `&{integer}` as `i64` is invalid
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:17:60
+   |
+17 |     println!("Factors of {} are: {}", n, fs.iter().map(|x| x as i64).collect::<Vec<_>>());
+   |                                                            ^^^^^^^^
+   |
+help: dereference the expression
+   |
+17 |     println!("Factors of {} are: {}", n, fs.iter().map(|x| *x as i64).collect::<Vec<_>>());
+   |                                                            +
+
+error[E0614]: type `i64` cannot be dereferenced
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:12:41
+   |
+12 |                 if let Err(_)= is.push(&*x as i64) {}
+   |                                         ^^
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0434, E0601, E0606, E0614.
+For more information about an error, try `rustc --explain E0277`.

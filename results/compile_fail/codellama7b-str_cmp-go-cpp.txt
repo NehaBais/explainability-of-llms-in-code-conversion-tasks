@@ -1,0 +1,21 @@
+/tmp/codellama7b-str_cmp-go-cpp.cpp:61:7: error: use of undeclared identifier 'strings'; did you mean 'std::string'?
+   61 |   if (strings::EqualFold(c, d)) {
+      |       ^~~~~~~
+      |       std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/codellama7b-str_cmp-go-cpp.cpp:61:16: error: no member named 'EqualFold' in 'std::string'
+   61 |   if (strings::EqualFold(c, d)) {
+      |       ~~~~~~~~~^
+/tmp/codellama7b-str_cmp-go-cpp.cpp:70:7: error: use of undeclared identifier 'strings'; did you mean 'std::string'?
+   70 |   if (strings::EqualFold(c, d)) {
+      |       ^~~~~~~
+      |       std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/codellama7b-str_cmp-go-cpp.cpp:70:16: error: no member named 'EqualFold' in 'std::string'
+   70 |   if (strings::EqualFold(c, d)) {
+      |       ~~~~~~~~~^
+4 errors generated.

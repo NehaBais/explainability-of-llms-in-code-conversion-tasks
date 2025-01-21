@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegemma7b-int_cmp-java-go.go:10:2: declared and not used: reader

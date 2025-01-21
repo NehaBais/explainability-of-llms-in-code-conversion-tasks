@@ -1,0 +1,22 @@
+/tmp/codellama7b-int_factors-js-cpp.cpp:7:15: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+    7 |   vector<int> n_factors = {};
+      |               ^           ~~
+/tmp/codellama7b-int_factors-js-cpp.cpp:29:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   29 |   for (auto factor : factors1) {
+      |        ^
+/tmp/codellama7b-int_factors-js-cpp.cpp:29:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   29 |   for (auto factor : factors1) {
+      |                    ^
+/tmp/codellama7b-int_factors-js-cpp.cpp:35:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   35 |   for (auto factor : factors2) {
+      |        ^
+/tmp/codellama7b-int_factors-js-cpp.cpp:35:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   35 |   for (auto factor : factors2) {
+      |                    ^
+/tmp/codellama7b-int_factors-js-cpp.cpp:41:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   41 |   for (auto factor : factors3) {
+      |        ^
+/tmp/codellama7b-int_factors-js-cpp.cpp:41:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   41 |   for (auto factor : factors3) {
+      |                    ^
+6 warnings and 1 error generated.

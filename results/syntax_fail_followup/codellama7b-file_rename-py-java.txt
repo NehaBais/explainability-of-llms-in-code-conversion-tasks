@@ -1,0 +1,11 @@
+/tmp/None.java:2: error: implicitly declared classes are a preview feature and are disabled by default.
+Path input = Paths.get("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:7: error: class, interface, enum, or record expected
+Files.move(input, output);
+^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+Files.move(docs, mydocs);
+^
+3 errors

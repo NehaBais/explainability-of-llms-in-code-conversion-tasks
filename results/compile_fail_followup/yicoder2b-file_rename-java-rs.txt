@@ -1,0 +1,41 @@
+warning: unused import: `std::io`
+ --> /tmp/yicoder2b-file_rename-java-rs.rs:1:5
+  |
+1 | use std::io;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::process`
+ --> /tmp/yicoder2b-file_rename-java-rs.rs:2:5
+  |
+2 | use std::process;
+  |     ^^^^^^^^^^^^
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_rename-java-rs.rs:24:31
+   |
+24 |     let file = std::fs::File::new(oldname)?;
+   |                               ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+  --> /tmp/yicoder2b-file_rename-java-rs.rs:25:32
+   |
+25 |     let file2 = std::fs::File::new(newname)?;
+   |                                ^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error: aborting due to 2 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0599`.

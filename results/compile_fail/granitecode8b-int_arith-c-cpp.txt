@@ -1,0 +1,56 @@
+/tmp/granitecode8b-int_arith-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:6:5: error: use of undeclared identifier 'exit'
+    6 |     exit(1);
+      |     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:7:7: error: use of undeclared identifier 'atoi'
+    7 |   b = atoi(argv[--argc]);
+      |       ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:9:5: error: use of undeclared identifier 'exit'
+    9 |     exit(2);
+      |     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:10:7: error: use of undeclared identifier 'atoi'
+   10 |   a = atoi(argv[--argc]);
+      |       ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::cout << "a+b = " << a + b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:11:37: error: use of undeclared identifier 'std'
+   11 |   std::cout << "a+b = " << a + b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::cout << "a-b = " << a - b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:12:37: error: use of undeclared identifier 'std'
+   12 |   std::cout << "a-b = " << a - b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << "a*b = " << a * b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:13:37: error: use of undeclared identifier 'std'
+   13 |   std::cout << "a*b = " << a * b << std::endl;
+      |                                     ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << "a/b = " << static_cast(double > (a) / b) << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:39: error: expected '<' after 'static_cast'
+   15 |   std::cout << "a/b = " << static_cast(double > (a) / b) << std::endl;
+      |                                       ^
+      |                                       <
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:47: error: expected '(' for function-style cast or type construction
+   15 |   std::cout << "a/b = " << static_cast(double > (a) / b) << std::endl;
+      |                                        ~~~~~~ ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:15:61: error: use of undeclared identifier 'std'
+   15 |   std::cout << "a/b = " << static_cast(double > (a) / b) << std::endl;
+      |                                                             ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:17:3: error: use of undeclared identifier 'std'
+   17 |   std::cout << "a%%b = " << a % b << std::endl;
+      |   ^
+/tmp/granitecode8b-int_arith-c-cpp.cpp:17:38: error: use of undeclared identifier 'std'
+   17 |   std::cout << "a%%b = " << a % b << std::endl;
+      |                                      ^
+18 errors generated.

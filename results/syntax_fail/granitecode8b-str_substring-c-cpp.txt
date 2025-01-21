@@ -1,0 +1,63 @@
+/tmp/granitecode8b-str_substring-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:4:1: error: unknown type name 'string'
+    4 | string substring(const string &s, size_t n, ptrdiff_t m) {
+      | ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:4:24: error: unknown type name 'string'
+    4 | string substring(const string &s, size_t n, ptrdiff_t m) {
+      |                        ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:4:35: error: unknown type name 'size_t'
+    4 | string substring(const string &s, size_t n, ptrdiff_t m) {
+      |                                   ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:4:45: error: unknown type name 'ptrdiff_t'
+    4 | string substring(const string &s, size_t n, ptrdiff_t m) {
+      |                                             ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string result;
+      |   ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:8:12: error: cannot initialize return object of type 'int' with an lvalue of type 'const char[1]'
+    8 |     return "";
+      |            ^~
+/tmp/granitecode8b-str_substring-c-cpp.cpp:15:12: error: cannot initialize return object of type 'int' with an lvalue of type 'const char[1]'
+   15 |     return "";
+      |            ^~
+/tmp/granitecode8b-str_substring-c-cpp.cpp:22:14: error: cannot initialize return object of type 'int' with an lvalue of type 'const char[1]'
+   22 |       return "";
+      |              ^~
+/tmp/granitecode8b-str_substring-c-cpp.cpp:30:1: error: unknown type name 'string'
+   30 | string str_wholeless1(const string &s) { return substring(s, 0, s.size() - 1); }
+      | ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:30:29: error: unknown type name 'string'
+   30 | string str_wholeless1(const string &s) { return substring(s, 0, s.size() - 1); }
+      |                             ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:31:1: error: unknown type name 'string'
+   31 | string str_fromch(const string &s, char ch, ptrdiff_t m) {
+      | ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:31:25: error: unknown type name 'string'
+   31 | string str_fromch(const string &s, char ch, ptrdiff_t m) {
+      |                         ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:31:45: error: unknown type name 'ptrdiff_t'
+   31 | string str_fromch(const string &s, char ch, ptrdiff_t m) {
+      |                                             ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:32:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   32 |   size_t pos = s.find(ch);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_substring-c-cpp.cpp:32:10: error: use of undeclared identifier 'pos'
+   32 |   size_t pos = s.find(ch);
+      |          ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:33:7: error: use of undeclared identifier 'pos'
+   33 |   if (pos == string::npos)
+      |       ^
+/tmp/granitecode8b-str_substring-c-cpp.cpp:33:14: error: use of undeclared identifier 'string'
+   33 |   if (pos == string::npos)
+      |              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

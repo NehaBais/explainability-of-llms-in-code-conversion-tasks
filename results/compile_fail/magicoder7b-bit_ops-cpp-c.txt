@@ -1,0 +1,13 @@
+/tmp/magicoder7b-bit_ops-cpp-c.c:19:63: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   19 |   int a_rotl = (a << b) | ((unsigned int)a >> sizeof(int) * 8 - b);
+      |                                            ~~ ~~~~~~~~~~~~~~~~^~~
+/tmp/magicoder7b-bit_ops-cpp-c.c:19:63: note: place parentheses around the '-' expression to silence this warning
+   19 |   int a_rotl = (a << b) | ((unsigned int)a >> sizeof(int) * 8 - b);
+      |                                                               ^  
+      |                                               (                  )
+1 warning generated.
+Undefined symbols for architecture arm64:
+  "_main", referenced from:
+      <initial-undefines>
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

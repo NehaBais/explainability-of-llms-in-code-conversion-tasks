@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_size-py-go.go:15:16: file.FileInfo undefined (type *os.File has no field or method FileInfo)
+/tmp/yicoder2b-file_size-py-go.go:18:12: no new variables on left side of :=
+/tmp/yicoder2b-file_size-py-go.go:24:16: file.FileInfo undefined (type *os.File has no field or method FileInfo)

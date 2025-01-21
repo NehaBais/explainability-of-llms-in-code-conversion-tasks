@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_exists-rs-cpp.cpp:17:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   for (auto file : {current_working_directory, input_file_path, docs_dir_path,
+      |        ^
+/tmp/codellama7b-file_exists-rs-cpp.cpp:17:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   17 |   for (auto file : {current_working_directory, input_file_path, docs_dir_path,
+      |                  ^
+/tmp/codellama7b-file_exists-rs-cpp.cpp:17:20: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   17 |   for (auto file : {current_working_directory, input_file_path, docs_dir_path,
+      |                    ^
+/tmp/codellama7b-file_exists-rs-cpp.cpp:20:16: error: no member named 'filesystem' in namespace 'std'
+   20 |       if (std::filesystem::is_directory(file)) {
+      |           ~~~~~^
+2 warnings and 2 errors generated.

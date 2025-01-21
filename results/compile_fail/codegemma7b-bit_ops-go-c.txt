@@ -1,0 +1,61 @@
+/tmp/codegemma7b-bit_ops-go-c.c:5:27: error: use of undeclared identifier 'uint16_t'
+    5 |   printf("a:   %016b\n", (uint16_t)a);
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:6:27: error: use of undeclared identifier 'uint16_t'
+    6 |   printf("b:   %016b\n", (uint16_t)b);
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:9:27: error: use of undeclared identifier 'uint16_t'
+    9 |   printf("and: %016b\n", (uint16_t)(a & b));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:10:27: error: use of undeclared identifier 'uint16_t'
+   10 |   printf("or:  %016b\n", (uint16_t)(a | b));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:11:27: error: use of undeclared identifier 'uint16_t'
+   11 |   printf("xor: %016b\n", (uint16_t)(a ^ b));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:12:27: error: use of undeclared identifier 'uint16_t'
+   12 |   printf("not: %016b\n", (uint16_t)(~a));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:19:11: error: expected ';' after expression
+   19 |   uint16_t ua = (uint16_t)a;
+      |           ^
+      |           ;
+/tmp/codegemma7b-bit_ops-go-c.c:19:3: error: use of undeclared identifier 'uint16_t'
+   19 |   uint16_t ua = (uint16_t)a;
+      |   ^
+/tmp/codegemma7b-bit_ops-go-c.c:19:12: error: use of undeclared identifier 'ua'
+   19 |   uint16_t ua = (uint16_t)a;
+      |            ^
+/tmp/codegemma7b-bit_ops-go-c.c:19:18: error: use of undeclared identifier 'uint16_t'
+   19 |   uint16_t ua = (uint16_t)a;
+      |                  ^
+/tmp/codegemma7b-bit_ops-go-c.c:20:11: error: expected ';' after expression
+   20 |   uint32_t ub = (uint32_t)b;
+      |           ^
+      |           ;
+/tmp/codegemma7b-bit_ops-go-c.c:20:3: error: use of undeclared identifier 'uint32_t'
+   20 |   uint32_t ub = (uint32_t)b;
+      |   ^
+/tmp/codegemma7b-bit_ops-go-c.c:20:12: error: use of undeclared identifier 'ub'
+   20 |   uint32_t ub = (uint32_t)b;
+      |            ^
+/tmp/codegemma7b-bit_ops-go-c.c:20:18: error: use of undeclared identifier 'uint32_t'
+   20 |   uint32_t ub = (uint32_t)b;
+      |                  ^
+/tmp/codegemma7b-bit_ops-go-c.c:23:27: error: use of undeclared identifier 'uint16_t'
+   23 |   printf("shl: %016b\n", (uint16_t)(ua << ub));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:23:37: error: use of undeclared identifier 'ua'
+   23 |   printf("shl: %016b\n", (uint16_t)(ua << ub));
+      |                                     ^
+/tmp/codegemma7b-bit_ops-go-c.c:23:43: error: use of undeclared identifier 'ub'
+   23 |   printf("shl: %016b\n", (uint16_t)(ua << ub));
+      |                                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:24:27: error: use of undeclared identifier 'uint16_t'
+   24 |   printf("shr: %016b\n", (uint16_t)(ua >> ub));
+      |                           ^
+/tmp/codegemma7b-bit_ops-go-c.c:24:37: error: use of undeclared identifier 'ua'
+   24 |   printf("shr: %016b\n", (uint16_t)(ua >> ub));
+      |                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

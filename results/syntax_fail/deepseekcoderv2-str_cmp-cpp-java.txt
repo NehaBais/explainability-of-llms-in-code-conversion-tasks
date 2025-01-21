@@ -1,0 +1,11 @@
+/tmp/StringComparisonDemo.java:19: error: bad operand types for binary operator '<<'
+            << semantically
+            ^
+  first type:  String
+  second type: String
+/tmp/StringComparisonDemo.java:26: error: bad operand types for binary operator '<<'
+            << semantically
+            ^
+  first type:  String
+  second type: String
+2 errors

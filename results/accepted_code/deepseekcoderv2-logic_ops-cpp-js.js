@@ -1,6 +1,8 @@
-function print_logic(a, b) {
-  console.log("a and b is ", a && b);
-  console.log("a or b is ", a || b);
-  console.log("not a is", !a);
+function printLogic(a, b) {
+  console.log(`a and b is ${a && b}`);
+  console.log(`a or b is ${a || b}`);
+  console.log(`not a is ${!a}`);
 }
-print_logic(true, false);
+
+// Example usage:
+printLogic(true, false);

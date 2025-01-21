@@ -1,0 +1,64 @@
+/tmp/granitecode8b-file_create-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:4:17: error: unknown type name 'string'
+    4 | void createFile(string fn) {
+      |                 ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:5:3: error: unknown type name 'ofstream'
+    5 |   ofstream f(fn);
+      |   ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:7:5: error: use of undeclared identifier 'cout'
+    7 |     cout << "Error creating file: " << fn << endl;
+      |     ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:7:46: error: use of undeclared identifier 'endl'
+    7 |     cout << "Error creating file: " << fn << endl;
+      |                                              ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "File created: " << fn << endl;
+      |   ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:10:37: error: use of undeclared identifier 'endl'
+   10 |   cout << "File created: " << fn << endl;
+      |                                     ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:12:16: error: unknown type name 'string'
+   12 | void createDir(string dn) {
+      |                ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:13:8: error: use of undeclared identifier 'filesystem'
+   13 |   if (!filesystem::create_directory(dn)) {
+      |        ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << "Error creating directory: " << dn << endl;
+      |     ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:14:51: error: use of undeclared identifier 'endl'
+   14 |     cout << "Error creating directory: " << dn << endl;
+      |                                                   ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << "Directory created: " << dn << endl;
+      |   ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:17:42: error: use of undeclared identifier 'endl'
+   17 |   cout << "Directory created: " << dn << endl;
+      |                                          ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:20:3: error: unknown type name 'string'
+   20 |   string currentWorkingDir =
+      |   ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:21:14: error: use of undeclared identifier 'nullptr'
+   21 |       getcwd(nullptr, 0); // Get the current working directory
+      |              ^
+/tmp/granitecode8b-file_create-go-cpp.cpp:22:3: error: no matching function for call to 'createFile'
+   22 |   createFile("input.txt");
+      |   ^~~~~~~~~~
+/tmp/granitecode8b-file_create-go-cpp.cpp:4:6: note: candidate function not viable: no known conversion from 'const char[10]' to 'int' for 1st argument
+    4 | void createFile(string fn) {
+      |      ^          ~~~~~~~~~
+/tmp/granitecode8b-file_create-go-cpp.cpp:24:3: error: no matching function for call to 'createDir'
+   24 |   createDir("docs");
+      |   ^~~~~~~~~
+/tmp/granitecode8b-file_create-go-cpp.cpp:12:6: note: candidate function not viable: no known conversion from 'const char[5]' to 'int' for 1st argument
+   12 | void createDir(string dn) {
+      |      ^         ~~~~~~~~~
+1 warning and 18 errors generated.

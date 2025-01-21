@@ -1,0 +1,1 @@
+The error is due to the fact that `strconv` is not a built-in function in Golang and it's being referred to from outside of its module. The module for `strconv` is `std/fmt` which is part of the standard library, but you must import this module explicitly with `import "fmt"` at the top of your Go files before using it.

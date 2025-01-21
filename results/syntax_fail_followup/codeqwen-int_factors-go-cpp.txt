@@ -1,0 +1,10 @@
+/tmp/codeqwen-int_factors-go-cpp.cpp:13:19: error: non-aggregate type 'vector<int64_t>' (aka 'vector<long long>') cannot be initialized with an initializer list
+   13 |   vector<int64_t> fs = {1};
+      |                   ^    ~~~
+/tmp/codeqwen-int_factors-go-cpp.cpp:14:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   14 |   auto apf = [&fs](int64_t p, int e) {
+      |   ^
+/tmp/codeqwen-int_factors-go-cpp.cpp:14:14: error: expected expression
+   14 |   auto apf = [&fs](int64_t p, int e) {
+      |              ^
+1 warning and 2 errors generated.

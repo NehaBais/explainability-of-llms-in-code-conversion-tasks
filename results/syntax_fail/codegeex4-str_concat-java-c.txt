@@ -1,0 +1,13 @@
+/tmp/codegeex4-str_concat-java-c.c:6:14: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   char *s2 = strcat(strdup(s), " literal");
+      |              ^
+/tmp/codegeex4-str_concat-java-c.c:6:14: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/codegeex4-str_concat-java-c.c:6:21: error: call to undeclared library function 'strdup' with type 'char *(const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   char *s2 = strcat(strdup(s), " literal");
+      |                     ^
+/tmp/codegeex4-str_concat-java-c.c:6:21: note: include the header <string.h> or explicitly provide a declaration for 'strdup'
+/tmp/codegeex4-str_concat-java-c.c:8:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   free(s2); // to prevent memory leak
+      |   ^
+/tmp/codegeex4-str_concat-java-c.c:8:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+3 errors generated.

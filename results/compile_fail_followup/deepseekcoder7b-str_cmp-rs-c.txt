@@ -1,0 +1,23 @@
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:31:13: error: call to undeclared library function 'toupper' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |     ac[i] = toupper((unsigned char)ac[i]);
+      |             ^
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:31:13: note: include the header <ctype.h> or explicitly provide a declaration for 'toupper'
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:10: error: expected expression
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:19: error: character <U+2581> not allowed in an identifier
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:24: error: character <U+2581> not allowed in an identifier
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-str_cmp-rs-c.c:49:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   49 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^
+2 warnings and 5 errors generated.

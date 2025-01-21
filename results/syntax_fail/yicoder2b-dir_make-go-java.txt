@@ -1,0 +1,6 @@
+/tmp/Main.java:21: error: cannot find symbol
+              new java.nio.file.AttributeView[] {},
+                               ^
+  symbol:   class AttributeView
+  location: package java.nio.file
+1 error

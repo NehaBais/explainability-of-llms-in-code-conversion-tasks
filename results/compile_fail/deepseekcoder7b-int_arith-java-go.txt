@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-int_arith-java-go.go:20:24: undefined: math
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:9: use of package fmt not in selector
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:13: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:13: undefined: ｜begin▁of▁sentence｜
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:21: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:37: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-int_arith-java-go.go:24:41: undefined: Println

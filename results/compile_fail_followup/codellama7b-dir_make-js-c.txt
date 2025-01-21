@@ -1,0 +1,4 @@
+/tmp/codellama7b-dir_make-js-c.c:25:27: error: use of undeclared identifier 'my_callback'
+   25 |   mkdirp("./path/to/dir", my_callback);
+      |                           ^
+1 error generated.

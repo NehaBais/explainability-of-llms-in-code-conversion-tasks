@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_factors-go-rs.rs:14:27
+   |
+14 | fn print_factors(nr: i64) {
+   |                           ^ unclosed delimiter
+...
+26 |     ));
+   |      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-int_factors-go-rs.rs:27:1
+   |
+26 |     ));
+   |      - missing open `(` for this delimiter
+27 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

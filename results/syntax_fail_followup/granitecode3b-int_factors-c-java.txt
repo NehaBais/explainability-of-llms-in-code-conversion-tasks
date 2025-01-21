@@ -1,0 +1,16 @@
+/tmp/Factors.java:12: error: incompatible types: Object cannot be converted to Integer
+      for (Integer f : factors[i]) {
+                              ^
+/tmp/Factors.java:31: error: incompatible types: Object cannot be converted to int
+    for (int prime : primes) {
+                     ^
+/tmp/Factors.java:32: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+      factors.add(new Integer(prime));
+                  ^
+/tmp/Factors.java:34: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+    factors.add(new Integer(num));
+                ^
+Note: /tmp/Factors.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+2 warnings

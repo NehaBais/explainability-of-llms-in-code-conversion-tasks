@@ -1,21 +1,32 @@
-Answer: Here is the Golang code that performs the same functionality as your Rust code:
+ Sure, here is the equivalent code in Golang:
 
-```
+```go
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
 func main() {
-   fmt.Println(factor(100))
-   fmt.Println(factor(101))
+	fmt.Println(factor(100)) // should print [1 2 4 5 10 10 20 25 50 100]
+	fmt.Println(factor(101)) // should print [1 101]
 }
 
 func factor(num int) []int {
-    factors := make([]int, 0) // creates a new vector for the factors of the number
+	var factors []int
 
-    for i:= 1; i <= int(math.Sqrt(float64(num))); i++ { 
-        if num % i == 0 {
-            factors = append(factors, i) // pushes smallest factor to factors
-            factors = append(factors, num/i) // pushes largest factor to factors
-        }
-    }
-    sort.Ints(factors) // sorts the factors into numerical order for viewing purposes
-    return factors 
+	for i := 1; i <= int(math.Sqrt(float64(num))); i++ {
+		if num%i == 0 {
+			factors = append(factors, i) // append smallest factor to factors
+			if i != num/i {
+				factors = append(factors, num/i) // append largest factor to factors if different
+			}
+		}
+	}
+	sort.Ints(factors) // sort the factors into numerical order for viewing purposes
+	return factors
 }
 ```
+
+This Golang code performs the same task as the Rust code: it computes the factors of a positive integer and returns them in a sorted list.

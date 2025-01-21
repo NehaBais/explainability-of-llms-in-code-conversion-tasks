@@ -1,0 +1,25 @@
+/tmp/codellama7b-file_exists-rs-c.c:25:23: error: invalid operands to binary expression ('char[2]' and 'char *')
+   25 |   if ((ret = stat("/" + file, &sb)) == 0) {
+      |                   ~~~ ^ ~~~~
+/tmp/codellama7b-file_exists-rs-c.c:27:41: error: invalid operands to binary expression ('char[2]' and 'char *')
+   27 |       printf("%s is a directory\n", "/" + file);
+      |                                     ~~~ ^ ~~~~
+/tmp/codellama7b-file_exists-rs-c.c:29:36: error: invalid operands to binary expression ('char[2]' and 'char *')
+   29 |       printf("%s is a file\n", "/" + file);
+      |                                ~~~ ^ ~~~~
+/tmp/codellama7b-file_exists-rs-c.c:32:39: error: invalid operands to binary expression ('char[2]' and 'char *')
+   32 |     printf("%s does not exist\n", "/" + file);
+      |                                   ~~~ ^ ~~~~
+/tmp/codellama7b-file_exists-rs-c.c:47:23: error: invalid operands to binary expression ('char[2]' and 'char *')
+   47 |   if ((ret = stat("/" + dir, &sb)) == 0) {
+      |                   ~~~ ^ ~~~
+/tmp/codellama7b-file_exists-rs-c.c:49:41: error: invalid operands to binary expression ('char[2]' and 'char *')
+   49 |       printf("%s is a directory\n", "/" + dir);
+      |                                     ~~~ ^ ~~~
+/tmp/codellama7b-file_exists-rs-c.c:51:36: error: invalid operands to binary expression ('char[2]' and 'char *')
+   51 |       printf("%s is a file\n", "/" + dir);
+      |                                ~~~ ^ ~~~
+/tmp/codellama7b-file_exists-rs-c.c:54:39: error: invalid operands to binary expression ('char[2]' and 'char *')
+   54 |     printf("%s does not exist\n", "/" + dir);
+      |                                   ~~~ ^ ~~~
+8 errors generated.

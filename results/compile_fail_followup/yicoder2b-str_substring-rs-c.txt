@@ -1,0 +1,7 @@
+/tmp/yicoder2b-str_substring-rs-c.c:47:34: error: invalid operands to binary expression ('char *' and 'int')
+   47 |     if ((strchr(&s[0], 'b') + i) % m == 0) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~
+/tmp/yicoder2b-str_substring-rs-c.c:48:21: error: array subscript is not an integer
+   48 |       printf("%c", s[(strchr(&s[0], 'b')) + i]);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

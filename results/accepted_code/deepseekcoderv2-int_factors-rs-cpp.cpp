@@ -1,14 +1,31 @@
+#include <algorithm> // For std::sort
+#include <cassert>   // For assert
 #include <iostream>
-using namespace std;
+#include <vector>
 
-int main() {
-  int num = 100;
+std::vector<int> factor(int num) {
+  std::vector<int> factors;
 
-  cout << "Factors of " << num << ": ";
-  for (int i = 1; i <= num / 2; i++) {
-    if (num % i == 0) { // checks the modulus to see if it is a factor
-      std::cout << i << ' ';
+  for (int i = 1; i <= static_cast<int>(std::sqrt(num)); ++i) {
+    if (num % i == 0) {
+      factors.push_back(i); // pushes smallest factor to factors
+      if (i !=
+          num / i) { // Avoid adding the same factor twice for perfect squares
+        factors.push_back(num / i); // pushes largest factor to factors
+      }
     }
   }
-  cout << '\n';
+  std::sort(factors.begin(), factors.end()); // sorts the factors into numerical
+                                             // order for viewing purposes
+  return factors;                            // returns the factors
+}
+
+int main() {
+  assert(factor(100) ==
+         std::vector<int>{
+             1, 2, 4, 5, 10, 20, 25, 50,
+             100}); // asserts that two expressions are equal to each other
+  assert(factor(101) == std::vector<int>{1, 101});
+
+  return 0;
 }

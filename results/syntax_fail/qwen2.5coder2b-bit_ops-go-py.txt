@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ast.py", line 52, in parse
+    return compile(source, filename, mode, flags,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<unknown>", line 23
+    print(f"ror: {int((a >> b) + a * (-2)**(32-b))) if b >= 0 else int((a & 0xFFFFFFFF) + (a * (-2)**(32 - b)))")
+                                                  ^
+SyntaxError: f-string: unmatched ')'

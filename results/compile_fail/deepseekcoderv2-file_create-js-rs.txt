@@ -1,0 +1,83 @@
+error[E0631]: type mismatch in function arguments
+  --> /tmp/deepseekcoderv2-file_create-js-rs.rs:12:41
+   |
+5  |     fn fct(err: std::io::Result<()>) {
+   |     -------------------------------- found signature defined here
+...
+12 |     fs::write("output.txt", "").map_err(fct).unwrap();
+   |                                 ------- ^^^ expected due to this
+   |                                 |
+   |                                 required by a bound introduced by this call
+   |
+   = note: expected function signature `fn(std::io::Error) -> _`
+              found function signature `fn(Result<(), std::io::Error>) -> _`
+note: required by a bound in `Result::<T, E>::map_err`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:851:5
+help: consider wrapping the function in a closure
+   |
+12 |     fs::write("output.txt", "").map_err(|arg0: std::io::Error| fct(/* Result<(), std::io::Error> */)).unwrap();
+   |                                         ++++++++++++++++++++++    ++++++++++++++++++++++++++++++++++
+
+error[E0631]: type mismatch in function arguments
+  --> /tmp/deepseekcoderv2-file_create-js-rs.rs:15:42
+   |
+5  |     fn fct(err: std::io::Result<()>) {
+   |     -------------------------------- found signature defined here
+...
+15 |     fs::write("/output.txt", "").map_err(fct).unwrap();
+   |                                  ------- ^^^ expected due to this
+   |                                  |
+   |                                  required by a bound introduced by this call
+   |
+   = note: expected function signature `fn(std::io::Error) -> _`
+              found function signature `fn(Result<(), std::io::Error>) -> _`
+note: required by a bound in `Result::<T, E>::map_err`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:851:5
+help: consider wrapping the function in a closure
+   |
+15 |     fs::write("/output.txt", "").map_err(|arg0: std::io::Error| fct(/* Result<(), std::io::Error> */)).unwrap();
+   |                                          ++++++++++++++++++++++    ++++++++++++++++++++++++++++++++++
+
+error[E0631]: type mismatch in function arguments
+  --> /tmp/deepseekcoderv2-file_create-js-rs.rs:18:36
+   |
+5  |     fn fct(err: std::io::Result<()>) {
+   |     -------------------------------- found signature defined here
+...
+18 |     fs::create_dir("docs").map_err(fct).unwrap();
+   |                            ------- ^^^ expected due to this
+   |                            |
+   |                            required by a bound introduced by this call
+   |
+   = note: expected function signature `fn(std::io::Error) -> _`
+              found function signature `fn(Result<(), std::io::Error>) -> _`
+note: required by a bound in `Result::<T, E>::map_err`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:851:5
+help: consider wrapping the function in a closure
+   |
+18 |     fs::create_dir("docs").map_err(|arg0: std::io::Error| fct(/* Result<(), std::io::Error> */)).unwrap();
+   |                                    ++++++++++++++++++++++    ++++++++++++++++++++++++++++++++++
+
+error[E0631]: type mismatch in function arguments
+  --> /tmp/deepseekcoderv2-file_create-js-rs.rs:21:37
+   |
+5  |     fn fct(err: std::io::Result<()>) {
+   |     -------------------------------- found signature defined here
+...
+21 |     fs::create_dir("/docs").map_err(fct).unwrap();
+   |                             ------- ^^^ expected due to this
+   |                             |
+   |                             required by a bound introduced by this call
+   |
+   = note: expected function signature `fn(std::io::Error) -> _`
+              found function signature `fn(Result<(), std::io::Error>) -> _`
+note: required by a bound in `Result::<T, E>::map_err`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:851:5
+help: consider wrapping the function in a closure
+   |
+21 |     fs::create_dir("/docs").map_err(|arg0: std::io::Error| fct(/* Result<(), std::io::Error> */)).unwrap();
+   |                                     ++++++++++++++++++++++    ++++++++++++++++++++++++++++++++++
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0631`.

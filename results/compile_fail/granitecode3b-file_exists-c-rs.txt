@@ -1,0 +1,233 @@
+error[E0255]: the name `stat` is defined multiple times
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:10:1
+   |
+2  | use self::libc::{stat, S_ISDIR, S_ISREG};
+   |                  ---- previous import of the value `stat` here
+...
+10 | unsafe fn stat(path: *const c_char, buf: *mut libc::stat) -> i32 {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `stat` redefined here
+   |
+   = note: `stat` must be defined only once in the value namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+2  | use self::libc::{stat as other_stat, S_ISDIR, S_ISREG};
+   |                       +++++++++++++
+
+error[E0432]: unresolved imports `self::libc::S_ISDIR`, `self::libc::S_ISREG`
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:2:24
+  |
+2 | use self::libc::{stat, S_ISDIR, S_ISREG};
+  |                        ^^^^^^^  ^^^^^^^ no `S_ISREG` in the root
+  |                        |
+  |                        no `S_ISDIR` in the root
+  |
+help: a similar name exists in the module
+  |
+2 | use self::libc::{stat, S_IFDIR, S_ISREG};
+  |                        ~~~~~~~
+help: a similar name exists in the module
+  |
+2 | use self::libc::{stat, S_ISDIR, S_IFREG};
+  |                                 ~~~~~~~
+
+error[E0433]: failed to resolve: use of undeclared crate or module `mem`
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:22:19
+   |
+22 |     let mut buf = mem::MaybeUninit::<libc::stat>::uninit();
+   |                   ^^^ use of undeclared crate or module `mem`
+   |
+help: consider importing this union
+   |
+2  + use std::mem::MaybeUninit;
+   |
+help: if you import `MaybeUninit`, refer to it directly
+   |
+22 -     let mut buf = mem::MaybeUninit::<libc::stat>::uninit();
+22 +     let mut buf = MaybeUninit::<libc::stat>::uninit();
+   |
+
+warning: unused import: `stat`
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:2:18
+  |
+2 | use self::libc::{stat, S_ISDIR, S_ISREG};
+  |                  ^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `CStr`
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:3:16
+  |
+3 | use std::ffi::{CStr, CString};
+  |                ^^^^
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:1:1
+  |
+1 | extern crate libc;
+  | ^^^^^^^^^^^^^^^^^^
+  |
+  = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+ --> /tmp/granitecode3b-file_exists-c-rs.rs:2:18
+  |
+2 | use self::libc::{stat, S_ISDIR, S_ISREG};
+  |                  ^^^^
+  |
+  = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:10:47
+   |
+10 | unsafe fn stat(path: *const c_char, buf: *mut libc::stat) -> i32 {
+   |                                               ^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:11:5
+   |
+11 |     libc::stat(path, buf)
+   |     ^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:14:5
+   |
+14 |     libc::mkdir(path, mode)
+   |     ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:17:5
+   |
+17 |     libc::rmdir(path)
+   |     ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:20:45
+   |
+20 | fn stat_wrapper(path: &str) -> Option<(i32, libc::stat)> {
+   |                                             ^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:22:38
+   |
+22 |     let mut buf = mem::MaybeUninit::<libc::stat>::uninit();
+   |                                      ^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:32:32
+   |
+32 |     match unsafe { mkdir(path, libc::S_IRUSR | libc::S_IWUSR) } {
+   |                                ^^^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:32:48
+   |
+32 |     match unsafe { mkdir(path, libc::S_IRUSR | libc::S_IWUSR) } {
+   |                                                ^^^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:14:23
+   |
+14 |     libc::mkdir(path, mode)
+   |     -----------       ^^^^ expected `u16`, found `u32`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/vendor/libc-0.2.158/src/unix/mod.rs:735:12
+help: you can convert a `u32` to a `u16` and panic if the converted value doesn't fit
+   |
+14 |     libc::mkdir(path, mode.try_into().unwrap())
+   |                           ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:32:32
+   |
+32 |     match unsafe { mkdir(path, libc::S_IRUSR | libc::S_IWUSR) } {
+   |                    -----       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u32`, found `u16`
+   |                    |
+   |                    arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:13:11
+   |
+13 | unsafe fn mkdir(path: *const c_char, mode: u32) -> i32 {
+   |           ^^^^^                      ---------
+help: you can convert a `u16` to a `u32`
+   |
+32 |     match unsafe { mkdir(path, (libc::S_IRUSR | libc::S_IWUSR).into()) } {
+   |                                +                             ++++++++
+
+error[E0277]: `*const i8` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:34:61
+   |
+34 |         err => Err(format!("Failed to create directory {}", path)),
+   |                                                             ^^^^ `*const i8` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `*const i8`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = help: the trait `std::fmt::Display` is implemented for `i8`
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `*const i8` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:41:61
+   |
+41 |         err => Err(format!("Failed to remove directory {}", path)),
+   |                                                             ^^^^ `*const i8` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `*const i8`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = help: the trait `std::fmt::Display` is implemented for `i8`
+   = note: this error originates in the macro `$crate::__export::format_args` which comes from the expansion of the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:47:32
+   |
+47 |         if ret == 0 && S_ISREG(buf.st_mode) {
+   |                                ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:49:39
+   |
+49 |         } else if ret == 0 && S_ISDIR(buf.st_mode) {
+   |                                       ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:57:32
+   |
+57 |         if ret == 0 && S_ISDIR(buf.st_mode) {
+   |                                ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error[E0658]: use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead?
+  --> /tmp/granitecode3b-file_exists-c-rs.rs:59:39
+   |
+59 |         } else if ret == 0 && S_ISREG(buf.st_mode) {
+   |                                       ^^^^^^^^^^^
+   |
+   = note: see issue #27812 <https://github.com/rust-lang/rust/issues/27812> for more information
+
+error: aborting due to 21 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0255, E0277, E0308, E0432, E0433, E0658.
+For more information about an error, try `rustc --explain E0255`.

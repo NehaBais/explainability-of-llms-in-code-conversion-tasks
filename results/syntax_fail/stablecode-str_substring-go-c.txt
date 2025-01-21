@@ -1,0 +1,31 @@
+/tmp/stablecode-str_substring-go-c.c:9:73: warning: data argument not used by format string [-Wformat-extra-args]
+    9 |   printf("Index: %d %d%d%d%d%d%d\n", '0', '1', '2', '3', '4', '5', '6', '7');
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~                                     ^
+/tmp/stablecode-str_substring-go-c.c:15:60: error: extraneous ')' before ';'
+   15 |     printf("Start %d, length %d:    %s\n", n, m, &s[n - 1]));
+      |                                                            ^
+/tmp/stablecode-str_substring-go-c.c:18:56: error: extraneous ')' before ';'
+   18 |     printf("Start %d, to end:      %s\n", n, &s[n - 1]));
+      |                                                        ^
+/tmp/stablecode-str_substring-go-c.c:21:48: error: extraneous ')' before ';'
+   21 |     printf("All but last:         %s\n", &s[0]));
+      |                                                ^
+/tmp/stablecode-str_substring-go-c.c:24:5: error: use of undeclared identifier 'dx'
+   24 |     dx = strchr(s, 'D') - s;
+      |     ^
+/tmp/stablecode-str_substring-go-c.c:25:49: error: use of undeclared identifier 'dx'
+   25 |     printf("Start 'D', length %d:  %s\n", m, &s[dx - 1]));
+      |                                                 ^
+/tmp/stablecode-str_substring-go-c.c:28:5: error: use of undeclared identifier 'sx'
+   28 |     sx = strstr(s, "DE") - s;
+      |     ^
+/tmp/stablecode-str_substring-go-c.c:29:12: error: expected expression
+   29 |     printf(`Start "DE", length %d: "%s"`+"\n", m, &s[sx - 1]));
+      |            ^
+/tmp/stablecode-str_substring-go-c.c:29:25: error: use of undeclared identifier 'length'
+   29 |     printf(`Start "DE", length %d: "%s"`+"\n", m, &s[sx - 1]));
+      |                         ^
+/tmp/stablecode-str_substring-go-c.c:29:33: error: use of undeclared identifier 'd'
+   29 |     printf(`Start "DE", length %d: "%s"`+"\n", m, &s[sx - 1]));
+      |                                 ^
+1 warning and 9 errors generated.

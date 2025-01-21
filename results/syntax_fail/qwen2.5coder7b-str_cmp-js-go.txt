@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-str_cmp-js-go.go:10:21: invalid operation: 123 == "123" (mismatched types untyped int and untyped string)

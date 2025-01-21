@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-int_factors-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/deepseekcoder7b-int_factors-js-c.c:2:1: error: expected identifier or '('
+    2 | !^ / tmp / deepseekcoder7b - int_factors - js -
+      | ^
+/tmp/deepseekcoder7b-int_factors-js-c.c:8:27: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    8 |           deepseekcoder7b<｜begin▁of▁sentence｜>', line 9 : 5 : error
+      |                           ^~
+/tmp/deepseekcoder7b-int_factors-js-c.c:8:35: error: character <U+2581> not allowed in an identifier
+    8 |           deepseekcoder7b<｜begin▁of▁sentence｜>', line 9 : 5 : error
+      |                                  ^
+/tmp/deepseekcoder7b-int_factors-js-c.c:8:40: error: character <U+2581> not allowed in an identifier
+    8 |           deepseekcoder7b<｜begin▁of▁sentence｜>', line 9 : 5 : error
+      |                                     ^
+/tmp/deepseekcoder7b-int_factors-js-c.c:8:51: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    8 |           deepseekcoder7b<｜begin▁of▁sentence｜>', line 9 : 5 : error
+      |                                              ^~
+/tmp/deepseekcoder7b-int_factors-js-c.c:8:55: warning: missing terminating ' character [-Winvalid-pp-token]
+    8 |           deepseekcoder7b<｜begin▁of▁sentence｜>', line 9 : 5 : error
+      |                                                 ^
+3 warnings and 4 errors generated.

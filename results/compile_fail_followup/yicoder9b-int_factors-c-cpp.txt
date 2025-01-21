@@ -1,0 +1,4 @@
+/tmp/yicoder9b-int_factors-c-cpp.cpp:36:15: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+   36 |   vector<int> nums2factor = {2059, 223092870, 3135, 45};
+      |               ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

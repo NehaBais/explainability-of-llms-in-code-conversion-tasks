@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/codeqwen-file_exists-c-go.go:28:101: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:28:103: syntax error: unexpected literal "yes", expected )
+/tmp/codeqwen-file_exists-c-go.go:29:86: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:29:88: syntax error: unexpected literal "yes", expected )
+/tmp/codeqwen-file_exists-c-go.go:36:103: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:36:105: syntax error: unexpected literal "yes", expected )
+/tmp/codeqwen-file_exists-c-go.go:37:88: invalid character U+003F '?'
+/tmp/codeqwen-file_exists-c-go.go:37:90: syntax error: unexpected literal "yes", expected )

@@ -1,0 +1,1 @@
+The error occurs because of the syntax used for comparison operators. The correct format in Go is to use `==`, `!=` for comparing values and `<`, `>` for lexical order. The error also arises due to incorrect usage of parentheses after conditional expressions.

@@ -1,0 +1,10 @@
+/tmp/magicoder7b-str_match-go-c.c:9:15: error: incompatible pointer to integer conversion assigning to 'size_t' (aka 'unsigned long') from 'char *' [-Wint-conversion]
+    9 |   while ((pos = strstr(first + pos, second)) != NULL) {
+      |               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/magicoder7b-str_match-go-c.c:9:46: warning: comparison between pointer and integer ('size_t' (aka 'unsigned long') and 'void *') [-Wpointer-integer-compare]
+    9 |   while ((pos = strstr(first + pos, second)) != NULL) {
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/magicoder7b-str_match-go-c.c:11:22: error: invalid operands to binary expression ('long' and 'char *')
+   11 |            (long)pos - first);
+      |            ~~~~~~~~~ ^ ~~~~~
+1 warning and 2 errors generated.

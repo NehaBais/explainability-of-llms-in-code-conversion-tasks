@@ -5,34 +5,26 @@ import (
 	"os"
 )
 
-func renameFile(oldname string, newname string) bool {
-	// Check if the file or directory exists
-	if _, err := os.Stat(oldname); !os.IsNotExist(err) {
-		// Rename the file or directory
-		err = os.Rename(oldname, newname)
-		return err == nil
-	} else {
-		fmt.Println("The file or directory does not exist.")
-		return false
+func renameFile(oldname, newname string) bool {
+	// File (or directory) with old name
+	file, err := os.Rename(oldname, newname)
+	if file != nil {
+		return true
+	}
+	return false
+}
+
+func test(typ, oldname, newname string) {
+	success := renameFile(oldname, newname)
+	fmt.Printf("The following %s called %s was renamed as %s.\n", typ, oldname, newname)
+	if !success {
+		fmt.Printf("The following %s could not be renamed into %s.\n", oldname, newname)
 	}
 }
-func test(fileType string, oldname string, newname string) {
-	fmt.Print("Enter the " + fileType + ": ")
-	var input string
-	fmt.Scanln(&input)
-	// Check if the file or directory exists
-	if _, err := os.Stat(oldname); !os.IsNotExist(err) {
-		if renameFile(oldname, newname) {
-			fmt.Println("The "+fileType+" was renamed as: ", input)
-		} else {
-			fmt.Print("Could not be renamed into ")
-			fmt.Println(input)
-		}
-	} else {
-		fmt.Println("The file or directory does not exist.")
-	}
-}
+
 func main() {
 	test("file", "input.txt", "output.txt")
-	test("directory", "/docs", "/mydocs")
+	test("file", "/input.txt", "/output.txt")
+	test("directory", "docs", "mydocs")
+	test("directory", "/docs/", "/mydocs/")
 }

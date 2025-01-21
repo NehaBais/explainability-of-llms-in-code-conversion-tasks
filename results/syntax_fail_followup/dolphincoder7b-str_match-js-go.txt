@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-str_match-js-go.go:9:13: cannot convert len(a) >= len(b) (untyped bool value) to type int

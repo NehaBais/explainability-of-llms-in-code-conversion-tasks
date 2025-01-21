@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-int_factors-js-c.c:20:40: error: use of undeclared identifier 'compare'
+   20 |   qsort(n_factors, index, sizeof(int), compare);
+      |                                        ^
+1 error generated.

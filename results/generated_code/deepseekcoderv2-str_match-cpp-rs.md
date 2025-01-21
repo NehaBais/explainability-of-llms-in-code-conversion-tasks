@@ -1,4 +1,4 @@
-### Solution
+ Sure! Below is the Rust equivalent of the provided C++ code for performing string matching as described:
 
 ```rust
 fn main() {
@@ -8,29 +8,33 @@ fn main() {
 
     // Beginning
     if s1.starts_with(s3) {
-        println!("The first string starts with the second string.");
+        println!("String starts with the second string.");
     } else {
-        println!("The first string does not start with the second string.");
+        println!("String does not start with the second string.");
     }
 
     // End
     let len = s1.len();
-    if s1[len - s3.len()..] == s3 {
-        println!("The first string ends with the second string.");
+    if s1.ends_with(s3) {
+        println!("String ends with the second string.");
     } else {
-        println!("The first string does not end with the second string.");
+        println!("String does not end with the second string.");
     }
 
     // Anywhere
     let mut loc = s2.find(s3);
-    while loc != std::string::String::npos {
-        println!("Match found at location: {}", loc);
-        loc = s2.find(s3, loc + 1);
+    while let Some(pos) = loc {
+        println!("Found at position: {}", pos);
+        loc = s2[pos + 1..].find(s3);
     }
 }
 ```
-### Explanation
-1. The code starts by defining three string variables `s1`, `s2`, and `s3`.
-2. It then checks if the first string (`s1`) starts with the second string (`s3`). This is done using the `starts_with()` function from the Rust standard library. If it does, it prints a message indicating that `s1` starts with `s3`. Otherwise, it prints an error message.
-3. It then checks if the first string ends with the second string by getting the length of `s1`, subtracting the length of `s3` from it, and comparing this substring to `s3`. If they are equal, it prints a message indicating that `s1` ends with `s3`. Otherwise, it prints an error message.
-4. Finally, it looks for occurrences of `s3` in `s2` using the `find()` function from the Rust standard library. It iterates over all occurrences and prints their locations.
+
+### Explanation:
+1. **Beginning**: The `starts_with` method is used to check if the first string starts with the second string.
+2. **End**: The `ends_with` method is used to check if the first string ends with the second string.
+3. **Anywhere**: The `find` method is used to find the first occurrence of the second string within the first string. If multiple occurrences are needed, a loop is used to find subsequent positions using slicing and recursive calls.
+
+### Optional Requirements:
+1. For part 2, if you want to print the location of the match, it is done in a loop where each position found is printed.
+2. Multiple occurrences are handled by continuing to search from the end of the last found position.

@@ -1,0 +1,4 @@
+/tmp/Main.java:14: error: bad operand type int for unary operator '!'
+        "!a      = " + Integer.toBinaryString(!a)); // Notation for NOT operator is "~" in Java.
+                                              ^
+1 error

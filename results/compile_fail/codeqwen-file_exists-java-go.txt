@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codeqwen-file_exists-java-go.go:17:22: undefined: os
+/tmp/codeqwen-file_exists-java-go.go:28:19: undefined: os

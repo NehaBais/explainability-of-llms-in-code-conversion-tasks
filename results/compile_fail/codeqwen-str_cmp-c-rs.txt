@@ -1,0 +1,95 @@
+error: named argument never used
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:4:61
+  |
+4 |     println!("{s1} {s1} {s1} {s1} {s1} {s1}", s1 = s1, s2 = s2); // exact equality
+  |              -------------------------------                ^^ named argument never used
+  |              |
+  |              formatting specifier missing
+
+error: named argument never used
+ --> /tmp/codeqwen-str_cmp-c-rs.rs:9:14
+  |
+7 |         "{s1} {s1} {s1} {s1} {s1} {s1}",
+  |         ------------------------------- formatting specifier missing
+8 |         s1 = s1,
+9 |         s2 = s2.chars().rev().collect::<String>()
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ named argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:15:52
+   |
+15 |     println!("{s3} {s3} {s3} {s3} {s3} {s3}", s1 = s3, s2 = s4); // exact equality
+   |              -------------------------------       ^^       ^^ named argument never used
+   |              |                                     |
+   |              |                                     named argument never used
+   |              multiple missing formatting specifiers
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:19:14
+   |
+18 |         "{s3} {s3} {s3} {s3} {s3} {s3}",
+   |         ------------------------------- multiple missing formatting specifiers
+19 |         s1 = s3,
+   |              ^^ named argument never used
+20 |         s2 = s4.chars().rev().collect::<String>()
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ named argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:26:52
+   |
+26 |     println!("{s5} {s5} {s5} {s5} {s5} {s5}", s1 = s5, s2 = s6); // lexical comparison
+   |              -------------------------------       ^^       ^^ named argument never used
+   |              |                                     |
+   |              |                                     named argument never used
+   |              multiple missing formatting specifiers
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:30:14
+   |
+29 |         "{s5} {s5} {s5} {s5} {s5} {s5}",
+   |         ------------------------------- multiple missing formatting specifiers
+30 |         s1 = s5,
+   |              ^^ named argument never used
+31 |         s2 = s6.chars().rev().collect::<String>()
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ named argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:37:52
+   |
+37 |     println!("{s7} {s7} {s7} {s7} {s7} {s7}", s1 = s7, s2 = s8); // lexical comparison
+   |              -------------------------------       ^^       ^^ named argument never used
+   |              |                                     |
+   |              |                                     named argument never used
+   |              multiple missing formatting specifiers
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:41:14
+   |
+40 |         "{s7} {s7} {s7} {s7} {s7} {s7}",
+   |         ------------------------------- multiple missing formatting specifiers
+41 |         s1 = s7,
+   |              ^^ named argument never used
+42 |         s2 = s8.chars().rev().collect::<String>()
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ named argument never used
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:48:52
+   |
+48 |     println!("{s9} {s9} {s9} {s9} {s9} {s9}", s1 = s9, s2 = s10); // lexical comparison
+   |              -------------------------------       ^^       ^^^ named argument never used
+   |              |                                     |
+   |              |                                     named argument never used
+   |              multiple missing formatting specifiers
+
+error: multiple unused formatting arguments
+  --> /tmp/codeqwen-str_cmp-c-rs.rs:52:14
+   |
+51 |         "{s9} {s9} {s9} {s9} {s9} {s9}",
+   |         ------------------------------- multiple missing formatting specifiers
+52 |         s1 = s9,
+   |              ^^ named argument never used
+53 |         s2 = s10.chars().rev().collect::<String>()
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ named argument never used
+
+error: aborting due to 10 previous errors
+

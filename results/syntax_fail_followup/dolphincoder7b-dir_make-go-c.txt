@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-dir_make-go-c.c:17:10: error: read-only variable is not assignable
+   17 |       *s = '\0';
+      |       ~~ ^
+1 error generated.

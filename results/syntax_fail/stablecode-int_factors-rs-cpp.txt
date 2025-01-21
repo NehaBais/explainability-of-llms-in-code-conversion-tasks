@@ -1,0 +1,67 @@
+/tmp/stablecode-int_factors-rs-cpp.cpp:8:51: error: expected ';' in 'for' statement specifier
+    8 |   for (int i = 1; i <= static_cast<int>(sqrt(num))));
+      |                                                   ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:8:52: error: expected expression
+    8 |   for (int i = 1; i <= static_cast<int>(sqrt(num))));
+      |                                                    ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:9:13: error: use of undeclared identifier 'i'
+    9 |   if (num % i == 0) {
+      |             ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:10:23: error: use of undeclared identifier 'i'
+   10 |     factors.push_back(i);
+      |                       ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:11:29: error: use of undeclared identifier 'i'
+   11 |     factors.push_back(num / i);
+      |                             ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:15: error: use of undeclared identifier 'factors'; did you mean 'factor'?
+   14 |     std::sort(factors.begin(), factors.end()));
+      |               ^~~~~~~
+      |               factor
+/tmp/stablecode-int_factors-rs-cpp.cpp:5:22: note: 'factor' declared here
+    5 | std::vector<int32_t> factor(int32_t num) {
+      |                      ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:10: error: a type specifier is required for all declarations
+   14 |     std::sort(factors.begin(), factors.end()));
+      |          ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:22: error: member reference base type 'std::vector<int32_t> (int32_t)' (aka 'vector<int> (int)') is not a structure or union
+   14 |     std::sort(factors.begin(), factors.end()));
+      |               ~~~~~~~^~~~~~
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:32: error: use of undeclared identifier 'factors'
+   14 |     std::sort(factors.begin(), factors.end()));
+      |                                ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:14:46: error: extraneous ')' before ';'
+   14 |     std::sort(factors.begin(), factors.end()));
+      |                                              ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:16:5: error: expected unqualified-id
+   16 |     return factors;
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:17:5: error: extraneous closing brace ('}')
+   17 |     }
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:20:34: error: non-aggregate type 'const std::vector<int32_t>' (aka 'const vector<int>') cannot be initialized with an initializer list
+   20 |       const std::vector<int32_t> expected1 = {1,  2,  4,  5,  10,
+      |                                  ^           ~~~~~~~~~~~~~~~~~~~~
+   21 |                                               10, 20, 25, 50, 100};
+      |                                               ~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-int_factors-rs-cpp.cpp:22:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   22 |       auto result1 = factor(100);
+      |       ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:23:5: error: use of undeclared identifier 'assert'
+   23 |     assert(result1 == expected1));
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:23:33: error: extraneous ')' before ';'
+   23 |     assert(result1 == expected1));
+      |                                 ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:25:32: error: non-aggregate type 'const std::vector<int32_t>' (aka 'const vector<int>') cannot be initialized with an initializer list
+   25 |     const std::vector<int32_t> expected2 = {1, 101};
+      |                                ^           ~~~~~~~~
+/tmp/stablecode-int_factors-rs-cpp.cpp:26:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   26 |     auto result2 = factor(101);
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:27:5: error: use of undeclared identifier 'assert'
+   27 |     assert(result2 == expected2));
+      |     ^
+/tmp/stablecode-int_factors-rs-cpp.cpp:27:33: error: extraneous ')' before ';'
+   27 |     assert(result2 == expected2));
+      |                                 ^
+2 warnings and 18 errors generated.

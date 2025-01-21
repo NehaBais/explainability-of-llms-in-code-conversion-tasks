@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_prepend-c-cpp.cpp:8:3: error: no matching function for call to 'sprintf'
+    8 |   sprintf(str.c_str(), "%s%s", cstr, (dup = strdup(str.c_str())));
+      |   ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:276:6: note: candidate function not viable: 1st argument ('const value_type *' (aka 'const char *')) would lose const qualifier
+  276 | int      sprintf(char * __restrict, const char * __restrict, ...) __printflike(2, 3);
+      |          ^       ~~~~~~
+1 error generated.

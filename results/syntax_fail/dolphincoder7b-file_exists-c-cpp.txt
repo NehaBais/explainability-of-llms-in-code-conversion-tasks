@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-file_exists-c-cpp.cpp:6:22: error: no member named 'filesystem' in namespace 'std'
+    6 |             << (std::filesystem::is_regular_file("input.txt") ? "yes" : "no");
+      |                 ~~~~~^
+/tmp/dolphincoder7b-file_exists-c-cpp.cpp:9:22: error: no member named 'filesystem' in namespace 'std'
+    9 |             << (std::filesystem::is_directory("docs") ? "yes" : "no");
+      |                 ~~~~~^
+2 errors generated.

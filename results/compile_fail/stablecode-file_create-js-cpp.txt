@@ -1,0 +1,28 @@
+/tmp/stablecode-file_create-js-cpp.cpp:13:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |     auto current_path = std::filesystem::current_path();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:13:30: error: no member named 'filesystem' in namespace 'std'
+   13 |     auto current_path = std::filesystem::current_path();
+      |                         ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:15:10: error: no member named 'filesystem' in namespace 'std'
+   15 |     std::filesystem::create_directory(path_str + "/docs"));
+      |     ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:16:10: error: no member named 'filesystem' in namespace 'std'
+   16 |     std::filesystem::create_file(path_str + "/output.txt"));
+      |     ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:24:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |     auto root_path = std::filesystem::root_directory();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:24:27: error: no member named 'filesystem' in namespace 'std'
+   24 |     auto root_path = std::filesystem::root_directory();
+      |                      ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:26:10: error: no member named 'filesystem' in namespace 'std'
+   26 |     std::filesystem::create_directory("/docs"));
+      |     ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:27:10: error: no member named 'filesystem' in namespace 'std'
+   27 |     std::filesystem::create_file("/output.txt"));
+      |     ~~~~~^
+/tmp/stablecode-file_create-js-cpp.cpp:30:20: error: extraneous ')' before ';'
+   30 |       fct(e.what()));
+      |                    ^
+2 warnings and 7 errors generated.

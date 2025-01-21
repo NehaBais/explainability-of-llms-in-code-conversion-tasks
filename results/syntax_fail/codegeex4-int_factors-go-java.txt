@@ -1,0 +1,11 @@
+/tmp/Main.java:28: error: incompatible types: Long cannot be converted to int
+      for (int j : fs) {
+                   ^
+/tmp/Main.java:29: error: incompatible types: int cannot be converted to Long
+        fs.add(j * 2);
+                 ^
+/tmp/Main.java:39: error: incompatible types: Long cannot be converted to int
+          for (int j : fs) {
+                       ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors

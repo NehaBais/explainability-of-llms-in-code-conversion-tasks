@@ -1,0 +1,28 @@
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:8:16: warning: multi-character character constant [-Wmultichar]
+    8 |                'big'); // Replaces all occurrences of 'X' with 'big'.
+      |                ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:7:3: error: no matching function for call to 'replace'
+    7 |   std::replace(originalString.begin(), originalString.end(), 'X',
+      |   ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:22:1: note: candidate template ignored: deduced conflicting types for parameter '_Tp' ('char' vs. 'int')
+   22 | replace(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __old_value, const _Tp& __new_value) {
+      | ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:10: error: expected expression
+   12 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:11: error: unexpected character <U+FF5C>
+   12 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:19: error: character <U+2581> not allowed in an identifier
+   12 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:24: error: character <U+2581> not allowed in an identifier
+   12 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:35: error: character <U+FF5C> not allowed in an identifier
+   12 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:12:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   12 |   return <｜begin▁of▁sentence｜ >
+      |             ^
+1 warning and 7 errors generated.

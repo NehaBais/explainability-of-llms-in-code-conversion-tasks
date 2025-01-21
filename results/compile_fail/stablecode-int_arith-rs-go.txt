@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-rs-go.go:15:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:17:64: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:21:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:23:64: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:27:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:28:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:29:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:30:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-rs-go.go:31:51: syntax error: unexpected ) at end of statement

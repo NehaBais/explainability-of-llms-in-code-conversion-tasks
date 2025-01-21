@@ -1,0 +1,11 @@
+/tmp/MkdirAll.java:7: error: cannot find symbol
+    Path dir = Paths.get(path);
+    ^
+  symbol:   class Path
+  location: class MkdirAll
+/tmp/MkdirAll.java:11: error: cannot find symbol
+      Files.createDirectories(dir, new FileAttribute[0]);
+                                       ^
+  symbol:   class FileAttribute
+  location: class MkdirAll
+2 errors

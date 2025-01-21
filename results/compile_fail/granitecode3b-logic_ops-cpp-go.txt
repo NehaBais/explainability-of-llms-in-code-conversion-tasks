@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/granitecode3b-logic_ops-cpp-go.go:10:3: syntax error: unexpected name or at end of statement
+/tmp/granitecode3b-logic_ops-cpp-go.go:11:5: syntax error: unexpected name a at end of statement
+/tmp/granitecode3b-logic_ops-cpp-go.go:12:4: syntax error: unexpected name and at end of statement
+/tmp/granitecode3b-logic_ops-cpp-go.go:13:3: syntax error: unexpected name or at end of statement
+/tmp/granitecode3b-logic_ops-cpp-go.go:14:5: syntax error: unexpected name a at end of statement

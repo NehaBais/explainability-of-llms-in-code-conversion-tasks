@@ -1,12 +1,24 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    int b = sc.nextInt();
-    if (a > b) System.out.println("greater than");
-    else if (b == a) System.out.println("equal to");
-    else System.out.println("less than");
+    Scanner scanner = new Scanner(System.in);
+
+    int a, b;
+    System.out.println("Enter two integers:");
+    a = scanner.nextInt();
+    b = scanner.nextInt();
+
+    if (a < b) {
+      System.out.printf("%d is less than %d\n", a, b);
+    }
+
+    if (a == b) {
+      System.out.printf("%d is equal to %d\n", a, b);
+    }
+
+    if (a > b) {
+      System.out.printf("%d is greater than %d\n", a, b);
+    }
   }
 }

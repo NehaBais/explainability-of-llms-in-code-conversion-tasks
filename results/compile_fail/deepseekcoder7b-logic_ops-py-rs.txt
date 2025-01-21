@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `deepseekcoder7b_logic_ops_py_rs`
+  --> /tmp/deepseekcoder7b-logic_ops-py-rs.rs:11:2
+   |
+11 | }
+   |  ^ consider adding a `main` function to `/tmp/deepseekcoder7b-logic_ops-py-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

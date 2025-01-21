@@ -1,0 +1,3 @@
+This error arises due to an invalid character U+0023 (#) appearing at the very first position in the code. The line with the error is `/tmp/yicoder2b-int_factors-c-go.go:1:1:`, it's not clear where exactly this error is happening or what the invalid character is intended to be. This would require a detailed analysis of the code to pinpoint exactly why it's failing.
+
+The typical fix for such errors in Go includes verifying and removing all non-ASCII characters from your code. You may also want to check if there are any import statements that are not compatible with the local system where you are planning to compile this code. 

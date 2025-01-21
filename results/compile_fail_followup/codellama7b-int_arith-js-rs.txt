@@ -1,0 +1,29 @@
+warning: unused import: `std::io::prelude::*`
+ --> /tmp/codellama7b-int_arith-js-rs.rs:2:5
+  |
+2 | use std::io::prelude::*;
+  |     ^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0608]: cannot index into a value of type `Args`
+ --> /tmp/codellama7b-int_arith-js-rs.rs:7:43
+  |
+7 |         println!("Usage: {} <a> <b>", args[0]);
+  |                                           ^^^
+
+error[E0608]: cannot index into a value of type `Args`
+  --> /tmp/codellama7b-int_arith-js-rs.rs:11:17
+   |
+11 |     let a = args[1].parse().unwrap();
+   |                 ^^^
+
+error[E0608]: cannot index into a value of type `Args`
+  --> /tmp/codellama7b-int_arith-js-rs.rs:12:17
+   |
+12 |     let b = args[2].parse().unwrap();
+   |                 ^^^
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0608`.

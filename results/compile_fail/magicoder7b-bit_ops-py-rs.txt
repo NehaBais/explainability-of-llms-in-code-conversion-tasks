@@ -1,0 +1,133 @@
+error: invalid format string: expected `'}'`, found `'{'`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:9:23
+  |
+9 |         "AND:\n\t0b{:0{}b}\n\t& 0b{:0{}b}\n\t= 0b{:0{}b}",
+  |                    -  ^ expected `'}'` in format string
+  |                    |
+  |                    because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:19:22
+   |
+19 |         "OR:\n\t0b{:0{}b}\n\t| 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                   -  ^ expected `'}'` in format string
+   |                   |
+   |                   because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:29:23
+   |
+29 |         "XOR:\n\t0b{:0{}b}\n\t^ 0b{:0{}b}\n\t= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: `~` cannot be used as a unary operator
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:40:19
+   |
+40 |         a, width, ~a & mask, width
+   |                   ^
+   |
+help: use `!` to perform bitwise not
+   |
+40 |         a, width, !a & mask, width
+   |                   ~
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:39:23
+   |
+39 |         "NOT:\n~ 0b{:0{}b}\n= 0b{:0{}b}",
+   |                    -  ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:94:28
+   |
+94 |         "ROTATIONS\n\t0b{:0{}b}\n\trotr({}, 0b{:0{}b}, 1)\n=       0b{:0{}b}",
+   |                         -  ^ expected `'}'` in format string
+   |                         |
+   |                         because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+   --> /tmp/magicoder7b-bit_ops-py-rs.rs:105:21
+    |
+105 |         "      0b{:0{}b}\n\torotl({}, 0b{:0{}b}, 1)\n=       0b{:0{}b}",
+    |                  -  ^ expected `'}'` in format string
+    |                  |
+    |                  because of this opening brace
+    |
+    = note: if you intended to print `{`, you can escape it using `{{`
+
+error[E0432]: unresolved import `bit`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:1:5
+  |
+1 | use bit::{BitSlice, BitVec};
+  |     ^^^ you might be missing crate `bit`
+  |
+help: consider importing the `bit` crate
+  |
+1 + extern crate bit;
+  |
+
+warning: unused import: `std::fmt`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:2:5
+  |
+2 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::iter::FromIterator`
+ --> /tmp/magicoder7b-bit_ops-py-rs.rs:3:5
+  |
+3 | use std::iter::FromIterator;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no function or associated item named `from_bits` found for type `u128` in the current scope
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:55:11
+   |
+55 |     u128::from_bits(vec.into_boxed_slice())
+   |           ^^^^^^^^^ function or associated item not found in `u128`
+   |
+help: there is an associated function `from_be` with a similar name
+   |
+55 |     u128::from_be(vec.into_boxed_slice())
+   |           ~~~~~~~
+
+error[E0599]: no function or associated item named `from_bits` found for type `u128` in the current scope
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:69:11
+   |
+69 |     u128::from_bits(vec.into_boxed_slice())
+   |           ^^^^^^^^^ function or associated item not found in `u128`
+   |
+help: there is an associated function `from_be` with a similar name
+   |
+69 |     u128::from_be(vec.into_boxed_slice())
+   |           ~~~~~~~
+
+error[E0599]: no function or associated item named `from_bits` found for type `u128` in the current scope
+  --> /tmp/magicoder7b-bit_ops-py-rs.rs:89:11
+   |
+89 |     u128::from_bits(vec.into_boxed_slice())
+   |           ^^^^^^^^^ function or associated item not found in `u128`
+   |
+help: there is an associated function `from_be` with a similar name
+   |
+89 |     u128::from_be(vec.into_boxed_slice())
+   |           ~~~~~~~
+
+error: aborting due to 11 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

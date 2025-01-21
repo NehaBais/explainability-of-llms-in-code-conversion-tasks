@@ -1,0 +1,13 @@
+/tmp/Main.java:5: error: ';' expected
+        Scanner scanner = new Scanner(System.in));
+                                                ^
+/tmp/Main.java:13: error: illegal start of expression
+        } else if (a > b)) {
+                         ^
+/tmp/Main.java:15: error: illegal start of expression
+        } else if (a == b)) {
+                          ^
+/tmp/Main.java:15: error: 'else' without 'if'
+        } else if (a == b)) {
+          ^
+4 errors

@@ -1,0 +1,4 @@
+/tmp/stablecode-str_concat-java-c.c:11:21: error: extraneous ')' before ';'
+   11 |   printf("%s\n", s2));
+      |                     ^
+1 error generated.

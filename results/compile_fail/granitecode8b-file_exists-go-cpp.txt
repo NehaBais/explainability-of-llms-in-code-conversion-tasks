@@ -1,0 +1,65 @@
+/tmp/granitecode8b-file_exists-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string path = "input.txt";
+      |   ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat file_info;
+      |               ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:6:10: note: forward declaration of 'stat'
+    6 |   struct stat file_info;
+      |          ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:7:38: error: invalid operands to binary expression ('stat' and 'int')
+    7 |   if (stat(path.c_str(), &file_info) == -1) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/tmp/granitecode8b-file_exists-go-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |     ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:8:50: error: use of undeclared identifier 'errno'
+    8 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |                                                  ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:8:60: error: use of undeclared identifier 'endl'
+    8 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |                                                            ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:11:7: error: use of undeclared identifier 'cout'
+   11 |       cout << path << " is a directory" << endl;
+      |       ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:11:44: error: use of undeclared identifier 'endl'
+   11 |       cout << path << " is a directory" << endl;
+      |                                            ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:13:7: error: use of undeclared identifier 'cout'
+   13 |       cout << path << " is a file" << endl;
+      |       ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:13:39: error: use of undeclared identifier 'endl'
+   13 |       cout << path << " is a file" << endl;
+      |                                       ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:17:38: error: invalid operands to binary expression ('stat' and 'int')
+   17 |   if (stat(path.c_str(), &file_info) == -1) {
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/tmp/granitecode8b-file_exists-go-cpp.cpp:18:5: error: use of undeclared identifier 'cout'
+   18 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |     ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:18:50: error: use of undeclared identifier 'errno'
+   18 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |                                                  ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:18:60: error: use of undeclared identifier 'endl'
+   18 |     cout << "Error accessing file: " << strerror(errno) << endl;
+      |                                                            ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:21:7: error: use of undeclared identifier 'cout'
+   21 |       cout << path << " is a directory" << endl;
+      |       ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:21:44: error: use of undeclared identifier 'endl'
+   21 |       cout << path << " is a directory" << endl;
+      |                                            ^
+/tmp/granitecode8b-file_exists-go-cpp.cpp:23:7: error: use of undeclared identifier 'cout'
+   23 |       cout << path << " is a file" << endl;
+      |       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

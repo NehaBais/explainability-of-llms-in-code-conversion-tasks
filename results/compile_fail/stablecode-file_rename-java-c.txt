@@ -1,0 +1,7 @@
+/tmp/stablecode-file_rename-java-c.c:36:3: error: call to undeclared function 'chdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |   chdir("/");
+      |   ^
+/tmp/stablecode-file_rename-java-c.c:46:15: error: extraneous ')' before ';'
+   46 |     chdir("."));
+      |               ^
+2 errors generated.

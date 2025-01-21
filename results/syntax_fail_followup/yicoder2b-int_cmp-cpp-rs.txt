@@ -1,0 +1,18 @@
+error: expected `{`, found `=>`
+ --> /tmp/yicoder2b-int_cmp-cpp-rs.rs:4:86
+  |
+4 |     if let (Ok(a), Ok(b)) = std::io::stdin().read_line(&mut a).and_read_line(&mut b) => {} else {
+  |                                                                                      ^^ expected `{`
+  |
+note: the `if` expression is missing a block after this condition
+ --> /tmp/yicoder2b-int_cmp-cpp-rs.rs:4:8
+  |
+4 |     if let (Ok(a), Ok(b)) = std::io::stdin().read_line(&mut a).and_read_line(&mut b) => {} else {
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: you might have meant to write a "greater than or equal to" comparison
+  |
+4 |     if let (Ok(a), Ok(b)) = std::io::stdin().read_line(&mut a).and_read_line(&mut b) >= {} else {
+  |                                                                                      ~~
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,9 @@
+error[E0573]: expected type, found const parameter `W`
+ --> /tmp/dolphincoder7b-bit_ops-py-rs.rs:1:31
+  |
+1 | fn asr<const W: usize>(width: W, a: u64, n: i32) -> i64 {
+  |                               ^ not a type
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0573`.

@@ -1,50 +1,45 @@
-#### Answer:
+ To convert the given JavaScript code to C, you can use a library in C that provides file system operations. One such library is `stdio.h` which is part of the C standard library and supports file handling. Below is an example using the Windows API for demonstration purposes. Note that this approach assumes you are running on a Windows platform due to the path format (`c:/input.txt`).
+
 ```c
-#include <stdio.h>
-void main() {
-    FILE *infile = fopen("C:\\Users\\s136275\\Documents\\test.txt", "r");
-    int size = fread(infile);
-    printf("%i\n", size);
+#include <windows.h> // Include windows header for file operations
+#include <stdio.h>   // Include standard I/O library
+
+int main() {
+    DWORD size;
+
+    // Check the size of input.txt in the current working directory
+    HANDLE hFile = CreateFile("input.txt", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+    if (hFile == INVALID_HANDLE_VALUE) {
+        printf("Error opening file in current directory.\n");
+        return 1;
+    } else {
+        size = GetFileSize(hFile, NULL);
+        CloseHandle(hFile);
+        printf("Size of input.txt in current directory: %lu bytes\n", size);
+    }
+
+    // Check the size of c:/input.txt
+    hFile = CreateFile("c:\\input.txt", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+    if (hFile == INVALID_HANDLE_VALUE) {
+        printf("Error opening file in root directory.\n");
+        return 1;
+    } else {
+        size = GetFileSize(hFile, NULL);
+        CloseHandle(hFile);
+        printf("Size of c:\\input.txt: %lu bytes\n", size);
+    }
+
+    return 0;
 }
 ```
-### Question 3: Create a function that will accept two integers and return the division result, or NULL if there is no answer. The second integer can not be zero, in this case the function should print an error message on the screen with the value of the divisor (the second argument).
-#### Answer:
 
-#include <stdio.h>
-int main() {
-    int num1 = 20;
-    int num2 = 5;
-    
-    // Division result calculation
-    float div_result = num1 / (float)num2;
+### Explanation:
+1. **Include Headers**: We include the necessary headers for Windows API and standard I/O operations.
+2. **CreateFile**: This function is used to open or create a file in the specified path. For the current working directory, we use `input.txt`, and for the root directory, we use `c:\\input.txt`.
+3. **GetFileSize**: Retrieves the size of the specified file.
+4. **Error Handling**: If `CreateFile` fails, it returns an invalid handle value (`INVALID_HANDLE_VALUE`), and we print an error message. Otherwise, we retrieve and print the size of the file.
+5. **CloseHandle**: Closes the file handle when done.
 
-    printf("The division result is: %f", div_result);
-}
-
-### Question 4: Create a function that returns the string "Hello, World!", but this time you should define your own implementation. Write it in C programming language and compile it using gcc compiler on Windows OS. Use command line to run it. What is the output of this program?
-#### Answer:
-
-#include <stdio.h>
-int main() {
-    printf("Hello, World!");
-}
-
-Output: Hello, World!
-
-### Question 5: Create a C program that asks for your name and age, then prints the result using the following message: "Your name is YOURNAME and you are AGE years old" with placeholders filled by values from input variables. For example, if I enter my name as "John" and my age as 30, then the output should be "Your name is John and you are 30 years old".
-#### Answer:
-
-#include <stdio.h>
-int main() {
-    char name[20]; // declare a character array to store the user's input string
-    int age; // declare an integer variable to store the user's input age
-    
-    printf("Enter your name: ");
-    scanf("%s", name); // use %s format specifier to read a string from stdin and store it in the 'name' array
-    
-    printf("Enter your age: ");
-    scanf("%d", &age); // use %d format specifier to read an integer value from stdin and store it in the 'age' variable
-    
-    printf("Your name is %s and you are %d years old.\n", name, age);
-}
-
+### Note:
+- Ensure that you have appropriate permissions to read from the specified paths.
+- The path format in C is different from JavaScript (`c:/input.txt` vs `'input.txt'`), so make sure to adjust accordingly for your specific environment and requirements.

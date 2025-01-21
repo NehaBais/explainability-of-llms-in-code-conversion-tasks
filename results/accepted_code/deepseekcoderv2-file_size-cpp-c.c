@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
-  FILE *fp;
-  char str[60];                 // Declare a string of size 60
-  fp = fopen("input.txt", "r"); // open the file input.txt in read mode,and if
-                                // it is not present then return NULL pointer
-  if (fp == NULL) {
-    perror("Error opening file");
-    exit(1);
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+void print_file_size(const char *filename) {
+  struct stat file_info;
+  if (stat(filename, &file_info) == 0) {
+        printf("Size of file %s is %ld bytes.
+", filename, file_info.st_size);
+  } else {
+    perror("Error");
   }
-  while (fgets(str, 60, fp) != NULL)
-    printf("%s", str); // print the string in console window
-  fclose(fp);
+}
+
+int main() {
+  print_file_size("input.txt");
+  print_file_size("/input.txt");
   return 0;
 }

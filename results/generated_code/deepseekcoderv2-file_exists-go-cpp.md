@@ -1,40 +1,33 @@
-### Solution - 1
+ Here's the equivalent code in C++ that checks if a file called `input.txt` and a directory called `docs` exist, both for the current working directory and the filesystem root:
 
-```
-#include <sys/types.h>
-#include <stdio.h>
-#include <dirent.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
+```cpp
+#include <iostream>
+#include <filesystem>
 
-// check if the file exists in current directory or not, print out information accordingly. 
-void printStat(char *p) {
-    struct stat s;
-    int exist = lstat(p, &s); // Check whether it is a valid path. If yes, set status to true and return its value
-    
-    if (exist == -1) { // if path does not exist, print out the error message 
-        printf("error: path %s doesn't exist!\n", p);
-    } else { // if path exists, check whether it is a directory.
-        int type = s.st_mode; 
-        char *fpath = malloc(strlen("/") + strlen(p)); // allocate memory for fpath string  
-        
-        strcpy(fpath, "/");  
-        strcat(fpath, p); // concatenate path and file name
-        
-        if (S_ISDIR(type)) { 
-            printf("%s is a directory.\n", fpath);
-            
+void printStat(const std::string& path) {
+    try {
+        const auto file_status = std::filesystem::status(path);
+        if (std::filesystem::exists(file_status)) {
+            if (std::filesystem::is_directory(file_status)) {
+                std::cout << path << " is a directory" << std::endl;
+            } else {
+                std::cout << path << " is a file" << std::endl;
+            }
         } else {
-            printf("%s is not a directory\n", fpath);
+            std::cerr << "File or directory does not exist: " << path << std::endl;
         }
+    } catch (const std::filesystem::filesystem_error& e) {
+        std::cerr << "Filesystem error: " << e.what() << std::endl;
     }
 }
+
 int main() {
-    
-    printStat("input.txt"); // check if input exists in current dir
-    printStat("/input.txt");  // check if /input exist on root of filesystem
-    printStat("docs"); // check if docs exists in current directory
-    printStat("/docs");   // check whether /docs exist on root of filesystem
+    printStat("input.txt");
+    printStat("/input.txt");
+    printStat("docs");
+    printStat("/docs");
+    return 0;
 }
 ```
+
+This C++ code uses the `<filesystem>` library to check for the existence and type of files and directories. The `printStat` function is used to print whether a given path is a file or directory, and it handles exceptions that might occur due to filesystem errors.

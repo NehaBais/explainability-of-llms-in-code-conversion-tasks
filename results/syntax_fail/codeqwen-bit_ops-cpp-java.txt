@@ -1,0 +1,41 @@
+/tmp/Main.java:5: error: cannot find symbol
+            + (A & B)); // Note: parentheses are needed because & has lower precedence than <<
+                   ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:6: error: cannot find symbol
+    System.out.println("A or b:  " + (A | B));
+                                          ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:7: error: cannot find symbol
+    System.out.println("A xor b: " + (A ^ B));
+                                          ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+        "A shl b: " + (A << B)); // Note: "<<" is used both for output and for left shift
+                            ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:15: error: cannot find symbol
+        "A shr b: " + (A >> B)); // typically arithmetic right shift, but not guaranteed
+                            ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:17: error: cannot find symbol
+    System.out.println("A lsr b: " + (ua >>> B)); // logical right shift (guaranteed)
+                                             ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:24: error: cannot find symbol
+    System.out.println("A rol b: " + Integer.rotateLeft(ua, B));
+                                                            ^
+  symbol:   variable B
+  location: class Main
+/tmp/Main.java:25: error: cannot find symbol
+    System.out.println("A ror b: " + Integer.rotateRight(ua, B));
+                                                             ^
+  symbol:   variable B
+  location: class Main
+8 errors

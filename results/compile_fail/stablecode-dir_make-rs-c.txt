@@ -1,0 +1,8 @@
+/tmp/stablecode-dir_make-rs-c.c:15:56: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |             fprintf(stderr, "An error occurred: %s\n", strerror(errno)));
+      |                                                        ^
+/tmp/stablecode-dir_make-rs-c.c:15:56: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/stablecode-dir_make-rs-c.c:15:72: error: extraneous ')' before ';'
+   15 |             fprintf(stderr, "An error occurred: %s\n", strerror(errno)));
+      |                                                                        ^
+2 errors generated.

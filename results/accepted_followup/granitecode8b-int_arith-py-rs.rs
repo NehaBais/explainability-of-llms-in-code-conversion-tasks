@@ -1,0 +1,1 @@
+let exponentiation = input1.pow(input2 as u32);

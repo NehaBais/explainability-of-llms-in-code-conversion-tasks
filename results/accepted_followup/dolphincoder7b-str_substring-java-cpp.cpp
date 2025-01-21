@@ -1,0 +1,1 @@
+cout << Substring::Substring(str, "Wo", 2); // Corrected code without errors

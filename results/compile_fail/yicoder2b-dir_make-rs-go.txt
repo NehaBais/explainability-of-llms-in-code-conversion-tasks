@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-rs-go.go:9:5: cannot use _ as value or type
+/tmp/yicoder2b-dir_make-rs-go.go:9:34: undefined: err
+/tmp/yicoder2b-dir_make-rs-go.go:10:10: undefined: err

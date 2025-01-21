@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_create-rs-go.go:13:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-rs-go.go:18:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-rs-go.go:29:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_create-rs-go.go:35:43: syntax error: unexpected ) at end of statement

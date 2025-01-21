@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-rs-go.go:17:33: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/yicoder2b-bit_ops-rs-go.go:18:40: a << 3 (constant 840 of type uint8) overflows uint8

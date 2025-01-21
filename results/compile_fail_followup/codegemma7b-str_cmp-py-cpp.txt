@@ -1,0 +1,19 @@
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:1:1: error: a type specifier is required for all declarations
+    1 | compare(to_string(24), to_string(123));
+      | ^
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:1:9: error: use of undeclared identifier 'to_string'
+    1 | compare(to_string(24), to_string(123));
+      |         ^
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:1:24: error: use of undeclared identifier 'to_string'
+    1 | compare(to_string(24), to_string(123));
+      |                        ^
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:2:1: error: a type specifier is required for all declarations
+    2 | compare(to_string(5.0), to_string(5));
+      | ^
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:2:9: error: use of undeclared identifier 'to_string'
+    2 | compare(to_string(5.0), to_string(5));
+      |         ^
+/tmp/codegemma7b-str_cmp-py-cpp.cpp:2:25: error: use of undeclared identifier 'to_string'
+    2 | compare(to_string(5.0), to_string(5));
+      |                         ^
+6 errors generated.

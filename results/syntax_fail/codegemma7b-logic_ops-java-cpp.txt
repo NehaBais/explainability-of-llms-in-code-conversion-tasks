@@ -1,0 +1,19 @@
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:2:3: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a AND b: " << (a && b) << std::endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:2:43: error: use of undeclared identifier 'std'
+    2 |   std::cout << "a AND b: " << (a && b) << std::endl;
+      |                                           ^
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a OR b: " << (a || b) << std::endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:3:42: error: use of undeclared identifier 'std'
+    3 |   std::cout << "a OR b: " << (a || b) << std::endl;
+      |                                          ^
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::cout << "NOT a: " << (!a) << std::endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-java-cpp.cpp:4:37: error: use of undeclared identifier 'std'
+    4 |   std::cout << "NOT a: " << (!a) << std::endl;
+      |                                     ^
+6 errors generated.

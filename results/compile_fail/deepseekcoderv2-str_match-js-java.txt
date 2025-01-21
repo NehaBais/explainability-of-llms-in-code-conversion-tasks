@@ -1,0 +1,6 @@
+/tmp/StringMatchingDemo.java:56: error: cannot find symbol
+                        java.util.stream.StreamSupport.spliteratorUnknownSize(
+                                                      ^
+  symbol:   method spliteratorUnknownSize(Iterator<Integer>,int)
+  location: class StreamSupport
+1 error

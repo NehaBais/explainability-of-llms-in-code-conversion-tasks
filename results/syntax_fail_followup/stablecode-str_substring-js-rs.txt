@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_substring-js-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+7 |     println!("{}", str.substring(n))); // => "cdefgh"
+  |                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_substring-js-rs.rs:10:41
+   |
+7  |     println!("{}", str.substring(n))); // => "cdefgh"
+   |                                     - missing open `(` for this delimiter
+...
+10 |         str.substring(0, str.len() - 1))));  // =====> "abcdefg"
+   |                                         ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

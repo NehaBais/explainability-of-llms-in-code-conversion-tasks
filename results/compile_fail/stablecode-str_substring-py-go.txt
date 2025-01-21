@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-py-go.go:10:30: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-py-go.go:13:25: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-py-go.go:16:29: syntax error: unexpected ] in argument list; possibly missing comma or )
+/tmp/stablecode-str_substring-py-go.go:19:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-py-go.go:20:31: syntax error: unexpected ] in argument list; possibly missing comma or )
+/tmp/stablecode-str_substring-py-go.go:23:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-py-go.go:24:31: syntax error: unexpected ] in argument list; possibly missing comma or )

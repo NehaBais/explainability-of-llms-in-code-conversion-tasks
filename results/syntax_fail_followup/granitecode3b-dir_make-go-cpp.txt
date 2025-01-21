@@ -1,0 +1,61 @@
+/tmp/granitecode3b-dir_make-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:7:9: error: expected "FILENAME" or <FILENAME>
+    7 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:10:1: error: use of undeclared identifier 'std'
+   10 | std::string get_directory(const std::string &path) {
+      | ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:10:33: error: use of undeclared identifier 'std'
+   10 | std::string get_directory(const std::string &path) {
+      |                                 ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:11:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   11 |   size_t last_slash = path.find_last_of("/\\");
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-dir_make-go-cpp.cpp:11:10: error: use of undeclared identifier 'last_slash'
+   11 |   size_t last_slash = path.find_last_of("/\\");
+      |          ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:12:7: error: use of undeclared identifier 'last_slash'
+   12 |   if (last_slash == std::string::npos) {
+      |       ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:12:21: error: use of undeclared identifier 'std'
+   12 |   if (last_slash == std::string::npos) {
+      |                     ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:13:12: error: cannot initialize return object of type 'int' with an lvalue of type 'const char[1]'
+   13 |     return "";
+      |            ^~
+/tmp/granitecode3b-dir_make-go-cpp.cpp:15:25: error: use of undeclared identifier 'last_slash'
+   15 |   return path.substr(0, last_slash);
+      |                         ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:18:22: error: use of undeclared identifier 'std'
+   18 | void mkdir_all(const std::string &path) {
+      |                      ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:19:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   19 |   size_t last_slash = path.find_last_of("/\\");
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-dir_make-go-cpp.cpp:19:10: error: use of undeclared identifier 'last_slash'
+   19 |   size_t last_slash = path.find_last_of("/\\");
+      |          ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:20:7: error: use of undeclared identifier 'last_slash'
+   20 |   if (last_slash == std::string::npos) {
+      |       ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:20:21: error: use of undeclared identifier 'std'
+   20 |   if (last_slash == std::string::npos) {
+      |                     ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:21:5: error: use of undeclared identifier 'mkdir'
+   21 |     mkdir("", 0755); // Replace "" with the actual path to create directory
+      |     ^
+/tmp/granitecode3b-dir_make-go-cpp.cpp:24:24: error: use of undeclared identifier 'last_slash'
+   24 |   mkdir(path.substr(0, last_slash).c_str(),
+      |                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

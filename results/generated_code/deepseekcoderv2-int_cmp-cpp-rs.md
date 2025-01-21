@@ -1,26 +1,49 @@
-## Solution:
+ Certainly! Below is the Rust equivalent of the provided C++ code. This Rust code reads two integers from the user, compares them using the `<`, `==`, and `>` operators, and displays appropriate messages based on the comparison results.
 
 ```rust
 use std::io;
-use std::process::exit;
-fn main() {
 
-let mut first_number = String::new();
-let mut second_number = String::new();
-print!("enter the first number :");
-if let Err(_) = io::stdin().read_line(&mut first_number){println!("error reading from input.");exit(1)}
-first_number.pop();
-print!("enter the second number :");
-if let Err(_) = io::stdin().read_line(&mut second_number){println!("error reading from input.");exit(1)}
-second_number.pop();
-let first_num:i32=first_number.trim().parse().expect("could not parse the number");
-let sec_num:i32=second_number.trim().parse().expect("could not parse the number");
-//test for less than
-if first_num<sec_num{println!("{} is less than {}",first_num,sec_num);}
-//test for equality
-if first_num==sec_num{println!("{} is equal to {}",first_num,sec_num);}
-//test for greater-than
-if first_num>sec_num{println!("{} is greater than {}",first_num,sec_num);}
+fn main() {
+    let mut input = String::new();
+    println!("Enter two integers:");
+    
+    // Read from standard input
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    
+    // Trim the input and split it into parts (assuming valid input)
+    let numbers: Vec<i32> = input.trim()
+        .split_whitespace()
+        .map(|s| s.parse().expect("Please enter valid integers"))
+        .collect();
+    
+    // Ensure we have exactly two numbers
+    if numbers.len() != 2 {
+        eprintln!("Please enter exactly two integers.");
+        return;
+    }
+    
+    let a = numbers[0];
+    let b = numbers[1];
+    
+    // test for less-than
+    if a < b {
+        println!("{} is less than {}", a, b);
+    }
+    
+    // test for equality
+    if a == b {
+        println!("{} is equal to {}", a, b);
+    }
+    
+    // test for greater-than
+    if a > b {
+        println!("{} is greater than {}", a, b);
+    }
 }
 ```
 
+This Rust code does the following:
+1. Reads two integers from the user input.
+2. Compares the integers using `<`, `==`, and `>` operators.
+3. Prints messages based on the comparison results.
+4. Handles potential errors, such as invalid input, gracefully.

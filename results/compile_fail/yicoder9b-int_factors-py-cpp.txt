@@ -1,0 +1,13 @@
+/tmp/yicoder9b-int_factors-py-cpp.cpp:23:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : {45, 53, 64}) { // List of numbers to compute the factors
+      |        ^
+/tmp/yicoder9b-int_factors-py-cpp.cpp:23:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   23 |   for (auto i : {45, 53, 64}) { // List of numbers to compute the factors
+      |               ^
+/tmp/yicoder9b-int_factors-py-cpp.cpp:23:17: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   23 |   for (auto i : {45, 53, 64}) { // List of numbers to compute the factors
+      |                 ^
+/tmp/yicoder9b-int_factors-py-cpp.cpp:27:14: error: expected expression
+   27 |              [](int val) { cout << val << ", "; }); // Print the factors
+      |              ^
+2 warnings and 2 errors generated.

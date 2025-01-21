@@ -1,0 +1,26 @@
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_create-py-rs.rs:3:32
+  |
+3 |     let mut output = fs::File::new(&format!("{}/output.txt", directory)).expect("Could not create output file");
+  |                                ^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0599]: no method named `open_for_append` found for mutable reference `&mut OpenOptions` in the current scope
+ --> /tmp/yicoder2b-file_create-py-rs.rs:7:10
+  |
+4 | /     fs::OpenOptions::new()
+5 | |         .write(true)
+6 | |         .create(true)
+7 | |         .open_for_append(&format!("{}/{}/docs", directory, &directory))
+  | |         -^^^^^^^^^^^^^^^ method not found in `&mut OpenOptions`
+  | |_________|
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

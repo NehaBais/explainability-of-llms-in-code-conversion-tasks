@@ -1,0 +1,49 @@
+/tmp/Main.java:12: error: illegal character: '\uff5c'
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                               ^
+/tmp/Main.java:12: error: illegal character: '\u2581'
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                     ^
+/tmp/Main.java:12: error: not a statement
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                ^
+/tmp/Main.java:12: error: illegal character: '\u2581'
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                        ^
+/tmp/Main.java:12: error: not a statement
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                      ^
+/tmp/Main.java:12: error: illegal character: '\uff5c'
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                                 ^
+/tmp/Main.java:12: error: not a statement
+            targetPath = Paths<｜begin▁of▁sentence｜>.get("./output.txt");
+                                         ^
+/tmp/Main.java:28: error: illegal character: '\uff5c'
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                          ^
+/tmp/Main.java:28: error: illegal character: '\u2581'
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                ^
+/tmp/Main.java:28: error: not a statement
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                           ^
+/tmp/Main.java:28: error: illegal character: '\u2581'
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                   ^
+/tmp/Main.java:28: error: not a statement
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                 ^
+/tmp/Main.java:28: error: illegal character: '\uff5c'
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                            ^
+/tmp/Main.java:28: error: not a statement
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                    ^
+/tmp/Main.java:28: error: not a statement
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                              ^
+/tmp/Main.java:28: error: ';' expected
+            Files.move(sourcePath, targetPath, StandardCopyOption.REPLACE<｜begin▁of▁sentence｜>_EXISTING); 
+                                                                                                       ^
+16 errors

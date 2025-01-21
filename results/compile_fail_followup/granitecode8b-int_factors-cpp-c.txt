@@ -1,0 +1,61 @@
+/tmp/granitecode8b-int_factors-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:4:1: error: unknown type name 'using'
+    4 | using namespace std;
+      | ^
+/tmp/granitecode8b-int_factors-cpp-c.c:4:16: error: expected ';' after top level declarator
+    4 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode8b-int_factors-cpp-c.c:7:8: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    7 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ^~~~~~
+      |        sizeof
+/tmp/granitecode8b-int_factors-cpp-c.c:7:17: error: expression is not assignable
+    7 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ~~~~~~~~ ^
+/tmp/granitecode8b-int_factors-cpp-c.c:7:15: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |               ^
+/tmp/granitecode8b-int_factors-cpp-c.c:7:22: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                      ^
+/tmp/granitecode8b-int_factors-cpp-c.c:7:65: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                                                                 ^
+/tmp/granitecode8b-int_factors-cpp-c.c:8:5: error: use of undeclared identifier 'vector'
+    8 |     vector factors = GenerateFactors(SampleNumbers[i]);
+      |     ^
+/tmp/granitecode8b-int_factors-cpp-c.c:9:5: error: use of undeclared identifier 'cout'
+    9 |     cout << "Factors of ";
+      |     ^
+/tmp/granitecode8b-int_factors-cpp-c.c:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout.width(4);
+      |     ^
+/tmp/granitecode8b-int_factors-cpp-c.c:11:5: error: use of undeclared identifier 'cout'
+   11 |     cout << SampleNumbers[i] << " are: ";
+      |     ^
+/tmp/granitecode8b-int_factors-cpp-c.c:11:27: error: use of undeclared identifier 'i'
+   11 |     cout << SampleNumbers[i] << " are: ";
+      |                           ^
+/tmp/granitecode8b-int_factors-cpp-c.c:12:5: error: call to undeclared function 'copy'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     copy(factors.begin(), factors.end(), ostream_iterator(cout, " "));
+      |     ^
+/tmp/granitecode8b-int_factors-cpp-c.c:12:42: error: call to undeclared function 'ostream_iterator'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     copy(factors.begin(), factors.end(), ostream_iterator(cout, " "));
+      |                                          ^
+/tmp/granitecode8b-int_factors-cpp-c.c:12:10: error: use of undeclared identifier 'factors'
+   12 |     copy(factors.begin(), factors.end(), ostream_iterator(cout, " "));
+      |          ^
+/tmp/granitecode8b-int_factors-cpp-c.c:12:27: error: use of undeclared identifier 'factors'
+   12 |     copy(factors.begin(), factors.end(), ostream_iterator(cout, " "));
+      |                           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

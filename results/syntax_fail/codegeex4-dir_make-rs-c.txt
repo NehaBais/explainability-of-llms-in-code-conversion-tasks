@@ -1,0 +1,21 @@
+/tmp/codegeex4-dir_make-rs-c.c:14:9: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   len = strlen(pathname);
+      |         ^
+/tmp/codegeex4-dir_make-rs-c.c:14:9: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codegeex4-dir_make-rs-c.c:20:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |   strcpy(buffer, pathname);
+      |   ^
+/tmp/codegeex4-dir_make-rs-c.c:20:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/codegeex4-dir_make-rs-c.c:26:11: error: use of undeclared identifier 'errno'
+   26 |           errno != EEXIST) {
+      |           ^
+/tmp/codegeex4-dir_make-rs-c.c:26:20: error: use of undeclared identifier 'EEXIST'
+   26 |           errno != EEXIST) {
+      |                    ^
+/tmp/codegeex4-dir_make-rs-c.c:36:7: error: use of undeclared identifier 'errno'
+   36 |       errno != EEXIST) {
+      |       ^
+/tmp/codegeex4-dir_make-rs-c.c:36:16: error: use of undeclared identifier 'EEXIST'
+   36 |       errno != EEXIST) {
+      |                ^
+6 errors generated.

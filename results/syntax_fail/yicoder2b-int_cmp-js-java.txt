@@ -1,0 +1,23 @@
+/tmp/None.java:2: error: unclosed character literal
+var num1 = parseInt(prompt('Enter first number'));
+                           ^
+/tmp/None.java:2: error: implicitly declared classes are a preview feature and are disabled by default.
+var num1 = parseInt(prompt('Enter first number'));
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: unclosed character literal
+var num1 = parseInt(prompt('Enter first number'));
+                                              ^
+/tmp/None.java:3: error: unclosed character literal
+var num2 = parseInt(prompt('Enter second number'));
+                           ^
+/tmp/None.java:3: error: unclosed character literal
+var num2 = parseInt(prompt('Enter second number'));
+                                               ^
+/tmp/None.java:5: error: <identifier> expected
+function compare(a, b) {
+                  ^
+/tmp/None.java:5: error: <identifier> expected
+function compare(a, b) {
+                     ^
+7 errors

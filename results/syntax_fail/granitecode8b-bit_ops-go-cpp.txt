@@ -1,0 +1,80 @@
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:4:14: error: unknown type name 'int16_t'
+    4 | void bitwise(int16_t a, int16_t b) {
+      |              ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:4:25: error: unknown type name 'int16_t'
+    4 | void bitwise(int16_t a, int16_t b) {
+      |                         ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "a: " << bitset<16>(uint16_t(a)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:5:20: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    5 |   cout << "a: " << bitset<16>(uint16_t(a)) << endl;
+      |                    ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:5:47: error: use of undeclared identifier 'endl'
+    5 |   cout << "a: " << bitset<16>(uint16_t(a)) << endl;
+      |                                               ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "b: " << bitset<16>(uint16_t(b)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:6:20: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    6 |   cout << "b: " << bitset<16>(uint16_t(b)) << endl;
+      |                    ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:6:47: error: use of undeclared identifier 'endl'
+    6 |   cout << "b: " << bitset<16>(uint16_t(b)) << endl;
+      |                                               ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "and: " << bitset<16>(uint16_t(a & b)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:9:22: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    9 |   cout << "and: " << bitset<16>(uint16_t(a & b)) << endl;
+      |                      ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:9:53: error: use of undeclared identifier 'endl'
+    9 |   cout << "and: " << bitset<16>(uint16_t(a & b)) << endl;
+      |                                                     ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "or: " << bitset<16>(uint16_t(a | b)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:10:21: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   10 |   cout << "or: " << bitset<16>(uint16_t(a | b)) << endl;
+      |                     ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:10:52: error: use of undeclared identifier 'endl'
+   10 |   cout << "or: " << bitset<16>(uint16_t(a | b)) << endl;
+      |                                                    ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "xor: " << bitset<16>(uint16_t(a ^ b)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:11:22: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   11 |   cout << "xor: " << bitset<16>(uint16_t(a ^ b)) << endl;
+      |                      ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:11:53: error: use of undeclared identifier 'endl'
+   11 |   cout << "xor: " << bitset<16>(uint16_t(a ^ b)) << endl;
+      |                                                     ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "not: " << bitset<16>(~uint16_t(a)) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:12:22: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   12 |   cout << "not: " << bitset<16>(~uint16_t(a)) << endl;
+      |                      ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:12:50: error: use of undeclared identifier 'endl'
+   12 |   cout << "not: " << bitset<16>(~uint16_t(a)) << endl;
+      |                                                  ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:15:5: error: use of undeclared identifier 'cout'
+   15 |     cout << "Right operand is negative, but all shifts require an unsigned "
+      |     ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:17:13: error: use of undeclared identifier 'endl'
+   17 |          << endl;
+      |             ^
+/tmp/granitecode8b-bit_ops-go-cpp.cpp:20:3: error: unknown type name 'uint16_t'
+   20 |   uint16_t ua = uint16_t(a);
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+7 warnings and 20 errors generated.

@@ -1,0 +1,10 @@
+/tmp/yicoder2b-str_match-go-c.c:20:15: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   20 |     while ((i = strstr(first + start, second)) != NULL) {
+      |               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-str_match-go-c.c:20:48: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   20 |     while ((i = strstr(first + start, second)) != NULL) {
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/yicoder2b-str_match-go-c.c:21:41: error: invalid operands to binary expression ('int' and 'char *')
+   21 |       printf("2.2. at location %d\n", i - first);
+      |                                       ~ ^ ~~~~~
+1 warning and 2 errors generated.

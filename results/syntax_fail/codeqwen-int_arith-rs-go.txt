@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-int_arith-rs-go.go:35:63: invalid operation: remainder + math.Abs(float64(A)) (mismatched types int and float64)

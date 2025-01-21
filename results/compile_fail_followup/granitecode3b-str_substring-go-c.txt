@@ -1,0 +1,35 @@
+/tmp/granitecode3b-str_substring-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-go-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("Index: ");
+      |   ^
+/tmp/granitecode3b-str_substring-go-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_substring-go-c.c:8:23: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   for (int i = 0; i < strlen(s); i++) {
+      |                       ^
+/tmp/granitecode3b-str_substring-go-c.c:8:23: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_substring-go-c.c:17:5: error: call to undeclared function 'putchar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     putchar(s[i]);
+      |     ^
+/tmp/granitecode3b-str_substring-go-c.c:24:5: error: call to undeclared function 'putchar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |     putchar(s[i]);
+      |     ^
+/tmp/granitecode3b-str_substring-go-c.c:31:5: error: call to undeclared function 'putchar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |     putchar(s[i]);
+      |     ^
+/tmp/granitecode3b-str_substring-go-c.c:36:12: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |   int dx = strchr(s, 'D') - s;
+      |            ^
+/tmp/granitecode3b-str_substring-go-c.c:36:12: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/granitecode3b-str_substring-go-c.c:39:5: error: call to undeclared function 'putchar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |     putchar(s[i]);
+      |     ^
+/tmp/granitecode3b-str_substring-go-c.c:44:12: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   44 |   int sx = strstr(s, "DE") - s;
+      |            ^
+/tmp/granitecode3b-str_substring-go-c.c:44:12: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/granitecode3b-str_substring-go-c.c:47:5: error: call to undeclared function 'putchar'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   47 |     putchar(s[i]);
+      |     ^
+10 errors generated.

@@ -1,0 +1,30 @@
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:10:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   10 |   for (int shift : shifts) {
+      |                  ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:10:20: error: use of undeclared identifier 'shifts'; did you mean 'shift'?
+   10 |   for (int shift : shifts) {
+      |                    ^~~~~~
+      |                    shift
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:10:12: note: 'shift' declared here
+   10 |   for (int shift : shifts) {
+      |            ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:10:18: error: invalid range expression of type 'int'; no viable 'begin' function available
+   10 |   for (int shift : shifts) {
+      |                  ^ ~~~~~~
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:11:23: error: use of undeclared identifier 'a_bitset'; did you mean '__bitset'?
+   11 |     cout << "0b" << ((a_bitset >> shift).to_ulong()).to_string();
+      |                       ^~~~~~~~
+      |                       __bitset
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:168:7: note: '__bitset' declared here
+  168 | class __bitset {
+      |       ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:11:23: error: unknown type name 'a_bitset'
+   11 |     cout << "0b" << ((a_bitset >> shift).to_ulong()).to_string();
+      |                       ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:11:32: error: expected ')'
+   11 |     cout << "0b" << ((a_bitset >> shift).to_ulong()).to_string();
+      |                                ^
+/tmp/qwen2.5coder2b-bit_ops-py-cpp.cpp:11:22: note: to match this '('
+   11 |     cout << "0b" << ((a_bitset >> shift).to_ulong()).to_string();
+      |                      ^
+1 warning and 5 errors generated.

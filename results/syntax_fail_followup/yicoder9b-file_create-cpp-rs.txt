@@ -1,0 +1,52 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/yicoder9b-file_create-cpp-rs.rs:1:37
+  |
+1 | fn create_empty_file(path: &str) -> io::Result<()> {
+  |                                     ^^ use of undeclared crate or module `io`
+  |
+help: a builtin type with a similar name exists
+  |
+1 | fn create_empty_file(path: &str) -> i8::Result<()> {
+  |                                     ~~
+help: consider importing this module
+  |
+1 + use std::io;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/yicoder9b-file_create-cpp-rs.rs:2:20
+  |
+2 |     let mut file = fs::File::create(path)?;
+  |                    ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::File;
+  |
+help: if you import `File`, refer to it directly
+  |
+2 -     let mut file = fs::File::create(path)?;
+2 +     let mut file = File::create(path)?;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/yicoder9b-file_create-cpp-rs.rs:3:5
+  |
+3 |     io::Write::write_all(&mut file, &[])?;  // changed the reference to be mutable.
+  |     ^^ use of undeclared crate or module `io`
+  |
+help: consider importing one of these traits
+  |
+1 + use std::fmt::Write;
+  |
+1 + use std::io::Write;
+  |
+help: if you import `Write`, refer to it directly
+  |
+3 -     io::Write::write_all(&mut file, &[])?;  // changed the reference to be mutable.
+3 +     Write::write_all(&mut file, &[])?;  // changed the reference to be mutable.
+  |
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

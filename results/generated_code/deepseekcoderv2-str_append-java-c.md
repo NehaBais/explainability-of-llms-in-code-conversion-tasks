@@ -1,21 +1,16 @@
-```
+ Here's the equivalent code in C, using the `std::string` class from the Standard Template Library (STL) for a more idiomatic approach to string manipulation:
+
+```cpp
+#include <iostream>
+#include <string>
+
 int main() {
-  char str[5];
-  
-  printf("Enter a string:\n");
-  fgets(str, sizeof str, stdin);
-  if (str[strlen(str) - 1] == '\n')
-      str[strlen(str) - 1] = '\0';
-  else {
-    printf("\nERROR: String too long\n");
-    exit(1);
-  }
-  
-  char append[] = "def";
-  if (strcat(str, append) == NULL)
-      return 1;
-  
-  printf("String after concatenation:\n%s", str);
+    std::string str = "abc";
+    std::cout << str << std::endl;
+    str += "def";
+    std::cout << str << std::endl;
+    return 0;
 }
 ```
 
+This C++ code initializes a `std::string` variable with the value "abc", prints its contents, appends "def" to it, and then prints the updated contents.

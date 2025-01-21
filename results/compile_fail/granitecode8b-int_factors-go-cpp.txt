@@ -1,0 +1,52 @@
+/tmp/granitecode8b-int_factors-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:4:19: error: unknown type name 'int64_t'
+    4 | void printFactors(int64_t nr) {
+      |                   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:6:5: error: use of undeclared identifier 'cout'
+    6 |     cout << "Factors of " << nr << " not computed" << endl;
+      |     ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:6:55: error: use of undeclared identifier 'endl'
+    6 |     cout << "Factors of " << nr << " not computed" << endl;
+      |                                                       ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "Factors of " << nr << ": ";
+      |   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:10:3: error: unknown type name 'vector'
+   10 |   vector fs = {1};
+      |   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:11:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   auto apf = [&fs](int64_t p, int e) {
+      |   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:11:14: error: expected expression
+   11 |   auto apf = [&fs](int64_t p, int e) {
+      |              ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:25:8: error: unknown type name 'int64_t'
+   25 |   for (int64_t d = 3; nr > 1; d += 2) {
+      |        ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:38:3: error: use of undeclared identifier 'cout'
+   38 |   cout << fs << endl;
+      |   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:38:17: error: use of undeclared identifier 'endl'
+   38 |   cout << fs << endl;
+      |                 ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:39:3: error: use of undeclared identifier 'cout'
+   39 |   cout << "Number of factors = " << fs.size() << endl;
+      |   ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:39:50: error: use of undeclared identifier 'endl'
+   39 |   cout << "Number of factors = " << fs.size() << endl;
+      |                                                  ^
+/tmp/granitecode8b-int_factors-go-cpp.cpp:50:16: warning: implicit conversion from 'long' to 'int' changes value from 600851475143 to -443946297 [-Wconstant-conversion]
+   50 |   printFactors(600851475143);
+      |   ~~~~~~~~~~~~ ^~~~~~~~~~~~
+/tmp/granitecode8b-int_factors-go-cpp.cpp:51:16: warning: implicit conversion from 'long' to 'int' changes value from 999999999999999989 to -1486618635 [-Wconstant-conversion]
+   51 |   printFactors(999999999999999989);
+      |   ~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+4 warnings and 13 errors generated.

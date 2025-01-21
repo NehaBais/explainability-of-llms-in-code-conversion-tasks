@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/granitecode3b-file_exists-java-rs.rs:2:1
+  |
+2 | let current_working_directory_path = std::env::current_dir().unwrap();
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

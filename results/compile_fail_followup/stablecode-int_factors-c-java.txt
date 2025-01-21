@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: '{' expected
+class Factors:
+             ^
+1 error

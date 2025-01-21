@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-int_cmp-cpp-go.go:20:13: undefined: strings
+/tmp/qwen2.5coder7b-int_cmp-cpp-go.go:26:26: undefined: strings
+/tmp/qwen2.5coder7b-int_cmp-cpp-go.go:27:26: undefined: strings

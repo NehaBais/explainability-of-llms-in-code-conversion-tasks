@@ -1,0 +1,16 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegeex4-str_substring-c-rs.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `/tmp/codegeex4-str_substring-c-rs.rs`
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/codegeex4-str_substring-c-rs.rs:3:9
+  |
+3 |         substring(s, idx, m)
+  |         ^^^^^^^^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0425, E0601.
+For more information about an error, try `rustc --explain E0425`.

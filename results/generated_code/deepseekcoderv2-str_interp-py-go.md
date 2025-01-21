@@ -1,4 +1,5 @@
-"""
+ Sure! Below is the equivalent code in Golang:
+
 ```go
 package main
 
@@ -7,9 +8,12 @@ import (
 )
 
 func main() {
-	variable := "little" // Variable
-	var originalString string = "Mary had a %s lamb."
-	fmt.Printf("Original String: %s \n", originalString)
-	fmt.Printf("%s\n", fmt.Sprintf(originalString, variable)) // Converted Code
+	extra := "little"
+	newStr := fmt.Sprintf("Mary had a %s lamb.", extra)
+	fmt.Println(newStr)
 }
 ```
+
+In this Go code:
+- `extra` is defined as the string `"little"`.
+- `fmt.Sprintf` is used to perform string interpolation, where the placeholder `%s` is replaced by the value of `extra`.

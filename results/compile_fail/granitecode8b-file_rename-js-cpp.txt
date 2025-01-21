@@ -1,0 +1,38 @@
+/tmp/granitecode8b-file_rename-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string currentDirectory = "."; // current working directory
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string sourceFile = "input.txt";
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string destinationFile = "output.txt";
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::string sourceDirectory = "docs";
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:7:15: error: use of undeclared identifier 'sourceDirectory'; did you mean 'currentDirectory'?
+    7 |   std::string sourceDirectory = "docs";
+      |               ^~~~~~~~~~~~~~~
+      |               currentDirectory
+/tmp/granitecode8b-file_rename-js-cpp.cpp:4:15: note: 'currentDirectory' declared here
+    4 |   std::string currentDirectory = "."; // current working directory
+      |               ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string destinationDirectory = "mydocs";
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:11:3: error: use of undeclared identifier 'std'
+   11 |   std::string command = "mv " + currentDirectory + "/" + sourceFile + " " +
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:19:46: error: use of undeclared identifier 'sourceDirectory'
+   19 |   command = "mv " + currentDirectory + "/" + sourceDirectory + " " +
+      |                                              ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:23:27: error: use of undeclared identifier 'sourceDirectory'
+   23 |   command = "sudo mv /" + sourceDirectory + " /" + destinationDirectory;
+      |                           ^
+11 errors generated.

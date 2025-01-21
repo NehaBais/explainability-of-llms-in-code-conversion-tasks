@@ -1,0 +1,22 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_substring-cpp-rs.rs:1:1
+  |
+1 | println!("{}", &s[s.find(c).unwrap()..n + m]);
+  | --------------------------------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_substring-cpp-rs.rs:2:1
+  |
+2 | println!("{}", &s[s.find(&sub).unwrap()..n + m]);
+  | ------------------------------------------------ caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: aborting due to 2 previous errors
+

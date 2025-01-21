@@ -1,0 +1,15 @@
+error[E0599]: no method named `split_whitespace` found for type `usize` in the current scope
+  --> /tmp/codegemma7b-int_arith-go-rs.rs:13:10
+   |
+10 |       let numbers: Vec<i32> = io::stdin()
+   |  _____________________________-
+11 | |         .read_line(&mut String::new())
+12 | |         .expect("Failed to read line")
+13 | |         .split_whitespace()
+   | |         -^^^^^^^^^^^^^^^^ method not found in `usize`
+   | |_________|
+   |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

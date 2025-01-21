@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_cmp-rs-go.go:9:15: undefined: bufio
+/tmp/qwen2.5coder2b-int_cmp-rs-go.go:9:31: undefined: os
+/tmp/qwen2.5coder2b-int_cmp-rs-go.go:16:9: undefined: strings
+/tmp/qwen2.5coder2b-int_cmp-rs-go.go:21:15: undefined: strings

@@ -1,8 +1,15 @@
-s = "hello"  # create a string variable equal to any text value.
-print(s)  # show the content of the variables.
+def sconcat(s1, s2):
+    return s1 + s2
 
-s_concatenated = (
-    s + " literal"
-)  # Create another string variable whose value is the original variable concatenated with another string literal.
-print(s_concatenated)
-# or print(f"{s} literal")
+
+# Create a string variable equal to any text value.
+s = "hello"
+
+# Print the content of the variables
+print(f"{s} literal")
+# Alternatively, using concatenation
+print(f"{s}{' literal'}")
+
+# Concatenate another string literal with the original variable and print it
+s2 = sconcat(s, " literal")
+print(s2)

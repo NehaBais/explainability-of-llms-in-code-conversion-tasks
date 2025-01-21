@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:10: error: expected expression
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:11: error: unexpected character <U+FF5C>
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:19: error: character <U+2581> not allowed in an identifier
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:24: error: character <U+2581> not allowed in an identifier
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:35: error: character <U+FF5C> not allowed in an identifier
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-str_match-java-cpp.cpp:35:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   35 |   return <｜begin▁of▁sentence｜ > 0;
+      |             ^
+6 errors generated.

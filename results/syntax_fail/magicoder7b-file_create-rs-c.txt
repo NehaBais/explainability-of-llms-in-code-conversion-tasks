@@ -1,0 +1,22 @@
+/tmp/magicoder7b-file_create-rs-c.c:9:3: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   create(".", FILE_NAME, DIR_NAME);
+      |   ^
+/tmp/magicoder7b-file_create-rs-c.c:13:6: error: conflicting types for 'create'
+   13 | void create(const char *root, const char *file_name, const char *dir_name) {
+      |      ^
+/tmp/magicoder7b-file_create-rs-c.c:9:3: note: previous implicit declaration is here
+    9 |   create(".", FILE_NAME, DIR_NAME);
+      |   ^
+/tmp/magicoder7b-file_create-rs-c.c:16:25: error: expected ')'
+   16 |       fopen("/path/to/" FILE_NAME, "w"); // Replace "/path/to/" with root path.
+      |                         ^
+/tmp/magicoder7b-file_create-rs-c.c:16:12: note: to match this '('
+   16 |       fopen("/path/to/" FILE_NAME, "w"); // Replace "/path/to/" with root path.
+      |            ^
+/tmp/magicoder7b-file_create-rs-c.c:25:32: error: expected ')'
+   25 |       system((char *)"mkdir /" DIR_NAME); // Replace "/" with root path.
+      |                                ^
+/tmp/magicoder7b-file_create-rs-c.c:25:13: note: to match this '('
+   25 |       system((char *)"mkdir /" DIR_NAME); // Replace "/" with root path.
+      |             ^
+4 errors generated.

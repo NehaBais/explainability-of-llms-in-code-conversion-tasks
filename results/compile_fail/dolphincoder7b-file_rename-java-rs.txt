@@ -1,0 +1,14 @@
+error[E0308]: mismatched types
+ --> /tmp/dolphincoder7b-file_rename-java-rs.rs:5:5
+  |
+4 | fn rename_file(oldname: &str, newname: &str) -> Result<bool, io::Error> {
+  |                                                 ----------------------- expected `Result<bool, std::io::Error>` because of return type
+5 |     fs::rename(oldname, newname)
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `Result<bool, Error>`, found `Result<(), Error>`
+  |
+  = note: expected enum `Result<bool, _>`
+             found enum `Result<(), _>`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

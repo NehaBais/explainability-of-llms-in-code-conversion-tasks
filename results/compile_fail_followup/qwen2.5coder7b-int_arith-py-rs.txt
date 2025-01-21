@@ -1,0 +1,14 @@
+error[E0689]: can't call method `pow` on ambiguous numeric type `{integer}`
+  --> /tmp/qwen2.5coder7b-int_arith-py-rs.rs:20:21
+   |
+20 |     let yy = input1.pow(input2);
+   |                     ^^^
+   |
+help: you must specify a type for this binding, like `i32`
+   |
+2  |     let input1: i32 = 18;
+   |               +++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0689`.

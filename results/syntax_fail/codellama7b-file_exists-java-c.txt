@@ -1,0 +1,23 @@
+/tmp/codellama7b-file_exists-java-c.c:9:29: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *currentWorkingDir = getcwd(NULL, 0);
+      |                             ^
+/tmp/codellama7b-file_exists-java-c.c:9:9: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+    9 |   char *currentWorkingDir = getcwd(NULL, 0);
+      |         ^                   ~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_exists-java-c.c:12:9: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     if (access(currentWorkingDir, F_OK) == 0) {
+      |         ^
+/tmp/codellama7b-file_exists-java-c.c:12:35: error: use of undeclared identifier 'F_OK'
+   12 |     if (access(currentWorkingDir, F_OK) == 0) {
+      |                                   ^
+/tmp/codellama7b-file_exists-java-c.c:18:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   free(currentWorkingDir);
+      |   ^
+/tmp/codellama7b-file_exists-java-c.c:18:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/codellama7b-file_exists-java-c.c:24:9: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |     if (access(rootDirectory, F_OK) == 0) {
+      |         ^
+/tmp/codellama7b-file_exists-java-c.c:24:31: error: use of undeclared identifier 'F_OK'
+   24 |     if (access(rootDirectory, F_OK) == 0) {
+      |                               ^
+7 errors generated.

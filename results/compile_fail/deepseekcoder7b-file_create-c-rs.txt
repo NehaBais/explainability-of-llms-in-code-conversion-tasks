@@ -1,0 +1,47 @@
+warning: unused imports: `DirEntry`, `remove_dir`, and `remove_file`
+ --> /tmp/deepseekcoder7b-file_create-c-rs.rs:1:15
+  |
+1 | use std::fs::{remove_dir, remove_file, DirEntry, File};
+  |               ^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::os::unix::fs::PermissionsExt`
+ --> /tmp/deepseekcoder7b-file_create-c-rs.rs:3:5
+  |
+3 | use std::os::unix::fs::PermissionsExt;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::path::Path`
+ --> /tmp/deepseekcoder7b-file_create-c-rs.rs:4:5
+  |
+4 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_create-c-rs.rs:12:26
+   |
+12 |     file.set_permissions(0o640)?; // rights 0640 for rw-r-----
+   |          --------------- ^^^^^ expected `Permissions`, found integer
+   |          |
+   |          arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:674:12
+
+error[E0599]: no method named `set_permissions` found for unit type `()` in the current scope
+  --> /tmp/deepseekcoder7b-file_create-c-rs.rs:16:9
+   |
+16 |     dir.set_permissions(0o750)?; // rights 0750 for rwxr-x---
+   |         ^^^^^^^^^^^^^^^ method not found in `()`
+
+warning: unused import: `std::io::prelude`
+ --> /tmp/deepseekcoder7b-file_create-c-rs.rs:2:5
+  |
+2 | use std::io::prelude::*;
+  |     ^^^^^^^^^^^^^^^^
+
+error: aborting due to 2 previous errors; 4 warnings emitted
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

@@ -1,0 +1,25 @@
+error[E0433]: failed to resolve: use of undeclared type `File`
+  --> /tmp/yicoder2b-file_rename-java-rs.rs:27:16
+   |
+27 |     let file = File::new(oldname);
+   |                ^^^^ use of undeclared type `File`
+   |
+help: consider importing this struct
+   |
+1  + use std::fs::File;
+   |
+
+error[E0433]: failed to resolve: use of undeclared type `File`
+  --> /tmp/yicoder2b-file_rename-java-rs.rs:28:17
+   |
+28 |     let file2 = File::new(newname);
+   |                 ^^^^ use of undeclared type `File`
+   |
+help: consider importing this struct
+   |
+1  + use std::fs::File;
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

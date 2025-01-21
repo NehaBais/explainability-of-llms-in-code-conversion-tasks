@@ -1,0 +1,1 @@
+The error is due to the fact that `err` variable name is declared twice in the same scope, which Golang does not allow in the same scope. The line where it's used: `return err` and the next line where it's defined again: `if _ != os.Mkdir(path, 0755)`.

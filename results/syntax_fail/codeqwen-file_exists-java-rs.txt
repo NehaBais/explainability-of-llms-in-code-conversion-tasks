@@ -1,0 +1,9 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `dirs`
+ --> /tmp/codeqwen-file_exists-java-rs.rs:9:29
+  |
+9 |     if let Some(mut root) = dirs::home_dir() {
+  |                             ^^^^ use of undeclared crate or module `dirs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.

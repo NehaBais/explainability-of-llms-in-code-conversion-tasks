@@ -1,0 +1,84 @@
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:6:31
+  |
+6 |     fs::set_permissions(path, Permissions::from_mode(mode))?;
+  |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+  |
+help: consider importing this struct
+  |
+1 + use fs::Permissions;
+  |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:8:2
+  |
+8 | }
+  |  ^ consider adding a `main` function to `/tmp/codellama7b-dir_make-go-rs.rs`
+
+warning: trait objects without an explicit `dyn` are deprecated
+ --> /tmp/codellama7b-dir_make-go-rs.rs:4:51
+  |
+4 | fn mkdir_all(path: &str, mode: u32) -> Result<(), Error> {
+  |                                                   ^^^^^
+  |
+  = warning: this is accepted in the current edition (Rust 2015) but is a hard error in Rust 2021!
+  = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2021/warnings-promoted-to-error.html>
+  = note: `#[warn(bare_trait_objects)]` on by default
+help: if this is an object-safe trait, use `dyn`
+  |
+4 | fn mkdir_all(path: &str, mode: u32) -> Result<(), dyn Error> {
+  |                                                   +++
+
+error[E0277]: the size for values of type `(dyn std::error::Error + 'static)` cannot be known at compilation time
+ --> /tmp/codellama7b-dir_make-go-rs.rs:4:40
+  |
+4 | fn mkdir_all(path: &str, mode: u32) -> Result<(), Error> {
+  |                                        ^^^^^^^^^^^^^^^^^ doesn't have a size known at compile-time
+  |
+  = help: the trait `Sized` is not implemented for `(dyn std::error::Error + 'static)`
+note: required by an implicit `Sized` bound in `Result`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:527:1
+
+error[E0277]: `?` couldn't convert the error to `dyn std::error::Error`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:5:29
+  |
+4 | fn mkdir_all(path: &str, mode: u32) -> Result<(), Error> {
+  |                                        ----------------- expected `dyn std::error::Error` because of this
+5 |     fs::create_dir_all(path)?;
+  |     ------------------------^ the trait `From<std::io::Error>` is not implemented for `dyn std::error::Error`, which is required by `Result<(), dyn std::error::Error>: FromResidual<Result<Infallible, std::io::Error>>`
+  |     |
+  |     this can't be annotated with `?` because it has type `Result<_, std::io::Error>`
+  |
+  = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+  = help: the trait `FromResidual<Result<Infallible, E>>` is implemented for `Result<T, F>`
+  = note: required for `Result<(), dyn std::error::Error>` to implement `FromResidual<Result<Infallible, std::io::Error>>`
+
+error[E0277]: `?` couldn't convert the error to `dyn std::error::Error`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:6:60
+  |
+4 | fn mkdir_all(path: &str, mode: u32) -> Result<(), Error> {
+  |                                        ----------------- expected `dyn std::error::Error` because of this
+5 |     fs::create_dir_all(path)?;
+6 |     fs::set_permissions(path, Permissions::from_mode(mode))?;
+  |     -------------------------------------------------------^ the trait `From<std::io::Error>` is not implemented for `dyn std::error::Error`, which is required by `Result<(), dyn std::error::Error>: FromResidual<Result<Infallible, std::io::Error>>`
+  |     |
+  |     this can't be annotated with `?` because it has type `Result<_, std::io::Error>`
+  |
+  = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+  = help: the trait `FromResidual<Result<Infallible, E>>` is implemented for `Result<T, F>`
+  = note: required for `Result<(), dyn std::error::Error>` to implement `FromResidual<Result<Infallible, std::io::Error>>`
+
+error[E0277]: the size for values of type `dyn std::error::Error` cannot be known at compilation time
+ --> /tmp/codellama7b-dir_make-go-rs.rs:7:5
+  |
+7 |     Ok(())
+  |     ^^^^^^ doesn't have a size known at compile-time
+  |
+  = help: the trait `Sized` is not implemented for `dyn std::error::Error`
+note: required by a bound in `Ok`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:531:5
+
+error: aborting due to 6 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0433, E0601.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,0 +1,46 @@
+/tmp/Main.java:13: error: cannot find symbol
+    try (FileOutputStream outputStream =
+         ^
+  symbol:   class FileOutputStream
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+        new FileOutputStream(outputFilePath.toFile(), CREATE, TRUNCATE_EXISTing)) {
+            ^
+  symbol:   class FileOutputStream
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+        new FileOutputStream(outputFilePath.toFile(), CREATE, TRUNCATE_EXISTing)) {
+                                                              ^
+  symbol:   variable TRUNCATE_EXISTing
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    FileAttribute<Set<PosixFilePermission>> permissions =
+                  ^
+  symbol:   class Set
+  location: class Main
+/tmp/Main.java:18: error: cannot find symbol
+    FileAttribute<Set<PosixFilePermission>> permissions =
+                      ^
+  symbol:   class PosixFilePermission
+  location: class Main
+/tmp/Main.java:19: error: cannot find symbol
+        PosixFilePermissions.asFileAttribute(
+        ^
+  symbol:   variable PosixFilePermissions
+  location: class Main
+/tmp/Main.java:21: error: cannot find symbol
+                PosixFilePermission.OWNER_READ,
+                ^
+  symbol:   variable PosixFilePermission
+  location: class Main
+/tmp/Main.java:22: error: cannot find symbol
+                PosixFilePermission.GROUP_READ,
+                ^
+  symbol:   variable PosixFilePermission
+  location: class Main
+/tmp/Main.java:23: error: cannot find symbol
+                PosixFilePermission.OTHERS_READ));
+                ^
+  symbol:   variable PosixFilePermission
+  location: class Main
+9 errors

@@ -1,0 +1,10 @@
+/tmp/codegeex4-dir_make-js-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directories(p);
+      |     ~~~~~^
+/tmp/codegeex4-dir_make-js-cpp.cpp:8:23: error: no member named 'filesystem' in namespace 'std'
+    8 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+/tmp/codegeex4-dir_make-js-cpp.cpp:12:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |       auto pos = p.find_last_of('/');
+      |       ^
+1 warning and 2 errors generated.

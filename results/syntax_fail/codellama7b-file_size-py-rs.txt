@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/codellama7b-file_size-py-rs.rs:3:1
+  |
+3 | let size = fs::File::open("input.txt")?.metadata()?.len();
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

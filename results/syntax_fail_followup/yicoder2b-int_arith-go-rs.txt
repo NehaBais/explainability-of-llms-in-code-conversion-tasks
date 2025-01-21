@@ -1,0 +1,15 @@
+error[E0425]: cannot find value `a` in this scope
+ --> /tmp/yicoder2b-int_arith-go-rs.rs:4:44
+  |
+4 |     let mut a = io::stdin().read_line(&mut a).expect("Failed to read line from standard input"); // Get two integers from user
+  |                                            ^ not found in this scope
+
+error[E0425]: cannot find value `b` in this scope
+ --> /tmp/yicoder2b-int_arith-go-rs.rs:5:44
+  |
+5 |     let mut b = io::stdin().read_line(&mut b).expect("Failed to read line from standard input");
+  |                                            ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

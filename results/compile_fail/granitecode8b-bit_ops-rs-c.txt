@@ -1,0 +1,69 @@
+/tmp/granitecode8b-bit_ops-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:3:3: error: use of undeclared identifier 'uint8_t'
+    3 |   uint8_t a = 105;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-c.c:4:3: error: use of undeclared identifier 'uint8_t'
+    4 |   uint8_t b = 91;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-c.c:5:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |  printf("a      = %08b
+      |  ^
+/tmp/granitecode8b-bit_ops-rs-c.c:5:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-bit_ops-rs-c.c:5:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 |  printf("a      = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:5:9: error: expected expression
+/tmp/granitecode8b-bit_ops-rs-c.c:6:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 | ", a);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:7:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 |  printf("b      = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:8:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 | ", b);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:9:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |  printf("a | b  = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:10:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 | ", a | b);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:11:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 |  printf("a & b  = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:12:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 | ", a & b);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:13:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 |  printf("a ^ b  = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:14:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 | ", a ^ b);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:15:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |  printf("!a     = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:16:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 | ", ~a);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:17:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 |  printf("a << 3 = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:18:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 | ", a << 3);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:19:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 |  printf("a >> 3 = %08b
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-c.c:20:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   20 | ", a >> 3);
+      | ^
+/tmp/granitecode8b-bit_ops-rs-c.c:22:2: error: expected '}'
+   22 | }
+      |  ^
+/tmp/granitecode8b-bit_ops-rs-c.c:2:12: note: to match this '{'
+    2 | int main() {
+      |            ^
+16 warnings and 6 errors generated.

@@ -1,0 +1,13 @@
+/tmp/deepseekcoderv2-bit_ops-java-cpp.cpp:31:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   31 |   auto rotate_left = [](int value, int shift) {
+      |   ^
+/tmp/deepseekcoderv2-bit_ops-java-cpp.cpp:31:22: error: expected expression
+   31 |   auto rotate_left = [](int value, int shift) {
+      |                      ^
+/tmp/deepseekcoderv2-bit_ops-java-cpp.cpp:34:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   34 |   auto rotate_right = [](int value, int shift) {
+      |   ^
+/tmp/deepseekcoderv2-bit_ops-java-cpp.cpp:34:23: error: expected expression
+   34 |   auto rotate_right = [](int value, int shift) {
+      |                       ^
+2 warnings and 2 errors generated.

@@ -1,0 +1,17 @@
+/tmp/granitecode8b-file_exists-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-java-c.c:5:7: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (access("docs/input.txt", F_OK) != -1) {
+      |       ^
+/tmp/granitecode8b-file_exists-java-c.c:5:32: error: use of undeclared identifier 'F_OK'
+    5 |   if (access("docs/input.txt", F_OK) != -1) {
+      |                                ^
+/tmp/granitecode8b-file_exists-java-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("File and directory exists in the current working directoryn");
+      |     ^
+/tmp/granitecode8b-file_exists-java-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_exists-java-c.c:14:33: error: use of undeclared identifier 'F_OK'
+   14 |   if (access("/docs/input.txt", F_OK) != -1) {
+      |                                 ^
+5 errors generated.

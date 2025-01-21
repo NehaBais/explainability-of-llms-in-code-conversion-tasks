@@ -1,0 +1,25 @@
+/tmp/Main.java:11: error: illegal start of expression
+            if (!Files.exists(Paths.get("/")))) {
+                                              ^
+/tmp/Main.java:12: error: ';' expected
+                Files.createDirectory("/"));
+                                          ^
+/tmp/Main.java:17: error: ';' expected
+                                Paths.get("/some_name.txt"))), null);
+                                     ^
+/tmp/Main.java:17: error: ';' expected
+                                Paths.get("/some_name.txt"))), null);
+                                                           ^
+/tmp/Main.java:18: error: ';' expected
+            Files.createFile(Paths.get("/input.txt"))));
+                                                     ^
+/tmp/Main.java:27: error: illegal start of expression
+            if (!Files.exists(Paths.get("/")))) {
+                                              ^
+/tmp/Main.java:28: error: ';' expected
+                Files.createDirectory("/"));
+                                          ^
+/tmp/Main.java:30: error: ';' expected
+            Files.createDirectory(Paths.get("/docs"))));
+                                                     ^
+8 errors

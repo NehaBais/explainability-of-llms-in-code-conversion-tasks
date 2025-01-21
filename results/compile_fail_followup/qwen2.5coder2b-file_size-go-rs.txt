@@ -1,0 +1,26 @@
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-file_size-go-rs.rs:5:9
+  |
+4 |     match fs::metadata(file).unwrap() {
+  |           --------------------------- this expression has type `Metadata`
+5 |         Ok(metadata) => println!("Size of {}: {}", file, metadata.len()),
+  |         ^^^^^^^^^^^^ expected `Metadata`, found `Result<_, _>`
+  |
+  = note: expected struct `Metadata`
+               found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-file_size-go-rs.rs:6:9
+  |
+4 |     match fs::metadata(file).unwrap() {
+  |           --------------------------- this expression has type `Metadata`
+5 |         Ok(metadata) => println!("Size of {}: {}", file, metadata.len()),
+6 |         Err(e) => eprintln!("Error getting file size: {}", e),
+  |         ^^^^^^ expected `Metadata`, found `Result<_, _>`
+  |
+  = note: expected struct `Metadata`
+               found enum `Result<_, _>`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

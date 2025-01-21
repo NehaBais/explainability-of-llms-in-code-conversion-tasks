@@ -1,0 +1,28 @@
+/tmp/stablecode-str_substring-go-cpp.cpp:15:80: error: expected ';' after expression
+   15 |     std::cout << "Start " << n << ", length " << m << ":    " << s.substr(n, m)) << std::endl;
+      |                                                                                ^
+      |                                                                                ;
+/tmp/stablecode-str_substring-go-cpp.cpp:15:80: error: expected expression
+/tmp/stablecode-str_substring-go-cpp.cpp:18:83: error: expected ';' after expression
+   18 |     std::cout << "Start " << n << ", to end:      " << s.substr(n, s.length() - n))) << std::endl;
+      |                                                                                   ^
+      |                                                                                   ;
+/tmp/stablecode-str_substring-go-cpp.cpp:18:83: error: expected expression
+/tmp/stablecode-str_substring-go-cpp.cpp:21:71: error: expected ';' after expression
+   21 |     std::cout << "All but last:         " << s.substr(0, s.length()-1)))) << std::endl;
+      |                                                                       ^
+      |                                                                       ;
+/tmp/stablecode-str_substring-go-cpp.cpp:21:71: error: expected expression
+/tmp/stablecode-str_substring-go-cpp.cpp:25:18: error: expected expression
+   25 |     std::cout << `Start 'D', length % d : % s`<< std::endl;
+      |                  ^
+/tmp/stablecode-str_substring-go-cpp.cpp:29:18: error: expected expression
+   29 |     std::cout << `Start "DE", length % d : % s`
+      |                  ^
+/tmp/stablecode-str_substring-go-cpp.cpp:29:48: error: expected '}'
+   29 |     std::cout << `Start "DE", length % d : % s`
+      |                                                ^
+/tmp/stablecode-str_substring-go-cpp.cpp:4:12: note: to match this '{'
+    4 | int main() {
+      |            ^
+9 errors generated.

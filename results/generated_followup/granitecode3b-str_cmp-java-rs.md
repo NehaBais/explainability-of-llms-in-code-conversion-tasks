@@ -1,0 +1,45 @@
+The error occurred because the `std::cmp::Ordering` trait does not implement the `std::fmt::Display` trait, which means that it cannot be formatted using the default formatter. To fix this, you can use the `{:?}` (or {:#?} for pretty-print) format specifier in your println statements to display the `std::cmp::Ordering` enum as a string representation.
+
+Here's the corrected code:
+```rs
+fn compare(A: &str, B: &str) {
+    if A == B {
+        println!("{} and {} are lexically equal.", A, B);
+    } else {
+        println!("{} and {} are not lexically equal.", A, B);
+    }
+
+    if A.to_lowercase() == B.to_lowercase() {
+        println!("{} and {} are case-insensitive lexically equal.", A, B);
+    } else {
+        println!("{} and {} are not case-insensitive lexically equal.", A, B);
+    }
+
+    match A.cmp(B) {
+        std::cmp::Ordering::Less => println!("{} is lexically before {}", A, B),
+        std::cmp::Ordering::Greater => println!("{} is lexically after {}", A, B),
+        _ => (),
+    }
+
+    match A.cmp(B) {
+        std::cmp::Ordering::Greater | std::cmp::Ordering::Equal => {
+            println!("{} is not lexically before {}", A, B)
+        }
+        _ => (),
+    }
+
+    match A.cmp(B) {
+        std::cmp::Ordering::Less | std::cmp::Ordering::Equal => {
+            println!("{} is not lexically after {}", A, B)
+        }
+        _ => (),
+    }
+
+    println!("The lexical relationship is: {}", A.cmp(B));
+    println!(
+        "The case-insensitive lexical relationship is: {}",
+        A.to_lowercase().cmp(&B.to_lowercase())
+    );
+}
+```
+

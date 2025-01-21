@@ -1,0 +1,59 @@
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string c = "cat";
+      |   ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string d = "dog";
+      |   ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:7:5: error: use of undeclared identifier 'std'
+    7 |     std::cout << c << " is bytewise identical to " << d << std::endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:7:60: error: use of undeclared identifier 'std'
+    7 |     std::cout << c << " is bytewise identical to " << d << std::endl;
+      |                                                            ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << c << " is bytewise different from " << d << std::endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:10:62: error: use of undeclared identifier 'std'
+   10 |     std::cout << c << " is bytewise different from " << d << std::endl;
+      |                                                              ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:13:5: error: use of undeclared identifier 'std'
+   13 |     std::cout << c << " is lexically bytewise greater than " << d << std::endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:13:70: error: use of undeclared identifier 'std'
+   13 |     std::cout << c << " is lexically bytewise greater than " << d << std::endl;
+      |                                                                      ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::cout << c << " is lexically bytewise less than " << d << std::endl;
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:16:67: error: use of undeclared identifier 'std'
+   16 |     std::cout << c << " is lexically bytewise less than " << d << std::endl;
+      |                                                                   ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:19:5: error: use of undeclared identifier 'std'
+   19 |     std::cout << c << " is lexically bytewise greater than or equal to " << d
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:20:18: error: use of undeclared identifier 'std'
+   20 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:23:5: error: use of undeclared identifier 'std'
+   23 |     std::cout << c << " is lexically bytewise less than or equal to " << d
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:24:18: error: use of undeclared identifier 'std'
+   24 |               << std::endl;
+      |                  ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:32:7: error: use of undeclared identifier 'std'
+   32 |   if (std::lexicographical_compare(c.begin(), c.end(), d.begin(), d.end())) {
+      |       ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:33:5: error: use of undeclared identifier 'std'
+   33 |     std::cout << c << " is lexically greater than " << d << " " << eqf
+      |     ^
+/tmp/granitecode8b-str_cmp-go-cpp.cpp:34:18: error: use of undeclared identifier 'std'
+   34 |               << std::endl;
+      |                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

@@ -1,0 +1,31 @@
+/tmp/stablecode-str_prepend-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_prepend-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_prepend-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-str_prepend-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/stablecode-str_prepend-cpp-c.c:10:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   strcpy(prepended, "This is prepended: ");
+      |   ^
+/tmp/stablecode-str_prepend-cpp-c.c:10:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/stablecode-str_prepend-cpp-c.c:11:5: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     strcat(prepended, myStrings[0]));
+      |     ^
+/tmp/stablecode-str_prepend-cpp-c.c:11:5: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/stablecode-str_prepend-cpp-c.c:11:36: error: extraneous ')' before ';'
+   11 |     strcat(prepended, myStrings[0]));
+      |                                    ^
+/tmp/stablecode-str_prepend-cpp-c.c:12:36: error: extraneous ')' before ';'
+   12 |     strcat(prepended, myStrings[1]));
+      |                                    ^
+/tmp/stablecode-str_prepend-cpp-c.c:14:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     printf("%s\n", prepended);
+      |     ^
+/tmp/stablecode-str_prepend-cpp-c.c:14:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+9 errors generated.

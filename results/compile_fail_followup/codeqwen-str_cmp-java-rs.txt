@@ -1,0 +1,23 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codeqwen-str_cmp-java-rs.rs:3:2
+  |
+3 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-str_cmp-java-rs.rs`
+
+warning: unused variable: `a`
+ --> /tmp/codeqwen-str_cmp-java-rs.rs:1:12
+  |
+1 | fn compare(a: &str, B: &str) {
+  |            ^ help: if this is intentional, prefix it with an underscore: `_a`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `B`
+ --> /tmp/codeqwen-str_cmp-java-rs.rs:1:21
+  |
+1 | fn compare(a: &str, B: &str) {
+  |                     ^ help: if this is intentional, prefix it with an underscore: `_B`
+
+error: aborting due to 1 previous error; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0601`.

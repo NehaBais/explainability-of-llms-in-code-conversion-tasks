@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode3b-dir_make-js-go.go:10:10: e declared and not used

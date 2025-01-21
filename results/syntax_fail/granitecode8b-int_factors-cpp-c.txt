@@ -1,0 +1,61 @@
+/tmp/granitecode8b-int_factors-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:4:1: error: unknown type name 'using'
+    4 | using namespace std;
+      | ^
+/tmp/granitecode8b-int_factors-cpp-c.c:4:16: error: expected ';' after top level declarator
+    4 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode8b-int_factors-cpp-c.c:5:1: error: unknown type name 'vector'
+    5 | vector GenerateFactors(int n) {
+      | ^
+/tmp/granitecode8b-int_factors-cpp-c.c:6:3: error: use of undeclared identifier 'vector'
+    6 |   vector factors = {1, n};
+      |   ^
+/tmp/granitecode8b-int_factors-cpp-c.c:9:7: error: use of undeclared identifier 'factors'
+    9 |       factors.push_back(i);
+      |       ^
+/tmp/granitecode8b-int_factors-cpp-c.c:11:9: error: use of undeclared identifier 'factors'
+   11 |         factors.push_back(n / i);
+      |         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:14:3: error: call to undeclared function 'sort'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   sort(factors.begin(), factors.end());
+      |   ^
+/tmp/granitecode8b-int_factors-cpp-c.c:14:8: error: use of undeclared identifier 'factors'
+   14 |   sort(factors.begin(), factors.end());
+      |        ^
+/tmp/granitecode8b-int_factors-cpp-c.c:14:25: error: use of undeclared identifier 'factors'
+   14 |   sort(factors.begin(), factors.end());
+      |                         ^
+/tmp/granitecode8b-int_factors-cpp-c.c:15:10: error: use of undeclared identifier 'factors'
+   15 |   return factors;
+      |          ^
+/tmp/granitecode8b-int_factors-cpp-c.c:19:8: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   19 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ^~~~~~
+      |        sizeof
+/tmp/granitecode8b-int_factors-cpp-c.c:19:17: error: expression is not assignable
+   19 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |        ~~~~~~~~ ^
+/tmp/granitecode8b-int_factors-cpp-c.c:19:15: error: use of undeclared identifier 'i'
+   19 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |               ^
+/tmp/granitecode8b-int_factors-cpp-c.c:19:22: error: use of undeclared identifier 'i'
+   19 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                      ^
+/tmp/granitecode8b-int_factors-cpp-c.c:19:65: error: use of undeclared identifier 'i'
+   19 |   for (size_t i = 0; i < sizeof(SampleNumbers) / sizeof(int); ++i) {
+      |                                                                 ^
+/tmp/granitecode8b-int_factors-cpp-c.c:20:5: error: use of undeclared identifier 'vector'
+   20 |     vector factors = GenerateFactors(SampleNumbers[i]);
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

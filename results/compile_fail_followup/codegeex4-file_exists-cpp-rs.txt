@@ -1,0 +1,31 @@
+error[E0259]: the name `std` is defined multiple times
+  |
+  = note: `std` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+  |
+1 | extern crate std as other_std;
+  |
+
+error[E0432]: unresolved import `dirs`
+ --> /tmp/codegeex4-file_exists-cpp-rs.rs:3:5
+  |
+3 | use dirs::home_dir;
+  |     ^^^^ you might be missing crate `dirs`
+  |
+help: consider importing the `dirs` crate
+  |
+1 + extern crate dirs;
+  |
+
+warning: unused import: `Metadata`
+ --> /tmp/codegeex4-file_exists-cpp-rs.rs:4:21
+  |
+4 | use std::fs::{self, Metadata};
+  |                     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0259, E0432.
+For more information about an error, try `rustc --explain E0259`.

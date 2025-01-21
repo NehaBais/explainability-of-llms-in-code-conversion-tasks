@@ -1,7 +1,26 @@
 const fs = require("fs");
+const path = require("path");
 
-// Create an empty file called "output.txt" with size 0 bytes in the current working directory
-fs.writeFileSync("output.txt", Buffer.alloc(0));
+// Create output.txt in the current working directory
+fs.writeFile("output.txt", "", (err) => {
+  if (err) throw err;
+  console.log('The file "output.txt" has been created.');
+});
 
-// Create a new empty directory called "docs" in the filesystem root
-fs.mkdirSync("/docs");
+// Create output.txt in the root directory
+fs.writeFile("/output.txt", "", (err) => {
+  if (err) throw err;
+  console.log('The file "/output.txt" has been created.');
+});
+
+// Create docs directory in the current working directory
+fs.mkdirSync("docs");
+console.log(
+  'The directory "docs" has been created in the current working directory.',
+);
+
+// Create docs directory in the root directory
+fs.mkdirSync("/docs", (err) => {
+  if (err) throw err;
+  console.log('The directory "/docs" has been created.');
+});

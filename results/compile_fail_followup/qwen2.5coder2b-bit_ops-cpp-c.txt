@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-bit_ops-cpp-c.c:1:10: fatal error: 'bit' file not found
+    1 | #include <bit> // For __builtin_rotate_left and __builtin_rotate_right
+      |          ^~~~~
+1 error generated.

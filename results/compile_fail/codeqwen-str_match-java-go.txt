@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-str_match-java-go.go:44:35: too many arguments in call to strings.Index
+	have (string, string, int)
+	want (string, string)

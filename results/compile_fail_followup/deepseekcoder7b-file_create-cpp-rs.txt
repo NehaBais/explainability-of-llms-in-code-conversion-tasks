@@ -1,0 +1,14 @@
+error[E0599]: no method named `write` found for mutable reference `&mut DirBuilder` in the current scope
+  --> /tmp/deepseekcoder7b-file_create-cpp-rs.rs:10:10
+   |
+8  |       let _ = fs::DirBuilder::new()
+   |  _____________-
+9  | |         .recursive(true)
+10 | |         .write(true)
+   | |         -^^^^^ method not found in `&mut DirBuilder`
+   | |_________|
+   |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

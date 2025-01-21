@@ -1,0 +1,20 @@
+#include <filesystem>
+
+bool verifyFilesAndDirectory(const std::string &workingDir) {
+  if (!std::filesystem::exists(workingDir + "/docs/input.txt")) {
+    return false;
+  }
+
+  if (!std::filesystem::exists("/docs/input.txt")) {
+    return false;
+  }
+
+  return true;
+}
+
+int main() {
+  std::string workingDir = std::filesystem::current_path().string();
+  bool filesExist = verifyFilesAndDirectory(workingDir);
+  std::cout << "Files and directory exist: " << filesExist << std::endl;
+  return 0;
+}

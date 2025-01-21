@@ -1,8 +1,15 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class Solution {
+public class Main {
   public static void main(String[] args) {
-    String str = "prepended to";
-    System.out.println("my string" + " " + str);
+    List<String> myStrings = new ArrayList<>();
+    myStrings.add("prepended to");
+    myStrings.add("my string");
+
+    String prepended = myStrings.stream().collect(Collectors.joining(" "));
+
+    System.out.println(prepended);
   }
 }

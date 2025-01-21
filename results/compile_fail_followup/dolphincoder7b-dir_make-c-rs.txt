@@ -1,0 +1,63 @@
+error[E0277]: the trait bound `OsStr: From<_>` is not satisfied
+  --> /tmp/dolphincoder7b-dir_make-c-rs.rs:18:33
+   |
+18 |             pbuf.push(Path::new(OsStr::from(
+   |                                 ^^^^^ the trait `From<_>` is not implemented for `OsStr`
+   |
+help: consider borrowing here
+   |
+18 |             pbuf.push(Path::new(&OsStr::from(
+   |                                 +
+18 |             pbuf.push(Path::new(&mut OsStr::from(
+   |                                 ++++
+
+error[E0277]: the size for values of type `[u8]` cannot be known at compilation time
+  --> /tmp/dolphincoder7b-dir_make-c-rs.rs:18:33
+   |
+18 |             pbuf.push(Path::new(OsStr::from(
+   |                                 ^^^^^ doesn't have a size known at compile-time
+   |
+   = help: within `OsStr`, the trait `Sized` is not implemented for `[u8]`, which is required by `OsStr: Sized`
+note: required because it appears within the type `OsStr`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/ffi/os_str.rs:120:12
+note: required by a bound in `from`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:585:5
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-dir_make-c-rs.rs:18:33
+   |
+18 |               pbuf.push(Path::new(OsStr::from(
+   |  _______________________---------_^
+   | |                       |
+   | |                       arguments to this function are incorrect
+19 | |                 CStr::from_bytes_with_nul(&part.as_bytes()).unwrap(),
+20 | |             )));
+   | |_____________^ expected `&_`, found `OsStr`
+   |
+   = note: expected reference `&_`
+                 found struct `OsStr`
+note: associated function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/path.rs:2129:12
+help: consider borrowing here
+   |
+18 |             pbuf.push(Path::new(&OsStr::from(
+   |                                 +
+
+error[E0277]: the size for values of type `[u8]` cannot be known at compilation time
+  --> /tmp/dolphincoder7b-dir_make-c-rs.rs:18:33
+   |
+18 |               pbuf.push(Path::new(OsStr::from(
+   |  _________________________________^
+19 | |                 CStr::from_bytes_with_nul(&part.as_bytes()).unwrap(),
+20 | |             )));
+   | |_____________^ doesn't have a size known at compile-time
+   |
+   = help: within `OsStr`, the trait `Sized` is not implemented for `[u8]`, which is required by `OsStr: Sized`
+note: required because it appears within the type `OsStr`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/ffi/os_str.rs:120:12
+   = note: the return type of a function must have a statically known size
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

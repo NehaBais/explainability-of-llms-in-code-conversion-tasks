@@ -1,0 +1,7 @@
+/tmp/stablecode-file_create-rs-c.c:28:5: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |     getcwd(cwd, sizeof(cwd)));
+      |     ^
+/tmp/stablecode-file_create-rs-c.c:28:29: error: extraneous ')' before ';'
+   28 |     getcwd(cwd, sizeof(cwd)));
+      |                             ^
+2 errors generated.

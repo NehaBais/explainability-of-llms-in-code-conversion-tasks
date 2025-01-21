@@ -1,0 +1,33 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/codellama7b-int_cmp-py-rs.rs:4:5
+  |
+4 |     io::stdin().read_line(&mut a).expect("Failed to read line");
+  |     ^^ use of undeclared crate or module `io`
+  |
+help: a builtin type with a similar name exists
+  |
+4 |     i8::stdin().read_line(&mut a).expect("Failed to read line");
+  |     ~~
+help: consider importing this module
+  |
+1 + use std::io;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/codellama7b-int_cmp-py-rs.rs:7:5
+  |
+7 |     io::stdin().read_line(&mut b).expect("Failed to read line");
+  |     ^^ use of undeclared crate or module `io`
+  |
+help: a builtin type with a similar name exists
+  |
+7 |     i8::stdin().read_line(&mut b).expect("Failed to read line");
+  |     ~~
+help: consider importing this module
+  |
+1 + use std::io;
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

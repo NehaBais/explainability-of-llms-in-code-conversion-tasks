@@ -1,0 +1,10 @@
+/tmp/deepseekcoderv2-file_exists-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_exists-py-cpp.cpp:6:50: error: use of undeclared identifier 'fs'
+    6 | bool checkFile(const std::string &path) { return fs::exists(path); }
+      |                                                  ^
+/tmp/deepseekcoderv2-file_exists-py-cpp.cpp:8:55: error: use of undeclared identifier 'fs'
+    8 | bool checkDirectory(const std::string &path) { return fs::is_directory(path); }
+      |                                                       ^
+3 errors generated.

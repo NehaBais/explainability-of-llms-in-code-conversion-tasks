@@ -1,0 +1,55 @@
+/tmp/codeqwen-int_factors-py-cpp.cpp:18:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |   for (auto it = factors3.rbegin(); It != factors3.rend(); ++It) {
+      |        ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:18:37: error: use of undeclared identifier 'It'
+   18 |   for (auto it = factors3.rbegin(); It != factors3.rend(); ++It) {
+      |                                     ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:18:62: error: use of undeclared identifier 'It'
+   18 |   for (auto it = factors3.rbegin(); It != factors3.rend(); ++It) {
+      |                                                              ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:19:25: error: use of undeclared identifier 'It'
+   19 |     factors1.push_back(*It);
+      |                         ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:25:15: error: non-aggregate type 'vector<int>' cannot be initialized with an initializer list
+   25 |   vector<int> i = {45, 53, 64};
+      |               ^   ~~~~~~~~~~~~
+/tmp/codeqwen-int_factors-py-cpp.cpp:26:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   26 |   for (auto n : i) {
+      |        ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:26:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   26 |   for (auto n : i) {
+      |               ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:28:5: error: use of undeclared identifier 'cout'; did you mean 'count'?
+   28 |     cout << n << ": factors: ";
+      |     ^~~~
+      |     count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:29:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   29 |     for (auto f : factors) {
+      |          ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:29:17: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   29 |     for (auto f : factors) {
+      |                 ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:30:7: error: use of undeclared identifier 'cout'; did you mean 'count'?
+   30 |       cout << f << ", ";
+      |       ^~~~
+      |       count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:32:5: error: use of undeclared identifier 'cout'; did you mean 'count'?
+   32 |     cout << "\n";
+      |     ^~~~
+      |     count
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: 'count' declared here
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+/tmp/codeqwen-int_factors-py-cpp.cpp:32:5: error: reference to overloaded function could not be resolved; did you mean to call it?
+   32 |     cout << "\n";
+      |     ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count.h:83:1: note: possible target for call
+   83 | count(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+      | ^
+5 warnings and 8 errors generated.

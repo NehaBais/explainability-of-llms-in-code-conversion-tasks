@@ -1,35 +1,41 @@
-```
-public class Bitwise {
-    public static void bitwise_AND(int a, int b) {
-        System.out.println("a & b: " + (a & b));
+ Here's the equivalent Java code for the provided C++ function:
+
+```java
+import java.util.Scanner;
+
+public class BitwiseOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter first integer (a): ");
+        int a = scanner.nextInt();
+        
+        System.out.print("Enter second integer (b): ");
+        int b = scanner.nextInt();
+        
+        bitwise(a, b);
     }
 
-    public static void bitwise_OR(int a, int b) {
-        System.out.println("a | b: " + (a | b));
-    }
-
-    public static void bitwise_XOR(int a, int b) {
-        System.out.println("a ^ b: " + (a ^ b));
-    }
-
-    public static void bitwise_NOT(int a) {
-        System.out.println("~a: " + ~a);
-    }
-
-    public static void left_shift(int a, int b) {
-        System.out.println("a << b: " + (a << b));
-    }
-
-    public static void right_shift(int a, int b) {
-        System.out.println("a >> b: " + (a >> b));
-    }
-
-    public static void left_rotate(int a, int b) {
-        System.out.println("std::rotl(a, b): " + std::rotl(a, b));
-    }
-
-    public static void right_rotate(int a, int b) {
-        System.out.println("std::rotr(a, b): " + std::rotr(a, b));
+    public static void bitwise(int a, int b) {
+        System.out.println("a and b: " + (a & b));
+        System.out.println("a or b:  " + (a | b));
+        System.out.println("a xor b: " + (a ^ b));
+        System.out.println("not a:   " + (~a));
+        
+        // Note: the C/C++ shift operators are not guaranteed to work if the shift count (that is, b)
+        // is negative, or is greater or equal to the number of bits in the integer being shifted.
+        System.out.println("a shl b: " + (a << b)); // Note: "<<" is used both for output and for left shift
+        System.out.println("a shr b: " + (a >> b)); // typically arithmetic right shift, but not guaranteed
+        
+        // logical right shift (guaranteed)
+        int ua = a & 0xFFFFFFFF; // Ensure the number is treated as unsigned for right shift
+        System.out.println("a lsr b: " + (ua >> b));
+        
+        // left rotate and right rotate using java standard library methods
+        System.out.println("a rol b: " + Integer.rotateLeft(ua, b));
+        System.out.println("a ror b: " + Integer.rotateRight(ua, b));
     }
 }
 ```
+
+This Java code performs the same bitwise operations as the C++ code and includes input handling for the integers `a` and `b`. The left shift (`shl`), right shift (`shr`), logical right shift (`lsr`), left rotate (`rol`), and right rotate (`ror`) are implemented using standard library methods available in Java.

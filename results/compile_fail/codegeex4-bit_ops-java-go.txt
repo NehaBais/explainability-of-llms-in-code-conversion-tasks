@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codegeex4-bit_ops-java-go.go:9:27: invalid operation: a & b (mismatched types int and uint)
+/tmp/codegeex4-bit_ops-java-go.go:10:26: invalid operation: a | b (mismatched types int and uint)
+/tmp/codegeex4-bit_ops-java-go.go:11:27: invalid operation: a ^ b (mismatched types int and uint)
+/tmp/codegeex4-bit_ops-java-go.go:16:48: cannot use uint(a) (value of type uint) as uint32 value in argument to bits.RotateLeft32
+/tmp/codegeex4-bit_ops-java-go.go:17:48: cannot use ^uint(a) (value of type uint) as uint32 value in argument to bits.RotateLeft32

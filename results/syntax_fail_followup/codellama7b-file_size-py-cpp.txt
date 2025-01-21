@@ -1,0 +1,23 @@
+/tmp/codellama7b-file_size-py-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path input_file = "input.txt";
+      |   ~~~~~^
+/tmp/codellama7b-file_size-py-cpp.cpp:7:23: error: no member named 'filesystem' in namespace 'std'
+    7 |   size_t size1 = std::filesystem::file_size(input_file);
+      |                  ~~~~~^
+/tmp/codellama7b-file_size-py-cpp.cpp:9:8: error: no member named 'filesystem' in namespace 'std'
+    9 |   std::filesystem::path root_input_file = "/input.txt";
+      |   ~~~~~^
+/tmp/codellama7b-file_size-py-cpp.cpp:9:25: error: use of undeclared identifier 'root_input_file'; did you mean 'input_file'?
+    9 |   std::filesystem::path root_input_file = "/input.txt";
+      |                         ^~~~~~~~~~~~~~~
+      |                         input_file
+/tmp/codellama7b-file_size-py-cpp.cpp:6:25: note: 'input_file' declared here
+    6 |   std::filesystem::path input_file = "input.txt";
+      |                         ^
+/tmp/codellama7b-file_size-py-cpp.cpp:10:23: error: no member named 'filesystem' in namespace 'std'
+   10 |   size_t size2 = std::filesystem::file_size(root_input_file);
+      |                  ~~~~~^
+/tmp/codellama7b-file_size-py-cpp.cpp:10:45: error: use of undeclared identifier 'root_input_file'
+   10 |   size_t size2 = std::filesystem::file_size(root_input_file);
+      |                                             ^
+6 errors generated.

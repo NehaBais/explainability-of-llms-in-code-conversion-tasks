@@ -1,0 +1,67 @@
+/tmp/codegemma7b-str_substring-js-c.c:9:27: error: initializer element is not a compile-time constant
+    9 | const char *substr1 = str + n;
+      |                       ~~~~^~~
+/tmp/codegemma7b-str_substring-js-c.c:10:27: error: initializer element is not a compile-time constant
+   10 | const char *substr2 = str + n;
+      |                       ~~~~^~~
+/tmp/codegemma7b-str_substring-js-c.c:11:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   11 | substr2[m] = '\0';
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:11:1: error: variable length array declaration not allowed at file scope
+   11 | substr2[m] = '\0';
+      | ^       ~
+/tmp/codegemma7b-str_substring-js-c.c:14:27: error: initializer element is not a compile-time constant
+   14 | const char *substr3 = str + n;
+      |                       ~~~~^~~
+/tmp/codegemma7b-str_substring-js-c.c:17:23: error: initializer element is not a compile-time constant
+   17 | const char *substr4 = str;
+      |                       ^~~
+/tmp/codegemma7b-str_substring-js-c.c:18:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   18 | substr4[strlen(str) - 1] = '\0';
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:18:1: error: variable length array declaration not allowed at file scope
+   18 | substr4[strlen(str) - 1] = '\0';
+      | ^       ~~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_substring-js-c.c:21:11: error: initializer element is not a compile-time constant
+   21 | int idx = strcspn(str, "b");
+      |           ^~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_substring-js-c.c:22:27: error: initializer element is not a compile-time constant
+   22 | const char *substr5 = str + idx;
+      |                       ~~~~^~~~~
+/tmp/codegemma7b-str_substring-js-c.c:25:12: error: initializer element is not a compile-time constant
+   25 | int idx2 = strcspn(str, "bc");
+      |            ^~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_substring-js-c.c:26:27: error: initializer element is not a compile-time constant
+   26 | const char *substr6 = str + idx2;
+      |                       ~~~~^~~~~~
+/tmp/codegemma7b-str_substring-js-c.c:28:8: error: expected parameter declarator
+   28 | printf("Substring 1: %s\n", substr1);
+      |        ^
+/tmp/codegemma7b-str_substring-js-c.c:28:8: error: expected ')'
+/tmp/codegemma7b-str_substring-js-c.c:28:7: note: to match this '('
+   28 | printf("Substring 1: %s\n", substr1);
+      |       ^
+/tmp/codegemma7b-str_substring-js-c.c:28:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   28 | printf("Substring 1: %s\n", substr1);
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:28:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/codegemma7b-str_substring-js-c.c:28:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+/tmp/codegemma7b-str_substring-js-c.c:29:8: error: expected parameter declarator
+   29 | printf("Substring 2: %s\n", substr2);
+      |        ^
+/tmp/codegemma7b-str_substring-js-c.c:29:8: error: expected ')'
+/tmp/codegemma7b-str_substring-js-c.c:29:7: note: to match this '('
+   29 | printf("Substring 2: %s\n", substr2);
+      |       ^
+/tmp/codegemma7b-str_substring-js-c.c:29:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   29 | printf("Substring 2: %s\n", substr2);
+      | ^
+      | int
+/tmp/codegemma7b-str_substring-js-c.c:30:8: error: expected parameter declarator
+   30 | printf("Substring 3: %s\n", substr3);
+      |        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

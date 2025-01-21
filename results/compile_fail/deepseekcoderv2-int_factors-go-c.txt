@@ -1,0 +1,29 @@
+/tmp/deepseekcoderv2-int_factors-go-c.c:6:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 |         printf("
+      |                ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:6:16: error: expected expression
+/tmp/deepseekcoderv2-int_factors-go-c.c:7:29: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 | Factors of %lld not computed", nr);
+      |                             ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:10:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 |     printf("
+      |            ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:11:18: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 | Factors of %lld: ", nr);
+      |                  ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:55:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   55 |     printf("
+      |            ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:56:24: warning: missing terminating '"' character [-Winvalid-pp-token]
+   56 | Number of factors = %zu", n);
+      |                        ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:61:12: error: function definition is not allowed here
+   61 | int main() {
+      |            ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:73:2: error: expected '}'
+   73 | }
+      |  ^
+/tmp/deepseekcoderv2-int_factors-go-c.c:4:31: note: to match this '{'
+    4 | void printFactors(int64_t nr) {
+      |                               ^
+6 warnings and 3 errors generated.

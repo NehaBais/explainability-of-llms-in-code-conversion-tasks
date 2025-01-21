@@ -1,0 +1,13 @@
+/tmp/yicoder2b-file_exists-go-c.c:5:15: error: variable has incomplete type 'struct stat'
+    5 |   struct stat st;           // Declare struct stat
+      |               ^
+/tmp/yicoder2b-file_exists-go-c.c:5:10: note: forward declaration of 'struct stat'
+    5 |   struct stat st;           // Declare struct stat
+      |          ^
+/tmp/yicoder2b-file_exists-go-c.c:6:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (stat(p, &st) == -1) { // stat() returns -1 on failure
+      |       ^
+/tmp/yicoder2b-file_exists-go-c.c:12:7: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   if (S_ISDIR(st.st_mode))
+      |       ^
+3 errors generated.

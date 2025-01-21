@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-str_interp-java-c.c:6:32: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   char *lyric = (char *)malloc(strlen("Mary had a ") + strlen(adjective) + 1);
+      |                                ^
+/tmp/qwen2.5coder2b-str_interp-java-c.c:6:32: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+1 error generated.

@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat st;
+      |               ^
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:6:10: note: forward declaration of 'struct stat'
+    6 |   struct stat st;
+      |          ^
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:7:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   if (stat(path, &st) != 0) {
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:10:10: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   return S_ISDIR(st.st_mode);
+      |          ^
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:18:9: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |     if (access(files[i], F_OK) != -1) { // Check if the file exists
+      |         ^
+/tmp/qwen2.5coder7b-file_exists-rs-c.c:18:26: error: use of undeclared identifier 'F_OK'
+   18 |     if (access(files[i], F_OK) != -1) { // Check if the file exists
+      |                          ^
+5 errors generated.

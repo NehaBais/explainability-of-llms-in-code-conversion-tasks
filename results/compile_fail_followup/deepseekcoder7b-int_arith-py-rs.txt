@@ -1,0 +1,10 @@
+error: expected item, found keyword `if`
+ --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:1:1
+  |
+1 | if condition {
+  | ^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

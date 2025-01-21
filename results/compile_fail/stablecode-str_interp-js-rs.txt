@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/stablecode-str_interp-js-rs.rs:1:1
+  |
+1 | let original = "Mary had a X lamb".to_string();
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

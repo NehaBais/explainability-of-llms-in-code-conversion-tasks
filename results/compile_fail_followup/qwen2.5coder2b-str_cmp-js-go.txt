@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_cmp-js-go.go:15:20: syntax error: unexpected =, expected expression

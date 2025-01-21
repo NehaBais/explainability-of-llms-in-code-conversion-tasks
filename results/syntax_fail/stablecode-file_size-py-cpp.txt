@@ -1,0 +1,7 @@
+/tmp/stablecode-file_size-py-cpp.cpp:12:48: error: no member named 'filesystem' in namespace 'std'
+   12 |         std::streamsize currentFileSize = std::filesystem::file_size(currentFilePath));
+      |                                           ~~~~~^
+/tmp/stablecode-file_size-py-cpp.cpp:16:45: error: no member named 'filesystem' in namespace 'std'
+   16 |         std::streamsize rootFileSize = std::filesystem::file_size(rootFilePath));
+      |                                        ~~~~~^
+2 errors generated.

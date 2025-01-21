@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-str_substring-js-cpp.cpp:22:16: error: no matching function for call to 'substr'
+   22 |   std::cout << substr(str, n) << std::endl; // Output: cdefgh
+      |                ^~~~~~
+/tmp/qwen2.5coder2b-str_substring-js-cpp.cpp:5:13: note: candidate function not viable: requires 3 arguments, but 2 were provided
+    5 | std::string substr(const std::string &str, int start, int length) {
+      |             ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

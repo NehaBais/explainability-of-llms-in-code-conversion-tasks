@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:10: error: expected expression
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:19: error: character <U+2581> not allowed in an identifier
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:24: error: character <U+2581> not allowed in an identifier
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-str_concat-py-c.c:27:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   27 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^
+2 warnings and 4 errors generated.

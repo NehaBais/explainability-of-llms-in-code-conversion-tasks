@@ -1,0 +1,4 @@
+/tmp/codegeex4-dir_make-js-cpp.cpp:2:10: fatal error: 'boost/filesystem.hpp' file not found
+    2 | #include <boost/filesystem.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,11 @@
+/tmp/Main.java:8: error: bad operand types for binary operator '&&'
+    System.out.println("docs is a directory? " + docs.exists() && docs.isDirectory());
+                                                               ^
+  first type:  String
+  second type: boolean
+/tmp/Main.java:13: error: bad operand types for binary operator '&&'
+    System.out.println("/docs is a directory? " + fsDocs.exists() && fsDocs.isDirectory());
+                                                                  ^
+  first type:  String
+  second type: boolean
+2 errors

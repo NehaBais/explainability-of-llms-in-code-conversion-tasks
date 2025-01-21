@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-java-rs.rs:2:1
+  |
+2 | {
+  | ^ unclosed delimiter
+3 |     println!("a AND b: {}", a && b));
+  |                                    ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-logic_ops-java-rs.rs:4:35
+  |
+3 |     println!("a AND b: {}", a && b));
+  |                                    - missing open `(` for this delimiter
+4 |     println!("a OR b: {}", a || b));
+  |                                   ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

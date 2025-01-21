@@ -1,0 +1,13 @@
+error: missing type for `const` item
+ --> /tmp/granitecode8b-str_substring-js-rs.rs:2:11
+  |
+2 |  const str = String::from("abcdefgh");
+  |           ^
+  |
+help: provide a type for the item
+  |
+2 |  const str: <type> = String::from("abcdefgh");
+  |           ++++++++
+
+error: aborting due to 1 previous error
+

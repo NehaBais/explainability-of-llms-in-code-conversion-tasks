@@ -1,0 +1,25 @@
+error[E0433]: failed to resolve: use of undeclared type `DirBuilder`
+ --> /tmp/codellama7b-file_create-java-rs.rs:7:5
+  |
+7 |     DirBuilder::new().recursive(true).create("docs")?;
+  |     ^^^^^^^^^^ use of undeclared type `DirBuilder`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::DirBuilder;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `DirBuilder`
+ --> /tmp/codellama7b-file_create-java-rs.rs:8:5
+  |
+8 |     DirBuilder::new()
+  |     ^^^^^^^^^^ use of undeclared type `DirBuilder`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::DirBuilder;
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

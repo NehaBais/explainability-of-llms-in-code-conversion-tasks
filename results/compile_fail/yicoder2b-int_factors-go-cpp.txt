@@ -1,0 +1,13 @@
+/tmp/yicoder2b-int_factors-go-cpp.cpp:13:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |   auto apf = [&](long long p, int e) {
+      |   ^
+/tmp/yicoder2b-int_factors-go-cpp.cpp:13:14: error: expected expression
+   13 |   auto apf = [&](long long p, int e) {
+      |              ^
+/tmp/yicoder2b-int_factors-go-cpp.cpp:42:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   42 |   for (auto &i : factors) {
+      |        ^
+/tmp/yicoder2b-int_factors-go-cpp.cpp:42:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   42 |   for (auto &i : factors) {
+      |                ^
+3 warnings and 1 error generated.

@@ -1,0 +1,37 @@
+/tmp/yicoder9b-dir_make-c-cpp.cpp:6:21: error: expected namespace name
+    6 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::path dir(path);
+      |   ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:10:15: error: use of undeclared identifier 'fs'
+   10 |   std::vector<fs::path> dirsToCreate;
+      |               ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:12:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   for (auto i = dir.begin(); i != dir.end(); ++i)
+      |        ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:12:17: error: use of undeclared identifier 'dir'
+   12 |   for (auto i = dir.begin(); i != dir.end(); ++i)
+      |                 ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:12:35: error: use of undeclared identifier 'dir'
+   12 |   for (auto i = dir.begin(); i != dir.end(); ++i)
+      |                                   ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:15:3: error: use of undeclared identifier 'fs'
+   15 |   fs::path builtPath;
+      |   ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:16:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   16 |   for (const auto &subDir : dirsToCreate) {
+      |              ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:16:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   16 |   for (const auto &subDir : dirsToCreate) {
+      |                           ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:18:10: error: use of undeclared identifier 'fs'
+   18 |     if (!fs::exists(builtPath))
+      |          ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:19:7: error: use of undeclared identifier 'fs'
+   19 |       fs::create_directory(builtPath);
+      |       ^
+/tmp/yicoder9b-dir_make-c-cpp.cpp:20:15: error: use of undeclared identifier 'fs'
+   20 |     else if (!fs::is_directory(builtPath)) {
+      |               ^
+3 warnings and 9 errors generated.

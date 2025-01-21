@@ -1,0 +1,58 @@
+/tmp/None.java:11: error: ';' expected
+            fctrs.list = new ArrayList<>(Arrays.asList(fctrs.list.toArray()))));
+                                                                             ^
+/tmp/None.java:15: error: ';' expected
+            System.arraycopy(fctrs.list.toArray(), 0, tempList, 0, fctrs.count));
+                                                                               ^
+/tmp/None.java:16: error: ';' expected
+            tempList = Arrays.copyOfRange(tempList, 0, newSize * 2 - 1), 1);
+                                                                       ^
+/tmp/None.java:18: error: ';' expected
+            fctrs.list = new ArrayList<>(Arrays.asList(tempList))));
+                                                                 ^
+/tmp/None.java:22: error: ';' expected
+            fctrs.list.set(ix, flist[ij]));
+                                         ^
+/tmp/None.java:31: error: ';' expected
+            fctrs.list.subList(0, fctrs.count)).clear();
+                                              ^
+/tmp/None.java:38: error: ';' expected
+                fctrs.list.set(fctrs.count, divisor));
+                                                    ^
+/tmp/None.java:39: error: ';' expected
+                fctrs.list.set(fctrs.count + 1, num / divisor)));
+                                                              ^
+/tmp/None.java:45: error: ';' expected
+            fctrs.list.add(num / divisor));
+                                         ^
+/tmp/None.java:53: error: ';' expected
+        int[] numbersToFactor = new int[]{2059, 223092870, 3135, 45}};
+                                                                    ^
+/tmp/None.java:57: error: illegal start of type
+        for (int number : numbersToFactor) {
+        ^
+/tmp/None.java:57: error: ';' expected
+        for (int number : numbersToFactor) {
+                       ^
+/tmp/None.java:57: error: <identifier> expected
+        for (int number : numbersToFactor) {
+                                         ^
+/tmp/None.java:59: error: unclosed string literal
+            System.out.printf("
+                              ^
+/tmp/None.java:60: error: ';' expected
+factors of %d are:
+          ^
+/tmp/None.java:60: error: ';' expected
+factors of %d are:
+                 ^
+/tmp/None.java:61: error: unclosed string literal
+  ", number);
+  ^
+/tmp/None.java:64: error: ';' expected
+                System.out.printf("%d, ", factors.list.get(i)));
+                                                              ^
+/tmp/None.java:69: error: class, interface, enum, or record expected
+}
+^
+19 errors

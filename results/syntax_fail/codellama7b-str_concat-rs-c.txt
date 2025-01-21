@@ -1,0 +1,21 @@
+/tmp/codellama7b-str_concat-rs-c.c:3:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   printf("%s\n", s); // Print the content of the variable.
+      |   ^
+/tmp/codellama7b-str_concat-rs-c.c:3:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codellama7b-str_concat-rs-c.c:5:14: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *s1 = malloc(strlen(s) + strlen(" world") +
+      |              ^
+/tmp/codellama7b-str_concat-rs-c.c:5:14: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codellama7b-str_concat-rs-c.c:5:21: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *s1 = malloc(strlen(s) + strlen(" world") +
+      |                     ^
+/tmp/codellama7b-str_concat-rs-c.c:5:21: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codellama7b-str_concat-rs-c.c:7:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcpy(s1, s);        // Copy the original string into the new variable.
+      |   ^
+/tmp/codellama7b-str_concat-rs-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/codellama7b-str_concat-rs-c.c:8:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcat(s1, " world"); // Concatenate the new string with the original one.
+      |   ^
+/tmp/codellama7b-str_concat-rs-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+5 errors generated.

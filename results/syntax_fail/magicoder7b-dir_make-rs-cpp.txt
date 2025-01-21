@@ -1,0 +1,4 @@
+/tmp/magicoder7b-dir_make-rs-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::create_directories("./path/to/dir", ec);
+      |   ~~~~~^
+1 error generated.

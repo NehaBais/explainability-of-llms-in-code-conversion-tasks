@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_cmp-py-go.go:53:12: x declared and not used
+/tmp/qwen2.5coder2b-str_cmp-py-go.go:66:13: more than one character in rune literal
+/tmp/qwen2.5coder2b-str_cmp-py-go.go:67:13: more than one character in rune literal
+/tmp/qwen2.5coder2b-str_cmp-py-go.go:68:13: more than one character in rune literal

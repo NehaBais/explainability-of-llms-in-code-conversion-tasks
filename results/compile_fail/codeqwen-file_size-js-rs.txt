@@ -1,0 +1,14 @@
+error[E0618]: expected function, found `Metadata`
+ --> /tmp/codeqwen-file_size-js-rs.rs:7:25
+  |
+4 |     let metadata = metadata("input.txt")?;
+  |         -------- `metadata` has type `Metadata`
+...
+7 |     let root_metadata = metadata("/input.txt")?;
+  |                         ^^^^^^^^--------------
+  |                         |
+  |                         call expression requires function
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0618`.

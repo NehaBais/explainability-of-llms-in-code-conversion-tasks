@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_create-py-cpp.cpp:7:17: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    7 |   std::ofstream outputFile(directory + "/output.txt");
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+1 error generated.

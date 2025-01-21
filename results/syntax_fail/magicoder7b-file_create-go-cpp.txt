@@ -1,0 +1,10 @@
+/tmp/magicoder7b-file_create-go-cpp.cpp:15:23: error: no viable conversion from 'string' to 'const char *'
+   15 |   int r = std::system("mkdir -p " + dn);
+      |                       ^~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:184:25: note: passing argument to parameter here
+  184 | int      system(const char *) __DARWIN_ALIAS_C(system);
+      |                             ^
+1 error generated.

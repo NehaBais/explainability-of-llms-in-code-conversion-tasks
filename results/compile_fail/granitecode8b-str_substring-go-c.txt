@@ -1,0 +1,19 @@
+/tmp/granitecode8b-str_substring-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-go-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("Index: ");
+      |   ^
+/tmp/granitecode8b-str_substring-go-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_substring-go-c.c:9:23: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   for (int i = 0; i < strlen(s); i++) {
+      |                       ^
+/tmp/granitecode8b-str_substring-go-c.c:9:23: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-str_substring-go-c.c:47:9: error: call to undeclared library function 'strncmp' with type 'int (const char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   47 |     if (strncmp(&s[i], "DE", m) == 0) {
+      |         ^
+/tmp/granitecode8b-str_substring-go-c.c:47:9: note: include the header <string.h> or explicitly provide a declaration for 'strncmp'
+5 errors generated.

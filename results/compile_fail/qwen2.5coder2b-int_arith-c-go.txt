@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_arith-c-go.go:9:9: undefined: os
+/tmp/qwen2.5coder2b-int_arith-c-go.go:14:12: undefined: strconv
+/tmp/qwen2.5coder2b-int_arith-c-go.go:14:25: undefined: os
+/tmp/qwen2.5coder2b-int_arith-c-go.go:24:11: undefined: strconv
+/tmp/qwen2.5coder2b-int_arith-c-go.go:24:24: undefined: os

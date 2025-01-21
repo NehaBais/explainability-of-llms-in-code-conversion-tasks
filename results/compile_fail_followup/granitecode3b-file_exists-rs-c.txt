@@ -1,0 +1,23 @@
+/tmp/granitecode3b-file_exists-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-rs-c.c:7:17: error: variable has incomplete type 'struct stat'
+    7 |     struct stat info;
+      |                 ^
+/tmp/granitecode3b-file_exists-rs-c.c:7:12: note: forward declaration of 'struct stat'
+    7 |     struct stat info;
+      |            ^
+/tmp/granitecode3b-file_exists-rs-c.c:8:9: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     if (stat(filenames[i], &info) == 0) {
+      |         ^
+/tmp/granitecode3b-file_exists-rs-c.c:9:11: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |       if (S_ISDIR(info.st_mode)) {
+      |           ^
+/tmp/granitecode3b-file_exists-rs-c.c:10:9: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |         printf("%s is a directory\n", filenames[i]);
+      |         ^
+/tmp/granitecode3b-file_exists-rs-c.c:10:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+6 errors generated.

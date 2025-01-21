@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-js-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+2 |     println!("{:?}", comparison_test()));
+  |                                        ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-str_cmp-js-rs.rs:3:1
+  |
+2 |     println!("{:?}", comparison_test()));
+  |                                        - missing open `(` for this delimiter
+3 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

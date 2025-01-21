@@ -1,0 +1,22 @@
+/tmp/granitecode3b-str_append-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str = "Good Morning";
+      |   ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string cstr = " to all";
+      |   ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string cstr2 = " !!!";
+      |   ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << str << endl;
+      |     ^
+/tmp/granitecode3b-str_append-c-cpp.cpp:20:20: error: use of undeclared identifier 'endl'
+   20 |     cout << str << endl;
+      |                    ^
+1 warning and 6 errors generated.

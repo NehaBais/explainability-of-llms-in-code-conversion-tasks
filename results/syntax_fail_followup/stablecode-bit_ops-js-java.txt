@@ -1,0 +1,22 @@
+/tmp/BitwiseOperations.java:8: error: ';' expected
+        System.out.println("a AND b: " + (a & b)))); 
+                                                 ^
+/tmp/BitwiseOperations.java:9: error: ';' expected
+        System.out.println("a OR b: " + (a | b))));
+                                                ^
+/tmp/BitwiseOperations.java:10: error: ';' expected
+        System.out.println("a XOR b: " + (a ^ b))));
+                                                 ^
+/tmp/BitwiseOperations.java:11: error: ';' expected
+        System.out.println("NOT a: " + ~a));
+                                          ^
+/tmp/BitwiseOperations.java:12: error: ';' expected
+        System.out.println("a << b: " + (a << b))));
+                                                 ^
+/tmp/BitwiseOperations.java:13: error: ';' expected
+        System.out.println("a >> b: " + (a >> b))));
+                                                 ^
+/tmp/BitwiseOperations.java:14: error: ';' expected
+        System.out.println("a >>> b: " + ((int) ((a >>> b)))  )); 
+                                                               ^
+7 errors

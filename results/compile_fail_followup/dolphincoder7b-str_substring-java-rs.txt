@@ -1,0 +1,18 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/dolphincoder7b-str_substring-java-rs.rs:3:2
+  |
+3 | }
+  |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-str_substring-java-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/dolphincoder7b-str_substring-java-rs.rs:1:28
+  |
+1 | fn substring(str: &str) -> String {
+  |    ---------               ^^^^^^ expected `String`, found `()`
+  |    |
+  |    implicitly returns `()` as its body has no tail or `return` expression
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

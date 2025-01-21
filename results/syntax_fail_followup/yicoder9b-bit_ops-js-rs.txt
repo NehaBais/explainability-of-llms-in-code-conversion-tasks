@@ -1,0 +1,8 @@
+error: expected expression, found `>`
+  --> /tmp/yicoder9b-bit_ops-js-rs.rs:18:34
+   |
+18 |    let right_logical_shift = a >>> b; // logical right shift
+   |                                  ^ expected expression
+
+error: aborting due to 1 previous error
+

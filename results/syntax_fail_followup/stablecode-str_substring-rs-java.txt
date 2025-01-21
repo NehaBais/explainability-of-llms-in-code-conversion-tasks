@@ -1,0 +1,16 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+System.out.println(s.substring(n, n + m)).replaceAll("\\u00A0", ""));
+^
+/tmp/None.java:2: error: class, interface, enum, or record expected
+System.out.println(s.substring(n)));
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+System.out.println(new StringBuilder(s.substring(n))).reverse().toString().substring(1, m + 1)));
+^
+/tmp/None.java:4: error: class, interface, enum, or record expected
+System.out.println(s.substring(cpos)).substring(0, m));
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+System.out.println(s.substring(spos)).substring(0, m));
+^
+5 errors

@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-str_substring-java-c.c:11:7: error: conflicting types for 'substring'
+   11 | char *substring(char *str, int n, int m) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:18:7: error: conflicting types for 'substring'
+   18 | char *substring(char *str) {
+      |       ^
+/tmp/qwen2.5coder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *substring(char *str, int n) {
+      |       ^
+2 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_cmp-cpp-go.go:20:76: expected statement, found ')' (and 9 more errors)

@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-dir_make-cpp-c.c:10:65: error: use of undeclared identifier 'errno'
+   10 |       printf("Cannot create directory %s: %s\n", path, strerror(errno));
+      |                                                                 ^
+1 error generated.

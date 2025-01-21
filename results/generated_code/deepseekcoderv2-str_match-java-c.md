@@ -1,68 +1,61 @@
-Answer: The following code converts the given Java code to C using a regex function that checks if a string starts or ends with another string and returns true if it does. It also handles multiple occurrences of a substring in a string.
+ Here's the equivalent code in C that demonstrates the three types of string matching as described:
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
-int main() {
-    char str[100];
-    int loc = -1;
-    bool flag = true;
-    printf("Enter a string: ");
-    scanf("%s", str);
-    if (startsWith(str, "ab")) {
-        printf("String starts with ab\n");
-    } else {
-        printf("String does not start with ab\n");
-    }
-    if (endsWith(str, "zn")) {
-        printf("String ends with zn\n");
-    } else {
-        printf("String does not end with zn\n");
-    }
-    while ((loc = contains(str, loc + 1)) != -1) {
-        flag = false;
-    }
-    if (flag) {
-        printf("Substring not found in the string.\n");
-    } else {
-        printf("Substring found at location %d\n", loc);
-    }
-    return 0;
+// Function to check if str starts with prefix
+int startsWith(const char *str, const char *prefix) {
+    return strncmp(str, prefix, strlen(prefix)) == 0;
 }
-int startsWith(char str[], char pat[]) {
-    int len1 = strlen(str), len2 = strlen(pat);
-    if (len1 < len2) {
-        return false;
-    }
-    for (int i = 0; i < len2; i++) {
-        if (str[i] != pat[i]) {
-            return false;
-        }
-    }
-    return true;
+
+// Function to check if str contains substr at any location
+int contains(const char *str, const char *substr) {
+    return strstr(str, substr) != NULL;
 }
-int endsWith(char str[], char pat[]) {
-    int len1 = strlen(str), len2 = strlen(pat);
-    if (len1 < len2) {
-        return false;
-    }
-    for (int i = 0, j = len1 - len2; i < len2; i++, j++) {
-        if (str[j] != pat[i]) {
-            return false;
-        }
-    }
-    return true;
+
+// Function to check if str ends with suffix
+int endsWith(const char *str, const char *suffix) {
+    int lenStr = strlen(str);
+    int lenSuffix = strlen(suffix);
+    if (lenSuffix > lenStr) return 0;
+    return strncmp(&str[lenStr - lenSuffix], suffix, lenSuffix) == 0;
 }
-int contains(char str[], char sub[]) {
-    int len1 = strlen(str), len2 = strlen(sub);
-    for (int i = 0, j = -1; i < len1 - len2 + 1; i++) {
-        if (strcmp(&str[i], sub) == 0) {
-            return i;
-        }
+
+// Function to find the location of the first occurrence of substr in str
+int indexOf(const char *str, const char *substr) {
+    const char *pos = strstr(str, substr);
+    if (pos != NULL) {
+        return pos - str;
     }
     return -1;
 }
+
+// Function to find the location of subsequent occurrences of substr in str
+int indexOfSubsequent(const char *str, const char *substr, int startIndex) {
+    const char *pos = strstr(&str[startIndex], substr);
+    if (pos != NULL) {
+        return pos - str;
+    }
+    return -1;
+}
+
+int main() {
+    // Test cases
+    printf("%d\n", startsWith("abcd", "ab")); // returns 1 (true)
+    printf("%d\n", endsWith("abcd", "zn")); // returns 0 (false)
+    printf("%d\n", contains("abab", "bb")); // returns 1 (true)
+    printf("%d\n", contains("abab", "ab")); // returns 1 (true)
+    
+    int loc = indexOf("abab", "bb"); // returns -1
+    printf("%d\n", loc);
+    loc = indexOf("abab", "ab"); // returns 0
+    printf("%d\n", loc);
+    loc = indexOfSubsequent("abab", "ab", loc + 1); // returns 2
+    printf("%d\n", loc);
+
+    return 0;
+}
 ```
+
+This C code includes functions to check if a string starts with, contains, or ends with another string. It also provides functionality to find the location of the first occurrence and subsequent occurrences of a substring within a string. The `indexOfSubsequent` function is used to find the next occurrence after a specified start index.

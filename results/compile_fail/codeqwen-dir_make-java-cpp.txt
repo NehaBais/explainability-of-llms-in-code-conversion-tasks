@@ -1,0 +1,10 @@
+/tmp/codeqwen-dir_make-java-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::path p("C:/parent/test");
+      |     ~~~~~^
+/tmp/codeqwen-dir_make-java-cpp.cpp:7:14: error: no member named 'filesystem' in namespace 'std'
+    7 |     if (std::filesystem::create_directories(p))
+      |         ~~~~~^
+/tmp/codeqwen-dir_make-java-cpp.cpp:7:45: error: use of undeclared identifier 'p'
+    7 |     if (std::filesystem::create_directories(p))
+      |                                             ^
+3 errors generated.

@@ -1,0 +1,25 @@
+/tmp/Main.java:6: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                       ^
+/tmp/Main.java:6: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                      ^
+/tmp/Main.java:6: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                             ^
+/tmp/Main.java:6: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                        ^
+/tmp/Main.java:6: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                                ^
+/tmp/Main.java:6: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                              ^
+/tmp/Main.java:6: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                                         ^
+/tmp/Main.java:6: error: not a statement
+            System.out<｜begin▁of▁sentence｜>out.printf("%d: factors: %s%n", i, Arrays.toString(factor(i)));
+                                 ^
+8 errors

@@ -1,0 +1,15 @@
+/tmp/stablecode-str_interp-cpp-c.c:14:21: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   char *newString = malloc(newStringLength + 1)); // +1 for null terminator
+      |                     ^
+/tmp/stablecode-str_interp-cpp-c.c:14:21: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/stablecode-str_interp-cpp-c.c:14:48: error: extraneous ')' before ';'
+   14 |   char *newString = malloc(newStringLength + 1)); // +1 for null terminator
+      |                                                ^
+/tmp/stablecode-str_interp-cpp-c.c:17:3: error: call to undeclared function 'strreplace'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   strreplace(original, toBeReplaced, replacement, &newString);
+      |   ^
+/tmp/stablecode-str_interp-cpp-c.c:23:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |   free(newString);
+      |   ^
+/tmp/stablecode-str_interp-cpp-c.c:23:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+4 errors generated.

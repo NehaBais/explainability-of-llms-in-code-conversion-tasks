@@ -1,0 +1,29 @@
+/tmp/FileCreator.java:6: error: incompatible types: Path cannot be converted to Files
+    try (java.nio.file.Files f = java.nio.file.Files.createFile(new File("output.txt").toPath())) {
+                                                               ^
+/tmp/FileCreator.java:6: error: incompatible types: try-with-resources not applicable to variable type
+    try (java.nio.file.Files f = java.nio.file.Files.createFile(new File("output.txt").toPath())) {
+                             ^
+    (Files cannot be converted to AutoCloseable)
+/tmp/FileCreator.java:12: error: incompatible types: Path cannot be converted to Files
+    try (java.nio.file.Files f = java.nio.file.Files.createDirectory(new File("/docs").toPath())) {
+                                                                    ^
+/tmp/FileCreator.java:12: error: incompatible types: try-with-resources not applicable to variable type
+    try (java.nio.file.Files f = java.nio.file.Files.createDirectory(new File("/docs").toPath())) {
+                             ^
+    (Files cannot be converted to AutoCloseable)
+/tmp/FileCreator.java:18: error: incompatible types: Path cannot be converted to Files
+    try (java.nio.file.Files f = java.nio.file.Files.createFile(new File("output.txt").toPath())) {
+                                                               ^
+/tmp/FileCreator.java:18: error: incompatible types: try-with-resources not applicable to variable type
+    try (java.nio.file.Files f = java.nio.file.Files.createFile(new File("output.txt").toPath())) {
+                             ^
+    (Files cannot be converted to AutoCloseable)
+/tmp/FileCreator.java:24: error: incompatible types: Path cannot be converted to Files
+    try (java.nio.file.Files f = java.nio.file.Files.createDirectory(new File("/docs").toPath())) {
+                                                                    ^
+/tmp/FileCreator.java:24: error: incompatible types: try-with-resources not applicable to variable type
+    try (java.nio.file.Files f = java.nio.file.Files.createDirectory(new File("/docs").toPath())) {
+                             ^
+    (Files cannot be converted to AutoCloseable)
+8 errors

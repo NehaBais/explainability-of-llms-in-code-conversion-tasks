@@ -1,0 +1,5 @@
+/tmp/Main.java:53: error: incompatible types: double cannot be converted to Comparable<String>
+    demoCompare(numA, numB, "numerically");
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

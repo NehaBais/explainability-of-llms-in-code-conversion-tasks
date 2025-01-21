@@ -1,0 +1,16 @@
+/tmp/FactorCalculator.java:41: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+        ^
+  symbol:   variable dvsr
+  location: class FactorCalculator
+/tmp/FactorCalculator.java:41: error: cannot find symbol
+    if (dvsr * dvsr == num) {
+               ^
+  symbol:   variable dvsr
+  location: class FactorCalculator
+/tmp/FactorCalculator.java:42: error: cannot find symbol
+      flist[flix++] = dvsr;
+                      ^
+  symbol:   variable dvsr
+  location: class FactorCalculator
+3 errors

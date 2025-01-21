@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codegeex4-bit_ops-rs-go.go:7:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:8:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:9:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:10:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:11:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:12:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:13:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:14:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:19:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:25:2: undefined: fmt
+/tmp/codegeex4-bit_ops-rs-go.go:25:2: too many errors

@@ -1,0 +1,5 @@
+/tmp/codegemma7b-dir_make-cpp-c.c:32:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |     printf("Directory created successfully.\n");
+      |     ^
+/tmp/codegemma7b-dir_make-cpp-c.c:32:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.

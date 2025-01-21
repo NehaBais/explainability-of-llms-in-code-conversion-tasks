@@ -1,42 +1,25 @@
-### Answer
-
-Here is the JavaScript code:
+ Sure, here's the equivalent JavaScript code for the given Rust code:
 
 ```javascript
 const fs = require('fs');
+const path = require('path');
 
-function renameFileInCurrentDir() {
-  try {
-    fs.renameSync('input.txt', 'output.txt');
-  } catch (error) {
-    console.log(error);
-  }
+function renameFileOrDirectory(source, target) {
+    try {
+        fs.renameSync(source, target);
+        console.log(`Renamed ${source} to ${target}`);
+    } catch (err) {
+        console.error(`Error renaming ${source} to ${target}:`, err);
+    }
 }
 
-function renameDirInCurrentDir() {
-  try {
-    fs.renameSync('docs', 'mydocs');
-  } catch (error) {
-    console.log(error);
-  }
-}
+// In the current working directory
+renameFileOrDirectory('input.txt', 'output.txt');
+renameFileOrDirectory('docs', 'mydocs');
 
-function renameFileInRootDir() {
-  try {
-    fs.renameSync('/input.txt', '/output.txt');
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-function renameDirInRootDir() {
-  try {
-    fs.renameSync('/docs', '/mydocs');
-  } catch (error) {
-    console.log(error);
-  }
-}
+// In the filesystem root
+renameFileOrDirectory('/input.txt', '/output.txt');
+renameFileOrDirectory('/docs', '/mydocs');
 ```
 
-### Explanation
-I have used the NodeJS file system module to perform all of these actions in Javascript. I also changed the error message from Rust to JavaScript since we are using Javascript now.
+This JavaScript code uses Node.js's `fs` module to rename files and directories, both within the current working directory and at the filesystem root. The function `renameFileOrDirectory` is defined to handle the renaming operation, with error handling included for logging purposes.

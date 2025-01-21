@@ -1,0 +1,15 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-str_substring-js-rs.rs:1:24
+  |
+1 | const str = "abcdefgh";
+  |                        ^ consider adding a `main` function to `/tmp/codegemma7b-str_substring-js-rs.rs`
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_substring-js-rs.rs:1:10
+  |
+1 | const str = "abcdefgh";
+  |          ^ help: provide a type for the constant: `: &str`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

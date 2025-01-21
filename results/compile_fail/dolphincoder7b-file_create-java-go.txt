@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_create-java-go.go:5:2: "path/filepath" imported and not used
+/tmp/dolphincoder7b-file_create-java-go.go:19:6: no new variables on left side of :=
+/tmp/dolphincoder7b-file_create-java-go.go:23:9: no new variables on left side of :=

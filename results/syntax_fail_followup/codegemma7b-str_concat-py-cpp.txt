@@ -1,0 +1,7 @@
+/tmp/codegemma7b-str_concat-py-cpp.cpp:14:36: error: expected expression
+   14 |   cout << join(",", vector<string>({s1, "world", "mom"})) << endl;
+      |                                    ^
+/tmp/codegemma7b-str_concat-py-cpp.cpp:16:33: error: expected expression
+   16 |   s2 = join(",", vector<string>({s1, "world", "mom"}));
+      |                                 ^
+2 errors generated.

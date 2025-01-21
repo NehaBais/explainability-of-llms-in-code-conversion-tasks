@@ -1,0 +1,5 @@
+/tmp/Main.java:18: error: Alternatives in a multi-catch statement cannot be related by subclassing
+              } catch (IOException | NoSuchFileException ignored) {
+                                     ^
+  Alternative NoSuchFileException is a subclass of alternative IOException
+1 error

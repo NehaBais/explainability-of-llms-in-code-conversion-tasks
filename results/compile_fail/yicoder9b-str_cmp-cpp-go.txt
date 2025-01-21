@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/yicoder9b-str_cmp-cpp-go.go:10:2: declared and not used: equals
+/tmp/yicoder9b-str_cmp-cpp-go.go:11:2: declared and not used: notEquals
+/tmp/yicoder9b-str_cmp-cpp-go.go:12:2: declared and not used: less
+/tmp/yicoder9b-str_cmp-cpp-go.go:12:10: invalid operation: a < b (operator < not defined on interface)
+/tmp/yicoder9b-str_cmp-cpp-go.go:13:2: declared and not used: greater
+/tmp/yicoder9b-str_cmp-cpp-go.go:13:13: invalid operation: a > b (operator > not defined on interface)

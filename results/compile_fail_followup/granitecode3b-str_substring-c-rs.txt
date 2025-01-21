@@ -1,0 +1,25 @@
+error: expected parameter name, found keyword `in`
+ --> /tmp/granitecode3b-str_substring-c-rs.rs:1:25
+  |
+1 | fn str_fromstr(s: &str, in: &str, m: isize) -> Result<String, ()> {
+  |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+ --> /tmp/granitecode3b-str_substring-c-rs.rs:2:22
+  |
+2 |     let idx = s.find(in).ok_or("--error--")?;
+  |                      ^^ expected expression
+
+error[E0277]: `Result<String, ()>` doesn't implement `std::fmt::Display`
+  --> /tmp/granitecode3b-str_substring-c-rs.rs:10:20
+   |
+10 |     println!("{}", str_fromstr(&s, "ro", 3)); // "rog"
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^ `Result<String, ()>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Result<String, ()>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/codegemma7b-str_substring-c-rs.rs:3:5
+  |
+3 |     substring(s, pos, m)
+  |     ^^^^^^^^^ not found in this scope
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

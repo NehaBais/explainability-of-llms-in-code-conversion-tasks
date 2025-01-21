@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:15:36: error: no member named 'filesystem' in namespace 'std'
+   15 |     std::string currentPath = std::filesystem::current_path().string();
+      |                               ~~~~~^
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:26:15: error: no member named 'filesystem' in namespace 'std'
+   26 |     if (!std::filesystem::create_directory(currentPath + "/docs")) {
+      |          ~~~~~^
+/tmp/qwen2.5coder7b-file_create-js-cpp.cpp:42:15: error: no member named 'filesystem' in namespace 'std'
+   42 |     if (!std::filesystem::create_directory(rootPath + "/docs")) {
+      |          ~~~~~^
+3 errors generated.

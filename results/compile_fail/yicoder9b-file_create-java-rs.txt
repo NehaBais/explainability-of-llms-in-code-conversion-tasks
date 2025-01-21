@@ -1,0 +1,35 @@
+error[E0369]: cannot add `&str` to `&String`
+ --> /tmp/yicoder9b-file_create-java-rs.rs:9:58
+  |
+9 |     if let Err(e) = create_empty_file(&String::from("/") + "output.txt") {
+  |                                       ------------------ ^ ------------ &str
+  |                                       |                  |
+  |                                       |                  `+` cannot be used to concatenate two `&str` strings
+  |                                       &String
+  |
+  = note: string concatenation requires an owned `String` on the left
+help: remove the borrow to obtain an owned `String`
+  |
+9 -     if let Err(e) = create_empty_file(&String::from("/") + "output.txt") {
+9 +     if let Err(e) = create_empty_file(String::from("/") + "output.txt") {
+  |
+
+error[E0369]: cannot add `&str` to `&String`
+  --> /tmp/yicoder9b-file_create-java-rs.rs:16:55
+   |
+16 |     if let Err(e) = fs::create_dir(&String::from("/") + "docs") {
+   |                                    ------------------ ^ ------ &str
+   |                                    |                  |
+   |                                    |                  `+` cannot be used to concatenate two `&str` strings
+   |                                    &String
+   |
+   = note: string concatenation requires an owned `String` on the left
+help: remove the borrow to obtain an owned `String`
+   |
+16 -     if let Err(e) = fs::create_dir(&String::from("/") + "docs") {
+16 +     if let Err(e) = fs::create_dir(String::from("/") + "docs") {
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0369`.

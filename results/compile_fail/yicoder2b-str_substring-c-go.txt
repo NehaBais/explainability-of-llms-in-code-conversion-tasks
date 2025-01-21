@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/yicoder2b-str_substring-c-go.go:5:2: "strings" imported and not used
+/tmp/yicoder2b-str_substring-c-go.go:6:2: "unicode" imported and not used
+/tmp/yicoder2b-str_substring-c-go.go:9:35: undefined: ptrdiff_t
+/tmp/yicoder2b-str_substring-c-go.go:14:10: undefined: lenS
+/tmp/yicoder2b-str_substring-c-go.go:18:15: invalid character '\'' in octal escape
+/tmp/yicoder2b-str_substring-c-go.go:22:13: invalid operation: cannot take address of s[n:n + m] (value of type string)
+/tmp/yicoder2b-str_substring-c-go.go:30:37: undefined: ptrdiff_t
+/tmp/yicoder2b-str_substring-c-go.go:34:41: undefined: ptrdiff_t
+/tmp/yicoder2b-str_substring-c-go.go:35:33: cannot use str (variable of type string) as rune value in argument to indexOf

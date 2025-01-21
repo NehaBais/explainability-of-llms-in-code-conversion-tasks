@@ -1,0 +1,28 @@
+/tmp/yicoder2b-str_interp-rs-cpp.cpp:20:24: error: no matching function for call to 'get'
+   20 |   ss2 << val << " " << std::get<0>(str);
+      |                        ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:673:1: note: candidate template ignored: could not match 'pair' against 'basic_string'
+  673 | get(pair<_T1, _T2>& __p) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:679:1: note: candidate template ignored: could not match 'pair' against 'basic_string'
+  679 | get(const pair<_T1, _T2>& __p) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:685:1: note: candidate template ignored: could not match 'pair' against 'basic_string'
+  685 | get(pair<_T1, _T2>&& __p) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:691:1: note: candidate template ignored: could not match 'pair' against 'basic_string'
+  691 | get(const pair<_T1, _T2>&& __p) _NOEXCEPT {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:442:65: note: candidate template ignored: could not match 'array' against 'basic_string'
+  442 | inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _Tp& get(array<_Tp, _Size>& __a) _NOEXCEPT {
+      |                                                                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:448:71: note: candidate template ignored: could not match 'array' against 'basic_string'
+  448 | inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Tp& get(const array<_Tp, _Size>& __a) _NOEXCEPT {
+      |                                                                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:454:66: note: candidate template ignored: could not match 'array' against 'basic_string'
+  454 | inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _Tp&& get(array<_Tp, _Size>&& __a) _NOEXCEPT {
+      |                                                                  ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:460:72: note: candidate template ignored: could not match 'array' against 'basic_string'
+  460 | inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Tp&& get(const array<_Tp, _Size>&& __a) _NOEXCEPT {
+      |                                                                        ^
+1 error generated.

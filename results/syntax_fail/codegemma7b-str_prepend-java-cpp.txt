@@ -1,0 +1,7 @@
+/tmp/codegemma7b-str_prepend-java-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::string string = "def";
+      | ^
+/tmp/codegemma7b-str_prepend-java-cpp.cpp:2:1: error: a type specifier is required for all declarations
+    2 | string = "abc" + string;
+      | ^
+2 errors generated.

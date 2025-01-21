@@ -1,0 +1,10 @@
+/tmp/codegeex4-file_create-js-c.c:8:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     perror("Error");
+      |     ^
+/tmp/codegeex4-file_create-js-c.c:22:18: error: use of undeclared identifier 'errno'
+   22 |     handle_error(errno);
+      |                  ^
+/tmp/codegeex4-file_create-js-c.c:26:18: error: use of undeclared identifier 'errno'
+   26 |     handle_error(errno);
+      |                  ^
+3 errors generated.

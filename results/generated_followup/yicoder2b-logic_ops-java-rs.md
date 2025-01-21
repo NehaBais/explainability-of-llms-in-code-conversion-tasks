@@ -1,0 +1,1 @@
+Your request appears to be incomplete as it does not specify what to convert, how to compile or explain an error found during compilation. Please provide the required information for conversion to a Rust language.

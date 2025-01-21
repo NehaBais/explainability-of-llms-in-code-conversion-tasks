@@ -1,0 +1,4 @@
+/tmp/stablecode-int_cmp-java-c.c:21:50: error: extraneous ')' before ';'
+   21 |         printf("%d is equal to %d\n", nbr1, nbr2));
+      |                                                  ^
+1 error generated.

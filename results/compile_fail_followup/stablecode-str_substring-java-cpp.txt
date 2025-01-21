@@ -1,0 +1,33 @@
+/tmp/stablecode-str_substring-java-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::string Substring(const std::string &str, int n, int m) { return str.substr(n, m));
+      | ^
+/tmp/stablecode-str_substring-java-cpp.cpp:1:29: error: use of undeclared identifier 'std'
+    1 | std::string Substring(const std::string &str, int n, int m) { return str.substr(n, m));
+      |                             ^
+/tmp/stablecode-str_substring-java-cpp.cpp:1:86: error: expected ';' after return statement
+    1 | std::string Substring(const std::string &str, int n, int m) { return str.substr(n, m));
+      |                                                                                      ^
+      |                                                                                      ;
+/tmp/stablecode-str_substring-java-cpp.cpp:4:1: error: use of undeclared identifier 'std'
+    4 | std::string Substring(const std::string &str, int n) { return str.substr(n); }
+      | ^
+/tmp/stablecode-str_substring-java-cpp.cpp:4:29: error: use of undeclared identifier 'std'
+    4 | std::string Substring(const std::string &str, int n) { return str.substr(n); }
+      |                             ^
+/tmp/stablecode-str_substring-java-cpp.cpp:5:1: error: extraneous closing brace ('}')
+    5 | }
+      | ^
+/tmp/stablecode-str_substring-java-cpp.cpp:7:1: error: use of undeclared identifier 'std'
+    7 | std::string Substring(const std::string &str) { return str.substr(0, str.length()-1));
+      | ^
+/tmp/stablecode-str_substring-java-cpp.cpp:7:29: error: use of undeclared identifier 'std'
+    7 | std::string Substring(const std::string &str) { return str.substr(0, str.length()-1));
+      |                             ^
+/tmp/stablecode-str_substring-java-cpp.cpp:7:85: error: expected ';' after return statement
+    7 | std::string Substring(const std::string &str) { return str.substr(0, str.length()-1));
+      |                                                                                     ^
+      |                                                                                     ;
+/tmp/stablecode-str_substring-java-cpp.cpp:9:1: error: extraneous closing brace ('}')
+    9 | }
+      | ^
+10 errors generated.

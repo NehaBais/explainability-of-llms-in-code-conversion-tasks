@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `codellama7b_str_match_java_rs`
+  --> /tmp/codellama7b-str_match-java-rs.rs:11:2
+   |
+11 | }
+   |  ^ consider adding a `main` function to `/tmp/codellama7b-str_match-java-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

@@ -1,0 +1,4 @@
+/tmp/codeqwen-file_size-go-cpp.cpp:5:21: error: variable declaration in condition cannot have a parenthesized initializer
+    5 |   if (std::ifstream file(f, std::ios_base::ate | std::ios_base::binary)) {
+      |                     ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

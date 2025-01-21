@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_size-c-go.go:5:2: "os/exec" imported and not used
+/tmp/qwen2.5coder2b-file_size-c-go.go:9:15: undefined: sys
+/tmp/qwen2.5coder2b-file_size-c-go.go:10:9: undefined: syscall
+/tmp/qwen2.5coder2b-file_size-c-go.go:17:16: undefined: sys
+/tmp/qwen2.5coder2b-file_size-c-go.go:18:8: undefined: syscall

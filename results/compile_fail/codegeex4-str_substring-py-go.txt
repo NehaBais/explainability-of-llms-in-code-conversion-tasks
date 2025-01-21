@@ -1,0 +1,1 @@
+/tmp/codegeex4-str_substring-py-go.go:5:2: no required module provides package golang.org/x/text/unicode/norm: go.mod file not found in current directory or any parent directory; see 'go help modules'

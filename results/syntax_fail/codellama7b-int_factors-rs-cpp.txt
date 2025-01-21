@@ -1,0 +1,14 @@
+/tmp/codellama7b-int_factors-rs-cpp.cpp:7:1: error: 'main' must return 'int'
+    7 | void main() {
+      | ^~~~
+      | int
+/tmp/codellama7b-int_factors-rs-cpp.cpp:9:7: error: use of undeclared identifier 'factor'
+    9 |       factor(100); // asserts that two expressions are equal to each other
+      |       ^
+/tmp/codellama7b-int_factors-rs-cpp.cpp:11:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   for (auto factor : factors) {
+      |        ^
+/tmp/codellama7b-int_factors-rs-cpp.cpp:11:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   11 |   for (auto factor : factors) {
+      |                    ^
+2 warnings and 2 errors generated.

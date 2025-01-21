@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_match-js-go.go:14:8: undefined: regexp
+/tmp/qwen2.5coder2b-str_match-js-go.go:19:37: invalid operation: cannot index matches[0] (variable of type int)
+/tmp/qwen2.5coder2b-str_match-js-go.go:25:71: undefined: q2

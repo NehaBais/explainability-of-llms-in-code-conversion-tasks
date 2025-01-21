@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoderv2-str_concat-py-go.go:16:23: cannot use parts (variable of type []string) as []any value in argument to fmt.Sprint

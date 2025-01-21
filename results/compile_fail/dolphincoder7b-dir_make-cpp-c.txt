@@ -1,0 +1,11 @@
+/tmp/dolphincoder7b-dir_make-cpp-c.c:14:28: error: call to undeclared function 'dirname'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |       const char *parent = dirname(dirPath);
+      |                            ^
+/tmp/dolphincoder7b-dir_make-cpp-c.c:14:19: error: incompatible integer to pointer conversion initializing 'const char *' with an expression of type 'int' [-Wint-conversion]
+   14 |       const char *parent = dirname(dirPath);
+      |                   ^        ~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-dir_make-cpp-c.c:24:15: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |               strerror(errno));
+      |               ^
+/tmp/dolphincoder7b-dir_make-cpp-c.c:24:15: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+3 errors generated.

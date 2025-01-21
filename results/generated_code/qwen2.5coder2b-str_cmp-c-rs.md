@@ -1,0 +1,40 @@
+The equivalent code in Rust is as follows:
+
+```rust
+use std::cmp::{PartialEq, PartialOrd};
+use std::str::{eq_ignore_ascii_case, cmp};
+
+fn main() {
+    let args: Vec<&str> = std::env::args().skip(1).collect();
+
+    for i in 0..args.len() - 1 {
+        println!(" {}{} {} {} {} {} {} {}", 
+            &args[i],
+            eq_ignore_ascii_case(&args[i], &args[i+1]),
+            !eq_ignore_ascii_case(&args[i], &args[i+1]),
+            cmp(&args[i], &args[i+1]) == Ordering::Greater,
+            cmp(&args[i], &args[i+1]) == Ordering::Less,
+            cmp(&args[i], &args[i+1]) == Ordering::GreaterEqual,
+            cmp(&args[i], &args[i+1]) == Ordering::LessEqual,
+            cmp(&args[i], &args[i+1]),
+        );
+    }
+
+    for i in 0..args.len() - 1 {
+        println!(" {}{} {} {} {} {} {}", 
+            &args[i],
+            eq_ignore_ascii_case(&args[i], &args[i+1]),
+            !eq_ignore_ascii_case(&args[i], &args[i+1]),
+            cmp(&args[i], &args[i+1]) == Ordering::Greater,
+            cmp(&args[i], &args[i+1]) == Ordering::Less,
+            cmp(&args[i], &args[i+1]) == Ordering::GreaterEqual,
+            cmp(&args[i], &args[i+1]) == Ordering::LessEqual,
+            cmp(&args[i], &args[i+1]),
+        );
+    }
+}
+```
+
+In Rust, the comparison operations (`==`, `!=`, `<`, `<=`, `>=`, `<=`) are not directly available in the same way as they are in C. Instead, Rust provides the `PartialEq` and `PartialOrd` traits, which can be implemented for custom types to compare them.
+
+Here we compare two strings using the methods provided by the standard library. The first loop uses `eq_ignore_ascii_case()` for case-insensitive comparison, while the second loop uses `cmp()` directly.

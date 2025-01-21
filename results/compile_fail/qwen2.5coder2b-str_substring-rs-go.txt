@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:15:28: cannot use s[n:n + m] (value of type string) as []string value in argument to strings.Join
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:18:28: cannot use s[n:] (value of type string) as []string value in argument to strings.Join
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:21:22: undefined: strings.Reverse
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:28:29: cannot use s[cpos:cpos + m] (value of type string) as []string value in argument to strings.Join
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:34:29: cannot use s[spos:spos + m] (value of type string) as []string value in argument to strings.Join

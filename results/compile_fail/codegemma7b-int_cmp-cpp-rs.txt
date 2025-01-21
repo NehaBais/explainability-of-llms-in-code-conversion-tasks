@@ -1,0 +1,29 @@
+error[E0061]: this method takes 1 argument but 0 arguments were supplied
+ --> /tmp/codegemma7b-int_cmp-cpp-rs.rs:8:10
+  |
+8 |         .read_line()
+  |          ^^^^^^^^^-- argument #1 of type `&mut String` is missing
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+help: provide the argument
+  |
+8 |         .read_line(/* &mut String */)
+  |                   ~~~~~~~~~~~~~~~~~~~
+
+error[E0599]: no method named `split_whitespace` found for type `usize` in the current scope
+  --> /tmp/codegemma7b-int_cmp-cpp-rs.rs:10:10
+   |
+7  |       match io::stdin()
+   |  ___________-
+8  | |         .read_line()
+9  | |         .unwrap()
+10 | |         .split_whitespace()
+   | |         -^^^^^^^^^^^^^^^^ method not found in `usize`
+   | |_________|
+   |
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0061, E0599.
+For more information about an error, try `rustc --explain E0061`.

@@ -1,0 +1,21 @@
+error[E0614]: type `u32` cannot be dereferenced
+ --> /tmp/yicoder2b-int_factors-js-rs.rs:3:20
+  |
+3 |     for i in 1..=((*num / 2) + 1) {
+  |                    ^^^^
+
+error[E0614]: type `u32` cannot be dereferenced
+ --> /tmp/yicoder2b-int_factors-js-rs.rs:6:16
+  |
+6 |             if *num as f64 / i != i as f64 {
+  |                ^^^^
+
+error[E0614]: type `u32` cannot be dereferenced
+ --> /tmp/yicoder2b-int_factors-js-rs.rs:7:32
+  |
+7 |                 n_factors.push(*num as u32 / i);
+  |                                ^^^^
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0614`.

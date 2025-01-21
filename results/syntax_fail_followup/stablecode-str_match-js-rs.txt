@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-js-rs.rs:13:34
+   |
+13 |     if stringA.contains(stringB) {
+   |                                  ^ unclosed delimiter
+14 |         let index = stringA[..stringB.len():].find(stringB));
+   |                                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-str_match-js-rs.rs:26:1
+   |
+14 |         let index = stringA[..stringB.len():].find(stringB));
+   |                                                            - missing open `(` for this delimiter
+...
+26 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

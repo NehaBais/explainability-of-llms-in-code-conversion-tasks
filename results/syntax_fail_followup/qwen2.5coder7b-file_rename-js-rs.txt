@@ -1,0 +1,17 @@
+error: `--crate-name` and `#[crate_name]` are required to match, but `temp_crate` != `file_rename_js_rs`
+ --> /tmp/qwen2.5coder7b-file_rename-js-rs.rs:1:1
+  |
+1 | #![crate_name = "file_rename_js_rs"]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: environment variable `CARGO_MANIFEST_DIR` not defined at compile time
+ --> /tmp/qwen2.5coder7b-file_rename-js-rs.rs:8:23
+  |
+8 |     let current_dir = env!("CARGO_MANIFEST_DIR");
+  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: Cargo sets build script variables at run time. Use `std::env::var("CARGO_MANIFEST_DIR")` instead
+  = note: this error originates in the macro `env` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 2 previous errors
+

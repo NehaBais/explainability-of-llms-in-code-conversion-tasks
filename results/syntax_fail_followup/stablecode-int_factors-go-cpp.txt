@@ -1,0 +1,29 @@
+/tmp/stablecode-int_factors-go-cpp.cpp:5:35: error: non-aggregate type 'std::vector<int64_t>' (aka 'vector<long long>') cannot be initialized with an initializer list
+    5 | int main() { std::vector<int64_t> vec = {1, 2, 3, 4, 5} };
+      |                                   ^     ~~~~~~~~~~~~~~~
+/tmp/stablecode-int_factors-go-cpp.cpp:5:56: error: expected ';' at end of declaration
+    5 | int main() { std::vector<int64_t> vec = {1, 2, 3, 4, 5} };
+      |                                                        ^
+      |                                                        ;
+/tmp/stablecode-int_factors-go-cpp.cpp:8:22: error: use of undeclared identifier 'char_type'
+    8 | std::basic_streambuf<char_type, traits_type> *sb =
+      |                      ^
+/tmp/stablecode-int_factors-go-cpp.cpp:9:30: error: use of undeclared identifier 'char_type'
+    9 |     new std::basic_streambuf<char_type, traits_type>();
+      |                              ^
+/tmp/stablecode-int_factors-go-cpp.cpp:12:1: error: expected unqualified-id
+   12 | for (const auto &val : vec) {
+      | ^
+/tmp/stablecode-int_factors-go-cpp.cpp:19:1: error: expected unqualified-id
+   19 | for (const auto &val : vec) {
+      | ^
+/tmp/stablecode-int_factors-go-cpp.cpp:23:1: error: expected unqualified-id
+   23 | delete sb;
+      | ^
+/tmp/stablecode-int_factors-go-cpp.cpp:24:1: error: expected unqualified-id
+   24 | return 0;
+      | ^
+/tmp/stablecode-int_factors-go-cpp.cpp:25:1: error: extraneous closing brace ('}')
+   25 | }
+      | ^
+9 errors generated.

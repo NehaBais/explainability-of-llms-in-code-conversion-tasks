@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-dir_make-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/dolphincoder7b-dir_make-go-cpp.cpp:9:8: error: use of undeclared identifier 'fs'
+    9 |   if (!fs::exists(path)) {
+      |        ^
+/tmp/dolphincoder7b-dir_make-go-cpp.cpp:10:5: error: use of undeclared identifier 'fs'
+   10 |     fs::create_directories(path);
+      |     ^
+3 errors generated.

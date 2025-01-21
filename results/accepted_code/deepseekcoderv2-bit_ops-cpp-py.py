@@ -1,36 +1,31 @@
-# Cpp program to illustrate bitwise operators
-def AND(a, b):
-    print("a & b = ", a & b)
+import math
+import operator
 
 
-def OR(a, b):
-    print("a | b = ", a | b)
+def bitwise(a, b):
+    print("a and b:", bin(operator.and_(a, b)))  # Using built-in `&` for AND operation
+    print("a or b:", bin(operator.or_(a, b)))  # Using built-in `|` for OR operation
+    print("a xor b:", bin(operator.xor(a, b)))  # Using built-in `^` for XOR operation
+    print("not a:", bin(~a))  # Using Python's bitwise NOT (~)
+
+    # Left Shift (<<) and Right Shift (>>) operations
+    print("a shl b:", bin(a << b))  # Left shift using `<<` operator
+    print("a shr b:", bin(a >> b))  # Right shift using `>>` operator
+
+    # Logical Right Shift (LSR), Python does not have a specific logical right shift, but we can emulate it for positive numbers
+    ua = a if a >= 0 else (1 << (a.bit_length() + b)) - (1 << b)
+    print("a lsr b:", bin(ua >> b))  # Logical Right Shift emulation
+
+    # Left Rotate and Right Rotate, Python does not have built-in rotate functions for integers, but we can use a workaround with bit manipulation
+    def left_rotate(n, d):
+        return (n << d) | (n >> (32 - d)) & ((1 << 32) - 1)
+
+    def right_rotate(n, d):
+        return (n >> d) | (n << (32 - d)) & ((1 << 32) - 1)
+
+    print("a rol b:", bin(left_rotate(a, b)))
+    print("a ror b:", bin(right_rotate(a, b)))
 
 
-def XOR(a, b):
-    print("a ^ b = ", a ^ b)
-
-
-def ONES_COMPLEMENT(a):
-    return ~a & ((1 << 32) - 1)
-
-
-def LEFT_SHIFT(b):
-    # print ("Left Shift of b is", b << 1 )
-    print("Left shift by %d = " % b, a << b)
-
-
-def RIGHT_SHIFT(b):
-    # print ("Right Shift of b is", b >> 1)
-    print("Right shift by %d = " % b, a >> b)
-
-
-# Driver code
-a = 56
-b = 20
-AND(a, b)
-OR(a, b)
-XOR(a, b)
-print("Ones Complement of", a, "is", ONES_COMPLEMENT(a))
-LEFT_SHIFT(b)
-RIGHT_SHIFT(b)
+# Example usage:
+bitwise(5, 3)

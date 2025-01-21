@@ -1,0 +1,11 @@
+/tmp/codegemma7b-bit_ops-cpp-c.c:2:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 |   printf("a and b: %d\n", a & b);
+      |   ^
+/tmp/codegemma7b-bit_ops-cpp-c.c:2:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-bit_ops-cpp-c.c:12:27: error: use of unknown builtin '__builtin_rol' [-Wimplicit-function-declaration]
+   12 |   printf("a rol b: %d\n", __builtin_rol(ua, b));
+      |                           ^
+/tmp/codegemma7b-bit_ops-cpp-c.c:13:27: error: use of unknown builtin '__builtin_ror' [-Wimplicit-function-declaration]
+   13 |   printf("a ror b: %d\n", __builtin_ror(ua, b));
+      |                           ^
+3 errors generated.

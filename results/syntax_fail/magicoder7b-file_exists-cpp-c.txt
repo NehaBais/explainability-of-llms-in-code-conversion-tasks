@@ -1,0 +1,13 @@
+/tmp/magicoder7b-file_exists-cpp-c.c:7:15: error: variable has incomplete type 'struct stat'
+    7 |   struct stat info;
+      |               ^
+/tmp/magicoder7b-file_exists-cpp-c.c:7:10: note: forward declaration of 'struct stat'
+    7 |   struct stat info;
+      |          ^
+/tmp/magicoder7b-file_exists-cpp-c.c:8:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (stat(path, &info) != 0) { // check if it exists or not
+      |       ^
+/tmp/magicoder7b-file_exists-cpp-c.c:12:9: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     if (S_ISDIR(info.st_mode))
+      |         ^
+3 errors generated.

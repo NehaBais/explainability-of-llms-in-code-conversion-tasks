@@ -1,0 +1,72 @@
+/tmp/stablecode-str_substring-rs-cpp.cpp:11:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   for (auto it = std::next(s.begin(), n))
+      |        ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:11:16: error: range-based 'for' statement uses ':', not '='
+   11 |   for (auto it = std::next(s.begin(), n))
+      |                ^
+      |                :
+/tmp/stablecode-str_substring-rs-cpp.cpp:11:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+/tmp/stablecode-str_substring-rs-cpp.cpp:13:9: error: use of undeclared identifier 'it'
+   13 |         it != std::next(s.end(), n+m)); ++it) {
+      |         ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:13:45: error: expected ';' after expression
+   13 |         it != std::next(s.end(), n+m)); ++it) {
+      |                                             ^
+      |                                             ;
+/tmp/stablecode-str_substring-rs-cpp.cpp:13:43: error: use of undeclared identifier 'it'
+   13 |         it != std::next(s.end(), n+m)); ++it) {
+      |                                           ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:13:45: error: expected expression
+   13 |         it != std::next(s.end(), n+m)); ++it) {
+      |                                             ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:20:9: error: use of undeclared identifier 'it'
+   20 |         it != s.end(); ++it) {
+      |         ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:20:28: error: expected ';' after expression
+   20 |         it != s.end(); ++it) {
+      |                            ^
+      |                            ;
+/tmp/stablecode-str_substring-rs-cpp.cpp:20:26: error: use of undeclared identifier 'it'
+   20 |         it != s.end(); ++it) {
+      |                          ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:20:28: error: expected expression
+   20 |         it != s.end(); ++it) {
+      |                            ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:29:17: error: expected ';' after expression
+   29 |           ; ++it) {
+      |                 ^
+      |                 ;
+/tmp/stablecode-str_substring-rs-cpp.cpp:29:15: error: use of undeclared identifier 'it'
+   29 |           ; ++it) {
+      |               ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:29:17: error: expected expression
+   29 |           ; ++it) {
+      |                 ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:35:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   35 |         for (auto it = std::next(s.begin(), n + m).begin();
+      |              ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:35:52: error: no member named 'begin' in 'std::__wrap_iter<char *>'
+   35 |         for (auto it = std::next(s.begin(), n + m).begin();
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:36:45: error: expected ';' in 'for' statement specifier
+   36 |              it != std::next(s.end(), n + m)).take(m).collect::<String>()));
+      |                                             ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:36:46: error: expected expression
+   36 |              it != std::next(s.end(), n + m)).take(m).collect::<String>()));
+      |                                              ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:39:9: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   39 |         auto kpos = s.find("けd");
+      |         ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:40:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   40 |         for (auto it = std::next(s.begin(), n + m).begin();
+      |              ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:40:52: error: no member named 'begin' in 'std::__wrap_iter<char *>'
+   40 |         for (auto it = std::next(s.begin(), n + m).begin();
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:41:45: error: expected ';' in 'for' statement specifier
+   41 |              it != std::next(s.end(), n + m)).take(m).collect::<String>()));
+      |                                             ^
+/tmp/stablecode-str_substring-rs-cpp.cpp:41:46: error: expected expression
+   41 |              it != std::next(s.end(), n + m)).take(m).collect::<String>()));
+      |                                              ^
+5 warnings and 18 errors generated.

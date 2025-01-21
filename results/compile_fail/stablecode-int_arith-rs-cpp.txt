@@ -1,0 +1,12 @@
+/tmp/stablecode-int_arith-rs-cpp.cpp:10:31: error: extraneous ')' before ';'
+   10 |     int a = std::stoi(argv[1]));
+      |                               ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:11:31: error: extraneous ')' before ';'
+   11 |     int b = std::stoi(argv[2]));
+      |                               ^
+/tmp/stablecode-int_arith-rs-cpp.cpp:38:36: error: expected ';' after expression
+   38 |         std::cout << std::pow(a, b)) << std::endl;
+      |                                    ^
+      |                                    ;
+/tmp/stablecode-int_arith-rs-cpp.cpp:38:36: error: expected expression
+4 errors generated.

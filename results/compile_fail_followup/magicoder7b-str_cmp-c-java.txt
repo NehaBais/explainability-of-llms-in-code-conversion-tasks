@@ -1,0 +1,10 @@
+/tmp/Main.java:11: error: unclosed string literal
+                         (caseSensitive ? "STREQ" : "STRCEQ") + "(a," + b + "), notEquals(a," + b + "), greaterThan(a," + b + "), lessThan(a," + b + "), greaterOrEqual(a," + b + "), lessOrEqual(a," + b + "),
+                                                                                                                                                                                                            ^
+/tmp/Main.java:12: error: not a statement
+                         b);
+                         ^
+/tmp/Main.java:12: error: ';' expected
+                         b);
+                          ^
+3 errors

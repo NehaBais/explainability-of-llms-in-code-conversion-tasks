@@ -1,0 +1,40 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:17:5
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:17:11
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:17:14
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:17:23
+   |
+17 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: this file contains an unclosed delimiter
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:21:36
+   |
+15 |     if a < b {
+   |              - this delimiter might not be properly closed...
+16 |         println!("a is less than b");
+17 |    <｜begin▁of▁sentence｜>}
+   |                           - ...as it matches this but it has different indentation
+...
+20 |     } else if a == b {
+   |                      - unclosed delimiter
+21 |        println!("a is equal to b");
+   |                                    ^
+
+error: aborting due to 5 previous errors
+

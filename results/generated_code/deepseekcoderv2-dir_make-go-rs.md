@@ -1,27 +1,22 @@
-### Solution
-The code below is a solution for this problem that I was able to come up with:
-{{< highlight rust >}}
+ To implement the equivalent of `os.MkdirAll` in Rust, you can use the standard library's file system operations. Here's how you could write a function that creates a directory and any necessary parent directories:
+
 ```rust
-fn main() {
-    let path = "./temp/hello";
-    create_directory(path).unwrap();
+use std::fs;
+use std::io;
+use std::path::Path;
+
+fn mkdir_all(path: &str) -> io::Result<()> {
+    fs::create_dir_all(path)
 }
 
-fn create_directory(dir_name: &str) -> Result<(), Box<dyn Error>> {
-    if Path::new(&dir_name).exists() {
-        println!("Directory {} already exists", dir_name);
-        return Ok(());
-    }
-    let mut path = PathBuf::from(dir_name);
-    for component in path.components().skip(1) { // Skip the first element which is empty string ""
-        path = path.join(component);
-        if !path.exists() {
-            fs::create_dir(&path)?;
-        } else if !fs::metadata(&path).unwrap().is_dir() {
-            panic!("{} exists and is not a directory", path.display());
-        }
+fn main() -> io::Result<()> {
+    let path = "./tmp/some/path/to/dir";
+    match mkdir_all(path) {
+        Ok(_) => println!("Directory created successfully."),
+        Err(e) => eprintln!("Failed to create directory: {}", e),
     }
     Ok(())
 }
 ```
-{{< / highlight >}}
+
+This code defines a function `mkdir_all` that takes a string slice (`&str`) representing the path. It uses `fs::create_dir_all`, which will create all directories and their parents if they do not already exist. If the directory already exists, it will return successfully without doing anything. The main function demonstrates how to call this function with a specific path.

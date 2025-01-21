@@ -1,0 +1,43 @@
+/tmp/granitecode3b-file_size-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:5:20: error: unknown type name 'string'
+    5 | void printFileSize(string f) {
+      |                    ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:6:15: error: variable has incomplete type 'struct stat'
+    6 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:6:10: note: forward declaration of 'stat'
+    6 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:7:28: error: invalid operands to binary expression ('stat' and 'int')
+    7 |   if (stat(f.c_str(), &st) == -1) {
+      |       ~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/tmp/granitecode3b-file_size-go-cpp.cpp:8:5: error: use of undeclared identifier 'perror'
+    8 |     perror("Error");
+      |     ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:10:5: error: use of undeclared identifier 'cout'
+   10 |     cout << st.st_size << endl;
+      |     ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:10:27: error: use of undeclared identifier 'endl'
+   10 |     cout << st.st_size << endl;
+      |                           ^
+/tmp/granitecode3b-file_size-go-cpp.cpp:15:3: error: no matching function for call to 'printFileSize'
+   15 |   printFileSize("input.txt");
+      |   ^~~~~~~~~~~~~
+/tmp/granitecode3b-file_size-go-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[10]' to 'int' for 1st argument
+    5 | void printFileSize(string f) {
+      |      ^             ~~~~~~~~
+/tmp/granitecode3b-file_size-go-cpp.cpp:16:3: error: no matching function for call to 'printFileSize'
+   16 |   printFileSize("/input.txt");
+      |   ^~~~~~~~~~~~~
+/tmp/granitecode3b-file_size-go-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[11]' to 'int' for 1st argument
+    5 | void printFileSize(string f) {
+      |      ^             ~~~~~~~~
+1 warning and 10 errors generated.

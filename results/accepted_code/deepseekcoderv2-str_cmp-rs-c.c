@@ -1,44 +1,73 @@
-use std::ascii::AsciiExt; // for case insensitives only
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
 
-fn main() {
-  let a : &str = "abc";
-  let b : String = "Bac".to_owned();
-  println !("First string is: {}", a);
-  println !("Second string is: {}", b);
+int main() {
+  // Define the strings
+  const char *a = "abc";
+  char b[] = "Bac";
 
-  // Strings are coerced to &str when borrowed and needed
-  if a
-    == b { println !("The strings are equal"); }
-  else {
-    println !("Strings are not equal");
-  };
-  if a
-    != b{println !("The strings are not equal")};
-  if a
-    > &b { println !("The first string is lexically after the second") }
-  else {
-    println !("The first string is lexicographically before the second");
-  };
-  if a
-    < &b{println !("The first string is lexically before the second")};
-  if a
-    >= &b{println !("The first string is not lexically before the second")};
-  if a
-    <= &b {
-      println !("The first string is not lexicographically after the second");
-    }
+  // Compare two strings for exact equality and inequality
+  if (strcmp(a, b) == 0) {
+    printf("The strings are equal\n");
+  } else {
+    printf("The strings are not equal\n");
+  }
 
-  // case-insensitives:
+  // Compare two strings for inequality (inverse of exact equality)
+  if (strcmp(a, b) != 0) {
+    printf("The strings are not equal\n");
+  } else {
+    printf("The strings are equal\n");
+  }
 
-  // equality
-  // this avoids new allocations
-  if a
-    .eq_ignore_ascii_case(&b){
-        println !("Both strings are equal when ignoring case")};
+  // Compare two strings to see if one is lexically ordered before the other
+  if (strcmp(a, b) > 0) {
+    printf("The first string is lexically after the second\n");
+  } else if (strcmp(a, b) < 0) {
+    printf("The first string is lexically before the second\n");
+  } else {
+    printf("Both strings are lexicographically equal\n");
+  }
 
-  // everything else, create owned Strings, then compare as above
-  let a2 = a.to_ascii_uppercase();
-  let b2 = b.to_ascii_uppercase();
+  // Compare two strings to see if one is lexically ordered after the other
+  if (strcmp(a, b) < 0) {
+    printf("The first string is lexically before the second\n");
+  } else if (strcmp(a, b) > 0) {
+    printf("The first string is lexically after the second\n");
+  } else {
+    printf("Both strings are lexicographically equal\n");
+  }
 
-  // repeat checks
+  // Case-insensitive comparison using toupper function from <ctype.h>
+  char a_upper[strlen(a) + 1];
+  char b_upper[strlen(b) + 1];
+  for (int i = 0; i < strlen(a); i++) {
+    a_upper[i] = toupper((unsigned char)a[i]);
+  }
+  a_upper[strlen(a)] = '\0';
+  for (int i = 0; i < strlen(b); i++) {
+    b_upper[i] = toupper((unsigned char)b[i]);
+  }
+  b_upper[strlen(b)] = '\0';
+
+  // Equality in a case-insensitive manner
+  if (strcmp(a_upper, b_upper) == 0) {
+    printf("Both strings are equal when ignoring case\n");
+  }
+
+  // Numeric string comparison is done lexicographically unless explicitly
+  // handled differently
+  const char *num1 = "123";
+  const char *num2 = "124";
+
+  if (strcmp(num1, num2) < 0) {
+    printf("The first numeric string is lexically before the second\n");
+  } else if (strcmp(num1, num2) > 0) {
+    printf("The first numeric string is lexically after the second\n");
+  } else {
+    printf("Both numeric strings are equal\n");
+  }
+
+  return 0;
 }

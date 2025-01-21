@@ -1,0 +1,40 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:17:2
+   |
+17 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode8b-str_substring-java-rs.rs`
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:2:5
+  |
+2 |     substring(s, n, None)
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:5:5
+  |
+5 |     substring(s, n, None)
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+ --> /tmp/granitecode8b-str_substring-java-rs.rs:8:5
+  |
+8 |     substring(s, 0, Some(s.len() - 1))
+  |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:12:5
+   |
+12 |     substring(s, i, Some(m + 1))
+   |     ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `substring` in this scope
+  --> /tmp/granitecode8b-str_substring-java-rs.rs:16:5
+   |
+16 |     substring(s, i, Some(m + 1))
+   |     ^^^^^^^^^ not found in this scope
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0425, E0601.
+For more information about an error, try `rustc --explain E0425`.

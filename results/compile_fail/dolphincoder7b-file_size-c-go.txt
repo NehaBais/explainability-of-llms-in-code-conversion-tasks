@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_size-c-go.go:9:19: newline in string
+/tmp/dolphincoder7b-file_size-c-go.go:9:19: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/dolphincoder7b-file_size-c-go.go:10:16: newline in string
+/tmp/dolphincoder7b-file_size-c-go.go:12:19: newline in string
+/tmp/dolphincoder7b-file_size-c-go.go:12:19: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/dolphincoder7b-file_size-c-go.go:13:20: newline in string

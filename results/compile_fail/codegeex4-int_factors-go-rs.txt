@@ -1,0 +1,61 @@
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/codegeex4-int_factors-go-rs.rs:11:9
+   |
+11 |         nr >>= 1;
+   |         ^^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign twice to immutable variable `d`
+  --> /tmp/codegeex4-int_factors-go-rs.rs:19:13
+   |
+16 |     let d: i64 = 3;
+   |         - first assignment to `d`
+...
+19 |             d = nr;
+   |             ^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+16 |     let mut d: i64 = 3;
+   |         +++
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/codegeex4-int_factors-go-rs.rs:24:13
+   |
+24 |             nr /= d;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign twice to immutable variable `d`
+  --> /tmp/codegeex4-int_factors-go-rs.rs:32:9
+   |
+16 |     let d: i64 = 3;
+   |         - first assignment to `d`
+...
+32 |         d += 2;
+   |         ^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+16 |     let mut d: i64 = 3;
+   |         +++
+
+warning: unused variable: `j`
+  --> /tmp/codegeex4-int_factors-go-rs.rs:43:13
+   |
+43 |         for j in 0..e {
+   |             ^ help: if this is intentional, prefix it with an underscore: `_j`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0384`.

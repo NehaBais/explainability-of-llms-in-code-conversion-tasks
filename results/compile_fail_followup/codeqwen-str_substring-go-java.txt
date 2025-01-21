@@ -1,0 +1,4 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+System.out.printf("Start \"%s\", length %d: %s\n", sxStr, m, s.substring(sx, sx + m));
+^
+1 error

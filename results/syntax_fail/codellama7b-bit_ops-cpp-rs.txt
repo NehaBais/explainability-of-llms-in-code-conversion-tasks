@@ -1,0 +1,15 @@
+error[E0425]: cannot find function `rotl` in crate `std`
+  --> /tmp/codellama7b-bit_ops-cpp-rs.rs:36:27
+   |
+36 |     let result_rol = std::rotl(ua, b);
+   |                           ^^^^ not found in `std`
+
+error[E0425]: cannot find function `rotr` in crate `std`
+  --> /tmp/codellama7b-bit_ops-cpp-rs.rs:40:27
+   |
+40 |     let result_ror = std::rotr(ua, b);
+   |                           ^^^^ not found in `std`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

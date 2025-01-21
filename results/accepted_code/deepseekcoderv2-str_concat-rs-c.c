@@ -1,21 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main() {
-  char *s = "hello"; // Declare a string variable with initial value "hello"
-  printf("%s\n", s); // Print the contents of the string variable
+  // Create a string variable equal to any text value
+  char *s = strdup("hello");
+  printf("%s\n", s);
 
-  size_t len1 =
-      strlen(s) +
-      6; // Calculate length of new string (original string plus " world")
-  char *s1 = malloc(len1); // Allocate memory for new string
-  strcpy(s1, s);           // Copy original string to new string
-  strcat(s1, " world");    // Concatenate " world" to end of new string
+  // Create another string variable whose value is the original variable
+  // concatenated with another string literal
+  size_t len = strlen(s) + 6; // Length of " world" plus null terminator
+  char *s1 = (char *)malloc(len);
+  if (s1 == NULL) {
+    fprintf(stderr, "Memory allocation failed\n");
+    return 1;
+  }
 
-  printf("%s\n", s1); // Print the contents of the new string
+  strcpy(s1, s);
+  strcat(s1, " world");
+  printf("%s\n", s1);
 
-  free(s1); // Free memory allocated for new string
+  // Free the allocated memory for s1
+  free(s1);
 
   return 0;
 }

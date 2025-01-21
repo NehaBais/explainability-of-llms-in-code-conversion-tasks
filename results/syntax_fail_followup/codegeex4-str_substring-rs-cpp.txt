@@ -1,0 +1,4 @@
+/tmp/codegeex4-str_substring-rs-cpp.cpp:2:10: fatal error: 'unicode/unistr.h' file not found
+    2 | #include <unicode/unistr.h> // Include for Unicode functions
+      |          ^~~~~~~~~~~~~~~~~~
+1 error generated.

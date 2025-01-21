@@ -1,23 +1,17 @@
-function mkdirp(pathString) {
-  // Split the string into an array of individual path components
-  const paths = pathString.split("/");
+const fs = require("fs");
+const path = require("path");
 
-  let currentPath = "";
-
-  for (const pathComponent of paths) {
-    if (!currentPath) {
-      currentPath = pathComponent;
-    } else {
-      currentPath += "/" + pathComponent;
+function mkdirp(dirPath) {
+  try {
+    fs.mkdirSync(dirPath, { recursive: true });
+    console.log(`Directory created at ${dirPath}`);
+  } catch (err) {
+    if (err.code !== "EEXIST") {
+      throw err;
     }
-
-    try {
-      // Try to create the directory with fs.mkdirSync()
-      fs.mkdirSync(currentPath);
-    } catch (err) {
-      if (err.code !== "EEXIST") {
-        throw err;
-      }
-    }
+    console.log(`Directory already exists at ${dirPath}`);
   }
 }
+
+// Example usage:
+mkdirp("./path/to/dir");

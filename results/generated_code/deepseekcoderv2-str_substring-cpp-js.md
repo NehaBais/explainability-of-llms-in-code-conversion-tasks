@@ -1,49 +1,23 @@
-#include <iostream>
-#include <string>
-int main() {
-    std::string s = "0123456789";
-    int const n = 3;
-    int const m = 4;
-    char const c = '2';
-    std::string const sub = "456";
-    //starting from n characters in and of m length;
-    if(n < s.size()) {
-        for (int i=0; i<m;i++) {
-            std::cout << s[n+i];
-        }
-    } else {
-        std::cout << "Not enough" << endl;
-    }
-    //starting from n characters in, up to the end of the string;
-    if(s.size()>0) {
-        for (int i=n; i < s.size();i++) {
-            std::cout << s[i];
-        }
-    } else {
-        std::cout << "Not enough" << endl;
-    }
-    //whole string minus the last character;
-    if(s.size() > 0) {
-        for (int i=0; i < s.size()-1;i++) {
-            std::cout << s[i];
-        }
-    } else {
-        std::cout << "Not enough" << endl;
-    }
-    //starting from a known character within the string and of m length;
-    if(s.find(c) != -1 && (s.find(c)+m <= s.size())){
-        for(int i = 0; i<m ;i++) {
-            std::cout << s[s.find(c) + i];
-        }
-    } else {
-        std::cout << "Not enough" << endl;
-    }
-    //starting from a known substring within the string and of m length.
-    if (s.find(sub)!=-1 && sub.size() >=m ) {
-        for(int i = 0; i<m ;i++) {
-            std::cout << s[s.find(sub) + i];
-        }
-    } else {
-        std::cout << "Not enough" << endl;
-    }
-}
+ Here's the equivalent JavaScript code for the given C++ code, which handles the specified substring operations on a Unicode string:
+
+```javascript
+let s = "0123456789";
+
+let n = 3;
+let m = 4;
+let c = '2';
+let sub = "456";
+
+console.log(s.substring(n, n + m)); // Display a substring starting from n characters in and of m length
+console.log(s.substring(n));         // Display a substring starting from n characters in, up to the end of the string
+console.log(s.substring(0, s.length - 1)); // Display the whole string minus the last character
+console.log(s.substring(s.indexOf(c), m)); // Display a substring starting from '2' and of length m
+console.log(s.substring(s.indexOf(sub), m)); // Display a substring starting from "456" and of length m
+```
+
+This JavaScript code performs the same operations as the C++ code:
+1. Displays a substring starting from `n` characters in and of `m` length.
+2. Displays a substring starting from `n` characters in, up to the end of the string.
+3. Displays the whole string minus the last character.
+4. Displays a substring starting from the known character '2' and of length `m`.
+5. Displays a substring starting from the known substring "456" and of length `m`.

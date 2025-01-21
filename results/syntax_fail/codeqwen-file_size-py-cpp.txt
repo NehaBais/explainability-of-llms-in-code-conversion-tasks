@@ -1,0 +1,7 @@
+/tmp/codeqwen-file_size-py-cpp.cpp:6:21: error: no member named 'filesystem' in namespace 'std'
+    6 |             << std::filesystem::file_size("./input.txt") << "\n";
+      |                ~~~~~^
+/tmp/codeqwen-file_size-py-cpp.cpp:8:21: error: no member named 'filesystem' in namespace 'std'
+    8 |             << std::filesystem::file_size("/input.txt") << "\n";
+      |                ~~~~~^
+2 errors generated.

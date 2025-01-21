@@ -1,0 +1,1 @@
+/tmp/dolphincoder7b-dir_make-js-go.go:1:1: expected 'package', found 'import'

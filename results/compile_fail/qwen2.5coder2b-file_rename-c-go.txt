@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_rename-c-go.go:9:12: undefined: os
+/tmp/qwen2.5coder2b-file_rename-c-go.go:14:12: undefined: os
+/tmp/qwen2.5coder2b-file_rename-c-go.go:19:12: undefined: os
+/tmp/qwen2.5coder2b-file_rename-c-go.go:24:12: undefined: os

@@ -1,0 +1,16 @@
+/tmp/codegemma7b-str_prepend-go-c.c:2:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    2 | s = strcat("Hello, ", &s);
+      | ^
+      | int
+/tmp/codegemma7b-str_prepend-go-c.c:2:1: error: redefinition of 's' with a different type: 'int' vs 'char *'
+/tmp/codegemma7b-str_prepend-go-c.c:1:7: note: previous definition is here
+    1 | char *s = "world!";
+      |       ^
+/tmp/codegemma7b-str_prepend-go-c.c:2:5: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | s = strcat("Hello, ", &s);
+      |     ^
+/tmp/codegemma7b-str_prepend-go-c.c:2:5: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/codegemma7b-str_prepend-go-c.c:2:23: warning: incompatible pointer types passing 'char **' to parameter of type 'const char *'; remove & [-Wincompatible-pointer-types]
+    2 | s = strcat("Hello, ", &s);
+      |                       ^~
+1 warning and 3 errors generated.

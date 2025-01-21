@@ -1,17 +1,30 @@
-package main
+#include <iostream>
+#include <limits> // For numeric_limits
 
-import("fmt"
-       "log")
+int main() {
+  int n1, n2;
 
-    func main() {
-  var n1, n2 int fmt.Print("enter number: ") if _, err : = fmt.Scan(&n1);
-  err != nil{log.Fatal(err)} fmt.Print("enter number: ") if _,
-      err : = fmt.Scan(&n2);
-  err != nil { log.Fatal(err) }
-  switch {
-  case n1 < n2:
-  fmt.Println(n1, "less than", n2) case n1 == n2:
-  fmt.Println(n1, "equal to", n2) case n1 > n2:
-    fmt.Println(n1, "greater than", n2)
+  std::cout << "Enter number 1: ";
+  std::cin >> n1;
+  if (std::cin.fail()) {
+    std::cerr << "Invalid input for number 1." << std::endl;
+    return 1;
   }
+
+  std::cout << "Enter number 2: ";
+  std::cin >> n2;
+  if (std::cin.fail()) {
+    std::cerr << "Invalid input for number 2." << std::endl;
+    return 1;
+  }
+
+  if (n1 < n2) {
+    std::cout << n1 << " less than " << n2 << std::endl;
+  } else if (n1 == n2) {
+    std::cout << n1 << " equal to " << n2 << std::endl;
+  } else if (n1 > n2) {
+    std::cout << n1 << " greater than " << n2 << std::endl;
+  }
+
+  return 0;
 }

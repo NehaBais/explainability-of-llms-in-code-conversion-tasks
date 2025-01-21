@@ -1,0 +1,61 @@
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:8:12: warning: multi-character character constant [-Wmultichar]
+    8 |     printf('%s is strictly greater than  %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:8:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:8:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    8 |     printf('%s is strictly greater than  %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:10:12: warning: multi-character character constant [-Wmultichar]
+   10 |     printf('%s is greater than or equal to %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:10:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:10:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   10 |     printf('%s is greater than or equal to %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:12:12: warning: multi-character character constant [-Wmultichar]
+   12 |     printf('%s is strictly less than  %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:12:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:12:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   12 |     printf('%s is strictly less than  %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:14:12: warning: multi-character character constant [-Wmultichar]
+   14 |     printf('%s is less than or equal to %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:14:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:14:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   14 |     printf('%s is less than or equal to %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:17:12: warning: multi-character character constant [-Wmultichar]
+   17 |     printf('%s is equal to %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:17:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:17:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   17 |     printf('%s is equal to %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:19:12: warning: multi-character character constant [-Wmultichar]
+   19 |     printf('%s is not equal to %s\n', a, b);
+      |            ^
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:19:12: warning: character constant too long for its type
+/tmp/qwen2.5coder7b-str_cmp-py-c.c:19:12: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   19 |     printf('%s is not equal to %s\n', a, b);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:31:36: note: passing argument to parameter here
+   31 | int      printf(const char * __restrict, ...) __printflike(1, 2);
+      |                                        ^
+12 warnings and 6 errors generated.

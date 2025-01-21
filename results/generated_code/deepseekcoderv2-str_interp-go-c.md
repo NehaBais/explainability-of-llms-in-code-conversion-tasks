@@ -1,44 +1,21 @@
-## Solution 1:
+ To convert the given Go code to C, we need to handle string interpolation using format specifiers in C. The `sprintf` function in C is analogous to the `fmt.Sprintf` function in Go for string formatting. Here's how you can achieve the same functionality in C:
 
 ```c
 #include <stdio.h>
-#include <string.h>
-
-char *my_sprintf(char *s, const char *format, ...) {
-    // TODO: Implement sprintf function
-}
 
 int main() {
-    char format[] = "Mary had a %s lamb";
-    char text[] = "little";
-    my_sprintf(format, "%s", text);
-    printf("%s\n", format);
+    char str[] = "Mary had a %s lamb";
+    char txt[] = "little";
+    char out[100]; // Assuming the output string won't exceed 100 characters
+
+    sprintf(out, str, txt);
+    printf("%s\n", out);
+
     return 0;
 }
 ```
-## Solution 2:
 
-
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char *str = "Mary had a %s lamb";
-    char text[] = "little";
-    int len_format = strlen(str);
-    int len_text = sizeof(text) / sizeof(char);
-
-    char *out = (char*)malloc((len_format + 1) * sizeof(char));
-    strcpy(out, str);
-    for (int i = 0; i < len_format; i++) {
-        if (str[i] == '%' && i+1 < len_format && str[i+1] == 's') {
-            out[i] = text[0];
-            break;
-        } else {
-            out[i] = str[i];
-        }
-    }
-    printf("%s\n", out);
-    free(out);
-    return 0;
-}
+In this C code:
+- We define a format string `str` and a replacement string `txt`.
+- We use the `sprintf` function to format the output string by replacing the placeholder in `str` with the content of `txt`.
+- Finally, we print the formatted string using `printf`.

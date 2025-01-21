@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-cpp-go.go:8:26: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:8:26: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-bit_ops-cpp-go.go:9:3: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-cpp-go.go:9:13: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:10:25: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:11:3: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-cpp-go.go:11:13: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:12:26: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:13:3: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-cpp-go.go:13:13: newline in string
+/tmp/stablecode-bit_ops-cpp-go.go:13:13: too many errors

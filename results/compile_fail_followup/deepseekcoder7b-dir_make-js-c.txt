@@ -1,0 +1,43 @@
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:24: error: expected expression
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                        ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:25: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                         ^~
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:33: error: character <U+2581> not allowed in an identifier
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                                ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:38: error: character <U+2581> not allowed in an identifier
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                                   ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:49: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                                            ^~
+/tmp/deepseekcoder7b-dir_make-js-c.c:22:25: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   22 |         if ((status != <｜begin▁of▁sentence｜ > 0) && (errno != EEXIST)) {
+      |                         ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:29: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                             ^~
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:37: error: character <U+2581> not allowed in an identifier
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                    ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:42: error: character <U+2581> not allowed in an identifier
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                       ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:53: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                                ^~
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:26: error: no member named 'st' in 'struct stat'
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                       ~~ ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:251:28: note: expanded from macro 'S_ISDIR'
+  251 | #define S_ISDIR(m)      (((m) & S_IFMT) == S_IFDIR)     /* directory */
+      |                            ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:29: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                             ^
+/tmp/deepseekcoder7b-dir_make-js-c.c:29:58: error: use of undeclared identifier '_mode'
+   29 |   } else if (!S_ISDIR(st.st<｜begin▁of▁sentence｜> _mode)) {
+      |                                                    ^
+4 warnings and 9 errors generated.

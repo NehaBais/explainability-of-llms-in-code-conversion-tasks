@@ -1,0 +1,8 @@
+/tmp/yicoder9b-bit_ops-py-cpp.cpp:23:12: error: use of undeclared identifier 'rotl'; did you mean 'rotr'?
+   23 |     return rotl(width, a, -n);
+      |            ^~~~
+      |            rotr
+/tmp/yicoder9b-bit_ops-py-cpp.cpp:21:5: note: 'rotr' declared here
+   21 | int rotr(int width, int a, int n) {
+      |     ^
+1 error generated.

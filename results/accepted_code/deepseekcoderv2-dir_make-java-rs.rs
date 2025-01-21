@@ -1,8 +1,10 @@
 use std::fs;
+use std::path::Path;
 
-fn main() -> std::io::Result<()> {
-    let path = "C:/parent/test";
-    fs::create_dir(path)?;
-    println!("Directory created");
-    Ok(())
+fn main() {
+    let path = Path::new("C:/parent/test");
+    match fs::create_dir_all(&path) {
+        Ok(_) => println!("path successfully created"),
+        Err(e) => eprintln!("Error creating directory: {}", e),
+    }
 }

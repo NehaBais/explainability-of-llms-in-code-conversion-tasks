@@ -1,0 +1,15 @@
+/tmp/codeqwen-int_cmp-java-cpp.cpp:15:3: error: use of undeclared identifier 'If'
+   15 |   If(nbr1 > nbr2) std::cout << nbr1 << " Is greater than " << nbr2 << std::endl;
+      |   ^
+/tmp/codeqwen-int_cmp-java-cpp.cpp:15:18: error: expected ';' after expression
+   15 |   If(nbr1 > nbr2) std::cout << nbr1 << " Is greater than " << nbr2 << std::endl;
+      |                  ^
+      |                  ;
+/tmp/codeqwen-int_cmp-java-cpp.cpp:17:3: error: use of undeclared identifier 'If'
+   17 |   If(nbr1 == nbr2) std::cout << nbr1 << " Is equal to " << nbr2 << std::endl;
+      |   ^
+/tmp/codeqwen-int_cmp-java-cpp.cpp:17:19: error: expected ';' after expression
+   17 |   If(nbr1 == nbr2) std::cout << nbr1 << " Is equal to " << nbr2 << std::endl;
+      |                   ^
+      |                   ;
+4 errors generated.

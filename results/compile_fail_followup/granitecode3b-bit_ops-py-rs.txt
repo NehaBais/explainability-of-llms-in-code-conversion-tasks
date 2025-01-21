@@ -1,0 +1,17 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/granitecode3b-bit_ops-py-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode3b-bit_ops-py-rs.rs`
+
+warning: unused variable: `width`
+ --> /tmp/granitecode3b-bit_ops-py-rs.rs:2:9
+  |
+2 |     let width = 3; // or any other valid value
+  |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_width`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

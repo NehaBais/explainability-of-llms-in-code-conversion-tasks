@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-dir_make-java-c.c:1:10: fatal error: 'boost/filesystem.hpp' file not found
+    1 | #include <boost/filesystem.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

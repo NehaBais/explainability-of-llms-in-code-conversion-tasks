@@ -1,0 +1,21 @@
+/tmp/codegemma7b-str_interp-java-c.c:3:5: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |     malloc(strlen("Mary had a ") + strlen(adjective) + strlen(" lamb") + 1);
+      |     ^
+/tmp/codegemma7b-str_interp-java-c.c:3:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegemma7b-str_interp-java-c.c:3:12: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |     malloc(strlen("Mary had a ") + strlen(adjective) + strlen(" lamb") + 1);
+      |            ^
+/tmp/codegemma7b-str_interp-java-c.c:3:12: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/codegemma7b-str_interp-java-c.c:3:5: error: initializer element is not a compile-time constant
+    3 |     malloc(strlen("Mary had a ") + strlen(adjective) + strlen(" lamb") + 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-str_interp-java-c.c:4:16: error: expected identifier
+    4 | sprintf(lyric, "Mary had a %s lamb", adjective);
+      |                ^
+/tmp/codegemma7b-str_interp-java-c.c:4:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    4 | sprintf(lyric, "Mary had a %s lamb", adjective);
+      | ^
+      | int
+/tmp/codegemma7b-str_interp-java-c.c:4:1: warning: incompatible redeclaration of library function 'sprintf' [-Wincompatible-library-redeclaration]
+/tmp/codegemma7b-str_interp-java-c.c:4:1: note: 'sprintf' is a builtin with type 'int (char *, const char *, ...)'
+1 warning and 5 errors generated.

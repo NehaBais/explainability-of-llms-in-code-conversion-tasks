@@ -1,0 +1,31 @@
+error[E0277]: the trait bound `PathBuf: Copy` is not satisfied
+  --> /tmp/codeqwen-file_create-java-rs.rs:7:17
+   |
+7  |     create_file(PathBuf::from(std::env::current_dir().unwrap()).join("output.txt"));
+   |     ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `Copy` is not implemented for `PathBuf`
+   |     |
+   |     required by a bound introduced by this call
+   |
+note: required by a bound in `create_file`
+  --> /tmp/codeqwen-file_create-java-rs.rs:11:44
+   |
+11 | fn create_file<P: AsRef<std::path::Path> + Copy>(path: P) {
+   |                                            ^^^^ required by this bound in `create_file`
+
+error[E0277]: the trait bound `PathBuf: Copy` is not satisfied
+  --> /tmp/codeqwen-file_create-java-rs.rs:8:16
+   |
+8  |     create_dir(PathBuf::from(std::env::current_dir().unwrap()).join("docs"));
+   |     ---------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `Copy` is not implemented for `PathBuf`
+   |     |
+   |     required by a bound introduced by this call
+   |
+note: required by a bound in `create_dir`
+  --> /tmp/codeqwen-file_create-java-rs.rs:19:43
+   |
+19 | fn create_dir<P: AsRef<std::path::Path> + Copy>(path: P) {
+   |                                           ^^^^ required by this bound in `create_dir`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

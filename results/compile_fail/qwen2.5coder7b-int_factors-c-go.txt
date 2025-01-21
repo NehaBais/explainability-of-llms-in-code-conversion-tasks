@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-int_factors-c-go.go:15:64: syntax error: unexpected ) at end of statement

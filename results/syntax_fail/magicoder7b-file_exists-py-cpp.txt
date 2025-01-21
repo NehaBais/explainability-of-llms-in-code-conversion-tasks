@@ -1,0 +1,21 @@
+/tmp/magicoder7b-file_exists-py-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path current_directory{"input.txt"};
+      |   ~~~~~^
+/tmp/magicoder7b-file_exists-py-cpp.cpp:5:42: error: expected ';' at end of declaration
+    5 |   std::filesystem::path current_directory{"input.txt"};
+      |                                          ^
+      |                                          ;
+/tmp/magicoder7b-file_exists-py-cpp.cpp:6:12: error: no member named 'filesystem' in namespace 'std'
+    6 |   if (std::filesystem::exists(current_directory))
+      |       ~~~~~^
+/tmp/magicoder7b-file_exists-py-cpp.cpp:12:8: error: no member named 'filesystem' in namespace 'std'
+   12 |   std::filesystem::path root_directory{
+      |   ~~~~~^
+/tmp/magicoder7b-file_exists-py-cpp.cpp:12:39: error: expected ';' at end of declaration
+   12 |   std::filesystem::path root_directory{
+      |                                       ^
+      |                                       ;
+/tmp/magicoder7b-file_exists-py-cpp.cpp:14:12: error: no member named 'filesystem' in namespace 'std'
+   14 |   if (std::filesystem::exists(root_directory))
+      |       ~~~~~^
+6 errors generated.

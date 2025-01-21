@@ -1,0 +1,17 @@
+/tmp/codegeex4-str_match-java-c.c:11:18: error: call to undeclared function 'startsWith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   printf("%d\n", startsWith(str1, str2)); // prints 1 (true)
+      |                  ^
+/tmp/codegeex4-str_match-java-c.c:12:18: error: call to undeclared function 'endsWith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("%d\n", endsWith(str1, str3));   // prints 0 (false)
+      |                  ^
+/tmp/codegeex4-str_match-java-c.c:13:18: error: call to undeclared function 'contains'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   printf("%d\n", contains(str4, str5));   // prints 0 (false)
+      |                  ^
+/tmp/codegeex4-str_match-java-c.c:15:13: error: call to undeclared function 'indexOf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   int loc = indexOf("abab", "bb");
+      |             ^
+/tmp/codegeex4-str_match-java-c.c:15:13: note: did you mean 'index'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_strings.h:73:7: note: 'index' declared here
+   73 | char    *index(const char *, int) __POSIX_C_DEPRECATED(200112L);
+      |          ^
+4 errors generated.

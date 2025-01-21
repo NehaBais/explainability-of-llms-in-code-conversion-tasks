@@ -1,0 +1,57 @@
+/tmp/stablecode-int_factors-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_factors-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-int_factors-js-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-int_factors-js-c.c:8:12: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     return malloc(sizeof(int)) * 2);
+      |            ^
+/tmp/stablecode-int_factors-js-c.c:8:12: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/stablecode-int_factors-js-c.c:8:32: error: invalid operands to binary expression ('void *' and 'int')
+    8 |     return malloc(sizeof(int)) * 2);
+      |            ~~~~~~~~~~~~~~~~~~~ ^ ~
+/tmp/stablecode-int_factors-js-c.c:8:35: error: expected ';' after return statement
+    8 |     return malloc(sizeof(int)) * 2);
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-int_factors-js-c.c:9:7: error: use of undeclared identifier 'n_factors'; did you mean 'factors'?
+    9 |     *(n_factors + sizeof(int)))] = -1;
+      |       ^~~~~~~~~
+      |       factors
+/tmp/stablecode-int_factors-js-c.c:6:6: note: 'factors' declared here
+    6 | int *factors(int num) {
+      |      ^
+/tmp/stablecode-int_factors-js-c.c:9:31: error: expected ';' after expression
+    9 |     *(n_factors + sizeof(int)))] = -1;
+      |                               ^
+      |                               ;
+/tmp/stablecode-int_factors-js-c.c:9:31: error: expected expression
+/tmp/stablecode-int_factors-js-c.c:13:53: error: extraneous ')' before ';'
+   13 |   int *n_factors = malloc(MAX_FACTORS * sizeof(int)));
+      |                                                     ^
+/tmp/stablecode-int_factors-js-c.c:15:20: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   for (i = 1; i <= sqrt(num))
+      |                    ^
+/tmp/stablecode-int_factors-js-c.c:15:20: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/stablecode-int_factors-js-c.c:15:29: error: expected ';' in 'for' statement specifier
+   15 |   for (i = 1; i <= sqrt(num))
+      |                             ^
+/tmp/stablecode-int_factors-js-c.c:16:10: error: expected ';' after expression
+   16 |     ; i++) {
+      |          ^
+      |          ;
+/tmp/stablecode-int_factors-js-c.c:16:10: error: expected expression
+/tmp/stablecode-int_factors-js-c.c:9:5: warning: expression result unused [-Wunused-value]
+    9 |     *(n_factors + sizeof(int)))] = -1;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-int_factors-js-c.c:44:38: error: expected ';' in 'for' statement specifier
+   44 |   for (int i = 0; i < 2 * sizeof(int))
+      |                                      ^
+/tmp/stablecode-int_factors-js-c.c:45:7: error: use of undeclared identifier 'i'
+   45 |     ; i++) {
+      |       ^
+1 warning and 16 errors generated.

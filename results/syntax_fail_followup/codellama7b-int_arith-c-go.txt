@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-int_arith-c-go.go:8:9: undefined: os

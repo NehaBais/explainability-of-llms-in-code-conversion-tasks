@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-file_rename-java-go.go:21:11: expected ')', found 'type' (and 5 more errors)

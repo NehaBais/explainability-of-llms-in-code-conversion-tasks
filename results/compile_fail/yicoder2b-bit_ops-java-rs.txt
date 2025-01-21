@@ -1,0 +1,77 @@
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:9:30
+  |
+9 |     let mut tmp = ((a as u32 << b) as i32) as usize;
+  |                              ^^ -- interpreted as generic arguments
+  |                              |
+  |                              not interpreted as shift
+  |
+help: try shifting the cast value
+  |
+9 |     let mut tmp = (((a as u32) << b) as i32) as usize;
+  |                     +        +
+
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+  --> /tmp/yicoder2b-bit_ops-java-rs.rs:13:22
+   |
+13 |     tmp |= (a as u32 << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |                      ^^ ------ interpreted as generic arguments
+   |                      |
+   |                      not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+13 |     tmp |= ((a as u32) << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |             +        +
+
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:5:29
+  |
+5 |     println!("NOT a: {:x}", ~a);
+  |                             ^
+  |
+help: use `!` to perform bitwise not
+  |
+5 |     println!("NOT a: {:x}", !a);
+  |                             ~
+
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:6:40
+  |
+6 |     println!("a << b: {:x}", (a as u32 << b) as i32); // left shift
+  |                                        ^^ -- interpreted as generic arguments
+  |                                        |
+  |                                        not interpreted as shift
+  |
+help: try shifting the cast value
+  |
+6 |     println!("a << b: {:x}", ((a as u32) << b) as i32); // left shift
+  |                               +        +
+
+error[E0601]: `main` function not found in crate `yicoder2b_bit_ops_java_rs`
+  --> /tmp/yicoder2b-bit_ops-java-rs.rs:15:2
+   |
+15 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-bit_ops-java-rs.rs`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-bit_ops-java-rs.rs:13:12
+   |
+13 |     tmp |= (a as u32 << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 |= u32`
+  --> /tmp/yicoder2b-bit_ops-java-rs.rs:13:9
+   |
+13 |     tmp |= (a as u32 << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |         ^^ no implementation for `i32 |= u32`
+   |
+   = help: the trait `BitOrAssign<u32>` is not implemented for `i32`
+   = help: the following other types implement trait `BitOrAssign<Rhs>`:
+             `i32` implements `BitOrAssign<&i32>`
+             `i32` implements `BitOrAssign`
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

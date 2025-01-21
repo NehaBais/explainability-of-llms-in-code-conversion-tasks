@@ -1,0 +1,40 @@
+/tmp/Main.java:16: error: illegal character: '\uff5c'
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                       ^
+/tmp/Main.java:16: error: illegal character: '\u2581'
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                             ^
+/tmp/Main.java:16: error: not a statement
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                        ^
+/tmp/Main.java:16: error: illegal character: '\u2581'
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                                ^
+/tmp/Main.java:16: error: not a statement
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                              ^
+/tmp/Main.java:16: error: illegal character: '\uff5c'
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                                         ^
+/tmp/Main.java:16: error: not a statement
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                                 ^
+/tmp/Main.java:16: error: not a statement
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                                                                            ^
+/tmp/Main.java:16: error: ';' expected
+            Files.setPosixFilePermissions(Paths.get("/docs"), java.nio<｜begin▁of▁sentence｜>ile.attribute.PosixFilePermission.OWNER_READ, 
+                                                                                                                                       ^
+/tmp/Main.java:17: error: not a statement
+                                          java.nio.file.attribute.PosixFilePermission.OWNER_WRITE, 
+                                                                                     ^
+/tmp/Main.java:17: error: ';' expected
+                                          java.nio.file.attribute.PosixFilePermission.OWNER_WRITE, 
+                                                                                                 ^
+/tmp/Main.java:18: error: not a statement
+                                          java.nio.file.attribute.PosixFilePermission.OWNER_EXECUTE); // permissions: rwxr-x---
+                                                                                     ^
+/tmp/Main.java:18: error: ';' expected
+                                          java.nio.file.attribute.PosixFilePermission.OWNER_EXECUTE); // permissions: rwxr-x---
+                                                                                                   ^
+13 errors

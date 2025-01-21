@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-dir_make-go-c.c:15:34: error: use of undeclared identifier 'errno'
+   15 |       if (mkdir(s, 0770) != 0 && errno != EEXIST) {
+      |                                  ^
+/tmp/qwen2.5coder7b-dir_make-go-c.c:15:43: error: use of undeclared identifier 'EEXIST'
+   15 |       if (mkdir(s, 0770) != 0 && errno != EEXIST) {
+      |                                           ^
+/tmp/qwen2.5coder7b-dir_make-go-c.c:25:30: error: use of undeclared identifier 'errno'
+   25 |   if (mkdir(s, 0770) != 0 && errno != EEXIST) {
+      |                              ^
+/tmp/qwen2.5coder7b-dir_make-go-c.c:25:39: error: use of undeclared identifier 'EEXIST'
+   25 |   if (mkdir(s, 0770) != 0 && errno != EEXIST) {
+      |                                       ^
+4 errors generated.

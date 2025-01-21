@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_arith-py-go.go:17:38: undefined: floatQuotient
+/tmp/qwen2.5coder2b-int_arith-py-go.go:18:21: invalid operation: operator % not defined on input1 (variable of type float64)

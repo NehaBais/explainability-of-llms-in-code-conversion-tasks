@@ -1,0 +1,32 @@
+/tmp/granitecode8b-str_interp-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str = "Mary had a %s lamb";
+      |   ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string txt = "little";
+      |   ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string out = fmt.Sprintf(str, txt);
+      |   ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:7:16: error: use of undeclared identifier 'fmt'
+    7 |   string out = fmt.Sprintf(str, txt);
+      |                ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:8:3: error: use of undeclared identifier 'cout'; did you mean 'out'?
+    8 |   cout << out << endl;
+      |   ^~~~
+      |   out
+/tmp/granitecode8b-str_interp-go-cpp.cpp:7:10: note: 'out' declared here
+    7 |   string out = fmt.Sprintf(str, txt);
+      |          ^
+/tmp/granitecode8b-str_interp-go-cpp.cpp:8:18: error: use of undeclared identifier 'endl'
+    8 |   cout << out << endl;
+      |                  ^
+1 warning and 8 errors generated.

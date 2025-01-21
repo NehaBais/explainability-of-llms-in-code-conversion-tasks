@@ -1,0 +1,15 @@
+error[E0599]: no method named `trim` found for type `i32` in the current scope
+  --> /tmp/qwen2.5coder2b-int_cmp-js-rs.rs:13:20
+   |
+13 |     let a: i32 = a.trim().parse().expect("Invalid input for a");
+   |                    ^^^^ method not found in `i32`
+
+error[E0599]: no method named `trim` found for type `i32` in the current scope
+  --> /tmp/qwen2.5coder2b-int_cmp-js-rs.rs:14:20
+   |
+14 |     let b: i32 = b.trim().parse().expect("Invalid input for b");
+   |                    ^^^^ method not found in `i32`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

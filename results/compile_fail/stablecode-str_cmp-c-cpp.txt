@@ -1,0 +1,110 @@
+/tmp/stablecode-str_cmp-c-cpp.cpp:23:46: error: expected ';' after expression
+   23 |   std::cout << "Equal (case-sensitive): " << STREQ(a, b) << std::endl;
+      |                                              ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:3:44: note: expanded from macro 'STREQ'
+    3 | #define STREQ(A, B) (0 == strcmp((A), (B))))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:23:46: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:3:44: note: expanded from macro 'STREQ'
+    3 | #define STREQ(A, B) (0 == strcmp((A), (B))))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:24:51: error: expected ';' after expression
+   24 |   std::cout << "Not Equal (case-sensitive)): " << STRNE(a, b) << std::endl;
+      |                                                   ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:4:34: note: expanded from macro 'STRNE'
+    4 | #define STRNE(A, B) (!STREQ(A, B))))
+      |                                  ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:24:51: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:4:34: note: expanded from macro 'STRNE'
+    4 | #define STRNE(A, B) (!STREQ(A, B))))
+      |                                  ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:25:35: error: expected ';' after expression
+   25 |     std::cout << "Less Than: " << STRLT(a, b)) << std::endl;
+      |                                   ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:5:43: note: expanded from macro 'STRLT'
+    5 | #define STRLT(A, B) (strcmp((A), (B)) < 0))
+      |                                           ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:25:35: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:5:43: note: expanded from macro 'STRLT'
+    5 | #define STRLT(A, B) (strcmp((A), (B)) < 0))
+      |                                           ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:26:42: error: expected ';' after expression
+   26 |     std::cout << "Less Or Equal To: " << STRLE(a, b)) << std::endl;
+      |                                          ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:6:44: note: expanded from macro 'STRLE'
+    6 | #define STRLE(A, B) (strcmp((A), (B)) <= 0))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:26:42: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:6:44: note: expanded from macro 'STRLE'
+    6 | #define STRLE(A, B) (strcmp((A), (B)) <= 0))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:27:37: error: expected ';' after expression
+   27 |     std::cout << "GreaterThan: " << STRGT(a, b)) << std::endl;
+      |                                     ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:7:21: note: expanded from macro 'STRGT'
+    7 | #define STRGT(A, B) STRLT(B, A)
+      |                     ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:5:43: note: expanded from macro 'STRLT'
+    5 | #define STRLT(A, B) (strcmp((A), (B)) < 0))
+      |                                           ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:27:37: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:7:21: note: expanded from macro 'STRGT'
+    7 | #define STRGT(A, B) STRLT(B, A)
+      |                     ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:5:43: note: expanded from macro 'STRLT'
+    5 | #define STRLT(A, B) (strcmp((A), (B)) < 0))
+      |                                           ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:28:42: error: expected ';' after expression
+   28 |     std::cout << "GreaterOrEqualTo: " << STRGE(a, b)) << std::endl;
+      |                                          ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:8:21: note: expanded from macro 'STRGE'
+    8 | #define STRGE(A, B) STRLE(B, A)
+      |                     ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:6:44: note: expanded from macro 'STRLE'
+    6 | #define STRLE(A, B) (strcmp((A), (B)) <= 0))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:28:42: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:8:21: note: expanded from macro 'STRGE'
+    8 | #define STRGE(A, B) STRLE(B, A)
+      |                     ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:6:44: note: expanded from macro 'STRLE'
+    6 | #define STRLE(A, B) (strcmp((A), (B)) <= 0))
+      |                                            ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:37:50: error: expected ';' after expression
+   37 |     std::cout << "Equal (case-insensitive): " << STRCEQ(a, b)) << std::endl;
+      |                                                  ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:10:49: note: expanded from macro 'STRCEQ'
+   10 | #define STRCEQ(A, B) (0 == strcasecmp((A), (B))))
+      |                                                 ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:37:50: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:10:49: note: expanded from macro 'STRCEQ'
+   10 | #define STRCEQ(A, B) (0 == strcasecmp((A), (B))))
+      |                                                 ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:38:55: error: expected ';' after expression
+   38 |     std::cout << "Not Equal (case-insensitive)): " << STRCNE(a, b)) << std::endl;
+      |                                                       ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:11:36: note: expanded from macro 'STRCNE'
+   11 | #define STRCNE(A, B) (!STRCEQ(A, B))))
+      |                                    ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:38:55: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:11:36: note: expanded from macro 'STRCNE'
+   11 | #define STRCNE(A, B) (!STRCEQ(A, B))))
+      |                                    ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:39:35: error: expected ';' after expression
+   39 |     std::cout << "Less Than: " << STRCLT(a, b)) << std::endl;
+      |                                   ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:12:48: note: expanded from macro 'STRCLT'
+   12 | #define STRCLT(A, B) (strcasecmp((A), (B)) < 0))
+      |                                                ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:39:35: error: expected expression
+/tmp/stablecode-str_cmp-c-cpp.cpp:12:48: note: expanded from macro 'STRCLT'
+   12 | #define STRCLT(A, B) (strcasecmp((A), (B)) < 0))
+      |                                                ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:40:42: error: expected ';' after expression
+   40 |     std::cout << "Less Or Equal To: " << STRCLE(a, b)) << std::endl;
+      |                                          ^
+/tmp/stablecode-str_cmp-c-cpp.cpp:13:49: note: expanded from macro 'STRCLE'
+   13 | #define STRCLE(A, B) (strcasecmp((A), (B)) <= 0))
+      |                                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

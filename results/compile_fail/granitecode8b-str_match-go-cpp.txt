@@ -1,0 +1,63 @@
+/tmp/granitecode8b-str_match-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:4:12: error: unknown type name 'string'
+    4 | void match(string first, string second) {
+      |            ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:4:26: error: unknown type name 'string'
+    4 | void match(string first, string second) {
+      |                          ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "1. " << first << " starts with " << second << ": "
+      |   ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:6:44: error: use of undeclared identifier 'endl'
+    6 |        << (first.rfind(second, 0) == 0) << endl;
+      |                                            ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:7:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    7 |   size_t i = first.find(second);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-str_match-go-cpp.cpp:7:10: error: use of undeclared identifier 'i'
+    7 |   size_t i = first.find(second);
+      |          ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "2. " << first << " contains " << second << ": "
+      |   ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:9:12: error: use of undeclared identifier 'i'
+    9 |        << (i != string::npos) << ", ";
+      |            ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:9:17: error: use of undeclared identifier 'string'
+    9 |        << (i != string::npos) << ", ";
+      |                 ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:10:7: error: use of undeclared identifier 'i'
+   10 |   if (i != string::npos) {
+      |       ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:10:12: error: use of undeclared identifier 'string'
+   10 |   if (i != string::npos) {
+      |            ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:11:5: error: use of undeclared identifier 'cout'
+   11 |     cout << "at location " << i << ", ";
+      |     ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:11:31: error: use of undeclared identifier 'i'
+   11 |     cout << "at location " << i << ", ";
+      |                               ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:12:10: error: unknown type name 'size_t'
+   12 |     for (size_t start = i + 1;;) {
+      |          ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:12:25: error: use of undeclared identifier 'i'
+   12 |     for (size_t start = i + 1;;) {
+      |                         ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:13:12: error: use of undeclared identifier 'i'
+   13 |       if ((i = first.find(second, start)) == string::npos)
+      |            ^
+/tmp/granitecode8b-str_match-go-cpp.cpp:13:46: error: use of undeclared identifier 'string'
+   13 |       if ((i = first.find(second, start)) == string::npos)
+      |                                              ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

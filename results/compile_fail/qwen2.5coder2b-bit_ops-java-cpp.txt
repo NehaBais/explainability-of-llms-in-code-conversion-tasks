@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-bit_ops-java-cpp.cpp:26:22: error: use of undeclared identifier 'Integer_rotateLeft'
+   26 |   int rotated_left = Integer_rotateLeft(a, b);
+      |                      ^
+/tmp/qwen2.5coder2b-bit_ops-java-cpp.cpp:30:23: error: use of undeclared identifier 'Integer_rotateRight'
+   30 |   int rotated_right = Integer_rotateRight(a, b);
+      |                       ^
+2 errors generated.

@@ -1,40 +1,21 @@
-The following is the required format of output for testing:
+ Certainly! Below is the equivalent code in C that performs the same operations as your Python function. Note that C does not have built-in boolean types, so we will use `int` to represent booleans (`0` for `False` and any non-zero value for `True`).
 
-> a and b: True  
-a or b: False  
-not a: False  
-> 
+```c
+#include <stdio.h>
 
-**Input:** First line should contain value of 'a' in boolean form, second line contains value of 'b' in boolean form.
+void logic(int a, int b) {
+    printf("a and b: %d\n", a && b);
+    printf("a or b: %d\n", a || b);
+    printf("not a: %d\n", !a);
+}
 
-## Input Format
-The first two lines each containing single integer values that denote logical (boolean) values for the variables 'a' and 'b'.
-
-## Constraints
-None
-
-## Output Format
-The output should contain three lines with True or False denoting the output of given expression in order - 'a and b', 'a or b', not a'.
-
-Sample Input 0  
-True  
-False  
-
-Sample Output 0  
-a and b: True  
-a or b: True  
-not a: False  
-
-Explanation 0  
-Output is in order mentioned.
-
-## Source Code
-```python3
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-def logic(a,b):
-    print('a and b:',a and b)
-    print('a or b:',a or b)
-    print('not a:',not a)
-    
-logic(*map(lambda x: bool(int(x)),input().split()))
+int main() {
+    logic(1, 1); // Example usage with true values
+    return 0;
+}
 ```
+
+In this C code:
+- `printf` is used to print the results.
+- The logical "and" (`&&`) and "or" (`||`) operators are used from the C standard library.
+- The logical not operator (`!`) is implemented using the unary operator in C.

@@ -1,0 +1,27 @@
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:29:38
+   |
+29 |     println!("Integer quotient: {}", int(quotient));
+   |                                      ^^^ not found in this scope
+
+error[E0425]: cannot find function `float` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:30:39
+   |
+30 |     println!("Float quotient: {:.3}", float(quotient));
+   |                                       ^^^^^ not found in this scope
+
+error[E0425]: cannot find function `int` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:28
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                            ^^^ not found in this scope
+
+error[E0425]: cannot find function `float` in this scope
+  --> /tmp/granitecode3b-int_arith-py-rs.rs:31:51
+   |
+31 |     let whole_remainder = (int(input1.pow(0.5)) - float(input1.pow(0.5))) * input2;
+   |                                                   ^^^^^ not found in this scope
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

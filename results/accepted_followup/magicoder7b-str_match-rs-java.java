@@ -1,0 +1,1 @@
+System.out.println("Does s1 contain s2? " + (s1.indexOf(s2) == -1));

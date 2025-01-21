@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-str_substring-py-cpp.cpp:1:1: error: expected unqualified-id
+    1 | return s.size();
+      | ^
+1 error generated.

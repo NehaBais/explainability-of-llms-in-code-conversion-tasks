@@ -1,0 +1,19 @@
+/tmp/Mkdirp.java:4: error: cannot find symbol
+  public static void mkdirp(String path) throws IOException {
+                                                ^
+  symbol:   class IOException
+  location: class Mkdirp
+/tmp/Mkdirp.java:1: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.*;
+                         ^
+/tmp/Mkdirp.java:5: error: cannot find symbol
+    FileUtils.forceMkdirs(new File(path));
+                              ^
+  symbol:   class File
+  location: class Mkdirp
+/tmp/Mkdirp.java:5: error: cannot find symbol
+    FileUtils.forceMkdirs(new File(path));
+    ^
+  symbol:   variable FileUtils
+  location: class Mkdirp
+4 errors

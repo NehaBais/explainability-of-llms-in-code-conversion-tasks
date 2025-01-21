@@ -1,0 +1,70 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:35:13
+   |
+35 |            (~a) & mask);
+   |             ^
+   |
+help: use `!` to perform bitwise not
+   |
+35 |            (!a) & mask);
+   |             ~
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:42:26
+   |
+41 |             "RIGHT:   rotr({}, 0b{:0width$b}, {})",
+   |             -------------------------------------- formatting specifier missing
+42 |             width, a, i, right_shift
+   |                          ^^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:50:26
+   |
+49 |             "LEFT:    rotl({}, 0b{:0width$b}, {})",
+   |             -------------------------------------- formatting specifier missing
+50 |             width, a, i, left_shift
+   |                          ^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:59:26
+   |
+58 |             "SIGN-EXTENDING ARITHMETIC SHIFT RIGHT: asr({}, 0b{:0width$b}, {})",
+   |             ------------------------------------------------------------------- formatting specifier missing
+59 |             width, a, i, right_arith_shift_right
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error[E0425]: cannot find function `helper_funcs` in this scope
+ --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:3:5
+  |
+3 |     helper_funcs(8, 27);
+  |     ^^^^^^^^^^^^ not found in this scope
+
+warning: unused variable: `a_masked`
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:37:13
+   |
+37 |     let mut a_masked = a & mask;
+   |             ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_a_masked`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:37:9
+   |
+37 |     let mut a_masked = a & mask;
+   |         ----^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:54:9
+   |
+54 |     let mut aa = a | mask;
+   |         ----^^
+   |         |
+   |         help: remove this `mut`
+
+error: aborting due to 5 previous errors; 3 warnings emitted
+
+For more information about this error, try `rustc --explain E0425`.

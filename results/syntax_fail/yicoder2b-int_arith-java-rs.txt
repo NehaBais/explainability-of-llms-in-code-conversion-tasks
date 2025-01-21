@@ -1,0 +1,15 @@
+error[E0425]: cannot find value `s` in this scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:4:45
+  |
+4 |     let mut s1 = io::stdin().read_line(&mut s).unwrap();
+  |                                             ^ not found in this scope
+
+error[E0425]: cannot find value `s` in this scope
+ --> /tmp/yicoder2b-int_arith-java-rs.rs:7:45
+  |
+7 |     let mut s2 = io::stdin().read_line(&mut s).unwrap();
+  |                                             ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

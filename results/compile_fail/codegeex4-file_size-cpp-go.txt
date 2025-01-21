@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-file_size-cpp-go.go:5:2: "io/ioutil" imported and not used

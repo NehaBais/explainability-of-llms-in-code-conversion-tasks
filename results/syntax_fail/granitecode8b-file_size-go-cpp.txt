@@ -1,0 +1,43 @@
+/tmp/granitecode8b-file_size-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:5:20: error: unknown type name 'string'
+    5 | void printFileSize(string f) {
+      |                    ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:6:3: error: unknown type name 'ifstream'
+    6 |   ifstream file(f);
+      |   ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "Error: Unable to open file" << endl;
+      |     ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:8:45: error: use of undeclared identifier 'endl'
+    8 |     cout << "Error: Unable to open file" << endl;
+      |                                             ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:13:5: error: use of undeclared identifier 'cout'
+   13 |     cout << "File size is: " << size << " bytes" << endl;
+      |     ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:13:53: error: use of undeclared identifier 'endl'
+   13 |     cout << "File size is: " << size << " bytes" << endl;
+      |                                                     ^
+/tmp/granitecode8b-file_size-go-cpp.cpp:17:3: error: no matching function for call to 'printFileSize'
+   17 |   printFileSize("input.txt");
+      |   ^~~~~~~~~~~~~
+/tmp/granitecode8b-file_size-go-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[10]' to 'int' for 1st argument
+    5 | void printFileSize(string f) {
+      |      ^             ~~~~~~~~
+/tmp/granitecode8b-file_size-go-cpp.cpp:18:3: error: no matching function for call to 'printFileSize'
+   18 |   printFileSize("/input.txt");
+      |   ^~~~~~~~~~~~~
+/tmp/granitecode8b-file_size-go-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[11]' to 'int' for 1st argument
+    5 | void printFileSize(string f) {
+      |      ^             ~~~~~~~~
+1 warning and 11 errors generated.

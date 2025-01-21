@@ -1,0 +1,8 @@
+error: `--crate-name` and `#[crate_name]` are required to match, but `temp_crate` != `bit_ops_js_rs`
+ --> /tmp/qwen2.5coder7b-bit_ops-js-rs.rs:1:1
+  |
+1 | #![crate_name = "bit_ops_js_rs"]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,21 @@
+error[E0599]: no method named `readline` found for struct `Stdin` in the current scope
+ --> /tmp/granitecode8b-int_cmp-java-rs.rs:6:33
+  |
+6 |     let nbr1: i32 = match stdin.readline() {
+  |                                 ^^^^^^^^
+  |
+help: there is a method `read_line` with a similar name, but with different arguments
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:5
+
+error[E0599]: no method named `readline` found for struct `Stdin` in the current scope
+  --> /tmp/granitecode8b-int_cmp-java-rs.rs:12:33
+   |
+12 |     let nbr2: i32 = match stdin.readline() {
+   |                                 ^^^^^^^^
+   |
+help: there is a method `read_line` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:5
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

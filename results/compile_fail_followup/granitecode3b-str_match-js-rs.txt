@@ -1,0 +1,31 @@
+error: expected one of `.`, `;`, `?`, `}`, or an operator, found `,`
+  --> /tmp/granitecode3b-str_match-js-rs.rs:16:99
+   |
+16 |     println!("2: Is '{}%' contained in '{}%'? {}", string_a, string_b, if q2 { "Yes, at index {}.", q2 } else { "No." });
+   |                                                                                                   ^ expected one of `.`, `;`, `?`, `}`, or an operator
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_match-js-rs.rs:15:9
+   |
+15 |     let (q2, _) = string_a.find(string_b);
+   |         ^^^^^^^   ----------------------- this expression has type `Option<usize>`
+   |         |
+   |         expected `Option<usize>`, found `(_, _)`
+   |
+   = note: expected enum `Option<usize>`
+             found tuple `(_, _)`
+
+error[E0308]: mismatched types
+  --> /tmp/granitecode3b-str_match-js-rs.rs:19:9
+   |
+19 |     let (_, q3) = &string_a[string_a.len() - string_b.len()..] == string_b;
+   |         ^^^^^^^   -------------------------------------------------------- this expression has type `bool`
+   |         |
+   |         expected `bool`, found `(_, _)`
+   |
+   = note: expected type `bool`
+             found tuple `(_, _)`
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

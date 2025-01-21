@@ -1,0 +1,13 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/yicoder2b-bit_ops-js-rs.rs:10:15
+   |
+10 |     let NOT = ~a & (2 << 8); // NOT --> ~5 AND (2 << 8)==-6 which is -94 in decimal
+   |               ^
+   |
+help: use `!` to perform bitwise not
+   |
+10 |     let NOT = !a & (2 << 8); // NOT --> ~5 AND (2 << 8)==-6 which is -94 in decimal
+   |               ~
+
+error: aborting due to 1 previous error
+

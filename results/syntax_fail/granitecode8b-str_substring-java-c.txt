@@ -1,0 +1,73 @@
+/tmp/granitecode8b-str_substring-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_substring-java-c.c:3:1: error: unknown type name 'using'
+    3 | using namespace std;
+      | ^
+/tmp/granitecode8b-str_substring-java-c.c:3:16: error: expected ';' after top level declarator
+    3 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode8b-str_substring-java-c.c:5:10: error: use of undeclared identifier 'new'
+    5 |   return new string(str + n, m).c_str();
+      |          ^
+/tmp/granitecode8b-str_substring-java-c.c:5:13: error: expected ';' after return statement
+    5 |   return new string(str + n, m).c_str();
+      |             ^
+      |             ;
+/tmp/granitecode8b-str_substring-java-c.c:7:7: error: conflicting types for 'Substring'
+    7 | char *Substring(const char *str, int n) { return new string(str + n).c_str(); }
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:7:50: error: use of undeclared identifier 'new'
+    7 | char *Substring(const char *str, int n) { return new string(str + n).c_str(); }
+      |                                                  ^
+/tmp/granitecode8b-str_substring-java-c.c:7:53: error: expected ';' after return statement
+    7 | char *Substring(const char *str, int n) { return new string(str + n).c_str(); }
+      |                                                     ^
+      |                                                     ;
+/tmp/granitecode8b-str_substring-java-c.c:8:7: error: conflicting types for 'Substring'
+    8 | char *Substring(const char *str) {
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:9:10: error: use of undeclared identifier 'new'
+    9 |   return new string(str, strlen(str) - 1).c_str();
+      |          ^
+/tmp/granitecode8b-str_substring-java-c.c:9:13: error: expected ';' after return statement
+    9 |   return new string(str, strlen(str) - 1).c_str();
+      |             ^
+      |             ;
+/tmp/granitecode8b-str_substring-java-c.c:11:7: error: conflicting types for 'Substring'
+   11 | char *Substring(const char *str, char c, int m) {
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/granitecode8b-str_substring-java-c.c:12:9: error: expected ';' after expression
+   12 |   string::size_type pos = 0;
+      |         ^
+      |         ;
+/tmp/granitecode8b-str_substring-java-c.c:12:3: error: use of undeclared identifier 'string'
+   12 |   string::size_type pos = 0;
+      |   ^
+/tmp/granitecode8b-str_substring-java-c.c:12:9: error: expected expression
+   12 |   string::size_type pos = 0;
+      |         ^
+/tmp/granitecode8b-str_substring-java-c.c:13:17: error: call to undeclared function 'string'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   while ((pos = string(str).find(c, pos)) != string::npos && pos < n) {
+      |                 ^
+/tmp/granitecode8b-str_substring-java-c.c:13:28: error: member reference base type 'int' is not a structure or union
+   13 |   while ((pos = string(str).find(c, pos)) != string::npos && pos < n) {
+      |                 ~~~~~~~~~~~^~~~~
+/tmp/granitecode8b-str_substring-java-c.c:13:11: error: use of undeclared identifier 'pos'
+   13 |   while ((pos = string(str).find(c, pos)) != string::npos && pos < n) {
+      |           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

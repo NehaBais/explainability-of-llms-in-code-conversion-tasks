@@ -1,29 +1,38 @@
-*/
-#include <stdio.h>
-#include <stdlib.h>
+ Sure, here is the equivalent JavaScript code for the given C code:
 
-int main(void) {
-    // Get two integers from the user, and then (for those two integers), display their:
-    int a = 0, b = 0, result = 0;
-    printf("Enter an integer for variable 'a': ");
-    scanf("%d", &a);
-    printf("You have entered %d as your first number.\n", a);
-    printf("Now enter another one: ");
-    scanf("%d", &b);
-    printf("You have entered %d as your second number.\n", b);
-    // 1) sum
-    result = a + b;
-    printf("\nTheir sum is equal to %d.\n", result);
-    // 2) difference
-    if (a > b) {result = a - b;} else {result = b - a;}
-    printf("Their difference is equal to %d.\n", result);
-    // 3) product
-    result = a * b;
-    printf("Their multiplication is equal to %d.\n", result);
-    // 4) integer quotient
-    if (a > b && b != 0) {result = a / b;} else if(b < a && a != 0){result = b / a;}
-    printf("The integer quotient of the numbers is equal to %d.\n", result);
-    // 5) remainder
-    if (a > b && b != 0) {result = a % b;} else if(b < a && a != 0){result = b % a;}
-    printf("The integer remainder of the numbers is equal to %d.\n", result);
+```javascript
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function getInput(prompt) {
+  return new Promise((resolve) => {
+    rl.question(prompt, (answer) => {
+      resolve(parseInt(answer, 10));
+    });
+  });
 }
+
+async function main() {
+  let a = await getInput("Enter the first integer: ");
+  let b = await getInput("Enter the second integer: ");
+
+  console.log(`a + b = ${a + b}`);
+  console.log(`a - b = ${a - b}`);
+  console.log(`a * b = ${a * b}`);
+  console.log(`a / b (integer quotient) = ${Math.floor(a / b)}`); // truncates towards zero
+  console.log(`a % b (remainder) = ${a % b}`); // same sign as the first operand
+
+  rl.close();
+}
+
+main();
+```
+
+This JavaScript code does the following:
+1. Prompts the user to enter two integers.
+2. Displays their sum, difference, product, integer quotient (truncates towards zero), and remainder (same sign as the first operand).
+3. Uses `Math.floor` for integer division to truncate towards zero.

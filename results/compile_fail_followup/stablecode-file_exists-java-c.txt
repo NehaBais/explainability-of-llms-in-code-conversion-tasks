@@ -1,0 +1,39 @@
+/tmp/stablecode-file_exists-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_exists-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_exists-java-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_exists-java-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/stablecode-file_exists-java-c.c:7:15: error: variable has incomplete type 'struct stat'
+    7 |   struct stat st;
+      |               ^
+/tmp/stablecode-file_exists-java-c.c:7:10: note: forward declaration of 'struct stat'
+    7 |   struct stat st;
+      |          ^
+/tmp/stablecode-file_exists-java-c.c:8:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (stat(path, &st) == 0) {
+      |       ^
+/tmp/stablecode-file_exists-java-c.c:17:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   strcpy(path1, "docs/input.txt");
+      |   ^
+/tmp/stablecode-file_exists-java-c.c:17:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/stablecode-file_exists-java-c.c:18:24: error: extraneous ')' after condition, expected a statement
+   18 |   if (checkFile(path1))) {
+      |                        ^
+/tmp/stablecode-file_exists-java-c.c:19:9: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |         printf("The file %s exists.\n", path1);
+      |         ^
+/tmp/stablecode-file_exists-java-c.c:19:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-file_exists-java-c.c:28:24: error: extraneous ')' after condition, expected a statement
+   28 |   if (checkFile(path2))) {
+      |                        ^
+/tmp/stablecode-file_exists-java-c.c:32:55: error: extraneous ')' before ';'
+   32 |         printf("The file %s does not exist.\n", path2));
+      |                                                       ^
+11 errors generated.

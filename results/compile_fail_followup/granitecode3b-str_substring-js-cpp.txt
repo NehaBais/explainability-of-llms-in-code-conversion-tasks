@@ -1,0 +1,10 @@
+/tmp/granitecode3b-str_substring-js-cpp.cpp:12:13: error: comparison between pointer and integer ('char *(*)(const char *, int)' and 'size_type' (aka 'unsigned long'))
+   12 |   if (index != string::npos) {
+      |       ~~~~~ ^  ~~~~~~~~~~~~
+/tmp/granitecode3b-str_substring-js-cpp.cpp:13:24: error: cannot initialize a parameter of type 'size_type' (aka 'unsigned long') with an lvalue of type 'char *(const char *, int)'
+   13 |     cout << str.substr(index, m) << endl; // prints "bcd"
+      |                        ^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1575:20: note: passing argument to parameter '__pos' here
+ 1575 |   substr(size_type __pos = 0, size_type __n = npos) const {
+      |                    ^
+2 errors generated.

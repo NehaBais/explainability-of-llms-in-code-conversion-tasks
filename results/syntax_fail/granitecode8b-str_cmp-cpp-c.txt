@@ -1,0 +1,50 @@
+/tmp/granitecode8b-str_cmp-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:6:9: error: expected "FILENAME" or <FILENAME>
+    6 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:7:9: error: expected "FILENAME" or <FILENAME>
+    7 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%s and %s are %s%sequal.\n", a, b,
+      |   ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_cmp-cpp-c.c:10:12: error: call to undeclared library function 'strcmp' with type 'int (const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |          ((strcmp(a, b) == 0) ? "" : "not "), semantically);
+      |            ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:10:12: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+/tmp/granitecode8b-str_cmp-cpp-c.c:22:12: error: call to undeclared library function 'tolower' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     a[i] = tolower(a[i]);
+      |            ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:22:12: note: include the header <ctype.h> or explicitly provide a declaration for 'tolower'
+/tmp/granitecode8b-str_cmp-cpp-c.c:31:3: error: call to undeclared library function 'sscanf' with type 'int (const char *restrict, const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |   sscanf(a, "%lf", &numA);
+      |   ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:31:3: note: include the header <stdio.h> or explicitly provide a declaration for 'sscanf'
+/tmp/granitecode8b-str_cmp-cpp-c.c:33:16: warning: incompatible pointer types passing 'double *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+   33 |   demo_compare(&numA, &numB, "numerically");
+      |                ^~~~~
+/tmp/granitecode8b-str_cmp-cpp-c.c:8:31: note: passing argument to parameter 'a' here
+    8 | void demo_compare(const char *a, const char *b, const char *semantically) {
+      |                               ^
+/tmp/granitecode8b-str_cmp-cpp-c.c:33:23: warning: incompatible pointer types passing 'double *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+   33 |   demo_compare(&numA, &numB, "numerically");
+      |                       ^~~~~
+/tmp/granitecode8b-str_cmp-cpp-c.c:8:46: note: passing argument to parameter 'b' here
+    8 | void demo_compare(const char *a, const char *b, const char *semantically) {
+      |                                              ^
+2 warnings and 11 errors generated.

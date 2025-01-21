@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-bit_ops-py-go.go:37:47: syntax error: unexpected ) at end of statement

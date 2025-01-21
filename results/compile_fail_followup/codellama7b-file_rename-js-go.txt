@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-file_rename-js-go.go:4:2: "log" imported and not used
+/tmp/codellama7b-file_rename-js-go.go:5:2: "os" imported and not used

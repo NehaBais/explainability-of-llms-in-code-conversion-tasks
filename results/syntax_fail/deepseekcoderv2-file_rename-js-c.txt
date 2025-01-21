@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_rename-js-c.c:1:10: fatal error: 'afx.h' file not found
+    1 | #include <afx.h>     // MFC core and standard components
+      |          ^~~~~~~
+1 error generated.

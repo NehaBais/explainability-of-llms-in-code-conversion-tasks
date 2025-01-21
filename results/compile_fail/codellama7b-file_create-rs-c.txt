@@ -1,0 +1,53 @@
+/tmp/codellama7b-file_create-rs-c.c:11:3: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   create(".") && create("/");
+      |   ^
+/tmp/codellama7b-file_create-rs-c.c:15:1: error: unknown type name 'bool'
+   15 | bool create(const char *root) {
+      | ^
+/tmp/codellama7b-file_create-rs-c.c:24:12: error: use of undeclared identifier 'true'; did you mean 'free'?
+   24 |     return true;
+      |            ^~~~
+      |            free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/codellama7b-file_create-rs-c.c:24:12: error: incompatible pointer to integer conversion returning 'void (void *)' from a function with result type 'int' [-Wint-conversion]
+   24 |     return true;
+      |            ^~~~
+/tmp/codellama7b-file_create-rs-c.c:32:14: error: use of undeclared identifier 'false'; did you mean 'else'?
+   32 |       return false;
+      |              ^~~~~
+      |              else
+/tmp/codellama7b-file_create-rs-c.c:32:14: error: expected expression
+/tmp/codellama7b-file_create-rs-c.c:39:12: error: use of undeclared identifier 'true'; did you mean 'free'?
+   39 |     return true;
+      |            ^~~~
+      |            free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/codellama7b-file_create-rs-c.c:39:12: error: incompatible pointer to integer conversion returning 'void (void *)' from a function with result type 'int' [-Wint-conversion]
+   39 |     return true;
+      |            ^~~~
+/tmp/codellama7b-file_create-rs-c.c:42:30: error: too few arguments to function call, expected 2, have 1
+   42 |     int result = mkdir(d_path);
+      |                  ~~~~~       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:385:9: note: 'mkdir' declared here
+  385 | int     mkdir(const char *, mode_t);
+      |         ^     ~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_create-rs-c.c:47:14: error: use of undeclared identifier 'false'; did you mean 'else'?
+   47 |       return false;
+      |              ^~~~~
+      |              else
+/tmp/codellama7b-file_create-rs-c.c:47:14: error: expected expression
+/tmp/codellama7b-file_create-rs-c.c:53:10: error: use of undeclared identifier 'true'; did you mean 'free'?
+   53 |   return true;
+      |          ^~~~
+      |          free
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: 'free' declared here
+   56 | void  free(void * __unsafe_indexable);
+      |       ^
+/tmp/codellama7b-file_create-rs-c.c:53:10: error: incompatible pointer to integer conversion returning 'void (void *)' from a function with result type 'int' [-Wint-conversion]
+   53 |   return true;
+      |          ^~~~
+13 errors generated.

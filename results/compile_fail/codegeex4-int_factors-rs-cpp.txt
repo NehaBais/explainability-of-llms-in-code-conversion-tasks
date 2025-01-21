@@ -1,0 +1,13 @@
+/tmp/codegeex4-int_factors-rs-cpp.cpp:7:11: error: use of undeclared identifier 'factor'
+    7 |   assert((factor(100) == vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |           ^
+/tmp/codegeex4-int_factors-rs-cpp.cpp:7:37: error: expected '(' for function-style cast or type construction
+    7 |   assert((factor(100) == vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |                          ~~~~~~~~~~~^
+/tmp/codegeex4-int_factors-rs-cpp.cpp:8:11: error: use of undeclared identifier 'factor'
+    8 |   assert((factor(101) == vector<int>{1, 101}));
+      |           ^
+/tmp/codegeex4-int_factors-rs-cpp.cpp:8:37: error: expected '(' for function-style cast or type construction
+    8 |   assert((factor(101) == vector<int>{1, 101}));
+      |                          ~~~~~~~~~~~^
+4 errors generated.

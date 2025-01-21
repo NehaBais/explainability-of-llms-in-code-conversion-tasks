@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-str_match-c-go.go:22:9: undefined: strings

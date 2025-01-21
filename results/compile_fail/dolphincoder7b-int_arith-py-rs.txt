@@ -1,0 +1,29 @@
+error[E0308]: mismatched types
+ --> /tmp/dolphincoder7b-int_arith-py-rs.rs:7:20
+  |
+7 |         .read_line(&mut input1)
+  |          --------- ^^^^^^^^^^^ expected `&mut String`, found `&mut i32`
+  |          |
+  |          arguments to this method are incorrect
+  |
+  = note: expected mutable reference `&mut String`
+             found mutable reference `&mut i32`
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-int_arith-py-rs.rs:13:20
+   |
+13 |         .read_line(&mut input2)
+   |          --------- ^^^^^^^^^^^ expected `&mut String`, found `&mut i32`
+   |          |
+   |          arguments to this method are incorrect
+   |
+   = note: expected mutable reference `&mut String`
+              found mutable reference `&mut i32`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/stdio.rs:397:12
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

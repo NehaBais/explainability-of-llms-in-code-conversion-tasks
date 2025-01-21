@@ -1,0 +1,26 @@
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:28: error: expected '(' for function-style cast or type construction
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |              ~~~~~~~~~~~~~~^
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:29: error: unexpected character <U+FF5C>
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                             ^~
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:37: error: character <U+2581> not allowed in an identifier
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                                    ^
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:42: error: character <U+2581> not allowed in an identifier
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                                       ^
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:53: error: character <U+FF5C> not allowed in an identifier
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                                                ^~
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:32: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                               ^
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:35:57: error: no member named 'npos' in the global namespace; did you mean 'pos'?
+   35 |   if (pos == std::u32string<｜begin▁of▁sentence｜>::npos) {
+      |                                                   ^~~~~~
+      |                                                   pos
+/tmp/deepseekcoder7b-str_substring-java-cpp.cpp:34:10: note: 'pos' declared here
+   34 |   size_t pos = str.find(sub);
+      |          ^
+7 errors generated.

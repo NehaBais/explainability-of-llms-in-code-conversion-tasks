@@ -1,0 +1,57 @@
+/tmp/stablecode-dir_make-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-dir_make-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-dir_make-java-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-dir_make-java-cpp.cpp:5:30: error: use of undeclared identifier 'std'
+    5 | void createDirectories(const std::string &path) {
+      |                              ^
+/tmp/stablecode-dir_make-java-cpp.cpp:7:5: error: use of undeclared identifier 'std'
+    7 |     std::filesystem::path dirPath(path);
+      |     ^
+/tmp/stablecode-dir_make-java-cpp.cpp:9:9: error: use of undeclared identifier 'std'
+    9 |     if (std::filesystem::create_directories(dirPath)))) {
+      |         ^
+/tmp/stablecode-dir_make-java-cpp.cpp:9:45: error: use of undeclared identifier 'dirPath'
+    9 |     if (std::filesystem::create_directories(dirPath)))) {
+      |                                             ^
+/tmp/stablecode-dir_make-java-cpp.cpp:9:54: error: extraneous ')' after condition, expected a statement
+    9 |     if (std::filesystem::create_directories(dirPath)))) {
+      |                                                      ^
+/tmp/stablecode-dir_make-java-cpp.cpp:9:55: error: extraneous ')' after condition, expected a statement
+    9 |     if (std::filesystem::create_directories(dirPath)))) {
+      |                                                       ^
+/tmp/stablecode-dir_make-java-cpp.cpp:10:7: error: use of undeclared identifier 'std'
+   10 |       std::cout << "Directory created successfully\n";
+      |       ^
+/tmp/stablecode-dir_make-java-cpp.cpp:13:7: error: use of undeclared identifier 'std'
+   13 |       std::cerr << "Failed to create directory\n";
+      |       ^
+/tmp/stablecode-dir_make-java-cpp.cpp:15:18: error: use of undeclared identifier 'std'
+   15 |   } catch (const std::exception &e)) {
+      |                  ^
+/tmp/stablecode-dir_make-java-cpp.cpp:15:36: error: expected '{'
+   15 |   } catch (const std::exception &e)) {
+      |                                    ^
+/tmp/stablecode-dir_make-java-cpp.cpp:15:36: error: expected expression
+/tmp/stablecode-dir_make-java-cpp.cpp:21:3: error: use of undeclared identifier 'std'
+   21 |   std::string path = "C:/parent/test";
+      |   ^
+/tmp/stablecode-dir_make-java-cpp.cpp:24:7: error: use of undeclared identifier 'std'
+   24 |   if (std::filesystem::create_directories(path)))) {
+      |       ^
+/tmp/stablecode-dir_make-java-cpp.cpp:24:49: error: extraneous ')' after condition, expected a statement
+   24 |   if (std::filesystem::create_directories(path)))) {
+      |                                                 ^
+/tmp/stablecode-dir_make-java-cpp.cpp:24:50: error: extraneous ')' after condition, expected a statement
+   24 |   if (std::filesystem::create_directories(path)))) {
+      |                                                  ^
+/tmp/stablecode-dir_make-java-cpp.cpp:25:5: error: use of undeclared identifier 'std'
+   25 |     std::cout << "Directory created successfully\n";
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

@@ -1,0 +1,19 @@
+/tmp/None.java:14: error: ')' or ',' expected
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                      ^
+/tmp/None.java:14: error: not a statement
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                       ^
+/tmp/None.java:14: error: ')' expected
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                         ^
+/tmp/None.java:14: error: not a statement
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                          ^
+/tmp/None.java:14: error: ';' expected
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                                ^
+/tmp/None.java:14: error: ';' expected
+    for (int i = 1; i <= Math.sqrt(num as double) + 1; i++) { 
+                                                          ^
+6 errors

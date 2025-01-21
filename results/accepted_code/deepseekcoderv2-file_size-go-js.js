@@ -1,14 +1,17 @@
 const fs = require("fs");
+const path = require("path");
 
 function printFileSize(f) {
-  fs.stat(f, (err, stat) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(stat.size);
-    }
-  });
+  try {
+    const stats = fs.statSync(f);
+    console.log(stats.size);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
+// Current working directory
 printFileSize("input.txt");
+
+// Root of the file system
 printFileSize("/input.txt");

@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `adjective`
+ --> /tmp/granitecode3b-str_interp-java-rs.rs:1:8
+  |
+1 | String adjective = "little";
+  |        ^^^^^^^^^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

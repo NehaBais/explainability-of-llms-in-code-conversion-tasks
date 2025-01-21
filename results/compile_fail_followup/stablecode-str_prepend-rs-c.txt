@@ -1,0 +1,19 @@
+/tmp/stablecode-str_prepend-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_prepend-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_prepend-rs-c.c:6:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   strcpy(s, "World");
+      |   ^
+/tmp/stablecode-str_prepend-rs-c.c:6:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/stablecode-str_prepend-rs-c.c:7:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcat(s, "Hello ");
+      |   ^
+/tmp/stablecode-str_prepend-rs-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/stablecode-str_prepend-rs-c.c:8:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("%s\n", s);
+      |   ^
+/tmp/stablecode-str_prepend-rs-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

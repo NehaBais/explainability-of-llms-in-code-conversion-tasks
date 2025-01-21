@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:10: error: expected expression
+   34 |   return <｜begin▁of▁sentence｜>(
+      |          ^
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   34 |   return <｜begin▁of▁sentence｜>(
+      |           ^~
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:19: error: character <U+2581> not allowed in an identifier
+   34 |   return <｜begin▁of▁sentence｜>(
+      |                  ^
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:24: error: character <U+2581> not allowed in an identifier
+   34 |   return <｜begin▁of▁sentence｜>(
+      |                     ^
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   34 |   return <｜begin▁of▁sentence｜>(
+      |                              ^~
+/tmp/deepseekcoder7b-str_cmp-py-c.c:34:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   34 |   return <｜begin▁of▁sentence｜>(
+      |           ^
+2 warnings and 4 errors generated.

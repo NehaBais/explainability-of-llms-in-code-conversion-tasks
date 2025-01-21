@@ -1,32 +1,38 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	s := []rune("abcdefgh")
+	s := "abcdefgh"
 	n, m := 2, 3
-	char := 'd'
+	char := "d"
 	chars := "cd"
 
 	// starting from n=2 characters in and m=3 in length;
-	fmt.Println(string(s[n-1 : n+m-1]))
-	// starting from n characters in, up to the end of the string;
-	fmt.Println(string(s[:len(s)-1]))
-	// whole string minus last character;
-	fmt.Println(string(s))
-	// starting from a known character char="d" within the string and of m length;
-	indx := index(s, char)
-	fmt.Println(string(s[indx : indx+m]))
-	// starting from a known substring chars="cd" within the string and of m length.
-	indx = index(s, rune(chars))
-	fmt.Println(string(s[indx : indx+m]))
-}
+	fmt.Println(s[n-1 : n+m-1])
 
-func index(s []rune, r rune) int {
-	for i := range s {
-		if s[i] == r {
-			return i
-		}
+	// starting from n characters in, up to the end of the string;
+	fmt.Println(s[n-1:])
+
+	// whole string minus last character;
+	fmt.Println(s[:len(s)-1])
+
+	// starting from a known character char="d" within the string and of m length;
+	indx := strings.Index(s, char)
+	if indx != -1 {
+		fmt.Println(s[indx : indx+m])
+	} else {
+		fmt.Println("Character not found")
 	}
-	return -1
+
+	// starting from a known substring chars="cd" within the string and of m length.
+	indx = strings.Index(s, chars)
+	if indx != -1 {
+		fmt.Println(s[indx : indx+m])
+	} else {
+		fmt.Println("Substring not found")
+	}
 }

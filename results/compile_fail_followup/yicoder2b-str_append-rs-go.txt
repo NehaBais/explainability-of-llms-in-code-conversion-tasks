@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-str_append-rs-go.go:4:2: "fmt" imported and not used

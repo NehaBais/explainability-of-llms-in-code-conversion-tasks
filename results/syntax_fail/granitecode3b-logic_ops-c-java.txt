@@ -1,0 +1,14 @@
+/tmp/LogicCalculator.java:6: error: bad operand types for binary operator '&&'
+    System.out.println("a and b is " + (a && b));
+                                          ^
+  first type:  int
+  second type: int
+/tmp/LogicCalculator.java:7: error: bad operand types for binary operator '||'
+    System.out.println("a or b is " + (a || b));
+                                         ^
+  first type:  int
+  second type: int
+/tmp/LogicCalculator.java:8: error: bad operand type int for unary operator '!'
+    System.out.println("not a is " + (!a));
+                                      ^
+3 errors

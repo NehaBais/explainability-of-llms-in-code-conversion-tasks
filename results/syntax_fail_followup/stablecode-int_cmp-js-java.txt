@@ -1,0 +1,13 @@
+/tmp/CompareIntegers.java:8: error: ';' expected
+        Scanner scanner = new Scanner(System.in));
+                                                ^
+/tmp/CompareIntegers.java:21: error: ';' expected
+            System.out.println(a + " equals " + b));
+                                                  ^
+/tmp/CompareIntegers.java:25: error: ';' expected
+            System.out.println(a + " is less than " + b));
+                                                        ^
+/tmp/CompareIntegers.java:29: error: ';' expected
+            System.out.println(a + " is greater than " + b));
+                                                           ^
+4 errors

@@ -1,0 +1,19 @@
+/tmp/granitecode3b-file_rename-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::filesystem::rename("input.txt", "output.txt");
+      |   ^
+/tmp/granitecode3b-file_rename-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::rename("c:\\input.txt", "c:\\output.txt");
+      |   ^
+/tmp/granitecode3b-file_rename-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::filesystem::rename("docs", "mydocs");
+      |   ^
+/tmp/granitecode3b-file_rename-js-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::filesystem::rename("c:\\docs", "c:\\mydocs");
+      |   ^
+6 errors generated.

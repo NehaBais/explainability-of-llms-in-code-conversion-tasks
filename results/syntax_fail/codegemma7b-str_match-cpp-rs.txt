@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/codegemma7b-str_match-cpp-rs.rs:1:1
+  |
+1 | let s1 = "abcd";
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

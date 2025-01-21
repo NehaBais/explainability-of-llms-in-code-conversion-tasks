@@ -1,0 +1,15 @@
+error[E0284]: type annotations needed
+  --> /tmp/granitecode8b-int_cmp-cpp-rs.rs:10:36
+   |
+10 |         if let (Ok(a), Ok(b)) = (a.parse(), b.parse()) {
+   |                                    ^^^^^ cannot infer type of the type parameter `F` declared on the method `parse`
+   |
+   = note: cannot satisfy `<_ as FromStr>::Err == _`
+help: consider specifying the generic argument
+   |
+10 |         if let (Ok(a), Ok(b)) = (a.parse::<F>(), b.parse()) {
+   |                                         +++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0284`.

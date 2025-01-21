@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-int_cmp-py-go.go:5:2: "os" imported and not used
+/tmp/magicoder7b-int_cmp-py-go.go:6:2: "strconv" imported and not used

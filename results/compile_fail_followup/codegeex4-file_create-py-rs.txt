@@ -1,0 +1,32 @@
+error[E0425]: cannot find value `FILE_SEPARATOR` in module `std::env::consts`
+  --> /tmp/codegeex4-file_create-py-rs.rs:20:30
+   |
+20 |         if std::env::consts::FILE_SEPARATOR == '\\' {
+   |                              ^^^^^^^^^^^^^^ not found in `std::env::consts`
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-py-rs.rs:21:20
+   |
+19 |         let root: String;
+   |                   ------ expected due to this type
+20 |         if std::env::consts::FILE_SEPARATOR == '\\' {
+21 |             root = "C:\\";
+   |                    ^^^^^^- help: try using a conversion method: `.to_string()`
+   |                    |
+   |                    expected `String`, found `&str`
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-py-rs.rs:23:20
+   |
+19 |         let root: String;
+   |                   ------ expected due to this type
+...
+23 |             root = "/";
+   |                    ^^^- help: try using a conversion method: `.to_string()`
+   |                    |
+   |                    expected `String`, found `&str`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.

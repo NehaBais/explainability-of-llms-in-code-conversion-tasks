@@ -1,7 +1,7 @@
-use std::string;
 fn main() {
-    let mut str1: String = String::from("Hello"); // create string variable equal to text value
-    println!("str1 is {}", str1);
-    str1.push_str(" World");
-    println!("str1 after push_str is {}", str1);
+    let s = String::from("hello");
+    println!("{} literal", s);
+    
+    let s2 = format!("{}{}", s, " literal");
+    println!("{}", s2);
 }

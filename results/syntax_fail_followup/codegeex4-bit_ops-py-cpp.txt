@@ -1,0 +1,34 @@
+/tmp/codegeex4-bit_ops-py-cpp.cpp:1:27: error: unknown type name 'uint64_t'
+    1 | template <unsigned width> uint64_t rotl(uint64_t a, unsigned n) {
+      |                           ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:1:41: error: unknown type name 'uint64_t'
+    1 | template <unsigned width> uint64_t rotl(uint64_t a, unsigned n) {
+      |                                         ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:7:27: error: unknown type name 'uint64_t'
+    7 | template <unsigned width> uint64_t rotr(uint64_t a, unsigned n) {
+      |                           ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:7:41: error: unknown type name 'uint64_t'
+    7 | template <unsigned width> uint64_t rotr(uint64_t a, unsigned n) {
+      |                                         ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:13:1: error: unknown type name 'uint64_t'
+   13 | uint64_t bitwise_operations(uint64_t a) {
+      | ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:13:29: error: unknown type name 'uint64_t'
+   13 | uint64_t bitwise_operations(uint64_t a) {
+      |                             ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:16:3: error: unknown type name 'uint64_t'
+   16 |   uint64_t signs = a & ((1ULL << (width - 1)));
+      |   ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:16:35: error: use of undeclared identifier 'width'
+   16 |   uint64_t signs = a & ((1ULL << (width - 1)));
+      |                                   ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:17:15: error: use of undeclared identifier 'n'
+   17 |   return a >> n | (signs << width - n);
+      |               ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:17:29: error: use of undeclared identifier 'width'
+   17 |   return a >> n | (signs << width - n);
+      |                             ^
+/tmp/codegeex4-bit_ops-py-cpp.cpp:17:37: error: use of undeclared identifier 'n'
+   17 |   return a >> n | (signs << width - n);
+      |                                     ^
+11 errors generated.

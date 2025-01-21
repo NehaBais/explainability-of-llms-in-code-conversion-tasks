@@ -1,0 +1,150 @@
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:41:9
+   |
+37 |         "    AND:     0b{:0width$b} & 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+41 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:48:9
+   |
+44 |         "    OR:      0b{:0width$b} | 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+48 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:55:9
+   |
+51 |         "    XOR:     0b{:0width$b} ^ 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+55 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:61:9
+   |
+58 |         "    NOT:   ~ 0b{:0width$b} = 0b{:0width$b}\n",
+   |         ---------------------------------------------- formatting specifier missing
+...
+61 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:77:13
+   |
+72 |             "               rotr({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------- formatting specifier missing
+...
+77 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:88:13
+   |
+83 |             "               rotl({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------- formatting specifier missing
+...
+88 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:99:13
+   |
+94 |             "               asr({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------ formatting specifier missing
+...
+99 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+   --> /tmp/codegeex4-bit_ops-py-rs.rs:107:13
+    |
+102 |             "               asr({}, {}, {}) = 0b{:0width$b}",
+    |             ------------------------------------------------ formatting specifier missing
+...
+107 |             width
+    |             ^^^^^ argument never used
+
+warning: unnecessary parentheses around block return value
+ --> /tmp/codegeex4-bit_ops-py-rs.rs:5:5
+  |
+5 |     ((a >> n) | ((a & ((1 << n) - 1)) << (width - n)))
+  |     ^                                                ^
+  |
+  = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+  |
+5 -     ((a >> n) | ((a & ((1 << n) - 1)) << (width - n)))
+5 +     (a >> n) | ((a & ((1 << n) - 1)) << (width - n))
+  |
+
+warning: unnecessary parentheses around block return value
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:12:5
+   |
+12 |     (((a << n) & mask) | (a >> (width - n)))
+   |     ^                                      ^
+   |
+help: remove these parentheses
+   |
+12 -     (((a << n) & mask) | (a >> (width - n)))
+12 +     ((a << n) & mask) | (a >> (width - n))
+   |
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:19:22
+   |
+19 |         return (a << (-n)) & mask;
+   |                      ^^^^ cannot apply unary operator `-`
+   |
+   = note: unsigned values cannot be negated
+
+warning: variable does not need to be mutable
+ --> /tmp/codegeex4-bit_ops-py-rs.rs:3:9
+  |
+3 |     let mut a = a & mask;
+  |         ----^
+  |         |
+  |         help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+ --> /tmp/codegeex4-bit_ops-py-rs.rs:4:9
+  |
+4 |     let mut n = n % width;
+  |         ----^
+  |         |
+  |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:10:9
+   |
+10 |     let mut a = a & mask;
+   |         ----^
+   |         |
+   |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:11:9
+   |
+11 |     let mut n = n % width;
+   |         ----^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `mask`
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:66:9
+   |
+66 |     let mask = ((1 << width) - 1) as i32;
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_mask`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 9 previous errors; 7 warnings emitted
+
+For more information about this error, try `rustc --explain E0600`.

@@ -1,0 +1,91 @@
+error: invalid format string: expected `'}'`, found `'('`
+ --> /tmp/granitecode3b-bit_ops-py-rs.rs:6:17
+  |
+6 |            = 0b{(a & b) & mask :0>width}b
+  |                -^ expected `'}'` in format string
+  |                |
+  |                because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'('`
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:72:30
+   |
+72 |                =      0b{asar(width, a, 1):0>width}b      
+   |                         -    ^ expected `'}'` in format string
+   |                         |
+   |                         because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+warning: unnecessary parentheses around `return` value
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:38:16
+   |
+38 |         return ((a >> n)    // top moved down
+   |                ^
+39 |                 | ((a & ((1 << n) - 1))   // Bottom masked...
+40 |                    << (width - n))); // ... then moved up
+   |                                   ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+38 ~         return (a >> n)    // top moved down
+39 |                 | ((a & ((1 << n) - 1))   // Bottom masked...
+40 ~                    << (width - n)); // ... then moved up
+   |
+
+warning: unnecessary parentheses around `return` value
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:52:16
+   |
+52 |         return ((a << n)    // top moved up
+   |                ^
+53 |                 | ((a >> (width - n))  // bottom shifted left...
+54 |                    << n)); // ... then combined
+   |                         ^
+   |
+help: remove these parentheses
+   |
+52 ~         return (a << n)    // top moved up
+53 |                 | ((a >> (width - n))  // bottom shifted left...
+54 ~                    << n); // ... then combined
+   |
+
+warning: unnecessary parentheses around `return` value
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:61:16
+   |
+61 |         return (a >> (n - width));
+   |                ^                ^
+   |
+help: remove these parentheses
+   |
+61 -         return (a >> (n - width));
+61 +         return a >> (n - width);
+   |
+
+error[E0601]: `main` function not found in crate `granitecode3b_bit_ops_py_rs`
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:85:2
+   |
+85 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode3b-bit_ops-py-rs.rs`
+
+error[E0600]: cannot apply unary operator `-` to type `u32`
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:31:31
+   |
+31 |         return rotl(width, a, -n);
+   |                               ^^ cannot apply unary operator `-`
+   |
+   = note: unsigned values cannot be negated
+
+error[E0600]: cannot apply unary operator `-` to type `u32`
+  --> /tmp/granitecode3b-bit_ops-py-rs.rs:45:31
+   |
+45 |         return rotr(width, a, -n);
+   |                               ^^ cannot apply unary operator `-`
+   |
+   = note: unsigned values cannot be negated
+
+error: aborting due to 5 previous errors; 3 warnings emitted
+
+Some errors have detailed explanations: E0600, E0601.
+For more information about an error, try `rustc --explain E0600`.

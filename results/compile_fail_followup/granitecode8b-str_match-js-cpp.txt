@@ -1,0 +1,28 @@
+/tmp/granitecode8b-str_match-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-js-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_match-js-cpp.cpp:4:3: error: unknown type name 'string'
+    4 |   string stringA = "tacoloco";
+      |   ^
+/tmp/granitecode8b-str_match-js-cpp.cpp:5:3: error: use of undeclared identifier 'string'; did you mean 'stringA'?
+    5 |   string stringB = "co";
+      |   ^~~~~~
+      |   stringA
+/tmp/granitecode8b-str_match-js-cpp.cpp:4:10: note: 'stringA' declared here
+    4 |   string stringA = "tacoloco";
+      |          ^
+/tmp/granitecode8b-str_match-js-cpp.cpp:5:9: error: expected ';' after expression
+    5 |   string stringB = "co";
+      |         ^
+      |         ;
+/tmp/granitecode8b-str_match-js-cpp.cpp:5:10: error: use of undeclared identifier 'stringB'; did you mean 'stringA'?
+    5 |   string stringB = "co";
+      |          ^~~~~~~
+      |          stringA
+/tmp/granitecode8b-str_match-js-cpp.cpp:4:10: note: 'stringA' declared here
+    4 |   string stringA = "tacoloco";
+      |          ^
+1 warning and 5 errors generated.

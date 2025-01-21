@@ -1,0 +1,11 @@
+/tmp/stablecode-dir_make-go-cpp.cpp:8:5: error: use of undeclared identifier 'create_directories'
+    8 |     create_directories(path);
+      |     ^
+/tmp/stablecode-dir_make-go-cpp.cpp:10:18: error: unknown type name 'filesystem_error'; did you mean 'std::system_error'?
+   10 |   } catch (const filesystem_error &e) {
+      |                  ^~~~~~~~~~~~~~~~
+      |                  std::system_error
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:26:33: note: 'std::system_error' declared here
+   26 | class _LIBCPP_EXPORTED_FROM_ABI system_error : public runtime_error {
+      |                                 ^
+2 errors generated.

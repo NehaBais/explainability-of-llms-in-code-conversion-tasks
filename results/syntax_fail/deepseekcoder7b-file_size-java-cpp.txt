@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_size-java-cpp.cpp:1:10: fatal error: 'experimental/filesystem' file not found
+    1 | #include <experimental/filesystem> // Or #include <filesystem> if your compiler supports std::filesystem (since C++17)
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

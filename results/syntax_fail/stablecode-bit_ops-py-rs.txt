@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:41:19
+   |
+41 |     for _ in 0..n {
+   |                   ^ unclosed delimiter
+42 |         result = (result << 1) | (result & 0x555555555555555) | (result & 0x33333333333333));
+   |                                                                                            ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:46:1
+   |
+42 |         result = (result << 1) | (result & 0x555555555555555) | (result & 0x33333333333333));
+   |                                                                                            - missing open `(` for this delimiter
+...
+46 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

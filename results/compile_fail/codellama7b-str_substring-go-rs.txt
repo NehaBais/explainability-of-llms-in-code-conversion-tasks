@@ -1,0 +1,60 @@
+error: argument never used
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:30
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |              --------------  ^^^^^^^^^^^^^^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error: argument never used
+  --> /tmp/codellama7b-str_substring-go-rs.rs:20:56
+   |
+20 |     println!("Start 'D', length {}", &s[dx..(dx + m)], m);
+   |              ----------------------                    ^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error: argument never used
+  --> /tmp/codellama7b-str_substring-go-rs.rs:24:59
+   |
+24 |     println!("Start \"DE\", length {}", &s[sx..(sx + m)], m);
+   |              -------------------------                    ^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error[E0425]: cannot find value `len` in this scope
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:36
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |                                    ^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+16 -     println!("All but last", &s[0..len - 1]);
+16 +     println!("All but last", &s[0.len - 1]);
+   |
+
+error[E0423]: expected value, found builtin type `str`
+  --> /tmp/codellama7b-str_substring-go-rs.rs:19:14
+   |
+19 |     let dx = str.index_of(s, 'D');
+   |              ^^^ not a value
+
+error[E0423]: expected value, found builtin type `str`
+  --> /tmp/codellama7b-str_substring-go-rs.rs:23:14
+   |
+23 |     let sx = str.find(s, "DE");
+   |              ^^^ not a value
+
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-str_substring-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 6 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0423, E0425.
+For more information about an error, try `rustc --explain E0423`.

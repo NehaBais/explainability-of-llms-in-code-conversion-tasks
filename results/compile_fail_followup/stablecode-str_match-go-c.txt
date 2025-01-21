@@ -1,0 +1,48 @@
+/tmp/stablecode-str_match-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_match-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_match-go-c.c:7:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     printf("1. \"%s\" starts with \"%s\": %d\n", 
+      |     ^
+/tmp/stablecode-str_match-go-c.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-str_match-go-c.c:8:24: error: call to undeclared library function 'strncmp' with type 'int (const char *, const char *, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |         first, second, strncmp(first, second, strlen(second)))) == 0);
+      |                        ^
+/tmp/stablecode-str_match-go-c.c:8:24: note: include the header <string.h> or explicitly provide a declaration for 'strncmp'
+/tmp/stablecode-str_match-go-c.c:8:47: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |         first, second, strncmp(first, second, strlen(second)))) == 0);
+      |                                               ^
+/tmp/stablecode-str_match-go-c.c:8:47: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/stablecode-str_match-go-c.c:8:63: error: expected ';' after expression
+    8 |         first, second, strncmp(first, second, strlen(second)))) == 0);
+      |                                                               ^
+      |                                                               ;
+/tmp/stablecode-str_match-go-c.c:8:63: error: expected expression
+/tmp/stablecode-str_match-go-c.c:12:55: error: expected expression
+   12 |       if (strncmp(first + i, second, strlen(second))) == 0) {
+      |                                                       ^
+/tmp/stablecode-str_match-go-c.c:18:30: error: extraneous ')' before ';'
+   18 |         first, second, found));
+      |                              ^
+/tmp/stablecode-str_match-go-c.c:21:89: error: extraneous ')' before ';'
+   21 |         first, second, strncmp(first + strlen(second) - 1, second, strlen(second))) == 0);
+      |                                                                                         ^
+/tmp/stablecode-str_match-go-c.c:21:85: warning: equality comparison result unused [-Wunused-comparison]
+   20 |     printf("3. \"%s\" ends with \"%s\": %d\n", 
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   21 |         first, second, strncmp(first + strlen(second) - 1, second, strlen(second))) == 0);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/tmp/stablecode-str_match-go-c.c:29:5: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |     scanf("%s", first));
+      |     ^
+/tmp/stablecode-str_match-go-c.c:29:5: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/stablecode-str_match-go-c.c:29:23: error: extraneous ')' before ';'
+   29 |     scanf("%s", first));
+      |                       ^
+/tmp/stablecode-str_match-go-c.c:32:24: error: extraneous ')' before ';'
+   32 |     scanf("%s", second));
+      |                        ^
+1 warning and 13 errors generated.

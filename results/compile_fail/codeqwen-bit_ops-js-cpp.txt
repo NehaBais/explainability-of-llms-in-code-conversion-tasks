@@ -1,0 +1,4 @@
+/tmp/codeqwen-bit_ops-js-cpp.cpp:10:36: error: expected expression
+   10 |   std::cout << "A >>> B: " << (A >>> B) << std::endl; // logical right shift
+      |                                    ^
+1 error generated.

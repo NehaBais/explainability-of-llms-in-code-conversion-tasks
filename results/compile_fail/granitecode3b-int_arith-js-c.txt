@@ -1,0 +1,11 @@
+/tmp/granitecode3b-int_arith-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-js-c.c:4:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |     printf("Usage: %s <a> <b>\n", argv[0]);
+      |     ^
+/tmp/granitecode3b-int_arith-js-c.c:4:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_arith-js-c.c:8:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   int a = atoi(argv[2]);
+      |           ^
+3 errors generated.

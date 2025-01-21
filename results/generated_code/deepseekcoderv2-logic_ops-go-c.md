@@ -1,25 +1,21 @@
-*/
+ Certainly! Below is the equivalent code in C that performs the same operations as the provided Go function:
+
 ```c
 #include <stdio.h>
-int main() 
-{
-    int a, b;
-    printf ("Enter first boolean value: ");
-    scanf("%d", &a);
-    printf ("Enter second boolean value: ");
-    scanf("%d", &b);
+#include <stdbool.h>
 
-    if (a == 1 && b == 1)
-        {
-            printf("Both a and b are true.");
-        }
-    else if (a==0 && b==0)
-    {
-         printf("Both a and b are false.");
-    }
-    else
-    {
-         printf("One of the two values is not true.");
-     }  
+void printLogic(bool a, bool b) {
+    printf("a and b is %s\n", a && b ? "true" : "false");
+    printf("a or b is %s\n", a || b ? "true" : "false");
+    printf("not a is %s\n", !a ? "false" : "true");
+}
+
+int main() {
+    bool a = true;
+    bool b = false;
+    printLogic(a, b);
+    return 0;
 }
 ```
+
+This C code defines a function `printLogic` that takes two boolean arguments and prints the results of "and" (`&&`), "or" (`||`), and "not" (`!`) operations on them. The `printf` function is used to print the results in a readable format, where `true` is represented as `1` (which is printed as `true`) and `false` is represented as `0` (which is printed as `false`).

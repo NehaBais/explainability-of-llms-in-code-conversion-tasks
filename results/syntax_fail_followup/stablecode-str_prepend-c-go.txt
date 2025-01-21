@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_prepend-c-go.go:13:37: expected statement, found ')' (and 1 more errors)

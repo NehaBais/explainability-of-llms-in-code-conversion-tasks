@@ -1,0 +1,25 @@
+warning: unused import: `Write`
+ --> /tmp/yicoder9b-int_arith-py-rs.rs:1:21
+  |
+1 | use std::io::{self, Write};
+  |                     ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0384]: cannot assign twice to immutable variable `remainder`
+  --> /tmp/yicoder9b-int_arith-py-rs.rs:28:9
+   |
+26 |     let remainder = a % b;
+   |         --------- first assignment to `remainder`
+27 |     if (a < 0) ^ (b < 0) { // if the operands are of different signs...
+28 |         remainder *= -1;  // make sure the remainder has the same sign as 'a'
+   |         ^^^^^^^^^^^^^^^ cannot assign twice to immutable variable
+   |
+help: consider making this binding mutable
+   |
+26 |     let mut remainder = a % b;
+   |         +++
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0384`.

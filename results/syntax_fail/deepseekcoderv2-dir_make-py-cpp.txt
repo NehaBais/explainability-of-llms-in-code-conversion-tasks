@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-dir_make-py-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directories(path);
+      |     ~~~~~^
+/tmp/deepseekcoderv2-dir_make-py-cpp.cpp:9:23: error: no member named 'filesystem' in namespace 'std'
+    9 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+2 errors generated.

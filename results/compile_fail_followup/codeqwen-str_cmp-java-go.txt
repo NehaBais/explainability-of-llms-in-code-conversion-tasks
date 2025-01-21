@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-java-go.go:23:45: newline in string
+/tmp/codeqwen-str_cmp-java-go.go:23:45: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/codeqwen-str_cmp-java-go.go:24:9: newline in string
+/tmp/codeqwen-str_cmp-java-go.go:26:44: newline in string
+/tmp/codeqwen-str_cmp-java-go.go:27:9: newline in string

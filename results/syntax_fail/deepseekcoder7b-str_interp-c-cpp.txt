@@ -1,0 +1,10 @@
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:7:16: warning: multi-character character constant [-Wmultichar]
+    7 |                'big'); // Replaces all occurrences of 'X' with 'big'.
+      |                ^
+/tmp/deepseekcoder7b-str_interp-c-cpp.cpp:6:3: error: no matching function for call to 'replace'
+    6 |   std::replace(originalString.begin(), originalString.end(), 'X',
+      |   ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:22:1: note: candidate template ignored: deduced conflicting types for parameter '_Tp' ('char' vs. 'int')
+   22 | replace(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __old_value, const _Tp& __new_value) {
+      | ^
+1 warning and 1 error generated.

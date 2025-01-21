@@ -1,0 +1,7 @@
+/tmp/Main.java:17: error: illegal start of expression
+        System.out.println("123" !== "123"); // true
+                                   ^
+/tmp/Main.java:18: error: illegal start of expression
+        System.out.println("123" !== "123"); // false
+                                   ^
+2 errors

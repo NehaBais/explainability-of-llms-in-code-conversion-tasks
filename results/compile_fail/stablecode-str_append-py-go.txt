@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-str_append-py-go.go:9:13: syntax error: unexpected literal " at end of statement
+/tmp/stablecode-str_append-py-go.go:9:14: newline in string

@@ -1,0 +1,44 @@
+error: `~` cannot be used as a unary operator
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:35:13
+   |
+35 |            (~a) & mask);
+   |             ^
+   |
+help: use `!` to perform bitwise not
+   |
+35 |            (!a) & mask);
+   |             ~
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:42:26
+   |
+41 |             "RIGHT:   rotr({}, 0b{:0width$b}, {})",
+   |             -------------------------------------- formatting specifier missing
+42 |             width, a, i, right_shift
+   |                          ^^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:50:26
+   |
+49 |             "LEFT:    rotl({}, 0b{:0width$b}, {})",
+   |             -------------------------------------- formatting specifier missing
+50 |             width, a, i, left_shift
+   |                          ^^^^^^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:59:26
+   |
+58 |             "SIGN-EXTENDING ARITHMETIC SHIFT RIGHT: asr({}, 0b{:0width$b}, {})",
+   |             ------------------------------------------------------------------- formatting specifier missing
+59 |             width, a, i, right_arith_shift_right
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+
+error[E0425]: cannot find function `helper_funcs` in this scope
+ --> /tmp/qwen2.5coder2b-bit_ops-py-rs.rs:3:5
+  |
+3 |     helper_funcs(8, 27);
+  |     ^^^^^^^^^^^^ not found in this scope
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

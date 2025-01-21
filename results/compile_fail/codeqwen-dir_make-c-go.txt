@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-dir_make-c-go.go:6:2: "path/filepath" imported and not used

@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-str_interp-java-cpp.cpp:6:57: error: invalid operands to binary expression ('std::string' (aka 'basic_string<char>') and 'std::string')
+    6 |   std::string lyric = std::string("Mary had a %s lamb") % adjective;
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 error generated.

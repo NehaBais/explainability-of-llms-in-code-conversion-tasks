@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-dir_make-cpp-c.c:1:10: fatal error: 'cerrno' file not found
+    1 | #include <cerrno> // This line includes c error handling header file
+      |          ^~~~~~~~
+1 error generated.

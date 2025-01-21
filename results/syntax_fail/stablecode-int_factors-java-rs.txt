@@ -1,0 +1,14 @@
+error: unmatched angle bracket
+ --> /tmp/stablecode-int_factors-java-rs.rs:4:98
+  |
+4 |     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+  |                                                                                                  ^
+  |
+help: remove extra angle bracket
+  |
+4 -     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>>();
+4 +     let mut factors = n.to_string().parse::<i64>().unwrap()().into_iter().collect::<HashSet<i64>>();
+  |
+
+error: aborting due to 1 previous error
+

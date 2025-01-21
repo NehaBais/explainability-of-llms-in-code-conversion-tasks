@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-js-go.go:7:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:10:41: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:13:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:16:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:20:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:24:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-bit_ops-js-go.go:28:39: syntax error: unexpected >, expected expression

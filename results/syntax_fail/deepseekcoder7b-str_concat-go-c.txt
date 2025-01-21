@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:10: error: expected expression
+   18 |   return <｜begin▁of▁sentence｜>;
+      |          ^
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   18 |   return <｜begin▁of▁sentence｜>;
+      |           ^~
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:19: error: character <U+2581> not allowed in an identifier
+   18 |   return <｜begin▁of▁sentence｜>;
+      |                  ^
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:24: error: character <U+2581> not allowed in an identifier
+   18 |   return <｜begin▁of▁sentence｜>;
+      |                     ^
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   18 |   return <｜begin▁of▁sentence｜>;
+      |                              ^~
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   18 |   return <｜begin▁of▁sentence｜>;
+      |           ^
+/tmp/deepseekcoder7b-str_concat-go-c.c:18:39: error: expected expression
+   18 |   return <｜begin▁of▁sentence｜>;
+      |                                 ^
+2 warnings and 5 errors generated.

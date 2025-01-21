@@ -1,0 +1,4 @@
+/tmp/Main.java:53: error: incompatible types: possible lossy conversion from long to int
+    for (int i = 0, pp = p; i < e; i++, pp *= p) {
+                         ^
+1 error

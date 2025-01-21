@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-int_cmp-cpp-go.go:24:9: no new variables on left side of :=

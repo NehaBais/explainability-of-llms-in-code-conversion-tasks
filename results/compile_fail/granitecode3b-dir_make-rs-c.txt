@@ -1,0 +1,38 @@
+/tmp/granitecode3b-dir_make-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-rs-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-rs-c.c:5:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |       ^
+/tmp/granitecode3b-dir_make-rs-c.c:5:19: error: use of undeclared identifier 'S_IRWXU'
+    5 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                   ^
+/tmp/granitecode3b-dir_make-rs-c.c:5:29: error: use of undeclared identifier 'S_IRWXG'
+    5 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                             ^
+/tmp/granitecode3b-dir_make-rs-c.c:5:39: error: use of undeclared identifier 'S_IROTH'
+    5 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                                       ^
+/tmp/granitecode3b-dir_make-rs-c.c:5:49: error: use of undeclared identifier 'S_IXOTH'
+    5 |   if (mkdir(path, S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1 &&
+      |                                                 ^
+/tmp/granitecode3b-dir_make-rs-c.c:6:7: error: use of undeclared identifier 'errno'
+    6 |       errno != EEXIST) {
+      |       ^
+/tmp/granitecode3b-dir_make-rs-c.c:6:16: error: use of undeclared identifier 'EEXIST'
+    6 |       errno != EEXIST) {
+      |                ^
+/tmp/granitecode3b-dir_make-rs-c.c:7:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     perror("Error creating directory");
+      |     ^
+/tmp/granitecode3b-dir_make-rs-c.c:8:5: error: call to undeclared library function 'exit' with type 'void (int) __attribute__((noreturn))'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     exit(EXIT_FAILURE);
+      |     ^
+/tmp/granitecode3b-dir_make-rs-c.c:8:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/tmp/granitecode3b-dir_make-rs-c.c:8:10: error: use of undeclared identifier 'EXIT_FAILURE'
+    8 |     exit(EXIT_FAILURE);
+      |          ^
+12 errors generated.

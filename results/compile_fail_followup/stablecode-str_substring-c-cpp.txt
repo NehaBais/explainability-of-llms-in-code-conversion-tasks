@@ -1,0 +1,7 @@
+/tmp/stablecode-str_substring-c-cpp.cpp:1:1: error: unknown type name 'Fix'
+    1 | Fix :
+      | ^
+/tmp/stablecode-str_substring-c-cpp.cpp:1:5: error: expected unqualified-id
+    1 | Fix :
+      |     ^
+2 errors generated.

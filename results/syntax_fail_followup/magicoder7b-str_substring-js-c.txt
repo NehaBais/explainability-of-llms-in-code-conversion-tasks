@@ -1,0 +1,10 @@
+/tmp/magicoder7b-str_substring-js-c.c:55:23: error: call to undeclared function 'strlen_logical'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   55 |   substr_utf8(str, 2, strlen_logical(str) - 1);
+      |                       ^
+/tmp/magicoder7b-str_substring-js-c.c:67:35: warning: multi-character character constant [-Wmultichar]
+   67 |   substr_utf8(str, str_index(str, 'bc'), 3);
+      |                                   ^
+/tmp/magicoder7b-str_substring-js-c.c:67:35: warning: implicit conversion from 'int' to 'char' changes value from 25187 to 99 [-Wconstant-conversion]
+   67 |   substr_utf8(str, str_index(str, 'bc'), 3);
+      |                    ~~~~~~~~~      ^~~~
+2 warnings and 1 error generated.

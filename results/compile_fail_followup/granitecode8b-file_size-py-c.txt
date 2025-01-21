@@ -1,0 +1,26 @@
+/tmp/granitecode8b-file_size-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-py-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat st;
+      |               ^
+/tmp/granitecode8b-file_size-py-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat st;
+      |          ^
+/tmp/granitecode8b-file_size-py-c.c:9:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (stat(filename, &st) == 0) {
+      |       ^
+/tmp/granitecode8b-file_size-py-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("File size: %ld bytesn", (long)st.st_size);
+      |     ^
+/tmp/granitecode8b-file_size-py-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-py-c.c:12:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     perror("Error getting file size");
+      |     ^
+/tmp/granitecode8b-file_size-py-c.c:19:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |     perror("Error getting file size");
+      |     ^
+7 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-file_rename-rs-go.go:4:2: "fmt" imported and not used

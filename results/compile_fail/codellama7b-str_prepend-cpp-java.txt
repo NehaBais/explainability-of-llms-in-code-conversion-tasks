@@ -1,0 +1,6 @@
+/tmp/Main.java:6: error: cannot find symbol
+    String prepended = myStrings.stream().collect(Collectors.joining());
+                                                  ^
+  symbol:   variable Collectors
+  location: class Main
+1 error

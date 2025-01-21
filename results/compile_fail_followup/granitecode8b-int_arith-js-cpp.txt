@@ -1,0 +1,54 @@
+/tmp/granitecode8b-int_arith-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:5:11: error: use of undeclared identifier 'stoi'
+    5 |   int a = stoi(argv[2]);
+      |           ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:6:11: error: use of undeclared identifier 'stoi'
+    6 |   int b = stoi(argv[3]);
+      |           ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:12:18: error: expected '<' after 'static_cast'
+   12 |       static_cast(a) /
+      |                  ^
+      |                  <
+/tmp/granitecode8b-int_arith-js-cpp.cpp:13:18: error: expected '<' after 'static_cast'
+   13 |       static_cast(b); // Note that C++ uses floating-point division by default
+      |                  ^
+      |                  <
+/tmp/granitecode8b-int_arith-js-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << "a + b = " << sum << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:16:32: error: use of undeclared identifier 'endl'
+   16 |   cout << "a + b = " << sum << endl;
+      |                                ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << "a - b = " << difference << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:17:39: error: use of undeclared identifier 'endl'
+   17 |   cout << "a - b = " << difference << endl;
+      |                                       ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:18:3: error: use of undeclared identifier 'cout'
+   18 |   cout << "a * b = " << product << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:18:36: error: use of undeclared identifier 'endl'
+   18 |   cout << "a * b = " << product << endl;
+      |                                    ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:19:3: error: use of undeclared identifier 'cout'
+   19 |   cout << "a / b = " << division
+      |   ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:20:11: error: use of undeclared identifier 'endl'
+   20 |        << endl; // Note that the quotient is a floating-point number
+      |           ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "a % b = " << remainder << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-js-cpp.cpp:21:38: error: use of undeclared identifier 'endl'
+   21 |   cout << "a % b = " << remainder << endl;
+      |                                      ^
+1 warning and 16 errors generated.

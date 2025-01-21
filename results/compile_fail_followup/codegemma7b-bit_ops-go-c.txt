@@ -1,0 +1,7 @@
+/tmp/codegemma7b-bit_ops-go-c.c:4:25: error: use of undeclared identifier 'a'
+    4 | uint16_t ua = (uint16_t)a;
+      |                         ^
+/tmp/codegemma7b-bit_ops-go-c.c:5:25: error: use of undeclared identifier 'b'
+    5 | uint32_t ub = (uint32_t)b;
+      |                         ^
+2 errors generated.

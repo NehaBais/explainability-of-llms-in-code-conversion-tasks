@@ -1,0 +1,36 @@
+warning: value assigned to `a` is never read
+ --> /tmp/granitecode3b-int_arith-java-rs.rs:3:13
+  |
+3 |     let mut a: i32 = 0;
+  |             ^
+  |
+  = help: maybe it is overwritten before being read?
+  = note: `#[warn(unused_assignments)]` on by default
+
+warning: value assigned to `b` is never read
+ --> /tmp/granitecode3b-int_arith-java-rs.rs:4:13
+  |
+4 |     let mut b: i32 = 0;
+  |             ^
+  |
+  = help: maybe it is overwritten before being read?
+
+error[E0716]: temporary value dropped while borrowed
+  --> /tmp/granitecode3b-int_arith-java-rs.rs:9:27
+   |
+9  |     let nums: Vec<&str> = String::new().split(" ").collect();
+   |                           ^^^^^^^^^^^^^                     - temporary value is freed at the end of this statement
+   |                           |
+   |                           creates a temporary value which is freed while still in use
+10 |     a = nums[0].parse::<i32>().unwrap();
+   |         ---- borrow later used here
+   |
+help: consider using a `let` binding to create a longer lived value
+   |
+9  ~     let binding = String::new();
+10 ~     let nums: Vec<&str> = binding.split(" ").collect();
+   |
+
+error: aborting due to 1 previous error; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0716`.

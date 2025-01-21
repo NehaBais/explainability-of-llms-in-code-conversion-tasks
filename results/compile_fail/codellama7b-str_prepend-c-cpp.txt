@@ -1,0 +1,13 @@
+/tmp/codellama7b-str_prepend-c-cpp.cpp:9:3: error: no matching function for call to 'sprintf'
+    9 |   sprintf(str, "%s%s", cstr.c_str(), (dup = str).c_str());
+      |   ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:276:6: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'char *' for 1st argument
+  276 | int      sprintf(char * __restrict, const char * __restrict, ...) __printflike(2, 3);
+      |          ^       ~~~~~~
+/tmp/codellama7b-str_prepend-c-cpp.cpp:10:3: error: no matching function for call to 'free'
+   10 |   free(dup);
+      |   ^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:56:7: note: candidate function not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'void *' for 1st argument; take the address of the argument with &
+   56 | void  free(void * __unsafe_indexable);
+      |       ^    ~~~~~~
+2 errors generated.

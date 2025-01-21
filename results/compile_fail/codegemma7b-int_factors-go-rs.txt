@@ -1,0 +1,41 @@
+warning: unused import: `std::fmt`
+ --> /tmp/codegemma7b-int_factors-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused variable: `i`
+  --> /tmp/codegemma7b-int_factors-go-rs.rs:25:13
+   |
+25 |         for i in 0..e as usize {
+   |             ^ help: if this is intentional, prefix it with an underscore: `_i`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/codegemma7b-int_factors-go-rs.rs:33:9
+   |
+33 |         nr >>= 1;
+   |         ^^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+16 | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/codegemma7b-int_factors-go-rs.rs:44:13
+   |
+44 |             nr /= d;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+16 | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error: aborting due to 2 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0384`.

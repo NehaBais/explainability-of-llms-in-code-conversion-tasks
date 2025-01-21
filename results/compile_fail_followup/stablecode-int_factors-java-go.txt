@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/stablecode-int_factors-java-go.go:9:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-java-go.go:11:20: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-java-go.go:13:59: syntax error: unexpected ), expected semicolon or newline
+/tmp/stablecode-int_factors-java-go.go:15:25: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-java-go.go:16:27: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-java-go.go:20:46: syntax error: unexpected ) at end of statement

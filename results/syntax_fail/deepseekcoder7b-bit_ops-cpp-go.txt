@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/deepseekcoder7b-bit_ops-cpp-go.go:30:17: invalid operation: ua >> shiftAmount | a << (32 - shiftAmount) (mismatched types uint and int)

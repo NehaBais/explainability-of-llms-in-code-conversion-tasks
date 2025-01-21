@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_substring-java-go.go:28:29: cannot use "o" (untyped string constant) as int value in argument to Substring

@@ -1,0 +1,25 @@
+/tmp/codellama7b-file_rename-c-cpp.cpp:14:3: error: no matching function for call to 'rename'
+   14 |   rename(currentWorkingDir + "/" + inputFile,
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:266:6: note: candidate function not viable: no known conversion from 'string' to 'const char *' for 1st argument
+  266 | int      rename (const char *__old, const char *__new);
+      |          ^       ~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_rename-c-cpp.cpp:16:3: error: no matching function for call to 'rename'
+   16 |   rename(currentWorkingDir + "/" + docsDir,
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:266:6: note: candidate function not viable: no known conversion from 'string' to 'const char *' for 1st argument
+  266 | int      rename (const char *__old, const char *__new);
+      |          ^       ~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_rename-c-cpp.cpp:20:3: error: no matching function for call to 'rename'
+   20 |   rename(rootDir + "/" + inputFile, rootDir + "/" + outputFile);
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:266:6: note: candidate function not viable: no known conversion from 'string' to 'const char *' for 1st argument
+  266 | int      rename (const char *__old, const char *__new);
+      |          ^       ~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-file_rename-c-cpp.cpp:21:3: error: no matching function for call to 'rename'
+   21 |   rename(rootDir + "/" + docsDir, rootDir + "/" + myDocsDir);
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:266:6: note: candidate function not viable: no known conversion from 'string' to 'const char *' for 1st argument
+  266 | int      rename (const char *__old, const char *__new);
+      |          ^       ~~~~~~~~~~~~~~~~~
+4 errors generated.

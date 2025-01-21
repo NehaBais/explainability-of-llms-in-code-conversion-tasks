@@ -1,0 +1,1 @@
+unsigned int c := uint64(a)      // Convert signed integer to unsigned for logical right shift

@@ -1,0 +1,41 @@
+/tmp/granitecode8b-file_size-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_size-js-c.c:4:3: error: use of undeclared identifier 'IDispatch'
+    4 |   IDispatch *punk = NULL;
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:4:14: error: use of undeclared identifier 'punk'
+    4 |   IDispatch *punk = NULL;
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:4:21: error: use of undeclared identifier 'NULL'
+    4 |   IDispatch *punk = NULL;
+      |                     ^
+/tmp/granitecode8b-file_size-js-c.c:5:3: error: use of undeclared identifier 'IDispatch'
+    5 |   IDispatch *punkFile = NULL;
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:5:14: error: use of undeclared identifier 'punkFile'
+    5 |   IDispatch *punkFile = NULL;
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:5:25: error: use of undeclared identifier 'NULL'
+    5 |   IDispatch *punkFile = NULL;
+      |                         ^
+/tmp/granitecode8b-file_size-js-c.c:6:3: error: use of undeclared identifier 'HRESULT'
+    6 |   HRESULT hr = IDispPatch_Invoke(punk, DISPID_VALUE, 0, LOCALE_SYSTEM_DEFAULT,
+      |   ^
+/tmp/granitecode8b-file_size-js-c.c:9:7: error: call to undeclared function 'FAILED'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (FAILED(hr)) {
+      |       ^
+/tmp/granitecode8b-file_size-js-c.c:9:14: error: use of undeclared identifier 'hr'
+    9 |   if (FAILED(hr)) {
+      |              ^
+/tmp/granitecode8b-file_size-js-c.c:10:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     printf("Failed to create Scripting.FileSystemObject instance: 0x%08X", hr);
+      |     ^
+/tmp/granitecode8b-file_size-js-c.c:10:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_size-js-c.c:10:76: error: use of undeclared identifier 'hr'
+   10 |     printf("Failed to create Scripting.FileSystemObject instance: 0x%08X", hr);
+      |                                                                            ^
+13 errors generated.

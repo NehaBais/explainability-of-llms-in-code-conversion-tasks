@@ -1,0 +1,25 @@
+/tmp/granitecode8b-str_prepend-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(prepended, "");
+      |   ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_prepend-cpp-c.c:10:5: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     strcat(prepended, myStrings[i]);
+      |     ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:10:5: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode8b-str_prepend-cpp-c.c:12:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   printf("%s", prepended);
+      |   ^
+/tmp/granitecode8b-str_prepend-cpp-c.c:12:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+7 errors generated.

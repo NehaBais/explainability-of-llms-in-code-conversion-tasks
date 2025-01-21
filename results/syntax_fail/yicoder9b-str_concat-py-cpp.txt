@@ -1,0 +1,5 @@
+/tmp/yicoder9b-str_concat-py-cpp.cpp:14:31: error: expected ';' at end of declaration
+   14 |   std::vector<std::string> vec{s1, "world", "mom"};
+      |                               ^
+      |                               ;
+1 error generated.

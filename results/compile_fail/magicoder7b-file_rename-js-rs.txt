@@ -1,0 +1,12 @@
+error[E0432]: unresolved import `std::fs::rename_dir`
+ --> /tmp/magicoder7b-file_rename-js-rs.rs:2:23
+  |
+2 | use std::fs::{rename, rename_dir};
+  |                       ^^^^^^^^^^
+  |                       |
+  |                       no `rename_dir` in `fs`
+  |                       help: a similar name exists in the module: `create_dir`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

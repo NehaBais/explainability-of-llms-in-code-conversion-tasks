@@ -1,0 +1,17 @@
+warning: unused import: `std::path::Path`
+ --> /tmp/qwen2.5coder2b-dir_make-py-rs.rs:2:5
+  |
+2 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/qwen2.5coder2b-dir_make-py-rs.rs:6:2
+  |
+6 | }
+  |  ^ consider adding a `main` function to `/tmp/qwen2.5coder2b-dir_make-py-rs.rs`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

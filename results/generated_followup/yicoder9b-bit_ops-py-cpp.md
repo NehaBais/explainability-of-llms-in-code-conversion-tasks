@@ -1,0 +1,1 @@
+The error message is indicating that 'rotl' identifier was not declared before usage, but it can be inferred that they meant to use 'rotr' instead. So we need to replace all usages of 'rotl' with 'rotr' in the entire code block.

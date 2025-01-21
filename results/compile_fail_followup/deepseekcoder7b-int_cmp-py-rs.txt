@@ -1,0 +1,32 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:10:22
+   |
+10 |     io::stdin().read<｜begin▁of▁sentence｜>ut(a.trim()).expect("Please type an integer value!");   // convert input string to int, we expect errors in case of invalid inputs
+   |                      ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:10:28
+   |
+10 |     io::stdin().read<｜begin▁of▁sentence｜>ut(a.trim()).expect("Please type an integer value!");   // convert input string to int, we expect errors in case of invalid inputs
+   |                             ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:10:31
+   |
+10 |     io::stdin().read<｜begin▁of▁sentence｜>ut(a.trim()).expect("Please type an integer value!");   // convert input string to int, we expect errors in case of invalid inputs
+   |                                ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:10:40
+   |
+10 |     io::stdin().read<｜begin▁of▁sentence｜>ut(a.trim()).expect("Please type an integer value!");   // convert input string to int, we expect errors in case of invalid inputs
+   |                                         ^^
+
+error: expected one of `!`, `.`, `::`, `;`, `?`, `{`, `}`, or an operator, found `of`
+  --> /tmp/deepseekcoder7b-int_cmp-py-rs.rs:10:29
+   |
+10 |     io::stdin().read<｜begin▁of▁sentence｜>ut(a.trim()).expect("Please type an integer value!");   // convert input string to int, we expect errors in case of invalid inputs
+   |                              ^^ expected one of 8 possible tokens
+
+error: aborting due to 5 previous errors
+

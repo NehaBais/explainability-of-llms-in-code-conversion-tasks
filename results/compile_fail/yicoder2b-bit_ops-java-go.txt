@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-java-go.go:12:10: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)
+/tmp/yicoder2b-bit_ops-java-go.go:16:32: cannot use int(a) (value of type int) as uint value in argument to bits.RotateLeft
+/tmp/yicoder2b-bit_ops-java-go.go:17:22: undefined: bits.RotateRight

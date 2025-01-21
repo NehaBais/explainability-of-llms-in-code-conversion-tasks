@@ -1,32 +1,46 @@
-The output is expected to be like this - 
-45: [1, 3, 5, 9, 15, 45]
-53: [1, 53]
-64: [1, 2, 4, 8, 16, 32, 64]
+ To convert the given Python code to C, we need to follow these steps:
 
-Here is a possible way to convert the Python code into C:
-```C
+1. Compute the factors of a positive integer.
+2. The factors are the positive integers by which the number being factored can be divided to yield a positive integer result.
+3. Every prime number has two factors: 1 and itself.
+
+Here's the equivalent C code:
+
+```c
 #include <stdio.h>
 #include <math.h>
-int factor(int n) {
-    int i;
-    int factors[n];
-    int num_factors = 0;
-    for (i = 1; i <= sqrt(n); i++) {
-        if (n % i == 0) {
-            factors[num_factors++] = i;
-            if (i != n / i) {
-                factors[num_factors++] = n / i;
+
+void factor(int n) {
+    int x;
+    for (x = 1; x * x < n; x++) {
+        if (n % x == 0) {
+            printf("%d ", x);
+            if (n / x != x) {
+                printf("%d ", n / x);
             }
         }
     }
-    return num_factors;
+    if (x * x == n) {
+        printf("%d ", x);
+    }
 }
+
 int main() {
-    int factor(n);
-    printf("%d: %d\n", 45, factor(45));
-    printf("%d: %d\n", 53, factor(53));
-    printf("%d: %d\n", 64, factor(64));
+    int numbers[] = {45, 53, 64};
+    for (int i = 0; i < 3; i++) {
+        printf("%i: factors: ", numbers[i]);
+        factor(numbers[i]);
+        printf("\n");
+    }
     return 0;
 }
 ```
 
+Explanation:
+1. The `factor` function computes the factors of a given number `n`.
+2. It iterates from 1 to the square root of `n` and checks if `x` is a factor by checking if `n % x == 0`.
+3. If `x` is a factor, it prints both `x` and `n / x`.
+4. If `x * x == n`, it means `x` is a perfect square root of `n`, so it prints `x`.
+5. The `main` function iterates over the given numbers and calls the `factor` function for each number, printing the factors.
+
+Note: In C, we don't have built-in functions like `isqrt` in Python, so we use a simple loop to check up to the square root of `n`. The rest of the logic is straightforward once you understand how to find factors in both languages.

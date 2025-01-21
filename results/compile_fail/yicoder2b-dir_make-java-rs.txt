@@ -1,0 +1,14 @@
+error: expected `{`, found `;`
+ --> /tmp/yicoder2b-dir_make-java-rs.rs:8:90
+  |
+8 |     } else if let error = PathBuf::read_dir(&path).or_else({ return println!("Error"); }); {
+  |                                                                                          ^ expected `{`
+  |
+note: the `if` expression is missing a block after this condition
+ --> /tmp/yicoder2b-dir_make-java-rs.rs:8:15
+  |
+8 |     } else if let error = PathBuf::read_dir(&path).or_else({ return println!("Error"); }); {
+  |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 1 previous error
+

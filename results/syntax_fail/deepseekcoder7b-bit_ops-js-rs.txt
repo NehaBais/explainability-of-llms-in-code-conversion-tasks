@@ -1,0 +1,39 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:6:21
+  |
+6 |    let not_result = ~a;
+  |                     ^
+  |
+help: use `!` to perform bitwise not
+  |
+6 |    let not_result = !a;
+  |                     ~
+
+error: expected expression, found `>`
+  --> /tmp/deepseekcoder7b-bit_ops-js-rs.rs:19:52
+   |
+19 |        println!("a RIGHT LOGICAL SHIFT b: {}", a >>> b);
+   |                                                    ^ expected expression
+
+error: macro expansion ignores token `{` and any following
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+   |
+  ::: /tmp/deepseekcoder7b-bit_ops-js-rs.rs:36:1
+   |
+36 | println!("a LEFT ROTATE b: {}", left_rotate(a,b)); 
+   | ------------------------------------------------- caused by the macro expansion here
+   |
+   = note: the usage of `println!` is likely invalid in item context
+
+error: macro expansion ignores token `{` and any following
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+   |
+  ::: /tmp/deepseekcoder7b-bit_ops-js-rs.rs:37:1
+   |
+37 | println!("a RIGHT ROTATE b: {}", right_rotate(a,b));
+   | --------------------------------------------------- caused by the macro expansion here
+   |
+   = note: the usage of `println!` is likely invalid in item context
+
+error: aborting due to 4 previous errors
+

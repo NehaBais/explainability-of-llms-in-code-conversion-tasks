@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-str_substring-cpp-go.go:18:30: expected ']', found ':' (and 1 more errors)

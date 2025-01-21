@@ -1,0 +1,36 @@
+/tmp/codeqwen-bit_ops-java-c.c:14:5: error: use of undeclared identifier 'A_rotated_left'; did you mean 'a_rotated_left'?
+   14 |     A_rotated_left <<= 1;
+      |     ^~~~~~~~~~~~~~
+      |     a_rotated_left
+/tmp/codeqwen-bit_ops-java-c.c:12:7: note: 'a_rotated_left' declared here
+   12 |   int a_rotated_left = A;
+      |       ^
+/tmp/codeqwen-bit_ops-java-c.c:15:10: error: use of undeclared identifier 'A_rotated_left'; did you mean 'a_rotated_left'?
+   15 |     if ((A_rotated_left & (1 << 31)) != 0) {
+      |          ^~~~~~~~~~~~~~
+      |          a_rotated_left
+/tmp/codeqwen-bit_ops-java-c.c:12:7: note: 'a_rotated_left' declared here
+   12 |   int a_rotated_left = A;
+      |       ^
+/tmp/codeqwen-bit_ops-java-c.c:16:7: error: use of undeclared identifier 'A_rotated_left'; did you mean 'a_rotated_left'?
+   16 |       A_rotated_left |= 1;
+      |       ^~~~~~~~~~~~~~
+      |       a_rotated_left
+/tmp/codeqwen-bit_ops-java-c.c:12:7: note: 'a_rotated_left' declared here
+   12 |   int a_rotated_left = A;
+      |       ^
+/tmp/codeqwen-bit_ops-java-c.c:18:7: error: use of undeclared identifier 'A_rotated_left'; did you mean 'a_rotated_left'?
+   18 |       A_rotated_left &= ~(1 << 31);
+      |       ^~~~~~~~~~~~~~
+      |       a_rotated_left
+/tmp/codeqwen-bit_ops-java-c.c:12:7: note: 'a_rotated_left' declared here
+   12 |   int a_rotated_left = A;
+      |       ^
+/tmp/codeqwen-bit_ops-java-c.c:21:27: error: use of undeclared identifier 'A_rotated_left'; did you mean 'a_rotated_left'?
+   21 |   printf("A rol b: %d\n", A_rotated_left); // rotate left
+      |                           ^~~~~~~~~~~~~~
+      |                           a_rotated_left
+/tmp/codeqwen-bit_ops-java-c.c:12:7: note: 'a_rotated_left' declared here
+   12 |   int a_rotated_left = A;
+      |       ^
+5 errors generated.

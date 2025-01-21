@@ -1,0 +1,39 @@
+error[E0425]: cannot find function `resolve` in module `path`
+ --> /tmp/codellama7b-dir_make-js-rs.rs:6:31
+  |
+6 |     let resolved_path = path::resolve(path);
+  |                               ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `mkdir` in module `fs`
+ --> /tmp/codellama7b-dir_make-js-rs.rs:8:9
+  |
+8 |     fs::mkdir(resolved_path, |er| {
+  |         ^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `dirname` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:15:44
+   |
+15 |                     let parent_dir = path::dirname(resolved_path);
+   |                                            ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `resolve` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:34:31
+   |
+34 |     let resolved_path = path::resolve(path);
+   |                               ^^^^^^^ not found in `path`
+
+error[E0425]: cannot find function `mkdir` in module `fs`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:36:9
+   |
+36 |     fs::mkdir(resolved_path, |er| {
+   |         ^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `dirname` in module `path`
+  --> /tmp/codellama7b-dir_make-js-rs.rs:43:44
+   |
+43 |                     let parent_dir = path::dirname(resolved_path);
+   |                                            ^^^^^^^ not found in `path`
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

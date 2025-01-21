@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codegemma7b-str_cmp-py-go.go:3:8: "fmt" imported and not used
+/tmp/codegemma7b-str_cmp-py-go.go:13:10: cannot use 24 (untyped int constant) as string value in argument to compare
+/tmp/codegemma7b-str_cmp-py-go.go:13:14: cannot use 123 (untyped int constant) as string value in argument to compare
+/tmp/codegemma7b-str_cmp-py-go.go:14:10: cannot use 5.0 (untyped float constant 5) as string value in argument to compare
+/tmp/codegemma7b-str_cmp-py-go.go:14:15: cannot use 5 (untyped int constant) as string value in argument to compare

@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/yicoder2b-str_cmp-java-rs.rs:2:1
+  |
+2 | let a: i32 = *b; 
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

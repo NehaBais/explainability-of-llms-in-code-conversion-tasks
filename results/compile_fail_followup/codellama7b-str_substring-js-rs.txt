@@ -1,0 +1,19 @@
+error: expected one of `!` or `::`, found `[`
+ --> /tmp/codellama7b-str_substring-js-rs.rs:4:4
+  |
+4 | str[n..n+m];  // => "cde"
+  |    ^ expected one of `!` or `::`
+
+error: missing type for `const` item
+ --> /tmp/codellama7b-str_substring-js-rs.rs:1:10
+  |
+1 | const str = "abcdefgh";
+  |          ^
+  |
+help: provide a type for the item
+  |
+1 | const str: <type> = "abcdefgh";
+  |          ++++++++
+
+error: aborting due to 2 previous errors
+

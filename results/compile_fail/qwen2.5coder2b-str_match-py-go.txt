@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_match-py-go.go:8:9: undefined: strings
+/tmp/qwen2.5coder2b-str_match-py-go.go:12:9: undefined: strings
+/tmp/qwen2.5coder2b-str_match-py-go.go:16:9: undefined: strings
+/tmp/qwen2.5coder2b-str_match-py-go.go:21:9: undefined: strings

@@ -1,0 +1,18 @@
+/tmp/stablecode-int_cmp-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_cmp-cpp-c.c:5:8: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (!scanf("%d %d", &a, &b))) 
+      |        ^
+/tmp/stablecode-int_cmp-cpp-c.c:5:8: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/stablecode-int_cmp-cpp-c.c:5:31: error: extraneous ')' after condition, expected a statement
+    5 |   if (!scanf("%d %d", &a, &b))) 
+      |                               ^
+/tmp/stablecode-int_cmp-cpp-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("Could not read the numbers\n");
+      |     ^
+/tmp/stablecode-int_cmp-cpp-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/stablecode-int_cmp-cpp-c.c:13:46: error: extraneous ')' before ';'
+   13 |       printf("%d is greater than %d\n", a, b));
+      |                                              ^
+5 errors generated.

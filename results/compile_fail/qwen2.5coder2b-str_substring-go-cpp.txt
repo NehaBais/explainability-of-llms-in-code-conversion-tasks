@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-str_substring-go-cpp.cpp:35:11: error: expected expression
+   35 |   cout << `Start "DE", length ` << m << ": %s" << endl;
+      |           ^
+1 error generated.

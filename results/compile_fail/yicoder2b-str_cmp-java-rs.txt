@@ -1,0 +1,245 @@
+error: `<` is interpreted as a start of generic arguments for `i32`, not a comparison
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:28:21
+   |
+28 |     if &a[0] as i32 < b.first_mut().unwrap().as_i32() {
+   |                     ^ -- interpreted as generic arguments
+   |                     |
+   |                     not interpreted as comparison
+   |
+help: try comparing the cast value
+   |
+28 |     if (&a[0] as i32) < b.first_mut().unwrap().as_i32() {
+   |        +            +
+
+error[E0308]: arguments to this function are incorrect
+ --> /tmp/yicoder2b-str_cmp-java-rs.rs:2:5
+  |
+2 |     compare("Hello", "Hello");
+  |     ^^^^^^^ -------  ------- expected `String`, found `&str`
+  |             |
+  |             expected `String`, found `&str`
+  |
+note: function defined here
+ --> /tmp/yicoder2b-str_cmp-java-rs.rs:9:4
+  |
+9 | fn compare(a: String, b: String) {
+  |    ^^^^^^^ ---------  ---------
+help: try using a conversion method
+  |
+2 |     compare("Hello".to_string(), "Hello");
+  |                    ++++++++++++
+help: try using a conversion method
+  |
+2 |     compare("Hello", "Hello".to_string());
+  |                             ++++++++++++
+
+error[E0599]: no method named `as_i32` found for mutable reference `&mut char` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:28:46
+   |
+28 |     if &a[0] as i32 < b.first_mut().unwrap().as_i32() {
+   |                                              ^^^^^^ method not found in `&mut char`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:29:66
+   |
+29 |         println!("'{}' is lexically before '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                    -             ^^^^ method not found in `IntoIter<char>`
+   |                                                    |
+   |                                                    method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:29:90
+   |
+29 |         println!("'{}' is lexically before '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                                            -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                            |
+   |                                                                            method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `as_i32` found for mutable reference `&mut char` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:30:53
+   |
+30 |     } else if &a[0] as i32 > b.first_mut().unwrap().as_i32() {
+   |                                                     ^^^^^^ method not found in `&mut char`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:31:65
+   |
+31 |         println!("'{}' is lexically after '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                   -             ^^^^ method not found in `IntoIter<char>`
+   |                                                   |
+   |                                                   method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:31:89
+   |
+31 |         println!("'{}' is lexically after '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                                           -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                           |
+   |                                                                           method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `as_i32` found for mutable reference `&mut char` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:32:54
+   |
+32 |     } else if &a[0] as i32 <= b.first_mut().unwrap().as_i32() {
+   |                                                      ^^^^^^ method not found in `&mut char`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:33:70
+   |
+33 |         println!("'{}' is not lexically before '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                        -             ^^^^ method not found in `IntoIter<char>`
+   |                                                        |
+   |                                                        method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:33:94
+   |
+33 |         println!("'{}' is not lexically before '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                                                -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                |
+   |                                                                                method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `as_i32` found for mutable reference `&mut char` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:34:54
+   |
+34 |     } else if &a[0] as i32 >= b.first_mut().unwrap().as_i32() {
+   |                                                      ^^^^^^ method not found in `&mut char`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:35:69
+   |
+35 |         println!("'{}' is not lexically after '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                       -             ^^^^ method not found in `IntoIter<char>`
+   |                                                       |
+   |                                                       method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:35:93
+   |
+35 |         println!("'{}' is not lexically after '{}'.", a.into_iter().join(""), b.into_iter().join(""));
+   |                                                                               -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                               |
+   |                                                                               method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:41:102
+   |
+41 |         std::cmp::Ordering::Greater => println!("'{}' is lexically greater than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                        -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                        |
+   |                                                                                        method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:41:126
+   |
+41 |         std::cmp::Ordering::Greater => println!("'{}' is lexically greater than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                                -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                                |
+   |                                                                                                                method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:42:96
+   |
+42 |         std::cmp::Ordering::Less => println!("'{}' is lexically less than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                  -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                  |
+   |                                                                                  method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:42:120
+   |
+42 |         std::cmp::Ordering::Less => println!("'{}' is lexically less than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                          -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                          |
+   |                                                                                                          method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `to_lowercase` found for struct `Vec<char>` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:45:17
+   |
+45 |     let rel = a.to_lowercase().cmp(&b.to_lowercase());
+   |                 ^^^^^^^^^^^^
+   |
+help: there is a method `to_vec` with a similar name
+   |
+45 |     let rel = a.to_vec().cmp(&b.to_lowercase());
+   |                 ~~~~~~
+
+error[E0599]: no method named `to_lowercase` found for struct `Vec<char>` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:45:39
+   |
+45 |     let rel = a.to_lowercase().cmp(&b.to_lowercase());
+   |                                       ^^^^^^^^^^^^
+   |
+help: there is a method `to_vec` with a similar name
+   |
+45 |     let rel = a.to_lowercase().cmp(&b.to_vec());
+   |                                       ~~~~~~
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:48:119
+   |
+48 |         std::cmp::Ordering::Greater => println!("'{}' is case-insensitive lexically greater than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                         -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                         |
+   |                                                                                                         method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:48:143
+   |
+48 |         std::cmp::Ordering::Greater => println!("'{}' is case-insensitive lexically greater than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                                                 -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                                                 |
+   |                                                                                                                                 method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:49:113
+   |
+49 |         std::cmp::Ordering::Less => println!("'{}' is case-insensitive lexically less than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                   -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                   |
+   |                                                                                                   method `join` is available on `Vec<char>`
+
+error[E0599]: no method named `join` found for struct `std::vec::IntoIter` in the current scope
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:49:137
+   |
+49 |         std::cmp::Ordering::Less => println!("'{}' is case-insensitive lexically less than '{}'", a.into_iter().join(""), b.into_iter().join("")),
+   |                                                                                                                           -             ^^^^ method not found in `IntoIter<char>`
+   |                                                                                                                           |
+   |                                                                                                                           method `join` is available on `Vec<char>`
+
+error[E0606]: casting `&char` as `i32` is invalid
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:28:8
+   |
+28 |     if &a[0] as i32 < b.first_mut().unwrap().as_i32() {
+   |        ^^^^^^^^^^^^
+   |
+   = help: cast through a raw pointer first
+
+error[E0606]: casting `&char` as `i32` is invalid
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:30:15
+   |
+30 |     } else if &a[0] as i32 > b.first_mut().unwrap().as_i32() {
+   |               ^^^^^^^^^^^^
+   |
+   = help: cast through a raw pointer first
+
+error[E0606]: casting `&char` as `i32` is invalid
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:32:15
+   |
+32 |     } else if &a[0] as i32 <= b.first_mut().unwrap().as_i32() {
+   |               ^^^^^^^^^^^^
+   |
+   = help: cast through a raw pointer first
+
+error[E0606]: casting `&char` as `i32` is invalid
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:34:15
+   |
+34 |     } else if &a[0] as i32 >= b.first_mut().unwrap().as_i32() {
+   |               ^^^^^^^^^^^^
+   |
+   = help: cast through a raw pointer first
+
+error: aborting due to 28 previous errors
+
+Some errors have detailed explanations: E0308, E0599, E0606.
+For more information about an error, try `rustc --explain E0308`.

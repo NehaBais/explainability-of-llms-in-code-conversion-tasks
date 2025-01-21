@@ -1,0 +1,11 @@
+/tmp/Main.java:9: error: cannot find symbol
+        BasicFileAttributes attr = Files.readAttributes(path, BasicFileAttributes.class);
+        ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+/tmp/Main.java:9: error: cannot find symbol
+        BasicFileAttributes attr = Files.readAttributes(path, BasicFileAttributes.class);
+                                                              ^
+  symbol:   class BasicFileAttributes
+  location: class Main
+2 errors

@@ -1,0 +1,93 @@
+/tmp/granitecode3b-bit_ops-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:3:3: error: use of undeclared identifier 'int16_t'
+    3 |   int16_t a = -460;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-c.c:4:3: error: use of undeclared identifier 'int16_t'
+    4 |   int16_t b = 6;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-c.c:6:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |  printf("a:   %016b
+      |  ^
+/tmp/granitecode3b-bit_ops-go-c.c:6:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-bit_ops-go-c.c:6:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 |  printf("a:   %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:6:9: error: expected expression
+/tmp/granitecode3b-bit_ops-go-c.c:7:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 | ", (uint16_t)a);
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:8:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 |  printf("b:   %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:9:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 | ", (uint16_t)b);
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:12:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 |  printf("and: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:13:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 | ", (uint16_t)(a & b));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:14:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |  printf("or:  %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:15:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ", (uint16_t)(a | b));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:16:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 |  printf("xor: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:17:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 | ", (uint16_t)(a ^ b));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:18:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 |  printf("not: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:19:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 | ", (uint16_t)(~a));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:30:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   30 |  printf("shl: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:31:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   31 | ", (uint16_t)(ua << ub));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:32:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   32 |  printf("shr: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:33:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   33 | ", (uint16_t)(ua >> ub));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:36:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   36 |  printf("las: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:37:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   37 | ", (uint16_t)(a << ub));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:38:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   38 |  printf("ras: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:39:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   39 | ", (uint16_t)(a >> ub));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:42:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   42 |  printf("rol: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:43:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   43 | ", (uint16_t)((ua << ub) | (ua >> (16 - ub))));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:44:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   44 |  printf("ror: %016b
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:45:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   45 | ", (uint16_t)((a << ub) | (a >> (16 - ub))));
+      | ^
+/tmp/granitecode3b-bit_ops-go-c.c:48:2: error: expected '}'
+   48 | }
+      |  ^
+/tmp/granitecode3b-bit_ops-go-c.c:2:12: note: to match this '{'
+    2 | int main() {
+      |            ^
+24 warnings and 6 errors generated.

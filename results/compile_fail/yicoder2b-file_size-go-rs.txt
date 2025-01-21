@@ -1,0 +1,16 @@
+error[E0432]: unresolved import `std::fs::StatResult`
+ --> /tmp/yicoder2b-file_size-go-rs.rs:1:5
+  |
+1 | use std::fs::StatResult;
+  |     ^^^^^^^^^^^^^^^^^^^ no `StatResult` in `fs`
+
+error[E0425]: cannot find function `stat` in this scope
+  --> /tmp/yicoder2b-file_size-go-rs.rs:13:11
+   |
+13 |     match stat(filename) {
+   |           ^^^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.

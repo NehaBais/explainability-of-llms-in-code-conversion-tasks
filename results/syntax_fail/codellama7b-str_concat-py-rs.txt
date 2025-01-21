@@ -1,0 +1,23 @@
+error: expected `,`, found `.`
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:16
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |                ^ expected `,`
+
+error: argument never used
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:17
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |            ---- ^^^^^^^^^^^^^^^^^^^^^^^^^^ argument never used
+  |            |
+  |            formatting specifier missing
+
+error[E0425]: cannot find function `join` in this scope
+ --> /tmp/codellama7b-str_concat-py-rs.rs:4:17
+  |
+4 |     print!(", ".join([s1, "world", "mom"]));
+  |                 ^^^^ not found in this scope
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

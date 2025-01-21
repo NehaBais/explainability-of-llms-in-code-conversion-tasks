@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `env` in module `std::process`
+ --> /tmp/yicoder2b-file_exists-js-rs.rs:5:33
+  |
+5 |     let mut fso = std::process::env(); // equivalent to new ActiveXObject in JS
+  |                                 ^^^ not found in `std::process`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

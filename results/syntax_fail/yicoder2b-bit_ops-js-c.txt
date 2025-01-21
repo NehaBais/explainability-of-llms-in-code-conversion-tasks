@@ -1,0 +1,4 @@
+/tmp/yicoder2b-bit_ops-js-c.c:26:31: error: expected expression
+   26 |   printf("a >>> b: %d\n", a >>> b); // equivalent to unsigned right shift
+      |                               ^
+1 error generated.

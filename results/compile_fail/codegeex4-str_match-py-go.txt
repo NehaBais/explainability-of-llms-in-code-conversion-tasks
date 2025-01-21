@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codegeex4-str_match-py-go.go:11:17: s1.startswith undefined (type string has no field or method startswith)
+/tmp/codegeex4-str_match-py-go.go:14:17: s1.endswith undefined (type string has no field or method endswith)
+/tmp/codegeex4-str_match-py-go.go:18:17: s4.contains undefined (type string has no field or method contains)
+/tmp/codegeex4-str_match-py-go.go:19:17: s4.contains undefined (type string has no field or method contains)
+/tmp/codegeex4-str_match-py-go.go:21:13: s4.findAllOccurrences undefined (type string has no field or method findAllOccurrences)
+/tmp/codegeex4-str_match-py-go.go:27:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-py-go.go:31:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-py-go.go:35:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-py-go.go:39:7: cannot define new methods on non-local type string

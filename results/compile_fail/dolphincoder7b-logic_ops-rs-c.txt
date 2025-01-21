@@ -1,0 +1,14 @@
+/tmp/dolphincoder7b-logic_ops-rs-c.c:1:18: error: unknown type name 'bool'
+    1 | void boolean_ops(bool a, bool b) {
+      |                  ^
+/tmp/dolphincoder7b-logic_ops-rs-c.c:1:26: error: unknown type name 'bool'
+    1 | void boolean_ops(bool a, bool b) {
+      |                          ^
+/tmp/dolphincoder7b-logic_ops-rs-c.c:2:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 |   printf("%d and %d  ->  ", a, b);
+      |   ^
+/tmp/dolphincoder7b-logic_ops-rs-c.c:2:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/dolphincoder7b-logic_ops-rs-c.c:3:3: error: call to undeclared function 'puts'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   puts((a && b) ? "true" : "false");
+      |   ^
+4 errors generated.

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegeex4-str_substring-c-go.go:24:15: assignment mismatch: 2 variables but substring returns 1 value
+/tmp/codegeex4-str_substring-c-go.go:33:15: assignment mismatch: 2 variables but substring returns 1 value
+/tmp/codegeex4-str_substring-c-go.go:42:15: assignment mismatch: 2 variables but substring returns 1 value

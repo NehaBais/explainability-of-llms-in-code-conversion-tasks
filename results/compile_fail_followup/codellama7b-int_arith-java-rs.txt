@@ -1,0 +1,15 @@
+error[E0599]: no method named `next_int` found for struct `Stdin` in the current scope
+ --> /tmp/codellama7b-int_arith-java-rs.rs:5:16
+  |
+5 |     let a = sc.next_int().unwrap();
+  |                ^^^^^^^^ method not found in `Stdin`
+
+error[E0599]: no method named `next_int` found for struct `Stdin` in the current scope
+ --> /tmp/codellama7b-int_arith-java-rs.rs:6:16
+  |
+6 |     let b = sc.next_int().unwrap();
+  |                ^^^^^^^^ method not found in `Stdin`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

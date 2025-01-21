@@ -1,0 +1,7 @@
+/tmp/granitecode3b-str_interp-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-js-c.c:2:10: fatal error: 'datetime.h' file not found
+    2 | #include "datetime.h"
+      |          ^~~~~~~~~~~~
+2 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode3b-str_cmp-java-go.go:32:20: undefined: strings.CompareFold

@@ -1,0 +1,50 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codegemma7b-bit_ops-java-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/codegemma7b-bit_ops-java-rs.rs`
+
+error[E0599]: no method named `try_into` found for type `i32` in the current scope
+  --> /tmp/codegemma7b-bit_ops-java-rs.rs:11:45
+   |
+11 |     println!("a rol b: {}", a.rotate_left(b.try_into().unwrap())); //rotate left
+   |                                             ^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+   |
+   = note: the method is available for `i32` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+   = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::convert::TryInto;
+   |
+help: there is a method `into` with a similar name
+   |
+11 |     println!("a rol b: {}", a.rotate_left(b.into().unwrap())); //rotate left
+   |                                             ~~~~
+
+error[E0599]: no method named `try_into` found for type `i32` in the current scope
+  --> /tmp/codegemma7b-bit_ops-java-rs.rs:12:46
+   |
+12 |     println!("a ror b: {}", a.rotate_right(b.try_into().unwrap())); //rotate right
+   |                                              ^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/convert/mod.rs:611:8
+   |
+   = note: the method is available for `i32` here
+   |
+   = help: items from traits can only be used if the trait is in scope
+   = note: 'std::convert::TryInto' is included in the prelude starting in Edition 2021
+help: trait `TryInto` which provides `try_into` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::convert::TryInto;
+   |
+help: there is a method `into` with a similar name
+   |
+12 |     println!("a ror b: {}", a.rotate_right(b.into().unwrap())); //rotate right
+   |                                              ~~~~
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0599, E0601.
+For more information about an error, try `rustc --explain E0599`.

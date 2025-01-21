@@ -1,0 +1,22 @@
+/tmp/stablecode-dir_make-py-c.c:15:34: error: extraneous ')' after condition, expected a statement
+   15 |   if (rc == 0 || errno != EEXIST)) {
+      |                                  ^
+/tmp/stablecode-dir_make-py-c.c:16:31: error: extraneous ')' before ';'
+   16 |         rc = mkdir(path, 0777));
+      |                               ^
+/tmp/stablecode-dir_make-py-c.c:20:2: error: unterminated conditional directive
+   20 | #ifdef __GLIBC__
+      |  ^
+/tmp/stablecode-dir_make-py-c.c:32:2: error: expected '}'
+   32 | }
+      |  ^
+/tmp/stablecode-dir_make-py-c.c:18:8: note: to match this '{'
+   18 |   else {
+      |        ^
+/tmp/stablecode-dir_make-py-c.c:32:2: error: expected '}'
+   32 | }
+      |  ^
+/tmp/stablecode-dir_make-py-c.c:5:30: note: to match this '{'
+    5 | int mkdirp(const char *path) {
+      |                              ^
+5 errors generated.

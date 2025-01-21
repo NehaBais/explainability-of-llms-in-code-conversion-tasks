@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_create-js-cpp.cpp:11:8: error: no member named 'filesystem' in namespace 'std'
+   11 |   std::filesystem::create_directory(
+      |   ~~~~~^
+1 error generated.

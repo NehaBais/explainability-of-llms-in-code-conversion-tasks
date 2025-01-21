@@ -1,0 +1,4 @@
+/tmp/FileExists.java:20: error: unreported exception IOException; must be caught or declared to be thrown
+        long size = Files.size(Paths.get(path));
+                              ^
+1 error

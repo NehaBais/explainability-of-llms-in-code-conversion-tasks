@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-file_rename-c-rs.rs:5:11
+   |
+5  | fn main() {
+   |           ^ unclosed delimiter
+...
+10 |     cmd.arg(r_path1).arg(format!("/mydocs/{}", d_path1)));
+   |                                                         ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_rename-c-rs.rs:16:1
+   |
+10 |     cmd.arg(r_path1).arg(format!("/mydocs/{}", d_path1)));
+   |                                                         - missing open `(` for this delimiter
+...
+16 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

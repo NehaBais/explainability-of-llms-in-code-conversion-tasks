@@ -27,8 +27,7 @@ public class Main {
     while (nextIndex != -1) {
       System.out.println("Next occurrence of s3 in s2 starts at position " + nextIndex);
       nextIndex =
-          s1.indexOf(
-              s2, nextIndex + 1); // find the next occurrence starting from current index + 1
+          s1.indexOf(s2, nextIndex + 1); // find the next occurrence starting from current index + 1
     }
   }
 }

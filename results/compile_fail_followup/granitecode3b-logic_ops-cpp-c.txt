@@ -1,0 +1,33 @@
+/tmp/granitecode3b-logic_ops-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:3:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |  printf("a and b is %d
+      |  ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:3:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-logic_ops-cpp-c.c:3:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    3 |  printf("a and b is %d
+      |         ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:3:9: error: expected expression
+/tmp/granitecode3b-logic_ops-cpp-c.c:4:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    4 | ", a && b);
+      | ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:5:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    5 |  printf("a or b is %d
+      |         ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:6:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 | ", a || b);
+      | ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:7:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 |  printf("not a is %d
+      |         ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:8:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 | ", !a);
+      | ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:9:2: error: expected '}'
+    9 | }
+      |  ^
+/tmp/granitecode3b-logic_ops-cpp-c.c:2:32: note: to match this '{'
+    2 | void print_logic(int a, int b) {
+      |                                ^
+6 warnings and 4 errors generated.

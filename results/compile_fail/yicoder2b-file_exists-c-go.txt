@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-c-go.go:8:38: syntax error: unexpected literal "" in parameter list; possibly missing comma or )
+/tmp/yicoder2b-file_exists-c-go.go:18:82: invalid character U+003F '?'
+/tmp/yicoder2b-file_exists-c-go.go:18:84: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/yicoder2b-file_exists-c-go.go:19:64: invalid character U+003F '?'
+/tmp/yicoder2b-file_exists-c-go.go:19:66: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/yicoder2b-file_exists-c-go.go:20:84: invalid character U+003F '?'
+/tmp/yicoder2b-file_exists-c-go.go:20:86: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )
+/tmp/yicoder2b-file_exists-c-go.go:21:66: invalid character U+003F '?'
+/tmp/yicoder2b-file_exists-c-go.go:21:68: syntax error: unexpected literal "yes" in argument list; possibly missing comma or )

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-int_arith-rs-go.go:20:176: undefined: math

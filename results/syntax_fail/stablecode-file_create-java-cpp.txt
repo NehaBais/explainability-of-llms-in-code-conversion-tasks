@@ -1,0 +1,73 @@
+/tmp/stablecode-file_create-java-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_create-java-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::path currentFilePath("output.txt");
+      |     ^
+/tmp/stablecode-file_create-java-cpp.cpp:10:10: error: use of undeclared identifier 'fs'
+   10 |     if (!fs::exists(currentFilePath)) {
+      |          ^
+/tmp/stablecode-file_create-java-cpp.cpp:10:21: error: use of undeclared identifier 'currentFilePath'
+   10 |     if (!fs::exists(currentFilePath)) {
+      |                     ^
+/tmp/stablecode-file_create-java-cpp.cpp:11:7: error: use of undeclared identifier 'fs'
+   11 |       fs::create_directories(currentFilePath.parent());
+      |       ^
+/tmp/stablecode-file_create-java-cpp.cpp:11:30: error: use of undeclared identifier 'currentFilePath'
+   11 |       fs::create_directories(currentFilePath.parent());
+      |                              ^
+/tmp/stablecode-file_create-java-cpp.cpp:12:25: error: unknown type name 'currentFilePath'
+   12 |       std::ofstream ofs(currentFilePath);
+      |                         ^
+/tmp/stablecode-file_create-java-cpp.cpp:12:24: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   12 |       std::ofstream ofs(currentFilePath);
+      |                        ^~~~~~~~~~~~~~~~~
+/tmp/stablecode-file_create-java-cpp.cpp:12:25: note: add a pair of parentheses to declare a variable
+   12 |       std::ofstream ofs(currentFilePath);
+      |                         ^
+      |                         (
+/tmp/stablecode-file_create-java-cpp.cpp:17:5: error: use of undeclared identifier 'fs'
+   17 |     fs::path rootFilePath(
+      |     ^
+/tmp/stablecode-file_create-java-cpp.cpp:19:10: error: use of undeclared identifier 'fs'
+   19 |     if (!fs::exists(rootFilePath))) {
+      |          ^
+/tmp/stablecode-file_create-java-cpp.cpp:19:21: error: use of undeclared identifier 'rootFilePath'
+   19 |     if (!fs::exists(rootFilePath))) {
+      |                     ^
+/tmp/stablecode-file_create-java-cpp.cpp:19:35: error: extraneous ')' after condition, expected a statement
+   19 |     if (!fs::exists(rootFilePath))) {
+      |                                   ^
+/tmp/stablecode-file_create-java-cpp.cpp:20:27: error: unknown type name 'rootFilePath'
+   20 |         std::ofstream ofs(rootFilePath);
+      |                           ^
+/tmp/stablecode-file_create-java-cpp.cpp:20:26: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   20 |         std::ofstream ofs(rootFilePath);
+      |                          ^~~~~~~~~~~~~~
+/tmp/stablecode-file_create-java-cpp.cpp:20:27: note: add a pair of parentheses to declare a variable
+   20 |         std::ofstream ofs(rootFilePath);
+      |                           ^
+      |                           (
+/tmp/stablecode-file_create-java-cpp.cpp:25:5: error: use of undeclared identifier 'fs'
+   25 |     fs::path currentDirPath("docs");
+      |     ^
+/tmp/stablecode-file_create-java-cpp.cpp:26:10: error: use of undeclared identifier 'fs'
+   26 |     if (!fs::exists(currentDirPath))) {
+      |          ^
+/tmp/stablecode-file_create-java-cpp.cpp:26:21: error: use of undeclared identifier 'currentDirPath'
+   26 |     if (!fs::exists(currentDirPath))) {
+      |                     ^
+/tmp/stablecode-file_create-java-cpp.cpp:26:37: error: extraneous ')' after condition, expected a statement
+   26 |     if (!fs::exists(currentDirPath))) {
+      |                                     ^
+/tmp/stablecode-file_create-java-cpp.cpp:27:13: error: use of undeclared identifier 'fs'
+   27 |             fs::create_directory(currentDirPath));
+      |             ^
+/tmp/stablecode-file_create-java-cpp.cpp:27:34: error: use of undeclared identifier 'currentDirPath'
+   27 |             fs::create_directory(currentDirPath));
+      |                                  ^
+/tmp/stablecode-file_create-java-cpp.cpp:31:5: error: use of undeclared identifier 'fs'
+   31 |     fs::path rootDirPath(
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.

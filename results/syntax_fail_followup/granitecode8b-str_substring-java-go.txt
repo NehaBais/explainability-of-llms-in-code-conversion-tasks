@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-str_substring-java-go.go:6:6: Substring redeclared in this block

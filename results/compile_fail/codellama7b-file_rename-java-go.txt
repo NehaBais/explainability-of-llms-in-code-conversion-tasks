@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codellama7b-file_rename-java-go.go:4:2: "fmt" imported and not used
+/tmp/codellama7b-file_rename-java-go.go:10:18: unknown field Name in struct literal of type os.File
+/tmp/codellama7b-file_rename-java-go.go:13:21: unknown field Name in struct literal of type os.File
+/tmp/codellama7b-file_rename-java-go.go:16:18: file.RenameTo undefined (type os.File has no field or method RenameTo)
+/tmp/codellama7b-file_rename-java-go.go:23:13: invalid operation: os.PathSeparator + "input.txt" (mismatched types untyped rune and untyped string)
+/tmp/codellama7b-file_rename-java-go.go:23:43: invalid operation: os.PathSeparator + "output.txt" (mismatched types untyped rune and untyped string)
+/tmp/codellama7b-file_rename-java-go.go:24:2: undefined: renameDirectory
+/tmp/codellama7b-file_rename-java-go.go:25:2: undefined: renameDirectory
+/tmp/codellama7b-file_rename-java-go.go:25:18: invalid operation: os.PathSeparator + "docs" (mismatched types untyped rune and untyped string)
+/tmp/codellama7b-file_rename-java-go.go:25:60: invalid operation: os.PathSeparator + "mydocs" (mismatched types untyped rune and untyped string)
+/tmp/codellama7b-file_rename-java-go.go:4:2: too many errors

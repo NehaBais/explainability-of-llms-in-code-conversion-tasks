@@ -1,0 +1,17 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+public static char[] str_wholeless1(const char *s) {
+              ^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:1: error: illegal start of type
+public static char[] str_wholeless1(const char *s) {
+                                    ^
+/tmp/None.java:1: error: class, interface, enum, or record expected
+public static char[] str_wholeless1(const char *s) {
+                                          ^
+/tmp/None.java:4: error: class, interface, enum, or record expected
+    } else {
+    ^
+/tmp/None.java:6: error: class, interface, enum, or record expected
+    }
+    ^
+5 errors

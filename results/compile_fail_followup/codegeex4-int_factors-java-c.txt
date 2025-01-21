@@ -1,0 +1,8 @@
+/tmp/codegeex4-int_factors-java-c.c:30:11: error: use of undeclared identifier 'n'
+   30 |   factors(n, &factors, &size);
+      |           ^
+/tmp/codegeex4-int_factors-java-c.c:33:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   33 |     printf("%ld ", factors[i]);
+      |     ^
+/tmp/codegeex4-int_factors-java-c.c:33:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 errors generated.

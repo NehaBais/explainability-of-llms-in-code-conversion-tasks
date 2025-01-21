@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_rename-java-go.go:33:11: syntax error: unexpected type, expected )
+/tmp/dolphincoder7b-file_rename-java-go.go:35:36: syntax error: unexpected type, expected expression
+/tmp/dolphincoder7b-file_rename-java-go.go:35:73: invalid character U+003F '?'

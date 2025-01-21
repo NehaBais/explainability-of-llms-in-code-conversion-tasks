@@ -1,0 +1,4 @@
+/tmp/Main.java:13: error: illegal start of expression
+        if (!dir.exists() && dir.isDirectory())) {
+                                               ^
+1 error

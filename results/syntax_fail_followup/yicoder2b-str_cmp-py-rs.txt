@@ -1,0 +1,15 @@
+error[E0433]: failed to resolve: could not find `reflect` in `std`
+ --> /tmp/yicoder2b-str_cmp-py-rs.rs:5:14
+  |
+5 |         std::reflect::Type::type_name(&*a.as_ref()),
+  |              ^^^^^^^ could not find `reflect` in `std`
+
+error[E0433]: failed to resolve: could not find `reflect` in `std`
+ --> /tmp/yicoder2b-str_cmp-py-rs.rs:7:14
+  |
+7 |         std::reflect::Type::type_name(&*b.as_ref())
+  |              ^^^^^^^ could not find `reflect` in `std`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

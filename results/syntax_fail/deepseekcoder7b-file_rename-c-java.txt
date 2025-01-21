@@ -1,0 +1,31 @@
+/tmp/Main.java:9: error: illegal character: '\uff5c'
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                             ^
+/tmp/Main.java:9: error: illegal character: '\u2581'
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                   ^
+/tmp/Main.java:9: error: not a statement
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                              ^
+/tmp/Main.java:9: error: illegal character: '\u2581'
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                      ^
+/tmp/Main.java:9: error: not a statement
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                    ^
+/tmp/Main.java:9: error: illegal character: '\uff5c'
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                               ^
+/tmp/Main.java:9: error: not a statement
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                       ^
+/tmp/Main.java:9: error: ';' expected
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                                                              ^
+/tmp/Main.java:9: error: not a statement
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                                                                                  ^
+/tmp/Main.java:9: error: ';' expected
+            Files.move(Paths<｜begin▁of▁sentence｜>("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+                                                                                                                   ^
+10 errors

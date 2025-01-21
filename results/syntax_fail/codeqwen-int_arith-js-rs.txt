@@ -1,0 +1,33 @@
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-js-rs.rs:27:15
+   |
+27 |     let sum = A + b;
+   |               ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-js-rs.rs:28:22
+   |
+28 |     let difference = A - b;
+   |                      ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-js-rs.rs:29:19
+   |
+29 |     let product = A * b;
+   |                   ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-js-rs.rs:30:20
+   |
+30 |     let division = A as f64 / b as f64; // Rust does not have a built-in integer division operator, so we cast to f64 first.
+   |                    ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-js-rs.rs:31:21
+   |
+31 |     let remainder = A % b;
+   |                     ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

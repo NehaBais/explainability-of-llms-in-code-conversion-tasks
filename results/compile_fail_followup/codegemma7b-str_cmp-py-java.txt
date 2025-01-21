@@ -1,0 +1,7 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+compare("24", "123");
+^
+/tmp/None.java:2: error: class, interface, enum, or record expected
+compare(String.valueOf(5.0), String.valueOf(5));
+^
+2 errors

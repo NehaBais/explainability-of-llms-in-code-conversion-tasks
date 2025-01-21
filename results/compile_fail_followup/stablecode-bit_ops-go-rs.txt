@@ -1,0 +1,8 @@
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-bit_ops-go-rs.rs:4:16
+  |
+4 | struct U16(u16));
+  |                ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

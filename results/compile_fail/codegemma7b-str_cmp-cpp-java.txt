@@ -1,0 +1,11 @@
+/tmp/StringComparison.java:29: error: cannot find symbol
+            + ((a.compareTo(b) < 0) ? "" : "not ")
+                 ^
+  symbol:   method compareTo(Object)
+  location: variable a of type Object
+/tmp/StringComparison.java:38: error: cannot find symbol
+            + ((a.compareTo(b) > 0) ? "" : "not ")
+                 ^
+  symbol:   method compareTo(Object)
+  location: variable a of type Object
+2 errors

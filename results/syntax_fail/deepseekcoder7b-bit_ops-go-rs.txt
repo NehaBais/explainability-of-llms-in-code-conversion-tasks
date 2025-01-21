@@ -1,0 +1,22 @@
+error: `<<` is interpreted as a start of generic arguments for `i32`, not a shift
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:39:40
+   |
+39 |     println!("las: {:016b}", (a as i32 << ub as usize));
+   |                                        ^^ ------------ interpreted as generic arguments
+   |                                        |
+   |                                        not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+39 |     println!("las: {:016b}", ((a as i32) << ub as usize));
+   |                               +        +
+
+error[E0576]: cannot find associated type `Target` in trait `Copy`
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:12:18
+   |
+12 |     <U as Copy>::Target: fmt::Debug,
+   |                  ^^^^^^ not found in `Copy`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0576`.

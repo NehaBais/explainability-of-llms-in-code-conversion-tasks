@@ -1,0 +1,9 @@
+/tmp/codegeex4-str_interp-java-c.c:5:17: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   char *lyric = malloc(
+      |                 ^
+/tmp/codegeex4-str_interp-java-c.c:5:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegeex4-str_interp-java-c.c:12:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   free(lyric); // Free allocated memory
+      |   ^
+/tmp/codegeex4-str_interp-java-c.c:12:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

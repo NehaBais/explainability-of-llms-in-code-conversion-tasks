@@ -1,0 +1,1 @@
+This error appears due to incorrect usage of the `try_from_str` method which is used for converting from string to number type (`f64`) in your program. The correct way to compare two strings semantically would be using `&str` as argument (string), but when you are comparing against a numeric value like `num_a` or `num_b` the error is due to wrong type mismatch.

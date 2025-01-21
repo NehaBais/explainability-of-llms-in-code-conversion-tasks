@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-str_substring-js-go.go:14:22: str.Index undefined (type string has no field or method Index)
+/tmp/codellama7b-str_substring-js-go.go:15:22: str.Index undefined (type string has no field or method Index)

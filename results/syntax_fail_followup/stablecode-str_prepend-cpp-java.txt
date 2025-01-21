@@ -1,0 +1,7 @@
+/tmp/Main.java:8: error: ';' expected
+        List<String> myStrings = Arrays.asList("prepended to", "my string"));
+                                                                           ^
+/tmp/Main.java:11: error: ';' expected
+        String prepended = String.join("", myStrings.get(0), myStrings.get(1))));
+                                                                              ^
+2 errors

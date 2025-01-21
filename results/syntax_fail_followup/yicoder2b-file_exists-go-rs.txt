@@ -1,0 +1,8 @@
+error: expected one of `!` or `::`, found `main`
+ --> /tmp/yicoder2b-file_exists-go-rs.rs:1:9
+  |
+1 | package main
+  |         ^^^^ expected one of `!` or `::`
+
+error: aborting due to 1 previous error
+

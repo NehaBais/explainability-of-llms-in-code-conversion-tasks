@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:17:15: error: variable has incomplete type 'struct stat'
+   17 |   struct stat st;
+      |               ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:17:10: note: forward declaration of 'struct stat'
+   17 |   struct stat st;
+      |          ^
+/tmp/qwen2.5coder2b-file_exists-cpp-c.c:18:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |   if (stat(path, &st) != 0)
+      |       ^
+2 errors generated.

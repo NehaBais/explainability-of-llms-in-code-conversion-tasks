@@ -1,0 +1,34 @@
+warning: variable `e` is assigned to, but never used
+ --> /tmp/granitecode8b-int_factors-go-rs.rs:7:13
+  |
+7 |     let mut e = 0;
+  |             ^
+  |
+  = note: consider using `_e` instead
+  = note: `#[warn(unused_variables)]` on by default
+
+error[E0384]: cannot assign to immutable argument `nr`
+ --> /tmp/granitecode8b-int_factors-go-rs.rs:9:9
+  |
+9 |         nr /= 2;
+  |         ^^^^^^^ cannot assign to immutable argument
+  |
+help: consider making this binding mutable
+  |
+1 | fn print_factors(mut nr: i64) {
+  |                  +++
+
+error[E0384]: cannot assign to immutable argument `nr`
+  --> /tmp/granitecode8b-int_factors-go-rs.rs:19:13
+   |
+19 |             nr /= p;
+   |             ^^^^^^^ cannot assign to immutable argument
+   |
+help: consider making this binding mutable
+   |
+1  | fn print_factors(mut nr: i64) {
+   |                  +++
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0384`.

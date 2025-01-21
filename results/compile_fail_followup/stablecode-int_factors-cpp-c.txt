@@ -1,0 +1,19 @@
+/tmp/stablecode-int_factors-cpp-c.c:15:37: error: extraneous ')' after condition, expected a statement
+   15 |           if (factors[j] == (n / i))) {
+      |                                     ^
+/tmp/stablecode-int_factors-cpp-c.c:34:35: error: extraneous ')' after condition, expected a statement
+   34 |       if (factors[i] > factors[j])) {
+      |                                   ^
+/tmp/stablecode-int_factors-cpp-c.c:48:46: error: extraneous ')' before ';'
+   48 |     GenerateFactors(n, factors, &num_factors));
+      |                                              ^
+/tmp/stablecode-int_factors-cpp-c.c:52:34: error: extraneous ')' before ';'
+   52 |         printf("%d ", factors[i]));
+      |                                  ^
+/tmp/stablecode-int_factors-cpp-c.c:61:39: error: extraneous ')' before ';'
+   61 |         PrintFactors(SampleNumbers[i]));
+      |                                       ^
+/tmp/stablecode-int_factors-cpp-c.c:64:10: error: use of undeclared identifier 'EXIT_SUCCESS'
+   64 |   return EXIT_SUCCESS;
+      |          ^
+6 errors generated.

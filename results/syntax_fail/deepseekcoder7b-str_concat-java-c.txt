@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:10: error: expected expression
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |          ^
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |           ^~
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:19: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |                  ^
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:24: error: character <U+2581> not allowed in an identifier
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |                     ^
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |                              ^~
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |           ^
+/tmp/deepseekcoder7b-str_concat-java-c.c:26:39: error: expected expression
+   26 |   return <｜begin▁of▁sentence｜>; // use <string.h> for <｜begin▁of▁sentence｜>,
+      |                                 ^
+2 warnings and 5 errors generated.

@@ -1,16 +1,15 @@
+#include <stdbool.h>
 #include <stdio.h>
-int main() {
-  int a, b;
-  printf("Enter first boolean value: ");
-  scanf("%d", &a);
-  printf("Enter second boolean value: ");
-  scanf("%d", &b);
 
-  if (a == 1 && b == 1) {
-    printf("Both a and b are true.");
-  } else if (a == 0 && b == 0) {
-    printf("Both a and b are false.");
-  } else {
-    printf("One of the two values is not true.");
-  }
+void printLogic(bool a, bool b) {
+  printf("a and b is %s\n", a && b ? "true" : "false");
+  printf("a or b is %s\n", a || b ? "true" : "false");
+  printf("not a is %s\n", !a ? "false" : "true");
+}
+
+int main() {
+  bool a = true;
+  bool b = false;
+  printLogic(a, b);
+  return 0;
 }

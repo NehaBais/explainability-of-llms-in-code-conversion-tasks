@@ -1,0 +1,7 @@
+/tmp/codegeex4-dir_make-rs-c.c:29:20: error: use of undeclared identifier 'EEXIST'
+   29 |           errno != EEXIST) {
+      |                    ^
+/tmp/codegeex4-dir_make-rs-c.c:39:16: error: use of undeclared identifier 'EEXIST'
+   39 |       errno != EEXIST) {
+      |                ^
+2 errors generated.

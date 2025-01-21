@@ -1,0 +1,4 @@
+/tmp/yicoder2b-bit_ops-java-c.c:24:31: error: expected expression
+   24 |   printf("a >>> b: %d\n", a >>> b);
+      |                               ^
+1 error generated.

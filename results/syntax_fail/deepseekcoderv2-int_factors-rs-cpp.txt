@@ -1,0 +1,38 @@
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:26:17: error: too many arguments provided to function-like macro invocation
+   26 |              1, 2, 4, 5, 10, 20, 25, 50,
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:74:9: note: macro 'assert' defined here
+   74 | #define assert(e) \
+      |         ^
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:24:3: note: parentheses are required around macro argument containing braced initializer list
+   24 |   assert(factor(100) ==
+      |   ^      
+      |          (
+   25 |          std::vector<int>{
+   26 |              1, 2, 4, 5, 10, 20, 25, 50,
+   27 |              100}); // asserts that two expressions are equal to each other
+      |                  
+      |                  )
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:25:26: error: expected '(' for function-style cast or type construction
+   25 |          std::vector<int>{
+      |          ~~~~~~~~~~~~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:75:25: note: expanded from macro 'assert'
+   75 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:28:45: error: too many arguments provided to function-like macro invocation
+   28 |   assert(factor(101) == std::vector<int>{1, 101});
+      |                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:74:9: note: macro 'assert' defined here
+   74 | #define assert(e) \
+      |         ^
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:28:3: note: parentheses are required around macro argument containing braced initializer list
+   28 |   assert(factor(101) == std::vector<int>{1, 101});
+      |   ^                                             
+      |          (                                      )
+/tmp/deepseekcoderv2-int_factors-rs-cpp.cpp:28:41: error: expected '(' for function-style cast or type construction
+   28 |   assert(factor(101) == std::vector<int>{1, 101});
+      |                         ~~~~~~~~~~~~~~~~^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:75:25: note: expanded from macro 'assert'
+   75 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+4 errors generated.

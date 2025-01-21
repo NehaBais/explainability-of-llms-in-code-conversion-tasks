@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-str_match-rs-go.go:9:56: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-rs-go.go:11:42: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-rs-go.go:35:21: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-rs-go.go:36:35: syntax error: unexpected ), expected {

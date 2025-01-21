@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codeqwen-bit_ops-py-go.go:33:73: cannot use int32(-i) (value of type int32) as int value in argument to bits.RotateLeft32
+/tmp/codeqwen-bit_ops-py-go.go:40:49: undefined: bits.RotateRight32
+/tmp/codeqwen-bit_ops-py-go.go:48:2: declared and not used: aa
+/tmp/codeqwen-bit_ops-py-go.go:51:64: undefined: mask
+/tmp/codeqwen-bit_ops-py-go.go:52:73: cannot use int32(-i) (value of type int32) as int value in argument to bits.RotateLeft32
+/tmp/codeqwen-bit_ops-py-go.go:58:64: undefined: mask
+/tmp/codeqwen-bit_ops-py-go.go:59:49: undefined: bits.RotateRight32
+/tmp/codeqwen-bit_ops-py-go.go:65:62: undefined: mask
+/tmp/codeqwen-bit_ops-py-go.go:66:44: undefined: a

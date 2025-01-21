@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `factors` in this scope
+ --> /tmp/qwen2.5coder2b-int_factors-java-rs.rs:4:18
+  |
+4 |     let result = factors(number);
+  |                  ^^^^^^^ not found in this scope
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

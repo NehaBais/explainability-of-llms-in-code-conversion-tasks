@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_cmp-js-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+8 |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-int_cmp-js-rs.rs:17:38
+   |
+8  |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+   |                                      - missing open `(` for this delimiter
+...
+17 |     io::stdin().read_line(&mut input)).expect("Failed to read line");
+   |                                      ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

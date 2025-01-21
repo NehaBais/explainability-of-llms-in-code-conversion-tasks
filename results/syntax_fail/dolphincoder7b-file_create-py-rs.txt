@@ -1,0 +1,11 @@
+error: expected `;`, found `Ok`
+  --> /tmp/dolphincoder7b-file_create-py-rs.rs:15:17
+   |
+15 |     create("/")?  // root directory
+   |                 ^ help: add `;` here
+16 |
+17 |     Ok(())
+   |     -- unexpected token
+
+error: aborting due to 1 previous error
+

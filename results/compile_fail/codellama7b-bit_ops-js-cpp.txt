@@ -1,0 +1,4 @@
+/tmp/codellama7b-bit_ops-js-cpp.cpp:11:31: error: expected expression
+   11 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                               ^
+1 error generated.

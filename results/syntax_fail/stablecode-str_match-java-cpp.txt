@@ -1,0 +1,9 @@
+/tmp/stablecode-str_match-java-cpp.cpp:17:85: error: expected ';' after expression
+   17 |     checkStartsWith = str1.compare(str1.length()-str2.length(), str2.length(), str2)) == 0;
+      |                                                                                     ^
+      |                                                                                     ;
+/tmp/stablecode-str_match-java-cpp.cpp:17:85: error: expected expression
+/tmp/stablecode-str_match-java-cpp.cpp:30:32: error: extraneous ')' before ';'
+   30 |     loc = str1.find("ab",loc+1));
+      |                                ^
+3 errors generated.

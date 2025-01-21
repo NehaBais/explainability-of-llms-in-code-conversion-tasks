@@ -1,0 +1,62 @@
+The error occurred because `std::equal` requires two parameters as binary predicate function or function object, but we've provided only one. Fix is to provide a second argument for the binary predicate.
+
+Here's the corrected C++ code:
+
+```cpp
+#include <algorithm>
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string c = "cat";
+  std::string d = "dog";
+
+  // Comparing two strings for exact equality
+  if (c == d) {
+    std::cout << c << " is byte-wise identical to " << d << std::endl;
+  }
+
+  // Comparing two strings for inequality (i.e., the inverse of exact equality)
+  if (c != d) {
+    std::cout << c << " is byte-wise different from " << d << std::endl;
+  }
+
+  // Comparing two strings to see if one is lexically ordered before than the
+  // other
+  if (c < d) {
+    std::cout << c << " is lexicographically before than " << d << std::endl;
+  }
+
+  // Comparing two strings to see if one is lexically ordered after than the
+  // other
+  if (d > c) {
+    std::cout << d << " is lexicographically after than " << c << std::endl;
+  }
+
+  // Case insensitive comparison
+  if (std::equal(c.begin(), c.end(), d.begin(),
+                 [](unsigned char a, unsigned char b) {
+                   return tolower(a) == tolower(b);
+                 })) {
+    std::cout << c << " is equal to " << d << " (case insensitive)"
+              << std::endl;
+  } else {
+    std::cout << c << " is not equal to " << d << " (case insensitive)"
+              << std::endl;
+  }
+
+  // Numeric strings comparison
+  std::string num1 = "12345";
+  std::string num2 = "1234";
+
+  if (num1 > num2) {
+    std::cout << num1 << " is greater than " << num2 << std::endl;
+  } else if (num1 < num2) {
+    std::cout << num1 << " is less than " << num2 << std::endl;
+  }
+
+  return 0;
+}
+```
+
+The error was due to the fact that `std::equal` requires a binary predicate function or function object. In C++, a lambda expression can act as such, and we provided only one argument for it which led to the compilation error. The fix is to provide both arguments for the binary predicate in our lambda function by adding a second parameter `b`.

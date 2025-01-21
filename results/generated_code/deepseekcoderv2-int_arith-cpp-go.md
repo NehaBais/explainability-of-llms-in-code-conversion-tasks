@@ -1,20 +1,26 @@
-Answer: In Go, we can use the fmt package to take input and print output. The syntax for taking in integer inputs is `fmt.Scanln(&variable_name)`. We will use this same syntax for all variables that are of type int.
-Here's how you convert a C++ program written using iostream into Go:
+ Sure, here is the equivalent Golang code for the given C++ code:
+
 ```go
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    var a, b int
-    fmt.Scanln(&a, &b)
-    fmt.Println("Sum:", a+b)
-    fmt.Println("Difference:", a-b)
-    fmt.Println("Product:", a*b)
-    quotient := float64(a) / float64(b)
-    remainder := a % b
-    fmt.Printf("Quotient: %.2f, Remainder: %d\n", quotient, remainder)
+	var a, b int
+	fmt.Scan(&a, &b)
+	fmt.Println("a+b =", a+b)
+	fmt.Println("a-b =", a-b)
+	fmt.Println("a*b =", a*b)
+	if b != 0 {
+		fmt.Println("a/b =", a/b, ", remainder", a%b)
+	} else {
+		fmt.Println("a/b = undefined (division by zero)")
+	}
 }
 ```
+
+This Golang code reads two integers from the user, performs the required arithmetic operations, and prints the results in a similar format to the C++ code provided. Note that for the quotient and remainder, it follows the behavior specified:
+- For the quotient, it uses integer division which rounds towards zero.
+- For the remainder, it uses the `%` operator which returns the result with the sign of the first operand if they are different.

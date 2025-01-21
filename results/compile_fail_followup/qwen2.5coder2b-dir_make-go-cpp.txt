@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-dir_make-go-cpp.cpp:6:33: error: no member named 'filesystem' in namespace 'std'
+    6 |                      const std::filesystem::perms &permissions) {
+      |                            ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-go-cpp.cpp:8:10: error: no member named 'filesystem' in namespace 'std'
+    8 |     std::filesystem::create_directories(path, permissions);
+      |     ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-go-cpp.cpp:9:23: error: no member named 'filesystem' in namespace 'std'
+    9 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+/tmp/qwen2.5coder2b-dir_make-go-cpp.cpp:17:30: error: no member named 'filesystem' in namespace 'std'
+   17 |   createDirectory(path, std::filesystem::perms(0770));
+      |                         ~~~~~^
+4 errors generated.

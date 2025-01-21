@@ -1,9 +1,11 @@
-import os
+const fs = require("fs");
+const path = require("path");
 
-def create(directory):
-    with open(os.path.join(directory, "output.txt"), "w"):
-        pass
-    os.mkdir(os.path.join(directory, "docs"))
+function create(directory) {
+  const filePath = path.join(directory, "output.txt");
+  fs.writeFileSync(filePath, "", "utf8"); // Create an empty file
+  fs.mkdirSync(path.join(directory, "docs")); // Create an empty directory
+}
 
-create(".") # current directory
-create("/") # root directory
+create("."); // current directory
+create("/"); // root directory

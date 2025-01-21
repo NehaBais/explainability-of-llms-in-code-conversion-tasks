@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_rename-cpp-c.c:16:61: error: use of undeclared identifier 'S_ISDIR'
+   16 |   if (mkdir(newdir, 0755) == 0 && stat(newdir, &st) == 0 && S_ISDIR) {
+      |                                                             ^
+1 error generated.

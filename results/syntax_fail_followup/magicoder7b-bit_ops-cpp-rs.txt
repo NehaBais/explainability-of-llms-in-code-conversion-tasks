@@ -1,0 +1,15 @@
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+  --> /tmp/magicoder7b-bit_ops-cpp-rs.rs:17:30
+   |
+17 |     println!("{}", (a as u32 << shift_amount) & 0xffffffff);
+   |                              ^^ ------------- interpreted as generic arguments
+   |                              |
+   |                              not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+17 |     println!("{}", ((a as u32) << shift_amount) & 0xffffffff);
+   |                     +        +
+
+error: aborting due to 1 previous error
+

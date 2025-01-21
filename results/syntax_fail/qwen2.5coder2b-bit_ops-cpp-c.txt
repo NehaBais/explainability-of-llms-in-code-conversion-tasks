@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-bit_ops-cpp-c.c:22:28: error: use of unknown builtin '__builtin_rotate_left' [-Wimplicit-function-declaration]
+   22 |   printf("a rol b: %d \n", __builtin_rotate_left(ua, b));
+      |                            ^
+/tmp/qwen2.5coder2b-bit_ops-cpp-c.c:23:28: error: use of unknown builtin '__builtin_rotate_right' [-Wimplicit-function-declaration]
+   23 |   printf("a ror b: %d \n", __builtin_rotate_right(ua, b));
+      |                            ^
+2 errors generated.

@@ -1,0 +1,16 @@
+/tmp/deepseekcoderv2-file_size-go-cpp.cpp:8:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |     auto path = std::filesystem::path(filename);
+      |     ^
+/tmp/deepseekcoderv2-file_size-go-cpp.cpp:8:22: error: no member named 'filesystem' in namespace 'std'
+    8 |     auto path = std::filesystem::path(filename);
+      |                 ~~~~~^
+/tmp/deepseekcoderv2-file_size-go-cpp.cpp:9:14: error: no member named 'filesystem' in namespace 'std'
+    9 |     if (std::filesystem::exists(path)) {
+      |         ~~~~~^
+/tmp/deepseekcoderv2-file_size-go-cpp.cpp:10:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   10 |       auto size = std::filesystem::file_size(path);
+      |       ^
+/tmp/deepseekcoderv2-file_size-go-cpp.cpp:10:24: error: no member named 'filesystem' in namespace 'std'
+   10 |       auto size = std::filesystem::file_size(path);
+      |                   ~~~~~^
+2 warnings and 3 errors generated.

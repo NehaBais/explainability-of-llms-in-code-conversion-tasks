@@ -1,0 +1,4 @@
+/tmp/None.java:2: error: class, interface, enum, or record expected
+javac --enable-preview None.java
+^
+1 error

@@ -1,0 +1,16 @@
+/tmp/BitwiseOperations.java:29: error: ')' expected
+        System.out.println("rol: " + (((ua << ub) | (int)((unsigned int)a >> (16 - ub))) & 0xffff));
+                                                                   ^
+/tmp/BitwiseOperations.java:29: error: '.class' expected
+        System.out.println("rol: " + (((ua << ub) | (int)((unsigned int)a >> (16 - ub))) & 0xffff));
+                                                                       ^
+/tmp/BitwiseOperations.java:29: error: ')' expected
+        System.out.println("rol: " + (((ua << ub) | (int)((unsigned int)a >> (16 - ub))) & 0xffff));
+                                                                        ^
+/tmp/BitwiseOperations.java:29: error: not a statement
+        System.out.println("rol: " + (((ua << ub) | (int)((unsigned int)a >> (16 - ub))) & 0xffff));
+                                                                          ^
+/tmp/BitwiseOperations.java:29: error: ';' expected
+        System.out.println("rol: " + (((ua << ub) | (int)((unsigned int)a >> (16 - ub))) & 0xffff));
+                                                                                      ^
+5 errors

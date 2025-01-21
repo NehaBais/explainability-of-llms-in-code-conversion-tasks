@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-file_create-java-rs.rs:5:1
+   |
+5  | {
+   | ^ unclosed delimiter
+...
+11 | + "output.txt")));
+   |                 ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-file_create-java-rs.rs:14:11
+   |
+11 | + "output.txt")));
+   |                 - missing open `(` for this delimiter
+...
+14 | + "docs")));
+   |           ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

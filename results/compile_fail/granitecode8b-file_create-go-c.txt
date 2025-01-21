@@ -1,0 +1,58 @@
+/tmp/granitecode8b-file_create-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_create-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_create-go-c.c:4:3: error: use of undeclared identifier 'FILE'
+    4 |   FILE *file;
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:4:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+    4 |   FILE *file;
+      |         ^~~~
+      |         while
+/tmp/granitecode8b-file_create-go-c.c:4:9: error: expected expression
+/tmp/granitecode8b-file_create-go-c.c:5:3: error: use of undeclared identifier 'DIR'
+    5 |   DIR *dir;
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:5:8: error: use of undeclared identifier 'dir'
+    5 |   DIR *dir;
+      |        ^
+/tmp/granitecode8b-file_create-go-c.c:8:3: error: use of undeclared identifier 'file'
+    8 |   file = fopen("output.txt", "w");
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:8:10: error: call to undeclared function 'fopen'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   file = fopen("output.txt", "w");
+      |          ^
+/tmp/granitecode8b-file_create-go-c.c:8:10: warning: declaration of built-in function 'fopen' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode8b-file_create-go-c.c:9:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+    9 |   if (file == NULL) {
+      |       ^~~~
+      |       while
+/tmp/granitecode8b-file_create-go-c.c:9:7: error: expected expression
+/tmp/granitecode8b-file_create-go-c.c:10:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |     perror("Error creating file");
+      |     ^
+/tmp/granitecode8b-file_create-go-c.c:13:3: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   fclose(file);
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:13:10: error: use of undeclared identifier 'file'
+   13 |   fclose(file);
+      |          ^
+/tmp/granitecode8b-file_create-go-c.c:14:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   printf("File output.txt created!n");
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:14:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-file_create-go-c.c:17:3: error: use of undeclared identifier 'file'
+   17 |   file = fopen("/output.txt", "w");
+      |   ^
+/tmp/granitecode8b-file_create-go-c.c:18:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+   18 |   if (file == NULL) {
+      |       ^~~~
+      |       while
+/tmp/granitecode8b-file_create-go-c.c:18:7: error: expected expression
+/tmp/granitecode8b-file_create-go-c.c:19:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |     perror("Error creating file");
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

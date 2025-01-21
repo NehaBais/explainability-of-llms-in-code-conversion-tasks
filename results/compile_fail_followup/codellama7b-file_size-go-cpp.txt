@@ -1,0 +1,10 @@
+/tmp/codellama7b-file_size-go-cpp.cpp:1:7: error: use of undeclared identifier 'std'
+    1 | const std::filesystem::status stat = std::filesystem::status(f);
+      |       ^
+/tmp/codellama7b-file_size-go-cpp.cpp:1:38: error: use of undeclared identifier 'std'
+    1 | const std::filesystem::status stat = std::filesystem::status(f);
+      |                                      ^
+/tmp/codellama7b-file_size-go-cpp.cpp:1:62: error: use of undeclared identifier 'f'
+    1 | const std::filesystem::status stat = std::filesystem::status(f);
+      |                                                              ^
+3 errors generated.

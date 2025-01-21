@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-bit_ops-rs-go.go:21:77: cannot use int32(-int(b)) (value of type int32) as int value in argument to bits.RotateLeft32

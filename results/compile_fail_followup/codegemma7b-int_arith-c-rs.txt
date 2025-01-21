@@ -1,0 +1,15 @@
+error[E0599]: no method named `trim` found for type `i32` in the current scope
+  --> /tmp/codegemma7b-int_arith-c-rs.rs:10:11
+   |
+10 |     a = a.trim().parse().expect("Failed to parse integer");
+   |           ^^^^ method not found in `i32`
+
+error[E0599]: no method named `trim` found for type `i32` in the current scope
+  --> /tmp/codegemma7b-int_arith-c-rs.rs:15:11
+   |
+15 |     b = b.trim().parse().expect("Failed to parse integer");
+   |           ^^^^ method not found in `i32`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

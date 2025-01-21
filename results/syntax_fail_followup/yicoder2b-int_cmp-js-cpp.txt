@@ -1,0 +1,10 @@
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:1:1: error: expected unqualified-id
+    1 | / tmp / yicoder2b - int_cmp - js -
+      | ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:4:35: error: character <U+2019> not allowed in an identifier
+    4 |   | ^This means that in C++ we can’t use the JavaScript `function` keyword
+      |                                   ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:10:78: warning: missing terminating ' character [-Winvalid-pp-token]
+   10 |           types(a number and string) which is not allowed in C++ as well.Here's how the corrected version might look like:
+      |                                                                              ^
+1 warning and 2 errors generated.

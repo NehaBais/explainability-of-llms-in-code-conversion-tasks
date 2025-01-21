@@ -1,0 +1,7 @@
+/tmp/granitecode8b-str_prepend-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_prepend-java-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string string = "def";
+      |   ^
+2 errors generated.

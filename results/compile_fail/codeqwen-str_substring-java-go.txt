@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codeqwen-str_substring-java-go.go:5:2: "unicode/utf8" imported and not used
+/tmp/codeqwen-str_substring-java-go.go:30:11: undefined: strings
+/tmp/codeqwen-str_substring-java-go.go:34:9: undefined: runes
+/tmp/codeqwen-str_substring-java-go.go:35:11: undefined: runes
+/tmp/codeqwen-str_substring-java-go.go:37:16: undefined: runes
+/tmp/codeqwen-str_substring-java-go.go:41:11: undefined: strings
+/tmp/codeqwen-str_substring-java-go.go:45:9: undefined: runes
+/tmp/codeqwen-str_substring-java-go.go:46:11: undefined: runes
+/tmp/codeqwen-str_substring-java-go.go:48:16: undefined: runes

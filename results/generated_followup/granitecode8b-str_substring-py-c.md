@@ -1,0 +1,1 @@
+The error was caused by missing header files for string functions and I/O functions. The fix was to add `#include` statements for the required headers, `string.h` and `stdio.h`.

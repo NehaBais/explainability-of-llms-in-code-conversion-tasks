@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode8b-str_substring-rs-go.go:14:43: invalid operation: 3-index slice of string

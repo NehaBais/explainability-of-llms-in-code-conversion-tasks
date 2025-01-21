@@ -1,0 +1,25 @@
+/tmp/Main.java:21: error: unclosed character literal
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                     ^
+/tmp/Main.java:21: error: unclosed character literal
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                        ^
+/tmp/Main.java:21: error: not a statement
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                       ^
+/tmp/Main.java:21: error: unclosed character literal
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                                        ^
+/tmp/Main.java:21: error: unclosed character literal
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                                           ^
+/tmp/Main.java:21: error: not a statement
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                                          ^
+/tmp/Main.java:21: error: not a statement
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                                                ^
+/tmp/Main.java:21: error: ';' expected
+        System.out.println(str.substring(str.indexOf('bc'), str.indexOf('bc') + m)); // => "bcd"
+                                                                                 ^
+8 errors

@@ -1,0 +1,8 @@
+/tmp/FactorCalculator.java:21: error: bad operand types for binary operator '-'
+        (a, b) -> (int) (a - b)); // sorts the factors into numerical order for viewing purposes
+                           ^
+  first type:  Object
+  second type: Object
+Note: /tmp/FactorCalculator.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error

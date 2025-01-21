@@ -1,0 +1,13 @@
+/tmp/codellama7b-int_factors-cpp-c.c:8:22: error: member reference base type 'int *' is not a structure or union
+    8 |       factors[factors.length] = i;
+      |               ~~~~~~~^~~~~~~
+/tmp/codellama7b-int_factors-cpp-c.c:10:24: error: member reference base type 'int *' is not a structure or union
+   10 |         factors[factors.length + 1] = n / i;
+      |                 ~~~~~~~^~~~~~~
+/tmp/codellama7b-int_factors-cpp-c.c:12:16: error: member reference base type 'int *' is not a structure or union
+   12 |       ++factors.length;
+      |         ~~~~~~~^~~~~~~
+/tmp/codellama7b-int_factors-cpp-c.c:23:35: error: member reference base type 'int[2]' is not a structure or union
+   23 |     for (size_t j = 0; j < factors.length; ++j) {
+      |                            ~~~~~~~^~~~~~~
+4 errors generated.

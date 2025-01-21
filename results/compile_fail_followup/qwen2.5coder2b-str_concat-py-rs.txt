@@ -1,0 +1,38 @@
+error[E0382]: borrow of moved value: `s1`
+ --> /tmp/qwen2.5coder2b-str_concat-py-rs.rs:5:14
+  |
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     println!("{}", s1 + " world");
+  |                    ------------- `s1` moved due to usage in operator
+4 |
+5 |     let s2 = s1.clone() + " world";
+  |              ^^ value borrowed here after move
+  |
+note: calling this operator moves the left-hand side
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/arith.rs:91:12
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 |     println!("{}", s1.clone() + " world");
+  |                      ++++++++
+
+error[E0382]: borrow of moved value: `s1`
+  --> /tmp/qwen2.5coder2b-str_concat-py-rs.rs:11:19
+   |
+2  |     let s1 = String::from("hello");
+   |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+...
+8  |     let s3 = vec![s1, String::from("world"), String::from("mom")].join(", ");
+   |                   -- value moved here
+...
+11 |     let s4 = vec![s1.clone(), String::from("world"), String::from("mom")].join(", ");
+   |                   ^^ value borrowed here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+8  |     let s3 = vec![s1.clone(), String::from("world"), String::from("mom")].join(", ");
+   |                     ++++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

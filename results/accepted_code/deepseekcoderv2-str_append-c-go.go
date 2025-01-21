@@ -1,14 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Create a string variable equal to any text value
 	str := "Good Morning"
+	cstr := " to all"
+	cstr2 := " !!!"
 
-	// Append the string with another string literal in the most idiomatic way
-	cstr := append(str, " to all")
+	// Append the strings together in a idiomatic way
+	str += cstr + cstr2
 
-	// Show the contents of the variable after the append operation
-	fmt.Println(cstr)
+	fmt.Println(str)
 }

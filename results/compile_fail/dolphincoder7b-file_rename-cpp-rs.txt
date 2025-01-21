@@ -1,0 +1,37 @@
+error[E0308]: mismatched types
+ --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:7:13
+  |
+6 |         match entry.unwrap().file_name() {
+  |               -------------------------- this expression has type `OsString`
+7 |             "input.txt" => fs::rename("input.txt", "output.txt").expect("Failed to rename file"),
+  |             ^^^^^^^^^^^ expected `OsString`, found `&str`
+
+error[E0308]: mismatched types
+ --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:8:13
+  |
+6 |         match entry.unwrap().file_name() {
+  |               -------------------------- this expression has type `OsString`
+7 |             "input.txt" => fs::rename("input.txt", "output.txt").expect("Failed to rename file"),
+8 |             "docs" => fs::rename("docs", "mydocs").expect("Failed to rename directory"),
+  |             ^^^^^^ expected `OsString`, found `&str`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:17:13
+   |
+16 |         match entry.unwrap().file_name() {
+   |               -------------------------- this expression has type `OsString`
+17 |             "input.txt" => fs::rename("/input.txt", "/output.txt").expect("Failed to rename file"),
+   |             ^^^^^^^^^^^ expected `OsString`, found `&str`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-file_rename-cpp-rs.rs:18:13
+   |
+16 |         match entry.unwrap().file_name() {
+   |               -------------------------- this expression has type `OsString`
+17 |             "input.txt" => fs::rename("/input.txt", "/output.txt").expect("Failed to rename file"),
+18 |             "docs" => fs::rename("/docs", "/mydocs").expect("Failed to rename directory"),
+   |             ^^^^^^ expected `OsString`, found `&str`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

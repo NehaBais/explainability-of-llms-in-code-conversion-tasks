@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-file_create-js-cpp.cpp:8:17: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    8 |   std::ofstream output("output.txt");
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/dolphincoder7b-file_create-js-cpp.cpp:16:8: error: no member named 'filesystem' in namespace 'std'
+   16 |   std::filesystem::create_directory("docs", err);
+      |   ~~~~~^
+/tmp/dolphincoder7b-file_create-js-cpp.cpp:31:8: error: no member named 'filesystem' in namespace 'std'
+   31 |   std::filesystem::create_directory("/docs", err);
+      |   ~~~~~^
+3 errors generated.

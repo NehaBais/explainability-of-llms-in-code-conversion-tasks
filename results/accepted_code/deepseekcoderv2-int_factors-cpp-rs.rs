@@ -1,38 +1,25 @@
-#![rustfmt::skip]
-#![allow(dead_code)]
-use itertools::Itertools;
-use num_bigint::BigUint;
-use std::fs::File;
-use std::io::{BufRead, BufReader};
-use std::iter::Iterator;
-use std::ops::Div;
-use std::path::PathBuf;
-use std::time::SystemTime;
+use std::collections::BTreeSet;
 
-pub fn main() {
-    let SampleNumbers = [3135, 45, 60, 81];
-
-    for i in 0..SampleNumbers.len() {
-        println!("Factors of {:?}:", SampleNumbers[i]);
-        for factor in GenerateFactors(SampleNumbers[i]) {
-            println!("{:?}", factor);
-        }
-    }
-}
-
-fn GenerateFactors(n: int) -> Vec<int> {
-    let mut factors = vec![1, n];
-    let mut i = 2;
-    while i * i <= n {
+fn generate_factors(n: i32) -> BTreeSet<i32> {
+    let mut factors = BTreeSet::new();
+    factors.insert(1);
+    factors.insert(n);
+    for i in 2..=((n as f64).sqrt() as i32) {
         if n % i == 0 {
-            factors.push(i);
+            factors.insert(i);
             if i * i != n {
-                factors.push(n / i);
+                factors.insert(n / i);
             }
         }
-        i += 1;
     }
-
-    factors.sort();
     factors
+}
+
+fn main() {
+    let sample_numbers = [3135, 45, 60, 81];
+
+    for &number in &sample_numbers {
+        let factors = generate_factors(number);
+        println!("Factors of {:4} are: {:?}", number, factors);
+    }
 }

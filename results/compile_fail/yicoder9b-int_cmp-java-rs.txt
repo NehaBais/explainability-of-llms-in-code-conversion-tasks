@@ -1,0 +1,45 @@
+error[E0599]: cannot write into `&'static str`
+ --> /tmp/yicoder9b-int_cmp-java-rs.rs:8:14
+  |
+8 |     writeln!("Enter the first number:").unwrap();
+  |     ---------^^^^^^^^^^^^^^^^^^^^^^^^^- method not found in `&str`
+  |
+note: must implement `io::Write`, `fmt::Write`, or have a `write_fmt` method
+ --> /tmp/yicoder9b-int_cmp-java-rs.rs:8:14
+  |
+8 |     writeln!("Enter the first number:").unwrap();
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+help: a writer is needed before this format string
+ --> /tmp/yicoder9b-int_cmp-java-rs.rs:8:14
+  |
+8 |     writeln!("Enter the first number:").unwrap();
+  |              ^
+
+error[E0599]: cannot write into `&'static str`
+  --> /tmp/yicoder9b-int_cmp-java-rs.rs:14:14
+   |
+14 |     writeln!("Enter the second number:").unwrap();
+   |     ---------^^^^^^^^^^^^^^^^^^^^^^^^^^- method not found in `&str`
+   |
+note: must implement `io::Write`, `fmt::Write`, or have a `write_fmt` method
+  --> /tmp/yicoder9b-int_cmp-java-rs.rs:14:14
+   |
+14 |     writeln!("Enter the second number:").unwrap();
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: a writer is needed before this format string
+  --> /tmp/yicoder9b-int_cmp-java-rs.rs:14:14
+   |
+14 |     writeln!("Enter the second number:").unwrap();
+   |              ^
+
+warning: unused import: `Write`
+ --> /tmp/yicoder9b-int_cmp-java-rs.rs:1:21
+  |
+1 | use std::io::{self, Write};
+  |                     ^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

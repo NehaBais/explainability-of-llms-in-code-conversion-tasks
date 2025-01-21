@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_match-java-go.go:19:46: too many arguments in call to strings.Index
+	have (string, string, number)
+	want (string, string)
+/tmp/dolphincoder7b-str_match-java-go.go:20:46: too many arguments in call to strings.Index
+	have (string, string, number)
+	want (string, string)

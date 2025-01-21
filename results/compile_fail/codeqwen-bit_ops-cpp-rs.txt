@@ -1,0 +1,213 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:6:29
+  |
+6 |     println!("A and B: {}", A & B);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+6 |     println!("A and B: {}", a & B);
+  |                             ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `B` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:6:33
+  |
+6 |     println!("A and B: {}", A & B);
+  |                                 ^
+  |
+help: a local variable with a similar name exists
+  |
+6 |     println!("A and B: {}", A & b);
+  |                                 ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const B: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:7:29
+  |
+7 |     println!("A or B:  {}", A | B);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+7 |     println!("A or B:  {}", a | B);
+  |                             ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `B` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:7:33
+  |
+7 |     println!("A or B:  {}", A | B);
+  |                                 ^
+  |
+help: a local variable with a similar name exists
+  |
+7 |     println!("A or B:  {}", A | b);
+  |                                 ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const B: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:8:29
+  |
+8 |     println!("A xor B: {}", A ^ B);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+8 |     println!("A xor B: {}", a ^ B);
+  |                             ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `B` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:8:33
+  |
+8 |     println!("A xor B: {}", A ^ B);
+  |                                 ^
+  |
+help: a local variable with a similar name exists
+  |
+8 |     println!("A xor B: {}", A ^ b);
+  |                                 ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const B: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-cpp-rs.rs:9:29
+  |
+9 |     println!("Not A:  {}", !A);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+9 |     println!("Not A:  {}", !a);
+  |                             ~
+help: you might be missing a const parameter
+  |
+5 | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:13:29
+   |
+13 |     println!("A shl B: {}", A << b);
+   |                             ^
+   |
+help: a local variable with a similar name exists
+   |
+13 |     println!("A shl B: {}", a << b);
+   |                             ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:14:29
+   |
+14 |     println!("A shr B: {}", A >> b);
+   |                             ^
+   |
+help: a local variable with a similar name exists
+   |
+14 |     println!("A shr B: {}", a >> b);
+   |                             ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:15:14
+   |
+15 |     let ua = A as u32;
+   |              ^
+   |
+help: a local variable with a similar name exists
+   |
+15 |     let ua = a as u32;
+   |              ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:19:30
+   |
+19 |     println!("A rol B: {}", (A << b) | (A >> 32 - b));
+   |                              ^
+   |
+help: a local variable with a similar name exists
+   |
+19 |     println!("A rol B: {}", (a << b) | (A >> 32 - b));
+   |                              ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:19:41
+   |
+19 |     println!("A rol B: {}", (A << b) | (A >> 32 - b));
+   |                                         ^
+   |
+help: a local variable with a similar name exists
+   |
+19 |     println!("A rol B: {}", (A << b) | (a >> 32 - b));
+   |                                         ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:20:30
+   |
+20 |     println!("A ror B: {}", (A >> b) | (A << 32 - b));
+   |                              ^
+   |
+help: a local variable with a similar name exists
+   |
+20 |     println!("A ror B: {}", (a >> b) | (A << 32 - b));
+   |                              ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-cpp-rs.rs:20:41
+   |
+20 |     println!("A ror B: {}", (A >> b) | (A << 32 - b));
+   |                                         ^
+   |
+help: a local variable with a similar name exists
+   |
+20 |     println!("A ror B: {}", (A >> b) | (a << 32 - b));
+   |                                         ~
+help: you might be missing a const parameter
+   |
+5  | fn bitwise<const A: /* Type */>(a: i32, b: i32) {
+   |           +++++++++++++++++++++
+
+error: aborting due to 14 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

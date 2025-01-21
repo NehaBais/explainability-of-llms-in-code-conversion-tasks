@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-dir_make-c-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-dir_make-c-cpp.cpp:9:5: error: use of undeclared identifier 'fs'
+    9 |     fs::create_directories(path);
+      |     ^
+/tmp/qwen2.5coder7b-dir_make-c-cpp.cpp:10:18: error: use of undeclared identifier 'fs'
+   10 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+3 errors generated.

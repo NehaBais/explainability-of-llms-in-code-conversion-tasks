@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-str_cmp-c-go.go:73:13: undefined: strings.CompareFold

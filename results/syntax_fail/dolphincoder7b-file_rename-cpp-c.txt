@@ -1,0 +1,5 @@
+/tmp/dolphincoder7b-file_rename-cpp-c.c:7:29: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |     fprintf(stderr, "%s\n", strerror(errno));
+      |                             ^
+/tmp/dolphincoder7b-file_rename-cpp-c.c:7:29: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+1 error generated.

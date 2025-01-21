@@ -1,0 +1,16 @@
+/tmp/stablecode-file_exists-rs-c.c:8:42: error: extraneous ')' before ';'
+    8 |     int len = sizeof(files)/sizeof(char*));
+      |                                          ^
+/tmp/stablecode-file_exists-rs-c.c:12:41: error: extraneous ')' after condition, expected a statement
+   12 |         if (file_stat.st_mode & S_IFDIR)) {
+      |                                         ^
+/tmp/stablecode-file_exists-rs-c.c:13:56: error: extraneous ')' before ';'
+   13 |                 printf("%s is a directory\n", files[i]));
+      |                                                        ^
+/tmp/stablecode-file_exists-rs-c.c:16:51: error: extraneous ')' before ';'
+   16 |                 printf("%s is a file\n", files[i]));
+      |                                                   ^
+/tmp/stablecode-file_exists-rs-c.c:19:52: error: extraneous ')' before ';'
+   19 |             printf("%s does not exist\n", files[i]));
+      |                                                    ^
+5 errors generated.

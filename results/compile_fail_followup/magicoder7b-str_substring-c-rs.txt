@@ -1,0 +1,72 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:31:25
+   |
+31 | fn str_fromstr(s: &str, in: &str, m: usize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:32:60
+   |
+32 |     let in_index = s.as_bytes().iter().position(|&x| x == *in.as_bytes().first()?)?;
+   |                                                 ----       ^^ expected expression
+   |                                                 |
+   |                                                 while parsing the body of this closure
+   |
+help: you might have meant to open the body of the closure
+   |
+32 |     let in_index = s.as_bytes().iter().position(|&x| { x == *in.as_bytes().first()?})?;
+   |                                                      +                             +
+
+error[E0433]: failed to resolve: use of undeclared crate or module `cmp`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:18:15
+   |
+18 |     let end = cmp::min((start as isize + adjusted_m) as usize, s.len());
+   |               ^^^ use of undeclared crate or module `cmp`
+   |
+help: consider importing this module
+   |
+1  + use std::cmp;
+   |
+
+warning: unused import: `std::slice`
+ --> /tmp/magicoder7b-str_substring-c-rs.rs:1:5
+  |
+1 | use std::slice;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::ptr`
+ --> /tmp/magicoder7b-str_substring-c-rs.rs:2:5
+  |
+2 | use std::ptr;
+  |     ^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:19:19
+   |
+19 |     Some(unsafe { from_utf8(&s[start..end]).unwrap() }) // safe because we trust the input data to be valid UTF-8.
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^- help: try using a conversion method: `.to_string()`
+   |                   |
+   |                   expected `String`, found `&str`
+
+error[E0133]: call to unsafe function `substring` is unsafe and requires unsafe function or block
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:23:5
+   |
+23 |     substring(s.as_bytes(), 0, s.len() as isize - 1)
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `substring` is unsafe and requires unsafe function or block
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:28:5
+   |
+28 |     substring(&s.as_bytes()[ch_index..], 0, m as isize)
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error: aborting due to 6 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0133, E0308, E0433.
+For more information about an error, try `rustc --explain E0133`.

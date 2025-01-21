@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-str_concat-c-go.go:8:33: syntax error: unexpected ., expected expression
+/tmp/yicoder2b-str_concat-c-go.go:9:43: syntax error: unexpected ., expected expression
+/tmp/yicoder2b-str_concat-c-go.go:14:14: syntax error: unexpected :=, expected =

@@ -1,0 +1,11 @@
+/tmp/dolphincoder7b-dir_make-cpp-c.c:14:28: error: call to undeclared function 'dirname'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |       const char *parent = dirname(dirPath);
+      |                            ^
+/tmp/dolphincoder7b-dir_make-cpp-c.c:14:28: note: did you mean 'devname'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/dolphincoder7b-dir_make-cpp-c.c:14:19: error: incompatible integer to pointer conversion initializing 'const char *' with an expression of type 'int' [-Wint-conversion]
+   14 |       const char *parent = dirname(dirPath);
+      |                   ^        ~~~~~~~~~~~~~~~~
+2 errors generated.

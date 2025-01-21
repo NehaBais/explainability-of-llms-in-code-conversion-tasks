@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-int_cmp-js-cpp.cpp:1:1: error: unknown type name 'GET'
+    1 | GET A, B AS INTEGER IF A<B THEN PRINT "A is less than B" ELSE IF A =
+      | ^
+/tmp/dolphincoder7b-int_cmp-js-cpp.cpp:1:9: error: expected ';' after top level declarator
+    1 | GET A, B AS INTEGER IF A<B THEN PRINT "A is less than B" ELSE IF A =
+      |         ^
+      |         ;
+2 errors generated.

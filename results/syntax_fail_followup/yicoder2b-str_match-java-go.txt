@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_match-java-go.go:14:7: invalid operation: cannot indirect pos (variable of type string)

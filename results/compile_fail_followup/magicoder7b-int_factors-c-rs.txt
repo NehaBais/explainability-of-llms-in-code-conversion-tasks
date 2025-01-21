@@ -1,0 +1,19 @@
+error[E0515]: cannot return reference to function parameter `factors`
+  --> /tmp/magicoder7b-int_factors-c-rs.rs:35:5
+   |
+35 |     &factors
+   |     ^^^^^^^^ returns a reference to data owned by the current function
+
+warning: variable does not need to be mutable
+  --> /tmp/magicoder7b-int_factors-c-rs.rs:39:9
+   |
+39 |     let mut nums2factor = vec![2059, 223092870, 3135, 45];
+   |         ----^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0515`.

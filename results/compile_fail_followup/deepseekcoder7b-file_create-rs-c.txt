@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-file_create-rs-c.c:16:36: error: expected expression
+   16 |     perror("Error changing to /"), return 1;
+      |                                    ^
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:10: error: expected expression
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |          ^
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |           ^~
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:19: error: character <U+2581> not allowed in an identifier
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |                  ^
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:24: error: character <U+2581> not allowed in an identifier
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |                     ^
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |                              ^~
+/tmp/deepseekcoder7b-file_create-rs-c.c:19:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   19 |   return <｜begin▁of▁sentence｜>(0);
+      |           ^
+2 warnings and 5 errors generated.

@@ -1,0 +1,4 @@
+/tmp/magicoder7b-file_rename-rs-c.c:14:3: error: call to undeclared function 'chdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   chdir("/");
+      |   ^
+1 error generated.

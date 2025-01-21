@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-int_cmp-java-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::cin >> nbr1 >> nbr2; // Read input
+      |   ^
+/tmp/dolphincoder7b-int_cmp-java-cpp.cpp:6:5: error: use of undeclared identifier 'std'
+    6 |     std::cout << nbr1 << " is less than " << nbr2 << "\n";
+      |     ^
+/tmp/dolphincoder7b-int_cmp-java-cpp.cpp:9:5: error: use of undeclared identifier 'std'
+    9 |     std::cout << nbr1 << " is greater than " << nbr2 << "\n";
+      |     ^
+/tmp/dolphincoder7b-int_cmp-java-cpp.cpp:12:5: error: use of undeclared identifier 'std'
+   12 |     std::cout << nbr1 << " is equal to " << nbr2 << "\n";
+      |     ^
+4 errors generated.

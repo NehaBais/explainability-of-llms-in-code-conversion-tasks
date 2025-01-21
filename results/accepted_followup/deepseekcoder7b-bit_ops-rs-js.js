@@ -1,0 +1,10 @@
+let a = 105;
+let b = 91;
+console.log("a      = " + a.toString(2).padStart(8, "0"));
+console.log("b      = " + b.toString(2).padStart(8, "0"));
+console.log("a | b  = " + (a | b).toString(2).padStart(8, "0"));
+console.log("a & b  = " + (a & b).toString(2).padStart(8, "0"));
+console.log("a ^ b  = " + (a ^ b).toString(2).padStart(8, "0"));
+console.log("~a     = " + (~a).toString(2).padStart(8, "0").slice(24)); // Bitwise NOT gives a negative value so we slice the first 3 bytes to get last 5 bits only
+console.log("a << 3 = " + (a << 3).toString(2).padStart(8, "0"));
+console.log("a >> 3 = " + (a >> 3).toString(2).padStart(8, "0"));

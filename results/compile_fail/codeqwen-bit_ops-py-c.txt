@@ -1,0 +1,24 @@
+/tmp/codeqwen-bit_ops-py-c.c:39:52: error: use of undeclared identifier 'mask'
+   39 |     printf("        = 0b%0*x\n", width, (A << i) & mask);
+      |                                                    ^
+/tmp/codeqwen-bit_ops-py-c.c:46:52: error: use of undeclared identifier 'mask'
+   46 |     printf("        = 0b%0*x\n", width, (A >> i) & mask);
+      |                                                    ^
+/tmp/codeqwen-bit_ops-py-c.c:52:52: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   52 |     printf("        0b%0*x\n", width, ((A << width - i) >> width - 1));
+      |                                           ~~ ~~~~~~^~~
+/tmp/codeqwen-bit_ops-py-c.c:52:52: note: place parentheses around the '-' expression to silence this warning
+   52 |     printf("        0b%0*x\n", width, ((A << width - i) >> width - 1));
+      |                                                    ^  
+      |                                              (        )
+/tmp/codeqwen-bit_ops-py-c.c:52:66: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   52 |     printf("        0b%0*x\n", width, ((A << width - i) >> width - 1));
+      |                                                         ~~ ~~~~~~^~~
+/tmp/codeqwen-bit_ops-py-c.c:52:66: note: place parentheses around the '-' expression to silence this warning
+   52 |     printf("        0b%0*x\n", width, ((A << width - i) >> width - 1));
+      |                                                                  ^  
+      |                                                            (        )
+/tmp/codeqwen-bit_ops-py-c.c:57:41: error: use of undeclared identifier 'Aa'
+   57 |     printf("        0b%0*x\n", width, ((Aa << width - i) >> width - 1));
+      |                                         ^
+2 warnings and 3 errors generated.

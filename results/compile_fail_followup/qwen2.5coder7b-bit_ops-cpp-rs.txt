@@ -1,0 +1,141 @@
+warning: unused import: `std::iter`
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:2:5
+  |
+2 | use std::iter;
+  |     ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:28:2
+   |
+28 | }
+   |  ^ consider adding a `main` function to `/tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:5:33
+  |
+5 |     println!("a and b: {}", a & b);
+  |                                 ^ expected `isize`, found `usize`
+
+error[E0277]: no implementation for `isize & usize`
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:5:31
+  |
+5 |     println!("a and b: {}", a & b);
+  |                               ^ no implementation for `isize & usize`
+  |
+  = help: the trait `BitAnd<usize>` is not implemented for `isize`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a isize` implements `BitAnd<isize>`
+            `&isize` implements `BitAnd<&isize>`
+            `isize` implements `BitAnd<&isize>`
+            `isize` implements `BitAnd`
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:6:33
+  |
+6 |     println!("a or b:  {}", a | b);
+  |                                 ^ expected `isize`, found `usize`
+
+error[E0277]: no implementation for `isize | usize`
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:6:31
+  |
+6 |     println!("a or b:  {}", a | b);
+  |                               ^ no implementation for `isize | usize`
+  |
+  = help: the trait `BitOr<usize>` is not implemented for `isize`
+  = help: the following other types implement trait `BitOr<Rhs>`:
+            `&'a isize` implements `BitOr<isize>`
+            `&isize` implements `BitOr<&isize>`
+            `isize` implements `BitOr<&isize>`
+            `isize` implements `BitOr`
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:7:33
+  |
+7 |     println!("a xor b: {}", a ^ b);
+  |                                 ^ expected `isize`, found `usize`
+
+error[E0277]: no implementation for `isize ^ usize`
+ --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:7:31
+  |
+7 |     println!("a xor b: {}", a ^ b);
+  |                               ^ no implementation for `isize ^ usize`
+  |
+  = help: the trait `BitXor<usize>` is not implemented for `isize`
+  = help: the following other types implement trait `BitXor<Rhs>`:
+            `&'a isize` implements `BitXor<isize>`
+            `&isize` implements `BitXor<&isize>`
+            `isize` implements `BitXor<&isize>`
+            `isize` implements `BitXor`
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:22:19
+   |
+22 |     x.rotate_left(cmp::min(n, bits))
+   |                   ^^^^^^^^ -  ---- expected `u32`, found `usize`
+   |                            |
+   |                            expected `u32`, found `usize`
+   |
+help: the return type of this call is `usize` due to the type of the argument passed
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:22:19
+   |
+22 |     x.rotate_left(cmp::min(n, bits))
+   |                   ^^^^^^^^^-^^^^^^^
+   |                            |
+   |                            this argument influences the return type of `cmp`
+help: the return type of this call is `usize` due to the type of the argument passed
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:22:19
+   |
+22 |     x.rotate_left(cmp::min(n, bits))
+   |                   ^^^^^^^^^^^^----^
+   |                               |
+   |                               this argument influences the return type of `cmp`
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1264:8
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+22 |     x.rotate_left(cmp::min(n.try_into().unwrap(), bits))
+   |                             ++++++++++++++++++++
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+22 |     x.rotate_left(cmp::min(n, bits.try_into().unwrap()))
+   |                                   ++++++++++++++++++++
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:27:20
+   |
+27 |     x.rotate_right(cmp::min(n, bits))
+   |                    ^^^^^^^^ -  ---- expected `u32`, found `usize`
+   |                             |
+   |                             expected `u32`, found `usize`
+   |
+help: the return type of this call is `usize` due to the type of the argument passed
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:27:20
+   |
+27 |     x.rotate_right(cmp::min(n, bits))
+   |                    ^^^^^^^^^-^^^^^^^
+   |                             |
+   |                             this argument influences the return type of `cmp`
+help: the return type of this call is `usize` due to the type of the argument passed
+  --> /tmp/qwen2.5coder7b-bit_ops-cpp-rs.rs:27:20
+   |
+27 |     x.rotate_right(cmp::min(n, bits))
+   |                    ^^^^^^^^^^^^----^
+   |                                |
+   |                                this argument influences the return type of `cmp`
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1264:8
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+27 |     x.rotate_right(cmp::min(n.try_into().unwrap(), bits))
+   |                              ++++++++++++++++++++
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+27 |     x.rotate_right(cmp::min(n, bits.try_into().unwrap()))
+   |                                    ++++++++++++++++++++
+
+error: aborting due to 9 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

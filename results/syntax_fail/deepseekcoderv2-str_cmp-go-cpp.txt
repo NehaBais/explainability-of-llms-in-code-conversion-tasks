@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-str_cmp-go-cpp.cpp:47:49: error: expected expression
+   47 |   if (std::equal(c.begin(), c.end(), d.begin(), [](char a, char b) {
+      |                                                 ^
+/tmp/deepseekcoderv2-str_cmp-go-cpp.cpp:64:49: error: expected expression
+   64 |   if (std::equal(c.begin(), c.end(), d.begin(), [](char a, char b) {
+      |                                                 ^
+2 errors generated.

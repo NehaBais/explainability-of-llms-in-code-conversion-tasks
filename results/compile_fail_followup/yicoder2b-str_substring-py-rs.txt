@@ -1,0 +1,44 @@
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_substring-py-rs.rs:13:37
+   |
+13 |     let index = s.chars().position(|&c| c == char_).unwrap();
+   |                                     ^^
+   |                                     |
+   |                                     expected `char`, found `&_`
+   |                                     expected due to this
+   |
+   = note:   expected type `char`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+13 -     let index = s.chars().position(|&c| c == char_).unwrap();
+13 +     let index = s.chars().position(|c| c == char_).unwrap();
+   |
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_substring-py-rs.rs:16:37
+   |
+16 |     let index = s.chars().position(|&c| c == *chars.as_bytes()[0]).unwrap();
+   |                                     ^^
+   |                                     |
+   |                                     expected `char`, found `&_`
+   |                                     expected due to this
+   |
+   = note:   expected type `char`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+16 -     let index = s.chars().position(|&c| c == *chars.as_bytes()[0]).unwrap();
+16 +     let index = s.chars().position(|c| c == *chars.as_bytes()[0]).unwrap();
+   |
+
+error[E0614]: type `u8` cannot be dereferenced
+  --> /tmp/yicoder2b-str_substring-py-rs.rs:16:46
+   |
+16 |     let index = s.chars().position(|&c| c == *chars.as_bytes()[0]).unwrap();
+   |                                              ^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0614.
+For more information about an error, try `rustc --explain E0308`.

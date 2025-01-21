@@ -1,15 +1,21 @@
-Python code here - 
+ Here's how you can convert the given Java code to Python:
+
 ```python
 import os
-print(os.getcwd())
-file_path = r'C:\Users\shobh\OneDrive\Desktop\python\Assignment20\docs\input.txt'
-isFile=False
-if (os.path.exists(r"C:\Users\shobh\OneDrive\Desktop\python\Assignment20\docs")):
-    print('yes, the directory exists')
-else: 
-    print("The path does not exist")  
-if os.path.isfile(file_path):
-    isFile=True
-print(isFile)
+from pathlib import Path
+
+def check_file_and_directory(path):
+    file_path = Path(path, "docs/input.txt")
+    directory_path = Path(path, "/docs")
+    
+    exists_in_current = file_path.exists() and directory_path.exists()
+    print(f"File {file_path} and directory {directory_path} exist: {exists_in_current}")
+
+# Check for the current working directory
+check_file_and_directory(".")
+
+# Check for the filesystem root (assuming '/' is the root)
+check_file_and_directory("/")
 ```
 
+This Python script defines a function `check_file_and_directory` that takes a path as an argument, constructs the file and directory paths relative to that path, and checks if both exist. It then calls this function twice: once for the current working directory (`.` or `cwd`) and once for the filesystem root (`/`).

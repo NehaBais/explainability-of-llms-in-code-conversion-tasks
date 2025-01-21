@@ -1,0 +1,9 @@
+error[E0412]: cannot find type `ptrdiff_t` in this scope
+ --> /tmp/yicoder2b-str_substring-c-rs.rs:1:36
+  |
+1 | fn substring(s: &str, n: usize, m: ptrdiff_t) -> Option<String> {
+  |                                    ^^^^^^^^^ not found in this scope
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0412`.

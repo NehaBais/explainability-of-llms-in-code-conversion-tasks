@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/magicoder7b-bit_ops-js-go.go:3:8: "fmt" imported and not used

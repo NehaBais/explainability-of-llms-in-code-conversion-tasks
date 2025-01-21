@@ -1,0 +1,32 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_substring-go-rs.rs:2:1
+   |
+2  | {
+   | ^ unclosed delimiter
+...
+16 | = s.chars().nth(n as usize)) 
+   |                            ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `]`
+  --> /tmp/stablecode-str_substring-go-rs.rs:17:5
+   |
+17 |     {
+   |     ^ unclosed delimiter
+18 |         let substring 
+19 | = &s[index..index + m]];
+   |                       ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-str_substring-go-rs.rs:21:5
+   |
+16 | = s.chars().nth(n as usize)) 
+   |                            - missing open `(` for this delimiter
+...
+19 | = &s[index..index + m]];
+   |                       - missing open `[` for this delimiter
+20 |         println!("Start {} ,length {},  : {:?}", n, m, substring);
+21 |     }
+   |     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

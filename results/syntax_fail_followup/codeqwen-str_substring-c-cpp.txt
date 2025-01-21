@@ -1,0 +1,4 @@
+/tmp/codeqwen-str_substring-c-cpp.cpp:1:1: error: expected unqualified-id
+    1 | if (*s == L' ') // Assuming the character to skip is a space in UTF-16 context
+      | ^
+1 error generated.

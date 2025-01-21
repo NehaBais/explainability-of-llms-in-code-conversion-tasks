@@ -1,6 +1,12 @@
-#Enter your code here.Read input from STDIN.Print output to STDOUT
-def logic(a, b)
-    : print('a and b:', a and b) print('a or b:', a or b) print('not a:', not a)
+#include <stdio.h>
 
-          logic(*map(lambda x
-                     : bool(int(x)), input().split()))
+void logic(int a, int b) {
+  printf("a and b: %d\n", a && b);
+  printf("a or b: %d\n", a || b);
+  printf("not a: %d\n", !a);
+}
+
+int main() {
+  logic(1, 1); // Example usage with true values
+  return 0;
+}

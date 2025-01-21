@@ -1,0 +1,19 @@
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:22:27: error: expected ')'
+   22 |          (std::vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |                           ^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:22:10: note: to match this '('
+   22 |          (std::vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |          ^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:22:65: error: expected expression
+   22 |          (std::vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |                                                                 ^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:23:42: error: expected ')'
+   23 |   assert(factor(101) == (std::vector<int>{1, 101}));
+      |                                          ^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:23:25: note: to match this '('
+   23 |   assert(factor(101) == (std::vector<int>{1, 101}));
+      |                         ^
+/tmp/dolphincoder7b-int_factors-rs-cpp.cpp:23:51: error: expected expression
+   23 |   assert(factor(101) == (std::vector<int>{1, 101}));
+      |                                                   ^
+4 errors generated.

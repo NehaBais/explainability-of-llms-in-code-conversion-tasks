@@ -1,0 +1,36 @@
+error[E0576]: cannot find associated type `Target` in trait `Copy`
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:12:18
+   |
+12 |     <U as Copy>::Target: fmt::Debug,
+   |                  ^^^^^^ not found in `Copy`
+
+error[E0425]: cannot find value `printlnz` in this scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:14:5
+   |
+14 |     printlnz;
+   |     ^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `printlnz` in this scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:20:5
+   |
+20 |     printlnz;
+   |     ^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `printlnz` in this scope
+  --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:24:5
+   |
+24 |     printlnz;
+   |     ^^^^^^^^ not found in this scope
+
+error[E0600]: cannot apply unary operator `-` to type `u16`
+ --> /tmp/deepseekcoder7b-bit_ops-go-rs.rs:5:17
+  |
+5 |     let mut a = -460u16;
+  |                 ^^^^^^^ cannot apply unary operator `-`
+  |
+  = note: unsigned values cannot be negated
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0425, E0576, E0600.
+For more information about an error, try `rustc --explain E0425`.

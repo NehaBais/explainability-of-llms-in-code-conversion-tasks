@@ -1,0 +1,70 @@
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path current_dir(".");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (std::filesystem::exists(current_dir)) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:8:31: error: use of undeclared identifier 'current_dir'
+    8 |   if (std::filesystem::exists(current_dir)) {
+      |                               ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:9:14: error: no member named 'filesystem' in namespace 'std'
+    9 |     if (std::filesystem::is_directory(current_dir)) {
+      |         ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:9:39: error: use of undeclared identifier 'current_dir'
+    9 |     if (std::filesystem::is_directory(current_dir)) {
+      |                                       ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:19:12: error: no member named 'filesystem' in namespace 'std'
+   19 |   if (std::filesystem::exists(std::filesystem::path("/"))) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:19:36: error: no member named 'filesystem' in namespace 'std'
+   19 |   if (std::filesystem::exists(std::filesystem::path("/"))) {
+      |                               ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:20:14: error: no member named 'filesystem' in namespace 'std'
+   20 |     if (std::filesystem::is_directory(std::filesystem::path("/"))) {
+      |         ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:20:44: error: no member named 'filesystem' in namespace 'std'
+   20 |     if (std::filesystem::is_directory(std::filesystem::path("/"))) {
+      |                                       ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:30:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   30 |   for (const auto &file : {"input.txt", "docs"}) {
+      |              ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:30:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   30 |   for (const auto &file : {"input.txt", "docs"}) {
+      |                         ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:30:27: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   30 |   for (const auto &file : {"input.txt", "docs"}) {
+      |                           ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:31:14: error: no member named 'filesystem' in namespace 'std'
+   31 |     if (std::filesystem::exists(std::filesystem::path(file))) {
+      |         ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:31:38: error: no member named 'filesystem' in namespace 'std'
+   31 |     if (std::filesystem::exists(std::filesystem::path(file))) {
+      |                                 ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:32:16: error: no member named 'filesystem' in namespace 'std'
+   32 |       if (std::filesystem::is_directory(std::filesystem::path(file))) {
+      |           ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:32:46: error: no member named 'filesystem' in namespace 'std'
+   32 |       if (std::filesystem::is_directory(std::filesystem::path(file))) {
+      |                                         ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:43:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   43 |   for (const auto &directory : {"/input.txt", "/docs"}) {
+      |              ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:43:30: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   43 |   for (const auto &directory : {"/input.txt", "/docs"}) {
+      |                              ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:43:32: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+   43 |   for (const auto &directory : {"/input.txt", "/docs"}) {
+      |                                ^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:44:14: error: no member named 'filesystem' in namespace 'std'
+   44 |     if (std::filesystem::exists(std::filesystem::path(directory))) {
+      |         ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:44:38: error: no member named 'filesystem' in namespace 'std'
+   44 |     if (std::filesystem::exists(std::filesystem::path(directory))) {
+      |                                 ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:45:16: error: no member named 'filesystem' in namespace 'std'
+   45 |       if (std::filesystem::is_directory(std::filesystem::path(directory))) {
+      |           ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-rs-cpp.cpp:45:46: error: no member named 'filesystem' in namespace 'std'
+   45 |       if (std::filesystem::is_directory(std::filesystem::path(directory))) {
+      |                                         ~~~~~^
+4 warnings and 19 errors generated.

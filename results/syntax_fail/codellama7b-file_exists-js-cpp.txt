@@ -1,0 +1,19 @@
+/tmp/codellama7b-file_exists-js-cpp.cpp:7:3: error: use of undeclared identifier 'filesystem'
+    7 |   filesystem::path input_txt("input.txt");
+      |   ^
+/tmp/codellama7b-file_exists-js-cpp.cpp:8:7: error: use of undeclared identifier 'filesystem'
+    8 |   if (filesystem::exists(input_txt)) {
+      |       ^
+/tmp/codellama7b-file_exists-js-cpp.cpp:8:26: error: use of undeclared identifier 'input_txt'
+    8 |   if (filesystem::exists(input_txt)) {
+      |                          ^
+/tmp/codellama7b-file_exists-js-cpp.cpp:14:3: error: use of undeclared identifier 'filesystem'
+   14 |   filesystem::path c_docs("c:/docs");
+      |   ^
+/tmp/codellama7b-file_exists-js-cpp.cpp:15:7: error: use of undeclared identifier 'filesystem'
+   15 |   if (filesystem::exists(c_docs)) {
+      |       ^
+/tmp/codellama7b-file_exists-js-cpp.cpp:15:26: error: use of undeclared identifier 'c_docs'
+   15 |   if (filesystem::exists(c_docs)) {
+      |                          ^
+6 errors generated.

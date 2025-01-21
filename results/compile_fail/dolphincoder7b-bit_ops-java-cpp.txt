@@ -1,0 +1,11 @@
+/tmp/dolphincoder7b-bit_ops-java-cpp.cpp:14:43: error: use of undeclared identifier '__builtin_rotateleft'; did you mean '__builtin_rotateleft8'?
+   14 |   std::cout << "a rotated left by b: " << __builtin_rotateleft(a, b)
+      |                                           ^~~~~~~~~~~~~~~~~~~~
+      |                                           __builtin_rotateleft8
+/tmp/dolphincoder7b-bit_ops-java-cpp.cpp:14:43: note: '__builtin_rotateleft8' declared here
+/tmp/dolphincoder7b-bit_ops-java-cpp.cpp:16:44: error: use of undeclared identifier '__builtin_rotateright'; did you mean '__builtin_rotateright8'?
+   16 |   std::cout << "a rotated right by b: " << __builtin_rotateright(a, b)
+      |                                            ^~~~~~~~~~~~~~~~~~~~~
+      |                                            __builtin_rotateright8
+/tmp/dolphincoder7b-bit_ops-java-cpp.cpp:16:44: note: '__builtin_rotateright8' declared here
+2 errors generated.

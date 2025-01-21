@@ -1,0 +1,55 @@
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:1:1: error: unknown type name 'function'
+    1 | function compare(a, b) {
+      | ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:1:18: error: unknown type name 'a'
+    1 | function compare(a, b) {
+      |                  ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:1:21: error: unknown type name 'b'
+    1 | function compare(a, b) {
+      |                     ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:2:7: error: use of undeclared identifier 'a'
+    2 |   if (a == b)
+      |       ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:2:12: error: use of undeclared identifier 'b'
+    2 |   if (a == b)
+      |            ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:3:5: error: use of undeclared identifier 'console'
+    3 |     console.log(a + " equals " + b);
+      |     ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:3:17: error: use of undeclared identifier 'a'
+    3 |     console.log(a + " equals " + b);
+      |                 ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:3:34: error: use of undeclared identifier 'b'
+    3 |     console.log(a + " equals " + b);
+      |                                  ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:4:11: error: use of undeclared identifier 'b'
+    4 |   if (a < b)
+      |           ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:4:7: error: use of undeclared identifier 'a'
+    4 |   if (a < b)
+      |       ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:5:5: error: use of undeclared identifier 'console'
+    5 |     console.log(a + " is less than " + b);
+      |     ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:5:17: error: use of undeclared identifier 'a'
+    5 |     console.log(a + " is less than " + b);
+      |                 ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:5:40: error: use of undeclared identifier 'b'
+    5 |     console.log(a + " is less than " + b);
+      |                                        ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:6:7: error: use of undeclared identifier 'a'
+    6 |   if (a > b)
+      |       ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:6:11: error: use of undeclared identifier 'b'
+    6 |   if (a > b)
+      |           ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:7:5: error: use of undeclared identifier 'console'
+    7 |     console.log(a + " is greater than " + b);
+      |     ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:7:17: error: use of undeclared identifier 'a'
+    7 |     console.log(a + " is greater than " + b);
+      |                 ^
+/tmp/yicoder2b-int_cmp-js-cpp.cpp:7:43: error: use of undeclared identifier 'b'
+    7 |     console.log(a + " is greater than " + b);
+      |                                           ^
+18 errors generated.

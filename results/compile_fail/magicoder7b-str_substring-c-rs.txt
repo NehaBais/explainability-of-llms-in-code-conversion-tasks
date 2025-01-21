@@ -1,0 +1,80 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:43:25
+   |
+43 | fn str_fromstr(s: &str, in: &str, m: usize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:44:60
+   |
+44 |     let in_index = s.as_bytes().iter().position(|&x| x == *in.as_bytes().first()?)?;
+   |                                                 ----       ^^ expected expression
+   |                                                 |
+   |                                                 while parsing the body of this closure
+   |
+help: you might have meant to open the body of the closure
+   |
+44 |     let in_index = s.as_bytes().iter().position(|&x| { x == *in.as_bytes().first()?})?;
+   |                                                      +                             +
+
+warning: unused import: `std::slice`
+ --> /tmp/magicoder7b-str_substring-c-rs.rs:1:5
+  |
+1 | use std::slice;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::ptr`
+ --> /tmp/magicoder7b-str_substring-c-rs.rs:3:5
+  |
+3 | use std::ptr;
+  |     ^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:18:44
+   |
+18 |         adjusted_m += (s.len() as isize) - n + 1;
+   |                                            ^ expected `isize`, found `usize`
+
+error[E0277]: cannot subtract `usize` from `isize`
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:18:42
+   |
+18 |         adjusted_m += (s.len() as isize) - n + 1;
+   |                                          ^ no implementation for `isize - usize`
+   |
+   = help: the trait `Sub<usize>` is not implemented for `isize`
+   = help: the following other types implement trait `Sub<Rhs>`:
+             `&'a isize` implements `Sub<isize>`
+             `&isize` implements `Sub<&isize>`
+             `isize` implements `Sub<&isize>`
+             `isize` implements `Sub`
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:28:19
+   |
+28 |     Some(unsafe { from_utf8(&s[start..end]).unwrap() }) // unsafe because we trust the input data to be valid UTF-8.
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^- help: try using a conversion method: `.to_string()`
+   |                   |
+   |                   expected `String`, found `&str`
+
+error[E0133]: call to unsafe function `substring` is unsafe and requires unsafe function or block
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:33:5
+   |
+33 |     substring(s.as_bytes(), 0, s.len() as isize - 1)
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error[E0133]: call to unsafe function `substring` is unsafe and requires unsafe function or block
+  --> /tmp/magicoder7b-str_substring-c-rs.rs:39:5
+   |
+39 |     substring(&s.as_bytes()[ch_index..], 0, m as isize)
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ call to unsafe function
+   |
+   = note: consult the function's documentation for information on how to avoid undefined behavior
+
+error: aborting due to 7 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0133, E0277, E0308.
+For more information about an error, try `rustc --explain E0133`.

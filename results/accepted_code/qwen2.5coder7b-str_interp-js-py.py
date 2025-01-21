@@ -1,0 +1,3 @@
+original = "Mary had a X lamb"
+little = "little"
+replaced = original.replace("X", little)  # does not change the original string

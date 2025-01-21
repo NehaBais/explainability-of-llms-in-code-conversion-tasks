@@ -1,0 +1,19 @@
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:3:3: error: unknown type name 'uint16_t'
+    3 |   uint16_t a = -460;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:4:3: error: unknown type name 'uint32_t'
+    4 |   uint32_t b = 6;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:17:5: error: use of undeclared identifier 'printf'
+   17 |     printf("Right operand is negative, but all shifts require an unsigned "
+      |     ^
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:22:3: error: unknown type name 'uint16_t'
+   22 |   uint16_t ua = a;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-cpp.cpp:23:3: error: unknown type name 'uint32_t'
+   23 |   uint32_t ub = b;
+      |   ^
+6 errors generated.

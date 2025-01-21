@@ -1,0 +1,43 @@
+/tmp/Main.java:11: error: illegal start of expression
+        if (args.length != 1)) {
+                             ^
+/tmp/Main.java:16: error: ';' expected
+        Path path = Paths.get(args[0]));
+                                      ^
+/tmp/Main.java:20: error: illegal start of expression
+        for (Path dir : Files.listTree(path))) {
+                                             ^
+/tmp/Main.java:21: error: ';' expected
+            parents.add(dir));
+                            ^
+/tmp/Main.java:25: error: ';' expected
+        Collections.reverse(parents)); // Reverse the list to ensure that we're creating the parent directories from most specific to most general
+                                    ^
+/tmp/Main.java:27: error: illegal start of expression
+            if (!Files.exists(dir))) {
+                                   ^
+/tmp/Main.java:29: error: ';' expected
+                    Files.createDirectories(dir));
+                                                ^
+/tmp/Main.java:31: error: ';' expected
+                    System.out.println("Couldn't create directory: " + dir.toString()));
+                                                                                      ^
+/tmp/Main.java:38: error: illegal start of expression
+        if (Files.exists(path))) {
+                               ^
+/tmp/Main.java:39: error: ';' expected
+            System.out.println("Directory already exists: " + path.toString()));
+                                                                              ^
+/tmp/Main.java:42: error: ';' expected
+                Files.createDirectories(path));
+                                             ^
+/tmp/Main.java:43: error: ';' expected
+                System.out.println("Successfully created directory: " + path.toString()));
+                                                                                        ^
+/tmp/Main.java:45: error: ';' expected
+                System.out.println("Couldn't create directory: " + path.toString()));
+                                                                                   ^
+/tmp/Main.java:40: error: 'else' without 'if'
+        } else {
+          ^
+14 errors

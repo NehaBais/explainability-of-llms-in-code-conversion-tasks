@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-dir_make-cpp-go.go:17:21: undefined: filepath.MkdirAll

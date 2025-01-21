@@ -1,0 +1,16 @@
+error: 2 positional arguments in format string, but no arguments were given
+  --> /tmp/qwen2.5coder2b-str_substring-go-rs.rs:20:36
+   |
+20 |     println!(r#"Start "DE", length {}: #{}", m, &s[sx..sx+m])"#);
+   |                                    ^^   ^^
+
+warning: unused variable: `sx`
+  --> /tmp/qwen2.5coder2b-str_substring-go-rs.rs:19:9
+   |
+19 |     let sx = s.find("DE").unwrap();
+   |         ^^ help: if this is intentional, prefix it with an underscore: `_sx`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+

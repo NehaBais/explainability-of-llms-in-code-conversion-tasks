@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-file_rename-py-go.go:25:21: undefined: os.Sep
+/tmp/codellama7b-file_rename-py-go.go:32:21: undefined: os.Sep

@@ -1,0 +1,51 @@
+error: argument never used
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:30
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |              --------------  ^^^^^^^^^^^^^^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error[E0425]: cannot find value `len` in this scope
+  --> /tmp/codellama7b-str_substring-go-rs.rs:16:36
+   |
+16 |     println!("All but last", &s[0..len - 1]);
+   |                                    ^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+16 -     println!("All but last", &s[0..len - 1]);
+16 +     println!("All but last", &s[0.len - 1]);
+   |
+
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-str_substring-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no function or associated item named `index_of` found for type `str` in the current scope
+  --> /tmp/codellama7b-str_substring-go-rs.rs:19:19
+   |
+19 |     let dx = str::index_of(s, 'D');
+   |                   ^^^^^^^^ function or associated item not found in `str`
+   |
+help: there is a method `index` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/index.rs:71:5
+
+error[E0277]: `Option<usize>` doesn't implement `std::fmt::Display`
+  --> /tmp/codellama7b-str_substring-go-rs.rs:23:41
+   |
+23 |     println!("Start \"DE\", length {}", sx);
+   |                                         ^^ `Option<usize>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<usize>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0425, E0599.
+For more information about an error, try `rustc --explain E0277`.

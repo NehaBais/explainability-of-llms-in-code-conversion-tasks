@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codegeex4-file_exists-js-go.go:6:2: "path/filepath" imported and not used

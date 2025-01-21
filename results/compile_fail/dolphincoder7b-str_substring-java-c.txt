@@ -1,0 +1,20 @@
+/tmp/dolphincoder7b-str_substring-java-c.c:21:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   char *substr = malloc(substr_len + 1);
+      |                  ^
+/tmp/dolphincoder7b-str_substring-java-c.c:21:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/dolphincoder7b-str_substring-java-c.c:35:26: error: too few arguments to function call, expected 3, have 2
+   35 |          Substring(str, 3)); // "lo World"
+      |          ~~~~~~~~~       ^
+/tmp/dolphincoder7b-str_substring-java-c.c:6:7: note: 'Substring' declared here
+    6 | char *Substring(const char *str, int n, int m) {
+      |       ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/dolphincoder7b-str_substring-java-c.c:37:31: error: member reference base type 'char[12]' is not a structure or union
+   37 |          Substring(str, 0, str.length() - 2)); // "Hello Worl"
+      |                            ~~~^~~~~~~
+/tmp/dolphincoder7b-str_substring-java-c.c:41:25: error: incompatible pointer to integer conversion passing 'char[3]' to parameter of type 'int' [-Wint-conversion]
+   41 |          Substring(str, "He", 3)); // "Hel"
+      |                         ^~~~
+/tmp/dolphincoder7b-str_substring-java-c.c:6:38: note: passing argument to parameter 'n' here
+    6 | char *Substring(const char *str, int n, int m) {
+      |                                      ^
+4 errors generated.

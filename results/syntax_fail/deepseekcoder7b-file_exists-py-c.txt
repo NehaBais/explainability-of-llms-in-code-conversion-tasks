@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:24: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                        ^~
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:32: error: character <U+2581> not allowed in an identifier
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                               ^
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:37: error: character <U+2581> not allowed in an identifier
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                                  ^
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:48: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                                           ^~
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:24: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                        ^
+/tmp/deepseekcoder7b-file_exists-py-c.c:20:53: error: use of undeclared identifier 'at'
+   20 |   if (stat(path, &path<｜begin▁of▁sentence｜> at) == 0) {
+      |                                               ^
+2 warnings and 4 errors generated.

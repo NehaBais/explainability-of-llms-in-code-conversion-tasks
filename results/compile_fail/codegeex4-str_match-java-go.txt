@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codegeex4-str_match-java-go.go:11:19: str1.startswith undefined (type string has no field or method startswith)
+/tmp/codegeex4-str_match-java-go.go:14:19: str1.endswith undefined (type string has no field or method endswith)
+/tmp/codegeex4-str_match-java-go.go:18:19: str4.contains undefined (type string has no field or method contains)
+/tmp/codegeex4-str_match-java-go.go:20:19: str4.contains undefined (type string has no field or method contains)
+/tmp/codegeex4-str_match-java-go.go:22:14: str4.indexOf undefined (type string has no field or method indexOf)
+/tmp/codegeex4-str_match-java-go.go:25:13: str4.indexOf undefined (type string has no field or method indexOf)
+/tmp/codegeex4-str_match-java-go.go:29:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-java-go.go:33:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-java-go.go:37:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-java-go.go:41:7: cannot define new methods on non-local type string
+/tmp/codegeex4-str_match-java-go.go:41:7: too many errors

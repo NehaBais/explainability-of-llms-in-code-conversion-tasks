@@ -1,0 +1,9 @@
+/tmp/magicoder7b-str_match-java-c.c:44:9: warning: cast to smaller integer type 'int' from 'char *' [-Wpointer-to-int-cast]
+   44 |   loc = (int)strstr(str7, str8) -
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/tmp/magicoder7b-str_match-java-c.c:44:33: error: invalid operands to binary expression ('int' and 'char *')
+   44 |   loc = (int)strstr(str7, str8) -
+      |         ~~~~~~~~~~~~~~~~~~~~~~~ ^
+   45 |         str7; // Calculate starting position of the first occurrence.
+      |         ~~~~
+1 warning and 1 error generated.

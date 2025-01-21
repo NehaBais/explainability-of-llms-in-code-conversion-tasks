@@ -1,0 +1,13 @@
+/tmp/granitecode3b-dir_make-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-rs-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-rs-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::create_directories("./path/to/dir");
+      |   ^
+4 errors generated.

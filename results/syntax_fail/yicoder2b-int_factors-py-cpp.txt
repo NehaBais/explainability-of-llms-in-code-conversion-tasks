@@ -1,0 +1,28 @@
+/tmp/yicoder2b-int_factors-py-cpp.cpp:24:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |   for (int i : res)
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:25:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   25 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:27:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   27 |   for (int i : res)
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:28:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   28 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:30:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   30 |   for (int i : res)
+      |              ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:31:31: error: invalid operands to binary expression ('const char[16]' and 'vector<int>')
+   31 |     cout << "%i: factors: %s" % (i, factor(i));
+      |             ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-py-cpp.cpp:25:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   25 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:28:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   28 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+/tmp/yicoder2b-int_factors-py-cpp.cpp:31:34: warning: left operand of comma operator has no effect [-Wunused-value]
+   31 |     cout << "%i: factors: %s" % (i, factor(i));
+      |                                  ^
+6 warnings and 3 errors generated.

@@ -1,0 +1,7 @@
+/tmp/dolphincoder7b-str_cmp-js-cpp.cpp:10:37: error: no member named 'tolower' in 'std::string'
+   10 |   std::cout << (std::string("ABCD").tolower() == "abcd".tolower()) << '\n'; // 1
+      |                 ~~~~~~~~~~~~~~~~~~~ ^
+/tmp/dolphincoder7b-str_cmp-js-cpp.cpp:10:56: error: member reference base type 'const char[5]' is not a structure or union
+   10 |   std::cout << (std::string("ABCD").tolower() == "abcd".tolower()) << '\n'; // 1
+      |                                                  ~~~~~~^~~~~~~~
+2 errors generated.

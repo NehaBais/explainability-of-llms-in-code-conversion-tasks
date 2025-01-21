@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder9b-str_prepend-cpp-go.go:9:27: expected operand, found '{' (and 1 more errors)

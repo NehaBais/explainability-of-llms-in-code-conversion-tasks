@@ -1,0 +1,13 @@
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:5:32: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    5 |   for (const std::string &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                                ^
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:5:34: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    5 |   for (const std::string &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                                  ^
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:6:14: error: no member named 'filesystem' in namespace 'std'
+    6 |     if (std::filesystem::exists(file)) {
+      |         ~~~~~^
+/tmp/yicoder9b-file_exists-rs-cpp.cpp:7:16: error: no member named 'filesystem' in namespace 'std'
+    7 |       if (std::filesystem::is_directory(file)) {
+      |           ~~~~~^
+1 warning and 3 errors generated.

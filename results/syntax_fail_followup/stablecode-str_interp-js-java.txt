@@ -1,0 +1,17 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String original = "Mary had a X lamb.";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:6: error: class, interface, enum, or record expected
+System.out.println("Replaced String: " + replaced);
+^
+/tmp/None.java:10: error: class, interface, enum, or record expected
+sb.append(original);
+^
+/tmp/None.java:12: error: class, interface, enum, or record expected
+if (index != -1) { // if 'X' is found 
+^
+/tmp/None.java:14: error: class, interface, enum, or record expected
+}
+^
+5 errors

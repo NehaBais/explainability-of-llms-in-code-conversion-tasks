@@ -1,0 +1,11 @@
+/tmp/codegemma7b-str_match-cpp-c.c:1:19: error: call to undeclared library function 'strstr' with type 'char *(const char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    1 | const char *loc = strstr(s2, s3);
+      |                   ^
+/tmp/codegemma7b-str_match-cpp-c.c:1:19: note: include the header <string.h> or explicitly provide a declaration for 'strstr'
+/tmp/codegemma7b-str_match-cpp-c.c:1:26: error: use of undeclared identifier 's2'
+    1 | const char *loc = strstr(s2, s3);
+      |                          ^
+/tmp/codegemma7b-str_match-cpp-c.c:1:30: error: use of undeclared identifier 's3'
+    1 | const char *loc = strstr(s2, s3);
+      |                              ^
+3 errors generated.

@@ -1,0 +1,7 @@
+/tmp/Main.java:11: error: long cannot be dereferenced
+        "Size of file " + path1.getFileName() + " is " + Files.size(path1).toString() + " bytes.");
+                                                                          ^
+/tmp/Main.java:13: error: long cannot be dereferenced
+        "Size of file " + path2.getFileName() + " is " + Files.size(path2).toString() + " bytes.");
+                                                                          ^
+2 errors

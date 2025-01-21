@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/yicoder2b-file_create-java-go.go:14:5: undefined: os.Close
+/tmp/yicoder2b-file_create-java-go.go:15:8: assignment mismatch: 1 variable but createDirectory returns 2 values
+/tmp/yicoder2b-file_create-java-go.go:24:5: invalid operation: ok && file.IsDir() (mismatched types error and bool)
+/tmp/yicoder2b-file_create-java-go.go:28:2: undefined: created
+/tmp/yicoder2b-file_create-java-go.go:28:15: assignment mismatch: 2 variables but os.Mkdir returns 1 value
+/tmp/yicoder2b-file_create-java-go.go:29:14: undefined: created

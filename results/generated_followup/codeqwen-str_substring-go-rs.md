@@ -1,0 +1,43 @@
+Error: `println!` macro does not support Unicode template strings in Rust.
+
+Fix: Replace backticks (`) with double quotes ("), and use single quotes (') for literal characters.
+
+Rewritten corrected code:
+
+```rs
+use std::str;
+
+fn main() {
+    let s = "ABCDEFGH";
+    let n = 2;
+    let m = 3;
+
+    // for reference
+    println!("Index:  01234567");
+    println!("String: {}", s);
+
+    // starting from n characters in and of m length
+    println!("Start {}, length {}:  {}", n, m, &s[n..n+m]);
+
+    // starting from n characters in, up to the end of the string
+    println!("Start {}, to end:  {}", n, &s[n..]);
+
+    // whole string minus last character
+    let len = s.len();
+    println!("All but last:        {}", &s[0..len-1]);
+
+    // starting from a known character within the string and of m length
+    if let Some(dx) = s.find('D') {
+        println!("Start 'D', length {}:  {}", m, &s[dx..dx+m]);
+    } else {
+        println!("'D' not found in the string");
+    }
+
+    // starting from a known substring within the string and of m length
+    if let Some(sx) = s.find("DE") {
+        println!("Start \"DE\", length {}: {}", m, &s[sx..sx+m]);
+    } else {
+        println!("\"DE\" not found in the string");
+    }
+}
+```

@@ -1,0 +1,75 @@
+The error is due to the use of `rotl` function before it has been declared or defined. The compiler does not recognize `rotl`, suggesting that `rotr` might be a typo or the intended function.
+
+To fix this, you need to either declare and define `rotl` before its first use in `rotr` or correct the reference to use `rotr` if that was indeed the intended function.
+
+Here is the corrected code:
+
+```cpp
+#include <bitset>
+#include <iostream>
+
+int rotr(int width, int a, int n) {
+  if (n < 0)
+    return rotl(width, a, -n);
+  else if (n == 0)
+    return a;
+  else {
+    a &= ((1 << width) - 1);
+    n %= width;
+    return (a >> n) | ((a & ((1 << n) - 1)) << (width - n));
+  }
+}
+
+int rotl(int width, int a, int n) {
+  if (n < 0)
+    return rotr(width, a, -n);
+  else if (n == 0)
+    return a;
+  else {
+    a &= ((1 << width) - 1);
+    n %= width;
+    return ((a << n) & ((1 << width) - 1)) | (a >> (width - n));
+  }
+}
+
+int asr(int width, int a, int n) {
+  if (n < 0)
+    return (a << (-n)) & ((1 << width) - 1);
+  else if (n == 0)
+    return a;
+  else if (n >= width)
+    return (a & (1 << (width - 1))) ? ((1 << width) - 1) : 0;
+  else {
+    a &= ((1 << width) - 1);
+    if (a & (1 << (width - 1)))
+      return (a >> n) | (((1 << n) - 1) << (width - n));
+    else
+      return a >> n;
+  }
+}
+
+void bitwise_built_ins(int width, int a, int b) {
+  int mask = ((1 << width) - 1);
+  std::cout << "AND:     " << std::bitset<8>(a & b & mask) << "\n";
+  std::cout << "OR:      " << std::bitset<8>(a | b & mask) << "\n";
+  std::cout << "XOR:     " << std::bitset<8>(a ^ b & mask) << "\n";
+  std::cout << "NOT:   " << std::bitset<8>((~a) & mask) << "\n";
+}
+
+void helper_funcs(int width, int a) {
+  int mask = ((1 << width) - 1);
+  int top_bit_mask = 1 << (width - 1);
+  int aa = a | top_bit_mask;
+
+  std::cout << "ROTR:    " << rotr(width, a, 1) << "\n";
+  std::cout << "ROTL:    " << rotl(width, a, 1) << "\n";
+  std::cout << "ASR:     " << asr(width, a, 1) << "\n";
+}
+
+int main() {
+  bitwise_built_ins(8, 27, 125);
+  helper_funcs(8, 27);
+
+  return 0;
+}
+```

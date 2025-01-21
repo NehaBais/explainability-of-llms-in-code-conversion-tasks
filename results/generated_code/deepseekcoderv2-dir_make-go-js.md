@@ -1,20 +1,26 @@
-### Solution
-The following code is written in JavaScript and runs correctly on Windows OS (tested with Node v19.6.0 LTS). To run the program use: `node mkdir_p.js <directory name>` where `<directory name>` should be a directory that does not yet exist or exists but for which you do not have permissions to write into it
+ Certainly! Below is a JavaScript implementation that mimics the behavior of `os.MkdirAll` from Golang, creating a directory and any missing parent directories:
+
 ```javascript
-function makeDirs(path) {
-  // Check if the path already exists
-  const stats = fs.statSync(path);
-  
-  if (stats.isDirectory()) {
-    return true;
-  } else if (stats.isFile()) {
-    throw new Error("The specified file is not a directory.");
+const fs = require('fs');
+const path = require('path');
+
+function mkdirp(dir) {
+  if (!fs.existsSync(dir)) {
+    const dirPath = path.dirname(dir);
+    mkdirp(dirPath);
+    fs.mkdirSync(dir, { mode: 0o770 });
   }
-  
-  // Create the parent directory if it doesn't exist
-  const dir = path.substring(0, path.lastIndexOf('/'));
-  
-  fs.mkdirSync(dir);
-  return makeDirs(path);
 }
+
+// Example usage:
+const dirPath = '/tmp/some/path/to/dir';
+mkdirp(dirPath);
 ```
+
+### Explanation:
+1. **Check if the directory exists**: The function first checks if the directory already exists using `fs.existsSync(dir)`. If it doesn't exist, proceed to create it and its parent directories.
+2. **Get the path of the parent directory**: Use `path.dirname(dir)` to get the path of the parent directory.
+3. **Recursive call**: Call `mkdirp` recursively on the parent directory until you reach a point where the parent directory exists or is the root directory.
+4. **Create the directory**: Once all necessary parent directories are created, use `fs.mkdirSync(dir, { mode: 0o770 })` to create the target directory with the specified mode (0o770).
+
+This implementation should work equally well on both Windows and Unix-like systems, as Node.js's file system APIs are designed to be cross-platform.

@@ -1,0 +1,14 @@
+error[E0432]: unresolved import `std::os::stat`
+ --> /tmp/dolphincoder7b-file_size-c-rs.rs:2:5
+  |
+2 | use std::os::stat;
+  |     ^^^^^^^^^^^^^ no `stat` in `os`
+  |
+help: consider importing this struct instead
+  |
+2 | use std::os::macos::raw::stat;
+  |     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0432`.

@@ -1,0 +1,4 @@
+/tmp/yicoder2b-dir_make-cpp-c.c:1:10: fatal error: 'filesystem' file not found
+    1 | #include <filesystem>
+      |          ^~~~~~~~~~~~
+1 error generated.

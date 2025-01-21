@@ -1,0 +1,32 @@
+/tmp/stablecode-bit_ops-js-cpp.cpp:5:35: error: expected ';' after expression
+    5 |     cout << "a AND b: " << (a & b)) << endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-bit_ops-js-cpp.cpp:5:35: error: expected expression
+/tmp/stablecode-bit_ops-js-cpp.cpp:6:34: error: expected ';' after expression
+    6 |     cout << "a OR b: " << (a | b)) << endl;
+      |                                  ^
+      |                                  ;
+/tmp/stablecode-bit_ops-js-cpp.cpp:6:34: error: expected expression
+/tmp/stablecode-bit_ops-js-cpp.cpp:7:35: error: expected ';' after expression
+    7 |     cout << "a XOR b: " << (a ^ b)) << endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-bit_ops-js-cpp.cpp:7:35: error: expected expression
+/tmp/stablecode-bit_ops-js-cpp.cpp:10:37: error: extraneous ')' after condition, expected a statement
+   10 |     if ((b >= 0) && ((b & 32) == 0))) {
+      |                                     ^
+/tmp/stablecode-bit_ops-js-cpp.cpp:11:39: error: expected ';' after expression
+   11 |         cout << "a << b: " << (a << b)) << endl; // left shift
+      |                                       ^
+      |                                       ;
+/tmp/stablecode-bit_ops-js-cpp.cpp:11:39: error: expected expression
+/tmp/stablecode-bit_ops-js-cpp.cpp:19:37: error: extraneous ')' after condition, expected a statement
+   19 |     if ((b >= 0) && ((b & 32) == 0))) {
+      |                                     ^
+/tmp/stablecode-bit_ops-js-cpp.cpp:20:39: error: expected ';' after expression
+   20 |         cout << "a >> b: " << (a >> b)) << endl; // arithmetic right shift
+      |                                       ^
+      |                                       ;
+/tmp/stablecode-bit_ops-js-cpp.cpp:20:39: error: expected expression
+12 errors generated.

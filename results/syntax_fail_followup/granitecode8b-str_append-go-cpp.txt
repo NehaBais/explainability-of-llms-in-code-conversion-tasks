@@ -1,0 +1,19 @@
+/tmp/granitecode8b-str_append-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_append-go-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_append-go-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string s = ""; // create a string variable equal to any text value
+      |   ^
+/tmp/granitecode8b-str_append-go-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << s;  // show the contents of the variable after the append operation
+      |   ^
+1 warning and 5 errors generated.

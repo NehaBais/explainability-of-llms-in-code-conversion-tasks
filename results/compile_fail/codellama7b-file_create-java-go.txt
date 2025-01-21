@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/codellama7b-file_create-java-go.go:15:8: assignment mismatch: 1 variable but os.Create returns 2 values
+/tmp/codellama7b-file_create-java-go.go:27:8: assignment mismatch: 1 variable but os.Create returns 2 values

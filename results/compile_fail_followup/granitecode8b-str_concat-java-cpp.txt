@@ -1,0 +1,28 @@
+/tmp/granitecode8b-str_concat-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s = "hello";
+      |   ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << s + " literal" << endl;
+      |   ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:6:29: error: use of undeclared identifier 'endl'
+    6 |   cout << s + " literal" << endl;
+      |                             ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string s2 = s + " literal";
+      |   ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << s2 << endl;
+      |   ^
+/tmp/granitecode8b-str_concat-java-cpp.cpp:8:17: error: use of undeclared identifier 'endl'
+    8 |   cout << s2 << endl;
+      |                 ^
+1 warning and 8 errors generated.

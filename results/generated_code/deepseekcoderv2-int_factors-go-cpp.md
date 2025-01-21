@@ -1,8 +1,59 @@
-## C++
-### Code
+ To convert the provided Golang code to C++, we need to follow several steps:
+
+1. Handle the input validation and edge cases.
+2. Implement the logic to compute the prime factorization.
+3. Print the factors in a similar manner as the original Go code.
+4. Compile and run the C++ program.
+
+Here's the equivalent C++ code:
+
 ```cpp
 #include <iostream>
-using namespace std;
+#include <vector>
+#include <cmath>
+
+void printFactors(int64_t nr) {
+    if (nr < 1) {
+        std::cout << "Factors of " << nr << " not computed" << std::endl;
+        return;
+    }
+    std::vector<int64_t> fs = {1};
+    auto apf = [](int64_t p, int e) {
+        size_t n = fs.size();
+        for (int i = 0, pp = p; i < e; ++i, pp *= p) {
+            for (size_t j = 0; j < n; ++j) {
+                fs.push_back(fs[j] * pp);
+            }
+        }
+    };
+
+    int e = 0;
+    while (nr % 2 == 0) {
+        nr /= 2;
+        e++;
+    }
+    apf(2, e);
+
+    for (int64_t d = 3; nr > 1; d += 2) {
+        if (d * d > nr) {
+            d = nr;
+        }
+        int e = 0;
+        while (nr % d == 0) {
+            nr /= d;
+            e++;
+        }
+        if (e > 0) {
+            apf(d, e);
+        }
+    }
+
+    for (int64_t factor : fs) {
+        std::cout << factor << " ";
+    }
+    std::cout << std::endl;
+    std::cout << "Number of factors = " << fs.size() << std::endl;
+}
 
 int main() {
     printFactors(-1);
@@ -15,57 +66,15 @@ int main() {
     printFactors(64);
     printFactors(600851475143);
     printFactors(999999999999999989);
+    return 0;
 }
+```
 
-void printFactors(int64_t nr) {
-    if (nr < 1) {
-        cout << "Factors of " << nr << " not computed" << endl;
-        return;
-    }
-    cout << "Factors of " << nr << ": ";
-    vector<int64_t> fs = {1};
-    auto apf = [&](int64_t p, int e) {
-        for (int i = 0; i < e; ++i) {
-            int n = fs.size();
-            for (int j = 0; j < n; ++j) {
-                fs.push_back(fs[j] * p);
-            }
-        }
-    };
-    int e = 0;
-    while ((nr & 1) == 0) {
-        nr >>= 1;
-        e++;
-    }
-    apf(2, e);
-    for (int64_t d = 3; nr > 1 && d * d <= nr; d += 2) {
-        if (nr % d != 0) continue;
-        for (e = 0; nr % d == 0; e++) {
-            nr /= d;
-        }
-        apf(d, e);
-    }
-    cout << fs << "Number of factors = " << fs.size() << endl;
-}
-```
-### Output
-```
-Factors of -1 not computed
-Factors of 0 not computed
-Factors of 1: [1]
-Number of factors = 1
-Factors of 2: [1, 2]
-Number of factors = 2
-Factors of 3: [1, 3]
-Number of factors = 2
-Factors of 53: [1, 53]
-Number of factors = 2
-Factors of 45: [1, 3, 5, 9, 15, 45]
-Number of factors = 6
-Factors of 64: [1, 2, 4, 8, 16, 32, 64]
-Number of factors = 7
-Factors of 600851475143: [1, 71, 839, 1471, 6857, 59569, 104441, 486847]
-Number of factors = 8
-Factors of 999999999999999989: [1, 999999999999999989]
-Number of factors = 2
-```
+### Explanation:
+
+1. **Input Validation**: The function `printFactors` checks if the input number is less than 1 and handles it accordingly by printing a message.
+2. **Prime Factorization**: The logic for prime factorization remains mostly the same, but in C++, we use vectors to store factors dynamically.
+3. **Printing Factors**: After computing the factors, the program prints them using a range-based loop.
+4. **Main Function**: The `main` function calls `printFactors` with various test cases.
+
+This C++ code should provide similar functionality to the original Go code for computing and displaying the factors of positive integers.

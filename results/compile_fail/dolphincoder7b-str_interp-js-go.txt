@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_interp-js-go.go:8:26: original.replace undefined (type string has no field or method replace)

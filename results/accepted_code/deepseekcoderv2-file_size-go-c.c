@@ -1,14 +1,17 @@
-#include <fstream>
-#include <iostream>
-using namespace std;
-void printFileSize(const string &filename) {
-  if (ifstream file(filename); !file) {
-    cout << "Error: could not open input.txt" << endl;
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+
+void printFileSize(const char *filename) {
+  struct stat st;
+  if (stat(filename, &st) == -1) {
+    perror("Error");
   } else {
-    long long size = file.tellg();
-    cout << "The size of input.txt is " << size << " bytes." << endl;
+    printf("%zu\n", st.st_size);
   }
 }
+
 int main() {
   printFileSize("input.txt");
   printFileSize("/input.txt");

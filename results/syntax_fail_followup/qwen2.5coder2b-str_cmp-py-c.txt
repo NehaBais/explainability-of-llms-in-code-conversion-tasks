@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:22:11: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   22 |   compare(24, 123);
+      |           ^~
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:5:26: note: passing argument to parameter 'a' here
+    5 | void compare(const char *a, const char *b) {
+      |                          ^
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:22:15: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   22 |   compare(24, 123);
+      |               ^~~
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:5:41: note: passing argument to parameter 'b' here
+    5 | void compare(const char *a, const char *b) {
+      |                                         ^
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:23:11: error: passing 'double' to parameter of incompatible type 'const char *'
+   23 |   compare(5.0, 5);
+      |           ^~~
+/tmp/qwen2.5coder2b-str_cmp-py-c.c:5:26: note: passing argument to parameter 'a' here
+    5 | void compare(const char *a, const char *b) {
+      |                          ^
+3 errors generated.

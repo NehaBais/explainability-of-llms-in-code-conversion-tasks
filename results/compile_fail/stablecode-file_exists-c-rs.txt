@@ -1,0 +1,34 @@
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:16:47
+   |
+16 |                      check_reg("input.txt") ? "yes" : "no");
+   |                                               ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:19:41
+   |
+19 |                     check_dir("docs") ? "yes" : "no");
+   |                                         ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:22:46
+   |
+22 |                    check_reg("/input.txt") ? "yes" : "no");
+   |                                              ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `,`, `.`, `?`, or an operator, found `"yes"`
+  --> /tmp/stablecode-file_exists-c-rs.rs:25:41
+   |
+25 |                    check_dir("/docs") ? "yes" : "no");
+   |                                         ^^^^^ expected one of `,`, `.`, `?`, or an operator
+
+warning: unused import: `std::fs`
+ --> /tmp/stablecode-file_exists-c-rs.rs:1:5
+  |
+1 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 4 previous errors; 1 warning emitted
+

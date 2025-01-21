@@ -1,0 +1,13 @@
+/tmp/stablecode-dir_make-rs-c.c:1:1: error: expected identifier or '('
+    1 | if (mkdir(dir_path, mode) != 0) {
+      | ^
+/tmp/stablecode-dir_make-rs-c.c:7:3: error: expected identifier or '('
+    7 | } else {
+      |   ^
+/tmp/stablecode-dir_make-rs-c.c:11:1: error: expected identifier or '('
+   11 | return 0;
+      | ^
+/tmp/stablecode-dir_make-rs-c.c:12:1: error: extraneous closing brace ('}')
+   12 | }
+      | ^
+4 errors generated.

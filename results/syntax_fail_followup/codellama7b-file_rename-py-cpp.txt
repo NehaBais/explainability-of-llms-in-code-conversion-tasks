@@ -1,0 +1,13 @@
+/tmp/codellama7b-file_rename-py-cpp.cpp:18:25: error: invalid operands to binary expression ('char *' and 'const char[2]')
+   18 |   rename(getenv("HOME") + "/" + input_file, getenv("HOME") + "/" + output_file);
+      |          ~~~~~~~~~~~~~~ ^ ~~~
+/tmp/codellama7b-file_rename-py-cpp.cpp:18:60: error: invalid operands to binary expression ('char *' and 'const char[2]')
+   18 |   rename(getenv("HOME") + "/" + input_file, getenv("HOME") + "/" + output_file);
+      |                                             ~~~~~~~~~~~~~~ ^ ~~~
+/tmp/codellama7b-file_rename-py-cpp.cpp:20:25: error: invalid operands to binary expression ('char *' and 'const char[2]')
+   20 |   rename(getenv("HOME") + "/" + docs_dir, getenv("HOME") + "/" + mydocs_dir);
+      |          ~~~~~~~~~~~~~~ ^ ~~~
+/tmp/codellama7b-file_rename-py-cpp.cpp:20:58: error: invalid operands to binary expression ('char *' and 'const char[2]')
+   20 |   rename(getenv("HOME") + "/" + docs_dir, getenv("HOME") + "/" + mydocs_dir);
+      |                                           ~~~~~~~~~~~~~~ ^ ~~~
+4 errors generated.

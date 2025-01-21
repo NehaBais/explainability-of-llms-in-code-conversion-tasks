@@ -1,0 +1,19 @@
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:22:17
+   |
+22 |         let n = fs.len();
+   |                 ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/yicoder2b-int_factors-go-rs.rs:24:13
+   |
+24 |             fs.resize(n * p as usize, 0);
+   |             ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0434`.

@@ -1,0 +1,54 @@
+/tmp/granitecode8b-str_match-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:9:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |  printf("1. %s starts with %s: %d
+      |  ^
+/tmp/granitecode8b-str_match-go-c.c:9:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-str_match-go-c.c:9:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 |  printf("1. %s starts with %s: %d
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:9:9: error: expected expression
+/tmp/granitecode8b-str_match-go-c.c:10:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 | ", first, second, strncmp(first, second, strlen(second)) == 0);
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:12:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   12 |  printf("2. %s contains %s: %d,
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:13:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   13 | ", first, second, i >= 0);
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:15:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 |  printf("2.1. at location %d,
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:16:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 | ", i);
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:21:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   21 |  printf("2.2. at location %d,
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:22:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   22 | ", start+j);
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:24:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   24 |  printf("2.2. and that's all
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:25:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   25 | ");
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:27:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   27 |  printf("3. %s ends with %s: %d
+      |         ^
+/tmp/granitecode8b-str_match-go-c.c:28:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   28 | ", first, second, strcmp(first+strlen(first)-strlen(second), second) == 0);
+      | ^
+/tmp/granitecode8b-str_match-go-c.c:29:2: error: expected '}'
+   29 | }
+      |  ^
+/tmp/granitecode8b-str_match-go-c.c:8:39: note: to match this '{'
+    8 | void match(char *first, char *second) {
+      |                                       ^
+12 warnings and 5 errors generated.

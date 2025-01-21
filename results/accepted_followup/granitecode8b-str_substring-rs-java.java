@@ -1,0 +1,12 @@
+String s = "abc texto化けdef";
+int n = 2;
+int m = 3;
+System.out.println(s.substring(n, n + m));
+System.out.println(s.substring(n));
+StringBuilder sb = new StringBuilder(s);
+sb.reverse();
+System.out.println(sb.toString().substring(1));
+int bpos = s.indexOf('b');
+System.out.println(s.substring(bpos, bpos + m));
+int epos = s.indexOf("ce");
+System.out.println(s.substring(epos, epos + m));

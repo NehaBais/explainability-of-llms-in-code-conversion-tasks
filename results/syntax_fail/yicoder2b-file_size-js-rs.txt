@@ -1,0 +1,55 @@
+error: expected one of `=>`, `if`, or `|`, found `{`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:14:22
+   |
+14 |         Ok(mut dirs) {
+   |                      ^ expected one of `=>`, `if`, or `|`
+
+error: expected one of `=>`, `if`, or `|`, found `{`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:32:22
+   |
+32 |         Ok(mut dirs) {
+   |                      ^ expected one of `=>`, `if`, or `|`
+
+error[E0433]: failed to resolve: could not find `Error` in `fs`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:11:17
+   |
+11 |             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |                 ^^^^^ could not find `Error` in `fs`
+   |
+help: consider importing one of these items
+   |
+1  + use std::error::Error;
+   |
+1  + use std::fmt::Error;
+   |
+1  + use std::io::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+11 -             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+11 +             Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |
+
+error[E0433]: failed to resolve: could not find `Error` in `fs`
+  --> /tmp/yicoder2b-file_size-js-rs.rs:29:17
+   |
+29 |             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |                 ^^^^^ could not find `Error` in `fs`
+   |
+help: consider importing one of these items
+   |
+1  + use std::error::Error;
+   |
+1  + use std::fmt::Error;
+   |
+1  + use std::io::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+29 -             fs::Error::ReadDir(e) => println!("Error reading directory: {}", e),
+29 +             Error::ReadDir(e) => println!("Error reading directory: {}", e),
+   |
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

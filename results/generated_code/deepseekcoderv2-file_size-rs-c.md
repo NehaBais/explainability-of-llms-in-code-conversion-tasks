@@ -1,74 +1,38 @@
-Answer: Here is the C equivalent of the given Rust code. Note that I have used a library called `argp` for parsing arguments and the standard library's functions for file operations. Also, in this example, we are assuming that the executable name is always the first argument passed to the program. If this is not the case, you can modify the code accordingly.
+ Sure, here is the equivalent code in C:
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include "argp.h"
+#include <errno.h>
+#include <libgen.h> // For dirname and basename
 
-// Define the structure for command line arguments.
-struct arguments {
-    char *file_name;
-};
-
-// Define an error handling function to print the error message and exit with a given code.
-void handle_error(char *msg, int err) {
-    perror(msg);
-    exit(err);
+void exit_err(const char *msg, int code) {
+    fprintf(stderr, "Error: %s\n", msg);
+    exit(code);
 }
-
-// Callback function for argp which parses command line arguments passed to the program.
-int parse_opt (int key, char *arg, struct argp_state *state) {
-    struct arguments *arguments = state->input;
-
-    switch (key) {
-        case ARGP_KEY_ARG: // Argument key for an argument that does not have a short option.
-            if (state->argh != NULL)
-                /* Too many arguments. */
-                argp_usage(state);
-            break;
-        default:  // This should never happen.
-            return ARGP_ERR_UNKNOWN;
-    }
-    return 0;
-}
-
-// Callback function for argp which displays the usage and help message.
-void print_help(struct argp_option *options, char *doc) {
-    struct argp_state state = {};
-
-    printf("%s [OPTION]... FILE...\n\n%s", doc, options[0].description);
-    for (int i = 1; options[i].key != -1; ++i) {
-        printf(options[i].synopsis, options[i].name_tag ? options[i].name : "");
-    }
-}
-
-// Define the argp structure.
-const struct argp argp = { .options = {}, .parser = parse_opt, .doc = "Verify file size." };
 
 int main(int argc, char **argv) {
-    // Allocate and initialize the arguments structure.
-    struct arguments args = {};
+    if (argc < 2) {
+        exit_err("No file name supplied", 1);
+    }
 
-    // Parse command line arguments using argp.
-    argp_parse(&argp, argc, argv, 0, NULL, &args);
-
-    // Get file metadata (size in this case).
+    char *file_name = argv[1];
     struct stat st;
-    int fd;
 
-    if ((fd = open(args.file_name, O_RDONLY)) == -1) {
-        handle_error("Could not open file", 2);
+    if (stat(file_name, &st) == -1) {
+        exit_err(strerror(errno), 2);
     }
 
-    // Check the status of the opened descriptor (the call to lstat() instead of stat() ensures that a symlink is followed).
-    if (lstat(args.file_name, &st) == -1) {
-        handle_error("Could not get file metadata", 2);
-    } else {
-        printf("Size of %s: %ld bytes\n", args.file_name, st.st_size);
-    }
+    printf("Size of %s is %zu bytes\n", file_name, st.st_size);
+    return 0;
 }
 ```
+
+This C code does the following:
+1. Checks if a file name is provided as an argument. If not, it prints an error message and exits with code 1.
+2. Uses `stat` to get the metadata of the specified file. If the operation fails, it prints the corresponding error message (using `strerror(errno)`) and exits with code 2.
+3. Prints the size of the file in bytes.
+
+Note: The C standard library does not have a direct equivalent to Rust's `env::args()` or `fs::metadata()`. However, we handle command line arguments using `argc` and `argv`, and use the POSIX `stat` function to get file metadata.

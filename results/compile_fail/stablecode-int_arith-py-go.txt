@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-py-go.go:20:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-py-go.go:21:45: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-py-go.go:23:49: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-py-go.go:25:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-py-go.go:28:45: syntax error: unexpected ) at end of statement

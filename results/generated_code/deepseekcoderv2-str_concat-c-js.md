@@ -1,16 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+ Here's the equivalent JavaScript code for the provided C code:
 
-int main() {
-  const char* s = "hello";
-  char* s2;
+```javascript
+let s = "hello";
+let s2;
 
-  printf("%s literal\n", s); //or
-  printf("%s%s\n", s, " literal");
+console.log(`${s} literal`);
+// or
+console.log(`${s}${' literal'}`);
 
-  s2 = strcat(strcpy(malloc(strlen("hello") + strlen(" literal") + 1), "literal"), "literal");
-
-  puts(s2);
-  free(s2);
+function concatStrings(s1, s2) {
+  return s1 + s2;
 }
+
+s2 = concatStrings(s, " literal");
+console.log(s2);
+```
+
+This JavaScript code does the following:
+1. Initializes a string variable `s` with the value "hello".
+2. Logs the content of `s` concatenated with the string " literal" in two different ways using template literals.
+3. Defines a function `concatStrings` that concatenates two strings and returns the result.
+4. Calls `concatStrings` to concatenate `s` and " literal", assigning the result to `s2`.
+5. Logs the content of `s2`.

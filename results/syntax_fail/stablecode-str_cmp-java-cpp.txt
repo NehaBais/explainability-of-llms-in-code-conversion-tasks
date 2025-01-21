@@ -1,0 +1,11 @@
+/tmp/stablecode-str_cmp-java-cpp.cpp:9:64: error: no member named 'compareTo' in 'std::string'; did you mean 'compare'?
+    9 | int lexicalComparison(std::string A, std::string B) { return A.compareTo(B); }
+      |                                                                ^~~~~~~~~
+      |                                                                compare
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1689:59: note: 'compare' declared here
+ 1689 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 int compare(const basic_string& __str) const _NOEXCEPT;
+      |                                                           ^
+/tmp/stablecode-str_cmp-java-cpp.cpp:11:65: error: expected function body after function declarator
+   11 | int caseSensitiveLexicalComparison(std::string A, std::string B)) {
+      |                                                                 ^
+2 errors generated.

@@ -1,0 +1,11 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+List actual = factor(100);
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+System.out.println("Expected: " + expected);
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+System.out.println("Actual: " + actual);
+^
+3 errors

@@ -1,0 +1,15 @@
+/tmp/deepseekcoderv2-str_interp-rs-c.c:6:3: error: call to undeclared library function 'va_start' with type 'void (__builtin_va_list &, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   va_start(args, format);
+      |   ^
+/tmp/deepseekcoderv2-str_interp-rs-c.c:6:3: note: include the header <stdarg.h> or explicitly provide a declaration for 'va_start'
+/tmp/deepseekcoderv2-str_interp-rs-c.c:21:29: error: call to undeclared function 'va_arg'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |         const char *value = va_arg(args, const char *);
+      |                             ^
+/tmp/deepseekcoderv2-str_interp-rs-c.c:21:42: error: expected expression
+   21 |         const char *value = va_arg(args, const char *);
+      |                                          ^
+/tmp/deepseekcoderv2-str_interp-rs-c.c:36:3: error: call to undeclared library function 'va_end' with type 'void (__builtin_va_list &)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |   va_end(args);
+      |   ^
+/tmp/deepseekcoderv2-str_interp-rs-c.c:36:3: note: include the header <stdarg.h> or explicitly provide a declaration for 'va_end'
+4 errors generated.

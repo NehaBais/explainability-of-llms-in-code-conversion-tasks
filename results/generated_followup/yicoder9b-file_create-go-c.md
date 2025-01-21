@@ -1,0 +1,47 @@
+The errors are due to `S_IRWXU`, `S_IRWXG`, `S_IROTH`, and `S_IXOTH` not being defined in this environment. These are constants used with the `mkdir()` function for setting file permissions, which don't exist in Windows.
+
+The fix is to remove the lines declaring these modes as they aren't necessary on Windows platforms:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void createFile(char *fn) {
+  FILE *file = fopen(fn, "w");
+  if (!file) {
+    perror("Error creating file");
+    exit(EXIT_FAILURE);
+  }
+
+  printf("File %s created\n", fn);
+  fclose(file);
+}
+
+void createDir(char *dn) {
+#ifdef _WIN32
+  int res = mkdir(dn);
+#else
+  mode_t mode = S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH;
+  int res = mkdir(dn, mode);
+#endif
+
+  if (res == -1) {
+    perror("Error creating directory");
+    exit(EXIT_FAILURE);
+  }
+
+  printf("Directory %s created\n", dn);
+}
+
+int main() {
+  createFile("input.txt");
+  createFile("/input.txt");
+#ifndef _WIN32
+  createDir("docs");
+  createDir("/");
+#else
+  createDir("C:\\docs");
+  createDir("C:\\");
+#endif
+  return 0;
+}
+```

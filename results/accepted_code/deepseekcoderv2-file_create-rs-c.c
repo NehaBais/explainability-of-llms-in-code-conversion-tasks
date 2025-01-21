@@ -1,30 +1,48 @@
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/stat.h>
-#include <unistd.h>
+
+void create_file(const char *path) {
+  FILE *file = fopen(path, "w");
+  if (file == NULL) {
+    perror("Error creating file");
+    exit(EXIT_FAILURE);
+  }
+  fclose(file);
+}
+
+void create_directory(const char *path) {
+  int status = mkdir(path, 0755);
+  if (status == -1 && errno != EEXIST) {
+    perror("Error creating directory");
+    exit(EXIT_FAILURE);
+  }
+}
 
 int main() {
-  // Check if the current directory has a file named "output.txt"
-  char path[FILENAME_MAX];
-  getcwd(path, FILENAME_MAX);
-  strcat(path, "/output.txt");
-  int f = access(path, F_OK);
-  if (f == 0) {
-    printf("File already exists\n");
-    return -1; // Exit the program with an error code
+  // Create in the current working directory
+  create_directory("docs");
+  create_file("output.txt");
+
+  // Create in the filesystem root
+  char root_path[1024];
+  if (getcwd(root_path, sizeof(root_path)) == NULL) {
+    perror("Error getting current working directory");
+    exit(EXIT_FAILURE);
   }
+  strcat(root_path, "/docs");
+  create_directory(root_path);
+  strcat(root_path, "/output.txt");
+  create_file(root_path);
 
-  // Create a directory named "docs" in the current working directory
-  mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+  // Create in the filesystem root without using getcwd
+  char *root = "/";
+  strcpy(root_path, root);
+  strcat(root_path, "docs");
+  create_directory(root_path);
+  strcat(root_path, "/output.txt");
+  create_file(root_path);
 
-  // Open/Create a file named "output.txt" in the "docs" directory
-  FILE *fp = fopen("docs/output.txt", "w");
-  if (fp == NULL) {
-    printf("Error creating file\n");
-    return -1; // Exit the program with an error code
-  }
-
-  fclose(fp);
   return 0;
 }

@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegeex4-int_cmp-java-go.go:14:26: too many arguments in call to strconv.Atoi
+	have (string, error)
+	want (string)

@@ -1,0 +1,50 @@
+/tmp/granitecode3b-file_create-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-java-c.c:4:3: error: use of undeclared identifier 'FILE'
+    4 |   FILE *fp;
+      |   ^
+/tmp/granitecode3b-file_create-java-c.c:4:9: error: use of undeclared identifier 'fp'
+    4 |   FILE *fp;
+      |         ^
+/tmp/granitecode3b-file_create-java-c.c:5:13: error: call to undeclared function 'fopen'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if ((fp = fopen("output.txt", "w")) == NULL) {
+      |             ^
+/tmp/granitecode3b-file_create-java-c.c:5:13: warning: declaration of built-in function 'fopen' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode3b-file_create-java-c.c:5:8: error: use of undeclared identifier 'fp'
+    5 |   if ((fp = fopen("output.txt", "w")) == NULL) {
+      |        ^
+/tmp/granitecode3b-file_create-java-c.c:5:42: error: use of undeclared identifier 'NULL'
+    5 |   if ((fp = fopen("output.txt", "w")) == NULL) {
+      |                                          ^
+/tmp/granitecode3b-file_create-java-c.c:6:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     perror("error creating output.txt");
+      |     ^
+/tmp/granitecode3b-file_create-java-c.c:9:3: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   fclose(fp);
+      |   ^
+/tmp/granitecode3b-file_create-java-c.c:9:10: error: use of undeclared identifier 'fp'
+    9 |   fclose(fp);
+      |          ^
+/tmp/granitecode3b-file_create-java-c.c:11:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |       ^
+/tmp/granitecode3b-file_create-java-c.c:11:21: error: use of undeclared identifier 'S_IRWXU'
+   11 |   if (mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                     ^
+/tmp/granitecode3b-file_create-java-c.c:11:31: error: use of undeclared identifier 'S_IRWXG'
+   11 |   if (mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                               ^
+/tmp/granitecode3b-file_create-java-c.c:11:41: error: use of undeclared identifier 'S_IROTH'
+   11 |   if (mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                                         ^
+/tmp/granitecode3b-file_create-java-c.c:11:51: error: use of undeclared identifier 'S_IXOTH'
+   11 |   if (mkdir("docs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH) == -1) {
+      |                                                   ^
+/tmp/granitecode3b-file_create-java-c.c:12:5: error: call to undeclared function 'perror'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     perror("error creating docs directory");
+      |     ^
+1 warning and 16 errors generated.

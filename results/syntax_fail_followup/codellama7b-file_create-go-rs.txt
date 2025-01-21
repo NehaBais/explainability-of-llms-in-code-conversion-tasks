@@ -1,0 +1,32 @@
+error: expected identifier, found keyword `fn`
+  --> /tmp/codellama7b-file_create-go-rs.rs:13:16
+   |
+13 | fn create_file(fn: &str) {
+   |                ^^ expected identifier, found keyword
+   |
+help: escape `fn` to use it as an identifier
+   |
+13 | fn create_file(r#fn: &str) {
+   |                ++
+
+error: expected expression, found keyword `fn`
+  --> /tmp/codellama7b-file_create-go-rs.rs:14:28
+   |
+14 |     match fs::File::create(fn) {
+   |                            ^^ expected expression
+
+error: expected expression, found keyword `fn`
+  --> /tmp/codellama7b-file_create-go-rs.rs:15:47
+   |
+15 |         Ok(f) => println!("file {} created!", fn),
+   |                                               ^^ expected expression
+
+error[E0433]: failed to resolve: could not find `Dir` in `fs`
+  --> /tmp/codellama7b-file_create-go-rs.rs:21:15
+   |
+21 |     match fs::Dir::new(dn, 0666) {
+   |               ^^^ could not find `Dir` in `fs`
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

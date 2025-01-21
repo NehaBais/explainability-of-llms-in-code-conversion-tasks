@@ -1,0 +1,59 @@
+/tmp/granitecode3b-file_rename-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string input("input.txt");
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::string output("output.txt");
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::string docs("docs");
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string mydocs("mydocs");
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:10:14: error: use of undeclared identifier 'input'
+   10 |   if (rename(input.c_str(), output.c_str()) == -1) {
+      |              ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:10:29: error: use of undeclared identifier 'output'
+   10 |   if (rename(input.c_str(), output.c_str()) == -1) {
+      |                             ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:11:5: error: use of undeclared identifier 'std'
+   11 |     std::cerr << "Error renaming input.txt to output.txt" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:11:62: error: use of undeclared identifier 'std'
+   11 |     std::cerr << "Error renaming input.txt to output.txt" << std::endl;
+      |                                                              ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:15:14: error: use of undeclared identifier 'docs'
+   15 |   if (rename(docs.c_str(), mydocs.c_str()) == -1) {
+      |              ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:15:28: error: use of undeclared identifier 'mydocs'
+   15 |   if (rename(docs.c_str(), mydocs.c_str()) == -1) {
+      |                            ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::cerr << "Error renaming docs to mydocs" << std::endl;
+      |     ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:16:53: error: use of undeclared identifier 'std'
+   16 |     std::cerr << "Error renaming docs to mydocs" << std::endl;
+      |                                                     ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:20:3: error: use of undeclared identifier 'input'
+   20 |   input = "/" + input;
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:20:17: error: use of undeclared identifier 'input'
+   20 |   input = "/" + input;
+      |                 ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:21:3: error: use of undeclared identifier 'output'
+   21 |   output = "/" + output;
+      |   ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:21:18: error: use of undeclared identifier 'output'
+   21 |   output = "/" + output;
+      |                  ^
+/tmp/granitecode3b-file_rename-py-cpp.cpp:22:3: error: use of undeclared identifier 'docs'
+   22 |   docs = "/" + docs;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

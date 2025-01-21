@@ -1,0 +1,26 @@
+error[E0463]: can't find crate for `num`
+ --> /tmp/yicoder9b-bit_ops-cpp-rs.rs:1:1
+  |
+1 | extern crate num;
+  | ^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0601]: `main` function not found in crate `yicoder9b_bit_ops_cpp_rs`
+  --> /tmp/yicoder9b-bit_ops-cpp-rs.rs:21:2
+   |
+21 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder9b-bit_ops-cpp-rs.rs`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder9b-bit_ops-cpp-rs.rs:4:12
+  |
+4 | fn bitwise(mut a: i32, b: i32) {
+  |            ----^
+  |            |
+  |            help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0463, E0601.
+For more information about an error, try `rustc --explain E0463`.

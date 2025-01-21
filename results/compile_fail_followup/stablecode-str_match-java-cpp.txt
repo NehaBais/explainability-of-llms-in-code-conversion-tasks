@@ -1,0 +1,48 @@
+/tmp/stablecode-str_match-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_match-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_match-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/stablecode-str_match-java-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string str1 = "abcd";
+      |   ^
+/tmp/stablecode-str_match-java-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string str2 = "ab";
+      |   ^
+/tmp/stablecode-str_match-java-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "\"abcd\".startsWith(\"ab\")) //returns \"" << boolalpha
+      |   ^
+/tmp/stablecode-str_match-java-cpp.cpp:9:58: error: use of undeclared identifier 'boolalpha'
+    9 |   cout << "\"abcd\".startsWith(\"ab\")) //returns \"" << boolalpha
+      |                                                          ^
+/tmp/stablecode-str_match-java-cpp.cpp:13:85: error: expected ';' after expression
+   13 |     checkStartsWith = str1.compare(str1.length()-str2.length(), str2.length(), str2)) == 0;
+      |                                                                                     ^
+      |                                                                                     ;
+/tmp/stablecode-str_match-java-cpp.cpp:13:85: error: expected expression
+/tmp/stablecode-str_match-java-cpp.cpp:14:5: error: use of undeclared identifier 'cout'
+   14 |     cout << "\"abcd\".endsWith(\"zn\")) //returns \"" << boolalpha
+      |     ^
+/tmp/stablecode-str_match-java-cpp.cpp:14:58: error: use of undeclared identifier 'boolalpha'
+   14 |     cout << "\"abcd\".endsWith(\"zn\")) //returns \"" << boolalpha
+      |                                                          ^
+/tmp/stablecode-str_match-java-cpp.cpp:19:42: error: use of undeclared identifier 'std'
+   19 |     checkStartsWith = str1.find(str2) != std::string::npos;
+      |                                          ^
+/tmp/stablecode-str_match-java-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << "\"abab\".contains(\"bb\")) //returns \"" << boolalpha
+      |     ^
+/tmp/stablecode-str_match-java-cpp.cpp:20:58: error: use of undeclared identifier 'boolalpha'
+   20 |     cout << "\"abab\".contains(\"bb\")) //returns \"" << boolalpha
+      |                                                          ^
+/tmp/stablecode-str_match-java-cpp.cpp:24:35: error: extraneous ')' before ';'
+   24 |     loc = str1.find("ab", loc + 1));
+      |                                   ^
+/tmp/stablecode-str_match-java-cpp.cpp:25:5: error: use of undeclared identifier 'cout'
+   25 |     cout << "\"abab\".indexOf(\"ab\", " << loc << ")) //returns [\"" << loc
+      |     ^
+1 warning and 15 errors generated.

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_exists-java-go.go:5:2: "io/ioutil" imported and not used
+/tmp/stablecode-file_exists-java-go.go:7:2: "path" imported and not used
+/tmp/stablecode-file_exists-java-go.go:34:5: undefined: runtime
+/tmp/stablecode-file_exists-java-go.go:39:12: undefined: runtime

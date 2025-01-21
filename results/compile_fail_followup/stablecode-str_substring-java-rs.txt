@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_substring-java-rs.rs:1:57
+  |
+1 | pub fn substring(s: &str, n: usize, m: usize) -> String {
+  |                                                         ^ unclosed delimiter
+...
+8 |     String::from_utf8_lossy(&s.bytes()[n..end].to_vec()))
+  |                                                         ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+ --> /tmp/stablecode-str_substring-java-rs.rs:9:1
+  |
+8 |     String::from_utf8_lossy(&s.bytes()[n..end].to_vec()))
+  |                                                         - missing open `(` for this delimiter
+9 | }
+  | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

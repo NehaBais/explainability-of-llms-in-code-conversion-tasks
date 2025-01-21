@@ -1,0 +1,64 @@
+/tmp/stablecode-str_cmp-rs-cpp.cpp:15:14: error: extraneous ')' after condition, expected a statement
+   15 |   if (a != b)) std::cout << "The strings are not equal\n";
+      |              ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:21:84: error: extraneous ')' before ';'
+   21 |     bool cmp = std::lexicographical_compare(a.begin(), a.end(), b.begin(), b.end()));
+      |                                                                                    ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:32:78: error: expected expression
+   32 |     std::string a2 = std::string(a.begin(), std::find_if(a.begin(), a.end(), [](unsigned char c){
+      |                                                                              ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:33:34: error: redefinition of 'b'
+   33 |     return !std::isalnum(c);})), b));
+      |                                  ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:7:15: note: previous definition is here
+    7 |   std::string b = "Bac";
+      |               ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:33:35: error: expected ';' at end of declaration
+   33 |     return !std::isalnum(c);})), b));
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-str_cmp-rs-cpp.cpp:39:22: error: no matching function for call to 'equal'
+   39 |     bool is_prefix = std::equal(a.begin(), a.end()), b.begin(), b.end());
+      |                      ^~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:67:1: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+   67 | equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference:830:1: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+  830 | equal(__bit_iterator<_Cp, _IC1> __first1, __bit_iterator<_Cp, _IC1> __last1, __bit_iterator<_Cp, _IC2> __first2) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:60:1: note: candidate function template not viable: requires 4 arguments, but 2 were provided
+   60 | equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-str_cmp-rs-cpp.cpp:39:54: error: redefinition of 'b' with a different type: 'bool' vs 'std::string' (aka 'basic_string<char>')
+   39 |     bool is_prefix = std::equal(a.begin(), a.end()), b.begin(), b.end());
+      |                                                      ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:7:15: note: previous definition is here
+    7 |   std::string b = "Bac";
+      |               ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:39:55: error: expected ';' at end of declaration
+   39 |     bool is_prefix = std::equal(a.begin(), a.end()), b.begin(), b.end());
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-str_cmp-rs-cpp.cpp:48:22: error: no matching function for call to 'equal'
+   48 |     bool is_suffix = std::equal(b.begin(), b.end()), a.rbegin(), a.rend());
+      |                      ^~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:67:1: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+   67 | equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference:830:1: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+  830 | equal(__bit_iterator<_Cp, _IC1> __first1, __bit_iterator<_Cp, _IC1> __last1, __bit_iterator<_Cp, _IC2> __first2) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:60:1: note: candidate function template not viable: requires 4 arguments, but 2 were provided
+   60 | equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred) {
+      | ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-str_cmp-rs-cpp.cpp:48:54: error: redefinition of 'a' with a different type: 'bool' vs 'std::string' (aka 'basic_string<char>')
+   48 |     bool is_suffix = std::equal(b.begin(), b.end()), a.rbegin(), a.rend());
+      |                                                      ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:6:15: note: previous definition is here
+    6 |   std::string a = "abc";
+      |               ^
+/tmp/stablecode-str_cmp-rs-cpp.cpp:48:55: error: expected ';' at end of declaration
+   48 |     bool is_suffix = std::equal(b.begin(), b.end()), a.rbegin(), a.rend());
+      |                                                       ^
+      |                                                       ;
+11 errors generated.

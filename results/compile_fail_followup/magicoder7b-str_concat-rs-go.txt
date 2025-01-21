@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-str_concat-rs-go.go:10:2: undefined: fmt
+/tmp/magicoder7b-str_concat-rs-go.go:13:2: undefined: fmt

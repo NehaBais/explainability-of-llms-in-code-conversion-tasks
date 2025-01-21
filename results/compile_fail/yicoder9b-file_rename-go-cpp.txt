@@ -1,0 +1,77 @@
+/tmp/yicoder9b-file_rename-go-cpp.cpp:4:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+    4 |   if (rename("input.txt", "output.txt") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:4:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[10]'
+    4 |   if (rename("input.txt", "output.txt") == 0) {
+      |              ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:5:10: error: no member named 'cout' in namespace 'std'
+    5 |     std::cout << "File renamed successfully!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:7:10: error: no member named 'cout' in namespace 'std'
+    7 |     std::cout << "Failed to rename the file!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:11:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   11 |   if (rename("docs", "mydocs") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:11:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[5]'
+   11 |   if (rename("docs", "mydocs") == 0) {
+      |              ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:12:10: error: no member named 'cout' in namespace 'std'
+   12 |     std::cout << "Directory renamed successfully!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:14:10: error: no member named 'cout' in namespace 'std'
+   14 |     std::cout << "Failed to rename the directory!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:18:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   18 |   if (rename("/input.txt", "/output.txt") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:18:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[11]'
+   18 |   if (rename("/input.txt", "/output.txt") == 0) {
+      |              ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:19:10: error: no member named 'cout' in namespace 'std'
+   19 |     std::cout << "File renamed successfully in root directory!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:21:10: error: no member named 'cout' in namespace 'std'
+   21 |     std::cout << "Failed to rename the file in root directory!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:25:7: error: use of undeclared identifier 'rename'; did you mean 'devname'?
+   25 |   if (rename("/docs", "/mydocs") == 0) {
+      |       ^~~~~~
+      |       devname
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:25:14: error: cannot initialize a parameter of type 'dev_t' (aka 'int') with an lvalue of type 'const char[6]'
+   25 |   if (rename("/docs", "/mydocs") == 0) {
+      |              ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:20: note: passing argument to parameter here
+  300 | char    *devname(dev_t, mode_t);
+      |                       ^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:26:10: error: no member named 'cout' in namespace 'std'
+   26 |     std::cout << "Directory renamed successfully in root directory!\n";
+      |     ~~~~~^
+/tmp/yicoder9b-file_rename-go-cpp.cpp:28:10: error: no member named 'cout' in namespace 'std'
+   28 |     std::cout << "Failed to rename the directory in root directory!\n";
+      |     ~~~~~^
+16 errors generated.

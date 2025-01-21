@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:10:43: newline in string
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:10:43: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:11:32: newline in string
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:15:52: newline in string
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:15:52: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/qwen2.5coder2b-file_size-cpp-go.go:16:8: newline in string

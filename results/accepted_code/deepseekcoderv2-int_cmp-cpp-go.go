@@ -2,25 +2,31 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
 	var a, b int
-	_, err := fmt.Scanf("%d %d", &a, &b)
+
+	// Get two integers from the user
+	_, err := fmt.Scan(&a, &b)
 	if err != nil {
-		fmt.Println("Invalid input")
+		fmt.Fprintln(os.Stderr, "could not read the numbers")
 		return
 	}
-	// test for less-than
+
+	// Test for less-than
 	if a < b {
-		fmt.Printf("%v is less than %v\n", a, b)
+		fmt.Printf("%d is less than %d\n", a, b)
 	}
-	// test for equality
+
+	// Test for equality
 	if a == b {
-		fmt.Printf("%v is equal to %v\n", a, b)
+		fmt.Printf("%d is equal to %d\n", a, b)
 	}
-	// test for greater-than
+
+	// Test for greater-than
 	if a > b {
-		fmt.Printf("%v is greater than %v\n", a, b)
+		fmt.Printf("%d is greater than %d\n", a, b)
 	}
 }

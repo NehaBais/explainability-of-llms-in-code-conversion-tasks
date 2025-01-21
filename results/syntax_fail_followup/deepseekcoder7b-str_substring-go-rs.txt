@@ -1,0 +1,21 @@
+error[E0432]: unresolved import `unicode_segmentation`
+ --> /tmp/deepseekcoder7b-str_substring-go-rs.rs:1:5
+  |
+1 | use unicode_segmentation::UnicodeSegmentation;
+  |     ^^^^^^^^^^^^^^^^^^^^ you might be missing crate `unicode_segmentation`
+  |
+help: consider importing the `unicode_segmentation` crate
+  |
+1 + extern crate unicode_segmentation;
+  |
+
+error[E0425]: cannot find function `printlnig` in this scope
+ --> /tmp/deepseekcoder7b-str_substring-go-rs.rs:8:5
+  |
+8 |     printlnig("{:?}", UnicodeSegmentation::graphemes(s.to_string(), true));
+  |     ^^^^^^^^^ not found in this scope
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.

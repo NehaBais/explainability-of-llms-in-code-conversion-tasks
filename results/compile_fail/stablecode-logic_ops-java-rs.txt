@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `stablecode_logic_ops_java_rs`
+ --> /tmp/stablecode-logic_ops-java-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/stablecode-logic_ops-java-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

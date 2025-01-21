@@ -1,0 +1,6 @@
+/tmp/Main.java:4: error: cannot find symbol
+  public static void main(String[] args) throws IOException {
+                                                ^
+  symbol:   class IOException
+  location: class Main
+1 error

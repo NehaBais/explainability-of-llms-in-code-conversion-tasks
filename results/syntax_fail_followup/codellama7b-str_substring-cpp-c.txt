@@ -1,0 +1,11 @@
+/tmp/codellama7b-str_substring-cpp-c.c:16:21: error: member reference base type 'char *' is not a structure or union
+   16 |   printf("%.*s\n", s.size() - 1,
+      |                    ~^~~~~
+/tmp/codellama7b-str_substring-cpp-c.c:18:28: error: incompatible integer to pointer conversion passing 'char' to parameter of type 'const char *'; take the address with & [-Wint-conversion]
+   18 |   printf("%s\n", strstr(s, c));   // starting from a known character within the
+      |                            ^
+      |                            &
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:45: note: passing argument to parameter '__little' here
+   89 | char    *strstr(const char *__big, const char *__little);
+      |                                                ^
+2 errors generated.

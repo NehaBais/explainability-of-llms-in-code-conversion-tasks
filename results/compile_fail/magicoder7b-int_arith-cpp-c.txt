@@ -1,0 +1,5 @@
+/tmp/magicoder7b-int_arith-cpp-c.c:18:10: error: call to undeclared library function 'abs' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 |          abs(remainder)); // Print the absolute value of the remainder.
+      |          ^
+/tmp/magicoder7b-int_arith-cpp-c.c:18:10: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+1 error generated.

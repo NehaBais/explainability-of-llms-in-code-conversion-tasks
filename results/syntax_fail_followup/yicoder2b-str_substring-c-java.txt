@@ -1,0 +1,65 @@
+/tmp/None.java:1: error: illegal character: '#'
+#include <stddef.h>
+^
+/tmp/None.java:1: error: class, interface, enum, or record expected
+#include <stddef.h>
+         ^
+/tmp/None.java:2: error: illegal character: '#'
+#include <stdio.h>
+^
+/tmp/None.java:3: error: illegal character: '#'
+#include <string.h>
+^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+  if (m < 0) 
+  ^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+  for (int i=0;n>0 && s[i]!='';i++) n--; // advance to the start of string or after n characters
+  ^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+  for (int i=0;n>0 && s[i]!='';i++) n--; // advance to the start of string or after n characters
+               ^
+/tmp/None.java:11: error: empty character literal
+  for (int i=0;n>0 && s[i]!='';i++) n--; // advance to the start of string or after n characters
+                            ^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+  for (int i=0;n>0 && s[i]!='';i++) n--; // advance to the start of string or after n characters
+                               ^
+/tmp/None.java:13: error: implicitly declared classes are a preview feature and are disabled by default.
+  size_t len = m < 0 ? strlen(s) : m;
+  ^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:14: error: class, interface, enum, or record expected
+  char *result = (char*)malloc((len + 1)*sizeof(char));
+  ^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+  if (NULL == result)
+  ^
+/tmp/None.java:17: error: class, interface, enum, or record expected
+  result[0]=0;
+  ^
+/tmp/None.java:18: error: class, interface, enum, or record expected
+  strncpy(result, s+n, len); /* strncpy() will automatically add null terminator if string ends early or after reading m characters */
+  ^
+/tmp/None.java:19: error: class, interface, enum, or record expected
+  return result;
+  ^
+/tmp/None.java:20: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:24: error: class, interface, enum, or record expected
+    char* r = substring(s, 12, 5);       // get "short"
+    ^
+/tmp/None.java:25: error: class, interface, enum, or record expected
+    printf("%s\n",r);                   // print out the result
+    ^
+/tmp/None.java:26: error: class, interface, enum, or record expected
+    free(r);                            // release the memory occupied by string
+    ^
+/tmp/None.java:28: error: class, interface, enum, or record expected
+    return 0;
+    ^
+/tmp/None.java:29: error: class, interface, enum, or record expected
+}
+^
+21 errors

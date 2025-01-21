@@ -1,0 +1,7 @@
+/tmp/codeqwen-str_prepend-java-c.c:6:24: error: invalid operands to binary expression ('char[4]' and 'char[4]')
+    6 |   strcpy(string, "abc" + string);
+      |                  ~~~~~ ^ ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:84:33: note: expanded from macro 'strcpy'
+   84 |                 __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                               ^~~~~~~~~~~
+1 error generated.

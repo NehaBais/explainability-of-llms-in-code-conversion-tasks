@@ -1,0 +1,1 @@
+This error appears because Java does not support anonymous inner classes as part of `BiConsumer` interface, which is why it cannot compile. A workaround could be to define an actual class that implements `BiConsumer`.

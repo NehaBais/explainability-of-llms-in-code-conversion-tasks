@@ -1,0 +1,31 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_factors-js-rs.rs:2:13
+  |
+2 | -> Vec<u64> {
+  |             ^ unclosed delimiter
+...
+8 | 1..=((num as f64).sqrt() as u64)) 
+  |                                 ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_factors-js-rs.rs:14:31
+   |
+14 |             if (num / i) != i {
+   |                               ^ unclosed delimiter
+15 |                 n_factors.push((num / i)));
+   |                                          ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-int_factors-js-rs.rs:18:5
+   |
+8  | 1..=((num as f64).sqrt() as u64)) 
+   |                                 - missing open `(` for this delimiter
+...
+15 |                 n_factors.push((num / i)));
+   |                                          - missing open `(` for this delimiter
+...
+18 |     }
+   |     ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

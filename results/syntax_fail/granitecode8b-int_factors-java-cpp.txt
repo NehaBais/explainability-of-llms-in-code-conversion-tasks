@@ -1,0 +1,37 @@
+/tmp/granitecode8b-int_factors-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:4:1: error: unknown type name 'set'
+    4 | set factors(long n) {
+      | ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:5:3: error: unknown type name 'set'
+    5 |   set factors;
+      |   ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:8:35: error: use of undeclared identifier 'sqrt'
+    8 |   for (long test = n - 1; test >= sqrt(n); test--) {
+      |                                   ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:18:3: error: unknown type name 'set'
+   18 |   set result = factors(n);
+      |   ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:19:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   19 |   for (auto factor : result) {
+      |        ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:19:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   19 |   for (auto factor : result) {
+      |                    ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:20:5: error: use of undeclared identifier 'cout'
+   20 |     cout << factor << " ";
+      |     ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:22:3: error: use of undeclared identifier 'cout'
+   22 |   cout << endl;
+      |   ^
+/tmp/granitecode8b-int_factors-java-cpp.cpp:22:11: error: use of undeclared identifier 'endl'
+   22 |   cout << endl;
+      |           ^
+3 warnings and 9 errors generated.

@@ -1,0 +1,16 @@
+/tmp/stablecode-file_create-py-c.c:12:17: error: use of undeclared identifier '_MAX_PATH'
+   12 |   char fullPath[MAX_PATH];
+      |                 ^
+/tmp/stablecode-file_create-py-c.c:8:18: note: expanded from macro 'MAX_PATH'
+    8 | #define MAX_PATH _MAX_PATH
+      |                  ^
+/tmp/stablecode-file_create-py-c.c:15:45: error: extraneous ')' before ';'
+   15 |     FILE * outputFile = fopen(fullPath, "w"));
+      |                                             ^
+/tmp/stablecode-file_create-py-c.c:22:5: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     mkdir(fullPath, 0777);
+      |     ^
+/tmp/stablecode-file_create-py-c.c:23:9: error: use of undeclared identifier 'errno'
+   23 |     if (errno != 0) {
+      |         ^
+4 errors generated.

@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/magicoder7b-int_cmp-rs-go.go:14:23: undefined: a
+/tmp/magicoder7b-int_cmp-rs-go.go:22:23: undefined: b
+/tmp/magicoder7b-int_cmp-rs-go.go:28:5: undefined: a
+/tmp/magicoder7b-int_cmp-rs-go.go:28:9: undefined: b
+/tmp/magicoder7b-int_cmp-rs-go.go:29:38: undefined: a
+/tmp/magicoder7b-int_cmp-rs-go.go:29:41: undefined: b
+/tmp/magicoder7b-int_cmp-rs-go.go:30:12: undefined: a
+/tmp/magicoder7b-int_cmp-rs-go.go:30:17: undefined: b
+/tmp/magicoder7b-int_cmp-rs-go.go:31:32: undefined: a
+/tmp/magicoder7b-int_cmp-rs-go.go:31:35: undefined: b
+/tmp/magicoder7b-int_cmp-rs-go.go:31:35: too many errors

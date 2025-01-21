@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-dir_make-js-go.go:21:6: expected boolean expression, found assignment (missing parentheses around composite literal?)

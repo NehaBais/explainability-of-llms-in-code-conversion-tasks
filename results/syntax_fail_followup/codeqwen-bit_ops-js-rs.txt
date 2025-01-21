@@ -1,0 +1,9 @@
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-bit_ops-js-rs.rs:13:13
+   |
+13 |     bitwise(A, b);
+   |             ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

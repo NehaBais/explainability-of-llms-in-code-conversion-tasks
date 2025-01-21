@@ -1,0 +1,40 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/granitecode3b-int_factors-cpp-rs.rs:16:2
+   |
+16 | }
+   |  ^ consider adding a `main` function to `/tmp/granitecode3b-int_factors-cpp-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:6:26
+  |
+6 |             factors.push(i);
+  |                     ---- ^ expected `i32`, found `u32`
+  |                     |
+  |                     arguments to this method are incorrect
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/vec/mod.rs:2003:12
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+  |
+6 |             factors.push(i.try_into().unwrap());
+  |                           ++++++++++++++++++++
+
+error[E0308]: mismatched types
+ --> /tmp/granitecode3b-int_factors-cpp-rs.rs:9:30
+  |
+9 |                 factors.push(n / i);
+  |                         ---- ^^^^^ expected `i32`, found `u32`
+  |                         |
+  |                         arguments to this method are incorrect
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/vec/mod.rs:2003:12
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+  |
+9 |                 factors.push((n / i).try_into().unwrap());
+  |                              +     +++++++++++++++++++++
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0308, E0601.
+For more information about an error, try `rustc --explain E0308`.

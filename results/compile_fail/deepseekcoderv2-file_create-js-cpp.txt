@@ -1,0 +1,7 @@
+/tmp/deepseekcoderv2-file_create-js-cpp.cpp:21:8: error: no member named 'filesystem' in namespace 'std'
+   21 |   std::filesystem::create_directory("docs", std::error_code());
+      |   ~~~~~^
+/tmp/deepseekcoderv2-file_create-js-cpp.cpp:25:8: error: no member named 'filesystem' in namespace 'std'
+   25 |   std::filesystem::create_directory("/docs", std::error_code());
+      |   ~~~~~^
+2 errors generated.

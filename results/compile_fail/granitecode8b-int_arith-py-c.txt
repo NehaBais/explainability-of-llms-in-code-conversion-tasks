@@ -1,0 +1,60 @@
+/tmp/granitecode8b-int_arith-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-py-c.c:2:1: error: unknown type name 'using'
+    2 | using namespace std;
+      | ^
+/tmp/granitecode8b-int_arith-py-c.c:2:16: error: expected ';' after top level declarator
+    2 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode8b-int_arith-py-c.c:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "Enter first integer: ";
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:8:3: error: use of undeclared identifier 'cin'
+    8 |   cin >> input1;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "Enter second integer: ";
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:10:3: error: use of undeclared identifier 'cin'
+   10 |   cin >> input2;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:20:3: error: use of undeclared identifier 'cout'
+   20 |   cout << "Sum:                   " << qq << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:20:32: error: use of undeclared identifier 'endl'
+   20 |   cout << "Sum:                   " << qq << endl;
+      |                                              ^
+/tmp/granitecode8b-int_arith-py-c.c:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "Difference:    " << ww << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:21:38: error: use of undeclared identifier 'endl'
+   21 |   cout << "Difference:    " << ww << endl;
+      |                                      ^
+/tmp/granitecode8b-int_arith-py-c.c:22:3: error: use of undeclared identifier 'cout'
+   22 |   cout << "Product:       " << ee << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:22:35: error: use of undeclared identifier 'endl'
+   22 |   cout << "Product:       " << ee << endl;
+      |                                      ^
+/tmp/granitecode8b-int_arith-py-c.c:23:3: error: use of undeclared identifier 'cout'
+   23 |   cout << "Integer quotient: " << rr << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:23:41: error: use of undeclared identifier 'endl'
+   23 |   cout << "Integer quotient: " << rr << endl;
+      |                                         ^
+/tmp/granitecode8b-int_arith-py-c.c:24:3: error: use of undeclared identifier 'cout'
+   24 |   cout << "Float quotient:   " << rr_float << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:24:47: error: use of undeclared identifier 'endl'
+   24 |   cout << "Float quotient:   " << rr_float << endl;
+      |                                               ^
+/tmp/granitecode8b-int_arith-py-c.c:25:3: error: use of undeclared identifier 'cout'
+   25 |   cout << "Whole Remainder:  " << (int)uu_float << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-c.c:25:52: error: use of undeclared identifier 'endl'
+   25 |   cout << "Whole Remainder:  " << (int)uu_float << endl;
+      |                                                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

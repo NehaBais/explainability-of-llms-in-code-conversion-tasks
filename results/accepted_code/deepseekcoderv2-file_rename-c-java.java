@@ -1,14 +1,25 @@
-import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
-public class Rename {
+public class RenameExample {
   public static void main(String[] args) {
-    File oldFile = new File("input.txt");
-    File newFile = new File("output.txt");
-    boolean result = oldFile.renameTo(newFile);
-    if (result == true) {
-      System.out.println("The file has been successfully renamed.");
-    } else {
-      System.out.println("Failed to rename the file.");
+    try {
+      // Rename file in the current working directory
+      Files.move(
+          Paths.get("input.txt"), Paths.get("output.txt"), StandardCopyOption.REPLACE_EXISTING);
+
+      // Rename directory in the current working directory
+      Files.move(Paths.get("docs"), Paths.get("mydocs"), StandardCopyOption.REPLACE_EXISTING);
+
+      // Rename file in the filesystem root
+      Files.move(
+          Paths.get("/input.txt"), Paths.get("/output.txt"), StandardCopyOption.REPLACE_EXISTING);
+
+      // Rename directory in the filesystem root
+      Files.move(Paths.get("/docs"), Paths.get("/mydocs"), StandardCopyOption.REPLACE_EXISTING);
+    } catch (Exception e) {
+      e.printStackTrace();
     }
   }
 }

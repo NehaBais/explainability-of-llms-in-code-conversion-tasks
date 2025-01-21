@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-int_arith-java-go.go:12:12: undefined: strconv
+/tmp/granitecode3b-int_arith-java-go.go:18:12: undefined: strconv

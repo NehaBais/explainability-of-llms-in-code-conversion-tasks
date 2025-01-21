@@ -1,0 +1,19 @@
+/tmp/Main.java:48: error: incompatible types: possible lossy conversion from int to short
+      ftors.count = flix;
+                    ^
+/tmp/Main.java:49: error: cannot find symbol
+    } else if (dvsr * dvsr == num) {
+               ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:49: error: cannot find symbol
+    } else if (dvsr * dvsr == num) {
+                      ^
+  symbol:   variable dvsr
+  location: class Main
+/tmp/Main.java:50: error: cannot find symbol
+      ftors.addFactor(dvsr);
+                      ^
+  symbol:   variable dvsr
+  location: class Main
+4 errors

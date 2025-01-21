@@ -1,7 +1,16 @@
-std::string word1 = "little";
-int num2 = 2;
-float num3 = 4.0f;
-bool bool4 = false;
-std::cout << std::endl;
-std::cout << "Hello!" << std::endl;
-std::cout << String.format("%s had a %d lamb", word1, num2);
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string adjective = "little";
+  std::string lyric = "Mary had a %s lamb";
+  std::string result = "";
+
+  // Perform the substitution using sprintf for simplicity
+  char buffer[100];
+  sprintf(buffer, lyric.c_str(), adjective.c_str());
+  result = std::string(buffer);
+
+  std::cout << result << std::endl;
+  return 0;
+}

@@ -1,0 +1,18 @@
+error: 6 positional arguments in format string, but there are 5 arguments
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:3:10
+  |
+3 |         "{}, {}, {}, {}, {}, {}",
+  |          ^^  ^^  ^^  ^^  ^^  ^^
+4 |         "abcd" == "abcd",
+  |         ----------------
+5 |         123 == 123,
+  |         ----------
+6 |         123.to_string() == "123",
+  |         ------------------------
+7 |         "abcd" != "dcba",
+  |         ----------------
+8 |         "abcd".to_lowercase() == "abcd".to_lowercase(),
+  |         ----------------------------------------------
+
+error: aborting due to 1 previous error
+

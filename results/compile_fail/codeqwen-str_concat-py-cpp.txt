@@ -1,0 +1,4 @@
+/tmp/codeqwen-str_concat-py-cpp.cpp:24:18: error: non-aggregate type 'vector<string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   24 |   vector<string> words = {"world", "mom"};
+      |                  ^       ~~~~~~~~~~~~~~~~
+1 error generated.

@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path inputPath("input.txt");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path docsPath("docs");
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (std::filesystem::exists(inputPath)) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:8:31: error: use of undeclared identifier 'inputPath'
+    8 |   if (std::filesystem::exists(inputPath)) {
+      |                               ^
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:14:12: error: no member named 'filesystem' in namespace 'std'
+   14 |   if (std::filesystem::exists(docsPath)) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-py-cpp.cpp:14:31: error: use of undeclared identifier 'docsPath'
+   14 |   if (std::filesystem::exists(docsPath)) {
+      |                               ^
+6 errors generated.

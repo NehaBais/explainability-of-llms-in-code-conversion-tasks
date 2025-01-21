@@ -1,0 +1,62 @@
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "a AND b: " << (a & b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:5:37: error: use of undeclared identifier 'endl'
+    5 |   cout << "a AND b: " << (a & b) << endl;
+      |                                     ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a OR b: " << (a | b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:6:36: error: use of undeclared identifier 'endl'
+    6 |   cout << "a OR b: " << (a | b) << endl;
+      |                                    ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:7:37: error: use of undeclared identifier 'endl'
+    7 |   cout << "a XOR b: " << (a ^ b) << endl;
+      |                                     ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "NOT a: " << ~a << endl;
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:8:30: error: use of undeclared identifier 'endl'
+    8 |   cout << "NOT a: " << ~a << endl;
+      |                              ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:9:37: error: use of undeclared identifier 'endl'
+    9 |   cout << "a << b: " << (a << b) << endl;   // left shift
+      |                                     ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:10:37: error: use of undeclared identifier 'endl'
+   10 |   cout << "a >> b: " << (a >> b) << endl;   // arithmetic right shift
+      |                                     ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:11:31: error: expected expression
+   11 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                               ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:11:39: error: use of undeclared identifier 'endl'
+   11 |   cout << "a >>> b: " << (a >>> b) << endl; // logical right shift
+      |                                       ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "a rol b: " << Integer.rotateLeft(a, b)
+      |   ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:12:26: error: use of undeclared identifier 'Integer'
+   12 |   cout << "a rol b: " << Integer.rotateLeft(a, b)
+      |                          ^
+/tmp/granitecode3b-bit_ops-java-cpp.cpp:13:11: error: use of undeclared identifier 'endl'
+   13 |        << endl; // rotate left, Java 1.5+
+      |           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

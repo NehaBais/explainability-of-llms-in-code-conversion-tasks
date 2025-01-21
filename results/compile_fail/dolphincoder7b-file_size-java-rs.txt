@@ -1,0 +1,14 @@
+error[E0282]: type annotations needed
+ --> /tmp/dolphincoder7b-file_size-java-rs.rs:9:16
+  |
+9 |         file_a.as_ref().unwrap().metadata().unwrap().len()
+  |                ^^^^^^   ------ type must be known at this point
+  |
+help: try using a fully qualified path to specify the expected types
+  |
+9 |         <Path as AsRef<T>>::as_ref(file_a).unwrap().metadata().unwrap().len()
+  |         +++++++++++++++++++++++++++      ~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0282`.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-str_prepend-c-go.go:9:22: invalid argument: str (variable of type []byte) is not a pointer

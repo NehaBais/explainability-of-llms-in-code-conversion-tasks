@@ -1,0 +1,63 @@
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+  --> /tmp/codellama7b-file_create-c-rs.rs:11:31
+   |
+11 |     fs::set_permissions(path, Permissions::from_mode(0o640))?;
+   |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+   |
+help: a trait with a similar name exists
+   |
+11 |     fs::set_permissions(path, PermissionsExt::from_mode(0o640))?;
+   |                               ~~~~~~~~~~~~~~
+help: consider importing this struct
+   |
+1  + use fs::Permissions;
+   |
+
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+  --> /tmp/codellama7b-file_create-c-rs.rs:16:31
+   |
+16 |     fs::set_permissions(path, Permissions::from_mode(0o750))?;
+   |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+   |
+help: a trait with a similar name exists
+   |
+16 |     fs::set_permissions(path, PermissionsExt::from_mode(0o750))?;
+   |                               ~~~~~~~~~~~~~~
+help: consider importing this struct
+   |
+1  + use fs::Permissions;
+   |
+
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+  --> /tmp/codellama7b-file_create-c-rs.rs:22:31
+   |
+22 |     fs::set_permissions(path, Permissions::from_mode(0o640))?;
+   |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+   |
+help: a trait with a similar name exists
+   |
+22 |     fs::set_permissions(path, PermissionsExt::from_mode(0o640))?;
+   |                               ~~~~~~~~~~~~~~
+help: consider importing this struct
+   |
+1  + use fs::Permissions;
+   |
+
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+  --> /tmp/codellama7b-file_create-c-rs.rs:28:31
+   |
+28 |     fs::set_permissions(path, Permissions::from_mode(0o750))?;
+   |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+   |
+help: a trait with a similar name exists
+   |
+28 |     fs::set_permissions(path, PermissionsExt::from_mode(0o750))?;
+   |                               ~~~~~~~~~~~~~~
+help: consider importing this struct
+   |
+1  + use fs::Permissions;
+   |
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0433`.

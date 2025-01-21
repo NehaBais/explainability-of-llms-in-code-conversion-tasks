@@ -1,0 +1,16 @@
+/tmp/granitecode8b-str_interp-js-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::string original = "Mary had a X lamb";
+      | ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:2:1: error: use of undeclared identifier 'std'
+    2 | std::string little = "little";
+      | ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:3:1: error: use of undeclared identifier 'std'
+    3 | std::string replaced = original;
+      | ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:4:1: error: unknown type name 'size_t'
+    4 | size_t pos = replaced.find("X");
+      | ^
+/tmp/granitecode8b-str_interp-js-cpp.cpp:5:1: error: expected unqualified-id
+    5 | if (pos != std::string::npos) {
+      | ^
+5 errors generated.

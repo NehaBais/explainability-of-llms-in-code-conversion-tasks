@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-str_interp-py-cpp.cpp:6:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    6 |   auto new_str = std::format("Mary had a {} lamb.", extra);
+      |   ^
+/tmp/qwen2.5coder7b-str_interp-py-cpp.cpp:6:23: error: no member named 'format' in namespace 'std'
+    6 |   auto new_str = std::format("Mary had a {} lamb.", extra);
+      |                  ~~~~~^
+1 warning and 1 error generated.

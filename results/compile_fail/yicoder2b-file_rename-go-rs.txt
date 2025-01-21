@@ -1,0 +1,94 @@
+error[E0599]: no function or associated item named `new` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_rename-go-rs.rs:8:30
+  |
+8 |     let mut file = fs::File::new(&[0, '/', 0].into().as_str()).unwrap();
+  |                              ^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-file_rename-go-rs.rs:8:39
+  |
+8 |     let mut file = fs::File::new(&[0, '/', 0].into().as_str()).unwrap();
+  |                                       ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-file_rename-go-rs.rs:9:22
+  |
+9 |     file.rename(&[1, '/', 2, '_', 'o', 'u', 't', 'p', 'u', 't'].into())
+  |                      ^^^ expected integer, found `char`
+
+error[E0599]: no function or associated item named `new` found for struct `DirEntry` in the current scope
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:14:23
+   |
+14 |         fs::DirEntry::new(&[0, '/', 1, '_', 'd', 'o', 'c', 'u', 'r'].into().as_str()).unwrap();
+   |                       ^^^ function or associated item not found in `DirEntry`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:14:32
+   |
+14 |         fs::DirEntry::new(&[0, '/', 1, '_', 'd', 'o', 'c', 'u', 'r'].into().as_str()).unwrap();
+   |                                ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:15:21
+   |
+15 |     dir.rename(&[0, '/', 2, '_', 'm', 'y', 'd', 'o', 's'].into())
+   |                     ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:21:14
+   |
+21 |         &[0, '/', 1, '_', 'i', 'n', 'p', 'u'].into().as_str(),
+   |              ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:22:14
+   |
+22 |         &[0, '/', 1, '_', 'o', 'u', 't', 'p', 'u', 't'],
+   |              ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:26:18
+   |
+26 |             &[0, '/', 1, '_', 'i', 'n', 'p', 'u'].into().as_str(),
+   |                  ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:27:18
+   |
+27 |             &[0, '/', 1, '_', 'o', 'u', 't', 'p', 'u', 't'].into()
+   |                  ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:34:14
+   |
+34 |         &[0, '/', 1, '_', 'd', 'o', 'c', 'u', 'r'].into().as_str(),
+   |              ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:35:14
+   |
+35 |         &[0, '/', 1, '_', 'm', 'y', 'd', 'o', 's'].into(),
+   |              ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:39:18
+   |
+39 |             &[0, '/', 1, '_', 'd', 'o', 'c', 'u', 'r'].into().as_str(),
+   |                  ^^^ expected integer, found `char`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-file_rename-go-rs.rs:40:18
+   |
+40 |             &[0, '/', 1, '_', 'm', 'y', 'd', 'o', 's'].into()
+   |                  ^^^ expected integer, found `char`
+
+error: aborting due to 14 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

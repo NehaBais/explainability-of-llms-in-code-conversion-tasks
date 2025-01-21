@@ -1,0 +1,14 @@
+/tmp/None.java:1: error: package org.junit.jupiter.api does not exist
+import static org.junit.jupiter.api.Assertions.*;
+                                   ^
+/tmp/None.java:7: error: cannot find symbol
+    assertEquals(
+    ^
+  symbol:   method assertEquals(List<Integer>,List<Integer>)
+  location: class Main
+/tmp/None.java:10: error: cannot find symbol
+    assertEquals(Arrays.asList(1, 101), factor(101));
+    ^
+  symbol:   method assertEquals(List<Integer>,List<Integer>)
+  location: class Main
+3 errors

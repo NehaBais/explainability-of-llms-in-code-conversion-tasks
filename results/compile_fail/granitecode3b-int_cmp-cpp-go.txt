@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-int_cmp-cpp-go.go:8:16: undefined: os
+/tmp/granitecode3b-int_cmp-cpp-go.go:9:3: undefined: os

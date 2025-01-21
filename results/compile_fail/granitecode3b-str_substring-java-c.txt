@@ -1,0 +1,60 @@
+/tmp/granitecode3b-str_substring-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-java-c.c:3:1: error: unknown type name 'using'
+    3 | using namespace std;
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:3:16: error: expected ';' after top level declarator
+    3 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode3b-str_substring-java-c.c:5:1: error: unknown type name 'string'
+    5 | string substring(string str, int n, int m) { return str.substr(n, m); }
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:5:18: error: unknown type name 'string'
+    5 | string substring(string str, int n, int m) { return str.substr(n, m); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-c.c:7:1: error: unknown type name 'string'
+    7 | string substring(string str, int n) { return str.substr(n); }
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:7:18: error: unknown type name 'string'
+    7 | string substring(string str, int n) { return str.substr(n); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-c.c:9:1: error: unknown type name 'string'
+    9 | string substring(string str) { return str.substr(0, str.length() - 1); }
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:9:18: error: unknown type name 'string'
+    9 | string substring(string str) { return str.substr(0, str.length() - 1); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-c.c:11:1: error: unknown type name 'string'
+   11 | string substring(string str, char c, int m) {
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:11:18: error: unknown type name 'string'
+   11 | string substring(string str, char c, int m) {
+      |                  ^
+/tmp/granitecode3b-str_substring-java-c.c:15:1: error: unknown type name 'string'
+   15 | string substring(string str, string sub, int m) {
+      | ^
+/tmp/granitecode3b-str_substring-java-c.c:15:18: error: unknown type name 'string'
+   15 | string substring(string str, string sub, int m) {
+      |                  ^
+/tmp/granitecode3b-str_substring-java-c.c:15:30: error: unknown type name 'string'
+   15 | string substring(string str, string sub, int m) {
+      |                              ^
+/tmp/granitecode3b-str_substring-java-c.c:20:3: error: use of undeclared identifier 'string'
+   20 |   string str = "Hello, world!";
+      |   ^
+/tmp/granitecode3b-str_substring-java-c.c:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << substring(str, 2, 4) << endl;    // Output: ello
+      |   ^
+/tmp/granitecode3b-str_substring-java-c.c:21:21: error: use of undeclared identifier 'str'
+   21 |   cout << substring(str, 2, 4) << endl;    // Output: ello
+      |                     ^
+/tmp/granitecode3b-str_substring-java-c.c:21:35: error: use of undeclared identifier 'endl'
+   21 |   cout << substring(str, 2, 4) << endl;    // Output: ello
+      |                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

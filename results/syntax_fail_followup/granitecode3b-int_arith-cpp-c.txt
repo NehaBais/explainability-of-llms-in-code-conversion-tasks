@@ -1,0 +1,43 @@
+/tmp/granitecode3b-int_arith-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-cpp-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Enter two integers: ");
+      |   ^
+/tmp/granitecode3b-int_arith-cpp-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_arith-cpp-c.c:5:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   scanf("%d %d", &a, &b);
+      |   ^
+/tmp/granitecode3b-int_arith-cpp-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_arith-cpp-c.c:6:10: warning: missing terminating '"' character [-Winvalid-pp-token]
+    6 |   printf("a+b = %d
+      |          ^
+/tmp/granitecode3b-int_arith-cpp-c.c:6:10: error: expected expression
+/tmp/granitecode3b-int_arith-cpp-c.c:7:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    7 | ", a + b);
+      | ^
+/tmp/granitecode3b-int_arith-cpp-c.c:8:10: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 |   printf("a-b = %d
+      |          ^
+/tmp/granitecode3b-int_arith-cpp-c.c:9:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+    9 | ", a - b);
+      | ^
+/tmp/granitecode3b-int_arith-cpp-c.c:10:10: warning: missing terminating '"' character [-Winvalid-pp-token]
+   10 |   printf("a*b = %d
+      |          ^
+/tmp/granitecode3b-int_arith-cpp-c.c:11:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 | ", a * b);
+      | ^
+/tmp/granitecode3b-int_arith-cpp-c.c:14:10: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |   printf("a/b = %d, remainder %d
+      |          ^
+/tmp/granitecode3b-int_arith-cpp-c.c:15:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ", quotient, remainder);
+      | ^
+/tmp/granitecode3b-int_arith-cpp-c.c:17:2: error: expected '}'
+   17 | }
+      |  ^
+/tmp/granitecode3b-int_arith-cpp-c.c:2:12: note: to match this '{'
+    2 | int main() {
+      |            ^
+8 warnings and 5 errors generated.

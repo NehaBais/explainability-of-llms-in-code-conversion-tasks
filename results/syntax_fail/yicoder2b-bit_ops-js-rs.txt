@@ -1,0 +1,13 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder2b-bit_ops-js-rs.rs:5:15
+  |
+5 |     let NOT = ~a; 
+  |               ^
+  |
+help: use `!` to perform bitwise not
+  |
+5 |     let NOT = !a; 
+  |               ~
+
+error: aborting due to 1 previous error
+

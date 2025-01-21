@@ -1,0 +1,1 @@
+Your request appears to be incomplete or contains errors, so it is impossible for me to provide a helpful conversion of your C code into Rust as I can't run this code. Please provide the C code you want converted and any error messages you received while trying to convert it.

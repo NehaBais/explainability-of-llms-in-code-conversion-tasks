@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/stablecode-int_arith-cpp-go.go:12:38: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:19:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:20:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:21:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:22:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:28:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:29:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_arith-cpp-go.go:30:37: syntax error: unexpected ) at end of statement

@@ -1,0 +1,46 @@
+error: 1 positional argument in format string, but no arguments were given
+  --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:22:25
+   |
+22 |     print_stat(format!("{}/input.txt").to_string().as_str());
+   |                         ^^
+
+error: 1 positional argument in format string, but no arguments were given
+  --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:23:25
+   |
+23 |     print_stat(format!("{}/docs/").to_string().as_str()); // Note the trailing slash for directories
+   |                         ^^
+
+warning: unused import: `std::path::Path`
+ --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:2:5
+  |
+2 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+ --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:6:9
+  |
+5 |     match fs::metadata(p).unwrap() {
+  |           ------------------------ this expression has type `Metadata`
+6 |         Ok(metadata) => {
+  |         ^^^^^^^^^^^^ expected `Metadata`, found `Result<_, _>`
+  |
+  = note: expected struct `Metadata`
+               found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-file_exists-go-rs.rs:13:9
+   |
+5  |     match fs::metadata(p).unwrap() {
+   |           ------------------------ this expression has type `Metadata`
+...
+13 |         Err(e) => {
+   |         ^^^^^^ expected `Metadata`, found `Result<_, _>`
+   |
+   = note: expected struct `Metadata`
+                found enum `Result<_, _>`
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0308`.

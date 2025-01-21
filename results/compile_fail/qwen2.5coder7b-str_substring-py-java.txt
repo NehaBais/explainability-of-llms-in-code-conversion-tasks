@@ -1,0 +1,4 @@
+/tmp/SubstringExample.java:40: error: incompatible types: int cannot be converted to Iterator<Integer>
+    Iterator<Integer> iterator = boundary.following(startIndex);
+                                                   ^
+1 error

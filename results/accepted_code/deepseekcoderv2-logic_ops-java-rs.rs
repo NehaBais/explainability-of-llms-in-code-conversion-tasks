@@ -1,9 +1,11 @@
-fn main() {
-    logic(true, false);
+fn logic(a: bool, b: bool) {
+    println!("a AND b: {}", a && b);
+    println!("a OR b: {}", a || b);
+    println!("NOT a: {}", !a);
 }
 
-pub fn logic(a: bool, b: bool) -> () {
-    println!("{} AND {}", a, b);
-    println!("{} OR {}", a, b);
-    println!("NOT {}", a);
+fn main() {
+    let a = true;
+    let b = false;
+    logic(a, b);
 }

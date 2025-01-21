@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder9b-str_substring-py-go.go:47:11: undefined: strings

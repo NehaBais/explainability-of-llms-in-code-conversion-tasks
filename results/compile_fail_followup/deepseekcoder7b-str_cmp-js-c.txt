@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:10: error: expected expression
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:19: error: character <U+2581> not allowed in an identifier
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:24: error: character <U+2581> not allowed in an identifier
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-str_cmp-js-c.c:32:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   32 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^
+2 warnings and 4 errors generated.

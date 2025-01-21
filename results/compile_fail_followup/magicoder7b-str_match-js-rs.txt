@@ -1,0 +1,34 @@
+error[E0463]: can't find crate for `regex`
+ --> /tmp/magicoder7b-str_match-js-rs.rs:1:1
+  |
+1 | extern crate regex;
+  | ^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0599]: the method `join` exists for struct `Vec<usize>`, but its trait bounds were not satisfied
+  --> /tmp/magicoder7b-str_match-js-rs.rs:35:21
+   |
+35 |             matches.join(", "), 
+   |                     ^^^^ method cannot be called on `Vec<usize>` due to unsatisfied trait bounds
+   |
+   = note: the following trait bounds were not satisfied:
+           `[usize]: Join<_>`
+
+error[E0369]: cannot add `&String` to `&str`
+  --> /tmp/magicoder7b-str_match-js-rs.rs:45:34
+   |
+45 |                 "Yes, at index " + &matches[0].to_string() + "."
+   |                 ---------------- ^ ----------------------- &String
+   |                 |                |
+   |                 |                `+` cannot be used to concatenate two `&str` strings
+   |                 &str
+   |
+   = note: string concatenation requires an owned `String` on the left
+help: create an owned `String` from a string reference
+   |
+45 |                 "Yes, at index ".to_owned() + &matches[0].to_string() + "."
+   |                                 +++++++++++
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0369, E0463, E0599.
+For more information about an error, try `rustc --explain E0369`.

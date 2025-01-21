@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/stablecode-int_factors-js-go.go:12:41: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-js-go.go:18:40: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-js-go.go:28:26: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-js-go.go:29:26: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-js-go.go:30:4: syntax error: unexpected literal 53, expected ]
+/tmp/stablecode-int_factors-js-go.go:31:26: syntax error: unexpected ) at end of statement

@@ -1,25 +1,31 @@
-Java Code:
+ Sure, here is the equivalent Java code for the provided Rust code:
+
 ```java
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class Factorizer {
-  public static List<Integer> factor(int num) {
-    ArrayList<Integer> factors = new ArrayList<Integer>();
-    
-    for (int i = 1; i <= Math.sqrt(num); i++) { // uses the square root of the number to determine how far you need to go in finding factors
-      if (num % i == 0) {
-        factors.add(i);
-        factors.add(num / i);
-      }
+public class Main {
+    public static void main(String[] args) {
+        assert factor(100).equals(List.of(1, 2, 4, 5, 10, 10, 20, 25, 50, 100)); // asserts that two expressions are equal to each other
+        assert factor(101).equals(List.of(1, 101));
     }
-    
-    return factors;
-  }
-  
-  public static void main(String[] args) {
-    System.out.println(factor(100)); // prints the output of factor with argument 100 to console in an array
-    System.out.println(factor(101));
-  }
+
+    public static List<Integer> factor(int num) {
+        List<Integer> factors = new ArrayList<>();
+
+        for (int i = 1; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                factors.add(i); // adds smallest factor to factors
+                if (i != num / i) { // avoids adding the square root twice for perfect squares
+                    factors.add(num / i); // adds largest factor to factors
+                }
+            }
+        }
+        Collections.sort(factors); // sorts the factors into numerical order for viewing purposes
+        return factors; // returns the factors
+    }
 }
 ```
+
+This Java code mirrors the functionality of the provided Rust code. It computes the factors of a positive integer and ensures that every prime number has two factors: 1 and itself. The `factor` method iterates through possible divisors, collects them in a list, and then sorts and returns this list.

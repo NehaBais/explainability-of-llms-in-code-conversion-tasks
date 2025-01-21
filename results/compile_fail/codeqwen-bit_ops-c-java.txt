@@ -1,0 +1,4 @@
+/tmp/Main.java:3: error: non-static method bitwise(int,int) cannot be referenced from a static context
+    bitwise(10, 2);
+    ^
+1 error

@@ -1,0 +1,1 @@
+/tmp/dolphincoder7b-int_arith-cpp-go.go:1:1: expected 'package', found 'import'

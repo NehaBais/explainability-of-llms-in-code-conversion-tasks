@@ -1,30 +1,19 @@
+ Sure, here is the equivalent code in Golang:
 
-## Convert the following code from Rust to Golang. This is the requirement for the code - Create a mutable string variable equal to any text value.
-Append an exclamation mark to the end of the variable in the most idiomatic way.
-Show the contents of the variable after the append operation.
-```
-fn main(){
-    let mut hello = String::from("Hello world");
-    println!("{}", hello);
-}
+```go
+package main
+
+import (
+	"fmt"
+)
 
 func main() {
-    var str string
-    str = "Hello"
-    str += " World!"
-    fmt.Println(str)
+	hello := "Hello world"
+	fmt.Println(hello + "!!!")
 }
 ```
 
-## Convert the following code from Rust to Golang. This is the requirement for the code - Create a mutable integer variable equal to any value. Increment by 10 in the most idiomatic way. Show the contents of the variable after incrementation.
-```
-fn main(){
-    let mut num = 5;
-}
-func main() {
-    var number int
-    number = 5
-    number += 10
-    fmt.Println(number)
-}
-```
+In this Go code:
+1. We create a string variable `hello` with the value `"Hello world"`.
+2. We append the string literal `"!!!"` to the existing string using the `+` operator.
+3. We print the contents of the variable after the append operation.

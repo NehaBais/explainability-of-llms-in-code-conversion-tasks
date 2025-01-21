@@ -1,0 +1,23 @@
+/tmp/Main.java:10: error: ';' expected
+                     throw new RuntimeException("Failed to create directory for " + path));
+                                                                                         ^
+/tmp/Main.java:15: error: ';' expected
+                    throw new IllegalArgumentException(path + " is not a directory"));
+                                                                                    ^
+/tmp/Main.java:18: error: illegal start of type
+        } catch (Exception e) {
+          ^
+/tmp/Main.java:18: error: ';' expected
+        } catch (Exception e) {
+                            ^
+/tmp/Main.java:19: error: ';' expected
+            throw new RuntimeException("Failed to create directory for " + path));
+                                                                                ^
+/tmp/Main.java:23: error: implicitly declared classes are a preview feature and are disabled by default.
+    public static void main(String[] args) {
+                  ^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/Main.java:27: error: class, interface, enum, or record expected
+}
+^
+7 errors

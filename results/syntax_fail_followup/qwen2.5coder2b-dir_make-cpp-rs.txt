@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `create_dir_all_with_error` in module `fs`
+ --> /tmp/qwen2.5coder2b-dir_make-cpp-rs.rs:7:19
+  |
+7 |         match fs::create_dir_all_with_error(path_to_create) {
+  |                   ^^^^^^^^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

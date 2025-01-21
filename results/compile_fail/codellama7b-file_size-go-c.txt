@@ -1,0 +1,15 @@
+/tmp/codellama7b-file_size-go-c.c:11:21: error: called object type 'struct stat *' is not a function or function pointer
+   11 |   if ((status = stat(f, &stat)) != 0) {
+      |                 ~~~~^
+/tmp/codellama7b-file_size-go-c.c:15:29: error: member reference type 'struct stat *' is a pointer; did you mean to use '->'?
+   15 |   printf("%ld\n", (long)stat.st_size);
+      |                         ~~~~^
+      |                             ->
+/tmp/codellama7b-file_size-go-c.c:19:21: error: called object type 'struct stat *' is not a function or function pointer
+   19 |   if ((status = stat(root_file, &stat)) != 0) {
+      |                 ~~~~^
+/tmp/codellama7b-file_size-go-c.c:23:29: error: member reference type 'struct stat *' is a pointer; did you mean to use '->'?
+   23 |   printf("%ld\n", (long)stat.st_size);
+      |                         ~~~~^
+      |                             ->
+4 errors generated.

@@ -1,0 +1,9 @@
+/tmp/yicoder2b-str_concat-java-c.c:7:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcpy(s2, s);             // Copy the value of s to s2
+      |   ^
+/tmp/yicoder2b-str_concat-java-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/yicoder2b-str_concat-java-c.c:8:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcat(s2, " literal");    // Concatenate " literal" to s2
+      |   ^
+/tmp/yicoder2b-str_concat-java-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+2 errors generated.

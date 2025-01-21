@@ -1,0 +1,4 @@
+/tmp/Main.java:3: error: illegal start of expression
+        const String s = "hello world shortest program";
+        ^
+1 error

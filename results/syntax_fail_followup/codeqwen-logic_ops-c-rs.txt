@@ -1,0 +1,48 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-c-rs.rs:2:31
+  |
+2 |     println!("A and b is {}", A && b);
+  |                               ^
+  |
+help: a local variable with a similar name exists
+  |
+2 |     println!("A and b is {}", a && b);
+  |                               ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, b: bool) {
+  |               +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-c-rs.rs:3:30
+  |
+3 |     println!("A or b is {}", A || b);
+  |                              ^
+  |
+help: a local variable with a similar name exists
+  |
+3 |     println!("A or b is {}", a || b);
+  |                              ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, b: bool) {
+  |               +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-logic_ops-c-rs.rs:4:30
+  |
+4 |     println!("not a is {}", !A);
+  |                              ^
+  |
+help: a local variable with a similar name exists
+  |
+4 |     println!("not a is {}", !a);
+  |                              ~
+help: you might be missing a const parameter
+  |
+1 | fn print_logic<const A: /* Type */>(a: bool, b: bool) {
+  |               +++++++++++++++++++++
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

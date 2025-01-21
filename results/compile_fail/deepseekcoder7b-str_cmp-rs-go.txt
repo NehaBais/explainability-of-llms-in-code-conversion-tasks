@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:29:7: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:29:15: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:29:31: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:29:45: syntax error: unexpected name before at end of statement
+/tmp/deepseekcoder7b-str_cmp-rs-go.go:29:63: newline in string

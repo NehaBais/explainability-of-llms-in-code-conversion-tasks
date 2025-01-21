@@ -1,0 +1,43 @@
+/tmp/FileCheck.java:17: error: illegal start of expression
+            if (Files.exists(path))) {
+                                   ^
+/tmp/FileCheck.java:18: error: illegal start of expression
+                if (Files.isDirectory(path)))) {
+                                            ^
+/tmp/FileCheck.java:19: error: ';' expected
+                    System.out.println(path + " is a directory"));
+                                                                ^
+/tmp/FileCheck.java:21: error: ';' expected
+                    System.out.println(path + " exists with file size of " + Files.size(path) + " bytes"));
+                                                                                                         ^
+/tmp/FileCheck.java:20: error: 'else' without 'if'
+                } else {
+                  ^
+/tmp/FileCheck.java:24: error: ';' expected
+                System.out.println(path + " does not exist"));
+                                                            ^
+/tmp/FileCheck.java:23: error: 'else' without 'if'
+            } else {
+              ^
+/tmp/FileCheck.java:30: error: illegal start of expression
+            if (Files.exists(path)))) {
+                                   ^
+/tmp/FileCheck.java:31: error: illegal start of expression
+                if (Files.isDirectory(path)))) {
+                                            ^
+/tmp/FileCheck.java:32: error: ';' expected
+                    System.out.println(path + " is a directory"));
+                                                                ^
+/tmp/FileCheck.java:34: error: ';' expected
+                    System.out.println("The file " + path + " exists, but it's not a directory"));
+                                                                                                ^
+/tmp/FileCheck.java:33: error: 'else' without 'if'
+                } else {
+                  ^
+/tmp/FileCheck.java:37: error: ';' expected
+                System.out.println(path + " does not exist"));
+                                                            ^
+/tmp/FileCheck.java:36: error: 'else' without 'if'
+            } else {
+              ^
+14 errors

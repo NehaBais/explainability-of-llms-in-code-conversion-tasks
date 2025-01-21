@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_cmp-cpp-go.go:5:2: "sort" imported and not used
+/tmp/qwen2.5coder2b-str_cmp-cpp-go.go:10:9: undefined: strings

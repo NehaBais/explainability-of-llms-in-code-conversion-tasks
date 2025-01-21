@@ -1,0 +1,28 @@
+/tmp/magicoder7b-file_size-rs-cpp.cpp:15:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   15 |   auto cwd = std::filesystem::current_path();
+      |   ^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:15:19: error: no member named 'filesystem' in namespace 'std'
+   15 |   auto cwd = std::filesystem::current_path();
+      |              ~~~~~^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:19:10: error: no member named 'filesystem' in namespace 'std'
+   19 |     std::filesystem::path p(cwd / file_name);
+      |     ~~~~~^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:21:15: error: no member named 'filesystem' in namespace 'std'
+   21 |     if (!std::filesystem::exists(p)) {
+      |          ~~~~~^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:21:34: error: use of undeclared identifier 'p'
+   21 |     if (!std::filesystem::exists(p)) {
+      |                                  ^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:24:7: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |       auto sz = std::filesystem::file_size(p);
+      |       ^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:24:22: error: no member named 'filesystem' in namespace 'std'
+   24 |       auto sz = std::filesystem::file_size(p);
+      |                 ~~~~~^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:24:44: error: use of undeclared identifier 'p'
+   24 |       auto sz = std::filesystem::file_size(p);
+      |                                            ^
+/tmp/magicoder7b-file_size-rs-cpp.cpp:25:34: error: use of undeclared identifier 'p'
+   25 |       std::cout << "Size of " << p.filename() << " is " << sz << " bytes"
+      |                                  ^
+2 warnings and 7 errors generated.

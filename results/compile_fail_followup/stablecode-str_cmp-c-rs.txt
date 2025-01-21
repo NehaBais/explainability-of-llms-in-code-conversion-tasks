@@ -1,0 +1,32 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_cmp-c-rs.rs:6:21
+  |
+6 |     switch (result) {
+  |                     ^ unclosed delimiter
+7 |         case 0:
+8 |             printf("%s is equal to %s\n", a, b));
+  |                                                ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-c-rs.rs:3:44
+   |
+3  | void compare(const char* a, const char* b) {
+   |                                            ^ unclosed delimiter
+...
+11 |             printf("%s is less than %s\n", a, b));
+   |                                                 ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_cmp-c-rs.rs:14:52
+   |
+8  |             printf("%s is equal to %s\n", a, b));
+   |                                                - missing open `(` for this delimiter
+...
+11 |             printf("%s is less than %s\n", a, b));
+   |                                                 - missing open `(` for this delimiter
+...
+14 |             printf("%s is greater than %s\n", a, b));
+   |                                                    ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

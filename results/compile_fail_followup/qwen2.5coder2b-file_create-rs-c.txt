@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_create-rs-c.c:11:7: error: call to undeclared function 'create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (create(".", 0) != 0 || create("/", 0) != 0) {
+      |       ^
+/tmp/qwen2.5coder2b-file_create-rs-c.c:29:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |   if (mkdir(fpath, 0644) != 0 && mkdir(dpath, 0755) != 0) {
+      |       ^
+2 errors generated.

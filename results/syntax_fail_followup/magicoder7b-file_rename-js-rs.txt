@@ -1,0 +1,24 @@
+error[E0432]: unresolved import `std::fs::rename_dir`
+ --> /tmp/magicoder7b-file_rename-js-rs.rs:2:23
+  |
+2 | use std::fs::{rename, rename_dir};
+  |                       ^^^^^^^^^^
+  |                       |
+  |                       no `rename_dir` in `fs`
+  |                       help: a similar name exists in the module: `create_dir`
+
+error[E0425]: cannot find function `create_dir` in this scope
+  --> /tmp/magicoder7b-file_rename-js-rs.rs:15:5
+   |
+15 |     create_dir(root_path.join("mydocs"))?; // use 'create_dir' instead of 'rename_dir'
+   |     ^^^^^^^^^^ not found in this scope
+   |
+help: consider importing this function
+   |
+1  + use std::fs::create_dir;
+   |
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0425, E0432.
+For more information about an error, try `rustc --explain E0425`.

@@ -1,0 +1,70 @@
+error: expected one of `!`, `(`, `)`, `,`, `...`, `..=`, `..`, `::`, `{`, or `|`, found `_e`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:23:23
+   |
+23 |         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+   |                      -^^ expected one of 10 possible tokens
+   |                      |
+   |                      help: missing `,`
+
+error: expected one of `!`, `(`, `)`, `,`, `...`, `..=`, `..`, `::`, `{`, or `|`, found `_e`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:36:23
+   |
+36 |         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+   |                      -^^ expected one of 10 possible tokens
+   |                      |
+   |                      help: missing `,`
+
+error[E0432]: unresolved import `std::io::Parser`
+ --> /tmp/yicoder2b-file_size-c-rs.rs:2:21
+  |
+2 | use std::io::{self, Parser, Result};
+  |                     ^^^^^^ no `Parser` in `io`
+
+error[E0532]: expected unit struct, unit variant or constant, found struct `io::Error`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:23:13
+   |
+23 |         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+   |             ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/error.rs:64:1
+   |
+   = note: `io::Error` defined here
+   |
+help: consider importing this unit struct instead
+   |
+1  + use std::fmt::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+23 -         Err(io::Error _e) => { println!("Failed to open file: {}", file); },
+23 +         Err(Error _e) => { println!("Failed to open file: {}", file); },
+   |
+
+error[E0532]: expected unit struct, unit variant or constant, found struct `io::Error`
+  --> /tmp/yicoder2b-file_size-c-rs.rs:36:13
+   |
+36 |         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+   |             ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/io/error.rs:64:1
+   |
+   = note: `io::Error` defined here
+   |
+help: consider importing this unit struct instead
+   |
+1  + use std::fmt::Error;
+   |
+help: if you import `Error`, refer to it directly
+   |
+36 -         Err(io::Error _e) => { println!("Failed to open root file: {}", root); },
+36 +         Err(Error _e) => { println!("Failed to open root file: {}", root); },
+   |
+
+error[E0425]: cannot find function `process_args` in this scope
+ --> /tmp/yicoder2b-file_size-c-rs.rs:7:29
+  |
+7 |     let args: Vec<String> = process_args();
+  |                             ^^^^^^^^^^^^ not found in this scope
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0425, E0432, E0532.
+For more information about an error, try `rustc --explain E0425`.

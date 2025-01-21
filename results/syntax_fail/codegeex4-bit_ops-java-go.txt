@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegeex4-bit_ops-java-go.go:9:27: invalid operation: a & b (mismatched types int and uint)

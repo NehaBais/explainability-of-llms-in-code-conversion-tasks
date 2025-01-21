@@ -1,0 +1,17 @@
+In file included from /tmp/dolphincoder7b-str_cmp-go-cpp.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:43:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:223:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:23:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:625:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:939:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1800:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:42:10: error: type 'std::__wrap_iter<char *>' does not provide a call operator
+   42 |     if (!__pred(*__first1, *__first2))
+      |          ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h:61:15: note: in instantiation of function template specialization 'std::__equal_iter_impl<char *, char *, std::__wrap_iter<char *> >' requested here
+   61 |   return std::__equal_iter_impl(
+      |               ^
+/tmp/dolphincoder7b-str_cmp-go-cpp.cpp:42:12: note: in instantiation of function template specialization 'std::equal<std::__wrap_iter<char *>, std::__wrap_iter<char *>, std::__wrap_iter<char *> >' requested here
+   42 |   if (std::equal(c.begin(), c.end(), d.begin(), d.end())) {
+      |            ^
+1 error generated.

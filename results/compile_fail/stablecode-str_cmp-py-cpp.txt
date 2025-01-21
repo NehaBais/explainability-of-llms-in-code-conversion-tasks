@@ -1,0 +1,90 @@
+/tmp/stablecode-str_cmp-py-cpp.cpp:9:66: error: expected ';' after expression
+    9 |                         << (a == b ? "equal to" : "not equal to"))
+      |                                                                  ^
+      |                                                                  ;
+/tmp/stablecode-str_cmp-py-cpp.cpp:9:66: error: expected expression
+/tmp/stablecode-str_cmp-py-cpp.cpp:13:28: error: extraneous ')' before ';'
+   13 |         std::cout << (a, b));
+      |                            ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:15:27: error: extraneous ')' before ';'
+   15 |        std::cout << (a, b));
+      |                           ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:17:26: error: extraneous ')' before ';'
+   17 |       std::cout << (a, b));
+      |                          ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:19:27: error: extraneous ')' before ';'
+   19 |        std::cout << (a, b));
+      |                           ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:23:28: error: extraneous ')' before ';'
+   23 |         std::cout << (a, b));
+      |                            ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:28:52: error: extraneous ')' before ';'
+   28 |     compare<std::string, std::string>("YUP", "YUP"));
+      |                                                    ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:29:54: error: extraneous ')' before ';'
+   29 |     compare<std::string, std::string>("BALL", "BELL"));
+      |                                                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:30:51: error: extraneous ')' before ';'
+   30 |     compare<std::string, std::string>("24", "123"));
+      |                                                   ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:31:31: error: extraneous ')' before ';'
+   31 |     compare<int, int>(24, 123));
+      |                               ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:32:36: error: extraneous ')' before ';'
+   32 |     compare<double, double>(5.0, 5));
+      |                                    ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:13:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   13 |         std::cout << (a, b));
+      |                       ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:28:5: note: in instantiation of function template specialization 'compare<std::string, std::string>' requested here
+   28 |     compare<std::string, std::string>("YUP", "YUP"));
+      |     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:15:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   15 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:17:21: warning: left operand of comma operator has no effect [-Wunused-value]
+   17 |       std::cout << (a, b));
+      |                     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:19:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   19 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:23:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   23 |         std::cout << (a, b));
+      |                       ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:13:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   13 |         std::cout << (a, b));
+      |                       ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:31:5: note: in instantiation of function template specialization 'compare<int, int>' requested here
+   31 |     compare<int, int>(24, 123));
+      |     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:15:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   15 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:17:21: warning: left operand of comma operator has no effect [-Wunused-value]
+   17 |       std::cout << (a, b));
+      |                     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:19:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   19 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:23:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   23 |         std::cout << (a, b));
+      |                       ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:13:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   13 |         std::cout << (a, b));
+      |                       ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:32:5: note: in instantiation of function template specialization 'compare<double, double>' requested here
+   32 |     compare<double, double>(5.0, 5));
+      |     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:15:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   15 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:17:21: warning: left operand of comma operator has no effect [-Wunused-value]
+   17 |       std::cout << (a, b));
+      |                     ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:19:22: warning: left operand of comma operator has no effect [-Wunused-value]
+   19 |        std::cout << (a, b));
+      |                      ^
+/tmp/stablecode-str_cmp-py-cpp.cpp:23:23: warning: left operand of comma operator has no effect [-Wunused-value]
+   23 |         std::cout << (a, b));
+      |                       ^
+15 warnings and 12 errors generated.

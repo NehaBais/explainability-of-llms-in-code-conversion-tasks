@@ -1,0 +1,19 @@
+error: expected item, found keyword `let`
+ --> /tmp/codegemma7b-str_interp-js-rs.rs:2:1
+  |
+2 | let little = "little";
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_interp-js-rs.rs:1:15
+  |
+1 | const original = "Mary had a X lamb";
+  |               ^
+  |
+help: provide a type for the item
+  |
+1 | const original: <type> = "Mary had a X lamb";
+  |               ++++++++
+
+error: aborting due to 2 previous errors
+

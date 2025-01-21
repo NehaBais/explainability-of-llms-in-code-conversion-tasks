@@ -1,0 +1,10 @@
+/tmp/Main.java:11: error: ';' expected
+                factors.add(num/i)); // pushes largest factor to factors
+                                  ^
+/tmp/Main.java:23: error: ';' expected
+        System.out.println(factor(100))); // asserts that two expressions are equal to each other
+                                       ^
+/tmp/Main.java:25: error: ';' expected
+        System.out.println(factor(101)));
+                                       ^
+3 errors

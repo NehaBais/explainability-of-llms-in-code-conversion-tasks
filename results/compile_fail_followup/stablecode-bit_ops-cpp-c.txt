@@ -1,0 +1,22 @@
+/tmp/stablecode-bit_ops-cpp-c.c:4:37: error: extraneous ')' before ';'
+    4 |     printf("a and b: %d\n", (a & b)));
+      |                                     ^
+/tmp/stablecode-bit_ops-cpp-c.c:5:37: error: expected ';' after expression
+    5 |     printf("a or b : %d\n", (a | b))));
+      |                                     ^
+      |                                     ;
+/tmp/stablecode-bit_ops-cpp-c.c:5:37: error: expected expression
+/tmp/stablecode-bit_ops-cpp-c.c:6:38: error: expected ';' after expression
+    6 |     printf("a xor b : %d\n", (a ^ b))));
+      |                                      ^
+      |                                      ;
+/tmp/stablecode-bit_ops-cpp-c.c:6:38: error: expected expression
+/tmp/stablecode-bit_ops-cpp-c.c:9:32: error: extraneous ')' before ';'
+    9 |     printf("not a:   %d\n", ~a));
+      |                                ^
+/tmp/stablecode-bit_ops-cpp-c.c:14:39: error: expected ';' after expression
+   14 |     printf("a lsr b: %d\n", (ua >> b))));
+      |                                       ^
+      |                                       ;
+/tmp/stablecode-bit_ops-cpp-c.c:14:39: error: expected expression
+8 errors generated.

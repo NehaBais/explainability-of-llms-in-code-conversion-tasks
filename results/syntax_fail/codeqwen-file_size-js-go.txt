@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-file_size-js-go.go:5:2: "io/ioutil" imported and not used

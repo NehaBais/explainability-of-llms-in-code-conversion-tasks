@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-str_match-js-go.go:19:121: invalid character U+003F '?'
+/tmp/granitecode3b-str_match-js-go.go:19:123: syntax error: unexpected literal "es", expected )

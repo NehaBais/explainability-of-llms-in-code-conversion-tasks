@@ -1,0 +1,7 @@
+/tmp/deepseekcoder7b-bit_ops-js-cpp.cpp:1:1: error: unknown type name 'cout'
+    1 | cout << "a right shift by b with fill 0: " << (ar & ((1u << b) - 1u)) << endl;
+      | ^
+/tmp/deepseekcoder7b-bit_ops-js-cpp.cpp:1:6: error: expected unqualified-id
+    1 | cout << "a right shift by b with fill 0: " << (ar & ((1u << b) - 1u)) << endl;
+      |      ^
+2 errors generated.

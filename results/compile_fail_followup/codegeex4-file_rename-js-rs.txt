@@ -1,0 +1,58 @@
+error[E0433]: failed to resolve: use of undeclared crate or module `io`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:1:40
+  |
+1 | fn move_here(src: &str, dest: &str) -> io::Result<()> {
+  |                                        ^^ use of undeclared crate or module `io`
+  |
+help: a builtin type with a similar name exists
+  |
+1 | fn move_here(src: &str, dest: &str) -> i8::Result<()> {
+  |                                        ~~
+help: consider importing this module
+  |
+1 + use std::io;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:2:20
+  |
+2 |     let src_path = PathBuf::from(src);
+  |                    ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `PathBuf`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:3:21
+  |
+3 |     let dest_path = PathBuf::from(dest);
+  |                     ^^^^^^^ use of undeclared type `PathBuf`
+  |
+help: consider importing this struct
+  |
+1 + use std::path::PathBuf;
+  |
+
+error[E0433]: failed to resolve: use of undeclared crate or module `fs`
+ --> /tmp/codegeex4-file_rename-js-rs.rs:5:9
+  |
+5 |         fs::rename(&src_path, &dest_path)?;
+  |         ^^ use of undeclared crate or module `fs`
+  |
+help: consider importing this module
+  |
+1 + use std::fs;
+  |
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codegeex4-file_rename-js-rs.rs:14:2
+   |
+14 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-file_rename-js-rs.rs`
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0433, E0601.
+For more information about an error, try `rustc --explain E0433`.

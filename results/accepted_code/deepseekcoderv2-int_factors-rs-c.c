@@ -1,31 +1,45 @@
-#include <math.h> // for math functions like sqrt()
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-  printf("100: ");
-  int i, j;
-  int n = 100;
+// Function to compute the factors of a positive integer
+void factor(int num, int *factors, int *size) {
+  *size = 0; // Initialize size of the array to store factors
 
-  printf("{");
-  for (i = 2; i <= n / 2;
-       i++) { // iterate from the smallest possible factor to half of the number
-    if (n % i == 0) { // check if it's a valid factor by checking its remainder
-                      // when divided by zero
-      j = n / i;
-      printf("%d, ", i); // print out each factor in order
-      printf("%d", j);
-      break; // exit loop once all factors have been found
-    } else {
-      continue; // keep going until we find one that works!
+  for (int i = 1; i <= sqrt(num); i++) {
+    if (num % i == 0) {
+      factors[*size] = i; // Store smallest factor
+      (*size)++;
+      if (i !=
+          num / i) { // Avoid adding the same factor twice for perfect squares
+        factors[*size] = num / i;
+        (*size)++;
+      }
     }
   }
-  if (i == n / 2 + 1) { // check if none of the numbers up to half are valid
-                        // factorizations, then there must be no other primes
-                        // above sqrt(n).
-    printf("%d", n);    // print out last number in sequence since it's not
-                        // divisible by any smaller ones and thus prime itself!
-  }
+}
 
-  printf("}\n");
+int main() {
+  int size;
+  int factors[100]; // Array to store up to 100 factors
+
+  factor(100, factors, &size);
+
+  printf("Factors of 100: ");
+  for (int i = 0; i < size; i++) {
+    printf("%d ", factors[i]);
+  }
+  printf("\n");
+
+  int size2;
+  int factors2[1]; // Array to store up to 1 factor
+
+  factor(101, factors2, &size2);
+
+  printf("Factors of 101: ");
+  for (int i = 0; i < size2; i++) {
+    printf("%d ", factors2[i]);
+  }
+  printf("\n");
+
+  return 0;
 }

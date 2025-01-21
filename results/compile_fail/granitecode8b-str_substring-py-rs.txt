@@ -1,0 +1,27 @@
+error[E0425]: cannot find value `iny` in this scope
+  --> /tmp/granitecode8b-str_substring-py-rs.rs:19:29
+   |
+19 |     println!("{}", &s[indx..iny + m]);
+   |                             ^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+19 -     println!("{}", &s[indx..iny + m]);
+19 +     println!("{}", &s[indx.iny + m]);
+   |
+
+error[E0425]: cannot find value `iny` in this scope
+  --> /tmp/granitecode8b-str_substring-py-rs.rs:23:29
+   |
+23 |     println!("{}", &s[indx..iny + m]);
+   |                             ^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+23 -     println!("{}", &s[indx..iny + m]);
+23 +     println!("{}", &s[indx.iny + m]);
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

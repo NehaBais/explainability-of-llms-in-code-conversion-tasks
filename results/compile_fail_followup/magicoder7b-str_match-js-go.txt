@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-str_match-js-go.go:24:130: cannot convert len(q2matches) > 1 (untyped bool value) to type int

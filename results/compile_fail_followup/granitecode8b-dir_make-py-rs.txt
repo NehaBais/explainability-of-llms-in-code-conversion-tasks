@@ -1,0 +1,23 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/granitecode8b-dir_make-py-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode8b-dir_make-py-rs.rs`
+
+error[E0107]: enum takes 2 generic arguments but 1 generic argument was supplied
+ --> /tmp/granitecode8b-dir_make-py-rs.rs:3:26
+  |
+3 | fn mkdirp(path: &str) -> Result<()> {
+  |                          ^^^^^^ -- supplied 1 generic argument
+  |                          |
+  |                          expected 2 generic arguments
+  |
+help: add missing generic argument
+  |
+3 | fn mkdirp(path: &str) -> Result<(), E> {
+  |                                   +++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0107, E0601.
+For more information about an error, try `rustc --explain E0107`.

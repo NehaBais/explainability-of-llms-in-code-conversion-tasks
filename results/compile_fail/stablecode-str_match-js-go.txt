@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/stablecode-str_match-js-go.go:14:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-js-go.go:17:39: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-js-go.go:20:66: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-js-go.go:22:54: syntax error: unexpected ), expected { after for clause
+/tmp/stablecode-str_match-js-go.go:23:41: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_match-js-go.go:27:43: syntax error: unexpected ) at end of statement

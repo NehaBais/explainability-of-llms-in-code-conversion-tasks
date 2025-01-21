@@ -1,0 +1,74 @@
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:227
+  |
+1 | ...ode. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening '(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                                                                                                                                   ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:229
+  |
+1 | ...e. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(' and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                                                                                                                                     ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:243
+  |
+1 | ...e, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing ')` delimiters in the `println!()` macro call.
+  |                                                                                                                                                                                                                                                   ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:245
+  |
+1 | ... the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)' delimiters in the `println!()` macro call.
+  |                                                                                                                                                                                                                                                     ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:265
+  |
+1 | ...ing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the 'println!()` macro call.
+  |                                                                                                                                                                                                                                                                         ~
+
+error: unknown start of token: `
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:276
+  |
+1 | ...er error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()` macro call.
+  |                                                                                                                    ^
+  |
+help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it is not
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(` and closing `)` delimiters in the `println!()' macro call.
+  |                                                                                                                                                                                                                                                                                    ~
+
+error: expected one of `!` or `::`, found `fix`
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:5
+  |
+1 | The fix is to ensure that all opening and closing parentheses, brackets, and braces are properly matched in your code. In this case, the mismatched closing delimiter error indicates that there's a mismatch between the opening `(...
+  |     ^^^ expected one of `!` or `::`
+
+error: aborting due to 7 previous errors
+

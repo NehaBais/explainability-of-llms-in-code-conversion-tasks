@@ -1,0 +1,1 @@
+The error message is "cannot use nbr1[:len(nbr1) - 1] (value of type string) as int value in argument to strconv.Itoa". This occurs because the `ReadString` function returns a string, not an integer. To fix this issue, we can simply convert the string read from the input stream into an integer using the `strconv.Atoi` function.

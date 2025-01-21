@@ -1,0 +1,58 @@
+/tmp/stablecode-file_create-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-file_create-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-file_create-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-file_create-js-cpp.cpp:5:10: error: use of undeclared identifier 'std'
+    5 | void fct(std::string err_msg) {
+      |          ^
+/tmp/stablecode-file_create-js-cpp.cpp:7:5: error: use of undeclared identifier 'std'
+    7 |     std::cout << "Error: " << err_msg << std::endl;
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:7:42: error: use of undeclared identifier 'std'
+    7 |     std::cout << "Error: " << err_msg << std::endl;
+      |                                          ^
+/tmp/stablecode-file_create-js-cpp.cpp:13:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |     auto current_path = std::filesystem::current_path();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:13:25: error: use of undeclared identifier 'std'
+   13 |     auto current_path = std::filesystem::current_path();
+      |                         ^
+/tmp/stablecode-file_create-js-cpp.cpp:14:5: error: use of undeclared identifier 'std'
+   14 |     std::string path_str = current_path.string();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:15:5: error: use of undeclared identifier 'std'
+   15 |     std::filesystem::create_directory(path_str + "/docs"));
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::filesystem::create_file(path_str + "/output.txt"));
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:18:18: error: use of undeclared identifier 'std'
+   18 |   } catch (const std::exception &e) {
+      |                  ^
+/tmp/stablecode-file_create-js-cpp.cpp:23:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   23 |     auto root_path = std::filesystem::root_directory();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:23:22: error: use of undeclared identifier 'std'
+   23 |     auto root_path = std::filesystem::root_directory();
+      |                      ^
+/tmp/stablecode-file_create-js-cpp.cpp:24:5: error: use of undeclared identifier 'std'
+   24 |     std::string path_str = root_path.string();
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:25:5: error: use of undeclared identifier 'std'
+   25 |     std::filesystem::create_directory("/docs"));
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:26:5: error: use of undeclared identifier 'std'
+   26 |     std::filesystem::create_file("/output.txt"));
+      |     ^
+/tmp/stablecode-file_create-js-cpp.cpp:28:18: error: use of undeclared identifier 'std'
+   28 |   } catch (const std::exception &e) {
+      |                  ^
+/tmp/stablecode-file_create-js-cpp.cpp:29:18: error: extraneous ')' before ';'
+   29 |     fct(e.what()));
+      |                  ^
+2 warnings and 17 errors generated.

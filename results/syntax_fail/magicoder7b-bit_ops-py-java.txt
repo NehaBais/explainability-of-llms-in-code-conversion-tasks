@@ -1,0 +1,81 @@
+/tmp/Main.java:1: error: cannot find symbol
+import java.nio.BitSet;
+               ^
+  symbol:   class BitSet
+  location: package java.nio
+/tmp/Main.java:40: error: cannot find symbol
+  private static BitSet bitwiseLeftShift(int a, int n) {
+                 ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:52: error: cannot find symbol
+  private static BitSet bitwiseRightShift(int a, int n) {
+                 ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:64: error: cannot find symbol
+  private static BitSet bitwiseNot(BitSet a) {
+                                   ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:64: error: cannot find symbol
+  private static BitSet bitwiseNot(BitSet a) {
+                 ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:25: error: cannot find symbol
+    BitSet bitsetA = new BitSet();
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:25: error: cannot find symbol
+    BitSet bitsetA = new BitSet();
+                         ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:28: error: cannot find symbol
+    BitSet notABitset = bitwiseNot(bitsetA);
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:31: error: cannot find symbol
+    BitSet rBitset = bitwiseRightShift(a, 1);
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:35: error: cannot find symbol
+    BitSet lBitset = bitwiseLeftShift(a, 1);
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:41: error: cannot find symbol
+    BitSet bitset = new BitSet();
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:41: error: cannot find symbol
+    BitSet bitset = new BitSet();
+                        ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:53: error: cannot find symbol
+    BitSet bitset = new BitSet();
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:53: error: cannot find symbol
+    BitSet bitset = new BitSet();
+                        ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:65: error: cannot find symbol
+    BitSet notABitset = new BitSet();
+    ^
+  symbol:   class BitSet
+  location: class Main
+/tmp/Main.java:65: error: cannot find symbol
+    BitSet notABitset = new BitSet();
+                            ^
+  symbol:   class BitSet
+  location: class Main
+16 errors

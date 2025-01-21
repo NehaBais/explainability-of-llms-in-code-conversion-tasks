@@ -1,0 +1,13 @@
+error: invalid comparison operator `===`
+ --> /tmp/codegeex4-str_cmp-js-rs.rs:5:19
+  |
+5 |         && "abcd" === "abcd" // true
+  |                   ^^^
+  |
+help: `===` is not a valid comparison operator, use `==`
+  |
+5 |         && "abcd" == "abcd" // true
+  |                   ~~
+
+error: aborting due to 1 previous error
+

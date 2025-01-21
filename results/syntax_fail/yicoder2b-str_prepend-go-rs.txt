@@ -1,0 +1,10 @@
+error: expected item, found keyword `let`
+ --> /tmp/yicoder2b-str_prepend-go-rs.rs:1:1
+  |
+1 | let mut s = "world!"; // Create a string variable and initialize it with the text "world!".
+  | ^^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: aborting due to 1 previous error
+

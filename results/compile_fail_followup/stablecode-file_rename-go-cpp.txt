@@ -1,0 +1,10 @@
+/tmp/stablecode-file_rename-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_rename-go-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::rename("here/input.txt", "output.txt");
+      |   ^
+/tmp/stablecode-file_rename-go-cpp.cpp:10:3: error: use of undeclared identifier 'fs'
+   10 |   fs::rename("here/docs", "here/mydocs");
+      |   ^
+3 errors generated.

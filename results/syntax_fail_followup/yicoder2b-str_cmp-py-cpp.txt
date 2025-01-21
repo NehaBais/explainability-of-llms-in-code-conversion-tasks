@@ -1,0 +1,20 @@
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:1:1: error: unknown type name 'def'
+    1 | def compare(a, b)
+      | ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:1:13: error: unknown type name 'a'
+    1 | def compare(a, b)
+      |             ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:1:16: error: unknown type name 'b'
+    1 | def compare(a, b)
+      |                ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:2:13: warning: missing terminating '"' character [-Winvalid-pp-token]
+    2 |     : print("
+      |             ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:2:13: error: expected expression
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:4:32: warning: missing terminating '"' character [-Winvalid-pp-token]
+    4 |             % r is of type % r "
+      |                                ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:2:5: error: only constructors take base initializers
+    2 |     : print("
+      |     ^
+2 warnings and 5 errors generated.

@@ -1,0 +1,4 @@
+/tmp/codegeex4-file_create-py-c.c:15:16: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   int status = mkdir(filepath, 0755);
+      |                ^
+1 error generated.

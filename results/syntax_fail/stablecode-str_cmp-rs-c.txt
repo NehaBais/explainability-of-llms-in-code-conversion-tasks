@@ -1,0 +1,7 @@
+/tmp/stablecode-str_cmp-rs-c.c:14:21: error: extraneous ')' after condition, expected a statement
+   14 |   if (!strcmp(a, b))) {
+      |                     ^
+/tmp/stablecode-str_cmp-rs-c.c:26:22: error: extraneous ')' after condition, expected a statement
+   26 |   if (!strcoll(a, b))) {
+      |                      ^
+2 errors generated.

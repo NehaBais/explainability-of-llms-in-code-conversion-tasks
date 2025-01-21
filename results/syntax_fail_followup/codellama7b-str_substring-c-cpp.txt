@@ -1,0 +1,34 @@
+/tmp/codellama7b-str_substring-c-cpp.cpp:8:7: error: no matching member function for call to 'erase'
+    8 |     s.erase(0, 1);
+      |     ~~^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1492:47: note: candidate function not viable: 'this' argument has type 'const std::string' (aka 'const basic_string<char>'), but method is not marked const
+ 1492 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& erase(size_type __pos = 0, size_type __n = npos);
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1494:64: note: candidate function not viable: 'this' argument has type 'const std::string' (aka 'const basic_string<char>'), but method is not marked const
+ 1494 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 iterator erase(const_iterator __first, const_iterator __last);
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1493:64: note: candidate function not viable: requires single argument '__pos', but 2 arguments were provided
+ 1493 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 iterator erase(const_iterator __pos);
+      |                                                                ^     ~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_substring-c-cpp.cpp:13:7: error: no matching member function for call to 'erase'
+   13 |     s.erase(0, 1);
+      |     ~~^~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1492:47: note: candidate function not viable: 'this' argument has type 'const std::string' (aka 'const basic_string<char>'), but method is not marked const
+ 1492 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& erase(size_type __pos = 0, size_type __n = npos);
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1494:64: note: candidate function not viable: 'this' argument has type 'const std::string' (aka 'const basic_string<char>'), but method is not marked const
+ 1494 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 iterator erase(const_iterator __first, const_iterator __last);
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1493:64: note: candidate function not viable: requires single argument '__pos', but 2 arguments were provided
+ 1493 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 iterator erase(const_iterator __pos);
+      |                                                                ^     ~~~~~~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_substring-c-cpp.cpp:24:41: error: use of undeclared identifier 'str_wholeless1'
+   24 |   std::cout << "str_wholeless1(s): " << str_wholeless1(s) << std::endl;
+      |                                         ^
+/tmp/codellama7b-str_substring-c-cpp.cpp:25:45: error: use of undeclared identifier 'str_fromch'
+   25 |   std::cout << "str_fromch(s, 'w', 5): " << str_fromch(s, 'w', 5) << std::endl;
+      |                                             ^
+/tmp/codellama7b-str_substring-c-cpp.cpp:26:49: error: use of undeclared identifier 'str_fromstr'
+   26 |   std::cout << "str_fromstr(s, \"ro\", 3): " << str_fromstr(s, "ro", 3)
+      |                                                 ^
+5 errors generated.

@@ -1,0 +1,16 @@
+/tmp/Main.java:12: error: ';' expected
+                throw new RuntimeException("Failed to create directory for " + path));
+                                                                                    ^
+/tmp/Main.java:16: error: illegal start of expression
+            if (!dir.isDirectory())) {
+                                   ^
+/tmp/Main.java:17: error: ';' expected
+                throw new IllegalArgumentException(path + " is not a directory"));
+                                                                                ^
+/tmp/Main.java:20: error: ';' expected
+            throw new RuntimeException("Failed to create directory for " + path));
+                                                                                ^
+/tmp/Main.java:19: error: 'catch' without 'try'
+        } catch (Exception e) {
+          ^
+5 errors

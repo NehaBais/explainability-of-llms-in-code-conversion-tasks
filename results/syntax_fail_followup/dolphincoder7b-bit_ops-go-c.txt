@@ -1,0 +1,44 @@
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:8: error: expected parameter declarator
+    2 | printf("rol:   %016b\n", ((int32_t)(ua << ub) | (int32_t)((ua >> (32 - ub)))));
+      |        ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:8: error: expected ')'
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:7: note: to match this '('
+    2 | printf("rol:   %016b\n", ((int32_t)(ua << ub) | (int32_t)((ua >> (32 - ub)))));
+      |       ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    2 | printf("rol:   %016b\n", ((int32_t)(ua << ub) | (int32_t)((ua >> (32 - ub)))));
+      | ^
+      | int
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/dolphincoder7b-bit_ops-go-c.c:2:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+/tmp/dolphincoder7b-bit_ops-go-c.c:3:1: error: extraneous closing brace ('}')
+    3 | }
+      | ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:5:19: error: unknown type name 'int16_t'
+    5 | void rotate_right(int16_t a, int16_t b) {
+      |                   ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:5:30: error: unknown type name 'int16_t'
+    5 | void rotate_right(int16_t a, int16_t b) {
+      |                              ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:6:3: error: use of undeclared identifier 'uint32_t'
+    6 |   uint32_t ua = a;
+      |   ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:7:3: error: use of undeclared identifier 'uint32_t'
+    7 |   uint32_t ub = b;
+      |   ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:9:30: error: use of undeclared identifier 'int32_t'
+    9 |   printf("ror:   %016b\n", ((int32_t)(ua >> ub) | (ua << (32 - ub))));
+      |                              ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:9:39: error: use of undeclared identifier 'ua'
+    9 |   printf("ror:   %016b\n", ((int32_t)(ua >> ub) | (ua << (32 - ub))));
+      |                                       ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:9:45: error: use of undeclared identifier 'ub'
+    9 |   printf("ror:   %016b\n", ((int32_t)(ua >> ub) | (ua << (32 - ub))));
+      |                                             ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:9:64: error: use of undeclared identifier 'ub'
+    9 |   printf("ror:   %016b\n", ((int32_t)(ua >> ub) | (ua << (32 - ub))));
+      |                                                                ^
+/tmp/dolphincoder7b-bit_ops-go-c.c:9:52: error: use of undeclared identifier 'ua'
+    9 |   printf("ror:   %016b\n", ((int32_t)(ua >> ub) | (ua << (32 - ub))));
+      |                                                    ^
+1 warning and 13 errors generated.

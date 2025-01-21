@@ -1,0 +1,103 @@
+warning: unused imports: `BitAnd`, `BitOr`, `BitXor`, `Not`, `Shl`, `ShrAssign`, and `Shr`
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:2:16
+  |
+2 | use std::ops::{BitAnd, BitOr, BitXor, Not, Shl, Shr, ShrAssign};
+  |                ^^^^^^  ^^^^^  ^^^^^^  ^^^  ^^^  ^^^  ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `dolphincoder7b_bit_ops_java_rs`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:29:2
+   |
+29 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-bit_ops-java-rs.rs`
+
+error[E0283]: type annotations needed
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:10:31
+   |
+10 |     println!("a >>> b: {}", a.try_into().unwrap() >> b); // logical right shift
+   |                               ^^^^^^^^
+   |
+   = note: cannot satisfy `_: TryFrom<i32>`
+   = note: required for `i32` to implement `TryInto<_>`
+help: try using a fully qualified path to specify the expected types
+   |
+10 |     println!("a >>> b: {}", <i32 as TryInto<T>>::try_into(a).unwrap() >> b); // logical right shift
+   |                             ++++++++++++++++++++++++++++++ ~
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:19:10
+   |
+19 |     n %= bits;
+   |          ^^^^ expected `i32`, found `u32`
+
+error[E0277]: cannot calculate and assign the remainder of `i32` divided by `u32`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:19:7
+   |
+19 |     n %= bits;
+   |       ^^ no implementation for `i32 %= u32`
+   |
+   = help: the trait `RemAssign<u32>` is not implemented for `i32`
+   = help: the following other types implement trait `RemAssign<Rhs>`:
+             `i32` implements `RemAssign<&i32>`
+             `i32` implements `RemAssign`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:20:30
+   |
+20 |     (x << n) | (x >> (bits - n))
+   |                              ^ expected `u32`, found `i32`
+
+error[E0277]: cannot subtract `i32` from `u32`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:20:28
+   |
+20 |     (x << n) | (x >> (bits - n))
+   |                            ^ no implementation for `u32 - i32`
+   |
+   = help: the trait `Sub<i32>` is not implemented for `u32`
+   = help: the following other types implement trait `Sub<Rhs>`:
+             `&'a u32` implements `Sub<u32>`
+             `&u32` implements `Sub<&u32>`
+             `u32` implements `Sub<&u32>`
+             `u32` implements `Sub`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:27:10
+   |
+27 |     n %= bits;
+   |          ^^^^ expected `i32`, found `u32`
+
+error[E0277]: cannot calculate and assign the remainder of `i32` divided by `u32`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:27:7
+   |
+27 |     n %= bits;
+   |       ^^ no implementation for `i32 %= u32`
+   |
+   = help: the trait `RemAssign<u32>` is not implemented for `i32`
+   = help: the following other types implement trait `RemAssign<Rhs>`:
+             `i32` implements `RemAssign<&i32>`
+             `i32` implements `RemAssign`
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:28:30
+   |
+28 |     (x >> n) | (x << (bits - n))
+   |                              ^ expected `u32`, found `i32`
+
+error[E0277]: cannot subtract `i32` from `u32`
+  --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:28:28
+   |
+28 |     (x >> n) | (x << (bits - n))
+   |                            ^ no implementation for `u32 - i32`
+   |
+   = help: the trait `Sub<i32>` is not implemented for `u32`
+   = help: the following other types implement trait `Sub<Rhs>`:
+             `&'a u32` implements `Sub<u32>`
+             `&u32` implements `Sub<&u32>`
+             `u32` implements `Sub<&u32>`
+             `u32` implements `Sub`
+
+error: aborting due to 10 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0277, E0283, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,0 +1,28 @@
+/tmp/stablecode-int_factors-c-cpp.cpp:7:13: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    7 |   int count = 0;
+      |             ^
+/tmp/stablecode-int_factors-c-cpp.cpp:16:36: error: extraneous ')' before ';'
+   16 |         fctrs->list.resize(newSize));
+      |                                    ^
+/tmp/stablecode-int_factors-c-cpp.cpp:28:30: error: extraneous ')' before ';'
+   28 |     temp.resize(fctrs->count));
+      |                              ^
+/tmp/stablecode-int_factors-c-cpp.cpp:34:44: error: extraneous ')' before ';'
+   34 |             xferFactors(fctrs, flist, flix));
+      |                                            ^
+/tmp/stablecode-int_factors-c-cpp.cpp:35:33: error: extraneous ')' before ';'
+   35 |             flist.assign(301, 0));
+      |                                 ^
+/tmp/stablecode-int_factors-c-cpp.cpp:45:40: error: extraneous ')' before ';'
+   45 |         xferFactors(fctrs, flist, flix));
+      |                                        ^
+/tmp/stablecode-int_factors-c-cpp.cpp:52:20: error: non-aggregate type 'std::vector<int>' cannot be initialized with an initializer list
+   52 |   std::vector<int> nums2factor = {2059, 223092870, 3135, 45};
+      |                    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-int_factors-c-cpp.cpp:53:11: error: non-aggregate type 'Factors' cannot be initialized with an initializer list
+   53 |   Factors ftors = {nullptr, 0};
+      |           ^       ~~~~~~~~~~~~
+/tmp/stablecode-int_factors-c-cpp.cpp:58:39: error: extraneous ')' before ';'
+   58 |         factor(nums2factor[i], &ftors));
+      |                                       ^
+1 warning and 8 errors generated.

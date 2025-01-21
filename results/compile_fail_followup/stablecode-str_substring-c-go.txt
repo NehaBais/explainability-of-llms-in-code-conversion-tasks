@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-c-go.go:8:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-c-go.go:18:21: syntax error: unexpected ] at end of statement

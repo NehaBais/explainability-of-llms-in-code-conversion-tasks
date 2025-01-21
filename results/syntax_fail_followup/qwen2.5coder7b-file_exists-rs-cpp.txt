@@ -1,0 +1,25 @@
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:8:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &file : files) {
+      |              ^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:8:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    8 |   for (const auto &file : files) {
+      |                         ^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |       std::filesystem::path p(file);
+      |       ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:11:16: error: no member named 'filesystem' in namespace 'std'
+   11 |       if (std::filesystem::exists(p)) {
+      |           ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:11:35: error: use of undeclared identifier 'p'
+   11 |       if (std::filesystem::exists(p)) {
+      |                                   ^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:12:18: error: no member named 'filesystem' in namespace 'std'
+   12 |         if (std::filesystem::is_directory(p)) {
+      |             ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:12:43: error: use of undeclared identifier 'p'
+   12 |         if (std::filesystem::is_directory(p)) {
+      |                                           ^
+/tmp/qwen2.5coder7b-file_exists-rs-cpp.cpp:20:25: error: no member named 'filesystem' in namespace 'std'
+   20 |     } catch (const std::filesystem::filesystem_error &e) {
+      |                    ~~~~~^
+2 warnings and 6 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/magicoder7b-bit_ops-js-go.go:3:8: "fmt" imported and not used
+/tmp/magicoder7b-bit_ops-js-go.go:4:8: "math" imported and not used

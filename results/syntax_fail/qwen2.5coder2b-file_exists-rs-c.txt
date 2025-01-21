@@ -1,0 +1,26 @@
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:9:9: error: call to undeclared function 'access'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     if (access(files[i], F_OK) == 0) {
+      |         ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:9:26: error: use of undeclared identifier 'F_OK'
+    9 |     if (access(files[i], F_OK) == 0) {
+      |                          ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:10:19: error: variable has incomplete type 'struct stat'
+   10 |       struct stat st;
+      |                   ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:10:14: note: forward declaration of 'struct stat'
+   10 |       struct stat st;
+      |              ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:11:11: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |       if (stat(files[i], &st) == 0) {
+      |           ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:12:13: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |         if (S_ISDIR(st.st_mode)) {
+      |             ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:19:17: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |                 strerror(errno));
+      |                 ^
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:19:17: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/qwen2.5coder2b-file_exists-rs-c.c:19:26: error: use of undeclared identifier 'errno'
+   19 |                 strerror(errno));
+      |                          ^
+7 errors generated.

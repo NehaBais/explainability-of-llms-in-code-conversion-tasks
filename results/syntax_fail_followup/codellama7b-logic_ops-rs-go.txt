@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-logic_ops-rs-go.go:9:45: undefined: math.LogicalXOR

@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode3b-int_arith-rs-go.go:24:2: declared and not used: exp
+/tmp/granitecode3b-int_arith-rs-go.go:24:13: undefined: math

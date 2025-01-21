@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder2b-file_rename-js-cpp.cpp:6:19: error: use of undeclared identifier 'MOVEFILE_REPLACE_EXISTING'
+    6 |                   MOVEFILE_REPLACE_EXISTING | MOVEFILE_COPY_HARDLINK)) {
+      |                   ^
+/tmp/qwen2.5coder2b-file_rename-js-cpp.cpp:6:47: error: use of undeclared identifier 'MOVEFILE_COPY_HARDLINK'
+    6 |                   MOVEFILE_REPLACE_EXISTING | MOVEFILE_COPY_HARDLINK)) {
+      |                                               ^
+/tmp/qwen2.5coder2b-file_rename-js-cpp.cpp:13:8: error: use of undeclared identifier 'SHCreateDirectory'
+   13 |   if (!SHCreateDirectory(destinationPath.c_str(), NULL)) {
+      |        ^
+/tmp/qwen2.5coder2b-file_rename-js-cpp.cpp:17:25: error: use of undeclared identifier 'FO_MOVE'
+   17 |   SHFileOperation(NULL, FO_MOVE, sourcePath.c_str(), destinationPath.c_str(), 0,
+      |                         ^
+/tmp/qwen2.5coder2b-file_rename-js-cpp.cpp:18:19: error: use of undeclared identifier 'FOF_NOCONFIRMATION'
+   18 |                   FOF_NOCONFIRMATION, NULL, NULL);
+      |                   ^
+5 errors generated.

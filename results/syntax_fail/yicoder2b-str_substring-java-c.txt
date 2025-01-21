@@ -1,0 +1,38 @@
+/tmp/yicoder2b-str_substring-java-c.c:11:15: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |       (char *)malloc((m + 1) * sizeof(char)); // Allocate memory for the string
+      |               ^
+/tmp/yicoder2b-str_substring-java-c.c:11:15: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/yicoder2b-str_substring-java-c.c:19:7: error: conflicting types for 'Substring'
+   19 | char *Substring(const char *str, int n) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:31:7: error: conflicting types for 'Substring'
+   31 | char *Substring(const char *str) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:46:7: error: conflicting types for 'Substring'
+   46 | char *Substring(const char *str, char c, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:65:7: error: conflicting types for 'Substring'
+   65 | char *Substring(const char *str, const char *sub, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:4:7: note: previous definition is here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^
+/tmp/yicoder2b-str_substring-java-c.c:67:14: error: incompatible pointer to integer conversion assigning to 'int' from 'char *' [-Wint-conversion]
+   67 |   if ((index = strstr(str, sub)) != NULL)
+      |              ^ ~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-str_substring-java-c.c:67:34: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   67 |   if ((index = strstr(str, sub)) != NULL)
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+/tmp/yicoder2b-str_substring-java-c.c:68:39: error: invalid operands to binary expression ('int' and 'const char *')
+   68 |     return Substring(str, (int)(index - str),
+      |                                 ~~~~~ ^ ~~~
+1 warning and 7 errors generated.

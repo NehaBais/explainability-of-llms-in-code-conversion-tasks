@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codegemma7b-file_exists-js-go.go:4:2: "os" imported and not used

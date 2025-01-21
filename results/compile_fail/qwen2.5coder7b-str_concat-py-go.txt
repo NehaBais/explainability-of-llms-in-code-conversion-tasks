@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_concat-py-go.go:19:13: ", ".join undefined (type untyped string has no field or method join)

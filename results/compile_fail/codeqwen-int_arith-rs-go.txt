@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-int_arith-rs-go.go:7:2: "strconv" imported and not used
+/tmp/codeqwen-int_arith-rs-go.go:35:63: invalid operation: remainder + math.Abs(float64(A)) (mismatched types int and float64)
+/tmp/codeqwen-int_arith-rs-go.go:39:2: declared and not used: exponent

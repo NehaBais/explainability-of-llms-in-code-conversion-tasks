@@ -1,0 +1,9 @@
+/tmp/codegeex4-str_prepend-py-c.c:13:17: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |   char *s_new = malloc(len_s + len_prepend + 1);
+      |                 ^
+/tmp/codegeex4-str_prepend-py-c.c:13:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codegeex4-str_prepend-py-c.c:19:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |   free(s_new); // don't forget to free the allocated memory
+      |   ^
+/tmp/codegeex4-str_prepend-py-c.c:19:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

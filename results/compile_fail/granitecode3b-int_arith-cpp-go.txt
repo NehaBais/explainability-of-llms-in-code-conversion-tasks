@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/granitecode3b-int_arith-cpp-go.go:20:2: declared and not used: h

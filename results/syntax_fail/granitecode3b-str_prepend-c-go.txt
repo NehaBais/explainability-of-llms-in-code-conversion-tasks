@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-str_prepend-c-go.go:11:17: undefined: strings.Dup

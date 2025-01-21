@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/dolphincoder7b-int_arith-rs-go.go:11:1: expected declaration, found GET_INTEGERS (and 1 more errors)

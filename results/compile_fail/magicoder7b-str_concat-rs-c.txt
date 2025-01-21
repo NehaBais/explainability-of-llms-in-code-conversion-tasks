@@ -1,0 +1,9 @@
+/tmp/magicoder7b-str_concat-rs-c.c:9:22: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *s1 = (char *)malloc(
+      |                      ^
+/tmp/magicoder7b-str_concat-rs-c.c:9:22: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/magicoder7b-str_concat-rs-c.c:15:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   free(s1);
+      |   ^
+/tmp/magicoder7b-str_concat-rs-c.c:15:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

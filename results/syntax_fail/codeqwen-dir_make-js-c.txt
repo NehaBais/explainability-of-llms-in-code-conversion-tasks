@@ -1,0 +1,17 @@
+/tmp/codeqwen-dir_make-js-c.c:10:14: error: use of undeclared identifier 'errno'
+   10 |   } else if (errno == ENOENT) {
+      |              ^
+/tmp/codeqwen-dir_make-js-c.c:10:23: error: use of undeclared identifier 'ENOENT'
+   10 |   } else if (errno == ENOENT) {
+      |                       ^
+/tmp/codeqwen-dir_make-js-c.c:11:12: error: use of undeclared identifier 'PATH_MAX'
+   11 |     char p[PATH_MAX];
+      |            ^
+/tmp/codeqwen-dir_make-js-c.c:22:12: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   22 |     return mkdir(path, 0755) == 0 ? 0 : -1; // Create the current directory
+      |            ^
+/tmp/codeqwen-dir_make-js-c.c:22:12: note: did you mean 'mkdirp'?
+/tmp/codeqwen-dir_make-js-c.c:5:5: note: 'mkdirp' declared here
+    5 | int mkdirp(const char *path) {
+      |     ^
+4 errors generated.

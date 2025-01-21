@@ -1,88 +1,37 @@
-### Solution
+ Sure! Here is the equivalent JavaScript code for the given C++ code:
 
-#### C++
-
-#include <iostream>
-using namespace std;
-
-string s1 = "abcd";
-string s2 = "abab";
-string s3 = "ab";
-
-bool startsWith(const string& str, const string& prefix) {
-    return str.compare(0, prefix.size(), prefix) == 0;
-}
-
-bool containsAtAnyLocation(const string& str, const string& substring) {
-    size_t pos = str.find(substring);
-    return (pos != string::npos);
-}
-
-bool endsWith(const string& str, const string& suffix) {
-    return str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
-}
-
-int main() {
-    cout << boolalpha;
-    
-    // Part 1: Check if the first string starts with the second string
-    cout << "Part 1: StartsWith\n";
-    cout << startsWith(s1, s3) << endl;
-    cout << "\nPart 2: ContainsAtAnyLocation\n";
-    bool contains = containsAtAnyLocation(s1, s2);
-    cout << contains << endl;
-    if (contains) {
-        size_t pos = s1.find(s3);
-        while (pos != string::npos) {
-            cout << "Match found at position: " << pos << endl;
-            pos = s1.find(s3, pos + 1);
-        }
-    } else {
-        cout << "No match found." << endl;
-    }
-    
-    // Part 3: Check if the first string ends with the second string
-    cout << "\nPart 3: EndsWith\n";
-    cout << endsWith(s1, s3) << endl;
-    
-    return 0;
-}
-
-
-#### JavaScript
-```js
+```javascript
 let s1 = "abcd";
 let s2 = "abab";
 let s3 = "ab";
 
-function startsWith(str, prefix) {
-  return str.slice(0, prefix.length) === prefix;
-}
+// Beginning
+s1.startsWith(s3); // true
 
-function containsAtAnyLocation(str, substring) {
-  return str.indexOf(substring) !== -1;
-}
-
-function endsWith(str, suffix) {
-  return str.slice(-suffix.length) === suffix;
-}
-
-console.log("Part 1: StartsWith");
-console.log(startsWith(s1, s3));
-
-console.log("\nPart 2: ContainsAtAnyLocation");
-let contains = containsAtAnyLocation(s1, s2);
-console.log(contains);
-if (contains) {
-  let pos = s1.indexOf(s3);
-  while (pos !== -1) {
-    console.log("Match found at position:", pos);
-    pos = s1.indexOf(s3, pos + 1);
-  }
+// End
+if (s1.length >= s3.length) {
+    let endIndex = s1.length - s3.length;
+    s1.endsWith(s3); // true
 } else {
-  console.log("No match found.");
+    console.log("EndsWith check failed: string length mismatch");
 }
 
-console.log("\nPart 3: EndsWith");
-console.log(endsWith(s1, s3));
+// Anywhere
+let loc = s2.indexOf(s3); // returns -1
+if (loc !== -1) {
+    console.log("First occurrence at index:", loc);
+}
+
+let prevLoc = -1;
+while ((loc = s2.indexOf(s3, prevLoc + 1)) !== -1) {
+    console.log("Occurrence at index:", loc);
+    prevLoc = loc;
+}
 ```
+
+### Explanation:
+1. **Beginning**: The `startsWith` method in JavaScript checks if the string starts with the specified substring.
+2. **End**: The `endsWith` method in JavaScript checks if the string ends with the specified substring. We need to ensure that `s3` is not longer than `s1`.
+3. **Anywhere**: The `indexOf` method in JavaScript returns the index of the first occurrence of the substring, or `-1` if it is not found. If found, we print the location. To find all occurrences, we use a loop with `indexOf` starting from the last found position plus one.
+
+This JavaScript code should provide similar functionality to the C++ code you provided.

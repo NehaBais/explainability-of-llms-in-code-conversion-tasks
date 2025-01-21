@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_interp-py-go.go:4:12: more than one character in rune literal

@@ -1,0 +1,62 @@
+/tmp/granitecode3b-file_create-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:7:5: error: unknown type name 'ofstream'
+    7 |     ofstream file1("output.txt");
+      |     ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:9:7: error: use of undeclared identifier 'cout'
+    9 |       cout << "File created successfully" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:9:46: error: use of undeclared identifier 'endl'
+    9 |       cout << "File created successfully" << endl;
+      |                                              ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:11:7: error: use of undeclared identifier 'cout'
+   11 |       cout << "Error creating file" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:11:40: error: use of undeclared identifier 'endl'
+   11 |       cout << "Error creating file" << endl;
+      |                                        ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:15:5: error: unknown type name 'ofstream'
+   15 |     ofstream file2(system("pwd") + "/output.txt");
+      |     ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:15:20: error: use of undeclared identifier 'system'
+   15 |     ofstream file2(system("pwd") + "/output.txt");
+      |                    ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:17:7: error: use of undeclared identifier 'cout'
+   17 |       cout << "File created successfully" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:17:46: error: use of undeclared identifier 'endl'
+   17 |       cout << "File created successfully" << endl;
+      |                                              ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:19:7: error: use of undeclared identifier 'cout'
+   19 |       cout << "Error creating file" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:19:40: error: use of undeclared identifier 'endl'
+   19 |       cout << "Error creating file" << endl;
+      |                                        ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:23:5: error: unknown type name 'string'
+   23 |     string command = "mkdir docs";
+      |     ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:26:7: error: use of undeclared identifier 'cout'
+   26 |       cout << "Directory created successfully" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:26:51: error: use of undeclared identifier 'endl'
+   26 |       cout << "Directory created successfully" << endl;
+      |                                                   ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:28:7: error: use of undeclared identifier 'cout'
+   28 |       cout << "Error creating directory" << endl;
+      |       ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:28:45: error: use of undeclared identifier 'endl'
+   28 |       cout << "Error creating directory" << endl;
+      |                                             ^
+/tmp/granitecode3b-file_create-java-cpp.cpp:31:5: error: unknown type name 'string'
+   31 |     string rootCommand = "mkdir /docs";
+      |     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

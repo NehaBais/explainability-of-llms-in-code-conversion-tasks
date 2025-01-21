@@ -1,0 +1,9 @@
+/tmp/yicoder9b-dir_make-cpp-c.c:14:24: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |   char *copy = (char *)malloc(strlen(path) + 1);
+      |                        ^
+/tmp/yicoder9b-dir_make-cpp-c.c:14:24: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/yicoder9b-dir_make-cpp-c.c:23:7: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |       free(copy);
+      |       ^
+/tmp/yicoder9b-dir_make-cpp-c.c:23:7: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.

@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-bit_ops-c-cpp.cpp:15:50: error: function definition is not allowed here
+   15 |   unsigned int leftRotate(unsigned int n, int d) {
+      |                                                  ^
+/tmp/qwen2.5coder7b-bit_ops-c-cpp.cpp:20:51: error: function definition is not allowed here
+   20 |   unsigned int rightRotate(unsigned int n, int d) {
+      |                                                   ^
+/tmp/qwen2.5coder7b-bit_ops-c-cpp.cpp:24:39: error: use of undeclared identifier 'leftRotate'
+   24 |   std::cout << "a left rotate b: " << leftRotate(a, b) << std::endl;
+      |                                       ^
+/tmp/qwen2.5coder7b-bit_ops-c-cpp.cpp:25:40: error: use of undeclared identifier 'rightRotate'
+   25 |   std::cout << "a right rotate b: " << rightRotate(a, b) << std::endl;
+      |                                        ^
+4 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_append-py-go.go:9:13: string literal not terminated (and 1 more errors)

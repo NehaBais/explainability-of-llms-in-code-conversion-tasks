@@ -1,0 +1,51 @@
+error[E0502]: cannot borrow `self` as mutable because it is also borrowed as immutable
+  --> /tmp/codegeex4-int_factors-c-rs.rs:25:17
+   |
+25 |                 self.xfer_factors(&self.list);
+   |                 ^^^^^------------^----------^
+   |                 |    |            |
+   |                 |    |            immutable borrow occurs here
+   |                 |    immutable borrow later used by call
+   |                 mutable borrow occurs here
+
+error[E0502]: cannot borrow `self` as mutable because it is also borrowed as immutable
+  --> /tmp/codegeex4-int_factors-c-rs.rs:36:13
+   |
+36 |             self.xfer_factors(&self.list);
+   |             ^^^^^------------^----------^
+   |             |    |            |
+   |             |    |            immutable borrow occurs here
+   |             |    immutable borrow later used by call
+   |             mutable borrow occurs here
+
+warning: variable does not need to be mutable
+  --> /tmp/codegeex4-int_factors-c-rs.rs:45:9
+   |
+45 |     let mut ftors = Factors::new();
+   |         ----^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+error[E0382]: use of moved value: `ftors`
+  --> /tmp/codegeex4-int_factors-c-rs.rs:48:23
+   |
+45 |     let mut ftors = Factors::new();
+   |         --------- move occurs because `ftors` has type `Factors`, which does not implement the `Copy` trait
+46 |
+47 |     for num in nums2factor.iter() {
+   |     ----------------------------- inside of this loop
+48 |         let factors = ftors.factor(*num);
+   |                       ^^^^^ ------------ `ftors` moved due to this method call, in previous iteration of loop
+   |
+note: `Factors::factor` takes ownership of the receiver `self`, which moves `ftors`
+  --> /tmp/codegeex4-int_factors-c-rs.rs:17:19
+   |
+17 |     fn factor(mut self, num: i32) -> Vec<i32> {
+   |                   ^^^^
+
+error: aborting due to 3 previous errors; 1 warning emitted
+
+Some errors have detailed explanations: E0382, E0502.
+For more information about an error, try `rustc --explain E0382`.

@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder7b-int_arith-rs-cpp.cpp:14:84: error: extraneous ')' before ';'
+   14 |                                      : ((unsigned)a + unsigned(b)-1) / unsigned(-b));
+      |                                                                                    ^
+/tmp/qwen2.5coder7b-int_arith-rs-cpp.cpp:20:85: error: extraneous ')' before ';'
+   20 |                                       : ((unsigned)a + unsigned(b)-1) % unsigned(-b));
+      |                                                                                     ^
+2 errors generated.

@@ -1,0 +1,25 @@
+/tmp/magicoder7b-file_exists-c-cpp.cpp:6:22: error: no member named 'filesystem' in namespace 'std'
+    6 |             << (std::filesystem::exists("input.txt") &&
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:7:22: error: no member named 'filesystem' in namespace 'std'
+    7 |                 std::filesystem::is_regular_file("input.txt"))
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:11:22: error: no member named 'filesystem' in namespace 'std'
+   11 |             << (std::filesystem::exists("docs") &&
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:12:22: error: no member named 'filesystem' in namespace 'std'
+   12 |                 std::filesystem::is_directory("docs"))
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:16:22: error: no member named 'filesystem' in namespace 'std'
+   16 |             << (std::filesystem::exists("/input.txt") &&
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:17:22: error: no member named 'filesystem' in namespace 'std'
+   17 |                 std::filesystem::is_regular_file("/input.txt"))
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:21:22: error: no member named 'filesystem' in namespace 'std'
+   21 |             << (std::filesystem::exists("/docs") &&
+      |                 ~~~~~^
+/tmp/magicoder7b-file_exists-c-cpp.cpp:22:22: error: no member named 'filesystem' in namespace 'std'
+   22 |                 std::filesystem::is_directory("/docs"))
+      |                 ~~~~~^
+8 errors generated.

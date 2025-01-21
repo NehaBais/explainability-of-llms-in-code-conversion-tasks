@@ -1,0 +1,68 @@
+/tmp/granitecode8b-int_factors-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-js-c.c:3:1: error: unknown type name 'using'
+    3 | using namespace std;
+      | ^
+/tmp/granitecode8b-int_factors-js-c.c:3:16: error: expected ';' after top level declarator
+    3 | using namespace std;
+      |                ^
+      |                ;
+/tmp/granitecode8b-int_factors-js-c.c:4:1: error: unknown type name 'vector'
+    4 | vector factors(int num) {
+      | ^
+/tmp/granitecode8b-int_factors-js-c.c:5:3: error: use of undeclared identifier 'vector'
+    5 |   vector n_factors;
+      |   ^
+/tmp/granitecode8b-int_factors-js-c.c:7:20: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   for (i = 1; i <= sqrt(num); i += 1) {
+      |                    ^
+/tmp/granitecode8b-int_factors-js-c.c:7:20: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode8b-int_factors-js-c.c:9:7: error: use of undeclared identifier 'n_factors'; did you mean 'factors'?
+    9 |       n_factors.push_back(i);
+      |       ^~~~~~~~~
+      |       factors
+/tmp/granitecode8b-int_factors-js-c.c:4:8: note: 'factors' declared here
+    4 | vector factors(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-js-c.c:11:9: error: use of undeclared identifier 'n_factors'; did you mean 'factors'?
+   11 |         n_factors.push_back(num / i);
+      |         ^~~~~~~~~
+      |         factors
+/tmp/granitecode8b-int_factors-js-c.c:4:8: note: 'factors' declared here
+    4 | vector factors(int num) {
+      |        ^
+/tmp/granitecode8b-int_factors-js-c.c:15:3: error: call to undeclared function 'sort'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   sort(n_factors.begin(), n_factors.end()); // numeric sort
+      |   ^
+/tmp/granitecode8b-int_factors-js-c.c:15:8: error: use of undeclared identifier 'n_factors'
+   15 |   sort(n_factors.begin(), n_factors.end()); // numeric sort
+      |        ^
+/tmp/granitecode8b-int_factors-js-c.c:15:27: error: use of undeclared identifier 'n_factors'
+   15 |   sort(n_factors.begin(), n_factors.end()); // numeric sort
+      |                           ^
+/tmp/granitecode8b-int_factors-js-c.c:16:10: error: use of undeclared identifier 'n_factors'
+   16 |   return n_factors;
+      |          ^
+/tmp/granitecode8b-int_factors-js-c.c:20:3: error: use of undeclared identifier 'vector'
+   20 |   vector factors = factors(num);
+      |   ^
+/tmp/granitecode8b-int_factors-js-c.c:21:3: error: use of undeclared identifier 'cout'
+   21 |   cout << "[";
+      |   ^
+/tmp/granitecode8b-int_factors-js-c.c:24:7: error: use of undeclared identifier 'cout'
+   24 |       cout << ",";
+      |       ^
+/tmp/granitecode8b-int_factors-js-c.c:26:5: error: use of undeclared identifier 'cout'
+   26 |     cout << factors[i];
+      |     ^
+/tmp/granitecode8b-int_factors-js-c.c:28:3: error: use of undeclared identifier 'cout'
+   28 |   cout << "]" << endl;
+      |   ^
+/tmp/granitecode8b-int_factors-js-c.c:28:18: error: use of undeclared identifier 'endl'
+   28 |   cout << "]" << endl;
+      |                  ^
+19 errors generated.

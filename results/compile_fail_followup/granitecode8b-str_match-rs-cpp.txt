@@ -1,0 +1,41 @@
+/tmp/granitecode8b-str_match-rs-cpp.cpp:1:1: error: unknown type name 'fn'
+    1 | fn print_match(possible_match : Option<usize>) {
+      | ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:1:16: error: use of undeclared identifier 'possible_match'
+    1 | fn print_match(possible_match : Option<usize>) {
+      |                ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:1:47: error: expected ';' after top level declarator
+    1 | fn print_match(possible_match : Option<usize>) {
+      |                                               ^
+      |                                               ;
+/tmp/granitecode8b-str_match-rs-cpp.cpp:7:1: error: unknown type name 'fn'
+    7 | fn main() {
+      | ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:8:3: error: unknown type name 'let'
+    8 |   let s1 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:9:3: error: unknown type name 'let'
+    9 |   let s2 = "abab";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:10:3: error: unknown type name 'let'
+   10 |   let s3 = "ab";
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:13:3: error: use of undeclared identifier 'println'
+   13 |   println !("{}", s1.starts_with(s3));
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:16:3: error: use of undeclared identifier 'println'
+   16 |   println !("{}", s1.ends_with(s3));
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:19:3: error: unknown type name 'let'
+   19 |   let count = s1.matches(s3).count();
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:20:3: error: use of undeclared identifier 'println'
+   20 |   println !("Number of occurrences of {} in {}: {}", s3, s1, count);
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:23:3: error: unknown type name 'let'
+   23 |   let start_index = s1.find(s3).unwrap_or(s1.len());
+      |   ^
+/tmp/granitecode8b-str_match-rs-cpp.cpp:24:3: error: use of undeclared identifier 'println'
+   24 |   println !("First occurrence of {} in {} starts at index {}", s3, s1,
+      |   ^
+13 errors generated.

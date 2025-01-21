@@ -1,30 +1,26 @@
-### 5.3.4
-Convert the following code from Java to Python. This is the requirement for the code - The program will receive an integer n and will display all prime numbers less than or equal to n, with each number on a new line. In this case, prime number refers to a positive number greater than 1 that has no divisors other than 1 and itself.
-```
-public static void printPrimes(int limit) {
-    for (int i = 2; i <= limit; i++) {
-        boolean isPrime = true;
-        for (int j = 2; j < i; j++) {
-            if (i % j == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) {
-            System.out.println(i);
-        }
-    }
-}
-```
-### 5.3.7
-Write a function that receives the integer n and returns an int array of length n with all its elements set to zero. Write some code that calls this function, checks if it works properly, then change your code so the array contains the value 1 in each element.
+ Sure! Here is the equivalent Python code for the provided Java methods:
+
 ```python
-def zeros(n):
-    return [0] * n
+def substring_n_m(s: str, n: int, m: int) -> str:
+    return s[n:n + m]
 
-# Example usage:
-zeros(5) # Output: [0, 0, 0, 0, 0]
+def substring_n(s: str, n: int) -> str:
+    return s[n:]
 
-# Change values to 1
-print(zeros(5)) # Output: [1, 1, 1, 1, 1]
+def substring_without_last(s: str) -> str:
+    return s[:-1]
+
+def substring_char_m(s: str, c: str, m: int) -> str:
+    start = s.find(c)
+    if start != -1:
+        return s[start:start + m + 1]
+    return ""
+
+def substring_sub_m(s: str, sub: str, m: int) -> str:
+    start = s.find(sub)
+    if start != -1:
+        return s[start:start + m + 1]
+    return ""
 ```
+
+These Python functions correspond to the Java methods you provided. Each function takes a string `s` and additional parameters as specified in your requirements. The functions handle UTF-8 or UTF-16 encoded strings, ensuring they work with any valid Unicode code point.

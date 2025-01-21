@@ -1,0 +1,48 @@
+/tmp/granitecode8b-bit_ops-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-py-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("    AND:     0b%0*b \n           & 0b%0*b \n           = 0b%0*b\n",
+      |   ^
+/tmp/granitecode8b-bit_ops-py-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-bit_ops-py-c.c:20:12: error: call to undeclared function 'rotl'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   20 |     return rotl(width, a, -n);
+      |            ^
+/tmp/granitecode8b-bit_ops-py-c.c:20:12: note: did you mean 'rotr'?
+/tmp/granitecode8b-bit_ops-py-c.c:18:14: note: 'rotr' declared here
+   18 | unsigned int rotr(int width, unsigned int a, int n) {
+      |              ^
+   19 |   if (n < 0)
+   20 |     return rotl(width, a, -n);
+      |            ~~~~
+      |            rotr
+/tmp/granitecode8b-bit_ops-py-c.c:29:32: error: expected ';' after return statement
+   29 |                << (width - n)))     // ... then moved up
+      |                                ^
+      |                                ;
+/tmp/granitecode8b-bit_ops-py-c.c:32:14: error: conflicting types for 'rotl'
+   32 | unsigned int rotl(int width, unsigned int a, int n) {
+      |              ^
+/tmp/granitecode8b-bit_ops-py-c.c:20:12: note: previous implicit declaration is here
+   20 |     return rotl(width, a, -n);
+      |            ^
+/tmp/granitecode8b-bit_ops-py-c.c:54:32: error: expected ';' after return statement
+   54 |                << (width - n)))     // ... then moved up
+      |                                ^
+      |                                ;
+/tmp/granitecode8b-bit_ops-py-c.c:61:10: warning: data argument not used by format string [-Wformat-extra-args]
+   60 |   printf("               asr(%d, 0b%0*b, 1)\n", width, a, width,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   61 |          asr(width, a, 1), width, asr(width, aa, 1));
+      |          ^
+/tmp/granitecode8b-bit_ops-py-c.c:63:10: warning: data argument not used by format string [-Wformat-extra-args]
+   62 |   printf("               asr(%d, 0b%0*b, 2)\n", width, a, width,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   63 |          asr(width, a, 2), width, asr(width, aa, 2));
+      |          ^
+/tmp/granitecode8b-bit_ops-py-c.c:65:10: warning: data argument not used by format string [-Wformat-extra-args]
+   64 |   printf("               asr(%d, 0b%0*b, 4)\n", width, a, width,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   65 |          asr(width, a, 4), width, asr(width, aa, 4));
+      |          ^
+3 warnings and 6 errors generated.

@@ -1,12 +1,10 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main(int argc, char *argv[]) {
   if (argc != 3) {
-    printf("Usage: ./a.out a b\n");
-    return -1;
+    printf("Usage: %s <integer1> <integer2>\n", argv[0]);
+    return 1;
   }
 
   int a = atoi(argv[1]);
@@ -15,8 +13,16 @@ int main(int argc, char *argv[]) {
   printf("sum:              %d\n", a + b);
   printf("difference:       %d\n", a - b);
   printf("product:          %d\n", a * b);
-  printf("integer quotient: %d (truncates towards zero)\n",
-         a / b); // truncates towards zero
-  printf("remainder:        %d (same sign as first operand)\n",
-         a % b); // same sign as first operand
+
+  // For integer quotient in C, we use the / operator which truncates towards
+  // zero.
+  int quotient = a / b;
+  printf("integer quotient: %d\n", quotient);
+
+  // For remainder, the sign is determined by the first operand if they are
+  // different.
+  int remainder = a % b;
+  printf("remainder:        %d\n", remainder);
+
+  return 0;
 }

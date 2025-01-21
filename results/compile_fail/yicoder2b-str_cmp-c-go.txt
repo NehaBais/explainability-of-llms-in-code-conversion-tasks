@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/yicoder2b-str_cmp-c-go.go:33:48: undefined: STRCEQ
+/tmp/yicoder2b-str_cmp-c-go.go:33:62: undefined: STRCNE
+/tmp/yicoder2b-str_cmp-c-go.go:33:76: undefined: STRCGT
+/tmp/yicoder2b-str_cmp-c-go.go:33:90: undefined: STRCLT
+/tmp/yicoder2b-str_cmp-c-go.go:33:104: undefined: STRCGE

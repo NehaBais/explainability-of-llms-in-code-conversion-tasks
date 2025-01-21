@@ -1,0 +1,75 @@
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-go-rs.rs:28:17
+   |
+28 |     create_file(current_dir.to_string() + "output.txt").unwrap();
+   |     ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codegeex4-file_create-go-rs.rs:4:4
+   |
+4  | fn create_file(fn_path: &str) -> io::Result<()> {
+   |    ^^^^^^^^^^^ -------------
+help: consider borrowing here
+   |
+28 |     create_file(&(current_dir.to_string() + "output.txt")).unwrap();
+   |                 ++                                      +
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-go-rs.rs:29:16
+   |
+29 |     create_dir(current_dir.to_string() + "docs").unwrap();
+   |     ---------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codegeex4-file_create-go-rs.rs:11:4
+   |
+11 | fn create_dir(dn_path: &str) -> io::Result<()> {
+   |    ^^^^^^^^^^ -------------
+help: consider borrowing here
+   |
+29 |     create_dir(&(current_dir.to_string() + "docs")).unwrap();
+   |                ++                                +
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-go-rs.rs:32:17
+   |
+32 |     create_file(root_dir.to_string() + "output.txt").unwrap();
+   |     ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codegeex4-file_create-go-rs.rs:4:4
+   |
+4  | fn create_file(fn_path: &str) -> io::Result<()> {
+   |    ^^^^^^^^^^^ -------------
+help: consider borrowing here
+   |
+32 |     create_file(&(root_dir.to_string() + "output.txt")).unwrap();
+   |                 ++                                   +
+
+error[E0308]: mismatched types
+  --> /tmp/codegeex4-file_create-go-rs.rs:33:16
+   |
+33 |     create_dir(root_dir.to_string() + "docs").unwrap();
+   |     ---------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `&str`, found `String`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: function defined here
+  --> /tmp/codegeex4-file_create-go-rs.rs:11:4
+   |
+11 | fn create_dir(dn_path: &str) -> io::Result<()> {
+   |    ^^^^^^^^^^ -------------
+help: consider borrowing here
+   |
+33 |     create_dir(&(root_dir.to_string() + "docs")).unwrap();
+   |                ++                             +
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

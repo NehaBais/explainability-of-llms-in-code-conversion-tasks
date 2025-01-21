@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codellama7b-str_substring-cpp-go.go:19:31: cannot use c (variable of type rune) as string value in argument to strings.Index

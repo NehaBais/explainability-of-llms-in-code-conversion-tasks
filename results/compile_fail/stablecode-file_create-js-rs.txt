@@ -1,0 +1,13 @@
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-file_create-js-rs.rs:14:7
+   |
+11 | let home_dir = match fs::get_metadata(".") {
+   |                                            - this opening brace...
+...
+14 | }, ".");
+   | -     ^ unexpected closing delimiter
+   | |
+   | ...matches this closing brace
+
+error: aborting due to 1 previous error
+

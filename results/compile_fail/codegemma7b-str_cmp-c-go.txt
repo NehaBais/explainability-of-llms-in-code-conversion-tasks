@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codegemma7b-str_cmp-c-go.go:14:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:15:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:21:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:22:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:28:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:29:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:35:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:36:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:40:5: undefined: strings
+/tmp/codegemma7b-str_cmp-c-go.go:45:7: no new variables on left side of :=
+/tmp/codegemma7b-str_cmp-c-go.go:45:7: too many errors

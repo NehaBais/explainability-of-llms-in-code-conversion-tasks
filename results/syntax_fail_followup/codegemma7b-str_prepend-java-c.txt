@@ -1,0 +1,13 @@
+/tmp/codegemma7b-str_prepend-java-c.c:2:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    2 | string = strcat((char *)"abc", string);
+      | ^
+      | int
+/tmp/codegemma7b-str_prepend-java-c.c:2:1: error: redefinition of 'string' with a different type: 'int' vs 'char *'
+/tmp/codegemma7b-str_prepend-java-c.c:1:7: note: previous definition is here
+    1 | char *string = "def";
+      |       ^
+/tmp/codegemma7b-str_prepend-java-c.c:2:10: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | string = strcat((char *)"abc", string);
+      |          ^
+/tmp/codegemma7b-str_prepend-java-c.c:2:10: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+3 errors generated.

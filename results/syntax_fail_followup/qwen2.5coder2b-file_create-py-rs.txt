@@ -1,0 +1,16 @@
+error[E0603]: struct `OsStr` is private
+ --> /tmp/qwen2.5coder2b-file_create-py-rs.rs:2:17
+  |
+2 | use std::path::{OsStr, PathBuf};
+  |                 ^^^^^ private struct
+  |
+note: the struct `OsStr` is defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/path.rs:78:26
+help: import `OsStr` directly
+  |
+2 | use std::path::{std::ffi::os_str::OsStr, PathBuf};
+  |                 ~~~~~~~~~~~~~~~~~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0603`.

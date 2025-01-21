@@ -1,0 +1,4 @@
+/tmp/deepseekcoder7b-file_create-py-c.c:1:10: fatal error: 'direct.h' file not found
+    1 | #include <direct.h>
+      |          ^~~~~~~~~~
+1 error generated.

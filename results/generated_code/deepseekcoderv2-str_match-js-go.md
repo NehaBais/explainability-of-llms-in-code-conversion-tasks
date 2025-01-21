@@ -1,45 +1,74 @@
-Answer: Here is the Golang code that implements the same logic as described in JavaScript:
+ Sure, here is the equivalent code in Go:
 
 ```go
 package main
 
 import (
 	"fmt"
+	"regexp"
 )
 
 func main() {
 	stringA := "tacoloco"
 	stringB := "co"
+	var q1, q2 int
+	q2matches := []int{}
 
 	// stringA starts with stringB
-	q1 := stringA[:len(stringB)] == stringB
+	q1 = 0
+	if len(stringA) >= len(stringB) && stringA[:len(stringB)] == stringB {
+		q1 = 1
+	}
 
 	// stringA contains stringB
-	var q2 int
-	if i := len(stringA) - len(stringB); i >= 0 {
-		q2 = strings.Index(stringA[i:], stringB) + i
+	q2 = -1
+	index := 0
+	for index <= len(stringA)-len(stringB) {
+		if stringA[index:index+len(stringB)] == stringB {
+			q2 = index
+			break
+		}
+		index++
 	}
 
 	// multiple matches
-	var q2matches []int
-	for m := range regexp.MustCompile(stringB).FindAllStringSubmatchIndex(stringA, -1) {
-		q2matches = append(q2matches, m[0])
+	q2multi := regexp.MustCompile(stringB)
+	matches := q2multi.FindAllStringIndex(stringA, -1)
+	for _, match := range matches {
+		q2matches = append(q2matches, match[0])
 	}
 
 	// stringA ends with stringB
-	q3 := strings.HasSuffix(stringA, stringB)
+	q3 := false
+	if len(stringA) >= len(stringB) && stringA[len(stringA)-len(stringB):] == stringB {
+		q3 = true
+	}
 
-	fmt.Printf("1: Does '%s' start with '%s'? %v\n", stringA, stringB, q1)
-	if q2 >= 0 {
+	fmt.Printf("1: Does '%s' start with '%s'? %s\n", stringA, stringB, yesNo(q1))
+	if q2 != -1 {
 		fmt.Printf("2: Is '%s' contained in '%s'? Yes, at index %d.\n", stringB, stringA, q2)
+		if len(q2matches) > 1 {
+			fmt.Printf("   In fact, it happens %d times within '%s', at indices %v.\n", len(q2matches), stringA, q2matches)
+		}
 	} else {
-		fmt.Println("2: Is '"+stringB+"' contained in '"+stringA+"?' No.")
+		fmt.Printf("2: Is '%s' contained in '%s'? No.\n", stringB, stringA)
 	}
-	if len(q2matches) > 1 {
-		fmt.Printf("   In fact, it happens %d times within '%s', at indices%s\n", q2matches, stringA, strings.Join(strings.Split(fmt.Sprint(q2matches), ""), ", "))
-	} else if len(q2matches) == 1 {
-		fmt.Printf("   In fact, it happens once within '%s', at index %d\n", stringA, q2matches[0])
+	fmt.Printf("3: Does '%s' end with '%s'? %s\n", stringA, stringB, yesNo(q3))
+}
+
+func yesNo(b int) string {
+	if b == 1 {
+		return "Yes."
 	}
-	fmt.Printf("3: Does '%s' end with '%s'? %v\n", stringA, stringB, q3)
+	return "No."
 }
 ```
+
+This Go code performs the same operations as the provided JavaScript code:
+
+1. Determines if `stringA` starts with `stringB`.
+2. Determines if `stringA` contains `stringB` at any location and prints the index if found.
+3. Handles multiple occurrences of `stringB` in `stringA` and prints their indices.
+4. Determines if `stringA` ends with `stringB`.
+
+The function `yesNo` is used to convert a boolean value into "Yes." or "No." for printing purposes.

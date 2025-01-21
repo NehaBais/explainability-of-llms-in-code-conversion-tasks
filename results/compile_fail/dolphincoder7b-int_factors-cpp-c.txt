@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-int_factors-cpp-c.c:32:36: error: use of undeclared identifier 'cmpfunc'
+   32 |   qsort(factors, len, sizeof(int), cmpfunc);
+      |                                    ^
+1 error generated.

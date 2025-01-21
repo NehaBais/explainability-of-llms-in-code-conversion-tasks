@@ -1,13 +1,25 @@
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Mkdir {
-  public static void main(String[] args) throws IOException {
-    Path newDir = Paths.get("path/to/new-directory");
+  public static void main(String[] args) {
+    if (args.length != 1) {
+      System.out.println("usage: mkdir <path>");
+      return;
+    }
 
-    if (!Files.exists(newDir)) {
-      Files.createDirectories(newDir);
-    } else {
-      System.out.println("Directory already exists.");
+    Path pathToCreate = Paths.get(args[0]);
+
+    if (Files.exists(pathToCreate)) {
+      return;
+    }
+
+    try {
+      Files.createDirectories(pathToCreate);
+    } catch (Exception e) {
+      System.out.println("couldn't create directory: " + pathToCreate.toString());
+      return;
     }
   }
 }

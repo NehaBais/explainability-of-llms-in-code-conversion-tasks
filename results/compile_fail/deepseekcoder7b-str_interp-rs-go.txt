@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_interp-rs-go.go:12:9: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_interp-rs-go.go:12:17: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-str_interp-rs-go.go:12:33: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-str_interp-rs-go.go:12:38: syntax error: unexpected :=, expected expression

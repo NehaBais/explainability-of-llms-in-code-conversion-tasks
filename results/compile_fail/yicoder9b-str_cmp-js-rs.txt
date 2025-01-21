@@ -1,0 +1,25 @@
+error[E0599]: no method named `is_less` found for enum `std::cmp::Ordering` in the current scope
+  --> /tmp/yicoder9b-str_cmp-js-rs.rs:17:42
+   |
+17 |     println!("{}", string5.cmp(&string6).is_less()); // true (lexical comparison)
+   |                                          ^^^^^^^
+   |
+help: there is a method `is_le` with a similar name
+   |
+17 |     println!("{}", string5.cmp(&string6).is_le()); // true (lexical comparison)
+   |                                          ~~~~~
+
+error[E0599]: no method named `is_greater` found for enum `std::cmp::Ordering` in the current scope
+  --> /tmp/yicoder9b-str_cmp-js-rs.rs:18:42
+   |
+18 |     println!("{}", string5.cmp(&string6).is_greater()); // false (lexical comparison)
+   |                                          ^^^^^^^^^^
+   |
+help: there is a method `is_ge` with a similar name
+   |
+18 |     println!("{}", string5.cmp(&string6).is_ge()); // false (lexical comparison)
+   |                                          ~~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

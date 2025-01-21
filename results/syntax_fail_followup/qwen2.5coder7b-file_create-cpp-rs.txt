@@ -1,0 +1,8 @@
+error: `--crate-name` and `#[crate_name]` are required to match, but `temp_crate` != `file_create_cpp_rs`
+ --> /tmp/qwen2.5coder7b-file_create-cpp-rs.rs:1:1
+  |
+1 | #![crate_name = "file_create_cpp_rs"]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 1 previous error
+

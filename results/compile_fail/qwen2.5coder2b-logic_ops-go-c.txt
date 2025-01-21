@@ -1,0 +1,39 @@
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:3:17: error: unknown type name 'bool'
+    3 | void printLogic(bool a, bool b) {
+      |                 ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:3:25: error: unknown type name 'bool'
+    3 | void printLogic(bool a, bool b) {
+      |                         ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:10:14: error: use of undeclared identifier 'true'
+   10 |   printLogic(true, true);
+      |              ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:10:20: error: use of undeclared identifier 'true'
+   10 |   printLogic(true, true);
+      |                    ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:11:14: error: use of undeclared identifier 'false'; did you mean 'else'?
+   11 |   printLogic(false, false);
+      |              ^~~~~
+      |              else
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:11:14: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:11:21: error: use of undeclared identifier 'false'; did you mean 'fclose'?
+   11 |   printLogic(false, false);
+      |                     ^~~~~
+      |                     fclose
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:230:6: note: 'fclose' declared here
+  230 | int      fclose(FILE *);
+      |          ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:12:14: error: use of undeclared identifier 'true'
+   12 |   printLogic(true, false);
+      |              ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:12:20: error: use of undeclared identifier 'false'
+   12 |   printLogic(true, false);
+      |                    ^
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:13:14: error: use of undeclared identifier 'false'; did you mean 'else'?
+   13 |   printLogic(false, true);
+      |              ^~~~~
+      |              else
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:13:14: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-go-c.c:13:21: error: use of undeclared identifier 'true'
+   13 |   printLogic(false, true);
+      |                     ^
+12 errors generated.

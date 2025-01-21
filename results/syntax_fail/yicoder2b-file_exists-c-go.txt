@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_exists-c-go.go:8:38: missing ',' in parameter list (and 4 more errors)

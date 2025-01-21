@@ -1,0 +1,29 @@
+/tmp/stablecode-str_substring-py-cpp.cpp:11:34: error: expected ';' after expression
+   11 |     std::cout << s.substr(n-1, m)) << std::endl;
+      |                                  ^
+      |                                  ;
+/tmp/stablecode-str_substring-py-cpp.cpp:11:34: error: expected expression
+/tmp/stablecode-str_substring-py-cpp.cpp:14:31: error: expected ';' after expression
+   14 |     std::cout << s.substr(n-1)) << std::endl;
+      |                               ^
+      |                               ;
+/tmp/stablecode-str_substring-py-cpp.cpp:14:31: error: expected expression
+/tmp/stablecode-str_substring-py-cpp.cpp:17:45: error: expected ';' after expression
+   17 |     std::cout << s.substr(0, s.length() - 1))) << std::endl;
+      |                                             ^
+      |                                             ;
+/tmp/stablecode-str_substring-py-cpp.cpp:17:45: error: expected expression
+/tmp/stablecode-str_substring-py-cpp.cpp:22:35: error: expected ';' after expression
+   22 |     std::cout << s.substr(indx, m)) << std::endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-str_substring-py-cpp.cpp:22:35: error: expected expression
+/tmp/stablecode-str_substring-py-cpp.cpp:26:19: error: use of undeclared identifier 'chars'
+   26 |     indx = s.find(chars);
+      |                   ^
+/tmp/stablecode-str_substring-py-cpp.cpp:27:35: error: expected ';' after expression
+   27 |     std::cout << s.substr(indx, m)) << std::endl;
+      |                                   ^
+      |                                   ;
+/tmp/stablecode-str_substring-py-cpp.cpp:27:35: error: expected expression
+11 errors generated.

@@ -1,0 +1,72 @@
+error[E0599]: no method named `as_str` found for struct `std::path::Display` in the current scope
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:27:56
+   |
+27 |             std::env::current_dir().unwrap().display().as_str()
+   |                                                        ^^^^^^ method not found in `Display<'_>`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:25:9
+   |
+25 | /         format!(
+26 | |             "{}/input.txt",
+27 | |             std::env::current_dir().unwrap().display().as_str()
+28 | |         ),
+   | |_________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `as_str` found for struct `std::path::Display` in the current scope
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:31:56
+   |
+31 |             std::env::current_dir().unwrap().display().as_str()
+   |                                                        ^^^^^^ method not found in `Display<'_>`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:29:9
+   |
+29 | /         format!(
+30 | |             "{}/output.txt",
+31 | |             std::env::current_dir().unwrap().display().as_str()
+32 | |         ),
+   | |_________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `as_str` found for struct `std::path::Display` in the current scope
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:39:56
+   |
+39 |             std::env::current_dir().unwrap().display().as_str()
+   |                                                        ^^^^^^ method not found in `Display<'_>`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:37:9
+   |
+37 | /         format!(
+38 | |             "{}/docs/",
+39 | |             std::env::current_dir().unwrap().display().as_str()
+40 | |         ),
+   | |_________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `as_str` found for struct `std::path::Display` in the current scope
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:43:56
+   |
+43 |             std::env::current_dir().unwrap().display().as_str()
+   |                                                        ^^^^^^ method not found in `Display<'_>`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-file_rename-java-rs.rs:41:9
+   |
+41 | /         format!(
+42 | |             "{}/mydocs/",
+43 | |             std::env::current_dir().unwrap().display().as_str()
+44 | |         ),
+   | |_________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

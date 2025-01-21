@@ -1,0 +1,7 @@
+/tmp/stablecode-str_prepend-cpp-c.c:9:36: error: extraneous ')' before ';'
+    9 |     strcat(prepended, myStrings[0]));
+      |                                    ^
+/tmp/stablecode-str_prepend-cpp-c.c:10:36: error: extraneous ')' before ';'
+   10 |     strcat(prepended, myStrings[1]));
+      |                                    ^
+2 errors generated.

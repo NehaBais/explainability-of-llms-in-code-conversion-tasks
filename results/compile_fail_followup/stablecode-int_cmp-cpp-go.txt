@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-int_cmp-cpp-go.go:24:49: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_cmp-cpp-go.go:29:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_cmp-cpp-go.go:34:52: syntax error: unexpected ) at end of statement

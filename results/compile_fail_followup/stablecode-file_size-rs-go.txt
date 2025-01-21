@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/stablecode-file_size-rs-go.go:21:34: syntax error: unexpected ), expected {
+/tmp/stablecode-file_size-rs-go.go:26:57: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-rs-go.go:28:31: syntax error: unexpected ), expected {
+/tmp/stablecode-file_size-rs-go.go:34:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-rs-go.go:36:78: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_size-rs-go.go:40:66: syntax error: unexpected ) at end of statement

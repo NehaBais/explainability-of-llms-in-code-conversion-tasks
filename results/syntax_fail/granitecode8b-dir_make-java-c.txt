@@ -1,0 +1,80 @@
+/tmp/granitecode8b-dir_make-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-java-c.c:4:12: error: use of undeclared identifier 'PATH_MAX'
+    4 |   char dir[PATH_MAX];
+      |            ^
+/tmp/granitecode8b-dir_make-java-c.c:5:19: error: use of undeclared identifier 'NULL'
+    5 |   const char *p = NULL;
+      |                   ^
+/tmp/granitecode8b-dir_make-java-c.c:6:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    6 |   size_t len;
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode8b-dir_make-java-c.c:6:10: error: use of undeclared identifier 'len'
+    6 |   size_t len;
+      |          ^
+/tmp/granitecode8b-dir_make-java-c.c:12:16: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     p = path + strchr(path, '/') - path;
+      |                ^
+/tmp/granitecode8b-dir_make-java-c.c:12:16: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/granitecode8b-dir_make-java-c.c:12:14: error: invalid operands to binary expression ('const char *' and 'char *')
+   12 |     p = path + strchr(path, '/') - path;
+      |         ~~~~ ^ ~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-dir_make-java-c.c:17:5: error: use of undeclared identifier 'len'
+   17 |     len = 2;
+      |     ^
+/tmp/granitecode8b-dir_make-java-c.c:20:16: warning: multi-character character constant [-Wmultichar]
+   20 |   while (*p != '\\0') {
+      |                ^
+/tmp/granitecode8b-dir_make-java-c.c:23:11: error: use of undeclared identifier 'len'
+   23 |       dir[len] = '\\0';
+      |           ^
+/tmp/granitecode8b-dir_make-java-c.c:23:18: warning: multi-character character constant [-Wmultichar]
+   23 |       dir[len] = '\\0';
+      |                  ^
+/tmp/granitecode8b-dir_make-java-c.c:24:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |       mkdir(dir);
+      |       ^
+/tmp/granitecode8b-dir_make-java-c.c:24:7: note: did you mean 'mkdirp'?
+/tmp/granitecode8b-dir_make-java-c.c:3:6: note: 'mkdirp' declared here
+    3 | void mkdirp(const char *path) {
+      |      ^
+/tmp/granitecode8b-dir_make-java-c.c:26:17: warning: multi-character character constant [-Wmultichar]
+   26 |       if (*p == '\\0')
+      |                 ^
+/tmp/granitecode8b-dir_make-java-c.c:28:11: error: use of undeclared identifier 'len'
+   28 |       dir[len - 1] = '\\'; // restore the trailing slash
+      |           ^
+/tmp/granitecode8b-dir_make-java-c.c:29:7: error: use of undeclared identifier 'len'
+   29 |       len = strlen(dir);
+      |       ^
+/tmp/granitecode8b-dir_make-java-c.c:29:13: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |       len = strlen(dir);
+      |             ^
+/tmp/granitecode8b-dir_make-java-c.c:29:13: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode8b-dir_make-java-c.c:31:11: error: use of undeclared identifier 'len'
+   31 |       dir[len++] = c;
+      |           ^
+/tmp/granitecode8b-dir_make-java-c.c:35:7: error: use of undeclared identifier 'len'
+   35 |   dir[len] = '\\0';
+      |       ^
+/tmp/granitecode8b-dir_make-java-c.c:35:14: warning: multi-character character constant [-Wmultichar]
+   35 |   dir[len] = '\\0';
+      |              ^
+/tmp/granitecode8b-dir_make-java-c.c:36:3: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |   mkdir(dir);
+      |   ^
+/tmp/granitecode8b-dir_make-java-c.c:6:3: warning: expression result unused [-Wunused-value]
+    6 |   size_t len;
+      |   ^~~~~~~~~~
+/tmp/granitecode8b-dir_make-java-c.c:20:13: warning: result of comparison of constant 23600 with expression of type 'const char' is always true [-Wtautological-constant-out-of-range-compare]
+   20 |   while (*p != '\\0') {
+      |          ~~ ^  ~~~~~
+/tmp/granitecode8b-dir_make-java-c.c:26:14: warning: result of comparison of constant 23600 with expression of type 'const char' is always false [-Wtautological-constant-out-of-range-compare]
+   26 |       if (*p == '\\0')
+      |           ~~ ^  ~~~~~
+7 warnings and 17 errors generated.

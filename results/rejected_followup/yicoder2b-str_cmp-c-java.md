@@ -1,0 +1,1 @@
+This error occurs because Java's logical NOT (`!`) operator operates on boolean values, not integer values. To fix this error, I would replace `return !areEqual(a, b) ? 1 : 0;` and `return !areEqualCaseInsensitive(a, b) ? 1 : 0;` with appropriate comparison methods that take into account the boolean result of the comparison.

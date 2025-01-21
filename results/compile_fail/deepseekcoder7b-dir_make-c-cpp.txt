@@ -1,0 +1,7 @@
+/tmp/deepseekcoder7b-dir_make-c-cpp.cpp:14:12: error: no member named 'filesystem' in namespace 'std'
+   14 |   if (std::filesystem::exists(path)) {
+      |       ~~~~~^
+/tmp/deepseekcoder7b-dir_make-c-cpp.cpp:20:23: error: no member named 'filesystem' in namespace 'std'
+   20 |   bool success = std::filesystem::create_directories(path, ec);
+      |                  ~~~~~^
+2 errors generated.

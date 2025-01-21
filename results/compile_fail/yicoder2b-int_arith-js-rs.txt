@@ -1,0 +1,35 @@
+error[E0599]: no function or associated item named `from_str` found for type `i32` in the current scope
+  --> /tmp/yicoder2b-int_arith-js-rs.rs:21:20
+   |
+21 |         &s => i32::from_str(s).unwrap_or(0),
+   |                    ^^^^^^^^ function or associated item not found in `i32`
+   |
+   = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::str::FromStr;
+   |
+help: there is an associated function `from` with a similar name
+   |
+21 |         &s => i32::from(s).unwrap_or(0),
+   |                    ~~~~
+
+error[E0599]: no function or associated item named `from_str` found for type `i32` in the current scope
+  --> /tmp/yicoder2b-int_arith-js-rs.rs:26:20
+   |
+26 |         &s => i32::from_str(s).unwrap_or(0),
+   |                    ^^^^^^^^ function or associated item not found in `i32`
+   |
+   = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::str::FromStr;
+   |
+help: there is an associated function `from` with a similar name
+   |
+26 |         &s => i32::from(s).unwrap_or(0),
+   |                    ~~~~
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

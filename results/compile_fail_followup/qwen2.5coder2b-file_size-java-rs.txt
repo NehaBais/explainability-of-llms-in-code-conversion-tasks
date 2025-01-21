@@ -1,0 +1,66 @@
+error[E0599]: no function or associated item named `from_str` found for struct `PathBuf` in the current scope
+ --> /tmp/qwen2.5coder2b-file_size-java-rs.rs:9:29
+  |
+9 |         std::path::PathBuf::from_str(file_a_name).expect("Failed to create path for file A");
+  |                             ^^^^^^^^ function or associated item not found in `PathBuf`
+  |
+note: if you're trying to build a new `PathBuf` consider using one of the following associated functions:
+      PathBuf::new
+      PathBuf::with_capacity
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/path.rs:1175:5
+  = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::str::FromStr;
+  |
+help: there is an associated function `from` with a similar name
+  |
+9 |         std::path::PathBuf::from(file_a_name).expect("Failed to create path for file A");
+  |                             ~~~~
+
+error[E0599]: no function or associated item named `from_str` found for struct `PathBuf` in the current scope
+  --> /tmp/qwen2.5coder2b-file_size-java-rs.rs:11:29
+   |
+11 |         std::path::PathBuf::from_str(file_b_name).expect("Failed to create path for file B");
+   |                             ^^^^^^^^ function or associated item not found in `PathBuf`
+   |
+note: if you're trying to build a new `PathBuf` consider using one of the following associated functions:
+      PathBuf::new
+      PathBuf::with_capacity
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/path.rs:1175:5
+   = help: items from traits can only be used if the trait is in scope
+help: trait `FromStr` which provides `from_str` is implemented but not in scope; perhaps you want to import it
+   |
+1  + use std::str::FromStr;
+   |
+help: there is an associated function `from` with a similar name
+   |
+11 |         std::path::PathBuf::from(file_b_name).expect("Failed to create path for file B");
+   |                             ~~~~
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-file_size-java-rs.rs:13:12
+   |
+13 |     if let Ok(size) = fs::metadata(&file_a_path)?.len() {
+   |            ^^^^^^^^   --------------------------------- this expression has type `u64`
+   |            |
+   |            expected `u64`, found `Result<_, _>`
+   |
+   = note: expected type `u64`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-file_size-java-rs.rs:19:12
+   |
+19 |     if let Ok(size) = fs::metadata(&file_b_path)?.len() {
+   |            ^^^^^^^^   --------------------------------- this expression has type `u64`
+   |            |
+   |            expected `u64`, found `Result<_, _>`
+   |
+   = note: expected type `u64`
+              found enum `Result<_, _>`
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0599.
+For more information about an error, try `rustc --explain E0308`.

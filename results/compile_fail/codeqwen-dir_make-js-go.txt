@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/codeqwen-dir_make-js-go.go:10:7: invalid operation: operator || not defined on cb (variable of type func())

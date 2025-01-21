@@ -1,0 +1,26 @@
+/tmp/codellama7b-file_rename-java-cpp.cpp:6:21: error: expected namespace name
+    6 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/codellama7b-file_rename-java-cpp.cpp:10:3: error: use of undeclared identifier 'fs'
+   10 |   fs::path file(oldname);
+      |   ^
+/tmp/codellama7b-file_rename-java-cpp.cpp:13:3: error: use of undeclared identifier 'fs'
+   13 |   fs::path file2(newname);
+      |   ^
+/tmp/codellama7b-file_rename-java-cpp.cpp:16:18: error: use of undeclared identifier 'file'; did you mean 'false'?
+   16 |   bool success = file.renameTo(file2);
+      |                  ^~~~
+      |                  false
+/tmp/codellama7b-file_rename-java-cpp.cpp:16:22: error: member reference base type 'bool' is not a structure or union
+   16 |   bool success = file.renameTo(file2);
+      |                  ~~~~^~~~~~~~~
+/tmp/codellama7b-file_rename-java-cpp.cpp:16:32: error: use of undeclared identifier 'file2'
+   16 |   bool success = file.renameTo(file2);
+      |                                ^
+/tmp/codellama7b-file_rename-java-cpp.cpp:31:21: error: no member named 'filesystem' in namespace 'std'
+   31 |   test("file", std::filesystem::path("/") + "input.txt",
+      |                ~~~~~^
+/tmp/codellama7b-file_rename-java-cpp.cpp:32:13: error: no member named 'filesystem' in namespace 'std'
+   32 |        std::filesystem::path("/") + "output.txt");
+      |        ~~~~~^
+8 errors generated.

@@ -1,0 +1,19 @@
+error[E0308]: mismatched types
+  --> /tmp/granitecode8b-int_factors-go-rs.rs:23:61
+   |
+23 |             fs.append(&mut (0..e + 1).map(|k| fs[k] * p.pow(k)).collect());
+   |                                                         --- ^ expected `u32`, found `usize`
+   |                                                         |
+   |                                                         arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:349:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert a `usize` to a `u32` and panic if the converted value doesn't fit
+   |
+23 |             fs.append(&mut (0..e + 1).map(|k| fs[k] * p.pow(k.try_into().unwrap())).collect());
+   |                                                              ++++++++++++++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

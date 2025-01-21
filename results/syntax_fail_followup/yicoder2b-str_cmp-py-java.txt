@@ -1,0 +1,13 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+if (a > b) { // Corrected comparison operator, now using it properly
+^
+/tmp/None.java:3: error: class, interface, enum, or record expected
+} else if (a < b) {
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+}
+^
+4 errors

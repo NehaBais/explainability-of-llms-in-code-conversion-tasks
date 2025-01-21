@@ -1,0 +1,13 @@
+/tmp/codegeex4-file_exists-java-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path cwd =
+      |   ~~~~~^
+/tmp/codegeex4-file_exists-java-cpp.cpp:6:12: error: no member named 'filesystem' in namespace 'std'
+    6 |       std::filesystem::current_path(); // Get current working directory
+      |       ~~~~~^
+/tmp/codegeex4-file_exists-java-cpp.cpp:9:12: error: no member named 'filesystem' in namespace 'std'
+    9 |   if (std::filesystem::exists(cwd / "docs/input.txt")) {
+      |       ~~~~~^
+/tmp/codegeex4-file_exists-java-cpp.cpp:18:12: error: no member named 'filesystem' in namespace 'std'
+   18 |   if (std::filesystem::exists("/docs/input.txt")) {
+      |       ~~~~~^
+4 errors generated.

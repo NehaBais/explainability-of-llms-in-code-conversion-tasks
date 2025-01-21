@@ -1,0 +1,13 @@
+/tmp/codeqwen-file_exists-py-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |   if (std::filesystem::exists(current_directory + "input.txt")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-py-cpp.cpp:17:12: error: no member named 'filesystem' in namespace 'std'
+   17 |   if (std::filesystem::exists(root_directory + "input.txt")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-py-cpp.cpp:24:12: error: no member named 'filesystem' in namespace 'std'
+   24 |   if (std::filesystem::exists(current_directory + "docs")) {
+      |       ~~~~~^
+/tmp/codeqwen-file_exists-py-cpp.cpp:31:12: error: no member named 'filesystem' in namespace 'std'
+   31 |   if (std::filesystem::exists(root_directory + "docs")) {
+      |       ~~~~~^
+4 errors generated.

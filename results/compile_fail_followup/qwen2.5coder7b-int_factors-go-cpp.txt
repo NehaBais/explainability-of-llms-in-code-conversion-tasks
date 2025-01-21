@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:13:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |   auto apf = [&](int64_t p, int e) -> void {
+      |   ^
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:13:14: error: expected expression
+   13 |   auto apf = [&](int64_t p, int e) -> void {
+      |              ^
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:41:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   41 |   for (int64_t factor : fs) {
+      |                       ^
+2 warnings and 1 error generated.

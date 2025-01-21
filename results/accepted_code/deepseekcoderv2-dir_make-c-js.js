@@ -1,35 +1,25 @@
-function mkdirp(path) {
-  let dirname, basename;
-  // If path is already absolute, use it directly (skip strtok() processing).
-  if (path.charAt(0) === "/") {
-    dirname = path;
-  } else {
-    // Normalize the path
-    const tokens = path.split("/");
-    for (let i = 1; i < tokens.length; ++i) {
-      if (!tokens[i]) {
-        tokens[i] = ".";
-      }
+const fs = require("fs");
+const path = require("path");
+
+function mkdirp(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    const parentDir = path.dirname(dirPath);
+    if (parentDir !== dirPath) {
+      mkdirp(parentDir);
     }
-    dirname = tokens.join("/");
-  }
-  // Get the last token
-  basename = dirname.replace(/^.*[\/\\]/, "");
-  const newpath = dirname.substr(0, dirname.length - basename.length);
-  if (!newpath) {
-    return false;
-  }
-  try {
-    fs.mkdirSync(newpath);
-    return true;
-  } catch (err) {
-    switch (err.code) {
-      case "ENOENT":
-        // ENOENT means that parent didn't exist, don't suppress the error for this case
-        if (mkdirp(newpath)) fs.mkdirSync(dirname); // retry
-        break;
-      default:
-        throw err; // something else weird happened
+    fs.mkdirSync(dirPath, { recursive: true });
+  } else {
+    const stats = fs.statSync(dirPath);
+    if (!stats.isDirectory()) {
+      throw new Error(`${dirPath} exists but is not a directory`);
     }
   }
 }
+
+if (process.argv.length !== 3) {
+  console.error("Usage: node script.js <path>");
+  process.exit(1);
+}
+
+const dirPath = process.argv[2];
+mkdirp(dirPath);

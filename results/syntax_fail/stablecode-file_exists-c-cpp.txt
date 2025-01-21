@@ -1,0 +1,29 @@
+/tmp/stablecode-file_exists-c-cpp.cpp:9:55: error: expected ';' after return statement
+    9 |     return stat(path, &sb) == 0 && S_ISREG(sb.st_mode));
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-file_exists-c-cpp.cpp:15:55: error: expected ';' after return statement
+   15 |     return stat(path, &sb) == 0 && S_ISDIR(sb.st_mode));
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-file_exists-c-cpp.cpp:19:92: error: expected ';' after expression
+   19 |     std::cout << "input.txt is a regular file? " << (check_reg("input.txt") ? "yes" : "no")) << std::endl;
+      |                                                                                            ^
+      |                                                                                            ;
+/tmp/stablecode-file_exists-c-cpp.cpp:19:92: error: expected expression
+/tmp/stablecode-file_exists-c-cpp.cpp:20:79: error: expected ';' after expression
+   20 |     std::cout << "docs is a directory? " << (check_dir("docs") ? "yes" : "no")) << std::endl;
+      |                                                                               ^
+      |                                                                               ;
+/tmp/stablecode-file_exists-c-cpp.cpp:20:79: error: expected expression
+/tmp/stablecode-file_exists-c-cpp.cpp:21:94: error: expected ';' after expression
+   21 |     std::cout << "/input.txt is a regular file? " << (check_reg("/input.txt") ? "yes" : "no")) << std::endl;
+      |                                                                                              ^
+      |                                                                                              ;
+/tmp/stablecode-file_exists-c-cpp.cpp:21:94: error: expected expression
+/tmp/stablecode-file_exists-c-cpp.cpp:22:81: error: expected ';' after expression
+   22 |     std::cout << "/docs is a directory? " << (check_dir("/docs") ? "yes" : "no")) << std::endl;
+      |                                                                                 ^
+      |                                                                                 ;
+/tmp/stablecode-file_exists-c-cpp.cpp:22:81: error: expected expression
+10 errors generated.

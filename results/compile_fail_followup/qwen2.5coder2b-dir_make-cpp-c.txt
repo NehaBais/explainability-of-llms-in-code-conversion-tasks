@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-dir_make-cpp-c.c:20:47: error: use of undeclared identifier 'S_IUSER'
+   20 |   if (mkdir(pathToCreate, S_IRWXU | S_IXGRP | S_IUSER) == -1) {
+      |                                               ^
+1 error generated.

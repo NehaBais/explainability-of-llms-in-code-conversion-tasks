@@ -1,0 +1,74 @@
+error: expected identifier, found `""`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:8:61
+  |
+8 |     println!("{} Is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+  |                                                          -  ^^ expected identifier
+  |                                                          |
+  |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:8:65
+  |
+8 |     println!("{} Is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+  |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:9:60
+  |
+9 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+  |                                                         -  ^^ expected identifier
+  |                                                         |
+  |                                                         while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+ --> /tmp/codeqwen-str_cmp-cpp-rs.rs:9:64
+  |
+9 |     println!("{} Is {} ordered after {}.)", A, If *A > *b {""} else {"not "}, b);
+  |                                                                ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected identifier, found `""`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:17:61
+   |
+17 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                          -  ^^ expected identifier
+   |                                                          |
+   |                                                          while parsing this struct
+
+error: expected one of `,`, `.`, `?`, or an operator, found keyword `else`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:17:65
+   |
+17 |     println!("{} is {} ordered before {}.)", A, If *A < *b {""} else {"not "}, b);
+   |                                                                 ^^^^ expected one of `,`, `.`, `?`, or an operator
+
+error[E0277]: the trait bound `{float}: Ord` is not satisfied
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:15:5
+   |
+15 |     demo_compare(&A, &b, "numerically");
+   |     ^^^^^^^^^^^^ the trait `Ord` is not implemented for `{float}`
+   |
+   = help: the following other types implement trait `Ord`:
+             i128
+             i16
+             i32
+             i64
+             i8
+             isize
+             u128
+             u16
+           and 4 others
+note: required by a bound in `demo_compare`
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:1:20
+   |
+1  | fn demo_compare<T: std::cmp::Ord + std::fmt::Display>(A: &T, b: &T, semantically: &'static str) {
+   |                    ^^^^^^^^^^^^^ required by this bound in `demo_compare`
+
+error[E0599]: no method named `to_lowercase` found for type `{float}` in the current scope
+  --> /tmp/codeqwen-str_cmp-cpp-rs.rs:16:19
+   |
+16 |     let mut A = A.to_lowercase();
+   |                   ^^^^^^^^^^^^ method not found in `{float}`
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0277, E0599.
+For more information about an error, try `rustc --explain E0277`.

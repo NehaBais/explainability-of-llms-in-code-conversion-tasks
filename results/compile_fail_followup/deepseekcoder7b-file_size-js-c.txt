@@ -1,0 +1,32 @@
+/tmp/deepseekcoder7b-file_size-js-c.c:11:12: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   10 |     printf("Size of 'input.txt' in current working directory: %ld\n",
+      |                                                               ~~~
+      |                                                               %lld
+   11 |            st.st_size);
+      |            ^~~~~~~~~~
+/tmp/deepseekcoder7b-file_size-js-c.c:18:69: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   18 |     printf("Size of 'input.txt' at the root of file system: %ld\n", st.st_size);
+      |                                                             ~~~     ^~~~~~~~~~
+      |                                                             %lld
+/tmp/deepseekcoder7b-file_size-js-c.c:23:10: error: expected expression
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |          ^
+/tmp/deepseekcoder7b-file_size-js-c.c:23:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |           ^~
+/tmp/deepseekcoder7b-file_size-js-c.c:23:19: error: character <U+2581> not allowed in an identifier
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |                  ^
+/tmp/deepseekcoder7b-file_size-js-c.c:23:24: error: character <U+2581> not allowed in an identifier
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |                     ^
+/tmp/deepseekcoder7b-file_size-js-c.c:23:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |                              ^~
+/tmp/deepseekcoder7b-file_size-js-c.c:23:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |           ^
+/tmp/deepseekcoder7b-file_size-js-c.c:23:40: error: use of undeclared identifier 'tatus'
+   23 |   return <｜begin▁of▁sentence｜> tatus 0;
+      |                                  ^
+4 warnings and 5 errors generated.

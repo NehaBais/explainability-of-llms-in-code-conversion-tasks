@@ -1,0 +1,13 @@
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:11:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   11 |   auto apf = [&](int64_t p, int e) {
+      |   ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:11:14: error: expected expression
+   11 |   auto apf = [&](int64_t p, int e) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:38:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   38 |   for (const auto &f : fs) {
+      |              ^
+/tmp/dolphincoder7b-int_factors-go-cpp.cpp:38:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   38 |   for (const auto &f : fs) {
+      |                      ^
+3 warnings and 1 error generated.

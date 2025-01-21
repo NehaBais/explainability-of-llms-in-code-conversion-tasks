@@ -1,0 +1,22 @@
+/tmp/Main.java:25: error: ';' expected
+        	List<String> list = Files.readAllLines(Paths.get("/input.txt")));
+        	                                                               ^
+/tmp/Main.java:26: error: ';' expected
+            Files.write(Paths.get("/output.txt")), list);
+                                                 ^
+/tmp/Main.java:26: error: not a statement
+            Files.write(Paths.get("/output.txt")), list);
+                                                   ^
+/tmp/Main.java:26: error: ';' expected
+            Files.write(Paths.get("/output.txt")), list);
+                                                       ^
+/tmp/Main.java:28: error: ';' expected
+            Files.move(Paths.get("/docs")), Paths.get("/mydocs"));
+                                          ^
+/tmp/Main.java:28: error: ';' expected
+            Files.move(Paths.get("/docs")), Paths.get("/mydocs"));
+                                                                ^
+/tmp/Main.java:31: error: class, interface, enum, or record expected
+}
+^
+7 errors

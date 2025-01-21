@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder7b-file_exists-js-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-file_exists-js-cpp.cpp:7:7: error: use of undeclared identifier 'fs'
+    7 |   if (fs::exists("input.txt"))
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-js-cpp.cpp:15:7: error: use of undeclared identifier 'fs'
+   15 |   if (fs::is_directory("docs"))
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-js-cpp.cpp:23:7: error: use of undeclared identifier 'fs'
+   23 |   if (fs::exists("c:/input.txt"))
+      |       ^
+/tmp/qwen2.5coder7b-file_exists-js-cpp.cpp:29:7: error: use of undeclared identifier 'fs'
+   29 |   if (fs::is_directory("c:/docs"))
+      |       ^
+5 errors generated.

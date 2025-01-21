@@ -1,0 +1,19 @@
+/tmp/codeqwen-str_match-js-cpp.cpp:19:5: error: use of undeclared identifier 'q2'
+   19 |     q2 = true;
+      |     ^
+/tmp/codeqwen-str_match-js-cpp.cpp:21:5: error: use of undeclared identifier 'q2'
+   21 |     q2 = false;
+      |     ^
+/tmp/codeqwen-str_match-js-cpp.cpp:27:8: error: use of undeclared identifier 'It'
+   27 |        It != endIt; ++It) {
+      |        ^
+/tmp/codeqwen-str_match-js-cpp.cpp:27:23: error: use of undeclared identifier 'It'
+   27 |        It != endIt; ++It) {
+      |                       ^
+/tmp/codeqwen-str_match-js-cpp.cpp:28:28: error: use of undeclared identifier 'It'
+   28 |     size_t match_index = (*It).position();
+      |                            ^
+/tmp/codeqwen-str_match-js-cpp.cpp:44:7: error: use of undeclared identifier 'q2'
+   44 |   if (q2) {
+      |       ^
+6 errors generated.

@@ -1,0 +1,6 @@
+/tmp/Main.java:4: error: bad operand types for binary operator '=='
+    System.out.println(Integer.parseInt("123") == "123"); // true, because "123" is parsed to int
+                                               ^
+  first type:  int
+  second type: String
+1 error

@@ -1,35 +1,52 @@
+#include <algorithm>
 #include <iostream>
-using namespace std;
+#include <string>
+
 int main() {
-  string s = "abc文字化けdef";
-  int n = 2, m = 3;
+  std::string s = "abc文字化けdef";
+  int n = 2;
+  int m = 3;
 
   // Print 3 characters starting at index 2 (c文字)
-  cout << s.substr(n, m);
-  cout << endl;
+  if (n + m <= s.length()) {
+    std::cout << std::string(s.begin() + n, s.begin() + n + m) << std::endl;
+  } else {
+    std::cout << "Index out of range" << std::endl;
+  }
 
   // Print all characters starting at index 2 (c文字化けdef)
-  cout << s.substr(n);
-  cout << endl;
+  if (n < s.length()) {
+    std::string sub = s.substr(n);
+    std::cout << sub << std::endl;
+  } else {
+    std::cout << "Index out of range" << std::endl;
+  }
 
   // Print all characters except the last (abc文字化けde)
-  for (int i = 0; i < s.size() - 1; ++i) {
-    if (!isalpha(s[i])) {
-      s.erase(i, 1);
-    }
+  if (!s.empty()) {
+    std::string truncated = s.substr(0, s.length() - 1);
+    std::cout << truncated << std::endl;
+  } else {
+    std::cout << "String is empty" << std::endl;
   }
-  cout << s.substr(0, s.length() - 2) << endl;
 
   // Print 3 characters starting with 'b' (bc文)
-  char cpos = s[s.find('b')];
-  for (int i = cpos - 1; i < cpos + m && i < s.size(); ++i) {
-    cout << s[i];
+  auto it = std::find(s.begin(), s.end(), 'b');
+  if (it != s.end() && std::distance(s.begin(), it) + m <= s.length()) {
+    std::string sub = std::string(it, it + m);
+    std::cout << sub << std::endl;
+  } else {
+    std::cout << "Character not found or index out of range" << std::endl;
   }
-  cout << endl;
 
   // Print 3 characters starting with "けd" (けde)
-  char spos = s[s.find("けd")];
-  for (int i = spos - 1; i < spos + m && i < s.size(); ++i) {
-    cout << s[i];
+  auto pos = s.find("けd");
+  if (pos != std::string::npos && pos + m <= s.length()) {
+    std::string sub = s.substr(pos, m);
+    std::cout << sub << std::endl;
+  } else {
+    std::cout << "Substring not found or index out of range" << std::endl;
   }
+
+  return 0;
 }

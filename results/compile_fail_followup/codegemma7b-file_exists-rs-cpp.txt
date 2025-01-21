@@ -1,0 +1,13 @@
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:6:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    6 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |              ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:6:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    6 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                         ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:6:27: error: cannot deduce type of initializer list because std::initializer_list was not found; include <initializer_list>
+    6 |   for (const auto &file : {"input.txt", "docs", "/input.txt", "/docs"}) {
+      |                           ^
+/tmp/codegemma7b-file_exists-rs-cpp.cpp:8:16: error: no member named 'filesystem' in namespace 'std'
+    8 |       if (std::filesystem::is_directory(file)) {
+      |           ~~~~~^
+2 warnings and 2 errors generated.

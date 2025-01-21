@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codeqwen-str_prepend-c-go.go:13:8: undefined: C
+/tmp/codeqwen-str_prepend-c-go.go:16:19: undefined: C
+/tmp/codeqwen-str_prepend-c-go.go:19:2: undefined: C

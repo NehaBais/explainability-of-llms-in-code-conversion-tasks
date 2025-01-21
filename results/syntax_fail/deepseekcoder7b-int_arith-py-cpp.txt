@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:10: error: expected expression
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |          ^
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:11: error: unexpected character <U+FF5C>
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |           ^~
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:19: error: character <U+2581> not allowed in an identifier
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |                  ^
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:24: error: character <U+2581> not allowed in an identifier
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |                     ^
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:35: error: character <U+FF5C> not allowed in an identifier
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |                              ^~
+/tmp/deepseekcoder7b-int_arith-py-cpp.cpp:42:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   42 |   return <｜begin▁of▁sentence｜ > 0; // program returns 0 if successful run
+      |             ^
+6 errors generated.

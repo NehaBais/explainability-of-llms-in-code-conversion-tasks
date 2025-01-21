@@ -1,0 +1,48 @@
+/tmp/stablecode-file_create-go-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::path filePath(fn);
+      |     ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:7:14: error: no member named 'filesystem' in namespace 'std'
+    7 |     if (std::filesystem::exists(filePath)) {
+      |         ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:7:33: error: use of undeclared identifier 'filePath'
+    7 |     if (std::filesystem::exists(filePath)) {
+      |                                 ^
+/tmp/stablecode-file_create-go-cpp.cpp:10:10: error: no member named 'filesystem' in namespace 'std'
+   10 |     std::filesystem::create_directories(filePath.parent());
+      |     ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:10:41: error: use of undeclared identifier 'filePath'
+   10 |     std::filesystem::create_directories(filePath.parent());
+      |                                         ^
+/tmp/stablecode-file_create-go-cpp.cpp:11:30: error: unknown type name 'filePath'
+   11 |     std::ofstream outputFile(filePath);
+      |                              ^
+/tmp/stablecode-file_create-go-cpp.cpp:11:29: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   11 |     std::ofstream outputFile(filePath);
+      |                             ^~~~~~~~~~
+/tmp/stablecode-file_create-go-cpp.cpp:11:30: note: add a pair of parentheses to declare a variable
+   11 |     std::ofstream outputFile(filePath);
+      |                              ^
+      |                              (
+/tmp/stablecode-file_create-go-cpp.cpp:22:10: error: no member named 'filesystem' in namespace 'std'
+   22 |     std::filesystem::path dirPath(dn);
+      |     ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:23:14: error: no member named 'filesystem' in namespace 'std'
+   23 |     if (std::filesystem::exists(dirPath))) {
+      |         ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:23:33: error: use of undeclared identifier 'dirPath'
+   23 |     if (std::filesystem::exists(dirPath))) {
+      |                                 ^
+/tmp/stablecode-file_create-go-cpp.cpp:23:42: error: extraneous ')' after condition, expected a statement
+   23 |     if (std::filesystem::exists(dirPath))) {
+      |                                          ^
+/tmp/stablecode-file_create-go-cpp.cpp:26:14: error: no member named 'filesystem' in namespace 'std'
+   26 |         std::filesystem::create_directories(dirPath));
+      |         ~~~~~^
+/tmp/stablecode-file_create-go-cpp.cpp:26:45: error: use of undeclared identifier 'dirPath'
+   26 |         std::filesystem::create_directories(dirPath));
+      |                                             ^
+/tmp/stablecode-file_create-go-cpp.cpp:28:38: error: expected '{'
+   28 |     } catch (const std::exception& e)) {
+      |                                      ^
+/tmp/stablecode-file_create-go-cpp.cpp:28:38: error: expected expression
+1 warning and 14 errors generated.

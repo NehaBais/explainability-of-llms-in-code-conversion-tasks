@@ -1,0 +1,4 @@
+/tmp/File.java:2: error: '{' expected
+public class File renamed {
+                 ^
+1 error

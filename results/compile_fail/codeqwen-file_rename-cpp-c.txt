@@ -1,0 +1,4 @@
+/tmp/codeqwen-file_rename-cpp-c.c:5:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (mkdir("/mydocs", 0755) == -1) {
+      |       ^
+1 error generated.

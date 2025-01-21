@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/stablecode-file_exists-rs-go.go:12:60: syntax error: unexpected ) at end of statement
+/tmp/stablecode-file_exists-rs-go.go:21:2: syntax error: non-declaration statement outside function body
+/tmp/stablecode-file_exists-rs-go.go:40:38: syntax error: unexpected ) at end of statement

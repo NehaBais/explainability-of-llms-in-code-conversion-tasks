@@ -1,0 +1,37 @@
+/tmp/stablecode-str_interp-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-str_interp-go-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/stablecode-str_interp-go-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/stablecode-str_interp-go-cpp.cpp:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/stablecode-str_interp-go-cpp.cpp:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/stablecode-str_interp-go-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string str = "Mary had a %s lamb";
+      |   ^
+/tmp/stablecode-str_interp-go-cpp.cpp:9:3: error: use of undeclared identifier 'std'
+    9 |   std::string txt = "little";
+      |   ^
+/tmp/stablecode-str_interp-go-cpp.cpp:12:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   auto format_specifier = std::regex("%s");
+      |   ^
+/tmp/stablecode-str_interp-go-cpp.cpp:12:27: error: use of undeclared identifier 'std'
+   12 |   auto format_specifier = std::regex("%s");
+      |                           ^
+/tmp/stablecode-str_interp-go-cpp.cpp:13:11: error: use of undeclared identifier 'std'
+   13 |     str = std::regex_replace(str, format_specifier, txt));
+      |           ^
+/tmp/stablecode-str_interp-go-cpp.cpp:15:5: error: use of undeclared identifier 'std'
+   15 |     std::cout << str << std::endl;
+      |     ^
+/tmp/stablecode-str_interp-go-cpp.cpp:15:25: error: use of undeclared identifier 'std'
+   15 |     std::cout << str << std::endl;
+      |                         ^
+1 warning and 11 errors generated.

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/magicoder7b-str_append-c-go.go:6:2: declared and not used: str
+/tmp/magicoder7b-str_append-c-go.go:9:12: undefined: strings
+/tmp/magicoder7b-str_append-c-go.go:10:2: undefined: fmt

@@ -1,0 +1,16 @@
+/tmp/qwen2.5coder7b-str_cmp-js-c.c:32:26: error: call to undeclared function 'strlwr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   32 |   printf("%d\n", !strcmp(strlwr(upperStr),
+      |                          ^
+/tmp/qwen2.5coder7b-str_cmp-js-c.c:32:26: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   32 |   printf("%d\n", !strcmp(strlwr(upperStr),
+      |                          ^~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:25: note: passing argument to parameter '__s1' here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |                             ^
+/tmp/qwen2.5coder7b-str_cmp-js-c.c:33:26: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   33 |                          strlwr(lowerStr))); // Outputs: 1 (case insensitive)
+      |                          ^~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:43: note: passing argument to parameter '__s2' here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |                                               ^
+3 errors generated.

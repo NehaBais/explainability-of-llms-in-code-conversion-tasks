@@ -1,0 +1,1 @@
+let string = "abc".to_string() + "def";

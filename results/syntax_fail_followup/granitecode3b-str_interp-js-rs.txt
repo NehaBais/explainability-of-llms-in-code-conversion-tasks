@@ -1,0 +1,45 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/granitecode3b-str_interp-js-rs.rs:4:1
+  |
+4 | println!("{}", replaced); // Output: Mary had a little lamb
+  | ------------------------ caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_interp-js-rs.rs:1:15
+  |
+1 | const original = "Mary had a X lamb";
+  |               ^
+  |
+help: provide a type for the item
+  |
+1 | const original: <type> = "Mary had a X lamb";
+  |               ++++++++
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_interp-js-rs.rs:2:13
+  |
+2 | const little = "little";
+  |             ^
+  |
+help: provide a type for the item
+  |
+2 | const little: <type> = "little";
+  |             ++++++++
+
+error: missing type for `const` item
+ --> /tmp/granitecode3b-str_interp-js-rs.rs:3:15
+  |
+3 | const replaced = original.replace("X", little); // Does not change the original string
+  |               ^
+  |
+help: provide a type for the item
+  |
+3 | const replaced: <type> = original.replace("X", little); // Does not change the original string
+  |               ++++++++
+
+error: aborting due to 4 previous errors
+

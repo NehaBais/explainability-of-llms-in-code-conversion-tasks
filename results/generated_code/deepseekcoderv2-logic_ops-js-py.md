@@ -1,7 +1,10 @@
-The code in Python is as follows -
+ Here's the equivalent Python code for the given JavaScript function:
+
 ```python
-def logic(a,b):
-    print("a AND b: " + str(a and b))
-    print("a OR b: " + str(a or b))
-    print("NOT a: " + str(!a))
+def logic(a, b):
+    print("a AND b:", a and b)
+    print("a OR b:", a or b)
+    print("NOT a:", not a)
 ```
+
+This Python function `logic` takes two boolean arguments `a` and `b`, and prints the results of "AND", "OR", and "NOT" operations on these arguments.

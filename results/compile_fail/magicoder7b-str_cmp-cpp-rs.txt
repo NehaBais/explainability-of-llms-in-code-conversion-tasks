@@ -1,0 +1,161 @@
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:7:43
+  |
+7 |     println!("{} and {} are {:?} equal.", a, b, (a == b));
+  |                                           ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+5 |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+  |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:7:46
+  |
+7 |     println!("{} and {} are {:?} equal.", a, b, (a == b));
+  |                                              ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+5 |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+  |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:8:44
+  |
+8 |     println!("{} and {} are {:?}inequal.", a, b, (a != b));
+  |                                            ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+5 |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+  |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+ --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:8:47
+  |
+8 |     println!("{} and {} are {:?}inequal.", a, b, (a != b));
+  |                                               ^ `T` cannot be formatted with the default formatter
+  |
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+  |
+5 |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+  |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:10:76
+   |
+10 |         Ordering::Less => println!(r#"{} is lexically ordered before {}"#, a, b),
+   |                                                                            ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+5  |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+   |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:10:79
+   |
+10 |         Ordering::Less => println!(r#"{} is lexically ordered before {}"#, a, b),
+   |                                                                               ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+5  |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+   |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:11:78
+   |
+11 |         Ordering::Greater => println!(r#"{} is lexically ordered after {}"#, a, b),
+   |                                                                              ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+5  |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+   |                                +++++++++++++++++++
+
+error[E0277]: `T` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:11:81
+   |
+11 |         Ordering::Greater => println!(r#"{} is lexically ordered after {}"#, a, b),
+   |                                                                                 ^ `T` cannot be formatted with the default formatter
+   |
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider further restricting this bound
+   |
+5  |     T: Ord + Copy + AsRef<str> + std::fmt::Display,
+   |                                +++++++++++++++++++
+
+error[E0277]: the trait bound `String: Copy` is not satisfied
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:21:5
+   |
+21 |     demo_compare(a, b);
+   |     ^^^^^^^^^^^^ the trait `Copy` is not implemented for `String`
+   |
+note: required by a bound in `demo_compare`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:5:14
+   |
+3  | fn demo_compare<T>(a: T, b: T)
+   |    ------------ required by a bound in this function
+4  | where
+5  |     T: Ord + Copy + AsRef<str>,
+   |              ^^^^ required by this bound in `demo_compare`
+
+error[E0277]: the trait bound `String: Copy` is not satisfied
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:26:5
+   |
+26 |     demo_compare(a, b);
+   |     ^^^^^^^^^^^^ the trait `Copy` is not implemented for `String`
+   |
+note: required by a bound in `demo_compare`
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:5:14
+   |
+3  | fn demo_compare<T>(a: T, b: T)
+   |    ------------ required by a bound in this function
+4  | where
+5  |     T: Ord + Copy + AsRef<str>,
+   |              ^^^^ required by this bound in `demo_compare`
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:30:9
+   |
+29 |     match a.parse::<f64>().unwrap() {
+   |           ------------------------- this expression has type `f64`
+30 |         Ok(numA) => {
+   |         ^^^^^^^^ expected `f64`, found `Result<_, _>`
+   |
+   = note: expected type `f64`
+              found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> /tmp/magicoder7b-str_cmp-cpp-rs.rs:35:9
+   |
+29 |     match a.parse::<f64>().unwrap() {
+   |           ------------------------- this expression has type `f64`
+...
+35 |         Err(_) => (),
+   |         ^^^^^^ expected `f64`, found `Result<_, _>`
+   |
+   = note: expected type `f64`
+              found enum `Result<_, _>`
+
+error: aborting due to 12 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

@@ -1,0 +1,7 @@
+/tmp/Main.java:25: error: variable y is already defined in method main(String[])
+    for (int y = 1; y <= Math.sqrt(num2); y++) { // Changed 'x' to 'y'
+             ^
+/tmp/Main.java:41: error: variable y is already defined in method main(String[])
+    for (int y = 1; y <= Math.sqrt(num3); y++) { // Changed 'x' to 'y'
+             ^
+2 errors

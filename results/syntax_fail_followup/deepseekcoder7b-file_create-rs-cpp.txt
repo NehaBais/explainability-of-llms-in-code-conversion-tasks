@@ -1,0 +1,25 @@
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:6:21: error: expected namespace name
+    6 | namespace fs = std::filesystem; // Alias for convenience
+      |                ~~~~~^
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:10: error: expected expression
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |          ^
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:11: error: unexpected character <U+FF5C>
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |           ^~
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:19: error: character <U+2581> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |                  ^
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:24: error: character <U+2581> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |                     ^
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:35: error: character <U+FF5C> not allowed in an identifier
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |                              ^~
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:22:14: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   22 |   return <｜begin▁of▁sentence｜ > 0;
+      |             ^
+/tmp/deepseekcoder7b-file_create-rs-cpp.cpp:26:3: error: use of undeclared identifier 'fs'
+   26 |   fs::create_directories(root + "/" + DIR_NAME);
+      |   ^
+8 errors generated.

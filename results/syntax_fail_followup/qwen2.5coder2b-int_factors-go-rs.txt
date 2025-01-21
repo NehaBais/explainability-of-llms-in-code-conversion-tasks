@@ -1,0 +1,19 @@
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:29:13
+   |
+29 |             fs.push(p * fs.last().unwrap());
+   |             ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error[E0434]: can't capture dynamic environment in a fn item
+  --> /tmp/qwen2.5coder2b-int_factors-go-rs.rs:29:25
+   |
+29 |             fs.push(p * fs.last().unwrap());
+   |                         ^^
+   |
+   = help: use the `|| { ... }` closure form instead
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0434`.

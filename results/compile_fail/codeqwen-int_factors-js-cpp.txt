@@ -1,0 +1,13 @@
+/tmp/codeqwen-int_factors-js-cpp.cpp:10:13: error: use of undeclared identifier 'i'
+   10 |   if (num / i != i && num % (num / i) == 0)
+      |             ^
+/tmp/codeqwen-int_factors-js-cpp.cpp:10:18: error: use of undeclared identifier 'i'
+   10 |   if (num / i != i && num % (num / i) == 0)
+      |                  ^
+/tmp/codeqwen-int_factors-js-cpp.cpp:10:36: error: use of undeclared identifier 'i'
+   10 |   if (num / i != i && num % (num / i) == 0)
+      |                                    ^
+/tmp/codeqwen-int_factors-js-cpp.cpp:11:31: error: use of undeclared identifier 'i'
+   11 |     n_factors.push_back(num / i);
+      |                               ^
+4 errors generated.

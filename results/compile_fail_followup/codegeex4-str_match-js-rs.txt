@@ -1,0 +1,22 @@
+error[E0308]: `match` arms have incompatible types
+  --> /tmp/codegeex4-str_match-js-rs.rs:30:18
+   |
+28 |           match (q2, q2matches.len()) {
+   |           --------------------------- `match` arms have incompatible types
+29 |               (_, 0) => ". No.",
+   |                         ------- this is found to be of type `&str`
+30 |               _ => format!(
+   |  __________________^
+31 | |                 ", Yes. It happens {} times within '{}' at index{}",
+32 | |                 q2matches.len(),
+33 | |                 string_a,
+...  |
+38 | |                     .join(", ")
+39 | |             ),
+   | |_____________^ expected `&str`, found `String`
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0308`.

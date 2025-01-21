@@ -1,0 +1,16 @@
+/tmp/codeqwen-str_cmp-rs-cpp.cpp:32:18: error: expected expression
+   32 |                  [](unsigned char A, unsigned char B) {
+      |                  ^
+/tmp/codeqwen-str_cmp-rs-cpp.cpp:39:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   39 |   for (auto &c : A)
+      |        ^
+/tmp/codeqwen-str_cmp-rs-cpp.cpp:39:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   39 |   for (auto &c : A)
+      |                ^
+/tmp/codeqwen-str_cmp-rs-cpp.cpp:41:8: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   41 |   for (auto &c : b)
+      |        ^
+/tmp/codeqwen-str_cmp-rs-cpp.cpp:41:16: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   41 |   for (auto &c : b)
+      |                ^
+4 warnings and 1 error generated.

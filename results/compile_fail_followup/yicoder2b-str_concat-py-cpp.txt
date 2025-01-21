@@ -1,0 +1,7 @@
+/tmp/yicoder2b-str_concat-py-cpp.cpp:12:30: error: expected expression
+   12 |   std::string s3 = join(sep, {s1, "world", "mom"});
+      |                              ^
+/tmp/yicoder2b-str_concat-py-cpp.cpp:16:32: error: expected expression
+   16 |   std::string s4 = join(&sep2, {s1, "world", "mom"});
+      |                                ^
+2 errors generated.

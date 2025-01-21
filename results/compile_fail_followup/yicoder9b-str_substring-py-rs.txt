@@ -1,0 +1,89 @@
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-str_substring-py-rs.rs:2:12
+  |
+2 |     if let Some((fst, rest)) = s.split_at(m) {
+  |            ^^^^^^^^^^^^^^^^^   ------------- this expression has type `(&str, &str)`
+  |            |
+  |            expected `(&str, &str)`, found `Option<_>`
+  |
+  = note: expected tuple `(&str, &str)`
+              found enum `Option<_>`
+
+error[E0277]: `Option<&str>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:11:20
+   |
+11 |     println!("{}", substring(&s[m - 1..], m)); // prints "World!"
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^ `Option<&str>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<&str>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:14:12
+   |
+14 |     if let Some((fst, rest)) = s.split_at(n) {  // removes the first `n` characters from string `s`
+   |            ^^^^^^^^^^^^^^^^^   ------------- this expression has type `(&str, &str)`
+   |            |
+   |            expected `(&str, &str)`, found `Option<_>`
+   |
+   = note: expected tuple `(&str, &str)`
+               found enum `Option<_>`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:19:17
+   |
+19 |     if let Some(&idx) = s.find(chars) {         // finds the first occurrence index of `chars` in string `s`
+   |                 ^^^^    ------------- this expression has type `Option<usize>`
+   |                 |
+   |                 expected `usize`, found `&_`
+   |
+   = note:   expected type `usize`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+19 |     if let Some(idx) = s.find(chars) {         // finds the first occurrence index of `chars` in string `s`
+   |                 ~~~
+
+error[E0277]: `Option<&str>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:20:24
+   |
+20 |         println!("{}", substring(&s[idx..], m)); // prints from that index to end of the string 
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^ `Option<&str>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<&str>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Option<&str>` doesn't implement `std::fmt::Display`
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:25:24
+   |
+25 |         println!("{}", substring(&s[indx..], m)); 
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^ `Option<&str>` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `Option<&str>`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0614]: type `usize` cannot be dereferenced
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:29:23
+   |
+29 |     return Some(&s[0..*s.find(start).unwrap()]) // prints from that index to end of the string
+   |                       ^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_substring-py-rs.rs:29:12
+   |
+8  | fn main() {
+   |          - expected `()` because of default return type
+...
+29 |     return Some(&s[0..*s.find(start).unwrap()]) // prints from that index to end of the string
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `()`, found `Option<&str>`
+   |
+   = note: expected unit type `()`
+                   found enum `Option<&str>`
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0614.
+For more information about an error, try `rustc --explain E0277`.

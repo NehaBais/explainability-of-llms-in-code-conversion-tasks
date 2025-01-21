@@ -1,0 +1,11 @@
+/tmp/Main.java:14: error: cannot find symbol
+    ArrayList<Integer> q2matches = new ArrayList<>();
+    ^
+  symbol:   class ArrayList
+  location: class Main
+/tmp/Main.java:14: error: cannot find symbol
+    ArrayList<Integer> q2matches = new ArrayList<>();
+                                       ^
+  symbol:   class ArrayList
+  location: class Main
+2 errors

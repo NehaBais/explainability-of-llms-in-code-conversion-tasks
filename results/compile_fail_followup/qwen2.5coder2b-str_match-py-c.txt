@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-str_match-py-c.c:1:10: fatal error: 'Python.h' file not found
+    1 | #include <Python.h>
+      |          ^~~~~~~~~~
+1 error generated.

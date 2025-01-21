@@ -1,0 +1,28 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder9b-bit_ops-c-rs.rs:7:18
+  |
+7 |     let _not_a = ~a;               println!("not a: {}", _not_a);
+  |                  ^
+  |
+help: use `!` to perform bitwise not
+  |
+7 |     let _not_a = !a;               println!("not a: {}", _not_a);
+  |                  ~
+
+warning: unused import: `std::convert::TryInto`
+ --> /tmp/yicoder9b-bit_ops-c-rs.rs:1:5
+  |
+1 | use std::convert::TryInto;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0601]: `main` function not found in crate `yicoder9b_bit_ops_c_rs`
+  --> /tmp/yicoder9b-bit_ops-c-rs.rs:24:2
+   |
+24 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder9b-bit_ops-c-rs.rs`
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

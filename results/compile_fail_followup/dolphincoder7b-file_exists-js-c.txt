@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-file_exists-js-c.c:1:10: fatal error: 'io.h' file not found
+    1 | #include <io.h>
+      |          ^~~~~~
+1 error generated.

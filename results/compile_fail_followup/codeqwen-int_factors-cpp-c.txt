@@ -1,0 +1,7 @@
+/tmp/codeqwen-int_factors-cpp-c.c:5:34: error: expected ')'
+    5 |   return ( (*(int*)A - *(int*)B );
+      |                                  ^
+/tmp/codeqwen-int_factors-cpp-c.c:5:10: note: to match this '('
+    5 |   return ( (*(int*)A - *(int*)B );
+      |          ^
+1 error generated.

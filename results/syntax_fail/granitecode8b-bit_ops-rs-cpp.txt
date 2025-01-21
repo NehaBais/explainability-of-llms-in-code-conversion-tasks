@@ -1,0 +1,85 @@
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:4:3: error: unknown type name 'uint8_t'
+    4 |   uint8_t a = 105;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:5:3: error: unknown type name 'uint8_t'
+    5 |   uint8_t b = 91;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a      = " << bitset<8>(a) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:6:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    6 |   cout << "a      = " << bitset<8>(a) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:6:42: error: use of undeclared identifier 'endl'
+    6 |   cout << "a      = " << bitset<8>(a) << endl;
+      |                                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "b      = " << bitset<8>(b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:7:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    7 |   cout << "b      = " << bitset<8>(b) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:7:42: error: use of undeclared identifier 'endl'
+    7 |   cout << "b      = " << bitset<8>(b) << endl;
+      |                                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "a | b  = " << bitset<8>(a | b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:8:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    8 |   cout << "a | b  = " << bitset<8>(a | b) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:8:46: error: use of undeclared identifier 'endl'
+    8 |   cout << "a | b  = " << bitset<8>(a | b) << endl;
+      |                                              ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:9:3: error: use of undeclared identifier 'cout'
+    9 |   cout << "a & b  = " << bitset<8>(a & b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:9:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+    9 |   cout << "a & b  = " << bitset<8>(a & b) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:9:46: error: use of undeclared identifier 'endl'
+    9 |   cout << "a & b  = " << bitset<8>(a & b) << endl;
+      |                                              ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "a ^ b  = " << bitset<8>(a ^ b) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:10:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   10 |   cout << "a ^ b  = " << bitset<8>(a ^ b) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:10:46: error: use of undeclared identifier 'endl'
+   10 |   cout << "a ^ b  = " << bitset<8>(a ^ b) << endl;
+      |                                              ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "!a     = " << bitset<8>(~a) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:11:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   11 |   cout << "!a     = " << bitset<8>(~a) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:11:43: error: use of undeclared identifier 'endl'
+   11 |   cout << "!a     = " << bitset<8>(~a) << endl;
+      |                                           ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << "a << 3 = " << bitset<8>(a << 3) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:12:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   12 |   cout << "a << 3 = " << bitset<8>(a << 3) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:12:47: error: use of undeclared identifier 'endl'
+   12 |   cout << "a << 3 = " << bitset<8>(a << 3) << endl;
+      |                                               ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:13:3: error: use of undeclared identifier 'cout'
+   13 |   cout << "a >> 3 = " << bitset<8>(a >> 3) << endl;
+      |   ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:13:26: warning: use of function template name with no prior declaration in function call with explicit template arguments is a C++20 extension [-Wc++20-extensions]
+   13 |   cout << "a >> 3 = " << bitset<8>(a >> 3) << endl;
+      |                          ^
+/tmp/granitecode8b-bit_ops-rs-cpp.cpp:13:47: error: use of undeclared identifier 'endl'
+   13 |   cout << "a >> 3 = " << bitset<8>(a >> 3) << endl;
+      |                                               ^
+9 warnings and 19 errors generated.

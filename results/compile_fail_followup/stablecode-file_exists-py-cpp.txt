@@ -1,0 +1,37 @@
+/tmp/stablecode-file_exists-py-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-file_exists-py-cpp.cpp:8:7: error: use of undeclared identifier 'fs'
+    8 |   if (fs::exists("input.txt") && fs::is_regular_file("input.txt")) {
+      |       ^
+/tmp/stablecode-file_exists-py-cpp.cpp:8:34: error: use of undeclared identifier 'fs'
+    8 |   if (fs::exists("input.txt") && fs::is_regular_file("input.txt")) {
+      |                                  ^
+/tmp/stablecode-file_exists-py-cpp.cpp:13:7: error: use of undeclared identifier 'fs'
+   13 |   if (fs::exists("/input.txt") && fs::is_regular_file("/input.txt"))) {
+      |       ^
+/tmp/stablecode-file_exists-py-cpp.cpp:13:35: error: use of undeclared identifier 'fs'
+   13 |   if (fs::exists("/input.txt") && fs::is_regular_file("/input.txt"))) {
+      |                                   ^
+/tmp/stablecode-file_exists-py-cpp.cpp:13:69: error: extraneous ')' after condition, expected a statement
+   13 |   if (fs::exists("/input.txt") && fs::is_regular_file("/input.txt"))) {
+      |                                                                     ^
+/tmp/stablecode-file_exists-py-cpp.cpp:18:7: error: use of undeclared identifier 'fs'
+   18 |   if (fs::exists("docs") && fs::is_directory("docs"))) {
+      |       ^
+/tmp/stablecode-file_exists-py-cpp.cpp:18:29: error: use of undeclared identifier 'fs'
+   18 |   if (fs::exists("docs") && fs::is_directory("docs"))) {
+      |                             ^
+/tmp/stablecode-file_exists-py-cpp.cpp:18:54: error: extraneous ')' after condition, expected a statement
+   18 |   if (fs::exists("docs") && fs::is_directory("docs"))) {
+      |                                                      ^
+/tmp/stablecode-file_exists-py-cpp.cpp:23:7: error: use of undeclared identifier 'fs'
+   23 |   if (fs::exists("/docs") && fs::is_directory("/docs"))) {
+      |       ^
+/tmp/stablecode-file_exists-py-cpp.cpp:23:30: error: use of undeclared identifier 'fs'
+   23 |   if (fs::exists("/docs") && fs::is_directory("/docs"))) {
+      |                              ^
+/tmp/stablecode-file_exists-py-cpp.cpp:23:56: error: extraneous ')' after condition, expected a statement
+   23 |   if (fs::exists("/docs") && fs::is_directory("/docs"))) {
+      |                                                        ^
+12 errors generated.

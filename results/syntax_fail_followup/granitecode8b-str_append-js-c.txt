@@ -1,0 +1,15 @@
+/tmp/granitecode8b-str_append-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-js-c.c:5:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   strcat(s1, ", World!");
+      |   ^
+/tmp/granitecode8b-str_append-js-c.c:5:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode8b-str_append-js-c.c:6:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   printf("%sn", s1);
+      |   ^
+/tmp/granitecode8b-str_append-js-c.c:6:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.

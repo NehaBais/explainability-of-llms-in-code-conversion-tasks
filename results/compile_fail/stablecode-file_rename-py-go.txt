@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-file_rename-py-go.go:45:115: syntax error: unexpected newline, expected := or = or comma

@@ -1,0 +1,30 @@
+error[E0412]: cannot find type `Error` in module `fs`
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:2:49
+  |
+2 | fn create_dir_all(path: &str) -> Result<(), fs::Error> {
+  |                                                 ^^^^^ not found in `fs`
+  |
+help: consider importing one of these items
+  |
+1 + use std::error::Error;
+  |
+1 + use std::fmt::Error;
+  |
+1 + use std::io::Error;
+  |
+help: if you import `Error`, refer to it directly
+  |
+2 - fn create_dir_all(path: &str) -> Result<(), fs::Error> {
+2 + fn create_dir_all(path: &str) -> Result<(), Error> {
+  |
+
+error[E0601]: `main` function not found in crate `granitecode3b_dir_make_go_rs`
+ --> /tmp/granitecode3b-dir_make-go-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode3b-dir_make-go-rs.rs`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0412, E0601.
+For more information about an error, try `rustc --explain E0412`.

@@ -1,16 +1,33 @@
 #include <iostream>
+#include <sstream>
 #include <string>
-using namespace std;
+#include <vector>
+
 int main() {
-  // Creating a String variable "s1" equal to any text value
-  string s1 = "hello";
+  std::string s1 = "hello";
+  std::cout << s1 + " world" << std::endl;
 
-  // Concatenating the original variable with another literal string
-  cout << (s1 + " world") << endl;
+  std::string s2 = s1 + " world";
+  std::cout << s2 << std::endl;
 
-  // Using join() function to concatenate the string variables
-  string strArr[3] = {"hello", "world", "mom"};
-  string s2 = std::string(", ").join(strArr, 3);
-  cout << s2 << endl;
+  std::vector<std::string> words = {s1, "world", "mom"};
+  std::ostringstream oss;
+  for (size_t i = 0; i < words.size(); ++i) {
+    if (i != 0) {
+      oss << ", ";
+    }
+    oss << words[i];
+  }
+  std::cout << oss.str() << std::endl;
+
+  s2 = "";
+  for (size_t i = 0; i < words.size(); ++i) {
+    if (!s2.empty()) {
+      s2 += ", ";
+    }
+    s2 += words[i];
+  }
+  std::cout << s2 << std::endl;
+
   return 0;
 }

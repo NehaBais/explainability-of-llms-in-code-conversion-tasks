@@ -1,0 +1,6 @@
+/tmp/Main.java:8: error: cannot find symbol
+    create(".").andThen(Main::createRoot);
+               ^
+  symbol:   method andThen(Main::createRoot)
+  location: class File
+1 error

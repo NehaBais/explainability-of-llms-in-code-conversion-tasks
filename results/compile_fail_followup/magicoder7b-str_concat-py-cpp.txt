@@ -1,0 +1,24 @@
+/tmp/magicoder7b-str_concat-py-cpp.cpp:14:28: error: non-aggregate type 'std::vector<std::string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   14 |   std::vector<std::string> vec = {"world",
+      |                            ^     ~~~~~~~~~
+   15 |                                   "mom"}; // vector initialization fixed
+      |                                   ~~~~~~
+/tmp/magicoder7b-str_concat-py-cpp.cpp:17:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   for (const auto &str : vec) {
+      |              ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:17:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   17 |   for (const auto &str : vec) {
+      |                        ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:21:33: error: expected ']'
+   21 |   std::cout << "\"" + os.str()[1:] + "\""; // Output: hello,world,mom
+      |                                 ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:21:31: note: to match this '['
+   21 |   std::cout << "\"" + os.str()[1:] + "\""; // Output: hello,world,mom
+      |                               ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:24:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |   for (const auto &str : vec) {
+      |              ^
+/tmp/magicoder7b-str_concat-py-cpp.cpp:24:24: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   24 |   for (const auto &str : vec) {
+      |                        ^
+4 warnings and 2 errors generated.

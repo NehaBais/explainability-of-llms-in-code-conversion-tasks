@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-file_exists-py-go.go:11:23: syntax error: unexpected ), expected {
+/tmp/stablecode-file_exists-py-go.go:17:23: syntax error: unexpected ), expected {
+/tmp/stablecode-file_exists-py-go.go:23:23: syntax error: unexpected ), expected {
+/tmp/stablecode-file_exists-py-go.go:29:23: syntax error: unexpected ), expected {

@@ -4,27 +4,20 @@ import (
 	"fmt"
 )
 
-func getIntFromUser(question string) int {
-	fmt.Println(question)
-	var a int
-	_, err := fmt.Scanf("%d", &a)
-	for ; err != nil; _, err = fmt.Scanf("%d", &a) {
-	}
-	return a
-}
-
-func compare(a, b int) {
-	if a == b {
-		fmt.Println(fmt.Sprintf("%d equals %d", a, b))
-	} else if a < b {
-		fmt.Println(fmt.Sprintf("%d is less than %d", a, b))
-	} else if a > b {
-		fmt.Println(fmt.Sprintf("%d is greater than %d", a, b))
-	}
-}
-
 func main() {
-	a := getIntFromUser("Give me an integer")
-	b := getIntFromUser("Give me another integer")
-	compare(a, b)
+	var a, b int
+	fmt.Print("Enter the first integer: ")
+	fmt.Scan(&a)
+	fmt.Print("Enter the second integer: ")
+	fmt.Scan(&b)
+
+	if a == b {
+		fmt.Println(a, "equals", b)
+	}
+	if a < b {
+		fmt.Println(a, "is less than", b)
+	}
+	if a > b {
+		fmt.Println(a, "is greater than", b)
+	}
 }

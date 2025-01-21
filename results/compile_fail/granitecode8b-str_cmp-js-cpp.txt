@@ -1,0 +1,63 @@
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string str1 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string str2 = "abcd";
+      |   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:5:15: error: use of undeclared identifier 'str2'; did you mean 'str1'?
+    5 |   std::string str2 = "abcd";
+      |               ^~~~
+      |               str1
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:4:15: note: 'str1' declared here
+    4 |   std::string str1 = "abcd";
+      |               ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:6:31: error: use of undeclared identifier 'str2'
+    6 |   bool equal_value = (str1 == str2);     // true
+      |                               ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:7:35: error: use of undeclared identifier 'str2'
+    7 |   bool not_equal_value = (str1 != str2); // false
+      |                                   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:8:28: error: use of undeclared identifier 'str2'
+    8 |   bool less_than = (str1 < str2);        // true
+      |                            ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:9:31: error: use of undeclared identifier 'str2'
+    9 |   bool greater_than = (str1 > str2);     // false
+      |                               ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:11:8: error: use of undeclared identifier 'std'
+   11 |       (std::tolower(str1) == std::tolower(str2)); // true
+      |        ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:11:30: error: use of undeclared identifier 'std'
+   11 |       (std::tolower(str1) == std::tolower(str2)); // true
+      |                              ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:11:43: error: use of undeclared identifier 'str2'
+   11 |       (std::tolower(str1) == std::tolower(str2)); // true
+      |                                           ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::cout << "Equal value: " << equal_value << std::endl;
+      |   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:12:50: error: use of undeclared identifier 'std'
+   12 |   std::cout << "Equal value: " << equal_value << std::endl;
+      |                                                  ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:13:3: error: use of undeclared identifier 'std'
+   13 |   std::cout << "Not equal value: " << not_equal_value << std::endl;
+      |   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:13:58: error: use of undeclared identifier 'std'
+   13 |   std::cout << "Not equal value: " << not_equal_value << std::endl;
+      |                                                          ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:14:3: error: use of undeclared identifier 'std'
+   14 |   std::cout << "Less than: " << less_than << std::endl;
+      |   ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:14:46: error: use of undeclared identifier 'std'
+   14 |   std::cout << "Less than: " << less_than << std::endl;
+      |                                              ^
+/tmp/granitecode8b-str_cmp-js-cpp.cpp:15:3: error: use of undeclared identifier 'std'
+   15 |   std::cout << "Greater than: " << greater_than << std::endl;
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

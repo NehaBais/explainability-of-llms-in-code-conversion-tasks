@@ -1,0 +1,8 @@
+/tmp/codeqwen-int_arith-py-cpp.cpp:27:7: error: use of undeclared identifier 'IsNegative'; did you mean 'isNegative'?
+   27 |   if (IsNegative) {
+      |       ^~~~~~~~~~
+      |       isNegative
+/tmp/codeqwen-int_arith-py-cpp.cpp:24:8: note: 'isNegative' declared here
+   24 |   bool isNegative = (((input1 < 0) ^ (input2 < 0)) &&
+      |        ^
+1 error generated.

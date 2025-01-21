@@ -1,0 +1,73 @@
+error: 2 positional arguments in format string, but there is 1 argument
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:16:19
+   |
+16 |         println!("{}{}", &s[start_index..start_index + m as usize]);
+   |                   ^^^^   -----------------------------------------
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:12:17
+   |
+12 |     if let Some(&i) = s.chars().find(|&ch| ch == c) {
+   |                 ^^    ----------------------------- this expression has type `Option<char>`
+   |                 |
+   |                 expected `char`, found `&_`
+   |
+   = note:   expected type `char`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+12 |     if let Some(i) = s.chars().find(|&ch| ch == c) {
+   |                 ~
+
+error[E0277]: the trait bound `str: Pattern` is not satisfied
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:15:40
+   |
+15 |     if let Some(&start_index) = s.find(*sub) {
+   |                                   ---- ^^^^ the trait `Pattern` is not implemented for `str`
+   |                                   |
+   |                                   required by a bound introduced by this call
+   |
+   = note: required for `str` to implement `Pattern`
+note: required by a bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+help: consider borrowing here
+   |
+15 |     if let Some(&start_index) = s.find(&*sub) {
+   |                                        +
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:15:40
+   |
+15 |     if let Some(&start_index) = s.find(*sub) {
+   |                                   ---- ^^^^ doesn't have a size known at compile-time
+   |                                   |
+   |                                   required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::str::<impl str>::find`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:5
+help: references are always `Sized`, even if they point to unsized data; consider not dereferencing the expression
+   |
+15 -     if let Some(&start_index) = s.find(*sub) {
+15 +     if let Some(&start_index) = s.find(sub) {
+   |
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder2b-str_substring-cpp-rs.rs:15:17
+   |
+15 |     if let Some(&start_index) = s.find(*sub) {
+   |                 ^^^^^^^^^^^^    ------------ this expression has type `Option<usize>`
+   |                 |
+   |                 expected `usize`, found `&_`
+   |
+   = note:   expected type `usize`
+           found reference `&_`
+help: consider removing `&` from the pattern
+   |
+15 |     if let Some(start_index) = s.find(*sub) {
+   |                 ~~~~~~~~~~~
+
+error: aborting due to 5 previous errors
+
+Some errors have detailed explanations: E0277, E0308.
+For more information about an error, try `rustc --explain E0277`.

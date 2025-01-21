@@ -1,0 +1,7 @@
+/tmp/stablecode-str_match-js-c.c:11:55: error: expected expression
+   11 |     if (strncmp(str + m - 1, substr, strlen(substr))) == 0)
+      |                                                       ^
+/tmp/stablecode-str_match-js-c.c:17:39: error: expected function body after function declarator
+   17 | int ends_with(char *str, char *suffix)) {
+      |                                       ^
+2 errors generated.

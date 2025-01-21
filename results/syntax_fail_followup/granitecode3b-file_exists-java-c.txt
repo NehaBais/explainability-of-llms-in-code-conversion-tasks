@@ -1,0 +1,16 @@
+/tmp/granitecode3b-file_exists-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_exists-java-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-file_exists-java-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-file_exists-java-c.c:6:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (stat("input.txt", &st) == 0 && S_ISREG(st.st_mode)) {
+      |       ^
+/tmp/granitecode3b-file_exists-java-c.c:6:38: error: call to undeclared function 'S_ISREG'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   if (stat("input.txt", &st) == 0 && S_ISREG(st.st_mode)) {
+      |                                      ^
+4 errors generated.

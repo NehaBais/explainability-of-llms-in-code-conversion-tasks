@@ -1,0 +1,9 @@
+/tmp/Main.java:42: error: no suitable method found for join(String,List<Integer>)
+              + String.join(", ", q2matches)
+                      ^
+    method String.join(CharSequence,CharSequence...) is not applicable
+      (varargs mismatch; List<Integer> cannot be converted to CharSequence)
+    method String.join(CharSequence,Iterable<? extends CharSequence>) is not applicable
+      (argument mismatch; List<Integer> cannot be converted to Iterable<? extends CharSequence>)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

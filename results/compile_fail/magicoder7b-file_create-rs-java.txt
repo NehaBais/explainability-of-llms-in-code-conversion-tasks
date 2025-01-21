@@ -1,0 +1,33 @@
+/tmp/Main.java:17: error: cannot find symbol
+  public static CompletionStage<Void> create(String root) {
+                ^
+  symbol:   class CompletionStage
+  location: class Main
+/tmp/Main.java:31: error: cannot find symbol
+  public static CompletionStage<Void> createFile(Path file) {
+                ^
+  symbol:   class CompletionStage
+  location: class Main
+/tmp/Main.java:23: error: no suitable method found for get(Path)
+            .newDirectoryStream(Paths.get(f_path), e -> true)
+                                     ^
+    method Paths.get(String,String...) is not applicable
+      (argument mismatch; Path cannot be converted to String)
+    method Paths.get(URI) is not applicable
+      (argument mismatch; Path cannot be converted to URI)
+/tmp/Main.java:27: error: cannot find symbol
+        : CompletableFuture.completedStage(null)
+          ^
+  symbol:   variable CompletableFuture
+  location: class Main
+/tmp/Main.java:28: error: cannot find symbol
+            .thenCombine(DirBuilder.create(d_path).toCompletableFuture(), (__, path) -> null);
+                         ^
+  symbol:   variable DirBuilder
+  location: class Main
+/tmp/Main.java:32: error: cannot find symbol
+    return Files.createFile(file).thenApply((Path p) -> null);
+                                 ^
+  symbol:   method thenApply((Path p)->null)
+  location: interface Path
+6 errors

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_size-rs-go.go:16:26: undefined: ioutil.Stat

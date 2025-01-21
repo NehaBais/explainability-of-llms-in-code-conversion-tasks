@@ -1,0 +1,50 @@
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::path fileA("input.txt");
+      |   ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:10:7: error: use of undeclared identifier 'fs'
+   10 |   if (fs::exists(fileA)) {
+      |       ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:10:18: error: use of undeclared identifier 'fileA'; did you mean 'fileno'?
+   10 |   if (fs::exists(fileA)) {
+      |                  ^~~~~
+      |                  fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:11:43: error: use of undeclared identifier 'fs'
+   11 |     std::cout << "Size of input.txt: " << fs::file_size(fileA) << " B"
+      |                                           ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:11:57: error: use of undeclared identifier 'fileA'; did you mean 'fileno'?
+   11 |     std::cout << "Size of input.txt: " << fs::file_size(fileA) << " B"
+      |                                                         ^~~~~
+      |                                                         fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:20:3: error: use of undeclared identifier 'fs'
+   20 |   fs::path fileB("/input.txt");
+      |   ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:21:7: error: use of undeclared identifier 'fs'
+   21 |   if (fs::exists(fileB)) {
+      |       ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:21:18: error: use of undeclared identifier 'fileB'; did you mean 'fileno'?
+   21 |   if (fs::exists(fileB)) {
+      |                  ^~~~~
+      |                  fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:22:43: error: use of undeclared identifier 'fs'
+   22 |     std::cout << "Size of input.txt: " << fs::file_size(fileB) << " B"
+      |                                           ^
+/tmp/deepseekcoderv2-file_size-java-cpp.cpp:22:57: error: use of undeclared identifier 'fileB'; did you mean 'fileno'?
+   22 |     std::cout << "Size of input.txt: " << fs::file_size(fileB) << " B"
+      |                                                         ^~~~~
+      |                                                         fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+11 errors generated.

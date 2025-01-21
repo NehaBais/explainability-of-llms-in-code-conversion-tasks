@@ -1,0 +1,8 @@
+/tmp/dolphincoder7b-logic_ops-c-cpp.cpp:11:3: error: use of undeclared identifier 'printLogic'; did you mean 'print_logic'?
+   11 |   printLogic(1, 0); // Outputs: a and b is 0, a or b is 1, not a is 0
+      |   ^~~~~~~~~~
+      |   print_logic
+/tmp/dolphincoder7b-logic_ops-c-cpp.cpp:4:6: note: 'print_logic' declared here
+    4 | void print_logic(int a, int b) {
+      |      ^
+1 error generated.

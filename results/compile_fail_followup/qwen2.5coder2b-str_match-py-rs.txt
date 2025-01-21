@@ -1,0 +1,35 @@
+error[E0277]: the trait bound `usize: Neg` is not satisfied
+  --> /tmp/qwen2.5coder2b-str_match-py-rs.rs:19:19
+   |
+19 |     let mut loc = -1;
+   |                   ^^ the trait `Neg` is not implemented for `usize`
+   |
+   = help: the following other types implement trait `Neg`:
+             &f128
+             &f16
+             &f32
+             &f64
+             &i128
+             &i16
+             &i32
+             &i64
+           and 12 others
+
+error[E0061]: this method takes 1 argument but 2 arguments were supplied
+  --> /tmp/qwen2.5coder2b-str_match-py-rs.rs:29:32
+   |
+29 |     while let Some(index) = s1.find(s2, loc) {
+   |                                ^^^^     --- unexpected argument #2 of type `usize`
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/mod.rs:1232:12
+help: remove the extra argument
+   |
+29 -     while let Some(index) = s1.find(s2, loc) {
+29 +     while let Some(index) = s1.find(s2) {
+   |
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0061, E0277.
+For more information about an error, try `rustc --explain E0061`.

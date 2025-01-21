@@ -1,0 +1,22 @@
+error: expected parameter name, found keyword `in`
+  --> /tmp/codegemma7b-str_substring-c-rs.rs:28:25
+   |
+28 | fn str_fromstr(s: &str, in: &str, m: isize) -> Option<String> {
+   |                         ^^ expected parameter name
+
+error: expected expression, found keyword `in`
+  --> /tmp/codegemma7b-str_substring-c-rs.rs:29:22
+   |
+29 |     let pos = s.find(in)?;
+   |                      ^^ expected expression
+
+warning: unused import: `std::mem`
+ --> /tmp/codegemma7b-str_substring-c-rs.rs:1:5
+  |
+1 | use std::mem;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 2 previous errors; 1 warning emitted
+

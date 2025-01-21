@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/stablecode-dir_make-rs-go.go:15:47: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-rs-go.go:17:35: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-rs-go.go:19:61: syntax error: unexpected ) at end of statement
+/tmp/stablecode-dir_make-rs-go.go:30:44: syntax error: unexpected ) at end of statement

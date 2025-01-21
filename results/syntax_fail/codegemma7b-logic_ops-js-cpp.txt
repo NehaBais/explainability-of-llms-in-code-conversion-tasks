@@ -1,0 +1,19 @@
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:2:3: error: use of undeclared identifier 'cout'
+    2 |   cout << "a AND b: " << (a && b) << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:2:38: error: use of undeclared identifier 'endl'
+    2 |   cout << "a AND b: " << (a && b) << endl;
+      |                                      ^
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:3:3: error: use of undeclared identifier 'cout'
+    3 |   cout << "a OR b: " << (a || b) << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:3:37: error: use of undeclared identifier 'endl'
+    3 |   cout << "a OR b: " << (a || b) << endl;
+      |                                     ^
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:4:3: error: use of undeclared identifier 'cout'
+    4 |   cout << "NOT a: " << (!a) << endl;
+      |   ^
+/tmp/codegemma7b-logic_ops-js-cpp.cpp:4:32: error: use of undeclared identifier 'endl'
+    4 |   cout << "NOT a: " << (!a) << endl;
+      |                                ^
+6 errors generated.

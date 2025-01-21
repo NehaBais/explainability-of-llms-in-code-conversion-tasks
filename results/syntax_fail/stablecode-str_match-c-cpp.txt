@@ -1,0 +1,4 @@
+/tmp/stablecode-str_match-c-cpp.cpp:11:79: error: extraneous ')' before ';'
+   11 |   printf("Starts with Test ( Hello,Hell ) : %d\n", startsWith("Hello","Hell")));
+      |                                                                               ^
+1 error generated.

@@ -1,0 +1,7 @@
+/tmp/codeqwen-int_factors-rs-cpp.cpp:24:14: error: expected expression
+   24 |              {1, 2, 4, 5, 10, 10, 20, 25, 50,
+      |              ^
+/tmp/codeqwen-int_factors-rs-cpp.cpp:26:42: error: expected expression
+   26 |   assert(factor(101) == std::vector<int>({1, 101}));
+      |                                          ^
+2 errors generated.

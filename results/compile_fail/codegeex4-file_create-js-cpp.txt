@@ -1,0 +1,13 @@
+/tmp/codegeex4-file_create-js-cpp.cpp:8:17: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    8 |   std::ofstream ofs(path + "/output.txt",
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/codegeex4-file_create-js-cpp.cpp:15:13: error: no member named 'filesystem' in namespace 'std'
+   15 |   if (!std::filesystem::create_directory(path + "/docs", ec)) {
+      |        ~~~~~^
+/tmp/codegeex4-file_create-js-cpp.cpp:26:12: error: no member named 'filesystem' in namespace 'std'
+   26 |   if (std::filesystem::path("/").exists()) {
+      |       ~~~~~^
+3 errors generated.

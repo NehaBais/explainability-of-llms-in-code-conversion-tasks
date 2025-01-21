@@ -1,0 +1,19 @@
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:35: error: expected expression
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                   ^
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:36: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                    ^~
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:44: error: character <U+2581> not allowed in an identifier
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                           ^
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:49: error: character <U+2581> not allowed in an identifier
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                              ^
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:60: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                                       ^~
+/tmp/deepseekcoder7b-file_rename-rs-c.c:8:36: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+    8 |   if (rename("docs", "mydocs") != <｜begin▁of▁sentence｜ > 0) {
+      |                                    ^
+2 warnings and 4 errors generated.

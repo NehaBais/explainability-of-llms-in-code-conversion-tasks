@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-bit_ops-cpp-go.go:13:31: undefined: bits.And

@@ -1,0 +1,35 @@
+/tmp/None.java:1: error: implicitly declared classes are a preview feature and are disabled by default.
+String s1 = "hello";
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:2: error: class, interface, enum, or record expected
+System.out.println(s1 + " world");
+^
+/tmp/None.java:5: error: class, interface, enum, or record expected
+System.out.println(s2);
+^
+/tmp/None.java:7: error: illegal start of expression
+String s3 = ", ".join([s1, "world", "mom"]);
+                      ^
+/tmp/None.java:7: error: ']' expected
+String s3 = ", ".join([s1, "world", "mom"]);
+                         ^
+/tmp/None.java:7: error: <identifier> expected
+String s3 = ", ".join([s1, "world", "mom"]);
+                          ^
+/tmp/None.java:8: error: class, interface, enum, or record expected
+System.out.println(s3);
+^
+/tmp/None.java:10: error: illegal start of expression
+String s4 = ", ".join([s1, "world", "mom"]);
+                      ^
+/tmp/None.java:10: error: ']' expected
+String s4 = ", ".join([s1, "world", "mom"]);
+                         ^
+/tmp/None.java:10: error: <identifier> expected
+String s4 = ", ".join([s1, "world", "mom"]);
+                          ^
+/tmp/None.java:11: error: class, interface, enum, or record expected
+System.out.println(s4);
+^
+11 errors

@@ -1,0 +1,26 @@
+/tmp/yicoder2b-int_factors-c-cpp.cpp:13:19: error: assigning to 'int *' from incompatible type 'void *'
+   13 |     fctrs->list = realloc(fctrs->list, newSize * sizeof(int));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-c-cpp.cpp:15:19: error: assigning to 'int *' from incompatible type 'void *'
+   15 |     fctrs->list = malloc(newSize * sizeof(int));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-c-cpp.cpp:56:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   56 |         printf("
+      |                ^
+/tmp/yicoder2b-int_factors-c-cpp.cpp:56:16: error: expected expression
+/tmp/yicoder2b-int_factors-c-cpp.cpp:58:3: warning: missing terminating '"' character [-Winvalid-pp-token]
+   58 |   ", nums2factor[i]);
+      |   ^
+/tmp/yicoder2b-int_factors-c-cpp.cpp:64:16: warning: missing terminating '"' character [-Winvalid-pp-token]
+   64 |         printf("
+      |                ^
+/tmp/yicoder2b-int_factors-c-cpp.cpp:65:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   65 | ");
+      | ^
+/tmp/yicoder2b-int_factors-c-cpp.cpp:68:2: error: expected '}'
+   68 | }
+      |  ^
+/tmp/yicoder2b-int_factors-c-cpp.cpp:48:34: note: to match this '{'
+   48 | int main(int argc, char *argv[]) {
+      |                                  ^
+4 warnings and 4 errors generated.

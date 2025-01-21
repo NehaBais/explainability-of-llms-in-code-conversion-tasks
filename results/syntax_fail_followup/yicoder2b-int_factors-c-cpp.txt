@@ -1,0 +1,7 @@
+/tmp/yicoder2b-int_factors-c-cpp.cpp:13:19: error: assigning to 'int *' from incompatible type 'void *'
+   13 |     fctrs->list = realloc(fctrs->list, newSize * sizeof(int));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder2b-int_factors-c-cpp.cpp:15:19: error: assigning to 'int *' from incompatible type 'void *'
+   15 |     fctrs->list = malloc(newSize * sizeof(int));
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

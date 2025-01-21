@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_prepend-java-cpp.cpp:4:1: error: a type specifier is required for all declarations
+    4 | string = "abc" + string;
+      | ^
+1 error generated.

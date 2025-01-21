@@ -1,0 +1,28 @@
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:11:5: error: use of undeclared identifier 'fs'
+   11 |     fs::rename("input.txt", "output.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:12:18: error: use of undeclared identifier 'fs'
+   12 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:18:5: error: use of undeclared identifier 'fs'
+   18 |     fs::rename("docs", "mydocs");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:19:18: error: use of undeclared identifier 'fs'
+   19 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:26:5: error: use of undeclared identifier 'fs'
+   26 |     fs::rename("/input.txt", "/output.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:27:18: error: use of undeclared identifier 'fs'
+   27 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:33:5: error: use of undeclared identifier 'fs'
+   33 |     fs::rename("/docs", "/mydocs");
+      |     ^
+/tmp/deepseekcoderv2-file_rename-rs-cpp.cpp:34:18: error: use of undeclared identifier 'fs'
+   34 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+9 errors generated.

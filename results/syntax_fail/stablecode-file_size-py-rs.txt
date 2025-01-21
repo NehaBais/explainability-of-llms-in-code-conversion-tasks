@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `]`
+ --> /tmp/stablecode-file_size-py-rs.rs:5:21
+  |
+5 | fn get_file_sizes() {
+  |                     ^ unclosed delimiter
+6 |     let mut paths = vec!["input.txt"], vec!["/input.txt"]];
+  |                                                          ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_size-py-rs.rs:14:2
+   |
+6  |     let mut paths = vec!["input.txt"], vec!["/input.txt"]];
+   |                                                          - missing open `[` for this delimiter
+...
+14 |  }
+   |  ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/granitecode3b-bit_ops-py-go.go:8:35: newline in string
+/tmp/granitecode3b-bit_ops-py-go.go:8:35: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/granitecode3b-bit_ops-py-go.go:9:16: binary literal has no digits
+/tmp/granitecode3b-bit_ops-py-go.go:10:16: binary literal has no digits
+/tmp/granitecode3b-bit_ops-py-go.go:11:47: newline in string
+/tmp/granitecode3b-bit_ops-py-go.go:13:35: newline in string
+/tmp/granitecode3b-bit_ops-py-go.go:14:16: binary literal has no digits
+/tmp/granitecode3b-bit_ops-py-go.go:15:16: binary literal has no digits
+/tmp/granitecode3b-bit_ops-py-go.go:16:47: newline in string
+/tmp/granitecode3b-bit_ops-py-go.go:18:35: newline in string
+/tmp/granitecode3b-bit_ops-py-go.go:18:35: too many errors

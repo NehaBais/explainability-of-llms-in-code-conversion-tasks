@@ -10,32 +10,21 @@ import (
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 
-	nbr1, err1 := strconv.Atoi(readLine(reader))
-	if err1 != nil {
-		fmt.Println("Invalid input for nbr1")
-		return
-	}
+	fmt.Print("Enter first integer: ")
+	nbr1Str, _ := reader.ReadString('\n')
+	nbr1, _ := strconv.Atoi(nbr1Str[:len(nbr1Str)-1]) // Remove newline character
 
-	nbr2, err2 := strconv.Atoi(readLine(reader))
-	if err2 != nil {
-		fmt.Println("Invalid input for nbr2")
-		return
-	}
+	fmt.Print("Enter second integer: ")
+	nbr2Str, _ := reader.ReadString('\n')
+	nbr2, _ := strconv.Atoi(nbr2Str[:len(nbr2Str)-1]) // Remove newline character
 
-	switch {
-	case nbr1 < nbr2:
-		fmt.Printf("%d is less than %d\n", nbr1, nbr2)
-	case nbr1 > nbr2:
-		fmt.Printf("%d is greater than %d\n", nbr1, nbr2)
-	default:
-		fmt.Printf("%d is equal to %d\n", nbr1, nbr2)
+	if nbr1 < nbr2 {
+		fmt.Println(nbr1, "is less than", nbr2)
 	}
-}
-
-func readLine(r *bufio.Reader) string {
-	line, _, err := r.ReadLine()
-	if err != nil {
-		return ""
+	if nbr1 > nbr2 {
+		fmt.Println(nbr1, "is greater than", nbr2)
 	}
-	return string(line)
+	if nbr1 == nbr2 {
+		fmt.Println(nbr1, "is equal to", nbr2)
+	}
 }

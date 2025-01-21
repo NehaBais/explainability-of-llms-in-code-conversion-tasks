@@ -1,0 +1,10 @@
+error: 3 positional arguments in format string, but there is 1 argument
+  --> /tmp/yicoder2b-str_substring-go-rs.rs:18:17
+   |
+18 |         "Start '{}', length {}: {}",
+   |                 ^^          ^^  ^^
+19 |         &str::from_utf8_lossy(&s)[sx as usize..sx + m]
+   |         ----------------------------------------------
+
+error: aborting due to 1 previous error
+

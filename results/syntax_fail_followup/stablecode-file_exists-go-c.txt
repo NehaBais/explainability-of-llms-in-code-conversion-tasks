@@ -1,0 +1,11 @@
+/tmp/stablecode-file_exists-go-c.c:8:67: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     fprintf(stderr, "Failed to get the status of %s: %s\n", path, strerror(errno)));
+      |                                                                   ^
+/tmp/stablecode-file_exists-go-c.c:8:67: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/stablecode-file_exists-go-c.c:8:83: error: extraneous ')' before ';'
+    8 |     fprintf(stderr, "Failed to get the status of %s: %s\n", path, strerror(errno)));
+      |                                                                                   ^
+/tmp/stablecode-file_exists-go-c.c:20:51: error: extraneous ')' before ';'
+   20 |     fprintf(stderr, "Unknown mode for %s\n", path));
+      |                                                   ^
+3 errors generated.

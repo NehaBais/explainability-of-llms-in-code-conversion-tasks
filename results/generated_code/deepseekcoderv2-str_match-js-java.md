@@ -1,59 +1,72 @@
-### Solution:
+ Here's the equivalent Java code for the given JavaScript code, which performs the three types of string matching as described:
+
 ```java
-public class StringMatching {
-    private static void print(String string, Object... args) { System.out.println(String.format(string, args)); }
-    public static void main(String[] args) throws Exception {
-        /* Test Strings */
-        String s1 = "tacoloco";
-        String s2 = "co";
-        String q1, q2multi, m;
-        int q2matchesIndex = 0;
-        List<Integer> q2matches = new ArrayList<>();
+public class StringMatchingDemo {
+    public static void main(String[] args) {
+        String stringA = "tacoloco";
+        String stringB = "co";
+        boolean q1, q2, q3;
+        int q2Index = -1;
+        java.util.ArrayList<Integer> q2matches = new java.util.ArrayList<>();
 
         // stringA starts with stringB
-        boolean q1 = (s1.substring(0, s2.length())).equals(s2);
+        if (stringA.substring(0, stringB.length()).equals(stringB)) {
+            q1 = true;
+        } else {
+            q1 = false;
+        }
 
         // stringA contains stringB
-        int q2 = s1.indexOf(s2);
+        q2Index = stringA.indexOf(stringB);
+        if (q2Index != -1) {
+            q2 = true;
+        } else {
+            q2 = false;
+        }
 
         // multiple matches
-        Pattern p1 = Pattern.compile(Pattern.quote(s2), Pattern.LITERAL | Pattern.CASE_INSENSITIVE);
-
-        Matcher m1 = p1.matcher(s1);
-
-        while (m1.find()) {
-            q2matchesIndex += 1; // increment index of matches
-            q2matches.add(m1.start()); // add the start index to list of matches
+        java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(stringB, java.util.regex.Pattern.CASE_INSENSITIVE);
+        java.util.regex.Matcher matcher = pattern.matcher(stringA);
+        while (matcher.find()) {
+            q2matches.add(matcher.start());
         }
 
         // stringA ends with stringB
-        boolean q3 = s1.endsWith(s2);
-
-        print("1: Does '%s' start with '%s'? %s", s1, s2, (q1 ? "Yes." : "No."));
-        if (~q2 && !q2matches.isEmpty()) {
-            q2 = 0; // reset to 0 for multiple matches case
-            print("2: Is '%s' contained in '%s'? Yes, at index %d.", s2, s1, ~q2 ? q2 : -~q2);
-            if (q2matches.size() > 1) {
-                String start = ""; // use for multiple matches string
-                print("   In fact, it happens %s times within '%s', at index%s ",
-                        q2matches.size(), s1, q2matchesIndex);
-            } else if (q2matches.size() == 1) {
-                String start = " "; // use for single match string
-            }
-            print("%d.", q2matches);
+        if (stringA.substring(stringA.length() - stringB.length()).equals(stringB)) {
+            q3 = true;
         } else {
-            print("2: Is '%s' contained in '%s'? %s", s2, s1, (~q2 ? "Yes" : "No"));
+            q3 = false;
         }
 
-        if (q3) { print("3: Does '%s' end with '%s'? Yes.", s1, s2); } else { print("3: Does '%s' end with '%s'? No.", s1, s2); }
+        System.out.println("1: Does '" + stringA + "' start with '" + stringB + "'? " + (q1 ? "Yes." : "No."));
+        if (q2) {
+            System.out.println("2: Is '" + stringB + "' contained in '" + stringA + "'? Yes, at index " + q2Index + ".");
+            if (!q2matches.isEmpty() && q2matches.size() > 1) {
+                System.out.print("   In fact, it happens " + q2matches.size() + " times within '" + stringA + "', at index" + (q2matches.size() > 1 ? "es" : "") + " " + String.join(", ", java.util.stream.Collectors.toList(java.util.stream.StreamSupport.spliteratorUnknownSize(q2matches.iterator(), java.util.Spliterator.ORDERED), ",")) + ".");
+            }
+        } else {
+            System.out.println("2: Is '" + stringB + "' contained in '" + stringA + "'? No.");
+        }
+        System.out.println("3: Does '" + stringA + "' end with '" + stringB + "'? " + (q3 ? "Yes." : "No."));
     }
 }
 ```
-### Execution Output:
 
-$ java StringMatching.java 
-1: Does 'tacoloco' start with 'co'? Yes.
-2: Is 'co' contained in 'tacoloco'? Yes, at index 3.
-   In fact, it happens 1 times within 'tacoloco', at index 3.
-3: Does 'tacoloco' end with 'co'? Yes.
+### Explanation:
+1. **Determining if the first string starts with the second string**:
+   - Use `substring` method to extract a substring of length equal to `stringB` and compare it with `stringB`.
 
+2. **Determining if the first string contains the second string at any location**:
+   - Use `indexOf` method which returns the index of the first occurrence of `stringB` in `stringA`, or `-1` if not found.
+
+3. **Handling multiple occurrences for part 2**:
+   - Use a regular expression with the global flag (`'g'`) to find all matches and store their indices in an ArrayList.
+
+4. **Determining if the first string ends with the second string**:
+   - Use `substring` method to extract a substring from the end of `stringA` with length equal to `stringB` and compare it with `stringB`.
+
+5. **Printing the location of the match for part 2**:
+   - If `q2` is true, print the index of the first occurrence using `indexOf`. If multiple matches are found, iterate through them and store their indices in an ArrayList, then print these indices.
+
+6. **Handling multiple occurrences for part 2**:
+   - Use a regular expression with the global flag (`'g'`) to find all matches and store their indices in an ArrayList.

@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/granitecode3b-logic_ops-py-go.go:4:2: undefined: fmt
+/tmp/granitecode3b-logic_ops-py-go.go:5:2: undefined: fmt
+/tmp/granitecode3b-logic_ops-py-go.go:6:2: undefined: fmt

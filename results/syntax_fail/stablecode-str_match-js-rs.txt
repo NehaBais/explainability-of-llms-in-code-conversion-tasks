@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-js-rs.rs:1:11
+   |
+1  | fn main() {
+   |           ^ unclosed delimiter
+...
+16 |     let contains = stringA.contains(stringB));
+   |                                             ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_match-js-rs.rs:25:47
+   |
+16 |     let contains = stringA.contains(stringB));
+   |                                             - missing open `(` for this delimiter
+...
+25 |     let ends_with = stringA.ends_with(stringB));
+   |                                               ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

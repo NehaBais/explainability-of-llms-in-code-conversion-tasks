@@ -1,0 +1,9 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/granitecode3b-bit_ops-java-rs.rs:4:2
+  |
+4 | }
+  |  ^ consider adding a `main` function to `/tmp/granitecode3b-bit_ops-java-rs.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.

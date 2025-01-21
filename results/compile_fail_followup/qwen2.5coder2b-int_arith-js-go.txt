@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_arith-js-go.go:10:10: undefined: os

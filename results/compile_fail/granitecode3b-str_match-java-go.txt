@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/granitecode3b-str_match-java-go.go:10:21: "abcd".StartsWith undefined (type untyped string has no field or method StartsWith)
+/tmp/granitecode3b-str_match-java-go.go:11:21: "abcd".EndsWith undefined (type untyped string has no field or method EndsWith)
+/tmp/granitecode3b-str_match-java-go.go:12:21: "abab".Contains undefined (type untyped string has no field or method Contains)
+/tmp/granitecode3b-str_match-java-go.go:13:21: "abab".Contains undefined (type untyped string has no field or method Contains)
+/tmp/granitecode3b-str_match-java-go.go:14:16: "abab".IndexOf undefined (type untyped string has no field or method IndexOf)
+/tmp/granitecode3b-str_match-java-go.go:16:15: "abab".IndexOf undefined (type untyped string has no field or method IndexOf)
+/tmp/granitecode3b-str_match-java-go.go:19:7: cannot define new methods on non-local type string
+/tmp/granitecode3b-str_match-java-go.go:22:7: cannot define new methods on non-local type string
+/tmp/granitecode3b-str_match-java-go.go:25:7: cannot define new methods on non-local type string
+/tmp/granitecode3b-str_match-java-go.go:28:7: cannot define new methods on non-local type string
+/tmp/granitecode3b-str_match-java-go.go:28:7: too many errors

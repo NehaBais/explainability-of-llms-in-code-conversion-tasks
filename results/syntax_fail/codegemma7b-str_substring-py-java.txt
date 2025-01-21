@@ -1,0 +1,16 @@
+/tmp/SubstringDisplay.java:6: error: not a statement
+        char char = 'd';
+        ^
+/tmp/SubstringDisplay.java:6: error: ';' expected
+        char char = 'd';
+            ^
+/tmp/SubstringDisplay.java:6: error: not a statement
+        char char = 'd';
+             ^
+/tmp/SubstringDisplay.java:6: error: ';' expected
+        char char = 'd';
+                 ^
+/tmp/SubstringDisplay.java:19: error: '.class' expected
+        int indx = s.indexOf(char);
+                                 ^
+5 errors

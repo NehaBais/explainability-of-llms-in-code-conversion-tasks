@@ -1,0 +1,66 @@
+/tmp/granitecode8b-int_arith-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:5:3: error: use of undeclared identifier 'cout'
+    5 |   cout << "Enter first integer: ";
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:6:3: error: use of undeclared identifier 'cin'
+    6 |   cin >> input1;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "Enter second integer: ";
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:8:3: error: use of undeclared identifier 'cin'
+    8 |   cin >> input2;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "Sum:                   " << qq << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:11:32: error: use of undeclared identifier 'endl'
+   11 |   cout << "Sum:                   " << qq << endl;
+      |                                              ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << "Difference:    " << ww << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:14:38: error: use of undeclared identifier 'endl'
+   14 |   cout << "Difference:    " << ww << endl;
+      |                                      ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << "Product:       " << ee << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:17:35: error: use of undeclared identifier 'endl'
+   17 |   cout << "Product:       " << ee << endl;
+      |                                      ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:20:18: error: expected '<' after 'static_cast'
+   20 |       static_cast(input1) /
+      |                  ^
+      |                  <
+/tmp/granitecode8b-int_arith-py-cpp.cpp:21:18: error: expected '<' after 'static_cast'
+   21 |       static_cast(input2); // integer quotient, rounded towards zero by default
+      |                  ^
+      |                  <
+/tmp/granitecode8b-int_arith-py-cpp.cpp:22:3: error: use of undeclared identifier 'cout'
+   22 |   cout << "Integer quotient: " << static_cast(rr) << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:22:46: error: expected '<' after 'static_cast'
+   22 |   cout << "Integer quotient: " << static_cast(rr) << endl;
+      |                                              ^
+      |                                              <
+/tmp/granitecode8b-int_arith-py-cpp.cpp:22:54: error: use of undeclared identifier 'endl'
+   22 |   cout << "Integer quotient: " << static_cast(rr) << endl;
+      |                                                      ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:23:3: error: use of undeclared identifier 'cout'
+   23 |   cout << "Float quotient:   " << rr << endl;
+      |   ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:23:41: error: use of undeclared identifier 'endl'
+   23 |   cout << "Float quotient:   " << rr << endl;
+      |                                         ^
+/tmp/granitecode8b-int_arith-py-cpp.cpp:26:18: error: expected '<' after 'static_cast'
+   26 |       static_cast(input1) %
+      |                  ^
+      |                  <
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

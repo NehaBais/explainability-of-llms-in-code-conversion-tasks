@@ -1,0 +1,13 @@
+/tmp/codeqwen-file_create-py-cpp.cpp:4:8: error: no member named 'filesystem' in namespace 'std'
+    4 |   std::filesystem::path dirPath = directory;
+      |   ~~~~~^
+/tmp/codeqwen-file_create-py-cpp.cpp:5:17: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+    5 |   std::ofstream ofs(dirPath / "output.txt");
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/codeqwen-file_create-py-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::create_directories(dirPath / "docs");
+      |   ~~~~~^
+3 errors generated.

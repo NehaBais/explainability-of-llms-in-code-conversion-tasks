@@ -1,0 +1,7 @@
+/tmp/JavaCode.java:10: error: cannot assign a value to final variable length
+    b = Integer.parseInt(args[--args.length]);
+                                    ^
+/tmp/JavaCode.java:14: error: cannot assign a value to final variable length
+    a = Integer.parseInt(args[--args.length]);
+                                    ^
+2 errors

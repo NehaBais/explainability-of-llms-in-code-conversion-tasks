@@ -1,0 +1,31 @@
+error: unexpected token: `...`
+ --> /tmp/yicoder9b-int_factors-c-rs.rs:9:1
+  |
+9 | ... } // code for the function `xferFactors`
+  | ^^^
+  |
+help: use `..` for an exclusive range
+  |
+9 | .. } // code for the function `xferFactors`
+  | ~~
+help: or `..=` for an inclusive range
+  |
+9 | ..= } // code for the function `xferFactors`
+  | ~~~
+
+error[E0586]: inclusive range with no end
+ --> /tmp/yicoder9b-int_factors-c-rs.rs:9:1
+  |
+9 | ... } // code for the function `xferFactors`
+  | ^^^
+  |
+  = note: inclusive ranges must be bounded at the end (`..=b` or `a..=b`)
+help: use `..` instead
+  |
+9 - ... } // code for the function `xferFactors`
+9 + .. } // code for the function `xferFactors`
+  |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0586`.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/stablecode-dir_make-java-go.go:10:42: syntax error: unexpected ) at end of statement

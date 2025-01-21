@@ -1,0 +1,10 @@
+/tmp/stablecode-dir_make-go-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-dir_make-go-cpp.cpp:8:5: error: use of undeclared identifier 'fs'
+    8 |     fs::create_directories(path);
+      |     ^
+/tmp/stablecode-dir_make-go-cpp.cpp:10:12: error: use of undeclared identifier 'fs'
+   10 |   } catch (fs::filesystem_error &e) {
+      |            ^
+3 errors generated.

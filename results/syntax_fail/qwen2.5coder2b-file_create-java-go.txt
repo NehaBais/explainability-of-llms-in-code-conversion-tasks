@@ -1,0 +1,5 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder2b-file_create-java-go.go:20:24: not enough arguments in call to createFile
+	have (string, string)
+	want (string, string, int64)

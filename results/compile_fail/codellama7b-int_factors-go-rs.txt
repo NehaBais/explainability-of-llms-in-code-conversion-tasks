@@ -1,0 +1,22 @@
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-int_factors-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0277]: the type `[{integer}]` cannot be indexed by `i64`
+  --> /tmp/codellama7b-int_factors-go-rs.rs:26:24
+   |
+26 |             fs.push(fs[i] * p);
+   |                        ^ slice indices are of type `usize` or ranges of `usize`
+   |
+   = help: the trait `SliceIndex<[{integer}]>` is not implemented for `i64`, which is required by `Vec<{integer}>: Index<_>`
+   = help: the trait `SliceIndex<[{integer}]>` is implemented for `usize`
+   = help: for that trait implementation, expected `usize`, found `i64`
+   = note: required for `Vec<{integer}>` to implement `Index<i64>`
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0277`.

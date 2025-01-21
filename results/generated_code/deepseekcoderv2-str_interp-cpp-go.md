@@ -1,30 +1,24 @@
-Answer: 
-In Golang, we can use the ReplaceAll() function from the strings package to replace characters in a string. We first convert the original string into a rune slice using []rune(original), and then call ReplaceAll on that slice with "X" as the search pattern and replacement (little) as the new value. Finally, we join the resulting slice back into a string using string([]rune(newString))
+ Sure, here is the equivalent code in Golang:
 
-Here's the code:
-
-```
+```go
 package main
 
 import (
-    "fmt"
-    "strings"
+	"fmt"
+	"strings"
 )
 
 func main() {
-    original := "Mary had a X lamb."
-    toBeReplaced := "X"
-    replacement := "little"
+	original := "Mary had a X lamb."
+	toBeReplaced := "X"
+	replacement := "little"
 
-    newString := replaceAll([]rune(original), []rune(toBeReplaced), []rune(replacement))
-    fmt.Println("Original String:", original)
-    fmt.Println("Replacement Result:", string(newString))
-}
-
-func replaceAll(s, from, to []rune) (replaced []rune) {
-    for i := 0; i < len(from); i++ {
-        s = strings.Replace(string(s), string(from[i]), string(to[i]), -1)
-    }
-    return []rune(s)
+	newString := strings.Replace(original, toBeReplaced, replacement, 1)
+	fmt.Println("String after replacement:", newString)
 }
 ```
+
+In this Golang code:
+- We use the `strings` package for string manipulation.
+- The `Replace` function from the `strings` package is used to replace the first occurrence of `X` with `little`.
+- The result is printed using `fmt.Println`.

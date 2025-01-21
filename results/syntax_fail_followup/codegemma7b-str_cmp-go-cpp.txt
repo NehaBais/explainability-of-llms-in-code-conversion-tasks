@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_cmp-go-cpp.cpp:1:1: error: expected unqualified-id
+    1 | if (c.compare(0, c.size(), d, 0, d.size()) == 0) {
+      | ^
+1 error generated.

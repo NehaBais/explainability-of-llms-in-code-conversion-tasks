@@ -1,0 +1,22 @@
+/tmp/stablecode-bit_ops-rs-cpp.cpp:8:20: error: use of undeclared identifier 'setw'; did you mean 'getw'?
+    8 |     cout << hex << setw(2) << setfill('0') << (int)(a & b)) << endl;
+      |                    ^~~~
+      |                    getw
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:6: note: 'getw' declared here
+  393 | int      getw(FILE *);
+      |          ^
+/tmp/stablecode-bit_ops-rs-cpp.cpp:8:25: error: cannot initialize a parameter of type 'FILE *' (aka '__sFILE *') with an rvalue of type 'int'
+    8 |     cout << hex << setw(2) << setfill('0') << (int)(a & b)) << endl;
+      |                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:393:17: note: passing argument to parameter here
+  393 | int      getw(FILE *);
+      |                     ^
+/tmp/stablecode-bit_ops-rs-cpp.cpp:8:31: error: use of undeclared identifier 'setfill'
+    8 |     cout << hex << setw(2) << setfill('0') << (int)(a & b)) << endl;
+      |                               ^
+/tmp/stablecode-bit_ops-rs-cpp.cpp:8:59: error: expected ';' after expression
+    8 |     cout << hex << setw(2) << setfill('0') << (int)(a & b)) << endl;
+      |                                                           ^
+      |                                                           ;
+/tmp/stablecode-bit_ops-rs-cpp.cpp:8:59: error: expected expression
+5 errors generated.

@@ -1,0 +1,22 @@
+/tmp/deepseekcoderv2-dir_make-java-c.c:8:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+      |       ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:8:34: error: use of undeclared identifier 'errno'
+    8 |   if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+      |                                  ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:8:43: error: use of undeclared identifier 'EEXIST'
+    8 |   if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+      |                                           ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:14:15: error: variable has incomplete type 'struct stat'
+   14 |   struct stat sb;
+      |               ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:14:10: note: forward declaration of 'struct stat'
+   14 |   struct stat sb;
+      |          ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:15:7: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (stat(path, &sb) == 0 && S_ISDIR(sb.st_mode)) {
+      |       ^
+/tmp/deepseekcoderv2-dir_make-java-c.c:15:31: error: call to undeclared function 'S_ISDIR'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |   if (stat(path, &sb) == 0 && S_ISDIR(sb.st_mode)) {
+      |                               ^
+6 errors generated.

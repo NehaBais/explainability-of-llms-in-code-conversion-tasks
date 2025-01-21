@@ -1,0 +1,1 @@
+fmt.Println(strings.Index(s, string(c))) // starting from a known character within the string and of m length

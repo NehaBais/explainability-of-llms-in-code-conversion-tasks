@@ -1,0 +1,47 @@
+warning: unused import: `std::fmt`
+ --> /tmp/codellama7b-int_factors-go-rs.rs:1:5
+  |
+1 | use std::fmt;
+  |     ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-int_factors-go-rs.rs:34:12
+   |
+34 |     apf(2, e as usize);
+   |     ---    ^^^^^^^^^^ expected `i64`, found `usize`
+   |     |
+   |     arguments to this function are incorrect
+   |
+note: closure parameter defined here
+  --> /tmp/codellama7b-int_factors-go-rs.rs:24:28
+   |
+24 |     let mut apf = |p: i64, e: i64| {
+   |                            ^^^^^^
+help: you can convert a `usize` to an `i64` and panic if the converted value doesn't fit
+   |
+34 |     apf(2, (e as usize).try_into().unwrap());
+   |            +          +++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-int_factors-go-rs.rs:45:20
+   |
+45 |             apf(d, e as usize);
+   |             ---    ^^^^^^^^^^ expected `i64`, found `usize`
+   |             |
+   |             arguments to this function are incorrect
+   |
+note: closure parameter defined here
+  --> /tmp/codellama7b-int_factors-go-rs.rs:24:28
+   |
+24 |     let mut apf = |p: i64, e: i64| {
+   |                            ^^^^^^
+help: you can convert a `usize` to an `i64` and panic if the converted value doesn't fit
+   |
+45 |             apf(d, (e as usize).try_into().unwrap());
+   |                    +          +++++++++++++++++++++
+
+error: aborting due to 2 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0308`.

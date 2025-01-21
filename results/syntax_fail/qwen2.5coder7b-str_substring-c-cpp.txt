@@ -1,0 +1,70 @@
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:8:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+    8 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:8:12: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+    8 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:16:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+   16 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:16:12: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+   16 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:20:22: error: cannot increment value of type 'const std::string' (aka 'const basic_string<char>')
+   20 |   for (; n > 0; --n, ++s)
+      |                      ^ ~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:21:9: error: indirection requires pointer operand ('const std::string' (aka 'const basic_string<char>') invalid)
+   21 |     if (*s == '\0')
+      |         ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:23:14: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+   23 |       return {};
+      |              ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:23:14: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+   23 |       return {};
+      |              ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:35:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+   35 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:35:12: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+   35 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:41:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   41 |   auto pos = s.find(ch);
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:43:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+   43 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:43:12: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+   43 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:50:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   50 |   auto pos = s.find(in);
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:52:12: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+   52 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:52:12: error: non-aggregate type 'std::string' (aka 'basic_string<char>') cannot be initialized with an initializer list
+   52 |     return {};
+      |            ^~
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:57:22: error: no template named 'function' in namespace 'std'
+   57 | void test(const std::function<std::string()> &func) {
+      |                 ~~~~~^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:58:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   58 |   auto r = func();
+      |   ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:69:8: error: expected expression
+   69 |   test([s]() { return substring(s, 12, 5); });   // get "short"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:70:8: error: expected expression
+   70 |   test([s]() { return substring(s, 6, -1); });   // get "world shortest program"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:71:8: error: expected expression
+   71 |   test([s]() { return str_wholeless1(s); });     // "... progra"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:72:8: error: expected expression
+   72 |   test([s]() { return str_fromch(s, 'w', 5); }); // "world"
+      |        ^
+/tmp/qwen2.5coder7b-str_substring-c-cpp.cpp:73:8: error: expected expression
+   73 |   test([s]() { return str_fromstr(s, "ro", 3); }); // "rog"
+      |        ^
+9 warnings and 14 errors generated.

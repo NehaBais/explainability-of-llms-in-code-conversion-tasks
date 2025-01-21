@@ -1,0 +1,25 @@
+error: macro expansion ignores token `{` and any following
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/macros.rs:142:23
+  |
+ ::: /tmp/codegemma7b-str_concat-js-rs.rs:2:1
+  |
+2 | println!("{s} there!");
+  | ---------------------- caused by the macro expansion here
+  |
+  = note: the usage of `println!` is likely invalid in item context
+
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/codegemma7b-str_concat-js-rs.rs:2:24
+  |
+2 | println!("{s} there!");
+  |                        ^ consider adding a `main` function to `/tmp/codegemma7b-str_concat-js-rs.rs`
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_concat-js-rs.rs:1:8
+  |
+1 | const s = "hello";
+  |        ^ help: provide a type for the constant: `: &str`
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-str_match-java-c.c:71:18: error: call to undeclared function 'containsString'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   71 |   printf("%d\n", containsString(str5, str6)); // Returns false
+      |                  ^
+/tmp/dolphincoder7b-str_match-java-c.c:81:32: error: too many arguments to function call, expected 2, have 3
+   81 |   loc = findString(str7, str8, loc + 1);
+      |         ~~~~~~~~~~             ^~~~~~~
+/tmp/dolphincoder7b-str_match-java-c.c:21:5: note: 'findString' declared here
+   21 | int findString(char *haystack, char *needle) {
+      |     ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.

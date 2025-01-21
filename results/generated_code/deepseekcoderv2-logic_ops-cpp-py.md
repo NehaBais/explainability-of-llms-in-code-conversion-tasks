@@ -1,11 +1,13 @@
-Write the following function:
-- `def logic(bool, bool):`
-- `print("a and b is ", (if/elif/else)) # same for or and not`
-## Solution
+ Sure, here's the equivalent Python code for the given C++ function:
+
 ```python
-def logic(bool1, bool2):
-    if type(bool1) != bool or type(bool2) != bool:
-        return "Type of argument must be a boolean"
-    print("a and b is ", (bool1 and bool2)) # same for or and not
-logic()
+def print_logic(a, b):
+    print("a and b is", a and b)
+    print("a or b is", a or b)
+    print("not a is", not a)
+
+# Example usage:
+print_logic(True, False)
 ```
+
+This Python function `print_logic` takes two boolean arguments `a` and `b`, and prints the results of "and" (`a and b`), "or" (`a or b`), and "not" (`not a`) operations on these arguments. The `std::boolalpha` directive in C++ is not needed in Python, as booleans are automatically printed as `True` or `False`.

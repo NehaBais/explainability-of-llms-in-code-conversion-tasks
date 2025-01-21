@@ -1,0 +1,29 @@
+/tmp/stablecode-file_create-rs-cpp.cpp:8:8: error: no member named 'filesystem' in namespace 'std'
+    8 |   std::filesystem::path f_path(root);
+      |   ~~~~~^
+/tmp/stablecode-file_create-rs-cpp.cpp:9:3: error: use of undeclared identifier 'f_path'
+    9 |   f_path /= FILE_NAME;
+      |   ^
+/tmp/stablecode-file_create-rs-cpp.cpp:11:8: error: no member named 'filesystem' in namespace 'std'
+   11 |   std::filesystem::path d_path(root);
+      |   ~~~~~^
+/tmp/stablecode-file_create-rs-cpp.cpp:12:3: error: use of undeclared identifier 'd_path'
+   12 |   d_path /= DIR_NAME;
+      |   ^
+/tmp/stablecode-file_create-rs-cpp.cpp:15:14: error: no member named 'filesystem' in namespace 'std'
+   15 |         std::filesystem::create_directories(d_path));
+      |         ~~~~~^
+/tmp/stablecode-file_create-rs-cpp.cpp:15:45: error: use of undeclared identifier 'd_path'
+   15 |         std::filesystem::create_directories(d_path));
+      |                                             ^
+/tmp/stablecode-file_create-rs-cpp.cpp:16:28: error: unknown type name 'f_path'
+   16 |         std::ofstream file(f_path);
+      |                            ^
+/tmp/stablecode-file_create-rs-cpp.cpp:16:27: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   16 |         std::ofstream file(f_path);
+      |                           ^~~~~~~~
+/tmp/stablecode-file_create-rs-cpp.cpp:16:28: note: add a pair of parentheses to declare a variable
+   16 |         std::ofstream file(f_path);
+      |                            ^
+      |                            (
+1 warning and 7 errors generated.

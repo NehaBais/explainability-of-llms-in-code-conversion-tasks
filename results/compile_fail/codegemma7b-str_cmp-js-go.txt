@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/codegemma7b-str_cmp-js-go.go:9:10: invalid operation: 123 == "123" (mismatched types untyped int and untyped string)
+/tmp/codegemma7b-str_cmp-js-go.go:10:10: invalid operation: 123 == "123" (mismatched types untyped int and untyped string)
+/tmp/codegemma7b-str_cmp-js-go.go:13:10: invalid operation: 123 != "123" (mismatched types untyped int and untyped string)
+/tmp/codegemma7b-str_cmp-js-go.go:14:10: invalid operation: 123 != "123" (mismatched types untyped int and untyped string)
+/tmp/codegemma7b-str_cmp-js-go.go:17:3: undefined: strings

@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_exists-js-go.go:28:10: syntax error: unexpected :, expected := or = or comma
+/tmp/deepseekcoder7b-file_exists-js-go.go:28:12: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_exists-js-go.go:28:20: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-file_exists-js-go.go:28:36: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_exists-js-go.go:28:72: newline in rune literal

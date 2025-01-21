@@ -1,0 +1,39 @@
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:3:18: error: unknown type name 'bool'
+    3 | void boolean_ops(bool a, bool b) {
+      |                  ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:3:26: error: unknown type name 'bool'
+    3 | void boolean_ops(bool a, bool b) {
+      |                          ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:11:15: error: use of undeclared identifier 'true'
+   11 |   boolean_ops(true, true);
+      |               ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:11:21: error: use of undeclared identifier 'true'
+   11 |   boolean_ops(true, true);
+      |                     ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:12:15: error: use of undeclared identifier 'true'
+   12 |   boolean_ops(true, false);
+      |               ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:12:21: error: use of undeclared identifier 'false'
+   12 |   boolean_ops(true, false);
+      |                     ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:13:15: error: use of undeclared identifier 'false'; did you mean 'else'?
+   13 |   boolean_ops(false, true);
+      |               ^~~~~
+      |               else
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:13:15: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:13:22: error: use of undeclared identifier 'true'
+   13 |   boolean_ops(false, true);
+      |                      ^
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:14:15: error: use of undeclared identifier 'false'; did you mean 'else'?
+   14 |   boolean_ops(false, false);
+      |               ^~~~~
+      |               else
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:14:15: error: expected expression
+/tmp/qwen2.5coder2b-logic_ops-rs-c.c:14:22: error: use of undeclared identifier 'false'; did you mean 'fclose'?
+   14 |   boolean_ops(false, false);
+      |                      ^~~~~
+      |                      fclose
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:230:6: note: 'fclose' declared here
+  230 | int      fclose(FILE *);
+      |          ^
+12 errors generated.

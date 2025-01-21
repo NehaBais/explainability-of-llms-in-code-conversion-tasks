@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	// You can specify order
 	fmt.Printf("Mary had a %s lamb\n", "little")
-
+	// You can specify order
+	fmt.Printf("%s had a %s lamb\n", "Mary", "little")
 	// Or named arguments if you prefer
-	fmt.Printf("%[2]s had a %[1]s lamb\n", "little", "Mary")
+	fmt.Printf("%s had a %s lamb\n", fmt.Sprintf("%s", "Mary"), fmt.Sprintf("%s", "little"))
 }

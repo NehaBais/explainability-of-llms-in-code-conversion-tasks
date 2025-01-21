@@ -1,16 +1,22 @@
-import os, shutil
+import os
 
-# Rename file input.txt to output.txt in current working directory
-if os.path.exists("input.txt"):
-    os.rename("input.txt", "output.txt")
 
-# Rename file c:/input.txt to c:/output.txt in root directory of the filesystem
-if os.path.exists("c:/input.txt"):
-    shutil.move("c:/input.txt", "c:/output.txt")
+# Function to rename a file in the current working directory
+def move_file(old_name, new_name):
+    if os.path.exists(old_name):
+        os.rename(old_name, new_name)
 
-# Move folder docs into mydocs in current working directory
-shutil.move("docs", "mydocs")
 
-# Move folder c:/docs into c:/mydocs in root directory of the filesystem
-if os.path.exists("c:/docs"):
-    shutil.move("c:/docs", "c:/mydocs")
+# Function to rename a folder in the current working directory
+def move_folder(old_name, new_name):
+    if os.path.isdir(old_name):
+        os.rename(old_name, new_name)
+
+
+# Rename file and folder in the current working directory
+move_file("input.txt", "output.txt")
+move_folder("docs", "mydocs")
+
+# Rename file and folder in the filesystem root
+move_file("c:/input.txt", "c:/output.txt")
+move_folder("c:/docs", "c:/mydocs")

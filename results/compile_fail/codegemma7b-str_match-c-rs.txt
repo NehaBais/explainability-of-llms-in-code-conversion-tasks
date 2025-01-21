@@ -1,0 +1,15 @@
+error[E0600]: cannot apply unary operator `-` to type `usize`
+  --> /tmp/codegemma7b-str_match-c-rs.rs:28:25
+   |
+28 |         index.unwrap_or(-1)
+   |                         ^^ cannot apply unary operator `-`
+   |
+   = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `usize`
+   |
+28 |         index.unwrap_or(usize::MAX)
+   |                         ~~~~~~~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0600`.

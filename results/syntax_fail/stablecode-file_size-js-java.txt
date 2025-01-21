@@ -1,0 +1,7 @@
+/tmp/FileSizeChecker.java:7: error: ';' expected
+        long currentDirectorySize = getFileSize("input.txt"));
+                                                            ^
+/tmp/FileSizeChecker.java:11: error: ';' expected
+        long rootDirectorySize = getFileSize("c:/input.txt"));
+                                                            ^
+2 errors

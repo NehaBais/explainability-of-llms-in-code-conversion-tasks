@@ -1,0 +1,23 @@
+/tmp/stablecode-dir_make-go-c.c:5:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (mkdir(path, 0700)) {
+      |       ^
+/tmp/stablecode-dir_make-go-c.c:7:9: error: use of undeclared identifier 'errno'
+    7 |     if (errno != EEXIST)) {
+      |         ^
+/tmp/stablecode-dir_make-go-c.c:7:18: error: use of undeclared identifier 'EEXIST'
+    7 |     if (errno != EEXIST)) {
+      |                  ^
+/tmp/stablecode-dir_make-go-c.c:7:25: error: extraneous ')' after condition, expected a statement
+    7 |     if (errno != EEXIST)) {
+      |                         ^
+/tmp/stablecode-dir_make-go-c.c:8:68: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |         fprintf(stderr, "Error creating directory %s: %s\n", path, strerror(errno)));
+      |                                                                    ^
+/tmp/stablecode-dir_make-go-c.c:8:68: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/stablecode-dir_make-go-c.c:8:84: error: extraneous ')' before ';'
+    8 |         fprintf(stderr, "Error creating directory %s: %s\n", path, strerror(errno)));
+      |                                                                                    ^
+/tmp/stablecode-dir_make-go-c.c:8:77: error: use of undeclared identifier 'errno'
+    8 |         fprintf(stderr, "Error creating directory %s: %s\n", path, strerror(errno)));
+      |                                                                             ^
+7 errors generated.

@@ -1,0 +1,40 @@
+/tmp/granitecode8b-dir_make-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:4:16: error: use of undeclared identifier 'std'
+    4 | namespace fs = std::filesystem;
+      |                ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:5:19: error: use of undeclared identifier 'std'
+    5 | void mkdirp(const std::string &p) {
+      |                   ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::error_code ec;
+      |   ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::create_directories(p, ec);
+      |   ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:9:11: error: use of undeclared identifier 'std'
+    9 |     throw std::system_error(ec);
+      |           ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:14:5: error: no matching function for call to 'mkdirp'
+   14 |     mkdirp("./path/to/dir");
+      |     ^~~~~~
+/tmp/granitecode8b-dir_make-js-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'const char[14]' to 'const int' for 1st argument
+    5 | void mkdirp(const std::string &p) {
+      |      ^      ~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode8b-dir_make-js-cpp.cpp:15:18: error: use of undeclared identifier 'std'
+   15 |   } catch (const std::exception &e) {
+      |                  ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:16:5: error: use of undeclared identifier 'std'
+   16 |     std::cerr << "Error: " << e.what() << std::endl;
+      |     ^
+/tmp/granitecode8b-dir_make-js-cpp.cpp:16:43: error: use of undeclared identifier 'std'
+   16 |     std::cerr << "Error: " << e.what() << std::endl;
+      |                                           ^
+12 errors generated.

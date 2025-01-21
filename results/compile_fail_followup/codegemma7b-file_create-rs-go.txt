@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codegemma7b-file_create-rs-go.go:4:2: "io/ioutil" imported and not used
+/tmp/codegemma7b-file_create-rs-go.go:5:2: "os" imported and not used
+/tmp/codegemma7b-file_create-rs-go.go:6:2: "path/filepath" imported and not used

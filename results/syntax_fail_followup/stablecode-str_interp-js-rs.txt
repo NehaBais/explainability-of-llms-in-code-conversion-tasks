@@ -1,0 +1,8 @@
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_interp-js-rs.rs:4:54
+  |
+4 | original.replace("X".to_string(), little.to_string()));
+  |                                                      ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

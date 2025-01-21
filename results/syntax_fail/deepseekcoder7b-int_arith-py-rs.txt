@@ -1,0 +1,40 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:34:5
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |     ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:34:11
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |            ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:34:14
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |               ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:34:23
+   |
+34 |    <｜begin▁of▁sentence｜>}
+   |                        ^^
+
+error: this file contains an unclosed delimiter
+  --> /tmp/deepseekcoder7b-int_arith-py-rs.rs:34:26
+   |
+3  | fn main() {
+   |           - unclosed delimiter
+...
+32 |     } else {
+   |            - this delimiter might not be properly closed...
+33 |         println!("Can't perform operation because of dividing by zero.");    
+34 |    <｜begin▁of▁sentence｜>}
+   |                           -^
+   |                           |
+   |                           ...as it matches this but it has different indentation
+
+error: aborting due to 5 previous errors
+

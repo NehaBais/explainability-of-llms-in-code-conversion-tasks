@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/granitecode8b-str_cmp-py-go.go:39:5: undefined: strings
+/tmp/granitecode8b-str_cmp-py-go.go:41:12: undefined: strings
+/tmp/granitecode8b-str_cmp-py-go.go:57:15: undefined: strconv
+/tmp/granitecode8b-str_cmp-py-go.go:62:15: undefined: strconv

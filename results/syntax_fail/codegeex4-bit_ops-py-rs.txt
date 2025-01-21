@@ -1,0 +1,74 @@
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:41:9
+   |
+37 |         "    AND:     0b{:0width$b} & 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+41 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:48:9
+   |
+44 |         "    OR:      0b{:0width$b} | 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+48 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:55:9
+   |
+51 |         "    XOR:     0b{:0width$b} ^ 0b{:0width$b} = 0b{:0width$b}\n",
+   |         -------------------------------------------------------------- formatting specifier missing
+...
+55 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:61:9
+   |
+58 |         "    NOT:   ~ 0b{:0width$b} = 0b{:0width$b}\n",
+   |         ---------------------------------------------- formatting specifier missing
+...
+61 |         width
+   |         ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:77:13
+   |
+72 |             "               rotr({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------- formatting specifier missing
+...
+77 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:88:13
+   |
+83 |             "               rotl({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------- formatting specifier missing
+...
+88 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+  --> /tmp/codegeex4-bit_ops-py-rs.rs:99:13
+   |
+94 |             "               asr({}, {}, {}) = 0b{:0width$b}",
+   |             ------------------------------------------------ formatting specifier missing
+...
+99 |             width
+   |             ^^^^^ argument never used
+
+error: argument never used
+   --> /tmp/codegeex4-bit_ops-py-rs.rs:107:13
+    |
+102 |             "               asr({}, {}, {}) = 0b{:0width$b}",
+    |             ------------------------------------------------ formatting specifier missing
+...
+107 |             width
+    |             ^^^^^ argument never used
+
+error: aborting due to 8 previous errors
+

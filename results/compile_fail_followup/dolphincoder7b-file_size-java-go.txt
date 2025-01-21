@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_size-java-go.go:7:19: cannot convert "file.txt" (untyped string constant) to type os.File

@@ -1,0 +1,67 @@
+error[E0601]: `main` function not found in crate `deepseekcoder7b_bit_ops_c_rs`
+  --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:13:2
+   |
+13 | }
+   |  ^ consider adding a `main` function to `/tmp/deepseekcoder7b-bit_ops-c-rs.rs`
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:2:33
+  |
+2 |     println!("a and b: {}", a & b);
+  |                                 ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 & u32`
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:2:31
+  |
+2 |     println!("a and b: {}", a & b);
+  |                               ^ no implementation for `i32 & u32`
+  |
+  = help: the trait `BitAnd<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitAnd<Rhs>`:
+            `&'a i32` implements `BitAnd<i32>`
+            `&i32` implements `BitAnd<&i32>`
+            `i32` implements `BitAnd<&i32>`
+            `i32` implements `BitAnd`
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:3:32
+  |
+3 |     println!("a or b: {}", a | b);
+  |                                ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 | u32`
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:3:30
+  |
+3 |     println!("a or b: {}", a | b);
+  |                              ^ no implementation for `i32 | u32`
+  |
+  = help: the trait `BitOr<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitOr<Rhs>`:
+            `&'a i32` implements `BitOr<i32>`
+            `&i32` implements `BitOr<&i32>`
+            `i32` implements `BitOr<&i32>`
+            `i32` implements `BitOr`
+
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:4:33
+  |
+4 |     println!("a xor b: {}", a ^ b);
+  |                                 ^ expected `i32`, found `u32`
+
+error[E0277]: no implementation for `i32 ^ u32`
+ --> /tmp/deepseekcoder7b-bit_ops-c-rs.rs:4:31
+  |
+4 |     println!("a xor b: {}", a ^ b);
+  |                               ^ no implementation for `i32 ^ u32`
+  |
+  = help: the trait `BitXor<u32>` is not implemented for `i32`
+  = help: the following other types implement trait `BitXor<Rhs>`:
+            `&'a i32` implements `BitXor<i32>`
+            `&i32` implements `BitXor<&i32>`
+            `i32` implements `BitXor<&i32>`
+            `i32` implements `BitXor`
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0601.
+For more information about an error, try `rustc --explain E0277`.

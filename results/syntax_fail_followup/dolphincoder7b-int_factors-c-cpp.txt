@@ -1,0 +1,31 @@
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:7:15: warning: default member initializer for non-static data member is a C++11 extension [-Wc++11-extensions]
+    7 |   short count = 0;
+      |               ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:21:9: error: 'this' argument to member function 'xferFactors' has type 'const Factors', but function is not marked const
+   21 |         xferFactors(flist, flist.size());
+      |         ^~~~~~~~~~~
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:9:8: note: 'xferFactors' declared here
+    9 |   void xferFactors(std::vector<int> &flist, int flix) {
+      |        ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:30:7: error: 'this' argument to member function 'xferFactors' has type 'const Factors', but function is not marked const
+   30 |       xferFactors(flist, flist.size());
+      |       ^~~~~~~~~~~
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:9:8: note: 'xferFactors' declared here
+    9 |   void xferFactors(std::vector<int> &flist, int flix) {
+      |        ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:33:17: error: no member named 'make_unique' in namespace 'std'
+   33 |     return std::make_unique<Factors>();
+      |            ~~~~~^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:33:29: error: 'Factors' does not refer to a value
+   33 |     return std::make_unique<Factors>();
+      |                             ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:5:8: note: declared here
+    5 | struct Factors {
+      |        ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:33:38: error: expected expression
+   33 |     return std::make_unique<Factors>();
+      |                                      ^
+/tmp/dolphincoder7b-int_factors-c-cpp.cpp:47:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   47 |     auto factors = ftors.factor(nums2factor[i]);
+      |     ^
+2 warnings and 5 errors generated.

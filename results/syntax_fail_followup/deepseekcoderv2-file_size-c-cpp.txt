@@ -1,0 +1,31 @@
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:9:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    9 |     auto path1 = fs::path("input.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:9:18: error: use of undeclared identifier 'fs'
+    9 |     auto path1 = fs::path("input.txt");
+      |                  ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:10:9: error: use of undeclared identifier 'fs'
+   10 |     if (fs::exists(path1)) {
+      |         ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:11:20: error: use of undeclared identifier 'fs'
+   11 |       std::cout << fs::file_size(path1) << std::endl;
+      |                    ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:18:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |     auto path2 = fs::path("/input.txt");
+      |     ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:18:18: error: use of undeclared identifier 'fs'
+   18 |     auto path2 = fs::path("/input.txt");
+      |                  ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:19:9: error: use of undeclared identifier 'fs'
+   19 |     if (fs::exists(path2)) {
+      |         ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:20:20: error: use of undeclared identifier 'fs'
+   20 |       std::cout << fs::file_size(path2) << std::endl;
+      |                    ^
+/tmp/deepseekcoderv2-file_size-c-cpp.cpp:24:18: error: use of undeclared identifier 'fs'
+   24 |   } catch (const fs::filesystem_error &e) {
+      |                  ^
+2 warnings and 8 errors generated.

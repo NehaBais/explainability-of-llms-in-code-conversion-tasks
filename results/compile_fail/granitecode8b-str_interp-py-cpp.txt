@@ -1,0 +1,16 @@
+/tmp/granitecode8b-str_interp-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-py-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string extra = "little";
+      |   ^
+/tmp/granitecode8b-str_interp-py-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::string new_str = "Mary had a " + extra + " lamb.";
+      |   ^
+/tmp/granitecode8b-str_interp-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::cout << new_str << std::endl;
+      |   ^
+/tmp/granitecode8b-str_interp-py-cpp.cpp:5:27: error: use of undeclared identifier 'std'
+    5 |   std::cout << new_str << std::endl;
+      |                           ^
+5 errors generated.

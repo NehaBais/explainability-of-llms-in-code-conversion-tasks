@@ -1,0 +1,7 @@
+/tmp/Main.java:20: error: method createDirectory in class Files cannot be applied to given types;
+    Files.createDirectory(Paths.get("/docs"), perms);
+         ^
+  required: Path,FileAttribute<?>[]
+  found:    Path,Set<PosixFilePermission>
+  reason: varargs mismatch; Set<PosixFilePermission> cannot be converted to FileAttribute<?>
+1 error

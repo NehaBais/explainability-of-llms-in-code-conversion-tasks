@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codellama7b-bit_ops-cpp-go.go:13:31: undefined: bits.And
+/tmp/codellama7b-bit_ops-cpp-go.go:14:31: undefined: bits.Or
+/tmp/codellama7b-bit_ops-cpp-go.go:15:31: undefined: bits.Xor
+/tmp/codellama7b-bit_ops-cpp-go.go:18:31: undefined: bits.Not
+/tmp/codellama7b-bit_ops-cpp-go.go:21:31: undefined: bits.LShift
+/tmp/codellama7b-bit_ops-cpp-go.go:22:31: undefined: bits.RShift
+/tmp/codellama7b-bit_ops-cpp-go.go:24:31: undefined: bits.LRotate
+/tmp/codellama7b-bit_ops-cpp-go.go:25:31: undefined: bits.Rotl
+/tmp/codellama7b-bit_ops-cpp-go.go:26:31: undefined: bits.Ror

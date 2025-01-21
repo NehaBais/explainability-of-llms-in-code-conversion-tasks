@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-str_cmp-rs-c.c:51:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   51 |   free(a2);
+      |   ^
+/tmp/qwen2.5coder2b-str_cmp-rs-c.c:51:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+1 error generated.

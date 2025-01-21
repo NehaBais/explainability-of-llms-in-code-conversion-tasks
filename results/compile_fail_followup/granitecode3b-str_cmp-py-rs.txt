@@ -1,0 +1,37 @@
+error: expected expression, found keyword `type`
+ --> /tmp/granitecode3b-str_cmp-py-rs.rs:5:9
+  |
+5 |         type(a),
+  |         ^^^^ expected expression
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:38:5
+   |
+38 |     compare(24, 123);
+   |     ^^^^^^^ --  --- expected `&str`, found integer
+   |             |
+   |             expected `&str`, found integer
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:39:5
+   |
+39 |     compare(5.0, 5);
+   |     ^^^^^^^ ---  - expected `&str`, found integer
+   |             |
+   |             expected `&str`, found floating-point number
+   |
+note: function defined here
+  --> /tmp/granitecode3b-str_cmp-py-rs.rs:1:4
+   |
+1  | fn compare(a: &str, b: &str) {
+   |    ^^^^^^^ -------  -------
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

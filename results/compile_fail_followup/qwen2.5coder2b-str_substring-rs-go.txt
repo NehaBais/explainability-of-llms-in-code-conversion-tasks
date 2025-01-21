@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-str_substring-rs-go.go:18:45: syntax error: unexpected newline in argument list; possibly missing comma or )

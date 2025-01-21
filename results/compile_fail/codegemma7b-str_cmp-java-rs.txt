@@ -1,0 +1,52 @@
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:25:19
+   |
+25 |     if A.cmp(B) < 0 {
+   |        --------   ^ expected `Ordering`, found integer
+   |        |
+   |        expected because this is `std::cmp::Ordering`
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:27:26
+   |
+27 |     } else if A.cmp(B) > 0 {
+   |               --------   ^ expected `Ordering`, found integer
+   |               |
+   |               expected because this is `std::cmp::Ordering`
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:31:20
+   |
+31 |     if A.cmp(B) >= 0 {
+   |        --------    ^ expected `Ordering`, found integer
+   |        |
+   |        expected because this is `std::cmp::Ordering`
+
+error[E0308]: mismatched types
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:34:20
+   |
+34 |     if A.cmp(B) <= 0 {
+   |        --------    ^ expected `Ordering`, found integer
+   |        |
+   |        expected because this is `std::cmp::Ordering`
+
+error[E0277]: `std::cmp::Ordering` doesn't implement `std::fmt::Display`
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:38:49
+   |
+38 |     println!("The lexical relationship is: {}", A.cmp(B));
+   |                                                 ^^^^^^^^ `std::cmp::Ordering` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `std::cmp::Ordering`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `cmp_ignore_case` found for reference `&str` in the current scope
+  --> /tmp/codegemma7b-str_cmp-java-rs.rs:41:11
+   |
+41 |         A.cmp_ignore_case(B)
+   |           ^^^^^^^^^^^^^^^ method not found in `&str`
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0599.
+For more information about an error, try `rustc --explain E0277`.

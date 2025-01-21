@@ -1,0 +1,11 @@
+/tmp/codegemma7b-bit_ops-java-cpp.cpp:11:36: error: no member named 'rotl' in namespace 'std'; did you mean 'powl'?
+   11 |   std::cout << "a ROL b: " << std::rotl(a, b) << std::endl; // rotate left
+      |                               ~~~~~^~~~
+      |                                    powl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath:503:9: note: 'powl' declared here
+  503 | using ::powl _LIBCPP_USING_IF_EXISTS;
+      |         ^
+/tmp/codegemma7b-bit_ops-java-cpp.cpp:12:36: error: no member named 'rotr' in namespace 'std'
+   12 |   std::cout << "a ROR b: " << std::rotr(a, b) << std::endl; // rotate right
+      |                               ~~~~~^
+2 errors generated.

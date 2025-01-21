@@ -1,0 +1,10 @@
+/tmp/codeqwen-dir_make-js-c.c:12:14: error: use of undeclared identifier 'errno'
+   12 |   } else if (errno == ENOENT) { // Check for ENOENT error
+      |              ^
+/tmp/codeqwen-dir_make-js-c.c:12:23: error: use of undeclared identifier 'ENOENT'
+   12 |   } else if (errno == ENOENT) { // Check for ENOENT error
+      |                       ^
+/tmp/codeqwen-dir_make-js-c.c:13:12: error: use of undeclared identifier 'PATH_MAX'
+   13 |     char p[PATH_MAX];
+      |            ^
+3 errors generated.

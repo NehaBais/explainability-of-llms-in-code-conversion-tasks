@@ -1,0 +1,30 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/codellama7b-str_substring-java-rs.rs:5:1
+  |
+1 | fn substring(str: &str, n: usize, m: usize) -> String {
+  | ----------------------------------------------------- previous definition of the value `substring` here
+...
+5 | fn substring(str: &str, n: usize) -> String {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codellama7b-str_substring-java-rs.rs:12:2
+   |
+12 | }
+   |  ^ consider adding a `main` function to `/tmp/codellama7b-str_substring-java-rs.rs`
+
+error[E0599]: no method named `len` found for type `char` in the current scope
+  --> /tmp/codellama7b-str_substring-java-rs.rs:11:30
+   |
+11 |     return str[0..=last_char.len() - 1].to_string();
+   |                              ^^^
+   |
+help: there is a method `le` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1196:5
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0428, E0599, E0601.
+For more information about an error, try `rustc --explain E0428`.

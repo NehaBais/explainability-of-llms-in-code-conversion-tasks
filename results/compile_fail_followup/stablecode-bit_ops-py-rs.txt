@@ -1,0 +1,49 @@
+error: invalid format string: expected `'}'`, found `'{'`
+ --> /tmp/stablecode-bit_ops-py-rs.rs:5:24
+  |
+5 |         "AND:\t\t0b{a:0{width}b}} 
+  |                    -   ^ expected `'}'` in format string
+  |                    |
+  |                    because of this opening brace
+  |
+  = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:16:23
+   |
+16 |         "OR:\t\t0b{a:0{width}b}} 
+   |                   -   ^ expected `'}'` in format string
+   |                   |
+   |                   because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:27:24
+   |
+27 |         "XOR:\t\t0b{a:0{width}b}} 
+   |                    -   ^ expected `'}'` in format string
+   |                    |
+   |                    because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error: invalid format string: expected `'}'`, found `'{'`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:38:26
+   |
+38 |         "NOT:\t\t~ 0b{a:0{width}b}}
+   |                      -   ^ expected `'}'` in format string
+   |                      |
+   |                      because of this opening brace
+   |
+   = note: if you intended to print `{`, you can escape it using `{{`
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/stablecode-bit_ops-py-rs.rs:44:2
+   |
+44 | }
+   |  ^ consider adding a `main` function to `/tmp/stablecode-bit_ops-py-rs.rs`
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

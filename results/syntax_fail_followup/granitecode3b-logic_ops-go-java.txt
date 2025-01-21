@@ -1,0 +1,8 @@
+/tmp/None.java:1: error: class, interface, enum, or record expected
+--enable-preview
+^
+/tmp/None.java:2: error: implicitly declared classes are a preview feature and are disabled by default.
+public static void printLogic(boolean a, boolean b) {
+              ^
+  (use --enable-preview to enable implicitly declared classes)
+2 errors

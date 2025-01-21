@@ -1,0 +1,4 @@
+/tmp/Factorization.java:13: error: variable i is already defined in method main(String[])
+      for (int i = 2; i * i <= n; i++) {
+               ^
+1 error

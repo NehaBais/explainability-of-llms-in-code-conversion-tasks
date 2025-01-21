@@ -1,0 +1,8 @@
+error: cannot find macro `regex` in this scope
+  --> /tmp/deepseekcoder7b-str_match-py-rs.rs:13:14
+   |
+13 |     let re = regex!(s2);
+   |              ^^^^^
+
+error: aborting due to 1 previous error
+

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_size-c-go.go:26:17: syntax error: unexpected struct after top level declaration

@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/stablecode-int_factors-py-go.go:11:37: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-py-go.go:16:36: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-py-go.go:20:29: syntax error: unexpected ), expected comma, : or ]
+/tmp/stablecode-int_factors-py-go.go:23:33: syntax error: unexpected ) at end of statement
+/tmp/stablecode-int_factors-py-go.go:27:55: syntax error: unexpected ), expected comma, : or ]
+/tmp/stablecode-int_factors-py-go.go:37:58: syntax error: unexpected ) at end of statement

@@ -1,0 +1,17 @@
+/tmp/JavaCode.java:7: error: cannot find symbol
+    if (args.length < 3) exit(1);
+                         ^
+  symbol:   method exit(int)
+  location: class JavaCode
+/tmp/JavaCode.java:8: error: cannot assign a value to final variable length
+    b = Integer.parseInt(args[--args.length]);
+                                    ^
+/tmp/JavaCode.java:9: error: cannot find symbol
+    if (b == 0) exit(2);
+                ^
+  symbol:   method exit(int)
+  location: class JavaCode
+/tmp/JavaCode.java:10: error: cannot assign a value to final variable length
+    a = Integer.parseInt(args[--args.length]);
+                                    ^
+4 errors

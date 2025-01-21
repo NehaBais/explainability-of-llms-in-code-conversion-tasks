@@ -1,0 +1,30 @@
+error[E0425]: cannot find function `path_exists` in module `fs`
+ --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:6:16
+  |
+6 |         if fs::path_exists("input.txt") {
+  |                ^^^^^^^^^^^ not found in `fs`
+
+error[E0425]: cannot find function `path_exists` in module `fs`
+  --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:13:16
+   |
+13 |         if fs::path_exists("/input.txt") {
+   |                ^^^^^^^^^^^ not found in `fs`
+
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:33:2
+   |
+33 | }
+   |  ^ the main function must be defined at the crate level (in `/tmp/qwen2.5coder2b-file_exists-py-rs.rs`)
+   |
+note: here is a function named `main`
+  --> /tmp/qwen2.5coder2b-file_exists-py-rs.rs:4:5
+   |
+4  |     fn main() {
+   |     ^^^^^^^^^
+   = note: you have one or more functions named `main` not defined at the crate level
+   = help: consider moving the `main` function definitions
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0425, E0601.
+For more information about an error, try `rustc --explain E0425`.

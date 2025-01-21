@@ -1,0 +1,20 @@
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder2b-bit_ops-js-rs.rs:5:15
+  |
+5 |     let NOT = ~a; 
+  |               ^
+  |
+help: use `!` to perform bitwise not
+  |
+5 |     let NOT = !a; 
+  |               ~
+
+error[E0601]: `main` function not found in crate `yicoder2b_bit_ops_js_rs`
+  --> /tmp/yicoder2b-bit_ops-js-rs.rs:23:2
+   |
+23 | }
+   |  ^ consider adding a `main` function to `/tmp/yicoder2b-bit_ops-js-rs.rs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

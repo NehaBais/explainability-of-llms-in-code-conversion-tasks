@@ -1,0 +1,5 @@
+/tmp/qwen2.5coder2b-int_factors-py-c.c:25:14: error: expected ';' in 'for' statement specifier
+   25 |   for (int i : numbers) {
+      |              ^
+/tmp/qwen2.5coder2b-int_factors-py-c.c:25:14: error: expected expression
+2 errors generated.

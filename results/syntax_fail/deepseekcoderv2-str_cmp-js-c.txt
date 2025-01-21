@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-str_cmp-js-c.c:17:18: error: call to undeclared function 'stricmp'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   printf("%d\n", stricmp("ABCD", "abcd") == 0); // true (case insensitive)
+      |                  ^
+1 error generated.

@@ -1,0 +1,22 @@
+error: 3 positional arguments in format string, but there are 2 arguments
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:22:30
+   |
+22 |             "Error renaming '{}' to '{}': {}",
+   |                              ^^      ^^   ^^
+23 |             format!("{}{}", mdirs.as_str(), src.as_str()),
+   |             ---------------------------------------------
+24 |             format!("{}{}", mdirs.as_str(), dst.as_str())
+   |             ---------------------------------------------
+
+error: 3 positional arguments in format string, but there are 2 arguments
+  --> /tmp/yicoder2b-file_rename-c-rs.rs:32:30
+   |
+32 |             "Error renaming '{}' to '{}': {}",
+   |                              ^^      ^^   ^^
+33 |             format!("{}{}", mdirs.as_str(), src.as_str()),
+   |             ---------------------------------------------
+34 |             format!("{}{}", mdirs.as_str(), dst.as_str())
+   |             ---------------------------------------------
+
+error: aborting due to 2 previous errors
+

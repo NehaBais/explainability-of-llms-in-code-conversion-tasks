@@ -1,0 +1,40 @@
+/tmp/granitecode8b-file_rename-js-cpp.cpp:1:7: error: a type specifier is required for all declarations
+    1 | const fs = require('fs');
+      | ~~~~~ ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:1:20: warning: multi-character character constant [-Wmultichar]
+    1 | const fs = require('fs');
+      |                    ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:1:12: error: use of undeclared identifier 'require'
+    1 | const fs = require('fs');
+      |            ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:2:7: error: a type specifier is required for all declarations
+    2 | const path = require('path');
+      | ~~~~~ ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:2:14: error: use of undeclared identifier 'require'
+    2 | const path = require('path');
+      |              ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:4:1: error: unknown type name 'fs'
+    4 | fs.renameSync(path.join(__dirname, 'input.txt'),
+      | ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:4:3: error: cannot use dot operator on a type
+    4 | fs.renameSync(path.join(__dirname, 'input.txt'),
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:7:1: error: unknown type name 'fs'
+    7 | fs.renameSync('/input.txt', '/output.txt');
+      | ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:7:3: error: cannot use dot operator on a type
+    7 | fs.renameSync('/input.txt', '/output.txt');
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:9:1: error: unknown type name 'fs'
+    9 | fs.renameSync(path.join(__dirname, 'docs'), path.join(__dirname, 'mydocs'));
+      | ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:9:3: error: cannot use dot operator on a type
+    9 | fs.renameSync(path.join(__dirname, 'docs'), path.join(__dirname, 'mydocs'));
+      |   ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:11:1: error: unknown type name 'fs'
+   11 | fs.renameSync('/docs', '/mydocs');
+      | ^
+/tmp/granitecode8b-file_rename-js-cpp.cpp:11:3: error: cannot use dot operator on a type
+   11 | fs.renameSync('/docs', '/mydocs');
+      |   ^
+1 warning and 12 errors generated.

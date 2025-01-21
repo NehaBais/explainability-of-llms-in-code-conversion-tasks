@@ -1,0 +1,49 @@
+warning: unused import: `std::slice`
+ --> /tmp/magicoder7b-str_substring-go-rs.rs:1:5
+  |
+1 | use std::slice;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0599]: no function or associated item named `slice` found for type `str` in the current scope
+  --> /tmp/magicoder7b-str_substring-go-rs.rs:13:22
+   |
+13 |     let index = str::slice(s, n, n + m);
+   |                      ^^^^^ function or associated item not found in `str`
+   |
+help: there is an associated function `hash_slice` with a similar name
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/hash/mod.rs:235:5
+
+error[E0599]: no function or associated item named `slice` found for type `str` in the current scope
+  --> /tmp/magicoder7b-str_substring-go-rs.rs:16:20
+   |
+16 |     let end = str::slice(s, n..);
+   |                    ^^^^^ function or associated item not found in `str`
+   |
+help: there is an associated function `hash_slice` with a similar name
+   |
+16 |     let end = str::hash_slice(s, n..);
+   |                    ~~~~~~~~~~
+
+error[E0599]: no function or associated item named `slice` found for type `str` in the current scope
+  --> /tmp/magicoder7b-str_substring-go-rs.rs:23:23
+   |
+23 |     let indexx = str::slice(s, dx, dx + m);
+   |                       ^^^^^ function or associated item not found in `str`
+   |
+help: there is an associated function `hash_slice` with a similar name
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/hash/mod.rs:235:5
+
+error[E0599]: no function or associated item named `slice` found for type `str` in the current scope
+  --> /tmp/magicoder7b-str_substring-go-rs.rs:27:24
+   |
+27 |     let indexxx = str::slice(s, sx, sx + m);
+   |                        ^^^^^ function or associated item not found in `str`
+   |
+help: there is an associated function `hash_slice` with a similar name
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/hash/mod.rs:235:5
+
+error: aborting due to 4 previous errors; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0599`.

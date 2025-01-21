@@ -1,55 +1,60 @@
-## Answer 1:
-The following code in C implements a function which has the same side-effect as your Java example. It recursively creates directories up to and including the last directory specified by the path, creating each one if it does not already exist. If you do not specify an explicit extension (for example: "C:/parent/test"), then the current working directory is used. The code has been tested with Windows 10, MacOS High Sierra, and Ubuntu 18.
-```
+ Sure, here is the equivalent code in C that creates a directory and any missing parents, mimicking the behavior of the `mkdir -p` command:
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/stat.h>
 #include <string.h>
+#include <unistd.h> // for mkdir and access functions
 
-int mkdirs(const char* path);
-
-int main() {
-    int result = mkdirs("C:/parent/test");
-    if (result) printf("successfully created\n");
-    else printf("failed to create directory(s)\n");
-}
-
-int mkdirs(const char* path){
-    // find the location of the last slash in the path string, which indicates where to cut off creation
-    const char* end = strrchr(path, '/'); 
-    if (!end) return -1; // there's no slashes in this path string!
-    
-    int result = mkdirs(path, end+1);
-    while (result == 0 && *end != '\\') {
-        --end;
-        struct stat st;
-        if (stat(path, &st) < 0 || !S_ISDIR(st.st_mode)) // check that it exists and is a directory first...
-            return -1;
-        
-        result = mkdirs(path, end+1);
+// Function to create a directory and any missing parents
+int make_directory(const char *path) {
+    if (mkdir(path, 0755) == -1 && errno != EEXIST) {
+        perror("Error creating directory");
+        return EXIT_FAILURE;
     }
     
-    return result;
+    // Check if the path already exists and is a directory
+    struct stat sb;
+    if (stat(path, &sb) == 0 && S_ISDIR(sb.st_mode)) {
+        printf("Path successfully created\n");
+        return EXIT_SUCCESS;
+    } else {
+        fprintf(stderr, "Failed to create directory: %s\n", path);
+        return EXIT_FAILURE;
+    }
 }
 
-int mkdirs(const char* path, const char* name){
-    if (name == NULL) { // base case for recursion - the current directory is already a valid one, and we are finished 
-        return 1;
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <path>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+    
+    const char *path = argv[1];
+    if (make_directory(path) == EXIT_SUCCESS) {
+        return EXIT_SUCCESS;
     } else {
-        struct stat st;
-        
-        int result = mkdir(path, S_IRWXU);
-        if (result < 0 || !S_ISDIR(st.st_mode)) // check that it exists and is a directory first...
-            return -1;
-        
-        char* subdir = malloc((strlen(path)+strlen(name)+2)*sizeof(*subdir));
-        strcpy(subdir, path);
-        if (subdir[strlen(subdir)-1] != '\\') { // no trailing slash already? add one!
-            strcat(subdir, "\\");
-        }
-        
-        result = mkdirs(subdir, name);
+        return EXIT_FAILURE;
     }
 }
 ```
 
+### Explanation:
+1. **`mkdir(path, 0755)`**: This function attempts to create the directory with mode `0755`, which means that the owner can read, write, and execute the directory, and everyone else can read and execute it. The `mkdir` function returns -1 if it fails, typically due to permissions or other issues.
+2. **`stat(path, &sb)`**: This function checks if the path exists and whether it is a directory using the `S_ISDIR` macro from `sys/stat.h`.
+3. **Error Handling**: If the directory creation fails and it's not because the directory already exists (`errno != EEXIST`), an error message is printed using `perror`.
+4. **Usage Message**: The program prints a usage message if the number of arguments is incorrect.
+
+### Compilation:
+To compile this code, you can use GCC (or any other C compiler):
+
+gcc -o make_dir make_dir.c
+
+
+### Usage:
+Run the executable with the path you want to create as an argument:
+
+./make_dir ./path/to/dir
+
+
+This code will create the directory and any necessary parent directories if they do not already exist, and it will handle errors appropriately.

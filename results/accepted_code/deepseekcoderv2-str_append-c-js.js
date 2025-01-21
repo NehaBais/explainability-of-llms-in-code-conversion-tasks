@@ -1,9 +1,8 @@
-let str = "Good Morning"; // String variable equal to any text value
-const cstr = " to all"; // Append string literal in the most idiomatic way.
-const cstr2 = " !!!"; // Show the contents of the variable after appending a new string
+let str = "Good Morning";
+const cstr = " to all";
+const cstr2 = " !!!";
 
-// Check if there is enough space for both strings
-if (cstr.length + str.length < 19) {
-  str += cstr;
-}
+// Append the string with another string literal in a more idiomatic way
+str += cstr + cstr2;
+
 console.log(str);

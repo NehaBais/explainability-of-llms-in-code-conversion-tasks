@@ -1,0 +1,13 @@
+error: format argument must be a string literal
+ --> /tmp/yicoder2b-str_interp-go-rs.rs:4:23
+  |
+4 |     let out = format!(str, txt);
+  |                       ^^^
+  |
+help: you might be missing a string literal to format with
+  |
+4 |     let out = format!("{} {}", str, txt);
+  |                       ++++++++
+
+error: aborting due to 1 previous error
+

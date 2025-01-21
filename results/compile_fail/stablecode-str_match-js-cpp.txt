@@ -1,0 +1,60 @@
+/tmp/stablecode-str_match-js-cpp.cpp:11:30: error: extraneous ')' before ';'
+   11 |     std::regex regex(stringB));
+      |                              ^
+/tmp/stablecode-str_match-js-cpp.cpp:14:55: error: expected ';' after expression
+   14 |     q1 = stringA.compare(0, stringB.length(), stringB)) == 0;
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-str_match-js-cpp.cpp:14:55: error: expected expression
+/tmp/stablecode-str_match-js-cpp.cpp:18:21: error: no viable conversion from 'bool' to 'std::smatch' (aka 'match_results<__wrap_iter<const char *> >')
+   18 |         std::smatch matchResult = std::regex_search(stringA, regex));
+      |                     ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/regex:1308:28: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'bool' to 'const smatch &' for 1st argument
+ 1308 | class _LIBCPP_TEMPLATE_VIS match_results;
+      |                            ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/regex:4572:12: note: explicit constructor is not a candidate
+ 4572 |   explicit match_results(const allocator_type& __a = allocator_type());
+      |            ^
+/tmp/stablecode-str_match-js-cpp.cpp:18:68: error: extraneous ')' before ';'
+   18 |         std::smatch matchResult = std::regex_search(stringA, regex));
+      |                                                                    ^
+/tmp/stablecode-str_match-js-cpp.cpp:22:52: error: no member named 'position' in 'std::ssub_match'
+   22 |                 q2matches.push_back(matchResult[i].position()));
+      |                                     ~~~~~~~~~~~~~~ ^
+/tmp/stablecode-str_match-js-cpp.cpp:22:63: error: extraneous ')' before ';'
+   22 |                 q2matches.push_back(matchResult[i].position()));
+      |                                                               ^
+/tmp/stablecode-str_match-js-cpp.cpp:25:48: error: no member named 'position' in 'std::ssub_match'
+   25 |             q2matches.push_back(matchResult[0].position()));
+      |                                 ~~~~~~~~~~~~~~ ^
+/tmp/stablecode-str_match-js-cpp.cpp:25:59: error: extraneous ')' before ';'
+   25 |             q2matches.push_back(matchResult[0].position()));
+      |                                                           ^
+/tmp/stablecode-str_match-js-cpp.cpp:30:89: error: expected ';' after expression
+   30 |     q3 = stringA.compare(stringA.length() - stringB.length(), stringB.length(), stringB)) == 0;
+      |                                                                                         ^
+      |                                                                                         ;
+/tmp/stablecode-str_match-js-cpp.cpp:30:89: error: expected expression
+/tmp/stablecode-str_match-js-cpp.cpp:32:106: error: expected ';' after expression
+   32 |     std::cout << "1: Does '" << stringA << "' start with '" << stringB << "'? " << ( q1 ? "Yes." : "No.")) << std::endl;
+      |                                                                                                          ^
+      |                                                                                                          ;
+/tmp/stablecode-str_match-js-cpp.cpp:32:106: error: expected expression
+/tmp/stablecode-str_match-js-cpp.cpp:33:139: error: expected ';' after expression
+   33 |     std::cout << "2: Is '" << stringB << "' contained in '" << stringA << "'? " << (~q2 ? "Yes, at index "+std::to_string(q2)+"." : "No.")) << std::endl;
+      |                                                                                                                                           ^
+      |                                                                                                                                           ;
+/tmp/stablecode-str_match-js-cpp.cpp:33:139: error: expected expression
+/tmp/stablecode-str_match-js-cpp.cpp:39:29: error: member reference type 'std::vector<size_t>' (aka 'vector<unsigned long>') is not a pointer; did you mean to use '.'?
+   39 |                 << q2matches->join(", ") + ".";
+      |                    ~~~~~~~~~^~
+      |                             .
+/tmp/stablecode-str_match-js-cpp.cpp:39:31: error: no member named 'join' in 'std::vector<unsigned long>'
+   39 |                 << q2matches->join(", ") + ".";
+      |                    ~~~~~~~~~  ^
+/tmp/stablecode-str_match-js-cpp.cpp:42:104: error: expected ';' after expression
+   42 |     std::cout << "3: Does '" << stringA << "' end with '" << stringB << "'? " << ( q3 ? "Yes." : "No.")) << std::endl;
+      |                                                                                                        ^
+      |                                                                                                        ;
+/tmp/stablecode-str_match-js-cpp.cpp:42:104: error: expected expression
+19 errors generated.

@@ -1,0 +1,31 @@
+/tmp/Main.java:4: error: cannot find symbol
+    File src = new File("input.txt");
+    ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:4: error: cannot find symbol
+    File src = new File("input.txt");
+                   ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:5: error: cannot find symbol
+    if (src.renameTo(new File("output.txt"))) {
+                         ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:12: error: cannot find symbol
+    File srcRoot = new File("docs");
+    ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:12: error: cannot find symbol
+    File srcRoot = new File("docs");
+                       ^
+  symbol:   class File
+  location: class Main
+/tmp/Main.java:13: error: cannot find symbol
+    if (srcRoot.renameTo(new File("mydocs"))) {
+                             ^
+  symbol:   class File
+  location: class Main
+6 errors

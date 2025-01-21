@@ -1,0 +1,41 @@
+/tmp/None.java:4: error: implicitly declared classes are a preview feature and are disabled by default.
+File f1 = new File("input.txt");
+^
+  (use --enable-preview to enable implicitly declared classes)
+/tmp/None.java:5: error: class, interface, enum, or record expected
+if (f1.exists() && !f1.isDirectory()) {
+^
+/tmp/None.java:7: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:9: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:13: error: class, interface, enum, or record expected
+if (f2.exists() && !f2.isDirectory()) {
+^
+/tmp/None.java:15: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:17: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:21: error: class, interface, enum, or record expected
+if (f3.exists() && f3.isDirectory()) {
+^
+/tmp/None.java:23: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:25: error: class, interface, enum, or record expected
+}
+^
+/tmp/None.java:29: error: class, interface, enum, or record expected
+if (f4.exists() && f4.isDirectory()) {
+^
+/tmp/None.java:31: error: class, interface, enum, or record expected
+} else {
+^
+/tmp/None.java:33: error: class, interface, enum, or record expected
+}
+^
+13 errors

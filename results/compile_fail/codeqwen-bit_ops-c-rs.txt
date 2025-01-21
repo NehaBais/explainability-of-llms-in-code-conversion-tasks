@@ -1,0 +1,115 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:2:29
+  |
+2 |     println!("A and B: {}", A & b);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+2 |     println!("A and B: {}", a & b);
+  |                             ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:3:28
+  |
+3 |     println!("A or B: {}", A | b);
+  |                            ^
+  |
+help: a local variable with a similar name exists
+  |
+3 |     println!("A or B: {}", a | b);
+  |                            ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:4:29
+  |
+4 |     println!("A xor B: {}", A ^ b);
+  |                             ^
+  |
+help: a local variable with a similar name exists
+  |
+4 |     println!("A xor B: {}", a ^ b);
+  |                             ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:5:28
+  |
+5 |     println!("Not A: {}", !A as i32);
+  |                            ^
+  |
+help: a local variable with a similar name exists
+  |
+5 |     println!("Not A: {}", !a as i32);
+  |                            ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:6:28
+  |
+6 |     println!("A << n: {}", A << b); // left shift
+  |                            ^
+  |
+help: a local variable with a similar name exists
+  |
+6 |     println!("A << n: {}", a << b); // left shift
+  |                            ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:7:28
+  |
+7 |     println!("A >> n: {}", A >> b); // arithmetic right shift
+  |                            ^
+  |
+help: a local variable with a similar name exists
+  |
+7 |     println!("A >> n: {}", a >> b); // arithmetic right shift
+  |                            ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:8:30
+  |
+8 |     println!("C >> b: {}", ((A & 0xFFFF_FFFF) as u32) >> b); // logical right shift
+  |                              ^
+  |
+help: a local variable with a similar name exists
+  |
+8 |     println!("C >> b: {}", ((a & 0xFFFF_FFFF) as u32) >> b); // logical right shift
+  |                              ~
+help: you might be missing a const parameter
+  |
+1 | fn bitwise<const A: /* Type */>(a: i32, b: u32) {
+  |           +++++++++++++++++++++
+
+error[E0601]: `main` function not found in crate `codeqwen_bit_ops_c_rs`
+ --> /tmp/codeqwen-bit_ops-c-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/codeqwen-bit_ops-c-rs.rs`
+
+error: aborting due to 8 previous errors
+
+Some errors have detailed explanations: E0425, E0601.
+For more information about an error, try `rustc --explain E0425`.

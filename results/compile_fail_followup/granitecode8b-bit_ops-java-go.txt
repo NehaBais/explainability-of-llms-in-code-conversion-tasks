@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/granitecode8b-bit_ops-java-go.go:14:33: syntax error: unexpected >, expected expression
+/tmp/granitecode8b-bit_ops-java-go.go:16:35: syntax error: unexpected >, expected expression

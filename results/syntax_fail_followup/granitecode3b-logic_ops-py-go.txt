@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode3b-logic_ops-py-go.go:4:2: undefined: fmt

@@ -1,0 +1,26 @@
+/tmp/magicoder7b-str_cmp-py-c.c:7:10: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    6 |   printf("\"%s\" is of type %s and \"%s\" is of type %s\n", a, __FILE__, b,
+      |                                                      ~~
+      |                                                      %d
+    7 |          __LINE__);
+      |          ^~~~~~~~
+<scratch space>:388:1: note: expanded from here
+  388 | 7
+      | ^
+/tmp/magicoder7b-str_cmp-py-c.c:36:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |   free(a_lower);
+      |   ^
+/tmp/magicoder7b-str_cmp-py-c.c:36:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/magicoder7b-str_cmp-py-c.c:44:11: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'char *' [-Wint-conversion]
+   44 |   compare('2', '1'); // Numeric string comparison
+      |           ^~~
+/tmp/magicoder7b-str_cmp-py-c.c:5:20: note: passing argument to parameter 'a' here
+    5 | void compare(char *a, char *b) {
+      |                    ^
+/tmp/magicoder7b-str_cmp-py-c.c:44:16: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'char *' [-Wint-conversion]
+   44 |   compare('2', '1'); // Numeric string comparison
+      |                ^~~
+/tmp/magicoder7b-str_cmp-py-c.c:5:29: note: passing argument to parameter 'b' here
+    5 | void compare(char *a, char *b) {
+      |                             ^
+1 warning and 3 errors generated.

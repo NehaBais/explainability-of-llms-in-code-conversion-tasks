@@ -1,0 +1,16 @@
+/tmp/deepseekcoder7b-int_factors-go-cpp.cpp:11:26: error: non-aggregate type 'std::vector<long long>' cannot be initialized with an initializer list
+   11 |   std::vector<long long> fs = {1};
+      |                          ^    ~~~
+/tmp/deepseekcoder7b-int_factors-go-cpp.cpp:13:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   13 |   auto apf = [](std::vector<long long> &fs, long long p, int e) {
+      |   ^
+/tmp/deepseekcoder7b-int_factors-go-cpp.cpp:13:14: error: expected expression
+   13 |   auto apf = [](std::vector<long long> &fs, long long p, int e) {
+      |              ^
+/tmp/deepseekcoder7b-int_factors-go-cpp.cpp:43:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   43 |   for (const auto &f : fs) {
+      |              ^
+/tmp/deepseekcoder7b-int_factors-go-cpp.cpp:43:22: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   43 |   for (const auto &f : fs) {
+      |                      ^
+3 warnings and 2 errors generated.

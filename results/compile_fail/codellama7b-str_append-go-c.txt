@@ -1,0 +1,4 @@
+/tmp/codellama7b-str_append-go-c.c:2:10: fatal error: 'string' file not found
+    2 | #include <string>
+      |          ^~~~~~~~
+1 error generated.

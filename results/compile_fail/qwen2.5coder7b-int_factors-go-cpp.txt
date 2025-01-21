@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:10:24: error: non-aggregate type 'std::vector<int64_t>' (aka 'vector<long long>') cannot be initialized with an initializer list
+   10 |   std::vector<int64_t> fs = {1};
+      |                        ^    ~~~
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:12:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   12 |   auto apf = [&](int64_t p, int e) {
+      |   ^
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:12:14: error: expected expression
+   12 |   auto apf = [&](int64_t p, int e) {
+      |              ^
+/tmp/qwen2.5coder7b-int_factors-go-cpp.cpp:40:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   40 |   for (int64_t factor : fs) {
+      |                       ^
+2 warnings and 2 errors generated.

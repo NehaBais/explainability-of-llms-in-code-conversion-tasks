@@ -1,0 +1,34 @@
+/tmp/codellama7b-file_create-rs-cpp.cpp:10:3: error: use of undeclared identifier 'create'
+   10 |   create(".", "/");
+      |   ^
+/tmp/codellama7b-file_create-rs-cpp.cpp:15:8: error: no member named 'filesystem' in namespace 'std'
+   15 |   std::filesystem::path f_path = root + "/" + FILE_NAME;
+      |   ~~~~~^
+/tmp/codellama7b-file_create-rs-cpp.cpp:15:25: error: use of undeclared identifier 'f_path'; did you mean 'path'?
+   15 |   std::filesystem::path f_path = root + "/" + FILE_NAME;
+      |                         ^~~~~~
+      |                         path
+/tmp/codellama7b-file_create-rs-cpp.cpp:14:43: note: 'path' declared here
+   14 | void create(std::string root, std::string path) {
+      |                                           ^
+/tmp/codellama7b-file_create-rs-cpp.cpp:16:8: error: no member named 'filesystem' in namespace 'std'
+   16 |   std::filesystem::path d_path = root + "/" + DIR_NAME;
+      |   ~~~~~^
+/tmp/codellama7b-file_create-rs-cpp.cpp:16:25: error: use of undeclared identifier 'd_path'; did you mean 'path'?
+   16 |   std::filesystem::path d_path = root + "/" + DIR_NAME;
+      |                         ^~~~~~
+      |                         path
+/tmp/codellama7b-file_create-rs-cpp.cpp:14:43: note: 'path' declared here
+   14 | void create(std::string root, std::string path) {
+      |                                           ^
+/tmp/codellama7b-file_create-rs-cpp.cpp:18:24: error: use of undeclared identifier 'f_path'; did you mean 'path'?
+   18 |     std::ofstream file(f_path, std::ios::out);
+      |                        ^~~~~~
+      |                        path
+/tmp/codellama7b-file_create-rs-cpp.cpp:14:43: note: 'path' declared here
+   14 | void create(std::string root, std::string path) {
+      |                                           ^
+/tmp/codellama7b-file_create-rs-cpp.cpp:19:10: error: no member named 'filesystem' in namespace 'std'
+   19 |     std::filesystem::create_directory(d_path);
+      |     ~~~~~^
+7 errors generated.

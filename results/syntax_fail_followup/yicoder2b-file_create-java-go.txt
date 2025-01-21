@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_create-java-go.go:10:23: err.Type undefined (type error has no field or method Type)

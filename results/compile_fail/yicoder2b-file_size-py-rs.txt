@@ -1,0 +1,19 @@
+error[E0599]: no function or associated item named `read_dir` found for struct `File` in the current scope
+ --> /tmp/yicoder2b-file_size-py-rs.rs:4:32
+  |
+4 |     let size = match fs::File::read_dir("input.txt") {
+  |                                ^^^^^^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+help: there is a method `read` with a similar name
+  |
+4 |     let size = match fs::File::read("input.txt") {
+  |                                ~~~~
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

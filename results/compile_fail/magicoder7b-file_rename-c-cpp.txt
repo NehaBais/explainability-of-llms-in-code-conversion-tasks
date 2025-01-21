@@ -1,0 +1,13 @@
+/tmp/magicoder7b-file_rename-c-cpp.cpp:6:10: error: no member named 'filesystem' in namespace 'std'
+    6 |     std::filesystem::rename("input.txt", "output.txt");
+      |     ~~~~~^
+/tmp/magicoder7b-file_rename-c-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::rename("docs", "mydocs");
+      |     ~~~~~^
+/tmp/magicoder7b-file_rename-c-cpp.cpp:8:10: error: no member named 'filesystem' in namespace 'std'
+    8 |     std::filesystem::rename("/input.txt", "/output.txt");
+      |     ~~~~~^
+/tmp/magicoder7b-file_rename-c-cpp.cpp:9:10: error: no member named 'filesystem' in namespace 'std'
+    9 |     std::filesystem::rename("/docs", "/mydocs");
+      |     ~~~~~^
+4 errors generated.

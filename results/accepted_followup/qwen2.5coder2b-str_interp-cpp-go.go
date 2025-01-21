@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+	"strings" // Importing the 'strings' package
+)
+
+func main() {
+	original := "Mary had a X lamb."
+	toBeReplaced := "X"
+	replacement := "little"
+
+	newString := strings.Replace(original, toBeReplaced, replacement, -1)
+	fmt.Println("String after replacement: ", newString)
+}

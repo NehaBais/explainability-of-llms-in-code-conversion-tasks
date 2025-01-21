@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_append-c-go.go:5:2: "unsafe" imported and not used

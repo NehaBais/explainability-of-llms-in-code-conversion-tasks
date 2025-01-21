@@ -1,0 +1,34 @@
+/tmp/stablecode-str_cmp-java-c.c:6:65: error: extraneous ')' before ';'
+    6 |         printf("'%s' and '%s' are not lexically equal.\n", A, B));
+      |                                                                 ^
+/tmp/stablecode-str_cmp-java-c.c:8:61: error: extraneous ')' before ';'
+    8 |         printf("'%s' and '%s' are lexically equal.\n", A, B));
+      |                                                             ^
+/tmp/stablecode-str_cmp-java-c.c:11:24: error: extraneous ')' after condition, expected a statement
+   11 |   if (strcasecmp(A, B))) {
+      |                        ^
+/tmp/stablecode-str_cmp-java-c.c:12:78: error: extraneous ')' before ';'
+   12 |         printf("'%s' and '%s' are case-insensitive lexically equal.\n", A, B));
+      |                                                                              ^
+/tmp/stablecode-str_cmp-java-c.c:15:82: error: extraneous ')' before ';'
+   15 |         printf("'%s' and '%s' are not case-insensitive lexically equal.\n", A, B));
+      |                                                                                  ^
+/tmp/stablecode-str_cmp-java-c.c:20:57: error: extraneous ')' before ';'
+   20 |         printf("'%s' is lexically before '%s'.\n", A, B));
+      |                                                         ^
+/tmp/stablecode-str_cmp-java-c.c:22:56: error: extraneous ')' before ';'
+   22 |         printf("'%s' is lexically after '%s'.\n", A, B));
+      |                                                        ^
+/tmp/stablecode-str_cmp-java-c.c:27:74: error: extraneous ')' before ';'
+   27 |         printf("'%s' is case-insensitive lexically before '%s'.\n", A, B));
+      |                                                                          ^
+/tmp/stablecode-str_cmp-java-c.c:29:73: error: extraneous ')' before ';'
+   29 |         printf("'%s' is case-insensitive lexically after '%s'.\n", A, B));
+      |                                                                         ^
+/tmp/stablecode-str_cmp-java-c.c:34:111: error: extraneous ')' before ';'
+   34 |         printf("The lexical relationship between '%s' and '%s' is that '%s' comes before '%s'.\n", A, B, A, B));
+      |                                                                                                               ^
+/tmp/stablecode-str_cmp-java-c.c:36:110: error: extraneous ')' before ';'
+   36 |         printf("The lexical relationship between '%s' and '%s' is that '%s' comes after '%s'.\n", A, B, A, B));
+      |                                                                                                              ^
+11 errors generated.

@@ -1,0 +1,19 @@
+/tmp/granitecode8b-str_append-rs-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-rs-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-rs-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_append-rs-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string hello = "Hello world";
+      |   ^
+/tmp/granitecode8b-str_append-rs-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << hello + "!!!!" << endl;
+      |   ^
+/tmp/granitecode8b-str_append-rs-cpp.cpp:6:29: error: use of undeclared identifier 'endl'
+    6 |   cout << hello + "!!!!" << endl;
+      |                             ^
+1 warning and 5 errors generated.

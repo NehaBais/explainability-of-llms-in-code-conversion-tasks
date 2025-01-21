@@ -1,0 +1,50 @@
+error[E0433]: failed to resolve: use of undeclared type `DirBuilder`
+ --> /tmp/codellama7b-file_create-java-rs.rs:7:5
+  |
+7 |     DirBuilder::new().recursive(true).create("docs")?;
+  |     ^^^^^^^^^^ use of undeclared type `DirBuilder`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::DirBuilder;
+  |
+
+error[E0433]: failed to resolve: use of undeclared type `DirBuilder`
+ --> /tmp/codellama7b-file_create-java-rs.rs:8:5
+  |
+8 |     DirBuilder::new()
+  |     ^^^^^^^^^^ use of undeclared type `DirBuilder`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::DirBuilder;
+  |
+
+error[E0599]: no function or associated item named `separator` found for struct `File` in the current scope
+ --> /tmp/codellama7b-file_create-java-rs.rs:6:40
+  |
+6 |     File::create(format!("{}{}", File::separator(), "output.txt"))?;
+  |                                        ^^^^^^^^^ function or associated item not found in `File`
+  |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error[E0599]: no function or associated item named `separator` found for struct `File` in the current scope
+  --> /tmp/codellama7b-file_create-java-rs.rs:10:39
+   |
+10 |         .create(format!("{}{}", File::separator(), "docs"))?;
+   |                                       ^^^^^^^^^ function or associated item not found in `File`
+   |
+note: if you're trying to build a new `File` consider using one of the following associated functions:
+      File::open
+      File::create
+      File::create_new
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:374:5
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.

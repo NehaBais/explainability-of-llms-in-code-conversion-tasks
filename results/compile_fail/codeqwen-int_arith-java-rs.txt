@@ -1,0 +1,15 @@
+error[E0425]: cannot find value `A` in this scope
+ --> /tmp/codeqwen-int_arith-java-rs.rs:9:32
+  |
+9 |     io::stdin().read_line(&mut A).expect("Failed to read line");
+  |                                ^ help: a local variable with a similar name exists: `a`
+
+error[E0425]: cannot find value `A` in this scope
+  --> /tmp/codeqwen-int_arith-java-rs.rs:12:18
+   |
+12 |     let A: i32 = A.trim().parse().expect("Please type a number!");
+   |                  ^ help: a local variable with a similar name exists: `a`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

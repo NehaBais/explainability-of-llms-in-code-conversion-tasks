@@ -1,0 +1,60 @@
+/tmp/granitecode8b-file_rename-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:5:9: error: expected "FILENAME" or <FILENAME>
+    5 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:6:9: error: expected "FILENAME" or <FILENAME>
+    6 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-java-c.c:9:3: error: use of undeclared identifier 'FILE'
+    9 |   FILE *file = fopen(oldname, "r");
+      |   ^
+/tmp/granitecode8b-file_rename-java-c.c:9:9: error: use of undeclared identifier 'file'; did you mean 'while'?
+    9 |   FILE *file = fopen(oldname, "r");
+      |         ^~~~
+      |         while
+/tmp/granitecode8b-file_rename-java-c.c:9:9: error: expected expression
+/tmp/granitecode8b-file_rename-java-c.c:10:7: error: use of undeclared identifier 'file'; did you mean 'while'?
+   10 |   if (file != NULL) {
+      |       ^~~~
+      |       while
+/tmp/granitecode8b-file_rename-java-c.c:10:7: error: expected expression
+/tmp/granitecode8b-file_rename-java-c.c:11:5: error: call to undeclared function 'fclose'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |     fclose(file);
+      |     ^
+/tmp/granitecode8b-file_rename-java-c.c:11:12: error: use of undeclared identifier 'file'
+   11 |     fclose(file);
+      |            ^
+/tmp/granitecode8b-file_rename-java-c.c:12:16: error: call to undeclared function 'rename'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     success = (rename(oldname, newname) == 0);
+      |                ^
+/tmp/granitecode8b-file_rename-java-c.c:14:17: error: variable has incomplete type 'struct stat'
+   14 |     struct stat sb;
+      |                 ^
+/tmp/granitecode8b-file_rename-java-c.c:14:12: note: forward declaration of 'struct stat'
+   14 |     struct stat sb;
+      |            ^
+/tmp/granitecode8b-file_rename-java-c.c:15:16: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     success = (stat(oldname, &sb) == 0) && (mkdir(newname, sb.st_mode) == 0);
+      |                ^
+/tmp/granitecode8b-file_rename-java-c.c:15:45: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   15 |     success = (stat(oldname, &sb) == 0) && (mkdir(newname, sb.st_mode) == 0);
+      |                                             ^
+/tmp/granitecode8b-file_rename-java-c.c:17:7: error: use of undeclared identifier 'DIR'
+   17 |       DIR *dir = opendir(oldname);
+      |       ^
+/tmp/granitecode8b-file_rename-java-c.c:17:12: error: use of undeclared identifier 'dir'
+   17 |       DIR *dir = opendir(oldname);
+      |            ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

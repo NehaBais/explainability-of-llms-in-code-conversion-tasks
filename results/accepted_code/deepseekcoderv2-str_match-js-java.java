@@ -1,56 +1,67 @@
-public class StringMatching {
-  private static void print(String string, Object... args) {
-    System.out.println(String.format(string, args));
-  }
-
-  public static void main(String[] args) throws Exception {
-    /* Test Strings */
-    String s1 = "tacoloco";
-    String s2 = "co";
-    String q1, q2multi, m;
-    int q2matchesIndex = 0;
-    List<Integer> q2matches = new ArrayList<>();
+public class StringMatchingDemo {
+  public static void main(String[] args) {
+    String stringA = "tacoloco";
+    String stringB = "co";
+    boolean q1, q2, q3;
+    int q2Index = -1;
+    java.util.ArrayList<Integer> q2matches = new java.util.ArrayList<>();
 
     // stringA starts with stringB
-    boolean q1 = (s1.substring(0, s2.length())).equals(s2);
+    if (stringA.substring(0, stringB.length()).equals(stringB)) {
+      q1 = true;
+    } else {
+      q1 = false;
+    }
 
     // stringA contains stringB
-    int q2 = s1.indexOf(s2);
+    q2Index = stringA.indexOf(stringB);
+    if (q2Index != -1) {
+      q2 = true;
+    } else {
+      q2 = false;
+    }
 
     // multiple matches
-    Pattern p1 = Pattern.compile(Pattern.quote(s2), Pattern.LITERAL | Pattern.CASE_INSENSITIVE);
-
-    Matcher m1 = p1.matcher(s1);
-
-    while (m1.find()) {
-      q2matchesIndex += 1; // increment index of matches
-      q2matches.add(m1.start()); // add the start index to list of matches
+    java.util.regex.Pattern pattern =
+        java.util.regex.Pattern.compile(stringB, java.util.regex.Pattern.CASE_INSENSITIVE);
+    java.util.regex.Matcher matcher = pattern.matcher(stringA);
+    while (matcher.find()) {
+      q2matches.add(matcher.start());
     }
 
     // stringA ends with stringB
-    boolean q3 = s1.endsWith(s2);
+    if (stringA.substring(stringA.length() - stringB.length()).equals(stringB)) {
+      q3 = true;
+    } else {
+      q3 = false;
+    }
 
-    print("1: Does '%s' start with '%s'? %s", s1, s2, (q1 ? "Yes." : "No."));
-    if (~q2 && !q2matches.isEmpty()) {
-      q2 = 0; // reset to 0 for multiple matches case
-      print("2: Is '%s' contained in '%s'? Yes, at index %d.", s2, s1, ~q2 ? q2 : - ~q2);
-      if (q2matches.size() > 1) {
-        String start = ""; // use for multiple matches string
-        print(
-            "   In fact, it happens %s times within '%s', at index%s ",
-            q2matches.size(), s1, q2matchesIndex);
-      } else if (q2matches.size() == 1) {
-        String start = " "; // use for single match string
+    System.out.println(
+        "1: Does '" + stringA + "' start with '" + stringB + "'? " + (q1 ? "Yes." : "No."));
+    if (q2) {
+      System.out.println(
+          "2: Is '" + stringB + "' contained in '" + stringA + "'? Yes, at index " + q2Index + ".");
+      if (!q2matches.isEmpty() && q2matches.size() > 1) {
+        System.out.print(
+            "   In fact, it happens "
+                + q2matches.size()
+                + " times within '"
+                + stringA
+                + "', at index"
+                + (q2matches.size() > 1 ? "es" : "")
+                + " "
+                + String.join(
+                    ", ",
+                    java.util.stream.Collectors.toList(
+                        java.util.stream.StreamSupport.spliteratorUnknownSize(
+                            q2matches.iterator(), java.util.Spliterator.ORDERED),
+                        ","))
+                + ".");
       }
-      print("%d.", q2matches);
     } else {
-      print("2: Is '%s' contained in '%s'? %s", s2, s1, (~q2 ? "Yes" : "No"));
+      System.out.println("2: Is '" + stringB + "' contained in '" + stringA + "'? No.");
     }
-
-    if (q3) {
-      print("3: Does '%s' end with '%s'? Yes.", s1, s2);
-    } else {
-      print("3: Does '%s' end with '%s'? No.", s1, s2);
-    }
+    System.out.println(
+        "3: Does '" + stringA + "' end with '" + stringB + "'? " + (q3 ? "Yes." : "No."));
   }
 }

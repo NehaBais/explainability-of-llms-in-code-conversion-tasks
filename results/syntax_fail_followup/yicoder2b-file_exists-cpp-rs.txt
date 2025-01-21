@@ -1,0 +1,15 @@
+error: expected one of `.`, `=>`, `?`, or an operator, found `{`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:8:55
+  |
+8 |             Some(direntry) if direntry.is_directory() {
+  |                                                       ^ expected one of `.`, `=>`, `?`, or an operator
+
+error[E0425]: cannot find function `symlink_to_dir_entry` in module `fs`
+ --> /tmp/yicoder2b-file_exists-cpp-rs.rs:7:28
+  |
+7 |         Ok(_) => match fs::symlink_to_dir_entry(&p.into()) {
+  |                            ^^^^^^^^^^^^^^^^^^^^ not found in `fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

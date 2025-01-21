@@ -1,0 +1,1 @@
+/tmp/qwen2.5coder2b-file_rename-js-go.go:7:2: no required module provides package github.com/go4go/fileio: go.mod file not found in current directory or any parent directory; see 'go help modules'

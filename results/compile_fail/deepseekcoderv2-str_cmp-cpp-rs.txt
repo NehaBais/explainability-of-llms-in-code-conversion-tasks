@@ -1,0 +1,76 @@
+warning: unused import: `std::cmp::Ordering`
+ --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:1:5
+  |
+1 | use std::cmp::Ordering;
+  |     ^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `Write` and `self`
+ --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:2:15
+  |
+2 | use std::io::{self, Write};
+  |               ^^^^  ^^^^^
+
+warning: unused import: `std::str::FromStr`
+ --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:3:5
+  |
+3 | use std::str::FromStr;
+  |     ^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `semantically`
+ --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:5:76
+  |
+5 | fn demo_compare<T: std::fmt::Display + PartialEq + PartialOrd>(a: T, b: T, semantically: &str) {
+  |                                                                            ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_semantically`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+error[E0382]: borrow of moved value: `a_lowercase`
+  --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:51:8
+   |
+44 |     let a_lowercase = a.to_lowercase();
+   |         ----------- move occurs because `a_lowercase` has type `String`, which does not implement the `Copy` trait
+45 |     let b_lowercase = b.to_lowercase();
+46 |     demo_compare(a_lowercase, b_lowercase, "lexically");
+   |                  ----------- value moved here
+...
+51 |     if a_lowercase.parse::<f64>().is_ok() {
+   |        ^^^^^^^^^^^^^^^^^^^^^^^^^^ value borrowed here after move
+   |
+note: consider changing this parameter type in function `demo_compare` to borrow instead if owning the value isn't necessary
+  --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:5:67
+   |
+5  | fn demo_compare<T: std::fmt::Display + PartialEq + PartialOrd>(a: T, b: T, semantically: &str) {
+   |    ------------ in this function                                  ^ this parameter takes ownership of the value
+   = note: borrow occurs due to deref coercion to `str`
+help: consider cloning the value if the performance cost is acceptable
+   |
+46 |     demo_compare(a_lowercase.clone(), b_lowercase, "lexically");
+   |                             ++++++++
+
+error[E0382]: borrow of moved value: `b_lowercase`
+  --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:54:8
+   |
+45 |     let b_lowercase = b.to_lowercase();
+   |         ----------- move occurs because `b_lowercase` has type `String`, which does not implement the `Copy` trait
+46 |     demo_compare(a_lowercase, b_lowercase, "lexically");
+   |                               ----------- value moved here
+...
+54 |     if b_lowercase.parse::<f64>().is_ok() {
+   |        ^^^^^^^^^^^^^^^^^^^^^^^^^^ value borrowed here after move
+   |
+note: consider changing this parameter type in function `demo_compare` to borrow instead if owning the value isn't necessary
+  --> /tmp/deepseekcoderv2-str_cmp-cpp-rs.rs:5:73
+   |
+5  | fn demo_compare<T: std::fmt::Display + PartialEq + PartialOrd>(a: T, b: T, semantically: &str) {
+   |    ------------ in this function                                        ^ this parameter takes ownership of the value
+   = note: borrow occurs due to deref coercion to `str`
+help: consider cloning the value if the performance cost is acceptable
+   |
+46 |     demo_compare(a_lowercase, b_lowercase.clone(), "lexically");
+   |                                          ++++++++
+
+error: aborting due to 2 previous errors; 4 warnings emitted
+
+For more information about this error, try `rustc --explain E0382`.

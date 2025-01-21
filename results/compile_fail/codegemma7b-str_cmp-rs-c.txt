@@ -1,0 +1,12 @@
+/tmp/codegemma7b-str_cmp-rs-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("The strings are equal\n");
+      |     ^
+/tmp/codegemma7b-str_cmp-rs-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-str_cmp-rs-c.c:31:7: error: call to undeclared function 'strcmpi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   31 |   if (strcmpi("abc", "ABC") == 0) {
+      |       ^
+/tmp/codegemma7b-str_cmp-rs-c.c:31:7: note: did you mean 'strcmp'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:77:6: note: 'strcmp' declared here
+   77 | int      strcmp(const char *__s1, const char *__s2);
+      |          ^
+2 errors generated.

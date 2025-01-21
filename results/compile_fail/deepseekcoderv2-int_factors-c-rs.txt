@@ -1,0 +1,55 @@
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:50:9
+   |
+50 |     if (dvsr * dvsr) == num {
+   |         ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:50:16
+   |
+50 |     if (dvsr * dvsr) == num {
+   |                ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:51:20
+   |
+51 |         flist.push(dvsr);
+   |                    ^^^^ not found in this scope
+
+warning: unused import: `realloc`
+ --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:1:24
+  |
+1 | use std::alloc::{self, realloc};
+  |                        ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::fmt`
+ --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:2:5
+  |
+2 | use std::fmt;
+  |     ^^^^^^^^
+
+error[E0308]: arguments to this function are incorrect
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:18:17
+   |
+18 |                 alloc::realloc(
+   |                 ^^^^^^^^^^^^^^
+19 |                     self.list.as_mut_ptr(),
+20 |                     self.list.capacity() * std::mem::size_of::<i32>(),
+   |                     ------------------------------------------------- expected `Layout`, found `usize`
+   |
+note: expected `*mut u8`, found `*mut i32`
+  --> /tmp/deepseekcoderv2-int_factors-c-rs.rs:19:21
+   |
+19 |                     self.list.as_mut_ptr(),
+   |                     ^^^^^^^^^^^^^^^^^^^^^^
+   = note: expected raw pointer `*mut u8`
+              found raw pointer `*mut i32`
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/alloc.rs:135:15
+
+error: aborting due to 4 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.

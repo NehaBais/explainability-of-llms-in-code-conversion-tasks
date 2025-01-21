@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/codellama7b-int_arith-c-go.go:4:8: "math" imported and not used
+/tmp/codellama7b-int_arith-c-go.go:8:9: undefined: os
+/tmp/codellama7b-int_arith-c-go.go:9:10: too many return values
+	have (number)
+	want ()
+/tmp/codellama7b-int_arith-c-go.go:11:4: no new variables on left side of :=
+/tmp/codellama7b-int_arith-c-go.go:11:7: undefined: os
+/tmp/codellama7b-int_arith-c-go.go:12:4: no new variables on left side of :=
+/tmp/codellama7b-int_arith-c-go.go:12:7: undefined: os

@@ -1,0 +1,25 @@
+/tmp/codegemma7b-file_size-js-cpp.cpp:7:12: error: no member named 'filesystem' in namespace 'std'
+    7 |   if (std::filesystem::exists(inputFilePath)) {
+      |       ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:9:23: error: no member named 'filesystem' in namespace 'std'
+    9 |               << std::filesystem::file_size(inputFilePath) << std::endl;
+      |                  ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:8:10: error: no member named 'cout' in namespace 'std'
+    8 |     std::cout << "Size of input.txt in current working directory: "
+      |     ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:11:10: error: no member named 'cout' in namespace 'std'
+   11 |     std::cout << "input.txt does not exist in current working directory."
+      |     ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:15:12: error: no member named 'filesystem' in namespace 'std'
+   15 |   if (std::filesystem::exists(rootFilePath)) {
+      |       ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:17:23: error: no member named 'filesystem' in namespace 'std'
+   17 |               << std::filesystem::file_size(rootFilePath) << std::endl;
+      |                  ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:16:10: error: no member named 'cout' in namespace 'std'
+   16 |     std::cout << "Size of input.txt in root directory: "
+      |     ~~~~~^
+/tmp/codegemma7b-file_size-js-cpp.cpp:19:10: error: no member named 'cout' in namespace 'std'
+   19 |     std::cout << "input.txt does not exist in root directory." << std::endl;
+      |     ~~~~~^
+8 errors generated.

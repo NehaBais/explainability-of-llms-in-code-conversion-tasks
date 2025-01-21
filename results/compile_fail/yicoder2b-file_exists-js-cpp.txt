@@ -1,0 +1,4 @@
+/tmp/yicoder2b-file_exists-js-cpp.cpp:1:10: fatal error: 'direct.h' file not found
+    1 | #include <direct.h>  //For directory operations
+      |          ^~~~~~~~~~
+1 error generated.

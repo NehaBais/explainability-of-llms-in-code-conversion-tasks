@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/yicoder2b-dir_make-c-go.go:10:12: assignment mismatch: 1 variable but filepath.Split returns 2 values
+/tmp/yicoder2b-dir_make-c-go.go:10:32: too many arguments in call to filepath.Split
+	have (string, number)
+	want (string)
+/tmp/yicoder2b-dir_make-c-go.go:21:12: assignment mismatch: 2 variables but os.Mkdir returns 1 value

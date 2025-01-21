@@ -1,0 +1,21 @@
+error[E0432]: unresolved import `itertools`
+ --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:1:5
+  |
+1 | use itertools::Itertools; // import this into your file using 'extern crate itertools'; at the top of your code
+  |     ^^^^^^^^^ you might be missing crate `itertools`
+  |
+help: consider importing the `itertools` crate
+  |
+1 + extern crate itertools;
+  |
+
+error[E0599]: no method named `tuple_combinations` found for struct `std::slice::Iter` in the current scope
+  --> /tmp/deepseekcoder7b-str_cmp-c-rs.rs:51:34
+   |
+51 |     for (a, b) in strings.iter().tuple_combinations() {
+   |                                  ^^^^^^^^^^^^^^^^^^ method not found in `Iter<'_, &str>`
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0432, E0599.
+For more information about an error, try `rustc --explain E0432`.

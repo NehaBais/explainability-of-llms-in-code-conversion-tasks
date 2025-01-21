@@ -1,0 +1,52 @@
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:5: error: expected expression
+   48 |     <｜begin▁of▁sentence｜>
+      |     ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:6: error: unexpected character <U+FF5C>
+   48 |     <｜begin▁of▁sentence｜>
+      |      ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:14: error: character <U+2581> not allowed in an identifier
+   48 |     <｜begin▁of▁sentence｜>
+      |             ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:19: error: character <U+2581> not allowed in an identifier
+   48 |     <｜begin▁of▁sentence｜>
+      |                ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:30: error: character <U+FF5C> not allowed in an identifier
+   48 |     <｜begin▁of▁sentence｜>
+      |                         ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:48:9: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   48 |     <｜begin▁of▁sentence｜>
+      |        ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:9: error: expected expression
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |         ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:13: error: unexpected character <U+FF5C>
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |             ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:19: error: character <U+2581> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                  ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:24: error: character <U+2581> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                     ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:35: error: character <U+FF5C> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                              ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:40: error: unexpected character <U+FF5C>
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                                  ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:48: error: character <U+2581> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                                         ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:53: error: character <U+2581> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                                            ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:49:64: error: character <U+FF5C> not allowed in an identifier
+   49 |         : q<｜end▁of▁sentence｜><｜begin▁of▁sentence｜> / C++ -
+      |                                                     ^~
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:89:4: error: expected '}'
+   89 |   }
+      |    ^
+/tmp/deepseekcoder7b-bit_ops-rs-cpp.cpp:14:12: note: to match this '{'
+   14 | int main() {
+      |            ^
+16 errors generated.

@@ -1,0 +1,7 @@
+/tmp/Main.java:10: error: illegal start of expression
+                if (file.isDirectory())) {
+                                       ^
+/tmp/Main.java:12: error: 'else' without 'if'
+                } else {
+                  ^
+2 errors

@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-str_append-js-go.go:11:21: rune literal not terminated (and 1 more errors)

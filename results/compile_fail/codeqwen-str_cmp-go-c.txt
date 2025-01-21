@@ -1,0 +1,18 @@
+/tmp/codeqwen-str_cmp-go-c.c:38:18: error: expected expression
+   38 |     char eqf[] = `when interpreted as UTF-8 and compared under Unicode simple case folding rules.`;
+      |                  ^
+/tmp/codeqwen-str_cmp-go-c.c:42:13: error: use of undeclared identifier 'IsEqual'; did you mean 'isEqual'?
+   42 |             IsEqual = 0;
+      |             ^~~~~~~
+      |             isEqual
+/tmp/codeqwen-str_cmp-go-c.c:39:9: note: 'isEqual' declared here
+   39 |     int isEqual = 1;
+      |         ^
+/tmp/codeqwen-str_cmp-go-c.c:48:9: error: use of undeclared identifier 'IsEqual'; did you mean 'isEqual'?
+   48 |     if (IsEqual)
+      |         ^~~~~~~
+      |         isEqual
+/tmp/codeqwen-str_cmp-go-c.c:39:9: note: 'isEqual' declared here
+   39 |     int isEqual = 1;
+      |         ^
+3 errors generated.

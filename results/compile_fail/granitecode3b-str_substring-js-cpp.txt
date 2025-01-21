@@ -1,0 +1,58 @@
+/tmp/granitecode3b-str_substring-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:7:3: error: unknown type name 'string'
+    7 |   string str = "abcdefgh";
+      |   ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << str.substr(n, m) << endl; // prints "cde"
+      |   ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:12:31: error: use of undeclared identifier 'endl'
+   12 |   cout << str.substr(n, m) << endl; // prints "cde"
+      |                               ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:15:3: error: use of undeclared identifier 'cout'
+   15 |   cout << str.substr(n) << endl;    // prints "cdefgh"
+      |   ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:15:28: error: use of undeclared identifier 'endl'
+   15 |   cout << str.substr(n) << endl;    // prints "cdefgh"
+      |                            ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << str.substring(n) << endl; // prints "cdefgh"
+      |   ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:16:31: error: use of undeclared identifier 'endl'
+   16 |   cout << str.substring(n) << endl; // prints "cdefgh"
+      |                               ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:19:3: error: use of undeclared identifier 'cout'
+   19 |   cout << str.substring(0, str.length() - 1) << endl; // prints "abcdefg"
+      |   ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:19:49: error: use of undeclared identifier 'endl'
+   19 |   cout << str.substring(0, str.length() - 1) << endl; // prints "abcdefg"
+      |                                                 ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:23:16: error: use of undeclared identifier 'string'
+   23 |   if (index != string::npos) {
+      |                ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:24:5: error: use of undeclared identifier 'cout'
+   24 |     cout << str.substr(index, m) << endl; // prints "bcd"
+      |     ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:24:37: error: use of undeclared identifier 'endl'
+   24 |     cout << str.substr(index, m) << endl; // prints "bcd"
+      |                                     ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:29:16: error: use of undeclared identifier 'string'
+   29 |   if (index != string::npos) {
+      |                ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:30:5: error: use of undeclared identifier 'cout'
+   30 |     cout << str.substr(index, m) << endl; // prints "bcd"
+      |     ^
+/tmp/granitecode3b-str_substring-js-cpp.cpp:30:37: error: use of undeclared identifier 'endl'
+   30 |     cout << str.substr(index, m) << endl; // prints "bcd"
+      |                                     ^
+1 warning and 18 errors generated.

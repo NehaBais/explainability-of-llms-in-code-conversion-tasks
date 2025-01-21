@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-file_size-cpp-rs.rs:15:19
+   |
+15 |         Err(e) => {
+   |                   ^ unclosed delimiter
+16 |             eprintln!("Error accessing file: {}", e));
+   |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-file_size-cpp-rs.rs:19:1
+   |
+16 |             eprintln!("Error accessing file: {}", e));
+   |                                                     - missing open `(` for this delimiter
+...
+19 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

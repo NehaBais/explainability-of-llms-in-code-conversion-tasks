@@ -1,0 +1,19 @@
+/tmp/codeqwen-file_create-js-cpp.cpp:7:28: error: use of undeclared identifier 'O_CREAT'
+    7 |   if (open("./output.txt", O_CREAT | O_TRUNC, 0666) == -1) {
+      |                            ^
+/tmp/codeqwen-file_create-js-cpp.cpp:7:38: error: use of undeclared identifier 'O_TRUNC'
+    7 |   if (open("./output.txt", O_CREAT | O_TRUNC, 0666) == -1) {
+      |                                      ^
+/tmp/codeqwen-file_create-js-cpp.cpp:13:7: error: use of undeclared identifier 'mkdir'
+   13 |   if (mkdir("./docs", 0777) == -1) {
+      |       ^
+/tmp/codeqwen-file_create-js-cpp.cpp:19:27: error: use of undeclared identifier 'O_CREAT'
+   19 |   if (open("/output.txt", O_CREAT | O_TRUNC, 0666) == -1) {
+      |                           ^
+/tmp/codeqwen-file_create-js-cpp.cpp:19:37: error: use of undeclared identifier 'O_TRUNC'
+   19 |   if (open("/output.txt", O_CREAT | O_TRUNC, 0666) == -1) {
+      |                                     ^
+/tmp/codeqwen-file_create-js-cpp.cpp:25:7: error: use of undeclared identifier 'mkdir'
+   25 |   if (mkdir("/docs", 0777) == -1) {
+      |       ^
+6 errors generated.

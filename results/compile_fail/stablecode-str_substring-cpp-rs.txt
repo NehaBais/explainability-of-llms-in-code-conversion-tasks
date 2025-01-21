@@ -1,0 +1,27 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:1:11
+  |
+1 | fn main() {
+  |           ^ unclosed delimiter
+...
+4 |     println!("{}", &s[3..7]));
+  |                             ^ mismatched closing delimiter
+
+error: mismatched closing delimiter: `}`
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:5:13
+  |
+5 |     println!("{}", &s[..]}));
+  |             ^            ^ mismatched closing delimiter
+  |             |
+  |             unclosed delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-str_substring-cpp-rs.rs:5:27
+  |
+4 |     println!("{}", &s[3..7]));
+  |                             - missing open `(` for this delimiter
+5 |     println!("{}", &s[..]}));
+  |                           ^ unexpected closing delimiter
+
+error: aborting due to 3 previous errors
+

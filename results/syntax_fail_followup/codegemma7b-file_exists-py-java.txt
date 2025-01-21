@@ -1,0 +1,4 @@
+/tmp/FileVerification.java:3: error: class, interface, enum, or record expected
+--enable-preview
+^
+1 error

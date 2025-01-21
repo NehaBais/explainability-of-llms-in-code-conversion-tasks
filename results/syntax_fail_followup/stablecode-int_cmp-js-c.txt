@@ -1,0 +1,10 @@
+/tmp/stablecode-int_cmp-js-c.c:7:41: error: extraneous ')' before ';'
+    7 |     printf("%d is less than %d\n", a, b));
+      |                                         ^
+/tmp/stablecode-int_cmp-js-c.c:8:20: error: extraneous ')' after condition, expected a statement
+    8 |   } else if (a > b)) {
+      |                    ^
+/tmp/stablecode-int_cmp-js-c.c:9:44: error: extraneous ')' before ';'
+    9 |     printf("%d is greater than %d\n", a, b));
+      |                                            ^
+3 errors generated.

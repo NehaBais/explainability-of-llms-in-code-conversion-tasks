@@ -1,0 +1,68 @@
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+ --> /tmp/codellama7b-str_substring-py-rs.rs:9:20
+  |
+9 |     println!("{}", s[n - 1..n + m - 1]);
+  |               --   ^^^^^^^^^^^^^^^^^^^ doesn't have a size known at compile-time
+  |               |
+  |               required by a bound introduced by this call
+  |
+  = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:12:20
+   |
+12 |     println!("{}", s[n - 1..]);
+   |               --   ^^^^^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:15:20
+   |
+15 |     println!("{}", s[..s.len() - 1]);
+   |               --   ^^^^^^^^^^^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:19:20
+   |
+19 |     println!("{}", s[indx..indx + m]);
+   |               --   ^^^^^^^^^^^^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the size for values of type `str` cannot be known at compilation time
+  --> /tmp/codellama7b-str_substring-py-rs.rs:23:20
+   |
+23 |     println!("{}", s[indx..indx + m]);
+   |               --   ^^^^^^^^^^^^^^^^^ doesn't have a size known at compile-time
+   |               |
+   |               required by a bound introduced by this call
+   |
+   = help: the trait `Sized` is not implemented for `str`
+note: required by an implicit `Sized` bound in `core::fmt::rt::Argument::<'a>::new_display`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/fmt/rt.rs:113:5
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

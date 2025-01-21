@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/dolphincoder7b-int_arith-cpp-go.go:24:9: too many return values
+	have (number)
+	want ()

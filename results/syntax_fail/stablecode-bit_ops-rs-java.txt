@@ -1,0 +1,4 @@
+/tmp/Main.java:11: error: bad operand type int for unary operator '!'
+    System.out.printf("!a     = %8d%n", !a);
+                                        ^
+1 error

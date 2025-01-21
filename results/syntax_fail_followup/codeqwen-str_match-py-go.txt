@@ -1,0 +1,1 @@
+/tmp/codeqwen-str_match-py-go.go:1:1: expected 'package', found loc

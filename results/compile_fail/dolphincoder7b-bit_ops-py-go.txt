@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/dolphincoder7b-bit_ops-py-go.go:12:15: invalid operation: a & b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:14:18: invalid operation: b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:16:19: invalid operation: b & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:18:15: invalid operation: (^a) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:27:16: invalid operation: (a >> 1) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:28:15: invalid operation: (a << 1) & mask (mismatched types int64 and int)
+/tmp/dolphincoder7b-bit_ops-py-go.go:51:74: undefined: b
+/tmp/dolphincoder7b-bit_ops-py-go.go:54:61: undefined: b
+/tmp/dolphincoder7b-bit_ops-py-go.go:59:40: invalid operation: shiftAmount <= width - 1 (mismatched types int64 and uint64)
+/tmp/dolphincoder7b-bit_ops-py-go.go:63:25: cannot use width - uint64(-shiftAmount) (value of type uint64) as int64 value in argument to rotr
+/tmp/dolphincoder7b-bit_ops-py-go.go:63:25: too many errors

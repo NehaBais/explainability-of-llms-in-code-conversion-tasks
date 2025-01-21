@@ -1,12 +1,16 @@
-def bitwise(a, b):
-    print("a:   {:016b}".format(a))
-    print("b:   {:016b}".format(b))
+def bitwise_operations(a, b):
+    print(f"a:   {bin(a)[2:].zfill(16)}")
+    print(f"b:   {bin(b)[2:].zfill(16)}")
 
     # Bitwise logical operations
-    print("and: {:016b}".format(a & b))
-    print("or:  {:016b}".format(a | b))
-    print("xor: {:016b}".format(a ^ b))
-    print("not: {:016b}".format(~a))
+    and_result = a & b
+    or_result = a | b
+    xor_result = a ^ b
+    not_result = ~a
+    print(f"and: {bin(and_result)[2:].zfill(16)}")
+    print(f"or:  {bin(or_result)[2:].zfill(16)}")
+    print(f"xor: {bin(xor_result)[2:].zfill(16)}")
+    print(f"not: {bin(not_result & 0xFFFF)[2:].zfill(16)}")
 
     if b < 0:
         print(
@@ -14,21 +18,30 @@ def bitwise(a, b):
         )
         return
 
-    ua = a
-    ub = b
-
     # Logical shifts (unsigned left operand)
-    print("shl: {:016b}".format(ua << ub))
-    print("shr: {:016b}".format(ua >> ub))
+    shl_result = a << b
+    shr_result = a >> b
+    print(f"shl: {bin(shl_result)[2:].zfill(16)}")
+    print(f"shr: {bin(shr_result & 0xFFFF)[2:].zfill(16)}")
 
     # Arithmetic shifts (signed left operand)
-    print("las: {:016b}".format(a << ub))
-    print("ras: {:016b}".format(a >> ub))
+    las_result = a << b
+    ras_result = a >> b
+    print(f"las: {bin(las_result)[2:].zfill(16)}")
+    print(f"ras: {bin(ras_result & 0xFFFF)[2:].zfill(16)}")
 
     # Rotations
-    print("rol: {:016b}".format((ua << ub | a >> (16 - ub))))
-    print("ror: {:016b}".format((int(ua >> ub) | a << (16 - ub))))
+    rol_result = (a << b) | ((a >> (16 - b)) & 0xFFFF)
+    ror_result = ((a >> b) & 0xFFFF) | (a << (16 - b))
+    print(f"rol: {bin(rol_result)[2:].zfill(16)}")
+    print(f"ror: {bin(ror_result)[2:].zfill(16)}")
+
+
+# Main function to call the bitwise operations with specific values for a and b
+def main():
+    a, b = -460, 6
+    bitwise_operations(a, b)
 
 
 if __name__ == "__main__":
-    bitwise(-460, 6)
+    main()

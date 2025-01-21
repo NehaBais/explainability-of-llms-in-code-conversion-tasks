@@ -1,0 +1,52 @@
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:9:30
+  |
+9 |     let mut tmp = ((a as u32 << b) as i32) as usize;
+  |                              ^^ -- interpreted as generic arguments
+  |                              |
+  |                              not interpreted as shift
+  |
+help: try shifting the cast value
+  |
+9 |     let mut tmp = (((a as u32) << b) as i32) as usize;
+  |                     +        +
+
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+  --> /tmp/yicoder2b-bit_ops-java-rs.rs:13:22
+   |
+13 |     tmp |= (a as u32 << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |                      ^^ ------ interpreted as generic arguments
+   |                      |
+   |                      not interpreted as shift
+   |
+help: try shifting the cast value
+   |
+13 |     tmp |= ((a as u32) << (((b - 1) % 32) + 1)) & 0xFFFFFFFF;
+   |             +        +
+
+error: `~` cannot be used as a unary operator
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:5:29
+  |
+5 |     println!("NOT a: {:x}", ~a);
+  |                             ^
+  |
+help: use `!` to perform bitwise not
+  |
+5 |     println!("NOT a: {:x}", !a);
+  |                             ~
+
+error: `<<` is interpreted as a start of generic arguments for `u32`, not a shift
+ --> /tmp/yicoder2b-bit_ops-java-rs.rs:6:40
+  |
+6 |     println!("a << b: {:x}", (a as u32 << b) as i32); // left shift
+  |                                        ^^ -- interpreted as generic arguments
+  |                                        |
+  |                                        not interpreted as shift
+  |
+help: try shifting the cast value
+  |
+6 |     println!("a << b: {:x}", ((a as u32) << b) as i32); // left shift
+  |                               +        +
+
+error: aborting due to 4 previous errors
+

@@ -1,0 +1,18 @@
+/tmp/qwen2.5coder2b-file_exists-js-c.c:1:1: error: unknown type name 'using'
+    1 | using System;
+      | ^
+/tmp/qwen2.5coder2b-file_exists-js-c.c:2:1: error: unknown type name 'using'
+    2 | using System.IO;
+      | ^
+/tmp/qwen2.5coder2b-file_exists-js-c.c:2:13: error: expected ';' after top level declarator
+    2 | using System.IO;
+      |             ^
+      |             ;
+/tmp/qwen2.5coder2b-file_exists-js-c.c:4:1: error: unknown type name 'class'
+    4 | class Program {
+      | ^
+/tmp/qwen2.5coder2b-file_exists-js-c.c:4:14: error: expected ';' after top level declarator
+    4 | class Program {
+      |              ^
+      |              ;
+5 errors generated.

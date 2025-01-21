@@ -1,0 +1,1 @@
+/tmp/yicoder2b-str_append-c-go.go:1:1: expected 'package', found 'if'

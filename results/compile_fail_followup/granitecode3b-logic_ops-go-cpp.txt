@@ -1,0 +1,25 @@
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:6:3: error: use of undeclared identifier 'cout'
+    6 |   cout << "a and b is " << (a && b) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:6:40: error: use of undeclared identifier 'endl'
+    6 |   cout << "a and b is " << (a && b) << endl;
+      |                                        ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << "a or b is " << (a || b) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:7:39: error: use of undeclared identifier 'endl'
+    7 |   cout << "a or b is " << (a || b) << endl;
+      |                                       ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "not a is " << (!a) << endl;
+      |   ^
+/tmp/granitecode3b-logic_ops-go-cpp.cpp:8:34: error: use of undeclared identifier 'endl'
+    8 |   cout << "not a is " << (!a) << endl;
+      |                                  ^
+1 warning and 7 errors generated.

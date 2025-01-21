@@ -1,0 +1,49 @@
+/tmp/stablecode-file_create-java-c.c:8:5: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     getcwd(currDir, sizeof(currDir)));
+      |     ^
+/tmp/stablecode-file_create-java-c.c:8:37: error: extraneous ')' before ';'
+    8 |     getcwd(currDir, sizeof(currDir)));
+      |                                     ^
+/tmp/stablecode-file_create-java-c.c:15:17: error: variable has incomplete type 'struct stat'
+   15 |     struct stat statBuf;
+      |                 ^
+/tmp/stablecode-file_create-java-c.c:15:12: note: forward declaration of 'struct stat'
+   15 |     struct stat statBuf;
+      |            ^
+/tmp/stablecode-file_create-java-c.c:20:48: error: extraneous ')' before ';'
+   20 |     result = asprintf(&rootPath, "%s", currDir));
+      |                                                ^
+/tmp/stablecode-file_create-java-c.c:30:60: error: extraneous ')' before ';'
+   30 |     result = asprintf(&filePath1, "%s/output.txt", currDir));
+      |                                                            ^
+/tmp/stablecode-file_create-java-c.c:37:61: error: extraneous ')' before ';'
+   37 |     result = asprintf(&filePath2, "%s/output.txt", rootPath));
+      |                                                             ^
+/tmp/stablecode-file_create-java-c.c:44:53: error: extraneous ')' before ';'
+   44 |     result = asprintf(&dirPath1, "%s/docs", currDir));
+      |                                                     ^
+/tmp/stablecode-file_create-java-c.c:51:54: error: extraneous ')' before ';'
+   51 |     result = asprintf(&dirPath2, "%s/docs", rootPath));
+      |                                                      ^
+/tmp/stablecode-file_create-java-c.c:62:34: error: extraneous ')' before ';'
+   62 |     file1 = fopen(filePath1, "w"));
+      |                                  ^
+/tmp/stablecode-file_create-java-c.c:64:64: error: extraneous ')' before ';'
+   64 |         fprintf(stderr, "Failed to create file: %s", filePath1));
+      |                                                                ^
+/tmp/stablecode-file_create-java-c.c:69:34: error: extraneous ')' before ';'
+   69 |     file2 = fopen(filePath2, "w"));
+      |                                  ^
+/tmp/stablecode-file_create-java-c.c:71:64: error: extraneous ')' before ';'
+   71 |         fprintf(stderr, "Failed to create file: %s", filePath2));
+      |                                                                ^
+/tmp/stablecode-file_create-java-c.c:76:14: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   76 |     result = mkdir(dirPath1, 0777);
+      |              ^
+/tmp/stablecode-file_create-java-c.c:78:68: error: extraneous ')' before ';'
+   78 |         fprintf(stderr, "Failed to create directory: %s", dirPath1));
+      |                                                                    ^
+/tmp/stablecode-file_create-java-c.c:85:68: error: extraneous ')' before ';'
+   85 |         fprintf(stderr, "Failed to create directory: %s", dirPath2));
+      |                                                                    ^
+15 errors generated.

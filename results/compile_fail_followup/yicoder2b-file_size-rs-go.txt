@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_size-rs-go.go:12:24: err.Type undefined (type error has no field or method Type)
+/tmp/yicoder2b-file_size-rs-go.go:12:43: undefined: filepath.NotExist
+/tmp/yicoder2b-file_size-rs-go.go:20:18: file.Fstat undefined (type *os.File has no field or method Fstat)

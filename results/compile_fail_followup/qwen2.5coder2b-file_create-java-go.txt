@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_create-java-go.go:6:2: "os" imported and not used
+/tmp/qwen2.5coder2b-file_create-java-go.go:20:18: not enough arguments in call to createFile
+	have (string, string)
+	want (string, string, int64)

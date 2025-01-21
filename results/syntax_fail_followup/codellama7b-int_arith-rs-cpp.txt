@@ -1,0 +1,14 @@
+/tmp/codellama7b-int_arith-rs-cpp.cpp:8:33: error: use of undeclared identifier 'argv'
+    8 |   std::vector<std::string> args(argv, argv + argc);
+      |                                 ^
+/tmp/codellama7b-int_arith-rs-cpp.cpp:8:39: error: use of undeclared identifier 'argv'
+    8 |   std::vector<std::string> args(argv, argv + argc);
+      |                                       ^
+/tmp/codellama7b-int_arith-rs-cpp.cpp:8:46: error: use of undeclared identifier 'argc'; did you mean 'args'?
+    8 |   std::vector<std::string> args(argv, argv + argc);
+      |                                              ^~~~
+      |                                              args
+/tmp/codellama7b-int_arith-rs-cpp.cpp:8:28: note: 'args' declared here
+    8 |   std::vector<std::string> args(argv, argv + argc);
+      |                            ^
+3 errors generated.

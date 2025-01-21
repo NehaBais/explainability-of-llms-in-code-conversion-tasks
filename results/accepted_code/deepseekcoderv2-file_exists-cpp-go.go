@@ -5,23 +5,20 @@ import (
 	"os"
 )
 
-func checkFileAndDir(path string, dirPath string) {
-	// Check if the file or directory exists
-	fileInfo, err := os.Stat(dirPath + path)
-	if err != nil {
-		fmt.Println("The path", path, "does not exist")
+func fileExists(path string) {
+	fmt.Printf("%s: ", path)
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		fmt.Println("does not exist")
+	} else if info, _ := os.Stat(path); info.IsDir() {
+		fmt.Println("is a directory")
 	} else {
-		// Check if it's a directory or a regular file
-		if fileInfo.IsDir() {
-			fmt.Printf("%s is a directory\n", dirPath+path)
-		} else {
-			fmt.Printf("%s exists with size %d bytes.\n", path, fileInfo.Size())
-		}
+		fmt.Printf("exists with a file size of %d bytes.\n", info.Size())
 	}
 }
+
 func main() {
-	checkFileAndDir("input.txt", "")
-	checkFileAndDir("zero_length.txt", "")
-	checkFileAndDir("docs/input.txt", "docs/")
-	checkFileAndDir("docs/zero_length.txt", "docs/")
+	fileExists("input.txt")
+	fileExists("zero_length.txt")
+	fileExists("docs/input.txt")
+	fileExists("docs/zero_length.txt")
 }

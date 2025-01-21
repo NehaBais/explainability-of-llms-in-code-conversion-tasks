@@ -1,0 +1,4 @@
+/tmp/deepseekcoderv2-file_exists-js-c.c:2:10: fatal error: 'string' file not found
+    2 | #include <string>
+      |          ^~~~~~~~
+1 error generated.

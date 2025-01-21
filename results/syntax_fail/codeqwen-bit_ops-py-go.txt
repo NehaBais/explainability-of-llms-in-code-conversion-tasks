@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codeqwen-bit_ops-py-go.go:33:73: cannot use int32(-i) (value of type int32) as int value in argument to bits.RotateLeft32

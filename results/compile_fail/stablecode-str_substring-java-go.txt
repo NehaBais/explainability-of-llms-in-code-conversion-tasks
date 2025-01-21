@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-str_substring-java-go.go:16:25: syntax error: unexpected ] at end of statement
+/tmp/stablecode-str_substring-java-go.go:20:26: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:28:31: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:45:44: syntax error: unexpected {, expected semicolon or newline
+/tmp/stablecode-str_substring-java-go.go:46:3: syntax error: unexpected if, expected expression
+/tmp/stablecode-str_substring-java-go.go:55:45: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:56:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:57:40: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:58:48: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:59:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_substring-java-go.go:59:50: too many errors

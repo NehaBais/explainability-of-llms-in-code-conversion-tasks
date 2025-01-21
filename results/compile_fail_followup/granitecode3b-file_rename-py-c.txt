@@ -1,0 +1,53 @@
+/tmp/granitecode3b-file_rename-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_rename-py-c.c:4:14: error: use of undeclared identifier 'PATH_MAX'
+    4 |   char path1[PATH_MAX];
+      |              ^
+/tmp/granitecode3b-file_rename-py-c.c:5:14: error: use of undeclared identifier 'PATH_MAX'
+    5 |   char path2[PATH_MAX];
+      |              ^
+/tmp/granitecode3b-file_rename-py-c.c:6:16: error: use of undeclared identifier 'NULL'
+    6 |   char *home = NULL;
+      |                ^
+/tmp/granitecode3b-file_rename-py-c.c:9:7: error: call to undeclared function 'getcwd'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   if (getcwd(path1, sizeof(path1)) == NULL) {
+      |       ^
+/tmp/granitecode3b-file_rename-py-c.c:9:39: error: use of undeclared identifier 'NULL'
+    9 |   if (getcwd(path1, sizeof(path1)) == NULL) {
+      |                                       ^
+/tmp/granitecode3b-file_rename-py-c.c:10:12: error: use of undeclared identifier 'EXIT_FAILURE'
+   10 |     return EXIT_FAILURE;
+      |            ^
+In file included from /tmp/granitecode3b-file_rename-py-c.c:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:357:54: error: function definition is not allowed here
+  357 | __header_always_inline int __sputc(int _c, FILE *_p) {
+      |                                                      ^
+In file included from /tmp/granitecode3b-file_rename-py-c.c:18:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h:58:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:66:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h:186:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/endian.h:37:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/endian.h:61:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_endian.h:131:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:62:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:53:1: error: function definition is not allowed here
+   53 | {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:63:1: error: function definition is not allowed here
+   63 | {
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:79:1: error: function definition is not allowed here
+   79 | {
+      | ^
+/tmp/granitecode3b-file_rename-py-c.c:26:9: warning: 'NULL' macro redefined [-Wmacro-redefined]
+   26 | #define NULL 0
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h:49:9: note: previous definition is here
+   49 | #define NULL  __DARWIN_NULL
+      |         ^
+1 warning and 12 errors generated.

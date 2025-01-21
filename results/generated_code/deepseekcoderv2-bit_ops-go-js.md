@@ -1,34 +1,53 @@
-```
+ Sure! Below is the equivalent JavaScript code for the provided Go code:
+
+```javascript
 function bitwise(a, b) {
-	// Bitwise logical operations
-	console.log("AND:", (a & b).toString(2));
-	console.log("OR: ", (a | b).toString(2));
-	console.log("XOR:", (a ^ b).toString(2));
-	console.log("NOT:", (~a).toString(2));
+    console.log("a:   " + a.toString(2).padStart(16, '0'));
+    console.log("b:   " + b.toString(2).padStart(16, '0'));
 
-	if (b < 0) {
-		console.log("Right operand is negative, but all shifts require an unsigned right operand (shift distance).");
-		return;
-	}
-	var ua = a & 0xFFFF; // Convert to unsigned int16
-	var ub = b & 0xFFFF; // Convert to unsigned int32
+    // Bitwise logical operations
+    const and = a & b;
+    const or = a | b;
+    const xor = a ^ b;
+    const not = ~a;
 
-	// Logical shifts (unsigned left operand)
-	console.log("SHL:", (ua << ub).toString(2));
-	console.log("SHR:", (ua >> ub).toString(2));
+    console.log("and: " + and.toString(2).padStart(16, '0'));
+    console.log("or:  " + or.toString(2).padStart(16, '0'));
+    console.log("xor: " + xor.toString(2).padStart(16, '0'));
+    console.log("not: " + not.toString(2).padStart(16, '0'));
 
-	// Arithmetic shifts (signed left operand)
-	console.log("LAS:", (a << ub).toString(2));
-	console.log("RAS:", (a >> ub).toString(2));
+    if (b < 0) {
+        console.log("Right operand is negative, but all shifts require an unsigned right operand (shift distance).");
+        return;
+    }
 
-	// Rotations
-	console.log("ROL:", ((ua << ub) | (int16(uint16(a)) >> (16 - ub))).toString(2));
-	console.log("ROR:", ((int16(uint16(a) >> ub)) | a << (16 - ub)).toString(2));
+    // Logical shifts (unsigned left operand)
+    const shl = a << b;
+    const shr = a >> b;
+
+    // Arithmetic shifts (signed left operand)
+    const las = a << b;
+    const ras = a >> b;
+
+    // Rotations
+    const rol = ((a << b) | (a >>> (16 - b))) & 0xFFFF;
+    const ror = ((a >>> b) | (a << (16 - b))) & 0xFFFF;
+
+    console.log("shl: " + shl.toString(2).padStart(16, '0'));
+    console.log("shr: " + shr.toString(2).padStart(16, '0'));
+    console.log("las: " + las.toString(2).padStart(16, '0'));
+    console.log("ras: " + ras.toString(2).padStart(16, '0'));
+    console.log("rol: " + rol.toString(2).padStart(16, '0'));
+    console.log("ror: " + ror.toString(2).padStart(16, '0'));
 }
 
 function main() {
-	var a = -460;
-	var b = 6;
-	bitwise(a, b);
+    const a = -460;
+    const b = 6;
+    bitwise(a, b);
 }
+
+main();
 ```
+
+This JavaScript code performs the same operations as your Go code. It uses JavaScript's built-in methods for bitwise operations and ensures that all shift/rotate distances are treated as unsigned integers to avoid negative values causing unexpected behavior.

@@ -1,0 +1,14 @@
+/tmp/granitecode8b-bit_ops-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-java-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("a AND b: %d", a & b);
+      |   ^
+/tmp/granitecode8b-bit_ops-java-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-bit_ops-java-c.c:17:29: error: expected expression
+   17 |   printf("a >>> b: %d", a >>> b); // logical right shift
+      |                             ^
+/tmp/granitecode8b-bit_ops-java-c.c:20:33: error: expected expression
+   20 |   int d = a << b | a >> b | a >>> b | (a & b) | (a ^ b) | ~a;
+      |                                 ^
+4 errors generated.

@@ -1,0 +1,29 @@
+/tmp/qwen2.5coder2b-int_factors-go-c.c:12:28: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   int64_t *fs = (int64_t *)malloc(sizeof(int64_t));
+      |                            ^
+/tmp/qwen2.5coder2b-int_factors-go-c.c:12:28: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/qwen2.5coder2b-int_factors-go-c.c:17:13: warning: & has lower precedence than ==; == will be evaluated first [-Wparentheses]
+   17 |   while (nr & 1 == 0) {
+      |             ^~~~~~~~
+/tmp/qwen2.5coder2b-int_factors-go-c.c:17:13: note: place parentheses around the '==' expression to silence this warning
+   17 |   while (nr & 1 == 0) {
+      |             ^       
+      |               (     )
+/tmp/qwen2.5coder2b-int_factors-go-c.c:17:13: note: place parentheses around the & expression to evaluate it first
+   17 |   while (nr & 1 == 0) {
+      |             ^
+      |          (     )
+/tmp/qwen2.5coder2b-int_factors-go-c.c:21:3: error: call to undeclared function 'addFactor'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   21 |   addFactor(fs, n++, e);
+      |   ^
+/tmp/qwen2.5coder2b-int_factors-go-c.c:42:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   42 |   free(fs);
+      |   ^
+/tmp/qwen2.5coder2b-int_factors-go-c.c:42:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/tmp/qwen2.5coder2b-int_factors-go-c.c:47:6: error: conflicting types for 'addFactor'
+   47 | void addFactor(int64_t *fs, int *size, int e) {
+      |      ^
+/tmp/qwen2.5coder2b-int_factors-go-c.c:21:3: note: previous implicit declaration is here
+   21 |   addFactor(fs, n++, e);
+      |   ^
+1 warning and 4 errors generated.

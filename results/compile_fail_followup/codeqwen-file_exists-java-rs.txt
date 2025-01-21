@@ -1,0 +1,17 @@
+error[E0463]: can't find crate for `dirs`
+ --> /tmp/codeqwen-file_exists-java-rs.rs:1:1
+  |
+1 | extern crate dirs;
+  | ^^^^^^^^^^^^^^^^^^ can't find crate
+
+warning: unused import: `std::fs`
+ --> /tmp/codeqwen-file_exists-java-rs.rs:2:5
+  |
+2 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0463`.

@@ -1,18 +1,23 @@
 const fs = require("fs");
-const path = "/path/to/file"; // Replace with your file's path
+const path = require("path");
 
-// Check for input.txt in current directory
-try {
-  const stats = fs.statSync(path);
-  console.log("File size:", stats.size, "bytes");
-} catch (err) {
-  console.error("Error checking file size:", err.message);
+function getFileSize(filePath) {
+  try {
+    const stats = fs.statSync(filePath);
+    return stats.size;
+  } catch (err) {
+    if (err.code === "ENOENT") {
+      console.log(`${filePath} not found`);
+    } else {
+      throw err;
+    }
+  }
 }
 
-// Check for input.txt in the root directory
-try {
-  const stats = fs.statSync("/input.txt");
-  console.log("File size:", stats.size, "bytes");
-} catch (err) {
-  console.error("Error checking file size:", err.message);
-}
+// Current working directory
+const currentFilePath = path.join(__dirname, "input.txt");
+console.log(getFileSize(currentFilePath));
+
+// Root file system
+const rootFilePath = "/input.txt";
+console.log(getFileSize(rootFilePath));

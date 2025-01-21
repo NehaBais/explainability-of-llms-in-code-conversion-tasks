@@ -1,0 +1,21 @@
+/tmp/deepseekcoderv2-str_concat-js-c.c:9:26: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *result = (char *)malloc(strlen(s) + strlen(" there!") + 1);
+      |                          ^
+/tmp/deepseekcoderv2-str_concat-js-c.c:9:26: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/deepseekcoderv2-str_concat-js-c.c:9:33: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   char *result = (char *)malloc(strlen(s) + strlen(" there!") + 1);
+      |                                 ^
+/tmp/deepseekcoderv2-str_concat-js-c.c:9:33: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/deepseekcoderv2-str_concat-js-c.c:10:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   strcpy(result, s);
+      |   ^
+/tmp/deepseekcoderv2-str_concat-js-c.c:10:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/deepseekcoderv2-str_concat-js-c.c:11:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   strcat(result, " there!");
+      |   ^
+/tmp/deepseekcoderv2-str_concat-js-c.c:11:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/deepseekcoderv2-str_concat-js-c.c:17:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   free(result);
+      |   ^
+/tmp/deepseekcoderv2-str_concat-js-c.c:17:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+5 errors generated.

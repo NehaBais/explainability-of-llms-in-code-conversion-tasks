@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-bit_ops-js-go.go:6:26: newline in string
+/tmp/stablecode-bit_ops-js-go.go:6:26: syntax error: unexpected newline in argument list; possibly missing comma or )
+/tmp/stablecode-bit_ops-js-go.go:8:1: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-js-go.go:8:15: newline in string
+/tmp/stablecode-bit_ops-js-go.go:9:25: newline in string
+/tmp/stablecode-bit_ops-js-go.go:11:1: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-js-go.go:11:15: newline in string
+/tmp/stablecode-bit_ops-js-go.go:12:26: newline in string
+/tmp/stablecode-bit_ops-js-go.go:14:1: invalid character U+005C '\'
+/tmp/stablecode-bit_ops-js-go.go:14:15: newline in string
+/tmp/stablecode-bit_ops-js-go.go:14:15: too many errors

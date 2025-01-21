@@ -1,0 +1,34 @@
+/tmp/granitecode3b-file_create-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::filesystem::path current_directory = ".";
+      |   ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:6:3: error: use of undeclared identifier 'std'
+    6 |   std::filesystem::path root_directory = "/";
+      |   ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:11:23: error: use of undeclared identifier 'std'
+   11 | void createFile(const std::filesystem::path &directory) {
+      |                       ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:12:3: error: use of undeclared identifier 'std'
+   12 |   std::ofstream file(directory.string() + "/output.txt");
+      |   ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:13:7: error: use of undeclared identifier 'file'
+   13 |   if (file.is_open()) {
+      |       ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:14:5: error: use of undeclared identifier 'file'
+   14 |     file.close();
+      |     ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:17:28: error: use of undeclared identifier 'std'
+   17 | void createDirectory(const std::filesystem::path &directory) {
+      |                            ^
+/tmp/granitecode3b-file_create-py-cpp.cpp:18:3: error: use of undeclared identifier 'std'
+   18 |   std::filesystem::create_directory(directory.string() + "/docs");
+      |   ^
+11 errors generated.

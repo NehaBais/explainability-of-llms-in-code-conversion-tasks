@@ -1,0 +1,46 @@
+/tmp/granitecode8b-str_concat-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:4:1: error: unknown type name 'string'
+    4 | string sconcat(const string &s1, const string &s2) {
+      | ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:4:22: error: unknown type name 'string'
+    4 | string sconcat(const string &s1, const string &s2) {
+      |                      ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:4:40: error: unknown type name 'string'
+    4 | string sconcat(const string &s1, const string &s2) {
+      |                                        ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string s0 = s1 + s2;
+      |   ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:9:9: error: unknown type name 'string'
+    9 |   const string s = "hello";
+      |         ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:10:3: error: unknown type name 'string'
+   10 |   string s2;
+      |   ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:12:3: error: use of undeclared identifier 'cout'
+   12 |   cout << s << " literal" << endl;
+      |   ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:12:30: error: use of undeclared identifier 'endl'
+   12 |   cout << s << " literal" << endl;
+      |                              ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << s << " literal" << endl;
+      |   ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:14:30: error: use of undeclared identifier 'endl'
+   14 |   cout << s << " literal" << endl;
+      |                              ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << s2 << endl;
+      |   ^
+/tmp/granitecode8b-str_concat-c-cpp.cpp:17:17: error: use of undeclared identifier 'endl'
+   17 |   cout << s2 << endl;
+      |                 ^
+1 warning and 14 errors generated.

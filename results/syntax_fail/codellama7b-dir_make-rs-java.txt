@@ -1,0 +1,11 @@
+/tmp/MkdirAll.java:7: error: cannot find symbol
+    if (!Files.exists(Paths.get(path))) {
+                      ^
+  symbol:   variable Paths
+  location: class MkdirAll
+/tmp/MkdirAll.java:8: error: cannot find symbol
+      Files.createDirectories(Paths.get(path));
+                              ^
+  symbol:   variable Paths
+  location: class MkdirAll
+2 errors

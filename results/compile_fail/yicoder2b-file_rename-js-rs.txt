@@ -1,0 +1,93 @@
+error[E0277]: the trait bound `[&str; 2]: AsRef<Path>` is not satisfied
+ --> /tmp/yicoder2b-file_rename-js-rs.rs:5:34
+  |
+5 |     if let Err(e1) = fs::rename(&["input.txt", "output.txt"], &["output.txt"]) {
+  |                      ----------  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 2]`, which is required by `&[&str; 2]: AsRef<Path>`
+  |                      |
+  |                      required by a bound introduced by this call
+  |
+  = help: the following other types implement trait `AsRef<T>`:
+            [T; N]
+            [T]
+  = note: required for `&[&str; 2]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error[E0277]: the trait bound `[&str; 1]: AsRef<Path>` is not satisfied
+ --> /tmp/yicoder2b-file_rename-js-rs.rs:5:64
+  |
+5 |     if let Err(e1) = fs::rename(&["input.txt", "output.txt"], &["output.txt"]) {
+  |                      ----------                                ^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 1]`, which is required by `&[&str; 1]: AsRef<Path>`
+  |                      |
+  |                      required by a bound introduced by this call
+  |
+  = help: the following other types implement trait `AsRef<T>`:
+            [T; N]
+            [T]
+  = note: required for `&[&str; 1]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error[E0277]: the trait bound `[&str; 2]: AsRef<Path>` is not satisfied
+  --> /tmp/yicoder2b-file_rename-js-rs.rs:10:34
+   |
+10 |     if let Err(e2) = fs::rename(&["c:/input.txt", "c:/output.txt"], &["c:/output.txt"]) {
+   |                      ----------  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 2]`, which is required by `&[&str; 2]: AsRef<Path>`
+   |                      |
+   |                      required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `AsRef<T>`:
+             [T; N]
+             [T]
+   = note: required for `&[&str; 2]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error[E0277]: the trait bound `[&str; 1]: AsRef<Path>` is not satisfied
+  --> /tmp/yicoder2b-file_rename-js-rs.rs:10:70
+   |
+10 |     if let Err(e2) = fs::rename(&["c:/input.txt", "c:/output.txt"], &["c:/output.txt"]) {
+   |                      ----------                                      ^^^^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 1]`, which is required by `&[&str; 1]: AsRef<Path>`
+   |                      |
+   |                      required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `AsRef<T>`:
+             [T; N]
+             [T]
+   = note: required for `&[&str; 1]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error[E0277]: the trait bound `[&str; 2]: AsRef<Path>` is not satisfied
+  --> /tmp/yicoder2b-file_rename-js-rs.rs:15:34
+   |
+15 |     if let Err(e3) = fs::rename(&["docs", "mydocs"], &["c:/docs", "c:/mydocs"]) {
+   |                      ----------  ^^^^^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 2]`, which is required by `&[&str; 2]: AsRef<Path>`
+   |                      |
+   |                      required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `AsRef<T>`:
+             [T; N]
+             [T]
+   = note: required for `&[&str; 2]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error[E0277]: the trait bound `[&str; 2]: AsRef<Path>` is not satisfied
+  --> /tmp/yicoder2b-file_rename-js-rs.rs:15:55
+   |
+15 |     if let Err(e3) = fs::rename(&["docs", "mydocs"], &["c:/docs", "c:/mydocs"]) {
+   |                      ----------                       ^^^^^^^^^^^^^^^^^^^^^^^^ the trait `AsRef<Path>` is not implemented for `[&str; 2]`, which is required by `&[&str; 2]: AsRef<Path>`
+   |                      |
+   |                      required by a bound introduced by this call
+   |
+   = help: the following other types implement trait `AsRef<T>`:
+             [T; N]
+             [T]
+   = note: required for `&[&str; 2]` to implement `AsRef<Path>`
+note: required by a bound in `rename`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/std/src/fs.rs:2122:1
+
+error: aborting due to 6 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

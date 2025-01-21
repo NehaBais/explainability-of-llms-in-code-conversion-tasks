@@ -1,0 +1,18 @@
+/tmp/granitecode8b-int_factors-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-py-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-py-c.c:9:21: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |     for (j = 0; j < sqrt(n); j++) {
+      |                     ^
+/tmp/granitecode8b-int_factors-py-c.c:9:21: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode8b-int_factors-py-c.c:19:7: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   19 |       printf("%i ", factors[j]);
+      |       ^
+/tmp/granitecode8b-int_factors-py-c.c:19:7: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

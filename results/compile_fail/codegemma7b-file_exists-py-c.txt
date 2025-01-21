@@ -1,0 +1,14 @@
+/tmp/codegemma7b-file_exists-py-c.c:4:26: error: use of undeclared identifier 'NULL'
+    4 |   return (stat(filename, NULL) == 0);
+      |                          ^
+/tmp/codegemma7b-file_exists-py-c.c:8:61: error: use of undeclared identifier 'NULL'
+    8 |   return (stat(dirname, NULL) == 0 && S_ISDIR(stat(dirname, NULL)->st_mode));
+      |                                                             ^
+/tmp/codegemma7b-file_exists-py-c.c:8:25: error: use of undeclared identifier 'NULL'
+    8 |   return (stat(dirname, NULL) == 0 && S_ISDIR(stat(dirname, NULL)->st_mode));
+      |                         ^
+/tmp/codegemma7b-file_exists-py-c.c:14:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     printf("Error: input.txt does not exist.\n");
+      |     ^
+/tmp/codegemma7b-file_exists-py-c.c:14:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.

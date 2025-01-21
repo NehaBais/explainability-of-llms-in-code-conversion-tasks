@@ -1,0 +1,20 @@
+/tmp/stablecode-file_rename-java-c.c:22:36: error: extraneous ')' after condition, expected a statement
+   22 |   if (renameFile(oldname, newname))) {
+      |                                    ^
+/tmp/stablecode-file_rename-java-c.c:26:12: warning: missing terminating '"' character [-Winvalid-pp-token]
+   26 |     printf("%s could not be renamed into 
+      |            ^
+/tmp/stablecode-file_rename-java-c.c:26:12: error: expected expression
+/tmp/stablecode-file_rename-java-c.c:27:6: warning: missing terminating '"' character [-Winvalid-pp-token]
+   27 | %s.\n", oldname, newname);
+      |      ^
+/tmp/stablecode-file_rename-java-c.c:31:12: error: function definition is not allowed here
+   31 | int main() {
+      |            ^
+/tmp/stablecode-file_rename-java-c.c:51:2: error: expected '}'
+   51 | }
+      |  ^
+/tmp/stablecode-file_rename-java-c.c:20:53: note: to match this '{'
+   20 | void test(char *type, char *oldname, char *newname) {
+      |                                                     ^
+2 warnings and 4 errors generated.

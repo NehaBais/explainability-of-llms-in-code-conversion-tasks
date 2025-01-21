@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-bit_ops-java-go.go:12:10: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)

@@ -1,0 +1,72 @@
+/tmp/granitecode3b-file_size-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_size-java-c.c:4:3: error: use of undeclared identifier 'FILE'
+    4 |   FILE *fileA = fopen("file.txt", "r");
+      |   ^
+/tmp/granitecode3b-file_size-java-c.c:4:9: error: use of undeclared identifier 'fileA'
+    4 |   FILE *fileA = fopen("file.txt", "r");
+      |         ^
+/tmp/granitecode3b-file_size-java-c.c:4:17: error: call to undeclared function 'fopen'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   FILE *fileA = fopen("file.txt", "r");
+      |                 ^
+/tmp/granitecode3b-file_size-java-c.c:4:17: warning: declaration of built-in function 'fopen' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/tmp/granitecode3b-file_size-java-c.c:5:7: error: use of undeclared identifier 'fileA'
+    5 |   if (fileA == NULL) {
+      |       ^
+/tmp/granitecode3b-file_size-java-c.c:5:16: error: use of undeclared identifier 'NULL'
+    5 |   if (fileA == NULL) {
+      |                ^
+/tmp/granitecode3b-file_size-java-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("Error opening file!");
+      |     ^
+/tmp/granitecode3b-file_size-java-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-file_size-java-c.c:9:3: error: call to undeclared function 'fseek'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   fseek(fileA, 0, SEEK_END);
+      |   ^
+/tmp/granitecode3b-file_size-java-c.c:9:9: error: use of undeclared identifier 'fileA'
+    9 |   fseek(fileA, 0, SEEK_END);
+      |         ^
+/tmp/granitecode3b-file_size-java-c.c:9:19: error: use of undeclared identifier 'SEEK_END'
+    9 |   fseek(fileA, 0, SEEK_END);
+      |                   ^
+/tmp/granitecode3b-file_size-java-c.c:10:16: error: call to undeclared function 'ftell'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   long sizeA = ftell(fileA);
+      |                ^
+/tmp/granitecode3b-file_size-java-c.c:10:22: error: use of undeclared identifier 'fileA'
+   10 |   long sizeA = ftell(fileA);
+      |                      ^
+/tmp/granitecode3b-file_size-java-c.c:11:3: error: call to undeclared function 'rewind'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   rewind(fileA);
+      |   ^
+/tmp/granitecode3b-file_size-java-c.c:11:10: error: use of undeclared identifier 'fileA'; did you mean 'sizeA'?
+   11 |   rewind(fileA);
+      |          ^~~~~
+      |          sizeA
+/tmp/granitecode3b-file_size-java-c.c:10:8: note: 'sizeA' declared here
+   10 |   long sizeA = ftell(fileA);
+      |        ^
+/tmp/granitecode3b-file_size-java-c.c:12:20: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+   12 |   printf("%d B%n", sizeA);
+      |           ~~       ^~~~~
+      |           %ld
+/tmp/granitecode3b-file_size-java-c.c:12:16: warning: more '%' conversions than data arguments [-Wformat-insufficient-args]
+   12 |   printf("%d B%n", sizeA);
+      |               ~^
+/tmp/granitecode3b-file_size-java-c.c:14:3: error: use of undeclared identifier 'FILE'
+   14 |   FILE *fileB = fopen("/file.txt", "r");
+      |   ^
+/tmp/granitecode3b-file_size-java-c.c:14:9: error: use of undeclared identifier 'fileB'
+   14 |   FILE *fileB = fopen("/file.txt", "r");
+      |         ^
+/tmp/granitecode3b-file_size-java-c.c:15:7: error: use of undeclared identifier 'fileB'
+   15 |   if (fileB == NULL) {
+      |       ^
+/tmp/granitecode3b-file_size-java-c.c:15:16: error: use of undeclared identifier 'NULL'
+   15 |   if (fileB == NULL) {
+      |                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+3 warnings and 20 errors generated.

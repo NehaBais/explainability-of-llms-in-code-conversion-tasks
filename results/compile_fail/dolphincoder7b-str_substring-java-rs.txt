@@ -1,0 +1,110 @@
+error[E0428]: the name `substring` is defined multiple times
+ --> /tmp/dolphincoder7b-str_substring-java-rs.rs:7:1
+  |
+1 | fn substring(str: &str, n: usize, m: Option<usize>) -> String {
+  | ------------------------------------------------------------- previous definition of the value `substring` here
+...
+7 | fn substring(str: &str, n: usize) -> String {
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+  |
+  = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:10:1
+   |
+1  | fn substring(str: &str, n: usize, m: Option<usize>) -> String {
+   | ------------------------------------------------------------- previous definition of the value `substring` here
+...
+10 | fn substring(str: &str) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:16:1
+   |
+1  | fn substring(str: &str, n: usize, m: Option<usize>) -> String {
+   | ------------------------------------------------------------- previous definition of the value `substring` here
+...
+16 | fn substring(str: &str, c: char, m: Option<usize>) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0428]: the name `substring` is defined multiple times
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:22:1
+   |
+1  | fn substring(str: &str, n: usize, m: Option<usize>) -> String {
+   | ------------------------------------------------------------- previous definition of the value `substring` here
+...
+22 | fn substring(str: &str, sub: &str, m: Option<usize>) -> String {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `substring` redefined here
+   |
+   = note: `substring` must be defined only once in the value namespace of this module
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:18:26
+   |
+18 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                          ^ help: a local variable with a similar name exists: `c`
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:18:52
+   |
+18 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                                                    ^ help: a local variable with a similar name exists: `c`
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:18:56
+   |
+18 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                                                        ^ help: a local variable with a similar name exists: `c`
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:24:26
+   |
+24 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                          ^ help: a local variable with a similar name exists: `m`
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:24:52
+   |
+24 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                                                    ^ help: a local variable with a similar name exists: `m`
+
+error[E0425]: cannot find value `n` in this scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:24:56
+   |
+24 |         (_, Some(m)) if (n + m) < str.len() => str[n..(n + m)].to_string(),
+   |                                                        ^ help: a local variable with a similar name exists: `m`
+
+error[E0601]: `main` function not found in crate `dolphincoder7b_str_substring_java_rs`
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:27:2
+   |
+27 | }
+   |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-str_substring-java-rs.rs`
+
+error[E0599]: no method named `utf8` found for type `u32` in the current scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:17:22
+   |
+17 |     match (c as u32).utf8().size_hint() {
+   |                      ^^^^ method not found in `u32`
+
+error[E0599]: no method named `utf8` found for type `u32` in the current scope
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:23:24
+   |
+23 |     match (sub as u32).utf8().size_hint() {
+   |                        ^^^^ method not found in `u32`
+
+error[E0606]: casting `&str` as `u32` is invalid
+  --> /tmp/dolphincoder7b-str_substring-java-rs.rs:23:11
+   |
+23 |     match (sub as u32).utf8().size_hint() {
+   |           ^^^^^^^^^^^^
+   |
+   = help: cast through a raw pointer first
+
+error: aborting due to 14 previous errors
+
+Some errors have detailed explanations: E0425, E0428, E0599, E0601, E0606.
+For more information about an error, try `rustc --explain E0425`.

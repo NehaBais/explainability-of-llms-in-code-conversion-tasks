@@ -1,0 +1,20 @@
+/tmp/granitecode3b-bit_ops-go-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-go-c.c:3:3: error: use of undeclared identifier 'int16_t'
+    3 |   int16_t a = -460;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-c.c:4:3: error: use of undeclared identifier 'int16_t'
+    4 |   int16_t b = 6;
+      |   ^
+/tmp/granitecode3b-bit_ops-go-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("a:   %016b\n", (uint16_t)a);
+      |   ^
+/tmp/granitecode3b-bit_ops-go-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-bit_ops-go-c.c:5:27: error: use of undeclared identifier 'uint16_t'
+    5 |   printf("a:   %016b\n", (uint16_t)a);
+      |                           ^
+/tmp/granitecode3b-bit_ops-go-c.c:6:27: error: use of undeclared identifier 'uint16_t'
+    6 |   printf("b:   %016b\n", (uint16_t)b);
+      |                           ^
+6 errors generated.

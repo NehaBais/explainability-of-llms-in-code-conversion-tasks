@@ -1,0 +1,17 @@
+/tmp/granitecode3b-str_prepend-go-c.c:2:9: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    2 | char s2[strlen("Hello, ") + strlen(s)];
+      |         ^
+/tmp/granitecode3b-str_prepend-go-c.c:2:9: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_prepend-go-c.c:2:6: error: variable length array declaration not allowed at file scope
+    2 | char s2[strlen("Hello, ") + strlen(s)];
+      |      ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/granitecode3b-str_prepend-go-c.c:3:13: error: expected identifier
+    3 | sprintf(s2, "Hello, %s", s);
+      |             ^
+/tmp/granitecode3b-str_prepend-go-c.c:3:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    3 | sprintf(s2, "Hello, %s", s);
+      | ^
+      | int
+/tmp/granitecode3b-str_prepend-go-c.c:3:1: warning: incompatible redeclaration of library function 'sprintf' [-Wincompatible-library-redeclaration]
+/tmp/granitecode3b-str_prepend-go-c.c:3:1: note: 'sprintf' is a builtin with type 'int (char *, const char *, ...)'
+1 warning and 4 errors generated.

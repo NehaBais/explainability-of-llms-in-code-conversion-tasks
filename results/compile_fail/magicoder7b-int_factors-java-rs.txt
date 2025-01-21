@@ -1,0 +1,22 @@
+error[E0601]: `main` function not found in crate `magicoder7b_int_factors_java_rs`
+  --> /tmp/magicoder7b-int_factors-java-rs.rs:14:2
+   |
+14 | }
+   |  ^ consider adding a `main` function to `/tmp/magicoder7b-int_factors-java-rs.rs`
+
+error[E0600]: cannot apply unary operator `-` to type `usize`
+ --> /tmp/magicoder7b-int_factors-java-rs.rs:7:32
+  |
+7 |     for test in (2..n).step_by(-1) {
+  |                                ^^ cannot apply unary operator `-`
+  |
+  = note: unsigned values cannot be negated
+help: you may have meant the maximum value of `usize`
+  |
+7 |     for test in (2..n).step_by(usize::MAX) {
+  |                                ~~~~~~~~~~
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0600, E0601.
+For more information about an error, try `rustc --explain E0600`.

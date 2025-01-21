@@ -1,0 +1,13 @@
+/tmp/Main.java:21: error: '.class' expected
+    double c = double / b;
+                      ^
+/tmp/Main.java:30: error: illegal start of expression
+    } else if (a > 0 && b < 0)) {
+                              ^
+/tmp/Main.java:34: error: ';' expected
+    System.out.printf("%d %% %d = %d%n", a, b, a%b));  // same sign as first operand 
+                                                   ^
+/tmp/Main.java:36: error: ';' expected
+    double exponentiation = Math.pow(a, b));  // if operator exists
+                                          ^
+4 errors

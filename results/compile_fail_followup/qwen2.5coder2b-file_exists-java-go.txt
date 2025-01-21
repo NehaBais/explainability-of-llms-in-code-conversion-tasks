@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_exists-java-go.go:10:2: declared and not used: file
+/tmp/qwen2.5coder2b-file_exists-java-go.go:47:27: undefined: filepath
+/tmp/qwen2.5coder2b-file_exists-java-go.go:55:9: not enough return values
+	have (bool)
+	want (bool, error)

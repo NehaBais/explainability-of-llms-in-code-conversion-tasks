@@ -1,0 +1,48 @@
+/tmp/granitecode8b-int_arith-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:3:11: error: call to undeclared function 'atoi'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    3 |   int a = atoi(argv[1]);
+      |           ^
+/tmp/granitecode8b-int_arith-js-c.c:14:2: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |  printf("a + b = %d
+      |  ^
+/tmp/granitecode8b-int_arith-js-c.c:14:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_arith-js-c.c:14:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   14 |  printf("a + b = %d
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:14:9: error: expected expression
+/tmp/granitecode8b-int_arith-js-c.c:15:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   15 | ", sum);
+      | ^
+/tmp/granitecode8b-int_arith-js-c.c:16:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   16 |  printf("a - b = %d
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:17:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   17 | ", difference);
+      | ^
+/tmp/granitecode8b-int_arith-js-c.c:18:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   18 |  printf("a * b = %d
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:19:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   19 | ", product);
+      | ^
+/tmp/granitecode8b-int_arith-js-c.c:20:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   20 |  printf("a / b = %.2f (rounded)
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:21:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   21 | ", division); //%.2f is used to print only 2 decimal places
+      | ^
+/tmp/granitecode8b-int_arith-js-c.c:22:9: warning: missing terminating '"' character [-Winvalid-pp-token]
+   22 |  printf("a %% b = %d (remainder matches sign of first operand)
+      |         ^
+/tmp/granitecode8b-int_arith-js-c.c:23:1: warning: missing terminating '"' character [-Winvalid-pp-token]
+   23 | ", remainder);
+      | ^
+/tmp/granitecode8b-int_arith-js-c.c:26:2: error: expected '}'
+   26 | }
+      |  ^
+/tmp/granitecode8b-int_arith-js-c.c:2:34: note: to match this '{'
+    2 | int main(int argc, char *argv[]) {
+      |                                  ^
+10 warnings and 5 errors generated.

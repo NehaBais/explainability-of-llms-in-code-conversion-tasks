@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/codellama7b-int_arith-py-go.go:4:2: "fmt" imported and not used
+/tmp/codellama7b-int_arith-py-go.go:26:8: undefined: float
+/tmp/codellama7b-int_arith-py-go.go:27:19: undefined: float

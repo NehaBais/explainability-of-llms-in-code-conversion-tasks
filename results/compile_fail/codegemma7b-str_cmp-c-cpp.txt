@@ -1,0 +1,4 @@
+/tmp/codegemma7b-str_cmp-c-cpp.cpp:36:33: error: no member named 'insensitive' in 'std::string'
+   36 |        << (a.compare(b, string::insensitive) == 0) << endl;
+      |                         ~~~~~~~~^
+1 error generated.

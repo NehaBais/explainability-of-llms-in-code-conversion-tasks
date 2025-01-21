@@ -1,5 +1,19 @@
 use std::fs;
-fn main() {
-    fs::create_dir("docs"); // Create an empty directory called "docs" in the current working directory.
-    let file = File::create("output.txt").unwrap(); // Create a new, empty output.txt file in the current working directory.
+use std::io;
+
+fn main() -> io::Result<()> {
+    // Create in the current working directory
+    create(".");
+    
+    // Create in the root directory
+    create("/");
+    
+    Ok(())
+}
+
+fn create(directory: &str) -> io::Result<()> {
+    let path = format!("{}/output.txt", directory);
+    fs::File::create(&path)?;
+    fs::create_dir(format!("{}/docs", directory))?;
+    Ok(())
 }

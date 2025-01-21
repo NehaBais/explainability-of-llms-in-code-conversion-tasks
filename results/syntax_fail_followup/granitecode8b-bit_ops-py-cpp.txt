@@ -1,0 +1,62 @@
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "    AND:     0b" << setw(width) << setfill('0') << a << " & 0b"
+      |   ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:8:32: error: use of undeclared identifier 'setw'
+    8 |   cout << "    AND:     0b" << setw(width) << setfill('0') << a << " & 0b"
+      |                                ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:8:47: error: use of undeclared identifier 'setfill'
+    8 |   cout << "    AND:     0b" << setw(width) << setfill('0') << a << " & 0b"
+      |                                               ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:9:11: error: use of undeclared identifier 'setw'
+    9 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |           ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:9:26: error: use of undeclared identifier 'setfill'
+    9 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |                          ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:9:58: error: use of undeclared identifier 'setw'
+    9 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |                                                          ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:10:11: error: use of undeclared identifier 'setfill'
+   10 |        << setfill('0') << (a & b) << endl;
+      |           ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:10:38: error: use of undeclared identifier 'endl'
+   10 |        << setfill('0') << (a & b) << endl;
+      |                                      ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "    OR:      0b" << setw(width) << setfill('0') << a << " | 0b"
+      |   ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:11:32: error: use of undeclared identifier 'setw'
+   11 |   cout << "    OR:      0b" << setw(width) << setfill('0') << a << " | 0b"
+      |                                ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:11:47: error: use of undeclared identifier 'setfill'
+   11 |   cout << "    OR:      0b" << setw(width) << setfill('0') << a << " | 0b"
+      |                                               ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:12:11: error: use of undeclared identifier 'setw'
+   12 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |           ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:12:26: error: use of undeclared identifier 'setfill'
+   12 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |                          ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:12:58: error: use of undeclared identifier 'setw'
+   12 |        << setw(width) << setfill('0') << b << " = 0b" << setw(width)
+      |                                                          ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:13:11: error: use of undeclared identifier 'setfill'
+   13 |        << setfill('0') << (a | b) << endl;
+      |           ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:13:38: error: use of undeclared identifier 'endl'
+   13 |        << setfill('0') << (a | b) << endl;
+      |                                      ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:14:3: error: use of undeclared identifier 'cout'
+   14 |   cout << "    XOR:     0b" << setw(width) << setfill('0') << a << " ^ 0b"
+      |   ^
+/tmp/granitecode8b-bit_ops-py-cpp.cpp:14:32: error: use of undeclared identifier 'setw'
+   14 |   cout << "    XOR:     0b" << setw(width) << setfill('0') << a << " ^ 0b"
+      |                                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

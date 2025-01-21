@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/codellama7b-str_cmp-cpp-go.go:9:52: invalid character U+003F '?'
+/tmp/codellama7b-str_cmp-cpp-go.go:9:54: syntax error: unexpected literal "", expected )
+/tmp/codellama7b-str_cmp-cpp-go.go:11:52: invalid character U+003F '?'
+/tmp/codellama7b-str_cmp-cpp-go.go:11:54: syntax error: unexpected literal "", expected )
+/tmp/codellama7b-str_cmp-cpp-go.go:13:36: invalid character U+003F '?'
+/tmp/codellama7b-str_cmp-cpp-go.go:13:38: syntax error: unexpected literal "", expected )
+/tmp/codellama7b-str_cmp-cpp-go.go:15:36: invalid character U+003F '?'
+/tmp/codellama7b-str_cmp-cpp-go.go:15:38: syntax error: unexpected literal "", expected )

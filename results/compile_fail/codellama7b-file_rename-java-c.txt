@@ -1,0 +1,21 @@
+/tmp/codellama7b-file_rename-java-c.c:12:3: error: use of undeclared identifier 'bool'
+   12 |   bool success = rename("input.txt", "output.txt");
+      |   ^
+/tmp/codellama7b-file_rename-java-c.c:14:10: error: use of undeclared identifier 'success'; did you mean 'access'?
+   14 |          success ? "was renamed" : "could not be renamed");
+      |          ^~~~~~~
+      |          access
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:431:6: note: 'access' declared here
+  431 | int      access(const char *, int);
+      |          ^
+/tmp/codellama7b-file_rename-java-c.c:17:3: error: use of undeclared identifier 'success'
+   17 |   success = rename("docs", "mydocs");
+      |   ^
+/tmp/codellama7b-file_rename-java-c.c:19:10: error: use of undeclared identifier 'success'; did you mean 'access'?
+   19 |          success ? "was renamed" : "could not be renamed");
+      |          ^~~~~~~
+      |          access
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:431:6: note: 'access' declared here
+  431 | int      access(const char *, int);
+      |          ^
+4 errors generated.

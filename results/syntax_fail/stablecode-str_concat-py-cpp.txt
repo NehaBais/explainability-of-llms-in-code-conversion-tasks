@@ -1,0 +1,7 @@
+/tmp/stablecode-str_concat-py-cpp.cpp:21:18: error: non-aggregate type 'vector<string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   21 |   vector<string> str_vec = {s1, "world", "mom"};
+      |                  ^         ~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-str_concat-py-cpp.cpp:22:19: error: member reference base type 'const char[3]' is not a structure or union
+   22 |   string s3 = ", ".join(str_vec);
+      |               ~~~~^~~~~
+2 errors generated.

@@ -1,0 +1,20 @@
+error: mismatched closing delimiter: `)`
+ --> /tmp/stablecode-int_arith-go-rs.rs:3:11
+  |
+3 | fn main() {
+  |           ^ unclosed delimiter
+...
+6 |     io::stdin().read_line(&mut input)).expect("Error reading line");
+  |                                      ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+ --> /tmp/stablecode-int_arith-go-rs.rs:8:81
+  |
+6 |     io::stdin().read_line(&mut input)).expect("Error reading line");
+  |                                      - missing open `(` for this delimiter
+7 |
+8 |     let numbers: Vec<i32> = input.split_whitespace().map(|s| s.parse().unwrap())).collect();
+  |                                                                                 ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

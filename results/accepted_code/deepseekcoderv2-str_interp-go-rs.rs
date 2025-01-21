@@ -1,6 +1,6 @@
 fn main() {
-    let str = String::from("Mary had a {} lamb");
-    let value = "little";
-    let out = format!(&str, &value);
+    let str = "Mary had a {} lamb";
+    let txt = "little";
+    let out = format!(&str, txt);
     println!("{}", out);
 }

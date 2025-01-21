@@ -1,0 +1,8 @@
+error: expected one of `where` or `{`, found `>`
+  --> /tmp/stablecode-str_cmp-js-rs.rs:35:55
+   |
+35 | fn comparison_test() -> (bool, bool, bool, bool, bool)> {
+   |                                                       ^ expected one of `where` or `{`
+
+error: aborting due to 1 previous error
+

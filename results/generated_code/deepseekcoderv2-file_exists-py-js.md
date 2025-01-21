@@ -1,30 +1,14 @@
-### Answer
+ Here's how you can convert the given Python code to JavaScript:
 
-```js
-const fs = require('fs'); 
-let path = './'; // use current directory if no specific path provided
+```javascript
+const fs = require('fs');
+const path = require('path');
 
-// Get list of files in the given path.
-function getFileList(path) {
-    let fileList = [];
-    
-    try{
-        const files = fs.readdirSync(path); // Read files in the specified path.
-        
-        for (let i=0;i<files.length;i++){
-            if (fs.statSync(path + '/' + files[i]).isDirectory()) { 
-                fileList = [...fileList, ...getFileList(path+'/'+files[i])]; // If it's a directory, recursively call this function and add to the list of all returned files.
-            } else{
-                if (files[i].includes('.js')){    
-                    console.log("The following file exists in this folder: " + files[i]);
-                };
-            }
-        }
-    } catch(err){console.log('Error getting the list of files.', err);}  // If any error is encountered, log the error message to the console and return empty list.
-    
-    return fileList;
-}
-
-// Get a list of all .js files in the current directory and its subfolders
-const jsFiles = getFileList(path);
+// Check for file and directory in the current working directory
+console.log(fs.existsSync('input.txt'));
+console.log(fs.existsSync('/input.txt'));
+console.log(fs.existsSync('docs'));
+console.log(fs.existsSync('/docs'));
 ```
+
+This JavaScript code uses Node.js's `fs` module to check for the existence of files and directories, similar to how Python's `os` module is used in the original code. The `fs.existsSync()` method is synchronous and returns a boolean indicating whether the file or directory exists.

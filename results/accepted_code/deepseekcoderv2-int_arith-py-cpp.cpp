@@ -1,32 +1,37 @@
+#include <cmath> // For pow function
 #include <iostream>
 
-using namespace std;
-
 int main() {
-  double input1, input2;
-  cout << "Enter two integers: ";
-  cin >> input1 >> input2;
+  int input1, input2;
 
-  cout << "\nSum:\t\t" << (input1 + input2) << endl;
-  cout << "Difference:\t" << (input1 - input2) << endl;
-  cout << "Product:\t" << (input1 * input2) << endl;
+  std::cout << "Enter first integer: ";
+  std::cin >> input1;
+  std::cout << "Enter second integer: ";
+  std::cin >> input2;
 
-  int quotient = static_cast<int>(input1 / input2);
-  double floatQuotient = (double)(input1 / input2);
-  cout << "Integer quotient:\t\t" << quotient << endl;
-  cout << "Float quotient:\t\t" << floatQuotient << endl;
+  // Sum
+  int sum = input1 + input2;
+  std::cout << "Sum: \t\t" << sum << std::endl;
 
-  int wholeRemainder, actualRemainder;
-  if (quotient < 0) {
-    wholeRemainder = -int(-floatQuotient);
-    actualRemainder = input1 - (wholeRemainder * input2);
-  } else {
-    wholeRemainder = int(floatQuotient);
-    actualRemainder = input1 % input2;
-  }
-  cout << "Whole remainder:\t\t" << wholeRemainder << endl;
-  cout << "Actual remainder:\t" << actualRemainder << endl;
+  // Difference
+  int difference = input1 - input2;
+  std::cout << "Difference: \t" << difference << std::endl;
 
+  // Product
+  int product = input1 * input2;
+  std::cout << "Product: \t" << product << std::endl;
+
+  // Integer quotient (C++ division truncates towards zero)
+  int integer_quotient = input1 / input2;
+  std::cout << "Integer quotient: " << integer_quotient << std::endl;
+
+  // Remainder (sign follows the first operand if they are different)
+  int remainder = input1 % input2;
+  std::cout << "Remainder: \t" << remainder << std::endl;
+
+  // Exponentiation
   double exponentiation = pow(input1, input2);
-  cout << "Exponentiation:\t" << exponentiation << endl;
+  std::cout << "Exponentiation: \t" << exponentiation << std::endl;
+
+  return 0;
 }

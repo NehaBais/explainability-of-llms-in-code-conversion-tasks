@@ -1,0 +1,16 @@
+/tmp/stablecode-dir_make-java-cpp.cpp:4:21: error: expected namespace name
+    4 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/stablecode-dir_make-java-cpp.cpp:8:5: error: use of undeclared identifier 'fs'
+    8 |     fs::path dirPath(path);
+      |     ^
+/tmp/stablecode-dir_make-java-cpp.cpp:10:9: error: use of undeclared identifier 'fs'
+   10 |     if (fs::create_directories(dirPath)))
+      |         ^
+/tmp/stablecode-dir_make-java-cpp.cpp:10:32: error: use of undeclared identifier 'dirPath'
+   10 |     if (fs::create_directories(dirPath)))
+      |                                ^
+/tmp/stablecode-dir_make-java-cpp.cpp:10:41: error: extraneous ')' after condition, expected a statement
+   10 |     if (fs::create_directories(dirPath)))
+      |                                         ^
+5 errors generated.

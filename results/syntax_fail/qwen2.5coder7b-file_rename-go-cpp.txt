@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:11:10: error: no member named 'filesystem' in namespace 'std'
+   11 |     std::filesystem::rename(currentPath + "input.txt",
+      |     ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:13:10: error: no member named 'filesystem' in namespace 'std'
+   13 |     std::filesystem::rename(currentPath + "docs", currentPath + "mydocs");
+      |     ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:14:23: error: no member named 'filesystem' in namespace 'std'
+   14 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:22:10: error: no member named 'filesystem' in namespace 'std'
+   22 |     std::filesystem::rename(rootPath + "input.txt", rootPath + "output.txt");
+      |     ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:23:10: error: no member named 'filesystem' in namespace 'std'
+   23 |     std::filesystem::rename(rootPath + "docs", rootPath + "mydocs");
+      |     ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-go-cpp.cpp:24:23: error: no member named 'filesystem' in namespace 'std'
+   24 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+6 errors generated.

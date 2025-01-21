@@ -1,0 +1,16 @@
+/tmp/Main.java:43: error: bad operand types for binary operator '&'
+        Integer.toBinaryString((a >>> 1) | (a << (width - 1))) & mask,
+                                                               ^
+  first type:  String
+  second type: int
+/tmp/Main.java:46: error: bad operand types for binary operator '&'
+        Integer.toBinaryString((a >>> 2) | (a << (width - 2))) & mask,
+                                                               ^
+  first type:  String
+  second type: int
+/tmp/Main.java:49: error: bad operand types for binary operator '&'
+        Integer.toBinaryString((a >>> 4) | (a << (width - 4))) & mask);
+                                                               ^
+  first type:  String
+  second type: int
+3 errors

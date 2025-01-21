@@ -1,0 +1,13 @@
+/tmp/FileCreation.java:10: error: method createFile in class Files cannot be applied to given types;
+    Files.createFile(path, CREATE, WRITE);
+         ^
+  required: Path,FileAttribute<?>[]
+  found:    Path,StandardOpenOption,StandardOpenOption
+  reason: varargs mismatch; StandardOpenOption cannot be converted to FileAttribute<?>
+/tmp/FileCreation.java:23: error: method createFile in class Files cannot be applied to given types;
+    Files.createFile(path, CREATE, WRITE);
+         ^
+  required: Path,FileAttribute<?>[]
+  found:    Path,StandardOpenOption,StandardOpenOption
+  reason: varargs mismatch; StandardOpenOption cannot be converted to FileAttribute<?>
+2 errors

@@ -1,0 +1,23 @@
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:4:6: error: variable has incomplete type 'void'
+    4 | void printMatch(std::optional<size_t> possibleMatch) {
+      |      ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:4:22: error: no member named 'optional' in namespace 'std'
+    4 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                 ~~~~~^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:4:31: error: unexpected type name 'size_t': expected expression
+    4 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                               ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:4:39: error: use of undeclared identifier 'possibleMatch'
+    4 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                                       ^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:4:53: error: expected ';' after top level declarator
+    4 | void printMatch(std::optional<size_t> possibleMatch) {
+      |                                                     ^
+      |                                                     ;
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:27:21: error: no member named 'make_optional' in namespace 'std'
+   27 |     printMatch(std::make_optional(pos));
+      |                ~~~~~^
+/tmp/qwen2.5coder7b-str_match-rs-cpp.cpp:31:16: error: expected expression
+   31 |     printMatch({});
+      |                ^
+7 errors generated.

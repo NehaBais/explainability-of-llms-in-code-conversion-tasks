@@ -1,0 +1,27 @@
+error[E0601]: `main` function not found in crate `yicoder2b_logic_ops_py_rs`
+ --> /tmp/yicoder2b-logic_ops-py-rs.rs:5:2
+  |
+5 | }
+  |  ^ consider adding a `main` function to `/tmp/yicoder2b-logic_ops-py-rs.rs`
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-py-rs.rs:1:10
+  |
+1 | fn logic(mut a: bool, mut b: bool) {
+  |          ----^
+  |          |
+  |          help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+ --> /tmp/yicoder2b-logic_ops-py-rs.rs:1:23
+  |
+1 | fn logic(mut a: bool, mut b: bool) {
+  |                       ----^
+  |                       |
+  |                       help: remove this `mut`
+
+error: aborting due to 1 previous error; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0601`.

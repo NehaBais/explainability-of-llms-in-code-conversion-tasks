@@ -1,0 +1,16 @@
+/tmp/yicoder9b-file_rename-js-cpp.cpp:2:21: error: expected namespace name
+    2 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/yicoder9b-file_rename-js-cpp.cpp:5:3: error: use of undeclared identifier 'fs'
+    5 |   fs::rename("input.txt", "output.txt");
+      |   ^
+/tmp/yicoder9b-file_rename-js-cpp.cpp:6:3: error: use of undeclared identifier 'fs'
+    6 |   fs::rename("docs", "mydocs");
+      |   ^
+/tmp/yicoder9b-file_rename-js-cpp.cpp:7:3: error: use of undeclared identifier 'fs'
+    7 |   fs::rename("/input.txt", "/output.txt");
+      |   ^
+/tmp/yicoder9b-file_rename-js-cpp.cpp:8:3: error: use of undeclared identifier 'fs'
+    8 |   fs::rename("/docs", "/mydocs");
+      |   ^
+5 errors generated.

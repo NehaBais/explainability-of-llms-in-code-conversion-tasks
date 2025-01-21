@@ -1,0 +1,4 @@
+/tmp/codeqwen-int_arith-py-c.c:25:36: error: expected expression
+   25 |   printf("Whole Remainder:  %f\n", int(uu));
+      |                                    ^
+1 error generated.

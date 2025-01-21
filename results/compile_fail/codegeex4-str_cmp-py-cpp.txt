@@ -1,0 +1,10 @@
+/tmp/codegeex4-str_cmp-py-cpp.cpp:64:3: error: no matching function for call to 'compare'
+   64 |   compare(5.0, 5);
+      |   ^~~~~~~
+/tmp/codegeex4-str_cmp-py-cpp.cpp:5:6: note: candidate function not viable: no known conversion from 'double' to 'const std::string' (aka 'const basic_string<char>') for 1st argument
+    5 | void compare(const std::string &a, const std::string &b) {
+      |      ^       ~~~~~~~~~~~~~~~~~~~~
+/tmp/codegeex4-str_cmp-py-cpp.cpp:22:6: note: candidate function not viable: no known conversion from 'double' to 'const char *' for 1st argument
+   22 | void compare(const char *a, const char *b) {
+      |      ^       ~~~~~~~~~~~~~
+1 error generated.

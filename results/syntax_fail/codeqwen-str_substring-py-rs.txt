@@ -1,0 +1,13 @@
+error: character literal may only contain one codepoint
+ --> /tmp/codeqwen-str_substring-py-rs.rs:2:30
+  |
+2 |     let mut s = String::from('abcdefgh');
+  |                              ^^^^^^^^^^
+  |
+help: if you meant to write a string literal, use double quotes
+  |
+2 |     let mut s = String::from("abcdefgh");
+  |                              ~        ~
+
+error: aborting due to 1 previous error
+

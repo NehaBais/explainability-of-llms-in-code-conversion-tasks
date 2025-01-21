@@ -1,0 +1,19 @@
+/tmp/stablecode-file_rename-py-c.c:20:28: error: extraneous ')' after condition, expected a statement
+   20 |   if (0 != unlink(srcPath)))
+      |                            ^
+/tmp/stablecode-file_rename-py-c.c:22:38: error: extraneous ')' after condition, expected a statement
+   22 |   if (0 == rename(destPath, srcPath))))
+      |                                      ^
+/tmp/stablecode-file_rename-py-c.c:22:39: error: extraneous ')' after condition, expected a statement
+   22 |   if (0 == rename(destPath, srcPath))))
+      |                                       ^
+/tmp/stablecode-file_rename-py-c.c:39:38: error: extraneous ')' after condition, expected a statement
+   39 |   if (0 != rename(srcPath, destPath))))
+      |                                      ^
+/tmp/stablecode-file_rename-py-c.c:39:39: error: extraneous ')' after condition, expected a statement
+   39 |   if (0 != rename(srcPath, destPath))))
+      |                                       ^
+/tmp/stablecode-file_rename-py-c.c:57:49: error: extraneous ')' after condition, expected a statement
+   57 |   if (0 == renameDirectory(srcPath2, destPath2))) {
+      |                                                 ^
+6 errors generated.

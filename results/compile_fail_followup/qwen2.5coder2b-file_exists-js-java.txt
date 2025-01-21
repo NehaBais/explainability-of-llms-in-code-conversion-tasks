@@ -1,0 +1,16 @@
+/tmp/Main.java:17: error: cannot find symbol
+      Files.exists(inputPath, java.nio.file.StandardWatchService.class);
+                                           ^
+  symbol:   class StandardWatchService
+  location: package java.nio.file
+/tmp/Main.java:25: error: cannot find symbol
+      Files.isDirectory(docsPath, java.nio.file.StandardWatchService.class);
+                                               ^
+  symbol:   class StandardWatchService
+  location: package java.nio.file
+/tmp/Main.java:28: error: cannot find symbol
+    } catch (IOException e) {
+             ^
+  symbol:   class IOException
+  location: class Main
+3 errors

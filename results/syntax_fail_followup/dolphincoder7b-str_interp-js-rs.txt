@@ -1,0 +1,30 @@
+error: expected item, found keyword `let`
+ --> /tmp/dolphincoder7b-str_interp-js-rs.rs:3:1
+  |
+3 | let replaced   = format!("{} had a  {} lamb", original, little);
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: missing type for `const` item
+ --> /tmp/dolphincoder7b-str_interp-js-rs.rs:1:15
+  |
+1 | const ORIGINAL  = "Mary had a X lamb";
+  |               ^
+  |
+help: provide a type for the item
+  |
+1 | const ORIGINAL: <type>  = "Mary had a X lamb";
+  |               ++++++++
+
+error: missing type for `const` item
+ --> /tmp/dolphincoder7b-str_interp-js-rs.rs:2:13
+  |
+2 | const LITTLE  = "little";
+  |             ^
+  |
+help: provide a type for the item
+  |
+2 | const LITTLE: <type>  = "little";
+  |             ++++++++
+
+error: aborting due to 3 previous errors
+

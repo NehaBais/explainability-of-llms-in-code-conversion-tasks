@@ -1,0 +1,10 @@
+/tmp/Main.java:24: error: unclosed string literal
+    System.out.print("
+                     ^
+/tmp/Main.java:25: error: ';' expected
+Factors of " + nr + ": ");
+          ^
+/tmp/Main.java:25: error: unclosed string literal
+Factors of " + nr + ": ");
+                       ^
+3 errors

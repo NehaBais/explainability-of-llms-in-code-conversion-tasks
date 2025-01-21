@@ -1,0 +1,24 @@
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:5:21: error: expected namespace name
+    5 | namespace fs = std::filesystem;
+      |                ~~~~~^
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:9:3: error: use of undeclared identifier 'fs'
+    9 |   fs::path file(oldname);
+      |   ^
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:12:3: error: use of undeclared identifier 'fs'
+   12 |   fs::path file2(newname);
+      |   ^
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:15:18: error: use of undeclared identifier 'fs'
+   15 |   bool success = fs::rename(file, file2);
+      |                  ^
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:15:29: error: use of undeclared identifier 'file'; did you mean 'false'?
+   15 |   bool success = fs::rename(file, file2);
+      |                             ^~~~
+      |                             false
+/tmp/deepseekcoderv2-file_rename-java-cpp.cpp:15:35: error: use of undeclared identifier 'file2'; did you mean 'fileno'?
+   15 |   bool success = fs::rename(file, file2);
+      |                                   ^~~~~
+      |                                   fileno
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:316:6: note: 'fileno' declared here
+  316 | int      fileno(FILE *);
+      |          ^
+6 errors generated.

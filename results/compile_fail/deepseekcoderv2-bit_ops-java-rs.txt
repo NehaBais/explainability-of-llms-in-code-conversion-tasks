@@ -1,0 +1,35 @@
+error[E0308]: mismatched types
+ --> /tmp/deepseekcoderv2-bit_ops-java-rs.rs:9:49
+  |
+9 |     println!("a rol b: {}", i32::rotate_left(a, b)); // rotate left
+  |                             ----------------    ^ expected `u32`, found `i32`
+  |                             |
+  |                             arguments to this function are incorrect
+  |
+note: method defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+  = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+  |
+9 |     println!("a rol b: {}", i32::rotate_left(a, b.try_into().unwrap())); // rotate left
+  |                                                  ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoderv2-bit_ops-java-rs.rs:10:50
+   |
+10 |     println!("a ror b: {}", i32::rotate_right(a, b)); // rotate right
+   |                             -----------------    ^ expected `u32`, found `i32`
+   |                             |
+   |                             arguments to this function are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+10 |     println!("a ror b: {}", i32::rotate_right(a, b.try_into().unwrap())); // rotate right
+   |                                                   ++++++++++++++++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/granitecode8b-str_substring-js-go.go:10:2: undefined: fmt
+/tmp/granitecode8b-str_substring-js-go.go:12:2: undefined: fmt
+/tmp/granitecode8b-str_substring-js-go.go:14:2: undefined: fmt
+/tmp/granitecode8b-str_substring-js-go.go:17:2: undefined: fmt
+/tmp/granitecode8b-str_substring-js-go.go:20:2: undefined: fmt

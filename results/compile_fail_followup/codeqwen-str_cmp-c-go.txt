@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/codeqwen-str_cmp-c-go.go:25:37: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:27:44: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:33:44: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:35:44: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:37:44: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:39:44: undefined: strings.CompareFold
+/tmp/codeqwen-str_cmp-c-go.go:45:27: undefined: runtime
+/tmp/codeqwen-str_cmp-c-go.go:46:21: undefined: runtime
+/tmp/codeqwen-str_cmp-c-go.go:47:21: undefined: runtime
+/tmp/codeqwen-str_cmp-c-go.go:48:21: undefined: runtime
+/tmp/codeqwen-str_cmp-c-go.go:48:21: too many errors

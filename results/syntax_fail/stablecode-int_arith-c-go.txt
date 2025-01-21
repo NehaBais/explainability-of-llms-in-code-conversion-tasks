@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/stablecode-int_arith-c-go.go:19:38: expected statement, found ')' (and 1 more errors)

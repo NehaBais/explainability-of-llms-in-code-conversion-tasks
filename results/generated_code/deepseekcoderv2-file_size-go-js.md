@@ -1,19 +1,23 @@
-### Solution 1:
+ Sure, here is the equivalent JavaScript code for the provided Golang code:
 
-```js
+```javascript
 const fs = require('fs');
+const path = require('path');
 
 function printFileSize(f) {
-    fs.stat(f, (err, stat) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log(stat.size);
-        }
-    });
+    try {
+        const stats = fs.statSync(f);
+        console.log(stats.size);
+    } catch (err) {
+        console.error(err);
+    }
 }
 
-printFileSize("input.txt");
-printFileSize("/input.txt");
+// Current working directory
+printFileSize('input.txt');
+
+// Root of the file system
+printFileSize('/input.txt');
 ```
 
+This JavaScript code uses Node.js's `fs` module to get the file size and handles errors similarly to the Golang version.

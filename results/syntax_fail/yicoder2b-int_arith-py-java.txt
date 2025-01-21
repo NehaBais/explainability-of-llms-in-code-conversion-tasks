@@ -1,0 +1,4 @@
+/tmp/Main.java:15: error: incompatible types: possible lossy conversion from double to float
+    float floatQuotient = quotient;
+                          ^
+1 error

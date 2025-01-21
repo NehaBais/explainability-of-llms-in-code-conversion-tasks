@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/granitecode8b-str_match-rs-go.go:5:3: undefined: fmt
+/tmp/granitecode8b-str_match-rs-go.go:7:3: undefined: fmt
+/tmp/granitecode8b-str_match-rs-go.go:15:5: undefined: strings
+/tmp/granitecode8b-str_match-rs-go.go:16:3: undefined: fmt
+/tmp/granitecode8b-str_match-rs-go.go:19:5: undefined: strings
+/tmp/granitecode8b-str_match-rs-go.go:20:3: undefined: fmt
+/tmp/granitecode8b-str_match-rs-go.go:22:15: undefined: strings
+/tmp/granitecode8b-str_match-rs-go.go:26:5: undefined: strings
+/tmp/granitecode8b-str_match-rs-go.go:27:3: undefined: fmt

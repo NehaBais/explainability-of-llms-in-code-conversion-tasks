@@ -1,44 +1,26 @@
-Answer: Here is the JavaScript code that converts the given C++ code into a function in JavaScript:
+ Certainly! Below is the equivalent JavaScript code to achieve the same functionality as your C++ code:
 
-javascript
-Copy code
 ```javascript
-function renameFiles() {
-    // Rename file "input.txt" to "output.txt" in current working directory
-    fs.rename("input.txt", "output.txt", (err) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log("File renamed successfully!");
-        }
-    });
+const fs = require('fs');
+const path = require('path');
 
-    // Rename directory "docs" to "mydocs" in current working directory
-    fs.rename("docs", "mydocs", (err) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log("Directory renamed successfully!");
-        }
-    });
-
-    // Rename file "input.txt" to "output.txt" in filesystem root
-    fs.rename("/input.txt", "/output.txt", (err) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log("File renamed successfully!");
-        }
-    });
-
-    // Rename directory "docs" to "mydocs" in filesystem root
-    fs.rename("/docs", "/mydocs", (err) => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log("Directory renamed successfully!");
-        }
-    });
+// Function to rename a file or directory
+function renameFileOrDirectory(source, destination) {
+    try {
+        fs.renameSync(source, destination);
+        console.log(`Renamed ${source} to ${destination}`);
+    } catch (err) {
+        console.error(`Error renaming ${source} to ${destination}:`, err);
+    }
 }
+
+// In the current working directory
+renameFileOrDirectory('input.txt', 'output.txt');
+renameFileOrDirectory('docs', 'mydocs');
+
+// In the filesystem root
+renameFileOrDirectory('/input.txt', '/output.txt');
+renameFileOrDirectory('/docs', '/mydocs');
 ```
-This code uses the fs module from Node.js to perform file system operations, such as renaming files and directories. It handles errors gracefully by logging any errors that occur during the operation.
+
+This JavaScript code uses Node.js's `fs` module to rename files and directories, both in the current working directory and at the filesystem root.

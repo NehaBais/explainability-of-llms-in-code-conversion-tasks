@@ -1,0 +1,4 @@
+# command-line-arguments
+/tmp/yicoder2b-file_create-cpp-go.go:11:19: undefined: ioutil.Touch
+/tmp/yicoder2b-file_create-cpp-go.go:16:19: undefined: ioutil.Mkdir
+/tmp/yicoder2b-file_create-cpp-go.go:23:19: undefined: ioutil.MkdirAll

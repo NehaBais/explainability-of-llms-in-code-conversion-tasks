@@ -1,0 +1,21 @@
+/tmp/granitecode3b-int_arith-py-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-py-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-int_arith-py-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("Enter first integer: ");
+      |   ^
+/tmp/granitecode3b-int_arith-py-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-int_arith-py-c.c:8:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   scanf("%d", &input1);
+      |   ^
+/tmp/granitecode3b-int_arith-py-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode3b-int_arith-py-c.c:23:36: error: expected expression
+   23 |   printf("Integer quotient: %f\n", int(rr));
+      |                                    ^
+/tmp/granitecode3b-int_arith-py-c.c:27:35: error: expected expression
+   27 |   printf("Whole Remainder: %d\n", int(tt) - tt * -1);
+      |                                   ^
+6 errors generated.

@@ -1,40 +1,47 @@
-### Solution 1:
+ Here's the equivalent Java code to perform the same operations as your JavaScript code:
+
 ```java
-public class ConvertJava {
-    public static void main(String[] args) throws IOException, FileNotFoundException {
-        if (args.length != 2 || !args[0].equals("-f")) {
-            System.out.println("Usage: java Converter [-f] <input-file>");
-            return;
+import java.io.File;
+
+public class FileMover {
+    public static void main(String[] args) {
+        // Move file in current working directory
+        File inputFile = new File("input.txt");
+        File outputFile = new File("output.txt");
+        if (inputFile.renameTo(outputFile)) {
+            System.out.println("Renamed 'input.txt' to 'output.txt'");
+        } else {
+            System.out.println("Failed to rename 'input.txt' to 'output.txt'");
         }
 
-        String inputFileName = args[1];
-        File inputFile = new File(inputFileName);
-        if (!inputFile.exists()) {
-            throw new FileNotFoundException("Input file not found");
+        // Move file in filesystem root
+        File cInputFile = new File("c:/input.txt");
+        File cOutputFile = new File("c:/output.txt");
+        if (cInputFile.renameTo(cOutputFile)) {
+            System.out.println("Renamed 'c:/input.txt' to 'c:/output.txt'");
+        } else {
+            System.out.println("Failed to rename 'c:/input.txt' to 'c:/output.txt'");
         }
 
-        String outputFileName = "output.txt";
-        File outputFile = new File(outputFileName);
-        boolean overwriteOutput = true; // default: overwrite the output file
-
-        if (inputFileName.equals(outputFileName)) {
-            System.out.println("Input and output files cannot have the same name.");
-            return;
+        // Move directory in current working directory
+        File docsDir = new File("docs");
+        File mydocsDir = new File("mydocs");
+        if (docsDir.renameTo(mydocsDir)) {
+            System.out.println("Renamed 'docs' to 'mydocs'");
+        } else {
+            System.out.println("Failed to rename 'docs' to 'mydocs'");
         }
 
-        if (!overwriteOutput) {
-            File tempFile = new File("temp.txt");
-            try (PrintWriter writer = new PrintWriter(tempFile)) {
-                BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    writer.println(line);
-                }
-            } catch (IOException e) {
-                System.out.println("An error occurred while reading the input file.");
-                return;
-            }
+        // Move directory in filesystem root
+        File cDocsDir = new File("c:/docs");
+        File cMydocsDir = new File("c:/mydocs");
+        if (cDocsDir.renameTo(cMydocsDir)) {
+            System.out.println("Renamed 'c:/docs' to 'c:/mydocs'");
+        } else {
+            System.out.println("Failed to rename 'c:/docs' to 'c:/mydocs'");
         }
     }
 }
 ```
+
+This Java code performs the same operations as your JavaScript code: it renames `input.txt` to `output.txt` in both the current working directory and the filesystem root, and it renames `docs` to `mydocs` in both locations.

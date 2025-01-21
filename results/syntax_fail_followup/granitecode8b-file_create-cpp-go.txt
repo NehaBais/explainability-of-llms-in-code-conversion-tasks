@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/granitecode8b-file_create-cpp-go.go:24:23: undefined: fs.Open

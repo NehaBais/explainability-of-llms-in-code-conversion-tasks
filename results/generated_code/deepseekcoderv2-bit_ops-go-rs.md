@@ -1,6 +1,7 @@
-Answer:
+ Sure! Below is the Rust equivalent of the provided Go code:
+
 ```rust
-fn bitwise(a: i32, b: u32) {
+fn bitwise(a: i16, b: i16) {
     println!("a:   {:016b}", a);
     println!("b:   {:016b}", b);
 
@@ -15,27 +16,32 @@ fn bitwise(a: i32, b: u32) {
         return;
     }
 
+    let ua = a as u16;
+    let ub: u32 = b.into();
+
     // Logical shifts (unsigned left operand)
-    let ua = a as u32;
-    println!("shl: {:016b}", ua << b);
-    println!("shr: {:016b}", ua >> b);
+    println!("shl: {:016b}", (ua << ub) as u16);
+    println!("shr: {:016b}", (ua >> ub) as u16);
 
     // Arithmetic shifts (signed left operand)
-    println!("las: {:016b}", a << b);
-    println!("ras: {:016b}", a >> b);
+    println!("las: {:016b}", (a << ub) as i16);
+    println!("ras: {:016b}", (a >> ub) as i16);
 
     // Rotations
-    println!(
-        "rol: {:016b}",
-        (ua << b) | (a as u32 >>(16 - b))
-    );
-    println!(
-        "ror: {:016b}",
-        ((a as u32 >> b) | a <<(16 - b))
-    );
+    let shift_left = ua << ub;
+    let shift_right = uint16(ua >> ub) >> (16 - ub);
+    println!("rol: {:016b}", shift_left | shift_right as u16);
+
+    let shift_right = uint16(ua >> ub) << (16 - ub);
+    let shift_left = a << ub;
+    println!("ror: {:016b}", shift_left | shift_right as i16);
 }
 
 fn main() {
-    bitwise(-460, 6);
+    let a: i16 = -460;
+    let b: i16 = 6;
+    bitwise(a, b);
 }
 ```
+
+Note that in Rust, the `!` operator is used for logical NOT, and there are no unsigned/signed specific shifts. The shifts and rotates are handled using bit manipulation as shown above.

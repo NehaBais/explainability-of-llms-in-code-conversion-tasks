@@ -1,36 +1,22 @@
-#include <filesystem>
-#include <iostream>
-#include <string>
+#include <filesystem> // For std::filesystem::rename
+#include <iostream>   // For std::cout, std::cerr
 
-namespace fs = std::filesystem;
-using namespace std;
 int main() {
-  // Rename file in current directory
-  if (fs::rename("input.txt", "output.txt") != 0) {
-    cout << "Failed to rename input.txt" << endl;
-  } else {
-    cout << "Renamed input.txt to output.txt" << endl;
-  }
+  try {
+    // Rename file "input.txt" to "output.txt" in the current working directory
+    std::filesystem::rename("input.txt", "output.txt");
 
-  // Rename directory in current directory
-  if (fs::rename("docs", "mydocs") != 0) {
-    cout << "Failed to rename docs" << endl;
-  } else {
-    cout << "Renamed docs to mydocs" << endl;
-  }
+    // Rename directory "docs" to "mydocs" in the current working directory
+    std::filesystem::rename("docs", "mydocs");
 
-  // Rename file in filesystem root
-  if (fs::rename("/input.txt", "/output.txt") != 0) {
-    cout << "Failed to rename /input.txt" << endl;
-  } else {
-    cout << "Renamed /input.txt to /output.txt" << endl;
-  }
+    // Rename file "input.txt" to "output.txt" in the filesystem root
+    std::filesystem::rename("/input.txt", "/output.txt");
 
-  // Rename directory in filesystem root
-  if (fs::rename("/docs", "/mydocs") != 0) {
-    cout << "Failed to rename /docs" << endl;
-  } else {
-    cout << "Renamed /docs to /mydocs" << endl;
+    // Rename directory "docs" to "mydocs" in the filesystem root
+    std::filesystem::rename("/docs", "/mydocs");
+  } catch (const std::filesystem::filesystem_error &e) {
+    std::cerr << "Error: " << e.what() << '\n';
+    return 1;
   }
 
   return 0;

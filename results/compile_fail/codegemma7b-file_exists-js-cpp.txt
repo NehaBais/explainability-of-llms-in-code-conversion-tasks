@@ -1,0 +1,22 @@
+/tmp/codegemma7b-file_exists-js-cpp.cpp:4:15: error: no member named 'filesystem' in namespace 'std'
+    4 |   return std::filesystem::exists(filename);
+      |          ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:8:15: error: no member named 'filesystem' in namespace 'std'
+    8 |   return std::filesystem::exists(directoryName) &&
+      |          ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:9:15: error: no member named 'filesystem' in namespace 'std'
+    9 |          std::filesystem::is_directory(directoryName);
+      |          ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:15:10: error: no member named 'cout' in namespace 'std'
+   15 |     std::cout << "Files and directory exist in current working directory."
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:18:10: error: no member named 'cout' in namespace 'std'
+   18 |     std::cout
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:25:10: error: no member named 'cout' in namespace 'std'
+   25 |     std::cout << "Files and directory exist in filesystem root." << std::endl;
+      |     ~~~~~^
+/tmp/codegemma7b-file_exists-js-cpp.cpp:27:10: error: no member named 'cout' in namespace 'std'
+   27 |     std::cout << "Files and directory do not exist in filesystem root."
+      |     ~~~~~^
+7 errors generated.

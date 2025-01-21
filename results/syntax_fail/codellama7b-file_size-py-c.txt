@@ -1,0 +1,11 @@
+/tmp/codellama7b-file_size-py-c.c:12:27: error: call to undeclared library function 'strerror' with type 'char *(int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |     printf("Error: %s\n", strerror(errno));
+      |                           ^
+/tmp/codellama7b-file_size-py-c.c:12:27: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+/tmp/codellama7b-file_size-py-c.c:12:36: error: use of undeclared identifier 'errno'
+   12 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+/tmp/codellama7b-file_size-py-c.c:19:36: error: use of undeclared identifier 'errno'
+   19 |     printf("Error: %s\n", strerror(errno));
+      |                                    ^
+3 errors generated.

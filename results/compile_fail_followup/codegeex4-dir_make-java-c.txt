@@ -1,0 +1,13 @@
+/tmp/codegeex4-dir_make-java-c.c:16:11: error: use of undeclared identifier 'errno'
+   16 |           errno != EEXIST) {
+      |           ^
+/tmp/codegeex4-dir_make-java-c.c:16:20: error: use of undeclared identifier 'EEXIST'
+   16 |           errno != EEXIST) {
+      |                    ^
+/tmp/codegeex4-dir_make-java-c.c:25:7: error: use of undeclared identifier 'errno'
+   25 |       errno != EEXIST) {
+      |       ^
+/tmp/codegeex4-dir_make-java-c.c:25:16: error: use of undeclared identifier 'EEXIST'
+   25 |       errno != EEXIST) {
+      |                ^
+4 errors generated.

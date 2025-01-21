@@ -1,0 +1,16 @@
+/tmp/stablecode-bit_ops-java-c.c:1:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    1 | Fix: Remove the extra closing parenthesis `)` from line 4 of the code snippet, and then recompile and run the corrected code. 
+      | ^
+      | int
+/tmp/stablecode-bit_ops-java-c.c:1:4: error: expected ';' after top level declarator
+    1 | Fix: Remove the extra closing parenthesis `)` from line 4 of the code snippet, and then recompile and run the corrected code. 
+      |    ^
+      |    ;
+/tmp/stablecode-bit_ops-java-c.c:1:6: error: unknown type name 'Remove'
+    1 | Fix: Remove the extra closing parenthesis `)` from line 4 of the code snippet, and then recompile and run the corrected code. 
+      |      ^
+/tmp/stablecode-bit_ops-java-c.c:1:16: error: expected ';' after top level declarator
+    1 | Fix: Remove the extra closing parenthesis `)` from line 4 of the code snippet, and then recompile and run the corrected code. 
+      |                ^
+      |                ;
+4 errors generated.

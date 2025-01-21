@@ -1,0 +1,19 @@
+/tmp/codeqwen-file_exists-rs-cpp.cpp:5:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    5 |   for (const auto &entry : std::filesystem::directory_iterator("./")) {
+      |              ^
+/tmp/codeqwen-file_exists-rs-cpp.cpp:5:33: error: no member named 'filesystem' in namespace 'std'
+    5 |   for (const auto &entry : std::filesystem::directory_iterator("./")) {
+      |                            ~~~~~^
+/tmp/codeqwen-file_exists-rs-cpp.cpp:5:26: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    5 |   for (const auto &entry : std::filesystem::directory_iterator("./")) {
+      |                          ^
+/tmp/codeqwen-file_exists-rs-cpp.cpp:18:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |   for (const auto &entry : std::filesystem::directory_iterator("/")) {
+      |              ^
+/tmp/codeqwen-file_exists-rs-cpp.cpp:18:33: error: no member named 'filesystem' in namespace 'std'
+   18 |   for (const auto &entry : std::filesystem::directory_iterator("/")) {
+      |                            ~~~~~^
+/tmp/codeqwen-file_exists-rs-cpp.cpp:18:26: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   18 |   for (const auto &entry : std::filesystem::directory_iterator("/")) {
+      |                          ^
+4 warnings and 2 errors generated.

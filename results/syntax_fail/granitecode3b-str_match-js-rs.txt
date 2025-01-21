@@ -1,0 +1,8 @@
+error: expected one of `.`, `;`, `?`, `}`, or an operator, found `,`
+  --> /tmp/granitecode3b-str_match-js-rs.rs:16:113
+   |
+16 |     println!("2: Is '{}%' contained in '{}%'? {}", string_a, string_b, if let Some(i) = q2 { "Yes, at index {}.", i } else { "No." });
+   |                                                                                                                 ^ expected one of `.`, `;`, `?`, `}`, or an operator
+
+error: aborting due to 1 previous error
+

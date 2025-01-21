@@ -1,0 +1,4 @@
+/tmp/codegemma7b-int_factors-java-c.c:1:10: fatal error: 'cmath' file not found
+    1 | #include <cmath>
+      |          ^~~~~~~
+1 error generated.

@@ -1,0 +1,1 @@
+/tmp/yicoder2b-int_factors-rs-go.go:4:5: expected 'package', found 'EOF'

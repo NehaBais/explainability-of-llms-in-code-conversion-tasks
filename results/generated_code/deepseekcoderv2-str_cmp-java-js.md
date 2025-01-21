@@ -1,75 +1,50 @@
-## Answer:
-### Java
+ Sure, here's the equivalent JavaScript code for the provided Java code:
 
-public class Compare {
-  public static void main (String[] args) {
-     compare("Hello", "Hello");
-     compare("5", "5.0");
-     compare("java", "Java");
-     compare("ĴÃVÁ", "ĴÃVÁ");
-     compare("ĴÃVÁ", "ĵãvá");
-   }
-  public static void compare (String A, String B) {
-    if (A.equals(B))
-      System.out.printf("'%s' and '%s' are lexically equal.", A, B);
-    else
-       System.out.printf("'%s' and '%s' are not lexically equal.", A, B);
-     System.out.println();
- 
-     if (A.equalsIgnoreCase(B))
-       System.out.printf("'%s' and '%s' are case-insensitive lexically equal.", A, B);
-    else
-      System.out.printf("'%s' and '%s' are not case-insensitive lexically equal.", A, B);
-     System.out.println();
- 
-   if (A.compareTo(B) < 0)
-       System.out.printf("'%s' is lexically before '%s'.
-", A, B);
-    else if (A.compareTo(B) > 0)
-      System.out.printf("'%s' is lexically after '%s'.
-", A, B);
- 
-    if (A.compareTo(B) >= 0)
-       System.out.printf("'%s' is not lexically before '%s'.
-", A, B);
-     else if (A.compareTo(B) <= 0)
-      System.out.printf("'%s' is not lexically after '%s'.
-", A, B);
- 
-    System.out.printf("The lexical relationship is: %d
-", A.compareTo(B));
-     System.out.printf("The case-insensitive lexical relationship is: %d
-", A.compareToIgnoreCase(B));
-   }
-}
-
-### Javascript
 ```javascript
 function compare(A, B) {
-  if (A === B) {
-    console.log(`'${A}' and '${B}' are lexically equal.`);
-  } else {
-    console.log(`'${A}' and '${B}' are not lexically equal.`);
-  }
-  if (A.toLowerCase() === B.toLowerCase()) {
-     console.log(`'${A}' and '${B}' are case-insensitive lexically equal.`);
-   } else {
-      console.log(`'${A}' and '${B}' are not case-insensitive lexically equal.`);
-  }
+    if (A === B) {
+        console.log(`'${A}' and '${B}' are lexically equal.`);
+    } else {
+        console.log(`'${A}' and '${B}' are not lexically equal.`);
+    }
 
-  if (A < B) {
-    console.log(`'${A}' is lexically before '${B}'.`);
-  } else if (A > B) {
-    console.log(`'${A}' is lexically after '${B}'.`);
-  }
-  
-  if (A >= 0) {
-    console.log(`'${A}' is not lexically before '${B}'.`);
-  } else if (A <= 0) {
-     console.log(`'${A}' is not lexically after '${B}'.`);
-  }
-  
-  console.log(`The lexical relationship is: ${A.localeCompare(B)}`);
-  console.log(`The case-insensitive lexical relationship is: ${A.toLowerCase().localeCompare(B.toLowerCase())}`);
+    if (A.toLowerCase() === B.toLowerCase()) {
+        console.log(`'${A}' and '${B}' are case-insensitive lexically equal.`);
+    } else {
+        console.log(`'${A}' and '${B}' are not case-insensitive lexically equal.`);
+    }
+
+    if (A < B) {
+        console.log(`'${A}' is lexically before '${B}'.`);
+    } else if (A > B) {
+        console.log(`'${A}' is lexically after '${B}'.`);
+    }
+
+    if (A <= B) {
+        console.log(`'${A}' is not lexically after '${B}'.`);
+    }
+    if (A >= B) {
+        console.log(`'${A}' is not lexically before '${B}'.`);
+    }
+
+    console.log(`The lexical relationship is: ${A < B ? -1 : A > B ? 1 : 0}`);
+    console.log(`The case-insensitive lexical relationship is: ${A.toLowerCase() < B.toLowerCase() ? -1 : A.toLowerCase() > B.toLowerCase() ? 1 : 0}`);
 }
+
+// Test cases
+compare("Hello", "Hello");
+compare("5", "5.0");
+compare("java", "Java");
+compare("ĴÃVÁ", "ĴÃVÁ");
+compare("ĴÃVÁ", "ĵãvá");
 ```
+
+### Explanation:
+1. **Comparing two strings for exact equality**: This is done using the strict equality operator (`===`).
+2. **Comparing two strings for inequality**: This is achieved by negating the result of the exact equality check.
+3. **Comparing two strings to see if one is lexically ordered before than the other**: This is checked using the lexicographical comparison `<` or `>` operators.
+4. **Comparing two strings to see if one is lexically ordered after than the other**: This is achieved by negating the result of the lexicographical comparison.
+5. **Case sensitive comparisons**: The original string comparisons are case-sensitive, but you can convert them to lowercase using `.toLowerCase()` for a case-insensitive comparison.
+6. **Comparing numeric strings**: In JavaScript, numbers and their string representations can be compared directly, and the result will depend on the lexicographical order unless explicitly converted to numbers using `Number()`.
+
+This JavaScript code demonstrates similar functionality to the provided Java code, including handling different types of comparisons such as case sensitivity and lexical ordering.

@@ -1,0 +1,18 @@
+/tmp/magicoder7b-bit_ops-py-c.c:14:12: error: call to undeclared function 'rotr'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |     return rotr(width, a, -n);
+      |            ^
+/tmp/magicoder7b-bit_ops-py-c.c:14:12: note: did you mean 'rotl'?
+/tmp/magicoder7b-bit_ops-py-c.c:12:14: note: 'rotl' declared here
+   12 | unsigned int rotl(unsigned int width, unsigned int a, int n) {
+      |              ^
+   13 |   if (n < 0)
+   14 |     return rotr(width, a, -n);
+      |            ~~~~
+      |            rotl
+/tmp/magicoder7b-bit_ops-py-c.c:23:14: error: conflicting types for 'rotr'
+   23 | unsigned int rotr(unsigned int width, unsigned int a, int n) {
+      |              ^
+/tmp/magicoder7b-bit_ops-py-c.c:14:12: note: previous implicit declaration is here
+   14 |     return rotr(width, a, -n);
+      |            ^
+2 errors generated.

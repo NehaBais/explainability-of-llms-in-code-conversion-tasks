@@ -1,0 +1,23 @@
+/tmp/codegemma7b-str_cmp-py-c.c:4:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   printf("Type of %s: %ld, type of %s: %ld\n", a, strlen(a), b, strlen(b));
+      |   ^
+/tmp/codegemma7b-str_cmp-py-c.c:4:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codegemma7b-str_cmp-py-c.c:43:11: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   43 |   compare(24, 123);
+      |           ^~
+/tmp/codegemma7b-str_cmp-py-c.c:3:26: note: passing argument to parameter 'a' here
+    3 | void compare(const char *a, const char *b) {
+      |                          ^
+/tmp/codegemma7b-str_cmp-py-c.c:43:15: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   43 |   compare(24, 123);
+      |               ^~~
+/tmp/codegemma7b-str_cmp-py-c.c:3:41: note: passing argument to parameter 'b' here
+    3 | void compare(const char *a, const char *b) {
+      |                                         ^
+/tmp/codegemma7b-str_cmp-py-c.c:44:11: error: passing 'double' to parameter of incompatible type 'const char *'
+   44 |   compare(5.0, 5);
+      |           ^~~
+/tmp/codegemma7b-str_cmp-py-c.c:3:26: note: passing argument to parameter 'a' here
+    3 | void compare(const char *a, const char *b) {
+      |                          ^
+4 errors generated.

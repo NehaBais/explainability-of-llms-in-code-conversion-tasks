@@ -1,0 +1,10 @@
+/tmp/dolphincoder7b-dir_make-rs-c.c:6:21: error: call to undeclared function 'mkdir_with_creation'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 | int main() { return mkdir_with_creation("./path/to/dir"); }
+      |                     ^
+/tmp/dolphincoder7b-dir_make-rs-c.c:8:6: error: conflicting types for 'mkdir_with_creation'
+    8 | bool mkdir_with_creation(const char *path) {
+      |      ^
+/tmp/dolphincoder7b-dir_make-rs-c.c:6:21: note: previous implicit declaration is here
+    6 | int main() { return mkdir_with_creation("./path/to/dir"); }
+      |                     ^
+2 errors generated.

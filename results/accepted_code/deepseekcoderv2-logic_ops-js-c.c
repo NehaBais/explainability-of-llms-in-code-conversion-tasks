@@ -1,18 +1,16 @@
 #include <stdbool.h>
-void logic(bool, bool);
+#include <stdio.h>
+
+void logic(bool a, bool b) {
+  printf("a AND b: %d\n", a && b);
+  printf("a OR b: %d\n", a || b);
+  printf("NOT a: %d\n", !a);
+}
+
 int main() {
-  int first = 0;
-  int second = 0;
-  printf("Input two numbers, a and b.\n");
-  scanf("%d %d", &first, &second);
-  if (first && second) {
-    printf("a AND b is true\n");
-  } else {
-    printf("a AND b is false\n");
-  }
-  if (!first || !second) {
-    printf("a OR b is false\n");
-  } else {
-    printf("a OR b is true\n");
-  }
+  logic(true, true);
+  logic(true, false);
+  logic(false, true);
+  logic(false, false);
+  return 0;
 }

@@ -1,0 +1,41 @@
+import java.io.File;
+
+public class Main {
+  public static void main(String[] args) {
+    // Create a File object for the current working directory and the filesystem root.
+    File currentDir = new File(".");
+    File rootDir = new File("/");
+
+    // Check if the files exist in the specified locations.
+    boolean inputTxtExists = checkFile(currentDir, "input.txt");
+    boolean docsExists = checkDirectory(rootDir, "docs");
+
+    // Print the results.
+    System.out.println("input.txt is a regular file? " + (inputTxtExists ? "yes" : "no"));
+    System.out.println("docs is a directory? " + (docsExists ? "yes" : "no"));
+  }
+
+  /**
+   * Checks if a specified file exists at the given File object.
+   *
+   * @param file The File object to check.
+   * @param fileName The name of the file to check.
+   * @return true if the file exists, false otherwise.
+   */
+  private static boolean checkFile(File file, String fileName) {
+    File fileToCheck = new File(file.getAbsolutePath() + "/" + fileName);
+    return fileToCheck.exists();
+  }
+
+  /**
+   * Checks if a specified directory exists at the given File object.
+   *
+   * @param file The File object to check.
+   * @param dirName The name of the directory to check.
+   * @return true if the directory exists, false otherwise.
+   */
+  private static boolean checkDirectory(File file, String dirName) {
+    File dirToCheck = new File(file.getAbsolutePath() + "/" + dirName);
+    return dirToCheck.exists();
+  }
+}

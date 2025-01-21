@@ -1,0 +1,31 @@
+/tmp/granitecode3b-file_create-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:5:32: error: use of undeclared identifier 'O_WRONLY'
+    5 |   int fd1 = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+      |                                ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:5:43: error: use of undeclared identifier 'O_CREAT'
+    5 |   int fd1 = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+      |                                           ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:5:53: error: use of undeclared identifier 'O_TRUNC'
+    5 |   int fd1 = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+      |                                                     ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:5:62: error: use of undeclared identifier 'S_IRUSR'
+    5 |   int fd1 = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+      |                                                              ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:5:72: error: use of undeclared identifier 'S_IWUSR'
+    5 |   int fd1 = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+      |                                                                        ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:6:3: error: use of undeclared identifier 'close'
+    6 |   close(fd1);
+      |   ^
+/tmp/granitecode3b-file_create-c-cpp.cpp:7:17: error: use of undeclared identifier 'S_IRWXU'
+    7 |   mkdir("docs", S_IRWXU);
+      |                 ^
+1 warning and 9 errors generated.

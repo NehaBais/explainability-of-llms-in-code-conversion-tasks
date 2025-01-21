@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-int_factors-c-rs.rs:16:28
+   |
+16 |         if new_size > flix {
+   |                            ^ unclosed delimiter
+17 |             self.list = Vec::with_capacity(new_size));
+   |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `}`
+  --> /tmp/stablecode-int_factors-c-rs.rs:33:1
+   |
+17 |             self.list = Vec::with_capacity(new_size));
+   |                                                     - missing open `(` for this delimiter
+...
+33 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

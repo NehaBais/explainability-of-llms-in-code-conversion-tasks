@@ -1,0 +1,44 @@
+/tmp/stablecode-file_rename-java-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::path from(oldname);
+      |     ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:8:10: error: no member named 'filesystem' in namespace 'std'
+    8 |     std::filesystem::path to(newname);
+      |     ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:10:14: error: no member named 'filesystem' in namespace 'std'
+   10 |     if (std::filesystem::exists(from)) {
+      |         ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:10:33: error: use of undeclared identifier 'from'
+   10 |     if (std::filesystem::exists(from)) {
+      |                                 ^
+/tmp/stablecode-file_rename-java-cpp.cpp:11:18: error: no member named 'filesystem' in namespace 'std'
+   11 |             std::filesystem::rename(from, to));
+      |             ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:11:37: error: use of undeclared identifier 'from'; did you mean 'for'?
+   11 |             std::filesystem::rename(from, to));
+      |                                     ^~~~
+      |                                     for
+/tmp/stablecode-file_rename-java-cpp.cpp:11:37: error: expected expression
+/tmp/stablecode-file_rename-java-cpp.cpp:11:43: error: use of undeclared identifier 'to'
+   11 |             std::filesystem::rename(from, to));
+      |                                           ^
+/tmp/stablecode-file_rename-java-cpp.cpp:24:10: error: no member named 'filesystem' in namespace 'std'
+   24 |     std::filesystem::path from = std::filesystem::absolute(oldname).normalize();
+      |     ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:24:39: error: no member named 'filesystem' in namespace 'std'
+   24 |     std::filesystem::path from = std::filesystem::absolute(oldname).normalize();
+      |                                  ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:25:10: error: no member named 'filesystem' in namespace 'std'
+   25 |     std::filesystem::path to = std::filesystem::absolute(newname).normalize();
+      |     ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:25:37: error: no member named 'filesystem' in namespace 'std'
+   25 |     std::filesystem::path to = std::filesystem::absolute(newname).normalize();
+      |                                ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:27:14: error: no member named 'filesystem' in namespace 'std'
+   27 |     if (std::filesystem::exists(from)) {
+      |         ~~~~~^
+/tmp/stablecode-file_rename-java-cpp.cpp:30:91: error: expected ';' after expression
+   30 |                             (success ? " was renamed as " : " could not be renamed into ")) 
+      |                                                                                           ^
+      |                                                                                           ;
+/tmp/stablecode-file_rename-java-cpp.cpp:30:91: error: expected expression
+15 errors generated.

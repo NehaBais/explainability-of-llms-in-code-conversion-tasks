@@ -1,0 +1,7 @@
+/tmp/yicoder2b-dir_make-py-cpp.cpp:15:5: error: use of undeclared identifier 'snprintf'
+   15 |     snprintf(buffer, sizeof(buffer), "%s/%s", current, next ? next : "");
+      |     ^
+/tmp/yicoder2b-dir_make-py-cpp.cpp:22:9: error: use of undeclared identifier 'perror'
+   22 |         perror("mkdirp");
+      |         ^
+2 errors generated.

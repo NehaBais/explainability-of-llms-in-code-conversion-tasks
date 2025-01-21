@@ -1,0 +1,19 @@
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path file1 = "input.txt";
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:6:8: error: no member named 'filesystem' in namespace 'std'
+    6 |   std::filesystem::path rootFile = "/c:/input.txt";
+      |   ~~~~~^
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:8:12: error: no member named 'filesystem' in namespace 'std'
+    8 |   if (std::filesystem::exists(file1)) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:9:40: error: no member named 'filesystem' in namespace 'std'
+    9 |     std::cout << "File size: " << std::filesystem::file_size(file1) << " bytes"
+      |                                   ~~~~~^
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:15:12: error: no member named 'filesystem' in namespace 'std'
+   15 |   if (std::filesystem::exists(rootFile)) {
+      |       ~~~~~^
+/tmp/qwen2.5coder2b-file_size-js-cpp.cpp:16:45: error: no member named 'filesystem' in namespace 'std'
+   16 |     std::cout << "Root file size: " << std::filesystem::file_size(rootFile)
+      |                                        ~~~~~^
+6 errors generated.

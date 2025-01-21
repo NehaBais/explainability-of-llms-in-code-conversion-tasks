@@ -1,0 +1,41 @@
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-file_exists-cpp-rs.rs:14:17
+   |
+14 |                <｜begin▁of▁sentence｜>}
+   |                 ^^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-file_exists-cpp-rs.rs:14:23
+   |
+14 |                <｜begin▁of▁sentence｜>}
+   |                        ^
+
+error: unknown start of token: \u{2581}
+  --> /tmp/deepseekcoder7b-file_exists-cpp-rs.rs:14:26
+   |
+14 |                <｜begin▁of▁sentence｜>}
+   |                           ^
+
+error: unknown start of token: \u{ff5c}
+  --> /tmp/deepseekcoder7b-file_exists-cpp-rs.rs:14:35
+   |
+14 |                <｜begin▁of▁sentence｜>}
+   |                                    ^^
+
+error: this file contains an unclosed delimiter
+  --> /tmp/deepseekcoder7b-file_exists-cpp-rs.rs:28:2
+   |
+4  | fn file_exists(path: &str) {
+   |                            - unclosed delimiter
+...
+12 |                 } else {
+   |                        - this delimiter might not be properly closed...
+13 |                     println!(" exists with a file size of {} bytes", meta.len());
+14 |                <｜begin▁of▁sentence｜>}
+   |                                       - ...as it matches this but it has different indentation
+...
+28 | }
+   |  ^
+
+error: aborting due to 5 previous errors
+

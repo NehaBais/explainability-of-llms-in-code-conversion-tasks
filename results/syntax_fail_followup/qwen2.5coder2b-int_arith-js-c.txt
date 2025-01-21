@@ -1,0 +1,11 @@
+/tmp/qwen2.5coder2b-int_arith-js-c.c:29:29: error: call to undeclared library function 'remainder' with type 'double (double, double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   29 |     printf("a %% b = %d\n", remainder);
+      |                             ^
+/tmp/qwen2.5coder2b-int_arith-js-c.c:29:29: note: include the header <math.h> or explicitly provide a declaration for 'remainder'
+/tmp/qwen2.5coder2b-int_arith-js-c.c:29:29: warning: format specifies type 'int' but the argument has type 'double (*)(double, double)' [-Wformat]
+   29 |     printf("a %% b = %d\n", remainder);
+      |                      ~~     ^~~~~~~~~
+/tmp/qwen2.5coder2b-int_arith-js-c.c:32:30: error: invalid argument type 'double (*)(double, double)' to unary expression
+   32 |     printf("a %% b = -%d\n", -remainder);
+      |                              ^~~~~~~~~~
+1 warning and 2 errors generated.

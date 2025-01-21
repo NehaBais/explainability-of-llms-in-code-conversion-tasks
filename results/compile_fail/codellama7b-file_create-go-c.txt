@@ -1,0 +1,4 @@
+/tmp/codellama7b-file_create-go-c.c:16:3: error: call to undeclared function 'close'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |   close(fd);
+      |   ^
+1 error generated.

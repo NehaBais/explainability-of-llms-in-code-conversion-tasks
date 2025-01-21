@@ -1,0 +1,12 @@
+# command-line-arguments
+/tmp/stablecode-str_cmp-cpp-go.go:18:51: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:28:50: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:32:52: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:33:56: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:35:59: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:37:58: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:46:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:47:43: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:49:72: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:53:26: syntax error: unexpected ) at end of statement
+/tmp/stablecode-str_cmp-cpp-go.go:53:26: too many errors

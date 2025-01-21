@@ -1,0 +1,19 @@
+/tmp/stablecode-file_size-java-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path fileAPath("file.txt");
+      |   ~~~~~^
+/tmp/stablecode-file_size-java-cpp.cpp:6:26: error: no member named 'filesystem' in namespace 'std'
+    6 |   uintmax_t sizeA = std::filesystem::file_size(fileAPath);
+      |                     ~~~~~^
+/tmp/stablecode-file_size-java-cpp.cpp:6:48: error: use of undeclared identifier 'fileAPath'
+    6 |   uintmax_t sizeA = std::filesystem::file_size(fileAPath);
+      |                                                ^
+/tmp/stablecode-file_size-java-cpp.cpp:9:8: error: no member named 'filesystem' in namespace 'std'
+    9 |   std::filesystem::path fileBPath("/file.txt");
+      |   ~~~~~^
+/tmp/stablecode-file_size-java-cpp.cpp:10:28: error: no member named 'filesystem' in namespace 'std'
+   10 |     uintmax_t sizeB = std::filesystem::file_size(fileBPath));
+      |                       ~~~~~^
+/tmp/stablecode-file_size-java-cpp.cpp:10:50: error: use of undeclared identifier 'fileBPath'
+   10 |     uintmax_t sizeB = std::filesystem::file_size(fileBPath));
+      |                                                  ^
+6 errors generated.

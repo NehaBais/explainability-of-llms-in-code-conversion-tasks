@@ -1,0 +1,18 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-str_match-c-rs.rs:13:11
+   |
+13 | fn main() {
+   |           ^ unclosed delimiter
+14 |     println!("Starts with Test ( Hello,Hell ) : {}", starts_with("Hello","Hell")));
+   |                                                                                  ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-str_match-c-rs.rs:15:77
+   |
+14 |     println!("Starts with Test ( Hello,Hell ) : {}", starts_with("Hello","Hell")));
+   |                                                                                  - missing open `(` for this delimiter
+15 |     println!("Ends with Test ( Code,ode ) ) : {}", ends_with("Code","ode")););
+   |                                                                             ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

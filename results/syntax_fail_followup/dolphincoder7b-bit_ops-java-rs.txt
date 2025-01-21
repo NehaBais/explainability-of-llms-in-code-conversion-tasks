@@ -1,0 +1,14 @@
+error: 2 positional arguments in format string, but there is 1 argument
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:6:19
+  |
+6 |     println!("NOT {} is {}", !a);
+  |                   ^^    ^^   --
+
+error: 3 positional arguments in format string, but there are 2 arguments
+ --> /tmp/dolphincoder7b-bit_ops-java-rs.rs:7:15
+  |
+7 |     println!("{} XOR {} is {}", a ^ b, (a ^ b).count_ones());
+  |               ^^     ^^    ^^   -----  --------------------
+
+error: aborting due to 2 previous errors
+

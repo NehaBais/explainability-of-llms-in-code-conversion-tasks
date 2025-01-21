@@ -1,0 +1,15 @@
+/tmp/qwen2.5coder2b-file_size-go-c.c:6:38: error: function definition is not allowed here
+    6 |   long getFileSize(const char *path) {
+      |                                      ^
+/tmp/qwen2.5coder2b-file_size-go-c.c:17:46: error: call to undeclared function 'getFileSize'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |   printf("Size of 'input.txt': %ld bytes\n", getFileSize("input.txt"));
+      |                                              ^
+/tmp/qwen2.5coder2b-file_size-go-c.c:17:46: warning: format specifies type 'long' but the argument has type 'int' [-Wformat]
+   17 |   printf("Size of 'input.txt': %ld bytes\n", getFileSize("input.txt"));
+      |                                ~~~           ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                %d
+/tmp/qwen2.5coder2b-file_size-go-c.c:20:47: warning: format specifies type 'long' but the argument has type 'int' [-Wformat]
+   20 |   printf("Size of '/input.txt': %ld bytes\n", getFileSize("/input.txt"));
+      |                                 ~~~           ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 %d
+2 warnings and 2 errors generated.

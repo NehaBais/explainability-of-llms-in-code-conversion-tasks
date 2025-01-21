@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-str_substring-java-c.c:22:47: error: member reference base type 'char[3]' is not a structure or union
+   22 |   printf("%s\n", Substring("Hello World", "He".length(), 3)); // Output: Hel
+      |                                           ~~~~^~~~~~~
+1 error generated.

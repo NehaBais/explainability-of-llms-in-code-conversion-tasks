@@ -1,0 +1,25 @@
+/tmp/stablecode-str_cmp-java-c.c:5:20: error: extraneous ')' after condition, expected a statement
+    5 |   if (strcmp(A, B))) {
+      |                    ^
+/tmp/stablecode-str_cmp-java-c.c:6:65: error: extraneous ')' before ';'
+    6 |         printf("'%s' and '%s' are not lexically equal.\n", A, B));
+      |                                                                 ^
+/tmp/stablecode-str_cmp-java-c.c:9:61: error: extraneous ')' before ';'
+    9 |         printf("'%s' and '%s' are lexically equal.\n", A, B));
+      |                                                             ^
+/tmp/stablecode-str_cmp-java-c.c:12:24: error: extraneous ')' after condition, expected a statement
+   12 |   if (strcasecmp(A, B)))) {
+      |                        ^
+/tmp/stablecode-str_cmp-java-c.c:12:25: error: extraneous ')' after condition, expected a statement
+   12 |   if (strcasecmp(A, B)))) {
+      |                         ^
+/tmp/stablecode-str_cmp-java-c.c:13:74: error: extraneous ')' before ';'
+   13 |         printf("'%s' is case-insensitive lexically before '%s'.\n", A, B));
+      |                                                                          ^
+/tmp/stablecode-str_cmp-java-c.c:15:29: error: extraneous ')' after condition, expected a statement
+   15 |   else if (strcasecmp(A, B))){
+      |                             ^
+/tmp/stablecode-str_cmp-java-c.c:16:73: error: extraneous ')' before ';'
+   16 |         printf("'%s' is case-insensitive lexically after '%s'.\n", A, B));
+      |                                                                         ^
+8 errors generated.

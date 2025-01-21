@@ -1,0 +1,62 @@
+/tmp/granitecode3b-str_substring-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:4:17: warning: using directive refers to implicitly-defined namespace 'std'
+    4 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:5:1: error: unknown type name 'string'
+    5 | string Substring(string str, int n, int m) { return str.substr(n, m); }
+      | ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:5:18: error: unknown type name 'string'
+    5 | string Substring(string str, int n, int m) { return str.substr(n, m); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:6:1: error: unknown type name 'string'
+    6 | string Substring(string str, int n) { return str.substr(n); }
+      | ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:6:18: error: unknown type name 'string'
+    6 | string Substring(string str, int n) { return str.substr(n); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:7:1: error: unknown type name 'string'
+    7 | string Substring(string str) { return str.substr(0, str.length() - 1); }
+      | ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:7:18: error: unknown type name 'string'
+    7 | string Substring(string str) { return str.substr(0, str.length() - 1); }
+      |                  ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:8:1: error: unknown type name 'string'
+    8 | string Substring(string str, char c, int m) {
+      | ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:8:18: error: unknown type name 'string'
+    8 | string Substring(string str, char c, int m) {
+      |                  ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:11:1: error: unknown type name 'string'
+   11 | string Substring(string str, string sub, int m) {
+      | ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:11:18: error: unknown type name 'string'
+   11 | string Substring(string str, string sub, int m) {
+      |                  ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:11:30: error: unknown type name 'string'
+   11 | string Substring(string str, string sub, int m) {
+      |                              ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:15:3: error: unknown type name 'string'
+   15 |   string str = "Hello World";
+      |   ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:16:3: error: use of undeclared identifier 'cout'
+   16 |   cout << Substring(str, 3, 4) << endl;     // prints "lo W"
+      |   ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:16:35: error: use of undeclared identifier 'endl'
+   16 |   cout << Substring(str, 3, 4) << endl;     // prints "lo W"
+      |                                   ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:17:3: error: use of undeclared identifier 'cout'
+   17 |   cout << Substring(str, 0, 5) << endl;     // prints "Hello"
+      |   ^
+/tmp/granitecode3b-str_substring-java-cpp.cpp:17:35: error: use of undeclared identifier 'endl'
+   17 |   cout << Substring(str, 0, 5) << endl;     // prints "Hello"
+      |                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,0 +1,12 @@
+error[E0599]: no function or associated item named `cmp_to_ordering` found for type `str` in the current scope
+  --> /tmp/dolphincoder7b-str_cmp-cpp-rs.rs:30:23
+   |
+30 |     let result = str::cmp_to_ordering(&a, &b);
+   |                       ^^^^^^^^^^^^^^^ function or associated item not found in `str`
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0599`.

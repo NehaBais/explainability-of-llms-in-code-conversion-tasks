@@ -1,0 +1,9 @@
+error[E0463]: can't find crate for `itertools`
+ --> /tmp/deepseekcoder7b-int_factors-py-rs.rs:1:1
+  |
+1 | extern crate itertools;
+  | ^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0463`.

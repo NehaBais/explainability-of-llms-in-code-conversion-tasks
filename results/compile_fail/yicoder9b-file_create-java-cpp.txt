@@ -1,0 +1,13 @@
+/tmp/yicoder9b-file_create-java-cpp.cpp:10:29: error: no member named 'filesystem' in namespace 'std'
+   10 |         std::string(1, std::filesystem::path::preferred_separator) +
+      |                        ~~~~~^
+/tmp/yicoder9b-file_create-java-cpp.cpp:12:10: error: no member named 'filesystem' in namespace 'std'
+   12 |     std::filesystem::create_directory(
+      |     ~~~~~^
+/tmp/yicoder9b-file_create-java-cpp.cpp:15:10: error: no member named 'filesystem' in namespace 'std'
+   15 |     std::filesystem::create_directory(
+      |     ~~~~~^
+/tmp/yicoder9b-file_create-java-cpp.cpp:16:29: error: no member named 'filesystem' in namespace 'std'
+   16 |         std::string(1, std::filesystem::path::preferred_separator) +
+      |                        ~~~~~^
+4 errors generated.

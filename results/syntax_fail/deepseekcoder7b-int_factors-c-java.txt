@@ -1,0 +1,25 @@
+/tmp/Main.java:26: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                       ^
+/tmp/Main.java:26: error: not a statement
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                      ^
+/tmp/Main.java:26: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                             ^
+/tmp/Main.java:26: error: not a statement
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                        ^
+/tmp/Main.java:26: error: illegal character: '\u2581'
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                                ^
+/tmp/Main.java:26: error: not a statement
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                              ^
+/tmp/Main.java:26: error: illegal character: '\uff5c'
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                                         ^
+/tmp/Main.java:26: error: not a statement
+            System.out<｜begin▁of▁sentence｜>.println("Factors of " + num + " are: ");
+                                 ^
+8 errors

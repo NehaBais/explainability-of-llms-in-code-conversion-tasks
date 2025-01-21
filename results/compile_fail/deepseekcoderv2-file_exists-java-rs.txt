@@ -1,0 +1,21 @@
+error[E0382]: borrow of moved value: `path`
+  --> /tmp/deepseekcoderv2-file_exists-java-rs.rs:18:62
+   |
+13 |     let path = Path::new(dir_name).join(file_name);
+   |         ---- move occurs because `path` has type `PathBuf`, which does not implement the `Copy` trait
+14 |     
+15 |     if fs::metadata(path).is_ok() {
+   |                     ---- value moved here
+...
+18 |         println!("The file or directory {} does not exist.", path.display());
+   |                                                              ^^^^^^^^^^^^^^ value borrowed here after move
+   |
+   = note: borrow occurs due to deref coercion to `Path`
+help: consider cloning the value if the performance cost is acceptable
+   |
+15 |     if fs::metadata(path.clone()).is_ok() {
+   |                         ++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.

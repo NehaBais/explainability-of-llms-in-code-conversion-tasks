@@ -1,0 +1,9 @@
+/tmp/FactorsOfANumber.java:36: error: incompatible types: Object cannot be converted to long
+        for (long factor : factors) {
+                           ^
+/tmp/FactorsOfANumber.java:46: error: incompatible types: Object cannot be converted to long
+      for (long factor : factors) {
+                         ^
+Note: /tmp/FactorsOfANumber.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

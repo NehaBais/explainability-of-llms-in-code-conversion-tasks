@@ -1,0 +1,19 @@
+/tmp/granitecode8b-str_interp-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-js-c.c:7:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcpy(replaced, original);
+      |   ^
+/tmp/granitecode8b-str_interp-js-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/granitecode8b-str_interp-js-c.c:8:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcat(replaced, " and a ");
+      |   ^
+/tmp/granitecode8b-str_interp-js-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode8b-str_interp-js-c.c:11:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   printf("%s", replaced);
+      |   ^
+/tmp/granitecode8b-str_interp-js-c.c:11:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

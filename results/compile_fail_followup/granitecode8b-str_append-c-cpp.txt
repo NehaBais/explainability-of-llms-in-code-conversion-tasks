@@ -1,0 +1,25 @@
+/tmp/granitecode8b-str_append-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_append-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_append-c-cpp.cpp:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-str_append-c-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::string str = "Good Morning";
+      |   ^
+/tmp/granitecode8b-str_append-c-cpp.cpp:10:24: error: member reference base type 'const char' is not a structure or union
+   10 |   if (str.size() + cstr->length() + cstr2->length() < str.capacity()) {
+      |                    ~~~~^ ~~~~~~
+/tmp/granitecode8b-str_append-c-cpp.cpp:10:42: error: member reference base type 'const char' is not a structure or union
+   10 |   if (str.size() + cstr->length() + cstr2->length() < str.capacity()) {
+      |                                     ~~~~~^ ~~~~~~
+/tmp/granitecode8b-str_append-c-cpp.cpp:17:5: error: use of undeclared identifier 'std'
+   17 |     std::cout << str << std::endl;
+      |     ^
+/tmp/granitecode8b-str_append-c-cpp.cpp:17:25: error: use of undeclared identifier 'std'
+   17 |     std::cout << str << std::endl;
+      |                         ^
+8 errors generated.

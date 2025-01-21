@@ -1,0 +1,49 @@
+/tmp/granitecode8b-file_exists-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:5:3: error: use of undeclared identifier 'std'
+    5 |   std::ifstream file("docs/input.txt");
+      |   ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:6:7: error: use of undeclared identifier 'file'
+    6 |   if (file) {
+      |       ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:7:5: error: use of undeclared identifier 'file'
+    7 |     file.close();
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:8:5: error: use of undeclared identifier 'std'
+    8 |     std::cout << "File exists: docs/input.txt" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:8:51: error: use of undeclared identifier 'std'
+    8 |     std::cout << "File exists: docs/input.txt" << std::endl;
+      |                                                   ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cerr << "Error: File does not exist: docs/input.txt" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:10:66: error: use of undeclared identifier 'std'
+   10 |     std::cerr << "Error: File does not exist: docs/input.txt" << std::endl;
+      |                                                                  ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:14:3: error: use of undeclared identifier 'file'
+   14 |   file.open("/docs/input.txt");
+      |   ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:15:7: error: use of undeclared identifier 'file'
+   15 |   if (file) {
+      |       ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:16:5: error: use of undeclared identifier 'file'
+   16 |     file.close();
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:17:5: error: use of undeclared identifier 'std'
+   17 |     std::cout << "File exists: /docs/input.txt" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:17:52: error: use of undeclared identifier 'std'
+   17 |     std::cout << "File exists: /docs/input.txt" << std::endl;
+      |                                                    ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:19:5: error: use of undeclared identifier 'std'
+   19 |     std::cerr << "Error: File does not exist: /docs/input.txt" << std::endl;
+      |     ^
+/tmp/granitecode8b-file_exists-java-cpp.cpp:19:67: error: use of undeclared identifier 'std'
+   19 |     std::cerr << "Error: File does not exist: /docs/input.txt" << std::endl;
+      |                                                                   ^
+16 errors generated.

@@ -1,0 +1,78 @@
+/tmp/granitecode3b-str_match-java-cpp.cpp:3:3: error: unknown type name 'string'; did you mean 'std::string'?
+    3 |   string str1 = "Hello, world!";
+      |   ^~~~~~
+      |   std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:4:3: error: unknown type name 'string'; did you mean 'std::string'?
+    4 |   string str2 = "world";
+      |   ^~~~~~
+      |   std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:5:37: error: use of undeclared identifier 'string'; did you mean 'std::string'?
+    5 |   bool result1 = str1.find(str2) != string::npos;
+      |                                     ^~~~~~
+      |                                     std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:6:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+    6 |   cout << "Does " << str1 << " contain " << str2 << "?: " << result1 << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:6:73: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+    6 |   cout << "Does " << str1 << " contain " << str2 << "?: " << result1 << endl;
+      |                                                                         ^~~~
+      |                                                                         std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:7:37: error: use of undeclared identifier 'string'; did you mean 'std::string'?
+    7 |   bool result2 = str1.find(str2) != string::npos;
+      |                                     ^~~~~~
+      |                                     std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+    8 |   cout << "Does " << str1 << " contain " << str2 << "?: " << result2 << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:8:73: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+    8 |   cout << "Does " << str1 << " contain " << str2 << "?: " << result2 << endl;
+      |                                                                         ^~~~
+      |                                                                         std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:9:38: error: use of undeclared identifier 'string'; did you mean 'std::string'?
+    9 |   bool result3 = str1.rfind(str2) != string::npos;
+      |                                      ^~~~~~
+      |                                      std::string
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:48:7: note: 'std::string' declared here
+   48 | using string = basic_string<char>;
+      |       ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:10:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+   10 |   cout << "Does " << str1 << " end with " << str2 << "?: " << result3 << endl;
+      |   ^~~~
+      |   std::cout
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:55:42: note: 'std::cout' declared here
+   55 | extern _LIBCPP_EXPORTED_FROM_ABI ostream cout;
+      |                                          ^
+/tmp/granitecode3b-str_match-java-cpp.cpp:10:74: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+   10 |   cout << "Does " << str1 << " end with " << str2 << "?: " << result3 << endl;
+      |                                                                          ^~~~
+      |                                                                          std::endl
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:891:62: note: 'std::endl' declared here
+  891 | _LIBCPP_HIDE_FROM_ABI inline basic_ostream<_CharT, _Traits>& endl(basic_ostream<_CharT, _Traits>& __os) {
+      |                                                              ^
+11 errors generated.

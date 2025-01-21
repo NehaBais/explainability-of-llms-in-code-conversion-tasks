@@ -1,0 +1,64 @@
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:25:15
+   |
+25 |     if num == dvsr * dvsr {
+   |               ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:25:22
+   |
+25 |     if num == dvsr * dvsr {
+   |                      ^^^^ not found in this scope
+
+error[E0425]: cannot find value `dvsr` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:26:20
+   |
+26 |         flist.push(dvsr);
+   |                    ^^^^ not found in this scope
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:38:21
+   |
+38 |         for j in 0..fctrs.count {
+   |                     ^^^^^ not found in this scope
+   |
+help: you might have meant to write `.` instead of `..`
+   |
+38 -         for j in 0..fctrs.count {
+38 +         for j in 0.fctrs.count {
+   |
+
+error[E0425]: cannot find value `fctrs` in this scope
+  --> /tmp/codellama7b-int_factors-c-rs.rs:39:26
+   |
+39 |             print!("{}", fctrs[j]);
+   |                          ^^^^^ not found in this scope
+
+error[E0308]: mismatched types
+  --> /tmp/codellama7b-int_factors-c-rs.rs:28:17
+   |
+28 |       if flix > 0 {
+   |  _________________^
+29 | |         xfer_factors(fctrs, flist.as_slice(), flix);
+30 | |     }
+   | |_____^ expected `i32`, found `()`
+
+warning: variable `ix` is assigned to, but never used
+ --> /tmp/codellama7b-int_factors-c-rs.rs:4:13
+  |
+4 |     let mut ix = 0;
+  |             ^^
+  |
+  = note: consider using `_ix` instead
+  = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `flix`
+ --> /tmp/codellama7b-int_factors-c-rs.rs:3:54
+  |
+3 | fn xfer_factors(fctrs: &mut Vec<i32>, flist: &[i32], flix: usize) {
+  |                                                      ^^^^ help: if this is intentional, prefix it with an underscore: `_flix`
+
+error: aborting due to 6 previous errors; 2 warnings emitted
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.

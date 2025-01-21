@@ -1,0 +1,7 @@
+/tmp/yicoder2b-str_match-py-c.c:1:1: error: unknown type name 'def'
+    1 | def string_matching(s)
+      | ^
+/tmp/yicoder2b-str_match-py-c.c:2:5: error: expected function body after function declarator
+    2 |     : if s == "abcd" : print('abcd') elif 'ab' in s
+      |     ^
+2 errors generated.

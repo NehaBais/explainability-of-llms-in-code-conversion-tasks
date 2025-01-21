@@ -1,0 +1,161 @@
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:25:75
+   |
+25 |     let result = cmp::min(cmp::max(a.cmp(&lower_case_b), lower_case_a.cmp(&b)), 0);
+   |                                                                       --- ^^ expected `&String`, found `&&str`
+   |                                                                       |
+   |                                                                       arguments to this method are incorrect
+   |
+   = note: expected reference `&String`
+              found reference `&&str`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:838:8
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:25:81
+   |
+25 |     let result = cmp::min(cmp::max(a.cmp(&lower_case_b), lower_case_a.cmp(&b)), 0);
+   |                  -------- arguments to this function are incorrect              ^ expected `Ordering`, found integer
+   |
+help: the return type of this call is `{integer}` due to the type of the argument passed
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:25:18
+   |
+25 |     let result = cmp::min(cmp::max(a.cmp(&lower_case_b), lower_case_a.cmp(&b)), 0);
+   |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-^
+   |                                                                                 |
+   |                                                                                 this argument influences the return type of `cmp`
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1264:8
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:27:9
+   |
+26 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+27 |         1 => println!("{} is lexically before {}.", a, b),
+   |         ^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:28:9
+   |
+26 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+27 |         1 => println!("{} is lexically before {}.", a, b),
+28 |         -1 => println!("{} is lexically after {}.", a, b),
+   |         ^^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:29:9
+   |
+26 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+...
+29 |         0 => println!("The lexical relationship between {} and {} is equal.", a, b),
+   |         ^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:33:81
+   |
+33 |     let result = cmp::min(cmp::max(a.cmp(&b), lower_case_a.cmp(&lower_case_b)), 0);
+   |                  -------- arguments to this function are incorrect              ^ expected `Ordering`, found integer
+   |
+help: the return type of this call is `{integer}` due to the type of the argument passed
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:33:18
+   |
+33 |     let result = cmp::min(cmp::max(a.cmp(&b), lower_case_a.cmp(&lower_case_b)), 0);
+   |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-^
+   |                                                                                 |
+   |                                                                                 this argument influences the return type of `cmp`
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1264:8
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:35:9
+   |
+34 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+35 |         1 => println!("{} is not lexically before {}.", a, b),
+   |         ^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:36:9
+   |
+34 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+35 |         1 => println!("{} is not lexically before {}.", a, b),
+36 |         -1 => println!("{} is not lexically after {}.", a, b),
+   |         ^^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:37:9
+   |
+34 |     match result {
+   |           ------ this expression has type `std::cmp::Ordering`
+...
+37 |         0 => panic!("Unexpected result"),
+   |         ^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:42:62
+   |
+42 |         cmp::max(a.cmp(&"5.0".to_string()), lower_case_a.cmp("5")),
+   |                                                          --- ^^^ expected `&String`, found `&str`
+   |                                                          |
+   |                                                          arguments to this method are incorrect
+   |
+   = note: expected reference `&String`
+              found reference `&'static str`
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:838:8
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:43:9
+   |
+41 |     let numeric_result = cmp::min(
+   |                          -------- arguments to this function are incorrect
+42 |         cmp::max(a.cmp(&"5.0".to_string()), lower_case_a.cmp("5")),
+43 |         0,
+   |         ^ expected `Ordering`, found integer
+   |
+help: the return type of this call is `{integer}` due to the type of the argument passed
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:41:26
+   |
+41 |       let numeric_result = cmp::min(
+   |  __________________________^
+42 | |         cmp::max(a.cmp(&"5.0".to_string()), lower_case_a.cmp("5")),
+43 | |         0,
+   | |         - this argument influences the return type of `cmp`
+44 | |     );
+   | |_____^
+note: function defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/cmp.rs:1264:8
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:46:9
+   |
+45 |     match numeric_result {
+   |           -------------- this expression has type `std::cmp::Ordering`
+46 |         1 => println!("{} is lexically before {} in a numerical comparison.", a, b),
+   |         ^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:47:9
+   |
+45 |     match numeric_result {
+   |           -------------- this expression has type `std::cmp::Ordering`
+46 |         1 => println!("{} is lexically before {} in a numerical comparison.", a, b),
+47 |         -1 => println!("{} is lexically after {} in a numerical comparison.", a, b),
+   |         ^^ expected `Ordering`, found integer
+
+error[E0308]: mismatched types
+  --> /tmp/dolphincoder7b-str_cmp-java-rs.rs:48:9
+   |
+45 |     match numeric_result {
+   |           -------------- this expression has type `std::cmp::Ordering`
+...
+48 |         0 => panic!("Unexpected result"),
+   |         ^ expected `Ordering`, found integer
+
+error: aborting due to 14 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

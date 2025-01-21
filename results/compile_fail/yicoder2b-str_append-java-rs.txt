@@ -1,0 +1,14 @@
+error[E0596]: cannot borrow `string` as mutable, as it is not declared as mutable
+ --> /tmp/yicoder2b-str_append-java-rs.rs:4:5
+  |
+4 |     string.push_str("def");
+  |     ^^^^^^ cannot borrow as mutable
+  |
+help: consider changing this to be mutable
+  |
+2 |     let mut string = String::from("abc");
+  |         +++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0596`.

@@ -1,0 +1,39 @@
+The error occurs because of mismatched types, specifically uint (for left rotation) and int (for right rotation). The solution is to convert back from uint to int before printing the result for rotations. 
+
+Here's the corrected Golang version:
+```go
+package main
+
+import  (
+	"fmt"
+)
+
+func bitwise(a int, b int) {
+	fmt.Println("a and b: ", a&b) // Bitwise AND
+	fmt.Println("a or b:  ", a|b) // Bitwise OR
+	fmt.Println("a xor b: ", a^b) // Bitwise XOR
+	
+	// Bitwise NOT is performed using ^ with one's complement (all bits inverted). For negative numbers, it will give positive result by adding 1.
+	fmt.Println("not a:   ", ^a+1)
+
+	shiftAmount := uint(b) // converting int to uint for the shift operations
+
+	fmt.Println("a shl b: ", a<<shiftAmount) // Left shift
+	// Right shift is not always guaranteed in Go as it's done by compiler
+	fmt.Println("a shr b: ", a>>shiftAmount) // Typically arithmetic right shift, but not guaranteed
+	
+	// For logical right shift (Go's equivalent of C/C++'s >>), we need to convert a into uint and then use right shift operator
+	ua := uint(a)
+	fmt.Println("a lsr b: ", ua>>shiftAmount) // Logical right shift (guaranteed)
+	
+	// Left rotation
+	leftRotate := int(uint(a)*(1<<shiftAmount) | ua>>(32-shiftAmount)) 
+	fmt.Println("a rol b: ", leftRotate)
+	
+	// Right Rotation
+	rightRotate := int(ua>>shiftAmount | uint(a)<<(32-shiftAmount))
+	fmt<｜begin▁of▁sentence｜>Println "a ror b: ", rightRotate)
+}
+``` 
+This code is adapted to handle negative integers correctly. But again, as C/C++ does not guarantee correct results for bitwise operations on negative numbers in Go, this may or may not provide the desired output. The corrected version only works if a and b are non-negative.
+

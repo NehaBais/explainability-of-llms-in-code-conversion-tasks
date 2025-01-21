@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-str_substring-py-go.go:24:32: invalid argument: r (variable of type rune) for built-in len
+/tmp/qwen2.5coder7b-str_substring-py-go.go:25:23: invalid operation: cannot slice r (variable of type rune)

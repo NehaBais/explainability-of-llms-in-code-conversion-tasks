@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  rename("input.txt", "output.txt");
+  rename("docs", "mydocs");
+  rename("/input.txt", "/output.txt");
+  rename("/docs", "/mydocs");
+  return 0;
+}

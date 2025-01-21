@@ -1,0 +1,21 @@
+error[E0463]: can't find crate for `itertools`
+ --> /tmp/deepseekcoder7b-int_factors-py-rs.rs:1:1
+  |
+1 | extern crate itertools;
+  | ^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error[E0596]: cannot borrow `factors2` as mutable, as it is not declared as mutable
+  --> /tmp/deepseekcoder7b-int_factors-py-rs.rs:19:21
+   |
+19 |     factors1.append(&mut factors2); // Merge the two halfs of list in reverse order
+   |                     ^^^^^^^^^^^^^ cannot borrow as mutable
+   |
+help: consider changing this to be mutable
+   |
+18 |     let mut factors2 = factors1.drain((factors1.len() / 2)..).collect::<Vec<_>>();
+   |         +++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0463, E0596.
+For more information about an error, try `rustc --explain E0463`.

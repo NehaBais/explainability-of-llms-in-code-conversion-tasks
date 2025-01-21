@@ -1,0 +1,7 @@
+/tmp/codeqwen-file_create-java-cpp.cpp:7:10: error: no member named 'filesystem' in namespace 'std'
+    7 |     std::filesystem::create_directories("here/docs");
+      |     ~~~~~^
+/tmp/codeqwen-file_create-java-cpp.cpp:8:10: error: no member named 'filesystem' in namespace 'std'
+    8 |     std::filesystem::create_directories("/docs");
+      |     ~~~~~^
+2 errors generated.

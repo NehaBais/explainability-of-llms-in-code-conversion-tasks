@@ -1,0 +1,48 @@
+error[E0599]: no method named `substring` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:11:22
+   |
+11 |     println!("{}", s.substring(n, m)); // starting from n characters in and of m length
+   |                      ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substring` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:12:22
+   |
+12 |     println!("{}", s.substring(n)); // starting from n characters in, up to the end of the string
+   |                      ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substring` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:13:22
+   |
+13 |     println!("{}", s.substring(0, s.len() - 1)); // whole string minus the last character
+   |                      ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substring` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:14:22
+   |
+14 |     println!("{}", s.substring(s.find(c), m)); // starting from a known character within the string and of m length
+   |                      ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error[E0599]: no method named `substring` found for struct `String` in the current scope
+  --> /tmp/codellama7b-str_substring-cpp-rs.rs:15:22
+   |
+15 |     println!("{}", s.substring(s.find(sub), m)); // starting from a known substring within the string and of m length
+   |                      ^^^^^^^^^
+   |
+help: there is a method `to_string` with a similar name, but with different arguments
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/string.rs:2544:5
+
+error: aborting due to 5 previous errors
+
+For more information about this error, try `rustc --explain E0599`.

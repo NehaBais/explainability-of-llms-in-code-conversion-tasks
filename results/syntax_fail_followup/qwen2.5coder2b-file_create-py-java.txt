@@ -1,0 +1,6 @@
+/tmp/Main.java:9: error: cannot find symbol
+      try (BufferedWriter bw = new BufferedWriter(new FileWriter(f, false))) {
+                                                      ^
+  symbol:   class FileWriter
+  location: class Main
+1 error

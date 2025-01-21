@@ -1,0 +1,119 @@
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:7:44: error: a space is required between consecutive right angle brackets (use '> >')
+    7 |   wstring_convert<std::codecvt_utf8<wchar_t>> converter;
+      |                                            ^~
+      |                                            > >
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:8:10: error: no viable conversion from 'basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' to 'basic_string<char, char_traits<char>, allocator<char>>'
+    8 |   string s = converter.from_bytes("abc文字化けdef");
+      |          ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'wide_string' (aka 'basic_string<wchar_t, char_traits<wchar_t>, std::allocator<wchar_t> >') to 'const string &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'wide_string' (aka 'basic_string<wchar_t, char_traits<wchar_t>, std::allocator<wchar_t> >') to 'const char *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:12:11: error: no viable conversion from 'basic_string<char, char_traits<char>, allocator<char>>' to 'basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>'
+   12 |   wstring subStr = s.substr(n, m);
+      |           ^        ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:896:71: note: candidate constructor not viable: no known conversion from 'string' to 'const wstring &' for 1st argument
+  896 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string(const basic_string& __str)
+      |                                                                       ^            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:951:55: note: candidate constructor template not viable: no known conversion from 'string' to 'const wchar_t *' for 1st argument
+  951 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string(const _CharT* __s)
+      |                                                       ^            ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:886:64: note: explicit constructor is not a candidate
+  886 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const allocator_type& __a)
+      |                                                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1047:93: note: explicit constructor is not a candidate
+ 1047 |   _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(const _Tp& __t)
+      |                                                                                             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1108:55: note: candidate function
+ 1108 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator __self_view() const _NOEXCEPT {
+      |                                                       ^
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:16:10: error: no viable overloaded '='
+   16 |   subStr = s.substr(n);
+      |   ~~~~~~ ^ ~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1113:3: note: candidate function not viable: no known conversion from 'basic_string<char, char_traits<char>, allocator<char>>' to 'const basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' for 1st argument
+ 1113 |   operator=(const basic_string& __str);
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1119:47: note: candidate template ignored: requirement '__can_be_converted_to_string_view<wchar_t, std::char_traits<wchar_t>, std::string>::value' was not satisfied [with _Tp = string]
+ 1119 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const _Tp& __t) {
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1135:69: note: candidate function not viable: no known conversion from 'string' to 'const value_type *' (aka 'const wchar_t *') for 1st argument
+ 1135 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const value_type* __s) {
+      |                                                                     ^         ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1141:85: note: candidate function not viable: no known conversion from 'string' to 'value_type' (aka 'wchar_t') for 1st argument
+ 1141 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string& operator=(value_type __c);
+      |                                                                                     ^         ~~~~~~~~~~~~~~
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:20:10: error: no viable overloaded '='
+   20 |   subStr = s.substr(0, s.size() - 1);
+      |   ~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1113:3: note: candidate function not viable: no known conversion from 'basic_string<char, char_traits<char>, allocator<char>>' to 'const basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' for 1st argument
+ 1113 |   operator=(const basic_string& __str);
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1119:47: note: candidate template ignored: requirement '__can_be_converted_to_string_view<wchar_t, std::char_traits<wchar_t>, std::string>::value' was not satisfied [with _Tp = string]
+ 1119 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const _Tp& __t) {
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1135:69: note: candidate function not viable: no known conversion from 'string' to 'const value_type *' (aka 'const wchar_t *') for 1st argument
+ 1135 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const value_type* __s) {
+      |                                                                     ^         ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1141:85: note: candidate function not viable: no known conversion from 'string' to 'value_type' (aka 'wchar_t') for 1st argument
+ 1141 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string& operator=(value_type __c);
+      |                                                                                     ^         ~~~~~~~~~~~~~~
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:25:10: error: no viable overloaded '='
+   25 |   subStr = s.substr(cpos, m);
+      |   ~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1113:3: note: candidate function not viable: no known conversion from 'basic_string<char, char_traits<char>, allocator<char>>' to 'const basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' for 1st argument
+ 1113 |   operator=(const basic_string& __str);
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1119:47: note: candidate template ignored: requirement '__can_be_converted_to_string_view<wchar_t, std::char_traits<wchar_t>, std::string>::value' was not satisfied [with _Tp = string]
+ 1119 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const _Tp& __t) {
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1135:69: note: candidate function not viable: no known conversion from 'string' to 'const value_type *' (aka 'const wchar_t *') for 1st argument
+ 1135 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const value_type* __s) {
+      |                                                                     ^         ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1141:85: note: candidate function not viable: no known conversion from 'string' to 'value_type' (aka 'wchar_t') for 1st argument
+ 1141 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string& operator=(value_type __c);
+      |                                                                                     ^         ~~~~~~~~~~~~~~
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:29:12: error: no matching member function for call to 'find'
+   29 |   spos = s.find(converter.from_bytes("けd"));
+      |          ~~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1610:3: note: candidate function not viable: no known conversion from 'basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' to 'const basic_string<char, char_traits<char>, allocator<char>>' for 1st argument
+ 1610 |   find(const basic_string& __str, size_type __pos = 0) const _NOEXCEPT;
+      |   ^    ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1618:3: note: candidate function not viable: no known conversion from 'wide_string' (aka 'basic_string<wchar_t, char_traits<wchar_t>, std::allocator<wchar_t> >') to 'const value_type *' (aka 'const char *') for 1st argument
+ 1618 |   find(const value_type* __s, size_type __pos = 0) const _NOEXCEPT;
+      |   ^    ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1619:43: note: candidate function not viable: no known conversion from 'wide_string' (aka 'basic_string<wchar_t, char_traits<wchar_t>, std::allocator<wchar_t> >') to 'value_type' (aka 'char') for 1st argument
+ 1619 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 size_type find(value_type __c, size_type __pos = 0) const _NOEXCEPT;
+      |                                           ^    ~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1614:3: note: candidate template ignored: requirement '__can_be_converted_to_string_view<char, std::char_traits<char>, std::wstring>::value' was not satisfied [with _Tp = wide_string]
+ 1614 |   find(const _Tp& __t, size_type __pos = 0) const _NOEXCEPT;
+      |   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1616:43: note: candidate function not viable: requires 3 arguments, but 1 was provided
+ 1616 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 size_type find(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
+      |                                           ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/yicoder9b-str_substring-rs-cpp.cpp:30:10: error: no viable overloaded '='
+   30 |   subStr = s.substr(spos, m);
+      |   ~~~~~~ ^ ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1113:3: note: candidate function not viable: no known conversion from 'basic_string<char, char_traits<char>, allocator<char>>' to 'const basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>>' for 1st argument
+ 1113 |   operator=(const basic_string& __str);
+      |   ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1119:47: note: candidate template ignored: requirement '__can_be_converted_to_string_view<wchar_t, std::char_traits<wchar_t>, std::string>::value' was not satisfied [with _Tp = string]
+ 1119 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const _Tp& __t) {
+      |                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1135:69: note: candidate function not viable: no known conversion from 'string' to 'const value_type *' (aka 'const wchar_t *') for 1st argument
+ 1135 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator=(const value_type* __s) {
+      |                                                                     ^         ~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:1141:85: note: candidate function not viable: no known conversion from 'string' to 'value_type' (aka 'wchar_t') for 1st argument
+ 1141 |   _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS basic_string& operator=(value_type __c);
+      |                                                                                     ^         ~~~~~~~~~~~~~~
+8 errors generated.

@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-int_factors-cpp-go.go:11:19: invalid operation: i <= math.Floor(math.Sqrt(float64(n))) (mismatched types int and float64)

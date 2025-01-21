@@ -1,0 +1,31 @@
+/tmp/granitecode3b-dir_make-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-java-c.c:4:15: error: variable has incomplete type 'struct stat'
+    4 |   struct stat st;
+      |               ^
+/tmp/granitecode3b-dir_make-java-c.c:4:10: note: forward declaration of 'struct stat'
+    4 |   struct stat st;
+      |          ^
+/tmp/granitecode3b-dir_make-java-c.c:5:16: error: call to undeclared function 'stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   int result = stat("path/to/dir", &st);
+      |                ^
+/tmp/granitecode3b-dir_make-java-c.c:8:5: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |     mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |     ^
+/tmp/granitecode3b-dir_make-java-c.c:8:26: error: use of undeclared identifier 'S_IRWXU'
+    8 |     mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                          ^
+/tmp/granitecode3b-dir_make-java-c.c:8:36: error: use of undeclared identifier 'S_IRWXG'
+    8 |     mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                    ^
+/tmp/granitecode3b-dir_make-java-c.c:8:46: error: use of undeclared identifier 'S_IROTH'
+    8 |     mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                              ^
+/tmp/granitecode3b-dir_make-java-c.c:8:56: error: use of undeclared identifier 'S_IXOTH'
+    8 |     mkdir("path/to/dir", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+      |                                                        ^
+9 errors generated.

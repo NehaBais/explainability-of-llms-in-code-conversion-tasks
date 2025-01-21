@@ -1,0 +1,13 @@
+/tmp/codellama7b-str_match-rs-c.c:21:15: error: incompatible pointer to integer conversion passing 'char *' to parameter of type 'int' [-Wint-conversion]
+   21 |   print_match(strstr(s1, s2)); // Found match at pos 0
+      |               ^~~~~~~~~~~~~~
+/tmp/codellama7b-str_match-rs-c.c:5:22: note: passing argument to parameter 'match' here
+    5 | void print_match(int match) {
+      |                      ^
+/tmp/codellama7b-str_match-rs-c.c:22:15: error: incompatible pointer to integer conversion passing 'char *' to parameter of type 'int' [-Wint-conversion]
+   22 |   print_match(strstr(s1, s3)); // Did not find any matches
+      |               ^~~~~~~~~~~~~~
+/tmp/codellama7b-str_match-rs-c.c:5:22: note: passing argument to parameter 'match' here
+    5 | void print_match(int match) {
+      |                      ^
+2 errors generated.

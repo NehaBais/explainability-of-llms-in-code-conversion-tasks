@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/codellama7b-int_factors-rs-go.go:4:2: "fmt" imported and not used
+/tmp/codellama7b-int_factors-rs-go.go:10:19: invalid operation: i <= int32(math.Sqrt(float64(num))) (mismatched types int and int32)
+/tmp/codellama7b-int_factors-rs-go.go:11:6: invalid operation: num % i (mismatched types int32 and int)
+/tmp/codellama7b-int_factors-rs-go.go:12:30: cannot use i (variable of type int) as int32 value in argument to append
+/tmp/codellama7b-int_factors-rs-go.go:13:30: invalid operation: num / i (mismatched types int32 and int)
+/tmp/codellama7b-int_factors-rs-go.go:16:2: undefined: sort
+/tmp/codellama7b-int_factors-rs-go.go:21:2: undefined: assert
+/tmp/codellama7b-int_factors-rs-go.go:22:2: undefined: assert

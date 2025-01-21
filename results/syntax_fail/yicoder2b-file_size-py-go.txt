@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-file_size-py-go.go:15:16: file.FileInfo undefined (type *os.File has no field or method FileInfo)

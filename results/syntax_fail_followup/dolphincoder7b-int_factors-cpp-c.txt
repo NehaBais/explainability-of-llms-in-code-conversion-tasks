@@ -1,0 +1,61 @@
+/tmp/dolphincoder7b-int_factors-cpp-c.c:3:1: error: unknown type name 'FactorVector'
+    3 | FactorVector generateFactors(int n) {
+      | ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:4:3: error: use of undeclared identifier 'FactorVector'
+    4 |   FactorVector result = {0};
+      |   ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:5:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   int *factors = malloc(sizeof(int) * (n + 1));
+      |                  ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:5:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/dolphincoder7b-int_factors-cpp-c.c:7:8: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+    7 |   for (size_t i = 0; i <= n; ++i)
+      |        ^~~~~~
+      |        sizeof
+/tmp/dolphincoder7b-int_factors-cpp-c.c:7:17: error: expression is not assignable
+    7 |   for (size_t i = 0; i <= n; ++i)
+      |        ~~~~~~~~ ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:7:15: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i <= n; ++i)
+      |               ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:7:22: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i <= n; ++i)
+      |                      ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:7:32: error: use of undeclared identifier 'i'
+    7 |   for (size_t i = 0; i <= n; ++i)
+      |                                ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:8:13: error: use of undeclared identifier 'i'
+    8 |     factors[i] = 0;
+      |             ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:10:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   10 |   size_t len = 2;
+      |   ^~~~~~
+      |   sizeof
+/tmp/dolphincoder7b-int_factors-cpp-c.c:10:14: error: expression is not assignable
+   10 |   size_t len = 2;
+      |   ~~~~~~~~~~ ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:10:10: error: use of undeclared identifier 'len'
+   10 |   size_t len = 2;
+      |          ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:16:15: error: use of undeclared identifier 'len'
+   16 |       factors[len++] = i;
+      |               ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:17:15: error: use of undeclared identifier 'len'
+   17 |       factors[len++] = n / i;
+      |               ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:22:18: error: use of undeclared identifier 'len'
+   22 |   qsort(factors, len, sizeof(int), cmpfunc);
+      |                  ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:24:3: error: use of undeclared identifier 'result'
+   24 |   result.factors = factors;
+      |   ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:25:3: error: use of undeclared identifier 'result'
+   25 |   result.len = len;
+      |   ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:25:16: error: use of undeclared identifier 'len'
+   25 |   result.len = len;
+      |                ^
+/tmp/dolphincoder7b-int_factors-cpp-c.c:26:10: error: use of undeclared identifier 'result'
+   26 |   return result;
+      |          ^
+19 errors generated.

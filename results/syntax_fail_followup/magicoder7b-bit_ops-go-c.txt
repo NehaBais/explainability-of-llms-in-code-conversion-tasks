@@ -1,0 +1,17 @@
+/tmp/magicoder7b-bit_ops-go-c.c:27:28: error: use of undeclared identifier 'uint32_t'
+   27 |   if ((ub & 1) == 1 && (~((uint32_t)(las)) & (1ULL << (32 - ub)))) {
+      |                            ^
+/tmp/magicoder7b-bit_ops-go-c.c:35:28: error: use of undeclared identifier 'uint32_t'
+   35 |   if ((ub & 1) == 1 && (~((uint32_t)(rol)) & (1ULL << (32 - ub)))) {
+      |                            ^
+/tmp/magicoder7b-bit_ops-go-c.c:41:23: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   41 |   int ror = ((a << 32 - ub) | (a >> (ub + 16)));
+      |                 ~~ ~~~^~~~
+/tmp/magicoder7b-bit_ops-go-c.c:41:23: note: place parentheses around the '-' expression to silence this warning
+   41 |   int ror = ((a << 32 - ub) | (a >> (ub + 16)));
+      |                       ^   
+      |                    (      )
+/tmp/magicoder7b-bit_ops-go-c.c:42:28: error: use of undeclared identifier 'uint32_t'
+   42 |   if ((ub & 1) == 1 && (~((uint32_t)(ror)) & (1ULL << (32 - ub)))) {
+      |                            ^
+1 warning and 3 errors generated.

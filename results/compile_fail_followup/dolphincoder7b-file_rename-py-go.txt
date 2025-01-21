@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_rename-py-go.go:4:2: "fmt" imported and not used

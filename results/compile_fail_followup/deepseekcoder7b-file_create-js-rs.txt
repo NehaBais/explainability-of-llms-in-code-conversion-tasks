@@ -1,0 +1,15 @@
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_create-js-rs.rs:20:66
+   |
+20 |     fs::File::create(&dir.join("output.txt")).unwrap_or_else(|e| handle_error(&e));
+   |                                                                  ^^^^^^^^^^^^^^^^ expected `File`, found `()`
+
+error[E0308]: mismatched types
+  --> /tmp/deepseekcoder7b-file_create-js-rs.rs:21:69
+   |
+21 |     fs::File::create(&dir.join("docs/file.txt")).unwrap_or_else(|e| handle_error(&e));
+   |                                                                     ^^^^^^^^^^^^^^^^ expected `File`, found `()`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0308`.

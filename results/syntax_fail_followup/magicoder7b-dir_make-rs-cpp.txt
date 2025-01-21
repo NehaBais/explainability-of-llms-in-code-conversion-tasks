@@ -1,0 +1,4 @@
+/tmp/magicoder7b-dir_make-rs-cpp.cpp:8:5: error: use of undeclared identifier 'perror'
+    8 |     perror("An error occurred!");
+      |     ^
+1 error generated.

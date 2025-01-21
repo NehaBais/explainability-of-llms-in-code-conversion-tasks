@@ -1,0 +1,17 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/codegeex4-file_exists-py-rs.rs:31:2
+   |
+31 | }
+   |  ^ consider adding a `main` function to `/tmp/codegeex4-file_exists-py-rs.rs`
+
+warning: unused variable: `root_path`
+ --> /tmp/codegeex4-file_exists-py-rs.rs:6:9
+  |
+6 |     let root_path = Path::new("/");
+  |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_root_path`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0601`.

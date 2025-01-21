@@ -1,0 +1,7 @@
+# command-line-arguments
+/tmp/magicoder7b-int_cmp-cpp-go.go:38:2: undefined: a
+/tmp/magicoder7b-int_cmp-cpp-go.go:38:24: undefined: strings
+/tmp/magicoder7b-int_cmp-cpp-go.go:44:2: undefined: b
+/tmp/magicoder7b-int_cmp-cpp-go.go:44:24: undefined: strings
+/tmp/magicoder7b-int_cmp-cpp-go.go:48:9: undefined: a
+/tmp/magicoder7b-int_cmp-cpp-go.go:48:12: undefined: b

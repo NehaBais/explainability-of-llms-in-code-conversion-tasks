@@ -1,0 +1,63 @@
+error[E0308]: mismatched types
+ --> /tmp/yicoder9b-str_substring-c-rs.rs:4:12
+  |
+4 |     if let Some((prefix, rest)) = s.split_at(n) {
+  |            ^^^^^^^^^^^^^^^^^^^^   ------------- this expression has type `(&str, &str)`
+  |            |
+  |            expected `(&str, &str)`, found `Option<_>`
+  |
+  = note: expected tuple `(&str, &str)`
+              found enum `Option<_>`
+
+error[E0599]: no method named `unwrap` found for type `usize` in the current scope
+  --> /tmp/yicoder9b-str_substring-c-rs.rs:29:53
+   |
+29 |     if let Some((_, rest)) = s.split_at(s.find(ch)?.unwrap()) {
+   |                                                     ^^^^^^ method not found in `usize`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_substring-c-rs.rs:29:12
+   |
+29 |     if let Some((_, rest)) = s.split_at(s.find(ch)?.unwrap()) {
+   |            ^^^^^^^^^^^^^^^   -------------------------------- this expression has type `(&str, &str)`
+   |            |
+   |            expected `(&str, &str)`, found `Option<_>`
+   |
+   = note: expected tuple `(&str, &str)`
+               found enum `Option<_>`
+
+error[E0599]: no method named `unwrap` found for type `usize` in the current scope
+  --> /tmp/yicoder9b-str_substring-c-rs.rs:37:60
+   |
+37 |     if let Some((_, rest)) = s.split_at(s.find(substring)?.unwrap()) {
+   |                                                            ^^^^^^ method not found in `usize`
+
+error[E0308]: mismatched types
+  --> /tmp/yicoder9b-str_substring-c-rs.rs:37:12
+   |
+37 |     if let Some((_, rest)) = s.split_at(s.find(substring)?.unwrap()) {
+   |            ^^^^^^^^^^^^^^^   --------------------------------------- this expression has type `(&str, &str)`
+   |            |
+   |            expected `(&str, &str)`, found `Option<_>`
+   |
+   = note: expected tuple `(&str, &str)`
+               found enum `Option<_>`
+
+error[E0618]: expected function, found `&str`
+  --> /tmp/yicoder9b-str_substring-c-rs.rs:38:9
+   |
+1  | fn substring(s: &str, mut n: usize, m: isize) -> Option<String> {
+   | --------------------------------------------------------------- this function of the same name is available here, but it's shadowed by the local binding
+...
+36 | fn str_fromstr(s: &str, substring: &str, m: isize) -> Option<String> {
+   |                         --------- `substring` has type `&str`
+37 |     if let Some((_, rest)) = s.split_at(s.find(substring)?.unwrap()) {
+38 |         substring(rest, 0, m)
+   |         ^^^^^^^^^------------
+   |         |
+   |         call expression requires function
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0308, E0599, E0618.
+For more information about an error, try `rustc --explain E0308`.

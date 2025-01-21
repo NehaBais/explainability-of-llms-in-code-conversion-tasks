@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/yicoder2b-str_cmp-c-go.go:33:48: undefined: STRCEQ

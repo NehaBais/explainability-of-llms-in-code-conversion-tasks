@@ -1,0 +1,41 @@
+error[E0277]: `?` couldn't convert the error to `std::io::Error`
+ --> /tmp/magicoder7b-int_cmp-java-rs.rs:9:41
+  |
+3 | fn main() -> io::Result<()> {
+  |              -------------- expected `std::io::Error` because of this
+...
+9 |     let nbr1: i32 = input.trim().parse()?;
+  |                                  -------^ the trait `From<ParseIntError>` is not implemented for `std::io::Error`, which is required by `Result<(), std::io::Error>: FromResidual<Result<Infallible, _>>`
+  |                                  |
+  |                                  this can't be annotated with `?` because it has type `Result<_, ParseIntError>`
+  |
+  = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+  = help: the following other types implement trait `From<T>`:
+            `std::io::Error` implements `From<ErrorKind>`
+            `std::io::Error` implements `From<IntoInnerError<W>>`
+            `std::io::Error` implements `From<NulError>`
+            `std::io::Error` implements `From<TryReserveError>`
+  = note: required for `Result<(), std::io::Error>` to implement `FromResidual<Result<Infallible, ParseIntError>>`
+
+error[E0277]: `?` couldn't convert the error to `std::io::Error`
+  --> /tmp/magicoder7b-int_cmp-java-rs.rs:13:41
+   |
+3  | fn main() -> io::Result<()> {
+   |              -------------- expected `std::io::Error` because of this
+...
+13 |     let nbr2: i32 = input.trim().parse()?;
+   |                                  -------^ the trait `From<ParseIntError>` is not implemented for `std::io::Error`, which is required by `Result<(), std::io::Error>: FromResidual<Result<Infallible, _>>`
+   |                                  |
+   |                                  this can't be annotated with `?` because it has type `Result<_, ParseIntError>`
+   |
+   = note: the question mark operation (`?`) implicitly performs a conversion on the error value using the `From` trait
+   = help: the following other types implement trait `From<T>`:
+             `std::io::Error` implements `From<ErrorKind>`
+             `std::io::Error` implements `From<IntoInnerError<W>>`
+             `std::io::Error` implements `From<NulError>`
+             `std::io::Error` implements `From<TryReserveError>`
+   = note: required for `Result<(), std::io::Error>` to implement `FromResidual<Result<Infallible, ParseIntError>>`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0277`.

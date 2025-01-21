@@ -1,0 +1,7 @@
+/tmp/yicoder9b-str_cmp-java-cpp.cpp:11:58: error: expected expression
+   11 |   if (std::equal(A.begin(), A.end(), B.begin(), B.end(), [](char a, char b) {
+      |                                                          ^
+/tmp/yicoder9b-str_cmp-java-cpp.cpp:40:21: error: expected expression
+   40 |                     [](char a, char b) {
+      |                     ^
+2 errors generated.

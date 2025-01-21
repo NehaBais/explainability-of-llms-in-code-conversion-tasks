@@ -1,0 +1,79 @@
+/tmp/codellama7b-str_substring-js-c.c:4:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    4 | strncpy(str, n, m);
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:4:9: error: a parameter list without types is only allowed in a function definition
+    4 | strncpy(str, n, m);
+      |         ^
+/tmp/codellama7b-str_substring-js-c.c:5:8: error: expected parameter declarator
+    5 | printf("%s\n", str); // => "cde"
+      |        ^
+/tmp/codellama7b-str_substring-js-c.c:5:8: error: expected ')'
+/tmp/codellama7b-str_substring-js-c.c:5:7: note: to match this '('
+    5 | printf("%s\n", str); // => "cde"
+      |       ^
+/tmp/codellama7b-str_substring-js-c.c:5:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    5 | printf("%s\n", str); // => "cde"
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:5:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/codellama7b-str_substring-js-c.c:5:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+/tmp/codellama7b-str_substring-js-c.c:8:23: error: expected ')'
+    8 | strncpy(str, n, strlen(str) - n + 1);
+      |                       ^
+/tmp/codellama7b-str_substring-js-c.c:8:8: note: to match this '('
+    8 | strncpy(str, n, strlen(str) - n + 1);
+      |        ^
+/tmp/codellama7b-str_substring-js-c.c:8:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    8 | strncpy(str, n, strlen(str) - n + 1);
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:8:9: error: a parameter list without types is only allowed in a function definition
+    8 | strncpy(str, n, strlen(str) - n + 1);
+      |         ^
+/tmp/codellama7b-str_substring-js-c.c:9:8: error: expected parameter declarator
+    9 | printf("%s\n", str); // => "cdefgh"
+      |        ^
+/tmp/codellama7b-str_substring-js-c.c:9:8: error: expected ')'
+/tmp/codellama7b-str_substring-js-c.c:9:7: note: to match this '('
+    9 | printf("%s\n", str); // => "cdefgh"
+      |       ^
+/tmp/codellama7b-str_substring-js-c.c:9:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    9 | printf("%s\n", str); // => "cdefgh"
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:12:14: error: expected identifier
+   12 | strncpy(str, 0, strlen(str) - 1);
+      |              ^
+/tmp/codellama7b-str_substring-js-c.c:12:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   12 | strncpy(str, 0, strlen(str) - 1);
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:12:1: warning: incompatible redeclaration of library function 'strncpy' [-Wincompatible-library-redeclaration]
+/tmp/codellama7b-str_substring-js-c.c:4:1: note: 'strncpy' is a builtin with type 'char *(char *, const char *, unsigned long)'
+    4 | strncpy(str, n, m);
+      | ^
+/tmp/codellama7b-str_substring-js-c.c:13:8: error: expected parameter declarator
+   13 | printf("%s\n", str); // => "abcdefg"
+      |        ^
+/tmp/codellama7b-str_substring-js-c.c:13:8: error: expected ')'
+/tmp/codellama7b-str_substring-js-c.c:13:7: note: to match this '('
+   13 | printf("%s\n", str); // => "abcdefg"
+      |       ^
+/tmp/codellama7b-str_substring-js-c.c:13:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   13 | printf("%s\n", str); // => "abcdefg"
+      | ^
+      | int
+/tmp/codellama7b-str_substring-js-c.c:16:11: error: call to undeclared library function 'strchr' with type 'char *(const char *, int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 | char *c = strchr(str, 'b');
+      |           ^
+/tmp/codellama7b-str_substring-js-c.c:16:11: note: include the header <string.h> or explicitly provide a declaration for 'strchr'
+/tmp/codellama7b-str_substring-js-c.c:16:11: error: initializer element is not a compile-time constant
+   16 | char *c = strchr(str, 'b');
+      |           ^~~~~~~~~~~~~~~~
+/tmp/codellama7b-str_substring-js-c.c:17:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   17 | strncpy(c, n, m);
+      | ^
+      | int
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.

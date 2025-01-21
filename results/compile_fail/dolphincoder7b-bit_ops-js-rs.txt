@@ -1,0 +1,15 @@
+error: expected expression, found `>`
+ --> /tmp/dolphincoder7b-bit_ops-js-rs.rs:8:33
+  |
+8 |     println!("a >>> b: {}", a >>> b); // logical right shift
+  |                                 ^ expected expression
+
+error[E0601]: `main` function not found in crate `dolphincoder7b_bit_ops_js_rs`
+ --> /tmp/dolphincoder7b-bit_ops-js-rs.rs:9:2
+  |
+9 | }
+  |  ^ consider adding a `main` function to `/tmp/dolphincoder7b-bit_ops-js-rs.rs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0601`.

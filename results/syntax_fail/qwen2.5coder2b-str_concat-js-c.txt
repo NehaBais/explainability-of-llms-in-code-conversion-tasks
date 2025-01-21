@@ -1,0 +1,9 @@
+/tmp/qwen2.5coder2b-str_concat-js-c.c:8:3: error: call to undeclared library function 'strcpy' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   strcpy(result, s);
+      |   ^
+/tmp/qwen2.5coder2b-str_concat-js-c.c:8:3: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/tmp/qwen2.5coder2b-str_concat-js-c.c:9:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   strcat(result, " there!");
+      |   ^
+/tmp/qwen2.5coder2b-str_concat-js-c.c:9:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+2 errors generated.

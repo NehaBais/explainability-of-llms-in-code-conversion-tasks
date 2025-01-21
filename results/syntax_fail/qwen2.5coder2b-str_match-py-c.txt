@@ -1,0 +1,13 @@
+/tmp/qwen2.5coder2b-str_match-py-c.c:8:30: error: call to undeclared function 'startsWith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   printf("startswith: %d\n", startsWith(str1, str2));
+      |                              ^
+/tmp/qwen2.5coder2b-str_match-py-c.c:9:28: error: call to undeclared function 'endsWith'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("endswith: %d\n", endsWith(str1, str2));
+      |                            ^
+/tmp/qwen2.5coder2b-str_match-py-c.c:10:22: error: call to undeclared function 'in'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   printf("in: %d\n", in(str1, str2));
+      |                      ^
+/tmp/qwen2.5coder2b-str_match-py-c.c:12:13: error: call to undeclared function 'find'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   12 |   int loc = find(str1, str2);
+      |             ^
+4 errors generated.

@@ -1,0 +1,8 @@
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:8:11: warning: missing terminating '"' character [-Winvalid-pp-token]
+    8 |   cout << "
+      |           ^
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:8:11: error: expected expression
+/tmp/yicoder2b-str_cmp-py-cpp.cpp:11:7: warning: missing terminating '"' character [-Winvalid-pp-token]
+   11 |       ";
+      |       ^
+2 warnings and 1 error generated.

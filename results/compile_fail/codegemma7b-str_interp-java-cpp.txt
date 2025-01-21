@@ -1,0 +1,10 @@
+/tmp/codegemma7b-str_interp-java-cpp.cpp:1:1: error: use of undeclared identifier 'std'
+    1 | std::string adjective = "little";
+      | ^
+/tmp/codegemma7b-str_interp-java-cpp.cpp:2:1: error: use of undeclared identifier 'std'
+    2 | std::string lyric = std::string("Mary had a ") + adjective + " lamb";
+      | ^
+/tmp/codegemma7b-str_interp-java-cpp.cpp:2:21: error: use of undeclared identifier 'std'
+    2 | std::string lyric = std::string("Mary had a ") + adjective + " lamb";
+      |                     ^
+3 errors generated.

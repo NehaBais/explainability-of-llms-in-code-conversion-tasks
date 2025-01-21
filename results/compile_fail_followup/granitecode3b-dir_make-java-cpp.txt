@@ -1,0 +1,31 @@
+/tmp/granitecode3b-dir_make-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:3:22: error: use of undeclared identifier 'std'
+    3 | void createDirectory(std::string path) {
+      |                      ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:4:3: error: use of undeclared identifier 'std'
+    4 |   std::filesystem::create_directories(path);
+      |   ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:7:3: error: use of undeclared identifier 'std'
+    7 |   std::string path = "C:/parent/test";
+      |   ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:10:5: error: use of undeclared identifier 'std'
+   10 |     std::cout << "Directory created successfully" << std::endl;
+      |     ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:10:54: error: use of undeclared identifier 'std'
+   10 |     std::cout << "Directory created successfully" << std::endl;
+      |                                                      ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:11:18: error: use of undeclared identifier 'std'
+   11 |   } catch (const std::exception &e) {
+      |                  ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:12:5: error: use of undeclared identifier 'std'
+   12 |     std::cerr << "Error creating directory: " << e.what() << std::endl;
+      |     ^
+/tmp/granitecode3b-dir_make-java-cpp.cpp:12:62: error: use of undeclared identifier 'std'
+   12 |     std::cerr << "Error creating directory: " << e.what() << std::endl;
+      |                                                              ^
+10 errors generated.

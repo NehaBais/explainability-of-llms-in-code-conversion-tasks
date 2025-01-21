@@ -1,0 +1,1 @@
+/tmp/codegemma7b-dir_make-c-go.go:1:1: expected 'package', found 'import'

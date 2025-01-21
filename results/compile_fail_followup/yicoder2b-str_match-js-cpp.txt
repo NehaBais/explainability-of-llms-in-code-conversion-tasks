@@ -1,0 +1,16 @@
+/tmp/yicoder2b-str_match-js-cpp.cpp:10:9: error: redefinition of 'q2multi' with a different type: 'char *' vs 'bool'
+   10 |   char *q2multi =
+      |         ^
+/tmp/yicoder2b-str_match-js-cpp.cpp:8:20: note: previous definition is here
+    8 |   bool q1, q2, q3, q2multi, m;
+      |                    ^
+/tmp/yicoder2b-str_match-js-cpp.cpp:26:15: error: no matching function for call to 'sscanf'
+   26 |   while ((m = sscanf(q2multi, "%*s%*[^0-9]%*[^\n]", &index)) != EOF) {
+      |               ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:6: note: candidate function not viable: no known conversion from 'bool' to 'const char *' for 1st argument
+  278 | int      sscanf(const char * __restrict, const char * __restrict, ...) __scanflike(2, 3);
+      |          ^      ~~~~~~~~~~~~
+/tmp/yicoder2b-str_match-js-cpp.cpp:29:5: error: use of undeclared identifier 'q2matches'
+   29 |     q2matches[indexCount++] = index;
+      |     ^
+3 errors generated.

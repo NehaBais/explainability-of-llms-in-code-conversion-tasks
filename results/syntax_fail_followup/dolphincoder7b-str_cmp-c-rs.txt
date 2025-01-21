@@ -1,0 +1,9 @@
+error[E0425]: cannot find function `compare_strings` in this scope
+ --> /tmp/dolphincoder7b-str_cmp-c-rs.rs:5:5
+  |
+5 |     compare_strings(s1, s2); // calling our comparison function
+  |     ^^^^^^^^^^^^^^^ not found in this scope
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.

@@ -1,0 +1,9 @@
+# command-line-arguments
+/tmp/dolphincoder7b-str_match-js-go.go:32:7: cannot use starts_with(stringA, stringB) (value of type bool) as int value in assignment
+/tmp/dolphincoder7b-str_match-js-go.go:38:12: cannot use regexp.MustCompile(stringB).FindAllStringIndex(stringA, -1) (value of type [][]int) as int value in assignment
+/tmp/dolphincoder7b-str_match-js-go.go:40:9: range over q2multi (variable of type int) permits only one iteration variable
+/tmp/dolphincoder7b-str_match-js-go.go:45:2: undefined: q3
+/tmp/dolphincoder7b-str_match-js-go.go:51:93: too many arguments in call to fmt.Printf
+	have (string, int, string, string, []int)
+	want (string, ...any)
+/tmp/dolphincoder7b-str_match-js-go.go:54:67: undefined: q3

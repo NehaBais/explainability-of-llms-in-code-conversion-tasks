@@ -1,0 +1,96 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+  --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:18:2
+   |
+18 | }
+   |  ^ consider adding a `main` function to `/tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs`
+
+error[E0599]: no method named `shl` found for type `i32` in the current scope
+ --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:8:31
+  |
+8 |     println!("a shl b: {}", a.shl(b));
+  |                               ^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/bit.rs:458:8
+  |
+  = note: the method is available for `i32` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Shl` which provides `shl` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::ops::Shl;
+  |
+help: there is a method `shr` with a similar name
+  |
+8 |     println!("a shl b: {}", a.shr(b));
+  |                               ~~~
+
+error[E0599]: no method named `shr` found for type `i32` in the current scope
+ --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:9:31
+  |
+9 |     println!("a shr b: {}", a.shr(b));
+  |                               ^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ops/bit.rs:576:8
+  |
+  = note: the method is available for `i32` here
+  |
+  = help: items from traits can only be used if the trait is in scope
+help: trait `Shr` which provides `shr` is implemented but not in scope; perhaps you want to import it
+  |
+1 + use std::ops::Shr;
+  |
+help: there is a method `shl` with a similar name
+  |
+9 |     println!("a shr b: {}", a.shl(b));
+  |                               ~~~
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:11:44
+   |
+11 |     println!("a lsr b: {}", ua.rotate_left(b));
+   |                                ----------- ^ expected `u32`, found `i32`
+   |                                |
+   |                                arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+11 |     println!("a lsr b: {}", ua.rotate_left(b.try_into().unwrap()));
+   |                                             ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:16:44
+   |
+16 |     println!("a rol b: {}", ua.rotate_left(b));
+   |                                ----------- ^ expected `u32`, found `i32`
+   |                                |
+   |                                arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+16 |     println!("a rol b: {}", ua.rotate_left(b.try_into().unwrap()));
+   |                                             ++++++++++++++++++++
+
+error[E0308]: mismatched types
+  --> /tmp/qwen2.5coder2b-bit_ops-cpp-rs.rs:17:45
+   |
+17 |     println!("a ror b: {}", ua.rotate_right(b));
+   |                                ------------ ^ expected `u32`, found `i32`
+   |                                |
+   |                                arguments to this method are incorrect
+   |
+note: method defined here
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/num/mod.rs:326:5
+   = note: this error originates in the macro `int_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can convert an `i32` to a `u32` and panic if the converted value doesn't fit
+   |
+17 |     println!("a ror b: {}", ua.rotate_right(b.try_into().unwrap()));
+   |                                              ++++++++++++++++++++
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0308, E0599, E0601.
+For more information about an error, try `rustc --explain E0308`.

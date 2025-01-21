@@ -1,0 +1,4 @@
+/tmp/yicoder9b-str_cmp-java-c.c:11:7: error: call to undeclared function 'stricmp'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   11 |   if (stricmp(A, B) ==
+      |       ^
+1 error generated.

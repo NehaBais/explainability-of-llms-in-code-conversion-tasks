@@ -1,0 +1,26 @@
+/tmp/stablecode-str_concat-py-cpp.cpp:21:18: error: non-aggregate type 'vector<string>' (aka 'vector<basic_string<char> >') cannot be initialized with an initializer list
+   21 |   vector<string> str_vec = {(s1), ("world"), ("mom") }
+      |                  ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/stablecode-str_concat-py-cpp.cpp:21:55: error: expected ';' at end of declaration
+   21 |   vector<string> str_vec = {(s1), ("world"), ("mom") }
+      |                                                       ^
+      |                                                       ;
+/tmp/stablecode-str_concat-py-cpp.cpp:23:17: error: member reference base type 'const char[3]' is not a structure or union
+   23 | string s3 = ", ".join(str_vec);
+      |             ~~~~^~~~~
+/tmp/stablecode-str_concat-py-cpp.cpp:23:23: error: use of undeclared identifier 'str_vec'
+   23 | string s3 = ", ".join(str_vec);
+      |                       ^
+/tmp/stablecode-str_concat-py-cpp.cpp:24:1: error: unknown type name 'cout'
+   24 | cout << s3 << endl;
+      | ^
+/tmp/stablecode-str_concat-py-cpp.cpp:24:6: error: expected unqualified-id
+   24 | cout << s3 << endl;
+      |      ^
+/tmp/stablecode-str_concat-py-cpp.cpp:26:1: error: expected unqualified-id
+   26 | return 0;
+      | ^
+/tmp/stablecode-str_concat-py-cpp.cpp:27:1: error: extraneous closing brace ('}')
+   27 | }
+      | ^
+8 errors generated.

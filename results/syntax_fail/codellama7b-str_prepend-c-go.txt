@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/codellama7b-str_prepend-c-go.go:9:25: invalid operation: not enough arguments for unsafe.Slice(str) (expected 2, found 1)

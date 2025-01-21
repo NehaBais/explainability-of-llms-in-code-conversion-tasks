@@ -1,0 +1,37 @@
+error[E0382]: use of moved value: `current_dir`
+  --> /tmp/codeqwen-file_create-cpp-rs.rs:16:17
+   |
+4  |     let current_dir = ".".to_string();
+   |         ----------- move occurs because `current_dir` has type `String`, which does not implement the `Copy` trait
+...
+8  |     for dir in [current_dir, root_dir] {
+   |                 ----------- value moved here
+...
+16 |     for dir in [current_dir, root_dir] {
+   |                 ^^^^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+8  |     for dir in [current_dir.clone(), root_dir] {
+   |                            ++++++++
+
+error[E0382]: use of moved value: `root_dir`
+  --> /tmp/codeqwen-file_create-cpp-rs.rs:16:30
+   |
+5  |     let root_dir = "/".to_string();
+   |         -------- move occurs because `root_dir` has type `String`, which does not implement the `Copy` trait
+...
+8  |     for dir in [current_dir, root_dir] {
+   |                              -------- value moved here
+...
+16 |     for dir in [current_dir, root_dir] {
+   |                              ^^^^^^^^ value used here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+8  |     for dir in [current_dir, root_dir.clone()] {
+   |                                      ++++++++
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0382`.

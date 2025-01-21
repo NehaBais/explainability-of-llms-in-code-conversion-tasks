@@ -1,0 +1,63 @@
+/tmp/granitecode3b-str_match-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:5:16: error: unknown type name 'string'
+    5 | int startsWith(string container, string target) {
+      |                ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:5:34: error: unknown type name 'string'
+    5 | int startsWith(string container, string target) {
+      |                                  ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:7:19: error: use of undeclared identifier 'string'
+    7 |   if (location != string::npos) {
+      |                   ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:8:5: error: use of undeclared identifier 'cout'
+    8 |     cout << "The first string starts with the second string at position "
+      |     ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:9:29: error: use of undeclared identifier 'endl'
+    9 |          << location + 1 << endl;
+      |                             ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:11:22: error: use of undeclared identifier 'string'
+   11 |   return location != string::npos;
+      |                      ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:14:14: error: unknown type name 'string'
+   14 | int endsWith(string container, string target) {
+      |              ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:14:32: error: unknown type name 'string'
+   14 | int endsWith(string container, string target) {
+      |                                ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:16:19: error: use of undeclared identifier 'string'
+   16 |   if (location != string::npos) {
+      |                   ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:17:5: error: use of undeclared identifier 'cout'
+   17 |     cout << "The first string ends with the second string at position "
+      |     ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:18:29: error: use of undeclared identifier 'endl'
+   18 |          << location + 1 << endl;
+      |                             ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:20:22: error: use of undeclared identifier 'string'
+   20 |   return location != string::npos;
+      |                      ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:23:17: error: unknown type name 'string'
+   23 | int doesContain(string container, string target) {
+      |                 ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:23:35: error: unknown type name 'string'
+   23 | int doesContain(string container, string target) {
+      |                                   ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:24:3: error: use of undeclared identifier 'size_t'; did you mean 'sizeof'?
+   24 |   size_t pos = container.find(target);
+      |   ^~~~~~
+      |   sizeof
+/tmp/granitecode3b-str_match-c-cpp.cpp:24:10: error: use of undeclared identifier 'pos'
+   24 |   size_t pos = container.find(target);
+      |          ^
+/tmp/granitecode3b-str_match-c-cpp.cpp:25:7: error: use of undeclared identifier 'pos'
+   25 |   if (pos != string::npos) {
+      |       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,0 +1,19 @@
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:8:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    8 |   auto split_path = path.split('/'); // Split the path by '/'
+      |   ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:8:26: error: no member named 'split' in 'std::string'
+    8 |   auto split_path = path.split('/'); // Split the path by '/'
+      |                     ~~~~ ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:17:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   17 |   for (const auto &folder :
+      |              ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:17:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   17 |   for (const auto &folder :
+      |                           ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:20:15: error: no member named 'filesystem' in namespace 'std'
+   20 |     if (!std::filesystem::exists(
+      |          ~~~~~^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:23:14: error: no member named 'filesystem' in namespace 'std'
+   23 |         std::filesystem::create_directory(currentDir); // If not, create it
+      |         ~~~~~^
+3 warnings and 3 errors generated.

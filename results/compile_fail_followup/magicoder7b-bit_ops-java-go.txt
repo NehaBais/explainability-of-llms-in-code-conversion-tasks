@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/magicoder7b-bit_ops-java-go.go:12:33: syntax error: unexpected >, expected expression

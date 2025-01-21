@@ -1,0 +1,7 @@
+/tmp/Main.java:13: error: illegal start of expression
+        if (!Files.exists(path))) {
+                                ^
+/tmp/Main.java:16: error: illegal start of expression
+                if (!Files.exists(path)))) {
+                                        ^
+2 errors

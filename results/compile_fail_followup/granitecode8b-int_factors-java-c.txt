@@ -1,0 +1,53 @@
+/tmp/granitecode8b-int_factors-java-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-c.c:3:9: error: expected "FILENAME" or <FILENAME>
+    3 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-c.c:4:9: error: expected "FILENAME" or <FILENAME>
+    4 | #include
+      |         ^
+/tmp/granitecode8b-int_factors-java-c.c:7:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   printf("Enter a positive integer: ");
+      |   ^
+/tmp/granitecode8b-int_factors-java-c.c:7:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode8b-int_factors-java-c.c:8:3: error: call to undeclared library function 'scanf' with type 'int (const char *restrict, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    8 |   scanf("%ld", &n);
+      |   ^
+/tmp/granitecode8b-int_factors-java-c.c:8:3: note: include the header <stdio.h> or explicitly provide a declaration for 'scanf'
+/tmp/granitecode8b-int_factors-java-c.c:9:6: error: expected ';' after expression
+    9 |   std::treeset factors = {n, 1};
+      |      ^
+      |      ;
+/tmp/granitecode8b-int_factors-java-c.c:9:3: error: use of undeclared identifier 'std'
+    9 |   std::treeset factors = {n, 1};
+      |   ^
+/tmp/granitecode8b-int_factors-java-c.c:9:6: error: expected expression
+    9 |   std::treeset factors = {n, 1};
+      |      ^
+/tmp/granitecode8b-int_factors-java-c.c:10:35: error: call to undeclared library function 'sqrt' with type 'double (double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   for (long test = n - 1; test >= sqrt(n); test--)
+      |                                   ^
+/tmp/granitecode8b-int_factors-java-c.c:10:35: note: include the header <math.h> or explicitly provide a declaration for 'sqrt'
+/tmp/granitecode8b-int_factors-java-c.c:12:7: error: use of undeclared identifier 'factors'
+   12 |       factors.insert(test);
+      |       ^
+/tmp/granitecode8b-int_factors-java-c.c:13:7: error: use of undeclared identifier 'factors'
+   13 |       factors.insert(n / test);
+      |       ^
+/tmp/granitecode8b-int_factors-java-c.c:16:13: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   16 |   for (auto factor : factors)
+      |        ~~~~ ^
+      |        int
+/tmp/granitecode8b-int_factors-java-c.c:16:20: error: expected ';' in 'for' statement specifier
+   16 |   for (auto factor : factors)
+      |                    ^
+/tmp/granitecode8b-int_factors-java-c.c:16:20: error: expected expression
+/tmp/granitecode8b-int_factors-java-c.c:17:20: warning: format specifies type 'long' but the argument has type 'int' [-Wformat]
+   17 |     printf("%ldn", factor);
+      |             ~~~    ^~~~~~
+      |             %d
+1 warning and 15 errors generated.

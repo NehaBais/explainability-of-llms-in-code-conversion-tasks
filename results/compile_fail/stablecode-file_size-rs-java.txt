@@ -1,0 +1,22 @@
+/tmp/FileSizeChecker.java:10: error: illegal start of expression
+        if (args.length < 1)) {
+                            ^
+/tmp/FileSizeChecker.java:11: error: ';' expected
+            System.out.println("Please provide a file name as an argument"));
+                                                                           ^
+/tmp/FileSizeChecker.java:20: error: ';' expected
+            List<String> firstFileLines = Files.readAllLines(Paths.get(firstFile.toURI().toString()))));
+                                                                                                     ^
+/tmp/FileSizeChecker.java:22: error: ';' expected
+            System.out.println("Size of file " + inputFileName + " is " + firstFileSizeInBytes + " bytes"));
+                                                                                                          ^
+/tmp/FileSizeChecker.java:24: error: ';' expected
+            List<String> secondFileLines = Files.readAllLines(Paths.get(secondFile.toURI().toString()))));
+                                                                                                       ^
+/tmp/FileSizeChecker.java:26: error: ';' expected
+            System.out.println("Size of file in root directory is " + secondFileSizeInBytes + " bytes"));
+                                                                                                       ^
+/tmp/FileSizeChecker.java:29: error: ';' expected
+            System.err.println("Error occurred while reading the files: " + e.getMessage()));
+                                                                                           ^
+7 errors

@@ -1,0 +1,28 @@
+error[E0412]: cannot find type `ptrdiff_t` in this scope
+ --> /tmp/yicoder2b-str_substring-c-rs.rs:1:36
+  |
+1 | fn substring(s: &str, n: usize, m: ptrdiff_t) -> Option<String> {
+  |                                    ^^^^^^^^^ not found in this scope
+
+error[E0308]: mismatched types
+ --> /tmp/yicoder2b-str_substring-c-rs.rs:4:19
+  |
+4 |         result += ch;
+  |                   ^^ expected `&str`, found `char`
+
+error[E0599]: no method named `unwrap` found for type `char` in the current scope
+  --> /tmp/yicoder2b-str_substring-c-rs.rs:14:27
+   |
+14 |             temp_s += _ch.unwrap();
+   |                           ^^^^^^ method not found in `char`
+
+error[E0614]: type `char` cannot be dereferenced
+  --> /tmp/yicoder2b-str_substring-c-rs.rs:43:44
+   |
+43 |         substring(&s[23..], str::find(&s, &*'w').unwrap() as usize, 5)
+   |                                            ^^^^
+
+error: aborting due to 4 previous errors
+
+Some errors have detailed explanations: E0308, E0412, E0599, E0614.
+For more information about an error, try `rustc --explain E0308`.

@@ -1,0 +1,30 @@
+error[E0423]: expected value, found struct `Utf8Error`
+ --> /tmp/granitecode8b-str_substring-c-rs.rs:8:20
+  |
+8 |         return Err(Utf8Error);
+  |                    ^^^^^^^^^
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+  |
+  = note: `Utf8Error` defined here
+
+error[E0423]: expected value, found struct `Utf8Error`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:18:20
+   |
+18 |         return Err(Utf8Error);
+   |                    ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+   |
+   = note: `Utf8Error` defined here
+
+error[E0423]: expected value, found struct `Utf8Error`
+  --> /tmp/granitecode8b-str_substring-c-rs.rs:33:30
+   |
+33 |     let n = s.find(ch).ok_or(Utf8Error)?;
+   |                              ^^^^^^^^^
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/str/error.rs:47:1
+   |
+   = note: `Utf8Error` defined here
+
+error: aborting due to 3 previous errors
+
+For more information about this error, try `rustc --explain E0423`.

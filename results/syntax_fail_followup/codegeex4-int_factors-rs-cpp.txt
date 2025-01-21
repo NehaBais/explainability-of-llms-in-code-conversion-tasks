@@ -1,0 +1,7 @@
+/tmp/codegeex4-int_factors-rs-cpp.cpp:20:37: error: expected '(' for function-style cast or type construction
+   20 |   assert((factor(100) == vector<int>{1, 2, 4, 5, 10, 10, 20, 25, 50, 100}));
+      |                          ~~~~~~~~~~~^
+/tmp/codegeex4-int_factors-rs-cpp.cpp:21:37: error: expected '(' for function-style cast or type construction
+   21 |   assert((factor(101) == vector<int>{1, 101}));
+      |                          ~~~~~~~~~~~^
+2 errors generated.

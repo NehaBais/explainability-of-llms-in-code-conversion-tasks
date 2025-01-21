@@ -1,0 +1,1 @@
+The error is caused by incorrect syntax used for returning values and incorrect DOCTYPE declaration. The correct way to return an integer value in C++ is with "return 0;" statement, not "<|begin▁of▁sentence｜>".

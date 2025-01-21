@@ -1,0 +1,14 @@
+/tmp/Factor.java:2: error: package org.junit.jupiter.api does not exist
+import org.junit.jupiter.api.Assertions;
+                            ^
+/tmp/Factor.java:6: error: cannot find symbol
+    Assertions.assertEquals(
+    ^
+  symbol:   variable Assertions
+  location: class Factor
+/tmp/Factor.java:9: error: cannot find symbol
+    Assertions.assertEquals(Arrays.asList(1, 101), factor(101));
+    ^
+  symbol:   variable Assertions
+  location: class Factor
+3 errors

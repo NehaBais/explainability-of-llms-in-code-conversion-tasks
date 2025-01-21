@@ -1,0 +1,25 @@
+/tmp/granitecode8b-file_rename-py-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:3:3: error: use of undeclared identifier 'std'
+    3 |   std::string current_working_directory = getcwd(nullptr, 0);
+      |   ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:3:50: error: use of undeclared identifier 'nullptr'
+    3 |   std::string current_working_directory = getcwd(nullptr, 0);
+      |                                                  ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:12:20: error: use of undeclared identifier 'get_path_separator'
+   12 |   char separator = get_path_separator();
+      |                    ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:13:11: error: use of undeclared identifier 'std'
+   13 |   rename((std::string(1, separator) + "input.txt").c_str(),
+      |           ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:14:11: error: use of undeclared identifier 'std'
+   14 |          (std::string(1, separator) + "output.txt").c_str());
+      |           ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:15:11: error: use of undeclared identifier 'std'
+   15 |   rename((std::string(1, separator) + "docs").c_str(),
+      |           ^
+/tmp/granitecode8b-file_rename-py-cpp.cpp:16:11: error: use of undeclared identifier 'std'
+   16 |          (std::string(1, separator) + "mydocs").c_str());
+      |           ^
+8 errors generated.

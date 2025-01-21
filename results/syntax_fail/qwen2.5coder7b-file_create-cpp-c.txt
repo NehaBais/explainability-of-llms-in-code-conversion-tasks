@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder7b-file_create-cpp-c.c:24:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   24 |   if (mkdir("docs", 0755) != 0) {
+      |       ^
+1 error generated.

@@ -1,0 +1,4 @@
+/tmp/codeqwen-str_cmp-c-cpp.cpp:15:5: error: use of undeclared identifier 'compare'
+   15 |     compare(A, B);
+      |     ^
+1 error generated.

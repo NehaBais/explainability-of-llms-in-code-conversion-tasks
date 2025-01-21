@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/magicoder7b-file_rename-py-go.go:20:10: invalid operation: filepath.Separator + "input.txt" (mismatched types untyped rune and untyped string)
+/tmp/magicoder7b-file_rename-py-go.go:21:38: cannot use filepath.Separator (untyped rune constant 47) as string value in argument to filepath.Join
+/tmp/magicoder7b-file_rename-py-go.go:26:9: invalid operation: filepath.Separator + "docs" (mismatched types untyped rune and untyped string)
+/tmp/magicoder7b-file_rename-py-go.go:27:38: cannot use filepath.Separator (untyped rune constant 47) as string value in argument to filepath.Join

@@ -1,0 +1,4 @@
+/tmp/codegemma7b-dir_make-rs-cpp.cpp:4:8: error: no member named 'filesystem' in namespace 'std'
+    4 |   std::filesystem::create_directories("./path/to/dir");
+      |   ~~~~~^
+1 error generated.

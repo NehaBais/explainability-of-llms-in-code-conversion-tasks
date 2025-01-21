@@ -1,0 +1,10 @@
+/tmp/yicoder2b-file_exists-py-cpp.cpp:6:24: error: use of undeclared identifier 'F_OK'
+    6 |   if (access(filename, F_OK) ==
+      |                        ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:13:23: error: use of undeclared identifier 'R_OK'
+   13 |   if (access(dirname, R_OK | F_OK) ==
+      |                       ^
+/tmp/yicoder2b-file_exists-py-cpp.cpp:13:30: error: use of undeclared identifier 'F_OK'
+   13 |   if (access(dirname, R_OK | F_OK) ==
+      |                              ^
+3 errors generated.

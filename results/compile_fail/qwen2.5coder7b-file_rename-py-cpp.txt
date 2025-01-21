@@ -1,0 +1,63 @@
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:5:8: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path current_path = std::filesystem::current_path();
+      |   ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:5:45: error: no member named 'filesystem' in namespace 'std'
+    5 |   std::filesystem::path current_path = std::filesystem::current_path();
+      |                                        ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:9:14: error: no member named 'filesystem' in namespace 'std'
+    9 |     if (std::filesystem::exists(current_path / "input.txt")) {
+      |         ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:10:12: error: no member named 'filesystem' in namespace 'std'
+   10 |       std::filesystem::rename(current_path / "input.txt",
+      |       ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:13:14: error: no member named 'filesystem' in namespace 'std'
+   13 |     if (std::filesystem::exists(current_path / "docs")) {
+      |         ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:14:12: error: no member named 'filesystem' in namespace 'std'
+   14 |       std::filesystem::rename(current_path / "docs", current_path / "mydocs");
+      |       ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:16:23: error: no member named 'filesystem' in namespace 'std'
+   16 |   } catch (const std::filesystem::filesystem_error &e) {
+      |                  ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:23:14: error: no member named 'filesystem' in namespace 'std'
+   23 |     if (std::filesystem::exists(std::filesystem::path("/") / "input.txt")) {
+      |         ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:23:38: error: no member named 'filesystem' in namespace 'std'
+   23 |     if (std::filesystem::exists(std::filesystem::path("/") / "input.txt")) {
+      |                                 ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:12: error: no member named 'filesystem' in namespace 'std'
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |       ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:36: error: no member named 'filesystem' in namespace 'std'
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |                               ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:53: error: expected parameter declarator
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |                                                     ^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:53: error: expected ')'
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:52: note: to match this '('
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |                                                    ^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:58: error: expected ')'
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |                                                          ^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:24:30: note: to match this '('
+   24 |       std::filesystem::rename(std::filesystem::path("/") / "input.txt",
+      |                              ^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:27:14: error: no member named 'filesystem' in namespace 'std'
+   27 |     if (std::filesystem::exists(std::filesystem::path("/") / "docs")) {
+      |         ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:27:38: error: no member named 'filesystem' in namespace 'std'
+   27 |     if (std::filesystem::exists(std::filesystem::path("/") / "docs")) {
+      |                                 ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:28:12: error: no member named 'filesystem' in namespace 'std'
+   28 |       std::filesystem::rename(std::filesystem::path("/") / "docs",
+      |       ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:28:36: error: no member named 'filesystem' in namespace 'std'
+   28 |       std::filesystem::rename(std::filesystem::path("/") / "docs",
+      |                               ~~~~~^
+/tmp/qwen2.5coder7b-file_rename-py-cpp.cpp:28:53: error: expected parameter declarator
+   28 |       std::filesystem::rename(std::filesystem::path("/") / "docs",
+      |                                                     ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

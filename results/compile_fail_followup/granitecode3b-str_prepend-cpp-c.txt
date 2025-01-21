@@ -1,0 +1,24 @@
+/tmp/granitecode3b-str_prepend-cpp-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:5:27: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   int lengthOfPrepended = strlen(myString);
+      |                           ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:5:27: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/granitecode3b-str_prepend-cpp-c.c:6:29: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |   char *prepended = (char *)malloc(lengthOfPrepended + strlen(appended) + 1);
+      |                             ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:6:29: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/granitecode3b-str_prepend-cpp-c.c:7:3: error: call to undeclared library function 'strcat' with type 'char *(char *, const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |   strcat(prepended, myString);
+      |   ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:7:3: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/tmp/granitecode3b-str_prepend-cpp-c.c:9:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   printf("%s", prepended);
+      |   ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:9:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/granitecode3b-str_prepend-cpp-c.c:10:3: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   free(prepended);
+      |   ^
+/tmp/granitecode3b-str_prepend-cpp-c.c:10:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+6 errors generated.

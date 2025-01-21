@@ -1,0 +1,47 @@
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:21:1
+   |
+21 | assert!(check_file_exists("input.txt"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:22:1
+   |
+22 | assert!(check_directory_exists("docs"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:25:1
+   |
+25 | assert!(check_file_exists("/input.txt"));
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: non-item macro in item position: assert
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:26:1
+   |
+26 | assert!(check_directory_exists("/docs")); // Rust does not support checking if "/docs" exists, you would need to provide an absolute path.
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::fs`
+ --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:1:5
+  |
+1 | use std::fs;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `PathBuf`
+ --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:2:23
+  |
+2 | use std::path::{Path, PathBuf};
+  |                       ^^^^^^^
+
+error[E0601]: `main` function not found in crate `deepseekcoder7b_file_exists_py_rs`
+  --> /tmp/deepseekcoder7b-file_exists-py-rs.rs:26:42
+   |
+26 | assert!(check_directory_exists("/docs")); // Rust does not support checking if "/docs" exists, you would need to provide an absolute path.
+   |                                          ^ consider adding a `main` function to `/tmp/deepseekcoder7b-file_exists-py-rs.rs`
+
+error: aborting due to 5 previous errors; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0601`.

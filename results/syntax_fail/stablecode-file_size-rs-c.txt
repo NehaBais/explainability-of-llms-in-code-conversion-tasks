@@ -1,0 +1,14 @@
+/tmp/stablecode-file_size-rs-c.c:14:16: error: extraneous ')' after condition, expected a statement
+   14 |   if (argc < 2)) {
+      |                ^
+/tmp/stablecode-file_size-rs-c.c:15:57: error: extraneous ')' before ';'
+   15 |         fprintf(stderr, "Usage: %s filename\n", argv[0]));
+      |                                                         ^
+/tmp/stablecode-file_size-rs-c.c:23:59: error: extraneous ')' before ';'
+   23 |         exit_err("Could not retrieve file information", 2));
+      |                                                           ^
+/tmp/stablecode-file_size-rs-c.c:26:45: warning: format specifies type 'long' but the argument has type 'off_t' (aka 'long long') [-Wformat]
+   26 |   printf("Size of file.txt is %ld bytes\n", metadata.st_size);
+      |                               ~~~           ^~~~~~~~~~~~~~~~
+      |                               %lld
+1 warning and 3 errors generated.

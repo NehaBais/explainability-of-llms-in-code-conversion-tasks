@@ -1,0 +1,13 @@
+/tmp/codegemma7b-str_cmp-rs-cpp.cpp:10:25: error: use of undeclared identifier 'a'
+   10 |   std::string a_upper = a;
+      |                         ^
+/tmp/codegemma7b-str_cmp-rs-cpp.cpp:11:25: error: use of undeclared identifier 'b'
+   11 |   std::string b_upper = b;
+      |                         ^
+/tmp/codegemma7b-str_cmp-rs-cpp.cpp:14:18: error: expected expression
+   14 |                  [](char c) { return std::toupper(c, std::locale()); });
+      |                  ^
+/tmp/codegemma7b-str_cmp-rs-cpp.cpp:16:18: error: expected expression
+   16 |                  [](char c) { return std::toupper(c, std::locale()); });
+      |                  ^
+4 errors generated.

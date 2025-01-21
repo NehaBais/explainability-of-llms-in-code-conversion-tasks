@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_exists-js-go.go:15:23: undefined: strings
+/tmp/qwen2.5coder2b-file_exists-js-go.go:16:6: undefined: strings

@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:4:3: error: call to undeclared function 'bitwise'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   bitwise(a, b);
+      |   ^
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:10: error: expected expression
+    5 |   return <｜begin▁of▁sentence｜ >
+      |          ^
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    5 |   return <｜begin▁of▁sentence｜ >
+      |           ^~
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:19: error: character <U+2581> not allowed in an identifier
+    5 |   return <｜begin▁of▁sentence｜ >
+      |                  ^
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:24: error: character <U+2581> not allowed in an identifier
+    5 |   return <｜begin▁of▁sentence｜ >
+      |                     ^
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+    5 |   return <｜begin▁of▁sentence｜ >
+      |                              ^~
+/tmp/deepseekcoder7b-bit_ops-cpp-c.c:5:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+    5 |   return <｜begin▁of▁sentence｜ >
+      |           ^
+2 warnings and 5 errors generated.

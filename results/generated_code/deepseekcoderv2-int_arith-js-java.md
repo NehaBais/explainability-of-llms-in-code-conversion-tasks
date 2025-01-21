@@ -1,28 +1,43 @@
-*/
-// JavaScript to Java
-```
-import java.util.*;  // needed for Scanner class
-public class Math1 {
+ Sure, here is the equivalent Java code for the provided JavaScript script:
+
+```java
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
-        int a, b;
-        System.out.println("Enter two numbers:");
-        Scanner scan = new Scanner(System.in);
-        a = scan.nextInt();
-        b = scan.nextInt();
-        
-        //int sum, difference, product, division, remainder; 
-        // We don't need these variables as they are already defined in the JavaScript version of this code above
+        Scanner scanner = new Scanner(System.in);
+
+        // Get two integers from the user
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+
+        // Calculate and display their sum, difference, product, integer quotient, remainder, and exponentiation
         int sum = a + b;
         int difference = a - b;
         int product = a * b;
-        int division = a / b;
-        double remainder = a % b;  // This produces the remainder after dividing 'b' into 'a'. The '%' operator is called the 'modulo' operator
-        
-        System.out.println("The sum of these two numbers is: " + sum);
-        System.out.println("The difference of these two numbers is: " + difference);
-        System.out.println("The product of these two numbers is: " + product);
-        System.out.println("The division of the first number by the second number is: " + division);  // We can use a double value to display this result because we are dealing with an integer, but it's not a whole number (it has decimal places)
-        System.out.println("When you divide these two numbers, your remainder is: " + remainder);
+        double division = (double) a / b;  // Ensure division is done in floating point for accurate quotient
+        int remainder = a % b;
+        double exponentiation = Math.pow(a, b);  // Calculate exponentiation
+
+        // Output the results
+        System.out.println("a + b = " + sum);
+        System.out.println("a - b = " + difference);
+        System.out.println("a * b = " + product);
+        System.out.println("a / b = " + division);  // Quotient is displayed as a floating point number
+        System.out.println("a % b = " + remainder);  // Remainder operation
+        System.out.println("a ^ b = " + exponentiation);  // Exponentiation operation
+
+        scanner.close();
     }
 }
 ```
+
+### Explanation:
+1. **Scanner for Input**: In Java, we use the `Scanner` class to read input from the command line.
+2. **Parsing Command Line Arguments**: The arguments passed to the program are accessed via `args`.
+3. **Arithmetic Operations**: We perform arithmetic operations like addition, subtraction, multiplication, division (with casting if necessary), and modulus.
+4. **Division Result**: Since integer division in Java returns an integer result, we cast one of the operands to `double` for accurate quotient display.
+5. **Exponentiation**: The `Math.pow()` method is used to calculate exponentiation.
+6. **Output**: We use `System.out.println()` to print the results.
+
+This Java code should provide the same functionality as your original JavaScript script when invoked with two integer arguments via the command line.

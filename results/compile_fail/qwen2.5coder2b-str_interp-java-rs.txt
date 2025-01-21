@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/qwen2.5coder2b-str_interp-java-rs.rs:1:1
+  |
+1 | let adjective: &str = "little";
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

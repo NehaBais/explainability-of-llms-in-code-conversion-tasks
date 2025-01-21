@@ -1,0 +1,50 @@
+error[E0433]: failed to resolve: use of undeclared type `File`
+ --> /tmp/yicoder2b-file_rename-py-rs.rs:6:18
+  |
+6 |     if let err = File::rename(&src, &dest, None) {
+  |                  ^^^^ use of undeclared type `File`
+  |
+help: consider importing this struct
+  |
+1 + use std::fs::File;
+  |
+
+error[E0425]: cannot find function `env` in module `std::process`
+  --> /tmp/yicoder2b-file_rename-py-rs.rs:14:23
+   |
+14 |         std::process::env().get("HOME").unwrap(),
+   |                       ^^^ not found in `std::process`
+
+error[E0425]: cannot find function `env` in module `std::process`
+  --> /tmp/yicoder2b-file_rename-py-rs.rs:19:23
+   |
+19 |         std::process::env().get("HOME").unwrap(),
+   |                       ^^^ not found in `std::process`
+
+error[E0433]: failed to resolve: use of undeclared type `File`
+  --> /tmp/yicoder2b-file_rename-py-rs.rs:22:18
+   |
+22 |     if let err = File::rename(&src_root, &dest_root, None) {
+   |                  ^^^^ use of undeclared type `File`
+   |
+help: consider importing this struct
+   |
+1  + use std::fs::File;
+   |
+
+error[E0425]: cannot find function `app_name` in this scope
+  --> /tmp/yicoder2b-file_rename-py-rs.rs:15:9
+   |
+15 |         app_name()
+   |         ^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `app_name` in this scope
+  --> /tmp/yicoder2b-file_rename-py-rs.rs:20:9
+   |
+20 |         app_name()
+   |         ^^^^^^^^ not found in this scope
+
+error: aborting due to 6 previous errors
+
+Some errors have detailed explanations: E0425, E0433.
+For more information about an error, try `rustc --explain E0425`.

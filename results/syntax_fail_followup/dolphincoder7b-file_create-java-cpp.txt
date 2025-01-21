@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-file_create-java-cpp.cpp:1:10: fatal error: 'boost/filesystem.hpp' file not found
+    1 | #include <boost/filesystem.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.

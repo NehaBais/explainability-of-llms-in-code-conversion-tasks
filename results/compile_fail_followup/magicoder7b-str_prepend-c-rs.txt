@@ -1,0 +1,43 @@
+error[E0308]: mismatched types
+ --> /tmp/magicoder7b-str_prepend-c-rs.rs:9:38
+  |
+9 |         ptr::write(str.as_mut_ptr(), cstr.to_bytes()); // Prepend the string variable with another string literal
+  |         ----------                   ^^^^^^^^^^^^^^^ expected `u8`, found `&[u8]`
+  |         |
+  |         arguments to this function are incorrect
+  |
+note: function defined here
+ --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/ptr/mod.rs:1624:21
+
+error[E0599]: no function or associated item named `from_vec` found for struct `CString` in the current scope
+  --> /tmp/magicoder7b-str_prepend-c-rs.rs:11:28
+   |
+11 |         let dup = CString::from_vec(str).unwrap().into_raw();
+   |                            ^^^^^^^^ function or associated item not found in `CString`
+   |
+note: if you're trying to build a new `CString` consider using one of the following associated functions:
+      CString::new
+      CString::from_vec_unchecked
+      CString::from_raw
+      CString::from_vec_with_nul_unchecked
+      CString::from_vec_with_nul
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/alloc/src/ffi/c_str.rs:260:5
+help: there is an associated function `from` with a similar name
+   |
+11 |         let dup = CString::from(str).unwrap().into_raw();
+   |                            ~~~~
+
+error[E0277]: `CString` doesn't implement `std::fmt::Display`
+  --> /tmp/magicoder7b-str_prepend-c-rs.rs:14:28
+   |
+14 |             println!("{}", CString::from_raw(s));
+   |                            ^^^^^^^^^^^^^^^^^^^^ `CString` cannot be formatted with the default formatter
+   |
+   = help: the trait `std::fmt::Display` is not implemented for `CString`
+   = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0277, E0308, E0599.
+For more information about an error, try `rustc --explain E0277`.

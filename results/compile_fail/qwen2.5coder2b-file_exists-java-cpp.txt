@@ -1,0 +1,7 @@
+/tmp/qwen2.5coder2b-file_exists-java-cpp.cpp:5:15: error: no member named 'filesystem' in namespace 'std'
+    5 |   return std::filesystem::exists(std::filesystem::path{"docs/input.txt"});
+      |          ~~~~~^
+/tmp/qwen2.5coder2b-file_exists-java-cpp.cpp:5:39: error: no member named 'filesystem' in namespace 'std'
+    5 |   return std::filesystem::exists(std::filesystem::path{"docs/input.txt"});
+      |                                  ~~~~~^
+2 errors generated.

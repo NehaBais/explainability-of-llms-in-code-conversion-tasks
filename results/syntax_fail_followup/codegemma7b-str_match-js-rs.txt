@@ -1,0 +1,24 @@
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_match-js-rs.rs:1:15
+  |
+1 | const string_a = "tacoloco";
+  |               ^
+  |
+help: provide a type for the item
+  |
+1 | const string_a: <type> = "tacoloco";
+  |               ++++++++
+
+error: missing type for `const` item
+ --> /tmp/codegemma7b-str_match-js-rs.rs:2:15
+  |
+2 | const string_b = "co";
+  |               ^
+  |
+help: provide a type for the item
+  |
+2 | const string_b: <type> = "co";
+  |               ++++++++
+
+error: aborting due to 2 previous errors
+

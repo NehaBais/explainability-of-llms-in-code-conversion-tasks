@@ -1,0 +1,4 @@
+/tmp/dolphincoder7b-str_interp-java-cpp.cpp:7:68: error: invalid operands to binary expression ('std::string' (aka 'basic_string<char>') and 'std::string')
+    7 |       std::string(static_cast<const char *>("Mary had a %s lamb")) % adjective;
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+1 error generated.

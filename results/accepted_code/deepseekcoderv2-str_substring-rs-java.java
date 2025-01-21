@@ -5,28 +5,36 @@ public class Main {
     int m = 3;
 
     // Print 3 characters starting at index 2 (c文字)
-    System.out.println(s.substring(n, n + m));
+    System.out.println(s.substring(n, Math.min(n + m, s.length())));
 
     // Print all characters starting at index 2 (c文字化けdef)
-    System.out.println(s.substring(n));
+    if (n < s.length()) {
+      System.out.println(s.substring(n));
+    } else {
+      System.out.println("");
+    }
 
     // Print all characters except the last (abc文字化けde)
-    System.out.println(s.substring(0, s.length() - 1));
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < s.length() - 1; i++) {
+      sb.append(s.charAt(i));
+    }
+    System.out.println(sb.toString());
 
     // Print 3 characters starting with 'b' (bc文)
-    int bPos = s.indexOf('b');
-    if (bPos != -1) {
-      System.out.println(s.substring(bPos, bPos + m));
+    int cpos = s.indexOf('b');
+    if (cpos != -1 && cpos + m <= s.length()) {
+      System.out.println(s.substring(cpos, Math.min(cpos + m, s.length())));
     } else {
-      System.out.println("Character not found");
+      System.out.println("");
     }
 
     // Print 3 characters starting with "けd" (けde)
-    int kPos = s.indexOf("けd");
-    if (kPos != -1) {
-      System.out.println(s.substring(kPos, kPos + m));
+    int spos = s.indexOf("けd");
+    if (spos != -1 && spos + m <= s.length()) {
+      System.out.println(s.substring(spos, Math.min(spos + m, s.length())));
     } else {
-      System.out.println("Substring not found");
+      System.out.println("");
     }
   }
 }

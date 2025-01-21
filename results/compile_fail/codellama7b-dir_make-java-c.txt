@@ -1,0 +1,7 @@
+/tmp/codellama7b-dir_make-java-c.c:11:14: error: use of undeclared identifier 'errno'
+   11 |   } else if (errno == ENOENT) {
+      |              ^
+/tmp/codellama7b-dir_make-java-c.c:11:23: error: use of undeclared identifier 'ENOENT'
+   11 |   } else if (errno == ENOENT) {
+      |                       ^
+2 errors generated.

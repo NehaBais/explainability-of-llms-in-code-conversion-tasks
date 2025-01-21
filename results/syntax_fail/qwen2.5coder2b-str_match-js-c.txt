@@ -1,0 +1,10 @@
+/tmp/qwen2.5coder2b-str_match-js-c.c:9:10: error: incompatible pointer to integer conversion returning 'char *' from a function with result type 'int' [-Wint-conversion]
+    9 |   return strstr(mainStr, searchStr);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-str_match-js-c.c:45:10: warning: comparison between pointer and integer ('int' and 'void *') [-Wpointer-integer-compare]
+   45 |   if (q2 != NULL) {
+      |       ~~ ^  ~~~~
+/tmp/qwen2.5coder2b-str_match-js-c.c:47:30: error: invalid operands to binary expression ('int' and 'const char[9]')
+   47 |            stringA, (int)(q2 - stringA));
+      |                           ~~ ^ ~~~~~~~
+1 warning and 2 errors generated.

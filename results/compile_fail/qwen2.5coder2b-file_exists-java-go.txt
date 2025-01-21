@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/qwen2.5coder2b-file_exists-java-go.go:20:8: assignment mismatch: 1 variable but ioutil.ReadFile returns 2 values
+/tmp/qwen2.5coder2b-file_exists-java-go.go:47:20: undefined: filepath

@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/dolphincoder7b-file_exists-py-go.go:9:2: declared and not used: info
+/tmp/dolphincoder7b-file_exists-py-go.go:18:2: declared and not used: info

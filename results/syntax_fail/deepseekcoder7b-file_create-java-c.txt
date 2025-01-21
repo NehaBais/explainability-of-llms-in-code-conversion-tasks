@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-file_create-java-c.c:28:7: error: call to undeclared function 'mkdir'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   28 |   if (mkdir("docs", 0755) == -1) {
+      |       ^
+/tmp/deepseekcoder7b-file_create-java-c.c:40:10: error: expected expression
+   40 |   return <｜begin▁of▁sentence｜>
+      |          ^
+/tmp/deepseekcoder7b-file_create-java-c.c:40:11: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   40 |   return <｜begin▁of▁sentence｜>
+      |           ^~
+/tmp/deepseekcoder7b-file_create-java-c.c:40:19: error: character <U+2581> not allowed in an identifier
+   40 |   return <｜begin▁of▁sentence｜>
+      |                  ^
+/tmp/deepseekcoder7b-file_create-java-c.c:40:24: error: character <U+2581> not allowed in an identifier
+   40 |   return <｜begin▁of▁sentence｜>
+      |                     ^
+/tmp/deepseekcoder7b-file_create-java-c.c:40:35: warning: treating Unicode character <U+FF5C> as an identifier character rather than as '|' symbol [-Wunicode-homoglyph]
+   40 |   return <｜begin▁of▁sentence｜>
+      |                              ^~
+/tmp/deepseekcoder7b-file_create-java-c.c:40:11: error: use of undeclared identifier '｜begin▁of▁sentence｜'
+   40 |   return <｜begin▁of▁sentence｜>
+      |           ^
+2 warnings and 5 errors generated.

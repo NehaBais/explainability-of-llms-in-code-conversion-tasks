@@ -1,0 +1,37 @@
+/tmp/codeqwen-bit_ops-java-cpp.cpp:4:1: error: use of undeclared identifier 'std'
+    4 | std::cout << "A AND b: " << (A & B) << std::endl;
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:4:11: error: expected unqualified-id
+    4 | std::cout << "A AND b: " << (A & B) << std::endl;
+      |           ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:5:1: error: use of undeclared identifier 'std'
+    5 | std::cout << "A OR b: " << (A | B) << std::endl;
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:5:11: error: expected unqualified-id
+    5 | std::cout << "A OR b: " << (A | B) << std::endl;
+      |           ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:6:1: error: use of undeclared identifier 'std'
+    6 | std::cout << "A XOR b: " << (A ^ B) << std::endl;
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:6:11: error: expected unqualified-id
+    6 | std::cout << "A XOR b: " << (A ^ B) << std::endl;
+      |           ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:10:1: error: use of undeclared identifier 'std'
+   10 | std::cout << "A >>> b: " << (A_unsigned >> B) << std::endl;
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:10:11: error: expected unqualified-id
+   10 | std::cout << "A >>> b: " << (A_unsigned >> B) << std::endl;
+      |           ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:21:1: error: use of undeclared identifier 'std'
+   21 | std::cout << "A rol b: " << rotate_left(A, B) << std::endl;  // Rotate left
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:21:11: error: expected unqualified-id
+   21 | std::cout << "A rol b: " << rotate_left(A, B) << std::endl;  // Rotate left
+      |           ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:22:1: error: use of undeclared identifier 'std'
+   22 | std::cout << "A ror b: " << rotate_right(A, B) << std::endl; // Rotate right
+      | ^
+/tmp/codeqwen-bit_ops-java-cpp.cpp:22:11: error: expected unqualified-id
+   22 | std::cout << "A ror b: " << rotate_right(A, B) << std::endl; // Rotate right
+      |           ^
+12 errors generated.

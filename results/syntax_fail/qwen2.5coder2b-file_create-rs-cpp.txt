@@ -1,0 +1,4 @@
+/tmp/qwen2.5coder2b-file_create-rs-cpp.cpp:22:5: error: use of undeclared identifier 'filesystem'
+   22 |     filesystem::create_directory(DIR_NAME);
+      |     ^
+1 error generated.

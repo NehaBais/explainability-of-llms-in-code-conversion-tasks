@@ -1,0 +1,35 @@
+error[E0425]: cannot find function `rotate_left` in module `std::mem`
+  --> /tmp/codellama7b-bit_ops-cpp-rs.rs:36:32
+   |
+36 |     let result_rol = std::mem::rotate_left(ua, b);
+   |                                ^^^^^^^^^^^ not found in `std::mem`
+   |
+help: consider importing this function
+   |
+1  + use std::intrinsics::rotate_left;
+   |
+help: if you import `rotate_left`, refer to it directly
+   |
+36 -     let result_rol = std::mem::rotate_left(ua, b);
+36 +     let result_rol = rotate_left(ua, b);
+   |
+
+error[E0425]: cannot find function `rotate_right` in module `std::mem`
+  --> /tmp/codellama7b-bit_ops-cpp-rs.rs:40:32
+   |
+40 |     let result_ror = std::mem::rotate_right(ua, b);
+   |                                ^^^^^^^^^^^^ not found in `std::mem`
+   |
+help: consider importing this function
+   |
+1  + use std::intrinsics::rotate_right;
+   |
+help: if you import `rotate_right`, refer to it directly
+   |
+40 -     let result_ror = std::mem::rotate_right(ua, b);
+40 +     let result_ror = rotate_right(ua, b);
+   |
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0425`.

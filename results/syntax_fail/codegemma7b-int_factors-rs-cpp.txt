@@ -1,0 +1,7 @@
+/tmp/codegemma7b-int_factors-rs-cpp.cpp:21:20: error: non-aggregate type 'std::vector<int>' cannot be initialized with an initializer list
+   21 |   std::vector<int> expected1 = {1, 2, 4, 5, 10, 10, 20, 25, 50, 100};
+      |                    ^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codegemma7b-int_factors-rs-cpp.cpp:22:20: error: non-aggregate type 'std::vector<int>' cannot be initialized with an initializer list
+   22 |   std::vector<int> expected2 = {1, 101};
+      |                    ^           ~~~~~~~~
+2 errors generated.

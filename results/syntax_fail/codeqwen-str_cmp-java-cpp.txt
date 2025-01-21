@@ -1,0 +1,37 @@
+/tmp/codeqwen-str_cmp-java-cpp.cpp:6:3: error: use of undeclared identifier 'compare'
+    6 |   compare("Hello", "Hello");
+      |   ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:7:3: error: use of undeclared identifier 'compare'
+    7 |   compare("5", "5.0");
+      |   ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:8:3: error: use of undeclared identifier 'compare'
+    8 |   compare("java", "Java");
+      |   ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:9:3: error: use of undeclared identifier 'compare'
+    9 |   compare("ĴÃVÁ", "ĴÃVÁ");
+      |   ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:10:3: error: use of undeclared identifier 'compare'
+   10 |   compare("ĴÃVÁ", "ĵãvá");
+      |   ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:20:13: error: expected expression
+   20 |             [](char a, char B) { return tolower(A) == tolower(B); }))
+      |             ^
+/tmp/codeqwen-str_cmp-java-cpp.cpp:39:22: error: no matching function for call to 'tolower'
+   39 |   result = A.compare(tolower(A), tolower(B));
+      |                      ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'string' (aka 'basic_string<char>') to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codeqwen-str_cmp-java-cpp.cpp:39:34: error: no matching function for call to 'tolower'
+   39 |   result = A.compare(tolower(A), tolower(B));
+      |                                  ^~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:294:1: note: candidate function not viable: no known conversion from 'string' (aka 'basic_string<char>') to 'int' for 1st argument
+  294 | tolower(int _c)
+      | ^       ~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:748:37: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+  748 | inline _LIBCPP_HIDE_FROM_ABI _CharT tolower(_CharT __c, const locale& __loc) {
+      |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 errors generated.

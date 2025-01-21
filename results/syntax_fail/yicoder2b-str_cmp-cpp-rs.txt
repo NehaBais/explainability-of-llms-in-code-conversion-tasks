@@ -1,0 +1,21 @@
+error[E0531]: cannot find tuple struct or tuple variant `ok` in this scope
+  --> /tmp/yicoder2b-str_cmp-cpp-rs.rs:46:20
+   |
+46 |     let a = if let ok(_) = a.chars().fold(Vec::new(), |mut acc, c| {
+   |                    ^^ help: a tuple variant with a similar name exists (notice the capitalization): `Ok`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:531:5
+   |
+   = note: similarly named tuple variant `Ok` defined here
+
+error[E0531]: cannot find tuple struct or tuple variant `ok` in this scope
+  --> /tmp/yicoder2b-str_cmp-cpp-rs.rs:54:20
+   |
+54 |     let b = if let ok(_) = b.chars().fold(Vec::new(), |mut acc, c| {
+   |                    ^^ help: a tuple variant with a similar name exists (notice the capitalization): `Ok`
+  --> /private/tmp/rust-20241019-8391-fxpxmx/rustc-1.82.0-src/library/core/src/result.rs:531:5
+   |
+   = note: similarly named tuple variant `Ok` defined here
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0531`.

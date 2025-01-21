@@ -1,0 +1,4 @@
+/tmp/yicoder9b-bit_ops-java-cpp.cpp:6:3: error: use of undeclared identifier 'bitwise'
+    6 |   bitwise(a, b);
+      |   ^
+1 error generated.

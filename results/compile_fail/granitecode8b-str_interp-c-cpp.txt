@@ -1,0 +1,22 @@
+/tmp/granitecode8b-str_interp-c-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string str = "Mary had a " + string(extra) + " lamb.";
+      |   ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:6:32: error: use of undeclared identifier 'string'
+    6 |   string str = "Mary had a " + string(extra) + " lamb.";
+      |                                ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:7:3: error: use of undeclared identifier 'cout'
+    7 |   cout << str << endl;
+      |   ^
+/tmp/granitecode8b-str_interp-c-cpp.cpp:7:18: error: use of undeclared identifier 'endl'
+    7 |   cout << str << endl;
+      |                  ^
+1 warning and 6 errors generated.

@@ -1,0 +1,17 @@
+/tmp/codeqwen-str_substring-java-c.c:10:18: error: call to undeclared library function 'malloc' with type 'void *(unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |   char *result = malloc(length * sizeof(char));
+      |                  ^
+/tmp/codeqwen-str_substring-java-c.c:10:18: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/tmp/codeqwen-str_substring-java-c.c:53:34: error: too few arguments to function call, expected 3, have 2
+   53 |   return Substring(&str[index], m);
+      |          ~~~~~~~~~               ^
+/tmp/codeqwen-str_substring-java-c.c:4:7: note: 'Substring' declared here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/codeqwen-str_substring-java-c.c:65:34: error: too few arguments to function call, expected 3, have 2
+   65 |   return Substring(&str[index], m);
+      |          ~~~~~~~~~               ^
+/tmp/codeqwen-str_substring-java-c.c:4:7: note: 'Substring' declared here
+    4 | char *Substring(const char *str, int n, int m) {
+      |       ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated.

@@ -1,0 +1,6 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-file_rename-js-go.go:15:9: use of package os not in selector
+/tmp/deepseekcoder7b-file_rename-js-go.go:15:12: invalid character U+FF5C '｜' in identifier
+/tmp/deepseekcoder7b-file_rename-js-go.go:15:12: undefined: ｜begin▁of▁sentence｜
+/tmp/deepseekcoder7b-file_rename-js-go.go:15:20: invalid character U+2581 '▁' in identifier
+/tmp/deepseekcoder7b-file_rename-js-go.go:15:36: invalid character U+FF5C '｜' in identifier

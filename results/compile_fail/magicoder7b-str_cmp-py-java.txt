@@ -1,0 +1,91 @@
+/tmp/Main.java:5: error: unclosed character literal
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                               ^
+/tmp/Main.java:5: error: unclosed character literal
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                                   ^
+/tmp/Main.java:5: error: not a statement
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                                 ^
+/tmp/Main.java:5: error: unclosed character literal
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                                                                   ^
+/tmp/Main.java:5: error: unclosed character literal
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                                                                        ^
+/tmp/Main.java:5: error: not a statement
+            System.out.println('YUP' + " is strictly less than " + 'BALL');
+                                                                     ^
+/tmp/Main.java:8: error: unclosed character literal
+            System.out.println("YUP" + " is less than or equal to " + 'BALL');
+                                                                      ^
+/tmp/Main.java:8: error: unclosed character literal
+            System.out.println("YUP" + " is less than or equal to " + 'BALL');
+                                                                           ^
+/tmp/Main.java:8: error: not a statement
+            System.out.println("YUP" + " is less than or equal to " + 'BALL');
+                                                                        ^
+/tmp/Main.java:11: error: unclosed character literal
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                               ^
+/tmp/Main.java:11: error: unclosed character literal
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                                   ^
+/tmp/Main.java:11: error: not a statement
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                                 ^
+/tmp/Main.java:11: error: unclosed character literal
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                                                                      ^
+/tmp/Main.java:11: error: unclosed character literal
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                                                                           ^
+/tmp/Main.java:11: error: not a statement
+            System.out.println('YUP' + " is strictly greater than " + 'BALL');
+                                                                        ^
+/tmp/Main.java:14: error: unclosed character literal
+            System.out.println("YUP" + " is greater than or equal to " + 'BALL');
+                                                                         ^
+/tmp/Main.java:14: error: unclosed character literal
+            System.out.println("YUP" + " is greater than or equal to " + 'BALL');
+                                                                              ^
+/tmp/Main.java:14: error: not a statement
+            System.out.println("YUP" + " is greater than or equal to " + 'BALL');
+                                                                           ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                               ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                                   ^
+/tmp/Main.java:17: error: not a statement
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                                 ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                                                         ^
+/tmp/Main.java:17: error: unclosed character literal
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                                                              ^
+/tmp/Main.java:17: error: not a statement
+            System.out.println('YUP' + " is equal to " + 'BALL');
+                                                           ^
+/tmp/Main.java:20: error: unclosed character literal
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                               ^
+/tmp/Main.java:20: error: unclosed character literal
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                                   ^
+/tmp/Main.java:20: error: not a statement
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                                 ^
+/tmp/Main.java:20: error: unclosed character literal
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                                                             ^
+/tmp/Main.java:20: error: unclosed character literal
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                                                                  ^
+/tmp/Main.java:20: error: not a statement
+            System.out.println('YUP' + " is not equal to " + 'BALL');
+                                                               ^
+30 errors

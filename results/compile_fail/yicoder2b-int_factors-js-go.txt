@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-int_factors-js-go.go:11:23: undefined: math

@@ -1,0 +1,11 @@
+/tmp/Main.java:8: error: cannot find symbol
+            + Files.readAttribute(Paths.get("input.txt"), BasicFileAttributes::size));
+                   ^
+  symbol:   method readAttribute(Path,BasicFileA[...]:size)
+  location: class Files
+/tmp/Main.java:11: error: cannot find symbol
+            + Files.readAttribute(Paths.get("c:\\input.txt"), BasicFileAttributes::size));
+                   ^
+  symbol:   method readAttribute(Path,BasicFileA[...]:size)
+  location: class Files
+2 errors

@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/codellama7b-str_match-js-go.go:30:14: invalid operation: "1: Does '" + stringA + "' start with '" + stringB + "'? " + (q1 == true) (mismatched types string and untyped bool)
+/tmp/codellama7b-str_match-js-go.go:31:80: invalid argument: q2 (variable of type bool) for built-in len
+/tmp/codellama7b-str_match-js-go.go:32:9: invalid argument: q2 (variable of type bool) for built-in len
+/tmp/codellama7b-str_match-js-go.go:35:14: invalid operation: "3: Does '" + stringA + "' end with '" + stringB + "'? " + (q3 == true) (mismatched types string and untyped bool)

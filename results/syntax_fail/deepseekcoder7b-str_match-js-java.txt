@@ -1,0 +1,22 @@
+/tmp/Main.java:17: error: illegal character: '\uff5c'
+       <｜begin▁of▁sentence｜>	}
+        ^
+/tmp/Main.java:17: error: illegal character: '\u2581'
+       <｜begin▁of▁sentence｜>	}
+              ^
+/tmp/Main.java:17: error: not a statement
+       <｜begin▁of▁sentence｜>	}
+         ^
+/tmp/Main.java:17: error: illegal character: '\u2581'
+       <｜begin▁of▁sentence｜>	}
+                 ^
+/tmp/Main.java:17: error: not a statement
+       <｜begin▁of▁sentence｜>	}
+               ^
+/tmp/Main.java:17: error: illegal character: '\uff5c'
+       <｜begin▁of▁sentence｜>	}
+                          ^
+/tmp/Main.java:17: error: not a statement
+       <｜begin▁of▁sentence｜>	}
+                  ^
+7 errors

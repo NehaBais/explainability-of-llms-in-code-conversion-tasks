@@ -1,0 +1,7 @@
+/tmp/magicoder7b-file_size-c-cpp.cpp:5:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    5 |   auto fileSize = [](const std::string &path) {
+      |   ^
+/tmp/magicoder7b-file_size-c-cpp.cpp:5:19: error: expected expression
+    5 |   auto fileSize = [](const std::string &path) {
+      |                   ^
+1 warning and 1 error generated.

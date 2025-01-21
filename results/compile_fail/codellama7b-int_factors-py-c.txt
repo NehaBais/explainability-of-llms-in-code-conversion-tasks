@@ -1,0 +1,39 @@
+/tmp/codellama7b-int_factors-py-c.c:3:10: error: definition of variable with array type needs an explicit size or an initializer
+    3 |   int i, factors1[], factors2[];
+      |          ^
+/tmp/codellama7b-int_factors-py-c.c:3:22: error: definition of variable with array type needs an explicit size or an initializer
+    3 |   int i, factors1[], factors2[];
+      |                      ^
+/tmp/codellama7b-int_factors-py-c.c:4:20: error: call to undeclared function 'isqrt'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   for (i = 1; i <= isqrt(n); i++) {
+      |                    ^
+/tmp/codellama7b-int_factors-py-c.c:4:20: note: did you mean 'sqrt'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:434:15: note: 'sqrt' declared here
+  434 | extern double sqrt(double);
+      |               ^
+/tmp/codellama7b-int_factors-py-c.c:6:21: error: use of undeclared identifier 'x'
+    6 |       factors1[i] = x;
+      |                     ^
+/tmp/codellama7b-int_factors-py-c.c:7:25: error: use of undeclared identifier 'x'
+    7 |       factors2[i] = n / x;
+      |                         ^
+/tmp/codellama7b-int_factors-py-c.c:13:10: error: definition of variable with array type needs an explicit size or an initializer
+   13 |   int i, factors1[], factors2[];
+      |          ^
+/tmp/codellama7b-int_factors-py-c.c:13:22: error: definition of variable with array type needs an explicit size or an initializer
+   13 |   int i, factors1[], factors2[];
+      |                      ^
+/tmp/codellama7b-int_factors-py-c.c:16:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   16 |     printf("%d: factors: %s\n", i, factor(i));
+      |     ^
+/tmp/codellama7b-int_factors-py-c.c:16:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/tmp/codellama7b-int_factors-py-c.c:16:36: error: argument type 'void' is incomplete
+   16 |     printf("%d: factors: %s\n", i, factor(i));
+      |                                    ^
+/tmp/codellama7b-int_factors-py-c.c:14:16: warning: left operand of comma operator has no effect [-Wunused-value]
+   14 |   for (i = 45, 53, 64; i < 0; i++) {
+      |                ^~
+/tmp/codellama7b-int_factors-py-c.c:14:20: warning: expression result unused [-Wunused-value]
+   14 |   for (i = 45, 53, 64; i < 0; i++) {
+      |                    ^~
+2 warnings and 9 errors generated.

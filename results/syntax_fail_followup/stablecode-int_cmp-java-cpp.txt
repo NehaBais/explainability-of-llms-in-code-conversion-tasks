@@ -1,0 +1,37 @@
+/tmp/stablecode-int_cmp-java-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:8:3: error: use of undeclared identifier 'cout'
+    8 |   cout << "Enter first integer: ";
+      |   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:9:3: error: use of undeclared identifier 'cin'
+    9 |   cin >> nbr1;
+      |   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "Enter second integer: ";
+      |   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:12:3: error: use of undeclared identifier 'cin'
+   12 |   cin >> nbr2;
+      |   ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:15:5: error: use of undeclared identifier 'cout'
+   15 |     cout << nbr1 << " is less than " << nbr2 << endl;
+      |     ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:15:49: error: use of undeclared identifier 'endl'
+   15 |     cout << nbr1 << " is less than " << nbr2 << endl;
+      |                                                 ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:18:5: error: use of undeclared identifier 'cout'
+   18 |     cout << nbr1 << " is greater than " << nbr2 << endl;
+      |     ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:18:52: error: use of undeclared identifier 'endl'
+   18 |     cout << nbr1 << " is greater than " << nbr2 << endl;
+      |                                                    ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:21:5: error: use of undeclared identifier 'cout'
+   21 |     cout << nbr1 << " is equal to " << nbr2 << endl;
+      |     ^
+/tmp/stablecode-int_cmp-java-cpp.cpp:21:48: error: use of undeclared identifier 'endl'
+   21 |     cout << nbr1 << " is equal to " << nbr2 << endl;
+      |                                                ^
+1 warning and 11 errors generated.

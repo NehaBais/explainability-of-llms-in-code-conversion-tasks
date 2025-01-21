@@ -1,0 +1,37 @@
+/tmp/Main.java:21: error: ';' expected
+            Files.move(src2.toPath(), dest2.toPath()));
+                                                     ^
+/tmp/Main.java:25: error: illegal start of expression
+(/)
+ ^
+/tmp/Main.java:25: error: illegal start of expression
+(/)
+  ^
+/tmp/Main.java:25: error: not a statement
+(/)
+^
+/tmp/Main.java:25: error: ';' expected
+(/)
+   ^
+/tmp/Main.java:26: error: ';' expected
+        	List<String> list = Files.readAllLines(Paths.get("/input.txt")));
+        	                                                               ^
+/tmp/Main.java:27: error: ';' expected
+            Files.write(Paths.get("/output.txt")), list);
+                                                 ^
+/tmp/Main.java:27: error: not a statement
+            Files.write(Paths.get("/output.txt")), list);
+                                                   ^
+/tmp/Main.java:27: error: ';' expected
+            Files.write(Paths.get("/output.txt")), list);
+                                                       ^
+/tmp/Main.java:29: error: ';' expected
+            Files.move(Paths.get("/docs")), Paths.get("/mydocs"));
+                                          ^
+/tmp/Main.java:29: error: ';' expected
+            Files.move(Paths.get("/docs")), Paths.get("/mydocs"));
+                                                                ^
+/tmp/Main.java:32: error: class, interface, enum, or record expected
+}
+^
+12 errors

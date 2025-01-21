@@ -1,0 +1,5 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-file_rename-c-go.go:11:3: undefined: fmt
+/tmp/deepseekcoderv2-file_rename-c-go.go:16:3: undefined: fmt
+/tmp/deepseekcoderv2-file_rename-c-go.go:22:3: undefined: fmt
+/tmp/deepseekcoderv2-file_rename-c-go.go:27:3: undefined: fmt

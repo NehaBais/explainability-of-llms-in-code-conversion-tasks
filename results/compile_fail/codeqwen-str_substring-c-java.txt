@@ -1,0 +1,6 @@
+/tmp/Main.java:57: error: cannot find symbol
+    int index = s.indexOf(In);
+                          ^
+  symbol:   variable In
+  location: class Main
+1 error

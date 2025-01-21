@@ -1,0 +1,14 @@
+/tmp/Main.java:5: error: package org.apache.commons.io does not exist
+import org.apache.commons.io.FileUtils;
+                            ^
+/tmp/Main.java:11: error: cannot find symbol
+      System.out.println(FileUtils.sizeOf(new File("input.txt")));
+                         ^
+  symbol:   variable FileUtils
+  location: class Main
+/tmp/Main.java:15: error: cannot find symbol
+    System.out.println(FileUtils.sizeOf(new File("/input.txt")));
+                       ^
+  symbol:   variable FileUtils
+  location: class Main
+3 errors

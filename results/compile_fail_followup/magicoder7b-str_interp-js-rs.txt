@@ -1,0 +1,8 @@
+error: expected item, found keyword `let`
+ --> /tmp/magicoder7b-str_interp-js-rs.rs:4:1
+  |
+4 | let replaced = format!("{}", original.replace("X", little));
+  | ^^^ consider using `const` or `static` instead of `let` for global variables
+
+error: aborting due to 1 previous error
+

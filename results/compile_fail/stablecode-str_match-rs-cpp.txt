@@ -1,0 +1,44 @@
+/tmp/stablecode-str_match-rs-cpp.cpp:4:6: error: variable has incomplete type 'void'
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |      ^
+/tmp/stablecode-str_match-rs-cpp.cpp:4:23: error: no member named 'optional' in namespace 'std'
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |                  ~~~~~^
+/tmp/stablecode-str_match-rs-cpp.cpp:4:32: error: unexpected type name 'size_t': expected expression
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |                                ^
+/tmp/stablecode-str_match-rs-cpp.cpp:4:40: error: expected expression
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |                                        ^
+/tmp/stablecode-str_match-rs-cpp.cpp:4:42: error: use of undeclared identifier 'possible_match'
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |                                          ^
+/tmp/stablecode-str_match-rs-cpp.cpp:4:57: error: expected ';' after top level declarator
+    4 | void print_match(std::optional<size_t> > possible_match) {
+      |                                                         ^
+      |                                                         ;
+/tmp/stablecode-str_match-rs-cpp.cpp:19:5: error: use of undeclared identifier 'assert'
+   19 |     assert(s1.rfind(s3, 0) == 0));
+      |     ^
+/tmp/stablecode-str_match-rs-cpp.cpp:19:33: error: extraneous ')' before ';'
+   19 |     assert(s1.rfind(s3, 0) == 0));
+      |                                 ^
+/tmp/stablecode-str_match-rs-cpp.cpp:22:5: error: use of undeclared identifier 'assert'
+   22 |     assert(s1.find(s2) != std::string::npos));
+      |     ^
+/tmp/stablecode-str_match-rs-cpp.cpp:22:45: error: extraneous ')' before ';'
+   22 |     assert(s1.find(s2) != std::string::npos));
+      |                                             ^
+/tmp/stablecode-str_match-rs-cpp.cpp:24:17: error: expected expression
+   24 |     print_match({
+      |                 ^
+/tmp/stablecode-str_match-rs-cpp.cpp:28:17: error: expected expression
+   28 |     print_match({
+      |                 ^
+/tmp/stablecode-str_match-rs-cpp.cpp:33:5: error: use of undeclared identifier 'assert'
+   33 |     assert(s2.rfind(s3, 0)) == (s2.length() - s3.length()));
+      |     ^
+/tmp/stablecode-str_match-rs-cpp.cpp:33:59: error: extraneous ')' before ';'
+   33 |     assert(s2.rfind(s3, 0)) == (s2.length() - s3.length()));
+      |                                                           ^
+14 errors generated.

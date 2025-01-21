@@ -1,0 +1,31 @@
+/tmp/Main.java:31: error: cannot find symbol
+                  + A.compareTo(B)
+                     ^
+  symbol:   method compareTo(Object)
+  location: variable A of type Object
+/tmp/Main.java:39: error: cannot find symbol
+                  + A.toLowerCase().compareTo(b.toLowerCase())
+                     ^
+  symbol:   method toLowerCase()
+  location: variable A of type Object
+/tmp/Main.java:47: error: cannot find symbol
+                  + A.compareTo(B)
+                     ^
+  symbol:   method compareTo(Object)
+  location: variable A of type Object
+/tmp/Main.java:55: error: cannot find symbol
+                  + A.toLowerCase().compareTo(b.toLowerCase())
+                     ^
+  symbol:   method toLowerCase()
+  location: variable A of type Object
+/tmp/Main.java:62: error: bad operand types for binary operator '<'
+      System.out.println(A + " is less than " + B + " : " + a.doubleValue() < b.doubleValue());
+                                                                            ^
+  first type:  String
+  second type: double
+/tmp/Main.java:63: error: cannot find symbol
+      System.out.println(A + " is greater than " + B + " : " + A.doubleValue() > b.doubleValue());
+                                                                ^
+  symbol:   method doubleValue()
+  location: variable A of type Object
+6 errors

@@ -1,88 +1,36 @@
-## Solution 1 - Golang
-```
-package main
+ Here's the equivalent code in C++:
 
-import (
-	"fmt"
-	"log"
-)
-
-func main() {
-	var n1, n2 int
-	fmt.Print("enter number: ")
-	if _, err := fmt.Scan(&n1); err != nil {
-		log.Fatal(err)
-	}
-	fmt.Print("enter number: ")
-	if _, err := fmt.Scan(&n2); err != nil {
-		log.Fatal(err)
-	}
-	switch {
-	case n1 < n2:
-		fmt.Println(n1, "less than", n2)
-	case n1 == n2:
-		fmt.Println(n1, "equal to", n2)
-	case n1 > n2:
-		fmt.Println(n1, "greater than", n2)
-	}
-}
-```
-## Solution 2 - Golang
-```
-package main
-
-import (
-	"fmt"
-	"log"
-)
-
-func main() {
-	var number int
-	fmt.Print("Enter a number: ")
-	_, err := fmt.Scan(&number)
-	if err != nil {
-		log.Fatal(err)
-	}
-	switch {
-	case number < 0:
-		fmt.Println("Less than zero")
-	case number > 0:
-		fmt.Println("Greater than zero")
-	default:
-		fmt.Println("Zero")
-	}
-}
-```
-## Solution 1 - C++
-```
+```cpp
 #include <iostream>
-using namespace std;
+#include <limits> // For numeric_limits
+
 int main() {
     int n1, n2;
-	cout << "enter number: "; cin >> n1;
-	cout << "enter number: "; cin >> n2;
-	if (n1 < n2) {
-		cout << n1 << " less than " << n2 << endl;
-	} else if (n1 == n2) {
-		cout << n1 << " equal to " << n2 << endl;
-	} else if (n1 > n2) {
-		cout << n1 << " greater than " << n2 << endl;
+    
+    std::cout << "Enter number 1: ";
+    std::cin >> n1;
+    if (std::cin.fail()) {
+        std::cerr << "Invalid input for number 1." << std::endl;
+        return 1;
     }
+    
+    std::cout << "Enter number 2: ";
+    std::cin >> n2;
+    if (std::cin.fail()) {
+        std::cerr << "Invalid input for number 2." << std::endl;
+        return 1;
+    }
+    
+    if (n1 < n2) {
+        std::cout << n1 << " less than " << n2 << std::endl;
+    } else if (n1 == n2) {
+        std::cout << n1 << " equal to " << n2 << std::endl;
+    } else if (n1 > n2) {
+        std::cout << n1 << " greater than " << n2 << std::endl;
+    }
+    
+    return 0;
 }
 ```
-## Solution 2 - C++
-```
-#include <iostream>
-using namespace std;
-int main() {
-	int number;
-	cout << "Enter a number: "; cin >> number;
-	if (number < 0) {
-		cout << "Less than zero" << endl;
-	} else if (number > 0) {
-		cout << "Greater than zero" << endl;
-	} else {
-		cout << "Zero" << endl;
-    }
-}
-```
+
+This C++ code performs the same operations as the provided Go code: it reads two integers from the user, compares them using if-else statements, and prints a message based on their relationship.

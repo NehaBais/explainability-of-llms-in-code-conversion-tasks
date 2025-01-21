@@ -1,0 +1,14 @@
+/tmp/qwen2.5coder2b-str_substring-js-c.c:4:24: error: call to undeclared library function 'strlen' with type 'unsigned long (const char *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    4 |   if (start + length > strlen(src)) {
+      |                        ^
+/tmp/qwen2.5coder2b-str_substring-js-c.c:4:24: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/tmp/qwen2.5coder2b-str_substring-js-c.c:31:18: error: member reference base type 'char[9]' is not a structure or union
+   31 |   int index = str.index('b');
+      |               ~~~^~~~~~
+/tmp/qwen2.5coder2b-str_substring-js-c.c:39:19: error: member reference base type 'char[9]' is not a structure or union
+   39 |   int index2 = str.index('bc');
+      |                ~~~^~~~~~
+/tmp/qwen2.5coder2b-str_substring-js-c.c:39:26: warning: multi-character character constant [-Wmultichar]
+   39 |   int index2 = str.index('bc');
+      |                          ^
+1 warning and 3 errors generated.

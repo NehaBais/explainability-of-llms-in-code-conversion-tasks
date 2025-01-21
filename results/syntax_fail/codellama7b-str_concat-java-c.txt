@@ -1,0 +1,41 @@
+/tmp/codellama7b-str_concat-java-c.c:3:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    3 | strcpy(s2, s);
+      | ^
+      | int
+/tmp/codellama7b-str_concat-java-c.c:3:8: error: a parameter list without types is only allowed in a function definition
+    3 | strcpy(s2, s);
+      |        ^
+/tmp/codellama7b-str_concat-java-c.c:4:12: error: expected identifier
+    4 | strcat(s2, "literal");
+      |            ^
+/tmp/codellama7b-str_concat-java-c.c:4:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    4 | strcat(s2, "literal");
+      | ^
+      | int
+/tmp/codellama7b-str_concat-java-c.c:4:1: warning: incompatible redeclaration of library function 'strcat' [-Wincompatible-library-redeclaration]
+/tmp/codellama7b-str_concat-java-c.c:4:1: note: 'strcat' is a builtin with type 'char *(char *, const char *)'
+/tmp/codellama7b-str_concat-java-c.c:5:8: error: expected parameter declarator
+    5 | printf("%s\n", s);
+      |        ^
+/tmp/codellama7b-str_concat-java-c.c:5:8: error: expected ')'
+/tmp/codellama7b-str_concat-java-c.c:5:7: note: to match this '('
+    5 | printf("%s\n", s);
+      |       ^
+/tmp/codellama7b-str_concat-java-c.c:5:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    5 | printf("%s\n", s);
+      | ^
+      | int
+/tmp/codellama7b-str_concat-java-c.c:5:1: warning: incompatible redeclaration of library function 'printf' [-Wincompatible-library-redeclaration]
+/tmp/codellama7b-str_concat-java-c.c:5:1: note: 'printf' is a builtin with type 'int (const char *, ...)'
+/tmp/codellama7b-str_concat-java-c.c:6:8: error: expected parameter declarator
+    6 | printf("%s\n", s2);
+      |        ^
+/tmp/codellama7b-str_concat-java-c.c:6:8: error: expected ')'
+/tmp/codellama7b-str_concat-java-c.c:6:7: note: to match this '('
+    6 | printf("%s\n", s2);
+      |       ^
+/tmp/codellama7b-str_concat-java-c.c:6:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    6 | printf("%s\n", s2);
+      | ^
+      | int
+2 warnings and 10 errors generated.

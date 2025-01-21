@@ -1,0 +1,22 @@
+The error occurs because the `malloc` and `free` functions are not included in the code. The fix is to include the `<stdlib.h>` header file, which provides these functions.
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+  char *s = "hello";
+  printf("%s literal\n", s);
+
+  char *s2 = malloc(strlen(s) + 7);
+  strcpy(s2, s);
+  strcat(s2, " literal");
+
+  printf("%s\n", s2);
+
+  free(s2);
+
+  return 0;
+}
+```

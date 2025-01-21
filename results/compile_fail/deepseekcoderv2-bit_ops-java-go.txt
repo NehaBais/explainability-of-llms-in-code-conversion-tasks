@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/deepseekcoderv2-bit_ops-java-go.go:16:39: syntax error: unexpected >, expected expression

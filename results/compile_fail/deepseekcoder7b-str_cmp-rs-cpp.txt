@@ -1,0 +1,22 @@
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:24: error: no member named 'c' in 'std::string'
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                      ~ ^
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:26: error: unexpected character <U+FF5C>
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                          ^~
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:34: error: character <U+2581> not allowed in an identifier
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                                 ^
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:39: error: character <U+2581> not allowed in an identifier
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                                    ^
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:50: error: character <U+FF5C> not allowed in an identifier
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                                             ^~
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:29: error: use of undeclared identifier 'begin▁of▁sentence｜'
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                            ^
+/tmp/deepseekcoder7b-str_cmp-rs-cpp.cpp:35:55: error: use of undeclared identifier 'tr'
+   35 |   if (std::strcmp(a, b.c<｜begin▁of▁sentence｜> tr) < 0) {
+      |                                                 ^
+7 errors generated.

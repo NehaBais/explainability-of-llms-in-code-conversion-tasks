@@ -1,0 +1,19 @@
+error: mismatched closing delimiter: `)`
+  --> /tmp/stablecode-file_create-go-rs.rs:12:29
+   |
+12 | fn main() -> io::Result<()> {
+   |                             ^ unclosed delimiter
+...
+15 |     create_file(&format!("{}/input.txt", root_path)));
+   |                                                     ^ mismatched closing delimiter
+
+error: unexpected closing delimiter: `)`
+  --> /tmp/stablecode-file_create-go-rs.rs:16:47
+   |
+15 |     create_file(&format!("{}/input.txt", root_path)));
+   |                                                     - missing open `(` for this delimiter
+16 |     create_file(&format!("{}/input.txt", "/")));
+   |                                               ^ unexpected closing delimiter
+
+error: aborting due to 2 previous errors
+

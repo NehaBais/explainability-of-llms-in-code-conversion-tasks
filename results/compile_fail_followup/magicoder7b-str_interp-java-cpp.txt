@@ -1,0 +1,4 @@
+/tmp/magicoder7b-str_interp-java-cpp.cpp:1:10: fatal error: 'boost/format.hpp' file not found
+    1 | #include <boost/format.hpp> // boost::str(boost::format...)
+      |          ^~~~~~~~~~~~~~~~~~
+1 error generated.

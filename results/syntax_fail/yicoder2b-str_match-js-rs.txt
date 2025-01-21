@@ -1,0 +1,25 @@
+error: expected one of `=>`, `if`, or `|`, found `->`
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:110
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                                                                                                              ^^
+  |                                                                                                              |
+  |                                                                                                              expected one of `=>`, `if`, or `|`
+  |                                                                                                              help: use a fat arrow to start a match arm: `=>`
+
+error[E0412]: cannot find type `RegExp` in this scope
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:22
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                      ^^^^^^ not found in this scope
+
+error[E0433]: failed to resolve: use of undeclared crate or module `regex`
+ --> /tmp/yicoder2b-str_match-js-rs.rs:6:37
+  |
+6 |     let mut q2multi: RegExp = match regex::compile(stringB) { _ => panic!("Invalid pattern for string B"), _ -> () };
+  |                                     ^^^^^ use of undeclared crate or module `regex`
+
+error: aborting due to 3 previous errors
+
+Some errors have detailed explanations: E0412, E0433.
+For more information about an error, try `rustc --explain E0412`.

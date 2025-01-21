@@ -1,0 +1,7 @@
+/tmp/codellama7b-str_concat-py-cpp.cpp:11:24: error: member reference base type 'const char[3]' is not a structure or union
+   11 |   std::string s3 = ", ".join({s1, "world", "mom"});
+      |                    ~~~~^~~~~
+/tmp/codellama7b-str_concat-py-cpp.cpp:11:30: error: expected expression
+   11 |   std::string s3 = ", ".join({s1, "world", "mom"});
+      |                              ^
+2 errors generated.

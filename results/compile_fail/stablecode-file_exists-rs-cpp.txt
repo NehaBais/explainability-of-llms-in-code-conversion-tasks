@@ -1,0 +1,19 @@
+/tmp/stablecode-file_exists-rs-cpp.cpp:7:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    7 |   for (const auto &file : files) {
+      |              ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:7:25: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    7 |   for (const auto &file : files) {
+      |                         ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:8:14: error: no member named 'filesystem' in namespace 'std'
+    8 |     if (std::filesystem::exists(file)))
+      |         ~~~~~^
+/tmp/stablecode-file_exists-rs-cpp.cpp:8:39: error: extraneous ')' after condition, expected a statement
+    8 |     if (std::filesystem::exists(file)))
+      |                                       ^
+/tmp/stablecode-file_exists-rs-cpp.cpp:10:18: error: no member named 'filesystem' in namespace 'std'
+   10 |         if (std::filesystem::is_directory(file)))
+      |             ~~~~~^
+/tmp/stablecode-file_exists-rs-cpp.cpp:10:49: error: extraneous ')' after condition, expected a statement
+   10 |         if (std::filesystem::is_directory(file)))
+      |                                                 ^
+2 warnings and 4 errors generated.

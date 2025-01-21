@@ -1,0 +1,8 @@
+/tmp/StringInterpolationExample.java:11: error: no suitable method found for replace(int,int)
+        original.replace(
+                ^
+    method String.replace(char,char) is not applicable
+      (argument mismatch; possible lossy conversion from int to char)
+    method String.replace(CharSequence,CharSequence) is not applicable
+      (argument mismatch; int cannot be converted to CharSequence)
+1 error

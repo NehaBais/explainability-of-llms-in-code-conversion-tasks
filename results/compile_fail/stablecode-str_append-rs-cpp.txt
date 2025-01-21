@@ -1,0 +1,17 @@
+/tmp/stablecode-str_append-rs-cpp.cpp:1:1: error: unknown type name 'fn'
+    1 | fn main() {
+      | ^
+/tmp/stablecode-str_append-rs-cpp.cpp:2:3: error: unknown type name 'let'
+    2 |   let mut hello = String::from("Hello world");
+      |   ^
+/tmp/stablecode-str_append-rs-cpp.cpp:2:10: error: expected ';' at end of declaration
+    2 |   let mut hello = String::from("Hello world");
+      |          ^
+      |          ;
+/tmp/stablecode-str_append-rs-cpp.cpp:3:3: error: use of undeclared identifier 'hello'
+    3 |   hello.push_str("!!!!");
+      |   ^
+/tmp/stablecode-str_append-rs-cpp.cpp:4:3: error: use of undeclared identifier 'println'
+    4 |   println !("{}", hello);
+      |   ^
+5 errors generated.

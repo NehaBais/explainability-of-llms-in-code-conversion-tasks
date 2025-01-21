@@ -1,59 +1,25 @@
-#include <stdio.h>
+#include <afx.h>     // MFC core and standard components
+#include <afxdisp.h> // MFC definitions for OLE automation classes
 
-int main() {
-  FILE *input, *output;
-  char filename[100];
+void RenameFilesAndFolders() {
+  // Create a new instance of the FileSystemObject
+  CFileSystem fso;
 
-  // Rename "input.txt" to "output.txt" in the current directory
-  strcpy(filename, "input.txt");
-  input = fopen(filename, "r");
-  if (input == NULL) {
-    printf("Error opening file %s\n", filename);
-    return -1;
-  }
-  output = fopen("output.txt", "w");
-  if (output == NULL) {
-    printf("Error creating new file %s\n", "output.txt");
-    fclose(input);
-    return -1;
-  }
-  while (!feof(input)) {
-    putc(getc(input), output);
-  }
-  fclose(input);
-  fclose(output);
+  try {
+    // Move file in current working directory
+    fso.MoveFile(_T("input.txt"), _T("output.txt"));
 
-  // Rename "docs" to "mydocs" in the current directory
-  strcpy(filename, "docs");
-  if (rename(filename, "mydocs") != 0) {
-    printf("Error renaming %s\n", filename);
-    return -1;
-  }
+    // Move file in filesystem root
+    fso.MoveFile(_T("c:/input.txt"), _T("c:/output.txt"));
 
-  // Rename "c:/input.txt" to "c:/output.txt" in the filesystem root
-  strcpy(filename, "c:/input.txt");
-  input = fopen(filename, "r");
-  if (input == NULL) {
-    printf("Error opening file %s\n", filename);
-    return -1;
-  }
-  output = fopen("output.txt", "w");
-  if (output == NULL) {
-    printf("Error creating new file %s\n", "output.txt");
-    fclose(input);
-    return -1;
-  }
-  while (!feof(input)) {
-    putc(getc(input), output);
-  }
-  fclose(input);
-  fclose(output);
+    // Move folder in current working directory
+    fso.MoveFolder(_T("docs"), _T("mydocs"));
 
-  // Rename "docs" to "mydocs" in the filesystem root
-  if (rename("docs", "mydocs") != 0) {
-    printf("Error renaming %s\n", "docs");
-    return -1;
+    // Move folder in filesystem root
+    fso.MoveFolder(_T("c:/docs"), _T("c:/mydocs"));
+  } catch (CFileException *e) {
+    // Handle exceptions if necessary
+    e->ReportError();
+    e->Delete();
   }
-
-  return 0;
 }

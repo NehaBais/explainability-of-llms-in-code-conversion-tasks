@@ -1,0 +1,32 @@
+/tmp/granitecode3b-dir_make-js-c.c:8:9: error: use of undeclared identifier 'errno'
+    8 |     if (errno == ENOENT) {
+      |         ^
+/tmp/granitecode3b-dir_make-js-c.c:8:18: error: use of undeclared identifier 'ENOENT'
+    8 |     if (errno == ENOENT) {
+      |                  ^
+/tmp/granitecode3b-dir_make-js-c.c:10:23: error: call to undeclared function 'dirname'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   10 |       mkdir_recursive(dirname(path));
+      |                       ^
+/tmp/granitecode3b-dir_make-js-c.c:10:23: note: did you mean 'devname'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:300:7: note: 'devname' declared here
+  300 | char    *devname(dev_t, mode_t);
+      |          ^
+/tmp/granitecode3b-dir_make-js-c.c:10:23: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+   10 |       mkdir_recursive(dirname(path));
+      |                       ^~~~~~~~~~~~~
+/tmp/granitecode3b-dir_make-js-c.c:5:33: note: passing argument to parameter 'path' here
+    5 | int mkdir_recursive(const char *path) {
+      |                                 ^
+/tmp/granitecode3b-dir_make-js-c.c:13:14: error: use of undeclared identifier 'errno'
+   13 |       return errno;
+      |              ^
+/tmp/granitecode3b-dir_make-js-c.c:18:12: error: use of undeclared identifier 'EEXIST'
+   18 |     return EEXIST;
+      |            ^
+/tmp/granitecode3b-dir_make-js-c.c:27:21: error: use of undeclared identifier 'EEXIST'
+   27 |   } else if (ret == EEXIST) {
+      |                     ^
+/tmp/granitecode3b-dir_make-js-c.c:30:55: error: use of undeclared identifier 'errno'
+   30 |     printf("Error creating directory: %s\n", strerror(errno));
+      |                                                       ^
+8 errors generated.

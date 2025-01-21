@@ -1,0 +1,3 @@
+# command-line-arguments
+# [command-line-arguments]
+vet: /tmp/qwen2.5coder7b-file_rename-rs-go.go:11:12: invalid operation: err != nil (mismatched types string and untyped nil)

@@ -1,0 +1,15 @@
+error: `<` is interpreted as a start of generic arguments for `i32`, not a comparison
+  --> /tmp/yicoder2b-str_cmp-java-rs.rs:28:21
+   |
+28 |     if &a[0] as i32 < b.first_mut().unwrap().as_i32() {
+   |                     ^ -- interpreted as generic arguments
+   |                     |
+   |                     not interpreted as comparison
+   |
+help: try comparing the cast value
+   |
+28 |     if (&a[0] as i32) < b.first_mut().unwrap().as_i32() {
+   |        +            +
+
+error: aborting due to 1 previous error
+

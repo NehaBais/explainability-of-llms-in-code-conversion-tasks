@@ -1,0 +1,20 @@
+/tmp/granitecode8b-file_exists-js-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-js-c.c:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode8b-file_exists-js-c.c:4:16: error: variable has incomplete type 'struct _stat'
+    4 |   struct _stat buf;
+      |                ^
+/tmp/granitecode8b-file_exists-js-c.c:4:10: note: forward declaration of 'struct _stat'
+    4 |   struct _stat buf;
+      |          ^
+/tmp/granitecode8b-file_exists-js-c.c:5:7: error: call to undeclared function '_stat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   if (_stat("input.txt", &buf) == 0) {
+      |       ^
+/tmp/granitecode8b-file_exists-js-c.c:6:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    6 |     printf("File 'input.txt' exists in current working directoryn");
+      |     ^
+/tmp/granitecode8b-file_exists-js-c.c:6:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+5 errors generated.

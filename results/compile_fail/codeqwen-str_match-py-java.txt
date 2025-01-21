@@ -1,0 +1,11 @@
+/tmp/Main.java:12: error: cannot find symbol
+    loc = find(substring, "ab");
+               ^
+  symbol:   variable substring
+  location: class Main
+/tmp/Main.java:15: error: cannot find symbol
+      loc = find(substring, "ab", loc + 1);
+                 ^
+  symbol:   variable substring
+  location: class Main
+2 errors

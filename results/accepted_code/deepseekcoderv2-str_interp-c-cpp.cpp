@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-using namespace std;
+
 int main() {
-  string extra = "little";
-  cout << "Mary had a " + extra + " lamb." << endl;
+  std::string extra = "little";
+  std::cout << "Mary had a " << extra << " lamb." << std::endl;
   return 0;
 }

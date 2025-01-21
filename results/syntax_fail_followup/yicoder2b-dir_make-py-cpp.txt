@@ -1,0 +1,16 @@
+/tmp/yicoder2b-dir_make-py-cpp.cpp:14:18: error: use of undeclared identifier 'cmpfunc'
+   14 |                  cmpfunc);
+      |                  ^
+/tmp/yicoder2b-dir_make-py-cpp.cpp:19:15: error: variable has incomplete type 'struct stat'
+   19 |   struct stat info;
+      |               ^
+/tmp/yicoder2b-dir_make-py-cpp.cpp:19:10: note: forward declaration of 'stat'
+   19 |   struct stat info;
+      |          ^
+/tmp/yicoder2b-dir_make-py-cpp.cpp:20:27: error: invalid operands to binary expression ('stat' and 'int')
+   20 |   if (stat(buffer, &info) == 0 && S_ISDIR(info.st_mode)) {
+      |       ~~~~~~~~~~~~~~~~~~~ ^  ~
+/tmp/yicoder2b-dir_make-py-cpp.cpp:24:9: error: use of undeclared identifier 'mkdir'
+   24 |     if (mkdir(buffer, 0755) < 0) {
+      |         ^
+4 errors generated.

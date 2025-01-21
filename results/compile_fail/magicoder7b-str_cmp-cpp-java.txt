@@ -1,0 +1,4 @@
+/tmp/Main.java:43: error: incompatible types: int cannot be converted to boolean
+            + ((Double.compare(a, b)) ? "" : "not ")
+                              ^
+1 error

@@ -1,0 +1,10 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:11:12: invalid operation: err != nil (mismatched types string and untyped nil)
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:16:11: cannot use os.Rename("input.txt", "output.txt") (value of type error) as string value in assignment
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:16:56: invalid operation: err != nil (mismatched types string and untyped nil)
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:21:11: cannot use os.Rename("docs", "mydocs") (value of type error) as string value in assignment
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:21:47: invalid operation: err != nil (mismatched types string and untyped nil)
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:26:11: cannot use os.Rename("/input.txt", "/output.txt") (value of type error) as string value in assignment
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:26:58: invalid operation: err != nil (mismatched types string and untyped nil)
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:31:11: cannot use os.Rename("/docs", "/mydocs") (value of type error) as string value in assignment
+/tmp/qwen2.5coder7b-file_rename-rs-go.go:31:49: invalid operation: err != nil (mismatched types string and untyped nil)

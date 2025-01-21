@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:38:9: cannot use (a & b) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:42:9: cannot use (a | b) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:46:9: cannot use (a ^ b) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:50:9: cannot use (^a & ((1 << width) - 1)) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:54:9: cannot use (a >> shift) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:58:9: cannot use (a << shift) (value of type uint8) as uint value in return statement
+/tmp/qwen2.5coder7b-bit_ops-py-go.go:62:9: cannot use ((a >> shift) | (a << (width - shift))) (value of type uint8) as uint value in return statement

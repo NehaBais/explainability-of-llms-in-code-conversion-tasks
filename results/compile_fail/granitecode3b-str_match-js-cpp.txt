@@ -1,0 +1,67 @@
+/tmp/granitecode3b-str_match-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:2:9: error: expected "FILENAME" or <FILENAME>
+    2 | #include
+      |         ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+    3 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:6:3: error: unknown type name 'string'
+    6 |   string stringA = "tacoloco", stringB = "co";
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:6:39: error: expected ';' at end of declaration
+    6 |   string stringA = "tacoloco", stringB = "co";
+      |                                       ^
+      |                                       ;
+/tmp/granitecode3b-str_match-js-cpp.cpp:8:3: error: unknown type name 'vector'
+    8 |   vector q2matches;
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:11:29: error: use of undeclared identifier 'stringB'
+   11 |   q1 = (stringA.length() >= stringB.length()) &&
+      |                             ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:12:27: error: use of undeclared identifier 'stringB'
+   12 |        (stringA.substr(0, stringB.length()) == stringB);
+      |                           ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:12:48: error: use of undeclared identifier 'stringB'
+   12 |        (stringA.substr(0, stringB.length()) == stringB);
+      |                                                ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:15:21: error: use of undeclared identifier 'stringB'
+   15 |   q2 = stringA.find(stringB);
+      |                     ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:18:3: error: unknown type name 'regex'
+   18 |   regex q2multi(stringB);
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:18:17: error: use of undeclared identifier 'stringB'; did you mean 'stringA'?
+   18 |   regex q2multi(stringB);
+      |                 ^~~~~~~
+      |                 stringA
+/tmp/granitecode3b-str_match-js-cpp.cpp:6:10: note: 'stringA' declared here
+    6 |   string stringA = "tacoloco", stringB = "co";
+      |          ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:19:3: error: unknown type name 'smatch'
+   19 |   smatch m;
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:25:29: error: use of undeclared identifier 'stringB'
+   25 |   q3 = (stringA.length() >= stringB.length()) &&
+      |                             ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:26:43: error: use of undeclared identifier 'stringB'
+   26 |        (stringA.substr(stringA.length() - stringB.length()) == stringB);
+      |                                           ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:26:64: error: use of undeclared identifier 'stringB'
+   26 |        (stringA.substr(stringA.length() - stringB.length()) == stringB);
+      |                                                                ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:28:3: error: use of undeclared identifier 'cout'
+   28 |   cout << "1: Does 'tacoloco' start with 'co'? " << (q1 ? "Yes." : "No.")
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:29:11: error: use of undeclared identifier 'endl'
+   29 |        << endl;
+      |           ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:30:3: error: use of undeclared identifier 'cout'
+   30 |   cout << "2: Is 'co' contained in 'tacoloco'? "
+      |   ^
+/tmp/granitecode3b-str_match-js-cpp.cpp:31:19: error: use of undeclared identifier 'string'
+   31 |        << ((q2 != string::npos) ? "Yes, at index " + to_string(q2) + "."
+      |                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.

@@ -1,0 +1,35 @@
+error[E0277]: `Factors` doesn't implement `Debug`
+  --> /tmp/granitecode3b-int_factors-c-rs.rs:29:50
+   |
+29 |         println!("factors of {} are: {:?}", num, factor(num));
+   |                                                  ^^^^^^^^^^^ `Factors` cannot be formatted using `{:?}`
+   |
+   = help: the trait `Debug` is not implemented for `Factors`
+   = note: add `#[derive(Debug)]` to `Factors` or manually `impl Debug for Factors`
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider annotating `Factors` with `#[derive(Debug)]`
+   |
+1  + #[derive(Debug)]
+2  | struct Factors {
+   |
+
+error[E0382]: borrow of moved value: `flist`
+  --> /tmp/granitecode3b-int_factors-c-rs.rs:22:16
+   |
+7  |     let mut flist = vec![];
+   |         --------- move occurs because `flist` has type `Vec<i32>`, which does not implement the `Copy` trait
+...
+21 |         list: flist,
+   |               ----- value moved here
+22 |         count: flist.len(),
+   |                ^^^^^ value borrowed here after move
+   |
+help: consider cloning the value if the performance cost is acceptable
+   |
+21 |         list: flist.clone(),
+   |                    ++++++++
+
+error: aborting due to 2 previous errors
+
+Some errors have detailed explanations: E0277, E0382.
+For more information about an error, try `rustc --explain E0277`.

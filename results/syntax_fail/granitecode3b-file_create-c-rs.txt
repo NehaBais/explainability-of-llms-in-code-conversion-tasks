@@ -1,0 +1,18 @@
+error[E0432]: unresolved import `std::io::OpenOptions`
+ --> /tmp/granitecode3b-file_create-c-rs.rs:2:15
+  |
+2 | use std::io::{OpenOptions, Write};
+  |               ^^^^^^^^^^^ no `OpenOptions` in `io`
+  |
+  = help: consider importing this struct instead:
+          std::fs::OpenOptions
+
+error[E0432]: unresolved import `std::os::unix::fs::OpenFlags`
+ --> /tmp/granitecode3b-file_create-c-rs.rs:4:5
+  |
+4 | use std::os::unix::fs::OpenFlags;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `OpenFlags` in `os::unix::fs`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

@@ -1,0 +1,13 @@
+error: unexpected closing delimiter: `}`
+  --> /tmp/codegemma7b-bit_ops-py-rs.rs:19:1
+   |
+1  | fn helper_funcs(width: usize, a: i32) {
+   |                                       - this delimiter might not be properly closed...
+...
+18 |     }
+   |     - ...as it matches this but it has different indentation
+19 | }
+   | ^ unexpected closing delimiter
+
+error: aborting due to 1 previous error
+

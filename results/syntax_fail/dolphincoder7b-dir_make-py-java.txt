@@ -1,0 +1,11 @@
+/tmp/FileUtil.java:3: error: cannot find symbol
+    File file = new File(path);
+    ^
+  symbol:   class File
+  location: class FileUtil
+/tmp/FileUtil.java:3: error: cannot find symbol
+    File file = new File(path);
+                    ^
+  symbol:   class File
+  location: class FileUtil
+2 errors

@@ -1,0 +1,8 @@
+/tmp/granitecode3b-bit_ops-rs-c.c:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-bit_ops-rs-c.c:5:3: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    5 |   printf("a      = %08b n", a);
+      |   ^
+/tmp/granitecode3b-bit_ops-rs-c.c:5:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+2 errors generated.

@@ -1,0 +1,3 @@
+# command-line-arguments
+/tmp/deepseekcoder7b-str_substring-c-go.go:26:11: undefined: strings
+/tmp/deepseekcoder7b-str_substring-c-go.go:35:11: undefined: strings

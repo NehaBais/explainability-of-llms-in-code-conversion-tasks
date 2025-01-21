@@ -1,0 +1,2 @@
+# command-line-arguments
+/tmp/yicoder2b-bit_ops-c-go.go:9:11: cannot use ~ outside of interface or type constraint (use ^ for bitwise complement)

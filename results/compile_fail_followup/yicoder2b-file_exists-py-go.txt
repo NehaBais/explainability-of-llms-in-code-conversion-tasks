@@ -1,0 +1,8 @@
+# command-line-arguments
+/tmp/yicoder2b-file_exists-py-go.go:5:2: "path/filepath" imported and not used
+/tmp/yicoder2b-file_exists-py-go.go:9:5: declared and not used: file
+/tmp/yicoder2b-file_exists-py-go.go:13:8: undefined: errNotFound
+/tmp/yicoder2b-file_exists-py-go.go:19:5: declared and not used: file
+/tmp/yicoder2b-file_exists-py-go.go:23:8: undefined: errNotFound
+/tmp/yicoder2b-file_exists-py-go.go:33:8: undefined: errNotFound
+/tmp/yicoder2b-file_exists-py-go.go:43:8: undefined: errNotFound

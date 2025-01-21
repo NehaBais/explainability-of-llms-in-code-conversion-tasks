@@ -1,7 +1,0 @@
-The output is:
-
-45: factors: [1, 3, 5, 9, 15]
-53: factors: [1, 53]
-64: factors: [1, 2, 4, 8, 16, 32]
-
-

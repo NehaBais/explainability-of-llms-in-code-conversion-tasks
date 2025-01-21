@@ -1,0 +1,32 @@
+error: invalid comparison operator `===`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:36
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                    ^^^
+  |
+help: `===` is not a valid comparison operator, use `==`
+  |
+4 |         , "abcd" == "abcd", "abcd" == "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                    ~~
+
+error: invalid comparison operator `!==`
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:4:80
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                                ^^^
+  |
+help: `!==` is not a valid comparison operator, use `!=`
+  |
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 != "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |                                                                                ~~
+
+error: 10 positional arguments in format string, but there are 8 arguments
+ --> /tmp/magicoder7b-str_cmp-js-rs.rs:3:24
+  |
+3 |         "abcd == abcd: {}, {} === abcd: {}, {} != abcd: {}, {} !== '123': {}, abcd < dcba: {}, abcd > dcba: {}, ABCD.to_lowercase() == abcd.to_lowercase(): {}"
+  |                        ^^  ^^           ^^  ^^          ^^  ^^            ^^               ^^               ^^                                              ^^
+4 |         , "abcd" == "abcd", "abcd" === "abcd", 123 == "123", 123 != "123", 123 !== "123", "abcd" < "dcba", "abcd" > "dcba", "ABCD".to_lowercase() == "abcd".to_lowercase()
+  |           ----------------  -----------------  ------------  ------------  -------------  ---------------  ---------------  ----------------------------------------------
+
+error: aborting due to 3 previous errors
+

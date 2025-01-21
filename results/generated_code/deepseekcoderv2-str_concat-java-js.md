@@ -1,17 +1,10 @@
-# Solution 1:
-```javascript
-let str = 'hi'; // declare string variable with value hi
-// concatenate string and hello literal into a new string to store in the same variable str
-str += "hello";
-console.log("string:",str);
-```
-The console prints out - > `string: hihello`
+ Here's the equivalent JavaScript code for the given Java code:
 
-# Solution 2:
-This is another way of doing it, by declaring separate variables and concatenating them later on to create a new string.
-let str = 'hi'; // declare string variable with value hi
-//concatenate the two strings into a new one
-str += "hello";
-console.log("string:",str);
-The console prints out - >
-string: hihello
+```javascript
+let s = "hello";
+console.log(s + " literal");
+let s2 = s + " literal";
+console.log(s2);
+```
+
+This JavaScript code creates a string variable `s` with the value "hello". It then concatenates the string literal " literal" to it and stores the result in another variable `s2`. Finally, it prints both variables to the console.

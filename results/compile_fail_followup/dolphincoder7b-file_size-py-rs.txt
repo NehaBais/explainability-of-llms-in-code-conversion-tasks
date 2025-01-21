@@ -1,0 +1,58 @@
+error[E0601]: `main` function not found in crate `temp_crate`
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:4:66
+  |
+4 | const ROOT_SIZE: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                                                                  ^ consider adding a `main` function to `/tmp/dolphincoder7b-file_size-py-rs.rs`
+
+error[E0015]: cannot call non-const fn `std::fs::metadata::<&str>` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:3:27
+  |
+3 | const CURRENT_SIZE: u64 = fs::metadata("input.txt").unwrap().len();
+  |                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `Result::<Metadata, std::io::Error>::unwrap` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:3:53
+  |
+3 | const CURRENT_SIZE: u64 = fs::metadata("input.txt").unwrap().len();
+  |                                                     ^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `Metadata::len` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:3:62
+  |
+3 | const CURRENT_SIZE: u64 = fs::metadata("input.txt").unwrap().len();
+  |                                                              ^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `std::fs::metadata::<&str>` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:4:24
+  |
+4 | const ROOT_SIZE: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `Result::<Metadata, std::io::Error>::unwrap` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:4:51
+  |
+4 | const ROOT_SIZE: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                                                   ^^^^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error[E0015]: cannot call non-const fn `Metadata::len` in constants
+ --> /tmp/dolphincoder7b-file_size-py-rs.rs:4:60
+  |
+4 | const ROOT_SIZE: u64 = fs::metadata("/input.txt").unwrap().len();
+  |                                                            ^^^^^
+  |
+  = note: calls in constants are limited to constant functions, tuple structs and tuple variants
+
+error: aborting due to 7 previous errors
+
+Some errors have detailed explanations: E0015, E0601.
+For more information about an error, try `rustc --explain E0015`.

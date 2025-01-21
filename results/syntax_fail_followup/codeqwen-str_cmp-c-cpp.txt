@@ -1,0 +1,28 @@
+/tmp/codeqwen-str_cmp-c-cpp.cpp:1:20: error: use of undeclared identifier 'std'
+    1 | void compare(const std::string &A, const std::string &B) {
+      |                    ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:1:42: error: use of undeclared identifier 'std'
+    1 | void compare(const std::string &A, const std::string &B) {
+      |                                          ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:2:3: error: use of undeclared identifier 'std'
+    2 |   std::cout << A << "  " << STREQ(A, B) << ", " << STRNE(A, B) << ", "
+      |   ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:4:31: error: use of undeclared identifier 'std'
+    4 |             << STRLE(A, B) << std::endl;
+      |                               ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:8:3: error: use of undeclared identifier 'std'
+    8 |   std::string A, B;
+      |   ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:9:3: error: use of undeclared identifier 'puts'
+    9 |   puts("        eq , ne , gt , lt , ge , le");
+      |   ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:10:10: error: use of undeclared identifier 'std'
+   10 |   while (std::cin >> A >> B) {
+      |          ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:10:27: error: use of undeclared identifier 'B'
+   10 |   while (std::cin >> A >> B) {
+      |                           ^
+/tmp/codeqwen-str_cmp-c-cpp.cpp:11:16: error: use of undeclared identifier 'B'
+   11 |     compare(A, B);
+      |                ^
+9 errors generated.

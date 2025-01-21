@@ -1,0 +1,18 @@
+error[E0432]: unresolved import `fmt`
+ --> /tmp/yicoder2b-str_append-go-rs.rs:1:5
+  |
+1 | use fmt::print;
+  |     ^^^
+  |     |
+  |     unresolved import
+  |     help: a similar path exists: `std::fmt`
+
+error[E0432]: unresolved import `std::strings`
+ --> /tmp/yicoder2b-str_append-go-rs.rs:2:10
+  |
+2 | use std::strings::Builder;
+  |          ^^^^^^^ could not find `strings` in `std`
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0432`.

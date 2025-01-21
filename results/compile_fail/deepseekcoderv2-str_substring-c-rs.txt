@@ -1,0 +1,35 @@
+warning: unused import: `std::ffi::CString`
+ --> /tmp/deepseekcoderv2-str_substring-c-rs.rs:1:5
+  |
+1 | use std::ffi::CString;
+  |     ^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `std::ptr::null_mut`
+ --> /tmp/deepseekcoderv2-str_substring-c-rs.rs:2:5
+  |
+2 | use std::ptr::null_mut;
+  |     ^^^^^^^^^^^^^^^^^^
+
+error[E0308]: `if` and `else` have incompatible types
+  --> /tmp/deepseekcoderv2-str_substring-c-rs.rs:22:9
+   |
+19 |       let end = if m < 0 {
+   |  _______________-
+20 | |         s.len() as isize + m - n as isize
+   | |         --------------------------------- expected because of this
+21 | |     } else {
+22 | |         (n as isize + m) as usize
+   | |         ^^^^^^^^^^^^^^^^^^^^^^^^^ expected `isize`, found `usize`
+23 | |     };
+   | |_____- `if` and `else` have incompatible types
+   |
+help: you can convert a `usize` to an `isize` and panic if the converted value doesn't fit
+   |
+22 |         ((n as isize + m) as usize).try_into().unwrap()
+   |         +                         +++++++++++++++++++++
+
+error: aborting due to 1 previous error; 2 warnings emitted
+
+For more information about this error, try `rustc --explain E0308`.

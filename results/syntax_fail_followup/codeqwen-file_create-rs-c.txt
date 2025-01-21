@@ -1,0 +1,4 @@
+/tmp/codeqwen-file_create-rs-c.c:9:3: error: call to undeclared function 'creat'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    9 |   creat(path,
+      |   ^
+1 error generated.

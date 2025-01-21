@@ -1,0 +1,43 @@
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:5:17: error: expected namespace name
+    5 | using namespace filesystem;
+      |                 ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:9:12: error: implicit instantiation of undefined template 'std::basic_ifstream<char>'
+    9 |   ifstream in(oldname);
+      |            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:24:28: note: template is declared here
+   24 | class _LIBCPP_TEMPLATE_VIS basic_ifstream;
+      |                            ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:10:12: error: implicit instantiation of undefined template 'std::basic_ofstream<char>'
+   10 |   ofstream out(newname);
+      |            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:26:28: note: template is declared here
+   26 | class _LIBCPP_TEMPLATE_VIS basic_ofstream;
+      |                            ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:24:3: error: no matching function for call to 'remove'
+   24 |   remove(oldname);
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:265:6: note: candidate function not viable: no known conversion from 'string' (aka 'basic_string<char>') to 'const char *' for 1st argument
+  265 | int      remove(const char *);
+      |          ^      ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h:28:1: note: candidate function template not viable: requires 3 arguments, but 1 was provided
+   28 | remove(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value) {
+      | ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:25:3: error: no matching function for call to 'rename'
+   25 |   rename(newname, oldname);
+      |   ^~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:266:6: note: candidate function not viable: no known conversion from 'string' (aka 'basic_string<char>') to 'const char *' for 1st argument
+  266 | int      rename (const char *__old, const char *__new);
+      |          ^       ~~~~~~~~~~~~~~~~~
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:39:16: error: use of undeclared identifier 'current_path'
+   39 |   test("file", current_path() / "input.txt", current_path() / "output.txt");
+      |                ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:39:46: error: use of undeclared identifier 'current_path'
+   39 |   test("file", current_path() / "input.txt", current_path() / "output.txt");
+      |                                              ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:41:21: error: use of undeclared identifier 'current_path'
+   41 |   test("directory", current_path() / "docs" / "",
+      |                     ^
+/tmp/qwen2.5coder2b-file_rename-java-cpp.cpp:42:8: error: use of undeclared identifier 'current_path'
+   42 |        current_path() / "mydocs" / "");
+      |        ^
+9 errors generated.

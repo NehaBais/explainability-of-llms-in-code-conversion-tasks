@@ -1,0 +1,28 @@
+/tmp/codellama7b-str_substring-java-cpp.cpp:9:27: error: use of undeclared identifier 'n'
+    9 |   std::cout << str.substr(n, m) << "\n";
+      |                           ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:9:30: error: use of undeclared identifier 'm'
+    9 |   std::cout << str.substr(n, m) << "\n";
+      |                              ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:12:27: error: use of undeclared identifier 'n'
+   12 |   std::cout << str.substr(n) << "\n";
+      |                           ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:18:31: error: no member named 'indexOf' in 'std::string'
+   18 |   std::cout << str.substr(str.indexOf(c), m + 1) << "\n";
+      |                           ~~~ ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:18:39: error: use of undeclared identifier 'c'
+   18 |   std::cout << str.substr(str.indexOf(c), m + 1) << "\n";
+      |                                       ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:18:43: error: use of undeclared identifier 'm'
+   18 |   std::cout << str.substr(str.indexOf(c), m + 1) << "\n";
+      |                                           ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:21:31: error: no member named 'indexOf' in 'std::string'
+   21 |   std::cout << str.substr(str.indexOf(sub), m + 1) << "\n";
+      |                           ~~~ ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:21:39: error: use of undeclared identifier 'sub'
+   21 |   std::cout << str.substr(str.indexOf(sub), m + 1) << "\n";
+      |                                       ^
+/tmp/codellama7b-str_substring-java-cpp.cpp:21:45: error: use of undeclared identifier 'm'
+   21 |   std::cout << str.substr(str.indexOf(sub), m + 1) << "\n";
+      |                                             ^
+9 errors generated.

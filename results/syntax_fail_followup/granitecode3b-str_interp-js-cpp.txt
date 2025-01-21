@@ -1,0 +1,28 @@
+/tmp/granitecode3b-str_interp-js-cpp.cpp:1:9: error: expected "FILENAME" or <FILENAME>
+    1 | #include
+      |         ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:2:17: warning: using directive refers to implicitly-defined namespace 'std'
+    2 | using namespace std;
+      |                 ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:4:3: error: unknown type name 'string'
+    4 |   string original = "Mary had a X lamb";
+      |   ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:5:3: error: unknown type name 'string'
+    5 |   string little = "little";
+      |   ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:8:3: error: unknown type name 'string'
+    8 |   string replaced = original.replace(original.find("X"), 1, little);
+      |   ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:10:3: error: use of undeclared identifier 'cout'
+   10 |   cout << "Original string: " << original << endl;
+      |   ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:10:46: error: use of undeclared identifier 'endl'
+   10 |   cout << "Original string: " << original << endl;
+      |                                              ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:11:3: error: use of undeclared identifier 'cout'
+   11 |   cout << "Replaced string: " << replaced << endl;
+      |   ^
+/tmp/granitecode3b-str_interp-js-cpp.cpp:11:46: error: use of undeclared identifier 'endl'
+   11 |   cout << "Replaced string: " << replaced << endl;
+      |                                              ^
+1 warning and 8 errors generated.

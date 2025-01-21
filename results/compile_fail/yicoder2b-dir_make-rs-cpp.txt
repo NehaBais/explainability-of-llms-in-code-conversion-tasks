@@ -1,0 +1,22 @@
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:9:22: error: implicit instantiation of undefined template 'std::basic_istringstream<char>'
+    9 |   std::istringstream iss(s);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h:25:28: note: template is declared here
+   25 | class _LIBCPP_TEMPLATE_VIS basic_istringstream;
+      |                            ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:18:3: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   18 |   auto split_path = split(path, '/');
+      |   ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:26:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   26 |   for (const auto &folder : folders_to_create) {
+      |              ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:26:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+   26 |   for (const auto &folder : folders_to_create) {
+      |                           ^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:28:15: error: no member named 'filesystem' in namespace 'std'
+   28 |     if (!std::filesystem::exists(currentDir)) {
+      |          ~~~~~^
+/tmp/yicoder2b-dir_make-rs-cpp.cpp:30:14: error: no member named 'filesystem' in namespace 'std'
+   30 |         std::filesystem::create_directory(currentDir);
+      |         ~~~~~^
+3 warnings and 3 errors generated.

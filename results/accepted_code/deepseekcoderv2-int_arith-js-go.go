@@ -1,23 +1,42 @@
-package main 
-import "fmt"
+package main
+
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
 func main() {
-    // Get two integers from the user
-    var a, b int 
-    fmt.Print("Enter first integer: ") 
-    fmt.Scanln(&a)
-    fmt.Print("Enter second integer: ") 
-    fmt.Scanln(&b)
-    
-    // Calculate and display sum, difference, product, quotient, remainder, and exponentiation (if the operator exists) 
-    sum := a + b 
-    difference := a - b 
-    product := a * b 
-    division := float64(a) / float64(b) // Cast to float64 to avoid integer division quotient := int(float64(a)/float64(b)) // Rounds towards zero remainder := a % b fmt.Printf("Sum: %d\n", sum) 
-    fmt.Printf("Difference: %d\n", difference) 
-    fmt.Printf("Product: %d\n", product) 
-    fmt.Printf("Quotient: %d\n", quotient) 
-    fmt.Printf("Remainder: %d\n", remainder) 
-    
-    // Check if exponentiation exists and calculate it (if it exists)
-    var exp int = 0 for i := 1; i <= a; i++ { 
-        exp += b } fmt.Printf("Exponentiation: %d^%d = %d\n",a,b,exp) }
+	if len(os.Args) < 3 {
+		fmt.Println("Please provide two integers as arguments.")
+		return
+	}
+
+	a, err := strconv.Atoi(os.Args[1])
+	if err != nil {
+		fmt.Println("Invalid input for a:", err)
+		return
+	}
+
+	b, err := strconv.Atoi(os.Args[2])
+	if err != nil {
+		fmt.Println("Invalid input for b:", err)
+		return
+	}
+
+	sum := a + b
+	difference := a - b
+	product := a * b
+	division := float64(a) / float64(b)
+	remainder := a % b
+	exponentiation := math.Pow(float64(a), float64(b))
+
+	fmt.Printf("a + b = %d\n", sum)
+	fmt.Printf("a - b = %d\n", difference)
+	fmt.Printf("a * b = %d\n", product)
+	fmt.Printf("a / b = %.0f\n", division) // Golang does not have a direct way to print float64 without scientific notation, so we use %.0f for integer division result
+	fmt.Printf("a %% b = %d\n", remainder)
+	if len(os.Args) > 3 {
+		fmt.Printf("a ^ b = %.0f\n", exponentiation) // Assuming Golang supports exponentiation, otherwise you might need to use a library for it
+	}
+}

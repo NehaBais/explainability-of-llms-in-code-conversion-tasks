@@ -1,0 +1,4 @@
+/tmp/yicoder9b-file_create-js-c.c:13:5: error: call to undeclared function 'close'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   13 |     close(fd); // File created successfully. No need to write anything as it is
+      |     ^
+1 error generated.

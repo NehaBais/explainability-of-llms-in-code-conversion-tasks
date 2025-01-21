@@ -1,0 +1,14 @@
+error[E0433]: failed to resolve: use of undeclared type `Permissions`
+ --> /tmp/codellama7b-dir_make-go-rs.rs:6:31
+  |
+6 |     fs::set_permissions(path, Permissions::from_mode(mode))?;
+  |                               ^^^^^^^^^^^ use of undeclared type `Permissions`
+  |
+help: consider importing this struct
+  |
+1 + use fs::Permissions;
+  |
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.
