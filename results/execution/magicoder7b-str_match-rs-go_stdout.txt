@@ -1,0 +1,4 @@
+Found match
+Found match at pos 0
+Did not find any matches
+Found match

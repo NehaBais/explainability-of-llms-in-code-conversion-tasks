@@ -1,0 +1,6 @@
+Sum: 		25
+Difference: 	11
+Product: 	126
+2.571428537
+Remainder: 	4
+Exponentiation:   21

@@ -1,0 +1,14 @@
+Factors of -1 not computed
+Factors of 0 not computed
+Factors of 1: [1]
+Number of factors = 1
+Factors of 1: [1, 4]
+Number of factors = 2
+Factors of 3: [1]
+Number of factors = 1
+Factors of 53: [1]
+Number of factors = 1
+Factors of 5: [1, 9, 81]
+Number of factors = 3
+Factors of 1: [1, 4, 16, 256, 65536, 4294967296, 0]
+Number of factors = 7

@@ -1,0 +1,5 @@
+c文字化けdef
+c文字化けdef
+abc文字化けde
+bc文字化けdef
+けdef

@@ -1,0 +1,8 @@
+a and b: 0
+a or b: 15
+a xor b: 15
+not a: -11
+a << n: 320
+a >> n: 0
+c >> b: 0
+

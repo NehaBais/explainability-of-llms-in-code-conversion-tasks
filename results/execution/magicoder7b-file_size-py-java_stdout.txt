@@ -1,0 +1,3 @@
+Size of input.txt in the current directory: 663
+The file does not exist or is a directory.
+Size of input.txt in the root directory: -1

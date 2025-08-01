@@ -1,0 +1,3 @@
+abc
+The length of string is 3
+defabc

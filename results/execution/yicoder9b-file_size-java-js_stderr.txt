@@ -1,0 +1,12 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpngjlvcmb/yicoder9b-file_size-java-js.js:5
+  if (err) throw err;
+           ^
+
+[Error: ENOENT: no such file or directory, stat 'file.txt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'file.txt'
+}
+
+Node.js v23.6.1

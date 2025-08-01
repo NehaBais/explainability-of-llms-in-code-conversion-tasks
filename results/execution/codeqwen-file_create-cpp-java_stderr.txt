@@ -1,0 +1,9 @@
+Exception in thread "main" java.nio.file.FileSystemException: /docs: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:463)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:808)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:794)
+	at Main.main(Main.java:10)

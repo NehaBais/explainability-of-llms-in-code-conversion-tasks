@@ -1,0 +1,4 @@
+True: first string starts with second string
+False: first string does not end with second string
+True: second string is found at index 0
+True: second string is found at index 0

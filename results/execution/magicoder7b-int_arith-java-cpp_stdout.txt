@@ -1,0 +1,5 @@
+Enter two integers: Sum = 3
+Difference = 1
+Product = 2
+Quotient (discards fractional result) = 2
+Remainder (same sign as first operand) = 0

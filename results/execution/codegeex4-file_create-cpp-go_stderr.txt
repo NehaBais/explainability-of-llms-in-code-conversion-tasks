@@ -1,0 +1,2 @@
+2025/07/25 15:53:59 open /output.txt: read-only file system
+exit status 1

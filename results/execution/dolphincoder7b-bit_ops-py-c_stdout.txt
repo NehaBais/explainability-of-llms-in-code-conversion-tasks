@@ -1,0 +1,24 @@
+AND:    0b0000001B 
+&  0b0000007D 
+= 0b00000019
+
+OR:     0b0000001B 
+|  0b0000007D 
+= 0b0000007F
+
+XOR:    0b0000001B 
+^  0b0000007D 
+= 0b00000066
+
+NOT:    ~ 0b0000001B 
+= 0bFFFFFFE4
+
+RIGHT SHIFT:
+Rotate right:   0b0000001B -> 0b00000D8D 
+Rotate right:   0b0000001B -> 0b000006C6 
+Rotate right:   0b0000001B -> 0b000001B1 
+
+LEFT SHIFT:
+Rotate left:  0b0000001B -> 0b00000036 
+Rotate left:  0b0000001B -> 0b0000006C 
+Rotate left:  0b0000001B -> 0b000000B1 

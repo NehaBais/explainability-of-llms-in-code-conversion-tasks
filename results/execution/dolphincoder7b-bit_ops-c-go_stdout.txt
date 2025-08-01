@@ -1,0 +1,7 @@
+a and b: 0
+a or b: 192
+a xor b: 192
+not a: -129
+a << n: 0
+a >> n: 0
+c >> b: 0

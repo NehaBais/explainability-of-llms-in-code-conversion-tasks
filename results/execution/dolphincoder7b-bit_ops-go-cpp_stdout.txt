@@ -1,0 +1,11 @@
+a:   fffffe34
+b:   6
+and: 4
+or:  fffffe36
+xor: fffffe32
+not: 1cb
+shl: ffff8d00
+shr: fffffff8
+las: ffff8d00
+ras: fffffff8
+rol: ffff8d00ror: 3fffff8

@@ -1,0 +1,23 @@
+node:fs:1022
+  binding.rename(
+          ^
+
+Error: ENOENT: no such file or directory, rename '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5pks4ige/input.txt' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5pks4ige/output.txt'
+    at Object.renameSync (node:fs:1022:11)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5pks4ige/magicoder7b-file_rename-py-js.js:10:4)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5pks4ige/input.txt',
+  dest: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5pks4ige/output.txt'
+}
+
+Node.js v23.6.1

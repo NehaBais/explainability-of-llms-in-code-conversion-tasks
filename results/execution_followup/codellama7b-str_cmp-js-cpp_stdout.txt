@@ -1,0 +1,4 @@
+Strings are equal
+Strings are equal
+str1 and str2 are equal
+str1 contains str2

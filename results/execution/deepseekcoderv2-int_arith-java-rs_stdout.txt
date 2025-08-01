@@ -1,0 +1,2 @@
+Enter two integers:
+Please enter exactly two integers.

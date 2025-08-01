@@ -1,0 +1,6 @@
+Starts with Test ( Hello,Hell ) : true
+Ends with Test ( Code,ode ) : true
+Contains Test ( Google,msn ) : false
+Find Occurrences Test ( HelloHello,Hell ):
+Found at position: 0
+Found at position: 5

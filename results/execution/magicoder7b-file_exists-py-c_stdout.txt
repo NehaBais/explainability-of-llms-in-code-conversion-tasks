@@ -1,0 +1,5 @@
+Current working directory: 
+'input.txt' does not exist.
+'docs' directory is not accessible.
+/'/input.txt' does not exist.
+/'/docs' directory is not accessible.

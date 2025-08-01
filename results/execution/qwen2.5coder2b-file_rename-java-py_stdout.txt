@@ -1,0 +1,6 @@
+The following file called input.txt was renamed as output.txt.
+Failed to rename /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/input.txt to /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/output.txt: [Errno 2] No such file or directory: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/input.txt' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/output.txt'
+The following file called /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/input.txt could not be renamed into /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/output.txt.
+The following directory called docs was renamed as mydocs.
+Failed to rename /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/docs to /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/mydocs: [Errno 2] No such file or directory: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/docs' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/mydocs'
+The following directory called /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/docs could not be renamed into /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8fncyooa/mydocs.

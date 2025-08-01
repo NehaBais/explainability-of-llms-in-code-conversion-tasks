@@ -1,0 +1,9 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x2 addr=0x0 pc=0x102c1a6cc]
+
+goroutine 1 [running]:
+os.(*File).Name(...)
+	/opt/homebrew/Cellar/go/1.23.0/libexec/src/os/file.go:62
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp0dx1y3dq/codellama7b-file_create-js-go.go:22 +0x12c
+exit status 2

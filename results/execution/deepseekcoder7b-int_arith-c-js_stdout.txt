@@ -1,0 +1,6 @@
+a+b=NaN
+a-b=NaN
+a*b=NaN
+a/b=NaN
+Remainder has positive or zero sign
+Exponentiation=NaN

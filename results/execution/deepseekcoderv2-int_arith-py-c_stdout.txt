@@ -1,0 +1,8 @@
+Enter first integer: Enter second integer: Sum: 		 13
+Difference: 	 9
+Product: 	 22
+Integer quotient: 	 5
+Float quotient: 	 5.500000
+Whole Remainder: 	 1
+Actual Remainder: 	 1
+Exponentiation: 	 121

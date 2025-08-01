@@ -1,0 +1,2 @@
+Size of input.txt in bytes: 410
+Size of root directory in bytes: 704

@@ -1,0 +1,4 @@
+1: Does 'tacoloco' start with 'co'? No.
+2: Is 'co' contained in 'tacoloco'? No.
+   In fact, it happens 2 times within 'tacoloco', at indexes 2, 6.
+3: Does 'tacoloco' end with 'co'? Yes.

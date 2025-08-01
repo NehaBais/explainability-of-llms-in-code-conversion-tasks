@@ -1,0 +1,4 @@
+Enter first integer: Enter second integer: Sum =  4
+Difference =  0
+Product =  4
+Quotient =  1.0 remainder  0

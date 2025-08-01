@@ -1,0 +1,15 @@
+"abcd" starts with "ab": True
+"abcd" contains "ab": True
+"abcd" ends with "ab": False
+First occurrence of "ab" in "abcd": 0
+"abcd" starts with "zn": False
+"abcd" contains "zn": False
+"abcd" ends with "zn": False
+"abab" starts with "bb": False
+"abab" contains "bb": False
+"abab" ends with "bb": False
+"abab" starts with "ab": True
+"abab" contains "ab": True
+"abab" ends with "ab": True
+First occurrence of "ab" in "abab": 0
+Occurrence 0 of "ab" in "abab": 2

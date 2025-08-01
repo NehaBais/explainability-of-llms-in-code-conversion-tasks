@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpcfqi5h2a/granitecode3b-int_factors-go-py.py", line 1, in <module>
+    print(f"Factors of {n} not computed")
+                        ^
+NameError: name 'n' is not defined

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp0u5uss3g/qwen2.5coder2b-str_cmp-go-py.py", line 67, in <module>
+    eqf.compare(
+    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'compare'

@@ -1,0 +1,13 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvwnwedsn/codegemma7b-file_rename-py-js.js:20
+  if (err) throw err;
+           ^
+
+[Error: ENOENT: no such file or directory, rename '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvwnwedsn/docs' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvwnwedsn/mydocs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvwnwedsn/docs',
+  dest: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvwnwedsn/mydocs'
+}
+
+Node.js v23.6.1

@@ -1,0 +1,3 @@
+Starts with Test ( Hello,Hell ) : Yes
+Ends with Test ( Code,ode ) : Yes
+Contains Test ( Google,msn ) : No

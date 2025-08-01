@@ -1,0 +1,7 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x2 addr=0x38 pc=0x10444d5b4]
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpqri6d91m/yicoder2b-file_size-c-go.go:16 +0x84
+exit status 2

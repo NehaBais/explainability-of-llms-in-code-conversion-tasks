@@ -1,0 +1,2 @@
+String 1 starts with string 2
+First occurrence of 'abab' in String 1 is at position: 0

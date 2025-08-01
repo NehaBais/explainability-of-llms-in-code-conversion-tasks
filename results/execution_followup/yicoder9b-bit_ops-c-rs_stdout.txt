@@ -1,0 +1,9 @@
+a and b: 2
+a or b: -5
+a xor b: -7
+not a: 4
+a << n: -20
+a >> n: -2
+c >> b: 1073741822
+a left rotated: -1073741825
+a right rotated: -1073741826

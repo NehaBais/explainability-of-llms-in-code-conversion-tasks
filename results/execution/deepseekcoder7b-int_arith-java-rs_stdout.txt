@@ -1,0 +1,6 @@
+Please enter two integers: 
+9 + 8  = 17
+9 - 8  = 1
+9 * 8 = 72
+Quotient of 9 / 8 = 1
+Remainder of 9 / 8  = 1 

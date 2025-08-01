@@ -1,0 +1,5 @@
+Does abcd start with ab? True
+abcd contains ab starting from position 0
+Does abcd end with ab? False
+Found ab in abab at position 0
+Found ab in abab at position 2

@@ -1,0 +1,6 @@
+Current working directory: true
+File input.txt exists:  true
+Zero length file zero_length.txt exists:  false
+Directory docs exists:  false
+File docs/input.txt exists:  false
+File input.txt size:  true

@@ -1,0 +1,2 @@
+Error: Could not find or load main class BitwiseOperations
+Caused by: java.lang.NoClassDefFoundError: BitwiseOperations (wrong name: main/BitwiseOperations)

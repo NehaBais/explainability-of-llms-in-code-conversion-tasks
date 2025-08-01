@@ -1,0 +1,9 @@
+a and b: 13428576
+a or b:  -1
+a xor b: -13428577
+not a:  -13428577
+a shl b:  0
+a shr b:  0
+a lsr b:  0
+a rol b:  6714288
+a ror b:  26857152

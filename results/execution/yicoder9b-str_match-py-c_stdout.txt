@@ -1,0 +1,3 @@
+s1 starts with s2
+s1 does not end with s2
+s2 found in s1 at position 1

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp5uuddr6g/granitecode3b-str_substring-rs-py.py", line 6, in <module>
+    print("".join(s.chars()[n : n + m]))
+                  ^^^^^^^
+AttributeError: 'str' object has no attribute 'chars'

@@ -1,0 +1,4 @@
+Enter two strings:
+Comparing strings: abc and def
+abc is not exactly equal to def
+abc is not case insensitive equal to def

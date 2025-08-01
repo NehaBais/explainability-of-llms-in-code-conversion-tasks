@@ -1,0 +1,6 @@
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpdqs0fn_5/codellama7b-int_arith-java-go.go:16 +0x2a4
+exit status 2

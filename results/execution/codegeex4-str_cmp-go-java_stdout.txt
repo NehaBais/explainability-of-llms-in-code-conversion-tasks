@@ -1,0 +1,4 @@
+cat is different from dog
+cat is lexicographically less than dog
+cat is different from CAT
+cat is equal to Cat ignoring case

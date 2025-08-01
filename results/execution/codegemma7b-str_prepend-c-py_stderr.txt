@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpy2t3a1ze/codegemma7b-str_prepend-c-py.py", line 3, in <module>
+    dup = str.copy()
+          ^^^^^^^^
+AttributeError: 'str' object has no attribute 'copy'

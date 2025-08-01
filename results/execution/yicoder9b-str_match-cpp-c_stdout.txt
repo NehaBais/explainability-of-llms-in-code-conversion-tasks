@@ -1,0 +1,3 @@
+s1 starts with s3
+s3 is found in s2 at location 1 
+s3 is found in s2 at location 3 

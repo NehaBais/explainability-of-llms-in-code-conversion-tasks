@@ -1,0 +1,16 @@
+1.2.Foo and 1.3.Bar are not exactly equal.
+1.2.Foo and 1.3.Bar are inequal.
+1.2.Foo is ordered before 1.3.Bar.
+1.2.Foo is not ordered after 1.3.Bar.
+1.2.foo and 1.3.bar are not exactly equal.
+1.2.foo and 1.3.bar are inequal.
+1.2.foo is ordered before 1.3.bar.
+1.2.foo is not ordered after 1.3.bar.
+1.2 and 1.3 are not exactly equal.
+1.2 and 1.3 are inequal.
+1.2 is ordered before 1.3.bar.
+1.2 is not ordered after 1.3.bar.
+hello and helo are not lexically equal.
+hello and helo are not lexically greater than.
+hello and helo are lexically less than.
+hello is less than world

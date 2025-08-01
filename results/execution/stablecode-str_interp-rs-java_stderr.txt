@@ -1,0 +1,10 @@
+Exception in thread "main" java.util.IllegalFormatArgumentIndexException: Illegal format argument index = 0
+	at java.base/java.util.Formatter$FormatSpecifier.index(Formatter.java:3070)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:3156)
+	at java.base/java.util.Formatter$FormatSpecifierParser.parse(Formatter.java:2955)
+	at java.base/java.util.Formatter.parse(Formatter.java:2854)
+	at java.base/java.util.Formatter.format(Formatter.java:2784)
+	at java.base/java.io.PrintStream.implFormat(PrintStream.java:1369)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1348)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:1247)
+	at Main.main(Main.java:6)

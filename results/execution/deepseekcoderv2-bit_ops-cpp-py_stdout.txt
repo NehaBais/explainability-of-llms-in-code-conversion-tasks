@@ -1,0 +1,9 @@
+a and b: 0b1
+a or b: 0b111
+a xor b: 0b110
+not a: -0b110
+a shl b: 0b101000
+a shr b: 0b0
+a lsr b: 0b0
+a rol b: 0b101000
+a ror b: 0b10100000000000000000000000000000

@@ -1,0 +1,4 @@
+Successfully renamed input.txt to output.txt
+Successfully renamed docs to mydocs
+/input.txt does not exist.
+/docs does not exist or is not a directory.

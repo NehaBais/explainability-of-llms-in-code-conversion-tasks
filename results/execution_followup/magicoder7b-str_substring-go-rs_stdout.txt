@@ -1,0 +1,7 @@
+Index: [0, 1, 2, 3, 4, 5, 6, 7]
+String: ABCDEFGH
+Start 2: 2, length 3: CDE
+Start 2: up to the end: "CDEFGH"
+All but last: "ABCDEFG"
+Start 'D', length 3: DEF
+Start "DE", length 3: DEF

@@ -1,0 +1,1 @@
+open /output.txt3067836449: read-only file system

@@ -1,0 +1,1 @@
+Enter integer 1: Enter integer 2: 10 is greater than 2

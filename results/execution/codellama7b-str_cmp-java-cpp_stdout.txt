@@ -1,0 +1,3 @@
+'A' and 'B' are lexically equal.
+'A' and 'B' are case-insensitive lexically equal.
+'A' is not lexically before or after 'B'.

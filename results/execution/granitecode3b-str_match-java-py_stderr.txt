@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpglc_vsn4/granitecode3b-str_match-java-py.py", line 4, in <module>
+    print("abab".contains("bb"))  # Output: False
+          ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'contains'

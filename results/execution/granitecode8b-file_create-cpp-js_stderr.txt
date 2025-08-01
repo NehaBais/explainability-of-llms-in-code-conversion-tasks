@@ -1,0 +1,32 @@
+Error creating file or directory: Error: EISDIR: illegal operation on a directory, open '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9'
+    at Object.writeFileSync (node:fs:2427:20)
+    at createEmptyFileAndDirectory (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9/granitecode8b-file_create-cpp-js.js:7:8)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9/granitecode8b-file_create-cpp-js.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5) {
+  errno: -21,
+  code: 'EISDIR',
+  syscall: 'open',
+  path: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9'
+}
+Error creating file or directory: Error: EEXIST: file already exists, open '/'
+    at Object.writeFileSync (node:fs:2427:20)
+    at createEmptyFileAndDirectory (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9/granitecode8b-file_create-cpp-js.js:7:8)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm3jg96j9/granitecode8b-file_create-cpp-js.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5) {
+  errno: -17,
+  code: 'EEXIST',
+  syscall: 'open',
+  path: '/'
+}

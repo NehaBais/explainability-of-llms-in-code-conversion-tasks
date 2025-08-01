@@ -1,0 +1,8 @@
+input.txt
+ exists with a file size of 691 bytes
+/input.txt
+/input.txt does not exist
+docs/input.txt
+docs/input.txt does not exist
+docs/zero_length.txt
+docs/zero_length.txt does not exist

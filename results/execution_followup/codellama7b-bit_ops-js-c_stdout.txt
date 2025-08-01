@@ -1,0 +1,7 @@
+a AND b: 4
+a OR b: 7
+a XOR b: 3
+NOT a: -5
+a << b: 512
+a >> b: 0
+a >>> b: 0

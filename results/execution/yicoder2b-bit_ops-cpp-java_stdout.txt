@@ -1,0 +1,7 @@
+a & b: 2
+a | b:  11
+a ^ b: 9
+not a:   -11
+a shl b: 80
+a shr b: 1
+a lsr b: 1

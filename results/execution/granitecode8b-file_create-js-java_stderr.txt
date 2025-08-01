@@ -1,0 +1,8 @@
+Exception in thread "main" java.nio.file.FileSystemException: /output.txt: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.createFile(Files.java:658)
+	at FileCreator.main(FileCreator.java:15)

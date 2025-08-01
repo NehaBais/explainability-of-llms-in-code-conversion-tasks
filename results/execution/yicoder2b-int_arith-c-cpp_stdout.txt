@@ -1,0 +1,5 @@
+Enter first integer: Enter second integer: a + b = 7
+a - b = -1
+a * b = 12
+a / b = 0.75
+a %% b = 7

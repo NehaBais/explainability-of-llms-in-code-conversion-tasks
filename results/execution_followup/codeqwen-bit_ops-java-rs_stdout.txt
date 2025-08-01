@@ -1,0 +1,9 @@
+A AND b: 1
+A OR b: 7
+A XOR b: 6
+NOT a: false
+A << b: 40
+A >> b: 0
+A >>> b (logical): 0
+A rol b: 101000
+A ror b: 10100000000000000000000000000000

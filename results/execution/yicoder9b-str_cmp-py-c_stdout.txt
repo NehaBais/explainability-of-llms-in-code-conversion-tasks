@@ -1,0 +1,12 @@
+
+YUP is of type 3 and YUP is of type 3
+YUP is greater than or equal to YUP
+YUP is equal to YUP
+
+BALL is of type 4 and BELL is of type 4
+BALL is strictly less than  BELL
+BALL is not equal to BELL
+
+24 is of type 2 and 123 is of type 3
+24 is greater than or equal to 123
+24 is not equal to 123

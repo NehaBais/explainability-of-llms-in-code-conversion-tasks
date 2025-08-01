@@ -1,0 +1,12 @@
+Exception in thread "main" java.util.regex.PatternSyntaxException: Unclosed group near index 9
+\Qabr\E(?=\w*
+         ^
+	at java.base/java.util.regex.Pattern.error(Pattern.java:2204)
+	at java.base/java.util.regex.Pattern.accept(Pattern.java:2054)
+	at java.base/java.util.regex.Pattern.group0(Pattern.java:3232)
+	at java.base/java.util.regex.Pattern.sequence(Pattern.java:2300)
+	at java.base/java.util.regex.Pattern.expr(Pattern.java:2245)
+	at java.base/java.util.regex.Pattern.compile(Pattern.java:1945)
+	at java.base/java.util.regex.Pattern.<init>(Pattern.java:1576)
+	at java.base/java.util.regex.Pattern.compile(Pattern.java:1101)
+	at Main.main(Main.java:19)

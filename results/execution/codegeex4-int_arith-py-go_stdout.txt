@@ -1,0 +1,8 @@
+Sum:  5
+Difference:  -1
+Product:  6
+Integer quotient (towards zero):  0
+Float quotient:  0.6666666666666666
+Whole Remainder (always positive): 2
+Actual Remainder:  2
+Exponentiation:  8

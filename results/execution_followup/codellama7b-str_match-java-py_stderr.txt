@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvohu0iqk/codellama7b-str_match-java-py.py", line 9, in <module>
+    print(str3.contains(str4))  # returns False
+          ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'contains'

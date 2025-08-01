@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpywxjqm9n/codegemma7b-file_rename-java-py.py", line 2, in <module>
+    f"The following {type} called {oldname}"
+                                   ^^^^^^^
+NameError: name 'oldname' is not defined

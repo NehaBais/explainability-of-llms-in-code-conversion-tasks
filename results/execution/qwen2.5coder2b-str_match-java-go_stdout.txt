@@ -1,0 +1,4 @@
+startsWith: true
+endsWith: false
+contains: true
+indexOf first occurrence of 'ab' is 0

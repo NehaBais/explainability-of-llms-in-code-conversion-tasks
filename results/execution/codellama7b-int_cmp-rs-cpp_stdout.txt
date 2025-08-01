@@ -1,0 +1,1 @@
+Enter two integers: The first number is less than the second number

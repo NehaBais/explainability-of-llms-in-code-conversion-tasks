@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmptvnuqdox/yicoder9b-file_create-cpp-py.py", line 6, in <module>
+    Path("/output.txt").touch()  # File at root level
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1303, in touch
+    fd = os.open(self, flags, mode)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/output.txt'

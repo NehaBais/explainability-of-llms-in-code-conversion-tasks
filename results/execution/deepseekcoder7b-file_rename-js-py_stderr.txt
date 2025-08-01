@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpaodalpal/deepseekcoder7b-file_rename-js-py.py", line 12, in <module>
+    os.renames("input.txt", "output.txt")
+  File "<frozen os>", line 272, in renames
+FileNotFoundError: [Errno 2] No such file or directory: 'input.txt' -> 'output.txt'

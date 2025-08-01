@@ -1,0 +1,2 @@
+Original wide char string: some wide char string
+Substring starting from first '111': ome wide char string

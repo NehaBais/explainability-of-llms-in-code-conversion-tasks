@@ -1,0 +1,2 @@
+touch: output.txt: Read-only file system
+mkdir: docs: Read-only file system

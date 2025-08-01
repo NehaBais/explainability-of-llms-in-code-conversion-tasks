@@ -1,0 +1,4 @@
+input.txt: No such file or directory
+/input.txt: No such file or directory
+docs: No such file or directory
+/docs: No such file or directory

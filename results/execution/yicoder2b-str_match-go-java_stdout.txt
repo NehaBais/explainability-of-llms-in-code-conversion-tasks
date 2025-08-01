@@ -1,0 +1,5 @@
+abracadabra starts with abr: true
+abracadabra contains abr: true
+Found abr at location 7
+abr and that's all
+abracadabra ends with abr: false

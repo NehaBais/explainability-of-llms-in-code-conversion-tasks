@@ -1,0 +1,12 @@
+a AND b: 1
+a OR b: 1
+NOT a: 0
+a AND b: 0
+a OR b: 0
+NOT a: 1
+a AND b: 0
+a OR b: 1
+NOT a: 0
+a AND b: 0
+a OR b: 1
+NOT a: 1

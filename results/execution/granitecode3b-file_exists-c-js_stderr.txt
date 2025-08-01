@@ -1,0 +1,22 @@
+node:fs:1737
+  const stats = binding.stat(
+                        ^
+
+Error: ENOENT: no such file or directory, stat 'input.txt'
+    at Object.statSync (node:fs:1737:25)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpj3y_g0ro/granitecode3b-file_exists-c-js.js:3:40)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'input.txt'
+}
+
+Node.js v23.6.1

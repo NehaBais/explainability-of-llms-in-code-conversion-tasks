@@ -1,0 +1,4 @@
+File input.txt exists!
+/input.txt does not exist
+Directory docs exists!
+/docs does not exist

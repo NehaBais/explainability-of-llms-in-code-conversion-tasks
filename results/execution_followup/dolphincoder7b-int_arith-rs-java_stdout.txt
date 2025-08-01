@@ -1,0 +1,5 @@
+Enter two integers: sum:               3
+difference:        -1
+product:           2
+integer quotient:  0 (rounded towards zero)
+remainder:         1 (same sign as first operand)

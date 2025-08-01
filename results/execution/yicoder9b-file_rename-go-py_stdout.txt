@@ -1,0 +1,2 @@
+[Errno 2] No such file or directory: '/input.txt' -> '/output.txt'
+[Errno 2] No such file or directory: '/docs' -> '/mydocs'

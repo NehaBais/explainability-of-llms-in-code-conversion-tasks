@@ -1,0 +1,9 @@
+File move error Error: ENOENT: no such file or directory, rename '/input.txt' -> '/output.txt'
+    at async Object.rename (node:internal/fs/promises:784:10)
+    at async renameFiles (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8r5jmqou/codegeex4-file_rename-rs-js.js:8:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/input.txt',
+  dest: '/output.txt'
+}

@@ -1,0 +1,7 @@
+a AND b: 0
+a OR b: 30
+a XOR b: 30
+NOT a: -11
+a << b: 10485760
+a >> b: 0
+a >>> b: 0

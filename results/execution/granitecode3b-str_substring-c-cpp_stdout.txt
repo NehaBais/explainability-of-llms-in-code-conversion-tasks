@@ -1,0 +1,5 @@
+substring(s, 12, 5): short
+substring(s, 6, -1): 
+str_wholeless1(s): hello world shortest progra
+str_fromch(s, 'w', 5): world
+str_fromstr(s, "ro", 3): rog

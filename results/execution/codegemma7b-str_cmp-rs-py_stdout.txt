@@ -1,0 +1,4 @@
+The strings are not equal
+The first string is lexically after the second
+The first string is lexically before the second (case-sensitive)
+The first string is numerically smaller than the second

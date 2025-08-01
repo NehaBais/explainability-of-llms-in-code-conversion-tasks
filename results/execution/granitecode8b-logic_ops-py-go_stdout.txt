@@ -1,0 +1,1 @@
+a and b: true and false is falsena or b: true or false is truennnot a: not true is falsea and b: false and true is falsena or b: false or true is truennnot a: not false is truea and b: true and true is truena or b: true or true is truennnot a: not true is falsea and b: false and false is falsena or b: false or false is falsennnot a: not false is true

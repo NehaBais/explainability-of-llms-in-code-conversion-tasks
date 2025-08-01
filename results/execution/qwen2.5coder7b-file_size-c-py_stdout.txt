@@ -1,0 +1,2 @@
+File size of input.txt: 518 bytes
+No input.txt in the file system root.

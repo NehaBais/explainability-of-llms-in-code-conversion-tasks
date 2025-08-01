@@ -1,0 +1,2 @@
+Enter two integers separated by a space: 
+10 is greater than 2

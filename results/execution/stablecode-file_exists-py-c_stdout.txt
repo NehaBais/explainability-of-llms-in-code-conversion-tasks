@@ -1,0 +1,3 @@
+Does 'input.txt' exist in the current working directory? No
+Does 'input.txt' exist at the specified path? No
+Does 'docs' exist at the specified path? No

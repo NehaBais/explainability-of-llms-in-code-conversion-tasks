@@ -1,0 +1,2 @@
+Error: docs/input.txt does not exist or not accessible. Error: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+Error: /docs/input.txt does not exist or not accessible. Error: Os { code: 2, kind: NotFound, message: "No such file or directory" }

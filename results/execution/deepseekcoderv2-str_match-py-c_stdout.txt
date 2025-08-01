@@ -1,0 +1,7 @@
+startsWith: True
+endswith: False
+contains: False
+contains multiple: True
+find: Not found
+find: 0
+find multiple: 2

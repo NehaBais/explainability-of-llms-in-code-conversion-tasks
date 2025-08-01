@@ -1,0 +1,4 @@
+Does 'abcd' start with 'ab': yes
+Does 'abcd' contain 'bb': no
+Does 'abcd' end with 'zn': no
+No match found

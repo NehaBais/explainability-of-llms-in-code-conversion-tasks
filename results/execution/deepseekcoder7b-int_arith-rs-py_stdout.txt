@@ -1,0 +1,5 @@
+Enter the first integer: Enter the second integer: sum:               5
+difference:        -1
+product:           6
+integer quotient:  0
+remainder:         2

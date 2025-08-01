@@ -1,0 +1,29 @@
+    AND:     0b00011011 
+           & 0b01111101 
+           = 0b25.toString(2).padStart(width, '0')}
+    OR:      0b00011011 
+           | 0b01111101 
+           = 0b127.toString(2).padStart(width, '0')}
+    XOR:     0b00011011 
+           ^ 0b01111101 
+           = 0b102.toString(2).padStart(width, '0')}
+    NOT:   ~ 0b00011011 
+           = 0b228.toString(2).padStart(width, '0')}
+    SHIFTS
+      RIGHT:   0b00011011 >> 1
+             = 0b13.toString(2).padStart(width, '0')
+      LEFT:    0b00011011 << 1
+             = 0b54.toString(2).padStart(width, '0')
+    SIGN-EXTENDING ARITHMETIC SHIFT RIGHT
+               asr(8, 0b00011011, 1)
+               =      0b00001101
+               asr(8, 0b10011011, 1)
+               =      0b11001101
+               asr(8, 0b00011011, 2)
+               =      0b00000110
+               asr(8, 0b10011011, 2)
+               =      0b01100110
+               asr(8, 0b00011011, 4)
+               =      0b00000001
+               asr(8, 0b10011011, 4)
+               =      0b00011001

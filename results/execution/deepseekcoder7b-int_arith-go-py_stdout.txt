@@ -1,0 +1,6 @@
+Enter first integer: Enter second integer: 8 + 9 = 17
+8 - 9 = -1
+8 * 9 = 72
+8 / 9 = 0 (rounding towards zero)
+8 % 9 = 8 (same sign as first operand)
+8 ** 9 = 134217728 (exponentiation operation)

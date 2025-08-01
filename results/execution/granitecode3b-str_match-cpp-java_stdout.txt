@@ -1,0 +1,3 @@
+s1.startsWith(s3): true
+s1.endsWith(s3): false
+s2 contains s3 at index 0

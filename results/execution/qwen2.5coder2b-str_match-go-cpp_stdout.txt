@@ -1,0 +1,5 @@
+1. abracadabra starts with abr: Yes
+2. abracadabra contains abr: Yes, found at index: 0
+2.1. Found next occurrence at index: 0
+2.1. Found next occurrence at index: 7
+3. abracadabra ends with abr: No

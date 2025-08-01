@@ -1,0 +1,6 @@
+The file called input.txt was renamed as output.txt.
+Error occurred: [Errno 2] No such file or directory: '/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/input.txt' -> '/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/output.txt'
+The file called /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/input.txt could not be renamed into /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/output.txt.
+The directory called docs was renamed as mydocs.
+Error occurred: [Errno 2] No such file or directory: '/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/docs' -> '/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/mydocs'
+The directory called /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/docs could not be renamed into /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9gd8334t/mydocs.

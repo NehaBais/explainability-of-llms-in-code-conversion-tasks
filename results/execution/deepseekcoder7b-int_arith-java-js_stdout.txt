@@ -1,0 +1,7 @@
+Enter first integer:
+Enter second integer:
+a + b = 12
+a - b = 8
+a * b = 20
+quotient of a / b = 5
+remainder of a / b = 0

@@ -1,0 +1,4 @@
+Error: input.txt not found
+Error: /input.txt not found
+Error: docs not found
+Error: /docs not found

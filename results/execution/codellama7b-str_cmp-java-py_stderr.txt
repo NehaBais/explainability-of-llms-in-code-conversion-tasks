@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpnrkcnni0/codellama7b-str_cmp-java-py.py", line 2, in <module>
+    compare("Hello", "Hello")
+    ^^^^^^^
+NameError: name 'compare' is not defined. Did you mean: 'compile'?

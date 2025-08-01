@@ -1,0 +1,2 @@
+Size of input.txt: 418
+Size of /input.txt: 418

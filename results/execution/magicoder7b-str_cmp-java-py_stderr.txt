@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7o29c_yi/magicoder7b-str_cmp-java-py.py", line 29, in <module>
+    compare("Hello", "Hello")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7o29c_yi/magicoder7b-str_cmp-java-py.py", line 22, in compare
+    print(f"The lexical relationship is: {ord(A.lower()) - ord(B.lower())}")
+                                          ^^^^^^^^^^^^^^
+TypeError: ord() expected a character, but string of length 5 found

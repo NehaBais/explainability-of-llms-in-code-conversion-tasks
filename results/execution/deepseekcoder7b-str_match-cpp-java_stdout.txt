@@ -1,0 +1,4 @@
+Does s1 start with s3? true
+Does s1 end with s3? false
+Does s1 contain s2 at any location? No
+Next occurrence of s3 in s2 starts at position 0

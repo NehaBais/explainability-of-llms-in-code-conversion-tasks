@@ -1,0 +1,1 @@
+Mary had a big lamb.{1} had a {0} lamb.{name} had a {adj} lamb.

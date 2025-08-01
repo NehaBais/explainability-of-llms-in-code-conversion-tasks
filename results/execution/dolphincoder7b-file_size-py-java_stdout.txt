@@ -1,0 +1,2 @@
+Size of the first file: 471
+Size of the second file: 704

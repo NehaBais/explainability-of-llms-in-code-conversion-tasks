@@ -1,0 +1,4 @@
+Input.txt exists? false
+Input.txt exists in root directory? false
+Docs directory exists? false
+Docs directory exists in root directory? false

@@ -1,0 +1,1 @@
+Size of input.txt in current directory: 557 bytes

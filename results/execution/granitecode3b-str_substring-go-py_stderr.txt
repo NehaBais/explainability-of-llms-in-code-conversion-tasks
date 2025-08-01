@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9rbvuhc4/granitecode3b-str_substring-go-py.py", line 3, in <module>
+    print("Index:", "".join(range(10)))
+                    ^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, int found

@@ -1,0 +1,2 @@
+Cannot move file in current working directory.
+Cannot move directory in current working directory.

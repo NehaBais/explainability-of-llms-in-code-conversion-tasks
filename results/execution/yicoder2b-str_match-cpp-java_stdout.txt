@@ -1,0 +1,4 @@
+true
+false
+Location: 0
+Next location: 2

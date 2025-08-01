@@ -1,0 +1,9 @@
+startsWith() method:
+true
+contains() method:
+true
+endsWith() method:
+false
+find() method:
+Location of match: 0
+No second match found.

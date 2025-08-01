@@ -1,0 +1,4 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpkqof2d9d/input.txt does not exist
+zero_length.txt does not exist
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/docs/input.txt does not exist
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/docs/zero_length.txt does not exist

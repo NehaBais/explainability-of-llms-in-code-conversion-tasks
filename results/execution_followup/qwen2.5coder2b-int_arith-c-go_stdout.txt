@@ -1,0 +1,1 @@
+Usage: go run program.go num1 num2

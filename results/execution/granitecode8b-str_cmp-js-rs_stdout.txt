@@ -1,0 +1,7 @@
+abcd == dcba: false
+abcd === dcba: false
+abcd != dcba: true
+abcd !== dcba: true
+abcd < dcba: true
+abcd > dcba: false
+abcd == dcba: false

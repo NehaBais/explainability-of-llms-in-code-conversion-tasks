@@ -1,0 +1,6 @@
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp0ojdsmtl/codegemma7b-int_arith-js-go.go:15 +0x254
+exit status 2

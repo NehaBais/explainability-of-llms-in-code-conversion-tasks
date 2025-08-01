@@ -1,0 +1,4 @@
+Renamed 'input.txt' to 'output.txt'
+Failed to rename 'c:/input.txt' to 'c:/output.txt'
+Renamed 'docs' to 'mydocs'
+Failed to rename 'c:/docs' to 'c:/mydocs'

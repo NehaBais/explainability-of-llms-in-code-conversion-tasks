@@ -1,0 +1,2 @@
+Input file 'docs/input.txt' does not exist.
+Input file '/docs/input.txt' does not exist.

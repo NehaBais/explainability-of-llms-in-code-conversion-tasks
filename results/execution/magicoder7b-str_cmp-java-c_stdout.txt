@@ -1,0 +1,3 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are case-insensitive lexically equal.
+'Hello' is lexically before 'Java'.

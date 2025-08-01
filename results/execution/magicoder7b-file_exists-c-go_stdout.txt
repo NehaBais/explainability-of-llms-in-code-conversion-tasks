@@ -1,0 +1,4 @@
+input.txt is a regular file? %!s(bool=false)
+/input.txt is a regular file? %!s(bool=false)
+docs is a directory? %!s(bool=false)
+/docs is a directory? %!s(bool=false)

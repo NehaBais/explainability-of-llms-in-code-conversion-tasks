@@ -1,0 +1,3 @@
+Starts with Test (Hello,Hell) : 1
+Contains Test (Hello,Hell) : 1
+Ends with Test (Hello,Hell) : 0

@@ -1,0 +1,2 @@
+mkdir: /docs: Read-only file system
+Failed to create directory: /docs

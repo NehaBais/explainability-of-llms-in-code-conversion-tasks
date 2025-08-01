@@ -1,0 +1,5 @@
+'Hello' and 'hello' are not lexically equal.
+'Hello' and 'hello' are case-insensitive lexically equal.
+'Hello' is lexically before 'hello.'
+'Hello' is not lexically after 'hello.'
+The lexical relationship is: -32

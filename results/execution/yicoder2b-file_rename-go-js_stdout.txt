@@ -1,0 +1,2 @@
+Rename 'input.txt' to 'output.txt'
+Rename 'docs' to 'mydocs'

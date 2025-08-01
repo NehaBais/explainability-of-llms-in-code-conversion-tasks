@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 9 out of bounds for char[8]
+	at java.base/java.lang.System.arraycopy(Native Method)
+	at StringConcat.main(StringConcat.java:12)

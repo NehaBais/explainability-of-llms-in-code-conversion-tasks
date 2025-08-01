@@ -1,0 +1,4 @@
+Created file at ./output.txt
+Created directory at ./docs
+Created file at ./docs/output.txt
+Created directory at ./docs/docs

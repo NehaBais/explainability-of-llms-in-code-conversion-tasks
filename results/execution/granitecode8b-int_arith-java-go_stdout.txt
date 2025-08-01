@@ -1,0 +1,2 @@
+Enter two integers:
+a + b = 12na - b = 8na * b = 20nquotient of a / b = 5nremainder of a / b = 0n

@@ -1,0 +1,4 @@
+input.txt is a regular file in /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpfbzg5pk4? no
+docs is a directory in /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpfbzg5pk4? no
+/input.txt is a regular file? no
+/docs is a directory? no

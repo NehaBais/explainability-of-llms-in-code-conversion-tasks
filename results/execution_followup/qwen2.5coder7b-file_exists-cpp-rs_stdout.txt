@@ -1,0 +1,9 @@
+input.txt
+ exists with a file size of 900 bytes.
+zero_length.txt does not exist: No such file or directory (os error 2)
+docs/input.txt does not exist: No such file or directory (os error 2)
+docs/zero_length.txt does not exist: No such file or directory (os error 2)
+/input.txt does not exist: No such file or directory (os error 2)
+/zero_length.txt does not exist: No such file or directory (os error 2)
+/docs/input.txt does not exist: No such file or directory (os error 2)
+/docs/zero_length.txt does not exist: No such file or directory (os error 2)

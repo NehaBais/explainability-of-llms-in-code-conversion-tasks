@@ -1,0 +1,4 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpt3zerqdd/rust_project/input.txt exists with a file size of 2492 bytes.
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpt3zerqdd/rust_project/zero_length.txt does not exist
+/input.txt does not exist
+/zero_length.txt does not exist

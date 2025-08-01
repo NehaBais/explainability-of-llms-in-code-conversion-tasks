@@ -1,0 +1,16 @@
+true and true -> true
+true or true -> true
+true xor true -> 0
+not true -> false
+true and false -> false
+true or false -> true
+true xor false -> 1
+not true -> false
+false and true -> false
+false or true -> true
+false xor true -> 1
+not false -> true
+false and false -> false
+false or false -> false
+false xor false -> 0
+not false -> true

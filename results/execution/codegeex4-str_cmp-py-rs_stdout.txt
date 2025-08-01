@@ -1,0 +1,12 @@
+'YUP' is of type "&str" and 'YUP' is of type "&str"
+'YUP' is equal to 'YUP'
+'YUP' has the same object identity with 'YUP'
+'BALL' is of type "&str" and 'BELL' is of type "&str"
+'BALL' is strictly less than 'BELL'
+'BALL' is not equal to 'BELL'
+'24' is of type "&str" and '123' is of type "&str"
+'24' is strictly greater than '123'
+'24' is not equal to '123'
+'YUP' is of type "&str" and 'yup' is of type "&str"
+'YUP' is equal to 'yup' ignoring ASCII case
+'123' is greater than '24'

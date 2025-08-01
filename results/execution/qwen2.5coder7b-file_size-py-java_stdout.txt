@@ -1,0 +1,2 @@
+Size of input.txt in the current working directory: 620
+/input.txt does not exist or is a directory.

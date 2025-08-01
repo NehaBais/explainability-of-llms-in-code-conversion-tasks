@@ -1,0 +1,4 @@
+First string starts with the second string.
+First string contains the second string.
+Location: 0
+First string does not end with the second string.

@@ -1,0 +1,7 @@
+Checking for 'input.txt' and 'docs' in the current working directory:
+False
+False
+
+Checking for 'input.txt' and 'docs' in the filesystem root:
+False
+False

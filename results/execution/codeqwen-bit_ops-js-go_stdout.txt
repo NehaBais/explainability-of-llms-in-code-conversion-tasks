@@ -1,0 +1,7 @@
+A AND B:  2
+A OR B:  3
+A XOR B:  1
+NOT A:  -3
+A << B:  16
+A >> B:  0
+A >>> B:  0

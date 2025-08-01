@@ -1,0 +1,4 @@
+Does input.txt exist in the current working directory? false
+Does docs exist in the current working directory? false
+Does /input.txt exist in the root directory? false
+Does /docs exist in the root directory? false

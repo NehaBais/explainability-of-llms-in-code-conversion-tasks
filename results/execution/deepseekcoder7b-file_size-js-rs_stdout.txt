@@ -1,0 +1,2 @@
+Size of 'input.txt' in current working directory: 720 bytes
+Failed to get file info for 'c:/input.txt'. Error: No such file or directory (os error 2)

@@ -1,0 +1,5 @@
+s1 starts with s3
+Found match at pos 0
+Did not find any matches
+Found another match at pos 0
+s2 ends with s3

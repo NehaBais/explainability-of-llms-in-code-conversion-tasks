@@ -1,0 +1,6 @@
+.
+..
+dolphincoder7b-file_rename-go-cpp.cpp
+docs
+input.txt
+program

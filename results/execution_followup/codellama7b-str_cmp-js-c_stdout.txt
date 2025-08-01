@@ -1,0 +1,2 @@
+Strings are equal
+String 1 is lexically ordered before string 2

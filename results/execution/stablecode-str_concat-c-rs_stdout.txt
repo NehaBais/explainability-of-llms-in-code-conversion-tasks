@@ -1,0 +1,3 @@
+hello literal
+hello literal
+The combined string is: hello literal literal

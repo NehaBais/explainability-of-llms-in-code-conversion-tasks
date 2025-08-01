@@ -1,0 +1,2 @@
+Original string: Mary had a X lamb
+Replaced string: Mary had a X lamb

@@ -1,0 +1,1 @@
+An error occurred:  mkdir /path: read-only file system

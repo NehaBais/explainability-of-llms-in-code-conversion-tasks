@@ -1,0 +1,3 @@
+Startswith: 1
+Contains: 0
+Endswith: 0

@@ -1,0 +1,1 @@
+Enter two integers separated by space: Invalid input! Please enter only numbers.

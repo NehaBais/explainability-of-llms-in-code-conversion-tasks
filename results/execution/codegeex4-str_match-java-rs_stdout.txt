@@ -1,0 +1,7 @@
+true
+false
+false
+true
+Location: 0
+Location: 1
+Location: 2

@@ -1,0 +1,16 @@
+and (true, true) -> true
+or  (true, true) -> true
+xor (true, true) -> false
+not (true) -> false
+and (true, false) -> false
+or  (true, false) -> true
+xor (true, false) -> true
+not (true) -> false
+and (false, true) -> false
+or  (false, true) -> true
+xor (false, true) -> true
+not (false) -> true
+and (false, false) -> false
+or  (false, false) -> false
+xor (false, false) -> false
+not (false) -> true

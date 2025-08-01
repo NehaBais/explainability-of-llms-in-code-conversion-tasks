@@ -1,0 +1,16 @@
+Boolean Operations in Java: true and true -> true
+                         true or true -> true
+                          xor true -> false
+                           not true -> false
+Boolean Operations in Java: true and false -> false
+                         true or false -> true
+                          xor false -> true
+                           not true -> false
+Boolean Operations in Java: false and true -> false
+                         false or true -> true
+                          xor true -> true
+                           not false -> true
+Boolean Operations in Java: false and false -> false
+                         false or false -> false
+                          xor false -> false
+                           not false -> true

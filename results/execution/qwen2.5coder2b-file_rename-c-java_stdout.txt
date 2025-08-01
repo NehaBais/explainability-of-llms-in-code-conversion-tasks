@@ -1,0 +1,2 @@
+Failed to rename current directory
+Failed to rename root directory

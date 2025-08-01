@@ -1,0 +1,5 @@
+a + b = 5
+a - b = -1
+a * b = 6
+a / b = 0
+remainder of a / b = 2

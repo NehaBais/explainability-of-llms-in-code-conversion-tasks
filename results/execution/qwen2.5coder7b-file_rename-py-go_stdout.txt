@@ -1,0 +1,4 @@
+Error renaming file: rename .input.txt .output.txt: no such file or directory
+Error renaming directory: rename .docs .mydocs: no such file or directory
+Error renaming file in root: rename /input.txt /output.txt: no such file or directory
+Error renaming directory in root: rename /docs /mydocs: no such file or directory

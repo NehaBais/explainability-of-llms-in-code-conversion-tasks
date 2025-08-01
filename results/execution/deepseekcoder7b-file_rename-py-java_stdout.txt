@@ -1,0 +1,4 @@
+Successfully moved input.txt to output.txt
+Successfully moved docs to mydocs
+Failed to move /input.txt to /output.txt
+Failed to move /docs to /mydocs

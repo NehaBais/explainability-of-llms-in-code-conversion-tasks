@@ -1,0 +1,4 @@
+input.txt is a regular file
+docs is a directory
+Couldn't access /input.txt in the root directory
+Couldn't access /docs in the root directory

@@ -1,0 +1,5 @@
+Enter two integers: a + b = 12
+A - b = 8
+A * b = 20
+quotient of a / b = 5.00
+remainder of a / b = 0

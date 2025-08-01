@@ -1,0 +1,4 @@
+Checking for 'input.txt' in current working directory: Exists
+Checking for 'c:/input.txt': Does not exist
+Checking for 'docs' in current working directory: Exists
+Checking for 'c:/docs': Does not exist

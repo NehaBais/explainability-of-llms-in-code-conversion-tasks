@@ -1,0 +1,1 @@
+Error creating directory in the root: Error: EEXIST: file already exists, mkdir '/'

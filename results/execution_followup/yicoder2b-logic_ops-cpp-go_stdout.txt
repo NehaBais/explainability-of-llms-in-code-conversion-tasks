@@ -1,0 +1,3 @@
+true and false is false
+true or false is true
+not true is false

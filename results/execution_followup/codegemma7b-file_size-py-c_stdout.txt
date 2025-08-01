@@ -1,0 +1,1 @@
+Size of input.txt in current working directory: 365 bytes

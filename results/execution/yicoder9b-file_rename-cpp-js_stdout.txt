@@ -1,0 +1,2 @@
+Successfully renamed input.txt to output.txt in the current directory!
+Successfully renamed docs to mydocs in the current directory!

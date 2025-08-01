@@ -1,0 +1,4 @@
+'input.txt' does not exist
+File '/home/user1/input.txt' does not exist
+'docs' folder does not exist
+Folder '/home/user1/docs' does not exist

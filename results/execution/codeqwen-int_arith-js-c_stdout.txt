@@ -1,0 +1,5 @@
+Enter two integers: Sum: 3
+Difference: -1
+Product: 2
+Quotient (Towards zero): 0.50
+Remainder: 1

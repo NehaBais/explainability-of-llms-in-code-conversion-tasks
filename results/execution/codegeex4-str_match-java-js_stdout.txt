@@ -1,0 +1,5 @@
+true
+false
+The string is not found.
+Location of "ab" is 0.
+Location of "ab" is 2.

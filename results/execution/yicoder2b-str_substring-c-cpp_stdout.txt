@@ -1,0 +1,5 @@
+--error--
+--error--
+hello world shortest progra
+world
+rld

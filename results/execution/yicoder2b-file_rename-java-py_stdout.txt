@@ -1,0 +1,6 @@
+The file input.txt was renamed as successful
+The file or directory with the given name does not exist!
+The file /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpohv6dqaq/input.txt was renamed as unsuccessful
+The directory docs was renamed as successful
+The file or directory with the given name does not exist!
+The directory /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpohv6dqaq/docs was renamed as unsuccessful

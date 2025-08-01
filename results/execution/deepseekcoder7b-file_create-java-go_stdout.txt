@@ -1,0 +1,2 @@
+Failed to create /output.txt: open /output.txt: read-only file system
+Failed to create directory /docs: mkdir /docs: read-only file system

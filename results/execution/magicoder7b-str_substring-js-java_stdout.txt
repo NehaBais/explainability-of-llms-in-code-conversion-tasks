@@ -1,0 +1,5 @@
+Starting from n characters in and of m length: cde
+Starting from n characters in and up to the end of the string: cdefgh
+Whole string minus last character: abcdefg
+Starting from a known character within the string and of m length: bcd
+Starting from a known substring within the string and of m length: bcd

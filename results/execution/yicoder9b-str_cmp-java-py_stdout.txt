@@ -1,0 +1,15 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are case-insensitive lexically equal.
+'Hello' and 'Hello' are not ordered.
+'5' and '5.0' are not lexically equal.
+'5' and '5.0' are not case-insensitive lexically equal.
+'5' is lexically before '5.0'.
+'java' and 'Java' are not lexically equal.
+'java' and 'Java' are case-insensitive lexically equal.
+'java' is lexically after 'Java'.
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are case-insensitive lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are not ordered.
+'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
+'ĴÃVÁ' and 'ĵãvá' are case-insensitive lexically equal.
+'ĴÃVÁ' is lexically before 'ĵãvá'.

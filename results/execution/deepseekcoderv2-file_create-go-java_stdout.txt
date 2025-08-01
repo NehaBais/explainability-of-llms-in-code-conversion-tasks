@@ -1,0 +1,3 @@
+file input.txt created!
+directory docs created!
+directory /docs already exists.

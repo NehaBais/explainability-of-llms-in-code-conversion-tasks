@@ -1,0 +1,1 @@
+"YUP" is of type string and "YUP" is of type stringn"YUP" is less than or equal to "YUP"n"BALL" is of type string and "BELL" is of type stringn"BALL" is strictly less than  "BELL"n"24" is of type string and "123" is of type stringn"24" is strictly greater than  "123"n'\x18' is of type int and '{' is of type intn

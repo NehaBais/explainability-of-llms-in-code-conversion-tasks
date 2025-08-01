@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppb437rcb/qwen2.5coder2b-int_factors-js-py.py", line 11, in <module>
+    print(factors(45))  # [1,3,5,9,15,45]
+          ^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppb437rcb/qwen2.5coder2b-int_factors-js-py.py", line 3, in factors
+    for i in range(1, int(math.sqrt(num)) + 1):
+                          ^^^^
+NameError: name 'math' is not defined. Did you forget to import 'math'?

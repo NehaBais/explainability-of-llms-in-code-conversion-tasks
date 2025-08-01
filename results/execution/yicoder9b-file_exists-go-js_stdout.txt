@@ -1,0 +1,32 @@
+Error: ENOENT: no such file or directory, stat 'input.txt'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async printStat (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppwccwrcp/yicoder9b-file_exists-go-js.js:5:19) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'input.txt'
+}
+Error: ENOENT: no such file or directory, stat '/input.txt'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async printStat (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppwccwrcp/yicoder9b-file_exists-go-js.js:5:19) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/input.txt'
+}
+Error: ENOENT: no such file or directory, stat 'docs'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async printStat (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppwccwrcp/yicoder9b-file_exists-go-js.js:5:19) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'docs'
+}
+Error: ENOENT: no such file or directory, stat '/docs'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async printStat (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppwccwrcp/yicoder9b-file_exists-go-js.js:5:19) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/docs'
+}

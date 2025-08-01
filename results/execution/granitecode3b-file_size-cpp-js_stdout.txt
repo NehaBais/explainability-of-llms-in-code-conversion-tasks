@@ -1,0 +1,2 @@
+Size of file input.txt is 340 bytes.
+Size of file /input.txt is 340 bytes.

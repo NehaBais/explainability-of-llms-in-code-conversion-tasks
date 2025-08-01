@@ -1,0 +1,2 @@
+The file called /input.txt could not be renamed into /output.txt: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+The file called /docs/ could not be renamed into /mydocs/: Os { code: 2, kind: NotFound, message: "No such file or directory" }

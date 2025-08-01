@@ -1,0 +1,4 @@
+input.txt is not a regular file
+docs is not a directory
+/input.txt is not a regular file
+/docs is not a directory

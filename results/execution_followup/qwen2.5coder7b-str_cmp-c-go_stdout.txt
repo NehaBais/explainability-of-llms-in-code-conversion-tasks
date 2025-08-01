@@ -1,0 +1,12 @@
+ball%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false) bell
+ball%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false) bell ignoring case
+BALL%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false) ball
+BALL%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=false)%!d(bool=false)%!d(bool=false) ball ignoring case
+YUP%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=true) YEP
+YUP%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=true) YEP ignoring case
+ball%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=true) BELL
+ball%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false) BELL ignoring case
+ball%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=true) BALL
+ball%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=false)%!d(bool=false)%!d(bool=false) BALL ignoring case
+YUP%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false) yep
+YUP%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=false)%!d(bool=false)%!d(bool=true) yep ignoring case

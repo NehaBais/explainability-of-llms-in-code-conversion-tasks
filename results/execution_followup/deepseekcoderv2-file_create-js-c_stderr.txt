@@ -1,0 +1,1 @@
+Error creating file /output.txt in root directory

@@ -1,0 +1,6 @@
+Found substring at: 2
+abcdefgh
+abcdefgh
+abcdefg
+defgh
+cd

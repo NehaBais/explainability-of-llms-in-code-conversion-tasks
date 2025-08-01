@@ -1,0 +1,2 @@
+Input.txt does not exist or is not readable
+/docs/input.txt exists and is readable

@@ -1,0 +1,2 @@
+'input.txt' or 'c:/input.txt' does not exist as a regular file.
+'docs' or 'c:/docs' does not exist as a directory.

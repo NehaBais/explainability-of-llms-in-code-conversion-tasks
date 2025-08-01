@@ -1,0 +1,2 @@
+Size of 'input.txt' is: 440 bytes
+Failed to get information for '/input.txt'

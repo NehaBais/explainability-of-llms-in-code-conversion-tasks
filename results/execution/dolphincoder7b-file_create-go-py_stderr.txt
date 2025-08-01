@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp1efogynk/dolphincoder7b-file_create-go-py.py", line 16, in <module>
+    create_file("/output.txt")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp1efogynk/dolphincoder7b-file_create-go-py.py", line 5, in create_file
+    f = open(fn, "w+")
+        ^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/output.txt'

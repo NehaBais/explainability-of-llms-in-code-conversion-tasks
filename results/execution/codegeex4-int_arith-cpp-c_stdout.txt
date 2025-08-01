@@ -1,0 +1,5 @@
+Enter two integers: Sum: 5
+Difference: -1
+Product: 6
+Integer Quotient: 0
+Remainder: 2

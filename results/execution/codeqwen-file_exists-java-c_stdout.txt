@@ -1,0 +1,2 @@
+File exists in current working directory: 0
+File exists in root directory: 0

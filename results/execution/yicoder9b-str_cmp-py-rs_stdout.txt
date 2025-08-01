@@ -1,0 +1,22 @@
+
+"YUP" is of type "&str" and "YUP" is of type "&str"
+"YUP" is less than or equal to "YUP"
+"YUP" is greater than or equal to "YUP"
+"YUP" is equal to "YUP"
+"YUP" (as lowercase) is less than or equal to "YUP"
+"YUP" (as lowercase) is greater than or equal to "YUP"
+"YUP" (in lowercase form) is equal to "YUP"
+
+"BALL" is of type "&str" and "BELL" is of type "&str"
+"BALL" is strictly less than "BELL"
+"BALL" is less than or equal to "BELL"
+"BALL" is not equal to "BELL"
+"BALL" (as lowercase) is strictly less than "BELL"
+"BALL" (as lowercase) is less than or equal to "BELL"
+
+"24" is of type "&str" and "123" is of type "&str"
+"24" is strictly greater than "123"
+"24" is greater than or equal to "123"
+"24" is not equal to "123"
+"24" (as lowercase) is strictly greater than "123"
+"24" (as lowercase) is greater than or equal to "123"

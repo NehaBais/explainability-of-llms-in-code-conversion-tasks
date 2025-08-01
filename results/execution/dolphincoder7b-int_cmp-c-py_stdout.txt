@@ -1,0 +1,1 @@
+Please enter first integer: Please enter second integer: 10 is greater than 2

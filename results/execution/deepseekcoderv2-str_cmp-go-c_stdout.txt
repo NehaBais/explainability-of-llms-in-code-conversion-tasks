@@ -1,0 +1,4 @@
+cat is not equal to dog
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat is lexically less than dog under case insensitivity

@@ -1,0 +1,10 @@
+
+apple is of type char* and banana is of type char*
+apple is strictly less than  banana
+apple is less than or equal to banana
+apple is not equal to banana
+
+cat is of type char* and ant is of type char*
+cat is strictly greater than  ant
+cat is greater than or equal to ant
+cat is not equal to ant

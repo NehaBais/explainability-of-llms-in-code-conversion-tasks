@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.Long.valueOf(Long.java:1023)
+	at Main.printFactors(Main.java:49)
+	at Main.main(Main.java:10)

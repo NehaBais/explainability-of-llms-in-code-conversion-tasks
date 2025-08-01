@@ -1,0 +1,5 @@
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat is lexically bytewise less than or equal to dog
+aaa is before bbb in lexico-graphical order.
+cat not equal to dog, ignoring case.

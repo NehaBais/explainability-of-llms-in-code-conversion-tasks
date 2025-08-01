@@ -1,0 +1,22 @@
+'YUP' is of type java.lang.String and 'YUP' is of type java.lang.String
+'YUP' is lexically less than 'YUP': false
+'YUP' is lexically greater than 'YUP': false
+'YUP' is equal to 'YUP': true
+Case Sensitive Comparisons:
+'YUP' is lexically less than 'YUP': false
+'YUP' is lexically greater than 'YUP': false
+'BALL' is of type java.lang.String and 'BELL' is of type java.lang.String
+'BALL' is lexically less than 'BELL': true
+'BALL' is lexically greater than 'BELL': false
+'BALL' is equal to 'BELL': false
+Case Sensitive Comparisons:
+'BALL' is lexically less than 'BELL': true
+'BALL' is lexically greater than 'BELL': false
+'24' is of type java.lang.String and '123' is of type java.lang.String
+'24' is lexically less than '123': false
+'24' is lexically greater than '123': true
+'24' is equal to '123': false
+Case Sensitive Comparisons:
+'24' is lexically less than '123': false
+'24' is lexically greater than '123': true
+'5.0' is of type java.lang.Double and '5' is of type java.lang.Integer

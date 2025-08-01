@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpps4d1vf1/magicoder7b-int_factors-c-py.py", line 19, in <module>
+    print("%s %d" % ("," if j != factor[0] else "", j))
+                                 ~~~~~~^^^
+TypeError: 'function' object is not subscriptable

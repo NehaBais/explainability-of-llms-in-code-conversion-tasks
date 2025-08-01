@@ -1,0 +1,3 @@
+true
+false
+String is not found

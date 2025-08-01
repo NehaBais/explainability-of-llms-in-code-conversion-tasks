@@ -1,0 +1,2 @@
+Checking file in current directory... Found.
+Checking file in root directory... Not found.

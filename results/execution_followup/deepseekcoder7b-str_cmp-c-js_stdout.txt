@@ -1,0 +1,4 @@
+ball: Equal = false, Not Equal = true, Greater than = false, Less than = true, Greater or equal = false, Less or equal = true
+ball: (ignoring case) Equal = false, Not Equal = true, Greater than = false, Less than = true, Greater or equal = false, Less or equal = true
+YUP: Equal = false, Not Equal = true, Greater than = true, Less than = false, Greater or equal = true, Less or equal = false
+YUP: (ignoring case) Equal = false, Not Equal = true, Greater than = true, Less than = false, Greater or equal = true, Less or equal = false

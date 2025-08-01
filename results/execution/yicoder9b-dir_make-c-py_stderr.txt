@@ -1,0 +1,1 @@
+usage: /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxl81m0ah/yicoder9b-dir_make-c-py.py <path>

@@ -1,0 +1,1 @@
+string: test, number: 123, double number: 456.789

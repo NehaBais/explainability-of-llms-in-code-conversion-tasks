@@ -1,0 +1,10 @@
+a      = b
+b      = b
+a | b  = b
+a & b  = b
+a ^ b  = b
+!a     = b
+a << 3 = b
+a >> 3 = b
+lrotate(a)   = b
+rrotate(a)   = b

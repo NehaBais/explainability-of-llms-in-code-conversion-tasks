@@ -1,0 +1,4 @@
+abcd starts with ab
+abcd does not end with ab
+Found at position 1: ab starting at index 0
+Found at position 2: ab starting at index 2

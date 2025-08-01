@@ -1,0 +1,6 @@
+panic: Error creating directory: mkdir /docs: read-only file system
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplib0rmlx/qwen2.5coder7b-file_create-c-go.go:13 +0x1d8
+exit status 2

@@ -1,0 +1,2 @@
+Enter first integer: Enter second integer: Sum: 		  3nDifference: 	  -1nProduct: 	  2nInteger quotient: 0nFloat quotient:   0.5 nWhole Remainder:  +
+Actual Remainder: 1nExponentiation:   1n

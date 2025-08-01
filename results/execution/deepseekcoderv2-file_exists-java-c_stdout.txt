@@ -1,0 +1,2 @@
+File docs/input.txt does not exist in the current working directory.
+File /docs/input.txt does not exist at the filesystem root.

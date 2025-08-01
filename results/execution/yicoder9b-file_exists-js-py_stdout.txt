@@ -1,0 +1,4 @@
+File exists in current directory? No
+Directory exists in current directory? No
+File exists in root directory? No
+Directory exists in root directory? No

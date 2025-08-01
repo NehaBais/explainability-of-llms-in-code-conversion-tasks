@@ -1,0 +1,4 @@
+Renamed input.txt to output.txt: true
+Renamed docs to mydocs: true
+input.txt does not exist in the root directory.
+docs does not exist or is not a directory in the root directory.

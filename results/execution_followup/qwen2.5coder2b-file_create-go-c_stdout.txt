@@ -1,0 +1,2 @@
+File input.txt created!
+Directory docs created!

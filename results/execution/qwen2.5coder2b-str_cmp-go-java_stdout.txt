@@ -1,0 +1,3 @@
+cat is bytewise different from dog
+cat is less than dog
+cat not equal to dog (ignoring case)

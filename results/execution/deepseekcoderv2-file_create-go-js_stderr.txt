@@ -1,0 +1,12 @@
+[Error: EROFS: read-only file system, open '/input.txt'] {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'open',
+  path: '/input.txt'
+}
+[Error: EROFS: read-only file system, mkdir '/docs'] {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'mkdir',
+  path: '/docs'
+}

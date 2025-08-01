@@ -1,0 +1,9 @@
+a and b: 1
+a or b: 7
+a xor b: 6
+not a: -6
+a << n: 40
+a >> n: 0
+c >> n: 0
+a left rotate n: 40
+a right rotate n: 2684354560

@@ -11583,13 +11583,13 @@ Oh no! 💥 💔 💥
 101 files reformatted, 1262 files left unchanged, 162 files failed to reformat.
 Formatting Rust files ...
 error: expected one of `;` or `as`, found `::`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegeex4-file_create-py-rs.rs:1:17
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegeex4-file_create-py-rs.rs:1:17
   |
 1 | extern crate std::fs;
   |                 ^^ expected one of `;` or `as`
 
 error: expected identifier, found keyword `match`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegeex4-str_match-go-rs.rs:1:4
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegeex4-str_match-go-rs.rs:1:4
   |
 1 | fn match(first: &str, second: &str) {
   |    ^^^^^ expected identifier, found keyword
@@ -11600,7 +11600,7 @@ help: escape `match` to use it as an identifier
   |    ++
 
 error: expected one of `.`, `?`, `{`, or an operator, found `;`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegeex4-str_match-go-rs.rs:16:32
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegeex4-str_match-go-rs.rs:16:32
    |
 16 |     match("abracadabra", "abr");
    |     -----                      ^ expected one of `.`, `?`, `{`, or an operator
@@ -11609,7 +11609,7 @@ error: expected one of `.`, `?`, `{`, or an operator, found `;`
    |     help: try removing this `match`
 
 error: mismatched closing delimiter: `)`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegeex4-str_substring-py-rs.rs:11:22
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegeex4-str_substring-py-rs.rs:11:22
    |
 11 |     println!("{}", &s[unicode_segmentation::UnicodeStr::new(&s)[n-1..n+m-1].collect::<String>());
    |             -        ^ unclosed delimiter                                                      ^ mismatched closing delimiter
@@ -11617,7 +11617,7 @@ error: mismatched closing delimiter: `)`
    |             closing delimiter possibly meant for this
 
 error: mismatched closing delimiter: `)`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegeex4-str_substring-py-rs.rs:14:22
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegeex4-str_substring-py-rs.rs:14:22
    |
 14 |     println!("{}", &s[unicode_segmentation::UnicodeStr::new(&s)[n-1..].collect::<String>());
    |             -        ^ unclosed delimiter                                                 ^ mismatched closing delimiter
@@ -11625,7 +11625,7 @@ error: mismatched closing delimiter: `)`
    |             closing delimiter possibly meant for this
 
 error: unexpected closing delimiter: `}`
-   --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-bit_ops-py-rs.rs:106:1
+   --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-bit_ops-py-rs.rs:106:1
     |
 88  | fn helper_funcs(width: usize, a: i32) {
     |                                       - this delimiter might not be properly closed...
@@ -11636,13 +11636,13 @@ error: unexpected closing delimiter: `}`
     | ^ unexpected closing delimiter
 
 error: expected one of `!` or `::`, found `(`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_create-js-rs.rs:9:17
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_create-js-rs.rs:9:17
   |
 9 | fs::File::create("output.txt").unwrap();
   |                 ^ expected one of `!` or `::`
 
 error: missing `fn` or `struct` for function or struct definition
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_create-py-rs.rs:9:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_create-py-rs.rs:9:1
   |
 9 | create("."); // current directory
   | ^^^^^^
@@ -11653,43 +11653,43 @@ help: if you meant to call a macro, try
   | ~~~~~~~
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_exists-java-rs.rs:4:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_exists-java-rs.rs:4:1
   |
 4 | let current_cwd = Path::new(".");
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_exists-js-rs.rs:4:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_exists-js-rs.rs:4:1
   |
 4 | let current_dir = std::env::current_dir().unwrap();
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected one of `!` or `::`, found `(`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_rename-js-rs.rs:4:11
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_rename-js-rs.rs:4:11
   |
 4 | fs::rename("input.txt", "output.txt").expect("Failed to move file");
   |           ^ expected one of `!` or `::`
 
 error: expected one of `!` or `::`, found `(`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_rename-py-rs.rs:4:11
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_rename-py-rs.rs:4:11
   |
 4 | fs::rename("input.txt", "output.txt").expect("Failed to rename file");
   |           ^ expected one of `!` or `::`
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-file_size-py-rs.rs:3:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-file_size-py-rs.rs:3:1
   |
 3 | let size = fs::metadata("input.txt").unwrap().len();
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected `{`, found `,`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-int_factors-py-rs.rs:24:16
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-int_factors-py-rs.rs:24:16
    |
 24 |     for i in 45, 53, 64 {
    |                ^ expected `{`
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_append-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_append-js-rs.rs:1:1
   |
 1 | let mut s1 = String::from("Hello");
   | ^^^ expected item
@@ -11697,7 +11697,7 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_append-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_append-py-rs.rs:1:1
   |
 1 | let mut str = "12345678".to_string();
   | ^^^ expected item
@@ -11705,7 +11705,7 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: missing `fn` or `struct` for function or struct definition
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_cmp-py-rs.rs:36:1
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_cmp-py-rs.rs:36:1
    |
 36 | compare("YUP", "YUP");
    | ^^^^^^^
@@ -11716,55 +11716,55 @@ help: if you meant to call a macro, try
    | ~~~~~~~~
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_concat-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_concat-js-rs.rs:1:1
   |
 1 | let s = "hello";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_concat-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_concat-py-rs.rs:1:1
   |
 1 | let s1 = "hello";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_interp-java-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_interp-java-rs.rs:1:1
   |
 1 | let adjective = "little";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_interp-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_interp-js-rs.rs:1:1
   |
 1 | let original = "Mary had a X lamb";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_interp-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_interp-py-rs.rs:1:1
   |
 1 | let extra = "little";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_match-cpp-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_match-cpp-rs.rs:1:1
   |
 1 | let s1 = "abcd";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_match-java-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_match-java-rs.rs:1:1
   |
 1 | let str1 = "abcd";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_match-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_match-js-rs.rs:1:1
   |
 1 | let string_a = "tacoloco";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_prepend-go-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_prepend-go-rs.rs:1:1
   |
 1 | let mut s = String::from("world!");
   | ^^^ expected item
@@ -11772,7 +11772,7 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_prepend-java-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_prepend-java-rs.rs:1:1
   |
 1 | let mut string = String::from("def");
   | ^^^ expected item
@@ -11780,31 +11780,31 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_prepend-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_prepend-js-rs.rs:1:1
   |
 1 | let s = ", World";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_prepend-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_prepend-py-rs.rs:1:1
   |
 1 | let s = "12345678";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected parameter name, found keyword `in`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_substring-c-rs.rs:28:25
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_substring-c-rs.rs:28:25
    |
 28 | fn str_fromstr(s: &str, in: &str, m: isize) -> Option<String> {
    |                         ^^ expected parameter name
 
 error: expected expression, found keyword `in`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_substring-c-rs.rs:29:22
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_substring-c-rs.rs:29:22
    |
 29 |     let pos = s.find(in)?;
    |                      ^^ expected expression
 
 error: unexpected `,` in pattern
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_substring-go-rs.rs:5:10
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_substring-go-rs.rs:5:10
   |
 5 |     let n, m = 2, 3;
   |          ^
@@ -11815,19 +11815,19 @@ help: try adding parentheses to match on a tuple
   |         +    +
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_substring-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_substring-js-rs.rs:1:1
   |
 1 | let str = "abcdefgh";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codegemma7b-str_substring-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codegemma7b-str_substring-py-rs.rs:1:1
   |
 1 | let s = "abcdefgh";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected identifier, found keyword `fn`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-file_create-go-rs.rs:8:16
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-file_create-go-rs.rs:8:16
   |
 8 | fn create_file(fn: &str) {
   |                ^^ expected identifier, found keyword
@@ -11838,13 +11838,13 @@ help: escape `fn` to use it as an identifier
   |                ++
 
 error: expected expression, found keyword `fn`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-file_create-go-rs.rs:9:28
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-file_create-go-rs.rs:9:28
   |
 9 |     match fs::File::create(fn) {
   |                            ^^ expected expression
 
 error: expected identifier, found keyword `type`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-file_rename-java-rs.rs:9:9
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-file_rename-java-rs.rs:9:9
   |
 9 | fn test(type: &str, oldname: &str, newname: &str) {
   |         ^^^^ expected identifier, found keyword
@@ -11855,19 +11855,19 @@ help: escape `type` to use it as an identifier
   |         ++
 
 error: expected one of `!` or `::`, found `(`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-file_rename-py-rs.rs:4:11
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-file_rename-py-rs.rs:4:11
   |
 4 | fs::rename("input.txt", "output.txt").unwrap();
   |           ^ expected one of `!` or `::`
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-file_size-py-rs.rs:3:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-file_size-py-rs.rs:3:1
   |
 3 | let size = fs::File::open("input.txt")?.metadata()?.len();
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: this file contains an unclosed delimiter
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-int_cmp-py-rs.rs:15:2
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-int_cmp-py-rs.rs:15:2
    |
 1  | fn main() {
    |           - unclosed delimiter
@@ -11876,7 +11876,7 @@ error: this file contains an unclosed delimiter
    |  ^
 
 error: expected item, found keyword `for`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-int_factors-py-rs.rs:25:1
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-int_factors-py-rs.rs:25:1
    |
 25 | for i in vec![45, 53, 64] {
    | ^^^ expected item
@@ -11884,13 +11884,13 @@ error: expected item, found keyword `for`
    = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_append-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_append-js-rs.rs:1:1
   |
 1 | let s1 = "Hello".to_string();
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: `~` cannot be used as a unary operator
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_match-js-rs.rs:40:8
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_match-js-rs.rs:40:8
    |
 40 |     if ~q2 && q2multi.len() > 1 {
    |        ^
@@ -11901,13 +11901,13 @@ help: use `!` to perform bitwise not
    |        ~
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_match-py-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_match-py-rs.rs:1:1
   |
 1 | let s1 = "abcd";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: expected identifier, found `"prepended to"`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_prepend-cpp-rs.rs:5:43
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_prepend-cpp-rs.rs:5:43
   |
 5 |     let mut my_strings = vector::<string>{"prepended to", "my string"};
   |                          ---------------- ^^^^^^^^^^^^^^ expected identifier
@@ -11915,7 +11915,7 @@ error: expected identifier, found `"prepended to"`
   |                          while parsing this struct
 
 error: expected identifier, found `"my string"`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_prepend-cpp-rs.rs:5:59
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_prepend-cpp-rs.rs:5:59
   |
 5 |     let mut my_strings = vector::<string>{"prepended to", "my string"};
   |                          ----------------                 ^^^^^^^^^^^ expected identifier
@@ -11923,7 +11923,7 @@ error: expected identifier, found `"my string"`
   |                          while parsing this struct
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_prepend-java-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_prepend-java-rs.rs:1:1
   |
 1 | let mut string = String::from("def");
   | ^^^ expected item
@@ -11931,7 +11931,7 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_prepend-js-rs.rs:2:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_prepend-js-rs.rs:2:1
   |
 2 | let mut s = ", World".to_string();
   | ^^^ expected item
@@ -11939,25 +11939,25 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected parameter name, found keyword `in`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_substring-c-rs.rs:39:25
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_substring-c-rs.rs:39:25
    |
 39 | fn str_fromstr(s: &str, in: &str, m: isize) -> Option<String> {
    |                         ^^ expected parameter name
 
 error: expected expression, found keyword `in`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_substring-c-rs.rs:40:26
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_substring-c-rs.rs:40:26
    |
 40 |     let mut pos = s.find(in)?;
    |                          ^^ expected expression
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codellama7b-str_substring-js-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codellama7b-str_substring-js-rs.rs:1:1
   |
 1 | let str = "abcdefgh";
   | ^^^ consider using `const` or `static` instead of `let` for global variables
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:2:13
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:2:13
   |
 2 |     compare('YUP', 'YUP');
   |             ^^^^^
@@ -11968,7 +11968,7 @@ help: if you meant to write a string literal, use double quotes
   |             ~   ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:2:20
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:2:20
   |
 2 |     compare('YUP', 'YUP');
   |                    ^^^^^
@@ -11979,7 +11979,7 @@ help: if you meant to write a string literal, use double quotes
   |                    ~   ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:3:13
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:3:13
   |
 3 |     compare('BALL', 'BELL');
   |             ^^^^^^
@@ -11990,7 +11990,7 @@ help: if you meant to write a string literal, use double quotes
   |             ~    ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:3:21
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:3:21
   |
 3 |     compare('BALL', 'BELL');
   |                     ^^^^^^
@@ -12001,7 +12001,7 @@ help: if you meant to write a string literal, use double quotes
   |                     ~    ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:4:13
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:4:13
   |
 4 |     compare('24', '123');
   |             ^^^^
@@ -12012,7 +12012,7 @@ help: if you meant to write a string literal, use double quotes
   |             ~  ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:4:19
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:4:19
   |
 4 |     compare('24', '123');
   |                   ^^^^^
@@ -12023,13 +12023,13 @@ help: if you meant to write a string literal, use double quotes
   |                   ~   ~
 
 error: expected one of `!`, `.`, `::`, `;`, `?`, `else`, `{`, or an operator, found keyword `let`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_cmp-py-rs.rs:33:22
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_cmp-py-rs.rs:33:22
    |
 33 |     let b_lower = If let Some(c) = b.to_ascii_lowercase().chars().next() { c } else { '\0' };
    |                      ^^^ expected one of 8 possible tokens
 
 error: expected item, found keyword `let`
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_prepend-java-rs.rs:1:1
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_prepend-java-rs.rs:1:1
   |
 1 | let mut string = String::from("def");
   | ^^^ expected item
@@ -12037,13 +12037,13 @@ error: expected item, found keyword `let`
   = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: expected parameter name, found keyword `in`
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_substring-c-rs.rs:31:25
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_substring-c-rs.rs:31:25
    |
 31 | fn str_fromstr(s: &str, in: &str, m: Option<usize>) -> Result<String, &'static str> {
    |                         ^^ expected parameter name
 
 error: unknown start of token: `
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_substring-go-rs.rs:31:18
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_substring-go-rs.rs:31:18
    |
 31 |         println!(`Start "DE", length {}: {}`, m, &s[sx..sx+m]);
    |                  ^
@@ -12054,7 +12054,7 @@ help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it
    |                  ~
 
 error: unknown start of token: `
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_substring-go-rs.rs:31:44
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_substring-go-rs.rs:31:44
    |
 31 |         println!(`Start "DE", length {}: {}`, m, &s[sx..sx+m]);
    |                                            ^
@@ -12065,7 +12065,7 @@ help: Unicode character '`' (Grave Accent) looks like ''' (Single Quote), but it
    |                                            ~
 
 error: character literal may only contain one codepoint
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/codeqwen-str_substring-py-rs.rs:2:30
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/codeqwen-str_substring-py-rs.rs:2:30
   |
 2 |     let mut s = String::from('abcdefgh');
   |                              ^^^^^^^^^^
@@ -12076,7 +12076,7 @@ help: if you meant to write a string literal, use double quotes
   |                              ~        ~
 
 error: `~` cannot be used as a unary operator
- --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-js-rs.rs:6:21
+ --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/deepseekcoder7b-bit_ops-js-rs.rs:6:21
   |
 6 |    let not_result = ~a;
   |                     ^
@@ -12087,13 +12087,13 @@ help: use `!` to perform bitwise not
   |                     ~
 
 error[E0768]: no valid digits found for number
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:15
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:15
    |
 14 |              "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
    |               ^^
 
 error[E0765]: unterminated double quote string
-  --> /Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:28
+  --> /Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/deepseekcoder7b-bit_ops-py-rs.rs:14:28
    |
 14 |                "0b{:0width$b}", a, b, (a | b) & mask, width = 8);
    |  ____________________________^

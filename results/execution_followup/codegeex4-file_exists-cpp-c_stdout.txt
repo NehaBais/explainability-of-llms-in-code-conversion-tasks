@@ -1,0 +1,4 @@
+input.txt exists
+zero_length.txt does not exist
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9__pp7ds/docs/ exists with a file size of 64 bytes.
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9__pp7ds/docs/ exists

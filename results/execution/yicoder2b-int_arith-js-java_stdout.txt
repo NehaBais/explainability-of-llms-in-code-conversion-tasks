@@ -1,0 +1,7 @@
+Enter first number: 
+Enter second number: 
+sum: 3
+difference: -1
+product: 2
+quotient (rounds towards zero): 1
+remainder: 1

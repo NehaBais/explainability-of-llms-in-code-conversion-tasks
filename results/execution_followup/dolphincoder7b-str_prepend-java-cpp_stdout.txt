@@ -1,0 +1,2 @@
+Original String is: def
+String after concatenation is: abcdef

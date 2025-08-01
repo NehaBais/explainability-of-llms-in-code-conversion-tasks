@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpkii6aafc/qwen2.5coder2b-file_rename-rs-py.py", line 17, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpkii6aafc/qwen2.5coder2b-file_rename-rs-py.py", line 12, in main
+    os.rename("/input.txt", "/output.txt")
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'

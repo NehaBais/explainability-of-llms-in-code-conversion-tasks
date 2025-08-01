@@ -1,0 +1,2 @@
+Error: Could not find or load main class StringComparison
+Caused by: java.lang.NoClassDefFoundError: StringComparison (wrong name: com/example/StringComparison)

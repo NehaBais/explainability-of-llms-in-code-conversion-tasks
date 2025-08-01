@@ -1,0 +1,1 @@
+Error creating file: EROFS: read-only file system, mkdir '/docs'

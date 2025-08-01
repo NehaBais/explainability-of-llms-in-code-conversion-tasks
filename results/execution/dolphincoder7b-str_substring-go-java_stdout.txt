@@ -1,0 +1,3 @@
+Index:  01234567
+String:  ABCDEFGH
+Start , length 

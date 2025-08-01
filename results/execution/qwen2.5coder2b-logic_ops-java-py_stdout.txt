@@ -1,0 +1,9 @@
+a AND b: True
+a OR b: True
+NOT a: False
+a AND b: False
+a OR b: False
+NOT a: True
+a AND b: False
+a OR b: True
+NOT a: False

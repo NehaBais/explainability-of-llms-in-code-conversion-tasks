@@ -1,0 +1,5 @@
+First string starts with second string
+First string contains second string
+Location of match: 0
+Number of occurrences: 1
+First string does not end with second string

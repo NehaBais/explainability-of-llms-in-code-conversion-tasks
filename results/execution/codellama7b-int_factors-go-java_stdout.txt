@@ -1,0 +1,3 @@
+Factors of 53:
+1 53 
+Number of factors: 2

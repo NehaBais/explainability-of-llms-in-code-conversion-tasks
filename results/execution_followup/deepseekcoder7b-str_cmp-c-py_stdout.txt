@@ -1,0 +1,54 @@
+Comparing strings ball and bell:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : True
+- Lexically ordered after than the other : False
+- Case Sensitive Comparison : False
+- Case Insensitive Comparison : False
+
+
+Comparing strings ball and BALL:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : False
+- Lexically ordered after than the other : True
+- Case Sensitive Comparison : True
+- Case Insensitive Comparison : True
+
+
+Comparing strings YUP and YEP:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : False
+- Lexically ordered after than the other : True
+- Case Sensitive Comparison : False
+- Case Insensitive Comparison : False
+
+
+Comparing strings ball and BELL:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : False
+- Lexically ordered after than the other : True
+- Case Sensitive Comparison : False
+- Case Insensitive Comparison : False
+
+
+Comparing strings ball and BALL:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : False
+- Lexically ordered after than the other : True
+- Case Sensitive Comparison : True
+- Case Insensitive Comparison : True
+
+
+Comparing strings YUP and yep:
+- Exact Equality : False
+- Inequality : True
+- Lexically ordered before than the other : True
+- Lexically ordered after than the other : False
+- Case Sensitive Comparison : False
+- Case Insensitive Comparison : False
+
+

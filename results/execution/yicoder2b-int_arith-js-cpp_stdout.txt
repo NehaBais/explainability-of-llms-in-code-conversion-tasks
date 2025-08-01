@@ -1,0 +1,5 @@
+Enter first integer: Enter second integer: Sum is: 12
+Difference is: 8
+Product is: 20
+Quotient (towards zero) is: 5
+Remainder sign is opposite to the operand's sign

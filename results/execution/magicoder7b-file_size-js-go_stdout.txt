@@ -1,0 +1,2 @@
+Size of the file is:  302
+Error: stat c:/input.txt: no such file or directory

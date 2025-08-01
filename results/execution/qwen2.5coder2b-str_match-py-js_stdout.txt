@@ -1,0 +1,6 @@
+true
+false
+false
+The string "ab" was found at index 0
+Another occurrence of "ab" was found at index 2
+0

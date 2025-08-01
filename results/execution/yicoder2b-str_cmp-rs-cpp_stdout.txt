@@ -1,0 +1,2 @@
+The first string is lexically before the second
+The first string is lexically before the second when ignoring case

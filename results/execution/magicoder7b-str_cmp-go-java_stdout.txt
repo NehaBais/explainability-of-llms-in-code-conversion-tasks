@@ -1,0 +1,3 @@
+cat is different from dog
+cat is lexically lesser than dog
+cat is different from dog

@@ -1,0 +1,7 @@
+A AND b: 0
+A OR b: 15
+A XOR b: 15
+NOT a: -13
+A << b: 96
+A >> b: 1
+A >>> b: 1

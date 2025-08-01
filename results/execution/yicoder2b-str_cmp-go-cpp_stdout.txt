@@ -1,0 +1,3 @@
+cat is byte-wise different from dog
+cat is lexically byte-wise less than dog
+cat is equal to or less than or greater than dog as per locale settings 

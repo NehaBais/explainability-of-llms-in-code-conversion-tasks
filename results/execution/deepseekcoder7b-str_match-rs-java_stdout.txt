@@ -1,0 +1,4 @@
+Does string 1 start with string 3: true
+Does string 1 contain string 3: true
+Found match at pos 0
+Does string 2 end with string 3: true

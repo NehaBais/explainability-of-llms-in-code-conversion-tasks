@@ -1,0 +1,5 @@
+Enter the first integer: Enter the second integer: Sum: 3
+Difference: -1
+Product: 2
+Division: 0.5
+Remainder: 1

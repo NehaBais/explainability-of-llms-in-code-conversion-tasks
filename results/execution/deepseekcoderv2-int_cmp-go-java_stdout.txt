@@ -1,0 +1,1 @@
+Enter number 1: Enter number 2: 10 greater than 2

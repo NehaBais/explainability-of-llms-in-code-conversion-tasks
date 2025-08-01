@@ -1,0 +1,9 @@
+
+Factors of -1 not computed
+
+Factors of 0 not computed
+
+Factors of 1: [1]
+Number of factors = 1
+
+Factors of 2: 

@@ -1,0 +1,12 @@
+1.2.Foo and 1.3.Bar are false exactly lexically equal.
+1.2.Foo and 1.3.Bar are true lexically unequal.
+1.2.Foo is true ordered before 1.3.Bar.
+1.2.Foo is false ordered after 1.3.Bar.
+1.2.foo and 1.3.bar are false exactly lexically equal.
+1.2.foo and 1.3.bar are true lexically unequal.
+1.2.foo is true ordered before 1.3.bar.
+1.2.foo is false ordered after 1.3.bar.
+0.000000 and 0.000000 are true exactly numerically equal.
+0.000000 and 0.000000 are false numerically unequal.
+0.000000 is false ordered before 0.000000.
+0.000000 is false ordered after 0.000000.

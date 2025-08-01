@@ -1,0 +1,1 @@
+a and b: 0nna or b: 15nna xor b: 15nnnot a: -11nna << n: 320nna >> n: 0nnc >> b: 0nnleft rotate: 320nnright rotate: 1342177280nn

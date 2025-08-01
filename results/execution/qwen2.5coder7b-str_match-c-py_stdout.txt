@@ -1,0 +1,6 @@
+Starts with Test ( Hello,Hell ) :  True
+Ends with Test ( Code,ode ) :  True
+Contains Test ( Google,msn ) :  (False, None)
+
+Occurrences of 'o' in 'Hello' : 
+4

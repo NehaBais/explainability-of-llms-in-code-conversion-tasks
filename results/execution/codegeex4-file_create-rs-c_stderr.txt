@@ -1,0 +1,2 @@
+Error creating directory: Read-only file system
+Error creating file: Read-only file system

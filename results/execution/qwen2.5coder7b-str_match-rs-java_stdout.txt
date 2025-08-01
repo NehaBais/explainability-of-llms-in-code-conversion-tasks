@@ -1,0 +1,4 @@
+Does s1 start with s3? true
+Does s1 contain s3? true
+Found match at pos 0
+Does s2 end with s3? true

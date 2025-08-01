@@ -1,0 +1,2 @@
+input.txt does not exist
+docs directory does not exist

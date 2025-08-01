@@ -1,0 +1,22 @@
+'YUP' is of type PKc and 'YUP' is of type PKc
+'YUP' is equal to 'YUP'
+'YUP' is not strictly less than 'YUP'
+'YUP' is not strictly greater than 'YUP'
+'BALL' is of type PKc and 'BELL' is of type PKc
+'BALL' is not equal to 'BELL'
+'BALL' is strictly less than 'BELL'
+'BALL' is not strictly greater than 'BELL'
+'123' is of type PKc and '24' is of type PKc
+'123' is not equal to '24'
+'123' is strictly less than '24'
+'123' is not strictly greater than '24'
+'24' is of type i and '123' is of type i
+'24' is not equal to '123'
+'24' is strictly less than '123'
+'24' is not strictly greater than '123'
+'5' is of type d and '5' is of type i
+'5' is equal to '5'
+'5' is not strictly less than '5'
+'5' is not strictly greater than '5'
+Strings are not equal in case-sensitive comparison
+Strings are not lexicographically less in case-insensitive comparison

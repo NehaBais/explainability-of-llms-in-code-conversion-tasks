@@ -1,0 +1,16 @@
+AND:     0b11001
+OR:      0b1111111
+XOR:     0b1100110
+NOT:   ~ 0b11011
+SIGN-EXTENDING ARITHMETIC SHIFT RIGHT 
+               asr(0b11011, 1)       =      0b1101
+               asr(0b11011, 2) 
+                  =      0b110
+               asr(0b11011, 4) 
+                  =      0b1
+RIGHT rotation and LEFT shift operations should yield similar results as in Python.
+               rotl(0b11011, 1)       =      0b110110
+               rotl(0b11011, 2) 
+                  =      0b1101100
+               rotl(0b11011, 4) 
+                  =      0b110110000

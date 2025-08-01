@@ -1,0 +1,4 @@
+The following file called input.txt was renamed as output.txt.
+The following file called /input.txt could not be renamed as /output.txt.
+The following directory called docs/ was renamed as mydocs/.
+The following directory called /docs/ could not be renamed as /mydocs/.

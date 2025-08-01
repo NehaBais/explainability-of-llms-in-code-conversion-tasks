@@ -1,0 +1,12 @@
+not 1.2.Foo and 1.3.Bar are exactly lexically equal.
+1.2.Foo and 1.3.Bar are lexically inequal.
+1.2.Foo is lexically ordered before 1.3.Bar.
+not 1.2.Foo is lexically ordered after 1.3.Bar.
+not 1.2.FOO and 1.3.BAR are exactly lexically equal.
+1.2.FOO and 1.3.BAR are lexically inequal.
+1.2.FOO is lexically ordered before 1.3.BAR.
+not 1.2.FOO is lexically ordered after 1.3.BAR.
+not 1.2 and 1.3 are exactly numerically equal.
+1.2 and 1.3 are numerically inequal.
+1.2 is numerically ordered before 1.3.
+not 1.2 is numerically ordered after 1.3.

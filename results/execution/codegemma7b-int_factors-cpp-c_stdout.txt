@@ -1,0 +1,4 @@
+Factors of 3135 are: 1 
+Factors of   45 are: 1 
+Factors of   60 are: 1 
+Factors of   81 are: 1 

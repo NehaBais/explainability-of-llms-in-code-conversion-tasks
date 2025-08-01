@@ -1,0 +1,7 @@
+AND:    0b       5
+& 0b       3bits  =  0b       1bits
+OR:     0b       5
+|   0b       3bits  =  0b       7bits
+XOR:    0b       5
+^ 0b       3bits  =  0b       6bits
+NOT:	~0b       5 =  0b     250

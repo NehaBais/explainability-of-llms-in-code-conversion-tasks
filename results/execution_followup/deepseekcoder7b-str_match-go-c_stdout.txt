@@ -1,0 +1,4 @@
+1. Hello World starts with Hell: true
+2. Hello World contains llo: true
+3. Substring found at position 0
+3. Hello World ends with orld: true

@@ -1,0 +1,2 @@
+Size of input.txt: 642
+/input.txt doesn't exist

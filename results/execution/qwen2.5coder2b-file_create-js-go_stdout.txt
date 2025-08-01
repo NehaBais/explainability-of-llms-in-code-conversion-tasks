@@ -1,0 +1,2 @@
+Error creating file: open /output.txt: read-only file system
+Error creating directory: mkdir /docs: read-only file system

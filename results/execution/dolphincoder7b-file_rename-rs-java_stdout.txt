@@ -1,0 +1,2 @@
+Move to output.txt completed successfully.
+Move to mydocs completed successfully.

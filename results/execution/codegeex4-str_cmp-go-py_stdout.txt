@@ -1,0 +1,9 @@
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat is lexically bytewise less than or equal to dog
+cat not equal to dog when compared without considering case
+123 is less than 456
+Index of 'banana' in the list: 1
+'apple' is present in the list
+catdog
+My name is John and I am 25 years old.

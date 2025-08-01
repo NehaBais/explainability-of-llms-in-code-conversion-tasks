@@ -1,0 +1,8 @@
+input.txt
+zero_length.txt
+docs/input.txt
+docs/zero_length.txt
+ does not exist
+ does not exist
+ does not exist
+ does not exist

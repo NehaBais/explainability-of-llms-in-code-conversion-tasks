@@ -1,0 +1,8 @@
+panic: rename /input.txt /output.txt: no such file or directory
+
+goroutine 1 [running]:
+main.renameFiles()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpk_xzahpb/yicoder9b-file_rename-c-go.go:20 +0xe0
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpk_xzahpb/yicoder9b-file_rename-c-go.go:30 +0x1c
+exit status 2

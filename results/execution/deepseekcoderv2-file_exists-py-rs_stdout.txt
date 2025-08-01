@@ -1,0 +1,7 @@
+Checking for input.txt in the current working directory:
+File 'input.txt' exists in the current working directory.
+Directory 'docs' exists in the current working directory.
+
+Checking for input.txt in the filesystem root:
+File 'input.txt' does not exist in the filesystem root.
+Directory 'docs' does not exist in the filesystem root.

@@ -1,0 +1,5 @@
+1. 'abracadabra' starts with 'abr': 1
+2. 'abracadabra' contains 'abr': yes, at location 0
+2.2. at location 7
+2.2. and that's all
+3. 'abracadabra' ends with 'abr': 0

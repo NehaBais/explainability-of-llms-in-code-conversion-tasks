@@ -1,0 +1,1 @@
+Error:  mkdir //docs: read-only file system

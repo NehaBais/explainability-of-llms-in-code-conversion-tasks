@@ -1,0 +1,2 @@
+Size of input.txt: 559
+Failed to get size of /input.txt

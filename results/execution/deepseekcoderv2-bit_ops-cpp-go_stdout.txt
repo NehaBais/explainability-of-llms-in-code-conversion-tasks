@@ -1,0 +1,9 @@
+a and b: 10
+a or b:  1010
+a xor b: 1000
+not a:   -1011
+a shl b: 101000
+a shr b: 10
+a lsr b: 10
+a rol b: 101000
+a ror b: 1010000000000000000000000000000010

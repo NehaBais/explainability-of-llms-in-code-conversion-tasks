@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3n1x_tpc/qwen2.5coder2b-str_cmp-cpp-py.py", line 14, in <module>
+    a = "1.2.Foo" if len(sys.argv) > 1 else "1.3.Bar"
+                         ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?

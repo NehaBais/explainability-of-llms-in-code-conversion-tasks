@@ -1,0 +1,1 @@
+Enter First integer: Enter Second integer: 10 Is less than 20

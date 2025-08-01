@@ -1,0 +1,30 @@
+
+YUP is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and YUP Is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+YUP Is less than or equal to YUP
+YUP Is greater than or equal to YUP
+YUP Is equal to YUP
+YUP Has negated object identity with YUP
+
+BALL is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and BELL Is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+BALL is strictly less than  BELL
+BALL Is less than or equal to BELL
+BALL Is not equal to BELL
+BALL Has negated object identity with BELL
+
+24 is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and 123 Is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+24 Is strictly greater than  123
+24 Is greater than or equal to 123
+24 Is not equal to 123
+24 Has negated object identity with 123
+
+24 is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and 123 Is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+24 Is strictly greater than  123
+24 Is greater than or equal to 123
+24 Is not equal to 123
+24 Has negated object identity with 123
+
+5.000000 is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and 5 Is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+5.000000 Is strictly greater than  5
+5.000000 Is greater than or equal to 5
+5.000000 Is not equal to 5
+5.000000 Has negated object identity with 5

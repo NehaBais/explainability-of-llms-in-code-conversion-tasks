@@ -1,0 +1,6 @@
+
+YUP is of type char* and YUP is of type char*
+YUP Is less than or equal to YUP
+YUP Is greater than or equal to YUP
+YUP Is equal to YUP
+YUP has object identity with YUP

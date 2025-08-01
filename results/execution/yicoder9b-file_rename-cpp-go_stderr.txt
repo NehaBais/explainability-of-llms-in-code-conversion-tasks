@@ -1,0 +1,9 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x2 addr=0x28 pc=0x1044e4650]
+
+goroutine 1 [running]:
+main.Rename({0x1044e4a61, 0x4}, {0x1044e4c27, 0x6}, 0x1)
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpbk6tkrj9/yicoder9b-file_rename-cpp-go.go:23 +0x80
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpbk6tkrj9/yicoder9b-file_rename-cpp-go.go:9 +0x58
+exit status 2

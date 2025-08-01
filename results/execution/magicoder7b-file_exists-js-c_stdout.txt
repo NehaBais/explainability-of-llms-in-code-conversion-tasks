@@ -1,0 +1,6 @@
+Current directory: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpdzatanww
+File input.txt does not exist.
+Directory docs does not exist.
+Changed to root directory. Checking there...
+File /input.txt does not exist.
+Directory /docs does not exist.

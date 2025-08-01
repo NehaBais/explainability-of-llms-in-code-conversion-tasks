@@ -1,0 +1,7 @@
+a and b: 0
+a or b: 15
+a xor b: 15
+not a: -11
+a << n: 40
+a >> n: 2
+(a << shift_amount) >> rotate_amount: 5

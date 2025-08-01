@@ -1,0 +1,6 @@
+Enter first integer: Enter second integer: a + b = 12
+a - b = 8
+a * b = 20
+a / b (integer part) = 5
+a % b = 0
+a ^ b = 100

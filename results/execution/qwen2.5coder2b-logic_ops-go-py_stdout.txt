@@ -1,0 +1,12 @@
+a and b is True
+a or b is True
+not a is False
+a and b is False
+a or b is True
+not a is True
+a and b is False
+a or b is True
+not a is False
+a and b is False
+a or b is False
+not a is True

@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.RuntimeException: The specified file does not exist.
+	at FileSizeChecker.getFileSize(FileSizeChecker.java:19)
+	at FileSizeChecker.main(FileSizeChecker.java:9)

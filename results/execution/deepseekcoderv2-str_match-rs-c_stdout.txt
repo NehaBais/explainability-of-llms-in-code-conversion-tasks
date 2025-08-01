@@ -1,0 +1,4 @@
+The first string starts with the second string
+Found match at pos 0
+Found match at pos 0
+The first string does not end with the second string

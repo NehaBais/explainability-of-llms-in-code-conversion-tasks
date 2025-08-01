@@ -1,0 +1,2 @@
+Failed to rename root file: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+Failed to rename root directory: Os { code: 2, kind: NotFound, message: "No such file or directory" }

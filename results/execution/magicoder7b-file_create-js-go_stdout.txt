@@ -1,0 +1,4 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2ygnaw2v/output.txt created successfully.
+Could not create file: open /output.txt: read-only file system
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2ygnaw2v/docs created successfully.
+Could not create directory:  mkdir /docs: read-only file system

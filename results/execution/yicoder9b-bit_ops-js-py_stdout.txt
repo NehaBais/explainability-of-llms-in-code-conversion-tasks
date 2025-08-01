@@ -1,0 +1,7 @@
+a AND b: 2
+a OR b: 51
+a XOR b: 49
+NOT a: -51
+a << b: 400
+a >> b: 6
+a >>> b logical right rotate : 159383552

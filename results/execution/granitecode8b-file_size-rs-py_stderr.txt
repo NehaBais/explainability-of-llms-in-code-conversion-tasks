@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpj9trm2ih/granitecode8b-file_size-rs-py.py", line 6, in <module>
+    sys.argv[1] if len(sys.argv) > 1 else exit_err("No file name supplied", 1)
+                       ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?

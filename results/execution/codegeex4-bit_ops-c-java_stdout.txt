@@ -1,0 +1,9 @@
+a and b: 2
+a or b: 10
+a xor b: 8
+~a: -11
+a << n: 40
+a >> n: 2
+(unsigned)c >> b: 2
+a << rotate n: 0
+a >> rotate n: -2147483648

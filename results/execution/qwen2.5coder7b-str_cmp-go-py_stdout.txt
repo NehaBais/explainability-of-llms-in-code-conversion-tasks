@@ -1,0 +1,7 @@
+cat is not exactly equal to dog
+cat is not equal to dog
+cat is lexicographically less than dog
+cat is not lexicographically greater than dog
+Case insensitive comparison: The strings are not equal
+100 is not lexicographically greater than 20
+200 is numerically greater than 100

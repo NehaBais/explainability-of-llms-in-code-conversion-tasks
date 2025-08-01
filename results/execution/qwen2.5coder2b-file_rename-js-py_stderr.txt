@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm315f6sf/qwen2.5coder2b-file_rename-js-py.py", line 4, in <module>
+    fso = os.environ["PYTHONIOENCODING"]
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 714, in __getitem__
+KeyError: 'PYTHONIOENCODING'

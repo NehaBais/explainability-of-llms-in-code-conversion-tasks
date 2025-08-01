@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpb64nw2f7/dolphincoder7b-file_rename-js-py.py", line 28, in <module>
+    move_file(current_path)
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpb64nw2f7/dolphincoder7b-file_rename-js-py.py", line 9, in move_file
+    os.rename(
+FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpb64nw2f7/input.txt' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpb64nw2f7/output.txt'

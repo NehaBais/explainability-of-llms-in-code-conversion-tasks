@@ -1,0 +1,3 @@
+a AND b:  0
+a OR b:   1
+NOT a:    0

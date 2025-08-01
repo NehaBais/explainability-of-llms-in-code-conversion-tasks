@@ -1,0 +1,3 @@
+Starts with Test ( Hello,Hell ) : 1
+Ends with Test ( Code,ode ) : 1
+Contains Test: Match found at position: 7

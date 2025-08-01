@@ -1,0 +1,6 @@
+The strings are not equal
+The first string is lexically after the second
+The strings are not equal when ignoring case
+The first string is lexically after the numeric string
+The strings are not equal when ignoring case (manual conversion)
+The strings are not equal when ignoring case using unicode package

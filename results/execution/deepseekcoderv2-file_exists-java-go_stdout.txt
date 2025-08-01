@@ -1,0 +1,2 @@
+Checking if input.txt exists in the current directory: false
+Checking if /docs/input.txt exists in the filesystem root: false

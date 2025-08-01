@@ -1,0 +1,2 @@
+Size of input.txt in the Current Directory: 644 bytes
+Failed to get stats of /input.txt.

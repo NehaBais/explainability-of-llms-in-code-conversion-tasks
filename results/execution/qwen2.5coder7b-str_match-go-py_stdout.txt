@@ -1,0 +1,6 @@
+1. abracadabra starts with abr: True
+2. abracadabra contains abr: True
+2.1. at location 0
+2.2. at location 11
+2.2. and that's all
+3. abracadabra ends with abr: False

@@ -1,0 +1,4 @@
+File exists in current directory: false
+Directory exists in current directory: false
+File exists in the root: false
+Directory exists in the root: false

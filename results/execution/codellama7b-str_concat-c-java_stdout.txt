@@ -1,0 +1,3 @@
+'hello'
+'hello' + 'literal'
+sconcat('hello', 'literal') = 'hello literal'

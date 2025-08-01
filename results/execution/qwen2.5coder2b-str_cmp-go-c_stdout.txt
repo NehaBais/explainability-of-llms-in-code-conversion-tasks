@@ -1,0 +1,2 @@
+cat is lexically bytewise less than dog
+cat is lexically bytewise less than dog

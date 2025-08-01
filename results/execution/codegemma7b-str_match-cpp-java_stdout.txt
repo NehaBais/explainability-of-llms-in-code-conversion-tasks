@@ -1,0 +1,5 @@
+Starts with: true
+Contains: false
+Ends with: false
+Location of match: 0
+Number of occurrences: 2

@@ -1,0 +1,8 @@
+panic: open /output.txt: read-only file system
+
+goroutine 1 [running]:
+main.createFile({0x14000192030?, 0x100e4b244?})
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpok081uex/qwen2.5coder7b-file_create-cpp-go.go:26 +0x80
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpok081uex/qwen2.5coder7b-file_create-cpp-go.go:14 +0x6c
+exit status 2

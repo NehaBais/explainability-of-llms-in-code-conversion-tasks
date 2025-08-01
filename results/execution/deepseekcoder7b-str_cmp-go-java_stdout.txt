@@ -1,0 +1,4 @@
+cat is not exactly equal to dog
+cat is lexically less than dog
+Case-sensitive Comparison: cat is lexically less than dog
+cat is not case-insensitively equal to dog

@@ -1,0 +1,5 @@
+Enter an integer: Enter an integer: A+b =  5
+A-b =  1
+A*b =  6
+A//b =  1
+A%b =  1  (If it's negative, the sign is the same as b)

@@ -1,0 +1,2 @@
+usage: mkdir <path>
+Error: "Invalid number of arguments"

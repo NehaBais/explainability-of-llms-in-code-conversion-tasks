@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpoi8t8riw/codegeex4-file_create-rs-py.py", line 25, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpoi8t8riw/codegeex4-file_create-rs-py.py", line 9, in main
+    create("/")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpoi8t8riw/codegeex4-file_create-rs-py.py", line 14, in create
+    with open(path, "w"):
+         ^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/output.txt'

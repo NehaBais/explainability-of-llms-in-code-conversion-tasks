@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplnbz255n/qwen2.5coder7b-file_rename-go-py.py", line 16, in <module>
+    rename_files_and_directory()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplnbz255n/qwen2.5coder7b-file_rename-go-py.py", line 11, in rename_files_and_directory
+    os.rename("/input.txt", "/output.txt")
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'

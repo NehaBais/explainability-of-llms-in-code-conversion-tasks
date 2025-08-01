@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.NumberFormatException: For input string: "FFFFFE34"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseUnsignedInt(Integer.java:775)
+	at java.base/java.lang.Integer.parseUnsignedInt(Integer.java:880)
+	at Main.bitwise(Main.java:6)
+	at Main.main(Main.java:41)

@@ -1,0 +1,9 @@
+a AND b: 2
+a OR b: 15
+a XOR b: 13
+NOT a: -16
+a << b: 60
+a >> b: 3
+a >>> b: 3
+a rotated to the right by b bits: -1073741821
+a rotated to the left by b bits : 60

@@ -1,0 +1,4 @@
+File or Directory input.txt does not exist
+Directory docs does not exist
+File or Directory /input.txt does not exist
+Directory /docs does not exist

@@ -1,0 +1,9 @@
+a and b: 0
+a or b: 7
+a xor b: 7
+not a: -6
+a << n: 20
+a >> n: 1
+a >>> n: 1
+left rotate a by b places : 20
+right rotate a by b places: 1073741825

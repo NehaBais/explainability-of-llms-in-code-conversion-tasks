@@ -1,0 +1,4 @@
+Strings are equal
+Strings are not equal
+Case insensitive strings are equal
+Case insensitive string 2 is lexically ordered after string 1

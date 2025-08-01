@@ -1,0 +1,6 @@
+Current directory exists: true
+Input file exists in the current directory: true
+Docs directory exists in the current directory: true
+Root directory exists: true
+Input file exists in the root directory: false
+Docs directory exists in the root directory: false

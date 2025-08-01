@@ -1,0 +1,2 @@
+Strings are not equal
+Both strings are identical lexically (case insensitive)

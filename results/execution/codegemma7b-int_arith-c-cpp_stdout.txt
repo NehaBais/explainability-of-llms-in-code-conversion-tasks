@@ -1,0 +1,5 @@
+Enter two integers: Sum: 12
+Difference: 8
+Product: 20
+Integer Quotient (truncates towards zero): 5
+Remainder (same sign as first operand): 0

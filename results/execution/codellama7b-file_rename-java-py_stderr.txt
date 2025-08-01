@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2_6kpi4_/codellama7b-file_rename-java-py.py", line 15, in <module>
+    rename_file("/input.txt", "/output.txt")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2_6kpi4_/codellama7b-file_rename-java-py.py", line 6, in rename_file
+    return os.rename(oldname, newname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'

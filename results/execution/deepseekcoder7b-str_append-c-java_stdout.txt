@@ -1,0 +1,2 @@
+Contents of the variable after append operation: 
+Good Morning to all !!!

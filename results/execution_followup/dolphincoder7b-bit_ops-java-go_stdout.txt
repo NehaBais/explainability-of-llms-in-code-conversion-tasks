@@ -1,0 +1,9 @@
+a AND b:   4
+a OR b:    21
+a XOR b:    17
+NOT a:     -22
+a  << b:    336
+a  >> b:    1
+a  >>> b:    1
+a rol b:    336
+a ror b:    1

@@ -1,0 +1,4 @@
+input.txt does not exist and it's a relative path.
+/input.txt does not exist but its parent directory does.
+docs does not exist and it's a relative path.
+/docs does not exist but its parent directory does.

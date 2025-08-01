@@ -1,0 +1,7 @@
+a AND b: 0
+a OR b: 15
+a XOR b: 15
+NOT a: -11
+a << b: 320
+a >> b: 0
+a >>> b (arithmetic right shift): 0

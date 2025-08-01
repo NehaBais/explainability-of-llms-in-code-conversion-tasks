@@ -1,0 +1,4 @@
+cat is bytewise different from dog
+cat is lexically less than dog
+cat and dog are not equal when case is ignored
+02145368791 is less than 21453687910

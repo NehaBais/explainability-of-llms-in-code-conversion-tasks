@@ -1,0 +1,7 @@
+a and b: 1
+a or b: 7
+a xor b: 6
+not a: -6
+a << n: 40
+a >> n: 0
+c >> b: 0

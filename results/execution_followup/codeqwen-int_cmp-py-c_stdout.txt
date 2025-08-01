@@ -1,0 +1,6 @@
+Enter value of A: Enter value of B: A is less than B
+
+Testing condition for different cases
+A < B: true.
+A == B: false.
+A > B: false.

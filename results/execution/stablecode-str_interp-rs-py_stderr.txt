@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp32do6wrw/stablecode-str_interp-rs-py.py", line 9, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp32do6wrw/stablecode-str_interp-rs-py.py", line 6, in main
+    print(f"{name:^8} had a {adj:^7} lamb")
+             ^^^^
+NameError: name 'name' is not defined

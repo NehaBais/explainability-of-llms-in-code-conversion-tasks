@@ -1,0 +1,6 @@
+panic: open /output.txt: read-only file system
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp9oz2fcec/codegemma7b-file_create-c-go.go:24 +0xdc
+exit status 2

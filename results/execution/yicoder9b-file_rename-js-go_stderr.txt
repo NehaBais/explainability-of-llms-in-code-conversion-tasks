@@ -1,0 +1,6 @@
+panic: rename c:/input.txt c:/output.txt: no such file or directory
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpan5upcvf/yicoder9b-file_rename-js-go.go:43 +0xe0
+exit status 2

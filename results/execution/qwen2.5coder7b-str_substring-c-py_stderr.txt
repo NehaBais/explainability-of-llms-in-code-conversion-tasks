@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3jj_duf5/qwen2.5coder7b-str_substring-c-py.py", line 49, in <module>
+    test(str_wholeless1)  # "... progra"
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3jj_duf5/qwen2.5coder7b-str_substring-c-py.py", line 36, in test
+    r = A()
+        ^^^
+TypeError: str_wholeless1() missing 1 required positional argument: 's'

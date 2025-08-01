@@ -1,0 +1,3 @@
+The string starts with the given substring.
+The string does not end with the given substring.
+The substring was found at index 0

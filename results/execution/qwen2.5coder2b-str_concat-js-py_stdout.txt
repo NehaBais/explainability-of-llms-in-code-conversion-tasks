@@ -1,0 +1,2 @@
+Original Variable (s): hello
+Concatenated Result: hello there!

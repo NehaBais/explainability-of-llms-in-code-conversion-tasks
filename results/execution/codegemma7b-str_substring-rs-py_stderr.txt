@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpn9omrdc2/codegemma7b-str_substring-rs-py.py", line 6, in <module>
+    print("".join(itertools.islice(itertools.dropwhile(lambda x: s.index(x) < n, s), m)))
+                  ^^^^^^^^^
+NameError: name 'itertools' is not defined. Did you forget to import 'itertools'?

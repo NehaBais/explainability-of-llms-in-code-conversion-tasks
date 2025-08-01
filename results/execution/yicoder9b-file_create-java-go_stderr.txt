@@ -1,0 +1,8 @@
+panic: open /output.txt: read-only file system
+
+goroutine 1 [running]:
+main.createFile({0x1400000e100?, 0x6?})
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpsptyoedd/yicoder9b-file_create-java-go.go:24 +0x80
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpsptyoedd/yicoder9b-file_create-java-go.go:17 +0xa8
+exit status 2

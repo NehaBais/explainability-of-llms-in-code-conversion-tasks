@@ -1,0 +1,4 @@
+StartsWith: true
+EndsWith: false
+Contains: true at index 0
+Additional occurrence found at index 2

@@ -1,0 +1,2 @@
+Creating directory ./path/to/dir
+Directory created successfully.

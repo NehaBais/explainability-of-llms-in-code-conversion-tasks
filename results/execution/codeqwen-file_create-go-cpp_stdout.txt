@@ -1,0 +1,4 @@
+file input.txt created!
+Error: could not open file /input.txt
+directory docs created!
+Error: could not create directory /docs

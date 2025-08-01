@@ -1,0 +1,1 @@
+Size of file.txt is 316 bytes

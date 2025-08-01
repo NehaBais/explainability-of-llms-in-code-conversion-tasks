@@ -1,0 +1,7 @@
+Enter two integers to add:
+Enter another integer to subtract:
+Sum: 5
+Difference: -1
+Product: 6
+Division: 0
+Remainder: 2

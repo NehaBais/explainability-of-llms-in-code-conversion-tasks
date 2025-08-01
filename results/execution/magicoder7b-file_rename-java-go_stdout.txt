@@ -1,0 +1,8 @@
+The following file called input.txt was renamed as output.txt.
+Rename operation succeeded.
+The following file called /input.txt was renamed as /output.txt.
+Rename operation failed.
+The following directory called docs was renamed as mydocs.
+Rename operation succeeded.
+The following directory called /docs/ was renamed as /mydocs/.
+Rename operation failed.

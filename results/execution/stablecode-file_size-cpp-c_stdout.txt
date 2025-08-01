@@ -1,0 +1,2 @@
+Size of file 'input.txt' is 468 bytes.
+Failed to open file: /input.txt

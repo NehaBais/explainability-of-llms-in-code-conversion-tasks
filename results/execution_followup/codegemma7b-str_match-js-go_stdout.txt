@@ -1,0 +1,4 @@
+1: Does 'tacoloco' start with 'co'? false
+2: Is 'co' contained in 'tacoloco'? true
+   In fact, it happens 4 times within 'tacoloco', at index4 times [t a l o]
+3: Does 'tacoloco' end with 'co'? true

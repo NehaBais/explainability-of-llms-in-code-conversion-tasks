@@ -1,0 +1,8 @@
+Enter first integer:
+Enter second integer:
+Sum: 5
+Difference: -1
+Product: 6
+Integer Quotient: 0
+Float Quotient: 0.6666667
+Exponentiation: 8

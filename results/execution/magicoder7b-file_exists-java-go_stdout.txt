@@ -1,0 +1,2 @@
+The file does not exist: stat docs/input.txt: no such file or directory
+The file does not exist: stat /docs/input.txt: no such file or directory

@@ -1,0 +1,6 @@
+"abcd".startsWith("ab") -> True
+"abcd".endsWith("zn") -> False
+"abab".contains("bb") -> False
+"abab".contains("ab") -> True
+indexOf("abab","bb") -> -1
+indexOf("abab","ab") -> 0

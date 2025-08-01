@@ -1,0 +1,2 @@
+1: Does 'tacoloco' start with 'co'? No.
+2: Is 'co' contained in 'tacoloco'? Yes.

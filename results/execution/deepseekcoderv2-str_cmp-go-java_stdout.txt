@@ -1,0 +1,6 @@
+cat is bytewise different from dog
+cat is bytewise different from dog
+cat is lexically less than dog
+cat is case insensitive lexically less than dog
+123 is less than 456
+cat does not equal to dog ignoring case

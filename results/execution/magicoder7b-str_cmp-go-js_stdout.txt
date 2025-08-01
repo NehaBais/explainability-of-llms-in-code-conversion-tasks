@@ -1,0 +1,4 @@
+cat is different from dog
+cat is lexically less than dog
+cat is lexically less than or equal to dog
+cat is not identical to dog when interpreted as UTF-8 and compared under Unicode simple case folding rules.

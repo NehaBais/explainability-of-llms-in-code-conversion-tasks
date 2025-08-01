@@ -1,11 +1,11 @@
 The error in the provided JavaScript code is on line 10: 
 
-```/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-file_create-java-js.js:10
+```/Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/stablecode-file_create-java-js.js:10
         let filePath = path.join(dir, 'output.txt'));
                                                    ^
 
 SyntaxError: Unexpected token ')'
-    at wrapSafe (/Users/caman/Code/hobby-projects/fall-research-project/results/accepted_code/stablecode-file_create-java-js.js:149:27)
+    at wrapSafe (/Users/nbthakur/Code/explainability-of-llms-in-code-conversion-tasks/results/accepted_code/stablecode-file_create-java-js.js:149:27)
     at Module._compile (/Volumes/Data/Projects/node_modules/node_modules/babylon/lib/index.js:1165:22)
     at Object.Module._extensions..js (/Volumes/Data/Projects/node_modules/node_modules/babylon/lib/index.js:1214:12)
     at Module.load (/Volumes/Data/Projects/node_modules/node_modules/babylon/lib/index.js:1165:22)

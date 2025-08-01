@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp97zgvvb5/qwen2.5coder7b-str_cmp-java-py.py", line 30, in <module>
+    compare("Hello", "Hello")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp97zgvvb5/qwen2.5coder7b-str_cmp-java-py.py", line 25, in compare
+    print("The lexical relationship is:", A.compare(B))
+                                          ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'compare'

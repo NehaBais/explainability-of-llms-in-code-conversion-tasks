@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpc96mrpvc/codellama7b-int_cmp-rs-py.py", line 20, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpc96mrpvc/codellama7b-int_cmp-rs-py.py", line 8, in main
+    nums = [int(line.strip()) for line in lines]
+            ^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''

@@ -1,0 +1,2 @@
+	eq , ne , gt , lt , ge , le
+ball%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true) bellnYUP%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true)%!d(bool=false)%!d(bool=true) yepnball%!d(bool=false)%!d(bool=true)%!d(bool=true)%!d(bool=true)%!d(bool=true)%!d(bool=true) BELL ignoring casen

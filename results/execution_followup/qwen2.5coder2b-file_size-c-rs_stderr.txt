@@ -1,0 +1,2 @@
+Error reading current_dir_input.txt: No such file or directory (os error 2)
+Error reading /root_input.txt: No such file or directory (os error 2)

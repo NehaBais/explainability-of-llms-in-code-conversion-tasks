@@ -1,0 +1,7 @@
+Checking in current working directory:
+File 'input.txt' does not exist.
+Directory 'docs' does not exist.
+
+Checking in filesystem root:
+File '/input.txt' does not exist.
+Directory '/docs' does not exist.

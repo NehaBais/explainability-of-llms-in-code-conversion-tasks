@@ -1,0 +1,12 @@
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+[Error: ENOENT: no such file or directory, mkdir '/docs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: '/docs'
+}
+
+Node.js v23.6.1

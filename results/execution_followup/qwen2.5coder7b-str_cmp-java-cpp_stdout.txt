@@ -1,0 +1,2 @@
+Strings are equal.
+Strings are not equal.

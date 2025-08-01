@@ -1,0 +1,3 @@
+Enter first number: Enter second number: Sum of the numbers: 12
+Difference between them: 8
+Product of the numbers: 20

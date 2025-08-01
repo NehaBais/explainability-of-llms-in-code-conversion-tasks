@@ -1,0 +1,11 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x2 addr=0x0 pc=0x104310898]
+
+goroutine 1 [running]:
+os.(*File).Name(...)
+	/opt/homebrew/Cellar/go/1.23.0/libexec/src/os/file.go:62
+main.isExists(0x104311fcb?)
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp71rfk1ql/dolphincoder7b-file_exists-java-go.go:6 +0x18
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp71rfk1ql/dolphincoder7b-file_exists-java-go.go:12 +0x38
+exit status 2

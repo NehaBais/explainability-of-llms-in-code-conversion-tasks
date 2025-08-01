@@ -1,0 +1,8 @@
+Enter two integers: Sum: 		  12
+Difference: 	  8
+Product: 	  20
+Integer quotient: 5
+Float quotient:   2.5
+Whole Remainder:  -2
+Actual Remainder: -5.0
+Exponentiation:   100

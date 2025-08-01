@@ -1,0 +1,7 @@
+Enter first number: 
+Enter second number: 
+Sum: 3
+Difference: -1
+Product: 2
+Integer Quotient (truncates towards zero): 0
+Remainder (same sign as first operand): 1

@@ -1,0 +1,3 @@
+"str" starts with "prefix"
+"str" does not end with "suffix"
+"main_str" does not contain "substr"

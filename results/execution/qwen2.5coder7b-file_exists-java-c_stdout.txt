@@ -1,0 +1,2 @@
+Path './docs/input.txt' does not exist or an error occurred.
+Path '/docs/input.txt' does not exist or an error occurred.

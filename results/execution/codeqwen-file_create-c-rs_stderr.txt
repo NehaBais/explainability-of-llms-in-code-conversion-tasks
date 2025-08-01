@@ -1,0 +1,1 @@
+Error: failed to create file '/root/output.txt'

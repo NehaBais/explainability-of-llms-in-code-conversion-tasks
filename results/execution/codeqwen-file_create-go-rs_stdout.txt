@@ -1,0 +1,4 @@
+File input.txt created!
+couldn't create file /input.txt: Read-only file system (os error 30)
+Directory docs created!
+couldn't create directory /docs: Read-only file system (os error 30)

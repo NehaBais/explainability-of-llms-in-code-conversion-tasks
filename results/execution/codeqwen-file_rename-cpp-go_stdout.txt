@@ -1,0 +1,4 @@
+File input.txt has been renamed to output.txt successfully.
+Directory docs has been renamed to mydocs successfully.
+rename /input.txt /output.txt: no such file or directory
+rename /docs /mydocs: no such file or directory

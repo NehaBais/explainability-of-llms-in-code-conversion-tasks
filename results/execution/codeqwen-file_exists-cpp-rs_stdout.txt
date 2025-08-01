@@ -1,0 +1,4 @@
+input.txt: exists with a file size of 708 bytes.
+zero_length.txt: does not exist
+docs/input.txt: does not exist
+docs/zero_length.txt: does not exist

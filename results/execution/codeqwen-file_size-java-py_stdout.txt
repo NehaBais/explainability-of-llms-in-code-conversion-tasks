@@ -1,0 +1,2 @@
+Size of file in current directory (input.txt):  379
+Size of file in root directory (/input.txt):  File does not exist

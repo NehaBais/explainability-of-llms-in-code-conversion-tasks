@@ -1,0 +1,6 @@
+a AND b: 2
+a OR b: 15
+a XOR b: 13
+NOT a: -16
+Left Shift a by b: 60
+Right Shift a by b: 3

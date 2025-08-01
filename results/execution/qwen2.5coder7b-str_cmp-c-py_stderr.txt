@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpmj26hseh/qwen2.5coder7b-str_cmp-c-py.py", line 62, in <module>
+    for i in range(1, len(sys.argv), 2):
+                          ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?

@@ -1,0 +1,7 @@
+true
+false
+false
+true
+"bb" not found in "abab".
+Location of "ab" in "abab": 0
+Location of "ab" in "abab": 2

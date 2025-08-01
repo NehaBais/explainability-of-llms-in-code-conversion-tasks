@@ -1,0 +1,2 @@
+Enter two integers: 
+At least one of the numbers is non-positive

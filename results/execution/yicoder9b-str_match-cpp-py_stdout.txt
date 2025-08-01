@@ -1,0 +1,4 @@
+Does abcdabab start with ab? True
+ab is found at locations [0, 4, 6] in abcdabab
+Does abcdabab end with ab? True
+

@@ -1,0 +1,5 @@
+Enter two integers: a + b = 3
+a - b = -1
+a * b = 2
+quotient of a / b (truncates towards zero) = 0
+remainder of a / b (sign matches first operand if different) = 1

@@ -1,0 +1,6 @@
+Checking file existence:
+'input.txt' exists
+/input.txt' does not exist: No such file or directory (os error 2)
+Checking directory existence:
+'docs' exists
+/docs' does not exist: No such file or directory (os error 2)

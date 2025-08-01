@@ -1,0 +1,2 @@
+Failed to rename '/input.txt'.
+Failed to rename '/docs'.

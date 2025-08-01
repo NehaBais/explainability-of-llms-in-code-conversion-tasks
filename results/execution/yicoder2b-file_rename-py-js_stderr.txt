@@ -1,0 +1,14 @@
+node:internal/fs/promises:784
+  return await PromisePrototypeThen(
+         ^
+
+Error: ENOENT: no such file or directory, rename 'undefined/input.txt' -> 'undefined/output.txt'
+    at async rename (node:internal/fs/promises:784:10) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: 'undefined/input.txt',
+  dest: 'undefined/output.txt'
+}
+
+Node.js v23.6.1

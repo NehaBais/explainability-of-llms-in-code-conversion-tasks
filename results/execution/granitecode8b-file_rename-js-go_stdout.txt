@@ -1,0 +1,2 @@
+rename c:/input.txt c:/output.txt: no such file or directory
+rename c:/docs c:/mydocs: no such file or directory

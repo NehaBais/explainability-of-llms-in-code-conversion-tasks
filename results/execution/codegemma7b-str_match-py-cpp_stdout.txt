@@ -1,0 +1,5 @@
+str1 starts with str2
+str1 contains str2
+Location of the match: 0
+Number of occurrences: 1
+str1 does not end with str2

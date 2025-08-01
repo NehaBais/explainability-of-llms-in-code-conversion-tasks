@@ -1,0 +1,3 @@
+A and B: false
+A or B: true
+Not A: false

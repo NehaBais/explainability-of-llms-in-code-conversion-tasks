@@ -1,0 +1,2 @@
+String 1 starts with String 3?: True
+String 1 ends with String 3?: False

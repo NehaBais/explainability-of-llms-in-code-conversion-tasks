@@ -1,0 +1,9 @@
+A AND b: 2
+A OR b: 11
+A XOR b: 9
+NOT a: -11
+A << b: 80
+A >> b: 1
+A >>> b: 1
+A rol b: 80
+A ror b: 1073741825

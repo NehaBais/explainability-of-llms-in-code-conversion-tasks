@@ -1,0 +1,13 @@
+eq , ne , gt , lt , ge , le
+ball false true false true false true bell
+ball false true false true false true bell ignoring case
+ball true false false false true true ball
+ball true false false false true true ball ignoring case
+YUP false true true false true false YEP
+YUP false true true false true false YEP ignoring case
+ball false true true false true false BELL
+ball false true false true false true BELL ignoring case
+ball false true true false true false BALL
+ball true false false false true true BALL ignoring case
+YUP false true false true false true yep
+YUP false true true false true false yep ignoring case

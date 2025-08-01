@@ -1,0 +1,6 @@
+panic: mkdir /Users/nbthakur/docs: file exists
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8lw_587q/codegemma7b-file_create-java-go.go:22 +0x100
+exit status 2

@@ -1,0 +1,2 @@
+Mary had a %s lamb little
+%!$(string=Mary)s had a %!$(string=little)s lambmap[adj:little name:Mary] had a %!s(BADINDEX) lamb

@@ -1,0 +1,9 @@
+Enter first integer: Enter second integer: a AND b: 2
+a OR b: 10
+a XOR b: 8
+NOT a: -11
+a << b: 40
+a >> b: 2
+a >>> b: 2
+a rol b: 40
+a ror b: 2147483650

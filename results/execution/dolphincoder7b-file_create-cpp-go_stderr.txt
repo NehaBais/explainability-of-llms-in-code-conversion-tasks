@@ -1,0 +1,6 @@
+panic: open /output.txt: read-only file system
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpan14x_kr/dolphincoder7b-file_create-cpp-go.go:16 +0x104
+exit status 2

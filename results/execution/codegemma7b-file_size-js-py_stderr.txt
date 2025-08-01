@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpq0ferz5y/codegemma7b-file_size-js-py.py", line 7, in <module>
+    file_size_root = os.path.getsize("/input.txt")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 62, in getsize
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

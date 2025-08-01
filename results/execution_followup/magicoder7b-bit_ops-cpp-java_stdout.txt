@@ -1,0 +1,9 @@
+a and b: 3
+a or b:  15
+a xor b: 12
+not a:   -16
+a shl b: 120
+a shr b: 1
+a lsr b: 1
+a rol b: 120
+a ror b: -536870911

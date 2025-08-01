@@ -1,0 +1,6 @@
+The strings are not equal
+The strings are not equal
+The first string is lexically after the second
+The first string is lexically after the second
+The strings are not equal when ignoring case
+The strings are not equal when ignoring case

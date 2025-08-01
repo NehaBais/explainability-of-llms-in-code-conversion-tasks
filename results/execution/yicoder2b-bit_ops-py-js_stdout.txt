@@ -1,0 +1,45 @@
+    AND:     0b00011011 
+           & 0b01111101 
+           = 0b25.toString(16)
+    OR:      0b00011011 
+           | 0b01111101 
+           = 0b127.toString(16)
+    XOR:     0b00011011 
+           ^ 0b01111101 
+           = 0b102.toString(16)
+    NOT:   ~ 0b00011011 
+           = 0b228
+      SHIFTS
+         RIGHT:   0b00011011 >> 1
+           = 0b13.toString(16)
+         RIGHT:   0b00011011 >> 2
+           = 0b6.toString(16)
+         RIGHT:   0b00011011 >> 3
+           = 0b3.toString(16)
+         RIGHT:   0b00011011 >> 4
+           = 0b1.toString(16)
+         RIGHT:   0b00011011 >> 5
+           = 0b0.toString(16)
+         RIGHT:   0b00011011 >> 6
+           = 0b0.toString(16)
+         RIGHT:   0b00011011 >> 7
+           = 0b0.toString(16)
+         RIGHT:   0b00011011 >> 8
+           = 0b0.toString(16)
+         LEFT:    0b00011011 << 1
+           = 0b54.toString(16)
+         LEFT:    0b00011011 << 2
+           = 0b108.toString(16)
+         LEFT:    0b00011011 << 3
+           = 0b216.toString(16)
+         LEFT:    0b00011011 << 4
+           = 0b432.toString(16)
+         LEFT:    0b00011011 << 5
+           = 0b864.toString(16)
+         LEFT:    0b00011011 << 6
+           = 0b1728.toString(16)
+         LEFT:    0b00011011 << 7
+           = 0b3456.toString(16)
+         LEFT:    0b00011011 << 8
+           = 0b6912.toString(16)
+      SIGN-EXTENDING ARITHMETIC SHIFT RIGHT

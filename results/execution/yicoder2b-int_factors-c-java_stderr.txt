@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 256 out of bounds for length 256
+	at Main.factor(Main.java:21)
+	at Main.main(Main.java:45)

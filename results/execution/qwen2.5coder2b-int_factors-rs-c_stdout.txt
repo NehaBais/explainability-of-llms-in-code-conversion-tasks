@@ -1,0 +1,2 @@
+The factors of 100 are: 2 50 5 20 
+The factors of 101 are: 2 50 5 20 

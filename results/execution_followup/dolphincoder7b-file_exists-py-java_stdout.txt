@@ -1,0 +1,4 @@
+File exists.
+File does not exist or is a directory.
+Directory exists.
+Directory does not exist or is a file.

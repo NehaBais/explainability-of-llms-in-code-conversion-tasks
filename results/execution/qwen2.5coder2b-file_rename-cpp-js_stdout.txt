@@ -1,0 +1,2 @@
+mydocs created successfully
+input.txt renamed successfully to output.txt

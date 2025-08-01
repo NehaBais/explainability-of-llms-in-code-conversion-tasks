@@ -1,0 +1,25 @@
+"YUP" is of type string and "YUP" is of type string
+'YUP' is less than or equal to 'YUP'
+'YUP' is greater than or equal to 'YUP'
+'YUP' is equal to 'YUP'
+'YUP' has identity with 'YUP'
+"BALL" is of type string and "BELL" is of type string
+'BALL' is strictly less than 'BELL'
+'BALL' is less than or equal to 'BELL'
+'BALL' is not equal to 'BELL'
+'BALL' doesn't have identity with 'BELL'
+"24" is of type string and "123" is of type string
+'24' is strictly greater than '123'
+'24' is greater than or equal to '123'
+'24' is not equal to '123'
+'24' doesn't have identity with '123'
+"24" is of type number and "123" is of type number
+'24' is strictly less than '123'
+'24' is less than or equal to '123'
+'24' is not equal to '123'
+'24' doesn't have identity with '123'
+"5" is of type number and "5" is of type number
+'5' is less than or equal to '5'
+'5' is greater than or equal to '5'
+'5' is equal to '5'
+'5' has identity with '5'

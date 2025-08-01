@@ -1,0 +1,1 @@
+Got an error trying to write to a file: EEXIST: file already exists, mkdir '/Users/nbthakur/docs'

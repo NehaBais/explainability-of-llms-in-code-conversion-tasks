@@ -1,0 +1,9 @@
+ball == bell: False
+ball != bell: True
+ball < bell: True
+ball > bell: False
+Case insensitive comparison:
+YUP == yep: False
+YUP != yep: True
+YUP < yep: False
+YUP > yep: True

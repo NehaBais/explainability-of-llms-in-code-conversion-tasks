@@ -1,0 +1,4 @@
+File created successfully!
+Error creating file: Read-only file system (os error 30)
+Directory created successfully!
+Error creating directory: Read-only file system (os error 30)

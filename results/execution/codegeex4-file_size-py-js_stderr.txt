@@ -1,0 +1,1 @@
+Error getting file size of input.txt in file system root: Error: ENOENT: no such file or directory, stat '/input.txt'

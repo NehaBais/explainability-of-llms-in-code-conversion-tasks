@@ -1,0 +1,13 @@
+Error listing files in mydocs: [Error: ENOENT: no such file or directory, scandir '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm/mydocs'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm/mydocs'
+}
+Error renaming /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm: [Error: EINVAL: invalid argument, rename '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm' -> '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm/mydocs'] {
+  errno: -22,
+  code: 'EINVAL',
+  syscall: 'rename',
+  path: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm',
+  dest: '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp28dmu0fm/mydocs'
+}

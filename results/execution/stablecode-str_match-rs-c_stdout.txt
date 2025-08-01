@@ -1,0 +1,2 @@
+First string ends with the second string
+Found match at pos 7

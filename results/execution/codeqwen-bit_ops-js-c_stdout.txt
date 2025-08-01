@@ -1,0 +1,7 @@
+A AND B: 0
+A OR B: 11
+A XOR B: 11
+NOT A: -9
+A << B: 64
+A >> B: 1
+A >>> B: 1

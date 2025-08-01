@@ -1,0 +1,5 @@
+Starts with: true
+Contains: true
+Ends with: false
+Location: 0
+Count: 1

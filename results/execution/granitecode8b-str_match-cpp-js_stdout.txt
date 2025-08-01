@@ -1,0 +1,5 @@
+true
+false
+false
+0
+Location of "ab" in "abcd": -1

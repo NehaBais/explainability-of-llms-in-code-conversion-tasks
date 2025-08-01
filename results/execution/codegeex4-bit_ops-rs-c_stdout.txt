@@ -1,0 +1,12 @@
+a      = 0000000b
+b      = 0000000b
+a | b  = 0000000b
+a & b  = 0000000b
+a ^ b  = 0000000b
+!a     = 0000000b
+a << 3 = 0000000b
+a >> 3 = 0000000b
+a << b = 0000000b
+a >> b = 0000000b
+rotate right by b on a: 0000000b
+rotate left by b on a: 0000000b

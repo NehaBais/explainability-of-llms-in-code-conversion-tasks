@@ -1,0 +1,8 @@
+java.nio.file.NoSuchFileException: /input.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystem.move(UnixFileSystem.java:894)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:310)
+	at java.base/java.nio.file.Files.move(Files.java:1437)
+	at RenameExample.main(RenameExample.java:16)

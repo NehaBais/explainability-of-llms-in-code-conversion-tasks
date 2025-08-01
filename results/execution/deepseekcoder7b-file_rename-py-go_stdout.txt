@@ -1,0 +1,3 @@
+Successfully renamed input.txt to output.txt
+Successfully renamed docs to mydocs
+Error renaming file or directory: rename /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp54kot6g2/input.txt /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp54kot6g2/output.txt: no such file or directory

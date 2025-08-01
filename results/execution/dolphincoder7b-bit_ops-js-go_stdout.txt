@@ -1,0 +1,7 @@
+a AND b: 0
+a OR b: 1536
+a XOR b: 1536
+NOT a: -1025
+a  << b: 0
+a >> b: 0
+a >>> b: 0

@@ -1,0 +1,22 @@
+node:fs:1361
+  const result = binding.mkdir(
+                         ^
+
+Error: ENOENT: no such file or directory, mkdir '/./path'
+    at Object.mkdirSync (node:fs:1361:26)
+    at /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2sv688sl/codegemma7b-dir_make-py-js.js:6:10
+    at Array.reduce (<anonymous>)
+    at mkdirp (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2sv688sl/codegemma7b-dir_make-py-js.js:3:31)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2sv688sl/codegemma7b-dir_make-py-js.js:12:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: '/./path'
+}
+
+Node.js v23.6.1

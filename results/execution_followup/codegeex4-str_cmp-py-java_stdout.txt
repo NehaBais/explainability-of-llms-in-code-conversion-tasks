@@ -1,0 +1,12 @@
+5 is of type java.lang.Integer and 10 is of type java.lang.Integer
+5 is strictly less than 10
+5 is less than or equal to 10
+5 is not equal to 10
+Hello is of type java.lang.String and World is of type java.lang.String
+Hello is strictly less than World
+Hello is less than or equal to World
+Hello is not equal to World
+3.14 is of type java.lang.Double and 3.14159 is of type java.lang.Double
+3.14 is strictly less than 3.14159
+3.14 is less than or equal to 3.14159
+3.14 is not equal to 3.14159

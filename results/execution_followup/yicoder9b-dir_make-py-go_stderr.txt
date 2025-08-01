@@ -1,0 +1,2 @@
+2025/07/26 17:17:29 mkdir /path: read-only file system
+exit status 1

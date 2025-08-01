@@ -1,0 +1,1 @@
+Right operand is negative, but all shifts require an unsigned right operand (shift distance).

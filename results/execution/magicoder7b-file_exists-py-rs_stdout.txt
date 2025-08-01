@@ -1,0 +1,4 @@
+Does input.txt exist? true
+Does /input.txt exist? false
+Does docs exist? true
+Does /docs exist? false

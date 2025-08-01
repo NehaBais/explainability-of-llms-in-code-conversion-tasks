@@ -1,0 +1,1 @@
+Error renaming files: Error: ENOENT: no such file or directory, rename '/full/path/to/input.txt' -> '/full/path/to/output.txt'

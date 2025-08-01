@@ -1,0 +1,12 @@
+input.txt
+input.txt does not exist
+zero_length.txt
+zero_length.txt does not exist
+docs/input.txt
+docs/input.txt does not exist
+docs/zero_length.txt
+docs/zero_length.txt does not exist
+/input.txt
+/input.txt does not exist
+/docs
+/docs does not exist

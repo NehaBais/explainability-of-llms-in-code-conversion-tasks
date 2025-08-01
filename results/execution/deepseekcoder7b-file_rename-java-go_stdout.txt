@@ -1,0 +1,2 @@
+file input.txt successfully renamed to output.txt
+directory docs successfully renamed to mydocs

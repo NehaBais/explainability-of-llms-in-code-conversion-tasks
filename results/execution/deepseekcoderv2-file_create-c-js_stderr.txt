@@ -1,0 +1,19 @@
+node:internal/errors:540
+      throw error;
+      ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be of type number. Received function 
+    at parseFileMode (node:internal/validators:79:3)
+    at Object.openSync (node:fs:566:5)
+    at createFileAndDirectory (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpo_bv8n_r/deepseekcoderv2-file_create-c-js.js:6:6)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpo_bv8n_r/deepseekcoderv2-file_create-c-js.js:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v23.6.1

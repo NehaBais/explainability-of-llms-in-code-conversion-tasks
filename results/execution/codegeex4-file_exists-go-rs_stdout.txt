@@ -1,0 +1,2 @@
+input.txt is a file
+docs is a directory

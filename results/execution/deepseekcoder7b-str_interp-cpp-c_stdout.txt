@@ -1,0 +1,1 @@
+String after replacement: Mary had a big lamb.

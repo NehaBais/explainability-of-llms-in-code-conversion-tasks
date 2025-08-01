@@ -1,0 +1,3 @@
+1. The first string starts with the second.
+2. The first string ends with the third.
+3. The first string contains the second at position 0.

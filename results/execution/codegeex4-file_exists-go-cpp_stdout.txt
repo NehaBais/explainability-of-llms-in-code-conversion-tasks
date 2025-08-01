@@ -1,0 +1,4 @@
+Cannot access input.txt
+Cannot access /input.txt
+Cannot access docs
+Cannot access /docs

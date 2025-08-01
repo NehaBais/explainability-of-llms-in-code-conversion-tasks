@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpffcdqw0o/codegeex4-str_substring-c-py.py", line 52, in <module>
+    test(lambda: substring("hello world shortest program", 12, 5))  # get "short"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpffcdqw0o/codegeex4-str_substring-c-py.py", line 44, in test
+    result = substring_func(s)
+             ^^^^^^^^^^^^^^^^^
+TypeError: <lambda>() takes 0 positional arguments but 1 was given

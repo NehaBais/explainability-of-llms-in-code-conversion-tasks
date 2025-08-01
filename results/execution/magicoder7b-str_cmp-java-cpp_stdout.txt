@@ -1,0 +1,25 @@
+' Hello ' and ' Hello ' are lexically equal.
+' Hello ' is lexically before ' Hello '.
+' Hello ' is not lexically before ' Hello '.
+' Hello ' is not lexically after ' Hello '.
+' 'Hello' ' and ' 'Hello' ' are lexically equal.'
+' 5 ' and ' 5.0 ' are not lexically equal.
+' 5 ' is lexically after ' 5.0 '.
+' 5 ' is not lexically before ' 5.0 '.
+' 5 ' is not lexically after ' 5.0 '.
+' '5' ' is lexically before ' '5.0' '.
+' java ' and ' Java ' are not lexically equal.
+' java ' is lexically after ' Java '.
+' java ' is not lexically before ' Java '.
+' java ' is not lexically after ' Java '.
+' 'java' ' is lexically after ' 'Java' '.
+' ĴÃVÁ ' and ' ĴÃVÁ ' are lexically equal.
+' ĴÃVÁ ' is lexically before ' ĴÃVÁ '.
+' ĴÃVÁ ' is not lexically before ' ĴÃVÁ '.
+' ĴÃVÁ ' is not lexically after ' ĴÃVÁ '.
+' 'ĴÃVÁ' ' and ' 'ĴÃVÁ' ' are lexically equal.'
+' ĴÃVÁ ' and ' ĵãvá ' are not lexically equal.
+' ĴÃVÁ ' is lexically after ' ĵãvá '.
+' ĴÃVÁ ' is not lexically before ' ĵãvá '.
+' ĴÃVÁ ' is not lexically after ' ĵãvá '.
+' 'ĴÃVÁ' ' is lexically before ' 'ĵãvá' '.

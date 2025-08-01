@@ -1,0 +1,4 @@
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat is lexically bytewise less than or equal to dog
+cat not equal to dog when interpreted as Unicode simple case folding rules.

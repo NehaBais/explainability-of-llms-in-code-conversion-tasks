@@ -1,0 +1,2 @@
+stat file.txt: no such file or directory
+stat /file.txt: no such file or directory

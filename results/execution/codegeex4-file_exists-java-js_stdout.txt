@@ -1,0 +1,4 @@
+The file does not exist in the current working directory.
+The directory does not exist in the current working directory.
+The file does not exist in the filesystem root.
+The directory does not exist in the filesystem root.

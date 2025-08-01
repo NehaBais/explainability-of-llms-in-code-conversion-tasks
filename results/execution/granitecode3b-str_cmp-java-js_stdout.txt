@@ -1,0 +1,30 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are case-insensitive lexically equal.
+'Hello' and 'Hello' are not numeric strings and can be compared as usual.
+'Hello' and 'Hello' are numeric strings and can be compared normally.
+The lexical relationship is: 0
+The case-insensitive lexical relationship is: 0
+'5' and '5.0' are not lexically equal.
+'5' and '5.0' are not case-insensitive lexically equal.
+'5' and '5.0' are numeric strings and must be parsed as numbers.
+'5' and '5.0' are numeric strings and can be compared normally.
+The lexical relationship is: -1
+The case-insensitive lexical relationship is: -1
+'java' and 'Java' are not lexically equal.
+'java' and 'Java' are case-insensitive lexically equal.
+'java' and 'Java' are not numeric strings and can be compared as usual.
+'java' and 'Java' are numeric strings and can be compared normally.
+The lexical relationship is: -1
+The case-insensitive lexical relationship is: 0
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are case-insensitive lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are not numeric strings and can be compared as usual.
+'ĴÃVÁ' and 'ĴÃVÁ' are numeric strings and can be compared normally.
+The lexical relationship is: 0
+The case-insensitive lexical relationship is: 0
+'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
+'ĴÃVÁ' and 'ĵãvá' are case-insensitive lexically equal.
+'ĴÃVÁ' and 'ĵãvá' are not numeric strings and can be compared as usual.
+'ĴÃVÁ' and 'ĵãvá' are numeric strings and can be compared normally.
+The lexical relationship is: 1
+The case-insensitive lexical relationship is: 0

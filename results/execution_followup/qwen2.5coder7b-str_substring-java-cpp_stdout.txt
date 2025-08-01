@@ -1,0 +1,3 @@
+Substring from index 7 to 12: World
+Character '世' as UTF-8: 世
+Unicode character 0x4E16 as UTF-8: 世

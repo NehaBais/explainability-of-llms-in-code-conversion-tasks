@@ -1,0 +1,6 @@
+panic: runtime error: index out of range [2] with length 1
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpinzg87i3/granitecode8b-int_arith-js-go.go:11 +0x374
+exit status 2

@@ -1,0 +1,7 @@
+a AND b: 5
+a OR b: -1
+a XOR b: -6
+NOT a: 0
+a  << b: -32
+a  >> b: -1
+a >>> b: 134217727

@@ -1,0 +1,6 @@
+panic: runtime error: index out of range [0] with length 0
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpred0ihf4/codellama7b-int_arith-rs-go.go:11 +0x2c0
+exit status 2

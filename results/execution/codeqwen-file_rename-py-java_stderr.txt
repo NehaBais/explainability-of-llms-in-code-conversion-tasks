@@ -1,0 +1,18 @@
+java.nio.file.NoSuchFileException: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpr7mzi6x5/input.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystem.move(UnixFileSystem.java:894)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:310)
+	at java.base/java.nio.file.Files.move(Files.java:1437)
+	at Main.renameFileOrDir(Main.java:25)
+	at Main.main(Main.java:19)
+java.nio.file.NoSuchFileException: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpr7mzi6x5/docs
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystem.move(UnixFileSystem.java:894)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:310)
+	at java.base/java.nio.file.Files.move(Files.java:1437)
+	at Main.renameFileOrDir(Main.java:25)
+	at Main.main(Main.java:20)

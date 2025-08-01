@@ -1,0 +1,3 @@
+5 is less than 10
+20 is greater than 10
+15 equals 15

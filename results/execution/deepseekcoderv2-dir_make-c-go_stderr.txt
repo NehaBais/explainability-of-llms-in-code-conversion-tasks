@@ -1,0 +1,2 @@
+usage: deepseekcoderv2-dir_make-c-go <path>
+exit status 1

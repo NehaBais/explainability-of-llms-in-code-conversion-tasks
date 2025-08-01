@@ -1,0 +1,4 @@
+Is 'abcd' starts with 'ab'? true
+Does 'abcd' contain 'ab'? true
+Found match at pos 0
+Is 'abab' ends with 'ab'? true

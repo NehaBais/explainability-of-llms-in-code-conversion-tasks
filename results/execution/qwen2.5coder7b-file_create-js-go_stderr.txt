@@ -1,0 +1,2 @@
+2025/07/25 15:55:22 mkdir /docs: read-only file system
+exit status 1

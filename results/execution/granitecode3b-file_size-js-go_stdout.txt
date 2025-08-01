@@ -1,0 +1,2 @@
+266
+stat /input.txt: no such file or directory

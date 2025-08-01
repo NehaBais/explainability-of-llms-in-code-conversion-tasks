@@ -1,0 +1,9 @@
+a:   0000000111001100
+b:   0000000000000110
+and: 0000000000000100
+or:  0000000111001110
+xor: 0000000111001010
+Not defined for negative numbers
+shl: 0111001100000000
+ashr: 0000000111001100
+Rotations not defined for negative numbers.

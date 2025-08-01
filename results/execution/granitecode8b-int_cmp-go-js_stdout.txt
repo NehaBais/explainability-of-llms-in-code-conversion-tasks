@@ -1,0 +1,4 @@
+Enter first number:
+Enter second number:
+Enter second number:
+10 is greater than 2

@@ -1,0 +1,2 @@
+usage: target/debug/main <path>
+Error: "Invalid arguments"

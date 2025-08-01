@@ -1,0 +1,4 @@
+input.txt is a file
+Path does not exist: /input.txt
+docs is a directory
+Path does not exist: /docs

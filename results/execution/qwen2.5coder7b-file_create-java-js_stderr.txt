@@ -1,0 +1,1 @@
+Error creating file or directory: EROFS: read-only file system, open '/output.txt'

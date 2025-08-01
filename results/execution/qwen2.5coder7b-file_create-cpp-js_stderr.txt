@@ -1,0 +1,12 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpwo593u11/qwen2.5coder7b-file_create-cpp-js.js:12
+  if (err) throw err;
+           ^
+
+[Error: EROFS: read-only file system, open '/output.txt'] {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'open',
+  path: '/output.txt'
+}
+
+Node.js v23.6.1

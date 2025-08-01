@@ -1,0 +1,7 @@
+Exception in thread "main" java.io.FileNotFoundException: /output.txt (Read-only file system)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at Main.createFile(Main.java:16)
+	at Main.main(Main.java:11)

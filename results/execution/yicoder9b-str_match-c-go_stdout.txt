@@ -1,0 +1,8 @@
+Starts with Test (Hello, Hell): true
+Ends with Test (Code, ode): true
+Contains Test: Google at index 0
+Not found in string: Microsoft
+Not found in string: Code
+Not found in string: Hello
+Not found in string: Hell
+Contains Test: Google at index 0

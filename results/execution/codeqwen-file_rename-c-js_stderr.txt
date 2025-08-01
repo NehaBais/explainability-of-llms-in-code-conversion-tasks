@@ -1,0 +1,2 @@
+Error occurred while renaming the file: Error: ENOENT: no such file or directory, rename '/input.txt' -> '/output.txt'
+Error occurred while renaming the directory: Error: ENOENT: no such file or directory, rename '/docs' -> '/mydocs'

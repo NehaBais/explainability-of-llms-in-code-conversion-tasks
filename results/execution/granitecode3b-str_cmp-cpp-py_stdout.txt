@@ -1,0 +1,12 @@
+Enter the first string: Enter the second string: abc and def are lexically equal.
+abc and def are not lexically inequal.
+abc is not lexically ordered before def.
+abc is lexically ordered after def.
+abc and def are lexically equal.
+abc and def are not lexically inequal.
+abc is not lexically ordered before def.
+abc is lexically ordered after def.
+Enter the first number: Enter the second number: 123.0 and 456.0 are numerically equal.
+123.0 and 456.0 are not numerically inequal.
+123.0 is not numerically ordered before 456.0.
+123.0 is numerically ordered after 456.0.

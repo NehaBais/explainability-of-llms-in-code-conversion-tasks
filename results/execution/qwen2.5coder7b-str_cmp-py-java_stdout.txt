@@ -1,0 +1,19 @@
+YUP is of type java.lang.String and YUP is of type java.lang.String
+equal is YUP than YUP
+YUP is equal to YUP irrespective of case
+YUP is equal to YUP
+YUP has object identity with YUP
+BALL is of type java.lang.String and BELL is of type java.lang.String
+less is BALL than BELL
+BALL is not equal to BELL
+BALL does not have object identity with BELL
+24 is of type java.lang.String and 123 is of type java.lang.String
+greater is 24 than 123
+24 is not equal to 123
+24 does not have object identity with 123
+24 is of type java.lang.Integer and 123 is of type java.lang.Integer
+24 is not equal to 123
+24 does not have object identity with 123
+5.0 is of type java.lang.Double and 5 is of type java.lang.Integer
+5.0 is not equal to 5
+5.0 does not have object identity with 5

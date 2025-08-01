@@ -1,0 +1,2 @@
+Size of file input.txt is  650  bytes.
+Absolute paths not supported

@@ -1,0 +1,4 @@
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat and dog are not case-insensitively identical
+['cat', 'dog']

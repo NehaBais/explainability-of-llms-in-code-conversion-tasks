@@ -1,0 +1,16 @@
+true and true -> true
+true or true -> true
+xor of true and true -> false
+not of true -> false
+true and false -> false
+true or false -> true
+xor of true and false -> true
+not of true -> false
+false and true -> false
+false or true -> true
+xor of false and true -> true
+not of false -> true
+false and false -> false
+false or false -> false
+xor of false and false -> false
+not of false -> true

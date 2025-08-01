@@ -1,0 +1,4 @@
+File output.txt created!
+[Errno 30] Read-only file system: '/output.txt'
+Directory docs created!
+[Errno 30] Read-only file system: '/docs'

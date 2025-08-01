@@ -1,0 +1,6 @@
+panic: newline in input does not match format
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplx56aofk/granitecode3b-int_arith-cpp-go.go:13 +0x3a4
+exit status 2

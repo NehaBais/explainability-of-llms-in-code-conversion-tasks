@@ -1,0 +1,7 @@
+a & b:  0
+a | b:  7
+a ^ b:  7
+not a:  -6
+c >> b:  1
+left rotate:  22
+right rotate:  9

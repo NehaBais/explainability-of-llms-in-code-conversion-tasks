@@ -1,0 +1,2 @@
+Error creating file: /input.txt
+Error creating directory: /docs

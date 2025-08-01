@@ -1,0 +1,4 @@
+Output file created.
+Docs directory created.
+Error creating root output file: open /output.txt: read-only file system
+Error creating root docs directory: mkdir /docs: read-only file system

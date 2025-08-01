@@ -1,0 +1,7 @@
+The strings are equal.
+The strings are not equal.
+abcd does not come before abcd.
+dcba comes after abcd.
+The strings are not equal.
+The strings are not equal.
+The numbers are equal.

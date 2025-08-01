@@ -1,0 +1,15 @@
+Starts With: True
+Contains: True
+Ends With: False
+Match found at index 0
+Starts With: False
+Contains: False
+Ends With: False
+Starts With: False
+Contains: False
+Ends With: False
+Starts With: True
+Contains: True
+Ends With: True
+Match found at index 0
+Match found at index 2

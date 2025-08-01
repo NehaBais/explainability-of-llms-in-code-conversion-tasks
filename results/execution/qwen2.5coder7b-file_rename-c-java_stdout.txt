@@ -1,0 +1,2 @@
+Renamed: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxbb3dtj6/input.txt to /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxbb3dtj6/output.txt
+Renamed: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxbb3dtj6/docs to /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxbb3dtj6/mydocs

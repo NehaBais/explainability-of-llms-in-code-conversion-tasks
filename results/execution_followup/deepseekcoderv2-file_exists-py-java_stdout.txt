@@ -1,0 +1,4 @@
+Checking if input.txt exists as a file: false
+Checking if docs exists as a directory: true
+Checking if input.txt exists as a file: false
+Checking if docs exists as a directory: false

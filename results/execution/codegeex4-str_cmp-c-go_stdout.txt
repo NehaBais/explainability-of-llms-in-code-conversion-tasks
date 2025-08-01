@@ -1,0 +1,13 @@
+eq, ne, gt, lt, ge, le
+ball -1 1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!s(MISSING)
+ball -1 1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) bell ignoring case
+ball 0 0 %!d(bool=true) %!d(bool=true) %!d(bool=true) %!d(bool=true) %!s(MISSING)
+ball 0 0 %!d(bool=true) %!d(bool=true) %!d(bool=true) %!d(bool=true) ball ignoring case
+YUP 1 -1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!s(MISSING)
+YUP 1 -1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) YEP ignoring case
+ball 1 -1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!s(MISSING)
+ball -1 1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) BELL ignoring case
+ball 1 -1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!s(MISSING)
+ball 0 0 %!d(bool=true) %!d(bool=true) %!d(bool=true) %!d(bool=true) BALL ignoring case
+YUP -1 1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!s(MISSING)
+YUP 1 -1 %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=false) yep ignoring case

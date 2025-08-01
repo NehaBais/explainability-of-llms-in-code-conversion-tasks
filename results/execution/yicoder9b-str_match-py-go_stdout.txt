@@ -1,0 +1,4 @@
+s1 starts with s2: true
+s1 ends with s3: false
+s2 is found in s1 at position: 0
+s2 is found in s1 at position: 0

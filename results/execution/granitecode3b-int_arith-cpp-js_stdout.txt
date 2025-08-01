@@ -1,0 +1,5 @@
+Enter a number: Enter another number: a+b = 13
+a-b = 9
+a*b = 22
+a/b = 5.5, remainder 1
+a^b = 121

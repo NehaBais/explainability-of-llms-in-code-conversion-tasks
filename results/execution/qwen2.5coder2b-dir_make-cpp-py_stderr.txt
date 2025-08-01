@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6bvvsgsf/qwen2.5coder2b-dir_make-cpp-py.py", line 14, in <module>
+    if len(sys.argv) != 2:
+           ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?

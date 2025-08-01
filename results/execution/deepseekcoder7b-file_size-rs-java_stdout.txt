@@ -1,0 +1,2 @@
+Enter the file name:
+Size of input.txt is: 828 bytes

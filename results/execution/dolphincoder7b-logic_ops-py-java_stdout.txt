@@ -1,0 +1,4 @@
+Output:
+a and b: false
+a or b: true
+not a: false

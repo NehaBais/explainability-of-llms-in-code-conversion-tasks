@@ -1,0 +1,4 @@
+input.txt is a regular file in current directory? true
+docs is a directory in current directory? true
+/input.txt is a regular file in root? false
+/docs is a directory in root? false

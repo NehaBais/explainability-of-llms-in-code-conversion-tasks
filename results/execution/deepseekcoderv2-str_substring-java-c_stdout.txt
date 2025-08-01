@@ -1,0 +1,5 @@
+Substring from index 7 with length 5: World
+Substring from index 7 to the end: World!
+Substring excluding last character: Hello, World
+Substring from character 'W' with length 5: World
+Substring from substring 'World' with length 5: World

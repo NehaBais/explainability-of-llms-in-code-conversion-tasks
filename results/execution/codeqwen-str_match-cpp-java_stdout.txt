@@ -1,0 +1,2 @@
+The first string starts with the second string
+The first string contains the second string at location: 0

@@ -1,0 +1,2 @@
+The size of /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6nii49wn/input.txt is 215759720448 bytes
+The size of /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6nii49wn/c:/input.txt is 0 bytes

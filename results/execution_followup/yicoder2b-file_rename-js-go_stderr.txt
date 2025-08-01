@@ -1,0 +1,6 @@
+panic: rename docs mydocs: file exists
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8ap8mf9x/yicoder2b-file_rename-js-go.go:15 +0x98
+exit status 2

@@ -1,0 +1,1 @@
+Size of file input.txt is 447 bytes.

@@ -1,0 +1,4 @@
+File input.txt does not exist in the current directory.
+Directory docs does not exist in the current directory.
+File c:/input.txt does not exist in the C drive.
+Directory c:/docs does not exist in the C drive.

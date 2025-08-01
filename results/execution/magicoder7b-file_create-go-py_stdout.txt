@@ -1,0 +1,4 @@
+File input.txt created!
+[Errno 30] Read-only file system: '/input.txt'
+Directory docs created!
+[Errno 30] Read-only file system: '/docs'

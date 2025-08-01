@@ -1,0 +1,3 @@
+Starts with: True
+Locations of occurrences: [0]
+Ends with: False

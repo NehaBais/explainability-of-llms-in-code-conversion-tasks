@@ -1,0 +1,5 @@
+'Hello' And 'Hello' are lexically equal.
+'5' And '5.0' are not lexically equal.
+'java' And 'Java' are not lexically equal.
+'ĴÃVÁ' And 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' And 'ĵãvá' are not lexically equal.

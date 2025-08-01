@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpohdhfloy/dolphincoder7b-file_create-rs-py.py", line 28, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpohdhfloy/dolphincoder7b-file_create-rs-py.py", line 24, in main
+    create(".") and create("/")
+    ^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpohdhfloy/dolphincoder7b-file_create-rs-py.py", line 9, in create
+    f_path = root / FILE_NAME
+             ~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'

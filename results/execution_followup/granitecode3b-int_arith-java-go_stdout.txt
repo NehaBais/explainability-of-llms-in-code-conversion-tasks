@@ -1,0 +1,1 @@
+1 + 2 = 3n1 - 2 = -1n1 * 2 = 2nquotient of 1 / 2 = 0ns truncating towards 0nremainder of 1 / 2 = 1ns same sign as first operandn

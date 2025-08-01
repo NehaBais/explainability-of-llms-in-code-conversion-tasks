@@ -1,0 +1,8 @@
+The following file called input.txt was be renamed into output.txt.
+input.txt does not exist.
+/input.txt does not exist.
+/input.txt does not exist.
+The following directory called docs was be renamed into mydocs.
+docs does not exist.
+/docs/ does not exist.
+/docs/ does not exist.

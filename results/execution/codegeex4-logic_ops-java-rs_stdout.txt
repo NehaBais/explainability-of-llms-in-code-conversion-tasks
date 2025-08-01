@@ -1,0 +1,3 @@
+a AND b: true
+a OR b: true
+NOT a: false

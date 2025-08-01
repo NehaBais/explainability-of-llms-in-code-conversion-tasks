@@ -1,0 +1,7 @@
+A AND B: 1
+A OR B: 7
+A XOR B: 6
+NOT A: -6
+A << B: 40
+A >> B: 0
+A >>> B: 0

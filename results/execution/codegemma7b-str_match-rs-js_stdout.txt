@@ -1,0 +1,4 @@
+Found match at pos 0
+undefined
+Found match at pos -1
+undefined

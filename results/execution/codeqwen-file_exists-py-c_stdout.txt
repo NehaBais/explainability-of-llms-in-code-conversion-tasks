@@ -1,0 +1,4 @@
+File input.txt does not exist or it is not a regular file.
+File input.txt does not exist or it is not a regular file.
+Directory docs does not exist or it is not a directory.
+Directory docs does not exist or it is not a directory.

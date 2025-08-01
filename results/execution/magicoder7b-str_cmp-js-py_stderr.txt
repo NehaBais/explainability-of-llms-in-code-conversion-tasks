@@ -1,0 +1,6 @@
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2f8cz892/magicoder7b-str_cmp-js-py.py:3: SyntaxWarning: "is" with 'str' literal. Did you mean "=="?
+  "abcd" is "abcd",  # True
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2f8cz892/magicoder7b-str_cmp-js-py.py:5: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+  123 is "123",  # False
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp2f8cz892/magicoder7b-str_cmp-js-py.py:9: SyntaxWarning: "is not" with 'int' literal. Did you mean "!="?
+  123 is not "123",  # True

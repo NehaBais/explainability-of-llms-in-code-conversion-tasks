@@ -1,0 +1,2 @@
+File 'input.txt' exists in the current working directory.
+Directory 'docs' exists in the current working directory.

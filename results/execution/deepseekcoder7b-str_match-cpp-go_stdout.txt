@@ -1,0 +1,6 @@
+Does the string start with 'ab': true
+Does the string end with 'ab': false
+String abcd contains ab at any location.
+Substring ab found at location: 1
+Found occurrence at position 3
+Number of occurrences found : 1

@@ -1,0 +1,2 @@
+The original variable: hello
+The concatenated string : hello there!

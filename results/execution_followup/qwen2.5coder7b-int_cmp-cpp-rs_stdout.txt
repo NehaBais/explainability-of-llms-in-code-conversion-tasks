@@ -1,0 +1,2 @@
+Please enter two integers.
+10 is less than 20

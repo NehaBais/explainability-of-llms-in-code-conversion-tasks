@@ -1,0 +1,5 @@
+Enter the first integer: Enter the second integer: Sum: 12
+Difference: 8
+Product: 20
+Quotient ( truncated towards zero ): 5
+Remainder: 0

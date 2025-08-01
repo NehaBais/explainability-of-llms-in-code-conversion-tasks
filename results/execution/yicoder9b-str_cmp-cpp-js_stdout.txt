@@ -1,0 +1,12 @@
+1.2.Foo and 1.3.Bar are not exactly lexically equal.
+1.2.Foo and 1.3.Bar are lexically inequal.
+1.2.Foo is lexically ordered before 1.3.Bar.
+1.2.Foo is not lexically ordered after 1.3.Bar.
+1.2.foo and 1.3.bar are not exactly lexically equal.
+1.2.foo and 1.3.bar are lexically inequal.
+1.2.foo is lexically ordered before 1.3.bar.
+1.2.foo is not lexically ordered after 1.3.bar.
+NaN and NaN are not exactly numerically equal.
+NaN and NaN are numerically inequal.
+NaN is not numerically ordered before NaN.
+NaN is not numerically ordered after NaN.

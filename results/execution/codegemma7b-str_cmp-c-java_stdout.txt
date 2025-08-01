@@ -1,0 +1,7 @@
+Are ball and bell equal? false
+Are ball and bell not equal? true
+Is ball before bell? true
+Is bell after ball? true
+Are ball and bell case-sensitive equal? false
+Are ball and bell case-insensitive equal? false
+Is 123 before 456? true

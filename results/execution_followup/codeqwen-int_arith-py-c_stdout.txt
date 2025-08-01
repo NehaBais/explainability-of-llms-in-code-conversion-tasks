@@ -1,0 +1,7 @@
+Enter the first number: Enter the second number: Sum: 		  3
+Difference: 	  -1
+Product: 	  2
+Integer quotient: 0
+Whole Remainder:  0.000000
+Actual Remainder: 0.500000
+Exponentiation: 	  1

@@ -1,0 +1,24 @@
+input.txt
+ does not exist
+zero_length.txt
+ does not exist
+docs/input.txt
+ does not exist
+docs/zero_length.txt
+ does not exist
+C:\/input.txt
+ does not exist
+C:\/zero_length.txt
+ does not exist
+C:\/docs/input.txt
+ does not exist
+C:\/docs/zero_length.txt
+ does not exist
+D:\/input.txt
+ does not exist
+D:\/zero_length.txt
+ does not exist
+D:\/docs/input.txt
+ does not exist
+D:\/docs/zero_length.txt
+ does not exist

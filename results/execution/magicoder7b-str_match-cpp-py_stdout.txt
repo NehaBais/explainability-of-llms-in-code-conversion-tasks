@@ -1,0 +1,4 @@
+Does 'abcd' start with 'ab'? True
+Does 'abcd' contain 'ab' at any location? True
+First occurrence is at index 0
+Does 'abcd' end with 'ab'? False

@@ -1,0 +1,2 @@
+The size of the file is 627 bytes
+Failed to open file c:/input.txt

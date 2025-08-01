@@ -1,0 +1,9 @@
+ball		False		True		True		False		True		False 		YUP
+ball		False		True		False		True		False		True 		YUP ignoring case
+ball		False		True		False		True		False		True 		yup ignoring case
+ball		False		True		True		False		True		False 		BELL
+ball		False		True		False		True		False		True 		BELL ignoring case
+ball		False		True		False		True		False		True 		bell ignoring case
+BALL		False		True		False		True		False		True 		YUP
+ball		False		True		False		True		False		True 		YUP ignoring case
+ball		False		True		False		True		False		True 		yup ignoring case

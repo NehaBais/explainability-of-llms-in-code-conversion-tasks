@@ -1,0 +1,5 @@
+Enter first number: Enter second number: a + b = 5
+a - b = -1
+a * b = 6
+a / b = 0.6666666666666666
+a % b = 2

@@ -1,0 +1,6 @@
+panic: strconv.Atoi: parsing "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/go-build1548831661/b001/exe/granitecode8b-int_cmp-java-go": invalid syntax
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpekk90cnt/granitecode8b-int_cmp-java-go.go:15 +0x268
+exit status 2

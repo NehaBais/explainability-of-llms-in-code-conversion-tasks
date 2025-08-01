@@ -1,0 +1,5 @@
+Starts with: True
+Contains at location: -1
+Ends with: False
+Location of match: 0
+Multiple occurrences: [0, 2, 4]

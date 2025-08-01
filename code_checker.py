@@ -107,7 +107,9 @@ def check_file(file_path):
             logging.info(f"Compilation successful: {filename}")
         except subprocess.CalledProcessError as e:
             open(
-                os.path.join(COMPILE_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"),
+                os.path.join(
+                    COMPILE_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"
+                ),
                 "w",
             ).write(e.stderr)
             try:
@@ -117,7 +119,9 @@ def check_file(file_path):
                 logging.info(f"Compilation failed: {filename}")
             except subprocess.CalledProcessError as e:
                 open(
-                    os.path.join(SYNTAX_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"),
+                    os.path.join(
+                        SYNTAX_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"
+                    ),
                     "w",
                 ).write(e.stderr)
                 logging.info(f"Compilation and Syntax check failed: {filename}")
@@ -127,7 +131,9 @@ def check_file(file_path):
             logging.info(f"Syntax check successful: {filename}")
         except subprocess.CalledProcessError as e:
             open(
-                os.path.join(SYNTAX_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"),
+                os.path.join(
+                    SYNTAX_FAIL_FOLDER, f"{os.path.splitext(filename)[0]}.txt"
+                ),
                 "w",
             ).write(e.stderr)
             logging.info(f"Syntax check failed: {filename}")

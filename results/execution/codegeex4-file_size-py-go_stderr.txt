@@ -1,0 +1,2 @@
+2025/07/25 15:16:42 stat /input.txt: no such file or directory
+exit status 1

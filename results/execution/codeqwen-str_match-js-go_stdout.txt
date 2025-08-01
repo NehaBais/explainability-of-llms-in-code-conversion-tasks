@@ -1,0 +1,3 @@
+1: Does "loco" start with "co"? false.
+2: Is "co" contained in "loco"? Yes at index 2.
+3: In fact, it happens 2 times within "loco", at indexes 2, 0.

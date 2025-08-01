@@ -1,0 +1,4 @@
+'input.txt' does not exist or is not a file.
+'/input.txt' does not exist or is not a file.
+'docs' directory does not exist or is not a directory.
+'/docs' directory does not exist or is not a directory.

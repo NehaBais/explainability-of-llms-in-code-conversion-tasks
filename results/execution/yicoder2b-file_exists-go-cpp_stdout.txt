@@ -1,0 +1,4 @@
+Error occurred while getting the information of 'input.txt'.
+Error occurred while getting the information of '/input.txt'.
+Error occurred while getting the information of 'docs'.
+Error occurred while getting the information of '/docs'.

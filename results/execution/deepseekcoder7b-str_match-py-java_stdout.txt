@@ -1,0 +1,4 @@
+startsWith :true
+endsWith :true
+contains : true
+find():0

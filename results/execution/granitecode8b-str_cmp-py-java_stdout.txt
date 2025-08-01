@@ -1,0 +1,9 @@
+YUP is of type class java.lang.String and YUP is of type class java.lang.String
+YUP is equal to YUP
+YUP is equal to YUP
+YUP is not lexically less than YUP
+YUP is not lexically greater than YUP
+BALL is lexically less than BELL
+24 is not lexically less than 123
+24 is not lexically less than 123
+5.0 is not lexically less than 5

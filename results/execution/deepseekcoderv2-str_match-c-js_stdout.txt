@@ -1,0 +1,6 @@
+Starts with Test ( Hello, Hell ) : true
+Ends with Test ( Code, ode ) : true
+Contains Test ( Google, msn ) : false
+"o" found at index 1 in "Google"
+"Hello" found at index 0 in "Hello World, Hello Universe"
+"Hello" found at index 13 in "Hello World, Hello Universe"

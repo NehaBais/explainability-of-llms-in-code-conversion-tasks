@@ -1,0 +1,6 @@
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp67u9ou1g/dolphincoder7b-int_arith-java-go.go:14 +0x244
+exit status 2

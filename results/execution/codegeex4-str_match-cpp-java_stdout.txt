@@ -1,0 +1,4 @@
+Does abcd start with ab: true
+Does abcd end with ab: false
+First occurrence of ab in abab is at index: 0
+Next occurrence of ab in abab is at index: 2

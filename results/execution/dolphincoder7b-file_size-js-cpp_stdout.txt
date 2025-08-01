@@ -1,0 +1,2 @@
+Size of input.txt in the current working directory: 0 bytes
+Size of input.txt in the root of the file system: -1 bytes

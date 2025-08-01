@@ -1,0 +1,3 @@
+String 'abcd' starts with 'ab'
+String 'abcd' does not end with 'ab'
+String 'abcd' does not contain 'abab'

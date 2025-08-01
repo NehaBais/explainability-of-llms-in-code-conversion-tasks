@@ -1,0 +1,4 @@
+File exist in current directory? false
+File exist in root directory? false
+Directory exist in current directory? false
+Directory exist in root directory? true

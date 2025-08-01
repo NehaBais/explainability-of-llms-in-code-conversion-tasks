@@ -1,0 +1,2 @@
+Created output.txt in /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpu7zvnyyz
+Created docs in /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpu7zvnyyz

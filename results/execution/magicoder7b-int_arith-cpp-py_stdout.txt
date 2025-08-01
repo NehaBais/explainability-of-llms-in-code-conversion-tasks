@@ -1,0 +1,5 @@
+Enter first integer: Enter second integer: Sum of a and b is  17
+Difference of a and b is  -1
+Product of a and b is  72
+Quotient rounds towards zero, and its sign is same as that of b 0
+Remainder when a is divided by b is  8

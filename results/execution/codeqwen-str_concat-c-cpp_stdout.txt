@@ -1,0 +1,3 @@
+Original string: hello
+Concatenated string: hello literal
+Function concatenation result: hello literal

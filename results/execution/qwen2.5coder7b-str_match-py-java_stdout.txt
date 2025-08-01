@@ -1,0 +1,5 @@
+Does the first string start with the second string? true
+Does the first string contain the second string at any location? true
+Does the first string end with the second string? false
+Location of the match for 'ab' in 'abab'? 0
+Found at: 0

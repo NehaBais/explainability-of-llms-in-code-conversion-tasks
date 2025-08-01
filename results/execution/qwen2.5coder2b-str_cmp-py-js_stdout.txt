@@ -1,0 +1,25 @@
+a is of type string and b is of type string
+%r is less than or equal to %r YUP YUP
+%r is greater than or equal to %r YUP YUP
+%r is equal to %r YUP YUP
+%r has object identity with %r YUP YUP
+a is of type string and b is of type string
+%r is strictly less than %r BALL BELL
+%r is less than or equal to %r BALL BELL
+%r is not equal to %r BALL BELL
+%r has negated object identity with %r BALL BELL
+a is of type string and b is of type string
+%r is strictly greater than %r 24 123
+%r is greater than or equal to %r 24 123
+%r is not equal to %r 24 123
+%r has negated object identity with %r 24 123
+a is of type number and b is of type number
+%r is strictly less than %r 24 123
+%r is less than or equal to %r 24 123
+%r is not equal to %r 24 123
+%r has negated object identity with %r 24 123
+a is of type number and b is of type number
+%r is less than or equal to %r 5 5
+%r is greater than or equal to %r 5 5
+%r is equal to %r 5 5
+%r has object identity with %r 5 5

@@ -1,0 +1,3 @@
+The strings are not equal.
+The first string is lexically after the second.
+numeric comparison of 34 and 267: True

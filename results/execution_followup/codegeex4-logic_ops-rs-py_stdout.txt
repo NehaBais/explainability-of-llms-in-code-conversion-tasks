@@ -1,0 +1,12 @@
+True and True -> True
+True or True -> True
+not True -> False
+True and False -> False
+True or False -> True
+not True -> False
+False and True -> False
+False or True -> True
+not False -> True
+False and False -> False
+False or False -> False
+not False -> True

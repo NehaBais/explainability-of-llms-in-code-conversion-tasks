@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpfxfdc6vw/codegemma7b-str_substring-js-py.py", line 1, in <module>
+    str[str.index("b") : str.index("b") + m]  # => "bcd"
+        ^^^^^^^^^^^^^^
+TypeError: index() takes at least 1 argument (0 given)

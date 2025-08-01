@@ -1,0 +1,6 @@
+cat is not bytewise identical to dog
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat is not lexically bytewise greater than dog
+Case-sensitively: cat is not equal to dog
+Case-insensitively: cat is not equal to dog

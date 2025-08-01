@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp_3yqob19/magicoder7b-str_prepend-c-py.py", line 8, in <module>
+    dup.__setitem__[:] = str
+    ~~~~~~~~~~~~~~~^^^
+TypeError: 'method-wrapper' object does not support item assignment

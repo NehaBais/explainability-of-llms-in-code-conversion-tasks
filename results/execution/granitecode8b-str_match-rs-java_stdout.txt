@@ -1,0 +1,4 @@
+ determination result: true
+ containment result: true
+Found match at pos 0
+ end result: true

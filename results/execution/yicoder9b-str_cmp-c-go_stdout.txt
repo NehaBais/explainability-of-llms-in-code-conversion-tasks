@@ -1,0 +1,7 @@
+eq , ne , gt , lt , ge , le
+ball %!d(bool=false) %!d(bool=true) %!d(bool=false) %!d(bool=true) %!d(bool=false) %!d(bool=true) bell
+ball %!d(bool=false) %!d(bool=true) %!d(bool=false) %!d(bool=true) %!d(bool=false) %!d(bool=true) bell ignoring case
+ball %!d(bool=true) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=true) %!d(bool=true) ball
+ball %!d(bool=true) %!d(bool=false) %!d(bool=false) %!d(bool=false) %!d(bool=true) %!d(bool=true) ball ignoring case
+YUP %!d(bool=false) %!d(bool=true) %!d(bool=true) %!d(bool=false) %!d(bool=true) %!d(bool=false) YEP
+YUP %!d(bool=false) %!d(bool=true) %!d(bool=true) %!d(bool=false) %!d(bool=true) %!d(bool=false) YEP ignoring case

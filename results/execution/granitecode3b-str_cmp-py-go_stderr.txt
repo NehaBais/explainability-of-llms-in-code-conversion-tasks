@@ -1,0 +1,8 @@
+panic: interface conversion: interface {} is int, not string
+
+goroutine 1 [running]:
+main.compare({0x100a9cf60, 0x100a91418}, {0x100a9cf60, 0x100a91420})
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpiy4idtqm/granitecode3b-str_cmp-py-go.go:8 +0x470
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpiy4idtqm/granitecode3b-str_cmp-py-go.go:32 +0x98
+exit status 2

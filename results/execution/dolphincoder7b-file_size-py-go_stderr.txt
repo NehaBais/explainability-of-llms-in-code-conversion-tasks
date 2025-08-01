@@ -1,0 +1,8 @@
+panic: open /input.txt: no such file or directory
+
+goroutine 1 [running]:
+main.checkSize({0x1002249cd?, 0x1400009c018?}, 0x14000098ef0)
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6_atjxkp/dolphincoder7b-file_size-py-go.go:11 +0x88
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6_atjxkp/dolphincoder7b-file_size-py-go.go:27 +0xac
+exit status 2

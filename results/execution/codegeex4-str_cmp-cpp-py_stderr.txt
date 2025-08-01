@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3ha86mdr/codegeex4-str_cmp-cpp-py.py", line 34, in <module>
+    numA = float(a)  # Assuming a is numeric
+           ^^^^^^^^
+ValueError: could not convert string to float: '1.2.foo'

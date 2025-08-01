@@ -1,0 +1,3 @@
+The string abcd starts with ab
+The string abcd contains the substring ab at index 0
+The string abcd does not end with ab

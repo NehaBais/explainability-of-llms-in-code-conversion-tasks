@@ -1,0 +1,6 @@
+Enter an integer: Enter an integer: a + b = 3
+a - b = -1
+a * b = 2
+quotient of a / b = 0
+remainder of a / b = 1
+a to the power of b = 1

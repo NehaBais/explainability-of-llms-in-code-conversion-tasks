@@ -1,0 +1,4 @@
+Renamed 'input.txt' to 'output.txt' in current directory
+Renamed 'docs' to 'mydocs' in current directory
+Error renaming file: No such file or directory (os error 2)
+Error renaming dir: No such file or directory (os error 2)

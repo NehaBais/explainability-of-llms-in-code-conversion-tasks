@@ -1,0 +1,1 @@
+usage: target/debug/main <path>

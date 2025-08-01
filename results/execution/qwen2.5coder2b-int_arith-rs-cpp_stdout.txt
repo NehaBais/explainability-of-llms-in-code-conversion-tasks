@@ -1,0 +1,6 @@
+Enter two integers: sum:              3
+difference:       -1
+product:          2
+integer quotient: 0
+remainder:        1
+exponent:         2

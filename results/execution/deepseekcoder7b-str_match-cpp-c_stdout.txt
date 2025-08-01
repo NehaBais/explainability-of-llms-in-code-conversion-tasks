@@ -1,0 +1,2 @@
+First string starts with second
+Second string is found at position: 1

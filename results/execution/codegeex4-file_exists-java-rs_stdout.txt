@@ -1,0 +1,4 @@
+The file 'input.txt' does not exist in the current working directory.
+The directory 'docs' exists in the current working directory.
+The file 'input.txt' does not exist in the filesystem root.
+The directory 'docs' does not exist in the filesystem root.

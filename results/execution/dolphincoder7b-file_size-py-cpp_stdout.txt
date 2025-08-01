@@ -1,0 +1,2 @@
+Size of input.txt is : 577 bytes.
+Cannot access /input.txt: No such file or directory

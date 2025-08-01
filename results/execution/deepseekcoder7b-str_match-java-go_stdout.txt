@@ -1,0 +1,10 @@
+Start with:
+startWith("abcd", "ab"): true
+endWith("abcd", "zn"): false
+
+Contains:
+contains("abab", "bb"): false
+contains("abab", "ab"): true
+
+Multiple occurrences:
+[0 2]

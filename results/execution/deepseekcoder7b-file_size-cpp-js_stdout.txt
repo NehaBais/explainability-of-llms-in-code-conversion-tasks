@@ -1,0 +1,2 @@
+Size of file input.txt is 421 bytes.
+Size of file /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpqylxagp2/input.txt is 421 bytes.

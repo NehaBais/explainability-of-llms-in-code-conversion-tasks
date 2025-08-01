@@ -1,0 +1,2 @@
+Enter two integers separated by spaces:
+10 is less than 20

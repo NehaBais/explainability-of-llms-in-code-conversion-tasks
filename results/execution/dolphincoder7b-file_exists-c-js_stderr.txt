@@ -1,0 +1,19 @@
+node:fs:196
+  validateFunction(cb, 'cb');
+  ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "cb" argument must be of type function. Received undefined
+    at makeStatsCallback (node:fs:196:3)
+    at stat (node:fs:1657:14)
+    at checkReg (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpumyqi32n/dolphincoder7b-file_exists-c-js.js:5:10)
+    at main (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpumyqi32n/dolphincoder7b-file_exists-c-js.js:15:44)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpumyqi32n/dolphincoder7b-file_exists-c-js.js:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v23.6.1

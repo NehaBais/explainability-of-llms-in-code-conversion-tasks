@@ -1,0 +1,3 @@
+Found match at pos 0
+Found match at pos 0
+Found match at pos 2

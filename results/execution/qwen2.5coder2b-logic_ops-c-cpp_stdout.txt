@@ -1,0 +1,12 @@
+a and b is: 1
+a or b is: 1
+not a is: 0
+a and b is: 0
+a or b is: 1
+not a is: 1
+a and b is: 0
+a or b is: 1
+not a is: 0
+a and b is: 0
+a or b is: 0
+not a is: 1

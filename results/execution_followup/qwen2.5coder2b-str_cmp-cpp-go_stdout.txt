@@ -1,0 +1,10 @@
+Case-sensitive comparison:
+1.2.Foo and 1.3.Bar are not exactly equal.
+Case-insensitive comparison:
+1.2.Foo and 1.3.Bar are not exactly equal.
+
+Numeric comparison:
+1.2 is less than 3.4
+
+Numeric comparison (case-insensitive):
+4.5 is less than 6.7

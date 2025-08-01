@@ -1,0 +1,2 @@
+File 'output.txt' created!
+Directory 'docs' created!

@@ -1,0 +1,2 @@
+touch: /output.txt: Read-only file system
+Failed to create '/output.txt': Undefined error: 0

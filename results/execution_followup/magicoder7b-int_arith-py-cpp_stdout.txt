@@ -1,0 +1,7 @@
+Sum:            25
+Difference:     11
+Product:        126
+Float quotient: 2.57143
+Integer Remainder:  3
+Actual Remainder:   4
+Exponentiation:  612220032

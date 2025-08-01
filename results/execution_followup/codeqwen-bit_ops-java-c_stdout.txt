@@ -1,0 +1,8 @@
+A AND b: 2
+A OR b: 10
+A XOR b: 8
+NOT a: -11
+A << b: 40
+A >> b: 2
+A >>> b: 2
+A rol b: 40

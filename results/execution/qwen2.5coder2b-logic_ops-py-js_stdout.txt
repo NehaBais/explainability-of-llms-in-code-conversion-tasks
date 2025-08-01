@@ -1,0 +1,9 @@
+a and b: false
+a or b: true
+not a: false
+a and b: false
+a or b: true
+not a: true
+a and b: true
+a or b: true
+not a: false

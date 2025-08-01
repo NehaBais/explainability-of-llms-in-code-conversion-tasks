@@ -1,0 +1,6 @@
+Enter two integers:
+a+b = 3.0
+a-b = -1.0
+a*b = 2.0
+a/b = 0
+a%%b = 1

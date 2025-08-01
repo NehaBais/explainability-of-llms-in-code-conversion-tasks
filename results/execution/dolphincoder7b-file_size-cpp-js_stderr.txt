@@ -1,0 +1,12 @@
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+[Error: ENOENT: no such file or directory, stat '/input.txt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/input.txt'
+}
+
+Node.js v23.6.1

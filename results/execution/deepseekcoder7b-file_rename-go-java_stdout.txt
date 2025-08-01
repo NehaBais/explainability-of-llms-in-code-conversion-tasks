@@ -1,0 +1,4 @@
+Renamed file input.txt to output.txt
+Renamed file docs to mydocs
+Failed to rename file
+Failed to rename file

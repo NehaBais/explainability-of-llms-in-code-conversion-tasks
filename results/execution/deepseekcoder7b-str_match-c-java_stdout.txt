@@ -1,0 +1,3 @@
+Starts with test (Hello,Hell): true
+Contains test (Hello,llo): true
+Ends with test (Hello,lo): true

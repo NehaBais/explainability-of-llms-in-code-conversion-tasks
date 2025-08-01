@@ -1,0 +1,7 @@
+Enter the first number: 
+Enter the second number: 
+The sum is: 5
+The difference is: -1
+The product is: 6
+The quotient (towards zero) is: 1
+The remainder is: 2

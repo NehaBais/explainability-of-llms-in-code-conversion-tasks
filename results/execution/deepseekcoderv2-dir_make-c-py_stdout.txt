@@ -1,0 +1,1 @@
+usage: deepseekcoderv2-dir_make-c-py.py <path>

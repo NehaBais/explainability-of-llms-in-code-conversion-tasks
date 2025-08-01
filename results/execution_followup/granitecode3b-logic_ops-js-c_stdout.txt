@@ -1,0 +1,1 @@
+a AND b: 1na OR b: 1nNOT a: 0n

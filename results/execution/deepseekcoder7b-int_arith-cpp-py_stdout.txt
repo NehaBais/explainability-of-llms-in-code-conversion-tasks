@@ -1,0 +1,5 @@
+Enter first number: Enter second number: a+b = 3
+a-b = -1
+a*b = 2
+a/b (floor division)= 0 , remainder= 1
+a**b (exponentiation) = 1

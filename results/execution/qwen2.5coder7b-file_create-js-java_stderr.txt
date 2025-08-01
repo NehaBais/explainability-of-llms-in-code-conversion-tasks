@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.getFileSystem()" because "path" is null
+	at java.base/java.nio.file.Files.provider(Files.java:105)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:808)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:753)
+	at Main.createFileAndDirectory(Main.java:23)
+	at Main.main(Main.java:10)

@@ -1,0 +1,5 @@
+a and b: 2
+A or b: 11
+A xor b: 9
+not A: -11
+c >> b: 1

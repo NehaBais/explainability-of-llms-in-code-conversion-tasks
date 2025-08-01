@@ -1,0 +1,2 @@
+Size of input.txt in the current working directory: 430 bytes.
+Size of /input.txt in the root directory: 0 bytes.

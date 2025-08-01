@@ -1,0 +1,2 @@
+input.txt exists: 1
+Directory exists: 0

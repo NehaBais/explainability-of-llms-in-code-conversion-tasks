@@ -1,0 +1,1 @@
+Size of input.txt: 332 bytesnstat /input.txt: no such file or directory

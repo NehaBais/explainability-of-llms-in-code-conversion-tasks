@@ -1,0 +1,4 @@
+input.txt exists? no
+docs exists? no
+/input.txt exists? no
+/docs exists? no

@@ -1,0 +1,2 @@
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppycf7il4/codeqwen-str_match-js-py.py:25: DeprecationWarning: Bitwise inversion '~' on bool is deprecated and will be removed in Python 3.16. This returns the bitwise inversion of the underlying int object and is usually not what you expect from negating a bool. Use the 'not' operator for boolean negation or ~int(x) if you really want the bitwise inversion of the underlying int.
+  stringB, stringA, "Yes, at index {}".format(q2) if ~q2 else "No."

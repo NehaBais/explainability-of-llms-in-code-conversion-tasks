@@ -1,0 +1,21 @@
+Testing with a = 5 and b = 7:
+a and b: 5
+a or b:  7
+a xor b:  2
+not a:    -6
+a shl b:  640
+a shr b:  0
+a lsr b:  0
+a rol b:  640
+a ror b:  167772160
+
+Testing with a = -5 (negative):
+a and b: 0
+a or b:  -5
+a xor b:  -5
+not a:    4
+a shl b:  -5
+a shr b:  -5
+a lsr b:  4294967291
+a rol b:  -1
+a ror b:  -5

@@ -1,0 +1,4 @@
+true
+false
+false
+Index position of 'zn' is : -1

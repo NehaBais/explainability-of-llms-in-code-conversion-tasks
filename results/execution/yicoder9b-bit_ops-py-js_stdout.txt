@@ -1,0 +1,12 @@
+AND: 25
+    OR:  127
+    XOR: 102
+    NOT: -228
+    SHIFTS
+      RIGHT: 13
+      LEFT:  54
+ROTATE
+      RIGHT: 141  198   177
+      LEFT:  54  108   177
+    SIGN-EXTENDING ARITHMETIC SHIFT RIGHT
+               27 1  27 1   27 1

@@ -1,0 +1,11 @@
+Exception in thread "main" java.nio.file.FileSystemException: /docs: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:262)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:228)
+	at java.base/java.nio.file.Files.newBufferedWriter(Files.java:3012)
+	at java.base/java.nio.file.Files.newBufferedWriter(Files.java:3060)
+	at FileCreator.createFile(FileCreator.java:11)
+	at FileCreator.main(FileCreator.java:16)

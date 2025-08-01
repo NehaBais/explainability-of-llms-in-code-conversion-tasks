@@ -1,0 +1,6 @@
+Enter first integer: Enter second integer: Sum: 5
+Difference: -1
+Product: 6
+Quotient (rounded towards zero): 0
+Remainder (same sign as first operand): 2
+Exponentiation: 8.0

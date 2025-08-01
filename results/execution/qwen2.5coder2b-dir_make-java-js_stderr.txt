@@ -1,0 +1,18 @@
+node:fs:1361
+  const result = binding.mkdir(
+                         ^
+
+Error: ENOENT: no such file or directory, mkdir './parent/test'
+    at mkdirSync (node:fs:1361:26)
+    at createDirectoryIfNotExists (file:///private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp18834odk/qwen2.5coder2b-dir_make-java-js.js:5:5)
+    at file:///private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp18834odk/qwen2.5coder2b-dir_make-java-js.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:272:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:580:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:98:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: './parent/test'
+}
+
+Node.js v23.6.1

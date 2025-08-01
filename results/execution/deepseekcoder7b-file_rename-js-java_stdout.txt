@@ -1,0 +1,4 @@
+Successfully moved from input.txt to output.txt
+Successfully moved from docs to mydocs
+Failed to move from C:/input.txt to C:/output.txt
+Failed to move from C:/docs to C:/mydocs

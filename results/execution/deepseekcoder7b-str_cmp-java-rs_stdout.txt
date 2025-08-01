@@ -1,0 +1,18 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are case-insensitive lexically equal.
+Cannot parse to float: 'Hello'
+'5' and '5.0' are not lexically equal.
+'5' is lexically before  '5.0'
+'5' and '5.0' are not case-insensitive lexically equal.
+Parsed successfully 5
+'java' and 'Java' are not lexically equal.
+'java' is lexically after 'Java'
+'java' and 'Java' are case-insensitive lexically equal.
+Cannot parse to float: 'java'
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are case-insensitive lexically equal.
+Cannot parse to float: 'ĴÃVÁ'
+'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
+'ĴÃVÁ' is lexically before  'ĵãvá'
+'ĴÃVÁ' and 'ĵãvá' are not case-insensitive lexically equal.
+Cannot parse to float: 'ĴÃVÁ'

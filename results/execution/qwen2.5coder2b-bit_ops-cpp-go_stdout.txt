@@ -1,0 +1,9 @@
+a and b: 0
+a or b: 15
+a xor b: 15
+not a: -11
+a shl b: 320
+a shr b: 0
+a lsr b: 0
+a rol b: 10
+a ror b: 0

@@ -1,0 +1,4 @@
+found at position 0
+ends with
+does not contain
+starts with

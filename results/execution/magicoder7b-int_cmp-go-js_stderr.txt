@@ -1,0 +1,16 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppoh6g0bo/magicoder7b-int_cmp-go-js.js:11
+  readLine.close();
+  ^
+
+ReferenceError: readLine is not defined
+    at /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppoh6g0bo/magicoder7b-int_cmp-go-js.js:11:3
+    at [_onLine] [as _onLine] (node:internal/readline/interface:414:7)
+    at [_normalWrite] [as _normalWrite] (node:internal/readline/interface:610:22)
+    at ReadStream.ondata (node:internal/readline/interface:243:23)
+    at ReadStream.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TTY.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v23.6.1

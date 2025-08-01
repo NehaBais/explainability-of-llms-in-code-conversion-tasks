@@ -1,0 +1,6 @@
+Sum: 		  25
+Difference: 	  11
+Product: 	  126
+Integer quotient: 2
+Float quotient:   2.5714285714285716
+Whole Remainder:  2

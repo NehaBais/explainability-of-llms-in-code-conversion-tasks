@@ -1,0 +1,10 @@
+Enter the first string:
+Enter the second string:
+abc and def are not exactly lexically equal.
+abc and def are exactly lexically unequal.
+abc is lexically ordered before def.
+abc is not lexically ordered after def.
+abc and def are not exactly lexically equal.
+abc and def are exactly lexically unequal.
+abc is lexically ordered before def.
+abc is not lexically ordered after def.

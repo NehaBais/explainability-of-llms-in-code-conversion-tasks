@@ -1,0 +1,5 @@
+Substr: cde
+Substring: cdefgh
+Substring2: abcdefg
+Substr3: bcd
+Substr4: bc

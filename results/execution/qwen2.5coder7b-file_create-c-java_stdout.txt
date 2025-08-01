@@ -1,0 +1,4 @@
+File created: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7a4mfpsl/./output.txt
+File permissions set successfully: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7a4mfpsl/./output.txt
+Directory created: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7a4mfpsl/./docs
+Directory permissions set successfully: /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp7a4mfpsl/./docs

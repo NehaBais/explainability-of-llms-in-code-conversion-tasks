@@ -1,0 +1,7 @@
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:220)
+	at java.base/sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:296)
+	at java.base/java.nio.file.Path.of(Path.java:148)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at Main.renameAtRoot(Main.java:23)
+	at Main.main(Main.java:9)

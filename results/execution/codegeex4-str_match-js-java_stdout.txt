@@ -1,0 +1,4 @@
+1: Does 'o' start with 'co'? No.
+2: Is 'co' contained in 'o'? No.
+   In fact, it happens 2 times within 'o', at indexes 2, 3.
+3: Does 'o' end with 'co'? No.

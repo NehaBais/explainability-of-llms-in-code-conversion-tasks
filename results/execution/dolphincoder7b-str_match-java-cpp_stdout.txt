@@ -1,0 +1,6 @@
+startsWith: true
+endsWith: false
+contains: false
+contains: true
+indexOf (first occurrence): -1
+indexOf (second occurrence): 0

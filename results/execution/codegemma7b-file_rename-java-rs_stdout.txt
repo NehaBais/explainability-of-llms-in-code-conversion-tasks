@@ -1,0 +1,6 @@
+The following file called input.txt was renamed as output.txt
+The following file called /input.txt could not be renamed into /output.txt
+Error: No such file or directory (os error 2)
+The following directory called docs was renamed as mydocs
+The following directory called /docs could not be renamed into /mydocs
+Error: No such file or directory (os error 2)

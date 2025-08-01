@@ -1,0 +1,6 @@
+cat is bytewise identical to dog
+cat is bytewise different from dog
+cat is lexically bytewise greater than dog, false
+cat is lexically bytewise less than dog, true
+cat is lexically bytewise greater than or equal to dog, false
+cat is lexically bytewise less than or equal to dog, true

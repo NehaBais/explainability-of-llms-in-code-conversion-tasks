@@ -1,0 +1,4 @@
+Created file 'output.txt' in the current directory
+Failed to create file '/output.txt' in the root directory: Read-only file system (os error 30)
+Failed to create directory 'docs' in the root directory: Read-only file system (os error 30)
+Created directory 'docs' in the current directory

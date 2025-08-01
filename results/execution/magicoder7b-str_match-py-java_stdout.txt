@@ -1,0 +1,3 @@
+Starts with? true
+Contains at location: 0
+Ends with? false

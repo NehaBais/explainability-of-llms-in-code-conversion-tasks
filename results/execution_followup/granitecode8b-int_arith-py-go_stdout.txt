@@ -1,0 +1,2 @@
+Enter two integers:
+Sum: 3nnDifference: -1nnProduct: 2nnInteger quotient: 0nnFloat quotient: 0.50nnWhole Remainder: %!f(int=1)nnActual Remainder: 0.50nnExponentiation: 1nn

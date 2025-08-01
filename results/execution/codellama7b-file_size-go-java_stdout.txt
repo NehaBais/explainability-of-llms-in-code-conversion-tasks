@@ -1,0 +1,4 @@
+Size of file input.txt: 
+675
+Size of file /input.txt: 
+File does not exist.

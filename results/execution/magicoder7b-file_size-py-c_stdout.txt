@@ -1,0 +1,2 @@
+Size of file input.txt in current directory: 620 bytes
+Error in getting size of file /input.txt 

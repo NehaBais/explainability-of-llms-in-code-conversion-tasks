@@ -1,0 +1,2 @@
+The size of 'input.txt' in the current directory is: 418
+The size of '/input.txt' in the file system root is: 0

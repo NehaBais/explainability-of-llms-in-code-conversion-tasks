@@ -1,0 +1,4 @@
+startsWith: 1
+contains: 1
+location of match for contains: 1
+endsWith: 1

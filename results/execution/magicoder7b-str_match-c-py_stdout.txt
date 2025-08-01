@@ -1,0 +1,2 @@
+Starts with Test ( Hello,Hell ) :  True
+Ends with Test ( Code,ode ) :  True

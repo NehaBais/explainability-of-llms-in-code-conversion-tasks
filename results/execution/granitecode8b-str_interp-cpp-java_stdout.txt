@@ -1,0 +1,1 @@
+Enter the original string: Enter the character sequence to be replaced: Enter the value to replace the character sequence with: String after replacement: abcdefabc

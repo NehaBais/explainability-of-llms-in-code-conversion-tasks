@@ -1,0 +1,4 @@
+Successfully renamed input.txt to output.txt
+Successfully renamed docs directory to mydocs
+Failed to rename /input.txt to /output.txt
+Failed to rename /docs directory to /mydocs

@@ -1,0 +1,22 @@
+
+Factors of -1 not computed
+
+Factors of 0 not computed
+
+Factors of 1: 
+Number of factors = 1
+
+Factors of 2:  2 
+Number of factors = 1
+
+Factors of 3:  3 
+Number of factors = 1
+
+Factors of 53:  53 
+Number of factors = 1
+
+Factors of 45:  3  15 
+Number of factors = 1
+
+Factors of 64:  2  4  8 
+Number of factors = 1

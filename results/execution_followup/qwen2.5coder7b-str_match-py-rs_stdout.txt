@@ -1,0 +1,5 @@
+true
+true
+Substring found!
+Location: 0
+Next location: 2

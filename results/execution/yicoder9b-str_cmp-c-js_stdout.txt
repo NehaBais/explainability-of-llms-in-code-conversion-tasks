@@ -1,0 +1,4 @@
+	eq , ne , gt , lt , ge , le, gtnumprefix, ltnumprefix
+ball false true false true false true  false false vs bell
+ball true false false false true true  false false vs ball
+YUP false true true false true false  false false vs YEP

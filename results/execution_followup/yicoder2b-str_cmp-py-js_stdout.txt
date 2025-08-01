@@ -1,0 +1,6 @@
+%r is of type YUP and %r is of type string YUP string
+%r is less than or equal to %r YUP YUP
+%r is greater than or equal to %r YUP YUP
+%r is equal to %r YUP YUP
+Both %r and %r are equal YUP YUP
+%r has object identity with %r YUP YUP

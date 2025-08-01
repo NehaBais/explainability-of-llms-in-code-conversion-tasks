@@ -1,0 +1,4 @@
+Error: input.txt does not exist.
+Error: /input.txt does not exist.
+Error: docs does not exist.
+Error: /docs does not exist.

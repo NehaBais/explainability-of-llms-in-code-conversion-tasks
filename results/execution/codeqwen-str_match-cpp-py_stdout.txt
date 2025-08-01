@@ -1,0 +1,2 @@
+The first string starts with the second string at position 0
+The first string ends with the second string at position 0

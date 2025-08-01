@@ -1,0 +1,7 @@
+starts with: true
+ends with: false
+contains: false
+contains: true
+find: -1
+find: 0
+find in loop: 2

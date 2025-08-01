@@ -1,0 +1,1 @@
+Size of the file input.txt for current working directory: 400

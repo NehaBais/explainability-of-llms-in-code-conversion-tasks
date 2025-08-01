@@ -1,0 +1,3 @@
+String variable with value: hello
+hello literal
+hello literal

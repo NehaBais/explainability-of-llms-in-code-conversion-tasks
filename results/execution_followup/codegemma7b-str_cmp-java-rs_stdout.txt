@@ -1,0 +1,15 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are lexically equal (ignoring case).
+The lexical relationship is: Equal
+'5' and '5.0' are not lexically equal.
+'5' and '5.0' are not lexically equal (ignoring case).
+The lexical relationship is: Less
+'java' and 'Java' are not lexically equal.
+'java' and 'Java' are lexically equal (ignoring case).
+The lexical relationship is: Greater
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal (ignoring case).
+The lexical relationship is: Equal
+'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
+'ĴÃVÁ' and 'ĵãvá' are lexically equal (ignoring case).
+The lexical relationship is: Less

@@ -1,0 +1,5 @@
+sum:              3
+difference:       -1
+product:          2
+integer quotient: 0.5
+remainder:        1

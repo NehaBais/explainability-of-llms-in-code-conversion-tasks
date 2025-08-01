@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpyrn3341d/granitecode8b-file_create-c-py.py", line 8, in <module>
+    fd = open("/output.txt", "w")  # rights 0640 for rw-r-----
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/output.txt'

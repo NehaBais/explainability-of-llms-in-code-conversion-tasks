@@ -1,0 +1,7 @@
+Index:  01234567
+String: ABCDEFGH
+Start 2, length 3:    BCDEFGH
+Start 2, to end:      BCDEFGH
+All but last:         ABCDEFG
+Start 'D', length 3:   DEFGH
+Start "DE", length 3: DEFGH

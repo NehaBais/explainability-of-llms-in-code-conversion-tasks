@@ -1,0 +1,5 @@
+abcd.startsWith(ab) //returns true
+abcd.endsWith(ab) //returns false
+abcd.contains(ab) //returns true
+loc = abab.indexOf(ab) //returns 0
+loc = abab.indexOf(ab,loc+1) //returns 2

@@ -1,0 +1,2 @@
+Original string: hello
+Concatenated string: hello there!

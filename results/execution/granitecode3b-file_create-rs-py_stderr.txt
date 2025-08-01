@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp643hga9l/granitecode3b-file_create-rs-py.py", line 5, in <module>
+    os.makedirs(DIR_NAME, exist_ok=True)
+                ^^^^^^^^
+NameError: name 'DIR_NAME' is not defined

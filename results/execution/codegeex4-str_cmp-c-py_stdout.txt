@@ -1,0 +1,19 @@
+eq , ne , gt , lt , ge , le
+ball     0  1  0  1  0  1 bell
+ball     0  1  0  1  0  1 bell ignoring case
+ball     1  0  0  0  1  1 ball
+ball     1  0  0  0  1  1 ball ignoring case
+YUP      0  1  1  0  1  0 YEP
+YUP      0  1  1  0  1  0 YEP ignoring case
+ball     0  1  1  0  1  0 BELL
+ball     0  1  0  1  0  1 BELL ignoring case
+ball     0  1  1  0  1  0 BALL
+ball     1  0  0  0  1  1 BALL ignoring case
+YUP      0  1  0  1  0  1 yep
+YUP      0  1  1  0  1  0 yep ignoring case
+ball     0  1  1  0  1  0 BELL
+ball     0  1  0  1  0  1 BELL ignoring case
+ball     0  1  1  0  1  0 BALL
+ball     1  0  0  0  1  1 BALL ignoring case
+YUP      0  1  0  1  0  1 yep
+YUP      0  1  1  0  1  0 yep ignoring case

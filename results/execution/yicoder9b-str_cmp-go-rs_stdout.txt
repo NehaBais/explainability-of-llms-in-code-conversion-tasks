@@ -1,0 +1,8 @@
+cat is exactly the same as dog.
+cat is not the same as dog.
+cat is lexically higher than dog.
+cat is lexically lower than dog.
+Case Sensitive compare: cat is exactly the same as dog.
+Case Sensitive compare: cat is not the same as dog.
+Case Insensitive compare: cat is exactly the same as dog.
+Case Insensitive compare: cat is not the same as dog.

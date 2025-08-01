@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp_sznm1rd/magicoder7b-file_size-js-py.py", line 10, in <module>
+    "Size of input.txt in root directory: ", file_size("/input.txt")
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp_sznm1rd/magicoder7b-file_size-js-py.py", line 5, in file_size
+    return os.stat(path).st_size
+           ^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

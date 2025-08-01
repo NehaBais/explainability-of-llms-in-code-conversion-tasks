@@ -1,0 +1,30 @@
+'Hello' and 'Hello' are lexically equal.
+'Hello' and 'Hello' are case-insensitive lexically equal.
+The lexical relationship is: 0
+The case-insensitive lexical relationship is: 0
+
+'5' and '5.0' are not lexically equal.
+'5' and '5.0' are not case-insensitive lexically equal.
+'5' is lexically before '5.0'.
+'5' is not lexically before '5.0'.
+The lexical relationship is: -46
+The case-insensitive lexical relationship is: -46
+
+'java' and 'Java' are not lexically equal.
+'java' and 'Java' are case-insensitive lexically equal.
+'java' is lexically after 'Java'.
+The lexical relationship is: 32
+The case-insensitive lexical relationship is: 0
+
+'ĴÃVÁ' and 'ĴÃVÁ' are lexically equal.
+'ĴÃVÁ' and 'ĴÃVÁ' are case-insensitive lexically equal.
+The lexical relationship is: 0
+The case-insensitive lexical relationship is: 0
+
+'ĴÃVÁ' and 'ĵãvá' are not lexically equal.
+'ĴÃVÁ' and 'ĵãvá' are not case-insensitive lexically equal.
+'ĴÃVÁ' is lexically before 'ĵãvá'.
+'ĴÃVÁ' is not lexically before 'ĵãvá'.
+The lexical relationship is: -1
+The case-insensitive lexical relationship is: -1
+

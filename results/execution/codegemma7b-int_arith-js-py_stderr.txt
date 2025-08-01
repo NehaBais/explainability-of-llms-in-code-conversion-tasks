@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplopr6qd7/codegemma7b-int_arith-js-py.py", line 4, in <module>
+    a = int(sys.argv[1])
+            ~~~~~~~~^^^
+IndexError: list index out of range

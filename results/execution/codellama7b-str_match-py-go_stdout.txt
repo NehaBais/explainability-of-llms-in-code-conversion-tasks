@@ -1,0 +1,4 @@
+Yes, the first string starts with the second string.
+No, the first string does not contain the second string.
+No, the first string does not end with the second string.
+The first occurrence of 'ab' in 'abab' is at location 0

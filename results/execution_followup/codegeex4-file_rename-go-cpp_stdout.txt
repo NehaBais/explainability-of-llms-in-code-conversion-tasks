@@ -1,0 +1,3 @@
+Renaming in current directory:
+
+Renaming in root directory:

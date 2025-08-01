@@ -1,0 +1,5 @@
+Enter the first integer: Enter the second integer: a + b = 3
+a - b = -1
+a * b = 2
+a / b = 0 (truncates towards zero)
+a % b = 1 (same sign as the first operand)

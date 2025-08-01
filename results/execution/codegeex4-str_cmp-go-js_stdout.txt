@@ -1,0 +1,5 @@
+cat is bytewise different from dog
+cat is lexically bytewise less than dog
+cat and dog are not case sensitive equal
+cat is bytewise different from dog
+10 is greater than 5

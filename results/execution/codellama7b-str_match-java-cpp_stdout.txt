@@ -1,0 +1,3 @@
+The first string starts with the second string
+The first string contains the second string at position: 0
+The first string does not end with the second string

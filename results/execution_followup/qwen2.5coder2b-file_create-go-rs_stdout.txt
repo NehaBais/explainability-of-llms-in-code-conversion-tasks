@@ -1,0 +1,2 @@
+File created at: "./input.txt"
+Directory created at: "./docs"

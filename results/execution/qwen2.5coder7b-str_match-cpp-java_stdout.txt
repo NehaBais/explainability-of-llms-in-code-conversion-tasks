@@ -1,0 +1,4 @@
+Does s1 start with s3? true
+Does s1 end with s3? false
+Does s2 contain s3 anywhere? Yes, at index: 0
+Found another occurrence of s3 at index: 2

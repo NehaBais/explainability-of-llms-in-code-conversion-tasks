@@ -1,0 +1,2 @@
+File docs/input.txt and directory /docs exist: False
+File /docs/input.txt and directory /docs exist: False

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpu68w5ma4/yicoder2b-file_rename-js-py.py", line 10, in <module>
+    os.rename("/docs", "/mydocs")
+FileNotFoundError: [Errno 2] No such file or directory: '/docs' -> '/mydocs'

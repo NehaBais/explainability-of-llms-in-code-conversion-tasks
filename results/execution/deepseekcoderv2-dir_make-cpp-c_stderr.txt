@@ -1,0 +1,1 @@
+usage: /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpm59c8f8q/program <path>

@@ -1,0 +1,2 @@
+usage: /var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/go-build3903867364/b001/exe/qwen2.5coder7b-dir_make-c-go <path>
+exit status 1

@@ -1,0 +1,8 @@
+Enter the first string (or just press enter for default): Enter the second string (or just press enter for default): adabc and def are not exactly lexically equal.
+adabc and def are lexicallyinequal.
+adabc is lexically ordered before def.
+adabc is not lexically ordered after def.
+adabc and def are not exactly lexically equal.
+adabc and def are lexicallyinequal.
+adabc is lexically ordered before def.
+adabc is not lexically ordered after def.

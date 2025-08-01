@@ -1,0 +1,8 @@
+Enter first number: 
+Enter second number: 
+a + b = 17
+a - b = -1
+a * b = 72
+a / b = 0
+a % b = 8
+8.00 ^ 9.00 = 134217728.00

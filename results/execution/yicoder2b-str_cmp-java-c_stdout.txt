@@ -1,0 +1,2 @@
+'Hello' and 'Hello' are lexically equal
+'Hello' and 'HELLO' are not case-insensitive lexically equal

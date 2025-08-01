@@ -1,0 +1,2 @@
+mkdir: /docs: Read-only file system
+mkdir: /output.txt: Read-only file system

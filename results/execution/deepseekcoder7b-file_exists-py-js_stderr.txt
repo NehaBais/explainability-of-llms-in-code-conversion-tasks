@@ -1,0 +1,32 @@
+Error occurred while accessing the provided path:  Error: ENOENT: no such file or directory, stat './input.txt'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async checkFileAndDirectoryExists (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpy66vxp3v/deepseekcoder7b-file_exists-py-js.js:6:18) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './input.txt'
+}
+Error occurred while accessing the provided path:  Error: ENOENT: no such file or directory, stat '/input.txt'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async checkFileAndDirectoryExists (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpy66vxp3v/deepseekcoder7b-file_exists-py-js.js:6:18) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/input.txt'
+}
+Error occurred while accessing the provided path:  Error: ENOENT: no such file or directory, stat '/docs'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async checkFileAndDirectoryExists (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpy66vxp3v/deepseekcoder7b-file_exists-py-js.js:6:18) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/docs'
+}
+Error occurred while accessing the provided path:  Error: ENOENT: no such file or directory, stat './docs'
+    at async Object.stat (node:internal/fs/promises:1037:18)
+    at async checkFileAndDirectoryExists (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpy66vxp3v/deepseekcoder7b-file_exists-py-js.js:6:18) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './docs'
+}

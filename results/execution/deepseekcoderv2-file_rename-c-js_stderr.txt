@@ -1,0 +1,34 @@
+Error renaming /input.txt: Error: ENOENT: no such file or directory, rename '/input.txt' -> '/output.txt'
+    at Object.renameSync (node:fs:1022:11)
+    at renameRoot (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp51iwngav/deepseekcoderv2-file_rename-c-js.js:17:8)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp51iwngav/deepseekcoderv2-file_rename-c-js.js:29:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/input.txt',
+  dest: '/output.txt'
+}
+Error renaming /docs: Error: ENOENT: no such file or directory, rename '/docs' -> '/mydocs'
+    at Object.renameSync (node:fs:1022:11)
+    at renameRoot (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp51iwngav/deepseekcoderv2-file_rename-c-js.js:17:8)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp51iwngav/deepseekcoderv2-file_rename-c-js.js:30:1)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/docs',
+  dest: '/mydocs'
+}

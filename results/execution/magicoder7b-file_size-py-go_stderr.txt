@@ -1,0 +1,6 @@
+panic: stat /input.txt: no such file or directory
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpd3mhl4se/magicoder7b-file_size-py-go.go:19 +0x10c
+exit status 2

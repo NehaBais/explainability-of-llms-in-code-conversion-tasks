@@ -1,0 +1,2 @@
+Size of input.txt: 574 bytes
+Size of /directory: 704 bytes

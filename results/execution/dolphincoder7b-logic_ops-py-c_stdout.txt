@@ -1,0 +1,9 @@
+a and b: 0
+a or b: 1
+not a: 0
+a and b: 0
+a or b: 1
+not a: 1
+a and b: 1
+a or b: 1
+not a: 0

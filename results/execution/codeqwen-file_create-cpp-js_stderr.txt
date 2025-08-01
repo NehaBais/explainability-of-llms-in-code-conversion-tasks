@@ -1,0 +1,22 @@
+node:fs:2427
+    return binding.writeFileUtf8(
+                   ^
+
+Error: EROFS: read-only file system, open '/output.txt'
+    at Object.writeFileSync (node:fs:2427:20)
+    at /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpmhzk7oyf/codeqwen-file_create-cpp-js.js:7:6
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpmhzk7oyf/codeqwen-file_create-cpp-js.js:5:22)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24) {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'open',
+  path: '/output.txt'
+}
+
+Node.js v23.6.1

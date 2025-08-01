@@ -1,0 +1,31 @@
+"YUP" is of type string and "YUP" is of type string
+"YUP" is strictly less than  "YUP" : false
+"YUP" is less than or equal to "YUP" : true
+"YUP" is strictly greater than  "YUP" : false
+"YUP" is greater than or equal to "YUP" : true
+"YUP" is equal to "YUP" : true
+"YUP" is not equal to "YUP" : false
+"YUP" has lexical comparison value of 0 compared to "YUP"
+"BALL" is of type string and "BELL" is of type string
+"BALL" is strictly less than  "BELL" : true
+"BALL" is less than or equal to "BELL" : true
+"BALL" is strictly greater than  "BELL" : false
+"BALL" is greater than or equal to "BELL" : false
+"BALL" is equal to "BELL" : false
+"BALL" is not equal to "BELL" : true
+"BALL" has lexical comparison value of -1 compared to "BELL"
+"24" is of type string and "123" is of type string
+"24" is strictly less than  "123" : false
+"24" is less than or equal to "123" : false
+"24" is strictly greater than  "123" : true
+"24" is greater than or equal to "123" : true
+"24" is equal to "123" : false
+"24" is not equal to "123" : true
+"24" has lexical comparison value of 1 compared to "123"
+'\x18' is of type int and '{' is of type int
+24 is strictly less than  123 : true
+24 is less than or equal to 123 : true
+24 is strictly greater than  123 : false
+24 is greater than or equal to 123 : false
+24 is equal to 123 : false
+24 is not equal to 123 : true

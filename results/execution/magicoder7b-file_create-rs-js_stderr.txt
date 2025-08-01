@@ -1,0 +1,14 @@
+node:internal/fs/promises:639
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: EROFS: read-only file system, open '/output.txt'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.writeFile (node:internal/fs/promises:1213:14) {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'open',
+  path: '/output.txt'
+}
+
+Node.js v23.6.1

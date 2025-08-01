@@ -1,0 +1,7 @@
+Enter two integers: Sum: 3
+Difference: -1
+Product: 2
+Integer Quotient: 0
+Float Quotient: 0.5
+Remainder: 1
+Exponentiation: 1

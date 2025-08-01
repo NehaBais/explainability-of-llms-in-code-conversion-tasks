@@ -1,0 +1,2 @@
+Size of 'input.txt' in current directory: 732
+File 'input.txt' does not exist in the file system root.

@@ -1,0 +1,1 @@
+Error getting size of current directory: Illegal seek

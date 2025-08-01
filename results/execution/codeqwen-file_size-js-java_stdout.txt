@@ -1,0 +1,2 @@
+Size of input.txt: 407
+Size of c:/input.txt: 0

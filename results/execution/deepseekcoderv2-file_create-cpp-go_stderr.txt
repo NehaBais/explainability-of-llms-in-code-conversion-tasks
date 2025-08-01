@@ -1,0 +1,6 @@
+panic: open /output.txt: read-only file system
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp0qen7jwr/deepseekcoderv2-file_create-cpp-go.go:18 +0xe4
+exit status 2

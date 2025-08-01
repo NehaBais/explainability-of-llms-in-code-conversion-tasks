@@ -1,0 +1,2 @@
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp24nqw_ob/deepseekcoderv2-str_cmp-js-py.py:4: SyntaxWarning: "is" with 'str' literal. Did you mean "=="?
+  print("abcd" is "abcd")  # False (is checks identity, not value)

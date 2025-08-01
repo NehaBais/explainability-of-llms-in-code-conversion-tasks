@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpre3065jj/codegeex4-file_size-js-py.py", line 7, in <module>
+    file_size_root = os.stat("/input.txt").st_size
+                     ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

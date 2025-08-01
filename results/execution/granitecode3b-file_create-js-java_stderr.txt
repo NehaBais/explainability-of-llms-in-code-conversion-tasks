@@ -1,0 +1,2 @@
+Error creating file: /output.txt (Read-only file system)
+Error creating directory: /docs (Read-only file system)

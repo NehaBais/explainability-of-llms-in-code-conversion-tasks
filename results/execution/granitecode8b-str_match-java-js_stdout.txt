@@ -1,0 +1,3 @@
+true
+String found at index 0
+false

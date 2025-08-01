@@ -1,0 +1,6 @@
+panic: runtime error: index out of range [1] with length 1
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpd33h8c67/deepseekcoder7b-int_arith-js-go.go:10 +0x200
+exit status 2

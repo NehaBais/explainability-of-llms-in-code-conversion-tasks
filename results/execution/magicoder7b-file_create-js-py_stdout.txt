@@ -1,0 +1,2 @@
+[Errno 30] Read-only file system: '/docs'
+[Errno 30] Read-only file system: '/output.txt'

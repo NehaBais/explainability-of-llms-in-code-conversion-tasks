@@ -1,0 +1,10 @@
+Starting from 2 characters in and of 3 length:
+bcd
+Starting from 2 characters in, up to the end:
+bcdefgh
+Whole string minus the last character:
+abcdefg
+Starting from a known character 'd' within the string and of 3 length:
+abc
+Starting from a known substring 'cd' within the string and of 3 length:
+abc

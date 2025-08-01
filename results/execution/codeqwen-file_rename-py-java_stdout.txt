@@ -1,0 +1,2 @@
+Renamed successfully: input.txt -> output.txt
+Renamed successfully: docs -> mydocs

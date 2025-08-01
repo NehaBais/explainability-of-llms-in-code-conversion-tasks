@@ -1,0 +1,1 @@
+You must enter two integers as arguments

@@ -1,0 +1,4 @@
+Error checking for input.txt: fs is not defined
+Error checking for /input.txt: fs is not defined
+Error checking for docs: fs is not defined
+Error checking for /docs: fs is not defined

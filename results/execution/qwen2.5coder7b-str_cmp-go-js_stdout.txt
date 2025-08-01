@@ -1,0 +1,4 @@
+cat is bytewise different from dog
+cat is not lexically bytewise equal to dog
+cat is lexically less than dog
+25 is numerically greater than 100

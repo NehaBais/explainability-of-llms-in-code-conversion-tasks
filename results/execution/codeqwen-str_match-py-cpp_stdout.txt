@@ -1,0 +1,12 @@
+String 1 starts with String 2
+String 1 contains String 2
+String 1 does not end with String 2
+String 1 does not start with String 2
+String 1 does not contain String 2
+String 1 does not end with String 2
+String 1 does not start with String 2
+String 1 does not contain String 2
+String 1 does not end with String 2
+String 1 does not start with String 2
+String 1 does not contain String 2
+String 1 does not end with String 2

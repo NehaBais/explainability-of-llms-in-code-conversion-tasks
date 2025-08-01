@@ -1,0 +1,1 @@
+Error: open //output.txt: read-only file system

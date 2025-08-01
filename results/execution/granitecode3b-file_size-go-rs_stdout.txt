@@ -1,0 +1,2 @@
+Size of input.txt is 291
+Size of / is 704

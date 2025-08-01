@@ -1,0 +1,4 @@
+The following file called input.txt was renamed as output.txt: Success
+The following file called /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3_970gg8/input.txt was renamed as /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3_970gg8/output.txt: Failed
+The following directory called docs was renamed as mydocs: Success
+The following directory called /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3_970gg8/docs was renamed as /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp3_970gg8/docs: Success

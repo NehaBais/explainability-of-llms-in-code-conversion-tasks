@@ -1,0 +1,10 @@
+Enter first integer:
+Enter second integer:
+Sum:  5
+Difference: -1
+Product: 6
+Integer quotient (rounded towards zero): 0
+Float quotient: 0.67
+Actual Remainder:  2
+Remainder sign matches the first operand
+Exponentiation:  1

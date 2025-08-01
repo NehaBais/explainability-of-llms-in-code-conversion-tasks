@@ -1,0 +1,20 @@
+%r is of type %r and %r is of type %r YUP string YUP string
+%r is less than or equal to %r YUP YUP
+%r is greater than or equal to %r YUP YUP
+%r is equal to %r YUP YUP
+%r has object identity with %r YUP YUP
+%r is of type %r and %r is of type %r BALL string BELL string
+%r is strictly less than  %r BALL BELL
+%r is less than or equal to %r BALL BELL
+%r is not equal to %r BALL BELL
+%r has negated object identity with %r BALL BELL
+%r is of type %r and %r is of type %r 24 string 123 string
+%r is strictly greater than  %r 24 123
+%r is greater than or equal to %r 24 123
+%r is not equal to %r 24 123
+%r has negated object identity with %r 24 123
+%r is of type %r and %r is of type %r 24 number 123 number
+%r is strictly less than  %r 24 123
+%r is less than or equal to %r 24 123
+%r is not equal to %r 24 123
+%r has negated object identity with %r 24 123

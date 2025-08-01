@@ -1,0 +1,6 @@
+Enter the first integer: Enter the second integer: Sum: 		  12
+Difference: 	  8
+Product: 	  20
+Integer quotient: 5
+Remainder: 		  0
+Exponentiation:   100

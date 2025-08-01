@@ -1,0 +1,6 @@
+Sum: 25
+Difference: 11
+Product: 126
+Integer Quotient(rounded towards zero): 2
+Remainder: 4
+Exponentiation: 324

@@ -1,0 +1,2 @@
+Error creating file Error: EROFS: read-only file system, open '/output.txt'
+Error creating directory Error: ENOENT: no such file or directory, mkdir '/docs1'

@@ -1,0 +1,2 @@
+Enter two numbers:
+10 is greater than 2

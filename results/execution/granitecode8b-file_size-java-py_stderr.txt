@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpbzv0207p/granitecode8b-file_size-java-py.py", line 6, in <module>
+    print("%,d B" % (file_size))
+          ~~~~~~~~^~~~~~~~~~~~~
+ValueError: unsupported format character ',' (0x2c) at index 1

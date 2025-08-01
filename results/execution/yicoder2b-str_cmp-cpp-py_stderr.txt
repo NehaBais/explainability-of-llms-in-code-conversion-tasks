@@ -1,0 +1,2 @@
+usage: yicoder2b-str_cmp-cpp-py.py [-h] stringA stringB
+yicoder2b-str_cmp-cpp-py.py: error: the following arguments are required: stringA, stringB

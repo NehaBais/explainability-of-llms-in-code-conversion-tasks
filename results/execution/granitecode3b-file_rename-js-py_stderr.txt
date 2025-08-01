@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 847, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpagjlgghd/granitecode3b-file_rename-js-py.py", line 6, in <module>
+    shutil.move("/input.txt", "/output.txt")
+  File "/opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 867, in move
+    copy_function(src, real_dst)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 475, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.8/Frameworks/Python.framework/Versions/3.12/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

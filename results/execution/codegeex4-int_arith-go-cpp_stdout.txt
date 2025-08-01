@@ -1,0 +1,6 @@
+Enter two integers: 1 + 2 = 3
+1 - 2 = -1
+1 * 2 = 2
+1 / 2 = 0 (truncates towards zero)
+1 % 2 = 1 (same sign as first operand)
+1 ^ 2 = 1

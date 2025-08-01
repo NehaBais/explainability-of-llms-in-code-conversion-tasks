@@ -1,0 +1,2 @@
+2025/07/25 15:18:12 Could not get size of /path/to/yourfile.txt: stat /path/to/yourfile.txt: no such file or directory
+exit status 1

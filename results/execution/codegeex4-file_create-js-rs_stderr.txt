@@ -1,0 +1,8 @@
+Problem creating the file: Os { code: 17, kind: AlreadyExists, message: "File exists" }
+Problem creating the directory: Os { code: 17, kind: AlreadyExists, message: "File exists" }
+Problem creating the file: Os { code: 20, kind: NotADirectory, message: "Not a directory" }
+Problem creating the file: Os { code: 30, kind: ReadOnlyFilesystem, message: "Read-only file system" }
+Problem creating the directory: Os { code: 20, kind: NotADirectory, message: "Not a directory" }
+Problem creating the directory: Os { code: 30, kind: ReadOnlyFilesystem, message: "Read-only file system" }
+Problem creating the file: Os { code: 30, kind: ReadOnlyFilesystem, message: "Read-only file system" }
+Problem creating the directory: Os { code: 30, kind: ReadOnlyFilesystem, message: "Read-only file system" }

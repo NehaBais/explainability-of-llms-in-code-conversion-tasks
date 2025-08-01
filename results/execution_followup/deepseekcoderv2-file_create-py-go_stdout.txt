@@ -1,0 +1,2 @@
+Successfully created file and directory in current directory
+Error creating file and directory in root directory: open //output.txt: read-only file system

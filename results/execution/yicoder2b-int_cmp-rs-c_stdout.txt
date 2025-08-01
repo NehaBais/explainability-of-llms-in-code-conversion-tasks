@@ -1,0 +1,3 @@
+Enter first integer:
+Enter second integer:
+The first integer is greater than the second one.

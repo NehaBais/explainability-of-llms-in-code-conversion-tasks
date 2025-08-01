@@ -1,0 +1,6 @@
+Does 'abcd' start with 'ab'? true
+Does 'abcd' end with 'zn'? false
+Is 'bb' in 'abab'? false
+Is 'ab' in 'abab'? true
+Match found at location: 0
+Match found at location: 2

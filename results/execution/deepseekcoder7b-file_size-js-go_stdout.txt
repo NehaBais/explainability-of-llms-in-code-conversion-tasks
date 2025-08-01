@@ -1,0 +1,2 @@
+Size of input.txt in current directory: 637 bytes
+stat /path/to/root/input.txt: no such file or directory

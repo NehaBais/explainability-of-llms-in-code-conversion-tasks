@@ -1,0 +1,5 @@
+Starts with: true
+Contains: false
+First occurrence of 'ab' is at index: 0
+Second occurrence of 'ab' is at index: 2
+Ends with: false

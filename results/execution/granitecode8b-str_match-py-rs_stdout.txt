@@ -1,0 +1,3 @@
+abcd starts with ab: true
+abcd contains ab: true
+abcd ends with ab: false

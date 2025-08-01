@@ -1,0 +1,4 @@
+input.txt Is a file
+Error: No such file or directory (os error 2)
+docs is a directory
+Error: No such file or directory (os error 2)

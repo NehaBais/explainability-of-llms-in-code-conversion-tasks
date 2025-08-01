@@ -1,0 +1,4 @@
+Current directory: false
+/input.txt: false
+Current directory: false
+/docs: false

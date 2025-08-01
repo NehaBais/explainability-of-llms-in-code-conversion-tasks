@@ -1,0 +1,3 @@
+true
+str1 doesn't contain str2
+false

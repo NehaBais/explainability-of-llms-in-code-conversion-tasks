@@ -1,0 +1,2 @@
+Size of the file in current working directory is : 1205 bytes
+File not found or could not be opened.

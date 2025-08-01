@@ -1,0 +1,4 @@
+Sum: 		25
+Difference: 	11
+Product: 	126
+Integer quotient: 2

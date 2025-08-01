@@ -1,0 +1,4 @@
+The strings are not equal
+The first string is lexically after the second
+The first string is not lexically before the second
+The first string is lexically after the second

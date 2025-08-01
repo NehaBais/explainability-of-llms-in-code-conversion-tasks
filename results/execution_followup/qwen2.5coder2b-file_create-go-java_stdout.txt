@@ -1,0 +1,4 @@
+File output.txt created!
+Directory docs created!
+Size of output.txt: 0
+Does docs exist? true

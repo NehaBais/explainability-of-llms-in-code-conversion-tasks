@@ -1,0 +1,17 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxkaoylb0/codeqwen-int_factors-rs-js.js:10
+  factors.sort((a, B) => A - B); // sorts the factors into numerical order for viewing purposes
+                           ^
+
+ReferenceError: A is not defined
+    at /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxkaoylb0/codeqwen-int_factors-rs-js.js:10:28
+    at Array.sort (<anonymous>)
+    at factor (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxkaoylb0/codeqwen-int_factors-rs-js.js:10:11)
+    at Object.<anonymous> (/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpxkaoylb0/codeqwen-int_factors-rs-js.js:14:13)
+    at Module._compile (node:internal/modules/cjs/loader:1739:14)
+    at Object..js (node:internal/modules/cjs/loader:1904:10)
+    at Module.load (node:internal/modules/cjs/loader:1473:32)
+    at Function._load (node:internal/modules/cjs/loader:1285:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
+
+Node.js v23.6.1

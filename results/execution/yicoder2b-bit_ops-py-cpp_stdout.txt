@@ -1,0 +1,9 @@
+    AND:     0b{a :0{width}b}   &     0b{mask :0{width}b}      =     0b{(a & mask) :0{width}b}
+    OR:      0b{a :0{width}b}   |     0b{mask :0{width}b}      =     0b{(a | mask) :0{width}b}
+    XOR:     0b{a :0{width}b}   ^     0b{mask :0{width}b}      =     0b{(a ^ mask) :0{width}b}
+    NOT:     ~     0b{a :0{width}b}       =     0b{(~a & mask)}
+    Right:   0b{a :0{width}b} >>     1      =     0b{(a >> 1) :0{width}b}
+    Left:    0b{a :0{width}b} <<     1      =     0b{(a << 1) :0{width}b}
+    Sign extending arithmetic shift right:  asr({width}, 0b{a :0{width}b}, 1) =     0b{(asr(width, a, 1)) :0{width}b}
+    Sign extending arithmetic shift right:  asr({width}, 0b{a :0{width}b}, 2) =     0b{(asr(width, a, 2)) :0{width}b}
+    Sign extending arithmetic shift right:  asr({width}, 0b{a :0{width}b}, 4) =     0b{(asr(width, a, 4)) :0{width}b}

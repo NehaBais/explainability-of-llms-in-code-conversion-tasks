@@ -1,0 +1,9 @@
+YUP is of type class java.lang.String and YUP is of type 
+YUP is equal to YUP
+BALL is of type class java.lang.String and BELL is of type 
+BALL is strictly less than BELL
+24 is of type class java.lang.String and 123 is of type 
+24 is strictly greater than 123
+24 is of type class java.lang.String and 123 is of type 
+24 is strictly greater than 123
+5.0 is equal to 5.0

@@ -1,0 +1,2 @@
+Successfully moved file: input.txt
+Successfully moved folder: docs

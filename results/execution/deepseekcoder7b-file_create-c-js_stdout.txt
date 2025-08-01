@@ -1,0 +1,2 @@
+Error: Error: EROFS: read-only file system, open '/output.txt'
+Error: Error: EROFS: read-only file system, mkdir '/docs'

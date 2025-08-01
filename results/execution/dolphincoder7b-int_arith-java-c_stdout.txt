@@ -1,0 +1,5 @@
+Enter two integers: sum of a and b is: 3
+difference between a and b is: -1
+product of a and b is: 2
+quotient of a by b (rounded towards 0) is: 0.50
+remainder of a divided by b is: 1, same sign as the first operand.

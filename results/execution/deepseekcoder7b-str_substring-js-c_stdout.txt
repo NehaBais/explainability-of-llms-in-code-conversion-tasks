@@ -1,0 +1,5 @@
+Starting from position 2 and length of 3 : cde
+From position 2 to end: cdefgh
+Whole string minus last character : abcdefg
+From known character 'b' and length of 3: bcd
+From known substring 'bc' and length of 3 : bcd

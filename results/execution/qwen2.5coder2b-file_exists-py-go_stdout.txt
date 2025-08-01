@@ -1,0 +1,5 @@
+Current directory:
+One or both file does not exist.
+
+Root directory:
+One or both directories do not exist.

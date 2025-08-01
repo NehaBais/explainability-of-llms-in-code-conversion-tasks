@@ -1,0 +1,1 @@
+Failed to create directory: mkdir /path: read-only file system

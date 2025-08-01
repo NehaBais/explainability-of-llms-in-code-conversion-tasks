@@ -1,0 +1,3 @@
+Enter the first integer:
+Enter the second integer:
+10 is less than 20

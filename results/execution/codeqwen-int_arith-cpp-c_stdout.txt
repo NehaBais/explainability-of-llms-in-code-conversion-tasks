@@ -1,0 +1,4 @@
+Enter two integers: A+b = 3
+A-b = -1
+A*b = 2
+A/b = 0, remainder 1

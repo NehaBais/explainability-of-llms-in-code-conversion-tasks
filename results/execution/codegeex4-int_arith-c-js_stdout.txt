@@ -1,0 +1,6 @@
+Sum: 13
+Difference: 7
+Product: 30
+Integer Quotient: 3
+Remainder: 1
+Exponentiation: 1000

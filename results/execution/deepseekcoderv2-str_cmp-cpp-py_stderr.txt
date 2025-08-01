@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpn469z72i/deepseekcoderv2-str_cmp-cpp-py.py", line 29, in <module>
+    numA = float(a)
+           ^^^^^^^^
+ValueError: could not convert string to float: '1.2.Foo'

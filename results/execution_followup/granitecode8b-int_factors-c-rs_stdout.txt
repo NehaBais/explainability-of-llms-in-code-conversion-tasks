@@ -1,0 +1,1 @@
+factors of 12 are: [1, 2, 3]

@@ -1,0 +1,3 @@
+String starts with 'ab'
+String does not contain 'abab'
+String does not end with 'ab'

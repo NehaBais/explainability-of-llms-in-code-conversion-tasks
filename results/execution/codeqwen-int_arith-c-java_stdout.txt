@@ -1,0 +1,7 @@
+Enter the first integer:
+Enter the second integer:
+Sum of 2 and 3 is 5
+Difference between 2 and 3 is -1
+Product of 2 and 3 is 6
+Quotient when dividing 2 by 3 is 0
+Remainder when dividing 2 by 3 is 2

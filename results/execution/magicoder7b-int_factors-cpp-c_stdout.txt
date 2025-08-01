@@ -1,0 +1,4 @@
+Factors of 3135 are: 3 1045 5 627 11 285 15 209 19 165 33 95 55 57 
+Factors of 45 are: 3 15 5 9 
+Factors of 60 are: 2 30 3 20 4 15 5 12 6 10 
+Factors of 81 are: 3 27 9 

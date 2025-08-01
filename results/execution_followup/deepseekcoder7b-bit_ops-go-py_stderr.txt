@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpf6ljiuyj/deepseekcoder7b-bit_ops-go-py.py", line 1, in <module>
+    print("shr: {0:016b}".format((a >> b) & 0xFFFF))
+                                  ^
+NameError: name 'a' is not defined

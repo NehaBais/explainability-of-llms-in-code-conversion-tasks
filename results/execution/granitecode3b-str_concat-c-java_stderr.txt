@@ -1,0 +1,2 @@
+Error: Could not find or load main class Concatenation
+Caused by: java.lang.NoClassDefFoundError: Concatenation (wrong name: com/example/Concatenation)

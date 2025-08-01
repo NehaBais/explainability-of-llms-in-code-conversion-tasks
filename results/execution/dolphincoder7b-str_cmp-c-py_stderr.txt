@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpunerl2nw/dolphincoder7b-str_cmp-c-py.py", line 44, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpunerl2nw/dolphincoder7b-str_cmp-c-py.py", line 30, in main
+    ceq = int(strcasecmp(a, b))
+              ^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpunerl2nw/dolphincoder7b-str_cmp-c-py.py", line 11, in strcasecmp
+    return cmp(a.lower(), b.lower()) == 0
+           ^^^
+NameError: name 'cmp' is not defined

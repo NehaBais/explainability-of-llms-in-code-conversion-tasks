@@ -1,0 +1,5 @@
+sum: 12
+difference: 8
+product: 20
+integer quotient: 5
+remainder: 0

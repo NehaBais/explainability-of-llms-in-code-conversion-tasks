@@ -1,0 +1,22 @@
+Bitwise AND:
+0b00011001
+
+Bitwise OR:
+0b01111111
+
+Bitwise XOR:
+0b01100110
+
+Bitwise NOT:
+0b11100100
+Bitwise AND:
+0b00011011
+
+Bitwise OR:
+0b01111111
+
+Bitwise XOR:
+0b00100100
+
+Bitwise NOT:
+0b11100100

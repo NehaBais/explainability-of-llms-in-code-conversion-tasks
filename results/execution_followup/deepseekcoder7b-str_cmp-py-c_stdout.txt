@@ -1,0 +1,9 @@
+'YUP' is of type String and 'YUP' is of type String
+'YUP' is lexically less or equal to 'YUP'
+'YUP' is lexically greater or equal to 'YUP'
+'BALL' is of type Non-string and 'BELL' is of type String
+'BALL' is strictly less than 'BELL'
+'BALL' is lexically less or equal to 'BELL'
+'24' is of type Non-string and '123' is of type String
+'24' is strictly greater than '123'
+'24' is lexically greater or equal to '123'

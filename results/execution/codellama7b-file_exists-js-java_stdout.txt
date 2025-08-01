@@ -1,0 +1,4 @@
+Is input.txt file exist: false
+Is c:/input.txt file exist: false
+Is docs directory exist: false
+Is c:/docs directory exist: false

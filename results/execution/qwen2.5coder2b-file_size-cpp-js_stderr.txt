@@ -1,0 +1,6 @@
+Error retrieving file sizes: [Error: ENOENT: no such file or directory, stat '/input.txt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/input.txt'
+}

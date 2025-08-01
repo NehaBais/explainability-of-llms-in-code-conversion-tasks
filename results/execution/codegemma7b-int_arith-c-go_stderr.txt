@@ -1,0 +1,6 @@
+panic: runtime error: integer divide by zero
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp0y33fhqj/codegemma7b-int_arith-c-go.go:12 +0x2b4
+exit status 2

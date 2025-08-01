@@ -1,0 +1,2 @@
+input.txt moved to output.txt
+docs moved to mydocs

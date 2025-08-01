@@ -1,0 +1,4 @@
+Testing with a = true, b = false:
+a and b is false
+a or b is true
+not a is false

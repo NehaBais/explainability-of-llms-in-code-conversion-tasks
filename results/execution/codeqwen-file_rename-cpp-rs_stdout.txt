@@ -1,0 +1,1 @@
+Renaming files and directories in the root directory is not supported on non-Windows systems.

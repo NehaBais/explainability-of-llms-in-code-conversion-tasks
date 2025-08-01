@@ -1,0 +1,2 @@
+Size of file input.txt is 332 bytes.
+The file /input.txt does not exist.

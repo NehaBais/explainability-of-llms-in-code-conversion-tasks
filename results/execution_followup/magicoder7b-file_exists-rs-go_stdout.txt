@@ -1,0 +1,4 @@
+./input.txt is a file
+/tmp/input.txt does not exist
+./docs is a directory
+/tmp/docs does not exist

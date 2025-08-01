@@ -1,0 +1,1 @@
+Enter two integers: 2 is less than 10

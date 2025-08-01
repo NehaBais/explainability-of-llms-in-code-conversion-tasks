@@ -1,0 +1,4 @@
+Input is not a directory
+Root input is not a directory
+Docs is not a directory
+Root docs is not a directory

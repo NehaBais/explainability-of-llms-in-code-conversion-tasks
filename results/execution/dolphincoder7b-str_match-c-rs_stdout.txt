@@ -1,0 +1,3 @@
+StartsWith Test (Hello,Hell) : true
+EndsWith Test (Hello,lo) : true
+Contains Test (Hello,ll) : true

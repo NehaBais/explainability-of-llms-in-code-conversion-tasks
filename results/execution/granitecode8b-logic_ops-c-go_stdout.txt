@@ -1,0 +1,1 @@
+a and b is falsena or b is truennot a is falsena and b is falsena or b is truennot a is truena and b is falsena or b is falsennot a is truen

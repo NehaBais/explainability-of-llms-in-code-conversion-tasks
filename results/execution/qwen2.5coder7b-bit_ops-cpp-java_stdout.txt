@@ -1,0 +1,9 @@
+a and b: 0
+a or b:  7
+a xor b: 7
+not a:   -6
+a shl b: 20
+a shr b: 1
+a lsr b: 1
+a rol b: -1073741823
+a ror b: 21

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpum4440nl/yicoder9b-bit_ops-rs-py.py", line 27, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpum4440nl/yicoder9b-bit_ops-rs-py.py", line 22, in main
+    print("a left rotated by b = {:08b}".format(left_rotate(a, b)))
+                                                ^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpum4440nl/yicoder9b-bit_ops-rs-py.py", line 17, in left_rotate
+    return (n << d) | (n >> (32 - d))
+                       ~~^^~~~~~~~~~
+ValueError: negative shift count

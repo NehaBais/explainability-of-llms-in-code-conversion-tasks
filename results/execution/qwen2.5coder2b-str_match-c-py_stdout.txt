@@ -1,0 +1,3 @@
+Starts with Test:  True
+Ends with Test:  True
+Contains Test:  False

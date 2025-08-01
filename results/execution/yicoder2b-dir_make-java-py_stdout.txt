@@ -1,0 +1,1 @@
+Error occurred: [Errno 30] Read-only file system: '/parent'

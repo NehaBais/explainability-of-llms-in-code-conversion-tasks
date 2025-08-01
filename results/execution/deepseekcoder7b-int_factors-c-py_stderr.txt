@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpl8wrh9oc/deepseekcoder7b-int_factors-c-py.py", line 50, in <module>
+    main()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpl8wrh9oc/deepseekcoder7b-int_factors-c-py.py", line 41, in main
+    factors = factor(nums2factor[i], Factors())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpl8wrh9oc/deepseekcoder7b-int_factors-c-py.py", line 32, in factor
+    transfer_factors(fctrs, flist, len(flist))
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpl8wrh9oc/deepseekcoder7b-int_factors-c-py.py", line 7, in transfer_factors
+    newSize = fctrs.count + flix
+              ^^^^^^^^^^^
+AttributeError: 'Factors' object has no attribute 'count'

@@ -1,0 +1,4 @@
+The string starts with the prefix
+The string contains the substring
+Found match at pos 0
+The string ends with the suffix

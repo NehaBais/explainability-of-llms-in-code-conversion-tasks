@@ -1,0 +1,4 @@
+Starts with: true
+Contains: true
+Location of match: 0
+Ends with: false

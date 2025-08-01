@@ -1,0 +1,6 @@
+1
+0
+Equal
+Equal
+s1 is not lexicographically smaller than s2
+s1 and s2 are equal when case is ignored

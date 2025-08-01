@@ -1,0 +1,4 @@
+String 1 does start with String 3
+Found match at pos 0
+Did not find any matches
+String 2 does end with String 3

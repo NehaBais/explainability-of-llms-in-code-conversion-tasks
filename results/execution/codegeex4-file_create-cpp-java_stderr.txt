@@ -1,0 +1,5 @@
+Exception in thread "main" java.io.IOException: Read-only file system
+	at java.base/java.io.UnixFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:218)
+	at java.base/java.io.File.createNewFile(File.java:1045)
+	at Main.main(Main.java:10)

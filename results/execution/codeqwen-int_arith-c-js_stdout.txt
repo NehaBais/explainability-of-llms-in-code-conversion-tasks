@@ -1,0 +1,5 @@
+A+b = NaN
+A-b = NaN
+A*b = NaN
+A/b = NaN
+A%b = NaN

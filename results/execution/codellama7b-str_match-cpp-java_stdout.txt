@@ -1,0 +1,3 @@
+Is s1 starts with s2? false
+Is s1 ends with s2? false
+s2 is not found in s1

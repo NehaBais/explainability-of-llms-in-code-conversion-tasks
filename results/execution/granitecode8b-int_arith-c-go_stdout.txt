@@ -1,0 +1,1 @@
+a+b = 3na-b = -1na*b = 2na/b = 0na%b = 1n

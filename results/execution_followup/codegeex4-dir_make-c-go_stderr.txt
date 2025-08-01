@@ -1,0 +1,2 @@
+error: failed to create directory /path: mkdir /path: read-only file system
+exit status 1

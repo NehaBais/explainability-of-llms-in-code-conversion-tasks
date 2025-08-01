@@ -1,0 +1,5 @@
+sum:              NaN
+difference:       NaN
+product:          NaN
+integer quotient: NaN
+remainder:        NaN

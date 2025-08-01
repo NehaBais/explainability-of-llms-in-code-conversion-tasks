@@ -1,0 +1,4 @@
+Metadata { file_type: FileType { is_file: true, is_dir: false, is_symlink: false, .. }, permissions: Permissions(FilePermissions { mode: 0o100644 (-rw-r--r--) }), len: 587, modified: SystemTime { tv_sec: 1727730629, tv_nsec: 627438185 }, accessed: SystemTime { tv_sec: 1727730630, tv_nsec: 362813881 }, created: SystemTime { tv_sec: 1727730629, tv_nsec: 627438185 }, .. }
+No such file or directory (os error 2)
+Metadata { file_type: FileType { is_file: false, is_dir: true, is_symlink: false, .. }, permissions: Permissions(FilePermissions { mode: 0o040755 (drwxr-xr-x) }), len: 64, modified: SystemTime { tv_sec: 1753483356, tv_nsec: 813858357 }, accessed: SystemTime { tv_sec: 1753483356, tv_nsec: 813858357 }, created: SystemTime { tv_sec: 1753483356, tv_nsec: 813858357 }, .. }
+No such file or directory (os error 2)

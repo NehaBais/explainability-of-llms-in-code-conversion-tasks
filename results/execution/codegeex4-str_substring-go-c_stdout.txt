@@ -1,0 +1,7 @@
+Index: 01234567
+String:ABCDEFGH
+Substring from 2 with length 3: CDE
+Invalid substring parameters.
+Substring from 0 with length 7: ABCDEFG
+Substring from 3 with length 7: DEFGH
+Substring from 3 with length 7: DEFGH

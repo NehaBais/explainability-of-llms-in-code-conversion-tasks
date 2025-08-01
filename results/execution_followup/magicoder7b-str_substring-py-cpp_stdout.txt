@@ -1,0 +1,15 @@
+Starting from index: 2, End index: 4
+Substring: "cde"
+
+Starting from index: 2
+Substring: "cdefgh"
+
+Whole string without the last character
+Substring: "abcdefg"
+
+Starting from index: 3, End index: 5
+Substring: "def"
+
+Starting from index: 2, End index: 4
+Substring: "cde"
+

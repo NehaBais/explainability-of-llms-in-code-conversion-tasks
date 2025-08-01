@@ -1,0 +1,6 @@
+Enter first number: Enter second number: Sum: 3
+Difference: -1
+Product: 2
+Division (rounded down): 0
+Quotient: 0.0
+Remainder: 1

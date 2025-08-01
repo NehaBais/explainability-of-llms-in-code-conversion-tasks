@@ -1,0 +1,2 @@
+Successfully renamed input.txt to output.txt
+Successfully renamed docs to mydocs

@@ -1,0 +1,5 @@
+Enter the first integer: Enter the second integer: Sum: 17
+Difference: -1
+Product: 72
+Quotient: 0
+Remainder: 8

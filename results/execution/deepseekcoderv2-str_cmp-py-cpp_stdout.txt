@@ -1,0 +1,8 @@
+"YUP" is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and "YUP" is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+"YUP" is less than or equal to "YUP"
+"YUP" is greater than or equal to "YUP"
+"YUP" is equal to "YUP"
+"BALL" is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE and "BELL" is of type NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+"BALL" is strictly less than "BELL"
+"BALL" is less than or equal to "BELL"
+"BALL" is not equal to "BELL"

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpff_yidee/codeqwen-str_match-cpp-py.py", line 25, in <module>
+    string_matching()
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpff_yidee/codeqwen-str_match-cpp-py.py", line 20, in string_matching
+    locations = [m.start() for m in re.finditer("(?={0})".format(re.escape(s2)), s1)]
+                                    ^^
+NameError: name 're' is not defined. Did you forget to import 're'?

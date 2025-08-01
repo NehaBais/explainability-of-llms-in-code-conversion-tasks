@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplww5ptq2/yicoder2b-file_size-go-py.py", line 13, in <module>
+    print_file_size("input.txt")
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmplww5ptq2/yicoder2b-file_size-go-py.py", line 6, in print_file_size
+    stat, err = os.stat(filename)
+    ^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

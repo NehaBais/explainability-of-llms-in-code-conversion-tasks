@@ -1,0 +1,3 @@
+Enter first integer: 
+Enter second integer: 
+10 is greater than 2

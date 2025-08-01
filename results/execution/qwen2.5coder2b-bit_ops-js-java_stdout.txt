@@ -1,0 +1,7 @@
+a AND b: 2
+a OR b: 11
+a XOR b: 9
+NOT a: -11
+a << b: 80
+a >> b: 1
+a >>> b: 1

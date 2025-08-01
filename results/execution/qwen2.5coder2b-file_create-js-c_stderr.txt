@@ -1,0 +1,1 @@
+Error creating output.txt in root: Read-only file system

@@ -1,0 +1,2 @@
+Strings are not equal
+First string is lexically after the second

@@ -1,0 +1,2 @@
+Size of file input.txt is 267 bytes.
+[Errno 2] No such file or directory: '/input.txt'

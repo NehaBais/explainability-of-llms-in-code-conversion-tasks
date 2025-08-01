@@ -1,0 +1,2 @@
+Renamed file from input.txt to output.txt
+Renamed directory from docs to mydocs

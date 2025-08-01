@@ -1,0 +1,2 @@
+Enter Two Numbers: 
+The first number entered is greater than the second number

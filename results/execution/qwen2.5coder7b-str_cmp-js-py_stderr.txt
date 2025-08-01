@@ -1,0 +1,2 @@
+/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp04678awg/qwen2.5coder7b-str_cmp-js-py.py:8: SyntaxWarning: "is not" with 'int' literal. Did you mean "!="?
+  123 is not "123",  # True

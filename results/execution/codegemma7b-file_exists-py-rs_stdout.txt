@@ -1,0 +1,2 @@
+Files and directory exist in current working directory.
+Files and directory do not exist in filesystem root.

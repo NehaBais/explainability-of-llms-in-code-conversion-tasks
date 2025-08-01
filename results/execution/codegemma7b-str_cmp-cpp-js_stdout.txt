@@ -1,0 +1,6 @@
+Not exactly equal
+Inequality
+Ordered before
+Not ordered after
+Not case-insensitive equal
+Not numerically equal

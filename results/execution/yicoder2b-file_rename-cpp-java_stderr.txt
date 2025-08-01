@@ -1,0 +1,1 @@
+Failed to rename 'docs' directory to '/mydocs' directory

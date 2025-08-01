@@ -1,0 +1,7 @@
+Bitwise AND: 3
+Bitwise OR: 15
+Bitwise XOR: 12
+Bitwise NOT: -16
+Left shift: 120
+Right shift: 1
+Logical Right Shift: 1

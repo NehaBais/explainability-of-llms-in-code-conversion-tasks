@@ -1,0 +1,6 @@
+panic: stat /input.txt: no such file or directory
+
+goroutine 1 [running]:
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp93w80ksz/yicoder9b-file_rename-rs-go.go:21 +0x1d8
+exit status 2

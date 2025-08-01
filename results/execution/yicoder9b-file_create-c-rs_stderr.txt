@@ -1,0 +1,3 @@
+thread 'main' panicked at src/main.rs:27:10:
+Failed to create a new file.: Os { code: 22, kind: InvalidInput, message: "Invalid argument" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

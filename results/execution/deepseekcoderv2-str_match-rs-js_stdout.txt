@@ -1,0 +1,5 @@
+The first string starts with the second string
+The first string contains the second string
+Found match at pos 0
+Found matches at positions: 0
+The first string ends with the second string

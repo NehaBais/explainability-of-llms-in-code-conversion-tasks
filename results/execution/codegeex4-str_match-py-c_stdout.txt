@@ -1,0 +1,4 @@
+String starts with the prefix
+String does not end with the suffix
+ab found in abcd at index: 0
+All occurrences of 'ab' in 'abcd': 0 

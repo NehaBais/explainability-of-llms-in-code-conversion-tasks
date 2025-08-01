@@ -1,0 +1,5 @@
+abcd starts with ab
+abcd does not end with zn
+ab found in abcd at position 0
+ab found in abab at position 0
+ab found in abab at position 2

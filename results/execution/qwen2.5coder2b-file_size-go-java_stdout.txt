@@ -1,0 +1,2 @@
+Size of input.txt in current directory: 1105
+/input.txt not found in the file system root.

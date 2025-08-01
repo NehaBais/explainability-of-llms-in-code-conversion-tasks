@@ -1,0 +1,1 @@
+Error creating file or directory: /output.txt: Read-only file system

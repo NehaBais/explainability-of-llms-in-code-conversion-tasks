@@ -1,0 +1,3 @@
+thread 'main' panicked at src/main.rs:15:37:
+Failed to write output file at root: Os { code: 17, kind: AlreadyExists, message: "File exists" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

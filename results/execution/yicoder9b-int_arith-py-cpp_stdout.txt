@@ -1,0 +1,8 @@
+Sum:         25
+Difference:  11
+Product:     126
+Integer quotient: 2
+Float Quotient:   2.57143
+Whole Remainder : 5
+Actual Remainder: 5.71429
+Exponentiation :  6.1222e+08

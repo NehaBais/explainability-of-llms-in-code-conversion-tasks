@@ -1,0 +1,6 @@
+Strings are not equal.
+Strings are not equal.
+a is lexically ordered before b.
+a is lexically ordered before b.
+Strings are equal (case insensitive).
+f is numerically greater than e.

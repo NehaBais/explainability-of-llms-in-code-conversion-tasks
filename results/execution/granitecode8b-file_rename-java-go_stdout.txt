@@ -1,0 +1,1 @@
+The following file called input.txt/ was renamed as output.txt/. was successfully renamed.nThe following file called /input.txt/ was renamed as /output.txt/. was successfully renamed.nThe following directory called docs/ was renamed as mydocs/. was successfully renamed.nThe following directory called /docs// was renamed as /mydocs//. was successfully renamed.n

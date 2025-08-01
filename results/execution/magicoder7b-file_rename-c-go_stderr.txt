@@ -1,0 +1,2 @@
+2025/07/25 15:47:54 rename /input.txt /output.txt: no such file or directory
+exit status 1

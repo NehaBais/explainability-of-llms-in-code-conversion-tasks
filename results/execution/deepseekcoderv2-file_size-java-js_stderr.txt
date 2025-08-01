@@ -1,0 +1,2 @@
+Error getting size of /private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp_3wlsksw/file.txt: ENOENT: no such file or directory, stat '/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp_3wlsksw/file.txt'
+Error getting size of /file.txt: ENOENT: no such file or directory, stat '/file.txt'

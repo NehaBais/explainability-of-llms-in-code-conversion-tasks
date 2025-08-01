@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvbid99nf/granitecode8b-str_cmp-c-py.py", line 35, in <module>
+    print(compare_strings("ball", "bell"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpvbid99nf/granitecode8b-str_cmp-c-py.py", line 31, in compare_strings
+    return f"{a} {eq} {ne} {gt} {lt} {ge} {le} {b}"
+                                      ^^
+NameError: name 'ge' is not defined. Did you mean: 'ne'?

@@ -1,0 +1,4 @@
+The file ./input.txt exists: false
+The file /input.txt exists: false
+The directory ./docs exists: false
+The directory /docs exists: false

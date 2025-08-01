@@ -1,0 +1,2 @@
+Error renaming file in filesystem root: rename c:/input.txt c:/output.txt: no such file or directory
+Error renaming directory in filesystem root: rename c:/docs c:/mydocs: no such file or directory

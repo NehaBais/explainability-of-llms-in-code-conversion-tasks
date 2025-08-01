@@ -1,0 +1,4 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp66gfqu8p/input.txt  does not exist
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp66gfqu8p/docs/input.txt  does not exist
+/input.txt  does not exist
+/docs/input.txt  does not exist

@@ -1,0 +1,2 @@
+input.txt was renamed as output.txt
+docs was renamed as mydocs

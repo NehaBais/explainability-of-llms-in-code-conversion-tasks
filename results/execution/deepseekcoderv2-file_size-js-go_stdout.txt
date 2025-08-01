@@ -1,0 +1,2 @@
+Size of input.txt in current directory: 548 bytes
+Error: stat c:/input.txt: no such file or directory

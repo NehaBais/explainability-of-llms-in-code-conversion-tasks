@@ -1,0 +1,13 @@
+/private/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp08_9afcu/codegemma7b-file_rename-rs-js.js:14
+  if (err) throw err;
+           ^
+
+[Error: ENOENT: no such file or directory, rename '/input.txt' -> '/output.txt'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/input.txt',
+  dest: '/output.txt'
+}
+
+Node.js v23.6.1

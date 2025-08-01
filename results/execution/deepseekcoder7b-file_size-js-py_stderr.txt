@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpjkl0ck2u/deepseekcoder7b-file_size-js-py.py", line 8, in <module>
+    root_directory_size = os.path.getsize("/input.txt")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 62, in getsize
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

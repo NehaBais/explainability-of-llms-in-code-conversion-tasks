@@ -1,0 +1,4 @@
+Renamed file to: output.txt
+Renamed directory to: mydocs
+The file does not exist: //input.txt
+The directory does not exist: //docs

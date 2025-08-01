@@ -1,0 +1,59 @@
+    AND:     0b00011011 
+        AND 0b01111101 
+        AND= 0b00011001
+
+    OR:      0b00011011 
+        OR 0b01111101 
+        OR= 0b01111111
+
+    XOR:     0b00011011 
+        XOR 0b01111101 
+        XOR= 0b01100110
+
+    NOT:    0b00011011 
+        NOT= 0b-11100
+
+SHIFTS
+
+    LEFT:    LEFT:    00011011 
+        LEFT 1= 0b00000000
+
+
+    RIGHT:   RIGHT:   00011011 
+        RIGHT 1= 0b00000000
+
+
+ROTATIONS
+
+    LEFT:    LEFT:    00011011 
+        LEFT 1= 00110110
+
+
+    LEFT:    LEFT:    00011011 
+        LEFT 2= 01101100
+
+
+    LEFT:    LEFT:    00011011 
+        LEFT 3= 11011000
+
+
+    LEFT:    LEFT:    00011011 
+        LEFT 4= 110110000
+
+
+    RIGHT: RIGHT:   00011011 
+        RIGHT 1= 00001101
+
+
+    RIGHT: RIGHT:   00011011 
+        RIGHT 2= 00000110
+
+
+    RIGHT: RIGHT:   00011011 
+        RIGHT 3= 00000011
+
+
+    RIGHT: RIGHT:   00011011 
+        RIGHT 4= 00000001
+
+

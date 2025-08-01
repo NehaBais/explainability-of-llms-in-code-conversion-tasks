@@ -1,0 +1,6 @@
+cat is not strictly equal to dog
+cat is not strictly different from dog
+cat is not lexically greater than dog
+cat is lexically less than dog
+Elephant is case-insensitively equal to elephant
+3 is lexically greater than 2

@@ -1,0 +1,2 @@
+Size of input.txt in current working directory: 478
+Size of input.txt in file system root: 0

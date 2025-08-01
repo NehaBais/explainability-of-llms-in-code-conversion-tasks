@@ -1,0 +1,11 @@
+Exception in thread "main" java.util.IllegalFormatFlagsException: Flags = '0'
+	at java.base/java.util.Formatter$FormatSpecifier.checkText(Formatter.java:3499)
+	at java.base/java.util.Formatter$FormatSpecifier.check(Formatter.java:3189)
+	at java.base/java.util.Formatter$FormatSpecifier.<init>(Formatter.java:3174)
+	at java.base/java.util.Formatter$FormatSpecifierParser.parse(Formatter.java:2955)
+	at java.base/java.util.Formatter.parse(Formatter.java:2854)
+	at java.base/java.util.Formatter.format(Formatter.java:2784)
+	at java.base/java.io.PrintStream.implFormat(PrintStream.java:1369)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1348)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:1247)
+	at BitwiseBuiltIns.main(BitwiseBuiltIns.java:7)

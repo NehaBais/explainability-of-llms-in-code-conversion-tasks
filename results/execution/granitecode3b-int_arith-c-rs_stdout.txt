@@ -1,0 +1,7 @@
+Enter two integers:
+a + b = 12
+a - b = 8
+a * b = 20
+a / b = 5 (positive)
+a %% b = 0 (zero)
+a ^ b = 100

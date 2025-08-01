@@ -1,0 +1,7 @@
+true
+true
+false
+true
+true
+true
+numStr1 is less than numStr2

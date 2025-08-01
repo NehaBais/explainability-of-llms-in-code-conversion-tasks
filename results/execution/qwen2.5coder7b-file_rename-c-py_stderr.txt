@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8dojd8fp/qwen2.5coder7b-file_rename-c-py.py", line 9, in <module>
+    os.rename(root_dir + "input.txt", root_dir + "output.txt")
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'

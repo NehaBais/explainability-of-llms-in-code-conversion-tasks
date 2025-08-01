@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppj0ykpgw/codegeex4-file_rename-c-py.py", line 15, in <module>
+    rename_files_and_dirs(here=True, root=True)
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmppj0ykpgw/codegeex4-file_rename-c-py.py", line 10, in rename_files_and_dirs
+    os.rename("/input.txt", "/output.txt")
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt' -> '/output.txt'

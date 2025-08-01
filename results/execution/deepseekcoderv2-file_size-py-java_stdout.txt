@@ -1,0 +1,2 @@
+Size of input.txt in current directory: 849 bytes
+File /input.txt does not exist in the root directory.

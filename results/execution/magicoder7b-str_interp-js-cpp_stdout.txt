@@ -1,0 +1,2 @@
+Original: "Mary had a X lamb"
+Replaced: "Mary had a little lamb"

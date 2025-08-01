@@ -1,0 +1,4 @@
+s1 starts with s3: 1
+Found match at pos 0
+Found match at pos 0
+s1 ends with s3: 0

@@ -1,0 +1,1 @@
+Usage: go run script_name.go <A> <b>

@@ -1,0 +1,3 @@
+s1 starts with s3
+Did not find any matches
+s2 ends with s3

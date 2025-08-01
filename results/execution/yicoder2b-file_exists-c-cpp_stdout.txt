@@ -1,0 +1,3 @@
+input.txt is a regular file? No
+docs is a directory? no
+/docs is a directory? No

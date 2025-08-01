@@ -1,0 +1,7 @@
+Enter the first integer:
+Enter the second integer:
+1 + 2 = 3
+1 - 2 = -1
+1 * 2 = 2
+quotient of 1 / 2 = 0 (rounds towards negative infinity)
+remainder of 1 / 2 = 1 with the same sign as first operand i.e., '1'

@@ -1,0 +1,4 @@
+input.txt does not exist
+docs does not exist
+/docs does not exist
+/input.txt does not exist

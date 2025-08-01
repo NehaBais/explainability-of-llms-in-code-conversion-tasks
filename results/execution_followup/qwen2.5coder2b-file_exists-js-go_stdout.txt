@@ -1,0 +1,4 @@
+exec: "dir": executable file not found in $PATH
+exec: "dir": executable file not found in $PATH
+exec: "dir": executable file not found in $PATH
+exec: "dir": executable file not found in $PATH

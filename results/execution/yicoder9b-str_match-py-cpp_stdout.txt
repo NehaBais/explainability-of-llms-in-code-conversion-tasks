@@ -1,0 +1,4 @@
+Starts with: 1
+Contains: Location: 0
+1
+Ends with: 0

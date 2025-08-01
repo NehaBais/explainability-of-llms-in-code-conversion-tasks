@@ -1,0 +1,8 @@
+panic: stat /input.txt: no such file or directory
+
+goroutine 1 [running]:
+main.checkSize({0x1007d39a7?, 0x140000021c0?})
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6_sd5yj8/codeqwen-file_size-c-go.go:11 +0x94
+main.main()
+	/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp6_sd5yj8/codeqwen-file_size-c-go.go:18 +0x38
+exit status 2

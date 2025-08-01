@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp93qja3il/granitecode3b-str_interp-cpp-py.py", line 4, in <module>
+    newString = original.replace(
+                ^^^^^^^^^^^^^^^^^
+TypeError: replace() argument 1 must be str, not int

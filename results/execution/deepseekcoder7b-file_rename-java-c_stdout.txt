@@ -1,0 +1,2 @@
+The file input.txt was renamed as output.txt.
+The directory docs was renamed as mydocs.

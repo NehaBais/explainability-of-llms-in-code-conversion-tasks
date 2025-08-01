@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmp8bf5v3c_/deepseekcoder7b-int_arith-js-py.py", line 3, in <module>
+    a = int(sys.argv[1])  # get first integer from command line arguments
+            ~~~~~~~~^^^
+IndexError: list index out of range

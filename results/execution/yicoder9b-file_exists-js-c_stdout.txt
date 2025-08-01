@@ -1,0 +1,4 @@
+Checking for input.txt and docs in current directory:
+File or directory doesn't exist in current working directory or it may be of some other type.
+Checking for c:/input.txt and c:/docs:
+File or directory doesn't exist in root filesystem or it may be of some other type.

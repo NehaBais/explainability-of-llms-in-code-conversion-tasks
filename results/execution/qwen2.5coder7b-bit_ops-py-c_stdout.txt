@@ -1,0 +1,39 @@
+AND:     0b1b
+       & 0b7d
+       = 0b19
+OR:      0b1b
+       | 0b7d
+       = 0b7f
+XOR:     0b1b
+       ^ 0b7d
+       = 0b66
+NOT:   ~ 0b1b
+       = 0be4
+
+SHIFTS
+  RIGHT:   0b1b >> 1
+         = 0b0d
+  LEFT:    0b1b << 1
+         = 0b36
+
+ROTATIONS
+  LEFT:    0b1b << 1
+         = 0b36
+  LEFT:    0b1b << 2
+         = 0b6c
+  LEFT:    0b1b << 4
+         = 0bb1
+
+SIGN-EXTENDING ARITHMETIC RIGHT SHIFTS
+  asr(1): 0b1b >> 1
+         = 0b36
+  asr(1): 0b9b >> 1
+         = 0b137
+  asr(2): 0b1b >> 2
+         = 0b6c
+  asr(2): 0b9b >> 2
+         = 0b26f
+  asr(4): 0b1b >> 4
+         = 0b1b0
+  asr(4): 0b9b >> 4
+         = 0b9bf

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpgf51znxt/yicoder9b-file_size-c-py.py", line 11, in <module>
+    printFileSize("/input.txt")  # size of the file at system root level
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/d3/zttsdsd50sjf25r6syczw4jh0000gq/T/tmpgf51znxt/yicoder9b-file_size-c-py.py", line 5, in printFileSize
+    print(os.path.getsize(filePath))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 62, in getsize
+FileNotFoundError: [Errno 2] No such file or directory: '/input.txt'

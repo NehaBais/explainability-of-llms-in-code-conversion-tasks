@@ -1,0 +1,5 @@
+a + b = 17
+a - b = 1
+a * b = 72
+quotient of a / b = 1
+remainder of a / b = 1
